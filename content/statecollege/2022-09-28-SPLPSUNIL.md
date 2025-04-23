@@ -33,7 +33,7 @@ Spotlight PA talked to several experts to explain how NIL works at Penn State.
 
 ## What rules are in place in Pennsylvania?
 
-<a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2021&sessInd=0&act=26">Pennsylvania’s NIL law</a> bars student-athletes from making money on pornography, alcohol, gambling, tobacco or electronic smoking devices, prescription drugs, or other controlled substances.
+<a href="https://web.archive.org/20210630233733/https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2021&sessInd=0&act=26">Pennsylvania’s NIL law</a> bars student-athletes from making money on pornography, alcohol, gambling, tobacco or electronic smoking devices, prescription drugs, or other controlled substances.
 
 Under the 2021 law, student-athletes must disclose an NIL contract to their university seven days before it takes effect.
 
@@ -79,10 +79,10 @@ Penn State, like many universities, does not disclose the financial values of it
 
 The limited data that are available come from NIL-handling platforms such as Opendorse and INFLCR, and are based on user input.
 
-Nationwide, between July 2021 and August 2022, nearly half of all NIL money went to college football players, <a href="https://biz.opendorse.com/nil-insights/">according to Opendorse</a>. Nearly three-quarters of the money flowing to Division I sports went to male student-athletes. The average compensation for a Division I student-athlete was $3,063, compared to $709 for a Division II student-athlete and $868 for a Division III student-athlete, according to the website.
+Nationwide, between July 2021 and August 2022, nearly half of all NIL money went to college football players, <a href="https://web.archive.org/20220817102309/https://biz.opendorse.com/nil-insights/">according to Opendorse</a>. Nearly three-quarters of the money flowing to Division I sports went to male student-athletes. The average compensation for a Division I student-athlete was $3,063, compared to $709 for a Division II student-athlete and $868 for a Division III student-athlete, according to the website.
 
 Those numbers don’t describe the entire NIL picture, however, because Opendorse only reports data from contracts submitted through its platform. And a few high-paid student-athletes can throw off the averages, said Michelle Meyer, NIL coordinator at San Diego State University and founder of NIL Network.
 
-At the same time, Opendorse’s CEO told Yahoo he believes <a href="https://www.yahoo.com/entertainment/nil-era-still-t-reliably-172003992.html?guccounter=1">80% of NIL deals are going unreported</a> to schools. Not reporting deals could allow athletes or university supporters to skirt basic NIL regulations, such as paying athletes to attend a particular school.
+At the same time, Opendorse’s CEO told Yahoo he believes <a href="https://web.archive.org/20220930141416/https://www.yahoo.com/entertainment/nil-era-still-t-reliably-172003992.html?guccounter=1">80% of NIL deals are going unreported</a> to schools. Not reporting deals could allow athletes or university supporters to skirt basic NIL regulations, such as paying athletes to attend a particular school.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

@@ -32,15 +32,15 @@ Of the respondents, 22% said they strongly approved, 14% somewhat approved, 18% 
 
 {{<flourish src="visualisation/19671685" >}}
 
-The <a href="https://www.scribd.com/document/771322432/Spotlight-PA-MassINC-poll-Sept-12-18-2024">poll</a> was conducted by the MassINC Polling Group between Sept. 12 and 18, and asked 800 likely voters about the upcoming Nov. 5 election.
+The <a href="https://web.archive.org/20240920225251/https://www.scribd.com/document/771322432/Spotlight-PA-MassINC-poll-Sept-12-18-2024">poll</a> was conducted by the MassINC Polling Group between Sept. 12 and 18, and asked 800 likely voters about the upcoming Nov. 5 election.
 
 Shapiro <a href="https://www.spotlightpa.org/news/2024/07/josh-shapiro-vice-president-school-choice-voucher/">came out in favor of a voucher program</a> when he ran for governor, and a predominantly Republican group of lawmakers has pushed hard to make such a program happen. Supporters have big money backing them, including <a href="https://www.spotlightpa.org/news/2024/06/jayz-pennsylvania-legislature-private-school-vouchers-jeff-yass/">Pennsylvania’s richest person, Jeff Yass, and rapper Jay-Z</a>.
 
 Firm opposition from state House Democrats has repeatedly sunk the effort.
 
-The <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=0795&amp;pn=1587">specific proposal Pennsylvania lawmakers have been considering</a> would create a $100 million program that would be available to students from relatively low-income families — those that make less than 250% of the <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>, or less than $78,000 annually for a family of four. Students would also have to attend “<a href="https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” schools to qualify.
+The <a href="https://web.archive.org/20240518043722/https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=0795&amp;pn=1587">specific proposal Pennsylvania lawmakers have been considering</a> would create a $100 million program that would be available to students from relatively low-income families — those that make less than 250% of the <a href="https://web.archive.org/20210717123429/https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>, or less than $78,000 annually for a family of four. Students would also have to attend “<a href="https://web.archive.org/20230627152243/https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” schools to qualify.
 
-While $100 million is a tiny appropriation compared to the more than <a href="https://www.education.pa.gov/Teachers%20-%20Administrators/School%20Finances/Education%20Budget/Pages/default.aspx">$8 billion Pennsylvania is currently spending</a> for basic education annually, opponents have noted that small voucher programs in other states have ballooned to <a href="https://www.propublica.org/article/arizona-school-vouchers-budget-meltdown">take up bigger and bigger shares of state budgets</a>.
+While $100 million is a tiny appropriation compared to the more than <a href="https://web.archive.org/20150808210803/https://www.education.pa.gov/Teachers%20-%20Administrators/School%20Finances/Education%20Budget/Pages/default.aspx">$8 billion Pennsylvania is currently spending</a> for basic education annually, opponents have noted that small voucher programs in other states have ballooned to <a href="https://web.archive.org/20240716114043/https://www.propublica.org/article/arizona-school-vouchers-budget-meltdown">take up bigger and bigger shares of state budgets</a>.
 
 <a href="https://www.spotlightpa.org/news/2024/06/school-choice-voucher-public-pennsylvania-budget-conflict/">Research on vouchers’ outcomes is mixed</a>. Recent studies have shown that larger programs, which are increasingly common, have had negative impacts on student success.
 
@@ -52,13 +52,13 @@ For example, 76% of Democratic respondents said they strongly or somewhat oppose
 
 Spotlight PA isn’t the only organization that has conducted a poll on vouchers in recent years, though many surveys are commissioned and designed by groups that advocate for alternatives to public schools. Voucher proponents often point to this polling to argue that vouchers are overwhelmingly popular.
 
-One of the most frequent pollsters on this issue is EdChoice, a school choice organization that advocates for state-level voucher programs. Since 2020, it has run <a href="https://edchoice.morningconsultintelligence.com/downloads/">a monthly national poll that asks</a> adults and school parents if they support a program in which “tax dollars currently allocated to a school district would be allocated to parents in the form of a &#39;school voucher&#39; to pay partial or full tuition for the child’s school.”
+One of the most frequent pollsters on this issue is EdChoice, a school choice organization that advocates for state-level voucher programs. Since 2020, it has run <a href="https://web.archive.org/20200514074922/https://edchoice.morningconsultintelligence.com/downloads/">a monthly national poll that asks</a> adults and school parents if they support a program in which “tax dollars currently allocated to a school district would be allocated to parents in the form of a &#39;school voucher&#39; to pay partial or full tuition for the child’s school.”
 
 The group uses its national data to estimate what opinions in states might look like.
 
 “For vouchers, support has hovered in the low to mid-60s,” said Paul DiPerna, vice president of research and innovation for EdChoice.
 
-Using that data, the group <a href="https://edchoice.morningconsultintelligence.com/pennsylvania/">predicts similar levels of support</a> in Pennsylvania.
+Using that data, the group <a href="https://web.archive.org/20210830160614/https://edchoice.morningconsultintelligence.com/pennsylvania/">predicts similar levels of support</a> in Pennsylvania.
 
 Asked about the discrepancy between that estimate and Spotlight PA’s poll of Pennsylvania voters, DiPerna said outcomes often come down to language. For instance, he said, voters tend to react negatively when asked about using “taxpayer money” for a program, but are more amenable to using “government funding.”
 
@@ -83,4 +83,3 @@ If it were up to McInerney, voucher polling questions would look very different.
 “The question we must focus on is, ‘Do you agree that public dollars should be directed to unaccountable private schools that can and do subsidize discrimination?’” she said. “If you posed it in that way, you might get a very different response.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

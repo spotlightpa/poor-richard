@@ -57,23 +57,23 @@ The state also appropriates funds for Pennsylvania’s four state-related univer
 
 The governor serves on each of the state-related boards and appoints other trustees to serve as well.
 
-In July, <b>Mastriano</b> was <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=706">among seven senators who voted against</a> providing funding for state-related universities. State House Republicans had <a href="https://www.spotlightpa.org/news/2022/06/pa-pittsburgh-fetal-tissue-research-budget/">opposed funding the University of Pittsburgh</a> because of the school’s research involving fetal tissue.
+In July, <b>Mastriano</b> was <a href="https://web.archive.org/20220726034048/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=706">among seven senators who voted against</a> providing funding for state-related universities. State House Republicans had <a href="https://www.spotlightpa.org/news/2022/06/pa-pittsburgh-fetal-tissue-research-budget/">opposed funding the University of Pittsburgh</a> because of the school’s research involving fetal tissue.
 
-Later, Mastriano <a href="https://senatormastriano.com/wp-content/uploads/sites/97/2022/07/StateRelatedTuitionFreeze1.pdf">sent a letter</a> to the leaders of the four state-related universities asking them to reconsider raising tuition in light of inflation and a <a href="https://www.spotlightpa.org/news/2022/07/pennsylvania-pitt-penn-state-funding-boost-tom-wolf/">special appropriation coming from the governor</a>. “Pennsylvania’s families simply cannot afford a tuition hike in addition to the rising costs in other parts of the economy,” he wrote.
+Later, Mastriano <a href="https://web.archive.org/20220725203920/https://senatormastriano.com/wp-content/uploads/sites/97/2022/07/StateRelatedTuitionFreeze1.pdf">sent a letter</a> to the leaders of the four state-related universities asking them to reconsider raising tuition in light of inflation and a <a href="https://www.spotlightpa.org/news/2022/07/pennsylvania-pitt-penn-state-funding-boost-tom-wolf/">special appropriation coming from the governor</a>. “Pennsylvania’s families simply cannot afford a tuition hike in addition to the rising costs in other parts of the economy,” he wrote.
 
 All four state-related universities have raised tuition in the past year.
 
 <b>Shapiro</b>, during an August visit to State College, said he supports more funding for state-related universities but also said those institutions should not raise tuition.
 
-“We are 48th in the nation for what we invest in higher ed. We need to show that we care about investing in higher ed,” Shapiro said, <a href="https://www.statecollege.com/shapiro-brings-campaign-for-governor-to-state-college/">according to reporting from StateCollege.com</a>.
+“We are 48th in the nation for what we invest in higher ed. We need to show that we care about investing in higher ed,” Shapiro said, <a href="https://web.archive.org/20220807204348/https://www.statecollege.com/shapiro-brings-campaign-for-governor-to-state-college/">according to reporting from StateCollege.com</a>.
 
-The United Steelworkers District 10, the union that represents Pitt faculty, <a href="https://usw.org/news/media-center/releases/2022/usw-proudly-supports-josh-shapiro-austin-davis-for-pennsylvania-governor-lt-governor">endorsed Shapiro for governor</a>.
+The United Steelworkers District 10, the union that represents Pitt faculty, <a href="https://web.archive.org/20220824171249/https://usw.org/news/media-center/releases/2022/usw-proudly-supports-josh-shapiro-austin-davis-for-pennsylvania-governor-lt-governor">endorsed Shapiro for governor</a>.
 
 ## Transparency for state-related universities
 
 State-related status exempts the universities from most of the open records provisions PASSHE schools face, apart from reporting some basic financial information and the university’s top 25 salaries.
 
-As a state senator, <b>Mastriano</b> <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=0488">sponsored a bill that would lessen those exemptions</a> for state-related universities. The measure would require the schools to make public 175 more of its top salaries, staffing information by position, financial information for individual academic units, and university contracts of more than $10,000, among others.
+As a state senator, <b>Mastriano</b> <a href="https://web.archive.org/20210507035134/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=0488">sponsored a bill that would lessen those exemptions</a> for state-related universities. The measure would require the schools to make public 175 more of its top salaries, staffing information by position, financial information for individual academic units, and university contracts of more than $10,000, among others.
 
 Mastriano’s bill passed the Senate 38-12 in September and was sent to the state House for consideration.
 
@@ -83,7 +83,7 @@ In a statement to Spotlight PA, <b>Shapiro</b>’s campaign said the Democratic 
 
 ## College debt forgiveness
 
-As attorney general, <a href="https://www.attorneygeneral.gov/wp-content/uploads/2021/03/2021-03-31-AGs-Policy-Letter-to-Sec.-Cardona.pdf"><b>Shapiro</b> supported President Joe Biden’s proposal</a> to make community college free and make four-year public universities or colleges free for students from families who earn less than $125,000.
+As attorney general, <a href="https://web.archive.org/20210510220657/https://www.attorneygeneral.gov/wp-content/uploads/2021/03/2021-03-31-AGs-Policy-Letter-to-Sec.-Cardona.pdf"><b>Shapiro</b> supported President Joe Biden’s proposal</a> to make community college free and make four-year public universities or colleges free for students from families who earn less than $125,000.
 
 In a March 2021 letter to the administration, Shapiro wrote he would “welcome President Biden’s commitment to consider using executive authority to cancel student debt.”
 

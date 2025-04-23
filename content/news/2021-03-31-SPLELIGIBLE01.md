@@ -118,7 +118,7 @@ Some small, rural counties, like Potter and Fulton, have only vaccinated about 1
 
 <div id="vis-map-pa-vax-providers--container"></div>
 <script src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>new pym.Parent("vis-map-pa-vax-providers--container", "https://interactives.data.spotlightpa.org/2020/vis-map-pa-vax-providers/", {});</script>
+<script>new pym.Parent("vis-map-pa-vax-providers--container", "https://web.archive.org/20210125191822/https://interactives.data.spotlightpa.org/2020/vis-map-pa-vax-providers/", {});</script>
 
 <i>Correction: A previous version of this story misspelled the first name of Sen. Lindsey Williams (D., Allegheny).</i>
 

@@ -44,7 +44,7 @@ In Pennsylvania, the governor has the power to appoint roughly 1,000 people to d
 
 The power is not intended to be absolute, as appointments must be approved by the state Senate. And there are strict timing requirements that any administration must follow when making nominations. All of that leads to placeholders like Yablonski.
 
-When a vacancy occurs, governors have <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=4&sctn=8&subsctn=0">90 days</a> to nominate someone. If that doesn’t happen, the seat remains vacant until the end of their term, according to administration officials. But governors are loath to give up that power, and instead turn to people to keep the seat warm — on paper only.
+When a vacancy occurs, governors have <a href="https://web.archive.org/20121113165923/https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=4&sctn=8&subsctn=0">90 days</a> to nominate someone. If that doesn’t happen, the seat remains vacant until the end of their term, according to administration officials. But governors are loath to give up that power, and instead turn to people to keep the seat warm — on paper only.
 
 Sometimes, particularly toward the end of a governor’s second term, it can take more than 90 days to find someone for a post. So they turn to people like Yablonski, who are just names on paper and are never intended to fill those positions, to fulfill the 90-day requirement.
 

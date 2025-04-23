@@ -24,19 +24,19 @@ HARRISBURG — Despite bipartisan interest in setting ground rules for social me
 
 In recent months, the legislature has debated bills that would mandate disclosure of artificial intelligence-generated images, ban TikTok from state-owned phones, and require monitoring of minors&#39; social media. The debate around the latter most clearly demonstrates the balancing act legislators are trying to achieve.
 
-Social media can help young people find community, but can also expose them to disinformation and hate speech, and encourage them to self-harm, according to <a href="https://www.apa.org/monitor/2023/09/protecting-teens-on-social-media\">the American Psychological Association</a>.
+Social media can help young people find community, but can also expose them to disinformation and hate speech, and encourage them to self-harm, according to <a href="https://web.archive.org/20240409222545/https://www.apa.org/monitor/2023/09/protecting-teens-on-social-media\">the American Psychological Association</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-From <a href="https://www.theverge.com/2023/9/18/23879489/california-age-appropriate-design-code-act-blocked-unconstitutional-first-amendment-injunction">California</a> to <a href="https://www.usatoday.com/story/news/nation/2023/12/28/ohio-social-media-parental-notification-act-explained/72051227007/">Ohio</a>, red and blue states alike have passed laws that attempt to combat this by requiring age verification and parental consent to use apps.
+From <a href="https://web.archive.org/20230919065640/https://www.theverge.com/2023/9/18/23879489/california-age-appropriate-design-code-act-blocked-unconstitutional-first-amendment-injunction">California</a> to <a href="https://www.usatoday.com/story/news/nation/2023/12/28/ohio-social-media-parental-notification-act-explained/72051227007/">Ohio</a>, red and blue states alike have passed laws that attempt to combat this by requiring age verification and parental consent to use apps.
 
-NetChoice, a tech industry group whose members include Meta, TikTok, and X, has challenged many of these laws in federal court, sometimes with the backing of civil liberties groups like the ACLU. Several suits have <a href="https://www.deseret.com/2024/2/13/24071928/why-are-judges-blocking-social-media-laws/">succeeded</a>.
+NetChoice, a tech industry group whose members include Meta, TikTok, and X, has challenged many of these laws in federal court, sometimes with the backing of civil liberties groups like the ACLU. Several suits have <a href="https://web.archive.org/20240213214730/https://www.deseret.com/2024/2/13/24071928/why-are-judges-blocking-social-media-laws/">succeeded</a>.
 
-In one, a federal judge last August issued an injunction blocking <a href="https://apnews.com/article/arkansas-social-media-parents-consent-kids-64db48ec94517911a4d2498f60841500">an Arkansas parental consent law</a> from going into effect until the courts settled the matter.
+In one, a federal judge last August issued an injunction blocking <a href="https://web.archive.org/20230901012145/https://apnews.com/article/arkansas-social-media-parents-consent-kids-64db48ec94517911a4d2498f60841500">an Arkansas parental consent law</a> from going into effect until the courts settled the matter.
 
-In his <a href="https://law.justia.com/cases/federal/district-courts/arkansas/arwdce/5:2023cv05105/68680/44/">opinion</a>, U.S. District Judge Timothy Brooks wrote that NetChoice was likely to succeed in its First Amendment challenge. He added there was no evidence that the law would “protect minors from materials or interactions that could harm them online.”
+In his <a href="https://web.archive.org/20231010170948/https://law.justia.com/cases/federal/district-courts/arkansas/arwdce/5:2023cv05105/68680/44/">opinion</a>, U.S. District Judge Timothy Brooks wrote that NetChoice was likely to succeed in its First Amendment challenge. He added there was no evidence that the law would “protect minors from materials or interactions that could harm them online.”
 
-Regulating speech is tricky under the First Amendment, says Megan Iorio, senior counsel at the <a href="https://epic.org/about/">Electronic Privacy Information Center</a>, a nonpartisan advocacy group in Washington, D.C. In a March interview with <a href="https://www.marketplace.org/shows/marketplace-tech/privacy-organization-big-tech-internet-regulation/">Marketplace</a>, she argued there is “no privacy-protective way” to verify a user&#39;s age.
+Regulating speech is tricky under the First Amendment, says Megan Iorio, senior counsel at the <a href="https://web.archive.org/20040822113218/https://epic.org/about/">Electronic Privacy Information Center</a>, a nonpartisan advocacy group in Washington, D.C. In a March interview with <a href="https://web.archive.org/20240327112234/https://www.marketplace.org/shows/marketplace-tech/privacy-organization-big-tech-internet-regulation/">Marketplace</a>, she argued there is “no privacy-protective way” to verify a user&#39;s age.
 
 But placing the onus on parents to mitigate the harm of opaque social media algorithms is also “not how things should work,” she added.
 
@@ -46,7 +46,7 @@ But placing the onus on parents to mitigate the harm of opaque social media algo
 
 This session, legislative leaders in Pennsylvania have attempted to thread this needle with two bipartisan bills. But both efforts have stalled amid tech lobbying and a wide swath of concerns from both major parties.
 
-In March, state House Democrats advanced <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2017">a bill</a> sponsored by state Rep. Brian Munroe (D., Bucks), who represents a suburban Philadelphia swing district.
+In March, state House Democrats advanced <a href="https://web.archive.org/20240210133025/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2017">a bill</a> sponsored by state Rep. Brian Munroe (D., Bucks), who represents a suburban Philadelphia swing district.
 
 Like other states’ proposals, the bill would require social media companies to verify users’ ages and obtain parental consent before anyone 16 or younger opens an account. It would also allow parents to restrict how much their children use an app by allowing parents to view their kids&#39; privacy settings or set time limits on an account’s use.
 
@@ -106,17 +106,17 @@ Overall, Bonder added, Shapiro “believes we have to take action to lean in on 
 
 There appears to be more agreement in the General Assembly on another tech issue: banning TikTok from state devices. Shapiro has so far been opposed.
 
-The popular app is owned by ByteDance, a Chinese company. Pennsylvania billionaire Jeffrey Yass, a <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-2022-billionaire-donations-jeff-yass/">major</a> Republican donor, has a <a href="https://www.nbcnews.com/tech/tech-news/jeff-yass-billionaire-donor-investments-tiktoks-parent-company-rcna142531">personal stake</a> in the company, as does Susquehanna International Group, which he co-founded.
+The popular app is owned by ByteDance, a Chinese company. Pennsylvania billionaire Jeffrey Yass, a <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-2022-billionaire-donations-jeff-yass/">major</a> Republican donor, has a <a href="https://web.archive.org/20240312221315/https://www.nbcnews.com/tech/tech-news/jeff-yass-billionaire-donor-investments-tiktoks-parent-company-rcna142531">personal stake</a> in the company, as does Susquehanna International Group, which he co-founded.
 
 Some national security experts worry the Chinese government could demand the company turn over user data.
 
-Under a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=379">bill</a> sponsored by Phillips-Hill, any app owned by a “foreign adversary” would be banned from devices owned by public agencies, including school districts. The bill as originally drafted applied specifically to TikTok and passed the state Senate unanimously.
+Under a <a href="https://web.archive.org/20230227213837/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=379">bill</a> sponsored by Phillips-Hill, any app owned by a “foreign adversary” would be banned from devices owned by public agencies, including school districts. The bill as originally drafted applied specifically to TikTok and passed the state Senate unanimously.
 
 In a bipartisan vote, the state House agreed to amend the bill to expand its scope in late March. The proposal has not come up for a full, final vote in the chamber.
 
-The bill would affect the Shapiro administration, which uses TikTok to tout the governor’s agenda to almost 43,000 followers. A <a href="https://www.tiktok.com/@governorshapiro/video/7338534801537879339?lang=en">February video</a> in which Shapiro promised to protect abortion rights set to Beyonce’s “Texas Hold ‘Em” had garnered 1.7 million views as of April 2.
+The bill would affect the Shapiro administration, which uses TikTok to tout the governor’s agenda to almost 43,000 followers. A <a href="https://web.archive.org/20240403162200/https://www.tiktok.com/@governorshapiro/video/7338534801537879339?lang=en">February video</a> in which Shapiro promised to protect abortion rights set to Beyonce’s “Texas Hold ‘Em” had garnered 1.7 million views as of April 2.
 
-“We try and balance the need to reach people where they are, but also take the necessary precautions that the IT department has advised us on,” Shapiro told <a href="https://www.pennlive.com/politics/2024/03/one-on-one-with-gov-shapiro-pas-leading-cheerleader-sports-fan-family-man.html">PennLive</a> in a March interview.
+“We try and balance the need to reach people where they are, but also take the necessary precautions that the IT department has advised us on,” Shapiro told <a href="https://web.archive.org/20240325122300/https://www.pennlive.com/politics/2024/03/one-on-one-with-gov-shapiro-pas-leading-cheerleader-sports-fan-family-man.html">PennLive</a> in a March interview.
 
 Those precautions, Bonder said, include having TikTok on a single device that does not connect to the state’s WiFi network or have any other apps or data on it. That phone is used only to create the governor’s official TikTok videos, Bonder added.
 
@@ -138,9 +138,8 @@ However, the governor’s administration said it opposed the bill, citing a need
 
 Shapiro isn’t the only skeptic. State Rep. Tarik Khan (D., Philadelphia) was one of two Democrats to vote no on the updated TikTok ban. He argued that the language set a precedent of guilt by association that “we should not be establishing in the commonwealth.”
 
-But Khan, who has introduced <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2079">bipartisan legislation</a> that would ban the use of AI to misrepresent “the words, actions or beliefs of the current or former candidate,” also argued that inaction is not an option.
+But Khan, who has introduced <a href="https://web.archive.org/20240403101634/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2079">bipartisan legislation</a> that would ban the use of AI to misrepresent “the words, actions or beliefs of the current or former candidate,” also argued that inaction is not an option.
 
 “We have to be nimble, and we have to be ready to set guardrails,” Khan told Spotlight PA. “And the worst thing we can do is just do nothing.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

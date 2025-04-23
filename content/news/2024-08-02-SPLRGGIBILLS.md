@@ -67,7 +67,6 @@ Last March, Shapiro <a href="https://www.spotlightpa.org/news/2024/03/pennsylvan
 
 Shapiro says the program would allow the state to determine its own cap, rather than one set collectively by RGGI states, and choose how to use the allowance revenue.
 
-Democrats have introduced Shapiro’s proposal as legislation in <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2275">both</a> <a href="https://www.legis.state.pa.us/cfdocs/billInfo/bill_votes.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1191">chambers</a>, but neither bill has so far been considered.
+Democrats have introduced Shapiro’s proposal as legislation in <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2275">both</a> <a href="https://web.archive.org/20240803041129/https://www.legis.state.pa.us/cfdocs/billInfo/bill_votes.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1191">chambers</a>, but neither bill has so far been considered.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

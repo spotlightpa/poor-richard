@@ -25,7 +25,7 @@ HARRISBURG — Under a little-noticed provision in the new state budget, Pennsyl
 
 Only one place in the commonwealth appears to fit this description: <a href="https://www.animallaw.info/local/pa-pittsburgh-chapter-635-other-animals-and-fowl-article-3-dogs-cats-and-other-animals#s63503">Pittsburgh</a>, which more than 30 years ago banned the use of some tools to control animals, including electric prods and spurs.
 
-The language is tucked into the nearly <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2310">140-page fiscal code</a>, an omnibus piece of legislation that authorizes the state to spend money. The code passed with wide bipartisan support and was signed by Democratic Gov. Josh Shapiro in mid-July.
+The language is tucked into the nearly <a href="https://web.archive.org/20240605041252/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2310">140-page fiscal code</a>, an omnibus piece of legislation that authorizes the state to spend money. The code passed with wide bipartisan support and was signed by Democratic Gov. Josh Shapiro in mid-July.
 
 {{<embed/newsletter>}}
 
@@ -45,7 +45,7 @@ Pittsburgh is not the only U.S. jurisdiction to restrict rodeos. San Francisco h
 
 There’s little independent data on animal welfare within rodeos and rodeo-related sports. Older studies, done in conjunction with rodeo organizations, have found <a href="https://www.avma.org/javma-news/2001-01-15/welfare-animals-integral-part-professional-rodeos">low injury rates</a> for animals. But advocates for animals point to poor conditions for animals in transit between events, and anecdotal incidents of animals being maimed or killed during competitions.
 
-Pittsburgh’s anti-rodeo law was enacted in 1990, shortly after an event at which a bull broke its leg “and was destroyed,” the <a href="https://www.newspapers.com/image/143430165/?match=1&amp;terms=rodeo%20city%20council">Pittsburgh Press</a> reported at the time. <em></em>
+Pittsburgh’s anti-rodeo law was enacted in 1990, shortly after an event at which a bull broke its leg “and was destroyed,” the <a href="https://web.archive.org/20240718195551/https://www.newspapers.com/image/143430165/?match=1&amp;terms=rodeo%20city%20council">Pittsburgh Press</a> reported at the time. <em></em>
 
 Giangola said PBR only organizes bull-riding events and not other rodeo sports such as steer wrestling. He also said its competitors are banned from using sharpened spurs, and that electric prods are used only in back pens to control animals before the competition.
 
@@ -70,4 +70,3 @@ Local governments have had mixed success challenging preemption in court. Withro
 “The other thing that really worries me is, if the state can do this to this ordinance, what&#39;s next?”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

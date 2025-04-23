@@ -36,7 +36,7 @@ He says this not only harmed his ability to make a living but interrupted patien
 
 A new Pennsylvania law aims to preserve continuity of care for patients by loosening health systems’ grip on labor markets and increasing job competition. It limits the use of noncompetes for certain health care practitioners, who were previously forced to ghost patients when they left an employer.
 
-Under the <a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2024&amp;sessInd=0&amp;act=74">Fair Contracting for Health Care Practitioners Act</a>, signed by Gov. Josh Shapiro last summer, a noncompete becomes invalid if a doctor is dismissed. That protection extends to certified registered nurse anesthetists, certified registered nurse practitioners, and physician assistants.
+Under the <a href="https://web.archive.org/20240731161825/https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2024&amp;sessInd=0&amp;act=74">Fair Contracting for Health Care Practitioners Act</a>, signed by Gov. Josh Shapiro last summer, a noncompete becomes invalid if a doctor is dismissed. That protection extends to certified registered nurse anesthetists, certified registered nurse practitioners, and physician assistants.
 
 It also puts a time limit on noncompetes, and requires employers to notify patients of a doctor’s departure within 90 days.
 
@@ -46,7 +46,7 @@ On the other hand, hospitals and health systems say these new regulations might 
 
 As Thakkar’s situation shows, when a clinician loses their job, a noncompete can force them out of the community where they practice. That can leave practitioners who sign these agreements less likely to rock the boat, even if they feel that decisions by higher-ups hinder patient care.
 
-This shift in power is important as large health systems buy up smaller ones and <a href="https://www.commonwealthfund.org/publications/explainer/2023/nov/private-equity-role-health-care">more private equity firms enter the market</a>.
+This shift in power is important as large health systems buy up smaller ones and <a href="https://web.archive.org/20231120100853/https://www.commonwealthfund.org/publications/explainer/2023/nov/private-equity-role-health-care">more private equity firms enter the market</a>.
 
 Many doctors increasingly find that their bosses prioritize financial goals before patients, said Lynn Lucas-Fehm, a radiologist in suburban Philadelphia and president of the Pennsylvania Medical Society, a statewide professional organization for physicians and medical students.
 
@@ -92,7 +92,7 @@ It does not place geographic restrictions on noncompetes, for instance, which le
 
 Some noncompetes bar clinicians from working within a certain city or county. Or they prohibit former employees from accepting a new job that’s within a specific radius of any of its hospitals or clinics. Depending on the employer, that can be a big area.
 
-Thakkar was unable to work for a competitor within 10 miles of AHN’s 14 hospitals for one year. He was also banned from taking any job with its main rival UPMC, which has <a href="https://www.upmc.com/about/facts">40 hospitals and 800 doctors’ offices and outpatient sites</a> across the state.
+Thakkar was unable to work for a competitor within 10 miles of AHN’s 14 hospitals for one year. He was also banned from taking any job with its main rival UPMC, which has <a href="https://web.archive.org/20130330052844/https://www.upmc.com/about/facts">40 hospitals and 800 doctors’ offices and outpatient sites</a> across the state.
 
 He now practices about 75 miles south of AHN’s flagship hospital, working as a professor at West Virginia University and director of advanced therapeutic endoscopy at WVU Medicine.
 
@@ -115,4 +115,3 @@ State Rep. Dan Frankel (D., Allegheny) was the prime sponsor of the legislation.
 Legislators are scheduled to review the role of noncompetes down the line. The law mandates that the Pennsylvania Health Care Cost Containment Council, an independent state body, study the effects of the legislation within the next three years.
 
 Frankel hopes to return to the issue when that research is complete.<strong><em></em></strong>
-

@@ -47,7 +47,7 @@ Es vital investigar a fondo a los candidatos de su papeleta electoral, también 
 
 <hr>
 
-<a href="https://www.vote.pa.gov/about-elections/pages/election-calendar.aspx"><b>Plazos </b></a><b>relevantes para las elecciones generales de 2022:</b>
+<a href="https://web.archive.org/20210914065734/https://www.vote.pa.gov/about-elections/pages/election-calendar.aspx"><b>Plazos </b></a><b>relevantes para las elecciones generales de 2022:</b>
 
 - 24 de octubre de 2022: Último día para registrarse para votar
 
@@ -55,9 +55,9 @@ Es vital investigar a fondo a los candidatos de su papeleta electoral, también 
 
 - 8 de noviembre de 2022: Día de las elecciones
 
-Lea todo lo que necesita saber sobre el <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">voto por correo</a>.
+Lea todo lo que necesita saber sobre el <a href="https://web.archive.org/20210909191528/https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx">voto por correo</a>.
 
-¿Votar en persona? Utilice esta herramienta para <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">encontrar su centro de votación</a>, también conocido como colegio electoral.
+¿Votar en persona? Utilice esta herramienta para <a href="https://web.archive.org/20240110043356/https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">encontrar su centro de votación</a>, también conocido como colegio electoral.
 
 <hr>
 
@@ -69,49 +69,49 @@ Todos los votantes, independientemente de su lugar de residencia, verán en su p
 
 <b>Gobernador:</b>
 
-- Josh Shapiro (D), <a href="https://joshshapiro.org/">Sitio we</a>b | <a href="https://www.facebook.com/JoshShapiroPA/">Facebook</a>
+- Josh Shapiro (D), <a href="https://web.archive.org/20031022030059/https://joshshapiro.org/">Sitio we</a>b | <a href="https://web.archive.org/20150823020503/https://www.facebook.com/JoshShapiroPA/">Facebook</a>
 
-- Doug Mastriano (R), <a href="https://web.archive.org/20220111182343/https://www.doug4gov.com/">Sitio web</a> | <a href="https://www.facebook.com/Fight4pa">Facebook</a>
+- Doug Mastriano (R), <a href="https://web.archive.org/20220111182343/https://www.doug4gov.com/">Sitio web</a> | <a href="https://web.archive.org/20191122072602/https://www.facebook.com/Fight4pa">Facebook</a>
 
-- Christina Digiulio (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/PKforPA">Facebook</a>
+- Christina Digiulio (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://web.archive.org/20220326035949/https://www.facebook.com/PKforPA">Facebook</a>
 
-- Joe Soloski (Keystone Party of Pennsylvania), <a href="https://www.joesoloski.com/">Sitio we</a>b | <a href="https://www.facebook.com/Soloski4Governor/">Facebook</a>
+- Joe Soloski (Keystone Party of Pennsylvania), <a href="https://web.archive.org/20180805160454/https://www.joesoloski.com/">Sitio we</a>b | <a href="https://web.archive.org/20210203043043/https://www.facebook.com/Soloski4Governor/">Facebook</a>
 
-- Matt Hackenburg (L), <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Sitio web</a> | <a href="https://www.facebook.com/MattHackenburgPA">Facebook</a>
+- Matt Hackenburg (L), <a href="https://web.archive.org/20220902001012/https://www.matthackenburg.com/">Sitio web</a> | <a href="https://web.archive.org/20220420005302/https://www.facebook.com/MattHackenburgPA">Facebook</a>
 
 <b>Vicegobernador:</b>
 
-- Austin Davis (D), <a href="https://web.archive.org/20220104125221/https://joshshapiro.org/austin/">Sitio web</a> | <a href="https://www.facebook.com/AustinDavisPA">Facebook</a>
+- Austin Davis (D), <a href="https://web.archive.org/20220104125221/https://joshshapiro.org/austin/">Sitio web</a> | <a href="https://web.archive.org/20220425161610/https://www.facebook.com/AustinDavisPA">Facebook</a>
 
-- Carrie DelRosso (R), <a href="https://carrieforpa.com/">Sitio web</a> | <a href="https://www.facebook.com/CarrieForPA">Facebook</a>
+- Carrie DelRosso (R), <a href="https://web.archive.org/20200428192349/https://carrieforpa.com/">Sitio web</a> | <a href="https://web.archive.org/20220319130653/https://www.facebook.com/CarrieForPA">Facebook</a>
 
 - Michael Bagdes-Canning (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/michael.bagdescanning">Facebook</a>
 
-- Nicole Shultz (Partido Keystone de Pensilvania), <a href="https://web.archive.org/20220922103445/https://www.nicoleshultz.com/">Sitio web</a> | <a href="https://www.facebook.com/ShultzforPALtGov">Facebook</a>
+- Nicole Shultz (Partido Keystone de Pensilvania), <a href="https://web.archive.org/20220922103445/https://www.nicoleshultz.com/">Sitio web</a> | <a href="https://web.archive.org/20220315212530/https://www.facebook.com/ShultzforPALtGov">Facebook</a>
 
-- Tim McMaster (L), <a href="https://web.archive.org/20220101115004/https://tim4pa.com">Sitio web</a> | <a href="https://www.facebook.com/McMasterLtGov2022">Facebook</a>
+- Tim McMaster (L), <a href="https://web.archive.org/20220101115004/https://tim4pa.com">Sitio web</a> | <a href="https://web.archive.org/20220313190356/https://www.facebook.com/McMasterLtGov2022">Facebook</a>
 
 <b>Senado de los Estados Unidos:</b>
 
-- John Fetterman (D), <a href="https://johnfetterman.com/">Sitio web</a> | <a href="https://www.facebook.com/JohnFettermanPA">Facebook</a>
+- John Fetterman (D), <a href="https://web.archive.org/20110208003628/https://johnfetterman.com/">Sitio web</a> | <a href="https://web.archive.org/20160222045922/https://www.facebook.com/JohnFettermanPA">Facebook</a>
 
-- Mehmet Oz (R), <a href="https://doctoroz.com/">Sitio web</a> | <a href="https://www.facebook.com/droz">Facebook</a>
+- Mehmet Oz (R), <a href="https://web.archive.org/20031231032718/https://doctoroz.com/">Sitio web</a> | <a href="https://web.archive.org/20091112001951/https://www.facebook.com/droz">Facebook</a>
 
-- Richard Weiss (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://www.facebook.com/richard.weiss.1485537">Facebook</a>
+- Richard Weiss (G), <a href="https://web.archive.org/20220901171245/https://www.greenslate2022.com/">Sitio web</a> | <a href="https://web.archive.org/20201020232203/https://www.facebook.com/richard.weiss.1485537">Facebook</a>
 
-- Daniel Wassmer (Partido Keystone de Pensilvania), <a href="http://www.wassmer4pa.com/">Sitio we</a>b | <a href="https://www.facebook.com/Wassmer4USSenate">Facebook</a>
+- Daniel Wassmer (Partido Keystone de Pensilvania), <a href="http://www.wassmer4pa.com/">Sitio we</a>b | <a href="https://web.archive.org/20220813150703/https://www.facebook.com/Wassmer4USSenate">Facebook</a>
 
-- Erik Gerhardt (L), <a href="https://web.archive.org/20220110134841/https://erik4pa.com/">Sitio web</a> | <a href="https://www.facebook.com/erik4pa">Facebook</a>
+- Erik Gerhardt (L), <a href="https://web.archive.org/20220110134841/https://erik4pa.com/">Sitio web</a> | <a href="https://web.archive.org/20220923145105/https://www.facebook.com/erik4pa">Facebook</a>
 
-Al menos dos personas están presentando campañas por escrito para el Senado de los Estados Unidos: <a href="https://www.facebook.com/ronjohnsonforsenate">Ron Johnson</a> del Partido de la Constitución y el independiente <a href="https://www.facebook.com/EverettSternFan">Everett Stern</a>.
+Al menos dos personas están presentando campañas por escrito para el Senado de los Estados Unidos: <a href="https://web.archive.org/20211005041743/https://www.facebook.com/ronjohnsonforsenate">Ron Johnson</a> del Partido de la Constitución y el independiente <a href="https://web.archive.org/20160410104942/https://www.facebook.com/EverettSternFan">Everett Stern</a>.
 
-Todos los votantes elegirán también a su representante al Congreso y a la Cámara estatal. La mitad de los legisladores del Senado estatal — los <a href="https://ballotpedia.org/Pennsylvania_State_Senate_elections,_2022">de los distritos </a>pares — se presentarán a la reelección.
+Todos los votantes elegirán también a su representante al Congreso y a la Cámara estatal. La mitad de los legisladores del Senado estatal — los <a href="https://web.archive.org/20210709121405/https://ballotpedia.org/Pennsylvania_State_Senate_elections,_2022">de los distritos </a>pares — se presentarán a la reelección.
 
-El Departamento de Estado de Pensilvania dispone de una <a href="https://www.pavoterservices.pa.gov/pages/FindYourDistrict.aspx">herramienta que le permite encontrar sus distritos del Congreso, la Cámara de Representantes y el Senado del Estado</a>. Lo único que tienen que hacer los usuarios es introducir su condado y su dirección.
+El Departamento de Estado de Pensilvania dispone de una <a href="https://web.archive.org/20200612141233/https://www.pavoterservices.pa.gov/pages/FindYourDistrict.aspx">herramienta que le permite encontrar sus distritos del Congreso, la Cámara de Representantes y el Senado del Estado</a>. Lo único que tienen que hacer los usuarios es introducir su condado y su dirección.
 
-Algunos condados, como el de <a href="https://web.archive.org/20211014170849/https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery</a>, publican papeletas de muestra. Consulte con la oficina electoral de su condado para obtener una (<a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">vea la lista de oficinas aquí</a>).
+Algunos condados, como el de <a href="https://web.archive.org/20211014170849/https://webapp02.montcopa.org/voterservices/sampleballots/default.htm">Montgomery</a>, publican papeletas de muestra. Consulte con la oficina electoral de su condado para obtener una (<a href="https://web.archive.org/20210921131828/https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">vea la lista de oficinas aquí</a>).
 
-<a href="https://www.ballotready.org/us/pennsylvania/">BallotReady</a> y la <a href="https://www.vote411.org/">iniciativa Vote411</a> de la Liga de Mujeres Votantes también ofrecen modelos de papeletas de votación basados en su dirección.
+<a href="https://web.archive.org/20240606223531/https://www.ballotready.org/us/pennsylvania/">BallotReady</a> y la <a href="https://web.archive.org/20061103021027/https://www.vote411.org/">iniciativa Vote411</a> de la Liga de Mujeres Votantes también ofrecen modelos de papeletas de votación basados en su dirección.
 
 <div id="spl-lea"></div>
 
@@ -119,43 +119,43 @@ Algunos condados, como el de <a href="https://web.archive.org/20211014170849/htt
 
 Los artículos de las noticias pueden ofrecer una visión en profundidad de un candidato, detallar cómo lo percibe una comunidad y advertir posibles señales de alerta sobre las creencias o afiliaciones del candidato. Pero es importante comprobar la confiabilidad y precisión de la fuente de noticias.
 
-Para saber cómo examinar sus fuentes, lea esta <a href="https://guides.library.cornell.edu/evaluate_news/fakenews">guía para detectar información falsa de la Universidad de Cornell</a>, y esta guía para <a href="https://docs.google.com/document/d/10eA5-mCZLSS4MQY5QGb5ewC3VAL6pLkT53V_81ZyitM/preview">analizar una fuente de noticias</a> por Melissa Zimdars, una profesora de comunicación quien investiga la desinformación.
+Para saber cómo examinar sus fuentes, lea esta <a href="https://web.archive.org/20180224091858/https://guides.library.cornell.edu/evaluate_news/fakenews">guía para detectar información falsa de la Universidad de Cornell</a>, y esta guía para <a href="https://web.archive.org/20161116124555/https://docs.google.com/document/d/10eA5-mCZLSS4MQY5QGb5ewC3VAL6pLkT53V_81ZyitM/preview">analizar una fuente de noticias</a> por Melissa Zimdars, una profesora de comunicación quien investiga la desinformación.
 
 Spotlight PA ha <a href="https://www.spotlightpa.org/news/2022/09/2022-pa-election-pennsylvania-secretary-of-state-leigh-chapman-event/">elaborado una guía de la contienda a gobernador que desglosa la posición de los candidatos en temas clave.</a> También examinaremos <a href="https://www.spotlightpa.org/series/one-vote-two-pennsylvanias/">aquí</a> una serie de temas específicos y las posiciones de los candidatos al respecto. Las siguientes historias también exploran sus posturas (disponibles en inglés):
 
-- AP: <a href="https://apnews.com/article/2022-midterm-elections-covid-health-campaigns-pennsylvania-a07131f0300273976ee3247da0b81e95">Shapiro rompe con los demócratas en las políticas de COVID en la carrera por la gobernación de Pa.</a>
+- AP: <a href="https://web.archive.org/20220829194900/https://apnews.com/article/2022-midterm-elections-covid-health-campaigns-pennsylvania-a07131f0300273976ee3247da0b81e95">Shapiro rompe con los demócratas en las políticas de COVID en la carrera por la gobernación de Pa.</a>
 
 - Capital-Star: <a href="https://www.penncapital-star.com/campaigns-elections/capital-star-qa-josh-shapiro-on-the-death-penalty-climate-and-harrisburg/">Josh Shapiro sobre la pena de muerte, el clima y Harrisburg</a>
 
-- Capital-Star: <a href="https://www.penncapital-star.com/campaigns-elections/shapiro-unveils-economic-plan/">Shapiro presenta un plan económico para hacer crecer las empresas, entrenar a los trabajadores y expandir la industria energética</a>
+- Capital-Star: <a href="https://web.archive.org/20220725215255/https://www.penncapital-star.com/campaigns-elections/shapiro-unveils-economic-plan/">Shapiro presenta un plan económico para hacer crecer las empresas, entrenar a los trabajadores y expandir la industria energética</a>
 
-- Ciudad y Estado PA: <a href="https://www.cityandstatepa.com/politics/2022/04/mastriano-releases-goals-first-100-days-if-elected-governor/365853/">Mastriano publica sus objetivos para los primeros 100 días si es elegido gobernador</a>
+- Ciudad y Estado PA: <a href="https://web.archive.org/20220419204943/https://www.cityandstatepa.com/politics/2022/04/mastriano-releases-goals-first-100-days-if-elected-governor/365853/">Mastriano publica sus objetivos para los primeros 100 días si es elegido gobernador</a>
 
-- Inquirer: <a href="https://www.inquirer.com/politics/pennsylvania/inq2/doug-mastriano-pennsylvania-2020-election-denial-timeline-20220609.html">Esto es lo que sabemos sobre los intentos de Doug Mastriano de anular la derrota de Donald Trump en 2020 en Pensilvania</a>
+- Inquirer: <a href="https://web.archive.org/20220609092138/https://www.inquirer.com/politics/pennsylvania/inq2/doug-mastriano-pennsylvania-2020-election-denial-timeline-20220609.html">Esto es lo que sabemos sobre los intentos de Doug Mastriano de anular la derrota de Donald Trump en 2020 en Pensilvania</a>
 
-- USA Today: <a href="https://www.ydr.com/story/news/politics/elections/2022/01/08/doug-mastriano-who-has-ties-jan-6-running-pa-governor/9055006002/">¿Quién es Doug Mastriano, el senador estatal que se presenta a gobernador de Pa?</a>
+- USA Today: <a href="https://web.archive.org/20220109011233/https://www.ydr.com/story/news/politics/elections/2022/01/08/doug-mastriano-who-has-ties-jan-6-running-pa-governor/9055006002/">¿Quién es Doug Mastriano, el senador estatal que se presenta a gobernador de Pa?</a>
 
-- WHYY: <a href="https://whyy.org/articles/pa-2022-election-governor-candidates-shapiro-mastriano-education-plans/">Los candidatos a gobernador de Pa. tienen planes de educación muy diferentes</a>
+- WHYY: <a href="https://web.archive.org/20220824100743/https://whyy.org/articles/pa-2022-election-governor-candidates-shapiro-mastriano-education-plans/">Los candidatos a gobernador de Pa. tienen planes de educación muy diferentes</a>
 
 Para la carrera al Senado de los Estados Unidos, aquí hay historias que profundizan en las posturas de los candidatos:
 
-- Inside Climate News: <a href="https://stateimpact.npr.org/pennsylvania/2022/07/26/john-fettermans-evolution-on-climate-change-fracking-and-the-environment/">La evolución de John Fetterman sobre el cambio climático, el fracking y el medio ambiente</a>
+- Inside Climate News: <a href="https://web.archive.org/20220726123605/https://stateimpact.npr.org/pennsylvania/2022/07/26/john-fettermans-evolution-on-climate-change-fracking-and-the-environment/">La evolución de John Fetterman sobre el cambio climático, el fracking y el medio ambiente</a>
 
-- Inside Climate News: <a href="https://insideclimatenews.org/news/20032022/dr-mehmet-oz-fracking-pennsylvania/">Como candidato al Senado, Mehmet Oz apoya el fracking. Pero como celebridad médica, planteó importantes preocupaciones</a>
+- Inside Climate News: <a href="https://web.archive.org/20220320091935/https://insideclimatenews.org/news/20032022/dr-mehmet-oz-fracking-pennsylvania/">Como candidato al Senado, Mehmet Oz apoya el fracking. Pero como celebridad médica, planteó importantes preocupaciones</a>
 
-- Inquirer: <a href="https://www.inquirer.com/politics/election/mehmet-oz-conservative-policy-pa-senate-race-20220419.html">¿Es Mehmet Oz realmente un conservador? Hemos analizado el historial del candidato al Senado de Pa.</a>
+- Inquirer: <a href="https://web.archive.org/20220419172142/https://www.inquirer.com/politics/election/mehmet-oz-conservative-policy-pa-senate-race-20220419.html">¿Es Mehmet Oz realmente un conservador? Hemos analizado el historial del candidato al Senado de Pa.</a>
 
-- Inquirer: <a href="https://www.inquirer.com/politics/election/oz-crime-fetterman-senate-pennsylvania-20220728.html">Oz acusa a Fetterman de ser blando con el crimen. Algunas de sus afirmaciones son inexactas</a>.
+- Inquirer: <a href="https://web.archive.org/20220728161328/https://www.inquirer.com/politics/election/oz-crime-fetterman-senate-pennsylvania-20220728.html">Oz acusa a Fetterman de ser blando con el crimen. Algunas de sus afirmaciones son inexactas</a>.
 
-- Inquirer: <a href="https://www.inquirer.com/politics/election/oz-pennsylvania-same-sex-marriage-act-senate-race-20220726.html">El candidato republicano al Senado, Mehmet Oz, indica que votaría sí al proyecto de ley de matrimonio entre personas del mismo sexo</a>
+- Inquirer: <a href="https://web.archive.org/20220726194706/https://www.inquirer.com/politics/election/oz-pennsylvania-same-sex-marriage-act-senate-race-20220726.html">El candidato republicano al Senado, Mehmet Oz, indica que votaría sí al proyecto de ley de matrimonio entre personas del mismo sexo</a>
 
-- Inquirer: <a href="https://www.inquirer.com/politics/election/abortion-pennsylvania-candidates-2022-midterm-governor-mastriano-fetterman-shapiro-oz-20220624.html">La posición de los candidatos al Senado en 2022 sobre el aborto</a>
+- Inquirer: <a href="https://web.archive.org/20220624144700/https://www.inquirer.com/politics/election/abortion-pennsylvania-candidates-2022-midterm-governor-mastriano-fetterman-shapiro-oz-20220624.html">La posición de los candidatos al Senado en 2022 sobre el aborto</a>
 
 - Post-Gazette: <a href="https://www.post-gazette.com/news/election-2022/2022/09/18/pa-us-senate-candidates-crime-john-fetterman-dr-oz-release-criminals-pardons-tucker-carlson/stories/202209150140">Los enfoques de los candidatos al Senado de EE.UU. de Pensilvania hacia el crimen y la justicia son a menudo borrosos y complicados</a>
 
-- WHYY: <a href="https://whyy.org/articles/pa-2022-senate-election-fetterman-mehmet-oz-jobs-labor-policy/">Cómo se comparan los candidatos al senado de Pa. en cuanto a empleos y trabajo</a>
+- WHYY: <a href="https://web.archive.org/20220905091440/https://whyy.org/articles/pa-2022-senate-election-fetterman-mehmet-oz-jobs-labor-policy/">Cómo se comparan los candidatos al senado de Pa. en cuanto a empleos y trabajo</a>
 
-- WHYY: <a href="https://whyy.org/articles/election-2022-pennsylvania-senate-oz-fetterman-criminal-justice/">¿Reforma de las penas o mano dura con el crimen? Oz y Fetterman sobre la justicia penal</a>
+- WHYY: <a href="https://web.archive.org/20220914112316/https://whyy.org/articles/election-2022-pennsylvania-senate-oz-fetterman-criminal-justice/">¿Reforma de las penas o mano dura con el crimen? Oz y Fetterman sobre la justicia penal</a>
 
 <div id="spl-aprenda"></div>
 
@@ -173,17 +173,17 @@ También puede utilizar la biblioteca de anuncios de Facebook para explorar <a h
 
 Puede consultar el historial legislativo de los legisladores estatales actuales y anteriores — los proyectos de ley de los cuales son autores, los que han apoyado al convertirse en copatrocinadores o de los cuales han votado a favor — para hacerse una idea de sus valores y prioridades.
 
-Los usuarios pueden buscar en la <a href="https://www.legis.state.pa.us/cfdocs/legis/BS/bs_view.cfm?SessYr=2021&SessInd=0&mbrBody=S">página “Proyectos de ley por patrocinador”</a> de la legislatura, seleccionando la cámara, la sesión y el nombre del legislador. Los períodos de sesiones se refieren a los períodos de dos años entre las elecciones. Por ejemplo, la actual sesión legislativa va de enero de 2021 a noviembre de 2022.
+Los usuarios pueden buscar en la <a href="https://web.archive.org/20220921115511/https://www.legis.state.pa.us/cfdocs/legis/BS/bs_view.cfm?SessYr=2021&SessInd=0&mbrBody=S">página “Proyectos de ley por patrocinador”</a> de la legislatura, seleccionando la cámara, la sesión y el nombre del legislador. Los períodos de sesiones se refieren a los períodos de dos años entre las elecciones. Por ejemplo, la actual sesión legislativa va de enero de 2021 a noviembre de 2022.
 
-Para encontrar la página de perfil de un legislador, puede encontrar su nombre en las páginas de la lista de la <a href="https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha">Cámara de Representantes</a> y del <a href="https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha">Senado</a> del estado.
+Para encontrar la página de perfil de un legislador, puede encontrar su nombre en las páginas de la lista de la <a href="https://web.archive.org/20120509103731/https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha">Cámara de Representantes</a> y del <a href="https://web.archive.org/20120511193734/https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha">Senado</a> del estado.
 
 <div id="spl-des"></div>
 
 ## Descubra quién financia su campaña
 
-De acuerdo con las leyes federales y estatales de financiación de campañas, todos los candidatos están obligados a <a href="https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Pages/default.aspx">presentar regularmente documentos</a> que muestren quién les ha dado dinero y cómo lo han gastado. Las donaciones de comités políticos, organizaciones o hasta individuos pueden ser un indicador de quién influye en el candidato y de las políticas que podría apoyar una vez sea elegido.
+De acuerdo con las leyes federales y estatales de financiación de campañas, todos los candidatos están obligados a <a href="https://web.archive.org/20150122223516/https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Pages/default.aspx">presentar regularmente documentos</a> que muestren quién les ha dado dinero y cómo lo han gastado. Las donaciones de comités políticos, organizaciones o hasta individuos pueden ser un indicador de quién influye en el candidato y de las políticas que podría apoyar una vez sea elegido.
 
-El Departamento de Estado de Pensilvania publica las declaraciones financieras de los candidatos a gobernador, vicegobernador y legislador. La agencia tiene un <a href="https://www.campaignfinanceonline.pa.gov/Pages/CampaignFinanceHome.aspx">sitio web especial para que las personas busquen y vean las declaraciones de los candidatos y los comités políticos</a>. Al utilizar la función de búsqueda, las personas pueden buscar candidatos o comités específicos y elegir un año electoral o un plazo de presentación, llamados ciclos, para ver.
+El Departamento de Estado de Pensilvania publica las declaraciones financieras de los candidatos a gobernador, vicegobernador y legislador. La agencia tiene un <a href="https://web.archive.org/20161220091710/https://www.campaignfinanceonline.pa.gov/Pages/CampaignFinanceHome.aspx">sitio web especial para que las personas busquen y vean las declaraciones de los candidatos y los comités políticos</a>. Al utilizar la función de búsqueda, las personas pueden buscar candidatos o comités específicos y elegir un año electoral o un plazo de presentación, llamados ciclos, para ver.
 
 Las páginas de los perfiles de los candidatos tienen todos los documentos que entregaron para presentarse a las elecciones. Desde ahí, puede seleccionar su comité y ver toda su información financiera.
 
@@ -191,27 +191,27 @@ Las declaraciones financieras de la campaña enumeran los donantes, divididos en
 
 Para los candidatos a gobernador, vicegobernador y legislador estatal, el último plazo de presentación antes de las elecciones es a finales de octubre.
 
-En el caso de las elecciones al Senado y al Congreso de EE.UU., las finanzas de los candidatos están disponibles en el <a href="https://www.fec.gov/">sitio web de la Comisión Federal de Elecciones</a>, que también cuenta con una base de datos de candidatos y comités en la que se pueden realizar búsquedas. En el perfil del candidato figuran los comités políticos afiliados a él y un desglose de sus finanzas. Los usuarios pueden hacer clic en el comité para ver las finanzas del comité y sus informes financieros de campaña.
+En el caso de las elecciones al Senado y al Congreso de EE.UU., las finanzas de los candidatos están disponibles en el <a href="https://web.archive.org/19971210202550/https://www.fec.gov/">sitio web de la Comisión Federal de Elecciones</a>, que también cuenta con una base de datos de candidatos y comités en la que se pueden realizar búsquedas. En el perfil del candidato figuran los comités políticos afiliados a él y un desglose de sus finanzas. Los usuarios pueden hacer clic en el comité para ver las finanzas del comité y sus informes financieros de campaña.
 
 Aquí están las páginas de algunos de los principales candidatos en las elecciones generales:
 
 <b>Gobernador:</b>
 
-- Josh Shapiro (D), <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19631">Perfil</a> | <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=11696">Comité</a> | <a href="https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20160016">Totales anuales</a>
+- Josh Shapiro (D), <a href="https://web.archive.org/20220923145043/https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19631">Perfil</a> | <a href="https://web.archive.org/20220923144955/https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=11696">Comité</a> | <a href="https://web.archive.org/20210715194223/https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20160016">Totales anuales</a>
 
-- Doug Mastriano (R), <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19564">Perfil</a> | <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=16199">Comité</a> | <a href="https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20190138">Totales anuales</a>
+- Doug Mastriano (R), <a href="https://web.archive.org/20220923145055/https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19564">Perfil</a> | <a href="https://web.archive.org/20211228184539/https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=16199">Comité</a> | <a href="https://web.archive.org/20220212192314/https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20190138">Totales anuales</a>
 
 <b>Vicegobernador:</b>
 
-- Austin Davis (D), <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19632">Perfil</a> | <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=14327">Comité</a> | <a href="https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20170281">Totales anuales</a>
+- Austin Davis (D), <a href="https://web.archive.org/20220921191716/https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19632">Perfil</a> | <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=14327">Comité</a> | <a href="https://web.archive.org/20220731171723/https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20170281">Totales anuales</a>
 
-- Carrie DelRosso (R), <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19594">Perfil</a> | <a href="https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=20382">Comité</a> | <a href="https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20220072">Totales anuales</a>
+- Carrie DelRosso (R), <a href="https://web.archive.org/20220923144930/https://www.pavoterservices.pa.gov/ElectionInfo/CandidateInfo.aspx?ID=19594">Perfil</a> | <a href="https://web.archive.org/20220923145055/https://www.pavoterservices.pa.gov/ElectionInfo/CommitteeInfo.aspx?ID=20382">Comité</a> | <a href="https://web.archive.org/20220923145135/https://www.campaignfinanceonline.pa.gov/Pages/CFAnnualTotals.aspx?Filer=20220072">Totales anuales</a>
 
 <b>Senado de los Estados Unidos:</b>
 
-- John Fetterman (D), <a href="https://www.fec.gov/data/candidate/S6PA00274/?cycle=2022&election_full=true">Pe</a>rfil | Comité
+- John Fetterman (D), <a href="https://web.archive.org/20220814040630/https://www.fec.gov/data/candidate/S6PA00274/?cycle=2022&election_full=true">Pe</a>rfil | Comité
 
-- Mehmet Oz (R), <a href="https://www.fec.gov/data/candidate/S2PA00638/?cycle=2022&election_full=true&tab=summary">Pe</a>rfil | Comité
+- Mehmet Oz (R), <a href="https://web.archive.org/20220922161908/https://www.fec.gov/data/candidate/S2PA00638/?cycle=2022&election_full=true&tab=summary">Pe</a>rfil | Comité
 
 <b>MÁS COBERTURA DE LAS ELECCIONES DE 2022 DE SPOTLIGHT PA:</b>
 

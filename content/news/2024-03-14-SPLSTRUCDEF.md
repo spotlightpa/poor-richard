@@ -50,7 +50,7 @@ As lawmakers begin negotiating <a href="https://www.spotlightpa.org/news/2024/02
 
 And while the state has extra money available now, those dollars could quickly disappear if Pennsylvania continues spending at its current rate.
 
-Pennsylvania’s primary revenue sources are broad-based taxes on sales and income for individuals and businesses, but so far Shapiro hasn’t proposed increasing these. In fact, he’s <a href="https://www.inquirer.com/politics/election/josh-shapiro-doug-mastriano-pennsylvania-governor-corporate-tax-reduction-20220802.html">argued</a> that Pennsylvania should more quickly implement <a href="https://penncapital-star.com/briefs/new-pa-budget-includes-long-sought-corporate-tax-cut/">cuts</a> to its corporate net income tax.
+Pennsylvania’s primary revenue sources are broad-based taxes on sales and income for individuals and businesses, but so far Shapiro hasn’t proposed increasing these. In fact, he’s <a href="https://web.archive.org/20220802164453/https://www.inquirer.com/politics/election/josh-shapiro-doug-mastriano-pennsylvania-governor-corporate-tax-reduction-20220802.html">argued</a> that Pennsylvania should more quickly implement <a href="https://penncapital-star.com/briefs/new-pa-budget-includes-long-sought-corporate-tax-cut/">cuts</a> to its corporate net income tax.
 
 Shapiro has avoided talking about the structural deficit while pitching his spending ideas, instead emphasizing the size of the state’s surplus and the need to invest it in communities.
 
@@ -64,19 +64,19 @@ State Senate Appropriations Chair Scott Martin (R., Lancaster) noted that Pennsy
 
 ## How did we get here?
 
-The commonwealth’s surplus is split between its rainy day fund, which is essentially a long-term savings account that requires <a href="https://www.patreasury.gov/transparency/fiscal-health-rdf.php">a two-thirds vote of the legislature</a> to tap, and its general fund. The latter is effectively its main checking account and accrues most state tax revenue.
+The commonwealth’s surplus is split between its rainy day fund, which is essentially a long-term savings account that requires <a href="https://web.archive.org/20200915215509/https://www.patreasury.gov/transparency/fiscal-health-rdf.php">a two-thirds vote of the legislature</a> to tap, and its general fund. The latter is effectively its main checking account and accrues most state tax revenue.
 
 Experts have said that states should keep about 12% to 15% of their total annual costs in a rainy day fund; this year, the target would be about $7 billion in Pennsylvania. But just five years ago, it contained only $22 million — enough to run the state government for just a few hours.
 
 The fund was depleted <a href="https://whyy.org/articles/breaking-down-the-budget-the-political-path-to-pas-structural-deficit/">during the Great Recession</a> under Democratic Gov. Ed Rendell. After federal stimulus dollars ran out, lawmakers struggled during Republican Gov. Tom Corbett’s four years in office and Democrat Tom Wolf’s first term to balance the budget.
 
-Corbett, who had pledged not to raise taxes, largely tried to deal with the financial situation <a href="https://www.cbsnews.com/philadelphia/news/corbett-offers-pennsylvania-budget-with-cuts-to-universities-welfare/">by supporting</a> <a href="https://whyy.org/articles/public-health-officials-fear-fallout-from-corbett-cuts-to-pa-services/">spending cuts</a>.
+Corbett, who had pledged not to raise taxes, largely tried to deal with the financial situation <a href="https://web.archive.org/20240322060218/https://www.cbsnews.com/philadelphia/news/corbett-offers-pennsylvania-budget-with-cuts-to-universities-welfare/">by supporting</a> <a href="https://web.archive.org/20201124213327/https://whyy.org/articles/public-health-officials-fear-fallout-from-corbett-cuts-to-pa-services/">spending cuts</a>.
 
-The enacted cuts included <a href="https://whyy.org/articles/state-mental-health-funding-hasnt-increased-in-years-pa-counties-say-its-affecting-care/">a 10% reduction in funding for county human services</a>, and, most significantly, a $1 billion reduction in funding for education. Corbett and his allies argued the latter was necessary because the Rendell administration had used <a href="https://www.ydr.com/story/archives/2014/08/28/fact-check-did-tom-corbett-cut-1-billion/75642548/">stimulus money to prop up</a> the budget. Regardless, the strategy made Corbett unpopular and he lost his reelection bid to Wolf.
+The enacted cuts included <a href="https://web.archive.org/20181225162242/https://whyy.org/articles/state-mental-health-funding-hasnt-increased-in-years-pa-counties-say-its-affecting-care/">a 10% reduction in funding for county human services</a>, and, most significantly, a $1 billion reduction in funding for education. Corbett and his allies argued the latter was necessary because the Rendell administration had used <a href="https://web.archive.org/20180111131759/https://www.ydr.com/story/archives/2014/08/28/fact-check-did-tom-corbett-cut-1-billion/75642548/">stimulus money to prop up</a> the budget. Regardless, the strategy made Corbett unpopular and he lost his reelection bid to Wolf.
 
 New taxes or increases to existing ones have played a small role in solving recent budget woes. Wolf proposed increasing the state’s flat income tax rate and taxing natural gas drillers by the volume of gas extracted, but the then-GOP-controlled legislature didn’t bite.
 
-Instead, Wolf and the legislature balanced the books and raised one-time revenue through a mix of temporary solutions, like issuing new casino licenses and borrowing against the state’s share of <a href="https://whyy.org/articles/pa-fill-budget-holes-borrowing-tobacco-fund/">tobacco settlement revenue</a>.
+Instead, Wolf and the legislature balanced the books and raised one-time revenue through a mix of temporary solutions, like issuing new casino licenses and borrowing against the state’s share of <a href="https://web.archive.org/20171115105922/https://whyy.org/articles/pa-fill-budget-holes-borrowing-tobacco-fund/">tobacco settlement revenue</a>.
 
 The state has also delayed payments or purposefully undercounted projected Medicaid expenses to appear to balance annual budgets.
 
@@ -84,7 +84,7 @@ In 2017, for instance, Republicans agreed to a budget that was underfunded by hu
 
 Wolf, who opposed that approach, instead <a href="https://whyy.org/articles/harsh-words-harrisburg-wolfs-farm-show-deal/">borrowed money from a venture capital company</a> against the Pennsylvania Farm Show Complex in Harrisburg, leaving the state on the hook to pay back $191 million in interest for decades to come.
 
-The commonwealth’s budgeting strategies between 2015 and 2019, which often amounted to moving money around or taking on debt, were sharply criticized <a href="https://www.volckeralliance.org/sites/default/files/attachments/Truth-and-Integrity-in-State-Budgeting-Preparing-for-the-Storm.pdf">in a 2021 report</a> from the Volcker Alliance. The report highlighted the commonwealth’s reliance on what the group termed “budget maneuvers.”
+The commonwealth’s budgeting strategies between 2015 and 2019, which often amounted to moving money around or taking on debt, were sharply criticized <a href="https://web.archive.org/20210401191027/https://www.volckeralliance.org/sites/default/files/attachments/Truth-and-Integrity-in-State-Budgeting-Preparing-for-the-Storm.pdf">in a 2021 report</a> from the Volcker Alliance. The report highlighted the commonwealth’s reliance on what the group termed “budget maneuvers.”
 
 “To avoid creating long-term structural deficits that burden future budgets, states should pay for expenditures with recurring revenues earned the same year,” the report said. “Budget maneuvers are states’ major tool for moving budgeted costs to the future or bringing expected revenues into the current year.”
 
@@ -122,7 +122,7 @@ He called for the surplus to be spent on education and workforce development to 
 
 A few state House Democrats are floating increasing revenue to address the root cause of the imbalances. In particular, they propose changing the Pennsylvania Constitution to <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-low-income-tax-forgiveness-constitution/">allow for the state to tax the rich at a higher rate than the poor</a>.
 
-Such a proposal was among the first bills that state Rep. Elizabeth Fiedler (D., Philadelphia) put her name on after she took office in 2018, and she’s still championing it <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2016">to this day</a>.<a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2016"></a>
+Such a proposal was among the first bills that state Rep. Elizabeth Fiedler (D., Philadelphia) put her name on after she took office in 2018, and she’s still championing it <a href="https://web.archive.org/20240314131342/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2016">to this day</a>.<a href="https://web.archive.org/20240314131342/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2016"></a>
 
 She’s recently noticed more interest in the issue — a state House subcommittee in the now-Democratic-controlled chamber held a hearing on the topic last month.
 
@@ -131,4 +131,3 @@ The state’s tax system, Fiedler told Spotlight PA, should “bring us a contin
 “I think those are really sound investments for all of us to make, and certainly for the richest Pennsylvanians,” she added.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

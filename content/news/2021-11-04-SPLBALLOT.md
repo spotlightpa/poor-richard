@@ -38,7 +38,7 @@ But in all other cases, voters have to mail or bring their ballot to an election
 
 Kyle King — a spokesperson for the district attorney in York County, where Wolf lives — said as a general policy, the office does not comment on the existence of an investigation. He also would not say whether the office had received a complaint about how Wolf voted.
 
-The violation came to light after state Rep. Seth Grove (R., York), who leads the state House committee that considers election issues, pointed the interview out <a href="https://twitter.com/RepGrove/status/1456308179973951489?s=20">on Twitter</a>.
+The violation came to light after state Rep. Seth Grove (R., York), who leads the state House committee that considers election issues, pointed the interview out <a href="https://web.archive.org/20221004130451/https://twitter.com/RepGrove/status/1456308179973951489?s=20">on Twitter</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20DOUBLE%20MY%20GIFT&teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20journalism%20for%20Pennsylvania%20and%20for%20a%20limited%20time%2C%20all%20gifts%20will%20be%20DOUBLED."></div>
 

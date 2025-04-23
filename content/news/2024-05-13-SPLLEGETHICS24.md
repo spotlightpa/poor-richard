@@ -26,23 +26,23 @@ That includes trips to political conferences and other events bankrolled by camp
 
 Pennsylvania’s gift law is one of the loosest in the U.S. and places very few limits on what public officials can accept. They can accept gifts of any size, as long as they report those that meet a certain threshold on ethics filings.
 
-The law does bar lawmakers from taking gifts if doing so will influence their votes and positions. Under <a href="https://www.house.state.pa.us/rules.cfm">both chambers’</a> ethics rules, lawmakers are also barred from accepting cash gifts from a lobbyist or anyone else seeking a specific legislative outcome.
+The law does bar lawmakers from taking gifts if doing so will influence their votes and positions. Under <a href="https://web.archive.org/20190508023255/https://www.house.state.pa.us/rules.cfm">both chambers’</a> ethics rules, lawmakers are also barred from accepting cash gifts from a lobbyist or anyone else seeking a specific legislative outcome.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-But good-government advocates have long bemoaned that there are few ways to enforce these no-pay-to-play rules, and they generally <a href="https://lancasteronline.com/news/local/pennsylvania-has-one-of-nations-most-lax-ethics-laws-for-politicians/article_45fb0c6c-e2bf-11e3-a057-0017a43b2370.html">amount to self-policing</a>. Other states also have much stricter limits on what lawmakers can accept.
+But good-government advocates have long bemoaned that there are few ways to enforce these no-pay-to-play rules, and they generally <a href="https://web.archive.org/20230603223348/https://lancasteronline.com/news/local/pennsylvania-has-one-of-nations-most-lax-ethics-laws-for-politicians/article_45fb0c6c-e2bf-11e3-a057-0017a43b2370.html">amount to self-policing</a>. Other states also have much stricter limits on what lawmakers can accept.
 
 “When you have a pay-to-play setup, when you can’t pay, you don’t get to play,” Michael Pollack, an activist who has pressured the state legislature to ban gifts, told Spotlight PA. “And that’s why so many Pennsylvanians feel used and unheard and hurt by policy violence.”
 
 The primary oversight mechanism in the gift law is public reporting. Public officials must report any gift over $250 in value, or hospitality — including travel, meals, and lodging — over $650 on their annual ethics filings.
 
-But there are ways around this requirement. A <a href="https://www.legis.state.pa.us/WU01/LI/TR/Reports/2019_0001R.pdf">2019 legislative report</a> found that lobbyists regularly spread costs out among clients, which in turn can keep gifts to lawmakers below the reporting threshold.
+But there are ways around this requirement. A <a href="https://web.archive.org/20200506045334/https://www.legis.state.pa.us/WU01/LI/TR/Reports/2019_0001R.pdf">2019 legislative report</a> found that lobbyists regularly spread costs out among clients, which in turn can keep gifts to lawmakers below the reporting threshold.
 
 This loophole is apparently often used. In 2018, legislators and state employees reported accepting $39,200 in gifts and hospitality from lobbyists, the report noted. During the same period, lobbyists and principals reported spending $1.5 million on that purpose.
 
 ## Some work, some play in Arizona
 
-In 2023, six lawmakers traveled to Arizona to attend a conference held by Kooth, which received a $3 million <a href="https://patreasury.gov/transparency/e-library//Home/ContractView?id=677877">contract</a> from the Department of Human Services to provide online mental health services to school districts.
+In 2023, six lawmakers traveled to Arizona to attend a conference held by Kooth, which received a $3 million <a href="https://web.archive.org/20240513125530/https://patreasury.gov/transparency/e-library//Home/ContractView?id=677877">contract</a> from the Department of Human Services to provide online mental health services to school districts.
 
 Four of those lawmakers — state Rep. Ryan Bizzarro (D., Erie) and Sens. Jimmy Dillon (D., Philadelphia), Marty Flynn (D., Lackawanna), and Chris Gebhard (R., Lebanon) — reported travel expenses paid for by either Kooth or Kooth’s lobbyists, the DT Firm, totaling $8,500.
 
@@ -90,15 +90,15 @@ Spotlight PA examined 31 of the 253 state lawmakers&#39; ethics reports, focusin
 
 Pennsylvania House Speaker Joanna McClinton (D., Philadelphia) reported $4,600 in travel from four groups.
 
-The Democratic Legislative Campaign Committee — a national group that funnels <a href="https://www.opensecrets.org/527s/527cmtedetail_contribs.php?cycle=2022&amp;ein=521870839">millions of dollars</a> from unions, corporate trade associations, and other groups into state-level races — spent $2,300 to send McClinton to its “Speaker’s Conference.”
+The Democratic Legislative Campaign Committee — a national group that funnels <a href="https://web.archive.org/20240513125556/https://www.opensecrets.org/527s/527cmtedetail_contribs.php?cycle=2022&amp;ein=521870839">millions of dollars</a> from unions, corporate trade associations, and other groups into state-level races — spent $2,300 to send McClinton to its “Speaker’s Conference.”
 
-McClinton also accepted trips to the annual meetings of <a href="https://newdealleaders.org/about/">The NewDEAL</a>, “a selective national network of pro-growth progressive state and local elected officials”; the Pennsylvania Medical Society; and the Pennsylvania Association for Justice, a state interest group representing trial lawyers.
+McClinton also accepted trips to the annual meetings of <a href="https://web.archive.org/20150110062038/https://newdealleaders.org/about/">The NewDEAL</a>, “a selective national network of pro-growth progressive state and local elected officials”; the Pennsylvania Medical Society; and the Pennsylvania Association for Justice, a state interest group representing trial lawyers.
 
-Pennsylvania House Majority Leader Matt Bradford (D., Montgomery) reported accepting a trip worth almost $3,000 from the <a href="https://www.sgac.org/our-mission.html">State Government Affairs Council</a>, an association of multi-state lobbyists, to their “Leaders Policy Conference.”
+Pennsylvania House Majority Leader Matt Bradford (D., Montgomery) reported accepting a trip worth almost $3,000 from the <a href="https://web.archive.org/20180414095429/https://www.sgac.org/our-mission.html">State Government Affairs Council</a>, an association of multi-state lobbyists, to their “Leaders Policy Conference.”
 
-The event was held last November at the Ritz-Carlton in Amelia Island near Jacksonville, Florida. The 5-star hotel “stands as an exquisite testament to refined luxury,” according to its <a href="https://www.ritzcarlton.com/en/hotels/jaxam-the-ritz-carlton-amelia-island/overview/">website.</a> The conference <a href="https://www.sgac.org/lpc-agenda.html">agenda</a> included panels on marijuana legalization, retail crime, and “civility in public discourse” as well as a “sunset cruise” and a Sunday afternoon football watch party.
+The event was held last November at the Ritz-Carlton in Amelia Island near Jacksonville, Florida. The 5-star hotel “stands as an exquisite testament to refined luxury,” according to its <a href="https://web.archive.org/20230530140450/https://www.ritzcarlton.com/en/hotels/jaxam-the-ritz-carlton-amelia-island/overview/">website.</a> The conference <a href="https://web.archive.org/20211016061342/https://www.sgac.org/lpc-agenda.html">agenda</a> included panels on marijuana legalization, retail crime, and “civility in public discourse” as well as a “sunset cruise” and a Sunday afternoon football watch party.
 
-State House Appropriations Committee Chair Jordan Harris (D., Philadelphia) reported accepting two trips worth $5,700. One was from the North Carolina-based <a href="https://hunt-institute.org/about/">Hunt Institute</a> for a summit on early childhood education; the other was from the <a href="https://www.justiceactionnetwork.org/">Justice Action Network</a>, a national criminal justice reform group that asked him to be a guest speaker at a conference, according to his statement.
+State House Appropriations Committee Chair Jordan Harris (D., Philadelphia) reported accepting two trips worth $5,700. One was from the North Carolina-based <a href="https://web.archive.org/20200920170042/https://hunt-institute.org/about/">Hunt Institute</a> for a summit on early childhood education; the other was from the <a href="https://web.archive.org/20140106182010/https://www.justiceactionnetwork.org/">Justice Action Network</a>, a national criminal justice reform group that asked him to be a guest speaker at a conference, according to his statement.
 
 Groups supporting alternatives to public education were also active in flying lawmakers around the country.
 
@@ -106,9 +106,9 @@ The American Federation for Children provided $3,270 in meals and lodging to sta
 
 The meeting was held to “exchange school choice strategies and solutions that can benefit families,” Cutler said in his disclosure.
 
-State Sen. Ryan Aument (R., Lancaster), his caucus’ whip, accepted travel paid for by a think tank that supports school choice. He reported $2,550 from the Florida-based <a href="https://excelined.org/">Foundation for Excellence in Education</a> to travel to a November summit in Atlanta.
+State Sen. Ryan Aument (R., Lancaster), his caucus’ whip, accepted travel paid for by a think tank that supports school choice. He reported $2,550 from the Florida-based <a href="https://web.archive.org/20071115135752/https://excelined.org/">Foundation for Excellence in Education</a> to travel to a November summit in Atlanta.
 
-In an email, Aument’s spokesperson said the conference was not solely focused on school choice. A <a href="https://excelined.org/event/2023-national-summit-on-education/">foundation web page</a> shows presentations on artificial intelligence, the impact of smartphone usage on children, and “the complex and troubling challenges facing today’s male students.”
+In an email, Aument’s spokesperson said the conference was not solely focused on school choice. A <a href="https://web.archive.org/20240513121119/https://excelined.org/event/2023-national-summit-on-education/">foundation web page</a> shows presentations on artificial intelligence, the impact of smartphone usage on children, and “the complex and troubling challenges facing today’s male students.”
 
 State Rep. Dawn Keefer (R., York), chair of the arch-conservative Freedom Caucus, accepted a trip from another national group backing alternatives to public education, the Indianapolis-based EdChoice. It was the most expensive of four trips she reported.
 
@@ -122,7 +122,7 @@ State Sen. Vincent Hughes (D., Philadelphia) also attended the 2023 Super Bowl, 
 
 Hughes reported the trip, paid for by the NFL, on his annual statement. He reported $1,000 in travel costs with the ticket as “value unknown.” He also reported accepting three tickets from the Philadelphia 76ers worth $810.
 
-State Senate Majority Leader Joe Pittman (R., Indiana) reported accepting $3,700 in “golf clubs/accessories” from two individuals: Gebhard, a fellow state senator, and Indiana County insurance executive <a href="https://www.linkedin.com/in/joe-reschini-4b972113/">Joe Reschini.</a>
+State Senate Majority Leader Joe Pittman (R., Indiana) reported accepting $3,700 in “golf clubs/accessories” from two individuals: Gebhard, a fellow state senator, and Indiana County insurance executive <a href="https://web.archive.org/20240513125527/https://www.linkedin.com/in/joe-reschini-4b972113/">Joe Reschini.</a>
 
 &#34;Despite the gifts coming from two friends, I felt it was something that should be disclosed to best adhere to ethical conduct laws,” Pittman said in a statement.
 
@@ -131,4 +131,3 @@ Gebhard, who said he played college golf, said the clubs were a Christmas presen
 The clubs, he said, are “just me being a complete golf geek.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

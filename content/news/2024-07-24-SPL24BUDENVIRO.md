@@ -25,7 +25,7 @@ HARRISBURG — A flurry of recent bipartisan agreements by state lawmakers on en
 
 The grab bag of initiatives that passed <a href="https://www.spotlightpa.org/news/2024/07/pennsylvania-budget-public-schools-economic-development-scholarships-josh-shapiro-legislature">alongside the $47.6 billion budget</a> required the backing of labor, environmental, and pro-fossil fuel interests and the lawmakers that align with them. Members say the deals were only possible thanks to an influx of federal cash greasing the wheels.
 
-Capitol sources told Spotlight PA the final package was the result of weeks of horse-trading before and after the June 30 budget deadline. Republicans got some of their wishes including <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=656">a new fee</a> on electric vehicles and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2310">a bill</a> allowing third parties approved by the state to review environmental permits to speed the process. Democrats notched a victory with the creation of <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1032">a state grant program</a> to help schools pay to install solar panels.
+Capitol sources told Spotlight PA the final package was the result of weeks of horse-trading before and after the June 30 budget deadline. Republicans got some of their wishes including <a href="https://web.archive.org/20230621210859/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=656">a new fee</a> on electric vehicles and <a href="https://web.archive.org/20240605041252/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2310">a bill</a> allowing third parties approved by the state to review environmental permits to speed the process. Democrats notched a victory with the creation of <a href="https://web.archive.org/20230504115829/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1032">a state grant program</a> to help schools pay to install solar panels.
 
 {{<embed/newsletter>}}
 
@@ -49,7 +49,7 @@ The Biden administration is spending billions of dollars to help states build sp
 
 Hydrogen, a clean-burning fuel, <a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-hydrogen-hubs-climate-change-legislature-tax-credit-explainer/">is only a truly green energy source</a> if it is produced in a way that doesn’t release emissions. At least <a href="https://www.spotlightpa.org/news/2024/05/pennsylvania-biden-administration-hydrogen-hubs-community-benefits-public-input/">one of the Pennsylvania hubs</a> plans to use natural gas to make hydrogen and implement carbon capture.
 
-The process involves <a href="https://www.rff.org/publications/explainers/carbon-capture-and-storage-101/">scrubbing</a> carbon dioxide from emissions during fossil fuel production and then injecting it into wells underground for storage.
+The process involves <a href="https://web.archive.org/20200510171124/https://www.rff.org/publications/explainers/carbon-capture-and-storage-101/">scrubbing</a> carbon dioxide from emissions during fossil fuel production and then injecting it into wells underground for storage.
 
 The new framework lays out the permits needed to dig an injection well, and establishes liability standards that say, among other things, that carbon storage operators can’t be held responsible for injuries from injection wells unless the claimant can prove the operator acted “without reasonable care.”
 
@@ -67,7 +67,7 @@ Muth added that her caucus leadership told her that the bill was dead in the wee
 
 The embrace of carbon capture concerns some environmental advocates, for more reasons than just the new regulatory framework.
 
-Karen Feridun, co-founder of the Better Path Coalition, a grassroots environmental advocacy group, is worried that embracing carbon capture will just prolong reliance on natural gas. She noted that the technology is <a href="https://www.cbo.gov/publication/59832">still not broadly used</a> and carries risks, like carbon dioxide leaking from transportation pipelines or storage wells and resulting in explosions, or seeping into groundwater.
+Karen Feridun, co-founder of the Better Path Coalition, a grassroots environmental advocacy group, is worried that embracing carbon capture will just prolong reliance on natural gas. She noted that the technology is <a href="https://web.archive.org/20231213214442/https://www.cbo.gov/publication/59832">still not broadly used</a> and carries risks, like carbon dioxide leaking from transportation pipelines or storage wells and resulting in explosions, or seeping into groundwater.
 
 Many lawmakers, she said, seem to be treating hydrogen production and carbon capture as unavoidable — a stance she said is reinforced by the federal money flowing to the projects.
 
@@ -85,9 +85,9 @@ Katie Blume, the legislative director for Conservation Voters of PA, is skeptica
 
 Much of the recent action is related to the billions of federal dollars Pennsylvania stands to receive from the Inflation Reduction Act and Bipartisan Infrastructure Law for energy projects.
 
-The new $25 million Solar for Schools grant program is built around the assumption that projects will qualify for <a href="https://www.epa.gov/green-power-markets/summary-inflation-reduction-act-provisions-related-renewable-energy">some of this federal money</a>, and that between the state and federal support, the equipment, permitting fees, and other related costs the projects entail will be affordable or free for schools.
+The new $25 million Solar for Schools grant program is built around the assumption that projects will qualify for <a href="https://web.archive.org/20230524203821/https://www.epa.gov/green-power-markets/summary-inflation-reduction-act-provisions-related-renewable-energy">some of this federal money</a>, and that between the state and federal support, the equipment, permitting fees, and other related costs the projects entail will be affordable or free for schools.
 
-A spokesperson for state Rep. Elizabeth Fiedler (D., Philadelphia), the bill’s prime sponsor, said that available federal funding was a major reason the program won rare bipartisan support. It ultimately passed the GOP-controlled state Senate by an <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=611">overwhelming majority</a>.
+A spokesperson for state Rep. Elizabeth Fiedler (D., Philadelphia), the bill’s prime sponsor, said that available federal funding was a major reason the program won rare bipartisan support. It ultimately passed the GOP-controlled state Senate by an <a href="https://web.archive.org/20240710185908/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=611">overwhelming majority</a>.
 
 Rob Bair, the president of the Pennsylvania Building and Construction Trades Council, said the federal tax credits and grants gave lawmakers and advocates an opportunity to come together on energy issues where there had been gridlock for years.
 
@@ -99,11 +99,10 @@ Bair worked with Fiedler on the Solar for Schools legislation and said he was su
 
 The new fee on electric vehicles is also related to federal tax credits, though in a different way.
 
-The federal government is trying to incentivize people to buy more electric vehicles using <a href="https://www.irs.gov/credits-deductions/credits-for-new-clean-vehicles-purchased-in-2023-or-after">tax credits</a>, which allow drivers to recoup up to $7,500 if they purchase plug-in or fuel-cell cars. However, Pennsylvania lawmakers have <a href="https://penncapital-star.com/briefs/senate-committee-advances-bill-eliminating-alternative-fuels-tax-for-evs-creating-new-fee/">long argued</a> electric vehicles don’t pay their fair share for road maintenance, as they avoid the gas tax that pays for some of it. Republicans have generally led that crusade, but the issue is bipartisan.
+The federal government is trying to incentivize people to buy more electric vehicles using <a href="https://web.archive.org/20221229164649/https://www.irs.gov/credits-deductions/credits-for-new-clean-vehicles-purchased-in-2023-or-after">tax credits</a>, which allow drivers to recoup up to $7,500 if they purchase plug-in or fuel-cell cars. However, Pennsylvania lawmakers have <a href="https://penncapital-star.com/briefs/senate-committee-advances-bill-eliminating-alternative-fuels-tax-for-evs-creating-new-fee/">long argued</a> electric vehicles don’t pay their fair share for road maintenance, as they avoid the gas tax that pays for some of it. Republicans have generally led that crusade, but the issue is bipartisan.
 
 The bill lawmakers passed eliminated the existing alternative fuel tax on electric vehicles, which had electric vehicle users self-report monthly mileage and pay a corresponding tax for their electricity usage. Instead, the bill establishes an annual flat fee for all electric vehicle users that the Department of Transportation sets.
 
-According to <a href="https://www.legis.state.pa.us/WU01/LI/BI/FN/2023/0/SB0656P1811.pdf">a fiscal note on the bill</a>, the new fee is expected to bring in nearly $30 million annually by 2030. The old fuel tax brought in $18 million last fiscal year. The revenue will go toward road maintenance.
+According to <a href="https://web.archive.org/20240710192536/https://www.legis.state.pa.us/WU01/LI/BI/FN/2023/0/SB0656P1811.pdf">a fiscal note on the bill</a>, the new fee is expected to bring in nearly $30 million annually by 2030. The old fuel tax brought in $18 million last fiscal year. The revenue will go toward road maintenance.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

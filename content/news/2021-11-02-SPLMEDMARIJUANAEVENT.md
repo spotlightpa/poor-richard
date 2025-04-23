@@ -41,7 +41,7 @@ Our panelists included:
 
 - <b>Dr. Kavita Fischer</b>, vice president of the Pennsylvania Psychiatric Society
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/645266486?h=76d8311834&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/645266486">Spotlight Live: Cannabis Conundrum</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://web.archive.org/20211129194528/https://player.vimeo.com/video/645266486?h=76d8311834&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://web.archive.org/20211114080711/https://vimeo.com/645266486">Spotlight Live: Cannabis Conundrum</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://web.archive.org/20210101000753/https://vimeo.com">Vimeo</a>.</p>
 
 <i><b>» Spotlight PA’s live events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. For a limited time, all gifts will be DOUBLED.</i>

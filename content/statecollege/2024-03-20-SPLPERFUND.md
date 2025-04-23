@@ -44,13 +44,13 @@ Shapiro’s plan calls for a 5% increase in funding for each of the state-relate
 
 - and $158.2 million total for Temple.
 
-The state has not increased support for Penn State, Pitt, or Temple since fiscal year 2020. Pennsylvania ranks 49th nationally in public funding for higher education per student, according to the <a href="https://shef.sheeo.org/report-2/#education-appropriations">State Higher Education Executive Officers Association</a>. Additionally, state funding for the state-related universities has <a href="https://www.spotlightpa.org/statecollege/2024/01/penn-state-temple-pitt-lincoln-pennsylvania-tuition-funding-inflation/">not kept pace with inflation</a> over the past 15 years.
+The state has not increased support for Penn State, Pitt, or Temple since fiscal year 2020. Pennsylvania ranks 49th nationally in public funding for higher education per student, according to the <a href="https://web.archive.org/20230612063159/https://shef.sheeo.org/report-2/#education-appropriations">State Higher Education Executive Officers Association</a>. Additionally, state funding for the state-related universities has <a href="https://www.spotlightpa.org/statecollege/2024/01/penn-state-temple-pitt-lincoln-pennsylvania-tuition-funding-inflation/">not kept pace with inflation</a> over the past 15 years.
 
-State law <a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2022&amp;sessInd=0&amp;act=54">requires that the universities spend the appropriation</a> only on costs directly related to student instruction or student-related services. The universities often use the money to create tuition discounts for in-state residents, though it is <a href="https://www.spotlightpa.org/statecollege/2023/06/penn-state-pitt-temple-lincoln-pa-budget-appropriations/">difficult to track exactly how they spend the money</a>.
+State law <a href="https://web.archive.org/20220829095418/https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2022&amp;sessInd=0&amp;act=54">requires that the universities spend the appropriation</a> only on costs directly related to student instruction or student-related services. The universities often use the money to create tuition discounts for in-state residents, though it is <a href="https://www.spotlightpa.org/statecollege/2023/06/penn-state-pitt-temple-lincoln-pa-budget-appropriations/">difficult to track exactly how they spend the money</a>.
 
 ## A new funding model
 
-Shapiro is proposing a performance-based funding model for the universities, though details of the plan are <a href="https://www.governor.pa.gov/wp-content/uploads/2024/02/Shapiro-Administration_Blueprint-for-Higher-Education.pdf">still being ironed out</a> — to the consternation of some elected officials in recent budget hearings.
+Shapiro is proposing a performance-based funding model for the universities, though details of the plan are <a href="https://web.archive.org/20240228154757/https://www.governor.pa.gov/wp-content/uploads/2024/02/Shapiro-Administration_Blueprint-for-Higher-Education.pdf">still being ironed out</a> — to the consternation of some elected officials in recent budget hearings.
 
 Representatives from each of the state-related universities are part of a working group on higher education. Steve Orbanek, communications director at Temple University, told Spotlight PA via email the working group had met only twice as of early March.
 
@@ -62,7 +62,7 @@ Not all outcome-based models are the same, Greenstein told the lawmakers, noting
 
 “If you wanted to, we could develop a performance-based funding model to improve the production of volleyball players from private institutions,” Greenstein said.
 
-Penn State President Neeli Bendapudi has <a href="https://www.pennlive.com/opinion/2023/10/penn-state-president-pledges-accountability-urges-lawmakers-to-approve-2023-24-funding-opinion.html">advocated for a performance-based funding model</a> similar to Shapiro’s proposal and pushed state lawmakers to boost support for her university, which <a href="https://www.spotlightpa.org/statecollege/2024/01/penn-state-temple-pitt-lincoln-pennsylvania-tuition-funding-inflation/">receives the lowest amount of per-student public support</a>.
+Penn State President Neeli Bendapudi has <a href="https://web.archive.org/20231002024954/https://www.pennlive.com/opinion/2023/10/penn-state-president-pledges-accountability-urges-lawmakers-to-approve-2023-24-funding-opinion.html">advocated for a performance-based funding model</a> similar to Shapiro’s proposal and pushed state lawmakers to boost support for her university, which <a href="https://www.spotlightpa.org/statecollege/2024/01/penn-state-temple-pitt-lincoln-pennsylvania-tuition-funding-inflation/">receives the lowest amount of per-student public support</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
@@ -82,7 +82,7 @@ States that use performance-based funding do not use the model to determine the 
 
 ## Key metrics for Pa. state-related universities
 
-Last year, state Rep. Jesse Topper (R., Fulton) <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1574">proposed legislation</a> that would provide additional state funding to Penn State, Pitt, and Temple if they met specific metrics, including graduation rates, retention rates, net tuition and fees, and enrollment in certain programs.
+Last year, state Rep. Jesse Topper (R., Fulton) <a href="https://web.archive.org/20230731171234/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1574">proposed legislation</a> that would provide additional state funding to Penn State, Pitt, and Temple if they met specific metrics, including graduation rates, retention rates, net tuition and fees, and enrollment in certain programs.
 
 The bill was referred to the chamber’s Education Committee, on which Topper is the minority chair. The representative told Spotlight PA he is cautiously optimistic Pennsylvania will adopt a funding model similar to what he has suggested.
 
@@ -105,4 +105,3 @@ During a February hearing of the Pennsylvania Senate Appropriations Committee, s
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20Penn%20State%3F%20We%20want%20to%20hear%20from%20you."></div>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

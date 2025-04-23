@@ -49,7 +49,7 @@ Some Republican state House lawmakers voiced concerns Tuesday about whether the 
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-However, <a href="https://authors.library.caltech.edu/80362/1/sswp1019.pdf">academic research</a> shows that the practice is not widespread, and high-profile <a href="https://www.politico.com/blogs/burns-haberman/2012/02/romney-also-said-he-voted-in-dem-primaries-to-influence-the-race-updated-115774">attempts</a> in the <a href="https://nymag.com/intelligencer/2008/05/rush_limbaugh_throws_in_the_to_1.html">past</a> to unfairly influence primary voting have not successfully swayed outcomes.
+However, <a href="https://authors.library.caltech.edu/80362/1/sswp1019.pdf">academic research</a> shows that the practice is not widespread, and high-profile <a href="https://web.archive.org/20150927055915/https://www.politico.com/blogs/burns-haberman/2012/02/romney-also-said-he-voted-in-dem-primaries-to-influence-the-race-updated-115774">attempts</a> in the <a href="https://web.archive.org/20181115235325/https://nymag.com/intelligencer/2008/05/rush_limbaugh_throws_in_the_to_1.html">past</a> to unfairly influence primary voting have not successfully swayed outcomes.
 
 State Rep. Paul Schemel (R., Franklin) said primaries are an internal party activity and should exclude anyone who isn’t registered with the party. Without evidence, he hypothesized that independents could somehow vote in both Democratic and Republican primaries during the same election cycle.
 

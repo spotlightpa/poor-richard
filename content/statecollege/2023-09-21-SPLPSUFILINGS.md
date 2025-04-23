@@ -59,9 +59,9 @@ Spotlight PA’s analysis revealed multiple problems, including contracts in whi
 
 In response to questions from Spotlight PA, Penn State acknowledged that it incorrectly claimed in its original report to have paid a trustee nearly $30,000 and that it overstated payments to a law firm connected to a trustee by more than $134,000 in fiscal 2022.
 
-The total number of errors Penn State included in the report is unknown. Penn State did not respond to a question about whether the university had an estimate. The document was removed from the Department of Education’s website in July and the state <a href="https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2008/0/0061..HTM">law mandating the public report</a> does not detail any form of discipline for filing incorrect information.
+The total number of errors Penn State included in the report is unknown. Penn State did not respond to a question about whether the university had an estimate. The document was removed from the Department of Education’s website in July and the state <a href="https://web.archive.org/20121011114428/https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2008/0/0061..HTM">law mandating the public report</a> does not detail any form of discipline for filing incorrect information.
 
-On Monday, the department <a href="https://www.education.pa.gov/Documents/Data%20and%20Statistics/Higher%20Education/Stair%20Report/2021-22/2021-2022%20Penn%20State%20University%20Stairs%20Report%20Vol%20III.pdf">posted</a> Penn State’s corrected document.
+On Monday, the department <a href="https://web.archive.org/20231026000510/https://www.education.pa.gov/Documents/Data%20and%20Statistics/Higher%20Education/Stair%20Report/2021-22/2021-2022%20Penn%20State%20University%20Stairs%20Report%20Vol%20III.pdf">posted</a> Penn State’s corrected document.
 
 In its original filing, Penn State reported to the state that it paid Trustee Jay Paterno nearly $30,000 in fiscal year 2022. In its statement to Spotlight PA, Penn State said there was no payment to Paterno in fiscal year 2022 and that its inclusion on the filing was an “error.”
 
@@ -102,4 +102,3 @@ The university has defended itself against recent criticisms of a perceived lack
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20Penn%20State%3F%20We%20want%20to%20hear%20from%20you."></div>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

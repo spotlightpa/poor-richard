@@ -44,7 +44,7 @@ Though some Pennsylvania cities and regional authorities that rely on state aid 
 
 The Game Commission also already has a person on staff who is paid an annual salary of $105,507 to liaise with the state legislature. And unlike local governments and authorities, the agency isn’t funded through state coffers. Instead, most of its annual revenue comes from hunting and furtaker license sales.
 
-At a late February <a href="https://appropriations.pasenategop.com/fish-022724/">budget hearing</a> in the Capitol, the state Senate Appropriations Committee questioned Burhans about the lobbying contract.
+At a late February <a href="https://web.archive.org/20240307192432/https://appropriations.pasenategop.com/fish-022724/">budget hearing</a> in the Capitol, the state Senate Appropriations Committee questioned Burhans about the lobbying contract.
 
 “Can you please explain to my hunters back home how you being the only state entity to hire a lobbyist for more than $100,000 for the year to lobby state legislators is an effective use of their fees that they pay in hunting licenses?” asked state Sen. Kristin Phillips-Hill (R., York).
 
@@ -52,11 +52,10 @@ Burhans said that working with the state legislature was “critical,” a respo
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-In the last legislative session, Phillips-Hill introduced a bill that would ban state agencies from hiring private lobbying firms, but it was not brought up for a vote. After being told by Spotlight PA that the Game Commission had contracted with Allegheny Strategy Partners, Phillips-Hill said she would <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=42101">reintroduce</a> the bill; her office said the legislation was introduced this week, though the text was not available online as of March 7.
+In the last legislative session, Phillips-Hill introduced a bill that would ban state agencies from hiring private lobbying firms, but it was not brought up for a vote. After being told by Spotlight PA that the Game Commission had contracted with Allegheny Strategy Partners, Phillips-Hill said she would <a href="https://web.archive.org/20240307162203/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=42101">reintroduce</a> the bill; her office said the legislation was introduced this week, though the text was not available online as of March 7.
 
 On Wednesday, Phillips-Hill called the Game Commission’s decision to stop using private lobbyists “a step in the right direction.”
 
 “Paying outside lobbyists is a practice that should not occur with hard-earned tax dollars, or in this case hunting fees, in state government,” she said. “I will seek to end this practice once and for all with Senate Bill 1098.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

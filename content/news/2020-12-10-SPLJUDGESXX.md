@@ -178,7 +178,7 @@ Presented with the findings of the investigation, state Supreme Court Chief Just
 
 “The men and women who serve as magisterial district judges are the front line of Pennsylvania’s judiciary,” Saylor wrote. “They administer justice, often in highly charged circumstances, and are due the appreciation of the public for their service.”
 
-<div class="my-8" data-pym-src="https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/"></div>
+<div class="my-8" data-pym-src="https://web.archive.org/20201210131939/https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/"></div>
 
 
 
@@ -380,5 +380,3 @@ _PennLive reporter Jan Murphy contributed to this story._
     email="cjohnson@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-

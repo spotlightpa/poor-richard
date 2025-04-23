@@ -26,7 +26,7 @@ topics = ["Elections"]
 
 HARRISBURG — People who live in rural Pennsylvania face unique barriers to health care, broadband, and economic opportunities.
 
-About 3.4 million people, or roughly 26% of Pennsylvania’s residents, live in the commonwealth’s 48 rural counties, according to the <a href="https://www.rural.pa.gov/data/rural-quick-facts">Center for Rural Pennsylvania</a>, a state agency.
+About 3.4 million people, or roughly 26% of Pennsylvania’s residents, live in the commonwealth’s 48 rural counties, according to the <a href="https://web.archive.org/20220128154145/https://www.rural.pa.gov/data/rural-quick-facts">Center for Rural Pennsylvania</a>, a state agency.
 
 Pennsylvania’s governor has the authority to address a wide range of rural issues. On Nov. 8, voters here will choose from <a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-complete-guide/">among five candidates for governor</a> including frontrunners Democratic Attorney General Josh Shapiro and Republican state Sen. Doug Mastriano of Franklin County.
 
@@ -36,19 +36,19 @@ Both major candidates offer different approaches to revitalizing rural Pennsylva
 
 ### Health care
 
-In Pennsylvania, access to health care in rural regions is narrowing as some hospitals like the <a href="https://whyy.org/articles/death-by-a-thousand-cuts-rural-pa-residents-lament-more-cuts-to-local-hospitals-during-pandemic/">Bradford Regional Medical Center drastically reduce services</a>, and others <a href="https://stacker.com/pennsylvania/see-how-many-rural-hospitals-pennsylvania-have-closed-2005">shut down.</a>
+In Pennsylvania, access to health care in rural regions is narrowing as some hospitals like the <a href="https://web.archive.org/20210412133718/https://whyy.org/articles/death-by-a-thousand-cuts-rural-pa-residents-lament-more-cuts-to-local-hospitals-during-pandemic/">Bradford Regional Medical Center drastically reduce services</a>, and others <a href="https://stacker.com/pennsylvania/see-how-many-rural-hospitals-pennsylvania-have-closed-2005">shut down.</a>
 
-<a href="https://www.rural.pa.gov/publications/research-reports?DoSearch=True&amp;targetYear=&amp;filterCategory=7&amp;Title=&amp;FullText=">There is limited access to other health services like mental health and addiction treatment</a>, studies from the Center for Rural Pennsylvania show. <a href="https://www.yorkdispatch.com/story/news/2020/02/24/mess-ems-companies-struggle-across-rural-pennsylvania/111366616/">Emergency services are also struggling to get people the care they need</a> in time. Maintaining the health care workforce also remains a challenge, as <a href="https://www.wesa.fm/show/the-confluence/2022-05-16/pennsylvania-hospitals-are-struggling-to-address-staff-shortages">hospitals struggle with staffing shortages</a>.
+<a href="https://web.archive.org/20221023230855/https://www.rural.pa.gov/publications/research-reports?DoSearch=True&amp;targetYear=&amp;filterCategory=7&amp;Title=&amp;FullText=">There is limited access to other health services like mental health and addiction treatment</a>, studies from the Center for Rural Pennsylvania show. <a href="https://web.archive.org/20200225013449/https://www.yorkdispatch.com/story/news/2020/02/24/mess-ems-companies-struggle-across-rural-pennsylvania/111366616/">Emergency services are also struggling to get people the care they need</a> in time. Maintaining the health care workforce also remains a challenge, as <a href="https://web.archive.org/20220516161056/https://www.wesa.fm/show/the-confluence/2022-05-16/pennsylvania-hospitals-are-struggling-to-address-staff-shortages">hospitals struggle with staffing shortages</a>.
 
 Both candidates support promoting access to telemedicine. Mastriano has supported a bill that would do so, and Shapiro voices support for expanding access to telemedicine on his campaign website.
 
 Mastriano also <a href="https://web.archive.org/20200806062848/https://senatormastriano.com/2019/11/07/senator-mastriano-touts-progress-on-healthcare-issues/">supported</a> and voted for Peyton’s Law, which helps inform student-athletes and their parents about the importance of testing to identify heart conditions that can lead to sudden cardiac arrest, which is crucial in rural communities due to limited access to emergency services.
 
-Mastriano is also one of the lead sponsors of a bill that would <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=0957">cap insulin pricing</a>, which pertains to people in rural areas because they <a href="https://www.ruralhealthinfo.org/toolkits/diabetes/1/rural-concerns">face higher risk factors for diabetes</a> and have access to fewer services.
+Mastriano is also one of the lead sponsors of a bill that would <a href="https://web.archive.org/20211220012627/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=0957">cap insulin pricing</a>, which pertains to people in rural areas because they <a href="https://web.archive.org/20200423124044/https://www.ruralhealthinfo.org/toolkits/diabetes/1/rural-concerns">face higher risk factors for diabetes</a> and have access to fewer services.
 
-Shapiro has advocated for <a href="https://twitter.com/JoshShapiroPA/status/1559973027940634626">affordable health care in rural communities</a> and said he would “strengthen the pipeline for healthcare providers in under-served areas” on his <a href="https://web.archive.org/web/20221105124310/https://joshshapiro.org/policy-healthcare/">campaign website</a>.
+Shapiro has advocated for <a href="https://web.archive.org/20220818014724/https://twitter.com/JoshShapiroPA/status/1559973027940634626">affordable health care in rural communities</a> and said he would “strengthen the pipeline for healthcare providers in under-served areas” on his <a href="https://web.archive.org/web/20221105124310/https://joshshapiro.org/policy-healthcare/">campaign website</a>.
 
-In 2007, when Shapiro was a state representative, <a href="https://www.post-gazette.com/breaking/2007/06/04/Bill-would-forgive-med-school-loans-if-docs-stay-in-Pa/stories/200706040165">he proposed a bill that would forgive doctors’ medical school loans</a> if they stayed in Pennsylvania for at least 10 years.
+In 2007, when Shapiro was a state representative, <a href="https://web.archive.org/20220522234955/https://www.post-gazette.com/breaking/2007/06/04/Bill-would-forgive-med-school-loans-if-docs-stay-in-Pa/stories/200706040165">he proposed a bill that would forgive doctors’ medical school loans</a> if they stayed in Pennsylvania for at least 10 years.
 
 Shapiro’s campaign told Spotlight PA that he will expand the Student Loan Relief for Nurses Program for every qualifying nursing student. The plan would double the amount of relief provided by up to $15,000 in loan relief, and provide full loan forgiveness to nursing students who choose to practice in a state-identified underserved community for five years.
 
@@ -86,15 +86,15 @@ Pennsylvania’s state government has workforce development initiatives and prog
 
 “Pennsylvania commits less money to apprenticeship programs today than we did under Governor Casey,” Shapiro’s campaign told Spotlight PA. “As Governor, I will direct the State Board of Education to prioritize vocational education … I will also create an independent Office of Economic and Workforce Development that will collaborate directly with businesses to help them recruit the next generation of talented young workers and triple the total number of apprenticeships statewide.”
 
-In 2021, Mastriano voted for <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2021&sind=0&body=S&type=B&bn=486">SB 486</a>, which would amend state law to establish a unified workforce investment system and provide grants on job training as well as industry partnerships. The bill awaits consideration in the state House.
+In 2021, Mastriano voted for <a href="https://web.archive.org/20210801195910/https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2021&sind=0&body=S&type=B&bn=486">SB 486</a>, which would amend state law to establish a unified workforce investment system and provide grants on job training as well as industry partnerships. The bill awaits consideration in the state House.
 
 {{<picture src="external/m20kec48mye5yyeqptmvzg0bhw.jpeg" description="On Nov. 8, voters here will choose from among five candidates for governor including frontrunners Democratic Attorney General Josh Shapiro (left) and Republican state Sen. Doug Mastriano of Franklin County (right)." caption="On Nov. 8, voters here will choose from among five candidates for governor including frontrunners Democratic Attorney General Josh Shapiro (left) and Republican state Sen. Doug Mastriano of Franklin County (right)." credit="THOMAS HENGGE &amp; STEVEN M. FALK / Philadelphia Inquirer Photographers">}} 
 
 ### Agriculture
 
-Pennsylvania’s $81.5 billion agriculture sector supported 301,900 jobs and $14.5 billion in labor income <a href="https://www.agriculture.pa.gov/Documents/2021%20Pennsylvania%20Agriculture%20Economic%20Impact%20Report.pdf">in 2019</a>, according to the state Department of Agriculture.
+Pennsylvania’s $81.5 billion agriculture sector supported 301,900 jobs and $14.5 billion in labor income <a href="https://web.archive.org/20211108232902/https://www.agriculture.pa.gov/Documents/2021%20Pennsylvania%20Agriculture%20Economic%20Impact%20Report.pdf">in 2019</a>, according to the state Department of Agriculture.
 
-Rising prices for equipment and fertilizers have become financial burdens for farmers, forcing smaller farms — often owned and operated by families — to <a href="https://www.nass.usda.gov/Publications/AgCensus/2017/Full_Report/Volume_1,_Chapter_1_State_Level/Pennsylvania/st42_1_0001_0001.pdf">close in recent years</a>.
+Rising prices for equipment and fertilizers have become financial burdens for farmers, forcing smaller farms — often owned and operated by families — to <a href="https://web.archive.org/20200629122916/https://www.nass.usda.gov/Publications/AgCensus/2017/Full_Report/Volume_1,_Chapter_1_State_Level/Pennsylvania/st42_1_0001_0001.pdf">close in recent years</a>.
 
 A member of the state Senate Agriculture &amp; Rural Affairs Committee, Mastriano voted for the 2019 Pennsylvania farm bill both in committee and on the state Senate floor. The legislation, the first state-based farm bill in the nation, passed with bipartisan support.
 
@@ -102,7 +102,7 @@ The Wolf administration <a href="https://web.archive.org/web/20230118001805/http
 
 Mastriano is one of the lead sponsors of a bill that would amend the Agricultural Area Security Law to increase funding for the Agriculture Conservation Easement Purchase Program and ease eligibility requirements so more farms can participate.
 
-He <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=37122">called the proposal</a> “crucial to maintaining food security and protecting against supply chain instability for the commonwealth and our nation.”
+He <a href="https://web.archive.org/20220402003512/https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=37122">called the proposal</a> “crucial to maintaining food security and protecting against supply chain instability for the commonwealth and our nation.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 

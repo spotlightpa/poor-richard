@@ -15,7 +15,7 @@ kicker = "Coronavirus"
 suppress-featured = true
 topics = ["Coronavirus"]
 +++
-<i>This story was produced as part of a joint effort among [Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/"), [LNP Media Group](https://lancasteronline.com/ "https\://lancasteronline.com/"), [PennLive](https://www.pennlive.com/ "https\://www.pennlive.com/"), [PA Post](https://papost.org/ "https\://papost.org/"),  and [WITF](https://www.witf.org/ "https\://www.witf.org/") to cover how Pennsylvania state government is responding to the coronavirus. [Sign up for Spotlight PA’s newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")</i>
+<i>This story was produced as part of a joint effort among [Spotlight PA](https://www.spotlightpa.org/ "https\://www.spotlightpa.org/"), [LNP Media Group](https://web.archive.org/20200101044618/https://lancasteronline.com/ "https\://lancasteronline.com/"), [PennLive](https://web.archive.org/20200101034631/https://www.pennlive.com/ "https\://www.pennlive.com/"), [PA Post](https://web.archive.org/20200315024644/https://papost.org/ "https\://papost.org/"),  and [WITF](https://web.archive.org/20200107224634/https://www.witf.org/ "https\://www.witf.org/") to cover how Pennsylvania state government is responding to the coronavirus. [Sign up for Spotlight PA’s newsletter.](https://www.spotlightpa.org/newsletters "https\://www.spotlightpa.org/newsletters")</i>
 
 HARRISBURG — Inmate advocacy groups and corrections officers alike are worried that a coronavirus outbreak inside Pennsylvania’s state prisons is an inevitability, and that should one occur, it could spread quickly because of the difficulty of practicing “social distancing.”
 

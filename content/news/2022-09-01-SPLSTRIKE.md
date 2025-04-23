@@ -35,9 +35,9 @@ SEIU Healthcare Pennsylvania, a union representing nursing home workers, says is
 
 It is demanding that the increased funding be spent on higher wages and better benefits for nursing home workers to stem turnover. The union is also asking for language that protects workers’ next contract in case a home is sold, transparency in how the homes use outside contractors, and a guarantee that companies won’t fight future union drives.
 
-The union reached an <a href="https://seiuhcpa.org/nursinghomesguardianta82922/">agreement</a> with one employer, Guardian Healthcare, earlier this week, though the final contract had yet to be ratified by workers as of Aug. 31. Negotiations are still ongoing with two more nursing home companies, Comprehensive and Priority.
+The union reached an <a href="https://web.archive.org/20220901163849/https://seiuhcpa.org/nursinghomesguardianta82922/">agreement</a> with one employer, Guardian Healthcare, earlier this week, though the final contract had yet to be ratified by workers as of Aug. 31. Negotiations are still ongoing with two more nursing home companies, Comprehensive and Priority.
 
-Barring an agreement, <a href="https://seiuhcpa.org/nursinghomestrikes83022/">workers at 14 homes are set to go on strike Sept. 2</a>. Workers at another four would join them on the picket line Sept. 9.
+Barring an agreement, <a href="https://web.archive.org/20220830165725/https://seiuhcpa.org/nursinghomestrikes83022/">workers at 14 homes are set to go on strike Sept. 2</a>. Workers at another four would join them on the picket line Sept. 9.
 
 “We’re putting everything in this company. They benefited. Why aren’t they willing to even sit at the table with us and hear us out?” union member Simone Whyte, an LPN at a Dauphin County facility, said at a recent news conference. “If they just humble themselves one minute and just listen, maybe something can come out of this.”
 
@@ -49,13 +49,13 @@ However, the facilities also have “contingency plans in place to ensure we avo
 
 The new $600 million isn’t coming all at once. First, sometime this fall, long-term care providers such as nursing homes will receive $250 million in federal stimulus money.
 
-Then, starting in January 2023, providers will see an approximately $35-per-day increase in the state reimbursement rate for taking care of low-income residents — a 17.5% bump. Facilities will be <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=H&billTyp=B&billNbr=1421&pn=3379">required</a> to show that 70% of their total costs are resident-related, rather than for overhead or administration.
+Then, starting in January 2023, providers will see an approximately $35-per-day increase in the state reimbursement rate for taking care of low-income residents — a 17.5% bump. Facilities will be <a href="https://web.archive.org/20220721110050/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=H&billTyp=B&billNbr=1421&pn=3379">required</a> to show that 70% of their total costs are resident-related, rather than for overhead or administration.
 
 But exactly what resident-related costs are is not defined in the legislation, said Diane Menio, executive director of CARIE, a Philadelphia-based nonprofit that advocates for the well-being and autonomy of older adults.
 
 “I don’t know what goes into that 70%,” Menio said.
 
-She also noted that the Wolf administration backed off a <a href="https://www.spotlightpa.org/news/2021/07/pa-nursing-home-regulations-staffing-hours-proposal/">proposed regulation that would have required nursing homes to provide residents with 4.1 hours of direct care each day</a> — the federal recommendation — instead agreeing to <a href="https://whyy.org/articles/wolf-nursing-homes-come-to-agreement-to-boost-staff-pennsylvania/">boost the current requirement from 2.7 hours to 2.87</a>, along with <a href="https://www.pennlive.com/news/2022/07/new-nursing-home-money-staffing-ratios-will-end-days-of-someone-taking-care-of-20-residents-in-pa.html">new minimum ratios of nurses</a> and nursing aides to residents.
+She also noted that the Wolf administration backed off a <a href="https://www.spotlightpa.org/news/2021/07/pa-nursing-home-regulations-staffing-hours-proposal/">proposed regulation that would have required nursing homes to provide residents with 4.1 hours of direct care each day</a> — the federal recommendation — instead agreeing to <a href="https://web.archive.org/20220712072830/https://whyy.org/articles/wolf-nursing-homes-come-to-agreement-to-boost-staff-pennsylvania/">boost the current requirement from 2.7 hours to 2.87</a>, along with <a href="https://web.archive.org/20220711185717/https://www.pennlive.com/news/2022/07/new-nursing-home-money-staffing-ratios-will-end-days-of-someone-taking-care-of-20-residents-in-pa.html">new minimum ratios of nurses</a> and nursing aides to residents.
 
 Zach Shamberg, chief executive of the Pennsylvania Health Care Association, said that the funding boost should help counteract years of <a href="https://www.spotlightpa.org/news/2022/06/pa-nursing-home-staffing-proposal-91-million-wolf/">low state spending on elder care</a> and bring security to the industry amid <a href="https://www.spotlightpa.org/news/2020/06/pennsylvania-coronavirus-nursing-homes-staffing-audits-problems-deaths/">the COVID-19 pandemic</a>. His trade group for long-term care facilities counts Priority as a member.
 
@@ -63,7 +63,7 @@ Zach Shamberg, chief executive of the Pennsylvania Health Care Association, said
 
 But if all the union’s demands were met, Shamberg said, nursing homes would need an additional $35 a day from the state to meet the additional costs.
 
-Even without a requirement for higher staffing levels, research suggests the reimbursement rate bump will increase the quality of care. A National Bureau of Economic Research <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3089529">working paper based on Pennsylvania data</a> estimated that a 10% rate bump would “increase the number of skilled nurses per resident by 8.8%.”
+Even without a requirement for higher staffing levels, research suggests the reimbursement rate bump will increase the quality of care. A National Bureau of Economic Research <a href="https://web.archive.org/20220901161651/https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3089529">working paper based on Pennsylvania data</a> estimated that a 10% rate bump would “increase the number of skilled nurses per resident by 8.8%.”
 
 Menio agreed that the rate should be increased, but a bump should be paired with transparency around how homes spend those dollars.
 

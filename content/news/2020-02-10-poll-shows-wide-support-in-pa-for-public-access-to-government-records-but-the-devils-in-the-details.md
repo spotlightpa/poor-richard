@@ -14,7 +14,7 @@ kicker = "Transparency"
 suppress-featured = true
 slug = "pennsylvania-public-records-support"
 +++
-When a recent [Franklin & Marshall College poll](https://www.fandm.edu/uploads/files/562535870732261549-f-m-poll-release-january-2020.pdf) found that a majority of Pennsylvania voters support “few restrictions” on access to government records, my peers were quick to celebrate.
+When a recent [Franklin & Marshall College poll](https://web.archive.org/20200130143455/https://www.fandm.edu/uploads/files/562535870732261549-f-m-poll-release-january-2020.pdf) found that a majority of Pennsylvania voters support “few restrictions” on access to government records, my peers were quick to celebrate.
 
 Access to government records like documents, datasets, even calendars and emails, often lead reporters to stories.
 
@@ -26,7 +26,7 @@ Then I moved to Pennsylvania.
 
 The first records request I filed here, for consumer complaints, was promptly dismissed. They largely aren’t obtainable in the state.
 
-Even when the law is on my side, barriers to access pop up frequently. Access to government records here is so dire, in fact, that the [Reporters Committee for Freedom of the Press](https://www.rcfp.org/local/) recently announced it’s [sending a dedicated lawyer to fight for access](https://www.spotlightpa.org/news/2020/01/local-legal-initiative/) on behalf of Pennsylvania journalists.
+Even when the law is on my side, barriers to access pop up frequently. Access to government records here is so dire, in fact, that the [Reporters Committee for Freedom of the Press](https://web.archive.org/20200128222527/https://www.rcfp.org/local/) recently announced it’s [sending a dedicated lawyer to fight for access](https://www.spotlightpa.org/news/2020/01/local-legal-initiative/) on behalf of Pennsylvania journalists.
 
 So, yes, last week’s poll result was welcome news. Of 628 registered voters, 79% agreed that “citizens should have the right to obtain any government record with few restrictions.”
 

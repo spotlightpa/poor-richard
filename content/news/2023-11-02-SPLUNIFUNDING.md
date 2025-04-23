@@ -37,7 +37,7 @@ In a near-unanimous vote, the state House passed a <a href="https://www.legis.st
 
 The bill had the blessings of the schools, which already release some of the required data.
 
-In a separate vote, the state House voted <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=682">145-57</a> to approve $642 million in support for the state-related schools. The bill increases allocations beyond the level lawmakers approved in their initial spending plan this summer, with funding for Penn State, Pitt, and Temple increasing by 7%, and funding for Lincoln by 20%.
+In a separate vote, the state House voted <a href="https://web.archive.org/20231102185317/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=682">145-57</a> to approve $642 million in support for the state-related schools. The bill increases allocations beyond the level lawmakers approved in their initial spending plan this summer, with funding for Penn State, Pitt, and Temple increasing by 7%, and funding for Lincoln by 20%.
 
 The bill was amended before the final vote to include a GOP-authored provision that requires the universities to freeze tuition for all students for the 2024-25 school year.
 
@@ -86,4 +86,3 @@ State House Democrats tried to circumvent the requirement earlier this year by a
 The grant funding passed the state House in October as part of an omnibus budget-enabling code bill. However, state Senate Republicans expressed opposition to the overall package, <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-budget-legislature-education-spending-tax-code/">which also included several other Democratic priorities</a>.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

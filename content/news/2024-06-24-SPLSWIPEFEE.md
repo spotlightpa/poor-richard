@@ -30,11 +30,11 @@ Financial institutions say the current system works well and that changing it wo
 
 Anyone who has paid for a transaction with a credit card has, knowingly or unknowingly, experienced swipe fees.
 
-When a customer pays a merchant using a credit card, the credit card company charges a “swipe fee.” The fee can range between <a href="https://www.forbes.com/advisor/business/interchange-fees/#:~:text=Visa%3A%201.4%25%20to%202.5%25,05%25%20for%20debit%20cards">1.4% and 3.5% of the transaction’s cost</a>, depending on the credit card company, including the cost of sales tax, plus an additional flat fee. Lower swipe fees are also charged on debit cards.
+When a customer pays a merchant using a credit card, the credit card company charges a “swipe fee.” The fee can range between <a href="https://web.archive.org/20221020023939/https://www.forbes.com/advisor/business/interchange-fees/#:~:text=Visa%3A%201.4%25%20to%202.5%25,05%25%20for%20debit%20cards">1.4% and 3.5% of the transaction’s cost</a>, depending on the credit card company, including the cost of sales tax, plus an additional flat fee. Lower swipe fees are also charged on debit cards.
 
 The bill in the state House would keep the fees from being applied to the state sales tax. The legislation was introduced, approved by a House committee, and preliminarily considered on the House floor last week.
 
-Swipe fees are generally among sellers’ largest operating expenses, according to supporters of the bill. To cover them, businesses often raise prices and charge their own swipe fees to consumers. The <a href="https://nrf.com/blog/consumers-dont-want-pay-price-swipe-fees">National Retail Federation has estimated</a> swipe fees cost the average family $1,000 annually.
+Swipe fees are generally among sellers’ largest operating expenses, according to supporters of the bill. To cover them, businesses often raise prices and charge their own swipe fees to consumers. The <a href="https://web.archive.org/20230812114524/https://nrf.com/blog/consumers-dont-want-pay-price-swipe-fees">National Retail Federation has estimated</a> swipe fees cost the average family $1,000 annually.
 
 While it has been moving through the lower chamber with little fanfare from lawmakers, the bill faced immediate and passionate pushback from banks and credit unions.
 
@@ -56,13 +56,12 @@ Proponents of the bill, namely pro-merchant organizations, argue that the swipe 
 
 “They’re just simply charging a fee on the taxes we’re collecting, and it’s just patently unfair,” said Alex Baloga, the chief executive of the Pennsylvania Food Merchants Association. He noted that food retailers operate on a 1%-2% profit margin.
 
-Both sides of the debate accuse the other of being beholden to large corporations, and indeed, corporations are on both sides of the debate. Opponents of the measure are backed by America’s largest banks and credit card companies — <a href="https://subscriber.politicopro.com/f/?id=00000190-2852-dc74-a9b6-285ace280000">JPMorgan Chase, Wells Fargo, and Mastercard among them</a> — while proponents <a href="https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2023_0456_0002_TSTMNY.pdf">include large corporations such as Sheetz</a>.
+Both sides of the debate accuse the other of being beholden to large corporations, and indeed, corporations are on both sides of the debate. Opponents of the measure are backed by America’s largest banks and credit card companies — <a href="https://web.archive.org/20240624105722/https://subscriber.politicopro.com/f/?id=00000190-2852-dc74-a9b6-285ace280000">JPMorgan Chase, Wells Fargo, and Mastercard among them</a> — while proponents <a href="https://web.archive.org/20240517221757/https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2023_0456_0002_TSTMNY.pdf">include large corporations such as Sheetz</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-Pennsylvania isn’t the only state considering this kind of measure. <a href="https://www.politico.com/newsletters/morning-money/2024/06/18/the-fight-over-credit-card-swipe-fees-hits-the-road-00163818#:~:text=Earlier%20this%20month%2C%20Illinois%20Gov,and%20tipped%20portions%20of%20transactions.">Similar legislation</a> has been introduced across the country, including at the federal level. A provision barring swipe fees from being applied to the state sales tax was a part of the budget signed by Democratic Illinois Gov. J.B. Pritzker earlier this month.
+Pennsylvania isn’t the only state considering this kind of measure. <a href="https://web.archive.org/20240620012842/https://www.politico.com/newsletters/morning-money/2024/06/18/the-fight-over-credit-card-swipe-fees-hits-the-road-00163818#:~:text=Earlier%20this%20month%2C%20Illinois%20Gov,and%20tipped%20portions%20of%20transactions.">Similar legislation</a> has been introduced across the country, including at the federal level. A provision barring swipe fees from being applied to the state sales tax was a part of the budget signed by Democratic Illinois Gov. J.B. Pritzker earlier this month.
 
 Democratic Gov. Josh Shapiro has so far not weighed in on Pennsylvania’s version of the measure.
 
 “The Governor&#39;s office will continue to review the legislation as it moves through the legislative process,” a spokesperson told Spotlight PA Friday.
-

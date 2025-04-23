@@ -36,11 +36,11 @@ A yearlong investigation and data analysis by PennLive and Spotlight PA found <a
 
 You can <a href="https://www.spotlightpa.org/news/2020/12/pa-district-judges-investigation-workloads-caseloads-spotlight-pa-pennlive/" target=_blank>read the full investigation here</a>, as well as this <a href="https://www.spotlightpa.org/news/2020/12/pa-district-judges-investigation-how-we-did-it-spotlight-pa-pennlive/" target=_blank>explanation of how the news organizations conducted the analysis</a>.
 
-Using the graphic below, click, tap, or search for your county and see how often your local judges held proceedings. (Can’t see the graphic? <a href="https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/" target=_blank>Click here</a>.)
+Using the graphic below, click, tap, or search for your county and see how often your local judges held proceedings. (Can’t see the graphic? <a href="https://web.archive.org/20201210131939/https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/" target=_blank>Click here</a>.)
 
 <div id="vis-map-mdjs--container"></div>
 <script src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>new pym.Parent("vis-map-mdjs--container", "https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/", {});</script>
+<script>new pym.Parent("vis-map-mdjs--container", "https://web.archive.org/20201210131939/https://interactives.data.spotlightpa.org/2020/vis-map-mdjs/", {});</script>
 
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>

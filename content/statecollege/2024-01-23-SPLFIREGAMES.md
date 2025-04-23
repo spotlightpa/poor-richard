@@ -22,13 +22,13 @@ topics = ["Rural Issues"]
 
 BELLEFONTE — Pennsylvania’s volunteer fire companies rely on raffles and bingo to stay open, but state law prohibits them from accepting cashless payments for these small games of chance, a condition that limits their fundraising abilities and has some of them considering breaking the rules.
 
-Several lawmakers have proposed legislation to fix the issue, saying the <a href="https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/061/chapter901/s901.506.html&amp;d=reduce">provision</a> is outdated and prevents these groups from bringing in more money to keep the lights on.
+Several lawmakers have proposed legislation to fix the issue, saying the <a href="https://web.archive.org/20240127045210/https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/061/chapter901/s901.506.html&amp;d=reduce">provision</a> is outdated and prevents these groups from bringing in more money to keep the lights on.
 
 When the COVID-19 pandemic halted in-person events, many fire companies shifted their fundraisers online and accepted cashless payments. Their efforts were successful, but some companies were told by their county treasurer that they could be violating their small games of chance license, and could face fines, or lose their permit altogether.
 
 Part of the decision to go online might’ve stemmed from confusion over action in Harrisburg.
 
-Lawmakers in the state House passed <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=0290">temporary allowances</a> so these groups could accept payments via Venmo, PayPal, and Cash App during the health emergency. The proposal, however, was never approved by the state Senate.
+Lawmakers in the state House passed <a href="https://web.archive.org/20210509141108/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=0290">temporary allowances</a> so these groups could accept payments via Venmo, PayPal, and Cash App during the health emergency. The proposal, however, was never approved by the state Senate.
 
 Despite the law prohibiting credit and debit card payments for small games of chance, some nonprofits — including fire companies — still do it.
 
@@ -77,4 +77,3 @@ Even if the law gets updated, accepting credit and debit cards without fear of f
 “Fire companies just need more money because the cost of everything is going up,” he said.
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

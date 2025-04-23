@@ -44,7 +44,7 @@ topics = ["Rural Issues", "Federal Government"]
 
 **2021**: President Joe Biden signs the Infrastructure Investment and Jobs Act, which includes $65 billion for broadband projects.
 
-**2022**: The National Telecommunications and Information Administration “<a href="https://broadbandusa.ntia.doc.gov/sites/default/files/2022-05/BEAD%20NOFO.pdf">strongly encourages</a>” states with laws restricting publicly-owned broadband networks to waive them for a major new grant program.
+**2022**: The National Telecommunications and Information Administration “<a href="https://web.archive.org/20220513115444/https://broadbandusa.ntia.doc.gov/sites/default/files/2022-05/BEAD%20NOFO.pdf">strongly encourages</a>” states with laws restricting publicly-owned broadband networks to waive them for a major new grant program.
 {{</block>}}
 
 {{<featured/header
@@ -95,7 +95,7 @@ In the Central Susquehanna region, local subsidiaries of some of the nation’s 
 
 In legal proceedings in front of the state Public Utility Commission, the state agency that oversees the phone companies, fundamental questions about how the almost two-decades old law should work are being hashed out for the first time.
 
-While state law creates obstacles for local governments trying to build their own broadband networks, newly released <a href="https://broadbandusa.ntia.doc.gov/sites/default/files/2022-05/BEAD%20NOFO.pdf">guidance</a> from the federal government “strongly encourages” states to suspend restrictions like this as they work out how to spend billions in new grant dollars.
+While state law creates obstacles for local governments trying to build their own broadband networks, newly released <a href="https://web.archive.org/20220513115444/https://broadbandusa.ntia.doc.gov/sites/default/files/2022-05/BEAD%20NOFO.pdf">guidance</a> from the federal government “strongly encourages” states to suspend restrictions like this as they work out how to spend billions in new grant dollars.
 
 Now, Pennsylvania faces a choice: Roll back the restrictions or risk defying the federal government.
 
@@ -148,7 +148,7 @@ Industry representatives say the state’s definition is just a baseline, and no
 
 The law’s goal of “universally available, state-of-the-art” broadband remains elusive. But the phone companies kept their “virtual veto.”
 
-<iframe title="Two recent broadband expansion efforts in central Pa." aria-label="Map" id="datawrapper-chart-WkSmb" src="https://datawrapper.dwcdn.net/WkSmb/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;margin-top: 2rem;margin-bottom: 2rem;" height="480"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+<iframe title="Two recent broadband expansion efforts in central Pa." aria-label="Map" id="datawrapper-chart-WkSmb" src="https://web.archive.org/20220602093029/https://datawrapper.dwcdn.net/WkSmb/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;margin-top: 2rem;margin-bottom: 2rem;" height="480"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
 
@@ -172,7 +172,7 @@ Instead, they urged the six counties to invest in broadband infrastructure and l
 
 It soon became clear that the state’s 2004 law would be a stumbling block.
 
-{{<featured/img  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:2100/h:1365/g:sm/el:1/q:75/MjAyMi8wNS8wMWg5LWNqcmctOWoyNC1jMnp3LnBuZw==.jpeg"
+{{<featured/img  src="https://web.archive.org/20220602113058/https://images.data.spotlightpa.org/insecure/rt:fill/w:2100/h:1365/g:sm/el:1/q:75/MjAyMi8wNS8wMWg5LWNqcmctOWoyNC1jMnp3LnBuZw==.jpeg"
   description="A report prepared for the Southern Alleghenies Planning & Development Commission shows the areas of each county deemed “unserved” based on federal data from 2017. In the maps shown, pink areas are “unserved,” yellow areas are “underserved,” and blue areas are “fully served.”"
   caption="A report prepared for the Southern Alleghenies Planning & Development Commission shows the areas of each county deemed “unserved” based on federal data from 2017. Other estimates suggest the real number of unserved residents could be twice as high. In the maps shown, pink areas are “unserved,” yellow areas are “underserved,” and blue areas are “fully served.” Graphic by Ethan Edward Coston / Spotlight PA"
 >}}
@@ -253,7 +253,7 @@ One of the committee chairs, state Rep. Dan Moul (R., Adams) did not respond to 
 
 Lawmakers agreed to have the legislature’s nonpartisan research agency study the problem of broadband access and chart a course for the future.
 
-In 2020, the Joint State Government Commission <a href="http://jsg.legis.state.pa.us/publications.cfm?JSPU_PUBLN_ID=497">released a sweeping, 220-page report</a>, with input from an advisory committee of state officials and a handful of industry representatives, that examined broadband’s impact on health care, agriculture, education, and economic development.
+In 2020, the Joint State Government Commission <a href="https://web.archive.org/20200929050315/http://jsg.legis.state.pa.us/publications.cfm?JSPU_PUBLN_ID=497">released a sweeping, 220-page report</a>, with input from an advisory committee of state officials and a handful of industry representatives, that examined broadband’s impact on health care, agriculture, education, and economic development.
 
 But while the report discussed arguments for and against letting municipalities build their own networks, it didn’t come to a firm conclusion on whether Pennsylvania should keep its restrictions.
 

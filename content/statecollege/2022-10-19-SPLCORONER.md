@@ -25,7 +25,7 @@ STATE COLLEGE — In one Pennsylvania county, the coroner’s office relies on a
 
 A coroner in another county claimed his part-time deputies don’t really investigate deaths. Instead, “they just pick up the body and use this as an opportunity to steer business to their funeral home.”
 
-And only six of Pennsylvania’s 67 counties have accredited coroner or medical examiner offices, which the state doesn’t require but “is perceived as validation of best medicolegal death investigation practices,” according to a new <a href="https://www.rural.pa.gov/download.cfm?file=Resources/reports/assets/249/Coroner%20Services%20in%20PA%202022.pdf">Center for Rural Pennsylvania study</a>.
+And only six of Pennsylvania’s 67 counties have accredited coroner or medical examiner offices, which the state doesn’t require but “is perceived as validation of best medicolegal death investigation practices,” according to a new <a href="https://web.archive.org/20221019103514/https://www.rural.pa.gov/download.cfm?file=Resources/reports/assets/249/Coroner%20Services%20in%20PA%202022.pdf">Center for Rural Pennsylvania study</a>.
 
 The August report by the state agency determined that Pennsylvania’s county coroners and medical examiners — the people who investigate suspicious deaths and suss out foul play — lack adequate funding, transparency, and training.
 
@@ -39,7 +39,7 @@ In rural counties, challenges are exacerbated because many coroners don’t have
 
 Coroners’ offices act independently from other county entities, but county commissioners determine a large portion of their funding. Plus, the state legislature has limited the funding coroners’ offices receive from cremation authorization permits and death certificates.
 
-<a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2017&sessInd=0&act=40">Rising costs and fees</a> for death certificates have decreased statewide orders of them, further affecting funding for coroners. A dollar from each death certificate order — which cost $20, plus $10 for online purchases — goes to coroners’ offices, but the remaining $19 gets split between the state’s health department and general fund.
+<a href="https://web.archive.org/20180131051623/https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2017&sessInd=0&act=40">Rising costs and fees</a> for death certificates have decreased statewide orders of them, further affecting funding for coroners. A dollar from each death certificate order — which cost $20, plus $10 for online purchases — goes to coroners’ offices, but the remaining $19 gets split between the state’s health department and general fund.
 
 The researchers argue that the legislature should increase the amount coroners’ offices receive per death certificate from $1 to $5, and raise the cap on cremation authorization permits from $50 to $100. The study also recommends that lawmakers standardize coroner salaries.
 
@@ -87,7 +87,7 @@ Hastings and Sayers agree that education would be more frequent and better if co
 
 That shift would allow the crime commission to manage the coroners’ association’s money, Hastings said.
 
-<a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=S&billTyp=B&billNbr=1037&pn=1933">Legislation</a> that would place the education board operate under the Commission on Crime and Delinquency has passed the Senate and is pending in the House. Right now, the attorney general’s office receives the funding to facilitate the education of coroners through the Pennsylvania State Coroners’ Education Board.
+<a href="https://web.archive.org/20221019105314/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=S&billTyp=B&billNbr=1037&pn=1933">Legislation</a> that would place the education board operate under the Commission on Crime and Delinquency has passed the Senate and is pending in the House. Right now, the attorney general’s office receives the funding to facilitate the education of coroners through the Pennsylvania State Coroners’ Education Board.
 
 One of the major barriers to additional training, VandePol said, is that many of the deputy coroners work part-time and have second jobs. Better funding would make full-time jobs at coroners’ offices more viable.
 

@@ -22,7 +22,7 @@ topics = ["PA Local"]
 twitter-title = "A daughter’s Capitol crusade"
 +++
 
-<em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zeJy242ijdI~jNY4XXHI"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
+<em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://web.archive.org/20241210233005/https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zeJy242ijdI~jNY4XXHI"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
 
 Lynn Fiedler had just met with a roomful of Pennsylvania state senators to discuss new protections for older adults when one of the lawmakers pulled her aside to offer some advice.
 
@@ -42,7 +42,7 @@ The ordeal set the stage for Fiedler’s current calling.
 
 “I spent 32 years in public education, advocating for children,” she told PA Local by phone. “Now I&#39;m at the other end of the spectrum advocating for the elder population.”
 
-Fiedler’s advocacy earned her a nomination for our latest PA Local Heroes profile, a monthly feature sponsored by <a href="https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024">Ballard Spahr</a>. The nominator described her as “the definition of a ‘change agent.’&#34;
+Fiedler’s advocacy earned her a nomination for our latest PA Local Heroes profile, a monthly feature sponsored by <a href="https://web.archive.org/20241208112335/https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024">Ballard Spahr</a>. The nominator described her as “the definition of a ‘change agent.’&#34;
 
 With the help of Culver and law enforcement who investigated her mother’s case, Fiedler created an abuse task force and began championing the adoption of new statewide safeguards.
 
@@ -54,7 +54,7 @@ Speaking outside the courthouse, Fiedler, incensed at what she calls a lack of l
 
 Culver, who for years sat on the aging committee as a member of the state House, was waiting. “A lot of times folks enlist an association or a lobbying group \[to advocate for a cause\],” Culver explained. “But for Lynn to be doing what she’s doing, my goodness. It&#39;s an honor, honestly, to be working with her. She&#39;s a great partner.”
 
-Culver said Alice&#39;s Law remains a top priority headed into next year, which lawmakers are already preparing for. The Republican, joined by state Sen. Doug Mastriano (R., Franklin), published a memorandum <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20250&amp;cosponId=43768&amp;utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=A%20daughter%20s%20Capitol%20crusade&amp;utm_campaign=PA%20Local%2012%2006%2024">seeking co-sponsors</a> earlier this week.
+Culver said Alice&#39;s Law remains a top priority headed into next year, which lawmakers are already preparing for. The Republican, joined by state Sen. Doug Mastriano (R., Franklin), published a memorandum <a href="https://web.archive.org/20241209012438/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20250&amp;cosponId=43768&amp;utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=A%20daughter%20s%20Capitol%20crusade&amp;utm_campaign=PA%20Local%2012%2006%2024">seeking co-sponsors</a> earlier this week.
 
 “Hopefully it passes in 2025,” Fiedler said. “I&#39;m thrilled and will keep the pressure on.”
 
@@ -79,4 +79,3 @@ Fiedler’s biological father, a veteran of the Korean War who’d fallen ill wi
 {{<embed/donate>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

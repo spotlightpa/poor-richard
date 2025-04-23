@@ -35,9 +35,9 @@ It’s an open secret in Harrisburg that come fall in critical election years, b
 
 That can put lawmakers in the minority party — which, historically, has been legislative Democrats in Pennsylvania — in the tricky position of deciding whether to support a bill that might align with their policy goals but also would provide a boost to their political opponent.
 
-Mastriano’s bills aren’t the only measures moving after months of inactivity. The state House this week unanimously passed <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=37226">a bill</a> by Mastriano’s running mate, state Rep. Carrie DelRosso (R., Allegheny), that makes a small tweak to the state’s lottery law to provide additional money for <a href="https://www.spotlightpa.org/news/2022/09/pennsylvania-property-tax-rebate-decline/">property tax relief</a>.
+Mastriano’s bills aren’t the only measures moving after months of inactivity. The state House this week unanimously passed <a href="https://web.archive.org/20220504191755/https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=37226">a bill</a> by Mastriano’s running mate, state Rep. Carrie DelRosso (R., Allegheny), that makes a small tweak to the state’s lottery law to provide additional money for <a href="https://www.spotlightpa.org/news/2022/09/pennsylvania-property-tax-rebate-decline/">property tax relief</a>.
 
-“I’m actually running a bill today,” DelRosso said in a <a href="https://www.facebook.com/Fight4pa/videos/619771173007857">Facebook live video</a> with Mastriano, streamed Wednesday morning before session began. “That’s why I’m sticking around.”
+“I’m actually running a bill today,” DelRosso said in a <a href="https://web.archive.org/20220923174516/https://www.facebook.com/Fight4pa/videos/619771173007857">Facebook live video</a> with Mastriano, streamed Wednesday morning before session began. “That’s why I’m sticking around.”
 
 Both Democrats and Republicans voted yes on DelRosso and Mastriano’s bills. One bill put forth by Democrats — to require carbon monoxide detectors in some child care facilities — also received a vote this past week.
 
@@ -51,7 +51,7 @@ The bills, if passed and signed into law, would also bolster Mastriano’s legis
 
 One extended term lengths for members of an obscure state commission, one increased penalties for passing a disabled vehicle in an unsafe fashion, and one tweaked how drivers apply for a special veterans license.
 
-Of the five bills of Mastriano’s that advanced this week, the closest to Democratic Gov. Tom Wolf’s desk would <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=S&type=B&bn=1152">require</a> the State Police to map drug overdoses. Democratic lawmakers opposed it in the state House Judiciary Committee this week, which Mastriano chalked up to them playing political games.
+Of the five bills of Mastriano’s that advanced this week, the closest to Democratic Gov. Tom Wolf’s desk would <a href="https://web.archive.org/20220328225428/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=S&type=B&bn=1152">require</a> the State Police to map drug overdoses. Democratic lawmakers opposed it in the state House Judiciary Committee this week, which Mastriano chalked up to them playing political games.
 
 “They are trying to use parliamentary procedure to stop running a bill that will save lives,” he said in a <a href="https://www.facebook.com/Fight4pa/videos/1110069153217605">Facebook live video</a>.
 
@@ -61,7 +61,7 @@ But ranking committee Democrat Tim Briggs, of Montgomery County, said he thought
 
 ## Better accountability
 
-Another proposal from Mastriano, state Senate Bill 488, would <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=S&billTyp=B&billNbr=0488&pn=1826">expand</a> the amount of financial information that the four state-related universities — Lincoln, Penn State, Pitt, and Temple — have to share with the public through already mandated annual filings.
+Another proposal from Mastriano, state Senate Bill 488, would <a href="https://web.archive.org/20220628220131/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2021&sessInd=0&billBody=S&billTyp=B&billNbr=0488&pn=1826">expand</a> the amount of financial information that the four state-related universities — Lincoln, Penn State, Pitt, and Temple — have to share with the public through already mandated annual filings.
 
 The schools would be required to release an audited financial statement, employment and enrollment information, contracts of more than $10,000, and aggregated faculty salary data every year among other information.
 
@@ -69,7 +69,7 @@ In a statement, Mastriano said the schools’ more than $600 million in state fu
 
 “This legislation offers a level of transparency necessary to keep these universities accountable to the public they serve,” he said.
 
-The bill passed the full state Senate <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_byBill.cfm?sess_yr=2021&sess_ind=0&rc_body=S&bill_body=S&bill_type=B&bill_nbr=488">38-12</a> on Sept. 20 and was sent to the state House for consideration. One transparency advocate said tweaks to the state’s open-records law are long overdue.
+The bill passed the full state Senate <a href="https://web.archive.org/20220923174524/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_byBill.cfm?sess_yr=2021&sess_ind=0&rc_body=S&bill_body=S&bill_type=B&bill_nbr=488">38-12</a> on Sept. 20 and was sent to the state House for consideration. One transparency advocate said tweaks to the state’s open-records law are long overdue.
 
 “Improved accessibility fosters better accountability,” said Brad Simpson, president of the Pennsylvania NewsMedia Association (of which Spotlight PA is a member). “We are happy to see the passage in the Senate and look forward to the House passing it and the governor signing the bill.”
 
@@ -83,7 +83,7 @@ Seven Democrats joined the chamber’s Republicans in supporting the bill, inclu
 
 Muth noted that Democrats don’t control which bills come up for a vote — that power belongs to Republican leadership — so they “have to vote for these people’s bills all the time.”
 
-She added that Mastriano’s proposal is nearly identical to <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2019&sind=0&body=S&type=B&bn=0782">a bill</a> repeatedly proposed by a now retired Democratic senator which went nowhere for years.
+She added that Mastriano’s proposal is nearly identical to <a href="https://web.archive.org/20200811065635/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2019&sind=0&body=S&type=B&bn=0782">a bill</a> repeatedly proposed by a now retired Democratic senator which went nowhere for years.
 
 “It’s a transparency bill,” Muth said. “I can suck up my dislike for the man. Do I think it was a perfect bill? No. But again, none of this stuff we vote on is like the gold standard.”
 
@@ -119,13 +119,13 @@ While bringing lawmakers to Harrisburg for even a single day can cost taxpayers 
 
 On the six days of voting session this month, lawmakers in the state House and Senate took 55 floor votes on bills, amendments, procedural motions, and more.
 
-Legislators advanced proposals to <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2021&sind=0&body=H&type=B&bn=1671">improve conditions</a> for women in prison, allow for the third-party sale of <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=2632">vanity plates</a>, and <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2021&sind=0&body=H&type=B&bn=1671">increase transparency</a> in the state’s pensions system. (None of those bills have passed both chambers and been sent to Wolf.)
+Legislators advanced proposals to <a href="https://web.archive.org/20220923174458/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2021&sind=0&body=H&type=B&bn=1671">improve conditions</a> for women in prison, allow for the third-party sale of <a href="https://web.archive.org/20220627173529/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=2632">vanity plates</a>, and <a href="https://web.archive.org/20220923174458/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2021&sind=0&body=H&type=B&bn=1671">increase transparency</a> in the state’s pensions system. (None of those bills have passed both chambers and been sent to Wolf.)
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?eyebrow=RALLY%20ROUND%20OUR%20COVERAGE&body=Support%20Spotlight%20PA's%20%3Cb%3Etrusted%2C%20reliable%20election%20reporting%3C%2Fb%3E%20that%20informs%20and%20empowers%20Pennsylvania%20voters.&cta=ALL%20GIFTS%20DOUBLED.%20GIVE%20NOW%20%C2%BB"></div>
 
 But especially amid a high-stakes election season, session days are as much about legislating as they are about refilling campaign war chests with checks from Harrisburg’s donor class of lobbyists and other influencers.
 
-On those same six days, lawmakers hosted at least 53 fundraisers in the Harrisburg area, with attendance costing donors from $250 to $10,000 a head, according to an unofficial <a href="http://www.greenleepartners.com/calendar.php">calendar</a> maintained by a Harrisburg lobbying firm.
+On those same six days, lawmakers hosted at least 53 fundraisers in the Harrisburg area, with attendance costing donors from $250 to $10,000 a head, according to an unofficial <a href="https://web.archive.org/20120308081605/http://www.greenleepartners.com/calendar.php">calendar</a> maintained by a Harrisburg lobbying firm.
 
 Long-time Capitol watchdog Eric Epstein has called for a ban on session day fundraisers, and called the recent numbers “tone deaf.”
 

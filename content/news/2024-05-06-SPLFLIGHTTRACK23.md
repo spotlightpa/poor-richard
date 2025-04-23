@@ -41,7 +41,7 @@ As many as two-thirds of the costs of those flights were accrued directly by the
 
 But Shapiro’s administration, as well as former executive branch staffers, have argued that the plane connects people with their government officials.
 
-According to an administration spokesperson, such outreach includes when Shapiro became the first governor to <a href="https://triblive.com/local/regional/shapiro-to-become-just-3rd-sitting-governor-to-attend-pa-s-groundhog-day-celebration/">visit Punxsutawney</a> for Groundhog’s Day since 2012; a May visit to <a href="https://www.timesleader.com/news/1609709/gov-shapiro-visits-new-state-park-public-access-point-in-white-haven">White Haven</a> to open a new state park entrance; and an October stop in <a href="https://www.governor.pa.gov/newsroom/governor-shapiro-and-first-lady-shapiro-visit-kinzua-bridge-state-park-announce-investments-in-local-recreation-and-conservation-projects-in-pennsylvania-wilds/">Kinzua Bridge State Park</a> to announce hundreds of thousands of dollars in state investments for the region.
+According to an administration spokesperson, such outreach includes when Shapiro became the first governor to <a href="https://web.archive.org/20230201210842/https://triblive.com/local/regional/shapiro-to-become-just-3rd-sitting-governor-to-attend-pa-s-groundhog-day-celebration/">visit Punxsutawney</a> for Groundhog’s Day since 2012; a May visit to <a href="https://web.archive.org/20230524235721/https://www.timesleader.com/news/1609709/gov-shapiro-visits-new-state-park-public-access-point-in-white-haven">White Haven</a> to open a new state park entrance; and an October stop in <a href="https://web.archive.org/20231013002623/https://www.governor.pa.gov/newsroom/governor-shapiro-and-first-lady-shapiro-visit-kinzua-bridge-state-park-announce-investments-in-local-recreation-and-conservation-projects-in-pennsylvania-wilds/">Kinzua Bridge State Park</a> to announce hundreds of thousands of dollars in state investments for the region.
 
 “Pennsylvanians expect their Governor to be out in their communities listening, learning, and delivering — not just sitting behind a desk in Harrisburg,” Shapiro’s spokesperson Manuel Bonder said in a statement, “and that’s why Governor Shapiro has always kept an aggressive and rigorous travel schedule that has taken him to every county in our Commonwealth several times over.”
 
@@ -101,7 +101,7 @@ The plane hasn’t only been used for in-state travel. PennDOT’s records revea
 
 In May, Shapiro took the plane to New York to deliver the commencement address at his alma mater, the University of Rochester.
 
-In September, Shapiro flew to Washington, D.C. for a six-hour stop during which he had private meetings with congressional leaders and spoke for a half-hour with <a href="https://www.youtube.com/watch?v=cMJUPHP3EoI">The Atlantic</a>, an administration spokesperson said.
+In September, Shapiro flew to Washington, D.C. for a six-hour stop during which he had private meetings with congressional leaders and spoke for a half-hour with <a href="https://web.archive.org/20231110035920/https://www.youtube.com/watch?v=cMJUPHP3EoI">The Atlantic</a>, an administration spokesperson said.
 
 And in October, Shapiro and the first lady flew to Springfield, Illinois, to meet with Gov. J.B. Pritzker.
 
@@ -109,7 +109,7 @@ The Hilton Head trip, the administration contended, was also state business. Sha
 
 The plane has also been used for building relationships. Flight logs show Shapiro was joined by state Senate President Pro Tempore Kim Ward (R., Westmoreland) and Majority Leader Joe Pittman (R., Indiana) for a May 1 flight from Pittsburgh to Harrisburg.
 
-Shapiro, Ward, and Pittman attended an event in Westmoreland County to plug <a href="https://www.governor.pa.gov/newsroom/governor-josh-shapiro-and-rebuild-manufacturing-announce-81-million-investment-to-create-cutting-edge-manufacturing-center-300-jobs-in-westmoreland-county/">an $81 million advanced manufacturing facility</a> in New Kensington. The three then flew back to Harrisburg together, arriving in time for the two legislative leaders to attend a scheduled voting session.
+Shapiro, Ward, and Pittman attended an event in Westmoreland County to plug <a href="https://web.archive.org/20230508195505/https://www.governor.pa.gov/newsroom/governor-josh-shapiro-and-rebuild-manufacturing-announce-81-million-investment-to-create-cutting-edge-manufacturing-center-300-jobs-in-westmoreland-county/">an $81 million advanced manufacturing facility</a> in New Kensington. The three then flew back to Harrisburg together, arriving in time for the two legislative leaders to attend a scheduled voting session.
 
 Then in July, amid stalled budget negotiations, Shapiro and top legislative staff flew to Indiana, Pennsylvania, in Pittman’s district, accompanied by the state Senate leader’s top staffer.
 
@@ -117,7 +117,7 @@ Shapiro also used the plane to attend at least two sporting events last fall. Wh
 
 First, Shapiro was listed as a flight passenger on a multi-leg October itinerary in which the plane crisscrossed the state.
 
-Records show the plane traveled between Harrisburg, Erie, and Philly, touching down in the latter so Shapiro could throw <a href="https://www.abc27.com/sports/governor-shapiro-throws-first-pitch-of-phillies-nlds-home-opener/#:~:text=(WHTM)%20%E2%80%93%20Pennsylvania%20Governor%20Josh,one%20of%20two%20in%20Atlanta.">the first pitch</a> at a Phillies playoff game.
+Records show the plane traveled between Harrisburg, Erie, and Philly, touching down in the latter so Shapiro could throw <a href="https://web.archive.org/20231012170744/https://www.abc27.com/sports/governor-shapiro-throws-first-pitch-of-phillies-nlds-home-opener/#:~:text=(WHTM)%20%E2%80%93%20Pennsylvania%20Governor%20Josh,one%20of%20two%20in%20Atlanta.">the first pitch</a> at a Phillies playoff game.
 
 A month later, Shapiro attended a Nov. 11 Penn State University home football game with two of his sons. The three of them were all listed as plane passengers that day, which saw the state aircraft travel from Harrisburg, to University Park in time for a noon kickoff, to Philadelphia, and back to Harrisburg. The day’s flights cost more than $4,500.
 
@@ -127,13 +127,13 @@ A month later, Shapiro attended a Nov. 11 Penn State University home football ga
 
 A 1984 Pennsylvania law first authorized PennDOT to own a plane. Since then, governors, legislators, cabinet officials, state commission members, and other bureaucrats have all used it to carry out official business.
 
-Former Gov. Tom Ridge, a Republican, holds the record for most flights in a year, according to <a href="https://www.pennlive.com/news/2023/01/pa-officials-fly-high-in-state-plane-on-taxpayers-dime.html">PennLive</a>; the Erie resident took 196 flights in 1998, a year when the commonwealth had two planes in use. Rendell, a Philadelphia Democrat who served from 2003 until 2011, averaged 56 flights a year in his first term, according to PennLive.
+Former Gov. Tom Ridge, a Republican, holds the record for most flights in a year, according to <a href="https://web.archive.org/20230109103121/https://www.pennlive.com/news/2023/01/pa-officials-fly-high-in-state-plane-on-taxpayers-dime.html">PennLive</a>; the Erie resident took 196 flights in 1998, a year when the commonwealth had two planes in use. Rendell, a Philadelphia Democrat who served from 2003 until 2011, averaged 56 flights a year in his first term, according to PennLive.
 
-The plane received increased attention during Rendell’s tenure, after <a href="https://www.ncnewsonline.com/news/rendell-camp-defends-lobbyists-flight-in-state-plane/article_25258c4b-0872-5c66-ab58-e3a8c6c3752f.html">a lobbyist joined the governor’s chief of staff</a> on a flight. The incident sparked <a href="https://www.paauditor.gov/Media/Default/Reports/spePlane092807.pdf">an audit</a> of the plane’s logs, which found that PennDOT wasn’t maintaining complete records on the plane’s use by state officials and potentially violating federal aviation law.
+The plane received increased attention during Rendell’s tenure, after <a href="https://web.archive.org/20240509222333/https://www.ncnewsonline.com/news/rendell-camp-defends-lobbyists-flight-in-state-plane/article_25258c4b-0872-5c66-ab58-e3a8c6c3752f.html">a lobbyist joined the governor’s chief of staff</a> on a flight. The incident sparked <a href="https://web.archive.org/20161228212753/https://www.paauditor.gov/Media/Default/Reports/spePlane092807.pdf">an audit</a> of the plane’s logs, which found that PennDOT wasn’t maintaining complete records on the plane’s use by state officials and potentially violating federal aviation law.
 
 The audit, which looked at the plane’s use between July 2002 and March 2007, also found that the aircraft had taken at least 1,083 flights in that period, costing almost $2.2 million.
 
-In response, lawmakers approved a <a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2012&amp;sessInd=0&amp;act=26">2012 law</a> mandating that PennDOT log and make available the date, destination, length, purpose, cost, and passengers on any flight using a state-owned or leased aircraft.
+In response, lawmakers approved a <a href="https://web.archive.org/20200815045638/https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2012&amp;sessInd=0&amp;act=26">2012 law</a> mandating that PennDOT log and make available the date, destination, length, purpose, cost, and passengers on any flight using a state-owned or leased aircraft.
 
 “When the state plane is used, the information required will answer the basic questions taxpayers want to have asked, like, is it legal, is it ethical, is it financially justifiable?” then-state Sen. Lloyd Smucker (R., Lancaster), the bill’s sponsor, said of the proposal on the chamber floor. “Here and elsewhere, that sort of disclosure discourages abuse.”
 
@@ -162,4 +162,3 @@ DeFoor, a Republican from Dauphin County, also uses a state vehicle, said spokes
 “There has not been a need for us to use the state plane,” Hutcheson told Spotlight PA. “We bundle trips to different regions to use the most effective travel methods and use of his time.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

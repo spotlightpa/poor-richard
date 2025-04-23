@@ -29,7 +29,7 @@ That split has halted progress on both proposals where there’s wide disagreeme
 
 That includes a long-sought amendment that would extend the statute of limitations for survivors of childhood sexual abuse. The legislature fully approved the amendment several years ago, but <a href="https://www.spotlightpa.org/news/2021/05/pa-child-sex-abuse-legal-window-wolf-admin-blunder-report-findings/">due to an error by the Pennsylvania Department of State</a>, the measure never made it to the ballot.
 
-“As Pennsylvania survivors, we once again feel betrayed. We are devastated and discouraged, the state chapter of Survivors Network of those Abused by Priests <a href="https://www.snapnetwork.org/pennsylvania_survivors_of_csa_vow_to_keep_fighting_for_sol_reform_urge_concerned_citizens_to_join_them">said</a> in a July statement. “However, we are also determined to continue fighting, primarily because we fear for the safety of today&#39;s children.”
+“As Pennsylvania survivors, we once again feel betrayed. We are devastated and discouraged, the state chapter of Survivors Network of those Abused by Priests <a href="https://web.archive.org/20240715191029/https://www.snapnetwork.org/pennsylvania_survivors_of_csa_vow_to_keep_fighting_for_sol_reform_urge_concerned_citizens_to_join_them">said</a> in a July statement. “However, we are also determined to continue fighting, primarily because we fear for the safety of today&#39;s children.”
 
 Without action by Nov. 30 — when the current legislative session ends — all six amendments will need to restart a lengthy process. The earliest any would be able to reach voters is 2027.
 
@@ -37,15 +37,15 @@ To amend the Pennsylvania Constitution, the General Assembly first passes identi
 
 The legislature advanced six potential changes to the state constitution last session, which ran from January 2021 to November 2022. The proposed amendments would:
 
-- <a href="https://www.legis.state.pa.us/CFDOCS/billInfo/billInfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=23">Create </a><a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=1&amp;body=H&amp;type=B&amp;bn=1">a two-year window</a> for survivors of childhood sexual abuse to file civil lawsuits against their abusers or those who shielded the accused.
+- <a href="https://web.archive.org/20240716142829/https://www.legis.state.pa.us/CFDOCS/billInfo/billInfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=23">Create </a><a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=1&amp;body=H&amp;type=B&amp;bn=1">a two-year window</a> for survivors of childhood sexual abuse to file civil lawsuits against their abusers or those who shielded the accused.
 
 - <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=956">Declare</a> that the state constitution does not provide for a legal right to an abortion.
 
-- <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1">Require</a> all voters to provide identification every time they vote, including by mail.
+- <a href="https://web.archive.org/20230109150423/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1">Require</a> all voters to provide identification every time they vote, including by mail.
 
-- <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=130">Require</a> the auditor general to conduct annual election audits.
+- <a href="https://web.archive.org/20230109233815/https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=130">Require</a> the auditor general to conduct annual election audits.
 
-- ## <a href="https://www.legis.state.pa.us/CFDOCS/billInfo/billInfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=2">Allow</a> the General Assembly to override a regulation with a simple majority vote.
+- ## <a href="https://web.archive.org/20230122074044/https://www.legis.state.pa.us/CFDOCS/billInfo/billInfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=2">Allow</a> the General Assembly to override a regulation with a simple majority vote.
 
 - <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=570">Allow</a> gubernatorial candidates to <a href="https://www.spotlightpa.org/news/2024/08/pennsylvania-governor-succession-josh-shapiro-austin-davis-how-harrisburg-works/">pick a candidate for lieutenant governor</a> as a running mate, subject to the approval of their political party. This would eliminate separate primaries for the two offices.
 
@@ -80,4 +80,3 @@ Survivors and their allies, including multiple state legislators <a href="https:
 But their opponents, including insurers and the Catholic Church, have argued the retroactive rulings the amendment would bring about could cost taxpayers and private institutions alike millions of dollars.
 
 Some survivors and legislators have also argued that the window could be implemented by a regular statute, which can take effect immediately after being signed by the governor, rather than through a constitutional amendment. However, state Senate Republican leadership has never allowed such a measure to come up for a vote within the chamber.
-

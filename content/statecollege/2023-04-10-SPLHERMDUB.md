@@ -53,7 +53,7 @@ Attorney General Michelle Henry’s office refused to explain the reason for sea
 
 “Best place to work, best place to live.”
 
-So goes the <a href="https://duboispa.gov/">motto</a> for the City of DuBois.
+So goes the <a href="https://web.archive.org/20080802024443/https://duboispa.gov/">motto</a> for the City of DuBois.
 
 DuBois is surrounded by Sandy Township, which got its name from Sandy Lick Creek, a natural divider of the city flowing from east to west. Early settlers developed the area’s resources — lumber, coal, and rich soil — through the growth of railroads and manufacturing mills. Today, health care, retail, and schools support the local economy, with Penn Highlands DuBois hospital ranking as the biggest employer in Clearfield County.
 
@@ -75,13 +75,13 @@ Scarnati launched a lobbying firm with another member of the Varischetti family 
 
 Even before he became city manager, Suplizio had deep roots in DuBois, serving as a volunteer firefighter and fire chief as well as the mayor for a decade.
 
-When he announced his run for the state Senate, his supporters <a href="https://www.lockhaven.com/news/local-news/2020/02/dubois-manager-seeks-gop-nod-for-senate-seat/">cited his work</a> in obtaining millions of dollars in state grants and private dollars to revitalize DuBois. From late 2015 to the present, for instance, the city received more than $7.5 million in grants from Pennsylvania’s Department of Community and Economic Development, state records show.
+When he announced his run for the state Senate, his supporters <a href="https://web.archive.org/20200217185931/https://www.lockhaven.com/news/local-news/2020/02/dubois-manager-seeks-gop-nod-for-senate-seat/">cited his work</a> in obtaining millions of dollars in state grants and private dollars to revitalize DuBois. From late 2015 to the present, for instance, the city received more than $7.5 million in grants from Pennsylvania’s Department of Community and Economic Development, state records show.
 
 In addition to serving as city manager, Suplizio was the executive director of the DuBois Area United Way, earning an annual salary of $30,000. The charitable organization announced Suplizio’s resignation and the appointment of a new director in the week following his arrest.
 
 He was also, according to the charges, deeply involved in organizing the DuBois Volunteer Fire Department’s premier annual celebration: Community Days.
 
-The much-anticipated two-day event held in June marks the anniversary of the <a href="http://duboishs.com/index.php/the-fire-of-1888/">1888 Great DuBois Fire</a>, which destroyed much of the city and led to the creation of the volunteer fire company. Festivities include food, games, fireworks, live music, and a parade.
+The much-anticipated two-day event held in June marks the anniversary of the <a href="https://web.archive.org/20110815074608/http://duboishs.com/index.php/the-fire-of-1888/">1888 Great DuBois Fire</a>, which destroyed much of the city and led to the creation of the volunteer fire company. Festivities include food, games, fireworks, live music, and a parade.
 
 It was one of the many hats Suplizio wore, according to the attorney general’s office, that gave him access to bank accounts flush with taxpayer and private money he would use to pay his personal expenses.
 
@@ -149,11 +149,11 @@ These records are also largely silent on how closely city officials tracked mone
 
 City officials have said little since the charges against Suplizio became public in March.
 
-Just a week before Suplizio’s arrest, council members unanimously approved an extension to his contract, two years before it was set to expire in 2025. After Suplizio was charged on March 20, DuBois City Solicitor Toni Cherry released a statement <a href="https://radio.wpsu.org/2023-03-21/dubois-city-manager-accused-stealing-public-money-arrested-charges-theft">on behalf of the council</a> that appeared supportive of the city manager.
+Just a week before Suplizio’s arrest, council members unanimously approved an extension to his contract, two years before it was set to expire in 2025. After Suplizio was charged on March 20, DuBois City Solicitor Toni Cherry released a statement <a href="https://web.archive.org/20230321183906/https://radio.wpsu.org/2023-03-21/dubois-city-manager-accused-stealing-public-money-arrested-charges-theft">on behalf of the council</a> that appeared supportive of the city manager.
 
 “For over two decades, Herm has served DuBois with a passion and determination that has grown its reputation and profile well beyond that of similar cities,” the statement to radio news station WPSU said. “We are committed to ensuring integrity is maintained within DuBois city government, which, we believe epitomizes Herm’s tenure as city manager.”
 
-Suplizio <a href="https://www.abc23.com/newspost/dubois-city-manager-still-on-the-job/">remained in his city job</a> for a few days before the City Council abruptly changed course and placed him on paid leave.
+Suplizio <a href="https://web.archive.org/20230324151824/https://www.abc23.com/newspost/dubois-city-manager-still-on-the-job/">remained in his city job</a> for a few days before the City Council abruptly changed course and placed him on paid leave.
 
 He will continue receiving his “base salary pay,” interim City Manager Chris Nasuti told Spotlight PA, but Suplizio “does not have access to the city building, systems, or networks and is not being contacted or consulted regarding city business.”
 

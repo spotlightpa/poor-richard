@@ -44,11 +44,11 @@ If the driller fails to do that, the state Department of Environmental Protectio
 
 The DEP said in a recent <a href="https://web.archive.org/20230105220315/https://files.dep.state.pa.us/OilGas/BOGM/BOGMPortalFiles/Governor%27s_Lapsing_Statement_Report_2022-12-29.pdf">report</a> it seized two bonds worth about $50,000 in total from uncooperative well operators between 2017 and 2021, a number that has been cited by at least one Republican lawmaker as evidence that forfeiture is not an effective tool. An agency spokesperson told Spotlight PA the number is higher when 2022 is factored in —11 bonds, worth roughly $423,000.
 
-There have historically been discrepancies between the costs of a bond and plugging a well, and the <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=2644">bill</a> the legislature approved last year entrenched that gap.
+There have historically been discrepancies between the costs of a bond and plugging a well, and the <a href="https://web.archive.org/20220614183821/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=H&type=B&bn=2644">bill</a> the legislature approved last year entrenched that gap.
 
 The law, which was enacted last July without then-Gov. Tom Wolf’s signature, froze the bond cost for a single conventional well at $2,500 for the next decade. In comparison, the DEP estimates the current average cost of <a href="https://web.archive.org/20230204232300/https://www.dep.pa.gov/OurCommonWealth/pages/Article.aspx?post=91#:~:text=Once%20the%20well%20is%20plugged,to%20increase%20up%20to%20%24800%2C000.">plugging a single well is $33,000 and can get as high as $800,000</a>.
 
-Prior to the law, the Environmental Quality Board, an independent panel that oversees the regulations set by the DEP, had the <a href="https://www.post-gazette.com/business/powersource/2022/07/19/pennsylvania-new-abandoned-wells-state-law-freeze-well-bonding-oil-gas/stories/202207180082">power to adjust the costs</a> of bonds every two years.
+Prior to the law, the Environmental Quality Board, an independent panel that oversees the regulations set by the DEP, had the <a href="https://web.archive.org/20220719100428/https://www.post-gazette.com/business/powersource/2022/07/19/pennsylvania-new-abandoned-wells-state-law-freeze-well-bonding-oil-gas/stories/202207180082">power to adjust the costs</a> of bonds every two years.
 
 Lawmakers on both sides of the aisle acknowledge the DEP’s limited success in plugging the state’s hundreds of thousands of abandoned wells. But there is a deep partisan divide over what to do about it.
 
@@ -70,7 +70,7 @@ Vitali said he would prefer to go even further and advance a bill that would inc
 
 State Rep. Martin Causer (R., McKean), the committee’s minority chair, voted against the bill, and highlighted the DEP’s lack of bond seizures.
 
-“Why only two bonds if this is a massive problem?” Causer asked at an environmental committee <a href="https://www.legis.state.pa.us/cfdocs/legis/CMS/ArchiveDetails.cfm?SessYear=2023&MeetingId=2778&Code=8&Chamber=H">meeting</a> in April, referencing the DEP’s bond seizure rate over the past five years. “You already have the tools, and an increased bonding amount has an impact on the industry.”
+“Why only two bonds if this is a massive problem?” Causer asked at an environmental committee <a href="https://web.archive.org/20230524102337/https://www.legis.state.pa.us/cfdocs/legis/CMS/ArchiveDetails.cfm?SessYear=2023&MeetingId=2778&Code=8&Chamber=H">meeting</a> in April, referencing the DEP’s bond seizure rate over the past five years. “You already have the tools, and an increased bonding amount has an impact on the industry.”
 
 Causer said that the focus needs to be on plugging orphan wells (ones that were abandoned before April 1985) rather than all abandoned conventional oil wells.
 
@@ -94,7 +94,7 @@ A report released by the department last December showed that nearly <a href="ht
 
 The report added that the department requires more resources, particularly more awyers, field inspectors, and geologists, but did not call for the legislature to increase funding.
 
-Oil and gas drillers, who <a href="https://www.inquirer.com/philly/news/politics/natural-gas-cash-lobbying-20171001.html">hold considerable sway in Harrisburg lobbying circles</a>, have opposed regulatory overhauls such as increasing bond prices.
+Oil and gas drillers, who <a href="https://web.archive.org/20190702185029/https://www.inquirer.com/philly/news/politics/natural-gas-cash-lobbying-20171001.html">hold considerable sway in Harrisburg lobbying circles</a>, have opposed regulatory overhauls such as increasing bond prices.
 
 Arthur Stewart, president of Cameron Energy Company, said that not enough conventional wells are currently being dug to justify bond price hikes, and that such hikes would make drilling too expensive for the waning number of conventional drillers in the commonwealth.
 

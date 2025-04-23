@@ -28,7 +28,7 @@ Poll watchers are a longstanding feature of elections in Pennsylvania and around
 
 {{<embed/newsletter>}}
 
-His campaign also brought unsuccessful lawsuits arguing its watchers should be <a href="https://www.inquirer.com/politics/election/trump-campaign-philadelphia-lawsuit-ruling-20201009.html">allowed in Philadelphia’s satellite mail ballot offices</a> and allowed to serve <a href="https://www.inquirer.com/politics/election/trump-loses-pennsylvania-voting-lawsuit-federal-court-20201010.html">in counties other than where they reside</a>.
+His campaign also brought unsuccessful lawsuits arguing its watchers should be <a href="https://web.archive.org/20201012151739/https://www.inquirer.com/politics/election/trump-campaign-philadelphia-lawsuit-ruling-20201009.html">allowed in Philadelphia’s satellite mail ballot offices</a> and allowed to serve <a href="https://web.archive.org/20201011173117/https://www.inquirer.com/politics/election/trump-loses-pennsylvania-voting-lawsuit-federal-court-20201010.html">in counties other than where they reside</a>.
 
 Trump’s complaints continued during the year’s protracted post-election ballot count, with a state judge at one point <a href="https://apnews.com/article/poll-watchers-ballots-access-monitor-b4e95da6bcf2c8c0e9fda190b332d6d5">ordering Philadelphia</a> to let poll watchers move closer to ballot counting locations.
 
@@ -99,17 +99,17 @@ Before, during, and after the 2020 election, Trump alleged that poll watchers wh
 
 He claimed this lack of access indicated corruption in the state’s election process. These claims were uniformly misleading.
 
-Trump said during a <a href="https://www.inquirer.com/politics/election/trump-poll-watchers-philadelphia-early-voting-20200929.html#loaded">presidential debate</a> in September 2020 that poll watchers who supported him were not permitted to observe polling places on the first day of early in-person voting in Philadelphia.
+Trump said during a <a href="https://web.archive.org/20200930025140/https://www.inquirer.com/politics/election/trump-poll-watchers-philadelphia-early-voting-20200929.html#loaded">presidential debate</a> in September 2020 that poll watchers who supported him were not permitted to observe polling places on the first day of early in-person voting in Philadelphia.
 
-At the time, Trump’s campaign <a href="https://whyy.org/articles/trump-campaign-says-it-plans-to-sue-over-poll-watchers-in-philly-satellite-offices/">didn’t have credentialed poll watchers</a> in Philadelphia, and there were no traditional polling places open.
+At the time, Trump’s campaign <a href="https://web.archive.org/20201019164129/https://whyy.org/articles/trump-campaign-says-it-plans-to-sue-over-poll-watchers-in-philly-satellite-offices/">didn’t have credentialed poll watchers</a> in Philadelphia, and there were no traditional polling places open.
 
-Philly’s version of early voting was a <a href="https://www.inquirer.com/politics/election/philadelphia-pennsylvania-early-voting-offices-open-20200929.html">variation on the practice</a>, in which the city opened over a dozen different satellite offices the month before Election Day; there, voters could request and fill out mail ballots and submit them in person.
+Philly’s version of early voting was a <a href="https://web.archive.org/20200930024501/https://www.inquirer.com/politics/election/philadelphia-pennsylvania-early-voting-offices-open-20200929.html">variation on the practice</a>, in which the city opened over a dozen different satellite offices the month before Election Day; there, voters could request and fill out mail ballots and submit them in person.
 
 Importantly, the satellite offices weren’t legally polling places — they had the same purpose as any other city facility where people could drop off mail ballots. This was key because state law dictates that poll watchers are allowed in “polling places.” It does not explicitly mention satellite offices, nor does it allow poll watchers to observe voters outside of Election Day.
 
 This law remains the same in 2024.
 
-As a part of this effort, the Trump campaign filed multiple suits in <a href="https://www.pacourts.us/Storage/media/pdfs/20210604/113328-file-10376.pdf">state</a> and <a href="https://whyy.org/articles/trump-asks-federal-court-to-stop-vote-counting-in-phiadelphia/">federal</a> courts that sought to allow its poll watchers closer access to vote-counting centers in Philadelphia and to <a href="https://www.nbcphiladelphia.com/news/local/pennsylvania-judge-throws-out-trump-campaigns-poll-watching-lawsuit/2559833/">expand</a> who could serve as a poll watcher. However, all of the cases were dismissed.
+As a part of this effort, the Trump campaign filed multiple suits in <a href="https://web.archive.org/20210625093058/https://www.pacourts.us/Storage/media/pdfs/20210604/113328-file-10376.pdf">state</a> and <a href="https://web.archive.org/20201105230853/https://whyy.org/articles/trump-asks-federal-court-to-stop-vote-counting-in-phiadelphia/">federal</a> courts that sought to allow its poll watchers closer access to vote-counting centers in Philadelphia and to <a href="https://web.archive.org/20201011034706/https://www.nbcphiladelphia.com/news/local/pennsylvania-judge-throws-out-trump-campaigns-poll-watching-lawsuit/2559833/">expand</a> who could serve as a poll watcher. However, all of the cases were dismissed.
 
 <h2 id="spl-heading-4">What was the impact?</h2>
 
@@ -117,13 +117,13 @@ While Trump’s claims about his poll watchers being denied access in Pennsylvan
 
 Republican lawmakers in the state legislature took up some of Trump’s efforts to change the way elections worked.
 
-After thousands of Trump supporters volunteered to serve as poll watchers and the campaign sued <a href="https://www.reuters.com/article/idUSKBN26V0RR/">unsuccessfully</a> to have them be allowed to serve in counties where they did not reside, lawmakers tried to change the law to permit the practice in the future.
+After thousands of Trump supporters volunteered to serve as poll watchers and the campaign sued <a href="https://web.archive.org/20240402101722/https://www.reuters.com/article/idUSKBN26V0RR/">unsuccessfully</a> to have them be allowed to serve in counties where they did not reside, lawmakers tried to change the law to permit the practice in the future.
 
-In 2021, state Sen. Doug Mastriano (R., Franklin) introduced a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=0573">bill</a> that would have allowed any registered voter in the state to watch polls in any county. The bill also proposed that poll watchers be allowed within six feet of ballot-counting operations — another one of Trump’s goals — and went further. Mastriano <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&amp;sessYr=2021&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=0573&amp;pn=1712">proposed increased penalties</a> for officials who were convicted of refusing to admit poll watchers; his bill would have allowed them to be sentenced to up to two years in prison, plus a $5,000 penalty.
+In 2021, state Sen. Doug Mastriano (R., Franklin) introduced a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=0573">bill</a> that would have allowed any registered voter in the state to watch polls in any county. The bill also proposed that poll watchers be allowed within six feet of ballot-counting operations — another one of Trump’s goals — and went further. Mastriano <a href="https://web.archive.org/20220607020850/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&amp;sessYr=2021&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=0573&amp;pn=1712">proposed increased penalties</a> for officials who were convicted of refusing to admit poll watchers; his bill would have allowed them to be sentenced to up to two years in prison, plus a $5,000 penalty.
 
 The bill passed the state legislature, both chambers of which were led by Republican majorities at the time, but was vetoed by then-Gov. Tom Wolf, a Democrat.
 
-Currently, there are no bills in the Pennsylvania legislature that would allow registered voters to serve as poll watchers for any county. There are, however, GOP-sponsored bills in <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=0603">both</a> <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1420">chambers</a> that propose increasing penalties for impeding poll watchers. Neither has passed out of committee.
+Currently, there are no bills in the Pennsylvania legislature that would allow registered voters to serve as poll watchers for any county. There are, however, GOP-sponsored bills in <a href="https://web.archive.org/20240330120104/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=0603">both</a> <a href="https://web.archive.org/20240330123111/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1420">chambers</a> that propose increasing penalties for impeding poll watchers. Neither has passed out of committee.
 
 The misinformation about poll watching since 2020 has affected election directors’ jobs in various ways. While some say they haven’t had many issues with poll watchers, others say they noticed a major spike in watchers who are hostile or are attempting to monitor polls without county approval.
 
@@ -150,4 +150,3 @@ The current and former election directors who spoke with Spotlight PA all say th
 {{<dewey-assistant>}}
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

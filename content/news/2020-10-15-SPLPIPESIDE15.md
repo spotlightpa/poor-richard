@@ -35,4 +35,3 @@ extended-kicker = ""
 <link rel="stylesheet" type="text/css" href="https://interactives.data.spotlightpa.org/2020/mariner-east-scrollytelling/styles.c86c3119.css">
 <div id="app"></div>
 <script src="https://interactives.data.spotlightpa.org/2020/mariner-east-scrollytelling/app.c328ef1a.js"></script>
-

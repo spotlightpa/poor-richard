@@ -65,7 +65,7 @@ The budget was delayed by a week as state House Republicans tried to withhold fu
 
 On Wednesday, the lower chamber took a different course, advancing a clean version of a bill to fund the universities and adding the research ban to unrelated broadband legislation.
 
-The clean bill is now on Wolf’s desk for his approval, and the <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=442">latter</a> is parked in a state Senate committee.
+The clean bill is now on Wolf’s desk for his approval, and the <a href="https://web.archive.org/20210504115134/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=442">latter</a> is parked in a state Senate committee.
 
 While some Capitol observers feared <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-election-results-budget-impasse/" target="_blank">the state House would be the one to derail the budget</a>, it was in fact state Senate Republicans who signaled Thursday that all was not well, stating that budget talks were “deteriorating” and “reaching an impasse.”
 

@@ -33,7 +33,7 @@ His office said troopers were brought in from outside the local jurisdiction to 
 
 Hall’s parents, Fe and Gareth, <a href="https://www.spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/" target="_blank">disagree and have asked federal agencies and the Pennsylvania Office of Attorney General to look into the case</a>.
 
-A district attorney can ask the state attorney general to investigate a criminal case if its office doesn’t have the resources, or if there is a “real or apparent” conflict of interest, <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/uconsCheck.cfm?txtType=HTM&yr=1980&sessInd=0&smthLwInd=0&act=164&chpt=2&sctn=5&subsctn=0">according to state law.</a> But it’s nearly impossible for the Attorney General’s Office to intervene on its own.
+A district attorney can ask the state attorney general to investigate a criminal case if its office doesn’t have the resources, or if there is a “real or apparent” conflict of interest, <a href="https://web.archive.org/20211118210736/https://www.legis.state.pa.us/cfdocs/legis/LI/uconsCheck.cfm?txtType=HTM&yr=1980&sessInd=0&smthLwInd=0&act=164&chpt=2&sctn=5&subsctn=0">according to state law.</a> But it’s nearly impossible for the Attorney General’s Office to intervene on its own.
 
 David Rudovsky, a longtime use-of-force expert and senior fellow at the University of Pennsylvania Law School, said there is an inherent conflict of interest when a local prosecutor is asked to investigate law enforcement.
 
@@ -49,13 +49,13 @@ Jacklin Rhoads, communications director for Shapiro, said the office is well-equ
 
 While all DAs have the option to send Shapiro cases when law enforcement kills someone, that rarely happens.
 
-Police officers in Pennsylvania have killed at least 108 people since 2017, according to a Spotlight PA examination of databases maintained by the <a href="https://www.washingtonpost.com/graphics/investigations/police-shootings-database/">Washington Post</a> and <a href="https://fatalencounters.org/">Fatal Encounters</a>.
+Police officers in Pennsylvania have killed at least 108 people since 2017, according to a Spotlight PA examination of databases maintained by the <a href="https://web.archive.org/20210101002727/https://www.washingtonpost.com/graphics/investigations/police-shootings-database/">Washington Post</a> and <a href="https://web.archive.org/20210103062112/https://fatalencounters.org/">Fatal Encounters</a>.
 
 During that time period, three fatal use-of-force cases have been sent to Shapiro for review, said Molly Stieber, press secretary for the Attorney General’s Office.
 
-In June 2017, Philadelphia officer Ryan Pownall shot and killed 30-year-old David Jones during a traffic stop. Kelley Hodge, the city’s interim district attorney at the time, asked Shapiro’s office to investigate because of an undisclosed <a href="https://whyy.org/articles/state-investigating-philly-police-shooting-of-man-on-dirt-bike/">conflict of interest</a>. Shapiro <a href="https://philly.metro.us/david-jones-shooting-case-handed-to-krasner/">sent the case back</a> to the District Attorney’s Office in 2018 after Larry Krasner was elected. The trial has been repeatedly delayed.
+In June 2017, Philadelphia officer Ryan Pownall shot and killed 30-year-old David Jones during a traffic stop. Kelley Hodge, the city’s interim district attorney at the time, asked Shapiro’s office to investigate because of an undisclosed <a href="https://web.archive.org/20210120144922/https://whyy.org/articles/state-investigating-philly-police-shooting-of-man-on-dirt-bike/">conflict of interest</a>. Shapiro <a href="https://web.archive.org/20210616083440/https://philly.metro.us/david-jones-shooting-case-handed-to-krasner/">sent the case back</a> to the District Attorney’s Office in 2018 after Larry Krasner was elected. The trial has been repeatedly delayed.
 
-Krasner asked Shapiro’s office to investigate the August 2018 fatal shooting of Jeffrey Dennis by Philadelphia undercover officer Richard Nicoletti because Krasner once represented Dennis as a defense attorney. Shapiro announced his <a href="https://www.inquirer.com/philly/news/richard-nicoletti-police-shooting-jeffrey-dennis-krasner-mcnesby-20181204.html">decision to not press charges</a> in December 2018.
+Krasner asked Shapiro’s office to investigate the August 2018 fatal shooting of Jeffrey Dennis by Philadelphia undercover officer Richard Nicoletti because Krasner once represented Dennis as a defense attorney. Shapiro announced his <a href="https://web.archive.org/20210108185225/https://www.inquirer.com/philly/news/richard-nicoletti-police-shooting-jeffrey-dennis-krasner-mcnesby-20181204.html">decision to not press charges</a> in December 2018.
 
 Spotlight PA was unable to independently identify the third instance. Stieber, of the Attorney General’s Office, said she could not discuss the case because it was presented to a grand jury but no charges were filed.
 

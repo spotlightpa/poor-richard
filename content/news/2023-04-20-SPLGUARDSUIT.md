@@ -46,13 +46,13 @@ She added: “Granting a petition of guardianship should be taken with great cau
 
 ## ‘Shocks the conscience’
 
-At its core, the state’s <a href="https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.055..HTM">guardianship law</a> and the complex system set up to enforce it are meant to protect adults who, due to illness, disability, or other unforeseen causes, can no longer manage their personal affairs, said Marielle Hazen, whose Harrisburg-based law firm specializes in elder law. But the law, she said, is not perfect.
+At its core, the state’s <a href="https://web.archive.org/20141201054050/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/20/00.055..HTM">guardianship law</a> and the complex system set up to enforce it are meant to protect adults who, due to illness, disability, or other unforeseen causes, can no longer manage their personal affairs, said Marielle Hazen, whose Harrisburg-based law firm specializes in elder law. But the law, she said, is not perfect.
 
 Guardians are people appointed by a court to take over decision-making about the health or financial affairs — often both — of an adult who has lost the ability to make sound decisions about their life. They can be friends, relatives, or acquaintances of the incapacitated person, or they can be professionals who do such work for a fee.
 
 In Pennsylvania, guardians aren’t required to be certified or trained before taking on the role.
 
-The state has <a href="https://www.pacourts.us/Storage/media/pdfs/20220915/194105-pasupremecourtadvisorycouncilreleaseslatestprogressreportanddataonelderabuseandguardianship.pdf">over 18,000 active guardianships</a>, nearly half of which involve people over the age of 60, according to data compiled by the state Supreme Court’s Advisory Council on Elder Justice in the Courts. Those guardians oversee more than $1.7 billion in assets.
+The state has <a href="https://web.archive.org/20221017143714/https://www.pacourts.us/Storage/media/pdfs/20220915/194105-pasupremecourtadvisorycouncilreleaseslatestprogressreportanddataonelderabuseandguardianship.pdf">over 18,000 active guardianships</a>, nearly half of which involve people over the age of 60, according to data compiled by the state Supreme Court’s Advisory Council on Elder Justice in the Courts. Those guardians oversee more than $1.7 billion in assets.
 
 Though laws vary from state to state, in most cases, almost anyone can petition a court to declare a person incapacitated and have them placed under guardianship. In Pennsylvania, Orphans’ Court judges decide those cases after a hearing that includes medical and other professional testimony.
 
@@ -104,7 +104,7 @@ But in the decision, one of the judges stressed that if Raffa’s allegations ar
 
 Dietrich remains in private practice. Feliciani is listed as an active lawyer on the website maintained by the state’s disciplinary board for attorneys, although his LinkedIn page shows he closed his private practice in 2019.
 
-Before he closed his practice, according to news articles, Feliciani was a lawyer in at least one case overseen by former <a href="https://www.inquirer.com/philly/news/gloria-byars-guardian-philadelphia-orphans-court-frisby-berg-20180330.html">Philadelphia guardian Gloria Byars</a>. Byars made headlines across the state after being charged by local and federal authorities in 2019 for stealing more than $1 million from the people she was assigned to care for.
+Before he closed his practice, according to news articles, Feliciani was a lawyer in at least one case overseen by former <a href="https://web.archive.org/20190728050515/https://www.inquirer.com/philly/news/gloria-byars-guardian-philadelphia-orphans-court-frisby-berg-20180330.html">Philadelphia guardian Gloria Byars</a>. Byars made headlines across the state after being charged by local and federal authorities in 2019 for stealing more than $1 million from the people she was assigned to care for.
 
 Neither Dietrich nor Feliciani has any past or pending disciplinary proceedings, according to the state’s disciplinary website.
 

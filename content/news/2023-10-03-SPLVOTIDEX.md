@@ -17,7 +17,7 @@ title-tag = "Pennsylvania may expand voter ID requirements"
 topics = ["Elections"]
 +++
 
-<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
+<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://web.archive.org/20170521211815/https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
 
 <strong><em>Update, Oct. 5: </em></strong>The Pennsylvania House has advanced a bill to change the date of the 2024 presidential primary while <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-2024-presidential-primary-date-legislation-change-house/">rejecting an effort to implement expanded voter ID requirements, mail ballot rule changes, and a slew of other provisions</a>.
 
@@ -59,7 +59,7 @@ Kadida Kenner of the New Pennsylvania Project, a voting rights group, said her o
 
 “New Pennsylvania Project is always going to be concerned about anything that puts an additional barrier in front of Pennsylvania voters,” she said. “What we are concerned about as an organization is this is the beginning of how voting rights get chipped away.”
 
-While she recognized that many Pennsylvanians support expanding voter ID — <a href="https://www.cityandstatepa.com/politics/2021/06/new-poll-shows-broad-support-voter-id-pa/364567/">polls show</a> broad support— she does not think popularity equates to good policy, and that if more voters understood the additional barrier this creates, they would not be as supportive.
+While she recognized that many Pennsylvanians support expanding voter ID — <a href="https://web.archive.org/20220626052224/https://www.cityandstatepa.com/politics/2021/06/new-poll-shows-broad-support-voter-id-pa/364567/">polls show</a> broad support— she does not think popularity equates to good policy, and that if more voters understood the additional barrier this creates, they would not be as supportive.
 
 State House Democrats who spoke to Spotlight PA and Votebeat ran the gamut as to whether they would support this measure.
 
@@ -108,4 +108,3 @@ The amendment would also increase the cost to file a recount petition from $50 t
 “That’s a major provision there that will put a high burden of proof and protect elections from actors who are trying to subvert the election process,” Miller said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

@@ -43,7 +43,7 @@ The latest interpretation governing probation officers appears to be at odds wit
 
 The law defines law enforcement officers as “peace officers” and points to the state’s Crimes Code for that <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=18">definition</a>, which describes them as “any person who by virtue of his office or public employment is vested by law with a duty to maintain public order or to make arrests for offenses, whether that duty extends to all offenses or is limited to specific offenses.”
 
-Probation officers work under the supervision of district courts and their salaries are paid by counties. Pennsylvania’s Judicial Code <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=42&div=0&chpt=99">states</a> that a probation officer “is declared to be a peace officer” and has powers including the ability to arrest someone.
+Probation officers work under the supervision of district courts and their salaries are paid by counties. Pennsylvania’s Judicial Code <a href="https://web.archive.org/20180818234807/https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=42&div=0&chpt=99">states</a> that a probation officer “is declared to be a peace officer” and has powers including the ability to arrest someone.
 
 State Police spokesperson Myles Snyder confirmed that county probation officers “are explicitly given the powers of a ‘peace officer,’” but did not directly state that they are subject to the misconduct law, nor did he confirm or deny the advice of the training commission to courts.
 
@@ -53,7 +53,7 @@ Several county and state elected officials said they are skeptical of the courts
 
 “Not one police department or police chief in the Commonwealth of Pennsylvania wants to mistakenly hire a law enforcement officer with a history of egregious misconduct,” Carbon County Commissioner Chris Lukasevich said during a January public meeting. “We need to take those actions to ensure it doesn’t happen.”
 
-State Rep. Chris Rabb (D., Philadelphia), whose legislation was incorporated into Act 57, has said the law was “<a href="https://www.facebook.com/RepRabb/posts/pfbid0jUm3JrVPtXS4gPhSmSGtHTotbJfVDEaz16Crp9haVtyXChiTfZk1zsvF9vj3LP5Gl">diluted</a>” during negotiations. He told Spotlight PA in an email that the required database checks apply to probation officers and noncompliance “brazenly defies clear statutory requirements.”
+State Rep. Chris Rabb (D., Philadelphia), whose legislation was incorporated into Act 57, has said the law was “<a href="https://web.archive.org/20230131105505/https://www.facebook.com/RepRabb/posts/pfbid0jUm3JrVPtXS4gPhSmSGtHTotbJfVDEaz16Crp9haVtyXChiTfZk1zsvF9vj3LP5Gl">diluted</a>” during negotiations. He told Spotlight PA in an email that the required database checks apply to probation officers and noncompliance “brazenly defies clear statutory requirements.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 

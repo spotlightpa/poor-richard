@@ -27,7 +27,7 @@ The measure was sponsored by Rep. Kerry Benninghoff (R., Centre), who has experi
 
 He was confronted with the disease again in 2008 when doctors discovered his 4-year-old daughter had a brain tumor. She died after two years of surgeries and radiation.
 
-“You do your best as a parent. You teach them to look left and right, but then like a thief in the night, this happens,” Benninghoff, who chairs the [House Cancer Caucus](https://www.legis.state.pa.us/cfdocs/legis/home/member_information/house_bio.cfm?id=215), said in an interview. “It’s still raw.”
+“You do your best as a parent. You teach them to look left and right, but then like a thief in the night, this happens,” Benninghoff, who chairs the [House Cancer Caucus](https://web.archive.org/20070705224544/https://www.legis.state.pa.us/cfdocs/legis/home/member_information/house_bio.cfm?id=215), said in an interview. “It’s still raw.”
 
 The bill would require health insurance policies to cover drugs prescribed to patients with stage IV cancer — meaning it has spread to other organs or parts of the body — as long as they have been approved by the federal Food and Drug Administration for cancer treatment and are consistent with best practices.
 
@@ -58,7 +58,7 @@ Benninghoff said he knows the scope of the bill is narrow, but sometimes comprom
 
 “I don’t want to waste another day, week, month trying to fight for perfection, when we can help a lot of people,” he said. “Sometimes you have to take half a loaf instead of a whole loaf.”
 
-Legislatures in [Georgia](http://custom.statenet.com/public/resources.cgi?id=ID:bill:GA2015000H965&ciq=ncsl62&client_md=403e6f0fc8de8df58c82b96ef0a5ba94&mode=current_text), [Illinois](http://custom.statenet.com/public/resources.cgi?id=ID:bill:IL2017000H4821&ciq=ncsl62&client_md=fad451564d0efd215f03893445fc7c79&mode=current_text), and [Maryland](http://custom.statenet.com/public/resources.cgi?id=ID:bill:MD2017000S919&ciq=ncsl62&client_md=362745f34980f11a41f260e2c1b8e6ef&mode=current_text) have passed similar legislation in recent years.
+Legislatures in [Georgia](https://web.archive.org/20201003051310/http://custom.statenet.com/public/resources.cgi?id=ID:bill:GA2015000H965&ciq=ncsl62&client_md=403e6f0fc8de8df58c82b96ef0a5ba94&mode=current_text), [Illinois](https://web.archive.org/20201003191138/http://custom.statenet.com/public/resources.cgi?id=ID:bill:IL2017000H4821&ciq=ncsl62&client_md=fad451564d0efd215f03893445fc7c79&mode=current_text), and [Maryland](https://web.archive.org/20201004041220/http://custom.statenet.com/public/resources.cgi?id=ID:bill:MD2017000S919&ciq=ncsl62&client_md=362745f34980f11a41f260e2c1b8e6ef&mode=current_text) have passed similar legislation in recent years.
 
 ***Correction**: A previous version of this story misattributed a statement from Independence Blue Cross. The statement was from Dr. Ginny Calega, vice president of medical affairs.*
 

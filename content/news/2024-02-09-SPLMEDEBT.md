@@ -40,9 +40,9 @@ The usual buyers of medical debt are for-profit companies that purchase the debt
 
 But unlike the for-profit companies, RIP Medical Debt approaches hospitals, ambulance services, and other health care providers, and buys the debt of qualifying individuals using money from donors. Eligible individuals don’t apply for relief, Sesso said; patients are informed of the debt’s absolution after RIP Medical Debt pays it off.
 
-The group, established in 2014, has relieved $10.4 billion worth of medical debt across the country, according to its <a href="https://ripmedicaldebt.org/">website</a>.
+The group, established in 2014, has relieved $10.4 billion worth of medical debt across the country, according to its <a href="https://web.archive.org/20150601224212/https://ripmedicaldebt.org/">website</a>.
 
-Shapiro’s proposal mirrors a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=78">bill</a> introduced by state Rep. Arvind Venkat (D., Allegheny), a practicing emergency room doctor.
+Shapiro’s proposal mirrors a <a href="https://web.archive.org/20230629045453/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=78">bill</a> introduced by state Rep. Arvind Venkat (D., Allegheny), a practicing emergency room doctor.
 
 Both would direct the state Department of Health to contract with a medical debt relief coordinator, such as RIP Medical Debt, to find and buy outstanding bills. A debtor would qualify if their annual income is at 400% or less of the federal poverty limit, or the amount owed is 5% or more of their income. These are the same standards used by RIP Medical Debt.
 
@@ -58,7 +58,7 @@ RIP Medical Debt estimates that there is potentially $3.3 billion of qualifying 
 
 The proposal is backed by advocacy groups, including the state’s cancer society and the Pennsylvania Health Access Network.
 
-The medical relief program, “if combined with new protections that prevent medical debt from happening in the first place, this would be a game-changer for families struggling with medical costs,” PHAN Executive Director Antoinette Kraus said in a statement. The organization <a href="https://www.healthcarevaluehub.org/advocate-resources/publications/pennsylvania-survey-respondents-struggle-afford-high-health-care-costs-worry-about-affording-health-care-future-support-governme?eType=EmailBlastContent&amp;eId=1e7d4f64-2ced-448c-9ed0-020bbd050dc6">surveyed Pennsylvanians last year</a> and found that one in four had at least one overdue medical bill and that one in three carried some debt from health care services.
+The medical relief program, “if combined with new protections that prevent medical debt from happening in the first place, this would be a game-changer for families struggling with medical costs,” PHAN Executive Director Antoinette Kraus said in a statement. The organization <a href="https://web.archive.org/20240208142810/https://www.healthcarevaluehub.org/advocate-resources/publications/pennsylvania-survey-respondents-struggle-afford-high-health-care-costs-worry-about-affording-health-care-future-support-governme?eType=EmailBlastContent&amp;eId=1e7d4f64-2ced-448c-9ed0-020bbd050dc6">surveyed Pennsylvanians last year</a> and found that one in four had at least one overdue medical bill and that one in three carried some debt from health care services.
 
 Another group, the Hospital and Healthsystem Association of Pennsylvania, told Spotlight PA that hospitals provided patients with a little more than $750 million in uncompensated care in the 2022 fiscal year.
 
@@ -78,11 +78,10 @@ Following Shapiro’s pitch Tuesday, state Senate Republican leadership slammed 
 
 To win support for the medical debt program, Shapiro and legislative Democrats could agree to make changes to the proposal as it currently stands. The governor hinted at one such possibility during his speech Tuesday: focusing the program on rural communities, which Shapiro said are disproportionately affected.
 
-Rural hospitals have <a href="https://radio.wpsu.org/2023-08-03/nursing-shortage-pa-rural-hospitals-face-closure-risk">closed at high rates in recent years</a>, leaving swathes of Pennsylvania without ready access to health care. Buying up that debt would help struggling rural health care providers clear their books and provide an infusion of cash, while also aiding patients in those regions.
+Rural hospitals have <a href="https://web.archive.org/20230803195155/https://radio.wpsu.org/2023-08-03/nursing-shortage-pa-rural-hospitals-face-closure-risk">closed at high rates in recent years</a>, leaving swathes of Pennsylvania without ready access to health care. Buying up that debt would help struggling rural health care providers clear their books and provide an infusion of cash, while also aiding patients in those regions.
 
-Citing <a href="https://ripmedicaldebt.org/trapped-americas-crippling-medical-debt-crisis/">a recent survey</a> sponsored in part by RIP Medical Debt, Sesso argued that Americans “do not blame individuals as much for medical debt as they do for other kinds of debt.”
+Citing <a href="https://web.archive.org/20231209114033/https://ripmedicaldebt.org/trapped-americas-crippling-medical-debt-crisis/">a recent survey</a> sponsored in part by RIP Medical Debt, Sesso argued that Americans “do not blame individuals as much for medical debt as they do for other kinds of debt.”
 
 “That&#39;s on the right and the left,” Sesso said. “Republicans and Democrats both see it as an issue that is a systems issue, and one that they think government needs to solve.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

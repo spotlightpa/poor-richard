@@ -26,7 +26,7 @@ HARRISBURG — In a letter announcing he would resign as Pennsylvania’s consum
 
 The incoming Republican attorney general, Cicero said, had asked him to reapply for the job he’d held for three years or resign.
 
-“The utilities’ actions, and your decision to open the position cannot be separated,” he <a href="https://www.scribd.com/document/822147851/Patrick-Cicero-Resignation-Letter">wrote</a>.
+“The utilities’ actions, and your decision to open the position cannot be separated,” he <a href="https://web.archive.org/20250131151301/https://www.scribd.com/document/822147851/Patrick-Cicero-Resignation-Letter">wrote</a>.
 
 Sunday, who took office on Jan. 21, said he asked all employees in positions under his discretion to reapply. He didn’t comment on Cicero&#39;s performance, but said in a statement, “Having a capable, unbiased, and apolitical Consumer Advocate is a priority for my administration in order to protect the interests of all consumers.”
 
@@ -90,9 +90,9 @@ He was in office during the partial nuclear meltdown at Three Mile Island. At th
 
 In response, Widoff told the Associated Press that any stance taken by the consumer advocate “does not reflect the policy positions of any other governmental organization,” arguing that it “should reflect the position and the interests of consumers.”
 
-After Widoff’s 1979 departure, the power to appoint the consumer advocate shifted from the governor to the attorney general, and the office went on to have relatively little turnover — just a <a href="https://www.oca.pa.gov/timeline/">handful</a> of other people have served in the role besides Cicero.
+After Widoff’s 1979 departure, the power to appoint the consumer advocate shifted from the governor to the attorney general, and the office went on to have relatively little turnover — just a <a href="https://web.archive.org/20230328054530/https://www.oca.pa.gov/timeline/">handful</a> of other people have served in the role besides Cicero.
 
-Popowsky, who said Cicero did a “fine job,” <a href="https://www.inquirer.com/philly/business/20121111_Pa__s_acclaimed_consumer_advocate_retires.html">recalled</a> clashing with an attorney general over caller ID in a 2012 Inquirer interview. His position of letting consumers opt out eventually won, setting a national privacy standard.
+Popowsky, who said Cicero did a “fine job,” <a href="https://web.archive.org/20210304030238/https://www.inquirer.com/philly/business/20121111_Pa__s_acclaimed_consumer_advocate_retires.html">recalled</a> clashing with an attorney general over caller ID in a 2012 Inquirer interview. His position of letting consumers opt out eventually won, setting a national privacy standard.
 
 He told the outlet he had survived so long by not being political.
 
@@ -100,7 +100,7 @@ He told the outlet he had survived so long by not being political.
 
 ## Clashes with water companies
 
-Cicero was appointed by then-Attorney General Josh Shapiro in December 2021 after leading the Pennsylvania Utility Law Project, a legal aid group. He received bipartisan support from the GOP-controlled state Senate, winning approval <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=534">45-5</a> in June 2022.
+Cicero was appointed by then-Attorney General Josh Shapiro in December 2021 after leading the Pennsylvania Utility Law Project, a legal aid group. He received bipartisan support from the GOP-controlled state Senate, winning approval <a href="https://web.archive.org/20220607235514/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=534">45-5</a> in June 2022.
 
 Since then, Cicero has been active. He fought more requests by utilities to raise rates than his recent predecessors and testified for <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-gas-electric-utility-shutoffs-protections-reauthorization-bill/">more expansive state utility protections</a>.
 
@@ -116,7 +116,7 @@ His actions didn’t escape the notice of water companies. Two of the biggest �
 
 {{<embed/donate>}}
 
-Last year, during the race for attorney general between Sunday and Democrat Eugene DePasquale, industry publication Northcoast Research began reporting that private water companies were “leaning on both PA Attorney General candidates” to replace Cicero. Sunday’s election, Northcoast wrote, would almost ensure the move — a detail <a href="https://www.wesa.fm/environment-energy/2025-01-15/pennsylvania-consumer-advocate-resigns">first reported by WESA</a>.
+Last year, during the race for attorney general between Sunday and Democrat Eugene DePasquale, industry publication Northcoast Research began reporting that private water companies were “leaning on both PA Attorney General candidates” to replace Cicero. Sunday’s election, Northcoast wrote, would almost ensure the move — a detail <a href="https://web.archive.org/20250116004846/https://www.wesa.fm/environment-energy/2025-01-15/pennsylvania-consumer-advocate-resigns">first reported by WESA</a>.
 
 Northcoast wrote that Cicero had been “shaking up what has long been a highly favorable Pennsylvania regulatory environment for water utilities by holding out on settlement agreements, appealing PUC decisions to Commonwealth Court, and generally being the most strident representation utility consumers have had in PA for decades.”
 
@@ -124,11 +124,10 @@ That reputation was top of mind for consumer advocacy groups and a handful of De
 
 His departure, and the news that Sunday was forcing him to reapply for his post, sparked a wave of condemnation from officials skeptical of utilities’ power, and particularly of increased water privatization.
 
-In a statement, <a href="https://x.com/SenatorJohnKane/status/1879965866433065163">state Sen. John Kane</a> (D., Delaware) said Cicero has been “responsible for exposing the true business practices of these companies: a continued and deliberate strategy to drive up profits at the expense of ratepayers.”
+In a statement, <a href="https://web.archive.org/20250131142543/https://x.com/SenatorJohnKane/status/1879965866433065163">state Sen. John Kane</a> (D., Delaware) said Cicero has been “responsible for exposing the true business practices of these companies: a continued and deliberate strategy to drive up profits at the expense of ratepayers.”
 
 “It doesn’t surprise me that investor owned utilities have been wanting a change,” he added.
 
 Asked about the outgoing consumer advocate’s resignation, Shapiro — the now-governor who appointed Cicero when he was attorney general — said he appreciated Cicero’s work.
 
 But Shapiro added, “Sunday has the right to surround himself with the people who he thinks will best serve him as he’s serving the people of the commonwealth.”
-

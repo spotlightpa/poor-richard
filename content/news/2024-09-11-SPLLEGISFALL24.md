@@ -63,7 +63,7 @@ However, state Senate Republicans, reluctant to up spending, agreed to a one-tim
 
 “We didn&#39;t get what we anticipated, what we were hoping for and fighting for,” state Rep. Morgan Cephas (D., Philadelphia) told reporters in July, “but at the very least, this down payment is the start of a conversation.”
 
-Transit agencies said the funding was just a stopgap. In the meantime, they’re trying to balance their budgets through other approaches. SEPTA announced last week that it would effectively raise fares for tens of thousands of riders by <a href="https://www.inquirer.com/transportation/septa-fare-increases-regional-rail-20240905.html">eliminating a 50 cent discount</a> for paying with a card instead of cash.
+Transit agencies said the funding was just a stopgap. In the meantime, they’re trying to balance their budgets through other approaches. SEPTA announced last week that it would effectively raise fares for tens of thousands of riders by <a href="https://web.archive.org/20240905134655/https://www.inquirer.com/transportation/septa-fare-increases-regional-rail-20240905.html">eliminating a 50 cent discount</a> for paying with a card instead of cash.
 
 So how do skill games fit into the picture? State Senate Republicans have placed some big conditions on supporting new transit funding, and one is finding a new revenue source.
 
@@ -77,9 +77,9 @@ But despite the promise of $150 million or more in revenue, the legislature has 
 
 Legislative proposals on the issue range from lenient rules and taxation to an outright ban. The measures are often sponsored by lawmakers who report gifts or big money campaign checks from the very groups they are attempting to regulate.
 
-In a statement, state House Democratic spokesperson Elizabeth Rementer said the caucus is willing to talk about a way forward on skill games that balances the needs of social clubs that <a href="https://www.pennlive.com/politics/2024/06/small-games-of-chance-in-pa-may-be-big-business-but-social-clubs-want-bigger-payouts.html">benefit financially</a> with the existing casino industry while “preventing underage and problem gambling.”
+In a statement, state House Democratic spokesperson Elizabeth Rementer said the caucus is willing to talk about a way forward on skill games that balances the needs of social clubs that <a href="https://web.archive.org/20240610105209/https://www.pennlive.com/politics/2024/06/small-games-of-chance-in-pa-may-be-big-business-but-social-clubs-want-bigger-payouts.html">benefit financially</a> with the existing casino industry while “preventing underage and problem gambling.”
 
-It’s a tricky issue for lawmakers from Philadelphia, where City Council <a href="https://www.cityandstatepa.com/policy/2024/03/philadelphia-city-council-bans-skill-game-machines-within-city-businesses-giving-exceptions-bars-and-restaurants/395123/">passed an ordinance</a> restricting skill game terminals to bars and restaurants. Cephas, chair of the city’s legislative delegation, said she wants any legislation regulating skill games to give Philadelphia the freedom to make its own rules.
+It’s a tricky issue for lawmakers from Philadelphia, where City Council <a href="https://web.archive.org/20240325214637/https://www.cityandstatepa.com/policy/2024/03/philadelphia-city-council-bans-skill-game-machines-within-city-businesses-giving-exceptions-bars-and-restaurants/395123/">passed an ordinance</a> restricting skill game terminals to bars and restaurants. Cephas, chair of the city’s legislative delegation, said she wants any legislation regulating skill games to give Philadelphia the freedom to make its own rules.
 
 <h2 id="spl-heading-2">An expiring utility lifeline</h2>
 
@@ -91,9 +91,9 @@ The law expires every ten years and must be <a href="https://www.spotlightpa.org
 
 In recent years, advocates for the state’s poorest consumers have argued that by allowing utility companies to tack additional fees, fines, and deposits onto low-income customers’ bills, the law has become more punitive than protective.
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1077">bill</a> introduced in the state House folded in some of the advocates’ suggestions, including proposed bans on summer utility shut-offs and reconnection fees for low-income customers, as well as an extension of medical waivers that protect vulnerable customers’ utility access from 30 to 90 days. It currently sits in committee.
+A <a href="https://web.archive.org/20230504120108/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1077">bill</a> introduced in the state House folded in some of the advocates’ suggestions, including proposed bans on summer utility shut-offs and reconnection fees for low-income customers, as well as an extension of medical waivers that protect vulnerable customers’ utility access from 30 to 90 days. It currently sits in committee.
 
-The state Senate, meanwhile, has already passed a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1017">bill</a> that would reauthorize Chapter 14 and includes modest changes such as more time between a shut-off notice and losing service, and allowing for longer repayment plans. It would also allow medical waivers to last for 60 days.
+The state Senate, meanwhile, has already passed a <a href="https://web.archive.org/20240117223643/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1017">bill</a> that would reauthorize Chapter 14 and includes modest changes such as more time between a shut-off notice and losing service, and allowing for longer repayment plans. It would also allow medical waivers to last for 60 days.
 
 State House Democrats, state Senate Republicans, and the Shapiro administration have all said the issue is a priority.
 
@@ -105,19 +105,19 @@ The expanded consumer protections are opposed by utility companies’ main lobby
 
 “It is our strong preference that the House and Senate reach a reasonable compromise and reauthorize the law rather than require the affected parties to go through another lengthy, difficult process at the PUC,” Terrance Fitzpatrick, president of the Energy Association of Pennsylvania, told Spotlight PA in an email.
 
-Absent action, the law will expire on Dec. 31. If that happens, the Public Utility Commission will have to step in and develop new rules to regulate shut-offs. However, the commission has already <a href="https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/052/chapter56/subchapEtoc.html&amp;d=reduce">adopted</a> some existing protections — such as the ban on winter utility disconnections — into its regulations, utility advocates say, and they will remain in force.
+Absent action, the law will expire on Dec. 31. If that happens, the Public Utility Commission will have to step in and develop new rules to regulate shut-offs. However, the commission has already <a href="https://web.archive.org/20220126083215/https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/052/chapter56/subchapEtoc.html&amp;d=reduce">adopted</a> some existing protections — such as the ban on winter utility disconnections — into its regulations, utility advocates say, and they will remain in force.
 
 <h2 id="spl-heading-3">Proposals target hospital staffing, transparency</h2>
 
 Since the start of session last year, the Democratic-controlled state House has passed a half dozen bills that would tighten hospital regulations, all with bipartisan support.
 
-That includes a union-backed proposal to <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=0106">cap the number of patients that each hospital nurse</a> attends to, another that would give the state attorney general more power to <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2344">block hospital mergers</a>, and one that would mandate hospitals <a href="https://www.pahouse.com/Tarik/InTheNews/NewsRelease/?id=134821">publicly release their prices</a> for all procedures and services.
+That includes a union-backed proposal to <a href="https://web.archive.org/20230628205122/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=0106">cap the number of patients that each hospital nurse</a> attends to, another that would give the state attorney general more power to <a href="https://web.archive.org/20240626185848/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2344">block hospital mergers</a>, and one that would mandate hospitals <a href="https://web.archive.org/20240804180138/https://www.pahouse.com/Tarik/InTheNews/NewsRelease/?id=134821">publicly release their prices</a> for all procedures and services.
 
 The staffing proposal is a top priority for the nurses’ trade association and labor unions, including the influential SEIU, which represents thousands of Pennsylvania nurses and contributes millions of dollars to Democrats’ campaign coffers.
 
-The proposal’s backers argue it’ll prevent burnout in the already strained nursing workforce and lead to better outcomes for hospital patients. They also argue that <a href="https://www.ninr.nih.gov/newsandevents/featured-research/evidence-reducing-patient-nurse-staffing-ratios-can-save-lives-and#:~:text=Findings%20revealed%20that%20nurse%20staffing,the%20hospital%20within%2030%20days.">decreased readmissions and shorter hospital stays</a> will make up for additional staff costs.
+The proposal’s backers argue it’ll prevent burnout in the already strained nursing workforce and lead to better outcomes for hospital patients. They also argue that <a href="https://web.archive.org/20240413120635/https://www.ninr.nih.gov/newsandevents/featured-research/evidence-reducing-patient-nurse-staffing-ratios-can-save-lives-and#:~:text=Findings%20revealed%20that%20nurse%20staffing,the%20hospital%20within%2030%20days.">decreased readmissions and shorter hospital stays</a> will make up for additional staff costs.
 
-The Hospital and Healthsystem Association of Pennsylvania, however, opposes the measure. In <a href="https://haponlinecontent.azureedge.net/resourcelibrary/hb-106-opposition-letter-house-061423.pdf">a letter to lawmakers last year</a>, the powerful advocacy arm for the state’s hospitals said staffing ratios will lead to fewer open beds if not the outright closure of some facilities, particularly in rural areas.
+The Hospital and Healthsystem Association of Pennsylvania, however, opposes the measure. In <a href="https://web.archive.org/20231025060041/https://haponlinecontent.azureedge.net/resourcelibrary/hb-106-opposition-letter-house-061423.pdf">a letter to lawmakers last year</a>, the powerful advocacy arm for the state’s hospitals said staffing ratios will lead to fewer open beds if not the outright closure of some facilities, particularly in rural areas.
 
 The 240-member association employs four lobbying firms and has spent almost $2.4 million to reach lawmakers since the start of 2023. Its members, from giants like UPMC to smaller regional hospital networks, have separately spent hundreds of thousands of dollars to reach legislators.
 
@@ -125,7 +125,7 @@ In a statement, association Chief Executive Nicole Stallings said that legislato
 
 {{<embed/donate>}}
 
-The state Senate has been slow to take up many of the state House’s hospital bills, but not altogether unwilling. During the summer, for instance, the upper chamber overwhelmingly approved a bill banning noncompete clauses for some medical professionals&#39; employment contracts. Shapiro <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1633">signed it into law</a> in July.
+The state Senate has been slow to take up many of the state House’s hospital bills, but not altogether unwilling. During the summer, for instance, the upper chamber overwhelmingly approved a bill banning noncompete clauses for some medical professionals&#39; employment contracts. Shapiro <a href="https://web.archive.org/20240429203054/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1633">signed it into law</a> in July.
 
 Pittman declined to comment on the nurse staffing bill, but told Spotlight PA that the hospital pricing bill “has merit.”
 
@@ -136,4 +136,3 @@ The latter is sponsored by a mix of progressive Democrats and Freedom Caucus Rep
 <em>Correction: This story originally misstated what will happen if Chapter 14 expires on Dec. 31.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

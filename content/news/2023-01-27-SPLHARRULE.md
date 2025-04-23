@@ -50,7 +50,7 @@ A spokesperson for the chamber’s GOP caucus said it had “not been made aware
 
 In 2019, state House leadership added workplace protections to the chamber’s rules for the first time, banning “unwelcome sexual advances, requests for sexual favors or other verbal or physical conduct of a sexual nature.”
 
-The change was made after <a href="https://www.inquirer.com/philly/news/politics/state/rep-nick-miccarelli-allegations-sex-abuse-complaint-ridley-delaware-county-20180228.html">two women</a> accused a male lawmaker of physical and sexual abuse, but he continued to serve in the legislature until the end of his term. One of the women was also a state lawmaker and <a href="https://www.inquirer.com/philly/news/nick-miccarelli-pfa-tarah-toohill-abuse-allegations-20180309.html">received a restraining order</a> against him.
+The change was made after <a href="https://web.archive.org/20190715213745/https://www.inquirer.com/philly/news/politics/state/rep-nick-miccarelli-allegations-sex-abuse-complaint-ridley-delaware-county-20180228.html">two women</a> accused a male lawmaker of physical and sexual abuse, but he continued to serve in the legislature until the end of his term. One of the women was also a state lawmaker and <a href="https://www.inquirer.com/philly/news/nick-miccarelli-pfa-tarah-toohill-abuse-allegations-20180309.html">received a restraining order</a> against him.
 
 As Spotlight PA <a href="https://www.spotlightpa.org/news/2022/06/pa-house-sexual-misconduct-allegations-rules-punishment/">previously reported</a>, the policy only covers state House employees. That has meant individuals who regularly interact with lawmakers — such as other government employees, lobbyists, constituents, and journalists — have been unable to report an allegation to the committee.
 
@@ -68,13 +68,13 @@ The latter is a personal cause for Rozzi, who himself is a survivor. He said Fri
 
 The hearings provide an unusual opportunity for public discussion of the rules, which dictate how easy or hard it is for bills to become law and, importantly for Perez and other advocates, disciplinary procedures for lawmakers.
 
-According to her testimony, Perez’s experience has already prompted a response inside the legislature. State Rep. Kate Klunk (R., York) last year <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=R&bn=0192">proposed a rule change</a> to explicitly ban state House lawmakers from engaging “in sexual harassment while performing House-related services or duties or in or on any House-owned or leased property or facilities.”
+According to her testimony, Perez’s experience has already prompted a response inside the legislature. State Rep. Kate Klunk (R., York) last year <a href="https://web.archive.org/20220617091849/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=R&bn=0192">proposed a rule change</a> to explicitly ban state House lawmakers from engaging “in sexual harassment while performing House-related services or duties or in or on any House-owned or leased property or facilities.”
 
 Perez said Klunk’s proposal, which was not adopted, would be a “step toward changing the culture of Harrisburg.”
 
 As in the state House, state Senate rules only allow the chamber’s lawmakers and employees to bring internal sexual harassment complaints.
 
-In early January, state Sens. Katie Muth (D., Chester) and Lindsey Williams (D., Allegheny) pressed the chamber to adopt rules that would cover non-employees, an effort <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=S&rc_nbr=5">rebuffed</a> by Republicans.
+In early January, state Sens. Katie Muth (D., Chester) and Lindsey Williams (D., Allegheny) pressed the chamber to adopt rules that would cover non-employees, an effort <a href="https://web.archive.org/20230107224340/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=S&rc_nbr=5">rebuffed</a> by Republicans.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 

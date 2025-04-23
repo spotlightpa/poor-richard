@@ -86,8 +86,8 @@ Case No. 176: Float the ball to the surface by pouring water from the bottle int
 
 3. True: Pennsylvania’s state dog <a href="https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1965/0/0178..PDF">is, in fact, the Great Dane</a>.
 
-4. The town of Lopez (Sullivan County) <a href="https://www.inquirer.com/news/pennsylvania/camping-campsites-best-rickettsglen-worldsend-hiking-weather-20220819.html">is </a><a href="https://www.inquirer.com/news/pennsylvania/camping-campsites-best-rickettsglen-worldsend-hiking-weather-20220819.html">Pennsylvania</a><a href="https://www.inquirer.com/news/pennsylvania/camping-campsites-best-rickettsglen-worldsend-hiking-weather-20220819.html">’s icebox</a>.
+4. The town of Lopez (Sullivan County) <a href="https://web.archive.org/20220819095914/https://www.inquirer.com/news/pennsylvania/camping-campsites-best-rickettsglen-worldsend-hiking-weather-20220819.html">is </a><a href="https://web.archive.org/20220819095914/https://www.inquirer.com/news/pennsylvania/camping-campsites-best-rickettsglen-worldsend-hiking-weather-20220819.html">Pennsylvania</a><a href="https://web.archive.org/20220819095914/https://www.inquirer.com/news/pennsylvania/camping-campsites-best-rickettsglen-worldsend-hiking-weather-20220819.html">’s icebox</a>.
 
-5. The term “Black Friday” can be <a href="https://whyy.org/articles/the-marathon-known-as-black-friday-actually-has-its-roots-in-philadelphia/">traced back to Philly</a>.
+5. The term “Black Friday” can be <a href="https://web.archive.org/20181123213616/https://whyy.org/articles/the-marathon-known-as-black-friday-actually-has-its-roots-in-philadelphia/">traced back to Philly</a>.
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support">and readers like you</a><i> who are committed to accountability journalism that gets results. Become a member today: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a>

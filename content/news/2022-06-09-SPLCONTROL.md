@@ -29,7 +29,7 @@ But the push for more local control by state Rep. Meghan Schroeder (R., Bucks) i
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Schroeder’s resolution urges Congress to enact a “For Our Freedom” amendment to the U.S. Constitution to give state lawmakers the “authority to regulate [independent political spending] as they see fit in their respective jurisdictions,” according to a <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=37419">memo she circulated</a> earlier this week to colleagues.
+Schroeder’s resolution urges Congress to enact a “For Our Freedom” amendment to the U.S. Constitution to give state lawmakers the “authority to regulate [independent political spending] as they see fit in their respective jurisdictions,” according to a <a href="https://web.archive.org/20220609200646/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=37419">memo she circulated</a> earlier this week to colleagues.
 
 The proposed amendment would trump <i>Citizens United v. FEC</i>, the landmark 2010 U.S. Supreme Court decision that, along with subsequent rulings from the high court, allowed for the creation of super PACs — political action committees that can accept unlimited amounts of money from donors, unlike their PAC counterparts.
 
@@ -91,4 +91,4 @@ When asked why there has been no action on Costa’s past proposals, DeFrank bla
 
 Erica Clayton Wright, a spokesperson for state Senate Republicans, said, “It is difficult to comment on something that has not been introduced. We have not seen language nor do we know if [it] will be introduced.”
 
-<i>Jaxon White is an intern with the Pennsylvania Legislative Correspondents’ Association.&nbsp;</i><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><i>Learn more about the program</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i>&nbsp;foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i>&nbsp;who are committed to accountability journalism that gets results.</i>
+<i>Jaxon White is an intern with the Pennsylvania Legislative Correspondents’ Association.&nbsp;</i><a href="https://web.archive.org/20191229041140/http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><i>Learn more about the program</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i>&nbsp;foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i>&nbsp;who are committed to accountability journalism that gets results.</i>

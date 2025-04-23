@@ -30,7 +30,7 @@ This means only those voters have a say in which candidates from those parties w
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-(Unaffiliated and third-party voters, however, are still able to participate in <a href="https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Pages/SpecialElectionReportingDates.aspx">special elections</a> that coincide with the spring primary, as well as vote on ballot referendums and other local initiatives.)
+(Unaffiliated and third-party voters, however, are still able to participate in <a href="https://web.archive.org/20200927010004/https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Pages/SpecialElectionReportingDates.aspx">special elections</a> that coincide with the spring primary, as well as vote on ballot referendums and other local initiatives.)
 
 Good-government advocates and a small group of lawmakers have been trying to open Pennsylvania’s primary system for more than 20 years. Though the change has bipartisan support and has <a href="https://www.spotlightpa.org/news/2022/04/pa-election-day-2022-primary-closed-independent-voters/">gained traction in recent legislative sessions</a>, it has never passed both the state House and Senate.
 
@@ -38,7 +38,7 @@ With Democrats now in charge of the state House and new chairs in place for both
 
 However, whereas the state House stymied the bill in previous sessions, this time the state Senate is the potential roadblock.
 
-There have been repeated bipartisan attempts to change Pennsylvania’s primary process dating to at least <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=1995&sind=0&body=H&type=B&bn=2919">1995</a>. In recent years, an open primaries measure came closest to succeeding in 2019, when one passed the state <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2019&sess_ind=0&rc_body=S&rc_nbr=177">Senate 42 to 8</a>. The measure was sponsored by former state Sen. Joe Scarnati (R., Jefferson), who was then the chamber’s president pro tempore and held considerable power.
+There have been repeated bipartisan attempts to change Pennsylvania’s primary process dating to at least <a href="https://web.archive.org/20230404113534/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=1995&sind=0&body=H&type=B&bn=2919">1995</a>. In recent years, an open primaries measure came closest to succeeding in 2019, when one passed the state <a href="https://web.archive.org/20200714100530/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2019&sess_ind=0&rc_body=S&rc_nbr=177">Senate 42 to 8</a>. The measure was sponsored by former state Sen. Joe Scarnati (R., Jefferson), who was then the chamber’s president pro tempore and held considerable power.
 
 However, state House leaders never brought the bill up for a vote.
 
@@ -60,7 +60,7 @@ Last legislative session, the panel was chaired by state Sen. Dave Argall (R., S
 
 “It’s like having the Baltimore Ravens be involved with the draft of the Pittsburgh Steelers,” Dush said.
 
-Dush is best known for propagating <a href="https://www.pbs.org/newshour/politics/republicans-who-deny-2020-election-results-lead-key-oversight-committees">false claims of election fraud</a> in 2020 and pushing for an investigation of that year’s presidential election. This session, he has also sponsored bills that would <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&sind=0&body=S&type=B&bn=130">require additional election audits</a> and <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&sind=0&body=S&type=B&bn=292">eliminate no-excuse mail voting</a>.
+Dush is best known for propagating <a href="https://www.pbs.org/newshour/politics/republicans-who-deny-2020-election-results-lead-key-oversight-committees">false claims of election fraud</a> in 2020 and pushing for an investigation of that year’s presidential election. This session, he has also sponsored bills that would <a href="https://web.archive.org/20230109233815/https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&sind=0&body=S&type=B&bn=130">require additional election audits</a> and <a href="https://web.archive.org/20230309182725/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&sind=0&body=S&type=B&bn=292">eliminate no-excuse mail voting</a>.
 
 State Sen. Dan Laughlin (R., Erie), a longtime supporter of opening Pennsylvania’s primaries, sponsored a bill that would have done so last session and says he plans to try again this year.
 
@@ -78,7 +78,7 @@ Laughlin said he’s had support from his colleagues in the state Senate in the 
 
 State Rep. Scott Conklin (D., Centre), the new chair of his chamber’s State Government Committee, served for years as the panel’s minority chair and has consistently <a href="https://www.thecentersquare.com/pennsylvania/legislation-would-open-pennsylvanias-primaries-to-all/article_4b71b4bc-1d98-11ed-9f75-3b501f33199b.html">expressed support for the bill</a>.
 
-Conklin introduced <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=34951">his own legislation that would open the primaries</a> last session and said that he would support the bill again if it appeared in his committee.
+Conklin introduced <a href="https://web.archive.org/20210517094441/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=34951">his own legislation that would open the primaries</a> last session and said that he would support the bill again if it appeared in his committee.
 
 When asked about its viability in the state Senate, Conklin acknowledged that Dush may be an obstacle.
 
@@ -87,7 +87,7 @@ When asked about its viability in the state Senate, Conklin acknowledged that Du
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-Multiple state House representatives have announced plans to introduce open primary bills this year. In February, state Reps. Jared Solomon (D., Philadelphia) and Chris Rabb (D., Philadelphia) released a joint <a href="https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20230&cosponId=39788">co-sponsorship memo</a> announcing plans for a bill that would allow unaffiliated voters to participate in primaries. State Rep. Marla Brown (R., Lawrence) echoed that pledge in a <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20230&cosponId=40070">separate co-sponsorship</a> memo released in March.
+Multiple state House representatives have announced plans to introduce open primary bills this year. In February, state Reps. Jared Solomon (D., Philadelphia) and Chris Rabb (D., Philadelphia) released a joint <a href="https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20230&cosponId=39788">co-sponsorship memo</a> announcing plans for a bill that would allow unaffiliated voters to participate in primaries. State Rep. Marla Brown (R., Lawrence) echoed that pledge in a <a href="https://web.archive.org/20230312035409/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20230&cosponId=40070">separate co-sponsorship</a> memo released in March.
 
 Making it out of committee is only one of the first steps for a bill. It must also be called up by the leaders of each chamber, who have discretion about which legislation is formally considered and voted on.
 

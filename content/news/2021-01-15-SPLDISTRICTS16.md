@@ -30,7 +30,7 @@ layout = ""
 extended-kicker = ""
 +++
 
-<i>This article is part of a year-long reporting project focused on redistricting and gerrymandering in Pennsylvania. It’s made possible by the support of </i><a href="https://www.spotlightpa.org/" target=_blank><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+<i>This article is part of a year-long reporting project focused on redistricting and gerrymandering in Pennsylvania. It’s made possible by the support of </i><a href="https://www.spotlightpa.org/" target=_blank><i>Spotlight PA</i></a><i> members and </i><a href="https://web.archive.org/20201019151248/https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
 Puedes leer esta nota en español <a href="https://www.spotlightpa.org/news/2021/01/pensilvania-redistribuci%C3%B3n-de-distritos-manipulaci%C3%B3n-partidista-2021/">aquí.</a>
 
@@ -80,7 +80,7 @@ If approved, it would go into effect immediately, and lawmakers could begin draw
 
 ## Data delays may mean a later start
 
-This year, with the <a href="https://www.census.gov/newsroom/press-releases/2020/2020-census-update-apportionment.html">U.S. Census Bureau behind schedule</a> in releasing population data because of the pandemic and <a href="https://www.npr.org/2021/01/13/956352495/census-bureau-stops-work-on-trumps-request-for-unauthorized-immigrant-count">legal battles brought by President Donald Trump’s administration</a>, the redistricting process is likely to take place later than usual.
+This year, with the <a href="https://web.archive.org/20210101085747/https://www.census.gov/newsroom/press-releases/2020/2020-census-update-apportionment.html">U.S. Census Bureau behind schedule</a> in releasing population data because of the pandemic and <a href="https://web.archive.org/20210113143035/https://www.npr.org/2021/01/13/956352495/census-bureau-stops-work-on-trumps-request-for-unauthorized-immigrant-count">legal battles brought by President Donald Trump’s administration</a>, the redistricting process is likely to take place later than usual.
 
 Michael Li, senior counsel with the Brennan Center for Justice’s democracy program, said census block data that gets down to the street level won’t be available until at least later this spring.
 
@@ -104,7 +104,7 @@ The bill would also require the state to hold several public meetings on both th
 
 It would also add qualifications for the fifth legislative commission member. Right now, anyone — including lobbyists and relatives of legislators — can be considered.
 
-Rep. Wendi Thomas (R., Bucks), who <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=32886">plans to introduce the bill</a> again this year, said today’s technology makes it simple to inject transparency into the process so citizens can be involved.
+Rep. Wendi Thomas (R., Bucks), who <a href="https://web.archive.org/20210115185808/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=32886">plans to introduce the bill</a> again this year, said today’s technology makes it simple to inject transparency into the process so citizens can be involved.
 
 “I really haven’t had people say, ‘No I don’t think the bill is a good idea,’ " she said.
 

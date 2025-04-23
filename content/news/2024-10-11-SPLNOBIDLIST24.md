@@ -27,13 +27,13 @@ The companies that benefit from this arrangement, in turn, are required to repor
 
 {{<embed/newsletter>}}
 
-The requirement is buried deep in Pennsylvania’s 270-page <a href="https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1937/0/0320..PDF">Election Code</a> and might be one of the best-kept secrets in the Capitol. The annual reports produced by the Pennsylvania Department of State are not easily accessible or well-known by the public.
+The requirement is buried deep in Pennsylvania’s 270-page <a href="https://web.archive.org/20140827174133/https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1937/0/0320..PDF">Election Code</a> and might be one of the best-kept secrets in the Capitol. The annual reports produced by the Pennsylvania Department of State are not easily accessible or well-known by the public.
 
 The code requires no-bid contractors to send the department a list by Feb. 15 of all political contributions over $1,000 that they know were made in the preceding year. It applies to donations by company officers, directors, partners, and employees, and members of their immediate families.
 
 The agency then has 60 days to “publish” an itemized list of contributions and ensure it is a “matter of public record open to public inspection,” says the Election Code.
 
-But the only way to get the list — if you know about it in the first place — is to contact the Pennsylvania Department of State, which Spotlight PA did to <a href="https://www.scribd.com/document/775576877/Campaign-contracts-made-by-no-bid-contract-recipients-in-2023">obtain the 2023 version</a>. The agency does not make the list available on its website, which features an entire section for <a href="https://www.campaignfinanceonline.pa.gov/Pages/CFReportSearch.aspx">searching campaign contributions</a>.
+But the only way to get the list — if you know about it in the first place — is to contact the Pennsylvania Department of State, which Spotlight PA did to <a href="https://web.archive.org/20241022113309/https://www.scribd.com/document/775576877/Campaign-contracts-made-by-no-bid-contract-recipients-in-2023">obtain the 2023 version</a>. The agency does not make the list available on its website, which features an entire section for <a href="https://web.archive.org/20170128182100/https://www.campaignfinanceonline.pa.gov/Pages/CFReportSearch.aspx">searching campaign contributions</a>.
 
 An agency spokesperson did not respond to a question about why it doesn’t place the information online.
 
@@ -62,4 +62,3 @@ It does not, for instance, require no-bid contractors to list the government age
 For that, the public still has to do the work.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

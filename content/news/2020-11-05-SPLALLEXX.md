@@ -30,7 +30,7 @@ layout = ""
 extended-kicker = ""
 +++
 
-<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://web.archive.org/20201019151248/http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 You may have seen national reports that Allegheny County is taking the day off from counting 35,000 remaining mail ballots. Those reports are misleading.
 

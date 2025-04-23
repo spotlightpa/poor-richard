@@ -44,7 +44,7 @@ Before Wednesday, the public was forced to go through the cumbersome and time-co
 
 “I couldn’t make copies,” Eshleman said, only review the records.
 
-<iframe src='https://flo.uri.sh/visualisation/5537018/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+<iframe src='https://web.archive.org/20210512221508/https://flo.uri.sh/visualisation/5537018/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
 
 The benefits of Corman’s decision to post the records extend beyond transparency, Eshleman said: “I think it will act as a deterrent to excessive spending.”
 

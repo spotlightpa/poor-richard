@@ -233,4 +233,3 @@ Si desea ver un modelo de papeleta, puede utilizar la <a href="https://web.archi
 >}}
 
 <strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
-

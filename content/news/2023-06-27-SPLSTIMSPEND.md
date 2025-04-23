@@ -26,7 +26,7 @@ HARRISBURG — Almost a year ago, Pennsylvania lawmakers hashed out a plan to sp
 
 Since then, the state has succeeded in getting millions of dollars out the door to nursing homes, child care providers, and more, a Spotlight PA review shows. Grant programs focused on violence prevention and the environment are just getting underway.
 
-Pennsylvania received <a href="https://www.budget.pa.gov/Publications%20and%20Reports/Pages/Fiscal%20Recovery%20Reports.aspx">$7.3 billion</a> in state and local pandemic relief funding from the American Rescue Plan Act. That money came with an expiration date: Funds must be allocated by 2024 and spent by 2026. Any funds that remain unused by that deadline will be returned to the federal government.
+Pennsylvania received <a href="https://web.archive.org/20211023065508/https://www.budget.pa.gov/Publications%20and%20Reports/Pages/Fiscal%20Recovery%20Reports.aspx">$7.3 billion</a> in state and local pandemic relief funding from the American Rescue Plan Act. That money came with an expiration date: Funds must be allocated by 2024 and spent by 2026. Any funds that remain unused by that deadline will be returned to the federal government.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -39,7 +39,7 @@ Some of these programs have already disbursed all or most of their funds, and in
 
 The state legislature has appropriated how all $7.3 billion should be spent generally, but it has not assigned all the money to a specific purpose.
 
-For example, the state House agreed to spend $100 million on mental health services during last year’s budget negotiations, but <a href="https://www.lehighvalleynews.com/health-news/mental-health/pa-house-passes-100m-mental-health-bill-proposed-by-state-rep-michael-schlossberg">only passed guidelines on how the funds should be spent earlier this month</a> — meaning the money is not reflected in the March report to the U.S. Treasury.
+For example, the state House agreed to spend $100 million on mental health services during last year’s budget negotiations, but <a href="https://web.archive.org/20230609051240/https://www.lehighvalleynews.com/health-news/mental-health/pa-house-passes-100m-mental-health-bill-proposed-by-state-rep-michael-schlossberg">only passed guidelines on how the funds should be spent earlier this month</a> — meaning the money is not reflected in the March report to the U.S. Treasury.
 
 The Office of Budget’s report to the U.S. Treasury also does not break down how $412 million that the state legislature gave to the governor’s office for discretionary pandemic relief has been spent.
 
@@ -53,7 +53,7 @@ Upon first receiving the federal funds in 2021, the state legislature agreed to 
 
 A <a href="https://www.spotlightpa.org/news/2022/07/pa-stimulus-2022-money-gov-wolf-update-budget/">spending plan for the remaining $2.7 billion</a> was negotiated as part of the 2022 budget.
 
-Using stimulus money to replace lost revenue is an extremely common practice, according to Marquette University political science professor Philip Rocco, who has studied how <a href="https://gfrc.uic.edu/our-work/featured-projects/how-are-cities-using-arpa-fiscal-recovery-funds/">local governments nationwide have used ARPA funds</a>.
+Using stimulus money to replace lost revenue is an extremely common practice, according to Marquette University political science professor Philip Rocco, who has studied how <a href="https://web.archive.org/20220415184507/https://gfrc.uic.edu/our-work/featured-projects/how-are-cities-using-arpa-fiscal-recovery-funds/">local governments nationwide have used ARPA funds</a>.
 
 Rocco said that the main reason for this practice is ease. Funds put into revenue replacement don’t need to be allocated to new projects. Rather, they can be incorporated into the budget baselines, which makes it easy to get the cash out the door.
 
@@ -93,7 +93,7 @@ Gov. Josh Shapiro has expressed his support for supporting and growing the initi
 
 The state reported that no expenditures have been made on four projects, three of which focus on conservation and include mine reclamation and improving water quality. Those programs got over $13.2 million.
 
-The first round of grant applications for mine reclamation concluded in April, but two more rounds <a href="https://files.dep.state.pa.us/Mining/Abandoned%20Mine%20Reclamation/AbandonedMinePortalFiles/AML_AMD_GRANT_PROGRAM_GUIDANCE.pdf">are open through December 2023</a>, with up to $10 million available for a single application. The grants for the Keystone Tree Fund, which goes toward planting and managing public trees, <a href="https://weconservepa.org/blog/dcnr-announces-11-8-million-investment-to-plant-trees-buffers-meadows/">have already been awarded</a>.
+The first round of grant applications for mine reclamation concluded in April, but two more rounds <a href="https://files.dep.state.pa.us/Mining/Abandoned%20Mine%20Reclamation/AbandonedMinePortalFiles/AML_AMD_GRANT_PROGRAM_GUIDANCE.pdf">are open through December 2023</a>, with up to $10 million available for a single application. The grants for the Keystone Tree Fund, which goes toward planting and managing public trees, <a href="https://web.archive.org/20230122192412/https://weconservepa.org/blog/dcnr-announces-11-8-million-investment-to-plant-trees-buffers-meadows/">have already been awarded</a>.
 
 The fourth project is a $50 million gun violence intervention effort that awards grants to county district attorneys’ offices and local law enforcement agencies so they can investigate and prosecute crimes relating to firearms. According to the Pennsylvania Commission on Crime and Delinquency, which administers the funds in the form of grants, all of the money has been obligated.
 
@@ -110,7 +110,7 @@ For example, lawmakers earmarked $100 million for mental health last July withou
 
 Instead, the General Assembly established a commission to hash out a plan, which released its <a href="https://web.archive.org/20221005152702/https://www.dhs.pa.gov/Services/Mental-Health-In-PA/Documents/Behavioral-Health-Commission-Report_October2022.pdf">recommendations</a> in October. They included expanding walk-in crisis centers and substance abuse disorder treatment, and providing higher pay to behavioral health workers.
 
-The state House adopted those recommendations in a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/bill_history.cfm?syear=2023&sind=0&body=H&type=B&bn=849">bipartisan vote</a> in early June, passing a bill that would provide <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2023&sessInd=0&billBody=H&billTyp=B&billNbr=0849&pn=1463">grants</a> for workforce development in the behavioral health field and expand public safety programs. The measure would also create new funding for mobile crisis teams, crisis walk-in centers, and crisis stabilization units as part of suicide prevention efforts.
+The state House adopted those recommendations in a <a href="https://web.archive.org/20230613225935/https://www.legis.state.pa.us/cfdocs/billInfo/bill_history.cfm?syear=2023&sind=0&body=H&type=B&bn=849">bipartisan vote</a> in early June, passing a bill that would provide <a href="https://web.archive.org/20230629065229/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2023&sessInd=0&billBody=H&billTyp=B&billNbr=0849&pn=1463">grants</a> for workforce development in the behavioral health field and expand public safety programs. The measure would also create new funding for mobile crisis teams, crisis walk-in centers, and crisis stabilization units as part of suicide prevention efforts.
 
 The plan “has broad support, frankly as it should,” said bill sponsor and mental health advocate state Rep. Mike Schlossberg (D., Lehigh). “I wish we had gotten this money out months ago.”
 

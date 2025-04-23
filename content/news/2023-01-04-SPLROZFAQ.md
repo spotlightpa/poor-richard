@@ -35,7 +35,7 @@ Here are the basics about the Berks County lawmaker, how he became speaker, and 
 
 Mark Rozzi is a state representative from Berks County who was first elected in 2012.
 
-He is a prominent advocate for survivors of childhood sexual abuse, having been <a href="https://www.readingeagle.com/2019/08/15/a-year-after-priest-abuse-report-state-rep-mark-rozzi-of-berks-is-still-undaunted/">raped by a Catholic priest when he was 13</a>. He supports <a href="https://web.archive.org/20230104202457/https://www.pahouse.com/Rozzi/InTheNews/NewsRelease/?id=124314">creating</a> a retroactive two-year window for survivors to bring civil lawsuits.
+He is a prominent advocate for survivors of childhood sexual abuse, having been <a href="https://web.archive.org/20221205144113/https://www.readingeagle.com/2019/08/15/a-year-after-priest-abuse-report-state-rep-mark-rozzi-of-berks-is-still-undaunted/">raped by a Catholic priest when he was 13</a>. He supports <a href="https://web.archive.org/20230104202457/https://www.pahouse.com/Rozzi/InTheNews/NewsRelease/?id=124314">creating</a> a retroactive two-year window for survivors to bring civil lawsuits.
 
 Spotlight PA will have more on Rozzi’s record in the coming days.
 
@@ -47,7 +47,7 @@ Rozzi is a registered Democrat, but on Tuesday he said he would be an independen
 
 The simple answer: He won a majority of votes, 115 to his only competitor’s 85.
 
-<a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=4">All Democrats voted for Rozzi</a> as did 16 Republicans including those who hold leadership positions:
+<a href="https://web.archive.org/20230104013350/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=4">All Democrats voted for Rozzi</a> as did 16 Republicans including those who hold leadership positions:
 
 - Bryan Cutler of Lancaster County (leader)
 

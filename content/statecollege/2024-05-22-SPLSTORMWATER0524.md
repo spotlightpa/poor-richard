@@ -22,7 +22,7 @@ topics = ["Rural Issues"]
 
 HARRISBURG — A Pennsylvania House panel has advanced a bill that would force the state government to pay municipal stormwater fees, something it has so far refused to do, costing local governments millions of dollars.
 
-Municipal officials have said the fees should apply to all land owners — even those exempt from taxes — because runoff and pollution mitigation are shared responsibilities, and the <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2147">bill</a> that moved out of the Local Government Committee on Wednesday would mandate just that.
+Municipal officials have said the fees should apply to all land owners — even those exempt from taxes — because runoff and pollution mitigation are shared responsibilities, and the <a href="https://web.archive.org/20240405105632/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2147">bill</a> that moved out of the Local Government Committee on Wednesday would mandate just that.
 
 State Rep. Justin Fleming (D., Dauphin), who co-sponsored the proposal, told lawmakers before the vote that while federal and state regulations are necessary to improve and protect water quality, municipalities have limited ways to pay for infrastructure projects.
 
@@ -42,7 +42,7 @@ State Rep. Brett Miller (R., Lancaster) was the only member of his party to supp
 
 Other state House Republicans acknowledged the financial toll stormwater regulations take on municipalities but expressed concern over what these fees would do to the state’s finances.
 
-In Harrisburg, home to a sprawling government complex, Capital Region Water misses out on $386,956 annually because the state refuses to pay stormwater fees for the nearly 5.4 million square feet of impervious surface, the municipal authority’s board chair Marc Kurowski <a href="https://environmental.pasenategop.com/wp-content/uploads/sites/34/2022/01/Kurowski-Katzenmoyer-Capital-Region-Water-Testimony-Senate-ERE.pdf">testified</a> before a state Senate panel in 2022.
+In Harrisburg, home to a sprawling government complex, Capital Region Water misses out on $386,956 annually because the state refuses to pay stormwater fees for the nearly 5.4 million square feet of impervious surface, the municipal authority’s board chair Marc Kurowski <a href="https://web.archive.org/20220126094126/https://environmental.pasenategop.com/wp-content/uploads/sites/34/2022/01/Kurowski-Katzenmoyer-Capital-Region-Water-Testimony-Senate-ERE.pdf">testified</a> before a state Senate panel in 2022.
 
 “Think about it this way: The commonwealth issues a mandate to address stormwater runoff. Capital Region Water puts in place a plan to address stormwater runoff. The state then refuses to pay for the mandate it imposed and the problems to which it contributes,” Kurowski said.
 
@@ -50,9 +50,9 @@ As of this month, the state’s outstanding balance totals more than $1.4 millio
 
 “No other government entities have indicated an unwillingness to pay their stormwater fee,” Laufer said. “This includes the city, county, and federal government.”
 
-A <a href="https://www.pacourts.us/news-and-statistics/cases-of-public-interest/9-map-2023">case</a> currently on appeal to the state Supreme Court could have broad implications for the <a href="https://www.spotlightpa.org/statecollege/2024/04/pennsylvania-stormwater-fee-runoff-water-quality-local-government-rural/">small but growing number of municipalities</a> that have adopted these fees.
+A <a href="https://web.archive.org/20230801224734/https://www.pacourts.us/news-and-statistics/cases-of-public-interest/9-map-2023">case</a> currently on appeal to the state Supreme Court could have broad implications for the <a href="https://www.spotlightpa.org/statecollege/2024/04/pennsylvania-stormwater-fee-runoff-water-quality-local-government-rural/">small but growing number of municipalities</a> that have adopted these fees.
 
-Last year, state-owned West Chester University won a judgment that found the fee was a tax the school didn’t have to pay. The court also <a href="https://law.justia.com/cases/pennsylvania/commonwealth-court/2023/260-m-d-2018.html">said</a> using the amount of impervious surface to determine rates doesn’t correlate with the benefit of paying the charge.
+Last year, state-owned West Chester University won a judgment that found the fee was a tax the school didn’t have to pay. The court also <a href="https://web.archive.org/20230926203710/https://law.justia.com/cases/pennsylvania/commonwealth-court/2023/260-m-d-2018.html">said</a> using the amount of impervious surface to determine rates doesn’t correlate with the benefit of paying the charge.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
@@ -67,4 +67,3 @@ Julia Krall, the foundation’s executive director in Pennsylvania, noted that p
 “The commonwealth paying its fair share of stormwater costs for state-owned properties would support locally-created and controlled stormwater programs that are a critical part of ensuring that we have clean and abundant water,” Krall told Spotlight PA. “Our health, well-being, and quality of life depend on it.”
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

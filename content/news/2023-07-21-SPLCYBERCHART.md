@@ -35,7 +35,7 @@ Democratic and Republican legislators agree the regulations need to be updated, 
 
 “Cyber charter schools are only open because parents want options for their kids, and that is a far greater accountability standard than anything the traditional public schools face today,” said Matthew Brouillette, a political operative with ties to groups that have directed millions in political spending to candidates who support school choice. “Traditional public schools are failing all around us, and they get more money, not more accountability.”
 
-<a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1422">The bill</a> passed the state House with some bipartisan support — 20 Republicans joined all 102 Democrats in voting yes. But the lawmaker who chairs the state Senate committee through which the bill must pass has not committed to moving it.
+<a href="https://web.archive.org/20230624154026/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1422">The bill</a> passed the state House with some bipartisan support — 20 Republicans joined all 102 Democrats in voting yes. But the lawmaker who chairs the state Senate committee through which the bill must pass has not committed to moving it.
 
 State Sen. David Argall (R., Schuylkill) said he would support a bill that makes fewer and less controversial changes first. He did not suggest any specific policies when asked.
 
@@ -49,11 +49,11 @@ Public school districts receive money from the state, but their budgets are over
 
 Only three other states fund cyber charter schools directly through payments from districts. Roughly 20 others appropriate money for cyber charters from state budgets, and the remaining ones use a mix of funds.
 
-The state House bill would significantly change the funding scheme. While money would still come from public school districts, the measure would set a statewide rate of $8,000 per non-special education student. The rate would increase every three years “based on the average rate that school districts raised property taxes,” according to a fiscal <a href="https://www.legis.state.pa.us/WU01/LI/BI/FN/2023/0/HB1422P1820.pdf">analysis</a> prepared for the state House.
+The state House bill would significantly change the funding scheme. While money would still come from public school districts, the measure would set a statewide rate of $8,000 per non-special education student. The rate would increase every three years “based on the average rate that school districts raised property taxes,” according to a fiscal <a href="https://web.archive.org/20230721113658/https://www.legis.state.pa.us/WU01/LI/BI/FN/2023/0/HB1422P1820.pdf">analysis</a> prepared for the state House.
 
 The current rate formula varies based on the amount public schools spend on their students and the number of students in a public district who opt to attend a cyber charter daily.
 
-Over 90% of Pennsylvania school districts signed a <a href="https://www.pacharterchange.org/take-action/school-board-resolutions/">resolution</a> this year asking the General Assembly to change the funding system for cyber charters.
+Over 90% of Pennsylvania school districts signed a <a href="https://web.archive.org/20201129200820/https://www.pacharterchange.org/take-action/school-board-resolutions/">resolution</a> this year asking the General Assembly to change the funding system for cyber charters.
 
 “These payments are calculated in a manner which requires districts to send more money to charter schools than is needed to operate their programs and places a significant financial burden on districts’ resources and taxpayers,” the resolution said.
 
@@ -75,7 +75,7 @@ Board members are elected officials who serve four-year terms. They file public 
 
 School boards must also adhere to the state <a href="https://www.ethics.pa.gov/Ethics-Act/Pages/default.aspx">Ethics Act</a> and follow certain guidelines if conducting business with the relative of a board member.
 
-Cyber charter schools, on the other hand, are not required to host open meetings or get input on their budget. While <a href="https://www.education.pa.gov/K-12/Charter%20Schools/Pages/Charter-School-Annual-Reports.aspx">they do report certain statistics</a> to the state Department of Education each year, the financial information cyber charters disclose is limited.
+Cyber charter schools, on the other hand, are not required to host open meetings or get input on their budget. While <a href="https://web.archive.org/20200807131616/https://www.education.pa.gov/K-12/Charter%20Schools/Pages/Charter-School-Annual-Reports.aspx">they do report certain statistics</a> to the state Department of Education each year, the financial information cyber charters disclose is limited.
 
 Under the state House bill, the operations of a cyber charter board would be subject to the Sunshine Act, and budgets would have to be made public at least 20 days prior to adoption. The public would be able to see five years of annual budgets, tax filings, certified audits, and annual reports.
 
@@ -93,7 +93,7 @@ While debating the bill on the state House floor, Rep. Torren Ecker (R., Adams) 
 
 The bill would also put new restrictions on cyber charters’ ability to advertise — a significant change, as some of these schools routinely use a chunk of their budgets for self-promotion.
 
-<a href="https://edvoterspa.org/cyber-charter-advertising/">Right-to-Know requests</a> filed by Education Voters of PA show that Pennsylvania’s 14 cyber charters collectively spent $16.8 million on advertising in the 2021-22 school year. Harrisburg-based Commonwealth Charter Academy spent the most: more than $8 million.
+<a href="https://web.archive.org/20230615170440/https://edvoterspa.org/cyber-charter-advertising/">Right-to-Know requests</a> filed by Education Voters of PA show that Pennsylvania’s 14 cyber charters collectively spent $16.8 million on advertising in the 2021-22 school year. Harrisburg-based Commonwealth Charter Academy spent the most: more than $8 million.
 
 The group also found that PA Virtual Charter, based in King of Prussia, spent more than $28,000 sponsoring minor league baseball teams, and more than $130,000 on bus wraps and other transit advertising.
 
@@ -105,4 +105,4 @@ Brouillette, the cyber charter advocate, said those ads are necessary.
 
 Under the bill, all paid media from cyber charter schools would have to disclose that the ads were paid for using taxpayer dollars. Cyber charters would also be prohibited from sponsoring public events.
 
-<em>DaniRae Renno is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<em>DaniRae Renno is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="https://web.archive.org/20191229041140/http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>

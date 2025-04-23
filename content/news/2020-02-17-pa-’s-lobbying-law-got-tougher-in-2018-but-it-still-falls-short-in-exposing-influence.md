@@ -31,7 +31,7 @@ Unlike in New Jersey and New York, Pennsylvania lobbyists and lobbying groups do
 \
 And unlike those neighboring states, which require lobbyists to report spending as itemized lists, expenses are reported in Pennsylvania using vague descriptions, like “direct” and “indirect” communications. It’s also possible groups are [underreporting expenditures](https://apnews.com/b3e1ddabd3af47529bef91ee2f30bfdb), a recent review by a state House committee found.\
 \
-Pennsylvania’s lobbying disclosure [website](https://www.palobbyingservices.pa.gov/Public/wfSearch.aspx), meanwhile, remains slow and cumbersome to use, inhibiting the public’s ability to easily view reports.\
+Pennsylvania’s lobbying disclosure [website](https://web.archive.org/20200326192903/https://www.palobbyingservices.pa.gov/Public/wfSearch.aspx), meanwhile, remains slow and cumbersome to use, inhibiting the public’s ability to easily view reports.\
 \
 Without better information and better access, the public is left in the dark about how some of the most powerful groups in Pennsylvania and outside of it are trying to shape state policy.
 

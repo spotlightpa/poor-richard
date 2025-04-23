@@ -423,5 +423,3 @@ Richard Kuprewicz, a pipeline safety expert and consultant, also based in Washin
     email="cjohnson@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-

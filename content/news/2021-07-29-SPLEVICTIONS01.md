@@ -120,7 +120,7 @@ Delaware County has also decided against it for other reasons, including the pot
 
 Washington County hasn’t had any landlords refuse, either, said Jessica Hajek-Bates, director of Blueprints, the nonprofit running the program there. But she said the agency would hesitate to pay tenants directly. “In some of these cases, it’s a very large check to give someone,” she said.
 
-<iframe title="Eviction Filings Over Time" aria-label="Interactive line chart" id="datawrapper-chart-CyDRn" src="https://datawrapper.dwcdn.net/CyDRn/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+<iframe title="Eviction Filings Over Time" aria-label="Interactive line chart" id="datawrapper-chart-CyDRn" src="https://web.archive.org/20210806111936/https://datawrapper.dwcdn.net/CyDRn/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
 ## Turning to the courts

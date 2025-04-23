@@ -104,11 +104,11 @@ During budget negotiations, Pittman said that there was general agreement on ski
 
 The parties at one point considered raising the minimum wage in exchange for cutting business-related taxes, Capitol sources told Spotlight PA.
 
-The state’s minimum wage is $7.25 an hour, the federal floor. The legislature last voted to increase the wage in 2006. Raising it has been a constant focus for Harrisburg Democrats and their allies in organized labor. Despite some growing GOP support, including <a href="https://penncapital-star.com/labor/a-9-50-minimum-wage-by-2022-the-pa-senate-just-passed-it-now-its-up-to-the-house/">an aborted 2019 deal</a> to raise the floor to $9.50, the wage hasn’t moved.
+The state’s minimum wage is $7.25 an hour, the federal floor. The legislature last voted to increase the wage in 2006. Raising it has been a constant focus for Harrisburg Democrats and their allies in organized labor. Despite some growing GOP support, including <a href="https://web.archive.org/20230903032142/https://penncapital-star.com/labor/a-9-50-minimum-wage-by-2022-the-pa-senate-just-passed-it-now-its-up-to-the-house/">an aborted 2019 deal</a> to raise the floor to $9.50, the wage hasn’t moved.
 
-Republicans instead have called for lowering Pennsylvania tax burdens, particularly those for businesses. The Tax Foundation, a nonpartisan think tank, has rated <a href="https://taxfoundation.org/location/pennsylvania/">the commonwealth’s tax burden</a> to be above average for individuals and companies.
+Republicans instead have called for lowering Pennsylvania tax burdens, particularly those for businesses. The Tax Foundation, a nonpartisan think tank, has rated <a href="https://web.archive.org/20230929031048/https://taxfoundation.org/location/pennsylvania/">the commonwealth’s tax burden</a> to be above average for individuals and companies.
 
-With bipartisan support, the state Senate passed <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=0269">a $3 billion tax cut plan</a> that would <a href="https://www.spotlightpa.org/news/2024/05/pennsylvania-legislature-budget-2024-preview-education-energy-tax-cuts/">lower the state&#39;s flat, personal income tax</a> and ax a tax on private electricity producers. The chamber has also pushed to quicken the planned reduction of the state’s corporate income tax, which started going down under a deal struck by former Democratic Gov. Tom Wolf.
+With bipartisan support, the state Senate passed <a href="https://web.archive.org/20230804124540/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=0269">a $3 billion tax cut plan</a> that would <a href="https://www.spotlightpa.org/news/2024/05/pennsylvania-legislature-budget-2024-preview-education-energy-tax-cuts/">lower the state&#39;s flat, personal income tax</a> and ax a tax on private electricity producers. The chamber has also pushed to quicken the planned reduction of the state’s corporate income tax, which started going down under a deal struck by former Democratic Gov. Tom Wolf.
 
 None of the above ended up in the final deal. Still, some smaller tax changes were agreed to, including two deductions for businesses if they help their workers pay for child care or match their payments into a state-run college savings account.
 
@@ -118,7 +118,7 @@ None of the above ended up in the final deal. Still, some smaller tax changes we
 
 As budget talks began this summer, transit agencies told lawmakers they needed more money, or they would be forced to cut services as federal <a href="https://www.spotlightpa.org/news/2024/01/public-transit-funding-pennsylvania-septa-shapiro-trains-buses-fiscal-cliff/">stimulus dollars run out and ridership lags pre-pandemic levels</a>.
 
-The state’s largest transit agency, Philadelphia’s SEPTA, <a href="https://wwww.septa.org/news/septa-board-approves-fiscal-year-2025-operating-capital-budgets-safe-clean-secure/#:~:text=The%20Authority%20is%20projecting%20a,Shapiro&#39;s%20statewide%20transit%20funding%20proposal.">projected a $240 million operating deficit</a> in the fiscal year that just began. The looming shortfall led to fears of <a href="https://whyy.org/articles/septa-save-the-train-rally-allen-lane-station-chestnut-hill-shapiro-mayor-parker-public-transport-funding/">significant service cuts</a>.
+The state’s largest transit agency, Philadelphia’s SEPTA, <a href="https://web.archive.org/20240627203507/https://wwww.septa.org/news/septa-board-approves-fiscal-year-2025-operating-capital-budgets-safe-clean-secure/#:~:text=The%20Authority%20is%20projecting%20a,Shapiro&#39;s%20statewide%20transit%20funding%20proposal.">projected a $240 million operating deficit</a> in the fiscal year that just began. The looming shortfall led to fears of <a href="https://whyy.org/articles/septa-save-the-train-rally-allen-lane-station-chestnut-hill-shapiro-mayor-parker-public-transport-funding/">significant service cuts</a>.
 
 The budget doesn’t come close to filling that gap. Lawmakers signed off on $80.5 million in one-time funding, earmarking about $53 million for SEPTA. A spokesperson told Spotlight PA that the funding gives the system more time to figure out solutions, and said immediate cuts are not on the table. But they did not say how long that state of affairs would last.
 
@@ -134,7 +134,7 @@ State Senate Republicans say they won’t address transit in a vacuum, and would
 
 Local officials and advocates also said they were disappointed by the budget’s relatively modest funding for mental health services.
 
-Services such as outpatient treatment and crisis intervention are largely run by county governments, which get funding from the state to cover some of the costs. For a long time after the 2008 recession, <a href="https://whyy.org/articles/state-mental-health-funding-hasnt-increased-in-years-pa-counties-say-its-affecting-care/">state funding for those programs stagnated</a>, and was cut significantly in 2012.
+Services such as outpatient treatment and crisis intervention are largely run by county governments, which get funding from the state to cover some of the costs. For a long time after the 2008 recession, <a href="https://web.archive.org/20181225162242/https://whyy.org/articles/state-mental-health-funding-hasnt-increased-in-years-pa-counties-say-its-affecting-care/">state funding for those programs stagnated</a>, and was cut significantly in 2012.
 
 This is the second year in a row the state budget has given $20 million to county mental health services. But in a statement, John Buffone, a spokesperson for the County Commissioners Association of Pennsylvania, said the amount fails to counter years of underinvestment.
 
@@ -143,4 +143,3 @@ This is the second year in a row the state budget has given $20 million to count
 The new funding, he said, “will not help expand services, stabilize the workforce, decrease patient wait times or provide any realistic path to rebuilding a system that is crumbling before our very eyes.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

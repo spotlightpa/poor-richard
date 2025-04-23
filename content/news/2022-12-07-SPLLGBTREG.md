@@ -31,7 +31,7 @@ HARRISBURG — In the closing days of his final term in office, Gov. Tom Wolf is
 
 Under guidance released in 2018, a student, tenant, or worker at most businesses can file a complaint with the Pennsylvania Human Relations Commission against their school, landlord, or boss if they think they’ve been discriminated against because of their sexual orientation or gender identity.
 
-A little-noted proposal supported by Wolf, which is up for <a href="http://www.irrc.state.pa.us/regulations/RegSrchRslts.cfm?ID=3350">final approval</a> before a state regulatory board Thursday, would formally adopt that guidance.
+A little-noted proposal supported by Wolf, which is up for <a href="https://web.archive.org/20220325050755/http://www.irrc.state.pa.us/regulations/RegSrchRslts.cfm?ID=3350">final approval</a> before a state regulatory board Thursday, would formally adopt that guidance.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -40,7 +40,7 @@ A little-noted proposal supported by Wolf, which is up for <a href="http://www.i
 
 Wolf, a Democrat first elected in 2014, has asked Republican leaders in the General Assembly throughout his tenure to pass a bill that would add discrimination protections based on sexual orientation and gender identity to state law. Pennsylvania is the only state in the Northeast without such a law on the books, and <a href="https://web.archive.org/20220101195235/https://freedomforallamericans.org/states/">one of 27</a> nationwide without an explicit law banning such discrimination.
 
-The legislature has ignored Wolf’s prodding, as it has on many other issues. So, as he has on <a href="https://www.inquirer.com/politics/pennsylvania/pennsylvania-climate-carbon-rule-tom-wolf-20220703.html">climate change</a> and <a href="https://web.archive.org/web/20230116185945/https://www.governor.pa.gov/newsroom/gov-wolf-signs-executive-order-to-create-pennsylvania-state-law-enforcement-citizen-advisory-commission/">policing</a>, Wolf has turned to a channel that avoids state lawmakers.
+The legislature has ignored Wolf’s prodding, as it has on many other issues. So, as he has on <a href="https://web.archive.org/20220704005906/https://www.inquirer.com/politics/pennsylvania/pennsylvania-climate-carbon-rule-tom-wolf-20220703.html">climate change</a> and <a href="https://web.archive.org/web/20230116185945/https://www.governor.pa.gov/newsroom/gov-wolf-signs-executive-order-to-create-pennsylvania-state-law-enforcement-citizen-advisory-commission/">policing</a>, Wolf has turned to a channel that avoids state lawmakers.
 
 “Unfortunately, given Republican-led efforts to push legislation that only seeks to discriminate and bully individuals and their refusal to take up commonsense bills, this action through regulation is one more way the administration can protect Pennsylvanians,” Rementer said in a statement.
 
@@ -76,7 +76,7 @@ In <a href="https://web.archive.org/20221207111817/http://www.irrc.state.pa.us/d
 
 “While these protections are incredibly important, implementing them has not appeared to cause any crisis, including for small businesses or religious organizations,” Frankel wrote.
 
-This isn’t the first time Wolf has gone outside of the legislature to aid LGBTQ people. In 2019, he <a href="https://apnews.com/article/b12bb95e921444e6a52c6d86dbd541fb">quietly moved</a> to let the Pennsylvania Department of Transportation issue gender-neutral driver’s licenses. He also set up an LGBTQ affairs commission and <a href="https://billypenn.com/2022/08/18/conversion-therapy-ban-pennsylvania-wolf-decree-lgbtq/" target="_blank">signed an executive order</a> to discourage conversion therapy, which claims it can change a person’s sexuality or gender identity and has been rejected by the American Psychological Association.
+This isn’t the first time Wolf has gone outside of the legislature to aid LGBTQ people. In 2019, he <a href="https://apnews.com/article/b12bb95e921444e6a52c6d86dbd541fb">quietly moved</a> to let the Pennsylvania Department of Transportation issue gender-neutral driver’s licenses. He also set up an LGBTQ affairs commission and <a href="https://web.archive.org/20220818101326/https://billypenn.com/2022/08/18/conversion-therapy-ban-pennsylvania-wolf-decree-lgbtq/" target="_blank">signed an executive order</a> to discourage conversion therapy, which claims it can change a person’s sexuality or gender identity and has been rejected by the American Psychological Association.
 
 In previous years, Wolf’s regulatory maneuvers have sparked legislative fights with the General Assembly, which has unsuccessfully attempted to override the regulations or negotiate them away during budget talks.
 

@@ -19,7 +19,7 @@ title-tag = "Unequal PA election policies disenfranchised voters"
 topics = ["Elections"]
 +++
 
-<i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://web.archive.org/20170521211815/https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 HARRISBURG — Pennsylvania voters did not have equal opportunities to cast or correct their ballots during the November 2022 election, the latter producing a disparity that disenfranchised hundreds of voters, a Spotlight PA and Votebeat analysis has found.
 
@@ -76,7 +76,7 @@ Though the legislature acted with wide bipartisan support to allow no-excuse mai
 
 That conflict, as well as gray areas in state law, have resulted in lawsuits over the past two years that target mail voting.
 
-In one, settled just a week before the November 2022 election, the Pennsylvania Supreme Court <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-undated-mail-ballots-supreme-court-decision/">ordered</a> counties not to count mail ballots with incorrectly dated or undated outer envelopes. Months later, in February, the high court <a href="https://www.inquirer.com/news/pa-supreme-court-incorrectly-dated-ballots-20230208.html">reaffirmed</a> that undated mail ballots should not be counted but left it up to individual counties to determine exactly what an incorrect date is.
+In one, settled just a week before the November 2022 election, the Pennsylvania Supreme Court <a href="https://www.spotlightpa.org/news/2022/11/pa-election-2022-undated-mail-ballots-supreme-court-decision/">ordered</a> counties not to count mail ballots with incorrectly dated or undated outer envelopes. Months later, in February, the high court <a href="https://web.archive.org/20230208235146/https://www.inquirer.com/news/pa-supreme-court-incorrectly-dated-ballots-20230208.html">reaffirmed</a> that undated mail ballots should not be counted but left it up to individual counties to determine exactly what an incorrect date is.
 
 The state Supreme Court last year was also asked to wade into the question of whether ballot curing should be allowed. An October decision permitted the practice but <a href="https://www.wesa.fm/politics-government/2022-10-22/justices-take-undated-ballot-case-dont-halt-ballot-curing">did not mandate it</a>.
 

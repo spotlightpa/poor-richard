@@ -18,7 +18,7 @@ title = "How to weigh in on Pennsylvania’s next congressional map"
 topics = ["Redistricting"]
 +++
 
-<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://web.archive.org/20201019151248/https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
 HARRISBURG — Pennsylvania’s first proposed congressional map has arrived.
 
@@ -44,16 +44,16 @@ Here’s how to get involved:
 
 <b>Monday, Dec. 13, at 8 a.m.: </b>The committee is expected to vote on the map. If a majority of members on the panel vote yes, the map then goes to the full House for consideration.
 
-<a href="http://www.pacapitol.com/plan-a-visit/capitol-complex.cfm">Room 523, Irvis Office Building in Harrisburg</a> | <a href="https://web.archive.org/20211207115640/http://www.paredistricting.com/LiveStreams">Livestream</a>
+<a href="https://web.archive.org/20210124093251/http://www.pacapitol.com/plan-a-visit/capitol-complex.cfm">Room 523, Irvis Office Building in Harrisburg</a> | <a href="https://web.archive.org/20211207115640/http://www.paredistricting.com/LiveStreams">Livestream</a>
 
 ## Submit comments
 
-The House State Government Committee is directing people who want to comment on the proposal to an <a href="https://app.mydistricting.com/legdistricting/pennsylvania/preliminary_map">interactive map</a>.
+The House State Government Committee is directing people who want to comment on the proposal to an <a href="https://web.archive.org/20211208190219/https://app.mydistricting.com/legdistricting/pennsylvania/preliminary_map">interactive map</a>.
 
 ## Track changes
 
 The House State Government Committee has a <a href="https://web.archive.org/20211204111311/http://www.paredistricting.com/">website dedicated to the redistricting process</a>.
 
-You can also find information about votes on the map, changes to the districts, and more by <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=H&type=B&bn=2146">following the legislation page</a>.
+You can also find information about votes on the map, changes to the districts, and more by <a href="https://web.archive.org/20211209141020/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sInd=0&body=H&type=B&bn=2146">following the legislation page</a>.
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

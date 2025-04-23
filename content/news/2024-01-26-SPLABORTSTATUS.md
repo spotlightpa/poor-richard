@@ -34,15 +34,15 @@ With new federal abortion laws not forthcoming post-<em>Roe v. Wade</em>,<em> </
 
 ## What is Pennsylvania’s abortion law?
 
-Pregnancies can be ended in the commonwealth up to 24 weeks gestation, a deadline tied to the concept of <a href="https://www.nytimes.com/2021/11/28/us/politics/supreme-court-mississippi-abortion-law.html">viability</a> that was introduced in 1973’s <em>Roe v. Wade</em>. Abortions can be performed after that cutoff if a pregnant person’s life or health is in danger.
+Pregnancies can be ended in the commonwealth up to 24 weeks gestation, a deadline tied to the concept of <a href="https://web.archive.org/20211128224005/https://www.nytimes.com/2021/11/28/us/politics/supreme-court-mississippi-abortion-law.html">viability</a> that was introduced in 1973’s <em>Roe v. Wade</em>. Abortions can be performed after that cutoff if a pregnant person’s life or health is in danger.
 
-Pennsylvania doesn’t have language on its books protecting the right to an abortion, unlike many other states. For instance, voters in California, Michigan, and Vermont <a href="https://www.nytimes.com/2022/11/09/us/abortion-rights-ballot-proposals.html">in 2022</a> enshrined guarantees of abortion rights in their state constitutions, which constrain future abortion-restricting bills unless those amendments are repealed.
+Pennsylvania doesn’t have language on its books protecting the right to an abortion, unlike many other states. For instance, voters in California, Michigan, and Vermont <a href="https://web.archive.org/20221109091115/https://www.nytimes.com/2022/11/09/us/abortion-rights-ballot-proposals.html">in 2022</a> enshrined guarantees of abortion rights in their state constitutions, which constrain future abortion-restricting bills unless those amendments are repealed.
 
 Pennsylvania also imposes several other rules on people who wish to end pregnancies.
 
-One of them is a requirement for pre-abortion <a href="https://www.plannedparenthood.org/planned-parenthood-western-pennsylvania/patients/preparing-your-abortion-visit#:~:text=Pennsylvania%20law%20requires%20that%20you,at%20your%20scheduled%20start%20time.">counseling</a>, followed by a 24-hour wait before the person can undergo the surgical procedure or obtain medication. Before a minor can get an abortion, their parent or guardian must also consent unless a judge signs off on a <a href="https://www.womenslawproject.org/wp-content/uploads/2022/07/Post-Roe-Judicial-Bypass-Guide-7-14-22.pdf">judicial bypass</a>.
+One of them is a requirement for pre-abortion <a href="https://web.archive.org/20210411180221/https://www.plannedparenthood.org/planned-parenthood-western-pennsylvania/patients/preparing-your-abortion-visit#:~:text=Pennsylvania%20law%20requires%20that%20you,at%20your%20scheduled%20start%20time.">counseling</a>, followed by a 24-hour wait before the person can undergo the surgical procedure or obtain medication. Before a minor can get an abortion, their parent or guardian must also consent unless a judge signs off on a <a href="https://web.archive.org/20220717152333/https://www.womenslawproject.org/wp-content/uploads/2022/07/Post-Roe-Judicial-Bypass-Guide-7-14-22.pdf">judicial bypass</a>.
 
-Other restrictions involve insurance coverage. Plans for public employees who are paid using state funds don’t cover abortion except in cases of rape, incest, or a life-endangering health condition. Medicaid coverage in the commonwealth includes the same caveats — as does coverage under plans in the Affordable Care Act exchange, unless the purchaser <a href="https://www.guttmacher.org/state-policy/explore/regulating-insurance-coverage-abortion">buys a rider</a> for additional coverage.
+Other restrictions involve insurance coverage. Plans for public employees who are paid using state funds don’t cover abortion except in cases of rape, incest, or a life-endangering health condition. Medicaid coverage in the commonwealth includes the same caveats — as does coverage under plans in the Affordable Care Act exchange, unless the purchaser <a href="https://web.archive.org/20200125011536/https://www.guttmacher.org/state-policy/explore/regulating-insurance-coverage-abortion">buys a rider</a> for additional coverage.
 
 These restrictions have long been opposed by organizations like Planned Parenthood. Signe Espinoza, who heads the group’s advocacy arm in Pennsylvania, said the commonwealth is “quite literally punishing poor people for not allowing them to use their own health care for life-saving care.”
 
@@ -54,7 +54,7 @@ The law imposed the parental consent requirement for minors to get abortions, th
 
 ## Has the end of <em>Roe</em> affected Pennsylvania?
 
-Since the U.S. Supreme Court overturned <em>Roe v. Wade</em> in 2022, <a href="https://www.nytimes.com/interactive/2022/us/abortion-laws-roe-v-wade.html">21 states have further tightened abortion restrictions</a>. Fourteen have near-total bans and two have bans after six weeks, which is before many people know they’re pregnant. Five states now have 12- to 18-week bans.
+Since the U.S. Supreme Court overturned <em>Roe v. Wade</em> in 2022, <a href="https://web.archive.org/20220524220812/https://www.nytimes.com/interactive/2022/us/abortion-laws-roe-v-wade.html">21 states have further tightened abortion restrictions</a>. Fourteen have near-total bans and two have bans after six weeks, which is before many people know they’re pregnant. Five states now have 12- to 18-week bans.
 
 Pennsylvania has not passed any additional restrictions. When <em>Roe </em>was overturned, the commonwealth was led by a Democratic governor who supported abortion access. It now has another Democratic governor, Josh Shapiro, who has been a similarly staunch opponent of restrictions, as well as a narrow Democratic state House majority whose leaders have taken the same stance.
 
@@ -78,7 +78,7 @@ The state Supreme Court did not decide whether Medicaid must cover abortions, th
 
 The other abortion-related action currently happening in the commonwealth is likewise mostly geared toward expanding access.
 
-Until recently, the commonwealth’s legislature was fully controlled by Republicans. Under that status quo, abortion-restricting legislation came up frequently. Perhaps most significantly, the body began <a href="https://whyy.org/articles/pennsylvania-house-senate-constitutional-amendment-abortion-gop/">moving an amendment</a> in 2022 that would enshrine language in the state constitution that explicitly says abortion is not a protected right.
+Until recently, the commonwealth’s legislature was fully controlled by Republicans. Under that status quo, abortion-restricting legislation came up frequently. Perhaps most significantly, the body began <a href="https://web.archive.org/20220709020552/https://whyy.org/articles/pennsylvania-house-senate-constitutional-amendment-abortion-gop/">moving an amendment</a> in 2022 that would enshrine language in the state constitution that explicitly says abortion is not a protected right.
 
 The move would tie the state Supreme Court’s hands and prevent judges from construing that the constitution, as it stands, protects the right to abortion. It could also prevent them from ruling future abortion-restricting legislation unconstitutional.
 
@@ -94,11 +94,11 @@ Democrats, meanwhile, have gotten more active on the issue.
 
 Soon after Shapiro took office, he extended an executive order from his predecessor, Tom Wolf, that pledges to <a href="https://web.archive.org/20230411200357/https://www.governor.pa.gov/newsroom/shapiro-administration-launches-abortion-access-website-after-texas-ruling-reminds-pennsylvanians-medication-abortion-remains-legal-in-the-commonwealth/">protect people from other states</a> from any abortion-restricting laws those states have on the books.
 
-The governor’s first state budget also <a href="https://apnews.com/article/abortion-pennsylvania-92c940a80f675f5b6cc6fd1642ea9ba3">ended a long-standing contract</a> that provided public funds to an anti-abortion counseling program.
+The governor’s first state budget also <a href="https://web.archive.org/20230901131550/https://apnews.com/article/abortion-pennsylvania-92c940a80f675f5b6cc6fd1642ea9ba3">ended a long-standing contract</a> that provided public funds to an anti-abortion counseling program.
 
-Last month, <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1888">a member proposed an amendment</a> that would formally enshrine the right to abortion in the Pennsylvania Constitution. The Pennsylvania Pro-Life Federation, a group that supports abortion restrictions, is <a href="https://oneclickpolitics.global.ssl.fastly.net/messages/edit?promo_id=18546">organizing opposition to it</a>.
+Last month, <a href="https://web.archive.org/20231215165037/https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1888">a member proposed an amendment</a> that would formally enshrine the right to abortion in the Pennsylvania Constitution. The Pennsylvania Pro-Life Federation, a group that supports abortion restrictions, is <a href="https://web.archive.org/20230308011123/https://oneclickpolitics.global.ssl.fastly.net/messages/edit?promo_id=18546">organizing opposition to it</a>.
 
-Just this week, a group of state House members <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41982">advanced a bill proposal</a> seeking to loosen facility requirements for abortion providers, arguing the rules are unnecessarily onerous.
+Just this week, a group of state House members <a href="https://web.archive.org/20240122223834/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41982">advanced a bill proposal</a> seeking to loosen facility requirements for abortion providers, arguing the rules are unnecessarily onerous.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
@@ -109,4 +109,3 @@ The commonwealth currently has fewer than 20 active providers compared with more
 “We’re working toward a Pennsylvania where we have a budget line item” for abortion providers, she said. “This isn’t on one administration alone … \[but\] Pennsylvania falls behind from a policy solutions perspective, and also from a funding perspective.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

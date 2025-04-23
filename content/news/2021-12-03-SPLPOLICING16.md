@@ -20,7 +20,7 @@ topics = ["Events", "Justice System"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-Officers in Pennsylvania have killed or used force on 108 civilians since 2017, according to a Spotlight PA examination of databases maintained by the <a href="https://www.washingtonpost.com/graphics/investigations/police-shootings-database/">Washington Post</a> and <a href="https://fatalencounters.org/">Fatal Encounters</a>. Elected district attorneys almost always decide whether to charge these officers, and their choices often receive little pushback.
+Officers in Pennsylvania have killed or used force on 108 civilians since 2017, according to a Spotlight PA examination of databases maintained by the <a href="https://web.archive.org/20210101002727/https://www.washingtonpost.com/graphics/investigations/police-shootings-database/">Washington Post</a> and <a href="https://web.archive.org/20210103062112/https://fatalencounters.org/">Fatal Encounters</a>. Elected district attorneys almost always decide whether to charge these officers, and their choices often receive little pushback.
 
 Expanded access to videos of police using lethal force has increased public awareness of the problem, but few people know how and why courts rule these cases justified.
 

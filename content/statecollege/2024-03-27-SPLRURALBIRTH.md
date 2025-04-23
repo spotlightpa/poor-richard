@@ -39,19 +39,19 @@ The health system, which operates eight hospitals statewide, says patients will 
 
 Community members who have watched services trickle out of the area say they are confused, frustrated, and worried by the news of the planned shutdown. Residents frantically called their elected leaders, who knew little more than their constituents about the decision.
 
-<a href="https://www.phhealthcare.org/news/penn-highlands-elk-news/penn-highlands-elk-makes-change-that-will-bolster-financial-health">Almost a decade ago</a>, Penn Highlands Elk sought to become a critical access hospital — a Medicare designation that limits stays to four days — to improve its financial standing. The hospital later cut its generations unit, an inpatient program for older adults, and referred patients to DuBois instead. The health system is also closing a personal care facility in Ridgway this spring.
+<a href="https://web.archive.org/20201030110307/https://www.phhealthcare.org/news/penn-highlands-elk-news/penn-highlands-elk-makes-change-that-will-bolster-financial-health">Almost a decade ago</a>, Penn Highlands Elk sought to become a critical access hospital — a Medicare designation that limits stays to four days — to improve its financial standing. The hospital later cut its generations unit, an inpatient program for older adults, and referred patients to DuBois instead. The health system is also closing a personal care facility in Ridgway this spring.
 
 “It feels like it’s just one thing after another,” Nesbitt said.
 
 Meanwhile, Penn Highlands is building a $70 million facility in Centre County, which already has a hospital.
 
-Penn Highlands President and CEO Steve Fontaine, who made over $1.2 million in 2021, told state lawmakers during a <a href="https://www.pasenategop.com/news/policy-021424/">February hearing</a> on rural care challenges that inadequate payments from health insurance plans are the primary cause of hospital closures. He didn&#39;t mention the expected labor and delivery shutdown in Elk County, but detailed how financial challenges, aging patients, and staffing shortages make it hard to sustain rural health facilities.
+Penn Highlands President and CEO Steve Fontaine, who made over $1.2 million in 2021, told state lawmakers during a <a href="https://web.archive.org/20240403195331/https://www.pasenategop.com/news/policy-021424/">February hearing</a> on rural care challenges that inadequate payments from health insurance plans are the primary cause of hospital closures. He didn&#39;t mention the expected labor and delivery shutdown in Elk County, but detailed how financial challenges, aging patients, and staffing shortages make it hard to sustain rural health facilities.
 
-<a href="https://projects.propublica.org/nonprofits/organizations/320345810">Tax documents</a> show the health system reported $81.7 million in revenue in 2021 and $73.3 million in expenses. During the hearing, Fontaine said post-pandemic numbers show profit declines. He testified that Penn Highlands had one of its “greatest losses” in 2023: a negative 5% profit margin.
+<a href="https://web.archive.org/20240330062608/https://projects.propublica.org/nonprofits/organizations/320345810">Tax documents</a> show the health system reported $81.7 million in revenue in 2021 and $73.3 million in expenses. During the hearing, Fontaine said post-pandemic numbers show profit declines. He testified that Penn Highlands had one of its “greatest losses” in 2023: a negative 5% profit margin.
 
 This year is “a little bit better,” he added.
 
-Residents think money factored into Penn Highlands’ decision to cancel labor and delivery services in Elk County. But if finances weren’t an issue, they question whether the closure was necessary. Additionally, as <a href="https://www.rural.pa.gov/data/population-projections">shrinking population projections</a> loom over Pennsylvania’s rural areas, officials fear these changes leave their communities without the infrastructure to survive long term.
+Residents think money factored into Penn Highlands’ decision to cancel labor and delivery services in Elk County. But if finances weren’t an issue, they question whether the closure was necessary. Additionally, as <a href="https://web.archive.org/20220128160452/https://www.rural.pa.gov/data/population-projections">shrinking population projections</a> loom over Pennsylvania’s rural areas, officials fear these changes leave their communities without the infrastructure to survive long term.
 
 “Everybody in rural Pennsylvania deserves access to the same services as urban and suburban residents,” Clearfield County Commissioner Dave Glass told Spotlight PA. “We aren’t lesser people here.”
 
@@ -95,19 +95,19 @@ By June, his working location will depend on a labor and delivery rotation at Du
 
 Labor and delivery services shutting down in Elk County follows previous losses of maternal care in rural Pennsylvania.
 
-March of Dimes, a national nonprofit that works to improve maternal and child health, considers five rural Pennsylvania counties “<a href="https://www.marchofdimes.org/peristats/reports/pennsylvania/maternity-care-deserts">maternity care deserts</a>,” which it defines as areas without a hospital or birth center that offers obstetric care, and those without obstetric providers, including OB-GYNs, family doctors, nurse midwives, or certified midwives.
+March of Dimes, a national nonprofit that works to improve maternal and child health, considers five rural Pennsylvania counties “<a href="https://web.archive.org/20231111100403/https://www.marchofdimes.org/peristats/reports/pennsylvania/maternity-care-deserts">maternity care deserts</a>,” which it defines as areas without a hospital or birth center that offers obstetric care, and those without obstetric providers, including OB-GYNs, family doctors, nurse midwives, or certified midwives.
 
-A <a href="https://www.marchofdimes.org/peristats/assets/s3/reports/mcd/Maternity-Care-Report-Pennsylvania.pdf">report</a> from the organization shows that 47.6% of women in rural Pennsylvania live more than 30 minutes from a birthing hospital. Farther travel can increase maternal morbidity risks and adverse outcomes.
+A <a href="https://web.archive.org/20231110164942/https://www.marchofdimes.org/peristats/assets/s3/reports/mcd/Maternity-Care-Report-Pennsylvania.pdf">report</a> from the organization shows that 47.6% of women in rural Pennsylvania live more than 30 minutes from a birthing hospital. Farther travel can increase maternal morbidity risks and adverse outcomes.
 
 State Sen. Judy Schwank (D., Berks) told Spotlight PA that the legislature and government agencies should reach a consensus on what qualifies as a “maternity care desert.” She prefers a broad definition with mileage buffers, so state spending can support health services, child care, transportation, and access to grocery stores.
 
-The Center for Rural Pennsylvania sponsored a <a href="https://www.rural.pa.gov/getfile.cfm?file=Resources/reports/assets/145/Maternity%20and%20Obstetrics%202022.pdf&amp;view=true">2022 study</a> that predicts 18 counties will be maternity care deserts by 2025. The report also anticipates that demand for maternity care in rural areas will decrease because the population is expected to decline, especially among people of childbearing age.
+The Center for Rural Pennsylvania sponsored a <a href="https://web.archive.org/20230727093843/https://www.rural.pa.gov/getfile.cfm?file=Resources/reports/assets/145/Maternity%20and%20Obstetrics%202022.pdf&amp;view=true">2022 study</a> that predicts 18 counties will be maternity care deserts by 2025. The report also anticipates that demand for maternity care in rural areas will decrease because the population is expected to decline, especially among people of childbearing age.
 
 Once the closure takes effect, Elk County will be the sixth county in the region without a hospital or another facility delivering babies. The others are Cameron, Clarion, Clinton, Forest, and McKean Counties, which collectively contain more than 156,000 people.
 
 For years, health care administrators and experts have said workforce shortages and increased operating costs have exacerbated financial problems, especially for hospitals in rural areas where residents are typically older and more reliant on Medicare and Medicaid.
 
-Payments from Medicare, Medicaid, and commercial insurance companies haven’t kept up with inflation, Nicole Stalling, president and CEO of the Hospital and Healthsystem Association of Pennsylvania, told lawmakers in February. Medicare and Medicaid reimburse Pennsylvania hospitals 84 and 81 cents on the dollar, respectively, Stalling <a href="https://policy.pasenategop.com/wp-content/uploads/sites/140/2024/02/Stallings-Testimony.pdf">testified</a>.
+Payments from Medicare, Medicaid, and commercial insurance companies haven’t kept up with inflation, Nicole Stalling, president and CEO of the Hospital and Healthsystem Association of Pennsylvania, told lawmakers in February. Medicare and Medicaid reimburse Pennsylvania hospitals 84 and 81 cents on the dollar, respectively, Stalling <a href="https://web.archive.org/20240327105003/https://policy.pasenategop.com/wp-content/uploads/sites/140/2024/02/Stallings-Testimony.pdf">testified</a>.
 
 Fontaine said Penn Highlands’ consolidation with other health systems — such as Mon Valley in Washington County and Connellsville in Fayette County — has helped facilities survive by mixing patient and insurance demographics. This strategy is why Penn Highlands expanded into Centre County, where resident numbers are expected to grow, he told lawmakers.
 
@@ -129,9 +129,9 @@ The Hospital and Healthsystem Association of Pennsylvania has voiced support for
 
 Thompson also requested a meeting with Fontaine earlier this month to discuss the closure and ways to expand health care access in Elk County. Through a spokesperson, Casey said pregnant people shouldn’t have to travel more than an hour to give birth “just because they live in a rural area” and cited his <a href="https://web.archive.org/20240401100055/https://www.casey.senate.gov/news/releases/casey-grassley-introduce-bill-to-provide-financial-stability-and-security-to-rural-hospitals">past proposals to support</a> rural hospitals.
 
-Dush argued the state should find ways to address staffing shortages and financial challenges, citing a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1351">law</a> that took effect this year that ties Medicaid reimbursement to federal rates and pays whichever amount is higher. The law also reimburses emergency medical services organizations for 100% of the miles they travel with a patient.
+Dush argued the state should find ways to address staffing shortages and financial challenges, citing a <a href="https://web.archive.org/20231024123727/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=1351">law</a> that took effect this year that ties Medicaid reimbursement to federal rates and pays whichever amount is higher. The law also reimburses emergency medical services organizations for 100% of the miles they travel with a patient.
 
-Earlier this month, a state lawmaker also announced plans for legislation that would <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=42316">expand access to midwives in Pennsylvania</a>.<u></u>
+Earlier this month, a state lawmaker also announced plans for legislation that would <a href="https://web.archive.org/20240328011758/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=42316">expand access to midwives in Pennsylvania</a>.<u></u>
 
 Though more spending in rural areas might not stop anticipated population losses entirely, officials hope funding for health, housing, broadband, and education could help slow the decline.
 
@@ -156,4 +156,3 @@ For Glass, the Clearfield County commissioner, this closure follows a larger tre
 “We live like this every day, not just in health care,” he said.
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

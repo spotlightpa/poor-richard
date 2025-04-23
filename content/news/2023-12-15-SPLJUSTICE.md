@@ -35,11 +35,11 @@ At a press conference Wednesday night, Shapiro celebrated the Clean Slate expans
 
 “These common sense steps? Well, it&#39;s going to help Pennsylvanians who want to rebuild their lives and meaningfully contribute to their communities, making our justice system more fair, more effective, and more just,” Shapiro said.
 
-The expansion of the state’s “Clean Slate” law, spearheaded by Rep. Jordan Harris (D., Philadelphia), extends automatic expungement eligibility to <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=0689&amp;pn=2310">certain</a> non-violent felony offenses and shortens the waiting period for misdemeanor and summary offenses.
+The expansion of the state’s “Clean Slate” law, spearheaded by Rep. Jordan Harris (D., Philadelphia), extends automatic expungement eligibility to <a href="https://web.archive.org/20231215100920/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=0689&amp;pn=2310">certain</a> non-violent felony offenses and shortens the waiting period for misdemeanor and summary offenses.
 
-It also addresses an issue first identified by a <a href="https://www.pennlive.com/news/2022/05/many-records-for-people-convicted-of-murder-rape-and-more-are-being-hidden-from-the-public-in-pa.html">PennLive investigation</a>, which found county courthouses were cutting off access to case files that should be public, by warning local officials that they should not seal entire case files just because one portion is eligible for expungement.
+It also addresses an issue first identified by a <a href="https://web.archive.org/20220524100041/https://www.pennlive.com/news/2022/05/many-records-for-people-convicted-of-murder-rape-and-more-are-being-hidden-from-the-public-in-pa.html">PennLive investigation</a>, which found county courthouses were cutting off access to case files that should be public, by warning local officials that they should not seal entire case files just because one portion is eligible for expungement.
 
-The broadened Clean Slate measures enjoyed the support of civil rights and defense groups such as the <a href="https://www.aclupa.org/en/legislation/hb-689-clean-slate-30">ACLU of Pennsylvania</a> for helping people shed the stigma of a criminal record in finding employment and housing.
+The broadened Clean Slate measures enjoyed the support of civil rights and defense groups such as the <a href="https://web.archive.org/20231215114953/https://www.aclupa.org/en/legislation/hb-689-clean-slate-30">ACLU of Pennsylvania</a> for helping people shed the stigma of a criminal record in finding employment and housing.
 
 The probation bill is more complicated.
 
@@ -69,7 +69,7 @@ The bills saw opposition Wednesday night among some progressive members of the D
 
 “I understand the purpose,” Kinkead said on the House floor. “The problem is, theft is already illegal.”
 
-Kinkead in November introduced a resolution to examine the crimes code, which has ballooned from 282 offenses in 1972 to more than 1,600 today, according to <a href="https://www.aclupa.org/en/campaigns/more-law-less-justice">a recent report</a> from the state ACLU. This increase, the organization argued, has fed mass incarceration.
+Kinkead in November introduced a resolution to examine the crimes code, which has ballooned from 282 offenses in 1972 to more than 1,600 today, according to <a href="https://web.archive.org/20230325210007/https://www.aclupa.org/en/campaigns/more-law-less-justice">a recent report</a> from the state ACLU. This increase, the organization argued, has fed mass incarceration.
 
 “The problem is never one bill alone — it is the compound effect that all these bills have together over time,” the report concluded. “It’s mass incarceration by a thousand cuts.”
 
@@ -81,7 +81,7 @@ The state attorney general’s office is in the process of reviewing the legisla
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-It passed <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=845">159-44</a>, with every no vote cast by Democrats — including by Speaker Joanna McClinton (D., Philadelphia). However, few lawmakers were willing to discuss their opposition publicly.
+It passed <a href="https://web.archive.org/20231215100902/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=845">159-44</a>, with every no vote cast by Democrats — including by Speaker Joanna McClinton (D., Philadelphia). However, few lawmakers were willing to discuss their opposition publicly.
 
 “We can all agree to disagree on this one, I just disagree,” state Rep. Darisha Parker (D., Philadelphia) told Spotlight PA.
 
@@ -91,13 +91,12 @@ Philadelphia District Attorney Larry Krasner, whose progressive prosecutorial st
 
 Other bills related to the justice system that passed amid the end-of-session rush include:
 
-- <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1284">a measure</a> maintaining speed cameras on Philadelphia’s Roosevelt avenue and expanding the program to other parts of the city;
+- <a href="https://web.archive.org/20230601144702/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1284">a measure</a> maintaining speed cameras on Philadelphia’s Roosevelt avenue and expanding the program to other parts of the city;
 
-- <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=863">one</a> lowering the physical fitness standards required for entry into police training;
+- <a href="https://web.archive.org/20231121220538/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=863">one</a> lowering the physical fitness standards required for entry into police training;
 
 - <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=683">another</a> requiring fentanyl and xylazine screening to be included in many diagnostic urine tests;
 
 - and <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=900">one</a> enumerating rights for incarcerated women and raising reporting standards whenever incarcerated pregnant people are restrained or put in restricted housing.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

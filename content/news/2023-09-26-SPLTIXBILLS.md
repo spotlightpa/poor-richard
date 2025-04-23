@@ -24,11 +24,11 @@ HARRISBURG — Following a summer of extreme sticker shock among concertgoers se
 
 But consumer advocates and the tech lobby argue that as written, the bills may reinforce Ticketmaster’s monopoly on the live events industry and hurt concertgoers&#39; ability to buy and sell tickets to their favorite shows on the secondary market.
 
-One state House lawmaker wants to ban <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1378">the use of bots</a> to purchase tickets or other products, while another representative has introduced legislation that would restrict <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1658">speculative ticketing</a>, which is when a reseller markets tickets that they do not own at the time of sale but hope to acquire before the event.
+One state House lawmaker wants to ban <a href="https://web.archive.org/20230926092351/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1378">the use of bots</a> to purchase tickets or other products, while another representative has introduced legislation that would restrict <a href="https://web.archive.org/20230926092454/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1658">speculative ticketing</a>, which is when a reseller markets tickets that they do not own at the time of sale but hope to acquire before the event.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Both bills are supported by Ticketmaster, which <a href="https://www.reuters.com/article/us-ticketmaster-livenation/live-nation-ticketmaster-merge-agree-to-u-s-terms-idUSTRE60O4E520100126">merged in 2010</a> with events promoter Live Nation amid federal scrutiny and gained a <a href="https://insights.som.yale.edu/insights/did-ticketmasters-market-dominance-fuel-the-chaos-for-swifties">70% market share in the ticket-selling industry</a>.
+Both bills are supported by Ticketmaster, which <a href="https://www.reuters.com/article/us-ticketmaster-livenation/live-nation-ticketmaster-merge-agree-to-u-s-terms-idUSTRE60O4E520100126">merged in 2010</a> with events promoter Live Nation amid federal scrutiny and gained a <a href="https://web.archive.org/20221123231152/https://insights.som.yale.edu/insights/did-ticketmasters-market-dominance-fuel-the-chaos-for-swifties">70% market share in the ticket-selling industry</a>.
 
 That share extends to the secondary market. According to <a href="https://investors.livenationentertainment.com/sec-filings/annual-reports/content/0001335258-23-000014/0001335258-23-000014.pdf">a 2022 regulatory filing</a>, the company handled $4.5 billion in ticket resales that year, more than double its total from 2019.
 
@@ -68,7 +68,7 @@ Breyault called the language in the bots bill overly broad and said it would be 
 
 “Ticketmaster knows who is buying every ticket to every show and they could find patterns. The state attorney general can’t do their job without evidence,” he said. “And if Ticketmaster has evidence, they should turn it over.”
 
-Pennsylvania law already has some recourse for spurned concert attendees with bad blood. A state law signed by former Democratic Gov. Ed Rendell in <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2007&amp;sind=0&amp;body=S&amp;type=B&amp;bn=86">2007</a> requires a ticket reseller to provide a full refund if a ticket “fails to conform to its description on the Internet website.”
+Pennsylvania law already has some recourse for spurned concert attendees with bad blood. A state law signed by former Democratic Gov. Ed Rendell in <a href="https://web.archive.org/20211205123601/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2007&amp;sind=0&amp;body=S&amp;type=B&amp;bn=86">2007</a> requires a ticket reseller to provide a full refund if a ticket “fails to conform to its description on the Internet website.”
 
 That same law <a href="https://www.ticketnews.com/2007/07/pennsylvania-governor-signs-law-allowing-ticket-resale/">axed</a> a requirement that only licensed resellers could offer second-hand tickets, with a markup of no more than 25% of the ticket’s face value.
 
@@ -76,7 +76,7 @@ Those provisions have been used by Pennsylvania officials, most notably last fal
 
 The Pennsylvania Office of Attorney General, controlled then by now-Gov. Josh Shapiro, a Democrat, received more than <a href="https://www.inquirer.com/entertainment/music/taylor-swift-eras-attorney-general-josh-shapiro-ticketmaster-complaints-20221121.html">2,000 complaints</a> after soliciting concerns with Ticketmaster’s tour presale.
 
-A month later, after working directly with Ticketmaster, the office announced that an unidentified number of fans would <a href="https://www.abc27.com/news/entertainment/ag-shapiro-announces-new-opportunities-for-taylor-swift-tickets/">get another crack</a> at tickets using their existing presale codes.
+A month later, after working directly with Ticketmaster, the office announced that an unidentified number of fans would <a href="https://web.archive.org/20221213163928/https://www.abc27.com/news/entertainment/ag-shapiro-announces-new-opportunities-for-taylor-swift-tickets/">get another crack</a> at tickets using their existing presale codes.
 
 In an email, Brett Hambright, a spokesperson for current state Attorney General Michelle Henry, said that the office “regularly receives complaints from consumers impacted by ticket purchases, and we vet all of those for mediation options.”
 
@@ -90,11 +90,10 @@ The office, Hambright said, is aware of the pending legislation and provided inp
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-While outrage about unaffordable and unavailable tickets this summer prompted many calls for greater oversight, proposed <a href="https://apnews.com/article/american-concert-ticket-sale-reforms-taylor-swift-a5ddb8282a2c72f6dedafc8139c75921">changes</a> have stalled at the federal and state levels. A bill containing similar language to both of Pennsylvania’s bills was vetoed by Colorado’s Democratic Gov. Jared Polis in <a href="https://drive.google.com/file/d/1y1saLSg0xKpn47feQXIcCKXAOOh6f04I/view">June</a>.
+While outrage about unaffordable and unavailable tickets this summer prompted many calls for greater oversight, proposed <a href="https://apnews.com/article/american-concert-ticket-sale-reforms-taylor-swift-a5ddb8282a2c72f6dedafc8139c75921">changes</a> have stalled at the federal and state levels. A bill containing similar language to both of Pennsylvania’s bills was vetoed by Colorado’s Democratic Gov. Jared Polis in <a href="https://web.archive.org/20230607014851/https://drive.google.com/file/d/1y1saLSg0xKpn47feQXIcCKXAOOh6f04I/view">June</a>.
 
 While he agreed with some of the protections, Polis sided with consumer groups who argued that the bill could discourage competition.
 
-With Colorado in mind, Matzie said he introduced separate bills in hopes of getting something through both chambers and to Shapiro’s desk. (In the state Senate, there already is a <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=41372">proposed bipartisan speculative ticket ban</a>.)
+With Colorado in mind, Matzie said he introduced separate bills in hopes of getting something through both chambers and to Shapiro’s desk. (In the state Senate, there already is a <a href="https://web.archive.org/20230920082334/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=41372">proposed bipartisan speculative ticket ban</a>.)
 
 “I want to get stuff done,” Matzie added.
-

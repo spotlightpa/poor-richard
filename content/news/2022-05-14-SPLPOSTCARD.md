@@ -53,7 +53,7 @@ The Progressive Turnout Project says in its blog post that it conducted an exper
 
 The Pennsylvania Department of State did not respond to a request for comment, but it appears the postcard violated no laws.
 
-<a href="https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1937/0/0320..PDF">Pennsylvania’s election law</a> requires a person or group who sends a mailing to identify who financed it if it advocates for or against a candidate or ballot measure, which the postcard does not do.
+<a href="https://web.archive.org/20140827174133/https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1937/0/0320..PDF">Pennsylvania’s election law</a> requires a person or group who sends a mailing to identify who financed it if it advocates for or against a candidate or ballot measure, which the postcard does not do.
 
 Still, Berg told Spotlight PA, “Not knowing who is sending you these communications only adds to the fear for some people who may worry their voting habits are being monitored.”
 

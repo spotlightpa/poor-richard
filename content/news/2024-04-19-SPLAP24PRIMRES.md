@@ -21,7 +21,7 @@ url = "/news/2024/04/pennsylvania-election-results-2024-primary/"
 
 Results to watch include <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-attorney-general-primary-candidates/">Pennsylvania attorney general</a>, <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-treasurer-primary-candidates-stacy-garrity-ryan-bizzarro-erin-mcclelland/">Pennsylvania treasurer</a>, and <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-election-2024-auditor-general-candidates-tim-defoor-malcolm-kenyatta-mark-pinsley/">Pennsylvania auditor general</a>. Results will begin to show after 8 p.m. on April 23.
 
-Results for races can also be found on the Department of State <a href="https://www.electionreturns.pa.gov/">website</a>.
+Results for races can also be found on the Department of State <a href="https://web.archive.org/20200220053315/https://www.electionreturns.pa.gov/">website</a>.
 
 For complete coverage of the 2024 primary election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
@@ -77,23 +77,23 @@ For voters interested in seeing rolling tallies, Spotlight PA is making availabl
 
 In 2020, Pennsylvania was one of the decisive states in President Joe Biden’s victory after a highly contentious presidential election during the COVID-19 pandemic. Former President Donald Trump denied the loss, baselessly claimed fraud, and ultimately encouraged his supporters to march on the Capitol while votes were being certified, in what culminated in the Jan. 6 <a href="https://www.spotlightpa.org/news/2022/01/january-6-capitol-riot-pennsylvania-role/">riot and insurrection</a>.
 
-Biden has already <a href="https://apnews.com/article/biden-presumptive-nominee-election-president-democrat-63b66006d4bc45354343228e323e3baa">won enough delegates</a> in the primary to become the presumptive Democratic nominee for president, though U.S. Rep. Dean Phillips of Minnesota will appear on the primary ballot in Pennsylvania despite <a href="https://www.politico.com/news/2024/03/06/dean-phillips-drops-out-00145403">suspending</a> his campaign in early March.
+Biden has already <a href="https://web.archive.org/20240312233542/https://apnews.com/article/biden-presumptive-nominee-election-president-democrat-63b66006d4bc45354343228e323e3baa">won enough delegates</a> in the primary to become the presumptive Democratic nominee for president, though U.S. Rep. Dean Phillips of Minnesota will appear on the primary ballot in Pennsylvania despite <a href="https://web.archive.org/20240307070654/https://www.politico.com/news/2024/03/06/dean-phillips-drops-out-00145403">suspending</a> his campaign in early March.
 
-Trump has <a href="https://apnews.com/article/trump-haley-election-2024-republicans-9736f3b504eef4da5a8ef7f8bbae9dfc">secured the nomination</a> for the Republican Party; despite <a href="https://www.nbcnews.com/politics/2024-election/nikki-haley-ends-presidential-campaign-trump-gop-primary-rcna134811">dropping out of the race</a>, former South Carolina Gov. Nikki Haley will appear on the ballot here.
+Trump has <a href="https://web.archive.org/20240306175637/https://apnews.com/article/trump-haley-election-2024-republicans-9736f3b504eef4da5a8ef7f8bbae9dfc">secured the nomination</a> for the Republican Party; despite <a href="https://web.archive.org/20240306112716/https://www.nbcnews.com/politics/2024-election/nikki-haley-ends-presidential-campaign-trump-gop-primary-rcna134811">dropping out of the race</a>, former South Carolina Gov. Nikki Haley will appear on the ballot here.
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12357.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-3">U.S. Senate</h2>
 
-This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://web.archive.org/20130909022320/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+This year, the primary U.S. Senate race is <a href="https://web.archive.org/20240312154554/https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://web.archive.org/20130909022320/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://web.archive.org/20211226012514/https://www.davemccormickpa.com/">David McCormick</a>.
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12358.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
 <h2 id="spl-heading-4">U.S. House</h2>
 
-<a href="https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">All 17 members of the Pennsylvania’s U.S. House</a> delegation — nine Democrats and eight Republicans — seek reelection in 2024. Who is listed on your ballot will be dictated by the congressional district you live in.
+<a href="https://web.archive.org/20240215013829/https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">All 17 members of the Pennsylvania’s U.S. House</a> delegation — nine Democrats and eight Republicans — seek reelection in 2024. Who is listed on your ballot will be dictated by the congressional district you live in.
 
-To find who is running in your district, visit the state’s <a href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">legislator lookup tool</a>.<em></em>
+To find who is running in your district, visit the state’s <a href="https://web.archive.org/20090525151746/https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">legislator lookup tool</a>.<em></em>
 
 {{<embed/raw srcdoc="&lt;iframe class=&#34;ap-embed&#34; title=&#34;Live election results via the Associated Press&#34; src=&#34;https://interactives.ap.org/election-results/customers/layouts/organization-layouts/published/124213/12361.html&#34; width=&#34;100%&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;script defer src=&#34;https://interactives.ap.org/election-results/assets/microsite/resizeClient.js&#34;&gt;&lt;/script&gt;">}}
 
@@ -155,11 +155,11 @@ Still, election experts expect unofficial results for most races <a href="https:
 
 <h3 id="spl-heading-12">Q: How can I find the latest election results in Pennsylvania?</h3>
 
-A: For statewide races and races for the General Assembly, you can check the Department of State’s election results website <a href="https://www.electionreturns.pa.gov/">here</a>.
+A: For statewide races and races for the General Assembly, you can check the Department of State’s election results website <a href="https://web.archive.org/20200220053315/https://www.electionreturns.pa.gov/">here</a>.
 
 <h3 id="spl-heading-13">Q: Can I track my mail-in ballot in Pennsylvania?</h3>
 
-A: Yes, the Pennsylvania Department of State allows you to track your ballot on its website. Go to <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">pavoterservices.pa.gov/Pages/BallotTracking.aspx</a>, where you will see a prompt to enter your name, date of birth, and county of residence. You can also contact your county election office to confirm the status of your ballot.
+A: Yes, the Pennsylvania Department of State allows you to track your ballot on its website. Go to <a href="https://web.archive.org/20240108142928/https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">pavoterservices.pa.gov/Pages/BallotTracking.aspx</a>, where you will see a prompt to enter your name, date of birth, and county of residence. You can also contact your county election office to confirm the status of your ballot.
 
 <h3 id="spl-heading-14">Q: What happens if there is a recount?</h3>
 
@@ -169,7 +169,7 @@ Three or more voters in a voting precinct can also request a <a href="https://ww
 
 A recount must be completed within three weeks of the election.
 
-Learn more <a href="https://www.inquirer.com/news/recount-election-pennsylvania-rules-law-20201106.html">about recounts from The Inquirer</a>.
+Learn more <a href="https://web.archive.org/20201106225300/https://www.inquirer.com/news/recount-election-pennsylvania-rules-law-20201106.html">about recounts from The Inquirer</a>.
 
 <h3 id="spl-heading-15">Q: How does the media get election results?</h3>
 
@@ -192,4 +192,3 @@ By the Tuesday after Election Day, counties must submit results — as up-to-dat
 “Local boards of election, comprised of the county’s commissioners, must sign a copy of the results twice for an election to be certified. Typically, candidates raise any challenges to the canvassing process in the five-day window between the first and second signings.”
 
 Learn <a href="https://www.spotlightpa.org/news/2022/11/pa-election-results-certification-vote-count-process/">more about election certification from Votebeat.</a>
-

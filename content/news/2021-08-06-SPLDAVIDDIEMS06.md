@@ -47,7 +47,7 @@ Rep. Paul Schemel (R., Franklin), who will head one of the subcommittees as part
 
 Reporting by The Caucus and Spotlight PA suggests he’s looking at a target-rich environment.
 
-<iframe src='https://flo.uri.sh/visualisation/5537018/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+<iframe src='https://web.archive.org/20210512221508/https://flo.uri.sh/visualisation/5537018/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
 
 ## No receipts required
 
@@ -73,7 +73,7 @@ Both Democrats and Republicans over the years have criticized the per diem syste
 
 Grove said his ethics inquiry will also cover a system that allows lawmakers to lease state-paid vehicles, another perk that has captured taxpayers’ attention over the years.
 
-Davidson’s own leases, in particular, <a href="https://www.inquirer.com/philly/news/margo-davidson-pennsylvania-house-representatives-car-accidents-20180816.html" target="_blank">raised flags when she crashed her state-paid vehicle twice in 12 days while her license was suspended</a>. The incidents were not part of her recent charges and resignation.
+Davidson’s own leases, in particular, <a href="https://web.archive.org/20210225194732/https://www.inquirer.com/philly/news/margo-davidson-pennsylvania-house-representatives-car-accidents-20180816.html" target="_blank">raised flags when she crashed her state-paid vehicle twice in 12 days while her license was suspended</a>. The incidents were not part of her recent charges and resignation.
 
 A group of House Republicans targeted the practice again earlier this year, pushing a ban on taxpayer-funded vehicle leases for legislators. The lawmakers argued it’s far cheaper for their colleagues to use their own vehicles and collect reimbursement for gas. Leases have typically ranged from $419 to $711 per month in recent years, not including state-paid vehicle maintenance, oil changes, car washes, and gas, records show.
 

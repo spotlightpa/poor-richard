@@ -28,7 +28,7 @@ But the bill also exempts those data from the state’s Right-to-Know Law, filte
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Stay%20up%20to%20date%20on%20Pennsylvania's%20criminal%20justice%20system%20with%20our%20free%20daily%20newsletter.&eyebrow=discover%20more&preselect=papost"></div>
 
-The provision is part of a larger <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=0037">bill</a> that would empower police to pull over people for handling their cellphones while behind the wheel.
+The provision is part of a larger <a href="https://web.archive.org/20240427101049/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=0037">bill</a> that would empower police to pull over people for handling their cellphones while behind the wheel.
 
 Under its data collection component, State Police and an estimated 452 departments that serve at least 5,000 people would have to collect data on the reason for any traffic stop; the driver’s race or ethnicity, gender, and age; whether a search was initiated and if the driver consented; and whether the stop resulted in a citation, arrest, or other action.
 
@@ -50,7 +50,7 @@ The office of state Sen. Rosemary Brown (R., Monroe), the bill’s main sponsor,
 
 State Police already voluntarily record racial data on all “member-initiated” traffic stops, though the agency quietly <a href="https://www.spotlightpa.org/news/2019/09/pa-state-police-stopped-tracking-driver-race/">paused collection a few years ago</a> before <a href="https://www.spotlightpa.org/news/2023/05/pennsylvania-state-trooper-search-bias-study/#:~:text=While%20Spotlight%20PA&#39;s%20review%20confirmed,more%20often%20than%20white%20people.">resuming the practice</a>.
 
-Data from 2022 were <a href="https://www.psp.pa.gov/data/Documents/CDR/CDR_2022.pdf">analyzed by the nonprofit National Policing Institute</a>. First and second quarter reports were released in September 2022; a third quarter report was released in November 2022; and an annual report was released in May 2023.
+Data from 2022 were <a href="https://web.archive.org/20230523205422/https://www.psp.pa.gov/data/Documents/CDR/CDR_2022.pdf">analyzed by the nonprofit National Policing Institute</a>. First and second quarter reports were released in September 2022; a third quarter report was released in November 2022; and an annual report was released in May 2023.
 
 A spokesperson for State Police said the schedule was based on the National Policing Institute’s ability to complete its analysis. The agency has not released a new report since last May.
 
@@ -89,4 +89,3 @@ A spokesperson for Shapiro said the Democratic governor will sign the bill, whic
 Once Shapiro signs the bill, police must wait 12 months to begin fining drivers for violations. Brown said the gap between passage and enactment is intended to give people time to familiarize themselves with the rule.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

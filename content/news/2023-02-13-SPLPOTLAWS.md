@@ -32,7 +32,7 @@ Amending marijuana laws could open up debate over a host of other issues — sev
 
 ## Overhauling the medical program
 
-Two state senators — a Republican and Democrat — are <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=39476">pushing for major changes</a> that would broaden who is eligible for a medical marijuana card.
+Two state senators — a Republican and Democrat — are <a href="https://web.archive.org/20230125201446/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=39476">pushing for major changes</a> that would broaden who is eligible for a medical marijuana card.
 
 Currently, the law limits which patients and doctors can participate. Doctors must register with the state and complete a four-hour training course in order to approve patients. And patients can only qualify for a card if they have one of 23 approved conditions.
 
@@ -42,7 +42,7 @@ Their proposal would also eliminate the need to renew medical marijuana cards �
 
 Regan and Brewster have not introduced their legislation yet, and Brewster said there are a number of issues that are still up for discussion. For example, the senators did not clarify in their memo whether patients would still need to renew their certification at least once a year. Some patient advocates have urged the state to allow lifetime certifications for patients with terminal or chronic medical conditions.
 
-Separately, state Sen. Dan Laughlin (R., Erie) wants to allow patients to buy cannabis <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=38542">in edible forms</a>. Last session, he and state Sen. Sharif Street (D., Philadelphia) also proposed allowing patients to grow <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=36527">a limited number of cannabis plants at home</a> — a change that several cannabis advocates told Spotlight PA would reduce the cost burden on patients.
+Separately, state Sen. Dan Laughlin (R., Erie) wants to allow patients to buy cannabis <a href="https://web.archive.org/20230213113813/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=38542">in edible forms</a>. Last session, he and state Sen. Sharif Street (D., Philadelphia) also proposed allowing patients to grow <a href="https://web.archive.org/20220128203026/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=36527">a limited number of cannabis plants at home</a> — a change that several cannabis advocates told Spotlight PA would reduce the cost burden on patients.
 
 Judith Cassel, a Harrisburg attorney specializing in cannabis issues, wants to see lawmakers eliminate an unequal advertising system.
 
@@ -58,15 +58,15 @@ She said the uneven playing field deprives doctors of income, while the fees tha
 
 Across the country, 21 states have legalized adult-use cannabis and 10 more have “decriminalized” simple possession in some way, according to the Marijuana Policy Project.
 
-“Most of the decriminalization states impose a civil fine, which avoids the life-altering collateral consequences a criminal record carries,” <a href="https://www.mpp.org/issues/decriminalization/">according to the group.</a>
+“Most of the decriminalization states impose a civil fine, which avoids the life-altering collateral consequences a criminal record carries,” <a href="https://web.archive.org/20150615140724/https://www.mpp.org/issues/decriminalization/">according to the group.</a>
 
 But Pennsylvania residents can still face criminal charges for possessing small amounts of marijuana. Under state law, someone who possesses 30 grams of marijuana or less can be convicted of a misdemeanor and face up to 30 days in jail and up to a $500 fine.
 
 “I’d like to see the arrests stop first,” said Chris Goldstein, a regional organizer for the National Organization for the Reform of Marijuana Laws. “They’ve stopped all over the country. But Pennsylvania is proceeding forward with criminal prohibition almost unabated.”
 
-Philadelphia, Pittsburgh, and some other municipalities have <a href="https://norml.org/laws/local-decriminalization/pennsylvania-local-decriminalization/">reduced possession penalties on their own</a>. But decriminalization bills have not progressed in the state legislature in recent years, Goldstein said.
+Philadelphia, Pittsburgh, and some other municipalities have <a href="https://web.archive.org/20200813003805/https://norml.org/laws/local-decriminalization/pennsylvania-local-decriminalization/">reduced possession penalties on their own</a>. But decriminalization bills have not progressed in the state legislature in recent years, Goldstein said.
 
-One bipartisan bill in the Senate last session would have reduced the penalty for possessing a small amount of marijuana to a summary offense, cut the maximum fine for possession to $25, and eliminated jail time for that charge. Smoking a small amount of marijuana in a public space would have a maximum fine of $100. The bill did not receive <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=107">votes in committee.</a> Decriminalization legislation is expected to be introduced again this session.
+One bipartisan bill in the Senate last session would have reduced the penalty for possessing a small amount of marijuana to a summary offense, cut the maximum fine for possession to $25, and eliminated jail time for that charge. Smoking a small amount of marijuana in a public space would have a maximum fine of $100. The bill did not receive <a href="https://web.archive.org/20210204022256/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=107">votes in committee.</a> Decriminalization legislation is expected to be introduced again this session.
 
 ## DUI protections
 
@@ -90,7 +90,7 @@ A new version of the bill has not been introduced yet, but the issue is still a 
 
 ## Legalization
 
-New York and New Jersey allow adults 21 and over to use marijuana. In the fall, Maryland voters approved adult-use legalization with a ballot question and now lawmakers are rolling out <a href="https://www.washingtonpost.com/dc-md-va/2023/02/03/marijuana-legal-market-maryland/">planned changes</a>.
+New York and New Jersey allow adults 21 and over to use marijuana. In the fall, Maryland voters approved adult-use legalization with a ballot question and now lawmakers are rolling out <a href="https://web.archive.org/20230203233543/https://www.washingtonpost.com/dc-md-va/2023/02/03/marijuana-legal-market-maryland/">planned changes</a>.
 
 Democratic Gov. Josh Shapiro campaigned on legalizing cannabis for adults. Two Republican state senators have come out in support of legalization. But Senate President Pro Tempore Kim Ward (R., Westmoreland) in November said the federal government would need to remove its prohibition before she would want to talk about legalizing recreational cannabis here.
 

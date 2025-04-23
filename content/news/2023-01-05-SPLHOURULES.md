@@ -45,7 +45,7 @@ But much remains unknown about how Rozzi will approach the rules, as he’s decl
 
 {{<picture src="external/vs8ay2mytjtwe9krtqzweq69zc.jpeg" description="State Rep. Mark Rozzi after being selected speaker of the Pennsylvania House" caption="State Rep. Mark Rozzi after being selected speaker of the Pennsylvania House" credit="House Democratic Caucus">}} 
 
-Rozzi, a registered Democrat, was nominated for the speakership by state Rep. Jim Gregory (R., Blair) and his bid was <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=4">backed</a> by 16 members of the GOP — including the entire leadership team.
+Rozzi, a registered Democrat, was nominated for the speakership by state Rep. Jim Gregory (R., Blair) and his bid was <a href="https://web.archive.org/20230104013350/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=4">backed</a> by 16 members of the GOP — including the entire leadership team.
 
 After winning the speakership Tuesday, Rozzi announced he would no longer caucus with the Democrats and would operate as an independent speaker.
 
@@ -61,7 +61,7 @@ Democrats are expected to win back those three vacant seats when special electio
 
 Usually, the rules dictate that committees are weighted to the majority — with chairs picked by the speaker from a seniority list — and <a href="https://www.spotlightpa.org/news/2022/09/pa-capitol-lawmaker-per-diems-speaker-majority-leader-caucus/">the majority leader</a> picks which bills can be voted on any given day. But without a majority, it’s unclear how Rozzi will dole out chairmanships and which party will set the daily voting calendar.
 
-In an interview with WJAC, Gregory said Rozzi was approached by GOP leadership about running for speaker. Gregory also claimed that, because Rozzi is speaker, “<a href="https://twitter.com/CrispinHavener/status/1610721472955437056">we control the calendar [as Republicans</a>], which also means we control what bills run and when they run.”
+In an interview with WJAC, Gregory said Rozzi was approached by GOP leadership about running for speaker. Gregory also claimed that, because Rozzi is speaker, “<a href="https://web.archive.org/20230206215715/https://twitter.com/CrispinHavener/status/1610721472955437056">we control the calendar [as Republicans</a>], which also means we control what bills run and when they run.”
 
 Gregory told Spotlight PA that he meant that Republicans will have the same level of “control” as Democrats should a 101-101-1 split come to pass.
 
@@ -87,7 +87,7 @@ Solomon said he’s seen very few changes in the rules since joining the General
 
 In the state Senate, attempts to make significant rule changes fell flat.
 
-State Sens. Katie Muth (D., Montgomery) and Lindsey Williams (D., Allegheny) <a href="https://www.senatormuth.com/wp-content/uploads/2022/12/12-07-22-Muth-Williams-Rules-Reforms-Letter.docx.pdf">proposed</a>, among other changes,that all bills and resolutions receive a vote in committee and that minority chairs be given the power to add legislation to a committee agenda.
+State Sens. Katie Muth (D., Montgomery) and Lindsey Williams (D., Allegheny) <a href="https://web.archive.org/20221222034135/https://www.senatormuth.com/wp-content/uploads/2022/12/12-07-22-Muth-Williams-Rules-Reforms-Letter.docx.pdf">proposed</a>, among other changes,that all bills and resolutions receive a vote in committee and that minority chairs be given the power to add legislation to a committee agenda.
 
 None were adopted Tuesday.
 

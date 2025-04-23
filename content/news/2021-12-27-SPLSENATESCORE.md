@@ -19,7 +19,7 @@ title = "See how the proposed Pennsylvania state Senate map scores in every key 
 topics = ["Redistricting"]
 +++
 
-<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://web.archive.org/20201019151248/https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
 HARRISBURG — A proposed redrawing of the Pennsylvania Senate map would likely keep the partisan composition of the chamber largely unchanged while improving upon traditional fairness metrics.
 
@@ -29,7 +29,7 @@ The senators on the panel, Majority Leader Kim Ward (R., Westmoreland) and Minor
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-The public has until mid-January to <a href="https://www.redistricting.state.pa.us/">provide feedback online</a> or at meetings. The panel then has 30 days to consider the comments before voting on a final map, which could be challenged in court. The state’s congressional map is <a href="https://www.spotlightpa.org/news/2021/12/pa-congressional-maps-proposed-redistricting/">created and approved in a separate process</a>.
+The public has until mid-January to <a href="https://web.archive.org/20210117052717/https://www.redistricting.state.pa.us/">provide feedback online</a> or at meetings. The panel then has 30 days to consider the comments before voting on a final map, which could be challenged in court. The state’s congressional map is <a href="https://www.spotlightpa.org/news/2021/12/pa-congressional-maps-proposed-redistricting/">created and approved in a separate process</a>.
 
 “There is still work to be done, and I look forward to continuing this process,” Ward said. “This is what you do from morning till night, but it’s been an honor to be able to be part of it and to hear from the public. And a lot of what the public said we took into consideration.”
 
@@ -59,7 +59,7 @@ Contiguity means that all districts are connected to each other and that no piec
 
 The Pennsylvania Constitution also requires that mapmakers not split counties, municipalities, or voting precincts “unless absolutely necessary.”
 
-The <a href="https://gerrymander.princeton.edu/redistricting-report-card?planId=recs9O2bPY5blTTQT" target="_blank">Princeton Gerrymandering Project,</a> a nonpartisan organization that analyzes the district plans of states across the country, <b>gave this map an A grade for county splits</b>. It splits 22 counties 42 times, while the old map split 25 counties over 50 times.
+The <a href="https://web.archive.org/20211216212207/https://gerrymander.princeton.edu/redistricting-report-card?planId=recs9O2bPY5blTTQT" target="_blank">Princeton Gerrymandering Project,</a> a nonpartisan organization that analyzes the district plans of states across the country, <b>gave this map an A grade for county splits</b>. It splits 22 counties 42 times, while the old map split 25 counties over 50 times.
 
 In December, Ward said this might be an area that the panel could improve upon when looking to amend its plan.
 
@@ -75,7 +75,7 @@ Each district should have an equal population, though the U.S. Supreme Court has
 
 Partisan fairness measures whether a map is reflective of the partisan leaning of a state using an amalgamation of metrics.
 
-One such metric is proportionality, or whether the map would produce a group of officials that is reflective of the state’s partisan divide, based on past electoral data. <a href="https://davesredistricting.org/maps#home" target="_blank">Dave’s Redistricting</a>, a mapping website where users can create and analyze district maps, <b>rated this map “Very Good,” in terms of proportionality</b>. The number of Democratic seats that is closest to proportional representation is 26 out of the total 50 seats. According to past election data, the likely number of Democratic seats under this map is 25.
+One such metric is proportionality, or whether the map would produce a group of officials that is reflective of the state’s partisan divide, based on past electoral data. <a href="https://web.archive.org/20210102053945/https://davesredistricting.org/maps#home" target="_blank">Dave’s Redistricting</a>, a mapping website where users can create and analyze district maps, <b>rated this map “Very Good,” in terms of proportionality</b>. The number of Democratic seats that is closest to proportional representation is 26 out of the total 50 seats. According to past election data, the likely number of Democratic seats under this map is 25.
 
 Another metric to consider is the partisan bias of the map, or the difference in seat share between the parties even if each party received 50% of the votes. In this case, <b>the Princeton Gerrymandering Project said the map has a 2% Republican bias.</b>
 

@@ -69,7 +69,7 @@ That interpretation has held sway since.
 
 The state Supreme Court of the 1930s was extremely conservative and hostile to taxation in general, Feder said. If the current state Supreme Court considered the question of whether the uniformity clause allows graduated taxes, starting fresh, they’d likely come to a different interpretation, he said. “But they’re stuck with this historical conservatism that led to these stringent precedents.”
 
-Most state constitutions contain uniformity clauses in one form or another. Some use language identical to Pennsylvania’s. But Pennsylvania’s <a href="https://www.pabar.org/pdf/crc%20report.pdf">strict interpretation</a> that the uniformity clause prohibits a graduated income tax makes the state an outlier, according to a 2011 report by a commission created by the state Bar Association to review the constitution.
+Most state constitutions contain uniformity clauses in one form or another. Some use language identical to Pennsylvania’s. But Pennsylvania’s <a href="https://web.archive.org/20131127051405/https://www.pabar.org/pdf/crc%20report.pdf">strict interpretation</a> that the uniformity clause prohibits a graduated income tax makes the state an outlier, according to a 2011 report by a commission created by the state Bar Association to review the constitution.
 
 Of 48 states with uniformity requirements in their constitutions, courts in only four, including Pennsylvania, have reached similar interpretations, the report found.
 
@@ -79,7 +79,7 @@ Constitutional amendments to allow a graduated income tax failed by a razor-thin
 
 In 1959, a constitutional reform commission declined to recommend changing the uniformity clause to allow a graduated income tax, saying that it would be “bitterly contested.” Dissenting members of the commission compared the clause to “shackles” preventing the legislature from passing “modern and adequate tax legislation.”
 
-In 1967, the state law calling a referendum on whether to have a constitutional convention <a href="https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1967/0/0002..PDF">explicitly stated</a> that the convention could not make any changes to the uniformity clause.
+In 1967, the state law calling a referendum on whether to have a constitutional convention <a href="https://web.archive.org/20230209025836/https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/1967/0/0002..PDF">explicitly stated</a> that the convention could not make any changes to the uniformity clause.
 
 The state Supreme Court has also interpreted the uniformity clause to mean that commercial and residential property <a href="https://www.pewtrusts.org/en/research-and-analysis/fact-sheets/2022/03/how-pennsylvanias-uniformity-clause-affects-property-and-wage-taxes-in-philadelphia">may not</a> be taxed at different rates. As a result, local governments can’t raise tax rates on warehouses or office buildings without also increasing them for homeowners.
 
@@ -96,4 +96,3 @@ Critics argue that a <a href="https://www.spotlightpa.org/news/2023/10/pennsylva
 “The proposal originally designed to stop the state from helping the very rich and corporations now, in fact, protects them,” said Marc Stier, executive director of the Pennsylvania Policy Center, a progressive think tank.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

@@ -46,7 +46,7 @@ In a string of late-night talks throughout last week and over the weekend, negot
 
 “I believe the fundamentals and the foundation of a budget is there,” state House Appropriations Chair Jordan Harris (D., Philadelphia) told Spotlight PA last week.
 
-Alongside the new spending plan, policymakers will also have to agree on <a href="https://penncapital-star.com/government-politics/cracking-the-code-these-budget-bills-are-where-the-deals-get-made/">code bills</a>, key pieces of legislation that specify how money is spent can include dozens of policy tweaks. Other law changes may also be dragged into talks in order to secure a deal; possibilities include <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=688">updating liquor laws</a> or <a href="https://www.spotlightpa.org/news/2023/12/pennsylvania-criminal-justice-clean-slate-probation-legislature-crime-septa/">adding new crimes to the books</a>.
+Alongside the new spending plan, policymakers will also have to agree on <a href="https://web.archive.org/20190621135237/https://penncapital-star.com/government-politics/cracking-the-code-these-budget-bills-are-where-the-deals-get-made/">code bills</a>, key pieces of legislation that specify how money is spent can include dozens of policy tweaks. Other law changes may also be dragged into talks in order to secure a deal; possibilities include <a href="https://web.archive.org/20230511123325/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=688">updating liquor laws</a> or <a href="https://www.spotlightpa.org/news/2023/12/pennsylvania-criminal-justice-clean-slate-probation-legislature-crime-septa/">adding new crimes to the books</a>.
 
 Shapiro has declined to weigh in on the specifics of a deal, but has repeatedly said talks have gone well.
 
@@ -62,7 +62,7 @@ But despite bipartisan backing, <a href="https://www.spotlightpa.org/news/2024/0
 
 A handful of Shapiro’s other budget pitches have seen legislative action, most notably <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-college-affordability-legislature-budget/">higher education</a>.
 
-Last week, state House Democrats advanced the governor’s proposal to create a 15-member <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2398">state board of higher education</a>. The new board would be charged with coordinating credit transfers, issuing policy recommendations, and collecting data from the nearly 300 public and private colleges, universities, and technical schools in the commonwealth. Another Shapiro proposal to unify the governance of the state’s community colleges and state-owned schools was not included in the bill.
+Last week, state House Democrats advanced the governor’s proposal to create a 15-member <a href="https://web.archive.org/20240612013906/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2398">state board of higher education</a>. The new board would be charged with coordinating credit transfers, issuing policy recommendations, and collecting data from the nearly 300 public and private colleges, universities, and technical schools in the commonwealth. Another Shapiro proposal to unify the governance of the state’s community colleges and state-owned schools was not included in the bill.
 
 The measure would also cap tuition and fees to attend state universities at $1,000 per semester for any student from a family at or below the state’s median income — currently about $73,000 — and increase the maximum size of state grants available to students at the same income level by $1,000 if they attend a private or state-related school.
 
@@ -70,15 +70,15 @@ The bill also tied in some state House Democratic demands, such as encouraging d
 
 “We know we’re not at a final deal yet, we’re not going to pretend to be,” state Rep. Peter Schweyer (D., Lehigh) said Wednesday as the House Education Committee — which he chairs — considered Shapiro’s higher education proposal. “I’m actually cautiously optimistic that we’ll be able to get to a deal that will ultimately reduce costs for students and make the entire system a little bit stronger than it is today.”
 
-State Senate Republicans have said they don’t want to create any new bureaucracies, but they also <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=1150">introduced</a> a scholarship program. Recipients would be required to work in an in-demand field in Pennsylvania after graduation. Their bill passed the upper chamber unanimously last month.
+State Senate Republicans have said they don’t want to create any new bureaucracies, but they also <a href="https://web.archive.org/20240611192114/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=1150">introduced</a> a scholarship program. Recipients would be required to work in an in-demand field in Pennsylvania after graduation. Their bill passed the upper chamber unanimously last month.
 
 The chamber also overwhelmingly passed a bill that would <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-colleges-universities-israel-divestment-boycott-ban-legislature/">strip state dollars</a> from any institution of higher learning that divests from Israel or aims to financially penalize Israel with wide bipartisan support. Shapiro backs the measure, but Harris told Spotlight PA it hasn’t come up in the lower chamber during budget talks.
 
-State Rep. Chris Rabb (D., Philadelphia), a senior House progressive, told <a href="https://www.thecentersquare.com/pennsylvania/article_18c8cc02-32ff-11ef-8739-33740f489512.html">the Center Square</a> that if the Israel proposal came up in the state House, it would cause a “s--- show of epic proportions that no Democrat wants to see.”
+State Rep. Chris Rabb (D., Philadelphia), a senior House progressive, told <a href="https://web.archive.org/20240625160753/https://www.thecentersquare.com/pennsylvania/article_18c8cc02-32ff-11ef-8739-33740f489512.html">the Center Square</a> that if the Israel proposal came up in the state House, it would cause a “s--- show of epic proportions that no Democrat wants to see.”
 
-Another key Shapiro budget priority is money for economic development. He called for <a href="https://www.bondbuyer.com/news/pennsylvania-governor-wants-big-bond-bet-on-site-development">$500 million in bonds</a> to fund grants or loans for infrastructure, demolition, or other costs associated with preparing land for new construction projects.
+Another key Shapiro budget priority is money for economic development. He called for <a href="https://web.archive.org/20240506122217/https://www.bondbuyer.com/news/pennsylvania-governor-wants-big-bond-bet-on-site-development">$500 million in bonds</a> to fund grants or loans for infrastructure, demolition, or other costs associated with preparing land for new construction projects.
 
-Established as a pilot program in last year’s budget, the <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=2425&amp;pn=3440">proposed expansion</a> passed the state House by a 137-65 vote Friday.
+Established as a pilot program in last year’s budget, the <a href="https://web.archive.org/20240628160245/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=2425&amp;pn=3440">proposed expansion</a> passed the state House by a 137-65 vote Friday.
 
 {{<embed/donate>}}
 
@@ -91,4 +91,3 @@ Both chambers have voting sessions scheduled through Wednesday. The Senate has a
 <strong><em>Correction: This story has been updated to reflect the correct number of late budgets Pennsylvania has had in a row. This year’s is the third.</em></strong>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

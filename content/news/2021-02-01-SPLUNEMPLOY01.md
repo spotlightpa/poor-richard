@@ -82,7 +82,7 @@ When the unemployment system was established in 1935 under the Social Security A
 
 Instead of creating a more robust framework to fund unemployment reserves, decades of policies made it more difficult to qualify for benefits. These decisions disproportionately harmed women and people of color who were already disenfranchised by a system not built for them, he said.
 
-Traditional unemployment requires a certain level of earnings and consistent employment. Low wage and temporary workers, who are more frequently women and people of color, are often ineligible. As of last March, fewer than 40 percent of unemployed workers in Pennsylvania qualified for benefits, according to <a href="https://www.pewresearch.org/fact-tank/2020/04/24/not-all-unemployed-people-get-unemployment-benefits-in-some-states-very-few-do/">an analysis</a> by the Pew Research Center.
+Traditional unemployment requires a certain level of earnings and consistent employment. Low wage and temporary workers, who are more frequently women and people of color, are often ineligible. As of last March, fewer than 40 percent of unemployed workers in Pennsylvania qualified for benefits, according to <a href="https://web.archive.org/20210109131536/https://www.pewresearch.org/fact-tank/2020/04/24/not-all-unemployed-people-get-unemployment-benefits-in-some-states-very-few-do/">an analysis</a> by the Pew Research Center.
 
 In addition to applying through an unwelcoming system, women and people of color are also concentrated in the industries most impacted by the pandemic: they work in hospitality and retail, and high-risk workplaces like nursing homes.
 

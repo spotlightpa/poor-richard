@@ -22,7 +22,7 @@ title = "Pa. redistricting maps: Search now to see your old and new political di
 topics = ["Redistricting"]
 +++
 
-<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://web.archive.org/20201019151248/https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
 <b>UPDATED: March 16, 2022</b>
 
@@ -32,16 +32,16 @@ The Pennsylvania Supreme Court in February <a href="https://www.spotlightpa.org/
 
 In a separate process, a redistricting panel in February <a href="https://www.spotlightpa.org/news/2022/02/pennsylvania-redistricting-legislative-maps-final-vote/">approved final state House and Senate maps</a> that could fundamentally reshape the legislature. The boundaries survived <a href="https://www.spotlightpa.org/news/2022/03/pennsylvania-legislative-maps-constitutional-supreme-court-challenges/">nine legal challenges</a> and will be used for the primary election.
 
-<script src="https://viz-redistricting-2020.data.spotlightpa.org/embed.js" defer></script><div data-spl-interactive="viz-redistricting-2020"></div><small><a href="https://viz-redistricting-2020.data.spotlightpa.org">Click here if you have trouble loading this map</a></small>
+<script src="https://viz-redistricting-2020.data.spotlightpa.org/embed.js" defer></script><div data-spl-interactive="viz-redistricting-2020"></div><small><a href="https://web.archive.org/20211228071841/https://viz-redistricting-2020.data.spotlightpa.org">Click here if you have trouble loading this map</a></small>
 
 &nbsp;
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20TRIPLE%20MY%20GIFT&teaser_text=Support%20Spotlight%20PA's%20vital%20investigative%20journalism%20for%20Pennsylvania%20and%20for%20a%20limited%20time%2C%20all%20gifts%20will%20be%20TRIPLED."></div>
 
-<i>About the data: The Legislative Reapportionment Commission provided </i><a href="https://www.redistricting.state.pa.us/maps/"><i>map files</i></a><i> for the state House and Senate. Unlike a decade ago, the panel drew new districts using data that reallocated incarcerated people with a sentence under 10 years to the district of their last known home address.</i>
+<i>About the data: The Legislative Reapportionment Commission provided </i><a href="https://web.archive.org/20210327184823/https://www.redistricting.state.pa.us/maps/"><i>map files</i></a><i> for the state House and Senate. Unlike a decade ago, the panel drew new districts using data that reallocated incarcerated people with a sentence under 10 years to the district of their last known home address.</i>
 
-<i>The previous congressional map file came from the LRC. The files for the new congressional map were submitted during a court case and <a href="https://www.pacourts.us/2022-redistricting-opinions">made publicly available</a>.</i>
+<i>The previous congressional map file came from the LRC. The files for the new congressional map were submitted during a court case and <a href="https://web.archive.org/20220223161733/https://www.pacourts.us/2022-redistricting-opinions">made publicly available</a>.</i>
 
-<i>The </i><a href="https://redistrictingdatahub.org/"><i>Redistricting Data Hub</i></a><i> provided voter registration data as of August 2021, and Peter Horton cleaned and reformatted census data used to conduct this analysis. This analysis also used data from </i><a href="https://davesredistricting.org/maps#home"><i>Dave’s Redistricting</i></a><i>.</i>
+<i>The </i><a href="https://web.archive.org/20210113142952/https://redistrictingdatahub.org/"><i>Redistricting Data Hub</i></a><i> provided voter registration data as of August 2021, and Peter Horton cleaned and reformatted census data used to conduct this analysis. This analysis also used data from </i><a href="https://web.archive.org/20210102053945/https://davesredistricting.org/maps#home"><i>Dave’s Redistricting</i></a><i>.</i>
 
-<i>Thanks to the Texas Tribune for sharing information about its </i><a href="https://apps.texastribune.org/features/2021/texas-redistricting-map/"><i>version of the tool</i></a><i> and to </i><a href="http://kentmwilhelm.com/"><i>Kent Wilhelm</i></a><i> for design help.</i>
+<i>Thanks to the Texas Tribune for sharing information about its </i><a href="https://web.archive.org/20211022104712/https://apps.texastribune.org/features/2021/texas-redistricting-map/"><i>version of the tool</i></a><i> and to </i><a href="https://web.archive.org/20210304003700/http://kentmwilhelm.com/"><i>Kent Wilhelm</i></a><i> for design help.</i>

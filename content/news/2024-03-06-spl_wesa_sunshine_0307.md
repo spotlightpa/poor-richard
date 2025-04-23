@@ -39,7 +39,7 @@ At a public meeting of the trust in February, when chair Tom VanKirk proposed th
 
 Nor did the trust offer any legal justification for the private meetings when later contacted by Spotlight PA and WESA.
 
-The <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&amp;ttl=65&amp;div=0&amp;chpt=7">Sunshine Act</a> defines an agency as both the body “and all committees thereof authorized by the body to take official action or render advice on matters of agency business” for a wide range of public entities.
+The <a href="https://web.archive.org/20171008115924/https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&amp;ttl=65&amp;div=0&amp;chpt=7">Sunshine Act</a> defines an agency as both the body “and all committees thereof authorized by the body to take official action or render advice on matters of agency business” for a wide range of public entities.
 
 The act — which was last amended in June 2021, more than a year before a court order created the trust — does not mention the trust. But that Commonwealth Court court order creating the trust says that the “proceedings and meetings of this Trust shall be governed by the Sunshine Act.”
 
@@ -47,13 +47,13 @@ The Sunshine Act says that certain working sessions of boards of auditors may be
 
 The planned private meetings are the latest way that the trust board is distancing its operations from public oversight and input. A quorum of the full trust board met in secret and held votes for several months, <a href="https://www.spotlightpa.org/news/2023/06/pa-opioid-settlement-trust-secret-meetings-public-records/">as Spotlight PA and WESA reported last year</a>. Unlike many boards that follow the Sunshine Act in Pennsylvania and unlike at least some opioid settlement boards in other states, the trust doesn’t allow the public to speak during meetings.
 
-And many records of the trust are not available to the public. The state Office of Open Records ruled last year that Pennsylvania’s Right-to-Know Law, which establishes how the public can access records of a range of government agencies, doesn’t give it authority over the trust. Mutchler publicly called that decision “<a href="https://www.law.com/thelegalintelligencer/2023/11/15/secrets-of-transparency-opioid-trust-records-to-remain-off-limits/">a huge mistake</a>.” VanKirk has welcomed the agency’s decision and has said the trust is committed to being “as transparent as possible as far as monies received and monies that were distributed.”
+And many records of the trust are not available to the public. The state Office of Open Records ruled last year that Pennsylvania’s Right-to-Know Law, which establishes how the public can access records of a range of government agencies, doesn’t give it authority over the trust. Mutchler publicly called that decision “<a href="https://web.archive.org/20240306105124/https://www.law.com/thelegalintelligencer/2023/11/15/secrets-of-transparency-opioid-trust-records-to-remain-off-limits/">a huge mistake</a>.” VanKirk has welcomed the agency’s decision and has said the trust is committed to being “as transparent as possible as far as monies received and monies that were distributed.”
 
 The stakes are high for these upcoming meetings. Counties are required to submit their spending reports by March 15. Trust members have the power to withhold and ultimately cut funding if they decide counties spent the money improperly.
 
 County governments are receiving the largest share of the state’s settlement money, which is scheduled to be paid out over 18 years. They were allocated $82 million for 2022 and another $54 million for 2023.
 
-<iframe title="Where Pa.'s opioid settlement money goes" aria-label="Bar Chart" id="datawrapper-chart-HQJLn" src="https://datawrapper.dwcdn.net/HQJLn/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="412" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+<iframe title="Where Pa.'s opioid settlement money goes" aria-label="Bar Chart" id="datawrapper-chart-HQJLn" src="https://web.archive.org/20240306100112/https://datawrapper.dwcdn.net/HQJLn/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="412" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
 But for the past year and a half, it’s been difficult to track how counties spend the money and how they make their funding decisions.
@@ -70,7 +70,7 @@ During the trust’s February meeting, the board approved VanKirk’s plan to re
 
 “Despite the fact it is settlement money and not taxpayer money, I still think our best practice will be to post it when we get the information in and when we’ve had a chance to vote on it,” VanKirk later added.
 
-He did not say when the trust will post the information. The trust’s next public meeting is <a href="https://www.paopioidtrust.org/meetings">scheduled for May 2</a>. The meeting section of its website didn’t mention the working groups as of Feb. 29, and it did not indicate whether they had already started reviewing any reports, which will include money that was spent in 2022 and 2023.
+He did not say when the trust will post the information. The trust’s next public meeting is <a href="https://web.archive.org/20230418154508/https://www.paopioidtrust.org/meetings">scheduled for May 2</a>. The meeting section of its website didn’t mention the working groups as of Feb. 29, and it did not indicate whether they had already started reviewing any reports, which will include money that was spent in 2022 and 2023.
 
 The trust website says counties are required to file the reports, and other local governments that are receiving funds based on their role in litigation are also encouraged to do so.
 
@@ -141,4 +141,3 @@ After the meeting started and VanKirk made it clear the public wouldn’t have a
 “It feels adversarial to me,” she said afterward. “And it’s disappointing.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

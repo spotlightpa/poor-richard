@@ -27,7 +27,7 @@ HARRISBURG — Pennsylvania families across the income spectrum could receive mo
 
 The proposals passed with bipartisan support, but they might not survive the GOP-controlled state Senate, a fate that showcases the political tensions at play as new Democratic Gov. Josh Shapiro and the split legislature attempt to negotiate a spending plan by the June 30 deadline.
 
-Pennsylvania’s coffers are full. The state has roughly $12 billion in cash reserves accumulated during the COVID-19 pandemic, mostly a result of income taxes on <a href="https://fred.stlouisfed.org/series/CP">increased corporate profits</a> and <a href="https://web.archive.org/20230419152002/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/PMTA_Presentation_April_2023.pdf">expanded federal spending</a> that augmented state budgets and upped individual tax payments.
+Pennsylvania’s coffers are full. The state has roughly $12 billion in cash reserves accumulated during the COVID-19 pandemic, mostly a result of income taxes on <a href="https://web.archive.org/20160907070012/https://fred.stlouisfed.org/series/CP">increased corporate profits</a> and <a href="https://web.archive.org/20230419152002/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/PMTA_Presentation_April_2023.pdf">expanded federal spending</a> that augmented state budgets and upped individual tax payments.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -40,7 +40,7 @@ State lawmakers constantly battle over whether to spend or to save. But Democrat
 
 With that principle in mind, earlier this month state House Democrats <a href="https://www.spotlightpa.org/news/2023/06/pa-education-spending-legislature-budget-josh-shapiro/">advanced a budget based on Shapiro’s proposal</a> that included hundreds of millions of additional dollars for education and housing, and are now pushing to create or expand two state tax programs that piggyback off federal policies.
 
-<a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=1259">One bill</a> would expand a state tax credit created last year that <a href="https://www.spotlightpa.org/news/2022/07/pennsylvania-child-care-tax-credit-explainer/">allows parents to deduct child care costs from their state taxable income</a>. The current credit is capped at 30% of child care expenses; the proposal would expand that to 50% by 2028 (or up to $5,000 for one child or $10,000 for multiple children, whichever is lower).
+<a href="https://web.archive.org/20230531191549/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=1259">One bill</a> would expand a state tax credit created last year that <a href="https://www.spotlightpa.org/news/2022/07/pennsylvania-child-care-tax-credit-explainer/">allows parents to deduct child care costs from their state taxable income</a>. The current credit is capped at 30% of child care expenses; the proposal would expand that to 50% by 2028 (or up to $5,000 for one child or $10,000 for multiple children, whichever is lower).
 
 Child care costs vary by location and the child’s age, but <a href="https://www.dol.gov/agencies/wb/topics/childcare/price-by-age-care-setting">according</a> to federal Department of Labor data, amounts can range from $6,000 to $14,000 a year for Pennsylvania families.
 
@@ -54,7 +54,7 @@ Pennsylvania <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm
 
 Marc Stier, a policy analyst with the left-leaning Pennsylvania Policy Center, said that the maximum credit under the federal earned income tax credit increases with income.
 
-“There’s a tremendous incentive to work, which is why it was originally a Republican idea going <a href="https://kansaspress.ku.edu/blog/2021/02/25/child-poverty-and-richard-nixons-family-security-act/">back to Richard Nixon</a>,” Stier told Spotlight PA.
+“There’s a tremendous incentive to work, which is why it was originally a Republican idea going <a href="https://web.archive.org/20221208121259/https://kansaspress.ku.edu/blog/2021/02/25/child-poverty-and-richard-nixons-family-security-act/">back to Richard Nixon</a>,” Stier told Spotlight PA.
 
 A 2020 Pennsylvania Budget &amp; Policy Center <a href="https://web.archive.org/20230402113636/https://krc-pbpc.org/wp-content/uploads/State-EITC.pdf">study</a> co-authored by Stier found that almost 900,000 Pennsylvania taxpayers would benefit from such a policy.
 
@@ -64,7 +64,7 @@ In public statements, Shapiro has welcomed state House Democrats’ contribution
 
 For instance, rather than a billion-dollar tax break, Shapiro proposed investing $66.7 million into an existing state program that <a href="https://www.dhs.pa.gov/Services/Children/Pages/Child-Care-Works-Program.aspx">subsidizes child care</a> for low-income families.
 
-He also proposed a targeted tax credit to attract people to become <a href="https://www.spotlightpa.org/news/2023/05/tax-credit-shapiro-teachers-nurses-cops-harrisburg/">certified nurses, teachers, and cops</a> with a $2,500-a-year nonrefundable tax credit, maxing out at $7,500, until 2028. The state House <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=1249">passed</a> Shapiro’s plan 137-66 on Tuesday.
+He also proposed a targeted tax credit to attract people to become <a href="https://www.spotlightpa.org/news/2023/05/tax-credit-shapiro-teachers-nurses-cops-harrisburg/">certified nurses, teachers, and cops</a> with a $2,500-a-year nonrefundable tax credit, maxing out at $7,500, until 2028. The state House <a href="https://web.archive.org/20230621092332/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&sInd=0&body=H&type=B&bn=1249">passed</a> Shapiro’s plan 137-66 on Tuesday.
 
 According to state Department of Revenue projections, that credit would cost a total of $222 million over five years.
 
@@ -80,7 +80,7 @@ State Rep. Seth Grove (R., York), state House Republicans’ chief budget negoti
 
 According to IRS data on Pennsylvanians’ 2020 tax returns, a little less than 50% of the tax credit’s almost 190,000 claimants make more than $100,000 a year, receiving $50 million in tax breaks.
 
-Grove also argued that the earned income tax credit would be an “expensive welfare program” riddled with mistakes and overpayments. <a href="https://www.eitc.irs.gov/tax-preparer-toolkit/frequently-asked-questions/fraud/fraud">According</a> to the IRS, about one in four EITC payments is made in error, although policy analysts debate whether this reflects <a href="https://web.archive.org/20230110155003/https://budgetbook.heritage.org/income-security/reduce-fraud-earned-income-tax-credit/">fraud</a> or <a href="https://www.cbpp.org/research/federal-tax/reducing-overpayments-in-the-earned-income-tax-credit">filing mistakes</a>.
+Grove also argued that the earned income tax credit would be an “expensive welfare program” riddled with mistakes and overpayments. <a href="https://web.archive.org/20200309235446/https://www.eitc.irs.gov/tax-preparer-toolkit/frequently-asked-questions/fraud/fraud">According</a> to the IRS, about one in four EITC payments is made in error, although policy analysts debate whether this reflects <a href="https://web.archive.org/20230110155003/https://budgetbook.heritage.org/income-security/reduce-fraud-earned-income-tax-credit/">fraud</a> or <a href="https://www.cbpp.org/research/federal-tax/reducing-overpayments-in-the-earned-income-tax-credit">filing mistakes</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 

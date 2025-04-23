@@ -129,7 +129,7 @@ El proceso para solicitar un voto en ausencia es similar al de solicitar un voto
 
 El plazo de presentación de solicitudes finaliza el 16 de abril a las 5 p.m. y deben llegar a la oficina de su condado antes de esa fecha.
 
-Si no cumple el plazo del 16 de abril, aún puede solicitar un voto en ausencia de emergencia en la oficina electoral de su condado si sufre una enfermedad inesperada, una discapacidad o una ausencia de última hora. Puede solicitarlo <a href="https://www.vote.pa.gov/Resources/espanol/Voting-in-PA-Spanish/Pages/default.aspx">aquí</a>.
+Si no cumple el plazo del 16 de abril, aún puede solicitar un voto en ausencia de emergencia en la oficina electoral de su condado si sufre una enfermedad inesperada, una discapacidad o una ausencia de última hora. Puede solicitarlo <a href="https://web.archive.org/20230610014335/https://www.vote.pa.gov/Resources/espanol/Voting-in-PA-Spanish/Pages/default.aspx">aquí</a>.
 
 <h2 id="spl-heading-11">He presentado mi solicitud, pero aún no he recibido mi papeleta de voto por correo o en ausencia. ¿Qué debo hacer?</h2>
 
@@ -145,7 +145,7 @@ Cada quien puede devolver su papeleta a través del correo o depositándola en l
 
 La oficina electoral de su condado debe recibir su papeleta antes de las 8 p.m. del día de las elecciones.
 
-Si tiene <a href="https://www.vote.pa.gov/Resources/espanol/Voting-in-PA-Spanish/Pages/Accessible-Voting-Spanish.aspx">una discapacidad</a> que le impida devolver su propia papeleta, <a href="https://www.vote.pa.gov/Resources/Documents/Authorize-Designated-Agent-for-Mail-in-or-Absentee-Ballot-SPANISH.pdf">puede rellenar un formulario para designar a otra persona para hacerlo por usted</a>. Debe entregar el formulario con su solicitud de voto por correo, y la persona designada debe tener una copia a mano cuando devuelva su papeleta.
+Si tiene <a href="https://web.archive.org/20230511014335/https://www.vote.pa.gov/Resources/espanol/Voting-in-PA-Spanish/Pages/Accessible-Voting-Spanish.aspx">una discapacidad</a> que le impida devolver su propia papeleta, <a href="https://web.archive.org/20210930225006/https://www.vote.pa.gov/Resources/Documents/Authorize-Designated-Agent-for-Mail-in-or-Absentee-Ballot-SPANISH.pdf">puede rellenar un formulario para designar a otra persona para hacerlo por usted</a>. Debe entregar el formulario con su solicitud de voto por correo, y la persona designada debe tener una copia a mano cuando devuelva su papeleta.
 
 De lo contrario, deberá devolver su propia papeleta.
 
@@ -165,21 +165,21 @@ En 2020, Pensilvania fue uno de los estados decisivos en la victoria del preside
 
 Cuatro años después, se espera que Pensilvania vuelva a ser uno de los estados que determine quién gana la presidencia.
 
-Biden ya ha <a href="https://apnews.com/article/biden-presumptive-nominee-election-president-democrat-63b66006d4bc45354343228e323e3baa">ganado suficientes delegados</a> en las primarias para convertirse en el presunto candidato demócrata a la presidencia, aunque el Representante Estadounidense Dean Phillips, de Minnesota, aparecerá en la papeleta de las primarias en Pensilvania a pesar de <a href="https://www.politico.com/news/2024/03/06/dean-phillips-drops-out-00145403">haber suspendido</a> su campaña a principios de marzo.
+Biden ya ha <a href="https://web.archive.org/20240312233542/https://apnews.com/article/biden-presumptive-nominee-election-president-democrat-63b66006d4bc45354343228e323e3baa">ganado suficientes delegados</a> en las primarias para convertirse en el presunto candidato demócrata a la presidencia, aunque el Representante Estadounidense Dean Phillips, de Minnesota, aparecerá en la papeleta de las primarias en Pensilvania a pesar de <a href="https://web.archive.org/20240307070654/https://www.politico.com/news/2024/03/06/dean-phillips-drops-out-00145403">haber suspendido</a> su campaña a principios de marzo.
 
-Trump se ha <a href="https://apnews.com/article/trump-haley-election-2024-republicans-9736f3b504eef4da5a8ef7f8bbae9dfc">asegurado la nominación</a> por el Partido Republicano; a pesar de haber <a href="https://www.nbcnews.com/politics/2024-election/nikki-haley-ends-presidential-campaign-trump-gop-primary-rcna134811">abandonado la carrera</a>, la ex gobernadora de Carolina del Sur Nikki Haley aparecerá en la papeleta electoral aquí.
+Trump se ha <a href="https://web.archive.org/20240306175637/https://apnews.com/article/trump-haley-election-2024-republicans-9736f3b504eef4da5a8ef7f8bbae9dfc">asegurado la nominación</a> por el Partido Republicano; a pesar de haber <a href="https://web.archive.org/20240306112716/https://www.nbcnews.com/politics/2024-election/nikki-haley-ends-presidential-campaign-trump-gop-primary-rcna134811">abandonado la carrera</a>, la ex gobernadora de Carolina del Sur Nikki Haley aparecerá en la papeleta electoral aquí.
 
 <h3 id="spl-heading-15">Senado de EE.UU.</h3>
 
 El Senado de Estados Unidos está compuesto por 100 senadores, dos por cada estado. Los senadores son elegidos para mandatos de seis años y, cada dos años, aproximadamente un tercio del cuerpo se presenta a la reelección.
 
-Este año, las primarias para el Senado se <a href="https://web.archive.org/20240312154554/https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">reducen a dos candidatos</a>: El demócrata y Senador de EE.UU. por tres mandatos <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a> y el republicano <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+Este año, las primarias para el Senado se <a href="https://web.archive.org/20240312154554/https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">reducen a dos candidatos</a>: El demócrata y Senador de EE.UU. por tres mandatos <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">Bob Casey</a> y el republicano <a href="https://web.archive.org/20211226012514/https://www.davemccormickpa.com/">David McCormick</a>.
 
 Casey, natural de Scranton, ocupa el escaño desde 2007, lo que le convierte en el <a href="https://web.archive.org/20240222015724/https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">senador demócrata más veterano</a> de la historia de Pensilvania. De ser reelegido, sería su cuarto mandato. Antes de ser elegido senador, Casey fue auditor general de Pensilvania y después tesorero. Su padre, Bob Casey Sr., fue gobernador de Pensilvania durante dos mandatos.
 
 Más información sobre Casey en el <u>sitio web de su campaña</u>.
 
-McCormick, nacido en Washington, Pensilvania, es un antiguo gestor de fondos de cobertura y se presentó como candidato al Senado de Estados Unidos en 2022, pero perdió por un estrecho margen frente a Mehmet Oz en las primarias. <a href="https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">Fue subsecretario del Tesoro</a> y, más tarde, <u>viceconsejero de Seguridad Nacional</u> durante el Gobierno de George W. Bush.
+McCormick, nacido en Washington, Pensilvania, es un antiguo gestor de fondos de cobertura y se presentó como candidato al Senado de Estados Unidos en 2022, pero perdió por un estrecho margen frente a Mehmet Oz en las primarias. <a href="https://web.archive.org/20240226185747/https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">Fue subsecretario del Tesoro</a> y, más tarde, <u>viceconsejero de Seguridad Nacional</u> durante el Gobierno de George W. Bush.
 
 Aunque las primarias no son disputadas, se espera que las elecciones generales de Pensilvania al Senado sean una de las más caras de este año.
 
@@ -191,9 +191,9 @@ La Cámara de Representantes de Estados Unidos está compuesta por 435 miembros 
 
 Los miembros de la Cámara de Representantes tienen mandatos de dos años y pueden ser reelegidos en los años pares.
 
-<a href="https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">Los 17 miembros de la delegación de Pensilvania en la Cámara de</a><u> Representantes</u> — nueve demócratas y ocho republicanos — se presentan a la reelección en 2024. Quién aparece en su papeleta será dictado por el distrito congresional en el que vive.
+<a href="https://web.archive.org/20240215013829/https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">Los 17 miembros de la delegación de Pensilvania en la Cámara de</a><u> Representantes</u> — nueve demócratas y ocho republicanos — se presentan a la reelección en 2024. Quién aparece en su papeleta será dictado por el distrito congresional en el que vive.
 
-Para saber quién se presenta en su distrito, visite la <a href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">herramienta estatal de búsqueda de legisladores</a>.
+Para saber quién se presenta en su distrito, visite la <a href="https://web.archive.org/20090525151746/https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">herramienta estatal de búsqueda de legisladores</a>.
 
 <h3 id="spl-heading-17">Asamblea General</h3>
 
@@ -205,7 +205,7 @@ Los senadores de la cámara son elegidos para mandatos de cuatro años, y la mit
 
 Actualmente, los demócratas controlan la <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-election-2024-state-house-democratic-control-gop-flip-seats/">Cámara de Representantes por dos votos</a>, mientras que los republicanos tienen el <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-state-senate-elections-2024-democratic-majority-flip-republican/">Senado por seis</a>.
 
-Para saber quién se presenta en su distrito, visite <a href="https://www.vote411.org/es">VOTE411</a>, una herramienta del Fondo Educativo de la Liga de Mujeres Votantes.
+Para saber quién se presenta en su distrito, visite <a href="https://web.archive.org/20200726182123/https://www.vote411.org/es">VOTE411</a>, una herramienta del Fondo Educativo de la Liga de Mujeres Votantes.
 
 {{<embed/donate>}}
 
@@ -231,11 +231,10 @@ Puede leer más sobre <a href="https://www.spotlightpa.org/news/2024/03/eleccion
 
 Este año no hay medidas de ámbito estatal en las urnas, pero es posible que algunos votantes vean preguntas en las papeletas locales.
 
-En Filadelfia, se <a href="https://vote.phila.gov/media/2024P_Ballot_Questions.pdf">votará en las primarias</a> si la ciudad debe ayudar a pagar la defensa legal de las organizaciones comunitarias registradas, o por sus siglas en inglés: RCOs.
+En Filadelfia, se <a href="https://web.archive.org/20240317095449/https://vote.phila.gov/media/2024P_Ballot_Questions.pdf">votará en las primarias</a> si la ciudad debe ayudar a pagar la defensa legal de las organizaciones comunitarias registradas, o por sus siglas en inglés: RCOs.
 
 <a href="https://web.archive.org/20240114074329/https://www.vote.pa.gov/Resources/espanol/Recursos/Pages/County-Contact-Spanish.aspx">Compruébelo en la oficina electoral de su condado</a>.
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Conozca más</a> sobre cómo Spotlight PA está cubriendo las elecciones de 2024.
 
 <strong><em>ANTES DE IRSE... </em></strong><em>Si ha aprendido algo de este artículo, devuélvalo y contribuya a Spotlight PA en </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA está financiado por </em><a href="https://www.spotlightpa.org/support"><em>fundaciones y lectores como usted</em></a><em>, comprometidos con un periodismo responsable que obtiene resultados.</em>
-

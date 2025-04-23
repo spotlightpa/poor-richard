@@ -35,7 +35,7 @@ Survivors say the lack of movement leaves them without closure.
 
 The proposed amendment would give adults who were sexually abused as children a limited period to seek monetary damages in court from those who abused them or protected the perpetrator.
 
-A 2019 law increased the maximum age at which people abused as children can bring a civil claim against their abusers, <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2019&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=0962&amp;pn=2938">from 30 to 55</a>. However, people abused longer ago have little recourse.
+A 2019 law increased the maximum age at which people abused as children can bring a civil claim against their abusers, <a href="https://web.archive.org/20191211214512/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2019&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=0962&amp;pn=2938">from 30 to 55</a>. However, people abused longer ago have little recourse.
 
 Many survivors also say that when they could have legally sued, they weren’t yet ready to publicly confront their abuse.
 
@@ -59,7 +59,7 @@ He added that the general election would have “more sane voters” interested 
 
 Lawmakers could also create a lawsuit window through a traditional statute, an idea opposed by some Republican leaders who believe such a law would be unconstitutional. Democratic Gov. Josh Shapiro, who would need to sign such a measure, says he supports either path.
 
-The state House recently moved on that front, amending an unrelated state <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1397">Senate bill</a> this week to include a retroactive window. Members sent it back to the upper chamber for consideration in a bipartisan vote Wednesday, with all Democrats and more than 40 Republicans in favor.
+The state House recently moved on that front, amending an unrelated state <a href="https://web.archive.org/20240704040233/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1397">Senate bill</a> this week to include a retroactive window. Members sent it back to the upper chamber for consideration in a bipartisan vote Wednesday, with all Democrats and more than 40 Republicans in favor.
 
 The change was sponsored by state Rep. Jim Gregory (R., Blair), a survivor of childhood abuse who has championed the issue since being elected to the legislature in 2018.
 
@@ -95,7 +95,7 @@ Gregory publicly split with Rozzi over the deal. But both lawmakers told Spotlig
 
 “He didn&#39;t have to do that, but I always knew he would,” Gregory said.
 
-However, the issue won&#39;t be without legislative advocates. Two lawmakers, state Reps. <a href="https://web.archive.org/20230926125723/https://www.pahouse.com/InTheNews/NewsRelease/?id=129234">Maureen Madden</a> (D., Monroe) and <a href="https://www.pennlive.com/politics/2023/02/pressure-now-on-pa-senate-to-provide-child-sexual-abuse-survivors-with-chance-for-justice.html">La’Tasha Mayes</a> (D., Allegheny), told their own stories of surviving abuse last year.
+However, the issue won&#39;t be without legislative advocates. Two lawmakers, state Reps. <a href="https://web.archive.org/20230926125723/https://www.pahouse.com/InTheNews/NewsRelease/?id=129234">Maureen Madden</a> (D., Monroe) and <a href="https://web.archive.org/20230228021201/https://www.pennlive.com/politics/2023/02/pressure-now-on-pa-senate-to-provide-child-sexual-abuse-survivors-with-chance-for-justice.html">La’Tasha Mayes</a> (D., Allegheny), told their own stories of surviving abuse last year.
 
 Rozzi added that Democrat Nathan Davidson, who is running for a state House seat the party is likely to win, has also expressed interest in backing the proposal.
 
@@ -104,4 +104,3 @@ Davidson said he hopes the statute of limitations window “isn’t a bill that 
 “It should have been completed \[last\] session,” Davidson told Spotlight PA. “But here we are, it’s still not finished. Every year, we lose more survivors. And every year, there’s more victims.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

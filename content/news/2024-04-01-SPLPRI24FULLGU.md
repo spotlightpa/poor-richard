@@ -87,7 +87,7 @@ Polls open at 7 a.m and close at 8 p.m. As long as you are in line to vote by 8 
 
 The last day to register is April 8.
 
-You can register online <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">here</a>, or submit a <a href="https://www.vote.pa.gov/Resources/Documents/Voter_Registration_Application_English.pdf">registration form</a> in person or through the mail to your county election office by the same date.
+You can register online <a href="https://web.archive.org/20240110045750/https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">here</a>, or submit a <a href="https://web.archive.org/20210914080229/https://www.vote.pa.gov/Resources/Documents/Voter_Registration_Application_English.pdf">registration form</a> in person or through the mail to your county election office by the same date.
 
 Online voter registration applications must be submitted by 11:59 p.m. that day. Your county board of elections must receive mail and in-person applications by 5 p.m.
 
@@ -95,11 +95,11 @@ Online voter registration applications must be submitted by 11:59 p.m. that day.
 
 <h2 id="spl-heading-4">How can I check my voter registration?</h2>
 
-You can check your registration <a href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">here</a>. You can search using your name, county, ZIP code, and birthday, or by entering your driver’s license or PennDOT identification card numbers.
+You can check your registration <a href="https://web.archive.org/20240110050448/https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx">here</a>. You can search using your name, county, ZIP code, and birthday, or by entering your driver’s license or PennDOT identification card numbers.
 
 <h2 id="spl-heading-5">How do I change parties?</h2>
 
-To change your party affiliation, fill out the same <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">voter registration form</a> that you used to register the first time.
+To change your party affiliation, fill out the same <a href="https://web.archive.org/20240110045750/https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">voter registration form</a> that you used to register the first time.
 
 When filling out the form, select the box that says “change of party.” If you register less than 15 days before the election, the change will not take place until the next election cycle.
 
@@ -113,7 +113,7 @@ Unaffiliated and third-party voters can participate in special elections that co
 
 <h2 id="spl-heading-7">How do I find my polling place?</h2>
 
-You can find your polling place <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">here</a> by entering your address.
+You can find your polling place <a href="https://web.archive.org/20240110043356/https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">here</a> by entering your address.
 
 <h2 id="spl-heading-8">What else do I need to know to vote in person?</h2>
 
@@ -123,19 +123,19 @@ If this is your first time voting or your first time voting since changing addre
 
 You can apply for a mail ballot until April 16, either online or through the mail. However, your complete application must be received by the county office by 5 p.m. that day.
 
-<a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">Here’s the application</a>. You’ll need to provide your name, date of birth, proof of identification, and signature.
+<a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">Here’s the application</a>. You’ll need to provide your name, date of birth, proof of identification, and signature.
 
 <h2 id="spl-heading-10">How do I vote absentee?</h2>
 
-The process to request an absentee ballot is similar to that for requesting a mail ballot. You can apply online or download the form and send it to your county election office. However, the application requires you to list a reason for your absence, unlike a mail ballot. You can find the application <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">here</a>.
+The process to request an absentee ballot is similar to that for requesting a mail ballot. You can apply online or download the form and send it to your county election office. However, the application requires you to list a reason for your absence, unlike a mail ballot. You can find the application <a href="https://web.archive.org/20240104212350/https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin">here</a>.
 
 Applications are due April 16 by 5 p.m. and must be received by your county office by that time.
 
-If you miss the April 16 deadline, you can still request an emergency absentee ballot from your county election office if you experience an unexpected illness, disability, or last-minute absence. You can request one <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx#emergency%20absentee">here</a>.
+If you miss the April 16 deadline, you can still request an emergency absentee ballot from your county election office if you experience an unexpected illness, disability, or last-minute absence. You can request one <a href="https://web.archive.org/20210909191528/https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx#emergency%20absentee">here</a>.
 
 <h2 id="spl-heading-11">I applied but still haven’t gotten my absentee or mail ballot. What should I do?</h2>
 
-You can check the status of your absentee or mail ballot <a href="https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">here</a>. If you’re worried your ballot won’t arrive with enough time to return it, you can <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">call your county election office</a> for advice on how to proceed.
+You can check the status of your absentee or mail ballot <a href="https://web.archive.org/20240108142928/https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx">here</a>. If you’re worried your ballot won’t arrive with enough time to return it, you can <a href="https://web.archive.org/20210921131828/https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">call your county election office</a> for advice on how to proceed.
 
 You can also go to your county election office to request a ballot and fill it out on the spot, or go to your polling place and vote in person on Election Day.
 
@@ -143,11 +143,11 @@ You can also go to your county election office to request a ballot and fill it o
 
 First, make sure you’ve <a href="https://www.spotlightpa.org/news/2023/04/pa-primary-election-2023-mail-ballot-deadline-request-guide/">filled it out completely and followed all instructions</a>, including dating the ballot envelope properly. Otherwise, your ballot may not be counted.
 
-Everyone can return their ballot through the mail or by dropping it off at their county election office. Some counties also have drop boxes available. <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">Find county contact information here</a>.
+Everyone can return their ballot through the mail or by dropping it off at their county election office. Some counties also have drop boxes available. <a href="https://web.archive.org/20210921131828/https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">Find county contact information here</a>.
 
 Your county election office must receive your ballot by 8 p.m. on Election Day.
 
-If you have a disability that prevents you from returning your own ballot, <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Accessible-Voting.aspx">you may fill out a form to designate someone else to return it for you</a>. You must turn in the form with your mail ballot application, and the designee must have a copy on hand when they return your ballot.
+If you have a disability that prevents you from returning your own ballot, <a href="https://web.archive.org/20210923110640/https://www.vote.pa.gov/Voting-in-PA/Pages/Accessible-Voting.aspx">you may fill out a form to designate someone else to return it for you</a>. You must turn in the form with your mail ballot application, and the designee must have a copy on hand when they return your ballot.
 
 Otherwise, you must return your own ballot.
 
@@ -167,7 +167,7 @@ In 2020, Pennsylvania was one of the decisive states in President Joe Biden’s 
 
 Four years later, Pennsylvania is expected to once again be one of the states that determines who wins the presidency.
 
-Biden has already <a href="https://apnews.com/article/biden-presumptive-nominee-election-president-democrat-63b66006d4bc45354343228e323e3baa">won enough delegates</a> in the primary to become the presumptive Democratic nominee for president, though U.S. Rep. Dean Phillips of Minnesota will appear on the primary ballot in Pennsylvania despite <a href="https://www.politico.com/news/2024/03/06/dean-phillips-drops-out-00145403">suspending</a> his campaign in early March.
+Biden has already <a href="https://web.archive.org/20240312233542/https://apnews.com/article/biden-presumptive-nominee-election-president-democrat-63b66006d4bc45354343228e323e3baa">won enough delegates</a> in the primary to become the presumptive Democratic nominee for president, though U.S. Rep. Dean Phillips of Minnesota will appear on the primary ballot in Pennsylvania despite <a href="https://web.archive.org/20240307070654/https://www.politico.com/news/2024/03/06/dean-phillips-drops-out-00145403">suspending</a> his campaign in early March.
 
 Trump has <a href="https://apnews.com/article/trump-haley-election-2024-republicans-9736f3b504eef4da5a8ef7f8bbae9dfc">secured the nomination</a> for the Republican Party; despite <a href="https://www.nbcnews.com/politics/2024-election/nikki-haley-ends-presidential-campaign-trump-gop-primary-rcna134811">dropping out of the race</a>, former South Carolina Gov. Nikki Haley will appear on the ballot here.
 
@@ -175,17 +175,17 @@ Trump has <a href="https://apnews.com/article/trump-haley-election-2024-republic
 
 The U.S. Senate is made up of 100 senators, two from each state. Senators are elected to six-year terms, and every two years, approximately one-third of the body goes up for reelection.
 
-This year, the primary U.S. Senate race is <a href="https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://www.davemccormickpa.com/">David McCormick</a>.
+This year, the primary U.S. Senate race is <a href="https://web.archive.org/20240312154554/https://penncapital-star.com/campaigns-elections/casey-vs-mccormick-general-election-matchup-appears-set-after-petition-challenges/">down to two candidates</a>: Democratic incumbent and three-term <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">U.S. Sen. Bob Casey</a>, and Republican <a href="https://web.archive.org/20211226012514/https://www.davemccormickpa.com/">David McCormick</a>.
 
-Casey is a Scranton native who has held the seat since 2007, making him the <a href="https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">longest-serving Democratic U.S. senator</a> in Pennsylvania history. If reelected, it would be his fourth term. Before his Senate election, Casey served as Pennsylvania’s auditor general, then treasurer. His father, Bob Casey Sr., was a two-term Pennsylvania governor.
+Casey is a Scranton native who has held the seat since 2007, making him the <a href="https://web.archive.org/20240222015724/https://whyy.org/articles/sen-bob-casey-pennsylvania-2024-election-4th-term/">longest-serving Democratic U.S. senator</a> in Pennsylvania history. If reelected, it would be his fourth term. Before his Senate election, Casey served as Pennsylvania’s auditor general, then treasurer. His father, Bob Casey Sr., was a two-term Pennsylvania governor.
 
 Learn more about Casey on his <a href="https://web.archive.org/20240105054503/https://www.casey.senate.gov/about/bob">campaign website</a>.
 
-McCormick, who was born in Washington, Pennsylvania, is a former hedge fund manager and ran for U.S. Senate in 2022, but narrowly lost to Mehmet Oz in the primary. He <a href="https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">served as under secretary of treasury</a>, and later as <a href="https://georgewbush-whitehouse.archives.gov/government/mccormick-bio.html">deputy national security advisor</a> during the George W. Bush administration.
+McCormick, who was born in Washington, Pennsylvania, is a former hedge fund manager and ran for U.S. Senate in 2022, but narrowly lost to Mehmet Oz in the primary. He <a href="https://web.archive.org/20240226185747/https://penncapital-star.com/campaigns-elections/david-mccormick-running-again-for-pa-gop-senate-nomination-takes-his-campaign-to-cpac/">served as under secretary of treasury</a>, and later as <a href="https://web.archive.org/20141129052219/https://georgewbush-whitehouse.archives.gov/government/mccormick-bio.html">deputy national security advisor</a> during the George W. Bush administration.
 
 While the primary is not contested, Pennsylvania’s general election for U.S. Senate is expected to be one of the most expensive races of its kind this year.
 
-Currently, a narrow two-seat margin gives Democrats control of the chamber, but with <a href="https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 Democratic senators</a> on the ballot this year, that balance could easily shift.
+Currently, a narrow two-seat margin gives Democrats control of the chamber, but with <a href="https://web.archive.org/20240409061554/https://www.forbes.com/sites/saradorn/2024/03/20/here-are-2024s-ten-most-contested-senate-races-from-ohio-to-arizona/?sh=763fc6de39de">23 Democratic senators</a> on the ballot this year, that balance could easily shift.
 
 <h3 id="spl-heading-16">U.S. House</h3>
 
@@ -193,9 +193,9 @@ The U.S. House of Representatives is made up of 435 elected members. The number 
 
 Members of the House of Representatives serve two-year terms and are up for reelection during even years.
 
-<a href="https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">All 17 members of the Pennsylvania’s U.S. House</a> delegation — nine Democrats and eight Republicans — seek reelection in 2024. Who is listed on your ballot will be dictated by the congressional district you live in.
+<a href="https://web.archive.org/20240215013829/https://penncapital-star.com/election-2024/here-are-the-candidates-running-for-pennsylvanias-u-s-house-districts-in-the-april-primary/">All 17 members of the Pennsylvania’s U.S. House</a> delegation — nine Democrats and eight Republicans — seek reelection in 2024. Who is listed on your ballot will be dictated by the congressional district you live in.
 
-To find who is running in your district, visit the state’s <a href="https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">legislator lookup tool</a>.
+To find who is running in your district, visit the state’s <a href="https://web.archive.org/20090525151746/https://www.legis.state.pa.us/cfdocs/legis/home/findyourlegislator/">legislator lookup tool</a>.
 
 <h3 id="spl-heading-17">General Assembly</h3>
 
@@ -207,7 +207,7 @@ The chamber’s senators are elected to four-year terms, and half the body stand
 
 Currently, Democrats have control of the <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-election-2024-state-house-democratic-control-gop-flip-seats/">state House by two votes</a>, while Republicans hold the <a href="https://www.spotlightpa.org/news/2024/02/pennsylvania-state-senate-elections-2024-democratic-majority-flip-republican/">state Senate by six</a>.
 
-To find who is running in your district, visit <a href="https://www.vote411.org/">VOTE411</a>, a tool from the League of Women Voters Education Fund.
+To find who is running in your district, visit <a href="https://web.archive.org/20061103021027/https://www.vote411.org/">VOTE411</a>, a tool from the League of Women Voters Education Fund.
 
 {{<embed/donate>}}
 
@@ -233,11 +233,10 @@ You can read more about <a href="https://www.spotlightpa.org/news/2024/03/pennsy
 
 There are no statewide ballot measures this year, but some voters may see local ballot questions.
 
-In Philadelphia, there will be <a href="https://vote.phila.gov/media/2024P_Ballot_Questions.pdf">a question on the primary ballot</a> about whether the city should help pay for the legal defense of registered community organizations, or RCOs.
+In Philadelphia, there will be <a href="https://web.archive.org/20240317095449/https://vote.phila.gov/media/2024P_Ballot_Questions.pdf">a question on the primary ballot</a> about whether the city should help pay for the legal defense of registered community organizations, or RCOs.
 
-<a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">Check with your county election office to be sure</a>.
+<a href="https://web.archive.org/20210921131828/https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">Check with your county election office to be sure</a>.
 
 <a href="https://www.spotlightpa.org/news/2024/01/pennsylvania-2024-election-coverage-president-senate-row-offices-pan/">Learn more</a> about how Spotlight PA is covering the 2024 election.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

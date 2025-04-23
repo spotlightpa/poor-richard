@@ -33,7 +33,7 @@ Bogen, a pediatrician, had served as the head of the Allegheny County Health Dep
 
 The governor has yet to announce publicly whether he will once again put Bogen before the state Senate for consideration or will nominate someone else to fill the role on a permanent basis.
 
-State Sens. Kristin Phillips-Hill (R., York) and Judy Ward (R., Blair) say that allowing acting secretaries to perform their duties without lawmakers’ approval permits the governor and his cabinet to evade oversight set up in the state constitution. They intend to <a href="https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=41275&amp;mobile_choice=suppress">introduce a constitutional amendment</a> that would limit the powers of such secretaries in September.
+State Sens. Kristin Phillips-Hill (R., York) and Judy Ward (R., Blair) say that allowing acting secretaries to perform their duties without lawmakers’ approval permits the governor and his cabinet to evade oversight set up in the state constitution. They intend to <a href="https://web.archive.org/20230818092204/https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=41275&amp;mobile_choice=suppress">introduce a constitutional amendment</a> that would limit the powers of such secretaries in September.
 
 “We’re supposed to be three co-equal branches of government and over the last three years we’ve seen the executive branch gain power,” Phillips-Hill told Spotlight PA. “The advice and consent of the Senate in a governor’s cabinet official is something that is articulated in our constitution.”
 
@@ -43,7 +43,7 @@ Wolf’s former press secretary, J.J. Abbott, said the governor wasn’t trying 
 
 He noted that leaders at one point <a href="https://stateimpact.npr.org/pennsylvania/2021/04/27/in-rggi-fight-escalation-gop-blocks-wolfs-nominations-to-utility-regulator/">tried to block appointments to the state utility regulator</a> over a legislative conflict — something Abbott called “the straw that broke the camel’s back” in terms of getting nominees confirmed.
 
-“They screwed up things with Wolf by turning things from \[the state Senate’s <a href="https://www.pasen.gov/rules.cfm">constitutional duty</a> of\] ‘advise and consent’ to a ransom-taking,” he said.
+“They screwed up things with Wolf by turning things from \[the state Senate’s <a href="https://web.archive.org/20190402161620/https://www.pasen.gov/rules.cfm">constitutional duty</a> of\] ‘advise and consent’ to a ransom-taking,” he said.
 
 The <a href="https://www.spotlightpa.org/news/2023/01/pa-josh-shapiro-governor-cabinet-nominations-full-list/">21 cabinet secretaries</a> who require state Senate approval lead state agencies, advise the governor, and recommend policy. Their responsibilities are wide-ranging and include administering the state’s elections, directing billions of dollars in education funds, and deploying state and federal dollars for a slew of human services programs, like SNAP and Medicaid.
 
@@ -55,17 +55,17 @@ If the state Senate fails to vote on a nomination within those 25 legislative da
 
 The administration’s two remaining unconfirmed secretaries, in the Departments of Banking and Securities and Health, followed different paths to their current acting statuses.
 
-Shapiro initially nominated Sarah Hammer, executive director at the University of Pennsylvania’s Wharton School, as banking secretary in January. However, Hammer announced in early May <a href="https://twitter.com/FinanceHammer/status/1655350090192625665?s=20">that she would be</a> “returning to serve the \[University of Pennsylvania\] community.”
+Shapiro initially nominated Sarah Hammer, executive director at the University of Pennsylvania’s Wharton School, as banking secretary in January. However, Hammer announced in early May <a href="https://web.archive.org/20230819044820/https://twitter.com/FinanceHammer/status/1655350090192625665?s=20">that she would be</a> “returning to serve the \[University of Pennsylvania\] community.”
 
 Following Hammer’s withdrawal, Shapiro nominated Spicher in early July. <a href="https://www.politicspa.com/spicher-nominated-as-secretary-of-banking-and-securities/123299/">Prior to her nomination</a>, Spicher had served as the deputy secretary for depository institutions in the Department of Banking and Securities since 2008. As of Aug. 17, the state Senate had 24 legislative days to vote on Spicher’s nomination.
 
-Bogen, meanwhile, is Shapiro’s original nominee to lead the Department of Health. In late June, Shapiro recalled Bogen’s nomination because there were not <a href="https://www.inquirer.com/politics/pennsylvania/bogen-shapiro-health-dept-pa-20230628.html">enough votes to confirm her</a>.
+Bogen, meanwhile, is Shapiro’s original nominee to lead the Department of Health. In late June, Shapiro recalled Bogen’s nomination because there were not <a href="https://web.archive.org/20230628231454/https://www.inquirer.com/politics/pennsylvania/bogen-shapiro-health-dept-pa-20230628.html">enough votes to confirm her</a>.
 
 State Senate Majority Leader Joe Pittman (R., Indiana) said in a statement that “given concerns with Dr. Bogen’s past management work, we felt she was not well suited” to the role. He added the chamber is ready to review a new nominee once Shapiro submits a name for the position.
 
 However, state Senate Minority Leader Jay Costa (D., Allegheny) said he hopes Bogen can resolve some of the differences within the Republican caucus and “get to a place where she will get renominated.”
 
-Costa previously told the <a href="https://www.inquirer.com/politics/pennsylvania/bogen-shapiro-health-dept-pa-20230628.html">Philadelphia Inquirer</a> that some Republican members had issues with Bogen’s time at Allegheny County’s health department “but was not sure of the details.”
+Costa previously told the <a href="https://web.archive.org/20230628231454/https://www.inquirer.com/politics/pennsylvania/bogen-shapiro-health-dept-pa-20230628.html">Philadelphia Inquirer</a> that some Republican members had issues with Bogen’s time at Allegheny County’s health department “but was not sure of the details.”
 
 “Had her nomination been given the opportunity to get to the floor to the vote, I believe she would have been confirmed,” Costa told Spotlight PA.
 
@@ -94,4 +94,3 @@ It isn’t clear, he said, if the constitution needs to be amended to solve such
 <em>Spotlight PA’s Katie Meyer contributed reporting. </em>
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

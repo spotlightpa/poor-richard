@@ -68,7 +68,7 @@ The OSTC program is similar, but is specifically geared toward students in low-a
 
 Both credits are worth 75% to 90% of the value of the contribution a company contributes, and the maximum tax credit is $750,000 per company. Credits are awarded to companies on a first-come, first-served basis until the state’s cap on the program is reached. Last year’s budget had EITC capped at $340 million and OSTC capped at $125 million.
 
-Students are eligible for EITC scholarships if their annual household income does not exceed $105,183, plus $18,514 for each child in the family for the 2022-23 school year. OSTC eligibility guidelines are the same, with the added caveat that a student must attend a low-achieving school. The average scholarship value <a href="https://www.edchoice.org/school-choice/programs/pennsylvania-educational-improvement-tax-credit-program/">was $2,554 in the 2021-22 school year</a>, the most recent year for which that data is available.
+Students are eligible for EITC scholarships if their annual household income does not exceed $105,183, plus $18,514 for each child in the family for the 2022-23 school year. OSTC eligibility guidelines are the same, with the added caveat that a student must attend a low-achieving school. The average scholarship value <a href="https://web.archive.org/20150908154525/https://www.edchoice.org/school-choice/programs/pennsylvania-educational-improvement-tax-credit-program/">was $2,554 in the 2021-22 school year</a>, the most recent year for which that data is available.
 
 Supporters, who are largely Republican, <a href="https://www.spotlightpa.org/news/2022/07/pa-private-school-tax-credit-expansion-transparency/">typically attempt to grow the program each budget cycle</a>. They face opposition from Democrats who worry they will weaken public schools by cutting state funding and funneling it to private schools, which do not require funding from the state.
 
@@ -76,7 +76,7 @@ Supporters, who are largely Republican, <a href="https://www.spotlightpa.org/new
 
 On the table this year is a voucher program for students that would route state money directly into private schools rather than providing a tax credit to scholarship funders.
 
-In recent years, <a href="https://www.governing.com/education/more-states-use-tax-dollars-to-help-people-pay-for-private-school">voucher programs have become increasingly popular</a> across the country.
+In recent years, <a href="https://web.archive.org/20230621145232/https://www.governing.com/education/more-states-use-tax-dollars-to-help-people-pay-for-private-school">voucher programs have become increasingly popular</a> across the country.
 
 The idea gained traction in Pennsylvania last legislative session when state Sen. Judy Ward (R., Blair) introduced a bill to create so-called lifeline scholarships. It didn’t pass then, but Ward <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=795">reintroduced it this year</a> with tweaks.
 
@@ -92,7 +92,7 @@ Parents with children enrolled in one of these schools would be notified annuall
 
 The bill would provide $2,500 in annual grants for students in half-day kindergarten, $5,000 for students attending full-day kindergarten through eighth grade, and $10,000 for high school students. Students who require special education services would qualify for up to $15,000 annually.
 
-Unlike Ward’s bill, the new measure restricts participation to children whose families make less than 250% of the <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>. A family of four, for instance, would have to make less than $75,000 annually to qualify.
+Unlike Ward’s bill, the new measure restricts participation to children whose families make less than 250% of the <a href="https://web.archive.org/20210717123429/https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">federal poverty guidelines</a>. A family of four, for instance, would have to make less than $75,000 annually to qualify.
 
 It also puts a price tag of $100 million on the program with future increases tied to bumps in the state’s public education budget.
 
@@ -130,5 +130,4 @@ Lawmakers and Shapiro’s administration have a deadline of midnight on June 30 
 
 It’s possible, however, that conflict could contribute to them blowing that deadline, which means negotiations could stretch days, weeks, or months into the summer.
 
-<em>Samuel O’Neal is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
+<em>Samuel O’Neal is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="https://web.archive.org/20191229041140/http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>

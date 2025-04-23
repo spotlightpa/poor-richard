@@ -35,7 +35,7 @@ Gaming Control Board spokesperson Richard McGarvey said the agency has not seen 
 
 It is not clear whether the lawmakers’ requests for an inquiry will be heeded. A spokesperson for the state attorney general’s office said he could not comment, noting that skill games are “the subject of a multitude of litigation.”
 
-Mary Fox, the state Ethics Commission’s executive director, said the agency does not confirm or deny the existence of its investigations. The agency is tasked with reviewing alleged violations of the <a href="https://www.ethics.pa.gov/Ethics-Act/Ethics-Act/Pages/default.aspx">state’s Ethics Act</a>, which governs behavior by public officials and employees.
+Mary Fox, the state Ethics Commission’s executive director, said the agency does not confirm or deny the existence of its investigations. The agency is tasked with reviewing alleged violations of the <a href="https://web.archive.org/20160111073408/https://www.ethics.pa.gov/Ethics-Act/Ethics-Act/Pages/default.aspx">state’s Ethics Act</a>, which governs behavior by public officials and employees.
 
 Earlier this year, Spotlight PA reported that lobbyists for the state’s largest casino, Parx Casino in Bucks County, <a href="https://www.spotlightpa.org/news/2023/02/pa-skill-games-parx-casino-lobbyists-gaming-control-board/">embarked on an intense, behind-the-scenes effort to get the Gaming Control Board to abandon its hands-off stance toward skill games</a>.
 
@@ -70,7 +70,7 @@ Pace-O-Matic, the company that makes the software for the majority of skill game
 
 Pace-O-Matic is suing the Gaming Control Board and others for targeting its industry.
 
-Yaw, whose district houses a manufacturer of skill games, has introduced a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&sind=0&body=S&type=B&bn=706">bill</a> that would tax and regulate the games. Similar legislation was introduced in the last legislative session but was not voted on, in part because proposals to tweak or update Pennsylvania’s gambling law have triggered a frenzy of lobbying from competing interests, making it difficult to reach a consensus.
+Yaw, whose district houses a manufacturer of skill games, has introduced a <a href="https://web.archive.org/20230621082318/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&sind=0&body=S&type=B&bn=706">bill</a> that would tax and regulate the games. Similar legislation was introduced in the last legislative session but was not voted on, in part because proposals to tweak or update Pennsylvania’s gambling law have triggered a frenzy of lobbying from competing interests, making it difficult to reach a consensus.
 
 In an interview last week, Yaw said he received a response from the attorney general that seemed to indicate a hesitation to delve into the skill games issue, given the ongoing litigation over the legality of the games.
 

@@ -18,7 +18,7 @@ title = "Pa. GOP lawmakers to probe unverified fraud claims in election they lar
 topics = ["Elections"]
 +++
 
-<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://web.archive.org/20201019151248/http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 HARRISBURG — As President Donald Trump continues to question the integrity of Pennsylvania’s election while repeating unverified claims of voter fraud, state Republicans are once again seeking greater powers to investigate the voting process.
 
@@ -30,7 +30,7 @@ At the state Capitol, Rep. Dawn Keefer (R., York) said the assembled lawmakers' 
 
 When asked if she had evidence that fraud had been committed, Keefer said the lawmakers had “just gotten a lot of allegations, so I don’t know.”
 
-The lawmakers who gathered Tuesday aren’t alone. House Speaker Bryan Cutler (R., Lancaster) last week <a href="http://www.pahousegop.com/Display/SiteFiles/1/OtherDocuments/2020/Governor%20Wolf%20-%20Election%20Audit%20-%20NOV%202020.pdf">called</a> on Gov. Tom Wolf to audit the election before the state’s results are certified Nov. 23, claiming state guidance and court rulings have created “chaos and uncertainty.”
+The lawmakers who gathered Tuesday aren’t alone. House Speaker Bryan Cutler (R., Lancaster) last week <a href="https://web.archive.org/20201107004656/http://www.pahousegop.com/Display/SiteFiles/1/OtherDocuments/2020/Governor%20Wolf%20-%20Election%20Audit%20-%20NOV%202020.pdf">called</a> on Gov. Tom Wolf to audit the election before the state’s results are certified Nov. 23, claiming state guidance and court rulings have created “chaos and uncertainty.”
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -62,7 +62,7 @@ Last year, the Department of State began piloting risk-limiting audits as part o
 
 The risk-limiting audits check the state’s new voting machines with paper trails, which each county was required to obtain by the end of last year as part of the settlement with Stein. The machines allow election returns captured electronically to be confirmed against the text on paper records.
 
-The first such audits <a href="https://www.inquirer.com/politics/election/philadelphia-audits-election-results-20191122.html">were done in Mercer County and Philadelphia</a> <a href="https://www.media.pa.gov/Pages/State-Details.aspx?newsid=366">in November 2019</a>. And in August, Boockvar <a href="https://www.media.pa.gov/pages/State-details.aspx?newsid=395">announced</a> her department had completed a statewide risk-limiting audit of the June primary election.
+The first such audits <a href="https://web.archive.org/20200810090055/https://www.inquirer.com/politics/election/philadelphia-audits-election-results-20191122.html">were done in Mercer County and Philadelphia</a> <a href="https://web.archive.org/20200930032941/https://www.media.pa.gov/Pages/State-Details.aspx?newsid=366">in November 2019</a>. And in August, Boockvar <a href="https://web.archive.org/20200924221827/https://www.media.pa.gov/pages/State-details.aspx?newsid=395">announced</a> her department had completed a statewide risk-limiting audit of the June primary election.
 
 During that audit, counties used a statistical sample of 400 randomly selected ballots and compared the votes on paper to the totals reported by vote-counting machines. The chance that the audit gave a false-positive result was less than 0.1%.
 
@@ -70,7 +70,7 @@ During that audit, counties used a statistical sample of 400 randomly selected b
 
 The settlement also required the Department of State to convene a post-election audit work group. Members included county election directors, Department of State representatives, Common Cause PA, nonpartisan election integrity organization Verified Voting, and the Brennan Center Democracy Program.
 
-The work group <a href="https://www.votespa.com/About-Elections/Documents/PADOS_RLA%20WG_Initial%20Report_12.30.2019.pdf">recommended</a> repealing the requirement for a statistical recount of random ballots and codifying the use of risk-limiting audits mandated in the Stein settlement. The members also recommended that, when an audit cannot confirm the outcome of a race, state law require a recount to be done by hand.
+The work group <a href="https://web.archive.org/20200926134620/https://www.votespa.com/About-Elections/Documents/PADOS_RLA%20WG_Initial%20Report_12.30.2019.pdf">recommended</a> repealing the requirement for a statistical recount of random ballots and codifying the use of risk-limiting audits mandated in the Stein settlement. The members also recommended that, when an audit cannot confirm the outcome of a race, state law require a recount to be done by hand.
 
 Hope Verelst, Sullivan County’s elections director and a member of the work group, said as of the group’s last meeting, a final report was being drafted for the legislature, but the group hadn’t met in a while.
 

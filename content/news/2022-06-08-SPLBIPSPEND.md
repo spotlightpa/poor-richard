@@ -47,21 +47,21 @@ Earlier this year, Wolf released a budget proposal that would appropriate billio
 
 But with negotiations now beginning in earnest, that tune has now changed, with some Republicans signing on to or offering up projects as ways to spend the state’s surplus. Pennsylvania still has $2.2 billion in remaining stimulus money, and at least $4.9 billion in surplus tax revenue.
 
-One area with bipartisan support is spending on the environment, including clean water projects, land preservation, and <a href="https://www.penncapital-star.com/blog/were-almost-at-a-crisis-point-dcnr-reiterates-1-4b-in-infrastructure-needs-at-state-parks-forests/">overdue repairs</a> to state parks.
+One area with bipartisan support is spending on the environment, including clean water projects, land preservation, and <a href="https://web.archive.org/20220401072827/https://www.penncapital-star.com/blog/were-almost-at-a-crisis-point-dcnr-reiterates-1-4b-in-infrastructure-needs-at-state-parks-forests/">overdue repairs</a> to state parks.
 
 Lawmakers are also considering putting some of that money toward the cleanup of the Chesapeake Bay, of which the Susquehanna River is a key tributary.
 
-Runoff from Pennsylvania farms often pollutes the bay by way of the river, and <a href="https://www.bayjournal.com/news/policy/epa-says-pennsylvania-s-plan-to-clean-up-the-chesapeake-still-comes-up-short/article_34201968-bfd6-11ec-92c3-ebc4683129d6.html">federal regulators</a> have said that the state isn’t doing enough to fix the problem.
+Runoff from Pennsylvania farms often pollutes the bay by way of the river, and <a href="https://web.archive.org/20220419233904/https://www.bayjournal.com/news/policy/epa-says-pennsylvania-s-plan-to-clean-up-the-chesapeake-still-comes-up-short/article_34201968-bfd6-11ec-92c3-ebc4683129d6.html">federal regulators</a> have said that the state isn’t doing enough to fix the problem.
 
 Saylor mentioned the Susquehanna River basin as an issue that “we’re going to be taking care of” this year, though he did not offer details.
 
-Insiders <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=2020">pointed</a> to a bipartisan bill from state Rep. Lynda Schlegel Culver (R., Northumberland) that would put $500 million of stimulus money into such projects, especially those in the basin.
+Insiders <a href="https://web.archive.org/20220322045424/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=2020">pointed</a> to a bipartisan bill from state Rep. Lynda Schlegel Culver (R., Northumberland) that would put $500 million of stimulus money into such projects, especially those in the basin.
 
 Other issues that are getting Republican attention include more state funding for child care and pre-K, nursing homes — a perennial recipient of funds — and housing.
 
 Progressive lawmakers have been <a href="https://whyy.org/articles/gop-legislators-are-backing-philly-dems-housing-bill-why-blight-is-a-statewide-issue/">building bipartisan support</a> for a broad housing plan known as the Whole Homes Repair Fund, which would use stimulus money to provide grants to homeowners and landlords alike to make renovations big and small.
 
-Browne, Senate Republicans’ top budget negotiator, is one of the bill’s five GOP <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2021&sind=0&body=S&type=B&bn=1135">co-sponsors</a>. Another backer, state Sen. David Argall (R., Schuylkill), has also proposed a plan to use stimulus money to help developers afford the inflated prices for building materials.
+Browne, Senate Republicans’ top budget negotiator, is one of the bill’s five GOP <a href="https://web.archive.org/20220411214255/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2021&sind=0&body=S&type=B&bn=1135">co-sponsors</a>. Another backer, state Sen. David Argall (R., Schuylkill), has also proposed a plan to use stimulus money to help developers afford the inflated prices for building materials.
 
 Representing part of the Coal Region, Argall said that he’s often sought state dollars to demolish old, rickety houses. Now, as his region attracts new employers, he’s switched gears to asking for money to “fix these houses up before they collapse” — potentially saving the state dollars in the end.
 
@@ -73,7 +73,7 @@ Insiders questioned whether an election year spending spree could pass muster wi
 
 Both Browne and Saylor, the senior Republicans charged with negotiating the budget, lost their primary elections this year, <a href="https://www.spotlightpa.org/news/2022/05/pa-primary-election-results-budget-impasse/">potentially empowering</a> dissident members who oppose new spending.
 
-Legislative Republicans’ messaging has also been critical of spending seen as excessive, such as Wolf’s proposal to use the stimulus money to send some Pennsylvanians <a href="https://www.wgal.com/article/gov-tom-wolf-pushes-plan-to-send-direct-payments-to-pennsylvania-families/40169682">$2,000 checks.</a>
+Legislative Republicans’ messaging has also been critical of spending seen as excessive, such as Wolf’s proposal to use the stimulus money to send some Pennsylvanians <a href="https://web.archive.org/20220602113756/https://www.wgal.com/article/gov-tom-wolf-pushes-plan-to-send-direct-payments-to-pennsylvania-families/40169682">$2,000 checks.</a>
 
 The state House Republican Policy Committee, which develops and messages policy goals, is set to focus on inflation this week. One planned meeting is called “How Radical Liberal Policies Have Driven Inflation to Historic Highs.”
 

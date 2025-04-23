@@ -57,7 +57,7 @@ Supporters of lowering the current corporate net income tax rate argue that near
 
 “We think that there’s no more important policy measure that Harrisburg should act on this year than an immediate material reduction of the CNI rate,” said Matt Smith, president of the Greater Pittsburgh Chamber of Commerce. “It puts us at a real disadvantage when we’re trying to attract, particularly large-scale manufacturing [corporations].”
 
-Smith <a href="https://www.reuters.com/technology/intel-plans-new-chip-manufacturing-site-ohio-report-2022-01-21/">cited a recent decision by tech company Intel</a> to locate a new $20 billion project for a computer chip factory in Columbus, Ohio. He blames the current tax rate for keeping Pennsylvania cities like Pittsburgh out of contention for the facility.
+Smith <a href="https://web.archive.org/20220121052314/https://www.reuters.com/technology/intel-plans-new-chip-manufacturing-site-ohio-report-2022-01-21/">cited a recent decision by tech company Intel</a> to locate a new $20 billion project for a computer chip factory in Columbus, Ohio. He blames the current tax rate for keeping Pennsylvania cities like Pittsburgh out of contention for the facility.
 
 A <a href="https://web.archive.org/20220210135823/https://www.senatoraument.com/wp-content/uploads/sites/69/2021/06/CNI-research.pdf">research paper</a> published by the office of state Sen. Ryan Aument (R., Lancaster) supports Smith’s argument, finding that the “states with the lowest CNI rates experienced 10% higher growth in state revenues from 2000 to 2020 compared to those states with higher CNI rates.”
 
@@ -75,13 +75,13 @@ In late April, the state House voted 195-8 to pass a <a href="https://www.legis.
 
 The state House bill has yet to advance in the state Senate, where lawmakers have been crafting their own proposals.
 
-On Wednesday, the state Senate voted 31-19 to pass a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=0447">bill</a> sponsored by state Sen. Michele Brooks (R., Mercer) that would reduce the tax by half a percentage point every year, over the course of six years, until it reaches 6.99%.
+On Wednesday, the state Senate voted 31-19 to pass a <a href="https://web.archive.org/20210516063436/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=0447">bill</a> sponsored by state Sen. Michele Brooks (R., Mercer) that would reduce the tax by half a percentage point every year, over the course of six years, until it reaches 6.99%.
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=0771">bill</a> from Aument passed by the same margin. It would lower the tax to 6.99% by 2024 and then to 5.99% by 2025 if certain benchmarks are reached.
+A <a href="https://web.archive.org/20210805203113/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=0771">bill</a> from Aument passed by the same margin. It would lower the tax to 6.99% by 2024 and then to 5.99% by 2025 if certain benchmarks are reached.
 
 Wolf has also weighed in with a proposal to gradually lower the rate from 7.99% in 2023 to 5.99% in 2027.
 
-<a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=2510">Legislation</a> introduced by Democrats to advance Wolf’s plan includes so-called “add-back provisions” designed to prevent corporations from taking deductions on costs like management fees that lower their overall tax burden.
+<a href="https://web.archive.org/20220430092042/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=2510">Legislation</a> introduced by Democrats to advance Wolf’s plan includes so-called “add-back provisions” designed to prevent corporations from taking deductions on costs like management fees that lower their overall tax burden.
 
 Smith of the Greater Pittsburgh Chamber of Commerce said that he supports the “aggressive phase-down” featured in many of the proposals on the table, but he does not support the provisions in Wolf’s plan.
 
@@ -101,7 +101,7 @@ State Rep. Sara Innamorato (D., Allegheny) was one of the handful of no votes wh
 
 Innamorato would rather see funds appropriated to small business grants and loan products that would “help our independent businesses and our main streets thrive.” She came to many of these conclusions after consulting with Stier, director of the Pennsylvania Budget and Policy Center.
 
-In <a href="https://krc-pbpc.org/research_publication/corporate-taxes-without-combined-reporting-are-not-worth-the-cost/">a new study</a>, Stier found that the state House proposal to cut the tax would cost Pennsylvania $600 million in revenue per year once the reduction reaches 7.99%, and only generate roughly 23,000 jobs over a course of 10 years — estimating that only 20% of those jobs would go to current Pennsylvania residents.
+In <a href="https://web.archive.org/20220616105426/https://krc-pbpc.org/research_publication/corporate-taxes-without-combined-reporting-are-not-worth-the-cost/">a new study</a>, Stier found that the state House proposal to cut the tax would cost Pennsylvania $600 million in revenue per year once the reduction reaches 7.99%, and only generate roughly 23,000 jobs over a course of 10 years — estimating that only 20% of those jobs would go to current Pennsylvania residents.
 
 (An analysis of the bill prepared by the state House Appropriations Committee <a href="https://web.archive.org/20220427160044/https://www.legis.state.pa.us/WU01/LI/BI/FN/2021/0/HB1960P3035.pdf">reported</a> that “each 1% of the CNIT currently generates approximately $400 to $450 million in a full tax year.”)
 
@@ -117,4 +117,4 @@ In a news conference Monday, state Rep. Elizabeth Fiedler (D., Philadelphia) bac
 
 “We can make sure that we have a tax system in place that makes sense for people, for working people, for people that go to those one, two, or three jobs a day,” she said at the news conference. “Families are feeling the rising cost of groceries, gas, and baby formula. It’s appalling to me that our state would consider giving a big tax break to megacorporations right now.”
 
-<i>Jaxon White is an intern with the Pennsylvania Legislative Correspondents’ Association.&nbsp;</i><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><i>Learn more about the program</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i>&nbsp;foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i>&nbsp;who are committed to accountability journalism that gets results.</i>
+<i>Jaxon White is an intern with the Pennsylvania Legislative Correspondents’ Association.&nbsp;</i><a href="https://web.archive.org/20191229041140/http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><i>Learn more about the program</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i>&nbsp;foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i>&nbsp;who are committed to accountability journalism that gets results.</i>

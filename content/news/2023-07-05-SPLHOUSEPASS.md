@@ -27,7 +27,7 @@ For that reason, this may not be the final word on this year’s budget drama.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Lawmakers still have to approve <a href="https://www.penncapital-star.com/government-politics/cracking-the-code-these-budget-bills-are-where-the-deals-get-made/">code bills</a> — complicated pieces of omnibus budget-enabling legislation that dictate state policy on things like taxing, spending, and education.
+Lawmakers still have to approve <a href="https://web.archive.org/20190621135237/https://www.penncapital-star.com/government-politics/cracking-the-code-these-budget-bills-are-where-the-deals-get-made/">code bills</a> — complicated pieces of omnibus budget-enabling legislation that dictate state policy on things like taxing, spending, and education.
 
 And, in a potentially more immediate problem, Pennsylvania’s Constitution requires that the presiding officers of each chamber sign off on all bills before they head to the governor’s desk. This is usually routine. However, the state Senate, now miffed by Shapiro’s reversal over vouchers, isn’t scheduled to be back in Harrisburg until September.
 
@@ -39,7 +39,7 @@ House Democrats fell in line behind Shapiro’s spending plan after he went publ
 
 “Knowing that the two chambers will not reach consensus at this time to enact \[the voucher program\], and unwilling to hold up our entire budget process over this issue, I will line-item veto the full $100 million appropriation and it will not be part of this budget bill,” Shapiro wrote.
 
-Speaking from the floor before the chamber passed the spending plan <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=445">117 to 86</a>, House Democratic Leader Matt Bradford (D., Montgomery) commended members for avoiding a long impasse and showing “that bipartisanship is possible.”
+Speaking from the floor before the chamber passed the spending plan <a href="https://web.archive.org/20230706020427/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=445">117 to 86</a>, House Democratic Leader Matt Bradford (D., Montgomery) commended members for avoiding a long impasse and showing “that bipartisanship is possible.”
 
 The voucher program, known as the Pennsylvania Award for Student Success (or PASS), was a priority for leaders in the Republican-controlled Senate, who only agreed to spend more money on Democratic proposals in return for it.
 
@@ -63,7 +63,7 @@ However, it still routes considerably less money into public education <a href="
 
 The commonwealth has roughly $12 billion on hand, which lawmakers will be able to use to balance out increased spending. Throughout budget talks, Democrats had pushed to spend more of this money on education while Republicans, concerned about an economic downturn, advocated saving much of it to avoid future budget shortfalls.
 
-Along with the still-unpassed code bills, the legislature needs to move an annual in-state tuition subsidy for <a href="https://www.inquirer.com/politics/pennsylvania/fetal-tissue-transgender-pitt-penn-state-university-funding-20230626.html">Pennsylvania’s four state-related universities</a>. This $600 million is unique in that it requires approval by a two-thirds majority of the legislature, which means the funding is easy for dissidents to block. The House Freedom Caucus, a group of conservative members, says it <a href="https://www.spotlightpa.org/news/2023/06/pa-education-spending-legislature-budget-josh-shapiro/">specifically aims to hold up funding for Penn State</a>. Votes to pass the schools&#39; funding failed by double digit margins last month.
+Along with the still-unpassed code bills, the legislature needs to move an annual in-state tuition subsidy for <a href="https://web.archive.org/20230626234933/https://www.inquirer.com/politics/pennsylvania/fetal-tissue-transgender-pitt-penn-state-university-funding-20230626.html">Pennsylvania’s four state-related universities</a>. This $600 million is unique in that it requires approval by a two-thirds majority of the legislature, which means the funding is easy for dissidents to block. The House Freedom Caucus, a group of conservative members, says it <a href="https://www.spotlightpa.org/news/2023/06/pa-education-spending-legislature-budget-josh-shapiro/">specifically aims to hold up funding for Penn State</a>. Votes to pass the schools&#39; funding failed by double digit margins last month.
 
 The eventual resolution of this year’s budget won’t end discussions over vouchers in Harrisburg.
 
@@ -76,4 +76,3 @@ In his statement Wednesday, Shapiro said that as a condition for stripping vouch
 In the letter, Bradford said while there was not “enough time to meaningfully review and scrutinize the voucher proposal” as part of the state budget, he plans to direct House Appropriations Chair Jordan Harris (D., Philadelphia) and Education Chair Pete Schweyer (D., Lehigh) to hold hearings exploring it.
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

@@ -22,7 +22,7 @@ topics = ["The Capitol", "Environment", "Economy"]
 
 <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> is an independent, nonpartisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
 
-HARRISBURG — Gov. Tom Wolf has signed a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=1059">$2 billion tax credit package</a> for the hydrogen production, milk processing, and biomedical research industries into law, capping months of quiet negotiations between the Democrat and top Republicans in the General Assembly.
+HARRISBURG — Gov. Tom Wolf has signed a <a href="https://web.archive.org/20210507112400/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=H&type=B&bn=1059">$2 billion tax credit package</a> for the hydrogen production, milk processing, and biomedical research industries into law, capping months of quiet negotiations between the Democrat and top Republicans in the General Assembly.
 
 Ninety cents out of each dollar offered will be used to encourage the use of natural gas, including $1 billion in tax incentives to attract a new “hydrogen hub” to Pennsylvania.
 
@@ -56,7 +56,7 @@ The final language requires a company to pay construction workers on any project
 
 The council did not reply to a request for comment.
 
-In the end, the package’s supporters won. The proposal passed the state Senate <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=823">41-8</a>, and then the state House sent it to Wolf’s desk in a <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=H&rc_nbr=1272">139-59</a> vote. Lawmakers in both major parties were among the bill’s supporters and opponents.
+In the end, the package’s supporters won. The proposal passed the state Senate <a href="https://web.archive.org/20221026235512/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=S&rc_nbr=823">41-8</a>, and then the state House sent it to Wolf’s desk in a <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=H&rc_nbr=1272">139-59</a> vote. Lawmakers in both major parties were among the bill’s supporters and opponents.
 
 The latter argued the bill kowtowed to corporate interests, and that the legislature rushed its passage.
 
@@ -74,7 +74,7 @@ But David Passmore, a retired Penn State professor of applied economics, told Sp
 
 He also noted that having a company physically in Pennsylvania, rather than a neighboring state, may not be as important economically as some lawmakers claim.
 
-He pointed to Shell’s near-complete cracker plant in Beaver County which will turn natural gas into plastics. Former Gov. Tom Corbett, a Republican, and the General Assembly provided the company with <a href="https://stateimpact.npr.org/pennsylvania/2022/10/06/an-ethane-cracker-in-western-pa-will-soon-start-up-we-answered-your-questions-about-it/">$1.65 billion</a> in tax incentives to locate in Pennsylvania.
+He pointed to Shell’s near-complete cracker plant in Beaver County which will turn natural gas into plastics. Former Gov. Tom Corbett, a Republican, and the General Assembly provided the company with <a href="https://web.archive.org/20221006170329/https://stateimpact.npr.org/pennsylvania/2022/10/06/an-ethane-cracker-in-western-pa-will-soon-start-up-we-answered-your-questions-about-it/">$1.65 billion</a> in tax incentives to locate in Pennsylvania.
 
 But even if the plant were built just across the border in West Virginia, Pennsylvania workers would likely still have been hired, Passmore argued. Also, he added, Pennsylvania drilled gas would likely be bought to feed its furnace.
 
@@ -92,7 +92,7 @@ The package, Cutler added, “is about focusing on Pennsylvania’s strengths an
 
 The proposed hydrogen credit bolsters funding included in the 2021 federal infrastructure bill, which allocated $7 billion in federal aid to develop at least six such hubs around the country.
 
-Interested companies must send the federal government <a href="https://www.utilitydive.com/news/doe-hydrogen-hub-funding-production-standard/632543/">an initial sketch</a> of their plan by Nov. 7 and submit a full application by April 2023.
+Interested companies must send the federal government <a href="https://web.archive.org/20220923154949/https://www.utilitydive.com/news/doe-hydrogen-hub-funding-production-standard/632543/">an initial sketch</a> of their plan by Nov. 7 and submit a full application by April 2023.
 
 In a letter informing lawmakers he would sign the bill, Wolf said that “partners in Pennsylvania are currently preparing applications…to pursue this opportunity.”
 
@@ -100,7 +100,7 @@ One source close to negotiations, who asked for anonymity to discuss private dis
 
 The company <a href="https://web.archive.org/20221103205442/https://investors.ussteel.com/news/news-details/2022/U.-S.-Steel-Equinor-and-Shell-to-Explore-Regional-Clean-Energy-Opportunities/default.aspx">announced</a> plans in August to pursue a hydrogen hub in the “Ohio, West Virginia, Pennsylvania region” in conjunction with Shell and a third company.
 
-The company still has <a href="https://www.ussteel.com/about-us/locations">four steel-making facilities</a> in Pennsylvania — including one in Clairton that has been <a href="https://www.alleghenyfront.org/us-steel-fined-1-8-million-for-rotten-egg-pollution-near-pittsburgh-clairton-coke-works/">fined</a> for pollution in recent years — and experts have noted that one of hydrogen’s best uses could be to decarbonize heavy industries like steel.
+The company still has <a href="https://web.archive.org/20210118203119/https://www.ussteel.com/about-us/locations">four steel-making facilities</a> in Pennsylvania — including one in Clairton that has been <a href="https://web.archive.org/20220309184407/https://www.alleghenyfront.org/us-steel-fined-1-8-million-for-rotten-egg-pollution-near-pittsburgh-clairton-coke-works/">fined</a> for pollution in recent years — and experts have noted that one of hydrogen’s best uses could be to decarbonize heavy industries like steel.
 
 In his letter, Wolf pointed to a requirement that hydrogen credit recipients follow federal guidance for carbon capture to ensure that the hydrogen produced from fracked natural gas would be carbon neutral and not contribute to the state’s 200 million-plus tons of annual greenhouse gas emissions.
 
@@ -113,7 +113,7 @@ Given Wolf’s focus on reducing carbon pollution through an initiative to cap e
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?eyebrow_text=SUPPORT%20SPOTLIGHT%20PA&cta_text=YES%2C%20I%20WANT%20TO%20CONTRIBUTE&teaser_text=The%20future%20of%20Spotlight%20PA%20depends%20on%20your%20support.%20Make%20a%20tax-deductible%20gift%20now%20to%20ensure%20this%20vital%20journalism%20can%20continue%20in%202023.%20As%20a%20special%20bonus%2C%20%3Cb%3Eall%20gifts%20will%20be%20DOUBLED."></div>
 
 
-Other intended recipients of the credit expansion, the source said, include Houston-based Nacero, which last year <a href="https://www.timesleader.com/news/1520944/nacero-to-build-6b-natural-gas-to-gasoline-plant-in-luzerne-county">announced</a> plans to build a $6 billion plant converting natural gas to gasoline in northeastern Pennsylvania. The company has <a href="https://web.archive.org/20221024212305/https://www.dep.pa.gov/About/Regional/Northeast-Regional-Office/Community%20Information/Pages/Nacero-(Nanticoke-Project).aspx">yet to apply</a> for environmental permits, according to the state Department of Environmental Protection.
+Other intended recipients of the credit expansion, the source said, include Houston-based Nacero, which last year <a href="https://web.archive.org/20211029200720/https://www.timesleader.com/news/1520944/nacero-to-build-6b-natural-gas-to-gasoline-plant-in-luzerne-county">announced</a> plans to build a $6 billion plant converting natural gas to gasoline in northeastern Pennsylvania. The company has <a href="https://web.archive.org/20221024212305/https://www.dep.pa.gov/About/Regional/Northeast-Regional-Office/Community%20Information/Pages/Nacero-(Nanticoke-Project).aspx">yet to apply</a> for environmental permits, according to the state Department of Environmental Protection.
 
 The final intended recipient is Chicago-based Fairlife, a dairy company and subsidiary of Coca-Cola that has yet to announce any expansion plans. But the source said it is hoped that a new processing plant will use Pennsylvania-produced milk.
 

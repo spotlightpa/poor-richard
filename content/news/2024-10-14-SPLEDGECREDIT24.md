@@ -29,13 +29,13 @@ The package includes four credits that would give tax breaks to companies if the
 
 {{<embed/newsletter>}}
 
-The <a href="https://www.revenue.pa.gov/IncentivesCreditsPrograms/PAEDGE/Pages/Local%20Resource%20Manufacturing%20Tax%20Credit.aspx">largest</a> aims to reward companies for using Pennsylvania natural gas for manufacturing. First passed in 2020 and <a href="https://www.spotlightpa.org/news/2022/11/pa-natural-gas-hydrogen-hub-tax-credit-tom-wolf-legislature/">expanded in 2022</a>, the credit authorizes up to $1.4 billion in tax breaks over 25 years to companies that use methane — a primary component of natural gas — to produce fertilizer or fuel. Texas-based Nacero announced such a facility for Luzerne County in 2021, but the company has <a href="https://www.citizensvoice.com/news/predecessor-to-proposed-newport-twp-fuel-plant-delayed-6-10-more-years/article_bfb4fa1e-04cc-580a-9ef6-8ef69d1f35d7.html">repeatedly delayed</a> the start of construction.
+The <a href="https://web.archive.org/20240211090505/https://www.revenue.pa.gov/IncentivesCreditsPrograms/PAEDGE/Pages/Local%20Resource%20Manufacturing%20Tax%20Credit.aspx">largest</a> aims to reward companies for using Pennsylvania natural gas for manufacturing. First passed in 2020 and <a href="https://www.spotlightpa.org/news/2022/11/pa-natural-gas-hydrogen-hub-tax-credit-tom-wolf-legislature/">expanded in 2022</a>, the credit authorizes up to $1.4 billion in tax breaks over 25 years to companies that use methane — a primary component of natural gas — to produce fertilizer or fuel. Texas-based Nacero announced such a facility for Luzerne County in 2021, but the company has <a href="https://web.archive.org/20240421050747/https://www.citizensvoice.com/news/predecessor-to-proposed-newport-twp-fuel-plant-delayed-6-10-more-years/article_bfb4fa1e-04cc-580a-9ef6-8ef69d1f35d7.html">repeatedly delayed</a> the start of construction.
 
 Without any takers for the credits, the Shapiro administration has circulated draft legislation that would convert the natural gas subsidy into one encouraging electricity production, according to a version of the bill viewed by Spotlight PA.
 
 The new credit offers a power plant up to $100 million annually for three years. Facilities get less money if their prices exceed the average cost of energy as determined by PJM, the regional grid operator that serves Pennsylvania.
 
-The proposed language does not restrict what type of fuel a power plant could use while claiming the credit. However, it says the energy produced should meet specific clean energy standards. These <a href="https://www.eia.gov/todayinenergy/detail.php?id=53819">would likely</a> include nuclear energy; renewables such as hydroelectric, solar, and wind; or, for fossil fuel-powered plants, the use of carbon capture to reduce emissions.
+The proposed language does not restrict what type of fuel a power plant could use while claiming the credit. However, it says the energy produced should meet specific clean energy standards. These <a href="https://web.archive.org/20220913120648/https://www.eia.gov/todayinenergy/detail.php?id=53819">would likely</a> include nuclear energy; renewables such as hydroelectric, solar, and wind; or, for fossil fuel-powered plants, the use of carbon capture to reduce emissions.
 
 Rob Bair, president of the Pennsylvania State Building &amp; Construction Trades Council, supports the concept.
 
@@ -63,9 +63,9 @@ A spokesperson for Shapiro told Spotlight PA the governor is “open to repurpos
 
 Other Democrats have largely stayed quiet on any brewing policy shifts, although some senior lawmakers have floated changes that acknowledge the credits must be rewritten to be useful.
 
-State Rep. Rob Matzie (D., Beaver) <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=2402&amp;pn=3303">proposed</a> adding a subsidy that would support sustainable aviation fuel production, with a tax credit of up to $30 million each year. His ideas carry weight because he chairs the state House’s influential Consumer Protection, Technology, and Utilities Committee, through which major energy bills have passed in the past year.
+State Rep. Rob Matzie (D., Beaver) <a href="https://web.archive.org/20241217232855/https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=2402&amp;pn=3303">proposed</a> adding a subsidy that would support sustainable aviation fuel production, with a tax credit of up to $30 million each year. His ideas carry weight because he chairs the state House’s influential Consumer Protection, Technology, and Utilities Committee, through which major energy bills have passed in the past year.
 
-Similarly, state Rep. Steve Samuelson (D., Northampton), who chairs the state House’s tax policy-focused Finance Committee, recently introduced a <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=2565&amp;pn=3616">bill</a> that would make the semiconductor manufacturing credit easier to claim.
+Similarly, state Rep. Steve Samuelson (D., Northampton), who chairs the state House’s tax policy-focused Finance Committee, recently introduced a <a href="https://web.archive.org/20241125132522/https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&amp;sessYr=2023&amp;sessInd=0&amp;billBody=H&amp;billTyp=B&amp;billNbr=2565&amp;pn=3616">bill</a> that would make the semiconductor manufacturing credit easier to claim.
 
 State House Democratic spokesperson Elizabeth Rementer didn’t comment on whether chamber leaders would support a rewrite of the tax credits, but did say that the caucus is “constantly evaluating tax credit programs to ensure they’re being used properly and creating jobs.”
 
@@ -77,7 +77,7 @@ Majority Leader Joe Pittman (R., Indiana) said he hasn’t seen enough from Shap
 
 “The administration spent a significant amount of time talking to outside interested parties on that issue … and spent no time talking to me or my team about what such a proposal would look like,” Pittman told Spotlight PA in August.
 
-Pittman has personally been open to state programs to encourage energy production, <a href="https://www.cityandstatepa.com/personality/2024/02/theres-got-be-all-above-strategy-pa-senate-gop-leader-joe-pittman-talks-energy-policy-pennsylvania/394534/">repeatedly</a> <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-rggi-josh-shapiro-climate-change-cap-and-trade/">saying</a> that he is interested in expanding small-scale nuclear reactors. He has also voiced concerns about the state’s long-term ability to produce enough energy for itself.
+Pittman has personally been open to state programs to encourage energy production, <a href="https://web.archive.org/20240418020446/https://www.cityandstatepa.com/personality/2024/02/theres-got-be-all-above-strategy-pa-senate-gop-leader-joe-pittman-talks-energy-policy-pennsylvania/394534/">repeatedly</a> <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-rggi-josh-shapiro-climate-change-cap-and-trade/">saying</a> that he is interested in expanding small-scale nuclear reactors. He has also voiced concerns about the state’s long-term ability to produce enough energy for itself.
 
 Other state Republicans are less inclined to hear Shapiro and the trades out.
 
@@ -87,7 +87,7 @@ According to <a href="https://www.eia.gov/state/?sid=PA#tabs-4">federal data</a>
 
 {{<embed/donate>}}
 
-Those states, she’s argued, have allowed their<a href="https://www.sierraclub.org/press-releases/2023/11/maryland-track-be-coal-free-2025-announced-retirement-warrior-run-plant"> fossil-fuel-powered plants</a> to close while approving new data centers and other electricity-heavy industries powered by Pennsylvania.
+Those states, she’s argued, have allowed their<a href="https://web.archive.org/20231202120353/https://www.sierraclub.org/press-releases/2023/11/maryland-track-be-coal-free-2025-announced-retirement-warrior-run-plant"> fossil-fuel-powered plants</a> to close while approving new data centers and other electricity-heavy industries powered by Pennsylvania.
 
 As such, she argued that any subsidies offered by Pennsylvania would only subsidize other state’s “failed energy policies.”
 
@@ -100,4 +100,3 @@ André Béliveau, the energy policy director at the Commonwealth Foundation, sai
 “We want to make sure we have reliable and affordable energy,” said Beliveau. “Subsidies are not the way to get there.”
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

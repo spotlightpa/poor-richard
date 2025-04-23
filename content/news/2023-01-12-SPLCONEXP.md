@@ -62,9 +62,9 @@ Some of those measures could reach voters this May.
 
 In early January, the state Senate, in a 28-20 vote, passed three amendments bundled together in one package:
 
-- a <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">mandate for universal voter ID</a>;
+- a <a href="https://web.archive.org/20230115222116/https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">mandate for universal voter ID</a>;
 
-- a provision to give the <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">General Assembly more power to override regulations</a>;
+- a provision to give the <a href="https://web.archive.org/20230115222116/https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0022">General Assembly more power to override regulations</a>;
 
 - and a long-sought amendment that would <a href="https://www.legis.state.pa.us/CFDOCS/Legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0001&pn=0026">extend the statute of limitations</a> for survivors of childhood sexual abuse to file civil suits.
 

@@ -17,7 +17,7 @@ title-tag = "Is automatic voter registration in Pennsylvania legal?"
 topics = ["Elections", "Josh Shapiro"]
 +++
 
-<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
+<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://web.archive.org/20170521211815/https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
 
 Republicans at the state and national level are still crying foul over Pennsylvania Gov. Josh Shapiro’s announcement last month that the state had adopted automatic voter registration at motor vehicle offices.
 
@@ -57,7 +57,7 @@ The act suggests the legislature gave the secretary of the commonwealth — who 
 
 Another section states that the “format” of the voter registration application “shall be determined and prescribed by the secretary and the Secretary of Transportation.”
 
-While that original act has since been repealed and incorporated into other sections of the law, that language remains in a provision of the <a href="https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/25/25.HTM">state’s Election Code</a>, cited in the Republican letters.
+While that original act has since been repealed and incorporated into other sections of the law, that language remains in a provision of the <a href="https://web.archive.org/20100611125303/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/25/25.HTM">state’s Election Code</a>, cited in the Republican letters.
 
 Manuel Bonder, a spokesperson for the governor, pointed to this section as justification for Shapiro’s move. He also highlighted a portion of the federal Motor Voter Act itself, which says that a state’s driver’s license application “shall serve as an application for voter registration” for federal elections “unless the applicant fails to sign the voter registration application.”
 
@@ -71,7 +71,7 @@ Automatic voter registration has been primarily enacted by Democratic officials 
 
 Georgia enacted the program in 2016, under an order from the Republican secretary of state.
 
-When Shapiro announced Pennsylvania’s change to an opt-out voter registration system, it was with the hope it would increase voter registration and, ultimately, participation. A study in Georgia showed that switching <a href="https://www.gpb.org/news/2023/06/08/new-study-shows-the-impacts-of-automatic-voter-registration-in-georgia">did increase registration rates</a>. However, a 2019 analysis from FiveThirtyEight shows that these new voters are <a href="https://fivethirtyeight.com/features/what-happened-when-2-2-million-people-were-automatically-registered-to-vote/">slightly less likely to actually vote than voters who registered in other ways</a>.
+When Shapiro announced Pennsylvania’s change to an opt-out voter registration system, it was with the hope it would increase voter registration and, ultimately, participation. A study in Georgia showed that switching <a href="https://web.archive.org/20230609013721/https://www.gpb.org/news/2023/06/08/new-study-shows-the-impacts-of-automatic-voter-registration-in-georgia">did increase registration rates</a>. However, a 2019 analysis from FiveThirtyEight shows that these new voters are <a href="https://fivethirtyeight.com/features/what-happened-when-2-2-million-people-were-automatically-registered-to-vote/">slightly less likely to actually vote than voters who registered in other ways</a>.
 
 “It’s empirically and just logically the case that if you&#39;re doing anything to reach out to people who haven&#39;t registered to vote already, you’re talking about a population who already isn’t as interested in registering to vote,” said Charles Stewart, a professor of political science at MIT who studies elections.
 
@@ -92,7 +92,7 @@ State Sen. Cris Dush (R, Jefferson), who chairs the chamber’s State Government
 The new PennDOT system does not make registration mandatory. Slides provided to Votebeat and Spotlight PA show the on-screen registration process, which requires motorists to hit the “enter” key to continue or the number 9 key to opt out, giving them agency.
 
 <iframe
-src="https://embed.documentcloud.org/documents/24004154-avr_screens/?embed=1&amp;responsive=1&amp;title=1"
+src="https://web.archive.org/20231004234640/https://embed.documentcloud.org/documents/24004154-avr_screens/?embed=1&amp;responsive=1&amp;title=1"
 title="AVR_screens (Hosted by DocumentCloud)"
 width="700"
 height="905"

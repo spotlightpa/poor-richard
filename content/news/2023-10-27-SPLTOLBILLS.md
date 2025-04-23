@@ -49,7 +49,7 @@ However, demand has far outstripped supply. The General Assembly has allocated $
 
 “We&#39;re always going to try to make sure we maintain that and grow it,” state Senate Minority Leader Jay Costa (D., Allegheny) told Spotlight PA. His district also includes the Tree of Life synagogue, and he championed the grant program.
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1772">bill</a> that would double this funding for the 2023-24 fiscal year is advancing in the state House and has bipartisan backing.
+A <a href="https://web.archive.org/20231027101026/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1772">bill</a> that would double this funding for the 2023-24 fiscal year is advancing in the state House and has bipartisan backing.
 
 {{<picture src="2023/10/01jk-nh6g-q9dp-zs36.jpeg" description="Gov. Tom Wolf joined Pittsburgh officials in December 2018 to call for stricter gun laws in the wake of the Tree of Life massacre." caption="Gov. Tom Wolf joined Pittsburgh officials in December 2018 to call for stricter gun laws in the wake of the Tree of Life massacre." credit="Commonwealth Media Services">}}
 
@@ -67,11 +67,11 @@ Frankel hopes to expand the law to add sexual orientation, gender identity, and 
 
 “I think anybody who belongs to these groups knows how vulnerable they are. This is an epidemic in this country and we as lawmakers have a responsibility to fight hate,” Frankel said. “We can&#39;t solve what&#39;s in their hearts, we can’t cure them of hatred, but we can do the best we can to protect those groups.”
 
-Pennsylvania lawmakers previously agreed to expand the hate crimes statute to cover more people. However, the law was <a href="https://casetext.com/case/marcavage-v-rendell-2">struck down</a> by Commonwealth Court in 2007 for a procedural reason.
+Pennsylvania lawmakers previously agreed to expand the hate crimes statute to cover more people. However, the law was <a href="https://web.archive.org/20231027100954/https://casetext.com/case/marcavage-v-rendell-2">struck down</a> by Commonwealth Court in 2007 for a procedural reason.
 
 The case was brought by protesters who had been unsuccessfully charged under the law for “evangelizing against individuals that were participating in a gay rights event in Philadelphia,” according to the 2007 decision. The plaintiffs, the opinion added, said they planned to “engage in the same type of activity in the future and fear that they will be criminally charged again.”
 
-<a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=38636">Three other bills</a> from Frankel and his Democratic allies would create a state law enforcement training program to identify and track “hate-based intimidation,” allow K-12 students to report hate incidents through a preexisting tip line for school safety threats, and require colleges to collect hate-based intimidation reports through an online system that is already required by state law to collect reports on sexual assault. They would also require anyone convicted of a hate crime to take a class on, or conduct community service for, the group against which they showed bias as a condition of probation or parole.
+<a href="https://web.archive.org/20221221161132/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=38636">Three other bills</a> from Frankel and his Democratic allies would create a state law enforcement training program to identify and track “hate-based intimidation,” allow K-12 students to report hate incidents through a preexisting tip line for school safety threats, and require colleges to collect hate-based intimidation reports through an online system that is already required by state law to collect reports on sexual assault. They would also require anyone convicted of a hate crime to take a class on, or conduct community service for, the group against which they showed bias as a condition of probation or parole.
 
 Combined, the bills would create additional tools for groups who feel threatened by violence, Frankel argued.
 
@@ -106,4 +106,3 @@ In a statement, Adam Garber, executive director of the gun control group Ceasefi
 “This is how we honor the memories of the 11 worshipers murdered that dark day five years ago — by saving innocent lives going forward,” he said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

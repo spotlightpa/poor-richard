@@ -57,7 +57,7 @@ At least one Democratic priority advanced. At the behest of state Senate Minorit
 
 State House Democrats have expressed skepticism of the plan, arguing those dollars should be used for <a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-legislature-budget-mental-health-funding-school-services/">adult mental health</a> care as originally planned.
 
-Additionally, the upper chamber has not advanced any of the state House’s educational priorities, including <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=0141">financial assistance</a> for local educator training programs or <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1067">allowing immigrants</a> with valid green cards or work authorizations to receive a state teaching certificate.
+Additionally, the upper chamber has not advanced any of the state House’s educational priorities, including <a href="https://web.archive.org/20230601225536/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=0141">financial assistance</a> for local educator training programs or <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1067">allowing immigrants</a> with valid green cards or work authorizations to receive a state teaching certificate.
 
 “They haven’t been in a rush to run any of our bills,” state Rep. Peter Schweyer (D., Lehigh) told Spotlight PA. “I’m not in a rush to run any of theirs.”
 
@@ -67,7 +67,7 @@ Additionally, the upper chamber has not advanced any of the state House’s educ
 
 Also stuck in neutral is <a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-state-related-university-lincoln-psu-pitt-temple-deadlock/">$640 million</a> in funding for Lincoln, Penn State, Pitt, and Temple universities. That funding is used to lower in-state tuition for Pennsylvania students.
 
-“For many of us, our future is on the line,” said Pitt sophomore Olivia Pinocci-Wrightsman at a news conference held by state House Democrats. State funding allows the school to cut tuition by up to <a href="https://www.publicsource.org/pa-state-budget-impasse-pitt-penn-state-temple-funding-tuition-discount-passhe/">$16,000</a> for Pennsylvania students.
+“For many of us, our future is on the line,” said Pitt sophomore Olivia Pinocci-Wrightsman at a news conference held by state House Democrats. State funding allows the school to cut tuition by up to <a href="https://web.archive.org/20230721015836/https://www.publicsource.org/pa-state-budget-impasse-pitt-penn-state-temple-funding-tuition-discount-passhe/">$16,000</a> for Pennsylvania students.
 
 Bills authorizing funding for the so-called state-related universities must pass with <a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-budget-temple-pitt-funding-guns-house-full-time-legislature/">a two-thirds majority</a> — a higher bar than that for most legislation. During summer budget negotiations, funding for only one of the schools, Lincoln University, passed the state House. It has yet to receive a vote in the state Senate.
 
@@ -76,4 +76,3 @@ State House Minority Leader Bryan Cutler (R., Lancaster) told reporters that dis
 “The vehicles are there, they can be amended and sent back or the House Democrats could choose to move them here,” he said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

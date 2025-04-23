@@ -18,7 +18,7 @@ topics = ["Coronavirus"]
 
 <i>This story was produced as part of a joint effort among [Spotlight PA](https://www.spotlightpa.org/), [LNP Media Group](https://lancasteronline.com/), [PennLive](https://www.pennlive.com/), [PA Post](https://papost.org/), and [WITF](https://www.witf.org/) to cover how Pennsylvania state government is responding to the coronavirus. [Sign up for Spotlight PA’s newsletter.](https://www.spotlightpa.org/newsletters)</i>
 
-The Pennsylvania State Police on Monday will begin enforcing the statewide shutdown for [all but “life-sustaining” businesses](https://www.inquirer.com/health/coronavirus/spl/pennsylvania-shutdown-lifesustaining-businesses-tom-wolf-shut-down-20200319.html) across the state, as Gov. Tom Wolf warned that emergency measures may last longer than initially anticipated.
+The Pennsylvania State Police on Monday will begin enforcing the statewide shutdown for [all but “life-sustaining” businesses](https://web.archive.org/20200320014656/https://www.inquirer.com/health/coronavirus/spl/pennsylvania-shutdown-lifesustaining-businesses-tom-wolf-shut-down-20200319.html) across the state, as Gov. Tom Wolf warned that emergency measures may last longer than initially anticipated.
 
 “I want to be honest with you, and what we face,” Wolf said during an early evening briefing with reporters. “What we are trying to do here is buy time … we cannot overload our health system.”
 

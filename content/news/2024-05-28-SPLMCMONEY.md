@@ -50,11 +50,11 @@ It sometimes leads them in different directions. During her primary, McClelland 
 
 “John has his beliefs. I have my beliefs,” McClelland said. “I think we have far more in common than we have differences, but we do have differences.”
 
-During the primary, McClelland defeated state Rep. Ryan Bizzarro (D., Erie), who largely focused his campaign on national issues and Garrity. The Republican is a longtime supporter of former President Donald Trump and spoke at a <a href="https://www.roxburynews.com/ltdv.php?v=10449">January 2021 rally</a> in Harrisburg that was organized to encourage state lawmakers to decertify the 2020 election results.
+During the primary, McClelland defeated state Rep. Ryan Bizzarro (D., Erie), who largely focused his campaign on national issues and Garrity. The Republican is a longtime supporter of former President Donald Trump and spoke at a <a href="https://web.archive.org/20240120024635/https://www.roxburynews.com/ltdv.php?v=10449">January 2021 rally</a> in Harrisburg that was organized to encourage state lawmakers to decertify the 2020 election results.
 
 McClelland, meanwhile, talked about expanding the Treasury’s oversight of state contracts. She wants to require companies in Pennsylvania to verify their supply chains are free of goods from countries with records of human rights abuses and deny them state contracts if they can’t show they’ve cut ties with these countries.<strong></strong>
 
-She also sharply criticized Garrity’s support for <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=577&#39;">a bill</a> — sponsored by a Democrat — that would create a statewide retirement plan option for employers who otherwise can’t afford to offer one. Employees would contribute to IRA accounts managed by a private third-party firm.
+She also sharply criticized Garrity’s support for <a href="https://web.archive.org/20240528113325/https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=577&#39;">a bill</a> — sponsored by a Democrat — that would create a statewide retirement plan option for employers who otherwise can’t afford to offer one. Employees would contribute to IRA accounts managed by a private third-party firm.
 
 McClelland said she believes it isn’t well-regulated, and said she plans to pitch an alternative.
 
@@ -73,4 +73,3 @@ Mikus said he thinks it’s unlikely that there will be any real attempts to kee
 “I think anybody that knows Erin McClelland knows that she has very strong views, and I don&#39;t think anybody&#39;s going to try and get her to change her positions on anything,” he said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

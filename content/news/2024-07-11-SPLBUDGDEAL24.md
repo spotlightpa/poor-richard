@@ -56,7 +56,7 @@ Still, the issue remained a top priority for state House Democrats. The final de
 
 State lawmakers did approve <a href="https://www.spotlightpa.org/statecollege/2024/04/agriculture-dairy-industry-shapiro-budget-fairlife-economic-development/">one of Shapiro’s key asks</a>: $500 million to provide grants or loans to developers or local government agencies so they can prepare sites for industrial or mixed-use projects.
 
-His administration will hand out $400 million to applicants, while the rest will be handled by <a href="https://dced.pa.gov/programs-funding/commonwealth-financing-authority-cfa/cfa-board-members/">a state board</a> with legislative appointees.
+His administration will hand out $400 million to applicants, while the rest will be handled by <a href="https://web.archive.org/20170613035255/https://dced.pa.gov/programs-funding/commonwealth-financing-authority-cfa/cfa-board-members/">a state board</a> with legislative appointees.
 
 Shapiro has argued the program will help make Pennsylvania more competitive as a location for economic projects with other states. State Senate Majority Leader Joe Pittman (R., Indiana) countered that quicker permits would be more helpful.
 
@@ -64,29 +64,29 @@ In the end, Pittman also got his wish, as lawmakers approved a streamlined proce
 
 ## State dollars for solar schools
 
-Lawmakers also agreed to fund a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1032">grant program</a> to help schools, community colleges, and technical schools pay for solar energy projects and levied <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=656">a new fee</a> on electric vehicles to raise revenue for road maintenance.
+Lawmakers also agreed to fund a <a href="https://web.archive.org/20230504115829/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1032">grant program</a> to help schools, community colleges, and technical schools pay for solar energy projects and levied <a href="https://web.archive.org/20230621210859/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=656">a new fee</a> on electric vehicles to raise revenue for road maintenance.
 
 The $25 million grant program will be administered by the Department of Community and Economic Development, and the money will be used to pay for equipment, permitting fees, and other related costs.
 
-The project is also designed to take advantage of federal tax credits for solar energy projects. State Rep. Elizabeth Fiedler (D., Philadelphia), the bill’s author, has estimated that these credits would cover <a href="https://www.pahouse.com/Fiedler/Solar4Schools">between 30% and 50% of installation costs</a> that aren’t covered by the state appropriation.
+The project is also designed to take advantage of federal tax credits for solar energy projects. State Rep. Elizabeth Fiedler (D., Philadelphia), the bill’s author, has estimated that these credits would cover <a href="https://web.archive.org/20240213064132/https://www.pahouse.com/Fiedler/Solar4Schools">between 30% and 50% of installation costs</a> that aren’t covered by the state appropriation.
 
-The legislature also approved a fixed, annual electric vehicle fee. Currently, electric vehicle users self-report the amount of energy they use to the Pennsylvania Department of Transportation and pay a tax <a href="https://www.revenue.pa.gov/Tax%20Rates/Pages/Alternative%20Fuels%20Tax%20Rates.aspx">based</a> on that amount.
+The legislature also approved a fixed, annual electric vehicle fee. Currently, electric vehicle users self-report the amount of energy they use to the Pennsylvania Department of Transportation and pay a tax <a href="https://web.archive.org/20210916203424/https://www.revenue.pa.gov/Tax%20Rates/Pages/Alternative%20Fuels%20Tax%20Rates.aspx">based</a> on that amount.
 
 Moving forward, EV users will be charged a flat fee: $200 in 2025, $250 in 2026, and then an amount determined by PennDOT annually. The revenue recouped will be used to pay for highway and bridge maintenance.
 
-Some environmental advocates and lawmakers pushed back against the bill, saying that it would disincentivize consumers from purchasing EVs, which emit fewer pollutants. However, the bills passed both chambers with <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=148">large</a> <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1443">majorities</a> as many lawmakers said they viewed the fee as an equitable payment for using the state’s roads. Pennsylvania funds road and bridge maintenance through a gas tax.
+Some environmental advocates and lawmakers pushed back against the bill, saying that it would disincentivize consumers from purchasing EVs, which emit fewer pollutants. However, the bills passed both chambers with <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=148">large</a> <a href="https://web.archive.org/20240710183639/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=1443">majorities</a> as many lawmakers said they viewed the fee as an equitable payment for using the state’s roads. Pennsylvania funds road and bridge maintenance through a gas tax.
 
 ## Political bickering over state-related funding may end
 
 Several changes to Pennsylvania’s higher education system also made it into the final deal, though the legislature did not adopt an ambitious overhaul of Pennsylvania’s higher education system pitched by Shapiro.
 
-Lawmakers approved <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=1150">a new scholarship program</a>, <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-college-affordability-legislature-budget/">proposed by Republicans</a>, that gives students in an “approved course of study,” like nursing or education, up to $5,000 per academic year. They must stay and work in Pennsylvania after graduation for 12 months per grant received.
+Lawmakers approved <a href="https://web.archive.org/20240611192114/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=S&amp;type=B&amp;bn=1150">a new scholarship program</a>, <a href="https://www.spotlightpa.org/news/2024/06/pennsylvania-college-affordability-legislature-budget/">proposed by Republicans</a>, that gives students in an “approved course of study,” like nursing or education, up to $5,000 per academic year. They must stay and work in Pennsylvania after graduation for 12 months per grant received.
 
 Shapiro wanted to combine the systems that oversee Pennsylvania’s 10 state-run universities and 15 community colleges and eventually cap tuition at $1,000 per semester for many families. That plan didn’t make it into the final deal, but lawmakers did agree to create a new State Board of Higher Education, which will develop strategic plans for the systems and recommend ways for schools to coordinate.
 
 That board will also include a new council tasked with making recommendations about how to assess performance and distribute funds to Pennsylvania’s four state-related universities: Lincoln, Penn State, Pitt, and Temple.
 
-The council is part of a plan to significantly change the way funding is approved for those schools. Currently, two-thirds of the legislature must approve the funding. Moving forward, the council will <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=1154&amp;pn=1819">come up with a new metric</a> to dole out funding based on performance. Lawmakers have directed council members to consider factors like graduation and student retention rates.
+The council is part of a plan to significantly change the way funding is approved for those schools. Currently, two-thirds of the legislature must approve the funding. Moving forward, the council will <a href="https://web.archive.org/20240712021941/https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&amp;sessYr=2023&amp;sessInd=0&amp;billBody=S&amp;billTyp=B&amp;billNbr=1154&amp;pn=1819">come up with a new metric</a> to dole out funding based on performance. Lawmakers have directed council members to consider factors like graduation and student retention rates.
 
 Approving funding for the state-related universities has become increasingly difficult in recent years. Using the two-thirds vote requirement, Republicans have blocked funding for political reasons, including protesting <a href="https://www.inquirer.com/politics/pennsylvania/spl/pa-pittsburgh-fetal-tissue-research-budget-20220629.html">fetal tissue research</a> conducted at the University of Pittsburgh and <a href="https://www.spotlightpa.org/news/2023/06/pa-education-spending-legislature-budget-josh-shapiro/">trans health care</a> provided by Penn State.
 
@@ -102,9 +102,9 @@ The budget also gives employers tax credits if they help employees pay for child
 
 The deal includes a bevy of tax credits targeted at politically popular industries and causes. Lawmakers approve such credits as <a href="https://www.spotlightpa.org/news/2023/06/pa-child-care-earned-income-tax-credit-legislature-budget-shapiro/">a compromise</a> instead of increasing state spending.
 
-The deal expands an existing credit for <a href="https://www.alleghenyfront.org/stronghold-digital-mining-bitcoin-waste-coal-power-plant-pennsylvania/">companies that burn waste coal</a> and creates a special zone in Erie — and possibly in other cities in the future — in which taxes paid by developers can instead be used to pay down any debt taken out to build in a pre-defined neighborhood.
+The deal expands an existing credit for <a href="https://web.archive.org/20221108102403/https://www.alleghenyfront.org/stronghold-digital-mining-bitcoin-waste-coal-power-plant-pennsylvania/">companies that burn waste coal</a> and creates a special zone in Erie — and possibly in other cities in the future — in which taxes paid by developers can instead be used to pay down any debt taken out to build in a pre-defined neighborhood.
 
-One loser? Cryptocurrency companies, which will no longer be eligible for a tax exemption <a href="https://penncapital-star.com/labor/pa-passed-a-tax-break-for-data-centers-now-crypto-miners-are-taking-advantage/">that encourages</a> the development of data centers in Pennsylvania.
+One loser? Cryptocurrency companies, which will no longer be eligible for a tax exemption <a href="https://web.archive.org/20230904165204/https://penncapital-star.com/labor/pa-passed-a-tax-break-for-data-centers-now-crypto-miners-are-taking-advantage/">that encourages</a> the development of data centers in Pennsylvania.
 
 {{<embed/donate>}}
 
@@ -117,4 +117,3 @@ The budget increases the amount of realty transfer tax revenue that goes to an <
 <em>Katie Meyer of Spotlight PA contributed reporting.</em>
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

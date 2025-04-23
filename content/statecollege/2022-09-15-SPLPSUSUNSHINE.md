@@ -23,17 +23,17 @@ topics = ["Penn State"]
 
 STATE COLLEGE — For more than a decade, some of the most powerful members of the Pennsylvania State University’s Board of Trustees have regularly met in private, actions that media law experts say may violate the state’s open meetings law.
 
-The board’s <a href="https://trustees.psu.edu/committee-membership/">executive committee</a> includes the chairs of other committees and university President Neeli Bendapudi, among others. Bendapudi is a non-voting member.
+The board’s <a href="https://web.archive.org/20201020153235/https://trustees.psu.edu/committee-membership/">executive committee</a> includes the chairs of other committees and university President Neeli Bendapudi, among others. Bendapudi is a non-voting member.
 
 The committee exists “to transact all necessary business” that could occur between regular meetings of the full board, according to board bylaws. The board’s governing documents require the committee’s meetings and agendas to be made public.
 
-Yet the committee’s last public meeting was more than a decade ago. Since then, the committee has used a provision of the <a href="https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/65/65.HTM">Pennsylvania Sunshine Act</a> — which determines public access to governing bodies — that allows officials to gather for “conferences” without public notice or other transparency measures.
+Yet the committee’s last public meeting was more than a decade ago. Since then, the committee has used a provision of the <a href="https://web.archive.org/20100611131055/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/65/65.HTM">Pennsylvania Sunshine Act</a> — which determines public access to governing bodies — that allows officials to gather for “conferences” without public notice or other transparency measures.
 
 The law says conferences can only take place in limited circumstances, primarily as a “training program or seminar, or any session arranged by State or Federal agencies” and never to deliberate business.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/?cta=Sign%20up%20for%20our%20new%20regional%20newsletter%2C%20%3Cb%3ETalk%20of%20the%20Town%3C%2Fb%3E%2C%20and%20get%20all%20the%20news%20and%20notes%20from%20State%20College%20and%20north-central%20PA.&button=Sign%20Up%20Now&preselect=state_college&eyebrow=DON'T%20MISS%20A%20BEAT"></div>
 
-Pennsylvania’s three other state-related universities — <a href="https://secretary.temple.edu/agendas-minutes/executive">Temple University</a>, <a href="https://www.trustees.pitt.edu/past-meeting-materials">University of Pittsburgh</a>, and <a href="https://www.lincoln.edu/_files/bot-meeting-minutes/Executive-Committee---April-30,-2020.pdf">Lincoln University</a> — have trustee executive committees that post public meeting minutes. Pennsylvania’s state-related universities are independently governed but receive some state funding.
+Pennsylvania’s three other state-related universities — <a href="https://web.archive.org/20200429185833/https://secretary.temple.edu/agendas-minutes/executive">Temple University</a>, <a href="https://web.archive.org/20220919040538/https://www.trustees.pitt.edu/past-meeting-materials">University of Pittsburgh</a>, and <a href="https://web.archive.org/20220917160723/https://www.lincoln.edu/_files/bot-meeting-minutes/Executive-Committee---April-30,-2020.pdf">Lincoln University</a> — have trustee executive committees that post public meeting minutes. Pennsylvania’s state-related universities are independently governed but receive some state funding.
 
 The University of Pennsylvania, a private university, also <a href="https://archives.upenn.edu/digitized-resources/docs-pubs/trustees-minutes/">makes available the minutes of its executive committee meetings</a>.
 
@@ -55,7 +55,7 @@ Because the gatherings are not open to the public and no official minutes are ta
 
 “There’s no records kept of it, and as long as they don’t break ranks, you’ll never know exactly what they said,” said Craig Staudenmaier, an attorney with Nauman Smith Shissler &amp; Hall and an expert in media law. “But it’s only human nature to start voicing an opinion or to start discussing it. The more discussion that goes, the closer and closer it gets to deliberation, in my opinion.”
 
-The committee’s last official meeting, a <a href="https://trustees.psu.edu/files/2020/02/december22011minutesbot.pdf">record of which is publicly available</a>, occurred Dec. 2, 2011, while the university grappled with the fallout of the Sandusky child sex abuse scandal. During the seven-minute meeting, the committee approved a previous board decision to accept Graham Spanier’s resignation as university president and to end Joe Paterno’s tenure as head football coach.
+The committee’s last official meeting, a <a href="https://web.archive.org/20210226104649/https://trustees.psu.edu/files/2020/02/december22011minutesbot.pdf">record of which is publicly available</a>, occurred Dec. 2, 2011, while the university grappled with the fallout of the Sandusky child sex abuse scandal. During the seven-minute meeting, the committee approved a previous board decision to accept Graham Spanier’s resignation as university president and to end Joe Paterno’s tenure as head football coach.
 
 Since then, the executive committee has continued to gather in private, with the full board voting in new members. The committee has gathered five times in 2022, according to information Harvey provided to Spotlight PA.
 
@@ -67,7 +67,7 @@ Fenchak told trustees he doubted the executive committee’s ability to responsi
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-The board’s <a href="https://trustees.psu.edu/board-and-committee-meetings-2022-23/">seven other committees</a> have all held public meetings in 2022, with agendas and minutes posted online.
+The board’s <a href="https://web.archive.org/20210224214139/https://trustees.psu.edu/board-and-committee-meetings-2022-23/">seven other committees</a> have all held public meetings in 2022, with agendas and minutes posted online.
 
 State courts have not provided a clear test to determine whether something is a meeting or a conference, Staudenmaier said. If a quorum of officials in a public body gathers, they have to demonstrate why the meeting should not be open, he said.
 

@@ -44,7 +44,7 @@ Such anxiety is not unfounded. A 2016 Pennsylvania law empowered private utility
 
 ## Little revenue, few repairs
 
-Charles Campbell founded Rock Spring in 1947 and passed down the water system to his children. The company’s <a href="https://www.puc.pa.gov/pcdocs/1827167.pdf">most recent annual report</a> lists one of them — J. Roy — as the current president, along with 11 other shareholders, several of them members of the Campbell family.
+Charles Campbell founded Rock Spring in 1947 and passed down the water system to his children. The company’s <a href="https://web.archive.org/20240621032706/https://www.puc.pa.gov/pcdocs/1827167.pdf">most recent annual report</a> lists one of them — J. Roy — as the current president, along with 11 other shareholders, several of them members of the Campbell family.
 
 The water was initially sourced from nearby streams to serve a group of local farmers. Those landowners eventually subdivided their properties, which now consist of neighborhoods.
 
@@ -96,7 +96,7 @@ In an email, Hagen-Frederiksen said the response was “issued by mistake and di
 
 Customers interviewed by Spotlight PA had various reasons for refraining from filing complaints. Some don’t want to cause trouble for Campbell or see their rates go up.
 
-Someone newer to the community was discouraged by the lack of action following a 2014 public meeting, which Ferguson Township officials helped facilitate with the Rock Spring owners and state officials. More than 100 customers attended, according to a <a href="https://www.twp.ferguson.pa.us/sites/g/files/vyhlif9771/f/uploads/26a_-_rswc_2-27-2014_meeting_memo.pdf">meeting memo</a>.
+Someone newer to the community was discouraged by the lack of action following a 2014 public meeting, which Ferguson Township officials helped facilitate with the Rock Spring owners and state officials. More than 100 customers attended, according to a <a href="https://web.archive.org/20240603121032/https://www.twp.ferguson.pa.us/sites/g/files/vyhlif9771/f/uploads/26a_-_rswc_2-27-2014_meeting_memo.pdf">meeting memo</a>.
 
 The conversation ended with Ferguson Township offering to assemble a voluntary committee to explore funding options for improvements, calculate the costs of repairs, and research new owners.
 
@@ -112,7 +112,7 @@ Andrew Place, a PUC commissioner from 2015 to 2020, said one complaint filed to 
 
 Rock Spring has remained under the same family’s ownership since 1947, but the company has entertained the idea of selling over the years.
 
-Its owners approached the State College Borough Water Authority in April 2008 about buying the company, but Rock Spring rescinded the offer two months later, per <a href="https://www.scbwa.org/sites/default/files/pages/history_of_state_college_water_system.pdf">public records</a>.
+Its owners approached the State College Borough Water Authority in April 2008 about buying the company, but Rock Spring rescinded the offer two months later, per <a href="https://web.archive.org/20220401192520/https://www.scbwa.org/sites/default/files/pages/history_of_state_college_water_system.pdf">public records</a>.
 
 The water authority commissioned a feasibility study, obtained by Spotlight PA, to evaluate Rock Spring’s infrastructure and calculate the cost of necessary repairs.
 
@@ -164,15 +164,15 @@ The average residential Rock Spring customer pays $19.35 monthly based on water 
 
 If another private company bought Rock Spring, customers could face steep increases. The engineering firm noted in its report that the family-owned business previously met with a larger utility company to discuss a sale. That would have resulted in $50 to $100 monthly bill increases.
 
-Customers in areas across the state have experienced higher bills due to legislation passed by the then-Republican-controlled legislature and signed by former Democratic Gov. Tom Wolf in 2016. The law, known as <a href="https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2016&amp;sessInd=0&amp;act=12">Act 12</a>, let investor-owned utilities <a href="https://whyy.org/articles/act-12-explained-customers-more-likely-to-see-rates-rise-with-pas-new-water-privatization-process/">bake the costs of buying a municipal system into PUC rate increase requests</a> for all customers, and created new rules for pricing water systems.
+Customers in areas across the state have experienced higher bills due to legislation passed by the then-Republican-controlled legislature and signed by former Democratic Gov. Tom Wolf in 2016. The law, known as <a href="https://web.archive.org/20160505191743/https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2016&amp;sessInd=0&amp;act=12">Act 12</a>, let investor-owned utilities <a href="https://web.archive.org/20201025050731/https://whyy.org/articles/act-12-explained-customers-more-likely-to-see-rates-rise-with-pas-new-water-privatization-process/">bake the costs of buying a municipal system into PUC rate increase requests</a> for all customers, and created new rules for pricing water systems.
 
 Lawmakers hoped the law would help distressed municipal systems and improve water service.
 
-Since Act 12 took effect, the commission has allowed private water companies to buy at least 21 local water and sewer systems, according to state officials. These acquisitions have resulted in rate increases ranging from 44.9% to 116.6%, PUC Chair Stephen DeFrank told lawmakers in <a href="https://www.pahouse.com/files/Documents/Testimony/2023-12-11_091351__Testimony%20on%201862,%201863,%201864,%201865.pdf">testimony</a> last year.
+Since Act 12 took effect, the commission has allowed private water companies to buy at least 21 local water and sewer systems, according to state officials. These acquisitions have resulted in rate increases ranging from 44.9% to 116.6%, PUC Chair Stephen DeFrank told lawmakers in <a href="https://web.archive.org/20240703022737/https://www.pahouse.com/files/Documents/Testimony/2023-12-11_091351__Testimony%20on%201862,%201863,%201864,%201865.pdf">testimony</a> last year.
 
 Patrick Cicero, Pennsylvania’s consumer advocate, has urged lawmakers to repeal Act 12 or at least add limitations to it, arguing the law has caused significant financial harm to customers with little public benefit.
 
-A group of state House lawmakers has introduced a <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41771">package of bills</a> that would cap the acquisition amount at 125% of the depreciated original cost and spread out any costs incurred by customers over time rather than all at once.
+A group of state House lawmakers has introduced a <a href="https://web.archive.org/20231218152354/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41771">package of bills</a> that would cap the acquisition amount at 125% of the depreciated original cost and spread out any costs incurred by customers over time rather than all at once.
 
 Act 12 would not apply if Rock Spring were sold to the State College Borough Water Authority or a private company because it is not a municipal system. Instead, increased bills would likely be attributed to capital costs to improve the system.
 
@@ -187,4 +187,3 @@ When a larger water company or municipal authority takes over operations, custom
 <em>Correction: This story has been updated to reflect Act 12’s impact on a potential acquisition of Rock Spring Water Company.</em>
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="http://spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

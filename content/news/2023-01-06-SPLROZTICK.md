@@ -118,7 +118,7 @@ Republicans still nominated Metzgar, and most of the rank-and-file GOP members v
 
 “I honestly don’t know what the leadership plan was,” the Republican added. “I watched it unfold on the floor as it happened. It was extremely confusing.”
 
-What unfolded was a two-candidate election: The state House chief clerk instructed members to press their green buttons for Rozzi, and the red ones for Metzgar. The entire Democratic caucus, plus 16 Republicans — some moderates, some wild cards, and all seven members of leadership — supported Rozzi. He won <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=4%5C">115-85.</a>
+What unfolded was a two-candidate election: The state House chief clerk instructed members to press their green buttons for Rozzi, and the red ones for Metzgar. The entire Democratic caucus, plus 16 Republicans — some moderates, some wild cards, and all seven members of leadership — supported Rozzi. He won <a href="https://web.archive.org/20230106200638/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=4%5C">115-85.</a>
 
 “We did not have enough votes” for Metzgar, said state Rep. George Dunbar (R., Westmoreland), the GOP caucus chair. “So Rep. Rozzi gave us an alternative.”
 
@@ -170,7 +170,7 @@ But even without legislative rules agreed to or a second voting session day in t
 
 It’s unclear whether such a maneuver would even be possible, as it would likely require Republican backing or Rozzi to vote for his own ouster.
 
-Still, Democrats across the political spectrum, from <a href="https://twitter.com/malcolmkenyatta/status/1610992988922216448?s=20&t=PPpxgEZE8eNYZRiDdBx4yw">progressives</a> to moderates, were already looking ahead to the outcome of the three pending special elections.
+Still, Democrats across the political spectrum, from <a href="https://web.archive.org/20230316062442/https://twitter.com/malcolmkenyatta/status/1610992988922216448?s=20&t=PPpxgEZE8eNYZRiDdBx4yw">progressives</a> to moderates, were already looking ahead to the outcome of the three pending special elections.
 
 “I am disappointed that Joanna McClinton was not named speaker,” state Rep. John Galloway (D., Bucks) told Spotlight PA. “Perhaps that will change as early as this March.”
 
@@ -194,7 +194,7 @@ In the days since his election, speculation has been rampant in Harrisburg about
 
 After the November election, Republicans indicated they’d hoped to use their likely temporary numerical advantage at the start of the session to <a href="https://www.spotlightpa.org/news/2022/12/republicans-pa-house-control-constitional-amendments-abortion/">pass major constitutional amendments</a>, including one that would require all voters to present ID at the polls.
 
-It’s not yet clear how Rozzi will handle those amendments, though he <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=H&rc_nbr=687">voted against</a> an omnibus bill containing all of them the first time they came before the chamber. He’s already moved on one Democratic priority: affirming McClinton’s chosen special election dates over Republicans’.
+It’s not yet clear how Rozzi will handle those amendments, though he <a href="https://web.archive.org/20211228232635/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2021&sess_ind=0&rc_body=H&rc_nbr=687">voted against</a> an omnibus bill containing all of them the first time they came before the chamber. He’s already moved on one Democratic priority: affirming McClinton’s chosen special election dates over Republicans’.
 
 One of Rozzi’s legislative priorities does seem clear: making sure the legislature sends to voters a constitutional amendment that would give adult survivors of child sexual abuse legal recourse.
 

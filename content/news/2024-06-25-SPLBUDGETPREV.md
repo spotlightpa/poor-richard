@@ -88,4 +88,3 @@ The state is bound by statute to pay its workers, cover debt payments, and conti
 Pittman and Bradford have insisted that a ticking clock won’t make them change their approach.
 
 “The test by which we judge the product is what is in it,” Bradford said.
-

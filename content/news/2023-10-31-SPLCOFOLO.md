@@ -34,7 +34,7 @@ Here are the key takeaways from our recent investigation:
 
 Pennsylvania&#39;s Election Code can be confusing and misleading. Many election directors told Spotlight PA and Votebeat that for someone to gain a full understanding of what is legal and what isn’t, they need to use secondary sources.
 
-Election directors around the commonwealth said they rely on a combination of subscription legal reference services like <a href="https://legal.thomsonreuters.com/en/westlaw">WestLaw</a>, their county solicitors, and an informal network of fellow election directors sharing advice.
+Election directors around the commonwealth said they rely on a combination of subscription legal reference services like <a href="https://web.archive.org/20210927233359/https://legal.thomsonreuters.com/en/westlaw">WestLaw</a>, their county solicitors, and an informal network of fellow election directors sharing advice.
 
 Lycoming County election director Forrest Lehman said the code was “incredibly complicated” to learn.
 
@@ -42,7 +42,7 @@ Lycoming County election director Forrest Lehman said the code was “incredibly
 
 Several court cases have significantly changed the way elections are run in Pennsylvania, though many of these precedents aren’t reflected in the Election Code.
 
-One of the most notorious examples relates to the enfranchisement of people convicted of felonies. The code still says that a person who has been in prison for a felony within the last five years <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&amp;ttl=25&amp;div=0&amp;chpt=13">cannot vote</a>, even though a 2000 Commonwealth Court ruling, <em>Mixon v. Commonwealth</em>, ruled this provision unconstitutional.
+One of the most notorious examples relates to the enfranchisement of people convicted of felonies. The code still says that a person who has been in prison for a felony within the last five years <a href="https://web.archive.org/20151013145938/https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&amp;ttl=25&amp;div=0&amp;chpt=13">cannot vote</a>, even though a 2000 Commonwealth Court ruling, <em>Mixon v. Commonwealth</em>, ruled this provision unconstitutional.
 
 ## That’s irrelevant
 
@@ -50,7 +50,7 @@ The world has changed a lot since 1937 — the last time the legislature underto
 
 One provision requires that a lantern or equivalent light source be placed in every polling place. This was written at a time when electricity was not universal, especially in rural areas.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/877151737?h=0d789173b0&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://web.archive.org/20231026111244/https://player.vimeo.com/video/877151737?h=0d789173b0&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 An entire section of the code is dedicated to “voting machines,” a reference to mechanically operated devices like lever-action voting machines that have not been in use in Pennsylvania for roughly two decades.
 
@@ -71,4 +71,3 @@ However, Act 77 created new code conflicts and questions. Attempts to fix these 
 Other academics who spoke with Spotlight PA and Votebeat noted that other states have had an easier time passing voting legislation because party demographics in the state lean strongly one way or the other, and therefore the majority party isn’t concerned with losing power.
 
 <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-code-voting-rules/"><strong>Read the complete investigation here</strong></a><strong>.</strong>
-

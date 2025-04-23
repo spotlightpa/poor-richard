@@ -24,13 +24,13 @@ topics = ["Coronavirus", "Español"]
   class="aspect-ratio-outer is-pulled-right"
   style="width: 250px; background-color: inherit;"
 >
-  <a href="https://presentepgh.com/en/home/"
+  <a href="https://web.archive.org/20210101015709/https://presentepgh.com/en/home/"
     class="aspect-ratio-middle"
     style='padding-bottom: 24.4%;'
   >
     <img
       class="aspect-ratio-inner"
-      src="https://files.data.spotlightpa.org/uploads/01g1/0vwk/presente.png"
+      src="https://web.archive.org/20210128041558/https://files.data.spotlightpa.org/uploads/01g1/0vwk/presente.png"
       alt="PRESENTE logo"
     />
   </a>
@@ -66,7 +66,7 @@ En una conferencia de prensa el jueves 11 de febrero, el gobernador Tom Wolf y e
 
 “Los adultos mayores de Pensilvania se han enfrentado a muchos desafíos a lo largo de esta pandemia y reconocemos la frustración y la ansiedad que experimentan los adultos mayores mientras esperan encontrar cita para vacunas o intentan localizar una”, dijo Torres.
 
-Las agencias del envejecimiento en el área (<a href="https://www.aging.pa.gov/local-resources/Pages/AAA.aspx">hay 52 de ellas, y puedes encontrar la más cercana aquí</a>) pueden ayudar a las personas mayores a programar citas a través de los sistemas de salud de los hospitales locales, dijeron las autoridades. La agencia para el envejecimiento del condado de Butler, dijo Torres, ha ayudado a más de 1,200 adultos a conseguir citas y organiza el transporte cuando es necesario.
+Las agencias del envejecimiento en el área (<a href="https://web.archive.org/20210101031137/https://www.aging.pa.gov/local-resources/Pages/AAA.aspx">hay 52 de ellas, y puedes encontrar la más cercana aquí</a>) pueden ayudar a las personas mayores a programar citas a través de los sistemas de salud de los hospitales locales, dijeron las autoridades. La agencia para el envejecimiento del condado de Butler, dijo Torres, ha ayudado a más de 1,200 adultos a conseguir citas y organiza el transporte cuando es necesario.
 
 “Una de las razones por las que esto funciona es que la agencia es informada por el sistema de salud sobre cuántas vacunas se asignan para los adultos mayores semanalmente y se actualiza diariamente si se abren citas que pueden aprovechar”, Torres dijo.
 
@@ -94,7 +94,7 @@ Esta es la realidad de la variante que surgió en el Reino Unido (que se ha esta
 
 “¿Es más grave el daño por la infección con estas nuevas variantes? Hasta ahora no hay pruebas sólidas, tal vez un poco de insinuación, pero parecen ser más o menos lo mismo”, dijo Bushman.
 
-Los ensayos clínicos aún tienen que demostrar si las vacunas existentes pueden frenar la propagación de todas las variantes de COVID-19, STAT, una edición de salud y ciencia, <a href="https://www.statnews.com/2021/02/05/what-scientists-know-variants-covid-19-vaccines/">informó</a> la semana pasada.
+Los ensayos clínicos aún tienen que demostrar si las vacunas existentes pueden frenar la propagación de todas las variantes de COVID-19, STAT, una edición de salud y ciencia, <a href="https://web.archive.org/20210205102206/https://www.statnews.com/2021/02/05/what-scientists-know-variants-covid-19-vaccines/">informó</a> la semana pasada.
 
 También se ha encontrado una variante local en una persona vacunada, dijo Bushman, “que parece que tal vez evolucionó para eludir la vacuna al menos un poco”.
 
@@ -114,11 +114,11 @@ Los funcionarios del Departamento de Salud han dicho en conferencias de prensa r
 
 Los miembros de esos grupos que tienen afecciones de alto riesgo, como cáncer, diabetes o afecciones cardíacas, son elegibles para vacunarse ahora en la Fase 1A.
 
-La lista completa de condiciones y más información sobre el método por fases del Estado están disponibles <a href="https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx">aquí</a> en el sitio web del Departamento de Salud.
+La lista completa de condiciones y más información sobre el método por fases del Estado están disponibles <a href="https://web.archive.org/20210116121649/https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx">aquí</a> en el sitio web del Departamento de Salud.
 
 ## ¿Por qué el progreso de las vacunas en Pennsylvania ha salido tan mal?
 
-Prácticamente todos los Estados se enfrentan a los mismos problemas que Pensilvania. Incluso en Alaska, el estado con mejor desempeño, <a href="https://www.nytimes.com/interactive/2020/us/covid-19-vaccine-doses.html">según un análisis del New York Times</a>, sólo el 21% de la población ha recibido al menos una inyección. (Pensilvania ha administrado las primeras dosis al 13% de su población, empatando con varios estados incluyendo New Jersey y Ohio al 22 de febrero).
+Prácticamente todos los Estados se enfrentan a los mismos problemas que Pensilvania. Incluso en Alaska, el estado con mejor desempeño, <a href="https://web.archive.org/20210101000241/https://www.nytimes.com/interactive/2020/us/covid-19-vaccine-doses.html">según un análisis del New York Times</a>, sólo el 21% de la población ha recibido al menos una inyección. (Pensilvania ha administrado las primeras dosis al 13% de su población, empatando con varios estados incluyendo New Jersey y Ohio al 22 de febrero).
 
 El principal desafío: el Suministro, desde la asignación hasta la llegada de las dosis, no es algo determinado por los estados, sino por el gobierno federal, que también puede cambiar su orientación sobre quién debería ser elegible en cualquier momento.
 

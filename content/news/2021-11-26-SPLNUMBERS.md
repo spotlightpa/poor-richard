@@ -69,7 +69,7 @@ A survey released in September of more than 1,100 child care providers in Pennsy
 
 - <b>$7,716 </b>is the typical in-state tuition for most undergraduate students in <a href="https://web.archive.org/20211126193703/https://www.passhe.edu/students/Pages/Cost.aspx">Pennsylvania’s State System of Higher Education</a>. That doesn’t include fees, housing plans, and other costs.
 
-- <b>$18.99</b> was the median hourly wage for all Pennsylvania occupations in 2019, <a href="https://cscce.berkeley.edu/workforce-index-2020/states/pennsylvania/">according to the Center for the Study of Child Care Employment.</a>
+- <b>$18.99</b> was the median hourly wage for all Pennsylvania occupations in 2019, <a href="https://web.archive.org/20210509224113/https://cscce.berkeley.edu/workforce-index-2020/states/pennsylvania/">according to the Center for the Study of Child Care Employment.</a>
 
 - <b>$13.96 </b>was the median hourly wage for Pennsylvania preschool teachers in 2019, according to the same group.
 

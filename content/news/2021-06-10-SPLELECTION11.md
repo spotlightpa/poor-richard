@@ -30,7 +30,7 @@ layout = ""
 extended-kicker = ""
 +++
 
-<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://web.archive.org/20201019151248/http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 Pennsylvania Republicans proposed a sweeping overhaul of the state’s election system Thursday, with lawmakers in the state House calling for stricter voter identification requirements, in-person early voting, signature verification of mail ballots, and other major changes.
 
@@ -42,7 +42,7 @@ State Rep. Seth Grove (R., York), chair of the House State Government Committee 
 
 For example, Republicans have long pushed stricter voter ID rules, saying they would prevent fraud. But there’s no evidence of widespread fraud, especially involving fake identities, and such rules can raise barriers for low-income and older voters, among others. Wolf said earlier this week that new voter ID requirements would be a non-starter. A Wolf spokesperson on Thursday called the bill “an extremist proposal” meant to undermine trust in elections and make voting more difficult.
 
-<a href="https://www.inquirer.com/politics/pennsylvania/pennsylvania-election-law-harrisburg-20201231.html">Election administration has become a highly charged political issue in Harrisburg</a> and across the country, with Democrats accusing Republicans of seeking to weaponize election rules to disenfranchise voters. Several GOP-controlled legislatures have<a href="https://www.nytimes.com/2021/03/23/us/politics/republican-voter-laws.html"> sought to tighten voting laws</a> in the wake of the 2020 election and former<a href="https://www.inquirer.com/politics/election/pennsylvania-election-results-trump-fraud-fact-check-20201206.html"> President Donald Trump’s lies about fraud and election rigging</a>.
+<a href="https://www.inquirer.com/politics/pennsylvania/pennsylvania-election-law-harrisburg-20201231.html">Election administration has become a highly charged political issue in Harrisburg</a> and across the country, with Democrats accusing Republicans of seeking to weaponize election rules to disenfranchise voters. Several GOP-controlled legislatures have<a href="https://www.nytimes.com/2021/03/23/us/politics/republican-voter-laws.html"> sought to tighten voting laws</a> in the wake of the 2020 election and former<a href="https://web.archive.org/20210108024942/https://www.inquirer.com/politics/election/pennsylvania-election-results-trump-fraud-fact-check-20201206.html"> President Donald Trump’s lies about fraud and election rigging</a>.
 
 Among the proposed changes:
 
@@ -76,7 +76,7 @@ The proposals would have a variety of effects on elections, which past experienc
 
 Wolf told reporters Thursday in Philadelphia that he’s open to any legislation “that increases access to voting.” But, he warned: “If it’s a voter suppression bill, I’ll veto it.”
 
-Pennsylvania’s Election Code was largely untouched for decades after its creation in 1937, until Republicans and Wolf agreed in 2019 to an overhaul which, among other changes,<a href="https://www.inquirer.com/politics/pennsylvania/pa-election-reform-deal-20191023.html"> allowed any voter to cast ballots by mail</a>.
+Pennsylvania’s Election Code was largely untouched for decades after its creation in 1937, until Republicans and Wolf agreed in 2019 to an overhaul which, among other changes,<a href="https://web.archive.org/20200103152609/https://www.inquirer.com/politics/pennsylvania/pa-election-reform-deal-20191023.html"> allowed any voter to cast ballots by mail</a>.
 
 That major change, taking effect during the 2020 election and the coronavirus pandemic, <a href="https://www.spotlightpa.org/news/2020/12/pennsylvania-election-2020-act-77-mail-voting-republican-audit/" target="_blank">revealed some of the weaknesses in the current system</a>, parts of which were outdated or entirely new. And it showed the dangers of moving too quickly without boosting Pennsylvania’s election infrastructure, which, like in other states, has long been underfunded.
 

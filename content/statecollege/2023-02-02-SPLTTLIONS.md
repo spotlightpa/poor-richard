@@ -23,7 +23,7 @@ topics = ["Penn State", "Transparency Tracker"]
 
 STATE COLLEGE — When a former Penn State student claimed responsibility for vandalizing the Lion Shrine last year, she also alleged inappropriate conduct including hazing by the Lion Ambassadors, a student group responsible for giving campus tours to prospective students.
 
-The university confirmed to <a href="https://onwardstate.com/2022/07/01/the-story-of-julia-cipparulo-her-motives-for-allegedly-vandalizing-penn-state/">Onward State</a> and the <a href="https://www.huntingdondailynews.com/daily_herald/news/woman-charged-in-penn-state-vandalism-case/article_91e9476a-2725-54c9-971a-a90e210d058d.html">Huntingdon Daily Herald</a> that Penn State had investigated the Lion Ambassadors for several months. As a result, “several organizational reforms” were put in place, and three students were removed from the program.
+The university confirmed to <a href="https://web.archive.org/20220701080010/https://onwardstate.com/2022/07/01/the-story-of-julia-cipparulo-her-motives-for-allegedly-vandalizing-penn-state/">Onward State</a> and the <a href="https://web.archive.org/20230202111100/https://www.huntingdondailynews.com/daily_herald/news/woman-charged-in-penn-state-vandalism-case/article_91e9476a-2725-54c9-971a-a90e210d058d.html">Huntingdon Daily Herald</a> that Penn State had investigated the Lion Ambassadors for several months. As a result, “several organizational reforms” were put in place, and three students were removed from the program.
 
 The Lion Ambassadors, however, do not show up on the university’s <a href="https://web.archive.org/20230202101931/https://universityethics.psu.edu/assets/uploads/documents/Penn-State-Antihazing-Report-January-2023-FINAL.pdf">mandated hazing report</a>, which details hazing violations that were reported between Jan. 1, 2018, and Dec. 20, 2022.
 
@@ -57,7 +57,7 @@ The <a href="https://web.archive.org/20230202111118/https://www.legis.state.pa.u
 
 “Further, I should note that the allegations of hazing were not substantiated through the investigation, so they wouldn’t be included in the anti-hazing report, as the report only lists substantiated allegations of hazing.
 
-“A list of student organizations can be found at <a href="https://orgcentral.psu.edu/">https://orgcentral.psu.edu/</a>. This website, however, does not differentiate between typical recognized student organizations and affiliate organizations.”
+“A list of student organizations can be found at <a href="https://web.archive.org/20190220125023/https://orgcentral.psu.edu/">https://orgcentral.psu.edu/</a>. This website, however, does not differentiate between typical recognized student organizations and affiliate organizations.”
 
 <b>Based on that information, here’s what you need to know:</b>
 

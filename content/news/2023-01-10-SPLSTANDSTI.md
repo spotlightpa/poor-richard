@@ -92,7 +92,7 @@ As the state House grappled over the rules, the state Senate advanced a number o
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-The chamber’s State Government Committee approved amendments that would expand voter ID requirements, give the legislature more power to override the governor’s regulations, and require the auditor general to perform annual election reviews. One Democrat, state Sen. Lisa Boscola of Lehigh County, <a href="https://www.legis.state.pa.us/cfdocs/legis/RCC/PUBLIC/listVoteSummary.cfm?sYear=2023&sInd=0&chamber=S&cteeCde=41&theDate=01/09/2023&RollCallId=8" target="_blank">voted</a> yes with all Republicans.
+The chamber’s State Government Committee approved amendments that would expand voter ID requirements, give the legislature more power to override the governor’s regulations, and require the auditor general to perform annual election reviews. One Democrat, state Sen. Lisa Boscola of Lehigh County, <a href="https://web.archive.org/20230110193518/https://www.legis.state.pa.us/cfdocs/legis/RCC/PUBLIC/listVoteSummary.cfm?sYear=2023&sInd=0&chamber=S&cteeCde=41&theDate=01/09/2023&RollCallId=8" target="_blank">voted</a> yes with all Republicans.
 
 State Senate President Pro Tempore Kim Ward (R., Westmoreland) declined to say when the abuse amendment would move in her chamber.
 

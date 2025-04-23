@@ -28,7 +28,7 @@ Municipal entities say the case, currently on appeal to the state Supreme Court,
 
 The pipes, drains, and gutters that make up stormwater systems are largely invisible to most people until something goes wrong, but they are critical to prevent flooding, property damage, and pollution.
 
-As Pennsylvania’s stormwater infrastructure — graded a “<a href="https://infrastructurereportcard.org/state-item/pennsylvania/">D</a>” by the American Society of Civil Engineers in 2022 — gets older and heavy rain becomes more frequent, maintaining deteriorating pipes and drains is getting harder and more expensive.
+As Pennsylvania’s stormwater infrastructure — graded a “<a href="https://web.archive.org/20170315200008/https://infrastructurereportcard.org/state-item/pennsylvania/">D</a>” by the American Society of Civil Engineers in 2022 — gets older and heavy rain becomes more frequent, maintaining deteriorating pipes and drains is getting harder and more expensive.
 
 The state doesn’t tell municipalities how to fund stormwater management, but the vast majority pay for projects out of their general budgets. However, those dollars are subject to competing demands and are unlikely to grow without an increase in local property taxes.
 
@@ -68,7 +68,7 @@ The Pennsylvania Farm Bureau and the state Department of Agriculture couldn’t 
 
 Municipalities argue that stormwater fees should apply to all properties that benefit from the projects funded, even those that are exempt from taxes.
 
-But in practice, the Pennsylvania government has <a href="https://www.pasenategop.com/news/yaw-commonwealth-refuses-to-pay-millions-in-municipal-stormwater-fees/">refused to pay millions of dollars</a> in fees for the properties it owns in the commonwealth.
+But in practice, the Pennsylvania government has <a href="https://web.archive.org/20230607200809/https://www.pasenategop.com/news/yaw-commonwealth-refuses-to-pay-millions-in-municipal-stormwater-fees/">refused to pay millions of dollars</a> in fees for the properties it owns in the commonwealth.
 
 That includes state-owned West Chester University, which sued the borough where it’s located after receiving a roughly $130,000 bill. In a lawsuit, it claimed the fee was actually a tax and therefore didn’t apply to it as a tax-exempt organization.
 
@@ -82,7 +82,7 @@ If a legal decision forces municipalities to find a new way to generate revenue 
 
 Should the high court rule against West Chester University, and compel the state and other tax-exempt organizations to pay municipal stormwater fees, Yencha said urban and suburban property owners might see some savings. But the change would likely be more helpful for farmers, he said.
 
-The legislature could also take action to compel the state and tax-exempt organizations to pay up. State Rep. Justin Fleming (D., Dauphin) has proposed <a href="https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2147">legislation</a> to do just that, arguing that stormwater management and waterway pollution are issues shared by communities statewide.
+The legislature could also take action to compel the state and tax-exempt organizations to pay up. State Rep. Justin Fleming (D., Dauphin) has proposed <a href="https://web.archive.org/20240405105632/https://www.legis.state.pa.us/cfdocs/billinfo/BillInfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2147">legislation</a> to do just that, arguing that stormwater management and waterway pollution are issues shared by communities statewide.
 
 He told Spotlight PA that he hasn’t heard opposition from lawmakers beyond arguments surrounding whether these charges count as a fee or tax.
 
@@ -94,9 +94,9 @@ In his work with municipalities, Yencha encourages elected officials to include 
 
 Combining a fee with a credit acknowledges that not every property owner relies on municipal stormwater systems or contributes the same amount of runoff, he said.
 
-When Ferguson Township in Centre County implemented its stormwater fee two years ago, the municipality included a <a href="https://www.twp.ferguson.pa.us/sites/g/files/vyhlif9771/f/uploads/2021-05_stormwater_fee_credit_policy_manual_0.pdf">credit program</a> that can help residents reduce their bills by 40% if they remove impervious surfaces from their land or implement other best management practices.
+When Ferguson Township in Centre County implemented its stormwater fee two years ago, the municipality included a <a href="https://web.archive.org/20230701114041/https://www.twp.ferguson.pa.us/sites/g/files/vyhlif9771/f/uploads/2021-05_stormwater_fee_credit_policy_manual_0.pdf">credit program</a> that can help residents reduce their bills by 40% if they remove impervious surfaces from their land or implement other best management practices.
 
-Silver Spring Township in Cumberland County offers agricultural property owners a chance to lower their stormwater bills by up to 90% under its <a href="https://www.sstwp.org/DocumentCenter/View/10423/Ag-Credit-Packet?bidId=">credit program</a>.
+Silver Spring Township in Cumberland County offers agricultural property owners a chance to lower their stormwater bills by up to 90% under its <a href="https://web.archive.org/20210613030903/https://www.sstwp.org/DocumentCenter/View/10423/Ag-Credit-Packet?bidId=">credit program</a>.
 
 Many farms already embrace practices that would possibly make them eligible for credits.
 
@@ -111,4 +111,3 @@ Yencha added that it’s probably best for municipalities to engage in this work
 “What’s interesting about these credit options is that there are similarities amongst them, but it’s everybody figuring this out on their own, which is unfortunate in a way,” Yencha said.
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

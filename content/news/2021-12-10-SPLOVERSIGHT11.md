@@ -59,9 +59,9 @@ Neighboring states have adopted similar strategies to remove police and prosecut
 
 In New Jersey, the attorney general’s office in 2019 established a public integrity and accountability office, which is responsible for selecting independent investigators, or performing investigations itself, into incidents involving deadly force or serious injury.
 
-In Delaware, the state <a href="https://attorneygeneral.delaware.gov/publictrust/">Division of Civil Rights and Public Trust</a> investigates use-of-force incidents by police.
+In Delaware, the state <a href="https://web.archive.org/20210101150136/https://attorneygeneral.delaware.gov/publictrust/">Division of Civil Rights and Public Trust</a> investigates use-of-force incidents by police.
 
-And the Maryland state legislature this year <a href="https://www.baltimoresun.com/politics/bs-prem-md-pol-new-policing-laws-20210927-3gfgxobypneo5kjdlo5to6hsv4-story.html">passed sweeping police reforms</a> that include tasking a division of the state attorney general’s office with investigating all fatalities involving police officers.
+And the Maryland state legislature this year <a href="https://web.archive.org/20210927090940/https://www.baltimoresun.com/politics/bs-prem-md-pol-new-policing-laws-20210927-3gfgxobypneo5kjdlo5to6hsv4-story.html">passed sweeping police reforms</a> that include tasking a division of the state attorney general’s office with investigating all fatalities involving police officers.
 
 The recommendations are significant but the degree to which the State Police and other agencies will cooperate and what happens next is unclear.
 

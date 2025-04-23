@@ -48,7 +48,7 @@ Ed Rendell, a former Democratic governor known for his dealmaking, said that Wol
 
 “The Republican Party today,” he continued, “basically doesn’t want government to function at all.”
 
-In public statements over the years, legislative Republicans <a href="https://www.repgrove.com/News/24064/Latest-News/House-Republican-Leadership,-Grove-Disappointed-Wolf-Declined-Public-Meeting-on-Redistricting">accused Wolf’s administration</a> of having “no interest in fulfilling one of the most basic functions of their responsibility” when Wolf declined to haggle over a congressional map; <a href="https://www.pahousegop.com/News/14810/Latest-News/House-Republican-Leaders-Respond-to-Wolf-Marijuana-Push-">disparaged</a> his push to legalize recreational marijuana as “irresponsible”; and at one point, said his COVID-19 measures were <a href="https://www.heraldmailmedia.com/story/news/2020/12/11/gov-wolf-do-not-cancel-christmas-pa-coronavirus-shutdowns-will-last-through-holidays/43650045/">canceling Christmas</a>.
+In public statements over the years, legislative Republicans <a href="https://web.archive.org/20220107002237/https://www.repgrove.com/News/24064/Latest-News/House-Republican-Leadership,-Grove-Disappointed-Wolf-Declined-Public-Meeting-on-Redistricting">accused Wolf’s administration</a> of having “no interest in fulfilling one of the most basic functions of their responsibility” when Wolf declined to haggle over a congressional map; <a href="https://www.pahousegop.com/News/14810/Latest-News/House-Republican-Leaders-Respond-to-Wolf-Marijuana-Push-">disparaged</a> his push to legalize recreational marijuana as “irresponsible”; and at one point, said his COVID-19 measures were <a href="https://www.heraldmailmedia.com/story/news/2020/12/11/gov-wolf-do-not-cancel-christmas-pa-coronavirus-shutdowns-will-last-through-holidays/43650045/">canceling Christmas</a>.
 
 Corman conceded that the GOP has gotten more partisan in the past decade, but insisted Wolf was also “a little more ideological” than previous governors.
 
@@ -72,7 +72,7 @@ There were “obviously a tough couple of years and a tough couple of budgets wh
 
 In Corman’s opinion, Wolf’s initial senior staff — which included his primary opponents Katie McGinty as chief of staff and John Hanger as policy and planning secretary — didn’t serve him well as advisors because they took a combative approach to dealing with the deeply Republican legislature.
 
-Still, in those first few years, Wolf signed laws that created the state’s <a href="https://6abc.com/medical-marijuana-pennsylvania/1295830/">medical marijuana program</a>, brought <a href="https://www.inquirer.com/philly/news/politics/20160609_Wolf_to_sign_bill_allowing_Pa__grocers_to_sell_wine.html">wine sales</a> into grocery stores, and <a href="https://whyy.org/articles/pa-pension-overhaul-will-become-law-but-the-problem-isnt-over/">shifted future state employees</a> onto a hybrid pension/401(k) retirement plan.
+Still, in those first few years, Wolf signed laws that created the state’s <a href="https://web.archive.org/20210724093151/https://6abc.com/medical-marijuana-pennsylvania/1295830/">medical marijuana program</a>, brought <a href="https://web.archive.org/20190721105540/https://www.inquirer.com/philly/news/politics/20160609_Wolf_to_sign_bill_allowing_Pa__grocers_to_sell_wine.html">wine sales</a> into grocery stores, and <a href="https://web.archive.org/20201026043118/https://whyy.org/articles/pa-pension-overhaul-will-become-law-but-the-problem-isnt-over/">shifted future state employees</a> onto a hybrid pension/401(k) retirement plan.
 
 The two sides found even bigger issues to work together on after a staffing shuffle, said Corman. Most importantly, Wolf brought in top advisors that included Mike Brunelle, who had served in the New Hampshire House of Representatives, and elevated longtime campaign operative Mary Isenhour to chief of staff.
 
@@ -86,7 +86,7 @@ He also worked quietly with Republicans to create billions of dollars in tax cre
 
 One of the most surprising and impactful deals Wolf helped cut with Republicans was Act 77, which instituted no-excuse mail voting and eliminated straight-ticket ballots.
 
-Members of the governor’s own party seethed about the straight-ticket concession, with one lawmaker <a href="https://www.penncapital-star.com/civil-rights-social-justice/wolf-makes-deal-for-election-reforms-angering-house-democrats/">calling</a> it a “betrayal of Democratic constituencies.”
+Members of the governor’s own party seethed about the straight-ticket concession, with one lawmaker <a href="https://web.archive.org/20191028231741/https://www.penncapital-star.com/civil-rights-social-justice/wolf-makes-deal-for-election-reforms-angering-house-democrats/">calling</a> it a “betrayal of Democratic constituencies.”
 
 “There were a lot of Democrats who were against giving up straight-ticket voting,” Wolf said in a December interview with Spotlight PA. “But I thought that what was on offer here from the Republicans was something that would increase turnout. We would actually increase access and make it easier to vote, and allow more people to actually take advantage of the franchise.”
 
@@ -120,7 +120,7 @@ But his heavy reliance on executive actions, <a href="https://www.spotlightpa.or
 
 “I’m going to be second-guessing myself until the day I die,” Wolf told Spotlight PA in December.
 
-Beyond becoming a villain to grassroots activists furious at public health orders (someone paid for sky banners <a href="https://www.phillymag.com/news/2020/05/26/tom-wolf-jersey-shore/">calling</a> him a “nerd king”), Wolf’s decisions strained his relationship with the General Assembly.
+Beyond becoming a villain to grassroots activists furious at public health orders (someone paid for sky banners <a href="https://web.archive.org/20200605131810/https://www.phillymag.com/news/2020/05/26/tom-wolf-jersey-shore/">calling</a> him a “nerd king”), Wolf’s decisions strained his relationship with the General Assembly.
 
 He vetoed a large number of GOP bills that would have reduced his authority to control the pandemic response, from how realtors could do their job to mask mandates for student-athletes to vaccine requirements for public services.
 
@@ -134,13 +134,13 @@ Cutler, a vocal critic of executive power who became state House speaker in 2020
 
 Wolf’s administration has also used the regulatory process to accomplish some of the governor’s priorities, including bringing the state into the Regional Greenhouse Gas Initiative to combat climate change. The program requires power plant owners to buy credits for every ton of carbon released into the atmosphere.
 
-The Republican legislature, backed by trade unions that represent coal-fired power plant workers, tried to block it. But Wolf refused to back down, and even engaged in some <a href="https://www.penncapital-star.com/working-the-economy/wolf-admin-used-state-grant-funding-as-leverage-during-debate-on-carbon-fee/">rare political hardball</a> to personally compel skeptical Democratic lawmakers to keep the program in place.
+The Republican legislature, backed by trade unions that represent coal-fired power plant workers, tried to block it. But Wolf refused to back down, and even engaged in some <a href="https://web.archive.org/20220104130458/https://www.penncapital-star.com/working-the-economy/wolf-admin-used-state-grant-funding-as-leverage-during-debate-on-carbon-fee/">rare political hardball</a> to personally compel skeptical Democratic lawmakers to keep the program in place.
 
 GOP lawmakers are now pursuing a constitutional amendment that would make it easier for the legislature to override such regulations.
 
 ## The power of the pen
 
-In some ways, <a href="https://www.legis.state.pa.us/cfdocs/legis/CL/Public/cl_view_action1.cfm?sess_yr=&sess_ind=0&cl_typ=BV&cl_nbr=">the dozens of bills Wolf rejected</a> during his time in office — more than 60 in all — were just as important to his legacy as those he signed.
+In some ways, <a href="https://web.archive.org/20220117175335/https://www.legis.state.pa.us/cfdocs/legis/CL/Public/cl_view_action1.cfm?sess_yr=&sess_ind=0&cl_typ=BV&cl_nbr=">the dozens of bills Wolf rejected</a> during his time in office — more than 60 in all — were just as important to his legacy as those he signed.
 
 He used his veto pen to block a proposed 20-week abortion ban, permitless concealed carry, and a sports ban that targeted transgender women and girls.
 

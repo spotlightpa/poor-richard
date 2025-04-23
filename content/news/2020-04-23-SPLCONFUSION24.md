@@ -48,7 +48,7 @@ The coronavirus surge in Pennsylvania has posed major technical challenges for t
 
 At the same time, the state’s coroners — tasked with investigating suspicious deaths — have <a href="https://www.spotlightpa.org/news/2020/04/pennsylvania-coronavirus-coroners-testing-communication-health-department/">grown increasingly frustrated</a> by the Health Department’s reluctance to seek their help.
 
-Some have said the department’s numbers did not match what coroners were seeing. Those concerns caught the attention of State Sen. Judy Ward (R., Blair), who is <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20190&cosponId=31646">advocating</a> for a bill that would give coroners a bigger role in the crisis.
+Some have said the department’s numbers did not match what coroners were seeing. Those concerns caught the attention of State Sen. Judy Ward (R., Blair), who is <a href="https://web.archive.org/20200426000349/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20190&cosponId=31646">advocating</a> for a bill that would give coroners a bigger role in the crisis.
 
 “There’s a discrepancy in the numbers,” Charles E. Kiessling Jr., president of the Pennsylvania Coroners Association and coroner in Lycoming County, said Thursday. “I’m not saying there’s something going on.... I’m not a conspiracy theory guy. But accuracy is important.”
 
@@ -60,7 +60,7 @@ In both cases, Levine said the surges reflected deaths that occurred days, even 
 
 “These deaths did not happen overnight,” Levine said Sunday.
 
-The jump that day, first <a href="https://whyy.org/articles/pa-underreported-18-of-covid-deaths-this-week-officials-blame-computer-glitches/">blamed on a computer glitch</a>, was explained as a “reconciliation” of multiple reporting systems and the “culmination of that data-validating effort.” Levine also said the “significant increase” included “probable positive” COVID-19 deaths, as well as deaths confirmed with a test.
+The jump that day, first <a href="https://web.archive.org/20200419085416/https://whyy.org/articles/pa-underreported-18-of-covid-deaths-this-week-officials-blame-computer-glitches/">blamed on a computer glitch</a>, was explained as a “reconciliation” of multiple reporting systems and the “culmination of that data-validating effort.” Levine also said the “significant increase” included “probable positive” COVID-19 deaths, as well as deaths confirmed with a test.
 
 On Tuesday, Levine reported 300 probable deaths in the day’s count but appeared to indicate the situation was new.
 

@@ -55,9 +55,9 @@ Krueger declined to comment when reached by Spotlight PA. Dermody, who lost a re
 
 Since fall 2017, as high-profile allegations of sexual harassment and assault forced a societal reckoning, Harrisburg has been rocked by a number of scandals but with few institutional reforms to show for it.
 
-In 2018, two women, including a fellow state representative, <a href="https://www.inquirer.com/philly/news/politics/state/rep-nick-miccarelli-allegations-sex-abuse-complaint-ridley-delaware-county-20180228.html">accused</a> then-state Rep. Nick Miccarelli (R., Delaware) of sexually and physically assaulting them. Miccarrelli <a href="https://www.delcotimes.com/2018/03/02/miccarelli-continues-to-deny-abuse-allegations-house-gop-leaders-calling-on-him-to-resign/">denied</a> the allegations.
+In 2018, two women, including a fellow state representative, <a href="https://web.archive.org/20190715213745/https://www.inquirer.com/philly/news/politics/state/rep-nick-miccarelli-allegations-sex-abuse-complaint-ridley-delaware-county-20180228.html">accused</a> then-state Rep. Nick Miccarelli (R., Delaware) of sexually and physically assaulting them. Miccarrelli <a href="https://www.delcotimes.com/2018/03/02/miccarelli-continues-to-deny-abuse-allegations-house-gop-leaders-calling-on-him-to-resign/">denied</a> the allegations.
 
-An investigation by the state House found that the allegations were <a href="https://www.inquirer.com/philly/news/breaking/rep-nick-miccarelli-pennsylvania-pa-house-investigation-accusers-credible-20180316.html">credible</a>, according to excerpts released by one of the women’s attorneys. However, chamber rules at the time did not mention sexual misconduct, and Republican leaders said they had no grounds to punish him.
+An investigation by the state House found that the allegations were <a href="https://web.archive.org/20200108171731/https://www.inquirer.com/philly/news/breaking/rep-nick-miccarelli-pennsylvania-pa-house-investigation-accusers-credible-20180316.html">credible</a>, according to excerpts released by one of the women’s attorneys. However, chamber rules at the time did not mention sexual misconduct, and Republican leaders said they had no grounds to punish him.
 
 {{<picture src="external/bx7rsa87bk6tr3t2c55871eq98.jpeg" description="Two sources told Spotlight PA that lawmakers including then-state House Minority Leader Frank Dermody (D., Allegheny) were approached at the time by a lobbyist who said Zabel inappropriately caressed her." caption="Two sources told Spotlight PA that lawmakers including then-state House Minority Leader Frank Dermody (D., Allegheny) were approached at the time by a lobbyist who said Zabel inappropriately caressed her." credit="Commonwealth Media Services">}} 
 
@@ -65,7 +65,7 @@ Republican leadership and several Democrats called for him to resign, but Miccar
 
 Amid this, Krueger became a leading voice on the issue, advocating for state Rep. Tarah Toohil (R., Luzerne), the lawmaker who accused Miccarelli of misconduct.
 
-She and Toohil <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2017&sind=0&body=H&type=B&bn=1965">introduced</a> a bipartisan bill in 2018 to create an independent Office of Compliance to receive, investigate, and resolve sexual harassment complaints within the state legislature.
+She and Toohil <a href="https://web.archive.org/20180509130251/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2017&sind=0&body=H&type=B&bn=1965">introduced</a> a bipartisan bill in 2018 to create an independent Office of Compliance to receive, investigate, and resolve sexual harassment complaints within the state legislature.
 
 The bill was referred to a committee controlled by state Rep. Rob Kauffman (R., Franklin). In lieu of voting on any policy changes, Kauffman’s panel advanced a resolution to study sexual harassment in state government —<a href="https://www.wesa.fm/politics-government/2018-06-19/house-votes-for-pair-of-workplace-sexual-misconduct-studies"> a decision that some Democrats decried as an effort to stall real reform</a>.
 
@@ -73,13 +73,13 @@ The <a href="http://jsg.legis.state.pa.us/resources/documents/ftp/publications/2
 
 The state House added a rule specifically barring sexual harassment by lawmakers in January 2019, but it only allowed fellow lawmakers and chamber employees to bring a complaint to the ethics committee.
 
-“The problem is evident: Our elected legislators are always working for the people of the commonwealth during their terms in office,” Shea Rhodes, a Villanova University law professor who specializes in sexual violence, wrote in <a href="https://cseinstitute.org/wp-content/uploads/2019/08/CSE-Institute-PA-GA-recs.pdf">a 2019 report</a>. “As such, it makes little sense to sharply delineate their sexual misconduct ‘in the workplace’ from their sexual misconduct elsewhere.”
+“The problem is evident: Our elected legislators are always working for the people of the commonwealth during their terms in office,” Shea Rhodes, a Villanova University law professor who specializes in sexual violence, wrote in <a href="https://web.archive.org/20220617091848/https://cseinstitute.org/wp-content/uploads/2019/08/CSE-Institute-PA-GA-recs.pdf">a 2019 report</a>. “As such, it makes little sense to sharply delineate their sexual misconduct ‘in the workplace’ from their sexual misconduct elsewhere.”
 
 In 2022, Republican lawmakers introduced legislation, privately backed by Perez, to <a href="https://www.spotlightpa.org/news/2022/06/pa-house-sexual-misconduct-allegations-rules-punishment/#:~:text=The%20resolution%2C%20authored%20by%20state%20Rep.%20Kate%20Klunk,of%20a%20sexual%20nature%E2%80%9D%20against%20state%20House%20employees.%5C">expand the rules</a> to allow more people to bring complaints against legislators, but it was not adopted. Both major parties blamed the other for the lack of action.
 
 Democratic leaders have said that <a href="https://www.spotlightpa.org/news/2023/03/pa-house-rules-sexual-harassment-committees-legislation/" target="_blank">chamber rules adopted earlier this year</a> will cover lobbyists like Perez. But the policy has yet to be tested and some Republicans have expressed doubt that it will be as expansive and effective as promised.
 
-The new <a href="https://www.house.state.pa.us/rules.cfm">rules</a> state that no lawmaker “shall engage in discrimination or harassment, including sexual harassment” against another member or “any individual while performing services or duties of the House; in or on House designated offices, property or facilities; or at a House-sponsored meeting or event.”
+The new <a href="https://web.archive.org/20190508023255/https://www.house.state.pa.us/rules.cfm">rules</a> state that no lawmaker “shall engage in discrimination or harassment, including sexual harassment” against another member or “any individual while performing services or duties of the House; in or on House designated offices, property or facilities; or at a House-sponsored meeting or event.”
 
 Democrats said the rules are written to cover any individual harassed by a lawmaker in the three scenarios laid out. Republicans have argued that, because of how the rule is written, lawmakers are only prevented from harassing any individual if they are doing state House business at official events or in the Capitol.
 

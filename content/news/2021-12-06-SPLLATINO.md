@@ -20,7 +20,7 @@ title = "Los Latinos de Pensilvania trabajan para convertir los enormes avances 
 topics = ["Redistricting", "Español"]
 +++
 
-<i>Traducción por </i><a href="https://www.qhubonews.com/"><i>Q’Hubo News</i></a><i>, una empresa de periódicos y multimedia en crecimiento en el centro de Pensilvania. Translation by Q’Hubo News, a growing Hispanic newspaper and multimedia company in central Pennsylvania.</i>
+<i>Traducción por </i><a href="https://web.archive.org/20210607020033/https://www.qhubonews.com/"><i>Q’Hubo News</i></a><i>, una empresa de periódicos y multimedia en crecimiento en el centro de Pensilvania. Translation by Q’Hubo News, a growing Hispanic newspaper and multimedia company in central Pennsylvania.</i>
 
 <i>A version of this story in English is available </i><a href="https://www.spotlightpa.org/news/2021/11/pa-redistricting-latino-representation-political-power/"><i>here</i></a><i>.</i>
 

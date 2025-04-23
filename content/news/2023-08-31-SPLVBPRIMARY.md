@@ -17,13 +17,13 @@ title-tag = "PA Senate proposes moving 2024 primary to March"
 topics = ["Elections"]
 +++
 
-<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
+<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://web.archive.org/20170521211815/https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
 
 HARRISBURG — A bill aiming to move up Pennsylvania’s position in the 2024 presidential primary calendar advanced out of a key committee in the state Senate this week, but officials say changing the date less than eight months before the election would present a host of logistical problems.
 
 The Senate State Government Committee unanimously approved a bill Wednesday that would move the primary up from April 23 to March 19, a change that would be effective only for next year’s election.
 
-The current primary date conflicts with the Jewish holiday of Passover, and the <a href="https://legiscan.com/RI/bill/H6309/2023">three</a> <a href="https://legis.delaware.gov/BillDetail?LegislationId=140467">other</a> <a href="http://www.washingtonjewishweek.com/maryland-primary-election-date-moved-avoiding-passover-2024/">states</a> that had primaries scheduled for the same day have already moved their dates. Some observant Jews would be unable to vote in person on the holiday.
+The current primary date conflicts with the Jewish holiday of Passover, and the <a href="https://web.archive.org/20230901005118/https://legiscan.com/RI/bill/H6309/2023">three</a> <a href="https://web.archive.org/20230609122112/https://legis.delaware.gov/BillDetail?LegislationId=140467">other</a> <a href="http://www.washingtonjewishweek.com/maryland-primary-election-date-moved-avoiding-passover-2024/">states</a> that had primaries scheduled for the same day have already moved their dates. Some observant Jews would be unable to vote in person on the holiday.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -67,7 +67,6 @@ The 2020 primary was moved from April to June due to concerns that year about in
 
 An earlier election date also poses a challenge for political campaigns. If the date were moved to March 19, the first date to circulate nomination petitions would be December 19. The April 2 date would set the first day for petitions on January 2.<br/><br/>Circulating nominating petitions over the winter holiday season — which requires volunteers to be out collecting signatures from voters — could pose challenges for campaigns, which Kenyatta said was the second major reason for amending the date in the House bill.
 
-Gov. Josh Shapiro — who has <a href="https://www.inquirer.com/politics/election/pennsylvania-election-passover-presidential-primary-20230412.html">said he does not want the primary to conflict with Passover</a> — <a href="https://www.post-gazette.com/news/politics-state/2023/08/20/lawmakers-pa-election-2024-primary-date/stories/202308170105">said earlier this month</a> that he was fine with whatever date the Legislature selects.
+Gov. Josh Shapiro — who has <a href="https://web.archive.org/20230413194207/https://www.inquirer.com/politics/election/pennsylvania-election-passover-presidential-primary-20230412.html">said he does not want the primary to conflict with Passover</a> — <a href="https://www.post-gazette.com/news/politics-state/2023/08/20/lawmakers-pa-election-2024-primary-date/stories/202308170105">said earlier this month</a> that he was fine with whatever date the Legislature selects.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

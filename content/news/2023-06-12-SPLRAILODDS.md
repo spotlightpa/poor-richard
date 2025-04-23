@@ -25,7 +25,7 @@ HARRISBURG — In the wake of a hazardous train derailment less than a mile from
 
 But the legislation already faces quiet resistance from the industry and its allies, who have questioned the legality of the proposed measure. State regulators, meanwhile, are uncertain about their capacity to enforce its requirements.
 
-<a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&sind=0&body=H&type=B&bn=1028">The measure</a> was introduced a few weeks after a 1.8-mile-long Norfolk Southern freight train derailed in East Palestine, Ohio, and spilled 100,000 gallons of hazardous chemicals. The spill caused mass evacuations and raised concerns about potential harm to people and the environment.
+<a href="https://web.archive.org/20230504090510/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&sind=0&body=H&type=B&bn=1028">The measure</a> was introduced a few weeks after a 1.8-mile-long Norfolk Southern freight train derailed in East Palestine, Ohio, and spilled 100,000 gallons of hazardous chemicals. The spill caused mass evacuations and raised concerns about potential harm to people and the environment.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -34,13 +34,13 @@ The bill’s opponents, including the Pennsylvania Chamber of Business and Indus
 
 “While state appellate courts have found past expansions of state-level rail safety regulation to be preempted under [federal law], left unresolved, the potential conflicts between [the bill] and these federal statutes could result in disruptions to operations in the state for the movement of goods and products necessary to sustain the economy,” the state chamber wrote to lawmakers.
 
-However, lawmakers from both parties in the narrowly Democratic-controlled state House rejected that argument, passing the bill <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=185">141-62</a> last week. It includes provisions that would restrict train length, mandate two-person train crews, and create a database of hazardous materials crossing the state by rail.
+However, lawmakers from both parties in the narrowly Democratic-controlled state House rejected that argument, passing the bill <a href="https://web.archive.org/20230605215818/https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&sess_ind=0&rc_body=H&rc_nbr=185">141-62</a> last week. It includes provisions that would restrict train length, mandate two-person train crews, and create a database of hazardous materials crossing the state by rail.
 
 “We can’t wait for federal regulations which always seemed to be in the works but never quite get done, or for federal laws that will never ever see the light of day,” bill sponsor and state Rep. Rob Matzie (D., Beaver) said on the state House floor. “We are the people’s house, ladies and gentlemen. That is who we serve. It’s time for extraordinary action.”
 
 The bill, also sponsored by state Rep. Jim Marshall (R., Beaver), would:
 
-- Require freight trains have at least a two-person crew. Railroad workers say this is a common practice, but not a fixed rule, and legislation would prevent companies from implementing <a href="https://www.freightwaves.com/news/fra-hears-clashing-views-from-railroads-unions-on-train-crew-size">one-person crews</a>.
+- Require freight trains have at least a two-person crew. Railroad workers say this is a common practice, but not a fixed rule, and legislation would prevent companies from implementing <a href="https://web.archive.org/20221221061642/https://www.freightwaves.com/news/fra-hears-clashing-views-from-railroads-unions-on-train-crew-size">one-person crews</a>.
 
 - Prohibit freight trains longer than 8,500 feet.
 
@@ -50,7 +50,7 @@ The bill, also sponsored by state Rep. Jim Marshall (R., Beaver), would:
 
 - Fine rail companies $10,000 if a train blocks an emergency vehicle at a crossing for 10 minutes or more.
 
-Pennsylvania’s proposed rules would apply only to “Class I” railroads, a federal designation for companies that earn <a href="https://www.stb.gov/reports-data/economic-data/">over $900 million</a> in revenue each year. The two Class I’s with active freight lines in Pennsylvania are Norfolk Southern and CSX.
+Pennsylvania’s proposed rules would apply only to “Class I” railroads, a federal designation for companies that earn <a href="https://web.archive.org/20211009050123/https://www.stb.gov/reports-data/economic-data/">over $900 million</a> in revenue each year. The two Class I’s with active freight lines in Pennsylvania are Norfolk Southern and CSX.
 
 {{<picture src="external/s54trpa96e912rx1f1p8cq805w.png" description="An aerial photo of the East Palestine, Ohio derailment site taken on February 24, 2023." caption="An aerial photo of the East Palestine, Ohio derailment site taken on February 24, 2023." credit="Office of Ohio Gov. Mike DeWine">}} 
 
@@ -60,11 +60,11 @@ The state Public Utility Commission would enforce the rules and could fine compa
 
 Whether the commission is up to the task is a separate question.
 
-At a late May <a href="https://pasenate.com/senate-dems-discuss-improving-railroad-safety-at-pittsburgh-hearing/">state Senate Democratic policy hearing</a> on railroad safety, PUC Vice Chair Stephen DeFrank argued his agency lacks the authority to enforce rules outside of those regulating railroad crossings.
+At a late May <a href="https://web.archive.org/20230609072333/https://pasenate.com/senate-dems-discuss-improving-railroad-safety-at-pittsburgh-hearing/">state Senate Democratic policy hearing</a> on railroad safety, PUC Vice Chair Stephen DeFrank argued his agency lacks the authority to enforce rules outside of those regulating railroad crossings.
 
 “Unfortunately, you know, a lot of this is preempted by the federal government and interstate commerce,” DeFrank told senators, citing a PUC legal review. (DeFrank is a former lobbyist who had Norfolk Southern as a client, according to state records.)
 
-However, Larry Mann, an attorney who helped write a 1970 federal law regulating railroads and has <a href="https://www.supremecourt.gov/DocketPDF/20/20-807/213407/20220207100232715_LEDURE%20%20AMICUS%20BRIEF.pdf">represented</a> railroad unions, disagreed. He argued that federal law preempts state law only on specific topics covered by existing rules.
+However, Larry Mann, an attorney who helped write a 1970 federal law regulating railroads and has <a href="https://web.archive.org/20220325214708/https://www.supremecourt.gov/DocketPDF/20/20-807/213407/20220207100232715_LEDURE%20%20AMICUS%20BRIEF.pdf">represented</a> railroad unions, disagreed. He argued that federal law preempts state law only on specific topics covered by existing rules.
 
 “If the Federal Railroad Administration has not regulated a subject matter, the states are free to do that,” Mann said.
 
@@ -80,9 +80,9 @@ A spokesperson for Democratic Gov. Josh Shapiro’s administration did not answe
 
 ## Railroads’ long lobbying history
 
-In the late 1800s, lobbyists for the Pennsylvania Railroad, one of the largest companies in the world at the time, were known as <a href="http://explorepahistory.com/story.php?chapter=1&storyId=1-9-10">the commonwealth’s 51st senator</a>. That company no longer exists, but the rail industry still holds sway in Harrisburg.
+In the late 1800s, lobbyists for the Pennsylvania Railroad, one of the largest companies in the world at the time, were known as <a href="https://web.archive.org/20111011111514/http://explorepahistory.com/story.php?chapter=1&storyId=1-9-10">the commonwealth’s 51st senator</a>. That company no longer exists, but the rail industry still holds sway in Harrisburg.
 
-In the past five years, Class I rail companies, as well as the <a href="https://www.keystonerail.com/railroads">Keystone State Railroad Association</a>, which represents 29 railroads of varying sizes including Norfolk Southern and CSX, have spent $2.6 million on lobbyists, public relations campaigns, and gifts to influence the Pennsylvania legislature, according to state records.
+In the past five years, Class I rail companies, as well as the <a href="https://web.archive.org/20230612091913/https://www.keystonerail.com/railroads">Keystone State Railroad Association</a>, which represents 29 railroads of varying sizes including Norfolk Southern and CSX, have spent $2.6 million on lobbyists, public relations campaigns, and gifts to influence the Pennsylvania legislature, according to state records.
 
 Norfolk Southern and CSX have also spent another $215,000 on campaign donations. About three-quarters of that money came from Norfolk Southern.
 
@@ -92,11 +92,11 @@ The checks tended to be relatively small — typically $500 or $1,000 each. Thre
 
 Paul Pokrowka, a Harrisburg locomotive engineer for Norfolk Southern and member of the labor union SMART, which represents railroad workers, has seen his employer’s influence at work.
 
-He’s lobbied the Pennsylvania General Assembly repeatedly to advance a two-person crew bill since 2015, when state Rep. Martina White (R., Philadelphia) <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2015&sInd=0&body=H&type=B&bn=1742">introduced</a> such a proposal.
+He’s lobbied the Pennsylvania General Assembly repeatedly to advance a two-person crew bill since 2015, when state Rep. Martina White (R., Philadelphia) <a href="https://web.archive.org/20160415201939/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2015&sInd=0&body=H&type=B&bn=1742">introduced</a> such a proposal.
 
 “If you want to get down to the brass tacks of why did it not advance? Politics. You know, inside baseball politics,” Pokrowka told Spotlight PA.
 
-But he’s seen a change since the East Palestine derailment, as lawmakers have taken notice of <a href="https://fivethirtyeight.com/features/railroad-safety-polls-east-palestine-train/#:~:text=A%20February%20YouGov%20poll%20conducted,favored%20no%20change%20at%20all.">renewed public interest</a> in regulating the industry.
+But he’s seen a change since the East Palestine derailment, as lawmakers have taken notice of <a href="https://web.archive.org/20230310133452/https://fivethirtyeight.com/features/railroad-safety-polls-east-palestine-train/#:~:text=A%20February%20YouGov%20poll%20conducted,favored%20no%20change%20at%20all.">renewed public interest</a> in regulating the industry.
 
 “So much goes on that the public has no idea about,” Pokrowka said. “But thankfully, this unfortunate tragedy is opening the eyes of the public and they’re becoming aware of the dangers that are maybe in their backyard.”
 

@@ -89,7 +89,7 @@ The university would not answer a question about whether campus police have or p
 
 Based on the information provided in the search warrants, a number of state laws were potentially violated.
 
-<a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=18&div=0&chpt=59&sctn=3&subsctn=0">Under Pennsylvania law</a>, it is at minimum a first-degree misdemeanor to “sell, lend, distribute, transmit, exhibit, give away or show any obscene materials to any person 18 years of age or older.” <a href="https://www.legis.state.pa.us/cfdocs/legis/li/consCheck.cfm?txtType=HTM&ttl=18&div=00.&chpt=075.&sctn=007.&subsctn=001.">Pennsylvania law also makes it a third-degree misdemeanor</a> for anyone to photograph or film someone without their consent while that person is fully or partially nude and in a place where the person would expect privacy.
+<a href="https://web.archive.org/20151016221838/https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=18&div=0&chpt=59&sctn=3&subsctn=0">Under Pennsylvania law</a>, it is at minimum a first-degree misdemeanor to “sell, lend, distribute, transmit, exhibit, give away or show any obscene materials to any person 18 years of age or older.” <a href="https://www.legis.state.pa.us/cfdocs/legis/li/consCheck.cfm?txtType=HTM&ttl=18&div=00.&chpt=075.&sctn=007.&subsctn=001.">Pennsylvania law also makes it a third-degree misdemeanor</a> for anyone to photograph or film someone without their consent while that person is fully or partially nude and in a place where the person would expect privacy.
 
 The law considers it a separate crime for each victim, or if the same victim is photographed or filmed on separate occasions. More than one violation of the law makes the crime a second-degree misdemeanor.
 
@@ -97,7 +97,7 @@ Spotlight PA asked whether campus police could determine that no minors were inv
 
 Penn State did provide limited information related to Title IX and Clery Act concerns.
 
-Title IX is a federal law barring sexual harassment or discrimination based on gender in all federally funded educational settings. Under<a href="https://policy.psu.edu/policies/ad85#"> Penn State’s Title IX policy</a>, coaches and assistant coaches are mandatory reporters if they learn of a potential violation.
+Title IX is a federal law barring sexual harassment or discrimination based on gender in all federally funded educational settings. Under<a href="https://web.archive.org/20171101235141/https://policy.psu.edu/policies/ad85#"> Penn State’s Title IX policy</a>, coaches and assistant coaches are mandatory reporters if they learn of a potential violation.
 
 Penn State<a href="https://web.archive.org/20220802205422/https://titleix.psu.edu/helpful-definitions/"> policy</a> defines sexual exploitation to include “non-consensual visual or audio recording of sexual activity; non-consensual display or distribution of photos, images or information of an individual’s sexual activity or intimate body parts,” among other things.
 
@@ -107,7 +107,7 @@ The university would not answer a follow-up request for a list of all offices th
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-The Clery Act, signed into law in 1990, requires universities and colleges to report crime statistics related to sexual assault, burglary, hate crimes, domestic violence, stalking, and intimidation, among others. The law requires Penn State to <a href="https://www.police.psu.edu/clery">send “timely warnings”</a> to its campuses when Clery Act offenses are reported.
+The Clery Act, signed into law in 1990, requires universities and colleges to report crime statistics related to sexual assault, burglary, hate crimes, domestic violence, stalking, and intimidation, among others. The law requires Penn State to <a href="https://web.archive.org/20131019054437/https://www.police.psu.edu/clery">send “timely warnings”</a> to its campuses when Clery Act offenses are reported.
 
 The university said it was “not aware of any Clery-reportable crimes associated with this investigation, and a timely warning is not required.”
 

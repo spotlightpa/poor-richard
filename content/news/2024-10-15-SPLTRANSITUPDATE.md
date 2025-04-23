@@ -51,9 +51,9 @@ If the authority doesn’t get additional funding, “We would have to start mov
 
 “We would be looking at fare increases of up to 30% coupled with service cuts of up to 20%,” Busch added.
 
-Transit agencies in neighboring states have faced similar funding challenges. New Jersey recently approved <a href="https://www.northjersey.com/story/news/transportation/2024/06/28/nj-corporate-tax-approved-ease-nj-transit-budget-woes/74223664007/">a new tax on corporate profits</a> to fill its commuter rail agency’s shortfall.
+Transit agencies in neighboring states have faced similar funding challenges. New Jersey recently approved <a href="https://web.archive.org/20240628204056/https://www.northjersey.com/story/news/transportation/2024/06/28/nj-corporate-tax-approved-ease-nj-transit-budget-woes/74223664007/">a new tax on corporate profits</a> to fill its commuter rail agency’s shortfall.
 
-New York City’s transit agency is facing budget woes after Democratic <a href="https://www.nytimes.com/2024/09/18/nyregion/mta-capital-plan-congestion-pricing.html">Gov. Kathy Hochul axed</a> a plan to tax drivers entering the city during periods of heavy traffic. While Hochul promised to fill in the $1 billion hole her decision created, legislators <a href="https://nysfocus.com/2024/08/09/hochul-congestion-pricing-traffic">ended their session</a> without a deal to do so.
+New York City’s transit agency is facing budget woes after Democratic <a href="https://web.archive.org/20240918153858/https://www.nytimes.com/2024/09/18/nyregion/mta-capital-plan-congestion-pricing.html">Gov. Kathy Hochul axed</a> a plan to tax drivers entering the city during periods of heavy traffic. While Hochul promised to fill in the $1 billion hole her decision created, legislators <a href="https://web.archive.org/20240809210310/https://nysfocus.com/2024/08/09/hochul-congestion-pricing-traffic">ended their session</a> without a deal to do so.
 
 Now, Pennsylvania’s legislators are poised to do the same.
 
@@ -71,9 +71,9 @@ Neither issue is neatly partisan, and skill games in particular divide state Sen
 
 The caucus hasn’t coalesced around a bill <a href="https://www.spotlightpa.org/news/2024/06/skill-games-budget-regulate-gambling-pennsylvania-transit/">that bridges its internal schism</a> over the right way to tax and regulate the games.
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=s&amp;type=b&amp;bn=706">proposal</a> from state Sen. Gene Yaw (R., Lycoming) would tax skill games at a 16% rate without oversight from the state’s gaming board, which is what operators want. Yaw, whose Williamsport-based district <a href="https://penncapital-star.com/government-politics/in-the-face-of-a-call-to-ban-skill-games-pa-s-biggest-player-is-pushing-back-hard/">includes a skill games manufacturer</a>, argues that the machines are a lifeline for small clubs and taverns struggling to stay afloat.
+A <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=s&amp;type=b&amp;bn=706">proposal</a> from state Sen. Gene Yaw (R., Lycoming) would tax skill games at a 16% rate without oversight from the state’s gaming board, which is what operators want. Yaw, whose Williamsport-based district <a href="https://web.archive.org/20230913071548/https://penncapital-star.com/government-politics/in-the-face-of-a-call-to-ban-skill-games-pa-s-biggest-player-is-pushing-back-hard/">includes a skill games manufacturer</a>, argues that the machines are a lifeline for small clubs and taverns struggling to stay afloat.
 
-Farry’s <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1142">bill</a> would impose a 32% tax rate and state gaming board control, an approach favored by skill games competitors including casinos and the makers of similar devices. Supporters say this approach would result in more tax revenue and prepare the commonwealth for any similar gaming device that enters the market.
+Farry’s <a href="https://web.archive.org/20240627164046/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=1142">bill</a> would impose a 32% tax rate and state gaming board control, an approach favored by skill games competitors including casinos and the makers of similar devices. Supporters say this approach would result in more tax revenue and prepare the commonwealth for any similar gaming device that enters the market.
 
 Farry called Yaw’s proposal a “giveaway” to skill games, but he said he doubts his bill will <a href="https://www.spotlightpa.org/news/2022/04/parx-casino-tommy-tomlinson-lobbyist-emails/">placate casinos</a>.
 
@@ -112,4 +112,3 @@ Neither Shapiro, state House Democrats, nor Senate Republicans commented on the 
 “I always remain optimistic until I have a reason not to,” he said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

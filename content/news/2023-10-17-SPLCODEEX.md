@@ -83,13 +83,13 @@ Such a bar requires state House Republican support, but the party has mostly opp
 
 To get around this position, the state House-passed fiscal code would create a grant program for “institutions of higher education”; the language makes only the four schools eligible.
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1456">separate bill</a> that would allocate $642 million to the grant program, a 7% bump for the schools compared to last year, passed the state House 115-88.
+A <a href="https://web.archive.org/20230925010446/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1456">separate bill</a> that would allocate $642 million to the grant program, a 7% bump for the schools compared to last year, passed the state House 115-88.
 
 {{<picture src="2023/10/01jj-v5gt-r92n-bgd6.jpeg" description="Democratic Gov. Josh Shapiro, joined by Lt. Gov. Austin Davis, signs the main budget bill in August." caption="Democratic Gov. Josh Shapiro, joined by Lt. Gov. Austin Davis, signs the main budget bill in August." credit="Commonwealth Media Services">}}
 
 ## Tax code
 
-State House Democrats have also advanced an original bill that would <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1219">rewrite the state’s tax laws</a>. The legislation includes several proposals championed by Republicans and business groups, including reducing the state’s corporate income taxes to 4.99% by 2026, rather than 2031 as currently planned. The bill would also double the cap on the operating losses corporations can deduct from their taxes to 80%, matching federal tax law.
+State House Democrats have also advanced an original bill that would <a href="https://web.archive.org/20231004202546/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=1219">rewrite the state’s tax laws</a>. The legislation includes several proposals championed by Republicans and business groups, including reducing the state’s corporate income taxes to 4.99% by 2026, rather than 2031 as currently planned. The bill would also double the cap on the operating losses corporations can deduct from their taxes to 80%, matching federal tax law.
 
 The proposal also mandates combined reporting, which applies to companies that are incorporated out-of-state, to capture more of their income in-state for tax purposes. It has been a top Democratic priority for years.
 
@@ -107,7 +107,7 @@ The Democrats’ tax code would also:
 
 - Increase state funding for public transit from 4.4% to 6.4% of annual sales tax revenue starting in 2024. An analysis by state House Democratic staff estimates that will boost state transit funding by $311 million next year.
 
-- Create a tax incentive in Reading that allows a developer’s state taxes to instead pay off construction-related debt within a yet-to-be-determined zone. The state already has established a similar improvement program in <a href="https://www.revenue.pa.gov/IncentivesCreditsPrograms/NIZ/Pages/default.aspx">Allentown</a>.
+- Create a tax incentive in Reading that allows a developer’s state taxes to instead pay off construction-related debt within a yet-to-be-determined zone. The state already has established a similar improvement program in <a href="https://web.archive.org/20210926133616/https://www.revenue.pa.gov/IncentivesCreditsPrograms/NIZ/Pages/default.aspx">Allentown</a>.
 
 - Expand the state’s film tax credit program by $50 million a year to $150 million.
 
@@ -117,13 +117,13 @@ The tax code passed the state House in a party-line 102-101 vote.
 
 ## School code
 
-As with the fiscal code, Democrats took a simple <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=27">school code</a> proposal from the upper chamber and expanded it with several priorities.
+As with the fiscal code, Democrats took a simple <a href="https://web.archive.org/20230921003721/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=27">school code</a> proposal from the upper chamber and expanded it with several priorities.
 
 State Senate Republicans passed a school code in September that would OK using $100 million in federal stimulus money on school mental health programs. It also proposes to change how the state distributes tens of millions of dollars in school safety grants. Republicans&#39; proposed system, backed by Shapiro, would give more power to the state Commission on Crime and Delinquency, which includes gubernatorial and legislative appointees. It passed unanimously.
 
-State House Democrats amended that bill and nearly doubled its length, adding in several new proposals. Most notably, the bill would expand two state tax credits, <a href="https://dced.pa.gov/programs/educational-improvement-tax-credit-program-eitc/">EITC</a> and <a href="https://dced.pa.gov/programs/opportunity-scholarship-tax-credit-program-ostc/">OSTC</a>, that give breaks to individuals or corporations who donate to private school scholarship funds. Those credits, which are GOP priorities, would grow from a combined $400 million to $550 million each year.
+State House Democrats amended that bill and nearly doubled its length, adding in several new proposals. Most notably, the bill would expand two state tax credits, <a href="https://web.archive.org/20161005133120/https://dced.pa.gov/programs/educational-improvement-tax-credit-program-eitc/">EITC</a> and <a href="https://web.archive.org/20170225054959/https://dced.pa.gov/programs/opportunity-scholarship-tax-credit-program-ostc/">OSTC</a>, that give breaks to individuals or corporations who donate to private school scholarship funds. Those credits, which are GOP priorities, would grow from a combined $400 million to $550 million each year.
 
-The proposal would also require that the Pennsylvania Department of Education collect and release data on scholarship recipients’ and applicants’ household income, disability status, and original school district, among other information — a measure aimed at making the <a href="https://whyy.org/articles/trapped-on-the-main-line-expensive-private-schools-that-benefit-from-pa-tax-credits-report-zero-low-income-students/">notoriously opaque</a> programs more transparent.
+The proposal would also require that the Pennsylvania Department of Education collect and release data on scholarship recipients’ and applicants’ household income, disability status, and original school district, among other information — a measure aimed at making the <a href="https://web.archive.org/20190626110619/https://whyy.org/articles/trapped-on-the-main-line-expensive-private-schools-that-benefit-from-pa-tax-credits-report-zero-low-income-students/">notoriously opaque</a> programs more transparent.
 
 In a <a href="https://web.archive.org/20231013214916/http://www.ifo.state.pa.us/download.cfm?file=Resources/Documents/Summary_Tax_Credit_Reviews_Oct_2023.pdf">report</a> last week, the Independent Fiscal Office, a legislative budget analysis agency, said that it was “unable to determine if the tax credit substantially enhances educational opportunities to all Pennsylvania students due to statutory limits on data that may be collected related to the program.”
 
@@ -141,7 +141,7 @@ The bill would also:
 
 - Create a state grant program for student teachers. The already passed budget authorized $10 million for such a program, but it is among the provisions that have been stalled without code bills.
 
-- Require the Pennsylvania Department of Education to distribute DNA sample kits to all parents with a child in first grade who request one. The kits are purported to help find lost children, but <a href="https://www.propublica.org/article/pennsylvania-rethinks-funding-child-id-kits">reporting</a> has suggested that they haven’t helped in any missing child cases.
+- Require the Pennsylvania Department of Education to distribute DNA sample kits to all parents with a child in first grade who request one. The kits are purported to help find lost children, but <a href="https://web.archive.org/20230728100752/https://www.propublica.org/article/pennsylvania-rethinks-funding-child-id-kits">reporting</a> has suggested that they haven’t helped in any missing child cases.
 
 - Create an online, statewide database of open school jobs through the state Department of Education.
 
@@ -152,4 +152,3 @@ The bill would also:
 The Democrat&#39;s expanded proposal passed the state House 106-97.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

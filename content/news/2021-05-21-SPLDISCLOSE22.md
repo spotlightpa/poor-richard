@@ -42,7 +42,7 @@ But for many lawmakers, 2020 was a banner year for staying home — and eschewin
 
 Public filings with the State Ethics Commission show that, with some exceptions, Pennsylvania’s 253 lawmakers did not report receiving anything of great value last year as the pandemic raged, forcing lockdowns and restrictions on travel and in-person gatherings.
 
-The few gifts of note came largely before the first cases of COVID-19 were reported in Pennsylvania in early March. Senate President Pro Tempore Jake Corman (R., Centre), for instance, reported receiving just over <a href="https://www.ethicsrulings.pa.gov/WebLink/DocView.aspx?id=419852&searchid=a2dd92eb-c4c6-475f-8817-d737e9699699&dbid=0&repo=EthicsLF8">$8,500 to attend conferences</a>, including $3,828 from the Pennsylvania Bar Association to go to its mid-year meeting in the Bahamas in late January.
+The few gifts of note came largely before the first cases of COVID-19 were reported in Pennsylvania in early March. Senate President Pro Tempore Jake Corman (R., Centre), for instance, reported receiving just over <a href="https://web.archive.org/20210521183633/https://www.ethicsrulings.pa.gov/WebLink/DocView.aspx?id=419852&searchid=a2dd92eb-c4c6-475f-8817-d737e9699699&dbid=0&repo=EthicsLF8">$8,500 to attend conferences</a>, including $3,828 from the Pennsylvania Bar Association to go to its mid-year meeting in the Bahamas in late January.
 
 Still, the push to ban elected officials from accepting gifts and other perks continues in the state legislature, despite the fact that past efforts have largely been met with indifference and near-total inaction.
 
@@ -54,11 +54,11 @@ Often, elected officials provide few details about a gift other than its worth a
 
 Over the past decade, state lawmakers have introduced bills calling for various types of bans. Many times, the legislation didn’t even get a hearing. A key state House committee <a href="https://whyy.org/articles/after-years-of-pressure-from-advocates-pa-house-advances-gift-ban/">did advance a measure to prohibit lawmakers</a> from accepting cash and limit other types of gifts in 2019, but the full chamber never took a vote.
 
-The gift-ban issue gained traction and urgency after a 2014 scandal that revealed some House members had <a href="https://www.inquirer.com/philly/news/20140316_Kane_shut_down_sting_that_snared_Phila__officials.html">accepted envelopes stuffed with cash</a> from an undercover informant posing as a lobbyist for law enforcement.
+The gift-ban issue gained traction and urgency after a 2014 scandal that revealed some House members had <a href="https://web.archive.org/20210126111522/https://www.inquirer.com/philly/news/20140316_Kane_shut_down_sting_that_snared_Phila__officials.html">accepted envelopes stuffed with cash</a> from an undercover informant posing as a lobbyist for law enforcement.
 
 Both chambers at the time clamored to change their rules to prohibit cash gifts, though that fervor dulled, and the issue got pushed to the legislative back-burner.
 
-Gov. Tom Wolf, a Democrat, signed an order when he took office in 2015 to <a href="https://www.pennlive.com/politics/2015/01/gov_tom_wolf_signs_gift_ban_le.html">ban members of the executive branch from accepting gifts</a> and once again urged lawmakers to do the same as part of his 2021 budget plan.
+Gov. Tom Wolf, a Democrat, signed an order when he took office in 2015 to <a href="https://web.archive.org/20210410191000/https://www.pennlive.com/politics/2015/01/gov_tom_wolf_signs_gift_ban_le.html">ban members of the executive branch from accepting gifts</a> and once again urged lawmakers to do the same as part of his 2021 budget plan.
 
 Activists with <a href="https://www.mohpa.org/" target="_blank">MarchOnHarrisburg</a> plan to put public pressure on Corman next month to bring a gift ban up for a vote. The grassroots group has pushed for a ban for years through some unusual means, including <a href="https://www.facebook.com/MarchOnHarrisburg2/posts/1174371349670078">raining down dollars labeled “bribe”</a> on lawmakers in the House chamber.
 

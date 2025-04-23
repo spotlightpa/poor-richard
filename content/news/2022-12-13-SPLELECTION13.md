@@ -23,7 +23,7 @@ title-tag = "PA election laws could change after House power shift"
 topics = ["The Capitol"]
 +++
 
-<i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>’s collaboration with </i><a href="https://web.archive.org/20170521211815/https://www.votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </i><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 HARRISBURG — Pennsylvania lawmakers agree on one thing: the commonwealth needs to rewrite its election laws.
 
@@ -43,11 +43,11 @@ Some of lawmakers’ big goals aren’t that controversial. Asked for a top prio
 
 “Those who have wanted to sow division and doubt in the integrity of our elections have blocked the most simple election reform we can do,” Bradford said. “Let’s pass that in a bipartisan way. God knows, we could pass it with 200 votes. Let’s get that done on day one.”
 
-Pre-canvassing, as the process is known, has garnered <a href="https://pennsylvania.votebeat.org/2022/5/12/23069219/pennsylvania-mail-ballot-counting-delayed-election-results">bipartisan support</a> from county officials. But 2021 legislation to allow it died after Republicans <a href="https://www.spotlightpa.org/news/2021/06/pa-election-law-voter-id-republican-proposal/">paired</a> the provision with new voter ID requirements and stricter registration and mail ballot application deadlines. <a href="https://www.spotlightpa.org/news/2021/06/pa-election-overhaul-voter-id-wolf-veto/">Wolf, citing those measures, vetoed the bill</a>.
+Pre-canvassing, as the process is known, has garnered <a href="https://web.archive.org/20220524025306/https://pennsylvania.votebeat.org/2022/5/12/23069219/pennsylvania-mail-ballot-counting-delayed-election-results">bipartisan support</a> from county officials. But 2021 legislation to allow it died after Republicans <a href="https://www.spotlightpa.org/news/2021/06/pa-election-law-voter-id-republican-proposal/">paired</a> the provision with new voter ID requirements and stricter registration and mail ballot application deadlines. <a href="https://www.spotlightpa.org/news/2021/06/pa-election-overhaul-voter-id-wolf-veto/">Wolf, citing those measures, vetoed the bill</a>.
 
 Under current state law, Pennsylvanians must show ID the first time they vote at a new polling place, though it does not have to be a photo ID. They also must provide a state ID number, or their Social Security number and a signature, in order to vote by mail.
 
-Expanding the current requirements to showing some form of ID every time someone votes in person, as is favored by Republicans, may not be the poison pill it once was. Democrats, and <a href="https://www.inquirer.com/politics/election/pennsylvania-voting-laws-2022-governor-election-20220125.html">most importantly incoming Gov. Josh Shapiro</a>, have recently said they are open to the proposal.
+Expanding the current requirements to showing some form of ID every time someone votes in person, as is favored by Republicans, may not be the poison pill it once was. Democrats, and <a href="https://web.archive.org/20220125154131/https://www.inquirer.com/politics/election/pennsylvania-voting-laws-2022-governor-election-20220125.html">most importantly incoming Gov. Josh Shapiro</a>, have recently said they are open to the proposal.
 
 A spokesperson for Shapiro’s transition team did not answer specific questions from Votebeat and Spotlight PA last week about his stance on new voter ID requirements or his other voting priorities, though during the campaign he released a <a href="https://joshshapiro.org/votingrights/">detailed list of policy proposals</a>.
 
@@ -55,9 +55,9 @@ A spokesperson for Shapiro’s transition team did not answer specific questions
 
 Wolf said something similar after vetoing Republicans’ election bill in 2021. In an interview with the Philadelphia Inquirer, he said that he was open to some form of stricter voter ID requirements provided that GOP lawmakers were negotiating in good faith.
 
-But “if you think the other side is basically just going through a sham, just trying to … go through the motions but really doesn’t mean it, that’s not a real negotiation,” <a href="https://www.inquirer.com/politics/election/pennsylvania-voter-id-tom-wolf-interview-20210720.html">Wolf said</a> at the time.
+But “if you think the other side is basically just going through a sham, just trying to … go through the motions but really doesn’t mean it, that’s not a real negotiation,” <a href="https://web.archive.org/20210720193524/https://www.inquirer.com/politics/election/pennsylvania-voter-id-tom-wolf-interview-20210720.html">Wolf said</a> at the time.
 
-Last session, House Democratic Leader Joanna McClinton (D., Philadelphia) proposed her own election code rewrite — <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=36510">a 66-page omnibus bill</a> named after the first Black House speaker, K. Leroy Irvis. In an email last week, a spokesperson for McClinton said that the bill “may be introduced in a different format” in the upcoming session.
+Last session, House Democratic Leader Joanna McClinton (D., Philadelphia) proposed her own election code rewrite — <a href="https://web.archive.org/20211116195535/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20210&cosponId=36510">a 66-page omnibus bill</a> named after the first Black House speaker, K. Leroy Irvis. In an email last week, a spokesperson for McClinton said that the bill “may be introduced in a different format” in the upcoming session.
 
 The bill would have instituted 21 days of pre-canvassing and required statewide use of electronic poll books, which advocates hope would provide quicker check-ins at polling places and more accurate voting records compared with traditional paper poll books.
 
@@ -65,7 +65,7 @@ But Democrats like McClinton and Shapiro won’t have total control of the polic
 
 “We will work across the aisle when necessary to advance issues important in this commonwealth,” said newly minted Senate Majority Leader Joe Pittman (R., Indiana). “But we will also defend the principles and beliefs of those who have elected us to serve them here in the state Senate.”
 
-Senate President Pro Tempore Kim Ward (R., Westmoreland) pointed to the election deal that Wolf and the GOP General Assembly cut in June as a “very good move.” The bill eliminated private, outside funding for election administration in return for more state funding for counties, as well as a requirement that counties start counting mail ballots on Election Day and <a href="https://pennsylvania.votebeat.org/2022/11/10/23451220/act-88-continuous-mail-ballot-counting">not stop</a> until they’d finished.
+Senate President Pro Tempore Kim Ward (R., Westmoreland) pointed to the election deal that Wolf and the GOP General Assembly cut in June as a “very good move.” The bill eliminated private, outside funding for election administration in return for more state funding for counties, as well as a requirement that counties start counting mail ballots on Election Day and <a href="https://web.archive.org/20221110155028/https://pennsylvania.votebeat.org/2022/11/10/23451220/act-88-continuous-mail-ballot-counting">not stop</a> until they’d finished.
 
 Ward also named passing stricter voter ID laws as a top priority for Senate Republicans.
 
@@ -79,7 +79,7 @@ Other Democrats, such as Georgia’s Stacey Abrams, have warmed up to some expan
 
 If paired with early voting, automatic voter registration upon turning 18, and same-day registration to ease the process of signing up new voters, she thinks there could be room for a deal. Many of those items are also things Shaprio mentioned during his campaign.
 
-Legislators are lining up ahead of the session to get support for their election law proposals. In recent days lawmakers have introduced co-sponsorship memos — a call for colleagues to support upcoming legislation — on <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=37869">implementing pre-canvassing</a>, removing the <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=37915">date requirement on mail ballots</a>, expanding <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=38166">Voter ID</a> requirements, and <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20230&cosponId=37949">repealing mail-in voting</a>, among other proposals.
+Legislators are lining up ahead of the session to get support for their election law proposals. In recent days lawmakers have introduced co-sponsorship memos — a call for colleagues to support upcoming legislation — on <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=37869">implementing pre-canvassing</a>, removing the <a href="https://web.archive.org/20221213163841/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=37915">date requirement on mail ballots</a>, expanding <a href="https://web.archive.org/20221213163857/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20230&cosponId=38166">Voter ID</a> requirements, and <a href="https://web.archive.org/20221202145150/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&SPick=20230&cosponId=37949">repealing mail-in voting</a>, among other proposals.
 
 However, it’s too soon to say what a deal that can pass the House, Senate, and earn Shapiro’s signature would look like, added state Sen. David Argall (R., Schuylkill), who chaired the Senate State Government Committee last session, helping to craft election legislation.
 
@@ -101,7 +101,7 @@ Topping that list again is pre-canvassing, Executive Director Lisa Schaffer said
 
 She said counties would also like to see the one-time funding the state provided this year though Act 88 become a recurring stream. Counties also need clarification from the legislature on hot-button issues such as ballot drop boxes and undated mail ballots.
 
-Decisions about providing drop boxes — or not — are currently up to counties, leading to a patchwork of different policies on the boxes across the state. Whether <a href="https://pennsylvania.votebeat.org/2022/11/28/23482842/undated-ballot-mail-voting-rejection-disparity">mail ballots without dates</a> should be counted has led to several rounds of litigation, with an uncertain legal fate ahead.
+Decisions about providing drop boxes — or not — are currently up to counties, leading to a patchwork of different policies on the boxes across the state. Whether <a href="https://web.archive.org/20221128214525/https://pennsylvania.votebeat.org/2022/11/28/23482842/undated-ballot-mail-voting-rejection-disparity">mail ballots without dates</a> should be counted has led to several rounds of litigation, with an uncertain legal fate ahead.
 
 Like most people, though, Schaffer is waiting until the session starts to see what changes are possible.
 

@@ -30,7 +30,7 @@ The issue has extra weight this budget cycle thanks to a February Commonwealth C
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
 
-Many Republicans, and some Democrats who represent districts with lots of <a href="https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a> public schools, have argued that vouchers should be part of that fix, and have championed them as a way to give parents more control over their kids’ education.
+Many Republicans, and some Democrats who represent districts with lots of <a href="https://web.archive.org/20230627152243/https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a> public schools, have argued that vouchers should be part of that fix, and have championed them as a way to give parents more control over their kids’ education.
 
 Many Democrats oppose vouchers completely, arguing that the approach weakens public schools by diverting funding and undermines the goal of creating a system that can serve all students. Shapiro and several other key Democratic state House leaders are notable exceptions.
 
@@ -40,7 +40,7 @@ Two of the organizations that successfully sued over the way Pennsylvania’s ed
 
 In Pennsylvania, one prominent voucher scheme <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=PDF&sessYr=2023&sessInd=0&billBody=S&billTyp=B&billNbr=0795&pn=0902">is known as the lifeline scholarship program</a>.
 
-First introduced in the last legislative session and re-introduced last week, the bill would require districts with schools categorized as “<a href="https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” to annually notify families that their kids qualify for lifeline scholarships.
+First introduced in the last legislative session and re-introduced last week, the bill would require districts with schools categorized as “<a href="https://web.archive.org/20230627152243/https://casetext.com/statute/pennsylvania-statutes/statutes-unconsolidated/title-24-ps-education/chapter-1-public-school-code-of-1949/article-xx-b-educational-tax-credits/section-20-2002-b-definitions">low-achieving</a>” to annually notify families that their kids qualify for lifeline scholarships.
 
 These scholarships would be financed with state money and awarded on a first-come-first-served basis to eligible students who apply. If a family opted to use one, the Pennsylvania Treasury would put money into an account for the student to use on nonpublic school tuition, associated fees, or special education fees.
 
@@ -76,11 +76,11 @@ A broad group of unions that represent teachers, state workers. and building tra
 
 “Tuition vouchers in any form redirect taxpayer resources that could be used to support public schools and the students they serve to private and religious schools,” they wrote. “Pennsylvania has a moral and constitutional responsibility to fund its existing system of public education.”
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&sind=0&body=S&type=B&bn=795">bill</a> that would create a lifeline scholarship program in Pennsylvania is awaiting consideration in the Senate Education Committee.
+A <a href="https://web.archive.org/20230628124520/https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2023&sind=0&body=S&type=B&bn=795">bill</a> that would create a lifeline scholarship program in Pennsylvania is awaiting consideration in the Senate Education Committee.
 
 Asked Wednesday about plans for the bill, state Sen. Dave Argall (R., Schuylkill), who chairs the committee, said the measure is “still under discussion.”
 
-That same day, <a href="https://twitter.com/PASenateGOP/status/1671500463928406019?t=LlB3aBuX0WwwVw1jEUo5UA&s=19">the chamber</a> tweeted that its highest-ranking member, state Senate President Pro Tempore Kim Ward (R., Westmoreland), “is ready to make Lifeline Scholarships — and increasing current tax credit programs — her top priority.”
+That same day, <a href="https://web.archive.org/20230625180549/https://twitter.com/PASenateGOP/status/1671500463928406019?t=LlB3aBuX0WwwVw1jEUo5UA&s=19">the chamber</a> tweeted that its highest-ranking member, state Senate President Pro Tempore Kim Ward (R., Westmoreland), “is ready to make Lifeline Scholarships — and increasing current tax credit programs — her top priority.”
 
 The commonwealth’s influential teachers’ unions have been particularly active in pushing back against lifeline scholarships.
 
@@ -103,7 +103,7 @@ The office of state House Speaker Joanna McClinton (D., Philadelphia) also decli
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 
-In the past, McClinton has supported similar public school alternatives such as <a href="https://whyy.org/articles/at-panel-discussion-fiery-calls-to-rally-black-support-for-charter-growth/">charter school expansion</a> and <a href="https://www.poconorecord.com/story/news/politics/state/2017/02/20/lawmaker-pushes-for-more-school/22423047007/">tax breaks to companies</a> that provide private school scholarships.
+In the past, McClinton has supported similar public school alternatives such as <a href="https://web.archive.org/20200424120418/https://whyy.org/articles/at-panel-discussion-fiery-calls-to-rally-black-support-for-charter-growth/">charter school expansion</a> and <a href="https://web.archive.org/20230628124226/https://www.poconorecord.com/story/news/politics/state/2017/02/20/lawmaker-pushes-for-more-school/22423047007/">tax breaks to companies</a> that provide private school scholarships.
 
 State Rep. Pete Schweyer (D., Lehigh), who chairs his chamber’s Education Committee, told Spotlight PA that he “fundamentally” opposes lifeline scholarships and believes it would be a mistake to route state money into public school alternatives when the courts have said the public school system itself needs funding.
 

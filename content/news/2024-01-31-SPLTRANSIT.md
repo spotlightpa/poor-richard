@@ -42,9 +42,9 @@ State Senate Majority Leader Joe Pittman (R., Indiana) said that an expansion in
 
 Richard Farr — chair of the government affairs committee of the Pennsylvania Public Transportation Association, a trade organization that lobbies on behalf of agencies — told Spotlight PA that all transit systems in the commonwealth, regardless of size, will exhaust their federal stimulus dollars within the coming year and be left with hard choices.
 
-The impending fiscal cliff isn’t just a Pennsylvania problem. Nationally, two-thirds of transit agencies predict budget deficits by 2025, according to a <a href="https://t4america.org/2023/01/31/transit-fiscal-cliff-or-transit-fiscal-doom/">survey</a> by Transportation for America, a think tank based in Washington, D.C.
+The impending fiscal cliff isn’t just a Pennsylvania problem. Nationally, two-thirds of transit agencies predict budget deficits by 2025, according to a <a href="https://web.archive.org/20230131215429/https://t4america.org/2023/01/31/transit-fiscal-cliff-or-transit-fiscal-doom/">survey</a> by Transportation for America, a think tank based in Washington, D.C.
 
-But in recent weeks, <a href="https://whyy.org/articles/septa-possible-service-cuts-fare-hike-fall-funding-critical/">both SEPTA</a> and <a href="https://www.unionprogress.com/2024/01/23/pittsburgh-regional-transit-to-follow-through-with-1-5-service-cuts-next-month/">Pittsburgh Regional Transit</a>, or PRT, have threatened or begun to implement service cuts.
+But in recent weeks, <a href="https://web.archive.org/20240126001713/https://whyy.org/articles/septa-possible-service-cuts-fare-hike-fall-funding-critical/">both SEPTA</a> and <a href="https://web.archive.org/20240123113006/https://www.unionprogress.com/2024/01/23/pittsburgh-regional-transit-to-follow-through-with-1-5-service-cuts-next-month/">Pittsburgh Regional Transit</a>, or PRT, have threatened or begun to implement service cuts.
 
 “We are all traveling in the same stream,” Farr told Spotlight PA. “We&#39;re just in different parts of the stream going the same direction.”
 
@@ -66,7 +66,7 @@ From wages to gasoline to insurance, agencies’ fixed costs have ballooned in r
 
 {{<picture src="2024/01/01jv-k18d-qx8y-fgj3.jpeg" description="A Rabbittransit bus in Harrisburg." caption="A Rabbittransit bus in Harrisburg. Transit agencies around Pa. say they expect financial struggles as stimulus dollars run out." credit="Commonwealth Media Services">}}
 
-Mary Buchanan, research manager at the New York City-based transit think tank <a href="https://transitcenter.org/team/">TransitCenter, said protecting agencies from service cuts is critical, </a>as most transit agencies rely on a volatile and often regressive funding structure.
+Mary Buchanan, research manager at the New York City-based transit think tank <a href="https://web.archive.org/20161208080800/https://transitcenter.org/team/">TransitCenter, said protecting agencies from service cuts is critical, </a>as most transit agencies rely on a volatile and often regressive funding structure.
 
 This can be seen in Pennsylvania’s current transit system, in which state sales tax revenue is dispensed to agencies using a formula that includes total ridership as one of four factors that determine how much their funding increases each year.
 
@@ -76,7 +76,7 @@ This happened during the Great Recession and the COVID-19 pandemic, Buchanan sai
 
 Dori Knobloch, a 49-year-old Erie resident, saw this instability firsthand. Whether she’s heading to the mall, a volunteer site, or a downtown bar to catch a concert, she relies on the Erie Metropolitan Transit Authority, or EMTA, for about three round trips a week.
 
-That’s less than she used to. Before the pandemic, the EMTA ran all weekend. But <a href="https://www.goerie.com/story/news/politics/government/2022/03/02/emta-awarded-2-25-million-bipartisan-infrastructure-bill-covid-19-relief/6688500001/">as a cost-saving measure</a>, the agency cut Sunday trips from its schedule. Knobloch, who uses a wheelchair, had a much quieter social calendar following the adjustment.
+That’s less than she used to. Before the pandemic, the EMTA ran all weekend. But <a href="https://web.archive.org/20220302043646/https://www.goerie.com/story/news/politics/government/2022/03/02/emta-awarded-2-25-million-bipartisan-infrastructure-bill-covid-19-relief/6688500001/">as a cost-saving measure</a>, the agency cut Sunday trips from its schedule. Knobloch, who uses a wheelchair, had a much quieter social calendar following the adjustment.
 
 “It kind of gave away my freedom,” Knoblock told Spotlight PA. She couldn’t make it to church and accompanying social events until her denomination added a Saturday service two years later, she said.
 
@@ -94,7 +94,7 @@ After Shapiro released his funding proposal, Pittman said in a statement that �
 
 In a statement to Spotlight PA, state Sen. Wayne Langerholc (R., Cambria), chair of his chamber’s Transportation Committee and a former district attorney, agreed that transit’s challenges include curbing crime, and did not specifically back any additional funding.
 
-He highlighted legislation addressing that concern, pointing to <a href="https://www.spotlightpa.org/news/2023/12/pennsylvania-criminal-justice-clean-slate-probation-legislature-crime-septa/">a recent law</a> creating a special prosecutor to tackle crime committed on SEPTA and <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=329">a state Senate proposal</a> to create a new felony for interfering with transit operations. Krasner is <a href="https://www.inquirer.com/transportation/septa-crimes-authority-lawsuit-larry-krasner-philadelphia-20240111.html">challenging</a> the former in court; the latter passed the state Senate 47-1 and is awaiting action in a state House committee.
+He highlighted legislation addressing that concern, pointing to <a href="https://www.spotlightpa.org/news/2023/12/pennsylvania-criminal-justice-clean-slate-probation-legislature-crime-septa/">a recent law</a> creating a special prosecutor to tackle crime committed on SEPTA and <a href="https://web.archive.org/20240131214919/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=329">a state Senate proposal</a> to create a new felony for interfering with transit operations. Krasner is <a href="https://web.archive.org/20240111152842/https://www.inquirer.com/transportation/septa-crimes-authority-lawsuit-larry-krasner-philadelphia-20240111.html">challenging</a> the former in court; the latter passed the state Senate 47-1 and is awaiting action in a state House committee.
 
 “Without the rule of law, our businesses, students and tourists have valid safety concerns, which continue to threaten the sustainability of public transportation,” Langerholc said.
 
@@ -151,4 +151,3 @@ Walking that tightrope, Schoch continued, requires leadership and direction. For
 Shapiro will give his budget address on Feb. 6. The state Senate returns to voting session that week, and the state House returns on March 17.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

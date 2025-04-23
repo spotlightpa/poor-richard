@@ -20,7 +20,7 @@ title = "Angered by Pa. Supreme Court rulings, GOP moves to exert more control o
 topics = ["The Capitol"]
 +++
 
-<i>This article is made possible through </i><a href="http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
+<i>This article is made possible through </i><a href="https://web.archive.org/20201019151248/http://votebeat.org/"><i>Votebeat</i></a><i>, a nonpartisan reporting project covering local election integrity and voting access. This article is available for reprint under the terms of </i><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><i>Votebeat’s republishing policy</i></a><i>.</i>
 
 HARRISBURG — A state House panel narrowly advanced a measure Wednesday aimed at giving the Republican-controlled legislature the power to draw districts for electing appellate court judges in Pennsylvania, a major shift away from the current statewide contests.
 
@@ -48,13 +48,13 @@ Republicans for months have accused the majority-Democrat state Supreme Court of
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/?teaser_text=Spotlight%20PA%20provides%20essential%2C%20public-service%20journalism%20thanks%20to%20readers%20like%20you.%20Help%20us%20continue%20that%20work."></div>
 
-In 2018, after the high court struck down a congressional map that justices said was gerrymandered to give Republicans an unfair political advantage, several GOP lawmakers called for Democrats on the bench <a href="https://apnews.com/article/8d8215c8e34b42198222ae5b00c0ca9d">to be impeached</a>. A Republican state lawmaker again <a href="https://triblive.com/news/pennsylvania/state-rep-calls-for-impeachment-of-supreme-court-justice-wecht/">called for Justice David Wecht, a Democrat, to be impeached</a> in October in response to the court’s ruling on several election-related cases, and its upholding of Wolf’s emergency COVID-19 declaration.
+In 2018, after the high court struck down a congressional map that justices said was gerrymandered to give Republicans an unfair political advantage, several GOP lawmakers called for Democrats on the bench <a href="https://web.archive.org/20201101083525/https://apnews.com/article/8d8215c8e34b42198222ae5b00c0ca9d">to be impeached</a>. A Republican state lawmaker again <a href="https://web.archive.org/20201010083107/https://triblive.com/news/pennsylvania/state-rep-calls-for-impeachment-of-supreme-court-justice-wecht/">called for Justice David Wecht, a Democrat, to be impeached</a> in October in response to the court’s ruling on several election-related cases, and its upholding of Wolf’s emergency COVID-19 declaration.
 
 Rep. Tim Briggs (D., Montgomery), the committee’s minority chair, said groups like Fair Districts PA, the Pennsylvania Law Association, and other legal organizations are concerned “about attacking [the courts’ judicial] independence because of decisions that have been made regarding congressional redistricting, regarding the governor’s public health mitigation efforts, regarding decisions based on this most recent election.”
 
-Diamond first introduced the amendment in 2019, but the concept of letting lawmakers draw districts for judges has been considered periodically since at least 1989, when Senate President Pro Tempore Jake Corman’s father, former Republican Sen. Doyle Corman, <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=1989&sind=0&body=S&type=B&bn=1300">introduced a similar amendment.</a>
+Diamond first introduced the amendment in 2019, but the concept of letting lawmakers draw districts for judges has been considered periodically since at least 1989, when Senate President Pro Tempore Jake Corman’s father, former Republican Sen. Doyle Corman, <a href="https://web.archive.org/20210113201628/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=1989&sind=0&body=S&type=B&bn=1300">introduced a similar amendment.</a>
 
-Unlike a bill, <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=11">constitutional amendments</a> don’t go to the governor for approval or veto. Instead, they have to pass the legislature twice in consecutive sessions before going to voters for consideration.
+Unlike a bill, <a href="https://web.archive.org/20210113233517/https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=11">constitutional amendments</a> don’t go to the governor for approval or veto. Instead, they have to pass the legislature twice in consecutive sessions before going to voters for consideration.
 
 In a statement, Gov. Tom Wolf called the proposed amendment “another effort by Harrisburg Republicans to prevent the will of the people from being heard by stopping all Pennsylvanians from having a voice in selecting judges for the highest courts in the state.”
 

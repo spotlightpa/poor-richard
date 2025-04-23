@@ -31,7 +31,7 @@ But this year, Pennsylvania Society (scheduled for this weekend) is expected to 
 
 One reason for this year’s scaled-down version, organizers say, is the pandemic, which has curbed interest in travel and crowded indoor gatherings. 
 
-COVID-19 concerns are why Democratic candidate for governor, Attorney General Josh Shapiro, <a href="https://www.pennlive.com/news/2021/12/the-pennsylvania-society-returns-this-year-to-nyc-but-with-far-less-hoopla.html" target="_blank">isn’t attending</a>, a spokesperson told PennLive. Several Republican candidates for the executive office, however, will make the journey, including Senate President Pro Tempore Jake Corman (R., Centre) and former U.S. Rep Lou Barletta. 
+COVID-19 concerns are why Democratic candidate for governor, Attorney General Josh Shapiro, <a href="https://web.archive.org/20211202135059/https://www.pennlive.com/news/2021/12/the-pennsylvania-society-returns-this-year-to-nyc-but-with-far-less-hoopla.html" target="_blank">isn’t attending</a>, a spokesperson told PennLive. Several Republican candidates for the executive office, however, will make the journey, including Senate President Pro Tempore Jake Corman (R., Centre) and former U.S. Rep Lou Barletta. 
 
 Another reason for lower attendance is the shift in the event’s main location in recent years, from the storied ballroom of the Waldorf-Astoria to the far more sober party rooms of the Midtown Hilton. Since the Waldorf closed for multi-year renovations, attendees have openly grumbled that Pennsylvania Society has lost its allure.
 
@@ -41,7 +41,7 @@ Edward J. Sheehan Jr., its president, doesn’t think so. In an interview, he sa
 
 “We seek diversity and inclusion,” said Sheehan, who also is president and CEO of Concurrent Technologies Corporation, an applied scientific research and development organization based in Johnstown. “One way to do that is to bring people together to talk … and exchange ideas.”
 
-Pennsylvania Society dates back to 1899, according to the organization’s <a href="https://www.pasociety.com/history">website</a>. That year, Pennsylvanian James Barr Ferree, living in New York City at the time, invited 55 other transplants to dine at the Waldorf-Astoria. His goal: to unite Pennsylvanians “at home and away from home in bonds of friendship and devotion to their native or adopted state.”
+Pennsylvania Society dates back to 1899, according to the organization’s <a href="https://web.archive.org/20210227221253/https://www.pasociety.com/history">website</a>. That year, Pennsylvanian James Barr Ferree, living in New York City at the time, invited 55 other transplants to dine at the Waldorf-Astoria. His goal: to unite Pennsylvanians “at home and away from home in bonds of friendship and devotion to their native or adopted state.”
 
 They met for dinner every year at the same time and place, and were initially known as The Pennsylvania Society of New York.
 
@@ -59,7 +59,7 @@ Sheehan disagrees.
 
 He said that the New York dinner is one of the biggest fundraisers for the society, and that its proceeds allow the group and its partners to award college scholarships to Pennsylvania high schoolers.
 
-Sheehan also noted that the society annually honors exceptional service by a Pennsylvania resident with its Gold Medal award. This year, <a href="https://www.pasociety.com/2021goldmedalist">Philadelphia surgeon Ala Stanford</a> is the recipient.
+Sheehan also noted that the society annually honors exceptional service by a Pennsylvania resident with its Gold Medal award. This year, <a href="https://web.archive.org/20211202053936/https://www.pasociety.com/2021goldmedalist">Philadelphia surgeon Ala Stanford</a> is the recipient.
 
 That spirit of inclusion, he said, defines the society’s mission and event.
 

@@ -65,7 +65,7 @@ The strategic pivot worked. Their proposal sailed through the General Assembly w
 
 That plan was derailed when former Democratic Gov. Tom Wolf’s administration announced it <a href="https://www.spotlightpa.org/news/2021/05/pa-child-sex-abuse-legal-window-wolf-admin-blunder-report-findings/">had failed to advertise the proposed amendment</a> in newspapers across the state as required. Legislators thus had to start the process over from scratch.
 
-The General Assembly approved the proposal again — with <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=0014">slightly different wording</a> that eliminated immunity for government agencies like schools — in 2021, setting it up for final passage and a referendum this year.
+The General Assembly approved the proposal again — with <a href="https://web.archive.org/20210205205409/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=0014">slightly different wording</a> that eliminated immunity for government agencies like schools — in 2021, setting it up for final passage and a referendum this year.
 
 But survivors faced yet another twist in their journey when the Pennsylvania House flipped to Democratic control after the November 2022 election.
 
@@ -81,11 +81,10 @@ Gregory said increasing skepticism from his colleagues will make it more difficu
 
 “That’s not been fair to victims. They were forced to wait by a mistake, and the politicization of this issue by both sides has put much more difficulty on getting this passed,” Gregory said. “The longer this goes, the tougher it becomes and the more expensive a venture it becomes.”
 
-As of July 2023, 26 states had <a href="https://childusa.org/2023sol/">passed some form of a revival window</a> for old claims of sexual abuse, according to Child USA, a group that advocates for ending child abuse.
+As of July 2023, 26 states had <a href="https://web.archive.org/20230106180137/https://childusa.org/2023sol/">passed some form of a revival window</a> for old claims of sexual abuse, according to Child USA, a group that advocates for ending child abuse.
 
 A referendum <a href="https://www.spotlightpa.org/news/2023/04/amendment-tracker-legislature-harrisburg-pennsylvania/">could reach the ballot</a> in next year’s presidential primary or general election if the chambers reach an agreement to pass identical language.
 
 However, if they fail to do so before the current session ends in 2024, the earliest a new constitutional question on the topic could be put to voters would be in 2027.
 
 <strong><em>WHILE YOU’RE HERE…</em></strong><em> If you learned something from this story, pay it forward and become a member of </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em> so someone else can in the future at </em><a href="https://www.spotlightpa.org/donate/"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

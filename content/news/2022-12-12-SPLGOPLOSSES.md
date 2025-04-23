@@ -69,7 +69,7 @@ However, with voters “tired of the status quo,” the caucus needed to do a be
 
 “The truth is we should be the party of fiscal responsibility, yet we refused to run the Taxpayer Protection Act,” Bernstine said, referring to a proposed constitutional amendment to cap state spending to the rate of inflation. “We are the party of school choice, but we refused to run a comprehensive school choice bill. We are the party of individual freedom, but we refused to run a constitutional amendment on medical freedom,” which would have banned vaccine mandates.
 
-(Bernstine is also listed as a member of the new Pennsylvania Freedom Caucus, according to its <a href="https://statefreedomcaucus.org/">website</a>.)
+(Bernstine is also listed as a member of the new Pennsylvania Freedom Caucus, according to its <a href="https://web.archive.org/20211202041156/https://statefreedomcaucus.org/">website</a>.)
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 

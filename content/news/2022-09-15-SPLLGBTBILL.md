@@ -36,7 +36,7 @@ Fisher moved to New York City and began teaching in 2003 at private schools ther
 
 In 2016, they returned to Lancaster with their husband and son, and the cultural difference was jarring. He was shocked by the amount of homophobia he witnessed in his day-to-day life. But when he asked the school he planned to send his child to how it handled discrimination, officials told him homophobia “doesn’t exist” in the school district.
 
-In reality, many LGBTQIA+ students in Pennsylvania have <a href="https://www.glsen.org/sites/default/files/2021-01/Pennsylvania-Snapshot-2019.pdf">experienced verbal and physical harassment</a> as well as discriminatory school policies, according to a 2019 survey by GLSEN, an LGBTQIA+ anti-bullying advocacy nonprofit. Fisher fears the situation could become worse for students in Pennsylvania should a bill introduced by two Republican state lawmakers become law.
+In reality, many LGBTQIA+ students in Pennsylvania have <a href="https://web.archive.org/20210510085522/https://www.glsen.org/sites/default/files/2021-01/Pennsylvania-Snapshot-2019.pdf">experienced verbal and physical harassment</a> as well as discriminatory school policies, according to a 2019 survey by GLSEN, an LGBTQIA+ anti-bullying advocacy nonprofit. Fisher fears the situation could become worse for students in Pennsylvania should a bill introduced by two Republican state lawmakers become law.
 
 The legislation sponsored by state Sens. Ryan Aument and Scott Martin of Lancaster County would ban classroom instruction on gender identity and sexual orientation in kindergarten through fifth grade, claiming it’s not “age appropriate.” It also would restrict such teachings in secondary school and require staff to disclose a student’s gender identity or sexual orientation to parents without the child’s consent.
 
@@ -54,9 +54,9 @@ A United Nations independent expert echoed those concerns in a report in August,
 
 The state Senate bill is similar to the Parental Rights in Education <a href="https://web.archive.org/20220901012820/https://www.myfloridahouse.gov/Sections/Bills/billsdetail.aspx?BillId=76545">law</a> enacted in Florida this summer, dubbed “Don’t Say Gay” by its critics. The law bans classroom instruction on gender identity and sexual orientation in kindergarten through third grade.
 
-It requires schools to notify parents if there “is a change in the student’s services or monitoring related to the student’s mental, emotional, or physical health or well-being” — a <a href="https://time.com/6208554/florida-lgbtq-teachers-dont-say-gay-education-law/">confusing clause that some teachers fear means they must “out” their students</a>.
+It requires schools to notify parents if there “is a change in the student’s services or monitoring related to the student’s mental, emotional, or physical health or well-being” — a <a href="https://web.archive.org/20220825160219/https://time.com/6208554/florida-lgbtq-teachers-dont-say-gay-education-law/">confusing clause that some teachers fear means they must “out” their students</a>.
 
-Pennsylvania’s bill, <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=1278">the Empowering Families in Education Act</a>, would go further by implementing a K-5 curriculum ban and restrictions for grades 6-12.
+Pennsylvania’s bill, <a href="https://web.archive.org/20220613161841/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=1278">the Empowering Families in Education Act</a>, would go further by implementing a K-5 curriculum ban and restrictions for grades 6-12.
 
 The legislation would allow parents to sue schools that they believe are violating the law. Unlike Florida’s law, Pennsylvania’s bill would not require a parent to attempt a resolution with a school before bringing legal action. Florida’s law gives schools a chance to address parents’ concerns through a formal process before the parent can sue.
 
@@ -68,7 +68,7 @@ But next year, Pennsylvania will have a new governor. The Republican running for
 
 <i><b>&gt;&gt;READ MORE: </b></i><a href="https://www.spotlightpa.org/news/2022/09/pa-election-2022-mastriano-shapiro-governor-race-lgbtq-rights-issues/"><i><b>Where governor candidates Mastriano, Shapiro stand on LGBTQ rights</b></i></a>
 
-A “hostile school climate” can have profoundly negative impacts on LGBTQIA+ students including a lower grade point average and higher rates of absenteeism, a 2019 survey by GLSEN found. Research shows childhood bullying and trauma can lead to chronic <a href="https://www.nichd.nih.gov/health/topics/bullying/conditioninfo/health">physical</a> and <a href="https://theconversation.com/childhood-bullying-can-cause-lifelong-psychological-damage-heres-how-to-spot-the-signs-and-move-on-100288">mental health</a> problems.
+A “hostile school climate” can have profoundly negative impacts on LGBTQIA+ students including a lower grade point average and higher rates of absenteeism, a 2019 survey by GLSEN found. Research shows childhood bullying and trauma can lead to chronic <a href="https://web.archive.org/20180104200041/https://www.nichd.nih.gov/health/topics/bullying/conditioninfo/health">physical</a> and <a href="https://web.archive.org/20180808133020/https://theconversation.com/childhood-bullying-can-cause-lifelong-psychological-damage-heres-how-to-spot-the-signs-and-move-on-100288">mental health</a> problems.
 
 “Those who survive and thrive will continue to deal with the trauma for the rest of their lives,” said Fisher, who said he’s still working through childhood incidents in therapy.
 
@@ -114,7 +114,7 @@ Aument and Martin have argued that parents rather than schools should choose whe
 
 “Our bill empowers parents to educate their own children about these sensitive topics at their own pace without having their hand forced by the public school system,” the senators said in a statement. “While we may not agree on what moral, ideological, and religious values to teach or not to teach our children, we can certainly agree that it should be up to the parent to decide — not the government.”
 
-A <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=37440">memo seeking cosponsors</a> for the bill said it would not bar students from initiating conversations with school staff about their gender identity or sexual orientation.
+A <a href="https://web.archive.org/20220608214401/https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&SPick=20210&cosponId=37440">memo seeking cosponsors</a> for the bill said it would not bar students from initiating conversations with school staff about their gender identity or sexual orientation.
 
 But if approached by a student, school staff would be required to disclose the conversation to the student’s parents, unless “documented testimony of the student or a history of documented incidents” shows doing so would result in child abuse, neglect, or abandonment.
 
@@ -130,9 +130,9 @@ School counselors help students navigate discussions about gender and sexual ori
 
 “We don’t want to violate the trust relationship we build up with [students] by automatically telling parents what they confide in us,” Peiffer told Spotlight PA. “It will, I believe, stop students from coming to see us, to come confide in us.”
 
-Karen Beck Pooley, a member of the Bethlehem Area School District board, was one of more than 200 people that joined 50 organizations to sign a letter opposing the legislation. She told Spotlight PA this bill and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=1277">companion legislation that targets library books</a> “run counter” to the district’s efforts to improve student well-being.
+Karen Beck Pooley, a member of the Bethlehem Area School District board, was one of more than 200 people that joined 50 organizations to sign a letter opposing the legislation. She told Spotlight PA this bill and <a href="https://web.archive.org/20220616214652/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=1277">companion legislation that targets library books</a> “run counter” to the district’s efforts to improve student well-being.
 
-Even before the pandemic, she said the district put a lot of effort into students’ overall welfare through efforts like <a href="https://www.wfmz.com/news/area/lehighvalley/basd-elementary-school-partners-with-nonprofit-to-lease-space-for-food-pantry/article_191dbbde-db1a-11ec-a74b-3f8a041dde5a.html">launching a food pantry</a>. She said there are many other issues the General Assembly should be focusing on, like a lack of funding and support for families.
+Even before the pandemic, she said the district put a lot of effort into students’ overall welfare through efforts like <a href="https://web.archive.org/20220524052104/https://www.wfmz.com/news/area/lehighvalley/basd-elementary-school-partners-with-nonprofit-to-lease-space-for-food-pantry/article_191dbbde-db1a-11ec-a74b-3f8a041dde5a.html">launching a food pantry</a>. She said there are many other issues the General Assembly should be focusing on, like a lack of funding and support for families.
 
 “From my vantage point, [the bill is] an attempt to earn empty political points at the expense of teachers and students,” she said.
 
@@ -152,13 +152,13 @@ Pennsylvania’s bill also would require teachers and schools to remain “neutr
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/cta/?eyebrow=RALLY%20ROUND%20OUR%20COVERAGE&body=Support%20Spotlight%20PA's%20%3Cb%3Etrusted%2C%20reliable%20election%20reporting%3C%2Fb%3E%20that%20informs%20and%20empowers%20Pennsylvania%20voters.&cta=ALL%20GIFTS%20DOUBLED.%20GIVE%20NOW%20%C2%BB"></div>
 
-In a <a href="https://www.aclupa.org/en/legislation/sb-1278-dont-say-gay-pa">memo to the state Senate</a>, Elizabeth Randol, legislative director of the ACLU of Pennsylvania, questioned exactly what it means to be “neutral” on gay people.
+In a <a href="https://web.archive.org/20220628231406/https://www.aclupa.org/en/legislation/sb-1278-dont-say-gay-pa">memo to the state Senate</a>, Elizabeth Randol, legislative director of the ACLU of Pennsylvania, questioned exactly what it means to be “neutral” on gay people.
 
 “Requiring schools, teachers, or staff adopt a position of ‘neutrality’ on sexual orientation and gender identity does not change the fact that gay, trans, and non-binary people exist,” Randol wrote. “Neutrality cannot wish the gay away.”
 
-Advocacy groups and parents in Florida have <a href="https://www.axios.com/2022/08/04/florida-dont-say-gay-lawsuit">challenged the law in courts</a>, arguing it violates students’ rights to free speech and due process, and discriminates against the LGBTQIA+ community.
+Advocacy groups and parents in Florida have <a href="https://web.archive.org/20220804223915/https://www.axios.com/2022/08/04/florida-dont-say-gay-lawsuit">challenged the law in courts</a>, arguing it violates students’ rights to free speech and due process, and discriminates against the LGBTQIA+ community.
 
-In <a href="https://www.aclupa.org/en/legislation/sb-1278-dont-say-gay-pa">public</a> <a href="https://www.elc-pa.org/wp-content/uploads/2022/06/ELC-SB-1277-SB-1278-letter-06282022.pdf">statements</a> opposing the state Senate legislation, the ACLU of Pennsylvania and Education Law Center argue Pennsylvania’s bill also would run afoul of the U.S. Constitution.
+In <a href="https://web.archive.org/20220628231406/https://www.aclupa.org/en/legislation/sb-1278-dont-say-gay-pa">public</a> <a href="https://web.archive.org/20220701132244/https://www.elc-pa.org/wp-content/uploads/2022/06/ELC-SB-1277-SB-1278-letter-06282022.pdf">statements</a> opposing the state Senate legislation, the ACLU of Pennsylvania and Education Law Center argue Pennsylvania’s bill also would run afoul of the U.S. Constitution.
 
 “School actions that target certain speech or have the effect of stifling or discouraging identity-affirming speech or expression violate the First Amendment rights of students,” a letter released by the Education Law Center states. “Many rights and protections also apply to school teachers and staff.”
 

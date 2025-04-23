@@ -23,7 +23,7 @@ topics = ["Health", "The Capitol"]
 
 HARRISBURG — Chronically ill patients could find it easier to get their insurance companies to OK new treatments under a bill Pennsylvania lawmakers are hustling to pass in the final days of the legislative session.
 
-The <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=225">67-page</a> bill, which mostly applies to private insurers, would remove prior authorization for emergency care, standardize timelines for insurers to approve or deny a request for treatment, and guarantee that doctors can request that plans cover medications without a patient first trying a cheaper drug.
+The <a href="https://web.archive.org/20210801162215/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2021&sind=0&body=S&type=B&bn=225">67-page</a> bill, which mostly applies to private insurers, would remove prior authorization for emergency care, standardize timelines for insurers to approve or deny a request for treatment, and guarantee that doctors can request that plans cover medications without a patient first trying a cheaper drug.
 
 Supporters say the bill will allow medical providers to spend more time on care rather than fighting with insurance companies, and give patients more clarity and flexibility when deciding on their treatment options.
 
@@ -59,7 +59,7 @@ Lopatin’s experience is not unique. A 2021 American Medical Society <a href="h
 
 “Scientific breakthroughs [and] medical advancements mean that in many cases, a diagnosis can now be managed and treated,” said Emma Watson, the chief lobbyist for the state branch of the American Cancer Society and the point person for the other patient groups. “Patients need the ability to quickly assess their condition with their medical professionals to find the best course of action for their individual health needs.”
 
-In some cases, the bill would only bring state insurance law, last rewritten in 1998, in line with federal law. The proposed ban on prior authorization for emergency care, for instance, matches <a href="https://www.kff.org/private-insurance/fact-sheet/surprise-medical-bills-new-protections-for-consumers-take-effect-in-2022/">a federal law</a> passed in late 2020. However, medical providers have since <a href="https://www.healthaffairs.org/content/forefront/providers-sue-again-over-no-surprises-act">challenged</a> that law in court.
+In some cases, the bill would only bring state insurance law, last rewritten in 1998, in line with federal law. The proposed ban on prior authorization for emergency care, for instance, matches <a href="https://web.archive.org/20210204170701/https://www.kff.org/private-insurance/fact-sheet/surprise-medical-bills-new-protections-for-consumers-take-effect-in-2022/">a federal law</a> passed in late 2020. However, medical providers have since <a href="https://web.archive.org/20220927190546/https://www.healthaffairs.org/content/forefront/providers-sue-again-over-no-surprises-act">challenged</a> that law in court.
 
 Changes to the state insurance law have been considered for years, but have never reached the governor’s desk.
 

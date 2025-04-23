@@ -28,7 +28,7 @@ Fe and her husband, Gareth, have been trying to understand what happened ever si
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-They held a vigil Thursday close to their home and the overpass where their 19-year-old son died one year earlier. Activists and family <a href="https://www.facebook.com/justiceforChristianHall/posts/587371055950418">held similar events</a> in more than a dozen other locations, including Los Angeles, New York, Philadelphia, and the Philippines, where Fe Hall was born.
+They held a vigil Thursday close to their home and the overpass where their 19-year-old son died one year earlier. Activists and family <a href="https://web.archive.org/20211230072044/https://www.facebook.com/justiceforChristianHall/posts/587371055950418">held similar events</a> in more than a dozen other locations, including Los Angeles, New York, Philadelphia, and the Philippines, where Fe Hall was born.
 
 The vigils showed the state that people remember the case, said Nicole Henriquez, Christian’s cousin and one of the organizers. The gatherings will include candlelight ceremonies, poetry, and music, she said.
 
@@ -66,7 +66,7 @@ Neighboring states have put in place strategies to remove police and prosecutors
 
 In New Jersey, the Attorney General’s Office established a public integrity and accountability office that oversees incidents involving deadly force or serious injury by selecting independent investigators or performing investigations itself. In Delaware, the Division of Civil Rights and Public Trust investigates use-of-force incidents, and Maryland has enacted sweeping legislation that tasks the state Attorney General’s Office with investigating all fatalities involving police.
 
-Jacob, one of the Hall family lawyers, has filed a complaint with the Pennsylvania Office of State Inspector General about the way the case was handled. He wants the office to look at the <a href="https://www.documentcloud.org/documents/21089305-psp-press-release?responsive=1&title=1">statements</a> made by the State Police about the shooting and compare them with what the unredacted video shows.
+Jacob, one of the Hall family lawyers, has filed a complaint with the Pennsylvania Office of State Inspector General about the way the case was handled. He wants the office to look at the <a href="https://web.archive.org/20211119000151/https://www.documentcloud.org/documents/21089305-psp-press-release?responsive=1&title=1">statements</a> made by the State Police about the shooting and compare them with what the unredacted video shows.
 
 While the video does not appear to show Christian pointing the gun directly at troopers before he was shot, the accounts by State Police and the DA’s Office are <a href="https://www.spotlightpa.org/news/2021/11/christian-hall-state-police-shooting-stroudsburg/">inconsistent on this point</a> in their statements.
 

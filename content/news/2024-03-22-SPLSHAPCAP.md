@@ -35,11 +35,11 @@ While labor, environmental, and consumer protection groups have met Shapiro’s 
 
 He expressed openness to changing the state’s renewable energy standards but said that ultimately, “once the House sends it to us … understanding what those details are will be extremely helpful.”
 
-One cornerstone of the plan is the <a href="https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42330">Pennsylvania Climate Emissions Reduction Act</a>, which would allow the state to cap the amount of carbon power plants can produce and force them to pay to emit pollution.
+One cornerstone of the plan is the <a href="https://web.archive.org/20240328215101/https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42330">Pennsylvania Climate Emissions Reduction Act</a>, which would allow the state to cap the amount of carbon power plants can produce and force them to pay to emit pollution.
 
-The idea is similar to the Regional Greenhouse Gas Initiative, a multistate cap-and-trade program championed by Wolf; Shapiro has not embraced it because he is unsure it would <a href="https://penncapital-star.com/energy-environment/gov-candidate-shapiro-is-skeptical-of-rggi-its-unclear-if-ag-shapiro-will-do-something-about-it/">benefit consumer interests</a>.
+The idea is similar to the Regional Greenhouse Gas Initiative, a multistate cap-and-trade program championed by Wolf; Shapiro has not embraced it because he is unsure it would <a href="https://web.archive.org/20211027210441/https://penncapital-star.com/energy-environment/gov-candidate-shapiro-is-skeptical-of-rggi-its-unclear-if-ag-shapiro-will-do-something-about-it/">benefit consumer interests</a>.
 
-The other bill, dubbed the <a href="https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42332">Pennsylvania Reliable Energy Sustainability Standards Act</a>, would increase the amount of power electricity companies have to buy from renewable energy sources.
+The other bill, dubbed the <a href="https://web.archive.org/20240329044439/https://www.legis.state.pa.us/cfdocs/legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42332">Pennsylvania Reliable Energy Sustainability Standards Act</a>, would increase the amount of power electricity companies have to buy from renewable energy sources.
 
 Here’s what you need to know about Shapiro’s proposals and their likelihood of passing the state legislature:
 
@@ -57,7 +57,7 @@ A few months after taking office, Shapiro convened a working group to evaluate R
 
 PACER would give the commonwealth the ability to set its cap on carbon emissions, rather than use one determined by the RGGI program participants collectively. The program would be run by the Department of Environmental Protection, Shapiro said. <strong></strong>
 
-The state would be free to decide what to do with the revenue, and Shapiro wants to use the bulk of it to fund electric bill rebates. (Because of the way Wolf justified Pennsylvania’s entry into RGGI, the state would be <a href="https://www.nrdc.org/bio/jackson-morris/yes-pa-dep-has-legal-authority-do-rggi-rule">required</a> to put allowance revenue into the Clean Air Fund, which supports pollution reduction efforts.)
+The state would be free to decide what to do with the revenue, and Shapiro wants to use the bulk of it to fund electric bill rebates. (Because of the way Wolf justified Pennsylvania’s entry into RGGI, the state would be <a href="https://web.archive.org/20230321101527/https://www.nrdc.org/bio/jackson-morris/yes-pa-dep-has-legal-authority-do-rggi-rule">required</a> to put allowance revenue into the Clean Air Fund, which supports pollution reduction efforts.)
 
 Shapiro has said that if the legislature passes PACER, he will pull out of RGGI.
 
@@ -131,17 +131,16 @@ In a conversation with Spotlight PA, Pittman was not willing to completely write
 
 He made similar remarks regarding Shapiro’s PRESS initiative, saying he supported the “general efforts” of the new renewable energy standards program but that passage in the state Senate would be contingent on “what the House ultimately sends us.”
 
-Pittman did say there are a few pieces of Shapiro’s energy package that he feels have potential for collaboration, namely carbon capture and sequestration, hydrogen development, and exploration of <a href="https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs">more advanced nuclear energy technology</a>.
+Pittman did say there are a few pieces of Shapiro’s energy package that he feels have potential for collaboration, namely carbon capture and sequestration, hydrogen development, and exploration of <a href="https://web.archive.org/20211104102143/https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs">more advanced nuclear energy technology</a>.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
 To advance in the state Senate, the proposals must pass through its Environmental Resources and Energy Committee. State Sen. Gene Yaw (R., Lycoming) heads the committee and told Spotlight PA that he opposes all cap-and-trade programs.
 
-Yaw argued the state should be trying to increase energy production and that a cap-and-trade program would discourage companies from setting up shop in Pennsylvania. He cited a <a href="https://web.archive.org/20230224205134/https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">study</a> by PJM, the state’s electricity provider, which found that future energy production may be insufficient to meet demand. Critics <a href="https://www.utilitydive.com/news/pjm-interconnection-capacity-shortfall-4rw-report-ohio/703295/">have argued</a> those concerns are overstated.
+Yaw argued the state should be trying to increase energy production and that a cap-and-trade program would discourage companies from setting up shop in Pennsylvania. He cited a <a href="https://web.archive.org/20230224205134/https://www.pjm.com/-/media/library/reports-notices/special-reports/2023/energy-transition-in-pjm-resource-retirements-replacements-and-risks.ashx">study</a> by PJM, the state’s electricity provider, which found that future energy production may be insufficient to meet demand. Critics <a href="https://web.archive.org/20231222154902/https://www.utilitydive.com/news/pjm-interconnection-capacity-shortfall-4rw-report-ohio/703295/">have argued</a> those concerns are overstated.
 
 Yaw added that he would consider changing renewable energy standards, saying that he supports energy diversification “in a global sense.” But any bill would need to address his concern regarding increasing the state’s overall energy production, he said.
 
 “The governor never addresses the real problem,” Yaw said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

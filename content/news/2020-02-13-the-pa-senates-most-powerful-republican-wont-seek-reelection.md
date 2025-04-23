@@ -31,7 +31,7 @@ His willingness to work with Democrats at times became a double-edged sword, wit
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Early in his tenure in leadership, Scarnati also came under scrutiny for accepting [a free trip to the Super Bowl](https://www.inquirer.com/philly/news/special_packages/inquirer/marcellus-shale/20110213_Perks_from_Pa__drilling_interests.html "https\://www.inquirer.com/philly/news/special_packages/inquirer/marcellus-shale/20110213_Perks_from_Pa\_\_drilling_interests.html") from a natural gas driller (he later said he intended to repay the company).
+Early in his tenure in leadership, Scarnati also came under scrutiny for accepting [a free trip to the Super Bowl](https://web.archive.org/20200213230112/https://www.inquirer.com/philly/news/special_packages/inquirer/marcellus-shale/20110213_Perks_from_Pa__drilling_interests.html "https\://www.inquirer.com/philly/news/special_packages/inquirer/marcellus-shale/20110213_Perks_from_Pa\_\_drilling_interests.html") from a natural gas driller (he later said he intended to repay the company).
 
 And last year, a [series by Spotlight PA and The Caucus](https://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/ "https\://www.spotlightpa.org/news/2019/10/lavish-dinners-sports-tickets-and-nearly-3.5-million-other-expenses-by-pa.-lawmakers-youve-never-seen/") revealed that Scarnati topped the list of lawmakers who shielded lavish campaign spending — including overseas trips and expensive meals — by not reporting the details to the public.
 

@@ -50,7 +50,7 @@ Created in 2010, the Pennsylvania Housing Affordability and Rehabilitation Enhan
 
 The program receives three times as many applications as it can fund, Wiessmann said.
 
-It has previously received bipartisan support: Lawmakers <a href="https://housingalliancepa.org/june-2022-legislative-update/">increased</a> the program’s funding cap from $40 million to $60 million in 2022.
+It has previously received bipartisan support: Lawmakers <a href="https://web.archive.org/20220625103354/https://housingalliancepa.org/june-2022-legislative-update/">increased</a> the program’s funding cap from $40 million to $60 million in 2022.
 
 Shapiro wants to replace the program’s current funding formula, which is tied to revenues from a state tax on real estate transactions, with a guaranteed amount each year. Under his proposal, that allocation would increase to $70 million in the next fiscal year and rise to $100 million over the next four fiscal years.
 
@@ -78,7 +78,7 @@ Providing legal representation for low-income tenants across the state, as four 
 
 Such an investment, the study found, would save public dollars because fewer evictions would lead to less spending on homelessness, foster care, and emergency health care.
 
-Philadelphia enacted a law in 2019 that guarantees free legal representation to low-income tenants facing eviction cases in certain zip codes. Those tenants had better outcomes in court and were less likely to have to leave their homes, a <a href="https://www.reinvestment.com/wp-content/uploads/2023/06/ReinvestmentFund_PHL-Right-toCounsel-June2023.pdf">report</a> analyzing the law found. Some attorneys for landlords said that having both sides represented made the whole process work more smoothly, according to the report.
+Philadelphia enacted a law in 2019 that guarantees free legal representation to low-income tenants facing eviction cases in certain zip codes. Those tenants had better outcomes in court and were less likely to have to leave their homes, a <a href="https://web.archive.org/20230803135007/https://www.reinvestment.com/wp-content/uploads/2023/06/ReinvestmentFund_PHL-Right-toCounsel-June2023.pdf">report</a> analyzing the law found. Some attorneys for landlords said that having both sides represented made the whole process work more smoothly, according to the report.
 
 In his budget address, Shapiro cited Phildaelphia’s “exceptional work” on eviction prevention as an example for the rest of the state. The governor wants to spend $5 million to match funding for legal representation provided by cities and counties. The Shapiro administration has not yet released specifics on how the limited funding would be prioritized.
 
@@ -96,7 +96,7 @@ Paul Cohen, a Philadelphia-based real estate attorney who works with landlords o
 
 In Philadelphia, Cohen noted, landlords are already required to participate in a diversion program to prevent evictions. It mandates that the owner and tenant engage in 30 days of mediation before the owner moves forward with an eviction filing.
 
-Philadelphia City Council <a href="https://whyy.org/articles/eviction-diversion-program-housing-philadelphia/">started the program</a> during the pandemic and has since extended it. But looking at lawmakers’ initial proposal on sealing eviction records, Cohen argued that if eviction records are sealed from view, landlords shouldn&#39;t have to delay filing for an eviction and risk losing another month&#39;s rent.
+Philadelphia City Council <a href="https://web.archive.org/20221215064539/https://whyy.org/articles/eviction-diversion-program-housing-philadelphia/">started the program</a> during the pandemic and has since extended it. But looking at lawmakers’ initial proposal on sealing eviction records, Cohen argued that if eviction records are sealed from view, landlords shouldn&#39;t have to delay filing for an eviction and risk losing another month&#39;s rent.
 
 Sealing isn’t the only tenant protection legislation state Democrats have pitched. They’ve also floated proposals to <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41569">limit the size of renters’ security deposits</a>, provide advance notice of <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=41205">when an eviction will take place</a>, and implement <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=S&amp;SPick=20230&amp;cosponId=39174">rent control</a>.
 
@@ -110,7 +110,7 @@ There is also growing bipartisan interest in one more area — changing Pennsylv
 
 State Democrats and Republicans have introduced at least a dozen proposals this legislative session that would loosen these laws — through preemption or incentives — to encourage housing construction and reduce prices.
 
-These include bills that would redevelop vacant <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=40761">shopping malls</a> or <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42138">office parks</a> into mixed-use communities, <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2052">add tiny homes</a> into the state’s construction codes, and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2045">allow multi-family homes</a> in areas zoned for single-family residence.
+These include bills that would redevelop vacant <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=40761">shopping malls</a> or <a href="https://web.archive.org/20240319030540/https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42138">office parks</a> into mixed-use communities, <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=2052">add tiny homes</a> into the state’s construction codes, and <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=2045">allow multi-family homes</a> in areas zoned for single-family residence.
 
 Adjusting the state’s land use policies is also backed by a wide swathe of organizations, including the state Chamber of Business and Industry; the trade groups that represent apartment builders and other developers; and a number of urbanist community organizations.
 
@@ -133,4 +133,3 @@ But state Sen. Nikil Saval (D., Philadelphia), a progressive who focuses on hous
 “We have to look at the greater good that makes planning and land use decisions a collective concern,” he said.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

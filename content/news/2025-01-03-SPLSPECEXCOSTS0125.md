@@ -49,11 +49,10 @@ However, he’s bothered when politicians pursue a legislative office only to qu
 
 More vacancies are on the horizon, as a handful of state representatives plot runs for higher office.
 
-State Rep. Joshua Siegel (D., Lehigh) has thrown his hat into the ring to be <a href="https://penncapital-star.com/briefs/lehigh-county-state-rep-joshua-siegel-announces-campaign-for-county-executive/">the next Lehigh County executive</a>, while state Rep. Dan Miller (D., Allegheny) has <a href="https://www.wesa.fm/politics-government/2024-12-04/state-house-dan-miller-bid-allegheny-county-judge">announced a run for a local judgeship</a>.
+State Rep. Joshua Siegel (D., Lehigh) has thrown his hat into the ring to be <a href="https://web.archive.org/20241220143817/https://penncapital-star.com/briefs/lehigh-county-state-rep-joshua-siegel-announces-campaign-for-county-executive/">the next Lehigh County executive</a>, while state Rep. Dan Miller (D., Allegheny) has <a href="https://web.archive.org/20241204203323/https://www.wesa.fm/politics-government/2024-12-04/state-house-dan-miller-bid-allegheny-county-judge">announced a run for a local judgeship</a>.
 
-In the state Senate, Ryan Aument (R., Lancaster) <a href="https://penncapital-star.com/briefs/aument-to-leave-pennsylvania-state-senate-and-serve-as-mccormicks-state-director/">stepped down to become</a> a staffer for GOP U.S. Sen.-elect Dave McCormick.
+In the state Senate, Ryan Aument (R., Lancaster) <a href="https://web.archive.org/20241228024754/https://penncapital-star.com/briefs/aument-to-leave-pennsylvania-state-senate-and-serve-as-mccormicks-state-director/">stepped down to become</a> a staffer for GOP U.S. Sen.-elect Dave McCormick.
 
-In an email, House Democratic spokesperson Elizabeth Rementer noted that the chamber’s calendar is already set for 2025. Speaker Joanna McClinton (D., Philadelphia), who has the power to decide the chamber’s special elections and session days, released a schedule through December 2025 with <a href="https://www.legis.state.pa.us/SessionDays.cfm?SessionYear=2025&amp;SessionInd=0&amp;Chamber=H">55 voting days</a>. The state Senate has 32 days scheduled, but only through June 2025.
+In an email, House Democratic spokesperson Elizabeth Rementer noted that the chamber’s calendar is already set for 2025. Speaker Joanna McClinton (D., Philadelphia), who has the power to decide the chamber’s special elections and session days, released a schedule through December 2025 with <a href="https://web.archive.org/20250103191628/https://www.legis.state.pa.us/SessionDays.cfm?SessionYear=2025&amp;SessionInd=0&amp;Chamber=H">55 voting days</a>. The state Senate has 32 days scheduled, but only through June 2025.
 
 “We will plan accordingly if or when a member runs for and wins a different office and the seat must be filled,” Rementer added.
-

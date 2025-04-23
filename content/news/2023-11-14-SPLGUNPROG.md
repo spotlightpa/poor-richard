@@ -23,7 +23,7 @@ topics = ["The Capitol"]
 
 HARRISBURG —&nbsp;A Pennsylvania House panel is expected to consider bills intended to prevent children and teens from accessing firearms as advocates for stricter gun laws call on the state Senate to take up legislation.
 
-The state House Judiciary Committee is scheduled to consider a <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=39327">bill</a> Tuesday that would require the secure storage of firearms in homes with children and <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=941">another bill</a> that would create penalties for guardians and parents who allow a minor to possess or use a firearm. The latter legislation would apply only in cases where the minor has previously been convicted of a crime or is known to be at risk of committing violence.
+The state House Judiciary Committee is scheduled to consider a <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=39327">bill</a> Tuesday that would require the secure storage of firearms in homes with children and <a href="https://web.archive.org/20231114102451/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sInd=0&amp;body=H&amp;type=B&amp;bn=941">another bill</a> that would create penalties for guardians and parents who allow a minor to possess or use a firearm. The latter legislation would apply only in cases where the minor has previously been convicted of a crime or is known to be at risk of committing violence.
 
 After more than a decade out of power, Democrats took control of the lower chamber this year with a one-vote majority. Since then, the caucus — with some GOP support — has advanced a handful of bills to tighten the state’s gun laws.
 
@@ -52,4 +52,3 @@ Baker said that CeaseFirePA has the right to “advance its agenda” in any man
 In 2021, 1,905 people <a href="https://www.cdc.gov/nchs/pressroom/sosmap/firearm_mortality/firearm.htm">died by gun</a> in Pennsylvania, according to the Centers for Disease Control and Prevention. A Franklin &amp; Marshall poll released in October found that 58% of voters either strongly or somewhat favor creating more laws regulating gun ownership.
 
 <em>BEFORE YOU GO… If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

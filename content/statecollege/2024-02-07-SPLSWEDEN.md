@@ -74,7 +74,7 @@ Last year, 840 municipalities had full-time coverage through a local police depa
 
 Before Sweden Township’s department shut down, State Police responded to calls when local officers weren’t available, Reed said. Now, the township is included in full-time zone assignments, and residents should expect the “professional police services they expect and deserve,” he added.
 
-State Rep. Mike Sturla (D., Lancaster) has long <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=684">proposed</a> enacting an annual service fee paid by Pennsylvania municipalities that rely on State Police coverage instead of local law enforcement officers. He said pushback to the proposal typically comes from areas where officials worry about increasing property taxes to fund operations. But a fee means they “chip in something,” Sturla told Spotlight PA.
+State Rep. Mike Sturla (D., Lancaster) has long <a href="https://web.archive.org/20240213140654/https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=H&amp;type=B&amp;bn=684">proposed</a> enacting an annual service fee paid by Pennsylvania municipalities that rely on State Police coverage instead of local law enforcement officers. He said pushback to the proposal typically comes from areas where officials worry about increasing property taxes to fund operations. But a fee means they “chip in something,” Sturla told Spotlight PA.
 
 “It’s not even leveling the playing field,” Sturla said. “It’s making it not as steep a slope.”
 
@@ -85,4 +85,3 @@ He argued the charge would support statewide law enforcement operations and prov
 While former Gov. Tom Wolf backed such a fee, Democratic Gov. Josh Shapiro has not. During his budget proposal Tuesday, Shapiro suggested earmarking $16 million of the roughly $1.7 billion allocated for State Police to fund four additional new cadet classes to increase the number of troopers across the commonwealth.
 
 <strong><em>SUPPORT THIS JOURNALISM </em></strong><em>and help us reinvigorate local news in north-central Pennsylvania at </em><a href="https://www.spotlightpa.org/donate/statecollege"><em>spotlightpa.org/donate/statecollege</em></a><em>. Spotlight PA is funded by </em><a href="https://www.spotlightpa.org/support"><em>foundations and readers like you</em></a><em> who are committed to accountability and public-service journalism that gets results.</em>
-

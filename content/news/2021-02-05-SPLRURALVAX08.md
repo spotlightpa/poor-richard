@@ -121,7 +121,7 @@ Information was posted on the local government website earlier that week, said H
 
 The local Area Agency on Aging, which works with the county’s older residents to connect them with personal care resources, helped them register. Other eligible people heard through their local emergency medical services and fire department, including Keen.
 
-Five older residents who received vaccines Friday relied on a special service provided by the <a href="https://www.gobesttransit.com/">local tri-county transit system</a> to make it to their appointments. Four are already scheduled to use the service when they return for their second dose in late February.
+Five older residents who received vaccines Friday relied on a special service provided by the <a href="https://web.archive.org/20210117190944/https://www.gobesttransit.com/">local tri-county transit system</a> to make it to their appointments. Four are already scheduled to use the service when they return for their second dose in late February.
 
 It took a team of at least 54 people — including local volunteers in color-coded vests to check in residents, medical workers, county employees, and state health department staff — to keep the clinic running, according to figures provided by Sullivan officials.
 

@@ -17,7 +17,7 @@ title-tag = "PA lawmakers reject voter ID expansion"
 topics = ["Elections", "The Capitol"]
 +++
 
-<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
+<em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA</em></a><em>’s collaboration with </em><a href="https://web.archive.org/20170521211815/https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. This article is available for reprint under the terms of </em><a href="https://web.archive.org/20210907141701/https://www.votebeat.org/pages/republishing"><em>Votebeat’s republishing policy</em></a><em>.</em>
 
 HARRISBURG — The Pennsylvania House has advanced a bill to change the date of the 2024 presidential primary while rejecting an effort to implement expanded voter ID requirements, mail ballot rule changes, and a slew of other provisions.
 
@@ -53,17 +53,17 @@ More time is also needed to prepare now than in the past due to Pennsylvania’s
 
 “Our calendars have gotten a lot bigger,” Kantz said. “So if we move the primary ahead, that’s going to condense that that much more. … The Legislature is going to do what they want to do, and so whatever they do, as counties always do, we&#39;ll find a way to make it work, but it’s going to be painful.”
 
-The <a href="https://legiscan.com/RI/bill/H6309/2023">three</a> <a href="https://legis.delaware.gov/BillDetail?LegislationId=140467">other</a> <a href="http://www.washingtonjewishweek.com/maryland-primary-election-date-moved-avoiding-passover-2024/">states</a> that had primaries scheduled for April 23 have already moved their dates.
+The <a href="https://web.archive.org/20230901005118/https://legiscan.com/RI/bill/H6309/2023">three</a> <a href="https://web.archive.org/20230609122112/https://legis.delaware.gov/BillDetail?LegislationId=140467">other</a> <a href="https://web.archive.org/20230511175507/http://www.washingtonjewishweek.com/maryland-primary-election-date-moved-avoiding-passover-2024/">states</a> that had primaries scheduled for April 23 have already moved their dates.
 
 Schools would be strongly affected in the event of a primary date change. School boards are required to allow their facilities to be used as polling places if requested. Already, they’ve set their calendars for an April 23 primary.
 
 “If the primary election day is changed at this point, when school calendars have already been established, the change could close schools and interrupt student learning,” said Mackenzie Christiana, senior manager of communications of the Pennsylvania School Boards Association.
 
-State law also <a href="https://www.education.pa.gov/Policy-Funding/PropertyTax/Pages/BudgetOverview.aspx">ties school boards’</a> timelines to set their budgets to the primary election. An earlier primary, Christiana said, requires districts to “build their preliminary budgets just months into their new fiscal year.”
+State law also <a href="https://web.archive.org/20201021171402/https://www.education.pa.gov/Policy-Funding/PropertyTax/Pages/BudgetOverview.aspx">ties school boards’</a> timelines to set their budgets to the primary election. An earlier primary, Christiana said, requires districts to “build their preliminary budgets just months into their new fiscal year.”
 
 ## A bipartisan rejection
 
-The March 19 bill, which passed the state Senate <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=238">45-2</a> last month, failed <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=601">26-177</a> in the state House midday Thursday, supported only by a handful of suburban Democrats.
+The March 19 bill, which passed the state Senate <a href="https://web.archive.org/20231005202626/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=S&amp;rc_nbr=238">45-2</a> last month, failed <a href="https://www.legis.state.pa.us/cfdocs/legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=601">26-177</a> in the state House midday Thursday, supported only by a handful of suburban Democrats.
 
 State House lawmakers added three amendments to the measure Wednesday which substantially altered it.
 
@@ -77,7 +77,7 @@ Lisa Deeley, a Democratic city commissioner from Philadelphia, echoed that senti
 
 “The amendment is well-meaning but not well written,” Deeley said in a statement, referring to the amendment that added pre-canvassing and other items to the March 19 bill. “It gives election officials very little and adds a ton of extra work \[to\] our plate. I urge everyone to vote against it. Opportunities to improve the Election Code come around so infrequently that we cannot keep making it worse.”
 
-The bill’s politics are complicated. An <a href="https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=572">amendment</a> to require voters to show a photo ID every time they vote in person passed with support from every member of the Republican minority and 22 Democrats.
+The bill’s politics are complicated. An <a href="https://web.archive.org/20231005202637/https://www.legis.state.pa.us/CFDOCS/Legis/RC/Public/rc_view_action2.cfm?sess_yr=2023&amp;sess_ind=0&amp;rc_body=H&amp;rc_nbr=572">amendment</a> to require voters to show a photo ID every time they vote in person passed with support from every member of the Republican minority and 22 Democrats.
 
 Expanding the state’s voter ID requirements is a Republican priority, and GOP lawmakers who control the state Senate have made it clear that they want it addressed alongside other election changes.
 
@@ -108,4 +108,3 @@ The upper chamber is not scheduled to return to session until Oct. 16, meaning t
 A spokesperson for Shapiro declined to comment on whether the governor would support the April 2 bill.
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-

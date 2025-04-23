@@ -93,7 +93,7 @@ As with many other policies, what happens next may all come down to the November
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
 
-Democratic nominee Josh Shapiro, the state’s attorney general, supports mail voting and has said he’d veto legislation restricting voting rights. Mastriano, who voted for Act 77 as a first-year lawmaker, has spoken out against mail ballots and spread <a href="https://www.reuters.com/article/uk-fact-check-pa-mail-votes-primary-gene/fact-check-post-mixes-pennsylvania-primary-and-general-election-data-to-suggest-vote-by-mail-irregularities-idUSKBN28B5NW">false claims</a> about them.
+Democratic nominee Josh Shapiro, the state’s attorney general, supports mail voting and has said he’d veto legislation restricting voting rights. Mastriano, who voted for Act 77 as a first-year lawmaker, has spoken out against mail ballots and spread <a href="https://web.archive.org/20201202035804/https://www.reuters.com/article/uk-fact-check-pa-mail-votes-primary-gene/fact-check-post-mixes-pennsylvania-primary-and-general-election-data-to-suggest-vote-by-mail-irregularities-idUSKBN28B5NW">false claims</a> about them.
 
 There’s also another route to eliminating mail voting that bypasses the governor — no matter who they are — completely.
 

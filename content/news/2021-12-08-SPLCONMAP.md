@@ -18,7 +18,7 @@ title = "Proposed redrawing of Pennsylvania’s congressional map draws mixed re
 topics = ["Redistricting"]
 +++
 
-<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://web.archive.org/20201019151248/https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
 HARRISBURG — The long-awaited redistricting process in Pennsylvania kicked into high gear Wednesday as House Republicans released proposed new congressional districts, but immediate reaction to the initial map was decidedly mixed.
 
@@ -30,7 +30,7 @@ Because of sluggish population growth, Pennsylvania’s <a href="https://www.spo
 
 The new map emphasizes equal population among the districts above all else, which in turn makes them less compact. For example, the proposed District 6 encompasses portions of the state from West Chester to Lebanon County.
 
-In <a href="https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2021_0112_0007_TSTMNY.pdf">previous testimony</a> before the House State Government Committee, Holt recommended lawmakers embrace “equal population” — with “as close to zero as possible while consistently meeting state goals” — as a core priority. Federal standards dictate that districts should contain an equal number of people, though deviation of up to 1% is understood to be acceptable.
+In <a href="https://web.archive.org/20210825094546/https://www.legis.state.pa.us/WU01/LI/TR/Transcripts/2021_0112_0007_TSTMNY.pdf">previous testimony</a> before the House State Government Committee, Holt recommended lawmakers embrace “equal population” — with “as close to zero as possible while consistently meeting state goals” — as a core priority. Federal standards dictate that districts should contain an equal number of people, though deviation of up to 1% is understood to be acceptable.
 
 While the map does not split voting precincts, the way it divides some areas of the state — notably the city of Philadelphia and the Harrisburg metropolitan area — has already attracted negative feedback. Hershey, Harrisburg, and Mechanicsburg — all considered part of the same general Central Pennsylvania region — are each in different districts.
 
@@ -42,7 +42,7 @@ Rep. Seth Grove (R., York), chair of the House State Government Committee, haile
 
 “Over the last several months, advocates and everyday Pennsylvanians told us they didn’t want the process of years’ past,” Grove said in a statement. “The people of Pennsylvania asked for increased public involvement, a map that was drawn by people, not by politicians, and the opportunity to offer comment on a preliminary plan before a final vote was taken.”
 
-Grove said his panel will hold <a href="https://www.pahousegop.com/News/22950/Latest-News/Grove-Announces-Citizen-Map-Selected-as-Preliminary-Congressional-Plan,-Invites-Public-Comment-">an informational hearing Thursday</a> and is expected to vote Monday. A map must be approved by both the GOP-controlled House and Senate before it goes to Democratic Gov. Tom Wolf for consideration, and the Senate is planning to release its own proposal. That means this first map is unlikely to reflect what will be the final outcome.
+Grove said his panel will hold <a href="https://web.archive.org/20211209023643/https://www.pahousegop.com/News/22950/Latest-News/Grove-Announces-Citizen-Map-Selected-as-Preliminary-Congressional-Plan,-Invites-Public-Comment-">an informational hearing Thursday</a> and is expected to vote Monday. A map must be approved by both the GOP-controlled House and Senate before it goes to Democratic Gov. Tom Wolf for consideration, and the Senate is planning to release its own proposal. That means this first map is unlikely to reflect what will be the final outcome.
 
 Redistricting reform advocates said they are grateful that the map has finally been released but are frustrated at how long it took and at the lack of communication throughout the process. Fair Districts PA and the good-government organization Committee of Seventy — which runs the Draw the Lines competition — released their own maps more than a month ago.
 

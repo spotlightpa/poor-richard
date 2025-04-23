@@ -19,7 +19,7 @@ title = "Pennsylvania ‘particularly ill-prepared’ for financial blow caused 
 topics = ["Coronavirus"]
 +++
 
-<i>This story was produced as part of a joint effort among </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>, </i><a href="https://lancasteronline.com/"><i>LNP Media Group</i></a><i>, </i><a href="https://www.pennlive.com/"><i>PennLive</i></a><i>, </i><a href="https://papost.org/"><i>PA Post</i></a><i>, and </i><a href="https://www.witf.org/"><i>WITF</i></a><i> to cover how Pennsylvania state government is responding to the coronavirus. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s newsletter.</i></a>
+<i>This story was produced as part of a joint effort among </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i>, </i><a href="https://web.archive.org/20200101044618/https://lancasteronline.com/"><i>LNP Media Group</i></a><i>, </i><a href="https://web.archive.org/20200101034631/https://www.pennlive.com/"><i>PennLive</i></a><i>, </i><a href="https://web.archive.org/20200315024644/https://papost.org/"><i>PA Post</i></a><i>, and </i><a href="https://web.archive.org/20200107224634/https://www.witf.org/"><i>WITF</i></a><i> to cover how Pennsylvania state government is responding to the coronavirus. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for Spotlight PA’s newsletter.</i></a>
 
 HARRISBURG — Just last month, Pennsylvania’s finances were finally on an upswing again. Tax revenues were coming in higher than forecasted, and Democratic Gov. Tom Wolf proposed a $36 billion budget with some ambitious new spending plans.
 
@@ -55,7 +55,7 @@ The state Department of Revenue doesn’t have specific estimates yet on just ho
 
 In the nation’s capital, lawmakers continue to hash out the details of a massive federal stimulus package. It’s not yet clear how much of a boost that could provide to states.
 
-As revenues plummet, demand for some state programs is set to soar. In the coming weeks, more people will have to rely on public assistance programs. The state has already seen <a href="https://www.inquirer.com/health/coronavirus/spl/pennsylvania-new-jersey-unemployment-surge-coronavirus-20200319.html">record numbers</a> of people filing unemployment claims.
+As revenues plummet, demand for some state programs is set to soar. In the coming weeks, more people will have to rely on public assistance programs. The state has already seen <a href="https://web.archive.org/20200331132358/https://www.inquirer.com/health/coronavirus/spl/pennsylvania-new-jersey-unemployment-surge-coronavirus-20200319.html">record numbers</a> of people filing unemployment claims.
 
 Wolf addressed the fiscal challenge ahead Monday, saying at a news conference that the state is “like any other business.” Until the fate of a federal stimulus package becomes clear, he said, “we’re doing the best we can to live within our means.”
 
@@ -75,7 +75,7 @@ Pennsylvania also faces the challenge of going into an economic downturn with me
 
 Even after the largest transfer in decades into the rainy day fund last July, the state still has only $340 million in reserves – enough to fund government operations for around three and a half days, the state treasurer’s office <a href="https://web.archive.org/web/20220130071226/https://www.patreasury.gov/pdf/Treasury-Notes-RDF.pdf">estimated</a> at the time.
 
-A 2019 <a href="https://www.moodysanalytics.com/-/media/article/2019/stress-testing-states-2019.pdf">study</a> by Moody’s Analytics found that, in order to get through a moderate recession without tax increases or spending cuts, a typical state would need to have just over 11% of its general fund revenues in a reserve fund.
+A 2019 <a href="https://web.archive.org/20200207092612/https://www.moodysanalytics.com/-/media/article/2019/stress-testing-states-2019.pdf">study</a> by Moody’s Analytics found that, in order to get through a moderate recession without tax increases or spending cuts, a typical state would need to have just over 11% of its general fund revenues in a reserve fund.
 
 Pennsylvania has around 2%.
 

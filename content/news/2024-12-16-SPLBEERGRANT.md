@@ -28,7 +28,7 @@ twitter-title = "Headaches, layoffs plagued awardees in a Pa. beer grant program
 
 HARRISBURG — At first, things were going smoothly.
 
-Filmmaker Nate Kresge said he was receiving grants through a little-known state program to promote Pennsylvania’s beer industry. The money went toward a documentary and, later, a series called <a href="https://www.pouredinpa.com/">Poured in PA</a> that showcased everyone from local brewmasters to the local artists who created the labels on beer cans.
+Filmmaker Nate Kresge said he was receiving grants through a little-known state program to promote Pennsylvania’s beer industry. The money went toward a documentary and, later, a series called <a href="https://web.archive.org/20170705064618/https://www.pouredinpa.com/">Poured in PA</a> that showcased everyone from local brewmasters to the local artists who created the labels on beer cans.
 
 But Kresge soon ran into an unexpected obstacle: the Pennsylvania Liquor Control Board.
 
@@ -48,7 +48,7 @@ Multiple grant awardees told Spotlight PA their biggest problem was the liquor c
 
 Complaints about the program became so frequent that this summer, with little fanfare, Gov. Josh Shapiro signed a bill cutting the liquor control board out of the process of administering the program. The Department of Agriculture will now almost exclusively run it.
 
-The governor’s office did not respond to questions about why it signed off on the change. Earlier this year, state Rep. Dan Deasy (D., Allegheny) also <a href="https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42535">introduced a bill</a> to cut out the liquor control board from the decision-making process. Deasy did not return multiple calls.
+The governor’s office did not respond to questions about why it signed off on the change. Earlier this year, state Rep. Dan Deasy (D., Allegheny) also <a href="https://web.archive.org/20241216232313/https://www.legis.state.pa.us//cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20230&amp;cosponId=42535">introduced a bill</a> to cut out the liquor control board from the decision-making process. Deasy did not return multiple calls.
 
 The liquor control board also did not comment on the reason the program’s administration was changed, but a spokesperson acknowledged it has rejected reimbursements.
 
@@ -123,4 +123,3 @@ No sooner had he declined the grant in 2022 that he heard the liquor control boa
 Nothing came of it — at least, Kresge said he hasn’t heard from the agency in almost a year. But he can’t shake the feeling that it was personal.
 
 It felt, he said, “like a witch hunt.”
-

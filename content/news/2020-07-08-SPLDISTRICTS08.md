@@ -43,9 +43,9 @@ Every ten years, lawmakers use new census information to draw a congressional ma
 
 The state House and Senate maps, however, are a different story. They are drawn by a five-member commission made up of Democratic and Republican leaders from the legislature as well as a chair picked by those lawmakers or, if they can’t agree, the state Supreme Court. That process is enshrined in the state Constitution, making it a lot tougher to change than a simple law. 
 
-Critics of Pennsylvania’s redistricting system have long focused on who draws the maps as the most important area in need of reform. But <a href="https://www.brennancenter.org/our-work/policy-solutions/creating-strong-rules-drawing-maps">experts</a> from the nonpartisan Brennan Center for Justice at New York University Law School have argued that just as important are the rules for how it’s done. 
+Critics of Pennsylvania’s redistricting system have long focused on who draws the maps as the most important area in need of reform. But <a href="https://web.archive.org/20191212125819/https://www.brennancenter.org/our-work/policy-solutions/creating-strong-rules-drawing-maps">experts</a> from the nonpartisan Brennan Center for Justice at New York University Law School have argued that just as important are the rules for how it’s done. 
 
-A <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2019&sInd=0&body=H&type=B&bn=2638">bill</a> introduced in June by Rep. Wendi Thomas (R., Bucks) targets those rules, and has the backing of good-government advocates including the Committee of Seventy and Fair Districts PA. 
+A <a href="https://web.archive.org/20200715153858/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2019&sInd=0&body=H&type=B&bn=2638">bill</a> introduced in June by Rep. Wendi Thomas (R., Bucks) targets those rules, and has the backing of good-government advocates including the Committee of Seventy and Fair Districts PA. 
 
 When lawmakers draw both the legislative and congressional maps, they must ensure districts have equal population. Thomas’ measure would put in place even more criteria, including a cap on how many times legislators can split a county. Geffen said this would provide a “check on doing the most outrageous of gerrymanders.”
 
@@ -57,7 +57,7 @@ If the legislature acts before the end of January, and Gov. Tom Wolf signs off, 
 
 “But recognizing that we don’t have time before the next redistricting cycle to get a constitutional amendment, a bill like this would certainly be an improvement over the status quo,” he said. 
 
-Whether the House and Senate will agree to rules that limit their ability to draw districts — and pick voters — remains to be seen, though in the past they’ve been slow to pass legislation that<a href="https://www.spotlightpa.org/news/2019/10/pennsylvania-campaign-expenses-reform-bill-costa/"> reduces their influence</a> or <a href="https://www.pennlive.com/news/2019/03/term-limits-proposal-seeks-to-put-an-end-to-career-politicians-serving-in-pas-general-assembly.html" target="_blank">power</a>. When lawmakers return in the fall, they’ll also have to grapple with the ever-present threat of the coronavirus and an incomplete state budget.
+Whether the House and Senate will agree to rules that limit their ability to draw districts — and pick voters — remains to be seen, though in the past they’ve been slow to pass legislation that<a href="https://www.spotlightpa.org/news/2019/10/pennsylvania-campaign-expenses-reform-bill-costa/"> reduces their influence</a> or <a href="https://web.archive.org/20190317052340/https://www.pennlive.com/news/2019/03/term-limits-proposal-seeks-to-put-an-end-to-career-politicians-serving-in-pas-general-assembly.html" target="_blank">power</a>. When lawmakers return in the fall, they’ll also have to grapple with the ever-present threat of the coronavirus and an incomplete state budget.
 
 Thomas' bill was recently sent to the House State Government Committee, chaired by Rep. Garth Everett (R., Lycoming), who did not respond to request for comment. 
 

@@ -33,7 +33,7 @@ Both bodies of the legislature have passed the bill, but Republican leaders in t
 
 Lawmakers are still talking through the budget’s next steps, but aren’t scheduled to take any votes until September. As the breakdown threatens to last weeks, if not months, revisiting Pennsylvania&#39;s past impasses can show how residents and government operations could be affected in the coming weeks
 
-Budget impasses used to be a feature of Pennsylvania’s regularly divided government, which is legally obligated to pass <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&amp;ttl=00&amp;div=0&amp;chpt=8&amp;sctn=13&amp;subsctn=0">a balanced budget</a> by June 30 each year. In the past 20 years, the state has passed <a href="https://www.pennlive.com/politics/2015/07/pennsylvanias_history_of_blown.html">13 late budgets</a>, including four impasses that went over 100 days.
+Budget impasses used to be a feature of Pennsylvania’s regularly divided government, which is legally obligated to pass <a href="https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&amp;ttl=00&amp;div=0&amp;chpt=8&amp;sctn=13&amp;subsctn=0">a balanced budget</a> by June 30 each year. In the past 20 years, the state has passed <a href="https://web.archive.org/20201020152705/https://www.pennlive.com/politics/2015/07/pennsylvanias_history_of_blown.html">13 late budgets</a>, including four impasses that went over 100 days.
 
 Drawing a throughline between all of them is difficult. Spotlight PA talked to seven Capitol insiders who’ve participated in high-level budget talks, some of whom requested anonymity to speak candidly, to learn how the current stalemate fits into this tradition.
 
@@ -57,9 +57,9 @@ Also affected are students at the commonwealth’s four state-related universiti
 
 Until 2009, there was another impetus for lawmakers to pass a timely budget: State employees, including lawmakers themselves, wouldn’t be paid during an impasse.
 
-A <a href="https://www.pennlive.com/midstate/2009/12/pennsylvania_supreme_court_sid.html">state Supreme Court ruling</a> that year added state employee paychecks to the list of legally protected spending. State employees now must be paid, budget or not, which also means state prisons, driver’s license centers, and state parks operate as usual.
+A <a href="https://web.archive.org/20210930213618/https://www.pennlive.com/midstate/2009/12/pennsylvania_supreme_court_sid.html">state Supreme Court ruling</a> that year added state employee paychecks to the list of legally protected spending. State employees now must be paid, budget or not, which also means state prisons, driver’s license centers, and state parks operate as usual.
 
-Insiders were split on how the ruling has since impacted negotiations. Capitol veterans familiar with budget negotiations under former Democratic Gov. Ed Rendell, who was in power from 2003 to 2011, noted that the governor seemed keenly aware of the tension that weeks or even months of unpaid state workers and unmet public services could create. This unease took several forms, including constituent phone calls, emails, and <a href="https://www.poconorecord.com/story/news/2009/07/29/employees-vent-anger-over-losing/51929159007/">picket lines</a>.
+Insiders were split on how the ruling has since impacted negotiations. Capitol veterans familiar with budget negotiations under former Democratic Gov. Ed Rendell, who was in power from 2003 to 2011, noted that the governor seemed keenly aware of the tension that weeks or even months of unpaid state workers and unmet public services could create. This unease took several forms, including constituent phone calls, emails, and <a href="https://web.archive.org/20230201033539/https://www.poconorecord.com/story/news/2009/07/29/employees-vent-anger-over-losing/51929159007/">picket lines</a>.
 
 “Those are a lot of pressure points that don’t exist now,” Jake Corman, a former Republican state Senate leader who served from 1999 to 2022, told Spotlight PA. The ruling that requires state workers to be paid during an impasse “allows budget battles to last a lot longer,” he said.
 
@@ -91,7 +91,7 @@ Former Democratic Gov. Tom Wolf presided over a record nine-month impasse in his
 
 A late budget also doesn’t always indicate an impasse.
 
-In between Rendell and Wolf, former Republican Gov. Tom Corbett worked with a Republican-controlled legislature every year, but still signed one budget 10 days late and <a href="https://www.phillymag.com/city/2014/07/10/corbett-exercises-line-item-veto-on-pennsylvania-budget/">line-item vetoed</a> $72 million from the General Assembly’s own budget because legislators didn’t pass his <a href="https://www.inquirer.com/philly/news/politics/20140711_Corbett_signs_Pa__budget_but_vetoes_more_than__72_million_in_spending.html">desired changes to the pension system</a>.
+In between Rendell and Wolf, former Republican Gov. Tom Corbett worked with a Republican-controlled legislature every year, but still signed one budget 10 days late and <a href="https://web.archive.org/20211023063456/https://www.phillymag.com/city/2014/07/10/corbett-exercises-line-item-veto-on-pennsylvania-budget/">line-item vetoed</a> $72 million from the General Assembly’s own budget because legislators didn’t pass his <a href="https://web.archive.org/20210926151906/https://www.inquirer.com/philly/news/politics/20140711_Corbett_signs_Pa__budget_but_vetoes_more_than__72_million_in_spending.html">desired changes to the pension system</a>.
 
 Last year’s budget was <a href="https://www.spotlightpa.org/news/2022/07/pennsylvania-state-budget-explainer-late/">eight days late</a>, but Wolf and top Republicans communicated throughout as they hammered out how to use billions in federal stimulus dollars.
 
@@ -151,5 +151,4 @@ And with at least three, and potentially seven more budgets to come, Corman said
 
 “Tom Wolf said no to me a lot. I didn’t like it all the time, but we dealt with it,” Corman said. “It needs to get repaired because you have future issues to work on together.”
 
-<em>DaniRae Renno is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
-
+<em>DaniRae Renno is an intern with the Pennsylvania Legislative Correspondents’ Association. </em><a href="https://web.archive.org/20191229041140/http://www.pacapitolreporters.org/pacapitolreporters-internships.html"><em>Learn more about the program</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations</em></a><em> </em><a href="https://www.spotlightpa.org/support"><em>and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>

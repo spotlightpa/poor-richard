@@ -57,7 +57,7 @@ For example, Philadelphia provides extensive public defense services through the
 
 Chief Defender Keisha Hudson said the Defender Association budget alone tops $50 million, which helps the organization employ 500 attorneys, investigators, and social workers. Rather than churn through a heavy caseload, the staff helps build a comprehensive defense and identify elements of a person’s life that might mitigate their sentence, Hudson said, a level of practice that isn’t possible in most other counties.
 
-A <a href="http://lbfc.legis.state.pa.us/Resources/Documents/Reports/701.pdf">county-by-county review</a> by the Legislative Budget and Finance Committee of the General Assembly in 2021 found Philadelphia spends the most money on criminal defense per person, around $30.20 in fiscal 2019.
+A <a href="https://web.archive.org/20211116020034/http://lbfc.legis.state.pa.us/Resources/Documents/Reports/701.pdf">county-by-county review</a> by the Legislative Budget and Finance Committee of the General Assembly in 2021 found Philadelphia spends the most money on criminal defense per person, around $30.20 in fiscal 2019.
 
 The same year, Mifflin County in rural central Pennsylvania spent only $3.20 per person.
 

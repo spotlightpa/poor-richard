@@ -31,7 +31,7 @@ no-index = false
 
 HARRISBURG — Having lost battle after battle to wrest control of Pennsylvania’s coronavirus response from Gov. Tom Wolf, the GOP-controlled legislature now wants voters to permanently weaken a governor’s emergency powers while boosting their own.
 
-This week, Republican lawmakers — with help from a handful of Democrats — cleared the first hurdle to get a <a href="https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2019&sind=0&body=S&type=B&bn=1166" target=_blank>constitutional amendment</a> on a future ballot that would allow the General Assembly to unilaterally end a disaster declaration.
+This week, Republican lawmakers — with help from a handful of Democrats — cleared the first hurdle to get a <a href="https://web.archive.org/20200615175611/https://www.legis.state.pa.us/cfdocs/billInfo/BillInfo.cfm?syear=2019&sind=0&body=S&type=B&bn=1166" target=_blank>constitutional amendment</a> on a future ballot that would allow the General Assembly to unilaterally end a disaster declaration.
 
 The process is lengthy with no guaranteed outcome, but it has a major benefit for the GOP — unlike a piece of legislation, this approach doesn’t require Wolf’s approval. To send a question that would amend the Constitution to voters, the House and Senate must approve a resolution during two consecutive sessions, a relatively easy task when one party controls both chambers.
 
@@ -46,7 +46,7 @@ Should the legislature prioritize the resolution when lawmakers return for a new
 
 Throughout the coronavirus pandemic, Wolf and his administration have made the big decisions — to shut down schools, close businesses, and issue sweeping stay-at-home orders — and set the speed for reopening Pennsylvania.
 
-Pennsylvanians largely approved of those decisions, according to a Washington Post-Ipsos <a href="https://www.washingtonpost.com/context/washington-post-ipsos-coronavirus-employment-survey-april-27-may-4/4bd8dd8b-1257-4d5f-b3c1-0af6c38f060d/?itid=lk_inline_manual_2">poll</a> from May, which showed more than 70% of adults in the state agreed with the governor’s handling of the pandemic.
+Pennsylvanians largely approved of those decisions, according to a Washington Post-Ipsos <a href="https://web.archive.org/20200507182439/https://www.washingtonpost.com/context/washington-post-ipsos-coronavirus-employment-survey-april-27-may-4/4bd8dd8b-1257-4d5f-b3c1-0af6c38f060d/?itid=lk_inline_manual_2">poll</a> from May, which showed more than 70% of adults in the state agreed with the governor’s handling of the pandemic.
 
 Still, the strategy has frustrated<b> </b>the usually powerful Republican-controlled legislature, whose efforts to ease restrictions ahead of the administration’s timeline were repeatedly vetoed by Wolf. The frustration boiled over into a lawsuit to <a href="https://www.spotlightpa.org/news/2020/07/pennsylvania-coronavirus-disaster-declaration-supreme-court-ruling/">force Wolf to end his emergency order</a>, which was rejected by the state Supreme Court.
 
@@ -74,4 +74,3 @@ Wolf said Wednesday he will reject the bill when it reaches his desk.
 <i><b>100% ESSENTIAL:</b></i> <a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations and readers like you</i></a><i> who are committed to accountability journalism that gets results. If you value this reporting, please give a gift today at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/tips/?tip_text=Do%20you%20have%20a%20tip%20about%20%3Cb%3Ehow%20Pa.'s%20government%20is%20responding%20to%20the%20coronavirus%3C%2Fb%3E%3F%20Tell%20us."></div>
-

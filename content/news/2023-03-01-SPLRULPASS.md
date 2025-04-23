@@ -38,7 +38,7 @@ Zabel has yet to respond to the allegations.
 
 During a floor debate on the rules Wednesday, several Republicans argued that the new harassment procedures weren’t strong enough. State Rep. Kristin Marcell (R., Bucks) called the language “unfortunate muddying of the waters.”
 
-They pushed for <a href="https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2021&sessInd=0&billBody=H&billTyp=R&billNbr=0192&pn=2937">language offered last session</a> by state Rep. Kate Klunk (R., York),. Minority Leader Bryan Cutler (R., Lancaster) later said he thinks Democrats’ new rules may not be expansive enough to cover, for instance, the harassment Zabel is accused of.
+They pushed for <a href="https://web.archive.org/20220630031623/https://www.legis.state.pa.us/cfdocs/legis/PN/Public/btCheck.cfm?txtType=HTM&sessYr=2021&sessInd=0&billBody=H&billTyp=R&billNbr=0192&pn=2937">language offered last session</a> by state Rep. Kate Klunk (R., York),. Minority Leader Bryan Cutler (R., Lancaster) later said he thinks Democrats’ new rules may not be expansive enough to cover, for instance, the harassment Zabel is accused of.
 
 The floor debate culminated in Cutler saying he was in “receipt of a news article” that publicly named Zabel, and asking if McClinton was aware of it.
 

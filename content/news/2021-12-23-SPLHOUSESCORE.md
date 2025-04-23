@@ -19,7 +19,7 @@ title = "See how the proposed Pennsylvania state House map scores in every key a
 topics = ["Redistricting"]
 +++
 
-<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
+<i>This article is part of a yearlong reporting project focused on redistricting and gerrymandering in Pennsylvania. It is made possible by the support of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> members and </i><a href="https://web.archive.org/20201019151248/https://votebeat.org/"><i>Votebeat</i></a><i>, a project focused on election integrity and voting access.</i>
 
 HARRISBURG — A proposed redrawing of the Pennsylvania House map improves on fairness metrics as mandated by the state constitution, while creating more districts that could be won by Democrats.
 
@@ -31,7 +31,7 @@ The commission’s nonpartisan chair, former University of Pittsburgh chancellor
 
 “The main goal of the constitution is not to ensure that there is a fair fight between leaders of opposing parties every 10 years, but instead to facilitate what will be a good reapportionment result for the people of Pennsylvania,” he said.
 
-The public has until Jan. 16 to <a href="https://www.redistricting.state.pa.us/">provide feedback</a>, while the panel plans to hold hearings before it amends the map and takes a final vote. The map could then be challenged in court. The state’s congressional map is <a href="https://www.spotlightpa.org/news/2021/12/pa-congressional-maps-proposed-redistricting/">created and approved in a separate process</a>.
+The public has until Jan. 16 to <a href="https://web.archive.org/20210117052717/https://www.redistricting.state.pa.us/">provide feedback</a>, while the panel plans to hold hearings before it amends the map and takes a final vote. The map could then be challenged in court. The state’s congressional map is <a href="https://www.spotlightpa.org/news/2021/12/pa-congressional-maps-proposed-redistricting/">created and approved in a separate process</a>.
 
 While Republicans believe the proposal is unfair to members of their party, fairness standards as mandated under the state constitution and embraced by the courts show it represents an improvement over the current map.
 
@@ -55,13 +55,13 @@ Contiguity means that there is no part of a district that is detached from the r
 
 This metric is intended to keep communities together. Mapmakers aim to reduce county, municipal, and voting precinct splits, though most tend to focus on reducing the first two.
 
-<b>The </b><a href="https://gerrymander.princeton.edu/redistricting-report-card?planId=rec5Vr4cdGc0rt375"><b>Princeton Gerrymandering Project,</b></a><b> a nonpartisan group that conducts data analysis on district plans across the country, gave the map an A grade for county splits.</b> Of the 45 counties that were split a total of 184 times, 40 of them were too large to fit their population into a single district. The current map splits 50 counties over 200 times.
+<b>The </b><a href="https://web.archive.org/20211216211402/https://gerrymander.princeton.edu/redistricting-report-card?planId=rec5Vr4cdGc0rt375"><b>Princeton Gerrymandering Project,</b></a><b> a nonpartisan group that conducts data analysis on district plans across the country, gave the map an A grade for county splits.</b> Of the 45 counties that were split a total of 184 times, 40 of them were too large to fit their population into a single district. The current map splits 50 counties over 200 times.
 
 {{<picture src="external/c7e69h4wrvhrf1kmzy42zphqqw.jpeg" description="The Princeton Gerrymandering Project gave the map an A grade for avoiding county splits when possible." caption="The Princeton Gerrymandering Project gave the map an A grade for avoiding county splits when possible." credit="Proposed Pennsylvania House map via DistrictBuilder">}} 
 
 ## Population equality
 
-The Pennsylvania Constitution mandates that each district have approximately the same number of residents. Per a U.S. Supreme Court case from the 1980s, the commonly accepted deviation from this standard for an individual legislative district <a href="https://redistricting.lls.edu/redistricting-101/where-are-the-lines-drawn/">is over or under 5% of the ideal population size</a> and 10% for the overall map.
+The Pennsylvania Constitution mandates that each district have approximately the same number of residents. Per a U.S. Supreme Court case from the 1980s, the commonly accepted deviation from this standard for an individual legislative district <a href="https://web.archive.org/20210113143002/https://redistricting.lls.edu/redistricting-101/where-are-the-lines-drawn/">is over or under 5% of the ideal population size</a> and 10% for the overall map.
 
 <b>The population deviation of the proposed map overall, 9.28%, is just under the permissible range established by the court. </b>Nordenberg said in December this is one of the areas that he intends to improve upon when reviewing the maps over the next month.
 
@@ -71,7 +71,7 @@ Republicans are so far crying foul, accusing the panel of creating a partisan ge
 
 One such metric is proportionality, which looks at whether the likely results of elections in each district, based on past electoral data, would result in a group of elected officials that is reflective of the ratio of Democratic and Republican voters in the state.
 
-<a href="https://davesredistricting.org/maps#home"><b>Dave’s Redistricting App</b></a><b>, a mapping website dedicated to creating and analyzing district maps, called the proposal “Very Good” for proportionality,</b> with a much smaller Republican lean than the current map. The likely number of Democratic seats would be 105, only a one-seat difference from the number of Democratic seats that is closest to proportional, 106.
+<a href="https://web.archive.org/20210102053945/https://davesredistricting.org/maps#home"><b>Dave’s Redistricting App</b></a><b>, a mapping website dedicated to creating and analyzing district maps, called the proposal “Very Good” for proportionality,</b> with a much smaller Republican lean than the current map. The likely number of Democratic seats would be 105, only a one-seat difference from the number of Democratic seats that is closest to proportional, 106.
 
 The Princeton Gerrymandering Project looks at a variety of factors when assessing partisan fairness. One such factor is partisan bias, or the difference in seat share between the parties even if each party received 50% of the votes. <b>In that regard, the map has a 1.7% Republican bias.</b>
 

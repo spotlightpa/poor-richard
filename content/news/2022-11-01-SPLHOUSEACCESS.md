@@ -131,9 +131,9 @@ Or as she put it to one voter: “It’s either going to be Mr. Extreme or Ms. R
 
 Steele is running in one of a small number of <a href="https://www.spotlightpa.org/news/2022/10/pa-election-2022-redistricting-maps-legislative-races/">swing districts</a> concentrated in the suburbs of Philadelphia and Pittsburgh. Registered Democrats heavily outnumber Republicans in the 33rd, but that statistic alone can’t predict the outcome of the race.
 
-It’s also useful to look at an “<a href="https://medium.com/dra-2020/election-composites-13d05ed07864">election composite</a>,” which uses past results to calculate likely future outcomes. Based on the performance of statewide candidates between 2016 and 2020, a Democratic candidate is projected to win roughly 53% of the vote share in the 33rd District.
+It’s also useful to look at an “<a href="https://web.archive.org/20201109130443/https://medium.com/dra-2020/election-composites-13d05ed07864">election composite</a>,” which uses past results to calculate likely future outcomes. Based on the performance of statewide candidates between 2016 and 2020, a Democratic candidate is projected to win roughly 53% of the vote share in the 33rd District.
 
-<iframe title="Where competitive Pa. House districts are located" aria-label="Map" id="datawrapper-chart-GhgNE" src="https://datawrapper.dwcdn.net/GhgNE/6/" scrolling="yes" frameborder="0" style="border: none;" width="100%" height="535"></iframe>
+<iframe title="Where competitive Pa. House districts are located" aria-label="Map" id="datawrapper-chart-GhgNE" src="https://web.archive.org/20221026093046/https://datawrapper.dwcdn.net/GhgNE/6/" scrolling="yes" frameborder="0" style="border: none;" width="100%" height="535"></iframe>
 
 Operatives see the race as a key one to watch, as midterm elections usually benefit the party that doesn’t occupy the White House and the district doesn’t have an incumbent. Shapiro, the Democratic gubernatorial nominee, even joined Steele for a recent campaign event.
 

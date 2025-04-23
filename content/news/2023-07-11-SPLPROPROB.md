@@ -24,7 +24,7 @@ HARRISBURG — For the third time in five years, a bill intended to rework proba
 
 But like previous attempts, this latest effort to fix the state’s outdated probation system has prompted local civil rights advocates to come out against the bill. They argue it does not address pressing issues and could make things worse.
 
-Efforts to overhaul probation kicked off in earnest in 2018 after Philadelphia rapper Meek Mill spent <a href="https://www.inquirer.com/news/meek-mill-probation-jail-case-new-trial-history-20190724.html#loaded">nearly 10</a> years under court supervision before facing a <a href="https://www.inquirer.com/philly/news/crime/meek-mill-sentenced-state-prison-probation-violation-20171106.html">new prison sentence</a> for probation violations that otherwise would not have resulted in prison time.
+Efforts to overhaul probation kicked off in earnest in 2018 after Philadelphia rapper Meek Mill spent <a href="https://web.archive.org/20190724233813/https://www.inquirer.com/news/meek-mill-probation-jail-case-new-trial-history-20190724.html#loaded">nearly 10</a> years under court supervision before facing a <a href="https://web.archive.org/20190607145154/https://www.inquirer.com/philly/news/crime/meek-mill-sentenced-state-prison-probation-violation-20171106.html">new prison sentence</a> for probation violations that otherwise would not have resulted in prison time.
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
@@ -32,11 +32,11 @@ The case provided a high-profile example of the problems in Pennsylvania&#39;s p
 
 Mill’s case led to the creation of the national advocacy group REFORM Alliance, which has been the driving force behind the legislation in Pennsylvania.
 
-Legislation introduced in 2019 <a href="https://www.aclupa.org/en/news/state-probation-reform-pennsylvania">initially had the support</a> of the ACLU of Pennsylvania. But subsequent negotiations and amendments caused the organization to withdraw support and rally other groups against it. The same thing happened in <a href="https://www.aclupa.org/sites/default/files/field_documents/joint_statement-opposition_to_senate_bill_913_pn_1144.pdf">2021</a>.
+Legislation introduced in 2019 <a href="https://web.archive.org/20200430035555/https://www.aclupa.org/en/news/state-probation-reform-pennsylvania">initially had the support</a> of the ACLU of Pennsylvania. But subsequent negotiations and amendments caused the organization to withdraw support and rally other groups against it. The same thing happened in <a href="https://web.archive.org/20220124145236/https://www.aclupa.org/sites/default/files/field_documents/joint_statement-opposition_to_senate_bill_913_pn_1144.pdf">2021</a>.
 
 This year, the pattern repeated.
 
-Introduced on June 21, the <a href="https://www.legis.state.pa.us/cfdocs/billInfo/bill_history.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=838">legislation</a> would remove language that allows judges to set terms of probation to “vindicate the authority of the court.” Instead, it would mandate courts to tailor probation to an individual’s circumstances. It also would set a “presumption against total confinement,” that supporters say would direct judges to keep people out of jail for small infractions.
+Introduced on June 21, the <a href="https://web.archive.org/20230714221434/https://www.legis.state.pa.us/cfdocs/billInfo/bill_history.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=838">legislation</a> would remove language that allows judges to set terms of probation to “vindicate the authority of the court.” Instead, it would mandate courts to tailor probation to an individual’s circumstances. It also would set a “presumption against total confinement,” that supporters say would direct judges to keep people out of jail for small infractions.
 
 Under current law, judges can revoke someone’s probation and send them back to jail for almost any reason, said Erin Haney, policy director at REFORM Alliance. “And so what this does is it creates very specific instances when somebody can be incarcerated on a technical violation.”
 
@@ -44,7 +44,7 @@ The proposed law also provides a timeline for review conferences, where people o
 
 But groups that defend and advocate for people in probation cases, such as the Defender Association of Philadelphia and the Abolitionist Law Center in Allegheny County, opposed the bill as it moved through committee and out of the state Senate in a matter of days.
 
-The ACLU of Pennsylvania published <a href="https://www.aclupa.org/sites/default/files/field_documents/aclu-pa_opposition_to_sb_838_pn_946_senate_2023-06-27.pdf">a seven-page memo</a> that argues the bill “not only fails to meaningfully reform our broken probation system, it threatens to make probation worse,” and urged lawmakers to vote against it.
+The ACLU of Pennsylvania published <a href="https://web.archive.org/20230628101951/https://www.aclupa.org/sites/default/files/field_documents/aclu-pa_opposition_to_sb_838_pn_946_senate_2023-06-27.pdf">a seven-page memo</a> that argues the bill “not only fails to meaningfully reform our broken probation system, it threatens to make probation worse,” and urged lawmakers to vote against it.
 
 The exceptions allowing a judge to send someone back to jail are too broad, the advocacy groups argue, and risk undermining the mandate against incarceration.
 
@@ -63,4 +63,3 @@ The state House Judiciary Committee on June 29 approved the bill with amendments
 The bill is ready for a vote whenever the state House returns to session, but it’s unclear when it will. Legislators are currently working to break <a href="https://www.spotlightpa.org/news/2023/07/pennsylvania-budget-governor-shapiro-education-conflict/">a budget impasse</a>.
 
 If the legislation does pass the lower chamber, it must return to the state Senate for another vote before going to Democratic Gov. Josh Shapiro for final approval.
-

@@ -34,15 +34,15 @@ But environmental advocates and some lawmakers argue the state Department of Env
 
 The state Senate Environmental Resources and Energy Committee recently passed a <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&sInd=0&body=S&type=B&bn=831">bill</a> along party lines that would create a legal and regulatory framework for DEP to control where companies can dig underground injection wells.
 
-These wells are used to store liquified carbon dioxide emissions as a way to prevent greenhouse gases from entering the atmosphere. Such wells can <a href="https://climate.mit.edu/ask-mit/there-danger-pumping-liquid-carbon-dioxide-underground-could-have-same-negative-impacts">cause earthquakes</a> and <a href="https://nicholas.duke.edu/news/leaks-co2-stored-deep-underground-could-contaminate-drinking-water">contaminate drinking water</a>.
+These wells are used to store liquified carbon dioxide emissions as a way to prevent greenhouse gases from entering the atmosphere. Such wells can <a href="https://climate.mit.edu/ask-mit/there-danger-pumping-liquid-carbon-dioxide-underground-could-have-same-negative-impacts">cause earthquakes</a> and <a href="https://web.archive.org/20140805161205/https://nicholas.duke.edu/news/leaks-co2-stored-deep-underground-could-contaminate-drinking-water">contaminate drinking water</a>.
 
 The agency would be tasked with assessing the terrain on which wells would be constructed, enforcing regulations on the quality of storage and transportation infrastructure, and monitoring public health impacts.
 
-Currently, the federal Environmental Protection Agency has the primary enforcement authority, also called primacy, when it comes to injection wells. This means that <a href="https://www.epa.gov/uic/class-vi-wells-used-geologic-sequestration-carbon-dioxide#dw_protect">projects must be approved by the federal agency</a> and meet its construction, monitoring, and operating standards.
+Currently, the federal Environmental Protection Agency has the primary enforcement authority, also called primacy, when it comes to injection wells. This means that <a href="https://web.archive.org/20220120203154/https://www.epa.gov/uic/class-vi-wells-used-geologic-sequestration-carbon-dioxide#dw_protect">projects must be approved by the federal agency</a> and meet its construction, monitoring, and operating standards.
 
 The bill under consideration in Pennsylvania would direct the DEP to assume this authority from the EPA.
 
-Only <a href="https://www.epa.gov/uic/primary-enforcement-authority-underground-injection-control-program-0#what_states">two states, North Dakota and Wyoming, have this level of authority over injection wells</a>, but <a href="https://www.nola.com/news/environment/louisiana-epa-carbon-capture-hearing-draws-ire-and-support/article_6f089b6f-167c-5973-a8c9-2101da3775cd.html">other</a> states with large energy industries, such as Louisiana and Texas, are also debating whether they should take on primacy.
+Only <a href="https://web.archive.org/20220630212926/https://www.epa.gov/uic/primary-enforcement-authority-underground-injection-control-program-0#what_states">two states, North Dakota and Wyoming, have this level of authority over injection wells</a>, but <a href="https://www.nola.com/news/environment/louisiana-epa-carbon-capture-hearing-draws-ire-and-support/article_6f089b6f-167c-5973-a8c9-2101da3775cd.html">other</a> states with large energy industries, such as Louisiana and Texas, are also debating whether they should take on primacy.
 
 State Sen. Gene Yaw (R., Lycoming), chair of his chamber’s environmental committee, said Pennsylvania needs to start pursuing carbon capture, utilization, and storage.
 

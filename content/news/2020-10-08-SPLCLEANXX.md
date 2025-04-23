@@ -33,7 +33,7 @@ In recent weeks, there appeared to be agreement between Gov. Tom Wolf and legisl
 
 <script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
 
-Now, with the election fast approaching, one House Democrat, Kevin Boyle, has introduced new <a href="https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2019&sInd=0&body=H&type=B&bn=2916">legislation</a> solely focused on pre-canvassing, giving counties a 10-day window before Nov. 3
+Now, with the election fast approaching, one House Democrat, Kevin Boyle, has introduced new <a href="https://web.archive.org/20201012041130/https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2019&sInd=0&body=H&type=B&bn=2916">legislation</a> solely focused on pre-canvassing, giving counties a 10-day window before Nov. 3
 
 “There’s no reason that we can’t come to an agreement,” Boyle (D., Philadelphia) said, “unless — and I think with every passing day it’s looking more and more likely that this is the case — the Republicans don’t want additional pre-canvassing time for counties because it would not serve their political ends.”
 

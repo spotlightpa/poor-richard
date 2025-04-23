@@ -22,9 +22,9 @@ topics = ["Local Government"]
 
 Resolve Philly and Spotlight PA partnered to investigate how county foster care agencies across Pennsylvania take Social Security money owed to children in their care.
 
-This story is a follow-up to the 2022 <a href="https://www.inquirer.com/news/foster-parenting-philadelphia-social-security-payments-20211215.html#new_tab">Resolve Philly and Philadelphia Inquirer investigation</a> that focused on Philadelphia Department of Human Services. That investigation revealed the city was taking nearly $1 million every year from children and depositing the money into its general fund.
+This story is a follow-up to the 2022 <a href="https://web.archive.org/20211215103322/https://www.inquirer.com/news/foster-parenting-philadelphia-social-security-payments-20211215.html#new_tab">Resolve Philly and Philadelphia Inquirer investigation</a> that focused on Philadelphia Department of Human Services. That investigation revealed the city was taking nearly $1 million every year from children and depositing the money into its general fund.
 
-The story inspired legislation <a href="https://www.inquirer.com/news/foster-parenting-philadelphia-social-security-payments-20220315.html#new_tab">from Philadelphia City Council</a> and <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20250&amp;cosponId=45577">within the state House</a> to curtail this practice statewide. Local reporters and legislators across the state asked reporters Steve Volk and Julie Christie: What about the other counties in PA? How much do they take, and how many kids are impacted?
+The story inspired legislation <a href="https://web.archive.org/20220315121949/https://www.inquirer.com/news/foster-parenting-philadelphia-social-security-payments-20220315.html#new_tab">from Philadelphia City Council</a> and <a href="https://www.legis.state.pa.us/cfdocs/Legis/CSM/showMemoPublic.cfm?chamber=H&amp;SPick=20250&amp;cosponId=45577">within the state House</a> to curtail this practice statewide. Local reporters and legislators across the state asked reporters Steve Volk and Julie Christie: What about the other counties in PA? How much do they take, and how many kids are impacted?
 
 {{<embed/newsletter>}}
 
@@ -105,4 +105,3 @@ Many of the counties with unprocessed data provided data as PDF files, which con
 There are also counties that haven’t answered critical questions about the structure of their data that are needed in order to process them correctly.
 
 Resolve Philly and Spotlight PA won’t publish any of the raw data because some counties handed over documents that include personal information like names, Social Security numbers, and birthdays (even though reporters asked them not to.)
-
