@@ -12,17 +12,18 @@
     "content/news/2025-03-24-SPLLEGISMONEY0325.md"
   ],
   "featuredStories": [
-    "content/news/2025-04-23-APHAZVOTE0425.md"
+    "content/news/2025-04-24-SPLOPENPRI0425.md"
   ],
   "subfeatures": [
-    "content/news/2025-04-23-SPLMAY20READING.md",
     "content/news/2025-04-21-SPLELEXCOV0425.md",
-    "content/news/2025-04-18-SPLLOCALVET0425.md"
+    "content/statecollege/2025-04-21-SPLSCGUIDE0425.md",
+    "content/news/2025-04-18-SPLLOCALVET0425.md",
+    "content/news/2025-04-17-SPLCOURTPRI0425.md"
   ],
   "topSlots": [
+    "content/news/2025-04-23-SPLMAY20READING.md",
     "content/news/2025-04-22-SPL302EXP0425.md",
-    "content/news/2025-04-22-SPLFEDCUTS0425.md",
-    "content/statecollege/2025-04-21-SPLSCGUIDE0425.md"
+    "content/news/2025-04-22-SPLFEDCUTS0425.md"
   ],
   "topper": []
 }
