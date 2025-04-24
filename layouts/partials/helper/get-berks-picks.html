@@ -1,0 +1,6 @@
+{{ $stories := partial "helper/get-stories" (dict
+  "src" "berks-frontpage"
+  "name" .
+  )
+}}
+{{ return $stories }}

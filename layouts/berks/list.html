@@ -1,0 +1,74 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
+{{ define "body-class" }}
+  font-serif
+{{ end }}
+{{ define "body-attributes" }}
+  data-fru-campaign="state-college-navbar" data-fru-theme="sc-onetime"
+{{ end }}
+
+{{ define "main" }}
+  {{ $berks := site.GetPage "/berks/_index.md" }}
+
+  {{ $featuredStory := partial "helper/get-berks-picks" "featuredStories" }}
+  {{ $featuredStory = last 1 $featuredStory }}
+
+  {{ $subfeatures := partial "helper/get-berks-picks" "subfeatures" }}
+  {{ $subfeatures = $subfeatures | complement $featuredStory }}
+
+  {{ $featuredStories := $featuredStory | append $subfeatures }}
+
+  {{ $pinnedStories := where $berks.RegularPages "Params.pinned" true }}
+  {{ $pinnedStories = first 3 $pinnedStories }}
+  {{ if lt (len $pinnedStories) 3 }}
+    {{ $n := sub 3 (len $pinnedStories) }}
+    {{ $unpinned := complement $featuredStory $pinnedStories $berks.RegularPages }}
+    {{ $pinnedStories = $pinnedStories | append (first $n $unpinned) }}
+  {{ end }}
+
+  {{ $river := sort $berks.RegularPages ".PublishDate" "desc" }}
+
+  {{ $river = $river | complement $featuredStory $pinnedStories }}
+
+  {{ $edPicks := partial "helper/get-items" "sidebar" }}
+  {{ $riverTitle :=  index .Page.Params "link-title" }}
+
+  {{ $hasPromo := .Param "promo-active" }}
+  {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
+  {{ if eq (len $featuredStory) 0 }}
+    {{ $marginClass = "mt-4" }}
+  {{ end }}
+
+
+  <section
+    data-fru-campaign="berks-county"
+    class="space-y-6 bg-white px-4 pb-2 pt-12 md:pb-6"
+  >
+    <header
+      class="mx-auto flex w-full max-w-screen-xl justify-between border-b border-black md:col-span-3"
+    >
+      <h2
+        class="flex-auto font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide"
+      >
+        {{ with $riverTitle }}
+          {{ . }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h2>
+      {{ partial "tw/breadcrumbs.html" . }}
+
+    </header>
+    {{ partial "tw/frontpage" (dict
+      "featuredStories" $featuredStories
+      "pinnedStories" $pinnedStories
+      "river" $river
+      "riverTitle" $riverTitle
+      "marginClass" $marginClass
+      "title" .Title
+      "blurb" .Content
+      )
+    }}
+  </section>
+{{ end }}
