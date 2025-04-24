@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2024/08/spotlight-pennsylvania-berks-county-open-house/"]
 blurb = "Join Spotlight PA for a live zoom open house on our plans to revitalize investigative reporting in Berks County, Pennsylvania."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a live zoom open house on our plans to revitalize investigative reporting in Berks County, Pennsylvania."
