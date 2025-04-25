@@ -20,6 +20,8 @@ device-image-height = 1712
 gaCategory = "newsletters:berks"
 gaForm = "newsletters:berks-full"
 hiddenField = "newsletter/berks-county-hidden.html"
+occurance = "Daily"
+blurb = "Your daily dose of Berks County essentials."
 
 cta = "Sign up"
 
@@ -34,6 +36,12 @@ weight = 4
 [cascade]
 image = "2023/09/01jf-h6pe-1sks-18dz.jpeg" 
 
+
+[[staff]]
+name = "Lisa Scheid"
+title = "Berks County Managing Editor"
+description = "Lisa Scheid is the managing editor of Spotlight PA’s Berks County Bureau. Born and raised in southeastern Pennsylvania, she has more than three decades of journalism experience, including various reporting, editing, and coordinating roles at the Reading Eagle."
+headshot = "2025/03/01kw-evah-6ena-m0ts.jpeg"
 
 [[staff]]
 name = "Colin Deppen"
