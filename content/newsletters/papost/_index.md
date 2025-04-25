@@ -29,6 +29,8 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "PA Post"
 
+blurb = "Understand what's happening across PA - in less than five minutes a day." 
+occurence = "Each weekday"
 image-size = "inline"
 published = 2020-09-03T01:15:52.230Z
 image-gravity = "ea"

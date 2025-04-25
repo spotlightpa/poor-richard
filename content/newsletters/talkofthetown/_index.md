@@ -17,6 +17,9 @@ device-image = "2025/04/01m0-1be1-cdwr-hm4f.png"
 device-image-width = 956
 device-image-height = 1712
 
+quote = "“Hyper-local, quality journalism.”"
+quote-source = "— Talk of the Town reader"
+
 gaCategory = "newsletters:talkofthetown"
 gaForm = "newsletters:talkofthetown-full"
 hiddenField = "newsletter/talkofthetown-hidden.html"
@@ -29,6 +32,8 @@ linktitle = "Talk of the Town"
 weight = 7
 image-gravity = "ce"
 image-size = "inline"
+occurance = "Every Thursday"
+blurb = "The news that matters to your community — from the PA Wilds to Happy Valley."
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"

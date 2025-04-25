@@ -28,6 +28,8 @@ linktitle = "Penn State Alerts"
 
 weight = 6
 image-size = "inline"
+occurance = "When news breaks"
+blurb = "Our latest investigative and accountability journalism about Penn State University."
 
 [cascade] 
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"

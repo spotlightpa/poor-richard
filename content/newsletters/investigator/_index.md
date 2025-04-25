@@ -17,6 +17,9 @@ device-image = "2025/04/01m0-1bbb-bqgg-rjr1.png"
 device-image-width = 956
 device-image-height = 1712
 
+quote = "“Nothing else provides the level of detail and depth of reporting on PA state issues.”"
+quote-source = "— The Investigator reader"
+
 gaCategory = "newsletters:investigator"
 gaForm = "newsletters:investigator-full"
 hiddenField = "newsletter/investigator-hidden.html"
@@ -30,6 +33,8 @@ image-size = "inline"
 published = 2020-09-03T01:14:40.334Z 
 image-gravity = "ce" 
 weight = 2 
+occurence = "Every Thursday"
+blurb = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
 
 [cascade] 
 image = "2021/06/01gc-4k5c-twja-965v.jpeg" 

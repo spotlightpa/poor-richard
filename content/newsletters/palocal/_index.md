@@ -29,6 +29,8 @@ linktitle = "PA Local"
 image-size = "inline"
 image-gravity = "ea"
 weight = 3 
+occurence = "Every Friday"
+blurb = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
 
 [cascade]
 image = "2022/02/01h0-cwrk-fbjj-n32w.jpeg" 
