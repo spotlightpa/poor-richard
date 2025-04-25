@@ -71,5 +71,9 @@ Ultimately, she keeps doing what she does “because in the highs and the lows o
 
 <em>Know someone worthy of a PA Local Heroes feature? </em><a href="mailto:newsletters@spotlightpa.org"><em>Let us know</em></a><em>!</em>
 
+<div class="max-w-[320px] -my-8">
+{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
+</div>
+
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
