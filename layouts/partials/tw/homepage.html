@@ -23,11 +23,8 @@
 {{ $noIndex := where site.RegularPages ".Params.no-index" true }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory $noIndex }}
 
-{{ $hasPromo := .Param "promo-active" }}
-{{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
-{{ if eq (len $featuredStory) 0 }}
-  {{ $marginClass = "mt-4" }}
-{{ end }}
+{{ $missingFeatured :=  eq (len $featuredStory) 0 }}
+{{ $marginClass := cond $missingFeatured "mt-4" "" }}
 
 {{ $edPicks := partial "helper/get-items" "sidebar" }}
 
