@@ -34,11 +34,8 @@
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
   {{ $riverTitle :=  index .Page.Params "link-title" }}
 
-  {{ $hasPromo := .Param "promo-active" }}
-  {{ $marginClass := cond $hasPromo "has-margin-top-negative" "" }}
-  {{ if eq (len $featuredStory) 0 }}
-    {{ $marginClass = "mt-4" }}
-  {{ end }}
+  {{ $missingFeatured :=  eq (len $featuredStory) 0 }}
+  {{ $marginClass := cond $missingFeatured "mt-4" "" }}
 
 
   <section
