@@ -19,7 +19,6 @@
 {{ $featuredTopics := "topics/the-capitol/_index.md" }}
 
 {{ $bureau := site.GetPage "/statecollege/" }}
-{{ $paPost := site.GetPage "/newsletters/papost" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $noIndex := where site.RegularPages ".Params.no-index" true }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory $noIndex }}

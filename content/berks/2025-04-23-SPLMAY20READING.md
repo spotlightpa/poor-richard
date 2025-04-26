@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2025/04/reading-city-council-president-primary-election-2025/"]
 authors = ["Lisa Scheid"]
 blurb = "The crucial position is selected by voters to keep order and set an agenda for the legislative body of this city of more than 90,000."
 byline = "Lisa Scheid of Spotlight PA"
@@ -173,4 +174,3 @@ To tackle blight, Morrison recommended a multiphase approach that starts with co
 To address turnover, Morrison said she would advocate for training and problem solving sessions and other measures for staff. Tiered salaries, workload management, rewards, and incentives could also help retain workers, she wrote. For police officers, she advocated for mental health breaks, assigned rotations throughout the city, and giving them a say in the work environment.
 
 Morrison wrote that downtown needs economic development that produces more jobs, widens the tax base, and makes businesses more sustainable in the long term.
-
