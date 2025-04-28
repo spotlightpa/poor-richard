@@ -17,7 +17,7 @@
 
 
   <div
-    class="flex h-[44px] w-full items-center justify-between rounded-md border-[1px] border-[#CFCFCF] bg-white px-[20px]"
+    class="flex h-[44px] w-full items-center justify-between rounded-md border border-g-4 bg-white px-[20px]"
   >
     <input
       id="{{ $idEmail }}"
@@ -28,14 +28,17 @@
       required
     />
 
-    <svg aria-hidden="true" class="ml-2 h-[20px] w-[20px] fill-[#CFCFCF]">
+    <svg
+      aria-hidden="true"
+      class="ml-2 h-[20px] w-[20px] fill-current text-g-4"
+    >
       {{ partial "helper/svg.html" "envelope" }}
     </svg>
   </div>
 
   <button
     type="submit"
-    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-[#EFB403] bg-yellow text-lg font-bold uppercase text-[#733E10]"
+    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow text-lg font-bold uppercase text-[#733E10]"
     :disabled="isLoading"
   >
     {{ $cta }}
