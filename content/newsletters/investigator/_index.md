@@ -33,7 +33,7 @@ linktitle = "The Investigator"
 image-size = "inline" 
 published = 2020-09-03T01:14:40.334Z 
 image-gravity = "ce" 
-weight = 2 
+weight = 3 
 occurence = "Every Thursday"
 blurb = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
 

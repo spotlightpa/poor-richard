@@ -31,7 +31,7 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "Talk of the Town"
 
-weight = 7
+weight = 6
 image-gravity = "ce"
 image-size = "inline"
 occurance = "Every Thursday"

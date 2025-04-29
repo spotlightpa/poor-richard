@@ -28,7 +28,7 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "Penn State Alerts"
 
-weight = 6
+weight = 8
 image-size = "inline"
 occurance = "When news breaks"
 blurb = "Our latest investigative and accountability journalism about Penn State University."
