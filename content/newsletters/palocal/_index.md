@@ -3,9 +3,7 @@ layout = "individual-newsletter"
 max-width = "750px"
 
 title = "Good news for a change"
-white-subhead-first = "Sign up for "
-yellow-subhead = "PA Local"
-white-subhead-second = " for a fresh, positive look at our great state"
+subhead = "Sign up for **PA Local** for a fresh, positive look at our great state"
 
 deck = "Get to know Pennsylvania a little better and celebrate the good"
 

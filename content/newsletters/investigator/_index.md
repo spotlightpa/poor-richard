@@ -3,9 +3,7 @@ layout = "individual-newsletter"
 max-width = "705px"
 
 title = "Go behind the scenes"
-white-subhead-first = "Sign up for "
-yellow-subhead = "The Investigator"
-white-subhead-second = " for exclusive looks at our reporting"
+subhead = "Sign up for **The Investigator** for exclusive looks at our reporting"
 deck = "Learn more about our unique investigative journalism that gets results"
 
 bullets = [
