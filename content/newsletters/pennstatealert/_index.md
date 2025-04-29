@@ -3,8 +3,10 @@ layout = "individual-newsletter"
 max-width = "prose"
 
 title = "Get the latest"
-white-subhead = "Sign up for"
+white-subhead-first = "Sign up for"
 yellow-subhead = "Penn State Alerts"
+white-subhead-second = ""
+
 deck = "Be the first to know about our coverage of Penn State University"
 
 bullets = [

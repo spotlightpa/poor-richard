@@ -34,9 +34,11 @@
           {{ .Title }}
         </h1>
 
-        <h2 class="mb-4 text-lg font-semibold">
-          <span class="text-white">{{ .Param "white-subhead" }}</span>
-          <span class="text-yellow">{{ .Param "yellow-subhead" }}</span>
+        <h2 class="mb-4 text-lg font-semibold text-white">
+          {{ .Param "white-subhead-first" | strings.TrimSpace }}
+          <span class="text-yellow"
+            >{{ .Param "yellow-subhead" | strings.TrimSpace }}</span
+          >{{ .Param "white-subhead-second" }}
         </h2>
 
         <p class="text-white">

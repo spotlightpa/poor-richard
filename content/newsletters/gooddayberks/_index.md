@@ -3,8 +3,10 @@ layout = "individual-newsletter"
 max-width = "715px"
 
 title = "Local news, fresh daily"
-white-subhead = "Sign up for"
-yellow-subhead = "Good Day, Berks - Spotlight PA’s free daily newsletter for Berks County"
+white-subhead-first = "Sign up for"
+yellow-subhead = "Good Day, Berks"
+white-subhead-second = " - Spotlight PA’s free daily newsletter for Berks County"
+
 deck = "Your daily dose of Berks County essentials"
 
 bullets = [
