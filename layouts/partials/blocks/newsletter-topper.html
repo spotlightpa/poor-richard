@@ -1,37 +1,35 @@
 <section class="mb-6 w-full bg-g-9 pt-12">
   {{ $maxWidth := .Param "max-width" }}
   {{ $breakpoint := cond (eq $maxWidth "prose") "750px" $maxWidth }}
+  {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" (print "max-w-[" $maxWidth "]") }}
+
   <style>
     @media (max-width: {{ $breakpoint }}) {
-      .hide-at-max-width {
+      .spl-max-w\:hidden {
         display: none;
       }
-      .stack-at-max-width {
+      .spl-max-w\:flex-col {
         flex-direction: column;
       }
-      .stack-child-full {
+      .spl-max-w\:w-full {
         width: 100%;
+      }
+      .spl-max-w\:pr-0 {
         padding-right: 0;
       }
-      .min-h-push {
+      .spl-max-w\:pb-16 {
         padding-bottom: 4rem;
       }
     }
   </style>
 
-  <div
-    class="{{ if eq $maxWidth "prose" }}
-      max-w-prose
-    {{ else }}
-      max-w-[{{ $maxWidth }}]
-    {{ end }} mx-auto px-4 pb-6"
-  >
+  <div class="{{ $maxWidthClass }} mx-auto px-4 pb-6">
     <div
-      class="stack-at-max-width {{ if not (and (.Param "quote") (.Param "quote-source")) }}
-        min-h-push
+      class="spl-max-w:flex-col {{ if not (and (.Param "quote") (.Param "quote-source")) }}
+        spl-max-w:pb-16
       {{ end }} flex"
     >
-      <div class="stack-child-full w-full sm:w-3/5 sm:pr-6">
+      <div class="spl-max-w:w-full spl-max-w:pr-0 w-full sm:w-3/5 sm:pr-6">
         <h1 class="my-4 text-4xl font-semibold text-white">
           {{ .Title }}
         </h1>
@@ -57,7 +55,7 @@
       <div
         class="{{ if not (and (.Param "quote") (.Param "quote-source")) }}
           mb-16
-        {{ end }} hide-at-max-width mt-4 w-2/5 items-start justify-center"
+        {{ end }} spl-max-w:hidden mt-4 w-2/5 items-start justify-center"
       >
         {{ $name := .Param "device-image" }}
         {{ $imgOpts := dict
