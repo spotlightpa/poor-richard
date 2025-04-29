@@ -78,7 +78,7 @@ link = "https://www.spotlightpa.org/newsletters/palocal"
 [[explore]]
 newsletter = "The Investigator"
 schedule = "Every Thursday"
-description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
+description = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
 image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
 width = 480
 height = 270
