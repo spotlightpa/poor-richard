@@ -18,6 +18,8 @@ title = "Elecciones primarias 2025 en Pa.: Todo lo que necesita saber sobre cóm
 title-tag = "Su guía de voto por correo para las elecciones primarias 2025 en PA"
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/04/pennsylvania-primary-election-2025-mail-ballot-how-to-request-fill-out-return/"><em>Read in English</em></a><em></em>
+
 HARRISBURG — El 20 de mayo, los demócratas y republicanos de Pensilvania votarán a los candidatos de sus partidos en las elecciones primarias municipales. Dependiendo de su lugar de residencia, su papeleta podría incluir candidatos a la alcaldía, consejo escolar, consejo municipal, varios cargos judiciales, fiscal del distrito, entre otros.
 
 Aunque muchos votantes acudirán a su centro de votación local el día de las elecciones, otros optarán a votar por correo. Todos los votantes registrados en la mancomunidad han podido votar por correo desde el año 2020.
