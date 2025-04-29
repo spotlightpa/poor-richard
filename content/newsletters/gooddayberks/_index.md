@@ -23,7 +23,7 @@ gaCategory = "newsletters:berks"
 gaForm = "newsletters:berks-full"
 hiddenField = "newsletter/berks-county-hidden.html"
 occurrence = "Each weekday"
-blurb = "Your daily dose of Berks County essentials."
+blurb = "Be the first to know about important news, events, and more from our new bureau in Reading and Berks County."
 
 cta = "Sign up"
 
@@ -78,7 +78,7 @@ link = "https://www.spotlightpa.org/newsletters/palocal"
 [[explore]]
 newsletter = "The Investigator"
 schedule = "Every Thursday"
-description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
+description = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
 image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
 width = 480
 height = 270
