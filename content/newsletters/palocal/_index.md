@@ -31,7 +31,7 @@ linktitle = "PA Local"
 image-size = "inline"
 image-gravity = "ea"
 weight = 2 
-occurence = "Every Friday"
+occurrence = "Every Friday"
 blurb = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
 
 [cascade]

@@ -30,7 +30,7 @@ linktitle = "Penn State Alerts"
 
 weight = 8
 image-size = "inline"
-occurance = "When news breaks"
+occurrence = "When news breaks"
 blurb = "Our latest investigative and accountability journalism about Penn State University."
 
 [cascade] 

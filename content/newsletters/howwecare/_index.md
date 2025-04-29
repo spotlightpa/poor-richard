@@ -33,7 +33,7 @@ image-size = "inline"
 published = 2020-09-03T01:14:40.334Z
 image-gravity = "ce" 
 weight = 4
-occurance = "Every Tuesday"
+occurrence = "Every Tuesday"
 blurb = "Original reporting, guidance, and resources to empower home and professional caregivers in PA."
 
 [cascade] 

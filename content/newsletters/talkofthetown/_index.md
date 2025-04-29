@@ -34,7 +34,7 @@ linktitle = "Talk of the Town"
 weight = 6
 image-gravity = "ce"
 image-size = "inline"
-occurance = "Every Thursday"
+occurrence = "Every Thursday"
 blurb = "The news that matters to your community — from the PA Wilds to Happy Valley."
 
 [cascade]

@@ -22,7 +22,7 @@ device-image-height = 1712
 gaCategory = "newsletters:berks"
 gaForm = "newsletters:berks-full"
 hiddenField = "newsletter/berks-county-hidden.html"
-occurance = "Daily"
+occurrence = "Each weekday"
 blurb = "Your daily dose of Berks County essentials."
 
 cta = "Sign up"
