@@ -42,6 +42,12 @@ image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
 
 
 [[staff]]
+name = "Sarah Rafacz"
+title = "State College Editor"
+description = "Sarah Rafacz is the editor of Spotlight PA’s State College bureau. Before joining Spotlight PA to help launch its first regional bureau, she was the editor of State College Magazine. Prior to that, Rafacz was a reporter at the Centre Daily Times, covering Penn State, local government and development."
+headshot = "2022/12/01hs-ja54-d44m-7mff.webp"
+
+[[staff]]
 name = "Colin Deppen"
 title = "Newsletter Editor"
 description = "Colin Deppen is a newsletter editor/reporter with Spotlight PA. He crafts and grows the site’s daily and weekly newsletters, while contributing to the organization’s mission of producing journalism that serves readers and holds powerful people to account."

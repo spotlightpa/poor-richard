@@ -39,6 +39,11 @@ blurb = "Original reporting, guidance, and resources to empower home and profess
 [cascade] 
 image = "2024/05/01k4-4sx2-y76n-st26.jpeg"
 
+[[staff]]
+name = "Stephen Kearse"
+title = "Assistant Editor"
+description = "Stephen Kearse is the assistant editor of Spotlight PA. He previously worked as the copy editor of Stateline, and has contributed arts criticism and reporting to The Nation, The New York Times, The Atlantic, and Pitchfork, among other outlets."
+headshot = "2021/10/01gn-venf-7hhm-ver0.jpeg"
 
 [[staff]]
 name = "Colin Deppen"
