@@ -13,7 +13,7 @@ bullets = [
   "Hear directly from our full-time investigative reporter dedicated to covering Penn State"
 ]
 
-device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
+device-image = "2025/04/01m1-0bm7-kwrt-xmb2.png"
 device-image-width = 956
 device-image-height = 1712
 
