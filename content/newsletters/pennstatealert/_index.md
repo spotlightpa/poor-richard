@@ -3,7 +3,7 @@ layout = "individual-newsletter"
 max-width = "prose"
 
 title = "Get the latest"
-white-subhead-first = "Sign up for"
+white-subhead-first = "Sign up for "
 yellow-subhead = "Penn State Alerts"
 white-subhead-second = ""
 

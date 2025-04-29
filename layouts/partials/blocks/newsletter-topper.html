@@ -35,10 +35,14 @@
         </h1>
 
         <h2 class="mb-4 text-lg font-semibold text-white">
-          {{ .Param "white-subhead-first" | strings.TrimSpace }}
-          <span class="text-yellow"
-            >{{ .Param "yellow-subhead" | strings.TrimSpace }}</span
-          >{{ .Param "white-subhead-second" }}
+          <span>
+            {{- $first := .Param "white-subhead-first" | default "" -}}
+            {{- $yellow := .Param "yellow-subhead" | default "" -}}
+            {{- $second := .Param "white-subhead-second" | default "" -}}
+
+            {{- $first -}}<span class="text-yellow">{{- $yellow -}}</span
+            >{{- $second -}}
+          </span>
         </h2>
 
         <p class="text-white">

@@ -3,7 +3,7 @@ layout = "individual-newsletter"
 max-width = "prose"
 
 title = "Your guide to PA"
-white-subhead-first = "Sign up for"
+white-subhead-first = "Sign up for "
 yellow-subhead = "PA Post"
 white-subhead-second = ", Spotlight PA’s free daily newsletter"
 deck = "Get the day’s most important statewide news from Spotlight PA and beyond"

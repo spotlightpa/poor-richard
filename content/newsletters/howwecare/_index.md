@@ -3,7 +3,7 @@ layout = "individual-newsletter"
 max-width = "prose"
 
 title = "Sharing stories of essential work"
-white-subhead-first = "Sign up for"
+white-subhead-first = "Sign up for "
 yellow-subhead = "How We Care"
 white-subhead-second = ", a free weekly newsletter on the state of caregiving and health in PA"
 
