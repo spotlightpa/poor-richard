@@ -1,5 +1,4 @@
 +++
-aliases = ["/news/2025/04/reading-city-council-president-primary-election-2025/"]
 authors = ["Lisa Scheid"]
 blurb = "The crucial position is selected by voters to keep order and set an agenda for the legislative body of this city of more than 90,000."
 byline = "Lisa Scheid of Spotlight PA"
@@ -20,6 +19,8 @@ title = "Pa. primary election 2025: A complete guide to Reading City Council pre
 title-tag = "PA primary 2025: Your guide to the Reading City Council president race"
 topics = ["Berks County", "Elections"]
 +++
+
+<a href="https://www.spotlightpa.org/news/2025/04/reading-concejo-municipal-primarias-elecciones-2025/"><em>Leer en español</em></a><em></em>
 
 READING — City Democrats and Republicans will head to the polls on May 20 to choose who they want to lead the city council for the next four years. The winners of those primaries will face off in November. There are three Democrats and one Republican on the ballot.
 
@@ -174,3 +175,4 @@ To tackle blight, Morrison recommended a multiphase approach that starts with co
 To address turnover, Morrison said she would advocate for training and problem solving sessions and other measures for staff. Tiered salaries, workload management, rewards, and incentives could also help retain workers, she wrote. For police officers, she advocated for mental health breaks, assigned rotations throughout the city, and giving them a say in the work environment.
 
 Morrison wrote that downtown needs economic development that produces more jobs, widens the tax base, and makes businesses more sustainable in the long term.
+
