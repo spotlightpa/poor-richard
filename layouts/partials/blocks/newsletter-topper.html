@@ -34,15 +34,10 @@
           {{ .Title }}
         </h1>
 
-        <h2 class="mb-4 text-lg font-semibold text-white">
-          <span>
-            {{- $first := .Param "white-subhead-first" | default "" -}}
-            {{- $yellow := .Param "yellow-subhead" | default "" -}}
-            {{- $second := .Param "white-subhead-second" | default "" -}}
-
-            {{- $first -}}<span class="text-yellow">{{- $yellow -}}</span
-            >{{- $second -}}
-          </span>
+        <h2
+          class="mb-4 text-lg font-semibold text-white [&_strong]:text-yellow"
+        >
+          {{ .Param "subhead" | markdownify }}
         </h2>
 
         <p class="text-white">

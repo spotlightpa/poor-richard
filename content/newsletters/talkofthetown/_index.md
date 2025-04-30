@@ -3,9 +3,7 @@ layout = "individual-newsletter"
 max-width = "730px"
 
 title = "News for north-central PA"
-white-subhead-first = "Sign up for "
-yellow-subhead = "Talk of the Town"
-white-subhead-second = " for essential news from our State College bureau"
+subhead = "Sign up for **Talk of the Town** for essential news from our State College bureau"
 
 deck = "The news that matters to your community — from the PA Wilds to Happy Valley"
 
