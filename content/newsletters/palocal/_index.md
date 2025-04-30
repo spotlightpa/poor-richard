@@ -69,8 +69,8 @@ link = "https://www.spotlightpa.org/newsletters/talkofthetown"
 
 [[explore]]
 newsletter = "Good Day, Berks"
-schedule = "Occasionally"
-description = "Be the first to know about articles, staffing, events, and more from our new bureau in Reading and Berks County."
+schedule = "Each weekday"
+description = "Be the first to know about important news, events, and more from our new bureau in Reading and Berks County."
 image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
 width = 2016
 height = 1512
