@@ -1,44 +1,49 @@
 +++
 layout = "individual-newsletter"
-max-width = "prose"
+max-width = "715px"
 
-title = "Your guide to PA"
+title = "Local news, fresh daily"
 white-subhead-first = "Sign up for "
-yellow-subhead = "PA Post"
-white-subhead-second = ", Spotlight PA’s free daily newsletter"
-deck = "Get the day’s most important statewide news from Spotlight PA and beyond"
+yellow-subhead = "Good Day, Berks"
+white-subhead-second = " - Spotlight PA’s free daily newsletter for Berks County"
+
+deck = "Your daily dose of Berks County essentials"
 
 bullets = [
-  "Delivered straight to your inbox every Monday-Saturday morning",
-  "A five-minute read to start your day",
-  "Overlooked stories, unique investigations, and more to help you understand PA"
+  "Delivered straight to your inbox every Monday-Friday morning",
+  "What matters most in our community in five minutes or less",
+  "Curated local stories, practical updates, and community highlights"
 ]
 
-device-image = "2025/04/01kz-vkkd-3q47-ba89.png"
+device-image = "2025/04/01m0-5ccv-txkj-1e7f.png"
 device-image-width = 956
 device-image-height = 1712
 
-quote = "“It’s fresh, well written, and unbiased.”"
-quote-source = "— PA Post reader"
-
-gaCategory = "newsletters:papost"
-gaForm = "newsletters:papost-full"
-hiddenField = "newsletter/papost-hidden.html"
+gaCategory = "newsletters:berks"
+gaForm = "newsletters:berks-full"
+hiddenField = "newsletter/berks-county-hidden.html"
+occurrence = "Each weekday"
+blurb = "Be the first to know about important news, events, and more from our new bureau in Reading and Berks County."
 
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "PA Post"
+linktitle = "Good Day, Berks"
 
-blurb = "Understand what's happening across PA - in less than five minutes a day." 
-occurrence = "Each weekday"
+
 image-size = "inline"
-published = 2020-09-03T01:15:52.230Z
 image-gravity = "ea"
-weight = 1
+weight = 5 
 
-[cascade] 
-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg" 
+[cascade]
+image = "2023/09/01jf-h6pe-1sks-18dz.jpeg" 
+
+
+[[staff]]
+name = "Lisa Scheid"
+title = "Berks County Managing Editor"
+description = "Lisa Scheid is the managing editor of Spotlight PA’s Berks County Bureau. Born and raised in southeastern Pennsylvania, she has more than three decades of journalism experience, including various reporting, editing, and coordinating roles at the Reading Eagle."
+headshot = "2025/03/01kw-evah-6ena-m0ts.jpeg"
 
 [[staff]]
 name = "Colin Deppen"
@@ -51,6 +56,15 @@ name = "Asha Prihar"
 title = "Newsletter Writer"
 description = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania’s state government for The PLS Reporter."
 headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
+
+[[explore]]
+newsletter = "PA Post"
+schedule = "Each weekday"
+description = "Understand what's happening across PA - in less than five minutes a day."
+image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+width = 3334
+height = 1880
+link = "https://www.spotlightpa.org/newsletters/papost"
 
 [[explore]]
 newsletter = "PA Local"
@@ -69,15 +83,6 @@ image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
 width = 480
 height = 270
 link = "https://www.spotlightpa.org/newsletters/investigator"
-
-[[explore]]
-newsletter = "How We Care"
-schedule = "Every Tuesday"
-description = "Original reporting, guidance, and resources to empower home and professional caregivers in PA."
-image = "2024/05/01k4-4sx2-y76n-st26.jpeg"
-width = 3200
-height = 2400
-link = "https://www.spotlightpa.org/newsletters/howwecare"
 
 +++
 

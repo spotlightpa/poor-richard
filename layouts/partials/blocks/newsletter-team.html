@@ -1,0 +1,44 @@
+{{ if .Params.staff }}
+  <section class="mb-6 w-full pt-12">
+    <div class="mx-auto max-w-prose px-4">
+      <h3 class="border-b-2 border-g-3 pb-2 text-2xl font-bold text-g-9">
+        Meet the {{ .Param "linktitle" }} Team
+      </h3>
+
+      <div class="flex flex-col gap-8 pt-6 font-sans">
+        {{ range .Params.staff }}
+          {{ $staff := . }}
+          <div class="flex flex-col gap-6 sm:flex-row">
+            {{ with $staff.headshot }}
+              <div class="h-40 w-40 flex-shrink-0 self-center sm:self-start">
+                {{ partial "tag/picture.html" (dict
+                  "imgClass" "w-full h-full object-cover rounded-full"
+                  "description" (printf "Photo of %s" $staff.name)
+                  "srcset" (partial "helper/build-srcset" (dict
+                  "sizes" (slice
+                  (dict "width" 320 "height" 320)
+                  (dict "width" 512 "height" 512)
+                  )
+                  "filename" .
+                  ))
+                  )
+                  }}
+              </div>
+            {{ end }}
+
+
+            <div>
+              <div class="text-[24px] text-lg font-bold text-blue">
+                {{ $staff.name }}
+              </div>
+              <div class="mb-1 font-bold uppercase">
+                {{ $staff.title }}
+              </div>
+              <div>{{ $staff.description }}</div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
