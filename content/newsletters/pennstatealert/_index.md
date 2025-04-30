@@ -36,18 +36,11 @@ blurb = "Our latest investigative and accountability journalism about Penn State
 [cascade] 
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
 
-
 [[staff]]
-name = "Colin Deppen"
-title = "Newsletter Editor"
-description = "Colin Deppen is a newsletter editor/reporter with Spotlight PA. He crafts and grows the site’s daily and weekly newsletters, while contributing to the organization’s mission of producing journalism that serves readers and holds powerful people to account."
-headshot = "2021/06/01gd-pm19-gyb5-dy5q.jpeg"
-
-[[staff]]
-name = "Asha Prihar"
-title = "Newsletter Writer"
-description = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania’s state government for The PLS Reporter."
-headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
+name = "Sarah Rafacz"
+title = "State College Editor"
+description = "Sarah Rafacz is the editor of Spotlight PA’s State College bureau. Before joining Spotlight PA to help launch its first regional bureau, she was the editor of State College Magazine. Prior to that, Rafacz was a reporter at the Centre Daily Times, covering Penn State, local government and development."
+headshot = "2022/12/01hs-ja54-d44m-7mff.webp"
 
 [[explore]]
 newsletter = "PA Post"
