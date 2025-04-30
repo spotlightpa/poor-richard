@@ -7,14 +7,3 @@
 {{ define "main" }}
   {{ partial "tw/main.html" . }}
 {{ end }}
-
-{{ define "modal" }}
-  {{ if .Param "modal-exclude" | not }}
-    {{ if .Param "sticky-active" }}
-      {{ partial "tw/modal-sticky.html" . }}
-    {{ end }}
-    {{ if .Param "newsletter-active" }}
-      {{ partial "tw/modal-newsletter-sc.html" . }}
-    {{ end }}
-  {{ end }}
-{{ end }}

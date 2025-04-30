@@ -45,6 +45,7 @@ publishDate = [":default", ":filename"]
 press-releases = ":section/:year/:slug/"
 news = ":section/:year/:month/:slug/"
 statecollege = ":section/:year/:month/:slug/"
+berks = ":section/:year/:month/:slug/"
 
 [mediaTypes."text/netlify"]
 delimiter = ""

@@ -1,6 +1,7 @@
 {{- $news := site.GetPage "/news/_index.md" -}}
 {{- $sc := site.GetPage "/statecollege/_index.md" -}}
-{{- $stories := union $news.RegularPages $sc.RegularPages -}}
+{{- $bc := site.GetPage "/berks/_index.md" -}}
+{{- $stories := union $news.RegularPages (union $sc.RegularPages $bc.RegularPages) -}}
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
 {
   "items": [

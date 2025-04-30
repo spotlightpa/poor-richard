@@ -22,6 +22,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Carol Baker",
+      "sort": "Baker",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
+      "display": "Paul and Melissa Barbehenn",
+      "sort": "Barbehenn",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Patrick and Paula Barrett",
       "sort": "Barrett",
       "url": "",
@@ -64,11 +78,32 @@
       "categoryRank": "6"
     },
     {
+      "display": "R Thomas and Paulette Berner",
+      "sort": "Berner",
+      "url": "",
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
+    },
+    {
+      "display": "Georgia Berner",
+      "sort": "Berner",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Michael and Randi Berry",
       "sort": "Berry",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Jennifer Bertetto",
+      "sort": "Bertetto",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Michael Bertram",
@@ -85,11 +120,25 @@
       "categoryRank": "6"
     },
     {
+      "display": "Jim Boscov",
+      "sort": "Boscov",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Merrill and Nancy Brenner",
       "sort": "Brenner",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Burke Foundations",
+      "sort": "Burke",
+      "url": "",
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Lee Butz",
@@ -113,6 +162,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Marguerite Chandler and Richmond Shreve",
+      "sort": "Chandler",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
+      "display": "Louis Cinquino",
+      "sort": "Cinquino",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Daniel Cohen",
       "sort": "Cohen",
       "url": "",
@@ -129,6 +192,13 @@
     {
       "display": "John and Janet Dillon",
       "sort": "Dillon",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Dayna DiRienzo",
+      "sort": "DiRienzo",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -155,11 +225,25 @@
       "categoryRank": "6"
     },
     {
+      "display": "Dianne and Dave Elderkin Charitable Fund, a fund of the Chester County Community Foundation",
+      "sort": "Elderkin",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "David and Judy Migliore-Erdman",
       "sort": "Erdman",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Mary Evans",
+      "sort": "Evans",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Thomas Eveslage",
@@ -190,6 +274,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Mary and Kenneth France",
+      "sort": "France",
+      "url": "",
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
+    },
+    {
+      "display": "James Friedlich and Melissa Stern",
+      "sort": "Friedlich",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Tom and Valerie Gemmill",
       "sort": "Gemmill",
       "url": "",
@@ -211,6 +309,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Good Words Foundation",
+      "sort": "Good Words Foundation",
+      "url": "",
+      "category": "$50,000 and above",
+      "categoryRank": "1"
+    },
+    {
       "display": "Janet Gross",
       "sort": "Gross",
       "url": "",
@@ -223,6 +328,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Sandra Hardy",
+      "sort": "Hardy",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Kay Haring",
@@ -295,6 +407,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Christine Jacobs",
+      "sort": "Jacobs",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Lisa Kabnick",
       "sort": "Kabnick",
       "url": "",
@@ -321,6 +440,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Roger and Karen Klotz",
+      "sort": "Klotz",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Howard Kolus",
@@ -351,6 +477,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Michael and Karen Leader",
+      "sort": "Leader",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Adam Leibovich",
       "sort": "Leibovich",
       "url": "",
@@ -372,6 +505,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Annie McCain Madonia and William Madonia",
+      "sort": "Madonia",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Joseph Manning",
       "sort": "Manning",
       "url": "",
@@ -384,6 +524,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Ruth and Charles Marcon",
+      "sort": "Marcon",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Mary Marger",
@@ -400,6 +547,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "David Martens",
+      "sort": "Martens",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
+      "display": "Richard and Susan Master",
+      "sort": "Master",
+      "url": "",
+      "category": "$50,000 and above",
+      "categoryRank": "1"
+    },
+    {
       "display": "Sarah McCain",
       "sort": "McCain",
       "url": "",
@@ -412,6 +573,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Marlin Miller",
+      "sort": "Miller",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Joan Miller Moran",
@@ -456,6 +624,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Kathleen Nelson",
+      "sort": "Nelson",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Nichols",
       "sort": "Nichols",
       "url": "",
@@ -468,6 +643,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Kathleen O'Toole and Gary Gray",
+      "sort": "O'Toole",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "David Ottaway",
@@ -491,6 +673,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Kathleen Pavelko",
+      "sort": "Pavelko",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
+      "display": "Sue and Jack Peck",
+      "sort": "Peck",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "James \"Scott\" Pflumm",
       "sort": "Pflumm",
       "url": "",
@@ -503,6 +699,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Poor Richard's Charitable Trust",
+      "sort": "Poor Richard's Charitable Trust",
+      "url": "",
+      "category": "$50,000 and above",
+      "categoryRank": "1"
     },
     {
       "display": "Noel Potter and Helen Delano",
@@ -533,8 +736,22 @@
       "categoryRank": "6"
     },
     {
+      "display": "Rosalind Remer and James Green",
+      "sort": "Remer",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Gwen Ritter",
       "sort": "Ritter",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Michael and Linda Ryan",
+      "sort": "Ryan",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -559,6 +776,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Gail Scott and Stephen Hohenwarter",
+      "sort": "Scott",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Amy Sebastian",
@@ -589,6 +813,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Shoval Foundation/Rebecca Shoval",
+      "sort": "Shoval Foundation/Shoval",
+      "url": "",
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
+    },
+    {
+      "display": "Joshua Singer",
+      "sort": "Singer",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Susan and Ron Smith",
       "sort": "Smith",
       "url": "",
@@ -603,6 +841,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Frederick Steinberg and Jo DeBolt",
+      "sort": "Steinberg",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "E. Marvin Stouffer",
       "sort": "Stouffer",
       "url": "",
@@ -615,6 +860,20 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Strausstown Rod and Gun Club",
+      "sort": "Strausstown",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Stephanie Szakal",
+      "sort": "Szakal",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Richard S. Tabas/Harriette Steelman \u0026 Charles L. Tabas Foundation",
@@ -638,6 +897,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Lew Tyler",
+      "sort": "Tyler",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Christopher and Lee Van de Velde",
       "sort": "Van de Velde",
       "url": "",
@@ -652,11 +918,25 @@
       "categoryRank": "6"
     },
     {
+      "display": "Robert and Dianne Vickery",
+      "sort": "Vickery",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Caitlin Virtue",
       "sort": "Virtue",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Bruce Waldman",
+      "sort": "Waldman",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Jean Wallace and Neil Goldstein",
@@ -680,6 +960,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Gabriel Weinberg and Lauren McCann",
+      "sort": "Weinberg",
+      "url": "",
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
+    },
+    {
       "display": "Millicent \"Pat\" West",
       "sort": "West",
       "url": "",
@@ -701,151 +988,11 @@
       "categoryRank": "6"
     },
     {
-      "display": "Zell Family Foundation",
-      "sort": "Zell",
+      "display": "Richard Williams",
+      "sort": "Williams",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Strausstown Rod and Gun Club",
-      "sort": "Strausstown",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Michael and Linda Ryan",
-      "sort": "Ryan",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Dayna DiRienzo",
-      "sort": "DiRienzo",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "R Thomas and Paulette Berner",
-      "sort": "Berner",
-      "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
-    },
-    {
-      "display": "Mary and Kenneth France",
-      "sort": "France",
-      "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
-    },
-    {
-      "display": "Shoval Foundation/Rebecca Shoval",
-      "sort": "Shoval Foundation/Shoval",
-      "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
-    },
-    {
-      "display": "Cliff Zukin and Debbie Walsh",
-      "sort": "Zukin",
-      "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
-    },
-    {
-      "display": "Carol Baker",
-      "sort": "Baker",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Paul and Melissa Barbehenn",
-      "sort": "Barbehenn",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Marguerite Chandler and Richmond Shreve",
-      "sort": "Chandler",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Sandra Hardy",
-      "sort": "Hardy",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Christine Jacobs",
-      "sort": "Jacobs",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Annie McCain Madonia and William Madonia",
-      "sort": "Madonia",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "David Martens",
-      "sort": "Martens",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Kathleen O'Toole and Gary Gray",
-      "sort": "O'Toole",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Sue and Jack Peck",
-      "sort": "Peck",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Rosalind Remer and James Green",
-      "sort": "Remer",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Gail Scott and Stephen Hohenwarter",
-      "sort": "Scott",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Joshua Singer",
-      "sort": "Singer",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
-      "display": "Bruce Waldman",
-      "sort": "Waldman",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Allan Willinger and Jo Schlesinger",
@@ -855,158 +1002,18 @@
       "categoryRank": "5"
     },
     {
-      "display": "Burke Foundations",
-      "sort": "Burke",
+      "display": "Zell Family Foundation",
+      "sort": "Zell",
       "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
-      "display": "Gabriel Weinberg and Lauren McCann",
-      "sort": "Weinberg",
+      "display": "Cliff Zukin and Debbie Walsh",
+      "sort": "Zukin",
       "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
-    },
-    {
-      "display": "Richard Williams",
-      "sort": "Williams",
-      "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
-    },
-    {
-      "display": "Georgia Berner",
-      "sort": "Berner",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Jennifer Bertetto",
-      "sort": "Bertetto",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Jim Boscov",
-      "sort": "Boscov",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Louis Cinquino",
-      "sort": "Cinquino",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Dianne and Dave Elderkin Charitable Fund, a fund of the Chester County Community Foundation",
-      "sort": "Elderkin",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Mary Evans",
-      "sort": "Evans",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "James Friedlich and Melissa Stern",
-      "sort": "Friedlich",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Roger and Karen Klotz",
-      "sort": "Klotz",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Michael and Karen Leader",
-      "sort": "Leader",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Ruth and Charles Marcon",
-      "sort": "Marcon",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Marlin Miller",
-      "sort": "Miller",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Kathleen Pavelko",
-      "sort": "Pavelko",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Frederick Steinberg and Jo DeBolt",
-      "sort": "Steinberg",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Stephanie Szakal",
-      "sort": "Szakal",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Lew Tyler",
-      "sort": "Tyler",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Robert and Dianne Vickery",
-      "sort": "Vickery",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
-      "display": "Good Words Foundation",
-      "sort": "Good Words Foundation",
-      "url": "",
-      "category": "$50,000 and above",
-      "categoryRank": "1"
-    },
-    {
-      "display": "Richard and Susan Master",
-      "sort": "Master",
-      "url": "",
-      "category": "$50,000 and above",
-      "categoryRank": "1"
-    },
-    {
-      "display": "Poor Richard's Charitable Trust",
-      "sort": "Poor Richard's Charitable Trust",
-      "url": "",
-      "category": "$50,000 and above",
-      "categoryRank": "1"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     }
   ]
 }

@@ -1,7 +1,8 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
 {{- $news := site.GetPage "/news/_index.md" -}}
 {{- $sc := site.GetPage "/statecollege/_index.md" -}}
-{{- $stories := union $news.RegularPages $sc.RegularPages -}}
+{{- $bc := site.GetPage "/berks/_index.md" -}}
+{{- $stories := union $news.RegularPages (union $sc.RegularPages $bc.RegularPages) -}}
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
 {{- $stories = where $stories `Params.feed-exclude` "ne" true -}}
 {{- $description := (site.GetPage "/_index.md").Description -}}
