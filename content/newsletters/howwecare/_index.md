@@ -43,18 +43,6 @@ title = "Assistant Editor"
 description = "Stephen Kearse is the assistant editor of Spotlight PA. He previously worked as the copy editor of Stateline, and has contributed arts criticism and reporting to The Nation, The New York Times, The Atlantic, and Pitchfork, among other outlets."
 headshot = "2021/10/01gn-venf-7hhm-ver0.jpeg"
 
-[[staff]]
-name = "Colin Deppen"
-title = "Newsletter Editor"
-description = "Colin Deppen is a newsletter editor/reporter with Spotlight PA. He crafts and grows the site’s daily and weekly newsletters, while contributing to the organization’s mission of producing journalism that serves readers and holds powerful people to account."
-headshot = "2021/06/01gd-pm19-gyb5-dy5q.jpeg"
-
-[[staff]]
-name = "Asha Prihar"
-title = "Newsletter Writer"
-description = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania’s state government for The PLS Reporter."
-headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
-
 [[explore]]
 newsletter = "PA Post"
 schedule = "Each weekday"
