@@ -33,7 +33,7 @@ Pennsylvania school districts have to pay tuition for students within their bord
 
 While <a href="https://www.spotlightpa.org/news/2025/03/pennsylvania-cyber-charter-schools-audit-reform-spending/">a consensus is growing among state lawmakers</a> that Pennsylvania charter school funding is broken, they so far haven’t agreed on a fix.
 
-The state uses the same decades-old formula to fund cyber charters as it does for brick-and-mortar charters, despite cyber charters’ typically lower overhead costs. A review <a href="https://www.spotlightpa.org/news/2025/03/pennsylvania-cyber-charter-schools-audit-reform-spending/">by the state auditor general in February</a> found that cyber charters have been accumulating large surpluses of public dollars and spending funds on “unusual” things like gift cards and vehicle payments.
+The state uses nearly the same decades-old formula to fund cyber charters as it does for brick-and-mortar charters, despite cyber charters’ typically lower overhead costs. A review <a href="https://www.spotlightpa.org/news/2025/03/pennsylvania-cyber-charter-schools-audit-reform-spending/">by the state auditor general in February</a> found that cyber charters have been accumulating large surpluses of public dollars and spending funds on “unusual” things like gift cards and vehicle payments.
 
 The money that districts are using to offset some of the costs from charter school tuition comes from <a href="https://www.spotlightpa.org/news/2024/07/pennsylvania-budget-losers-minimum-wage-legal-marijuana-private-schools-tax-cuts/">$500 million that lawmakers appropriated</a> in the 2024-25 state budget.
 
