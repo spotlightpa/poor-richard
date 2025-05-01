@@ -7,8 +7,10 @@
 
   <div id="results" class="scroll-mt-10"></div>
   <div
-    x-data="{ showResults: !!window.location.search.match(/show_results/) }"
-    x-show="showResults"
+    {{ if not .showResults }}
+      x-data="{ showResults: !!window.location.search.match(/show_results/) }"
+      x-show="showResults"
+    {{ end }}
   >
     <div class="mx-auto max-w-2xl px-5 md:px-0">
       <h2 class="my-8 text-lg font-bold leading-snug">
@@ -97,35 +99,6 @@
           </button>
         {{ end }}
       </div>
-    </div>
-
-    <div class="mx-auto my-8 flex max-w-2xl gap-1">
-      <a
-        class="m-2 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
-        href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ page.Permalink }}"
-        data-ga-category="facebook"
-        title="Share your donation on Facebook"
-      >
-        <span class="mr-3 h-6 w-6 fill-white">
-          <svg viewBox="0 0 1 1">
-            {{ partial "helper/svg.html" "fb" }}
-          </svg>
-        </span>
-        <span> Share on Facebook </span>
-      </a>
-      <a
-        class="m-2 flex items-center rounded bg-blue-4 px-5 py-2 font-black tracking-wider text-white shadow"
-        href="https://twitter.com/intent/tweet?text={{ $text }}&via=SpotlightPA&url={{ page.Permalink }}&tw_p=tweetbutton"
-        data-ga-category="twitter"
-        title="Tweet about your donation"
-      >
-        <span class="mr-3 h-6 w-6 fill-white">
-          <svg viewBox="0 0 1 1">
-            {{ partial "helper/svg.html" "twitter" }}
-          </svg>
-        </span>
-        <span> Share on Twitter </span>
-      </a>
     </div>
 
     {{ with index . "answer-key" }}
