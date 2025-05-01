@@ -22,6 +22,8 @@ title-tag = "Election 2025: How to become a poll worker for the PA primary"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/05/pensilvania-elecciones-2025-como-convertirse-trabajador-electoral/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — When Pennsylvania holds its 2025 primary election on May 20, thousands of poll workers will ensure that voting runs smoothly. Poll workers are a critical component of our election process and you could be one of them. Counties are currently recruiting people to work at the state’s approximately 9,000 voting locations.
 
 Poll workers have the opportunity to serve their state and community, meet new people, and learn about elections in Pennsylvania. Plus, as a bonus for being a “<a href="https://www.pa.gov/services/vote/apply-to-become-an-election-poll-worker.html&#39;">champion of democracy</a>,” they get paid for their time.
@@ -39,6 +41,8 @@ There are only a few requirements to become a poll worker. First, you must be a 
 High schoolers who are 17-year-old juniors or seniors may be eligible to volunteer as student poll workers if they are in good academic standing, and <a href="https://paebrprod.powerappsportals.us/EBR/DOS/Votes-PA-County-Student/">receive permission from their parent or guardian as well as their principal</a>. Requirements vary across counties, so it’s important to double-check your eligibility with your <a href="https://www.pa.gov/agencies/vote/contact-us/contact-your-election-officials.html">local county election office</a> to make sure you can volunteer.
 
 Additionally, poll workers cannot be current government employees or officials, except district judges, notary publics, or members of the Pennsylvania National Guard. Similarly, people whose names are on the ballot are <a href="https://www.vote.pa.gov/Resources/pages/be-a-poll-worker.aspx">not permitted</a> to be poll workers, except for candidates for the local election board, including judges of elections.
+
+{{<dewey-assistant>}}
 
 ## The duties
 
