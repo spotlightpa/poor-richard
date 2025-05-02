@@ -28,7 +28,7 @@ credits = """
       email="cjohnson@spotlightpa.org"
   >}}
 
-  <span class="spl-links-navy">Spotlight PA wrote this quiz based on information from candidate websites, published interviews, and news articles. Read more from [PublicSource](https://www.publicsource.org/pittsburgh-mayoral-primary-2025-candidate-highlights-achievements-endorsements-democrat-republican/) and [WESA](https://www.wesa.fm/tags/election-2025).</span>
+  <span class="spl-links-navy">Spotlight PA wrote this quiz based on information from candidate websites, published interviews, and news articles. Read more from [PublicSource](https://www.publicsource.org/pittsburgh-mayoral-primary-2025-candidate-highlights-achievements-endorsements-democrat-republican/), [TibLive](https://triblive.com/local/plan-for-pittsburgh-gainey-oconnor-detail-their-visions-ahead-of-primary/), and [WESA](https://www.wesa.fm/tags/election-2025).</span>
   """
 promo = "{{<featured/election-promo>}}"
 [[blocks]]

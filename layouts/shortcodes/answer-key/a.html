@@ -1,5 +1,6 @@
 {{ $answer := .Get "answer" }}
 {{ $id := .Get "id" }}
+{{ $header := .Get "header" }}
 
 {{ $data := site.Data.candidates2024 }}
 {{ $name := "" }}
@@ -26,19 +27,27 @@
 <li
   class="mx-auto my-2 flex w-full flex-wrap items-center justify-stretch gap-3 rounded-lg px-2 py-2 odd:bg-g-2"
 >
-  <picture class="min-h-full w-7 bg-g-3 md:w-11">
-    <img
-      class="min-h-full min-w-full rounded object-cover"
-      alt="Picture of {{ $name }}"
-      src="{{ $image }}"
-      loading="lazy"
-    />
-  </picture>
-
-  <div class="flex w-full flex-1 flex-col justify-end">
-    <h3 class="text-lg font-bold leading-none">{{ $name }}</h3>
-    <p class="mt-1 text-base leading-none text-g-8">{{ $party }}</p>
-  </div>
+  {{ if $image }}
+    <picture class="min-h-full w-7 bg-g-3 md:w-11">
+      <img
+        class="min-h-full min-w-full rounded object-cover"
+        alt="Picture of {{ $name }}"
+        src="{{ $image }}"
+        loading="lazy"
+      />
+    </picture>
+  {{ end }}
+  {{ with $header }}
+    <div class="flex w-full flex-1 flex-col justify-end">
+      <h3 class="text-lg font-bold leading-none">{{ . }}</h3>
+    </div>
+  {{ end }}
+  {{ if and $name $party }}
+    <div class="flex w-full flex-1 flex-col justify-end">
+      <h3 class="text-lg font-bold leading-none">{{ $name }}</h3>
+      <p class="mt-1 text-base leading-none text-g-8">{{ $party }}</p>
+    </div>
+  {{ end }}
   {{ with $answer }}
     {{ if ( eq $answer "Yes") }}
       <div

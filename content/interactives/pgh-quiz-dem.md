@@ -80,6 +80,11 @@ answer-key = """
   {{<answer-key/a id="corey_oconnor" answer="Yes">}}{{</answer-key/a>}}
   {{<answer-key/a id="ed_gainey" answer="No">}}{{</answer-key/a>}}
 {{</answer-key/q>}}
+
+{{<answer-key/q question="You prefer a candidate who says:">}}
+  {{<answer-key/a id="corey_oconnor" answer="">}}Pittsburgh is not going in the right direction, citing the lack of a permanent police chief, an impending “fiscal cliff,” and ambulance and paramedic shortages{{</answer-key/a>}}
+  {{<answer-key/a id="ed_gainey" answer="">}}Pittsburgh is going in the right direction, citing favorable bond ratings, a decline in homicides, and job growth{{</answer-key/a>}}
+{{</answer-key/q>}}
 """
 +++
 Pennsylvania’s May 20 primary election is fast approaching, and Democrats and Republicans in Pittsburgh will soon have to decide which mayoral candidate they want to send to the general election.
