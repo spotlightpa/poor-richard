@@ -29,6 +29,18 @@
       {{ partial "helper/svg.html" "fb" }}
     </svg>
   </a>
+
+  <a
+    class="{{ $btnClass }}"
+    href="https://bsky.app/intent/compose?text={{ .LinkTitle }}%20{{ .Permalink }}"
+    data-ga-category="bluesky"
+    title="Share this page on Bluesky"
+  >
+    <svg class="h-3 w-3 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "bluesky" }}
+    </svg>
+  </a>
+
   <a
     class="{{ $btnClass }}"
     href="https://twitter.com/intent/tweet?text={{ .LinkTitle }}&via=SpotlightPA&url={{ .Permalink }}&tw_p=tweetbutton"
@@ -39,6 +51,18 @@
       {{ partial "helper/svg.html" "twitter" }}
     </svg>
   </a>
+
+  <a
+    class="{{ $btnClass }}"
+    href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .LinkTitle }}"
+    data-ga-category="reddit"
+    title="Share on Reddit"
+  >
+    <svg class="h-3 w-3 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "reddit" }}
+    </svg>
+  </a>
+
   <button
     class="{{ $btnClass }} bg-orange"
     data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
