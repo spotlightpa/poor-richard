@@ -11,7 +11,12 @@
     {{ $name = $candidate.name }}
     {{ $partyShort := $candidate.party }}
     <!-- TODO: fix if we have third parties -->
-    {{ $party = cond (eq $partyShort "rep") "Republican" "Democrat" }}
+    {{ $party = "" }}
+    {{ if eq $partyShort "rep" }}
+      {{ $party = "Republican" }}
+    {{ else if eq $partyShort "dem" }}
+      {{ $party = "Democrat" }}
+    {{ end }}
     {{ $image = $candidate.image }}
     {{ break }}
   {{ end }}

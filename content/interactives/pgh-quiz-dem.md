@@ -84,4 +84,8 @@ answer-key = """
 +++
 Pennsylvania’s May 20 primary election is fast approaching, and Democrats and Republicans in Pittsburgh will soon have to decide which mayoral candidate they want to send to the general election.
 
-This year, two Democrats and two Republicans are running. To help highlight the differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quick quiz.
+This year, two Democrats and two Republicans are running. Because of Democrats’ registration advantage in the city, the general election is not expected to be competitive (the Democrat won in November 2021 with 70% of the vote, for example).
+
+That makes the May 20 primary even more important.
+
+To help highlight the differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quick quiz.
