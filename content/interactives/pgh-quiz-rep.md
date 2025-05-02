@@ -1,6 +1,6 @@
 +++
 no-index = true
-slug = "PGHQUIZREP"
+internal-id = "PGHQUIZREP"
 extended-kicker = "News Quiz"
 title = "Election 2025: See the best Pittsburgh mayoral candidate for you"
 linktitle = "INTERACTIVE: See which Pittsburgh mayoral candidate is right for you"
