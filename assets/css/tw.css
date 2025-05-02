@@ -226,6 +226,11 @@
   @apply block w-full appearance-none rounded border border-g-4 bg-white py-2 pl-4 pr-7 font-sans text-g-6 outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
 }
 
+a.spl-links-navy,
+.spl-links-navy a {
+  @apply text-navy underline transition-colors duration-500 hover:text-yellow;
+}
+
 .btn-signup {
   @apply rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
 }

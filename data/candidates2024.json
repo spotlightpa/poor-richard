@@ -40,5 +40,33 @@
     "title": "incumbent auditor general",
     "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/q:85/MjAyNC8xMC8wMWtnLWc3M2stM2ZnOC03NzcwLmpwZWc=.jpeg",
     "party": "rep"
+  },
+  {
+    "id": "corey_oconnor",
+    "name": "Corey O'Connor",
+    "title": "Allegheny County controller",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:no/el:1/MjAyNS8wNS8wMW0xLTc1YjAtano3dy1yYTRqLmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "ed_gainey",
+    "name": "Ed Gainey",
+    "title": "Incumbent mayor",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:no/el:1/MjAyNS8wNS8wMW0xLTc1MWotN3c2dC1rYzVlLmpwZWc=.webp",
+    "party": "dem"
+  },
+  {
+    "id": "thomas_west",
+    "name": "Thomas West",
+    "title": "Businessman",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:no/el:1/MjAyNS8wNS8wMW0xLTc1MzUtN2ZkOS1iMjh4LmpwZWc=.webp",
+    "party": "rep"
+  },
+  {
+    "id": "tony_moreno",
+    "name": "Tony Moreno",
+    "title": "Former police officer",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:no/el:1/MjAyNS8wNS8wMW0xLTc1MWstcTF2NS1qcW1yLnBuZw==.webp",
+    "party": "rep"
   }
 ]
