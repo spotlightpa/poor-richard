@@ -35,7 +35,9 @@ To unpack the issue, join us Tuesday, May 6 from 6-7 p.m. on Zoom for a live con
 
 - <strong>Jennifer Bullock</strong>, founder, Independent Pennsylvanians
 
-- <strong>Thad Hall,</strong> elections director, Mercer County <strong><em></em></strong>
+- <strong>Thad Hall,</strong> elections director, Mercer County
+
+- <strong>Jared Solomon</strong>, Democratic state House representative
 
 <strong>RSVP for free </strong><a href="https://zoom.us/webinar/register/WN_OEevaDFHQoO1Z6EjV1028w"><strong>here</strong></a><strong>. Any questions for comments can be directed to </strong><a href="mailto:events@spotlightpa.org"><strong>events@spotlightpa.org</strong></a>
 
