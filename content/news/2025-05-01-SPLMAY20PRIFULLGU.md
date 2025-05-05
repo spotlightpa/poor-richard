@@ -22,6 +22,8 @@ title-tag = "PA primary election 2025: A guide to voting, ballots, and more"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/05/pensilvania-primarias-elecciones-2025-votar-informacion/"><em>Leer en español</em></a>
+
 HARRISBURG — On May 20, Democrats and Republicans across Pennsylvania will decide which candidates from their respective parties will go on to run in the November municipal election.
 
 On the ballot are judicial candidates hoping to fill a vacancy each on the Commonwealth and Superior Courts, along with municipal races that will vary depending on where you live. Across the state, there might also be local ballot questions.
