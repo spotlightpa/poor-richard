@@ -172,14 +172,19 @@ url = "/newsletters/howwecare/"
 weight = 6
 
 [[newsletters]]
+name = "Good Day, Berks"
+url = "/newsletters/gooddayberks/"
+weight = 7
+
+[[newsletters]]
 name = "Penn State Alerts"
 url = "/newsletters/pennstatealert/"
-weight = 7
+weight = 8
 
 [[newsletters]]
 name = "Talk of the Town"
 url = "/newsletters/talkofthetown/"
-weight = 8
+weight = 9
 
 [[support]]
 name = "Ways to Give"
