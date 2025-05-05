@@ -192,6 +192,15 @@ cta = "Try Our Election Assistant →"
 link = "/elections/assistant/"
 
 [[blocks]]
+layout = "ballyhoo"
+id = "quiz"
+image = "2025/04/01m0-g0zk-wp3n-9vnt.jpeg"
+hed = "Your Next Mayor"
+dek = "Use our interactive tool to see which candidates for Pittsburgh mayor most closely align with what matters to you."
+cta = "Take Our Quiz →"
+link = "/news/2025/05/pittsburgh-mayor-election-2025-candidates-quiz/"
+
+[[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
 dek = "Be the first to read our 2025 voting guides and other election stories by signing up for our free daily newsletter."
