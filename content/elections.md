@@ -163,6 +163,10 @@ title = "Election Assistant"
 link = "election-assistant"
 
 [[blocks.link]]
+title = "Quiz"
+link = "mayor-quiz"
+
+[[blocks.link]]
 title = "More Coverage"
 link = "coverage"
 
@@ -193,7 +197,7 @@ link = "/elections/assistant/"
 
 [[blocks]]
 layout = "ballyhoo"
-id = "quiz"
+id = "mayor-quiz"
 image = "2025/04/01m0-g0zk-wp3n-9vnt.jpeg"
 hed = "Your Next Mayor"
 dek = "Use our interactive tool to see which candidates for Pittsburgh mayor most closely align with what matters to you."
