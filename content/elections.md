@@ -167,6 +167,14 @@ title = "More Coverage"
 link = "coverage"
 
 [[blocks.link]]
+title = "Quiz"
+link = "mayor-quiz"
+
+[[blocks.link]]
+title = "Español"
+link = "espanol"
+
+[[blocks.link]]
 title = "Ask Us"
 link = "contact"
 
@@ -204,6 +212,24 @@ layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2025 Stories"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "mayor-quiz"
+image = "2025/04/01m0-g0zk-wp3n-9vnt.jpeg"
+hed = "Your Next Mayor"
+dek = "Use our interactive tool to see which candidates for Pittsburgh mayor most closely align with what matters to you."
+cta = "Take Our Quiz →"
+link = "/news/2025/05/pittsburgh-mayor-election-2025-candidates-quiz/"
+
+[[blocks]]
+title = "Elecciones Pa. 2025: Traducciones al Español"
+id = "espanol"
+slug = "espanol"
+layout = "story-collection"
+timeFilter = "2025-01-01"
+collection = "topics/español/_index.md"
+collectionReadMore = "Leer Más Historias De La Elección PA 2025"
 
 [[blocks]]
 layout = "contact"
