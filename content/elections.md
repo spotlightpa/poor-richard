@@ -163,12 +163,12 @@ title = "Election Assistant"
 link = "election-assistant"
 
 [[blocks.link]]
-title = "Quiz"
-link = "mayor-quiz"
-
-[[blocks.link]]
 title = "More Coverage"
 link = "coverage"
+
+[[blocks.link]]
+title = "Quiz"
+link = "mayor-quiz"
 
 [[blocks.link]]
 title = "Ask Us"
@@ -196,15 +196,6 @@ cta = "Try Our Election Assistant →"
 link = "/elections/assistant/"
 
 [[blocks]]
-layout = "ballyhoo"
-id = "mayor-quiz"
-image = "2025/04/01m0-g0zk-wp3n-9vnt.jpeg"
-hed = "Your Next Mayor"
-dek = "Use our interactive tool to see which candidates for Pittsburgh mayor most closely align with what matters to you."
-cta = "Take Our Quiz →"
-link = "/news/2025/05/pittsburgh-mayor-election-2025-candidates-quiz/"
-
-[[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
 dek = "Be the first to read our 2025 voting guides and other election stories by signing up for our free daily newsletter."
@@ -217,6 +208,15 @@ layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2025 Stories"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "mayor-quiz"
+image = "2025/04/01m0-g0zk-wp3n-9vnt.jpeg"
+hed = "Your Next Mayor"
+dek = "Use our interactive tool to see which candidates for Pittsburgh mayor most closely align with what matters to you."
+cta = "Take Our Quiz →"
+link = "/news/2025/05/pittsburgh-mayor-election-2025-candidates-quiz/"
 
 [[blocks]]
 layout = "contact"
