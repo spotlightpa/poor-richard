@@ -12,17 +12,17 @@
     "content/news/2025-04-03-SPL_Resolve_SS0425.md"
   ],
   "featuredStories": [
-    "content/news/2025-05-05-SPLCANVOTE0525.md"
+    "content/news/2025-05-06-SPLQAOPIOIDS0525.md"
   ],
   "subfeatures": [
-    "content/news/2025-03-27-spl_marijuanadocs_0325.md",
-    "content/news/2025-03-17-SPLWEEDLOBBY0325.md",
-    "content/news/2025-02-05-SPLWEEDREAL0225.md"
+    "content/news/2025-03-04-SPLOPIOIDFAM0325.md",
+    "content/news/2024-12-27-spl_opioid_1224.md",
+    "content/news/2024-11-15-SPLopioiddb1124.md"
   ],
   "topSlots": [
+    "content/news/2025-05-05-SPLCANVOTE0525.md",
     "content/news/2025-05-05-SPLVOTERID0525.md",
-    "content/interactives/pgh-quiz.md",
-    "content/news/2025-05-02-APREVPRIVATE0525.md"
+    "content/interactives/pgh-quiz.md"
   ],
   "topper": []
 }
