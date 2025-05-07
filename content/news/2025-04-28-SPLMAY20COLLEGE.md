@@ -67,6 +67,8 @@ You can register to vote where you currently live, whether it’s on or off camp
 
 If you register at your prior home address and plan to vote in person, it’s important to consider how feasible it will be to travel to your polling place. Plan your Election Day accordingly and remember that as long as you are in line to vote by 8 p.m., you are allowed to cast your vote.
 
+{{<dewey-assistant>}}
+
 <h2 id="spl-heading-2">If I am new to Pennsylvania and moved here to attend college, can I still register to vote with my college address?</h2>
 
 As long as you have lived in the voting district where you plan to vote for at least 30 days before the election, you can register to vote with your college address.
