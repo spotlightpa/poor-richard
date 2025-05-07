@@ -9,32 +9,27 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ $sc := site.GetPage "/statecollege/_index.md" }}
+  {{ $berks := site.GetPage "/berks/_index.md" }}
 
-  {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-    <div class="bg-black">
-      <div class="mx-auto max-w-screen-lg py-12">
-        {{ partial "tw/promo-topperarticle.html" $topperStories }}
-      </div>
-    </div>
-  {{ end }}
-
-  {{ $topperStories := partial "helper/get-sc-picks" "topper" }}
-  {{ $topperStory := first 1 $topperStories }}
-
-  {{ $featuredStory := partial "helper/get-sc-picks" "featuredStories" }}
+  {{ $featuredStory := partial "helper/get-berks-picks" "featuredStories" }}
   {{ $featuredStory = last 1 $featuredStory }}
 
-  {{ $subfeatures := partial "helper/get-sc-picks" "subfeatures" }}
+  {{ $subfeatures := partial "helper/get-berks-picks" "subfeatures" }}
   {{ $subfeatures = $subfeatures | complement $featuredStory }}
 
   {{ $featuredStories := $featuredStory | append $subfeatures }}
 
-  {{ $pinnedStories := partial "helper/get-sc-picks" "topSlots" }}
+  {{ $pinnedStories := where $berks.RegularPages "Params.pinned" true }}
+  {{ $pinnedStories = first 3 $pinnedStories }}
+  {{ if lt (len $pinnedStories) 3 }}
+    {{ $n := sub 3 (len $pinnedStories) }}
+    {{ $unpinned := complement $featuredStory $pinnedStories $berks.RegularPages }}
+    {{ $pinnedStories = $pinnedStories | append (first $n $unpinned) }}
+  {{ end }}
 
-  {{ $river := sort $sc.RegularPages ".PublishDate" "desc" }}
+  {{ $river := sort $berks.RegularPages ".PublishDate" "desc" }}
 
-  {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
+  {{ $river = $river | complement $featuredStory $pinnedStories }}
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
   {{ $riverTitle :=  index .Page.Params "link-title" }}
@@ -44,9 +39,8 @@
 
 
   <section
-    data-fru-campaign="state-college-donate-page"
+    data-fru-campaign="berks-county"
     class="space-y-6 bg-white px-4 pb-2 pt-12 md:pb-6"
-    data-fru-theme="statecollege"
   >
     <header
       class="mx-auto flex w-full max-w-screen-xl justify-between border-b border-black md:col-span-3"
