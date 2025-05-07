@@ -1,6 +1,6 @@
 +++
 no-index = true
-slug = "PGHQUIZDEM"
+internal-id = "SPLSCASDQUIZ0525results"
 extended-kicker = "News Quiz"
 title = "Election 2025: See the best State College school board candidates for you"
 linktitle = "INTERACTIVE: See which State College school board candidates are right for you"
