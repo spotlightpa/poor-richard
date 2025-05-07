@@ -96,6 +96,8 @@ Unaffiliated and third-party voters can participate in special elections that co
 
 You can find your polling place <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">here</a> by entering your address.
 
+{{<dewey-assistant>}}
+
 <h2 id="spl-heading-8">What else do I need to know to vote in person?</h2>
 
 If this is your first time voting or your first time voting since changing addresses, you’ll need to bring proof of identification. This can be any government-issued ID, such as a driver’s license or U.S. passport; a utility bill or bank statement that includes your name and address; or a military or student ID. <a href="https://www.vote.pa.gov/Register-to-Vote/Pages/Voter-ID-for-First-Time-Voters.aspx">See the full list of options here</a>.
