@@ -12,17 +12,17 @@
     "content/news/2025-04-03-SPL_Resolve_SS0425.md"
   ],
   "featuredStories": [
-    "content/statecollege/2025-05-07-SPLPSUCLOSE0525.md"
+    "content/news/2025-05-07-SPLHOUSEWEED0525.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
-    "content/statecollege/2024-12-05-SPLPSUVOTE1224.md",
-    "content/statecollege/2024-11-21-SPLPSUTRUST1124.md"
+    "content/news/2025-05-05-SPLCANVOTE0525.md",
+    "content/news/2025-02-05-SPLWEEDREAL0225.md",
+    "content/news/2025-02-04-SPLSHAPBUDG0225.md"
   ],
   "topSlots": [
+    "content/statecollege/2025-05-07-SPLPSUCLOSE0525.md",
     "content/news/2025-05-06-SPLNEWUNIT0525.md",
-    "content/news/2025-05-06-SPLFAMLEAVE0525.md",
-    "content/news/2025-05-06-SPLQAOPIOIDS0525.md"
+    "content/news/2025-05-06-SPLFAMLEAVE0525.md"
   ],
   "topper": []
 }
