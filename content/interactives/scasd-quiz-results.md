@@ -42,12 +42,13 @@ flavorText = """
 
 answer-key = """
 {{<answer-key/q question="You prefer a candidate who, when asked about the most pressing issues facing students in the school district, mentioned:">}}
-  {{<answer-key/a id="" answer="" header="Policies that leave students behind">}}Mihaly Sogor{{</answer-key/a>}}
-  {{<answer-key/a id="" answer="" header="Mental health">}}Kirsten McTernan, Jennifer A. Black, Deborah Anderson{{</answer-key/a>}}
-  {{<answer-key/a id="" answer="" header="Creating a safe and welcoming school climate">}}Rebecca Arnold Desmarais, Jesse Barlow, Jackie Huff{{</answer-key/a>}}
-  {{<answer-key/a id="" answer="" header="Uncertainty around federal funding">}}Jesse Barlow, Jackie Huff{{</answer-key/a>}}
-  {{<answer-key/a id="" answer="" header="Social media pressures">}}Jennifer A. Black, Deborah Anderson{{</answer-key/a>}}
-  {{<answer-key/a id="" answer="" header="Avoiding excessive tax increases and program cuts">}}Deborah Anderson{{</answer-key/a>}}
+  {{<answer-key/a id="deborah_anderson" answer="" header="">}}Challenging and well-rounded curriculum; students’ social and emotional well-being; and navigating digital information, including social media.{{</answer-key/a>}}
+  {{<answer-key/a id="jesse_barlow" answer="" header="">}}Learning that prepares students for the future in a welcoming, safe environment; supporting students from diverse backgrounds or who have disabilities; and the uncertainty of the future of federal funding.{{</answer-key/a>}}
+  {{<answer-key/a id="jennifer_black" answer="" header="">}}Mental health concerns, social media pressures, and the climate of the country as a whole.{{</answer-key/a>}}
+  {{<answer-key/a id="rebecca_desmarais" answer="" header="">}}Social emotional learning for students, faculty, and staff; support and engagement for students; and a safe school climate.{{</answer-key/a>}}
+  {{<answer-key/a id="jackie_huff" answer="" header="">}}Uncertainty about federal funding and the future of public education; and making sure students’ needs are met and that they feel welcome.{{</answer-key/a>}}
+  {{<answer-key/a id="kirsten_mcternan" answer="" header="">}}Mental health, safety, and educational standards.{{</answer-key/a>}}
+  {{<answer-key/a id="mihaly_sogor" answer="" header="">}}Policies that leave the majority of students behind; and why education is more expensive than it was 20-plus years ago.{{</answer-key/a>}}
 {{</answer-key/q>}}
 
 {{<answer-key/q question="You prefer a candidate who has taught K-12 in a public school:">}}
