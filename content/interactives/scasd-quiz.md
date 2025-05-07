@@ -1,5 +1,5 @@
 +++
-published = 2025-05-08
+published = 2025-05-08T05:00:00-04:00
 internal-id = "SPLSCASDQUIZ0525"
 extended-kicker = "News Quiz"
 title = "Election 2025: See the best State College school board candidates for you"
