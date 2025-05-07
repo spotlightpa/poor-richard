@@ -68,5 +68,40 @@
     "title": "Former police officer",
     "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:no/el:1/MjAyNS8wNS8wMW0xLTc1MWstcTF2NS1qcW1yLnBuZw==.webp",
     "party": "rep"
+  },
+  {
+    "id": "deborah_anderson",
+    "name": "Deborah Anderson",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:95/MjAyNS8wNS8wMW0xLWpmY2UtZzd5Zy1iY2t5LnBuZw==.webp"
+  },
+  {
+    "id": "jesse_barlow",
+    "name": "Jesse Barlow",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:95/MjAyNS8wNS8wMW0xLWpmZ3Etejl4YS1mYndtLnBuZw==.webp"
+  },
+  {
+    "id": "jennifer_black",
+    "name": "Jennifer A. Black",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/MjAyNS8wNS8wMW0xLWpmanIteXh2ay1jeWI5LnBuZw==.webp"
+  },
+  {
+    "id": "rebecca_desmarais",
+    "name": "Rebecca Arnold Desmarais",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/q:95/MjAyNS8wNS8wMW0xLWpmbjQtMnlrNS10ZDNtLmpwZWc=.webp"
+  },
+  {
+    "id": "jackie_huff",
+    "name": "Jackie Huff",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/MjAyNS8wNS8wMW0xLWpmcjEtOHY0NC1kdjU0LnBuZw==.webp"
+  },
+  {
+    "id": "kirsten_mcternan",
+    "name": "Kirsten McTernan",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/MjAyNS8wNS8wMW0xLWpmdHktN2J3eS10Z25iLnBuZw==.webp"
+  },
+  {
+    "id": "mihaly_sogor",
+    "name": "Mihaly Sogor",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:ce/el:1/MjAyNS8wNS8wMW0xLWpmeG0tenpwei1kNWMzLnBuZw==.webp"
   }
 ]
