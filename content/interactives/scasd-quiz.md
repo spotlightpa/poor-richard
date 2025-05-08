@@ -8,6 +8,7 @@ title-tag = "Election 2025: See the best State College school board candidates f
 description = "Use our interactive tool to see which State College school board candidates most closely align with what matters to you."
 kicker = "Elections"
 image = "2025/04/01m0-52z0-0x40-19w0.jpeg"
+image-gravity = "ce"
 image-description = "State College school board candidates 2025"
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
 layout = "page-landing"
