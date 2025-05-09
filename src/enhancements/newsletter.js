@@ -37,13 +37,23 @@ async function submitNewsletter(baseURL, el) {
   let obj = Object.fromEntries(formData.entries());
   obj.token = token;
 
-  await fetchOrRedirect(`${baseURL}/api/subscribe-v3`, {
+  let resp = await fetchOrRedirect(`${baseURL}/api/verify-subscribe`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(obj),
   });
+
+  for (let msg of resp.data) {
+    await fetchOrRedirect(`${baseURL}/api/list-add`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(msg),
+    });
+  }
 
   // Redirect to thanks page on successful submission
   window.top.location.href = "/newsletters/thanks/";
