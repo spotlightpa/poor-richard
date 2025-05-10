@@ -1,20 +1,6 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
 {{ $isWide := .Param "image-size" | eq "wide" }}
-{{ $isOneCol := (not $hasImage | or $isWide) }}
-{{ $gridClass := cond $isOneCol
-  `grid-cols-1`
-  `grid-cols-1 lg:grid-cols-[theme(maxWidth.prose)_1fr] gap-x-20`
-}}
-{{ $mainWellClass := cond $isOneCol
-  `mx-auto min-w-0 w-full max-w-prose lg:max-w-screen-md`
-  `col-start-1 min-w-0 mx-auto w-full max-w-prose`
-}}
-{{ $rightRailClass := cond $isOneCol
-  `mx-auto w-full max-w-prose lg:max-w-screen-md sm:grid`
-  `mx-auto max-w-prose sm:grid lg:block lg:col-start-2 lg:row-start-2 row-span-4`
-}}
-{{ $hedClass := cond $isOneCol "" "lg:col-span-2 lg:max-w-full" }}
 
 {{ $bylineLink := "" }}
 {{ with .Param "authors" }}
@@ -30,225 +16,242 @@
 {{ $sidebarNewsletter := .Param "sidebar-newsletter" | default "tw/rail-papost.html" }}
 
 
-<section class="bg-white px-4 pb-6 pt-12 text-g-9" id="article">
-  <div class="{{ $gridClass }} mx-auto grid max-w-screen-lg">
-    <article class="contents">
-      <header
-        data-ga-category="header"
-        class="{{ $mainWellClass }} {{ $hedClass }}"
+<section
+  class="mx-auto max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 pt-12 text-g-9 lg:grid lg:gap-x-8 xl:px-0"
+  id="article"
+>
+  <header
+    data-ga-category="header"
+    class="mx-auto w-full max-w-screen-md lg:col-span-10 lg:max-w-screen-lg"
+  >
+    {{ if $params.rubric }}
+      <a
+        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
+        href="{{ $params.rubric.RelPermalink }}"
+        data-ga-category="eyebrow"
       >
-        {{ if $params.rubric }}
-          <a
-            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
-            href="{{ $params.rubric.RelPermalink }}"
-            data-ga-category="eyebrow"
-          >
-            {{- $params.kicker | default $params.rubric.Title -}}
-          </a>
-        {{ else if $params.kicker }}
-          <p
-            class="inline-block bg-black px-3 font-sans text-base font-semibold uppercase text-white"
-          >
-            {{- $params.kicker -}}
-          </p>
-        {{ end }}
+        {{- $params.kicker | default $params.rubric.Title -}}
+      </a>
+    {{ else if $params.kicker }}
+      <p
+        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
+      >
+        {{- $params.kicker -}}
+      </p>
+    {{ end }}
 
-        {{ if not $params.evergreen | and .PublishDate }}
-          {{ $eighteenMonthsAgo := now.AddDate 0 -18 0 }}
-          {{ if .PublishDate.Before $eighteenMonthsAgo }}
-            <p
-              class="ml-1 inline-block bg-orange px-3 font-sans text-base font-semibold uppercase text-white"
-            >
-              From the archives
-              {{ .PublishDate.Format "2006" }}
-            </p>
-          {{ end }}
-        {{ end }}
-
-
-        <h1
-          class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
+    {{ if not $params.evergreen | and .PublishDate }}
+      {{ $eighteenMonthsAgo := now.AddDate 0 -18 0 }}
+      {{ if .PublishDate.Before $eighteenMonthsAgo }}
+        <p
+          class="ml-1 inline-block bg-orange px-3 font-sans text-base font-semibold uppercase text-white"
         >
-          {{ .Title }}
-        </h1>
+          From the archives
+          {{ .PublishDate.Format "2006" }}
+        </p>
+      {{ end }}
+    {{ end }}
 
-        {{ with $params.byline }}
-          <h2
-            class="mt-1 font-sans text-base leading-tight tracking-normal text-g-8 sm:leading-normal"
-          >
-            {{ if $bylineLink }}
-              <a href="{{ $bylineLink }}">
-                {{- block "main-byline" $params }}
-                  <span class="font-semibold">
-                    by
-                    <span>
-                      {{- .byline -}}
-                    </span>
-                  </span>
-                  {{ if not .evergreen | and .published }}
-                    <span class="font-light">
-                      |
-                      <time datetime="{{ .publishedISO }}">
-                        {{- .published -}}
-                      </time>
-                    </span>
-                  {{ end }}
-                {{ end -}}
-              </a>
-            {{ else }}
-              {{ template "main-byline" $params }}
-            {{ end }}
-          </h2>
+
+    <h1
+      class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
+    >
+      {{ .Title }}
+    </h1>
+
+    {{ with $params.byline }}
+      <h2
+        class="mt-1 font-sans text-base leading-tight tracking-normal text-g-8 sm:leading-normal"
+      >
+        {{ if $bylineLink }}
+          <a href="{{ $bylineLink }}">
+            {{- block "main-byline" $params }}
+              <span class="font-semibold">
+                by
+                <span>
+                  {{- .byline -}}
+                </span>
+              </span>
+              {{ if not .evergreen | and .published }}
+                <span class="font-light">
+                  |
+                  <time datetime="{{ .publishedISO }}">
+                    {{- .published -}}
+                  </time>
+                </span>
+              {{ end }}
+            {{ end -}}
+          </a>
+        {{ else }}
+          {{ template "main-byline" $params }}
         {{ end }}
+      </h2>
+    {{ end }}
 
+  </header>
+  <article
+    class="mx-auto flex max-w-screen-md flex-wrap md:justify-center md:gap-x-12 lg:col-span-8 lg:justify-start lg:gap-x-8"
+  >
+    <div class="w-full print:!max-w-md">
+      {{ partial "tw/image-hero.html" . }}
+    </div>
+    <div class="w-full sm:w-12 md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
+      {{ partial "tw/social-buttons.html" . }}
+    </div>
+    <div class="w-full max-w-screen-sm flex-1 md:mx-5 xl:-mr-8">
+      <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
+      {{ partial "tw/content-well.html" . }}
 
-        <div class="mt-4">
-          {{ partial "tw/social-buttons.html" . }}
-        </div>
-      </header>
-
-      <div class="{{ $mainWellClass }} w-full print:!max-w-md">
-        {{ partial "tw/image-hero.html" . }}
-      </div>
-
-      <div class="{{ $mainWellClass }}">
-        <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
-        {{ partial "tw/content-well.html" . }}
-
-        {{ with .Param "authors" }}
-          <footer
-            class="mt-6 space-y-6"
-            data-ga-category="inline-footer:author"
-          >
-            {{ range $name := . }}
-              {{ $author := partial "helper/get-author" $name }}
-              <div
-                itemprop="author"
-                itemscope
-                itemtype="https://schema.org/Person"
-              >
-                {{ if $author.link }}
-                  <a
-                    class="flex items-center space-x-6"
-                    href="{{ $author.link | absURL }}"
-                    itemprop="url"
+      {{ with .Param "authors" }}
+        <footer class="mt-6 space-y-6" data-ga-category="inline-footer:author">
+          {{ range $name := . }}
+            {{ $author := partial "helper/get-author" $name }}
+            <div
+              itemprop="author"
+              itemscope
+              itemtype="https://schema.org/Person"
+              class="flex items-start gap-4 md:gap-8"
+            >
+              {{ if $author.thumb }}
+                <span
+                  class="inline-flex h-10 w-10 md:h-24 md:w-24"
+                  data-ga-category="thumb"
+                >
+                  <img
+                    itemprop="image"
+                    src="{{ $author.thumb | absURL }}"
+                    alt="Photo of {{ $author.name }}"
+                    class="m-auto rounded-full ring-1 ring-g-6 grayscale filter"
+                    loading="lazy"
+                    decoding="async"
+                    width="256"
+                    height="256"
+                  />
+                </span>
+              {{ end }}
+              <div class="w-full font-sans">
+                {{ $showLink := and $author.active $author.link | not | not }}
+                {{ $color := cond $showLink "text-blue" "text-g-7" }}
+                <h3
+                  class="{{ $color }} border-b border-black text-xl font-bold leading-tight md:text-2xl"
+                  data-ga-category="name"
+                  itemprop="name"
+                >
+                  {{ if $author.link }}
+                    <a href="{{ $author.link | absURL }}" itemprop="url">
+                      {{ $author.name }}
+                    </a>
+                  {{ else }}
+                    {{ $author.name }}
+                  {{ end }}
+                </h3>
+                {{ if and $author.active $author.title }}
+                  <h3
+                    class="mt-1 text-xs font-black uppercase leading-snug text-black"
+                    data-ga-category="role"
+                    itemprop="jobTitle"
                   >
-                    {{ template "main-author-loop" $author }}
-                  </a>
-                {{ else }}
-                  <div class="flex items-center space-x-6">
-                    {{ block "main-author-loop" $author }}
-                      {{ if .thumb }}
-                        <span
-                          class="inline-flex h-16 w-16"
-                          data-ga-category="thumb"
+                    {{ $author.title }}
+                  </h3>
+                  {{ with $author.focusHed }}
+                    <p class="mt-2 text-xs md:text-sm">
+                      Focus:
+                      {{ . }}
+                    </p>
+                  {{ end }}
+                  <div class="mt-2 flex flex-wrap gap-x-2 text-sm font-bold">
+                    {{ if $author.email }}
+                      <p class="flex-0 mr-2 flex items-center gap-x-1">
+                        <a
+                          href="mailto:{{ $author.email }}"
+                          title="Email"
+                          class="h-4 w-4 text-blue"
                         >
-                          <img
-                            itemprop="image"
-                            src="{{ .thumb | absURL }}"
-                            alt="Photo of {{ .name }}"
-                            class="m-auto rounded-full ring-2 ring-g-6 grayscale filter"
-                            loading="lazy"
-                            decoding="async"
-                            width="256"
-                            height="256"
-                          />
-                        </span>
-                      {{ else }}
-                        <span class="inline-flex w-16"></span>
-                      {{ end }}
-                      <div class="font-sans font-semibold leading-tight">
-                        {{ $showLink := and .active .link | not | not }}
-                        {{ $color := cond $showLink "text-blue" "text-g-7" }}
-                        <h3
-                          class="{{ $color }} text-2xl"
-                          data-ga-category="name"
-                          itemprop="name"
+                          <svg viewBox="0 0 1 1">
+                            {{ partial "helper/svg.html" "email" }}
+                          </svg>
+                        </a>
+                        <a
+                          class="font-normal text-blue"
+                          href="mailto:{{ $author.email }}"
                         >
-                          {{ .name }}
-                        </h3>
-                        {{ if and .active .title }}
-                          <h3
-                            class="text-lg text-g-6"
-                            data-ga-category="role"
-                            itemprop="jobTitle"
-                          >
-                            {{ .title }}
-                          </h3>
-                        {{ end }}
-                      </div>
+                          {{ $author.email }}
+                        </a>
+                      </p>
+                    {{ end }}
+                    {{ with $author.twitter }}
+                      <p class="flex-0 mr-2 flex items-center gap-x-1">
+                        <a
+                          href="https://www.twitter.com/{{ . }}"
+                          title="Twitter"
+                          class="h-4 w-4 text-blue"
+                        >
+                          <svg viewBox="0 0 1 1">
+                            {{ partial "helper/svg.html" "twitter" }}
+                          </svg>
+                        </a>
+                        <a
+                          class="font-normal text-blue"
+                          href="https://www.twitter.com/{{ . }}"
+                        >
+                          @{{ . }}
+                        </a>
+                      </p>
                     {{ end }}
                   </div>
                 {{ end }}
               </div>
-            {{ end }}
-          </footer>
-        {{ end }}
-        {{ partial "tw/support.html" . }}
-      </div>
-    </article>
-
-    <aside
-      class="{{ $rightRailClass }} mt-6 grid-cols-2 place-items-center items-stretch gap-4 print:!hidden"
-      data-ga-category="sidebar"
-      id="rail"
-    >
-      {{ partial $sidebarNewsletter . }}
+            </div>
+          {{ end }}
+        </footer>
+      {{ end }}
+      {{ partial "tw/support.html" . }}
+    </div>
+    {{ if .Param "suppress-related" | not }}
       <div
-        data-ga-category="top"
-        data-fru-campaign="sidebar"
-        class="row-start-1 mt-6 w-full"
+        class="w-full bg-white py-8 md:py-24"
+        id="related-stories"
+        data-ga-category="guides"
       >
-        {{ partial "tw/promo-single.html" (dict
-          "id" "sidebar-top"
-          "class" "mb-5 w-0 min-w-full no-js:hidden"
-          "images" (.Param "sidebar-top-images")
-          "width" (.Param "sidebar-top-width")
-          "height" (.Param "sidebar-top-height")
-          "link"  (.Param "sidebar-top-link")
-          "description"  (.Param "sidebar-top-description")
+        {{ $guide := site.GetPage $params.rubric.RelPermalink }}
+        {{ partial "tw/list-3-col-story.html" (dict
+          "hed" "Related Stories"
+          "pages" $guide.RegularPages
+          "rows" 1
+          "showByline" false
           )
         }}
       </div>
-
-      <div class="col-start-1 row-start-1 row-end-3">
-        {{ partial "tw/rail-most-popular.html" dict }}
-      </div>
-      {{ $edPicks := partial "helper/get-items" "sidebar" }}
-      {{ range $edPicks }}
-        {{ if .page }}
-          {{ if ne .page.RelPermalink $.RelPermalink }}
-            {{ partial "tw/rail-picks.html" . }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-      {{ if .Param "sidebar-sticky-images" }}
-        <div
-          class="sticky top-14 w-full md:top-16"
-          data-ga-category="sticky"
-          data-fru-campaign="sidebar-sticky"
-          x-data
-          x-intersect="$dispatch('close-sticky')"
-        >
-          {{ partial "tw/promo-single.html" (dict
-            "id" "sidebar-sticky"
-            "class" "pt-5 w-0 min-w-full no-js:hidden"
-            "images" (.Param "sidebar-sticky-images")
-            "width" (.Param "sidebar-sticky-width")
-            "height" (.Param "sidebar-sticky-height")
-            "link"  (.Param "sidebar-sticky-link")
-            "description"  (.Param "sidebar-sticky-description")
-            )
-          }}
-        </div>
-      {{ end }}
-    </aside>
-
-    {{ if .Param "suppress-related" | not }}
-      <nav class="{{ $mainWellClass }} mt-12 print:!hidden">
-        {{ $related := .Parent.RegularPages.Related . | first 10 }}
-        {{ partial "tw/related-articles.html" $related }}
-      </nav>
     {{ end }}
-  </div>
+
+  </article>
+  <aside
+    class="mt-6 justify-self-end md:mx-auto md:max-w-screen-sm lg:col-span-4 lg:col-start-9 lg:row-start-2 lg:row-end-auto lg:max-w-80 print:!hidden"
+    data-ga-category="sidebar"
+    id="sidebar"
+  >
+    <div
+      data-ga-category="top"
+      data-sf-campaign="701Dn000000YgoeIAC"
+      class="row-start-1 mt-6 w-full"
+    >
+      {{ partial "tw/promo-single.html" (dict
+        "class" "mb-5 w-0 min-w-full no-js:hidden flex justify-center lg:justify-start"
+        "images" (.Param "sidebar-top-images")
+        "width" (.Param "sidebar-top-width")
+        "height" (.Param "sidebar-top-height")
+        "link"  (.Param "sidebar-top-link")
+        "description"  (.Param "sidebar-top-description")
+        )
+      }}
+    </div>
+
+    <div class="col-start-1 row-start-1 row-end-3">
+      {{ partial "tw/rail-most-popular.html" dict }}
+    </div>
+    {{ partial "tw/rail-events.html" (dict
+      "label" "Upcoming Events"
+      )
+    }}
+  </aside>
 </section>
