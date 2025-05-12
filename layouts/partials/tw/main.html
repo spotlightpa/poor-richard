@@ -126,60 +126,97 @@
                 itemprop="author"
                 itemscope
                 itemtype="https://schema.org/Person"
+                class="flex items-start gap-4 md:gap-8"
               >
-                {{ if $author.link }}
-                  <a
-                    class="flex items-center space-x-6"
-                    href="{{ $author.link | absURL }}"
-                    itemprop="url"
+                {{ if $author.thumb }}
+                  <span
+                    class="inline-flex h-10 w-10 md:h-24 md:w-24"
+                    data-ga-category="thumb"
                   >
-                    {{ template "main-author-loop" $author }}
-                  </a>
+                    <img
+                      itemprop="image"
+                      src="{{ $author.thumb | absURL }}"
+                      alt="Photo of {{ $author.name }}"
+                      class="m-auto rounded-full ring-1 ring-g-6 grayscale filter"
+                      loading="lazy"
+                      decoding="async"
+                      width="256"
+                      height="256"
+                    />
+                  </span>
                 {{ else }}
-                  <div class="flex items-center space-x-6">
-                    {{ block "main-author-loop" $author }}
-                      {{ if .thumb }}
-                        <span
-                          class="inline-flex h-16 w-16"
-                          data-ga-category="thumb"
-                        >
-                          <img
-                            itemprop="image"
-                            src="{{ .thumb | absURL }}"
-                            alt="Photo of {{ .name }}"
-                            class="m-auto rounded-full ring-2 ring-g-6 grayscale filter"
-                            loading="lazy"
-                            decoding="async"
-                            width="256"
-                            height="256"
-                          />
-                        </span>
-                      {{ else }}
-                        <span class="inline-flex w-16"></span>
-                      {{ end }}
-                      <div class="font-sans font-semibold leading-tight">
-                        {{ $showLink := and .active .link | not | not }}
-                        {{ $color := cond $showLink "text-blue" "text-g-7" }}
-                        <h3
-                          class="{{ $color }} text-2xl"
-                          data-ga-category="name"
-                          itemprop="name"
-                        >
-                          {{ .name }}
-                        </h3>
-                        {{ if and .active .title }}
-                          <h3
-                            class="text-lg text-g-6"
-                            data-ga-category="role"
-                            itemprop="jobTitle"
-                          >
-                            {{ .title }}
-                          </h3>
-                        {{ end }}
-                      </div>
-                    {{ end }}
-                  </div>
+                  <span class="inline-flex w-24"></span>
                 {{ end }}
+                <div class="w-full font-sans">
+                  {{ $showLink := and $author.active $author.link | not | not }}
+                  {{ $color := cond $showLink "text-blue" "text-g-7" }}
+                  <h3
+                    class="{{ $color }} border-b border-black text-xl font-bold leading-tight md:text-2xl"
+                    data-ga-category="name"
+                    itemprop="name"
+                  >
+                    {{ if $author.link }}
+                      <a href="{{ $author.link | absURL }}" itemprop="url">
+                        {{ $author.name }}
+                      </a>
+                    {{ else }}
+                      {{ $author.name }}
+                    {{ end }}
+                  </h3>
+                  {{ if and $author.active $author.title }}
+                    <h3
+                      class="mt-1 text-xs font-black uppercase leading-snug text-black"
+                      data-ga-category="role"
+                      itemprop="jobTitle"
+                    >
+                      {{ $author.title }}
+                    </h3>
+                    {{ with $author.focusHed }}
+                      <p class="mt-2 text-xs md:text-sm">
+                        Focus:
+                        {{ . }}
+                      </p>
+                    {{ end }}
+                    <div class="mt-2 flex flex-wrap gap-x-2 text-sm font-bold">
+                      {{ if $author.email }}
+                        <p class="flex-0 mr-2 flex items-center">
+                          <span class="mr-2 h-4 w-4">
+                            <svg viewBox="0 0 1 1">
+                              {{ partial "helper/svg.html" "email" }}
+                            </svg>
+                          </span>
+                          Email:
+                          <a
+                            class="ml-2 font-normal text-blue"
+                            data-ga-category="author-email"
+                            href="mailto:{{ $author.email }}"
+                            title="Email"
+                          >
+                            {{ $author.email }}
+                          </a>
+                        </p>
+                      {{ end }}
+                      {{ with $author.twitter }}
+                        <p class="flex-0 mr-2 flex items-center">
+                          <span class="mr-2 h-4 w-4">
+                            <svg viewBox="0 0 1 1">
+                              {{ partial "helper/svg.html" "twitter" }}
+                            </svg>
+                          </span>
+                          Twitter:
+                          <a
+                            class="ml-2 font-normal text-blue"
+                            data-ga-category="author-twitter"
+                            href="https://www.twitter.com/{{ . }}"
+                            title="Twitter"
+                          >
+                            @{{ . }}
+                          </a>
+                        </p>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
               </div>
             {{ end }}
           </footer>
