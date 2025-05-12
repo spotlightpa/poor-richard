@@ -167,12 +167,16 @@ title = "More Coverage"
 link = "coverage"
 
 [[blocks.link]]
-title = "Quiz"
+title = "Mayor Quiz"
 link = "mayor-quiz"
 
 [[blocks.link]]
 title = "Español"
 link = "espanol"
+
+[[blocks.link]]
+title = "College Quiz"
+link = "college-quiz"
 
 [[blocks.link]]
 title = "Ask Us"
