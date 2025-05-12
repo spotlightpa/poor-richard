@@ -232,6 +232,15 @@ collection = "topics/español/_index.md"
 collectionReadMore = "Leer Más Historias De La Elección PA 2025"
 
 [[blocks]]
+layout = "ballyhoo"
+id = "college-quiz"
+image = "2025/04/01m0-52z0-0x40-19w0.jpeg"
+hed = "Pop Quiz"
+dek = "Use our interactive tool to see which candidates for State College Area School District Board of Directors most closely align with what matters to you."
+cta = "Take Our Quiz →"
+link = "/statecollege/2025/05/pennsylvania-state-college-school-board-scasd-primary-election-2025-anderson-huff-barlow-black-desmarais-mcternan-sogor-quiz/"
+
+[[blocks]]
 layout = "contact"
 slug = "contact"
 hed = "Ask Us Your Questions"
