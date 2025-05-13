@@ -14,38 +14,28 @@
     <h2
       class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
     >
-      <a
+      <div
         href="/donate/"
         data-ga-category="eyebrow"
         x-text="_('eyebrow_text', 'While You’re Here')"
-      ></a>
+      ></div>
     </h2>
-    <h2 class="font-sans text-lg">
-      <a
+    <h2 class="mt-2 font-sans text-lg">
+      <div
         href="/donate/"
         data-ga-category="body"
         target="_blank"
         x-rich-text="_('teaser_text', 'If you learned something from this report, pay it forward and become a member of Spotlight PA so someone else can in the future.')"
-      ></a>
+      ></div>
     </h2>
-    <div class="mt-2 sm:ml-1 sm:mt-0">
+    <div class="sm:mt-0">
       <a
         href="/donate/"
-        class="btn-donate"
+        class="btn-donate mt-2"
         data-ga-category="button"
         target="_blank"
         x-rich-text="_('cta_text', 'Contribute →')"
       ></a>
-    </div>
-    <div class="mt-10 text-right text-g-9 md:mt-4">
-      <a href="/" target="_blank">
-        <svg
-          class="inline-block h-8 w-48 fill-current"
-          aria-label="Spotlight PA logo"
-        >
-          {{ partial "helper/svg.html" "banner" }}
-        </svg>
-      </a>
     </div>
   </div>
 </div>
