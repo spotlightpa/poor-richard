@@ -5,17 +5,10 @@
   method="post"
   target="_blank"
   x-form="newsletters:multi"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
   data-ga-category="newsletter"
-  x-data="{
-    hasFocused: false,
-    params: new URLSearchParams(window.location.search),
-    _(name, fallback) {
-      return this.params.get(name) || fallback;
-    },
-    get preselected() {
-      return this.params.get('preselect');
-    },
-  }"
+  x-data="newsletter($el.dataset.baseUrl)"
+  @submit.prevent="submit"
   @focusin="hasFocused = true"
 >
   {{ partial "newsletter/basic-hidden.html" . }}
@@ -26,11 +19,10 @@
   </p>
   <h2
     class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
-    x-text="_('eyebrow', $el.innerText)"
   >
     Free Newsletter
   </h2>
-  <h2 class="font-sans text-lg" x-rich-text="_('cta', $el.innerText)">
+  <h2 class="font-sans text-lg">
     Sign up for a free roundup of the top news from across Pennsylvania, all in
     one daily or weekly email from Spotlight PA.
   </h2>
@@ -55,7 +47,18 @@
       </span>
     </p>
     <p class="mt-2 w-full">
-      <button class="btn-signup w-full" type="submit">Sign Up</button>
+      <button class="btn-signup w-full" type="submit">
+        Sign Up
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
+      </button>
     </p>
   </div>
 
@@ -66,7 +69,7 @@
     x-transition
     x-cloak
   >
-    <p class="">
+    <p>
       <label class="flex items-baseline gap-2">
         <input
           type="checkbox"
