@@ -22,7 +22,7 @@ topics = ["The Capitol"]
 
 HARRISBURG — As hospital closures and consolidations across Pennsylvania create health care deserts and powerful monopolies, a bipartisan faction of lawmakers wants to empower the state to dig deeper into these transactions before they happen.
 
-At least 25 hospitals owned by nonprofits and for-profit companies have closed across the commonwealth in the past five years, according to data collected by the Pennsylvania Health Access Network. In the same period, at least 46 hospitals changed ownership.
+At least 26 hospitals owned by nonprofits and for-profit companies have closed across the commonwealth in the past five years, according to data collected by the Pennsylvania Health Access Network. In the same period, at least 46 hospitals changed ownership.
 
 These closures know no geographic or partisan bounds. Communities from <a href="https://www.chiefhealthcareexecutive.com/view/pennsylvania-hospital-closes-its-doors-but-hope-persists-for-reprieve">Mercer</a> to <a href="https://www.pennlive.com/news/2023/01/closing-at-upmc-hospital-in-central-pa-surprises-worries-mayor-of-rural-town.html">Clinton</a> to <a href="https://www.nbcphiladelphia.com/news/health/crozer-chester-hospital-closes/4174987/#:~:text=After%20months%20of%20efforts%20to,%2C%202025%2C%20Delaware%20County%20said.">Delaware</a> Counties have faced the sudden shuttering of health facilities, along with the accompanying care shortages and job losses.
 
