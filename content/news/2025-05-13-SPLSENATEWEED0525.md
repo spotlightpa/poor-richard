@@ -24,9 +24,15 @@ HARRISBURG — A Pennsylvania Senate panel has rejected a bill advanced by Democ
 
 State Sen. Dan Laughlin (R., Erie), leader of the committee, supports legalizing marijuana but said Tuesday the state store approach would unfairly shut out the private sector and small businesses, and create serious logistical hurdles and legal challenges.
 
-“I made it pretty crystal clear that I do not believe that the state store model … has a path through the Senate,” Laughlin said during the committee hearing.
+“I made it pretty crystal clear that I do not believe that the state store model … has a path through the Senate,” Laughlin said during the hearing.
 
 The Law &amp; Justice Committee rejected the bill 7-3, with one Democrat voting no alongside all Republicans present.
+
+It’s unclear what’s next for the legal cannabis push in Pennsylvania.
+
+State House Majority Leader Matt Bradford (D., Montgomery) said Tuesday that he wants to see the GOP-led state Senate move a legalization bill. The top lawmakers in the upper chamber have remained largely <a href="https://www.spotlightpa.org/news/2025/02/marijuana-cannabis-recreational-legalization-pennsylvania-josh-shapiro-budget-gop-support/">noncommittal to legalization</a> as a general concept.
+
+“The House has obviously put down what its priorities are, what it wants to see in a final deal,” Bradford told reporters. “The next step is for the Senate, not just to show what it doesn&#39;t support, but what it has 26 votes for.”
 
 {{<embed/newsletter>}}
 
@@ -34,11 +40,11 @@ Supporters of <a href="https://www.spotlightpa.org/news/2025/05/pennsylvania-leg
 
 Critics say the state already has a robust medical marijuana market that should be expanded, and that the state store model, which hasn’t been attempted in any other state, could lead to <a href="https://blogs.duanemorris.com/cannabis/2025/04/08/analysis-indicates-pennsylvania-state-run-cannabis-sales-likely-preempted-by-controlled-substances-act/">criminal liability</a> for the commonwealth because cannabis is still federally illegal.
 
-At least two Democrats on the state Senate panel said Tuesday they would support a bipartisan bill that Laughlin pitched last legislative session, with one asking if Laughlin would offer it as an amendment to change the state House bill.
+At least two Democrats on the state Senate panel said Tuesday they would support a bipartisan bill that Laughlin pitched last legislative session.
 
 That bill <a href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?syear=2023&amp;sind=0&amp;body=S&amp;type=B&amp;bn=0846">would have created a board</a> to oversee the industry and approve sellers, and also would have allowed companies that are already licensed to sell medical cannabis — many of which are large and well-established — to start making recreational sales.
 
-Laughlin said that it isn’t ready for reintroduction.
+Laughlin said Tuesday that his bill is not ready for consideration.
 
 Following the vote, Krajewski told Spotlight PA he was frustrated that Laughlin voted against the measure without any discussion or proposed amendments, particularly with the budget deadline fast approaching.
 
@@ -53,6 +59,4 @@ Laughlin said he decided to bring the proposal up for a vote in his committee �
 Laughlin said that one of his biggest issues with the bill is the cost of setting up the state-owned dispensaries. He says the state would have to spend hundreds of millions of dollars before “we ever take $1 in sales.”
 
 “That just does not seem like the right path to go on when the private market is ready, willing, and able to pick up when we pass cannabis,” Laughlin said.
-
-<em>This story will be updated.</em>
 
