@@ -2,7 +2,7 @@
 {{ $idEmail := partial "helper/new-id" . }}
 {{ $idTip := partial "helper/new-id" . }}
 <div
-  class="rounded border border-red font-sans font-semibold leading-tight shadow"
+  class="rounded-lg border border-g-5 bg-g-2 p-7 shadow md:p-10 xl:px-12 xl:py-7"
   data-ga-category="contact"
   x-data="{
     showSpanish: false,
@@ -21,48 +21,49 @@
   x-cloak
 >
   <h2
-    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
     x-show="!showSpanish"
-    x-text="_('flag_text', $el.innerText)"
+    class="flex items-baseline justify-between border-b border-black pb-1 font-serif text-2xl italic leading-tight"
   >
-    Tips
+    <span x-show="!showSpanish" x-text="_('flag_text', $el.innerText)"
+      >Tips</span
+    >
+    <button
+      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
+      type="button"
+      data-ga-category="toggle-language:spanish"
+      @click="showSpanish = true"
+    >
+      En Español
+    </button>
   </h2>
   <h2
     x-cloak
     x-show="showSpanish"
-    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
+    class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
   >
-    Escríbenos
+    <span x-show="showSpanish" x-text="_('flag_text', $el.innerText)"
+      >Escríbenos</span
+    >
+    <button
+      x-cloak
+      type="button"
+      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
+      data-ga-category="toggle-language:english"
+      @click="showSpanish = false"
+    >
+      In English
+    </button>
   </h2>
-  <button
-    x-show="!showSpanish"
-    class="float-right inline-block px-4 py-3 font-semibold uppercase text-red"
-    type="button"
-    data-ga-category="toggle-language:spanish"
-    @click="showSpanish = true"
-  >
-    En Español
-  </button>
-  <button
-    x-cloak
-    x-show="showSpanish"
-    type="button"
-    class="float-right inline-block px-4 py-3 font-semibold uppercase text-red"
-    data-ga-category="toggle-language:english"
-    @click="showSpanish = false"
-  >
-    In English
-  </button>
   <div
-    class="embed-prose px-6 pb-4 pt-6 text-lg leading-snug"
+    class="embed-prose pb-4 pt-6 text-lg leading-snug"
     x-show="!showSpanish"
     x-rich-text="_('tip_text', '')"
   ></div>
-  <div x-cloak class="px-6 pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
+  <div x-cloak class="pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
-    class="flex flex-col gap-2 p-4"
+    class="flex flex-col gap-2 py-4"
     action="/contact/thanks/"
     method="post"
     netlify
@@ -138,7 +139,7 @@
     </div>
     <div class="py-2">
       <button
-        class="btn-donate"
+        class="btn-signup"
         type="submit"
         target="_blank"
         x-text="showSpanish ? 'Enviar mensaje': 'Send message'"
@@ -166,7 +167,7 @@
       </a>
     </div>
   </form>
-  <div class="mb-4 mr-3 text-right text-g-9">
+  <div class="mt-10 text-right text-g-9 md:mt-4">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"
