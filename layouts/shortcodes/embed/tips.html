@@ -1,90 +1,77 @@
 {{ $idName := partial "helper/new-id" . }}
 {{ $idEmail := partial "helper/new-id" . }}
 {{ $idTip := partial "helper/new-id" . }}
+
+{{ $tip := .Get "tip_text" | htmlUnescape | safeHTML | default `` }}
+{{ $eyebrow := .Get "flag_text" | htmlUnescape | default `Tips` }}
+{{ $formName := .Get "form_name" | htmlUnescape | default `contact-page` }}
+
+{{ partial "tag/content-well-end" . }}
 <div
-  class="rounded-lg border border-g-5 bg-g-2 p-7 shadow md:p-10 xl:px-12 xl:py-7"
-  data-ga-category="contact"
+  class="my-6 rounded border border-red font-sans font-semibold leading-tight shadow"
+  data-ga-category="embed:contact"
   x-data="{
     showSpanish: false,
-    params: new URLSearchParams(window.location.search),
-    _(name, fallback) {
-      return this.params.get(name) || fallback;
-    },
-    get hostPage(){
-      let h = window.location.hash.replace(/^#/, '');
-      return new URLSearchParams(h).get('host_page')
-    },
-    setFormName() {
-      this.$refs.formName.value = this._('form_name', 'contact-page');
-    }
   }"
-  x-cloak
 >
   <h2
+    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
     x-show="!showSpanish"
-    class="flex items-baseline justify-between border-b border-black pb-1 font-serif text-2xl italic leading-tight"
   >
-    <span x-show="!showSpanish" x-text="_('flag_text', $el.innerText)"
-      >Tips</span
-    >
-    <button
-      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
-      type="button"
-      data-ga-category="toggle-language:spanish"
-      @click="showSpanish = true"
-    >
-      En Español
-    </button>
+    {{ $eyebrow }}
   </h2>
   <h2
     x-cloak
     x-show="showSpanish"
-    class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
   >
-    <span x-show="showSpanish" x-text="_('flag_text', $el.innerText)"
-      >Escríbenos</span
-    >
-    <button
-      x-cloak
-      type="button"
-      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
-      data-ga-category="toggle-language:english"
-      @click="showSpanish = false"
-    >
-      In English
-    </button>
+    Escríbenos
   </h2>
-  <div
-    class="embed-prose pb-4 pt-6 text-lg leading-snug"
+  <button
     x-show="!showSpanish"
-    x-rich-text="_('tip_text', '')"
-  ></div>
-  <div x-cloak class="pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
+    class="float-right inline-block px-4 py-3 font-semibold uppercase text-red"
+    type="button"
+    data-ga-category="toggle-language:spanish"
+    @click="showSpanish = true"
+  >
+    En Español
+  </button>
+  <button
+    x-cloak
+    x-show="showSpanish"
+    type="button"
+    class="float-right inline-block px-4 py-3 font-semibold uppercase text-red"
+    data-ga-category="toggle-language:english"
+    @click="showSpanish = false"
+  >
+    In English
+  </button>
+  <div
+    class="embed-prose px-6 pb-4 pt-6 text-lg leading-snug"
+    x-show="!showSpanish"
+  >
+    {{- $tip -}}
+  </div>
+  <div x-cloak class="px-6 pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
-    class="flex flex-col gap-2 py-4"
+    class="flex flex-col gap-2 p-4"
+    name="{{ $formName }}"
     action="/contact/thanks/"
     method="post"
     netlify
     netlify-honeypot="bot-field"
     x-form="contact"
     target="_parent"
-    @submit="setFormName"
   >
-    <input
-      type="hidden"
-      name="form-name"
-      value="contact-page"
-      x-ref="formName"
-    />
     <p class="hidden">
       <label>
         Don’t fill this out if you're human:
         <input name="bot-field" />
       </label>
     </p>
-    <input name="host_page" type="hidden" :value="hostPage" />
+    <input name="host_page" type="hidden" value="{{ page.Permalink }}" />
     <div>
       <label class="sr-only" for="{{ $idName }}">Name</label>
       <p class="relative">
@@ -139,7 +126,7 @@
     </div>
     <div class="py-2">
       <button
-        class="btn-signup"
+        class="btn-donate"
         type="submit"
         target="_blank"
         x-text="showSpanish ? 'Enviar mensaje': 'Send message'"
@@ -167,7 +154,7 @@
       </a>
     </div>
   </form>
-  <div class="mt-10 text-right text-g-9 md:mt-4">
+  <div class="mb-4 mr-3 text-right text-g-9">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"
@@ -178,3 +165,4 @@
     </a>
   </div>
 </div>
+{{ partial "tag/content-well-start" . }}
