@@ -19,7 +19,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="bg-white p-px" data-ga-category="embed" data-fru-campaign="embed">
+  <div class="bg-g-2 p-px" data-ga-category="embed" data-fru-campaign="embed">
     {{ $embed := .Param "embed-partial" | printf "embed/%s" }}
     {{ partial $embed . }}
   </div>

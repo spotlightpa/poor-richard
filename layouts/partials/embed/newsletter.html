@@ -1,14 +1,19 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="spl-newsletter rounded-lg border border-g-5 bg-g-2 p-7 shadow md:p-10 xl:px-12 xl:py-7"
-  action="{{ site.Param `newsletters-action` }}"
-  method="post"
-  target="_blank"
-  x-form="newsletters:multi"
+  class="rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
-  data-ga-category="newsletter"
-  x-data="newsletter($el.dataset.baseUrl)"
   @submit.prevent="submit"
+  data-ga-category="newsletter"
+  x-data="{
+    ...newsletter($el.dataset.baseUrl),
+    params: new URLSearchParams(window.location.search),
+    _(name, fallback) {
+      return this.params.get(name) || fallback;
+    },
+    get preselected() {
+      return this.params.get('preselect');
+    },
+  }"
   @focusin="hasFocused = true"
 >
   {{ partial "newsletter/basic-hidden.html" . }}
@@ -19,19 +24,20 @@
   </p>
   <h2
     class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+    x-text="_('eyebrow', $el.innerText)"
   >
     Free Newsletter
   </h2>
-  <h2 class="mt-2 font-sans text-lg">
+  <h2 class="font-sans text-lg" x-rich-text="_('cta', $el.innerText)">
     Sign up for a free roundup of the top news from across Pennsylvania, all in
     one daily or weekly email from Spotlight PA.
   </h2>
-  <div class="mx-auto mt-2">
-    <p class="relative w-full">
+  <div class="mx-auto mt-2 items-stretch sm:flex">
+    <p class="relative flex-grow">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
-        class="spl-input w-full"
+        class="spl-input"
         type="email"
         name="EMAIL"
         placeholder="Email address"
@@ -46,9 +52,9 @@
         </svg>
       </span>
     </p>
-    <p class="mt-2 w-full">
-      <button class="btn-signup" type="submit">
-        Sign Up
+    <p class="mt-2 sm:ml-1 sm:mt-0">
+      <button class="btn-signup h-full" type="submit" :disabled="isLoading">
+        <span x-text="_('button', $el.innerText)">Sign Up</span>
         <svg
           x-cloak
           x-transition
@@ -61,7 +67,6 @@
       </button>
     </p>
   </div>
-
   {{ $checkClass := `mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4` }}
   <div
     class="mt-4 flex flex-col gap-2 text-left"
@@ -69,7 +74,7 @@
     x-transition
     x-cloak
   >
-    <p>
+    <p class="">
       <label class="flex items-baseline gap-2">
         <input
           type="checkbox"
@@ -122,7 +127,7 @@
       </label>
     </p>
   </div>
-  <div class="mb-4 mr-3 mt-10 text-right text-g-9">
+  <div class="mt-10 text-right text-g-9 md:mt-4">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"
