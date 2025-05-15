@@ -25,7 +25,7 @@ Results for statewide races can also be found on the Department of State <a href
 
 For complete coverage of the 2025 primary election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
-{{<embed/newsletter>}}
+{{<dewey-assistant>}}
 
 <h2 id="spl-heading-1">Pennsylvania election results</h2>
 
