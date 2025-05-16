@@ -12,18 +12,17 @@
     "content/news/2025-04-03-SPL_Resolve_SS0425.md"
   ],
   "featuredStories": [
-    "content/statecollege/2025-05-15-SPLDUBOIS0525.md"
+    "content/news/2025-05-16-NGNSEDSICK0525.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-05-01-SPLCONSOLIDATION.md",
-    "content/news/2025-05-15-SPLMAY20LASTMINGUIDE.md",
-    "content/statecollege/2025-04-21-SPLSCGUIDE0425.md",
-    "content/interactives/scasd-quiz.md"
+    "content/news/2025-05-06-SPLQAOPIOIDS0525.md",
+    "content/interactives/opioid-quiz.md",
+    "content/news/2025-02-12-spl_welfare_0225.md"
   ],
   "topSlots": [
-    "content/statecollege/2025-05-14-SPLTRUSTSUN0525.md",
-    "content/statecollege/2025-05-13-SPLPSU7CAMPUS0525.md",
-    "content/news/2025-05-13-SPLHOUSEVOTERID0525.md"
+    "content/news/2025-05-15-SPLNEWSQUIZMAY1525.md",
+    "content/statecollege/2025-05-15-SPLDUBOIS0525.md",
+    "content/statecollege/2025-05-14-SPLTRUSTSUN0525.md"
   ],
   "topper": []
 }
