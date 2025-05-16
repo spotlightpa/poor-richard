@@ -46,8 +46,8 @@
       "display": "Andy and Chris Bater",
       "sort": "Bater",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Christopher Baxter",
@@ -655,8 +655,8 @@
       "display": "Kathleen O'Toole and Gary Gray",
       "sort": "O'Toole",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "David Ottaway",
@@ -927,6 +927,13 @@
     {
       "display": "Christopher and Lee Van de Velde",
       "sort": "Van de Velde",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Willem van den Berg",
+      "sort": "Van den Berg",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"

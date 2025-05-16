@@ -12,10 +12,12 @@ kicker = "Elections"
 modal-exclude = false
 pinned = false
 published = 2025-05-14T04:00:00-04:00
+series = ["Voting Guides 2025"]
 slug = "pennsylvania-primary-election-day-2025-last-minute-voting-guide"
 suppress-date = false
 title = "Pa. primary election 2025: How to vote, where to vote, and everything you need to know for May 20"
 title-tag = "Your last-minute guide to voting in the 2025 PA primary election"
+topics = ["Elections"]
 +++
 
 HARRISBURG — Pennsylvania’s 2025 primary Election Day is quickly approaching. If you still have questions about where your polling place is, who is on the ballot, and how to vote, Spotlight PA has got you covered.

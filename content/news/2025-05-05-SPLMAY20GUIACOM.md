@@ -91,7 +91,9 @@ Los votantes no afiliados y de terceros partidos pueden participar en elecciones
 
 <h2 id="spl-heading-7">¿Cómo puedo encontrar mi colegio electoral?</h2>
 
-Puede encontrar su colegio electoral <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, introduciendo su dirección.
+Puede encontrar su colegio electoral <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx">aquí</a>, introduciendo su dirección.<br/>
+
+{{<dewey-assistant>}}
 
 <h2 id="spl-heading-8">¿Qué más necesito saber para votar en persona?</h2>
 
