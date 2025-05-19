@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/interactives/scasd-quiz.md"
+    "content/statecollege/2025-05-15-SPLDUBOIS0525.md"
   ],
   "subfeatures": [
+    "content/statecollege/2024-05-01-SPLCONSOLIDATION.md",
     "content/statecollege/2025-04-21-SPLSCGUIDE0425.md",
-    "content/news/2025-04-28-SPLMAY20COLLEGE.md",
-    "content/news/2025-04-18-SPLLOCALVET0425.md"
+    "content/interactives/scasd-quiz.md"
   ],
   "topSlots": [
-    "content/statecollege/2025-05-08-SPLAGINN0525.md",
-    "content/statecollege/2025-05-07-SPLPSUCLOSE0525.md",
-    "content/statecollege/2025-04-18-SPLCALENDAR0425.md"
+    "content/statecollege/2025-05-14-SPLTRUSTSUN0525.md",
+    "content/statecollege/2025-05-13-SPLPSU7CAMPUS0525.md",
+    "content/statecollege/2025-05-08-SPLAGINN0525.md"
   ],
   "topper": []
 }

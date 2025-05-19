@@ -46,8 +46,8 @@
       "display": "Andy and Chris Bater",
       "sort": "Bater",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Christopher Baxter",
@@ -153,6 +153,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "SW Calkins Foundation",
+      "sort": "Calkins",
+      "url": "",
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Richard Carroll",
@@ -379,6 +386,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Robyn and Thomas Holder",
+      "sort": "Holder",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Ruth and Bruce Hollender",
       "sort": "Hollender",
       "url": "",
@@ -473,8 +487,8 @@
       "display": "Beryl Kuhr and Patrick Bair",
       "sort": "Kuhr",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Balasios Lahaniatis, in honor of Lucine Sihelnik",
@@ -655,8 +669,8 @@
       "display": "Kathleen O'Toole and Gary Gray",
       "sort": "O'Toole",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "David Ottaway",
@@ -927,6 +941,13 @@
     {
       "display": "Christopher and Lee Van de Velde",
       "sort": "Van de Velde",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Willem van den Berg",
+      "sort": "Van den Berg",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"

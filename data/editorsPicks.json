@@ -1,29 +1,16 @@
 {
-  "edCallout": [
-    "content/news/2025-04-30-SPLCYBERSPEND0425.md",
-    "content/news/2025-04-22-SPL302EXP0425.md"
-  ],
-  "edImpact": [
-    "content/news/2025-04-08-SPLLOBSUIT0425.md",
-    "content/news/2025-03-27-spl_marijuanadocs_0325.md"
-  ],
-  "edInvestigations": [
-    "content/news/2025-04-17-SPLPHEAA0425.md",
-    "content/news/2025-04-03-SPL_Resolve_SS0425.md"
-  ],
   "featuredStories": [
-    "content/news/2025-05-12-SPLSCRANTONFUND0525.md"
+    "content/news/2025-05-19-SPLSFI0525.md"
   ],
   "subfeatures": [
-    "content/news/2025-04-30-SPLCYBERSPEND0425.md",
-    "content/news/2025-03-12-SPLADDEBATE0325.md",
-    "content/news/2025-01-14-SPLEDUPDATE0125.md",
-    "content/news/2024-07-11-SPL24BUDDEAL.md"
+    "content/news/2025-03-24-SPLLEGISMONEY0325.md",
+    "content/news/2025-04-07-SPLPIGEONSHOOT0425.md",
+    "content/news/2025-03-27-SPLCFSOLUTIONS0325.md"
   ],
   "topSlots": [
-    "content/news/2025-05-09-SPLHIDDENTALENT0525.md",
-    "content/news/2025-05-08-SPLNEWSQUIZMAY0525.md",
-    "content/statecollege/2025-05-08-SPLAGINN0525.md"
+    "content/news/2025-05-19-SPLCARECASES0525.md",
+    "content/news/2025-05-16-SPLFREEHANGS0525.md",
+    "content/news/2025-05-15-SPLNEWSQUIZMAY1525.md"
   ],
   "topper": []
 }

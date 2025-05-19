@@ -17,7 +17,7 @@ slug = "school-funding-scranton-adequacy-education-legislature-pennsylvania"
 suppress-date = false
 title = "Extra money offered this Pa. school district a lifeline. Whether more is coming is an open question."
 title-tag = "State aid expands Scranton's STEM program and online academy"
-topics = ["Education"]
+topics = ["Education", "The Capitol"]
 +++
 
 SCRANTON — When Pennsylvania began sending hundreds of millions of dollars to its most underfunded public school districts last year, Erin Keating realized hers might finally get some breathing room.
