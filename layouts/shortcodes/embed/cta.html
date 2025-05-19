@@ -9,17 +9,16 @@
   data-fru-campaign="embed"
   class="my-6 font-sans"
 >
-  <div class="rounded border border-red font-semibold leading-tight shadow">
-    <h2>
-      <a
-        href="{{ $url }}"
-        class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
-        data-ga-category="eyebrow"
-      >
+  <div class="rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7">
+    <h2
+      class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+    >
+      <a href="{{ $url }}" class="inline-block" data-ga-category="eyebrow">
         {{- $eyebrow -}}
       </a>
     </h2>
-    <h2 class="mt-8 px-4 text-center font-semibold sm:mt-12 sm:text-lg">
+
+    <h2 class="font-sans text-lg">
       <a
         href="{{ $url }}"
         class="embed-prose-highlight text-lg leading-snug"
@@ -28,21 +27,10 @@
         {{- $body | safeHTML -}}
       </a>
     </h2>
-    <div
-      class="mt-8 px-4 text-center font-semibold uppercase tracking-wider sm:mt-12 sm:text-xl"
-    >
+
+    <div class="mt-8 sm:mt-4">
       <a href="{{ $url }}" class="btn-donate" data-ga-category="button">
         {{- $cta -}}
-      </a>
-    </div>
-    <div class="mb-4 mr-3 mt-10 text-right text-g-9">
-      <a href="/" target="_blank">
-        <svg
-          class="inline-block h-8 w-48 fill-current"
-          aria-label="Spotlight PA logo"
-        >
-          {{ partial "helper/svg.html" "banner" }}
-        </svg>
       </a>
     </div>
   </div>
