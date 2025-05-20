@@ -1,4 +1,5 @@
 import { after } from "../utils/timers.js";
+import { allClosest } from "../utils/dom-utils.js";
 
 async function fetchOrRedirect(url, opts) {
   let data = await fetch(url, opts)
@@ -36,6 +37,13 @@ async function submitNewsletter(baseURL, el) {
   let formData = new FormData(el);
   let obj = Object.fromEntries(formData.entries());
   obj.token = token;
+  let pageCategory = allClosest(document.body, "[data-page-cat]")
+    .map((el) => el.dataset.pageCat)
+    .join(":");
+  let component = allClosest(el, "[data-ga-category]")
+    .map((el) => el.dataset.gaCategory)
+    .join(":");
+  obj.source = `Onsite ${pageCategory} ${component}`;
 
   let resp = await fetchOrRedirect(`${baseURL}/api/verify-subscribe`, {
     method: "POST",
