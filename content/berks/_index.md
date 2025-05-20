@@ -1,24 +1,24 @@
 +++
 title = "Spotlight PA Berks County"
 link-title = "Berks County"
-title-tag = "Help us write the future of journalism in Berks County."
-description = "The future of journalism in Berks County is here. Join our historic effort to invigorate local news."
+title-tag = "The future of journalism in Berks County is here."
+description = "The future of journalism in Berks County is here. We’re in your inbox Monday through Friday as our reporters prepare to hit the ground running this summer."
 image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
 image-description = "Berks County, PA on the horizon"
 image-credit = "Abby Drey / Centre Daily Times"
 layout = "page-landing"
 signupHed = "Join our mailing list "
-signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and updates about our new reporting bureau in Reading and Berks County."
+signupDek = "Be the first to know about important news, events, and more from our new bureau in Reading and Berks County."
 hide-topper = true
 aliases = ["/berks-county/"]
 
 [[blocks]]
 layout = "takeover"
-title = "Help us write the future of journalism in Berks County."
-dek = "Join our historic effort to invigorate local news."
+title = "The future of journalism in Berks County is here."
+dek = "We’re in your inbox Monday through Friday as our reporters prepare to hit the ground running this summer."
 image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
-signupHed = "Join our Berks mailing list "
-signupDek = "Sign up to receive a weekly review of articles from Spotlight PA and updates about our new reporting bureau in Reading and Berks County"
+signupHed = "Get our daily newsletter"
+signupDek = "Be the first to know about important news, events, and more from our new bureau in Reading and Berks County."
 gaCategory = "newsletters:berks"
 gaForm = "newsletters:berks-full"
 hiddenField = "newsletter/berks-county-hidden.html"
