@@ -67,66 +67,6 @@
       </button>
     </p>
   </div>
-  {{ $checkClass := `mr-3 h-4 w-4 rounded border border-black p-1 accent-black hover:accent-yellow-4` }}
-  <div
-    class="mt-4 flex flex-col gap-2 text-left"
-    x-show="hasFocused && ! preselected"
-    x-transition
-    x-cloak
-  >
-    <p class="">
-      <label class="flex items-baseline gap-2">
-        <input
-          type="checkbox"
-          name="papost"
-          class="{{ $checkClass }}"
-          value="1"
-          :checked="! preselected"
-          x-report-click
-          data-ga-category="toggle-newsletter:papost"
-        />
-        <span>
-          <strong class="font-extrabold">PA Post (Daily)</strong>: Top news
-          every weekday morning, plus a daily puzzle.
-        </span>
-      </label>
-    </p>
-    <p>
-      <label class="flex items-baseline gap-2">
-        <input
-          type="checkbox"
-          name="investigator"
-          class="{{ $checkClass }}"
-          value="1"
-          :checked="! preselected"
-          x-report-click
-          data-ga-category="toggle-newsletter:investigator"
-        />
-        <span>
-          <strong class="font-extrabold">The Investigator (Weekly)</strong>:
-          Best accountability journalism every Thursday, plus a weekly riddle.
-        </span>
-      </label>
-    </p>
-    <p>
-      <label class="flex items-baseline gap-2">
-        <input
-          type="checkbox"
-          name="palocal"
-          class="{{ $checkClass }}"
-          value="1"
-          :checked="! preselected"
-          x-report-click
-          data-ga-category="toggle-newsletter:palocal"
-        />
-        <span>
-          <strong class="font-extrabold">PA Local (Weekly)</strong>: A fresh
-          look at the incredible people, places, and food of Pa. every Friday,
-          plus events, guides, best-of, and more.
-        </span>
-      </label>
-    </p>
-  </div>
   <div class="mt-10 text-right text-g-9 md:mt-4">
     <a href="/" target="_blank">
       <svg
