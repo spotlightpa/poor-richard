@@ -1,16 +1,17 @@
 {
   "featuredStories": [
-    "content/news/2025-05-19-SPLSFI0525.md"
+    "content/news/2025-05-20-SPLELECDAYINFO0525.md"
   ],
   "subfeatures": [
-    "content/news/2025-03-24-SPLLEGISMONEY0325.md",
-    "content/news/2025-04-07-SPLPIGEONSHOOT0425.md",
-    "content/news/2025-03-27-SPLCFSOLUTIONS0325.md"
+    "content/news/2025-05-19-APELEXEXPEC0525.md",
+    "content/news/2025-05-01-SPLMAY20PRIFULLGU.md",
+    "content/news/2025-04-28-SPLMAY20COLLEGE.md",
+    "content/elections-2024.md"
   ],
   "topSlots": [
-    "content/news/2025-05-19-SPLCARECASES0525.md",
-    "content/news/2025-05-16-SPLFREEHANGS0525.md",
-    "content/news/2025-05-15-SPLNEWSQUIZMAY1525.md"
+    "content/news/2025-04-17-SPLCOURTPRI0425.md",
+    "content/news/2025-04-18-SPLLOCALVET0425.md",
+    "content/interactives/pgh-quiz.md"
   ],
   "topper": []
 }
