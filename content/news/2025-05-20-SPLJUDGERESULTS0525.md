@@ -49,9 +49,9 @@ That includes three state Supreme Court justices, all of whom were elected as De
 
 <h2 id="spl-heading-1">Commonwealth Court primary election results</h2>
 
-In the Commonwealth Court primary, Erie-based attorney Matthew Wolford, who specializes in environmental law, beat Berks County’s Joshua Prince, who runs a law firm focused on gun legislation.
+In the Republican primary for a seat on Commonwealth Court, Erie-based attorney Matthew Wolford, who specializes in environmental law, beat Berks County’s Joshua Prince, who runs a law firm focused on gun legislation.
 
-The Associated Press called the race before 9 p.m. Wolford is leading with 61% of the vote, according to unofficial results.
+The Associated Press called the race before 9 p.m. Wolford is leading with 62% of the vote, according to unofficial results.
 
 Wolford, a solo practitioner, was endorsed by the state Republican Party and was also “highly recommended” by the Pennsylvania Bar Association (PBA).
 
@@ -83,13 +83,13 @@ The Associated Press called her victory over opponent Ann Marie Wheatcraft at 10
 
 Battista previously served as assistant general counsel for the Pennsylvania Departments of Health and State under former Govs. Tom Corbett, a Republican, and Tom Wolf, a Democrat.
 
-She is currently president at Judge Government Services, a consulting firm, and also ran unsuccessfully for Superior Court in 2023.
+She is currently president at Judge Government Services, a consulting firm, and ran unsuccessfully for Superior Court in 2023.
 
 The Pennsylvania Bar Association did not recommend Battista because she did not participate in its rating process.
 
 The Pennsylvania Republican Party endorsed Wheatcraft, not Battista.
 
-Wheatcraft has served since 2012 as a Common Pleas judge and became president judge at the beginning of this year after being selected by her colleagues on the bench.
+Wheatcraft has served since 2012 as a Chester County Common Pleas judge and became president judge at the beginning of this year after being selected by her colleagues on the bench.
 
 The PBA “highly recommended” Wheatcraft for the bench, calling her “an experienced jurist known for her high degree of professionalism, good judicial temperament, excellent character, and undisputed integrity,” and noting that she has presided over hundreds of criminal and civil cases, and jury and bench trials.
 
