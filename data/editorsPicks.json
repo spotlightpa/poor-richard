@@ -1,16 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2025-05-20-SPLJUDGERESULTS0525.md"
+    "content/news/2025-05-21-SPLPEFOLO0525.md"
   ],
   "subfeatures": [
-    "content/news/2025-05-15-SPLAP25PRIMREST.md",
-    "content/news/2025-05-20-APPHILDA0525.md",
-    "content/news/2025-05-20-APPGHMAYOR0525.md"
+    "content/news/2025-05-13-SPLHCAQCUISTION.md",
+    "content/news/2025-05-13-SPLPRIVEQU0525.md"
   ],
   "topSlots": [
+    "content/news/2025-05-20-SPLJUDGERESULTS0525.md",
     "content/news/2025-05-19-SPLSFI0525.md",
-    "content/news/2025-05-16-SPLFREEHANGS0525.md",
-    "content/statecollege/2025-05-14-SPLTRUSTSUN0525.md"
+    "content/news/2025-05-16-SPLFREEHANGS0525.md"
   ],
   "topper": []
 }
