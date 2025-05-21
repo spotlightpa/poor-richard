@@ -17,10 +17,8 @@ type = "elections"
 no-index = false
 promo = "{{<featured/election-promo>}}"
 disabled-text = """Polls in Pennsylvania have officially closed. Spotlight PA’s Election Assistant is no longer available.
-Results for various races, including the presidential election, U.S. Senate and House, Pennsylvania row offices, and Pennsylvania General Assembly, will begin to show after 8 p.m. on November 5.
-
-To see rolling tallies, and official results when they are available, visit [www.spotlightpa.org/elections-2024/results](/elections-2024/results/)."""
-disable-chatbot = false
+To see rolling tallies for various races, and official results when they are available after 8 p.m. on May 20, visit [spotlightpa.org/news/2025/05/pennsylvania-election-results-2025-primary/](https://www.spotlightpa.org/news/2025/05/pennsylvania-election-results-2025-primary/)."""
+disable-chatbot = true
 +++
 
 ### Why and how we built this
