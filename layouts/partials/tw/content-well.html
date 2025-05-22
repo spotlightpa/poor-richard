@@ -1,12 +1,9 @@
 {{ with .Content }}
   <div class="mx-auto w-full max-w-prose">
     <div class="mt-6" data-ga-category="content" id="content">
-      <div
-        class="article-content w-full leading-relaxed"
-        data-sf-campaign="701Dn000000YgozIAC"
-      >
-        {{ . }}
-      </div>
+      {{ partial "tag/content-well-start" . }}
+      {{ . }}
+      {{ partial "tag/content-well-end" . }}
     </div>
   </div>
 {{ end }}
