@@ -61,5 +61,7 @@ Kleppinger said trustees received hundreds of emails ahead of Thursday’s vote.
 
 The internal records previously obtained by Spotlight PA say that Penn State does not anticipate political or financial fallout from the decision. The university also does not think the hundreds of millions of dollars it receives each year in taxpayer funds, now under consideration, are in jeopardy.
 
+In a press conference following the meeting, alumni-elected trustee Jay Paterno said that, under <a href="https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/022/chapter34/s34.12.html&amp;d=reduce">Pennsylvania law</a>, the state secretary of education must also approve the closure plan.
+
 {{<embed/tips tip_text="Do you have a tip about Penn State? We want to hear from you.">}}
 
