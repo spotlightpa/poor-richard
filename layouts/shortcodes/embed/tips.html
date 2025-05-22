@@ -15,7 +15,7 @@
   }"
 >
   <h2
-    class="flex items-baseline justify-between border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
     x-show="!showSpanish"
   >
     <span>{{ $eyebrow }}</span>
@@ -43,10 +43,13 @@
       In English
     </button>
   </h2>
-  <div class="embed-prose pb-4 pt-6 text-lg leading-snug" x-show="!showSpanish">
+  <div
+    class="embed-prose pb-4 pt-6 text-lg leading-tight"
+    x-show="!showSpanish"
+  >
     {{- $tip -}}
   </div>
-  <div x-cloak class="pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
+  <div x-cloak class="pb-4 pt-6 text-lg leading-tight" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form

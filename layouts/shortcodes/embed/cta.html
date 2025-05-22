@@ -11,7 +11,7 @@
 >
   <div class="rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7">
     <h2
-      class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+      class="mb-3 border-b border-black font-serif text-2xl italic leading-tight"
     >
       <div href="{{ $url }}" class="inline-block" data-ga-category="eyebrow">
         {{- $eyebrow -}}
@@ -21,14 +21,14 @@
     <h2 class="font-sans text-lg">
       <div
         href="{{ $url }}"
-        class="embed-prose-highlight text-lg leading-snug"
+        class="embed-prose-highlight text-lg leading-tight"
         data-ga-category="body"
       >
         {{- $body | safeHTML -}}
       </div>
     </h2>
 
-    <div class="mt-8 sm:mt-4">
+    <div class="mt-6">
       <a href="{{ $url }}" class="btn-donate" data-ga-category="button">
         {{- $cta -}}
       </a>

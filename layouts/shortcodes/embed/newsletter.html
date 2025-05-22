@@ -22,15 +22,13 @@
       <input type="hidden" name="{{ . }}" value="1" />
     </p>
   {{ end }}
-  <h2
-    class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
-  >
+  <h2 class="border-b border-black font-serif text-2xl italic leading-tight">
     {{- $eyebrow -}}
   </h2>
   <h2 class="mt-2 font-sans text-lg">
     {{- $cta | safeHTML -}}
   </h2>
-  <div class="mx-auto mt-2 max-w-xl">
+  <div class="mx-auto mt-6 max-w-xl">
     <p class="relative w-full">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
@@ -50,8 +48,8 @@
         </svg>
       </span>
     </p>
-    <p class="mt-4">
-      <button class="btn-signup" type="submit" :disabled="isLoading">
+    <p class="mt-2">
+      <button class="btn-signup w-full" type="submit" :disabled="isLoading">
         {{- $button -}}
         <svg
           x-cloak
