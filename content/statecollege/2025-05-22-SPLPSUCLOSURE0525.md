@@ -49,7 +49,7 @@ Kleppinger, the board chair, said trustees met privately for nearly four hours i
 
 Thursday afternoon was the first time trustees discussed the topic at a public meeting. For more than an hour, some trustees applauded the university for taking action on the topic, while others voiced concern with how the closure plan would be implemented or whether the administration considered other options.
 
-“This is a decision that’s been facing us for decades, and we’re finally getting to it,” said Naren Gursahaney, a trustee representing business and industry. “And I see no upside to waiting at this stage. I think the sooner we move forward, the sooner we can impact this … and avoid having to make the false trade-offs we’ve had to make over those last 15 to 20 years.”
+“This is a decision that’s been facing us for decades, and we’re finally getting to it,” said Naren Gursahaney, a trustee representing business and industry. “And I see no upside to waiting at this stage. I think the sooner we move forward, the sooner we can impact this … and avoid having to make the false tradeoffs we’ve had to make over those last 15 to 20 years.”
 
 Rowland, the academic trustee, said he would’ve liked to see more creative solutions. “Voting to close these campuses is more than a fiduciary decision. I think it’s a statement,” he said. “It’s a statement about who we are. It’s a statement about who we choose to serve and who we’re going to leave behind.”
 
