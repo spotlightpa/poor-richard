@@ -13,19 +13,19 @@
     <h2
       class="border-b border-black pb-1 font-serif text-2xl italic leading-tight"
     >
-      <a href="{{ $url }}" class="inline-block" data-ga-category="eyebrow">
+      <div href="{{ $url }}" class="inline-block" data-ga-category="eyebrow">
         {{- $eyebrow -}}
-      </a>
+      </div>
     </h2>
 
     <h2 class="font-sans text-lg">
-      <a
+      <div
         href="{{ $url }}"
         class="embed-prose-highlight text-lg leading-snug"
         data-ga-category="body"
       >
         {{- $body | safeHTML -}}
-      </a>
+      </div>
     </h2>
 
     <div class="mt-8 sm:mt-4">
