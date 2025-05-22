@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2025-05-21-SPLMILLBOURNE0525.md"
+    "content/statecollege/2025-05-22-SPLPSUCLOSURE0525.md"
   ],
   "subfeatures": [
-    "content/news/2024-08-01-SPLPREBUNKADMIN.md",
-    "content/news/2024-10-31-APREGMISINFO24.md",
-    "content/news/2024-11-04-SPLDISINFO24.md"
+    "content/statecollege/2025-05-13-SPLPSU7CAMPUS0525.md",
+    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
+    "content/statecollege/2025-01-27-SPLPSUCC0125.md"
   ],
   "topSlots": [
+    "content/news/2025-05-21-SPLMILLBOURNE0525.md",
     "content/statecollege/2025-05-21-SPLSCRESULTS0525.md",
-    "content/news/2025-05-20-SPLJUDGERESULTS0525.md",
-    "content/news/2025-05-21-SPLPEFOLO0525.md"
+    "content/news/2025-05-20-SPLJUDGERESULTS0525.md"
   ],
   "topper": []
 }
