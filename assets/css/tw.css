@@ -266,6 +266,21 @@ a.spl-links-navy,
   @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96;
 }
 
+.demo-embeds .spl-newsletter,
+.demo-embeds .spl-donate {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.demo-embeds .spl-newsletter .mx-auto {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
+
 .clip-triangle {
   clip-path: polygon(0 0, 0% 100%, 15% 50%);
 }
