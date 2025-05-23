@@ -22,7 +22,7 @@
 >
   <h2
     x-show="!showSpanish"
-    class="flex items-baseline justify-between border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
   >
     <span x-show="!showSpanish" x-text="_('flag_text', $el.innerText)"
       >Tips</span
@@ -39,7 +39,7 @@
   <h2
     x-cloak
     x-show="showSpanish"
-    class="flex items-baseline justify-between border-b border-black pb-1 font-serif text-2xl italic leading-tight"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
   >
     <span x-show="showSpanish" x-text="_('flag_text', $el.innerText)"
       >Escríbenos</span
@@ -55,11 +55,11 @@
     </button>
   </h2>
   <div
-    class="embed-prose pb-4 pt-6 text-lg leading-snug"
+    class="embed-prose pb-4 pt-6 text-lg leading-tight"
     x-show="!showSpanish"
     x-rich-text="_('tip_text', '')"
   ></div>
-  <div x-cloak class="pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
+  <div x-cloak class="pb-4 pt-6 text-lg leading-tight" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
