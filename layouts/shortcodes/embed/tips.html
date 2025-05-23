@@ -8,55 +8,52 @@
 
 {{ partial "tag/content-well-end" . }}
 <div
-  class="my-6 rounded border border-red font-sans font-semibold leading-tight shadow"
+  class="my-6 rounded-lg border border-g-5 bg-g-2 p-7 font-sans md:p-10 xl:px-12 xl:py-7"
   data-ga-category="embed:contact"
   x-data="{
     showSpanish: false,
   }"
 >
   <h2
-    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
     x-show="!showSpanish"
   >
-    {{ $eyebrow }}
+    <span>{{ $eyebrow }}</span>
+    <button
+      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
+      type="button"
+      data-ga-category="toggle-language:spanish"
+      @click="showSpanish = true"
+    >
+      En Español
+    </button>
   </h2>
   <h2
     x-cloak
     x-show="showSpanish"
-    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
   >
-    Escríbenos
+    <span>Escríbenos</span>
+    <button
+      type="button"
+      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
+      data-ga-category="toggle-language:english"
+      @click="showSpanish = false"
+    >
+      In English
+    </button>
   </h2>
-  <button
-    x-show="!showSpanish"
-    class="float-right inline-block px-4 py-3 font-semibold uppercase text-red"
-    type="button"
-    data-ga-category="toggle-language:spanish"
-    @click="showSpanish = true"
-  >
-    En Español
-  </button>
-  <button
-    x-cloak
-    x-show="showSpanish"
-    type="button"
-    class="float-right inline-block px-4 py-3 font-semibold uppercase text-red"
-    data-ga-category="toggle-language:english"
-    @click="showSpanish = false"
-  >
-    In English
-  </button>
   <div
-    class="embed-prose px-6 pb-4 pt-6 text-lg leading-snug"
+    class="embed-prose pb-4 pt-6 text-lg leading-tight"
     x-show="!showSpanish"
   >
     {{- $tip -}}
   </div>
-  <div x-cloak class="px-6 pb-4 pt-6 text-lg leading-snug" x-show="showSpanish">
+  <div x-cloak class="pb-4 pt-6 text-lg leading-tight" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
-    class="flex flex-col gap-2 p-4"
+    class="flex flex-col gap-2 py-4"
     name="{{ $formName }}"
     action="/contact/thanks/"
     method="post"
@@ -126,7 +123,7 @@
     </div>
     <div class="py-2">
       <button
-        class="btn-donate"
+        class="btn-signup"
         type="submit"
         target="_blank"
         x-text="showSpanish ? 'Enviar mensaje': 'Send message'"
@@ -154,15 +151,5 @@
       </a>
     </div>
   </form>
-  <div class="mb-4 mr-3 text-right text-g-9">
-    <a href="/" target="_blank">
-      <svg
-        class="inline-block h-8 w-48 fill-current"
-        aria-label="Spotlight PA logo"
-      >
-        {{ partial "helper/svg.html" "banner" }}
-      </svg>
-    </a>
-  </div>
 </div>
 {{ partial "tag/content-well-start" . }}
