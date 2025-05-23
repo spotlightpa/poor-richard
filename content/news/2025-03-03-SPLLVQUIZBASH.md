@@ -23,31 +23,21 @@ title-tag = "Trivia night in the Lehigh Valley on May 4"
 topics = ["Events"]
 +++
 
-Join Spotlight PA for our first-ever Quiz Bash in the Lehigh Valley on Sunday, May 4, 2025 from 4-7 p.m. at Fegley’s Brew Works in Allentown.
+{{<embed/raw srcdoc="&lt;a data-flickr-embed=&#34;true&#34; href=&#34;https://www.flickr.com/photos/spotlightpa/albums/72177720326226161&#34; title=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/54530807596_feb36919a6_h.jpg&#34; width=&#34;100%&#34; height=&#34;1200&#34; alt=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;/&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;">}}
 
-Get your friends, neighbors, coworkers, and family together to compete as teams of 2-6 players in our “Clink and Think” Quiz Bash. Test your knowledge of PA trivia with emcee Tony Iannelli of the Greater Lehigh Valley Chamber of Commerce.
+Our first-ever public fundraiser in the Lehigh Valley was a huge success!
 
-Tickets are $50 per person and include delicious food buffets, non-alcoholic beverages, a swag bag, plenty of time for mingling, and 4 rounds of fun Pennsylvania-themed games! Plus, cash bar with a signature Spotlight Sangria and great prizes for the top 3 teams.<strong></strong>
+The “Clink and Think” Quiz Bash on Sunday, May 4 at Fegley’s Brew Works saw almost 100 guests coming together to compete for prizes during a Pennsylvania-themed trivia contest.
 
-{{<embed/raw srcdoc="&lt;!-- Noscript content for added SEO --&gt;&#10;&lt;noscript&gt;&lt;a href=&#34;https://www.eventbrite.com/e/clink-and-think-quiz-bash-fundraiser-with-spotlight-pa-tickets-1295980585819&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34;&gt;Buy Tickets on Eventbrite&lt;/a&gt;&lt;/noscript&gt;&#10;&lt;!-- You can customize this button any way you like --&gt;&#10;&lt;button id=&#34;eventbrite-widget-modal-trigger-1295980585819&#34; class=&#34;btn-signup mx-auto block&#34; type=&#34;button&#34;&gt;Buy Tickets&lt;/button&gt;&#10;&#10;&lt;script src=&#34;https://www.eventbrite.com/static/widgets/eb_widgets.js&#34;&gt;&lt;/script&gt;&#10;&#10;&lt;script&gt;&#10;window.EBWidgets.createWidget({&#10;widgetType: &#39;checkout&#39;,&#10;eventId: &#39;1295980585819&#39;,&#10;modal: true,&#10;modalTriggerElementId: &#39;eventbrite-widget-modal-trigger-1295980585819&#39;,&#10;});&#10;&lt;/script&gt;">}}
+Hosted by Tony Iannelli, Lehigh Valley Chamber of Commerce President/CEO, the evening was full of fun and raised over $7,500 for Spotlight PA!<strong></strong>
 
-No tickets will be sold at the door.
+Thank you to our sponsors Janet Gross, Kathleen Parrish, Diane Stanczak, The Morning Call, Gross McGinley, Evans Wealth Strategies, City Center Group, Working Dog Press, and Wildlands Conservancy. Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, Tony Muir, and Kathleen Parrish.
 
-All trivia rounds are lighthearted and fun! The event includes plenty of time for mingling and networking, food buffets, non-alcoholic beverages, cash bar, and a swag bag including a $100 gift certificate to Eric Loch “The Diamond Guy” Jewelers for every guest.
+Click here to view the photos from the great event! All photos by Sierra Addy Photography.
 
-<strong>Table sponsorships are available for $500 for a team of six players and include a reserved table, plus a complimentary glass of beer or wine of your choice.</strong>
+<a href="https://www.flickr.com/photos/spotlightpa/albums/72177720326226161/">https://www.flickr.com/photos/spotlightpa/albums/72177720326226161/</a>
 
-<a href="mailto:michelle@spotlightpa.org"><strong>Request a sponsorship now</strong></a><strong></strong>
-
-{{<embed/raw srcdoc="&lt;p style=&#34;margin:0px 0px 10px 0px;text-align:center;font-size:17px;line-height:150%;color:#000;font-weight:bold;&#34;&gt;Add event to calendar&lt;/p&gt;&lt;p style=&#34;margin:0px 0px 10px 0px;text-align:center;font-size:0px;&#34;&gt;&lt;a href=&#34;https://www.addevent.com/event/mN25041525+apple&#34; title=&#34;Apple&#34; target=&#34;_blank&#34; style=&#34;display:inline;&#34;&gt;&lt;img src=&#34;https://cdn.addevent.com/libs/imgs/icon-emd-share-apple-t1.png&#34; alt=&#34;Apple&#34; width=&#34;45&#34; border=&#34;0&#34; style=&#34;width:45px;display:inline;&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.addevent.com/event/mN25041525+google&#34; title=&#34;Google&#34; target=&#34;_blank&#34; style=&#34;display:inline;&#34;&gt;&lt;img src=&#34;https://cdn.addevent.com/libs/imgs/icon-emd-share-google-t1.png&#34; alt=&#34;Google&#34; width=&#34;45&#34; border=&#34;0&#34; style=&#34;width:45px;display:inline;&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.addevent.com/event/mN25041525+office365&#34; title=&#34;Office 365&#34; target=&#34;_blank&#34; style=&#34;display:inline;&#34;&gt;&lt;img src=&#34;https://cdn.addevent.com/libs/imgs/icon-emd-share-office365-t1.png&#34; alt=&#34;Office 365&#34; width=&#34;45&#34; border=&#34;0&#34; style=&#34;width:45px;display:inline;&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.addevent.com/event/mN25041525+outlook&#34; title=&#34;Outlook&#34; target=&#34;_blank&#34; style=&#34;display:inline;&#34;&gt;&lt;img src=&#34;https://cdn.addevent.com/libs/imgs/icon-emd-share-outlook-t1.png&#34; alt=&#34;Outlook&#34; width=&#34;45&#34; border=&#34;0&#34; style=&#34;width:45px;display:inline;&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.addevent.com/event/mN25041525+outlookcom&#34; title=&#34;Outlook.com&#34; target=&#34;_blank&#34; style=&#34;display:inline;&#34;&gt;&lt;img src=&#34;https://cdn.addevent.com/libs/imgs/icon-emd-share-outlookcom-t1.png&#34; alt=&#34;Outlook.com&#34; width=&#34;45&#34; border=&#34;0&#34; style=&#34;width:45px;display:inline;&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.addevent.com/event/mN25041525+yahoo&#34; title=&#34;Yahoo&#34; target=&#34;_blank&#34; style=&#34;display:inline;&#34;&gt;&lt;img src=&#34;https://cdn.addevent.com/libs/imgs/icon-emd-share-yahoo-t1.png&#34; alt=&#34;Yahoo&#34; width=&#34;45&#34; border=&#34;0&#34; style=&#34;width:45px;display:inline;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;">}}
-
-Sponsorships are available for individuals and for businesses or organizations. Business sponsorships come with great marketing benefits! Thank you to Janet Gross, Kathleen Parrish, Diane Stanczak, The Morning Call, Gross McGinley, Evans Wealth Strategies, City Center Group, Working Dog Press, and Wildlands Conservancy who have already committed.
-
-All proceeds go to support Spotlight PA! Contact Michelle Mertz, Director of Individual and Corporate Giving, at <a href="mailto:michelle@spotlightpa.org"><strong>michelle@spotlightpa.org</strong></a> to inquire about sponsoring a table.
-
-Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, Tony Muir, and Kathleen Parrish.
-
-<div class="flex flex-wrap justify-around items-center [&>*]:max-w-[250px]">
+To inquire about sponsoring or other questions for the 2026 Quiz Bash, email <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>
 
 {{<picture src="2025/02/01kw-4084-pwxw-wpvn.png" width-ratio="300" height-ratio="200" description="Logo of The Morning Call newspaper in Allentown, PA." caption="" credit="">}}
 
@@ -61,4 +51,3 @@ Thank you to our event chair, Janet Gross, and our committee members, David Erdm
 
 {{<picture src="2025/03/01kx-vb57-e88v-677w.png" width-ratio="1076" height-ratio="226" description="Logo of the Wildlife Conservancy." caption="" credit="">}}
 
-</div>
