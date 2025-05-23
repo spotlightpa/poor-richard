@@ -14,7 +14,11 @@ no-index = true
 ## [Page headings](/design/headings)
 {{<featured/hr>}}
 
-## [Embeds](/design/embeds)
+## [Spotlight embeds](/design/embeds)
+{{<featured/hr>}}
+
+## [Partner embeds](/embeds)
+
 {{<featured/hr>}}
 
 ## [Forms](/design/forms)
