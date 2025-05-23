@@ -11,6 +11,7 @@ image = "2025/02/01kw-410e-5r7s-kdcx.jpeg"
 image-credit = "Georgianna Sutherland / For Spotlight PA"
 image-description = "The crowd at Spotlight PA’s \"Clink and Think\" Quiz Bash Fundraiser on Sept. 15, 2024, at Axemann Brewery in Bellefonte, PA."
 image-gravity = "ce"
+image-size = "inline"
 internal-id = "SPLLVQUIZBASH"
 kicker = "Events"
 modal-exclude = false
@@ -23,13 +24,13 @@ title-tag = "Trivia night in the Lehigh Valley on May 4"
 topics = ["Events"]
 +++
 
-{{<embed/raw srcdoc="&lt;a data-flickr-embed=&#34;true&#34; href=&#34;https://www.flickr.com/photos/spotlightpa/albums/72177720326226161&#34; title=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/54530807596_feb36919a6_h.jpg&#34; width=&#34;100%&#34; height=&#34;1200&#34; alt=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;/&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;">}}
-
 Our first-ever public fundraiser in the Lehigh Valley was a huge success!
 
 The “Clink and Think” Quiz Bash on Sunday, May 4 at Fegley’s Brew Works saw almost 100 guests coming together to compete for prizes during a Pennsylvania-themed trivia contest.
 
-Hosted by Tony Iannelli, Lehigh Valley Chamber of Commerce President/CEO, the evening was full of fun and raised over $7,500 for Spotlight PA!<strong></strong>
+Hosted by Tony Iannelli, Lehigh Valley Chamber of Commerce President/CEO, the evening was full of fun and raised over $7,500 for Spotlight PA!
+
+{{<embed/raw srcdoc="&lt;a data-flickr-embed=&#34;true&#34; href=&#34;https://www.flickr.com/photos/spotlightpa/albums/72177720326226161&#34; title=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/54530807596_feb36919a6_h.jpg&#34; width=&#34;100%&#34; height=&#34;1200&#34; alt=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;/&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;">}}
 
 Thank you to our sponsors Janet Gross, Kathleen Parrish, Diane Stanczak, The Morning Call, Gross McGinley, Evans Wealth Strategies, City Center Group, Working Dog Press, and Wildlands Conservancy. Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, Tony Muir, and Kathleen Parrish.
 
