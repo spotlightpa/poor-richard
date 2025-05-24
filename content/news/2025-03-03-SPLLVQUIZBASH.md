@@ -32,11 +32,9 @@ Hosted by Tony Iannelli, Lehigh Valley Chamber of Commerce President/CEO, the ev
 
 {{<embed/raw srcdoc="&lt;a data-flickr-embed=&#34;true&#34; href=&#34;https://www.flickr.com/photos/spotlightpa/albums/72177720326226161&#34; title=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/54530807596_feb36919a6_h.jpg&#34; width=&#34;100%&#34; height=&#34;1200&#34; alt=&#34;Quiz Bash Fundraiser Lehigh Valley 2025&#34;/&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;">}}
 
+<a href="https://www.flickr.com/photos/spotlightpa/albums/72177720326226161/">Click here to view the photos from the great event by Sierra Addy Photography.</a>
+
 Thank you to our sponsors Janet Gross, Kathleen Parrish, Diane Stanczak, The Morning Call, Gross McGinley, Evans Wealth Strategies, City Center Group, Working Dog Press, and Wildlands Conservancy. Thank you to our event chair, Janet Gross, and our committee members, David Erdman, Ardith Hilliard, Tony Muir, and Kathleen Parrish.
-
-Click here to view the photos from the great event! All photos by Sierra Addy Photography.
-
-<a href="https://www.flickr.com/photos/spotlightpa/albums/72177720326226161/">https://www.flickr.com/photos/spotlightpa/albums/72177720326226161/</a>
 
 To inquire about sponsoring or other questions for the 2026 Quiz Bash, email <a href="mailto:michelle@spotlightpa.org">michelle@spotlightpa.org</a>
 
