@@ -1,8 +1,8 @@
 +++
 aliases = ["/lvquizbash/"]
-blurb = "Test your knowledge of Pennsylvania trivia from 4-7p May 4 at Fegley’s Brew Works in Allentown with host Tony Iannelli."
+blurb = "The PA-themed trivia fundraiser, benefitting Spotlight PA, was hosted by Tony Iannelli of the Greater Lehigh Valley Chamber of Commerce."
 byline = "Spotlight PA Staff"
-description = "Join Spotlight PA for a PA-themed trivia fundraiser hosted by Tony Iannelli of the Greater Lehigh Valley Chamber of Commerce."
+description = "A PA-themed trivia fundraiser hosted by Tony Iannelli of the Greater Lehigh Valley Chamber of Commerce raised $7,500 for Spotlight PA."
 event-date = 2025-05-04T16:00:00-04:00
 event-title = "Clink & Think Quiz Bash Lehigh Valley"
 extended-kicker = "Trivia Night"
@@ -19,8 +19,8 @@ pinned = false
 published = 2025-03-03T10:00:00-05:00
 slug = "lehigh-valley-trivia-night-spotlight-pennsylvania"
 suppress-date = false
-title = "Join Spotlight PA for our first Lehigh Valley trivia night"
-title-tag = "Trivia night in the Lehigh Valley on May 4"
+title = "Lehigh Valley trivia event raises over $7,500 for investigative, public-service journalism"
+title-tag = "Lehigh Valley trivia night raises $7k for local journalism"
 topics = ["Events"]
 +++
 
