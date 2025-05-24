@@ -42,6 +42,8 @@ To inquire about sponsoring or other questions for the 2026 Quiz Bash, email <a 
 
 {{<picture src="2025/05/01m3-24ff-hj0q-exnd.png" width-ratio="300" height-ratio="136" description="Logo of St. Luke's University Health Network." caption="" credit="">}}
 
+{{<picture src="2025/05/01m3-255v-7t25-0b63.png" width-ratio="300" height-ratio="82" description="Logo of Greater Lehigh Valley Chamber of Commerce." caption="" credit="">}}
+
 {{<picture src="2025/02/01kw-40f4-caq8-tyhp.png" width-ratio="300" height-ratio="108" description="Logo of Gross McGinley, attorneys at law in the Lehigh Valley." caption="" credit="">}}
 
 {{<picture src="2025/02/01kw-40f5-cyb6-jtmv.png" width-ratio="300" height-ratio="91" description="Logo of Evans Wealth Strategies, a wealth advisor in the Lehigh Valley." caption="" credit="">}}
