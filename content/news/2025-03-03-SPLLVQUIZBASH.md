@@ -40,7 +40,7 @@ To inquire about sponsoring or other questions for the 2026 Quiz Bash, email <a 
 
 {{<picture src="2025/02/01kw-4084-pwxw-wpvn.png" width-ratio="300" height-ratio="200" description="Logo of The Morning Call newspaper in Allentown, PA." caption="" credit="">}}
 
-{{<picture src="2025/05/01m3-24ff-hj0q-exnd.png" width-ratio="300" height-ratio="200" description="Logo of St. Luke's University Health Network." caption="" credit="">}}
+{{<picture src="2025/05/01m3-24ff-hj0q-exnd.png" width-ratio="100%" height-ratio="200" description="Logo of St. Luke's University Health Network." caption="" credit="">}}
 
 {{<picture src="2025/02/01kw-40f4-caq8-tyhp.png" width-ratio="300" height-ratio="108" description="Logo of Gross McGinley, attorneys at law in the Lehigh Valley." caption="" credit="">}}
 
