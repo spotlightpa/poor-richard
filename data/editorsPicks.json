@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/statecollege/2025-05-22-SPLPSUCLOSURE0525.md"
+    "content/news/2025-05-26-SPLFLOYD0525.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-05-13-SPLPSU7CAMPUS0525.md",
-    "content/statecollege/2025-03-03-SPLCCBOT0325.md",
-    "content/statecollege/2025-01-27-SPLPSUCC0125.md"
+    "content/news/2022-06-21-SPLDATABASE21.md",
+    "content/news/2024-02-01-SPL_NAACP0131.md",
+    "content/news/2021-11-18-SPLCHECKS.md"
   ],
   "topSlots": [
-    "content/news/2025-05-22-SPLNEWSQUIZMAY1925.md",
+    "content/statecollege/2025-05-22-SPLPSUCLOSURE0525.md",
     "content/news/2025-05-21-SPLMILLBOURNE0525.md",
-    "content/news/2025-05-20-SPLJUDGERESULTS0525.md"
+    "content/news/2025-05-21-SPLPEFOLO0525.md"
   ],
   "topper": []
 }
