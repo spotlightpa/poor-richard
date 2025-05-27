@@ -1,6 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="rounded border border-red font-sans font-semibold leading-tight shadow"
+  class="rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
   @submit.prevent="submit"
   data-ga-category="newsletter"
@@ -23,19 +23,16 @@
     </template>
   </p>
   <h2
-    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
+    class="border-b border-black font-serif text-2xl italic leading-tight"
     x-text="_('eyebrow', $el.innerText)"
   >
     Free Newsletter
   </h2>
-  <h2
-    class="embed-prose mt-8 px-4 text-center text-lg font-semibold sm:mt-12"
-    x-rich-text="_('cta', $el.innerText)"
-  >
+  <h2 class="mt-2 font-sans text-lg" x-rich-text="_('cta', $el.innerText)">
     Sign up for a free roundup of the top news from across Pennsylvania, all in
     one daily or weekly email from Spotlight PA.
   </h2>
-  <div class="mx-auto mt-8 px-4 sm:flex sm:max-w-2xl">
+  <div class="mx-auto mt-6 max-w-xl">
     <p class="relative flex-grow">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
@@ -55,8 +52,12 @@
         </svg>
       </span>
     </p>
-    <p class="mt-2 sm:ml-1 sm:mt-0">
-      <button class="btn-donate h-full" type="submit" :disabled="isLoading">
+    <p class="mt-2">
+      <button
+        class="btn-signup h-full w-full"
+        type="submit"
+        :disabled="isLoading"
+      >
         <span x-text="_('button', $el.innerText)">Sign Up</span>
         <svg
           x-cloak
@@ -70,67 +71,7 @@
       </button>
     </p>
   </div>
-  {{ $checkClass := `accent-red w-3 h-3 shrink-0` }}
-  <div
-    class="mt-4 flex flex-col gap-2 px-4 text-left"
-    x-show="hasFocused && ! preselected"
-    x-transition
-    x-cloak
-  >
-    <p class="">
-      <label class="flex items-baseline gap-2">
-        <input
-          type="checkbox"
-          name="papost"
-          class="{{ $checkClass }}"
-          value="1"
-          :checked="! preselected"
-          x-report-click
-          data-ga-category="toggle-newsletter:papost"
-        />
-        <span>
-          <strong class="font-extrabold">PA Post (Daily)</strong>: Top news
-          every weekday morning, plus a daily puzzle.
-        </span>
-      </label>
-    </p>
-    <p>
-      <label class="flex items-baseline gap-2">
-        <input
-          type="checkbox"
-          name="investigator"
-          class="{{ $checkClass }}"
-          value="1"
-          :checked="! preselected"
-          x-report-click
-          data-ga-category="toggle-newsletter:investigator"
-        />
-        <span>
-          <strong class="font-extrabold">The Investigator (Weekly)</strong>:
-          Best accountability journalism every Thursday, plus a weekly riddle.
-        </span>
-      </label>
-    </p>
-    <p>
-      <label class="flex items-baseline gap-2">
-        <input
-          type="checkbox"
-          name="palocal"
-          class="{{ $checkClass }}"
-          value="1"
-          :checked="! preselected"
-          x-report-click
-          data-ga-category="toggle-newsletter:palocal"
-        />
-        <span>
-          <strong class="font-extrabold">PA Local (Weekly)</strong>: A fresh
-          look at the incredible people, places, and food of Pa. every Friday,
-          plus events, guides, best-of, and more.
-        </span>
-      </label>
-    </p>
-  </div>
-  <div class="mb-4 mr-3 mt-10 text-right text-g-9">
+  <div class="mt-10 text-right text-g-9 md:mt-4">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"

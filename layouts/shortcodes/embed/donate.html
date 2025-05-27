@@ -1,55 +1,41 @@
 {{ $eyebrow := .Get "eyebrow_text" | htmlUnescape | default `While You’re Here` }}
-{{ $teaser := .Get "teaser_text" | htmlUnescape | default `If you learned something from this report, pay it forward and become a member of Spotlight PA so someone else can in the future.` }}
-{{ $cta := .Get "cta_text" | htmlUnescape | default `Click to Contribute` }}
+{{ $teaser := .Get "teaser_text" | htmlUnescape | default `Spotlight PA’s nonprofit reporting is a free public service, but it depends on your support. Give now to ensure it can continue.` }}
+{{ $cta := .Get "cta_text" | htmlUnescape | default `Contribute →` }}
 
-{{ partial "tag/content-well-end" . }}
+
 <div
   data-ga-category="embed:donate"
   data-fru-campaign="embed"
-  class="my-6 font-sans"
+  class="font-sans"
 >
-  <div class="rounded border border-red font-semibold leading-tight shadow">
-    <h2>
-      <a
-        href="/donate/"
-        class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
-        data-ga-category="eyebrow"
-      >
+  <div
+    class="spl-donate my-6 rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7"
+  >
+    <h2
+      class="mb-3 border-b border-black font-serif text-2xl italic leading-tight"
+    >
+      <div href="/donate/" class="inline-block" data-ga-category="eyebrow">
         {{- $eyebrow -}}
-      </a>
+      </div>
     </h2>
-    <h2 class="mt-8 px-4 text-center font-semibold sm:mt-12 sm:text-lg">
-      <a
+    <h2 class="mt-2 font-sans text-lg">
+      <div
         href="/donate/"
-        class="embed-prose-highlight text-lg leading-snug"
+        class="embed-prose-highlight leading-tight"
         data-ga-category="body"
       >
         {{- $teaser | safeHTML -}}
-      </a>
+      </div>
     </h2>
-    <div
-      class="mt-8 px-2 text-center font-semibold uppercase tracking-wider sm:mt-12 sm:text-xl"
-    >
+    <div class="mt-6">
       <a
         href="/donate/"
-        class="btn-donate"
+        class="btn-donate mt-2"
         data-ga-category="button"
         target="_blank"
       >
         {{- $cta -}}
       </a>
     </div>
-    <div class="mb-4 mr-3 mt-10 text-right text-g-9">
-      <a href="/" target="_blank">
-        <svg
-          class="inline-block h-8 w-48 fill-current"
-          aria-label="Spotlight PA logo"
-        >
-          {{ partial "helper/svg.html" "banner" }}
-        </svg>
-      </a>
-    </div>
   </div>
 </div>
-
-{{ partial "tag/content-well-start" . }}
