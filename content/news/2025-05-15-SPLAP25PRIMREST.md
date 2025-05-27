@@ -25,8 +25,6 @@ Results for statewide races can also be found on the Department of State <a href
 
 For complete coverage of the 2025 primary election, <a href="https://www.spotlightpa.org/elections-2024/">visit Spotlight PA’s Election Center</a>.
 
-{{<dewey-assistant>}}
-
 <h2 id="spl-heading-1">Pennsylvania election results</h2>
 
 On May 20, Pennsylvania Democrats and Republicans will pick which judicial and municipal candidates they want to advance to the Nov. 4 general election.
