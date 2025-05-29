@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2025-05-27-SPLDYEBAN0525.md"
+    "content/news/2025-05-29-SPLALLCOMP0525.md"
   ],
   "subfeatures": [
-    "content/news/2025-05-06-SPLFAMLEAVE0525.md",
-    "content/news/2025-05-13-SPLPRIVEQU0525.md",
-    "content/news/2025-04-29-SPLIVF0425.md"
+    "content/news/2023-03-09-SPLCOMPETENCY.md",
+    "content/news/2023-03-09-SPLCOMPHOWSIDE.md",
+    "content/news/2023-03-20-SPLCOMPSOLUTIONS20.md"
   ],
   "topSlots": [
+    "content/news/2025-05-27-SPLDYEBAN0525.md",
     "content/news/2025-05-27-VBPOLLWORK0525.md",
-    "content/news/2025-05-26-SPLFLOYD0525.md",
-    "content/statecollege/2025-05-22-SPLPSUCLOSURE0525.md"
+    "content/news/2025-05-26-SPLFLOYD0525.md"
   ],
   "topper": []
 }
