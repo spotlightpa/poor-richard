@@ -1,7 +1,10 @@
 {{ $src := .Get "src" | htmlUnescape }}
 
 
-<div class="flourish-embed flourish-story my-8" data-src="{{ $src }}"></div>
+<div
+  class="flourish-embed flourish-story clear-both my-8"
+  data-src="{{ $src }}"
+></div>
 
 {{ if page.Scratch.Get "has-flourish" | not }}
   {{ page.Scratch.Set "has-flourish" true }}
