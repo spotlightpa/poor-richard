@@ -2,7 +2,7 @@
 {{ $nameID := urlize . }}
 
 {{ $link := "" }}
-{{ with $page := site.GetPage (printf "authors/%s" $nameID) }}
+{{ with $page := site.GetPage (printf "authors/%s" .) }}
   {{ $link = $page.RelPermalink }}
 {{ end }}
 
