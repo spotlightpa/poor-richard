@@ -1,13 +1,15 @@
 {
   "featuredStories": [
-    "content/news/2025-05-29-SPLALLCOMP0525.md"
+    "content/news/2025-05-30-SPLWEEDTALKS.md"
   ],
   "subfeatures": [
-    "content/news/2023-03-09-SPLCOMPETENCY.md",
-    "content/news/2023-03-09-SPLCOMPHOWSIDE.md",
-    "content/news/2023-03-20-SPLCOMPSOLUTIONS20.md"
+    "content/news/2025-05-13-SPLSENATEWEED0525.md",
+    "content/news/2025-05-07-SPLHOUSEWEED0525.md",
+    "content/news/2025-03-17-SPLWEEDLOBBY0325.md",
+    "content/news/2025-02-04-SPLSHAPBUDG0225.md"
   ],
   "topSlots": [
+    "content/news/2025-05-29-SPLALLCOMP0525.md",
     "content/news/2025-05-27-SPLDYEBAN0525.md",
     "content/news/2025-05-27-VBPOLLWORK0525.md",
     "content/news/2025-05-26-SPLFLOYD0525.md"
