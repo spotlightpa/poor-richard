@@ -62,3 +62,7 @@ Gordin continued: “We&#39;ve had parents come up to us and say, you know, this
 
 <em>Know someone worthy of a PA Local Heroes feature? </em><a href="mailto:newsletters@spotlightpa.org"><em>Let us know</em></a><em>!</em>
 
+<div class="max-w-[320px] -my-8">
+{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
+</div>
+
