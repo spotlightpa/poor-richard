@@ -3,7 +3,7 @@
 </a>
 
 <div
-  class="top-0 border-b border-black bg-beige font-sans transition-all sm:h-[145px] md:h-[165px]"
+  class="top-0 border-b border-black bg-beige font-sans transition-all sm:h-[145px] md:h-[165px] print:hidden"
   x-data="{ isOpen: false }"
   :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': !atTop, 'sm:h-[145px] md:h-[165px] transition-all': atTop }"
   data-ga-category="top-banner"
@@ -11,7 +11,7 @@
   aria-labelledby="top"
 >
   <div
-    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-4 lg:relative lg:gap-x-6 xl:px-0"
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-4 lg:relative lg:gap-x-6 xl:px-0 print:hidden"
   >
     <div
       class="sm:order-0 z-40 h-10 w-36 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-64 lg:w-72"
@@ -217,7 +217,7 @@
     </nav>
 
     <p
-      class="flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base"
+      class="flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base print:hidden"
       x-show="atTop"
       x-transition:enter="transition ease-out duration-150"
       x-transition:enter-start="opacity-0 scale-10"
@@ -231,7 +231,7 @@
   </div>
 
   <nav
-    class="hidden h-11 border-t bg-white font-sans sm:block"
+    class="hidden h-11 border-t bg-white font-sans sm:block print:hidden"
     x-show="atTop"
     x-transition:enter="transition ease-out duration-150"
     x-transition:enter-start="opacity-0 scale-10"
