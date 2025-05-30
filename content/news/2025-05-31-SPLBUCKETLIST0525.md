@@ -38,5 +38,3 @@ If we get enough submissions, we&#39;ll put a list together, share it with you, 
 
 So, what are we getting up to this summer? <a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zudy142nk_Y~jNYxYXbKIU">Tell us here</a>.
 
-{{<embed/newsletter cta="PA Local takes a fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more." preselect="palocal">}}
-
