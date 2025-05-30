@@ -30,9 +30,7 @@ Inspired by the folks at <a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~
 
 We&#39;re looking for lesser-known gems and places a bit off the beaten path, and in a big state full of natural beauty and world-class cities, that well runs deep. Think <a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zudy142nk_Y~jNYxYXbJI0">secret beaches</a>, <a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zudy142nk_Y~jNYxYXbJIC">remote campsites</a>, <a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.zudy142nk_Y~jNYxYXbJJU">quirky festivals</a>, and more.
 
-The parameters are simple: It must be in Pennsylvania, doable in summer, and ideally
-
-more than just a photo op.
+The parameters are simple: It must be in Pennsylvania, doable in summer, and ideally more than just a photo op.
 
 If we get enough submissions, we&#39;ll put a list together, share it with you, and see who can finish it by the end of the season (photos will be required). Then we’ll crown a group of winners who will receive lifetime bragging rights and shipments of Spotlight PA merch.
 
