@@ -58,7 +58,7 @@ In a <a href="https://www.inquirer.com/arts/philly-theatre-childrens-theatre-art
 
 Gordin continued: “We&#39;ve had parents come up to us and say, you know, this is the first performance that my child has sat through and interacted with. We&#39;ve had children come to see our shows multiple times at multiple venues, which is always exciting because it means they want to see it again and again. We&#39;ve been told by parents that their kids after the show will be playing the show, you know, when they play pretend, so that&#39;s really cool as well.”
 
-<em>Philly Children’s Theatre’s next free child care matinee will be </em><a href="https://philadelphiatheatrecompany.org/carematinee/"><em>held on Saturday, June 14</em></a><em>. </em>An Idea<em>, an original play for the very young, will be performed at the Please Touch Museum from July 2nd to July 27th. More info to follow </em><a href="https://www.instagram.com/phillychildrenstheatre/"><em>here</em></a><em>.</em>
+<em>Philly Children’s Theatre’s next free child care matinee will be </em><a href="https://philadelphiatheatrecompany.org/carematinee/"><em>held on Saturday, June 14</em></a><em>. </em>An Idea<em>, an original play for the very young, will be performed at the Please Touch Museum from July 6th to July 27th. More info to follow </em><a href="https://www.instagram.com/phillychildrenstheatre/"><em>here</em></a><em>.</em>
 
 <em>Know someone worthy of a PA Local Heroes feature? </em><a href="mailto:newsletters@spotlightpa.org"><em>Let us know</em></a><em>!</em>
 
