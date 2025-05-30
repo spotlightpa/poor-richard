@@ -73,14 +73,16 @@
   "sidebar-sticky-description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01m3/j28y/spring-2025-square-300-x-250-px-22-.png"
+    "https://files.data.spotlightpa.org/uploads/01m3/j2bk/spring-2025-square-300-x-250-px-24-.png",
+    "https://files.data.spotlightpa.org/uploads/01m3/m732/spring-2025-square-300-x-250-px-25-.png"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-sticky",
   "sidebar-sticky-width": 300,
   "sidebar-top-description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
-    "https://files.data.spotlightpa.org/uploads/01m3/j28y/spring-2025-square-300-x-250-px-22-.png"
+    "https://files.data.spotlightpa.org/uploads/01m3/j2bk/spring-2025-square-300-x-250-px-24-.png",
+    "https://files.data.spotlightpa.org/uploads/01m3/m732/spring-2025-square-300-x-250-px-25-.png"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
   "sidebar-top-width": 300,
@@ -109,7 +111,7 @@
   "topper-bg-color": "#ffffff",
   "topper-desktop-height": 175,
   "topper-desktop-images": [
-    "https://files.data.spotlightpa.org/uploads/01m3/j28y/site-toppertracker-9-.png"
+    "https://files.data.spotlightpa.org/uploads/01m3/m731/site-toppertracker-10-.png"
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
@@ -117,7 +119,7 @@
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
-    "https://files.data.spotlightpa.org/uploads/01m3/j28z/spring-2025-rectangle-1024x512-15-.png"
+    "https://files.data.spotlightpa.org/uploads/01m3/m732/spring-2025-rectangle-1024x512-16-.png"
   ],
   "topper-mobile-width": 1024
 }
