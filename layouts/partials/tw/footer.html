@@ -1,7 +1,7 @@
 {{ $idEmail := partial "helper/new-id" . | printf "footer-newsletter-%s" }}
 
 
-<div class="bg-beige font-sans" data-fru-campaign="footer">
+<div class="bg-beige font-sans print:hidden" data-fru-campaign="footer">
   {{ partial "tw/newsletter-box-lg.html" (dict
     "showLogo" true
     "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
