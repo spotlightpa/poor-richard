@@ -1,0 +1,19 @@
+name = "Gabriela Martínez"
+firstName = "Gabriela"
+lastName = "Martínez"
+beat = "Reading and Berks County"
+title = "Quality of Life Reporter"
+email = "gmartinez@spotlightpa.org"
+content = """
+Prior to joining Spotlight PA, Gabriela Martínez worked as a radio producer for C-SPAN in Washington, D.C., and as a reporter covering Latino communities in central Pennsylvania for WITF. Her work focused on health and education equity, labor issues, the impact of language barriers, and the growth of Latino political power through grassroots efforts.
+
+As a Quality of Life Reporter in Reading and Berks County, Gabriela examines issues that directly impact the lives of residents, including immigration, poverty, housing and public safety. She looks at whether community institutions such as public health agencies, safety net programs and nonprofits are adequately providing the services they promise to the public.
+
+Born and raised in San Juan, Puerto Rico, Gabriela is a native Spanish speaker. She is also proficient in Russian, having studied in the city of Yaroslavl and taught in the Republic of Khakassia on a Fulbright grant. She holds a master’s degree in multiplatform journalism from the University of Maryland.
+
+In her free time, she enjoys gardening, reading, listening to podcasts and watching horror movies with her partner and two cats.
+"""
+active = true
+headshot = "2025/05/01m3-f350-ra7n-mdq6.jpeg"
+role = "reporter"
+twitter = "gcmarts"
