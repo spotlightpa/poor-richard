@@ -337,6 +337,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Patricia Hall",
+      "sort": "Hallacher",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Paul Hallacher",
       "sort": "Hallacher",
       "url": "",
@@ -500,6 +507,13 @@
     {
       "display": "Michael and Karen Leader",
       "sort": "Leader",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
+      "display": "Ariel Leath",
+      "sort": "Leath",
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
