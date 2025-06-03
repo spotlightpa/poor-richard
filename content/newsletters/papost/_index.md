@@ -69,13 +69,13 @@ height = 270
 link = "https://www.spotlightpa.org/newsletters/investigator"
 
 [[explore]]
-newsletter = "How We Care"
-schedule = "Every Tuesday"
-description = "Original reporting, guidance, and resources to empower home and professional caregivers in PA."
-image = "2024/05/01k4-4sx2-y76n-st26.jpeg"
-width = 3200
-height = 2400
-link = "https://www.spotlightpa.org/newsletters/howwecare"
+newsletter = "Talk of the Town"
+schedule = "Every Thursday"
+description = "The news that matters to your community — from the PA Wilds to Happy Valley."
+image = "2025/04/01m0-131a-ph40-jg94.png"
+width = 1200
+height = 1075
+link = "https://www.spotlightpa.org/newsletters/talkofthetown"
 
 +++
 
