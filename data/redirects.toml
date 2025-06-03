@@ -1,12 +1,14 @@
 [[redirects]]
-from = "/newsletters/howwecare/*"
-to   = "/newsletters"
-code = 301
+from   = "/newsletters/howwecare"
+to     = "/newsletters"
+status = 301
+force  = true
 
 [[redirects]]
-from = "/newsletters/howwecare"
-to   = "/newsletters"
-code = 301
+from   = "/newsletters/howwecare/"
+to     = "/newsletters"
+status = 301
+force  = true
 
 [[redirects]]
 from = "/events/"
