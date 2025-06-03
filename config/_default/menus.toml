@@ -167,11 +167,6 @@ url = "/newsletters/palocal/"
 weight = 5
 
 [[newsletters]]
-name = "How We Care"
-url = "/newsletters/howwecare/"
-weight = 6
-
-[[newsletters]]
 name = "Good Day, Berks"
 url = "/newsletters/gooddayberks/"
 weight = 7
