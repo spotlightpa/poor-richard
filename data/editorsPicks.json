@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2025-06-02-SPLBUDGPREV0625.md"
+    "content/news/2025-06-03-SPLAGINGGRADE0625.md"
   ],
   "subfeatures": [
-    "content/news/2025-05-21-SPLPEFOLO0525.md",
-    "content/news/2025-05-19-SPLSFI0525.md",
-    "content/news/2025-05-12-SPLSCRANTONFUND0525.md"
+    "content/news/2025-02-18-SPLNGINVEST0225.md",
+    "content/news/2025-04-02-SPLFATALREV0425.md",
+    "content/news/2025-02-24-SPLPCA0225.md"
   ],
   "topSlots": [
-    "content/news/2025-05-30-SPLLOCALHEROES0525.md",
-    "content/news/2025-05-30-SPLWEEDTALKS.md",
-    "content/news/2025-05-29-SPLALLCOMP0525.md"
+    "content/news/2025-06-02-SPLBUDGPREV0625.md",
+    "content/news/2025-05-31-SPLBUCKETLIST0525.md",
+    "content/news/2025-05-30-SPLWEEDTALKS.md"
   ],
   "topper": []
 }
