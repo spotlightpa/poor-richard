@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2025-06-03-SPLAGINGGRADE0625.md"
+    "content/news/2025-06-04-SPLBBGRANTS06025.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-18-SPLNGINVEST0225.md",
-    "content/news/2025-04-02-SPLFATALREV0425.md",
-    "content/news/2025-02-24-SPLPCA0225.md"
+    "content/news/2024-04-24-SPLBROADBANDCOST.md",
+    "content/news/2024-01-22-SPLBROADBAND0122.md",
+    "content/news/2023-08-25-SPLBROADBANDHURDLES.md"
   ],
   "topSlots": [
+    "content/news/2025-06-03-SPLAGINGGRADE0625.md",
     "content/news/2025-06-02-SPLBUDGPREV0625.md",
-    "content/news/2025-05-31-SPLBUCKETLIST0525.md",
-    "content/news/2025-05-30-SPLWEEDTALKS.md"
+    "content/news/2025-05-31-SPLBUCKETLIST0525.md"
   ],
   "topper": []
 }
