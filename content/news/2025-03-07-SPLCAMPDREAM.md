@@ -58,8 +58,6 @@ There are always therapists and clinicians on hand.
 
 {{<picture src="2025/03/01kw-kd8h-xap8-htqq.jpeg" description="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." caption="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." credit="Photo submitted">}}
 
-{{<picture src="2025/06/01m4-6jn0-yxgy-yxmt.jpeg" description="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." caption="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." credit="Photo submitted">}}
-
 Brown’s path to Camp Dreamcatcher started when he was an 18-year-old student at Downingtown Senior High School. He’d never dealt with HIV directly, but lots of his friends had. So when his pastor’s wife mentioned that Hillkirk, a local psychotherapist, was looking to start a camp for kids living with and affected by the virus, Brown was intrigued and decided to attend an interest meeting at a Lancaster YMCA to learn more.
 
 He met two boys there, both born with HIV and no more than seven years of age.
