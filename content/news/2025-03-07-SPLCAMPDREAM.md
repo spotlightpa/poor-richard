@@ -22,7 +22,7 @@ topics = ["PA Local"]
 twitter-title = "A summer camp where HIV stigma stops"
 +++
 
-<em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>
+<em>PA Local Heroes is a monthly feature sponsored by</em><a href="https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024"><em> Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania.</em><a href="https://www.spotlightpa.org/newsletters/"><em> Sign up for free here</em></a><em>.</em>
 
 For almost 30 summers, HIV-impacted children from Pennsylvania and surrounding states have traveled to the woods of Chester County to play.
 
@@ -58,6 +58,8 @@ There are always therapists and clinicians on hand.
 
 {{<picture src="2025/03/01kw-kd8h-xap8-htqq.jpeg" description="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." caption="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." credit="Photo submitted">}}
 
+{{<picture src="2025/06/01m4-6jn0-yxgy-yxmt.jpeg" description="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." caption="From left: Camp Dreamcatcher founder Patty Hillkirk, Kennett Square Mayor Matt Fetick, and Taj Brown. Fetick was delivering sleeping bags for campers." credit="Photo submitted">}}
+
 Brown’s path to Camp Dreamcatcher started when he was an 18-year-old student at Downingtown Senior High School. He’d never dealt with HIV directly, but lots of his friends had. So when his pastor’s wife mentioned that Hillkirk, a local psychotherapist, was looking to start a camp for kids living with and affected by the virus, Brown was intrigued and decided to attend an interest meeting at a Lancaster YMCA to learn more.
 
 He met two boys there, both born with HIV and no more than seven years of age.
@@ -88,7 +90,5 @@ Brown, who works full-time for a homelessness response organization, said he dre
 
 <em>Know someone worthy of a PA Local Heroes feature? </em><a href="mailto:newsletters@spotlightpa.org"><em>Let us know</em></a><em>!</em>
 
-<div class="max-w-[320px] -my-8">
-{{<picture src="2025/03/01kw-nyv5-h730-82j4.png" width-ratio="2232" height-ratio="322" description="Sponsored by Ballard Spahr LLP" caption="" credit="">}}
-</div>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
