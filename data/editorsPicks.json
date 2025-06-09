@@ -1,16 +1,16 @@
 {
   "featuredStories": [
-    "content/news/2025-06-09-SPLEDGE0625.md"
+    "content/statecollege/2025-06-09-SPLPSUSETTLE0625.md"
   ],
   "subfeatures": [
-    "content/news/2025-06-02-SPLBUDGPREV0625.md",
-    "content/news/2024-10-14-SPLEDGECREDIT24.md",
-    "content/news/2024-07-24-SPL24BUDENVIRO.md"
+    "content/statecollege/2025-05-22-SPLPSUCLOSURE0525.md",
+    "content/statecollege/2025-05-14-SPLTRUSTSUN0525.md",
+    "content/statecollege/2023-12-06-SPLPSUSUN.md"
   ],
   "topSlots": [
-    "content/news/2025-06-06-SPLLEBANONBOLOGNA0625.md",
+    "content/news/2025-06-09-SPLEDGE0625.md",
     "content/statecollege/2025-06-05-SPLGREGG0625.md",
-    "content/news/2025-06-05-SPLSAFESLEEP0625.md"
+    "content/news/2025-06-06-SPLLEBANONBOLOGNA0625.md"
   ],
   "topper": []
 }
