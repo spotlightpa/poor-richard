@@ -36,8 +36,6 @@ Pagan: Reading, Pennsylvania.
 
 Daughter, Jeanette, her fiancé, Eric, and grandchildren Phanlon, 5, and Fennec, 1. I have six sisters who are my best friends.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/newsletters/gooddayberks/"></div>
-
 <strong>Tell us about your job and what you like about it.</strong>
 
 I am the cook and kitchen manager at Opportunity House. I love what I do. I get to be very creative with what we have on hand—what’s donated by cooking groups or through Helping Harvest.
