@@ -36,13 +36,13 @@ Pagan: Reading, Pennsylvania.
 
 Daughter, Jeanette, her fiancé, Eric, and grandchildren Phanlon, 5, and Fennec, 1. I have six sisters who are my best friends.
 
+{{<embed/newsletter preselect="Berks">}}
+
 <strong>Tell us about your job and what you like about it.</strong>
 
 I am the cook and kitchen manager at Opportunity House. I love what I do. I get to be very creative with what we have on hand—what’s donated by cooking groups or through Helping Harvest.
 
 My coworkers and clients are my family and make me feel so appreciated every day. I know that when I provide a meal for our clients, I can feel the love, gratitude, and thanks they give me. They are so very special to me. The amazing volunteers I’ve met who have a passion for providing a meal and friendship has been very rewarding.
-
-{{<embed/newsletter>}}
 
 <strong>Tell us about a challenge you faced.</strong>
 
@@ -55,6 +55,8 @@ Austin’s. Excellent service, high quality food, and a consistent menu.
 <strong>Where would you take a visitor in Berks and why?</strong>
 
 The Pagoda. That’s what we’re known for. I’d also take them to West Reading to explore the great stores and restaurants. There’s always something good going on there.
+
+{{<embed/donate>}}
 
 <strong>What book, poem, song, or artwork is meaningful to you?</strong>
 
