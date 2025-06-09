@@ -36,7 +36,7 @@ Pagan: Reading, Pennsylvania.
 
 Daughter, Jeanette, her fiancé, Eric, and grandchildren Phanlon, 5, and Fennec, 1. I have six sisters who are my best friends.
 
-{{<embed/newsletter preselect="Berks">}}
+{{<embed/newsletter cta="Sign up for Good Day, Berks — Spotlight PA’s free daily newsletter for Berks County and your daily dose of local essentials." preselect="Berks">}}
 
 <strong>Tell us about your job and what you like about it.</strong>
 
