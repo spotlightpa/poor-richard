@@ -87,7 +87,7 @@ hed = "Option Two"
 body = "Want to support our investigative journalism about Penn State and our State College regional bureau?"
 actionUrl = "https://checkout.fundjournalism.org/memberform?org_id=spotlightpa&theme=centrecounty&campaign=7015G0000013pZTQAY"
 actionText = "Support the Bureau →"
-url = "/support/state-college"
+url = "/support/"
 
 [[blocks]]
 layout = "text-3"
@@ -102,8 +102,6 @@ copy = """
   [Institutional funders and members since launch →](/support/funders-and-members#major-donors-and-funders)
 
   [Leaders in Action →](/support/leaders-in-action/#our-current-leaders)
-
-  [State College regional bureau supporters →](/support/state-college/#state-college-bureau-donors)
 """
 
 [[blocks.entries]]
