@@ -11,17 +11,6 @@
 {{ define "main" }}
   {{ $sc := site.GetPage "/statecollege/_index.md" }}
 
-  {{ if $topperStories := partial "helper/get-sc-picks" "topper" }}
-    <div class="bg-black">
-      <div class="mx-auto max-w-screen-lg py-12">
-        {{ partial "tw/promo-topperarticle.html" $topperStories }}
-      </div>
-    </div>
-  {{ end }}
-
-  {{ $topperStories := partial "helper/get-sc-picks" "topper" }}
-  {{ $topperStory := first 1 $topperStories }}
-
   {{ $featuredStory := partial "helper/get-sc-picks" "featuredStories" }}
   {{ $featuredStory = last 1 $featuredStory }}
 
@@ -34,7 +23,7 @@
 
   {{ $river := sort $sc.RegularPages ".PublishDate" "desc" }}
 
-  {{ $river = $river | complement $featuredStory $pinnedStories $topperStory }}
+  {{ $river = $river | complement $featuredStory $pinnedStories }}
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
   {{ $riverTitle :=  index .Page.Params "link-title" }}
