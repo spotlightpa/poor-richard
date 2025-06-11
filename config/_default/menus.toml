@@ -9,8 +9,8 @@ url = "/statecollege/"
 weight = 2
 
 [[main]]
-name = "Events"
-url = "/topics/events/"
+name = "Berks County"
+url = "/berks/"
 weight = 3
 
 [[main]]
