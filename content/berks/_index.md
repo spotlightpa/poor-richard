@@ -1,7 +1,7 @@
 +++
 title = "Spotlight PA Berks County"
 link-title = "Berks County"
-title-tag = "The future of journalism in Berks County is here."
+title-tag = "Spotlight PA Berks County: The future of journalism in Berks County is here."
 description = "The future of journalism in Berks County is here. We’re in your inbox Monday through Friday as our reporters prepare to hit the ground running this summer."
 image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
 image-description = "Berks County, PA on the horizon"
