@@ -19,7 +19,7 @@
 
   {{ $featuredStories := $featuredStory | append $subfeatures }}
 
-  {{ $pinnedStories := where $berks.RegularPages "Params.pinned" true }}
+  {{ $pinnedStories := partial "helper/get-berks-picks" "topSlots" }}
   {{ $pinnedStories = first 3 $pinnedStories }}
   {{ if lt (len $pinnedStories) 3 }}
     {{ $n := sub 3 (len $pinnedStories) }}
