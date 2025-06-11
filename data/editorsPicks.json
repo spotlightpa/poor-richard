@@ -1,4 +1,7 @@
 {
+  "edCallout": [],
+  "edImpact": [],
+  "edInvestigations": [],
   "featuredStories": [
     "content/statecollege/2025-06-10-SPLRURALMED0625.md"
   ],
@@ -11,6 +14,5 @@
     "content/statecollege/2025-06-09-SPLPSUSETTLE0625.md",
     "content/news/2025-06-09-SPLEDGE0625.md",
     "content/statecollege/2025-06-05-SPLGREGG0625.md"
-  ],
-  "topper": []
+  ]
 }
