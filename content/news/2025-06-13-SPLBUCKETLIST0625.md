@@ -37,7 +37,7 @@ Yes, there are prizes involved.
 
 Goal No. 1, of course, is to have fun. A close second: Score a bingo on the card below. We hope you use our crowdsourced list as a muse, but you don’t have to limit yourself to only the things we’ve listed.
 
-{{<picture src="2025/06/01m4-pa5v-bv2w-dyez.png" description="The Spotlight PA Summer Bucket List bingo card" caption="The Spotlight PA Summer Bucket List bingo card" credit="Asha Prihar / For Spotlight PA">}}
+{{<picture src="2025/06/01m4-pa5v-bv2w-dyez.png" width-ratio="1080" height-ratio="1350" description="The Spotlight PA Summer Bucket List bingo card" caption="The Spotlight PA Summer Bucket List bingo card" credit="Asha Prihar / For Spotlight PA">}}
 
 Save this card on your phone or print it out, and take it with you on your trips around Pennsylvania this summer. As you complete each activity, take photos! Once you get a bingo, <a href="https://forms.gle/owckZv4BWFjC1YRw6">fill out this Google Form</a> and email your photos to <a href="mailto:newsletters@spotlightpa.org">newsletters@spotlightpa.org</a>. The deadline to submit is <strong>Tuesday, Sept. 2 </strong>(the day after Labor Day). If you’re having trouble with the form, send us an email.
 
