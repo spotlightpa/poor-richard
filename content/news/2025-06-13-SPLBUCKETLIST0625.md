@@ -20,7 +20,7 @@ slug = "summer-activities-parks-festivals-attractions-best-pennsylvania"
 suppress-date = false
 title = "Visit Pa.’s best festivals, parks, and ice cream shops with this curated summer guide and bingo sheet"
 title-tag = "Visit PA’s best summer spots for ice cream, hikes, and more"
-topics = ["PA Local"]
+topics = ["PA Local", "Corrections"]
 +++
 
 We asked, you answered, and now it’s time to plan your summertime adventures.
@@ -87,7 +87,7 @@ In Clearfield County, you can find <a href="https://www.visitclearfieldcounty.or
 
 ## 🎶 Hear live music
 
-In some places, summer means free concerts. Hit up downtown Wilkes-Barre on certain Saturdays in July for all-ages <a href="https://www.visitluzernecounty.com/292/Rockin-the-River">Rockin’ the River</a> shows along the Susquehanna, or attend Bellefonte’s decades-old <a href="http://www.bellefontearts.org/summer_sounds.htm">Summer Sounds from The Gazebo</a> series to hear a variety of music styles on Sundays.
+In some places, summer means free concerts. Hit up downtown Wilkes-Barre on certain Fridays in July for all-ages <a href="https://www.visitluzernecounty.com/292/Rockin-the-River">Rockin’ the River</a> shows along the Susquehanna, or attend Bellefonte’s decades-old <a href="http://www.bellefontearts.org/summer_sounds.htm">Summer Sounds from The Gazebo</a> series to hear a variety of music styles on Sundays.
 
 ## 🌊 Spend some time by — or in — the water
 
@@ -163,5 +163,5 @@ Wondering which of these spots are closest to home? <a href="https://www.google.
 
 - Unless a box specifically mentions our list, feel free to count destinations that don’t appear on it, so long as they fit the category and are located in Pennsylvania. Make sure you describe what the place is and what category you counted it toward.
 
-Once again, <a href="https://forms.gle/owckZv4BWFjC1YRw6">here is the form</a> to submit your bingo. Happy summer!
+Once again, <a href="https://forms.gle/owckZv4BWFjC1YRw6">here is the form</a> to submit your bingo. Happy summer!<br/><br/><em>Correction, June 16, 2025: The day of the week for the July Wilkes-Barre concerts is Fridays.</em>
 
