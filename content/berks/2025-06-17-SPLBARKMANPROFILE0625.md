@@ -19,7 +19,7 @@ title = "Meet a Berks County health advocate helping girls in the community"
 title-tag = "Addressing period poverty in Berks"
 +++
 
-<em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County Your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
+<em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
 
 This week&#39;s Community Spotlight honoree is Jen Barkman, a 36-year-old Realtor who volunteers as campaign coordinator for the Help A Girl Out drive address period poverty, an overlooked global community health dilemma in which women lack sufficient access, often due to costs, to menstrual products, education, and sanitation facilities.
 
