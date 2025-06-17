@@ -1,13 +1,13 @@
 +++
 authors = ["Lisa Scheid"]
-blurb = "This week's Community Spotlight honoree is Jen Barkman, a Realtor helping to address period poverty in Berks County."
+blurb = "This week's Community Spotlight honoree is Jen Barkman, a realtor helping to address period poverty in Berks County."
 byline = "Lisa Scheid"
 description = "Addressing period poverty in Berks"
 feed-exclude = false
 image = "2025/06/01m5-3dhd-s460-kn8e.jpeg"
-image-caption = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive address period poverty, an"
+image-caption = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive addressing period poverty."
 image-credit = "Photo submitted"
-image-description = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive address period poverty."
+image-description = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive addressing period poverty."
 internal-id = "SPLBARKMANPROFILE0625"
 kicker = "Berks"
 modal-exclude = false
