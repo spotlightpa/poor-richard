@@ -17,6 +17,7 @@ slug = "period-poverty-berks-pennsylvania"
 suppress-date = false
 title = "Meet a Berks County health advocate helping girls in the community"
 title-tag = "Addressing period poverty in Berks"
+topics = ["Berks County"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
