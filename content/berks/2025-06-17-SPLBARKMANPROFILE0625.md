@@ -4,7 +4,7 @@ blurb = "This week's Community Spotlight honoree is Jen Barkman, a Realtor helpi
 byline = "Lisa Scheid"
 description = "Addressing period poverty in Berks"
 feed-exclude = false
-image = "https://images.data.spotlightpa.org/insecure/rt:fill/w:600/h:600/g:so/el:1/MjAyNS8wNi8wMW01LTNkaGQtczQ2MC1rbjhlLmpwZWc=.jpeg"
+image = "2025/06/01m5-3dhd-s460-kn8e.jpeg"
 image-caption = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive address period poverty, an"
 image-credit = "Photo submitted"
 image-description = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive address period poverty."
