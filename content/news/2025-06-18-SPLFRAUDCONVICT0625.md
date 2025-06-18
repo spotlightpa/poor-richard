@@ -5,6 +5,7 @@ byline = "Carter Walker of Votebeat"
 description = "Federal investigators charged the men with multiple counts of fraudulent voter registration and related crimes in a failed scheme to steal a mayoral election."
 feed-exclude = false
 image = "2025/05/01m2-snx4-sp25-apa6.jpeg"
+image-caption = "Md Nurul Hasan, former vice president of the Millbourne borough council, at a May 5 meeting."
 image-credit = "Kriston Jae Bethel / For Votebeat"
 image-description = "Md Nurul Hasan, former vice president of the Millbourne borough council, at the May 5 council meeting."
 image-gravity = "ce"
