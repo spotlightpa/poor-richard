@@ -9,7 +9,6 @@ aliases = ["/jobs/"]
 ### Current openings
 
 * [General Manager, Berks County bureau](#general-manager-berks-county-bureau)
-* [Lehigh Valley Project Lead (6-month contract)](#lehigh-valley-project-lead-6-month-contract)
 
 - - -
 
@@ -28,24 +27,6 @@ The Berks bureau will produce in-depth investigative and public-service reportin
 This job is full-time and includes benefits. **This is a two-year, grant-funded position.** The position is remote, though applicants should be based in or near Berks County. This position is budgeted for a salary of $80,000-$90,000, depending on experience.
 
 Applicants should include a resume and a one-page cover letter answering the following questions: 1) How would you grow Spotlight PA’s profile and revenue in Berks County?; and 2) Tell us about your previous successes in sales, fundraising, and/or community engagement. 
-
-We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
-
-- - -
-
-## Lehigh Valley Project Lead (6-month contract)
-### [Apply here](https://spotlightpa.applytojob.com/apply/woD71ZXaDH/Lehigh-Valley-Project-Lead-6month-Contract)
-
-**Summary**: Spotlight PA is seeking a project lead to oversee a six-month study assessing the potential for a new Spotlight PA community newsroom in the Lehigh Valley. The ongoing and rapid decline of local news and investigative journalism in the Lehigh Valley has prompted Spotlight PA to consider this regional expansion. This would be the third community newsroom for Spotlight PA, an award-winning independent newsroom founded in 2019 to cover Pennsylvania’s Capitol and urgent statewide issues. The first is based in State College and launched in 2022, and the second is based in Reading and is launching in spring 2025. The mission of Spotlight PA is to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories regularly republished across 125+ partner newsrooms, allowing our vital reporting to reach Pennsylvanians in all corners and drive positive change.
-
-**What you’ll do**: The project lead will be our local, on-the-ground expert, and will collaborate with community residents, leaders, donors, funders, media partners, businesses, and nonprofits to help guide the creation of a potential local newsroom. Responsibilities will include forming an advisory committee of community stakeholders and leading a needs assessment to gain a better understanding of news and information gaps in the Lehigh Valley, with a focus on the problems residents are facing and how better access to high-quality, non-partisan information could help them solve those problems. This will entail conducting listening sessions and surveys in English and Spanish (additional resources available for candidates who do not speak Spanish). The project lead will also evaluate and develop product and distribution pathways, which will include partnering with local media and creating new products, depending on community feedback. In collaboration with Spotlight PA’s leadership team, the project lead will also help oversee a third-party feasibility study of local philanthropic capacity and develop relationships with local donors and funders to ensure a clear pathway to financial sustainability.
-
-**Who we’re looking for**: We welcome applications from individuals with experience in any aspect of journalism, community organizing, or community engagement, as well as those who have relevant experience in another industry or sector who are passionate about this project and believe they could be an effective leader. Fluency in Spanish is a plus, but not required. Applicants should be passionate about revitalizing nonpartisan, independent journalism in the Lehigh Valley and helping a fast-growing organization take the next steps toward expanding locally. We want someone who can bring important stakeholders to the table, who thinks big, and who has the skills and persistence to ensure this project is a success. The ability to work in a collaborative environment is a must. We’re an agile startup that values camaraderie and equity across all of the work that we do. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of doing our work and connecting it with readers across the state.
-
-This is a six-month contract position budgeted at $50,000 total. The position is remote, though applicants should be based in the Lehigh Valley. Applicants should include a resume and one-page cover letter answering the following questions: 
-
-* What is your connection to the Lehigh Valley? 
-* How would your past experience inform your work on this project? 
 
 We know not everyone reading this will fit exactly what we’ve described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
