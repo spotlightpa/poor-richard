@@ -1,6 +1,6 @@
 +++
 authors = ["Lisa Scheid"]
-blurb = "This week's Community Spotlight honoree is Jen Barkman, a realtor helping to address period poverty in Berks County."
+blurb = "This week's Community Spotlight honoree is Jen Barkman, a Realtor helping to address period poverty in Berks County."
 byline = "Lisa Scheid"
 description = "Addressing period poverty in Berks"
 feed-exclude = false
