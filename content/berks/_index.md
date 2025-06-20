@@ -33,7 +33,7 @@ image = "2024/09/01ke-p8w1-grhf-mt3j.jpeg"
 hed = "Berks Articles"
 body = "Read our articles about Berks County."
 actionText = "Read more →"
-actionUrl = "/topics/berks-county/"
+actionUrl = "/berks/"
 
 [[blocks.entries]]
 image = "external/rv5m343msdze1se1qsmtw2ta9c.jpeg"
