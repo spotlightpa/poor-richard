@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-06-23-SPLPDAAUDIT0625.md"
+    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md"
   ],
   "subfeatures": [
-    "content/news/2025-06-03-SPLAGINGGRADE0625.md",
-    "content/news/2025-04-02-SPLFATALREV0425.md",
-    "content/news/2025-02-18-SPLNGINVEST0225.md"
+    "content/news/2025-01-17-SPLSKILLGAME0125.md",
+    "content/news/2025-02-04-SPLSHAPBUDG0225.md",
+    "content/news/2024-10-15-SPLTRANSITUPDATE.md"
   ],
   "topSlots": [
+    "content/news/2025-06-24-SPLTEACHDATA0625.md",
     "content/news/2025-06-23-SPLPRISCLOSE0625.md",
-    "content/news/2025-06-20-SPLSHAREDRIDE0625.md",
-    "content/news/2025-06-20-SPLLOCALHEROES0625.md"
+    "content/news/2025-06-23-SPLPDAAUDIT0625.md"
   ]
 }
