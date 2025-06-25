@@ -6,7 +6,7 @@ email = "hanna@spotlightpa.org"
 role = "reporter"
 beat = "Reading and Berks County"
 title = "Regional Accountability Reporter"
-focus = "City & County Government"
+focusHed = "City & County Government"
 content = """
 Hanna Holthaus works as the Reading/Berks County accountability reporter for Spotlight PA. She aims to bring accessible, usable news about local institutions to the county’s residents.
 

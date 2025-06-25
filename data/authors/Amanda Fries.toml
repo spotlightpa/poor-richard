@@ -6,7 +6,7 @@ email = "afries@spotlightpa.org"
 role = "reporter"
 beat = "Reading and Berks County"
 title = "Regional Accountability Reporter"
-focus = "Regional Government & Institutions"
+focusHed = "Regional Government & Institutions"
 content = """
 A Pennsylvania native, Amanda Fries began her journalism career in upstate New York, covering environment, agriculture, and local government for the Utica Observer-Dispatch and later state government and the Capitol for the Albany Times-Union. Fries joined the Delaware News-Journal in 2021, producing award-winning investigative coverage of botched school drinking water testing for lead. Her reporting prompted a statewide retesting of school drinking water sources and, for the first time, state funding for childhood lead poisoning prevention.
 
