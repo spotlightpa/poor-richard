@@ -37,6 +37,7 @@ blurb = "The news that matters to your community — from the PA Wilds to Happy 
 
 [cascade]
 image = "2022/06/01hb-484c-z2hw-3tfc.jpeg"
+no-index = true
 
 [[staff]]
 name = "Sarah Rafacz"
@@ -72,4 +73,3 @@ height = 270
 link = "https://www.spotlightpa.org/newsletters/investigator"
 
 +++
-

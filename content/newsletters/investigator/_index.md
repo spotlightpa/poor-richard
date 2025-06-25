@@ -28,15 +28,16 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "The Investigator"
 
-image-size = "inline" 
-published = 2020-09-03T01:14:40.334Z 
-image-gravity = "ce" 
-weight = 3 
+image-size = "inline"
+published = 2020-09-03T01:14:40.334Z
+image-gravity = "ce"
+weight = 3
 occurrence = "Every Thursday"
 blurb = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
 
-[cascade] 
-image = "2021/06/01gc-4k5c-twja-965v.jpeg" 
+[cascade]
+image = "2021/06/01gc-4k5c-twja-965v.jpeg"
+no-index = true
 
 [[explore]]
 newsletter = "PA Post"
@@ -68,4 +69,3 @@ link = "https://www.spotlightpa.org/newsletters/talkofthetown"
 
 
 +++
-
