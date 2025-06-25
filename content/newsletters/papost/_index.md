@@ -28,15 +28,16 @@ cta = "Sign up"
 modal-exclude = true
 linktitle = "PA Post"
 
-blurb = "Understand what's happening across PA - in less than five minutes a day." 
+blurb = "Understand what's happening across PA - in less than five minutes a day."
 occurrence = "Each weekday"
 image-size = "inline"
 published = 2020-09-03T01:15:52.230Z
 image-gravity = "ea"
 weight = 1
 
-[cascade] 
-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg" 
+[cascade]
+image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+no-index = true
 
 [[staff]]
 name = "Colin Deppen"
@@ -78,4 +79,3 @@ height = 1075
 link = "https://www.spotlightpa.org/newsletters/talkofthetown"
 
 +++
-

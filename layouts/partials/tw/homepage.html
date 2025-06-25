@@ -18,7 +18,8 @@
 {{ $edImpact := partial "helper/get-hp-picks" "edImpact" }}
 {{ $featuredTopics := "topics/the-capitol/_index.md" }}
 
-{{ $bureau := site.GetPage "/statecollege/" }}
+{{ $scBureau := site.GetPage "/statecollege/" }}
+{{ $berksBureau := site.GetPage "/berks/" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $noIndex := where site.RegularPages ".Params.no-index" true }}
 {{ $river = $river | complement $featuredStory $pinnedStories $topperStory $noIndex }}
@@ -40,7 +41,8 @@
   "showNewsletterCallout" true
   "newsletterCalloutRiver" (site.GetPage "topics/PA Local/_index.md")
   "newsletterHed" "Latest From Our Daily Newsletter"
-  "bureau" $bureau
+  "scBureau" $scBureau
+  "berksBureau" $berksBureau
   "river" $river
   "edPicks" $edPicks
   "marginClass" $marginClass

@@ -30,8 +30,9 @@ image-size = "inline"
 occurrence = "When news breaks"
 blurb = "Our latest investigative and accountability journalism about Penn State University."
 
-[cascade] 
+[cascade]
 image = "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
+no-index = true
 
 [[staff]]
 name = "Sarah Rafacz"
@@ -67,4 +68,3 @@ height = 1009
 link = "https://www.spotlightpa.org/newsletters/palocal"
 
 +++
-
