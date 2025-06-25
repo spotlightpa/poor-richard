@@ -228,11 +228,17 @@
         )
       }}
     {{ end }}
-    {{ if .bureau }}
-      {{ $pages := .bureau }}
-
+    {{ with $pages := .scBureau }}
       {{ partial "tw/list-callout-story.html" (dict
         "hed" "State College Bureau"
+        "pages" $pages.RegularPages
+        "rubricLink" "rubric"
+        )
+      }}
+    {{ end }}
+    {{ with $pages := .berksBureau }}
+      {{ partial "tw/list-callout-story.html" (dict
+        "hed" "Berks County Bureau"
         "pages" $pages.RegularPages
         "rubricLink" "rubric"
         )
