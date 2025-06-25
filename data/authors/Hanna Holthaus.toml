@@ -1,0 +1,17 @@
+name = "Hanna Holthaus"
+firstName = "Hanna"
+lastName = "Holthaus"
+headshot = "2025/06/01m5-r9yg-ka6w-78ev.heic"
+email = "hanna@spotlightpa.org"
+role = "reporter"
+beat = "Reading and Berks County"
+title = "Regional Accountability Reporter"
+focus = "City & County Government"
+content = """
+Hanna Holthaus works as the Reading/Berks County accountability reporter for Spotlight PA. She aims to bring accessible, usable news about local institutions to the county’s residents.
+
+Originally from Southern Illinois, Hanna previously worked for Houston Landing and The Florida Times-Union where she covered two of the nation’s largest strong-mayor governments and dug into how their policies impacted some of the most vulnerable residents, including their approaches to the emerging housing crisis and use of taxpayer funds.
+
+Hanna speaks Spanish and looks forward to learning what issues most affect the people of Berks County. When she isn’t working, she can be found hiking, exploring new coffee shops or playing with her cats.
+"""
+active = true
