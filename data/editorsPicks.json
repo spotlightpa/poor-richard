@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md"
+    "content/news/2025-06-25-SPLCANNABISQUIZ0625.md"
   ],
   "subfeatures": [
-    "content/news/2025-01-17-SPLSKILLGAME0125.md",
-    "content/news/2025-02-04-SPLSHAPBUDG0225.md",
-    "content/news/2024-10-15-SPLTRANSITUPDATE.md"
+    "content/news/2025-03-27-spl_marijuanadocs_0325.md",
+    "content/news/2025-01-10-spl_marijuana_0125.md",
+    "content/news/2023-12-20-spl_marijuana_data.md"
   ],
   "topSlots": [
-    "content/news/2025-06-24-SPLTEACHDATA0625.md",
-    "content/news/2025-06-23-SPLPRISCLOSE0625.md",
-    "content/news/2025-06-23-SPLPDAAUDIT0625.md"
+    "content/berks/2025-06-25-SPLAUCTION0625.md",
+    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md",
+    "content/news/2025-06-24-SPLTEACHDATA0625.md"
   ]
 }
