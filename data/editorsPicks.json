@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-06-25-SPLMEALS0625.md"
+    "content/statecollege/2025-06-26-SPLROCKSALE0625.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-25-SPLFREELUNCH0225.md",
-    "content/news/2025-06-02-SPLBUDGPREV0625.md",
-    "content/news/2024-08-13-SPLDEFECITUPDATE.md"
+    "content/statecollege/2025-04-16-SPLPAAMERICAN0425.md",
+    "content/statecollege/2025-02-06-SPLROCKSPRING0225.md",
+    "content/statecollege/2024-06-03-SPLROCKSPRING0624.md"
   ],
   "topSlots": [
+    "content/news/2025-06-25-SPLMEALS0625.md",
     "content/news/2025-06-25-SPLCANNABISQUIZ0625.md",
-    "content/berks/2025-06-25-SPLAUCTION0625.md",
-    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md"
+    "content/berks/2025-06-25-SPLAUCTION0625.md"
   ]
 }
