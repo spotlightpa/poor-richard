@@ -1,6 +1,9 @@
-{{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
-{{ $pinnedStories :=  partial "helper/get-picks" "topSlots" }}
 {{ $pages := .pages }}
+{{ if not .includeAll }}
+  {{ $featuredStory := partial "helper/get-picks" "featuredStories" }}
+  {{ $pinnedStories :=  partial "helper/get-picks" "topSlots" }}
+  {{ $pages = $pages | complement $featuredStory $pinnedStories }}
+{{ end }}
 
 
 <div
@@ -14,7 +17,7 @@
     </h2>
   {{ end }}
 
-  {{ range $pages | complement $featuredStory $pinnedStories | first 1 }}
+  {{ range $pages | first 1 }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
@@ -65,7 +68,7 @@
     class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
   ></span>
 
-  {{ range first 1 ($pages | complement $featuredStory $pinnedStories | after 1) }}
+  {{ range first 1 ($pages | after 1) }}
     {{ $params := partialCached "helper/page-params" . .RelPermalink }}
     {{ $imgOpts := dict
       "filename" (.Param "image")
