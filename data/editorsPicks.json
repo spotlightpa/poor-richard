@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-06-27-SPLBUDDEADLINE0625.md"
+    "content/news/2025-06-27-SPLOPIOID0625.md"
   ],
   "subfeatures": [
-    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md",
-    "content/news/2025-06-20-SPLSHAREDRIDE0625.md",
-    "content/news/2025-06-09-SPLEDGE0625.md"
+    "content/interactives/opioid-quiz.md",
+    "content/news/2025-03-04-SPLOPIOIDFAM0325.md",
+    "content/news/2024-11-15-SPLopioiddb1124.md"
   ],
   "topSlots": [
+    "content/news/2025-06-27-SPLBUDDEADLINE0625.md",
     "content/news/2025-06-26-SPLNEWSQUIZJUNE2325.md",
-    "content/statecollege/2025-06-26-SPLROCKSALE0625.md",
-    "content/berks/2025-06-25-SPLAUCTION0625.md"
+    "content/statecollege/2025-06-26-SPLROCKSALE0625.md"
   ]
 }
