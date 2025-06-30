@@ -2,6 +2,7 @@
 blurb = "Spotlight PA hosted a free panel on what did — and didn’t — make it into Pennsylvania’s new budget."
 byline = "Spotlight PA Staff"
 description = "Spotlight PA hosted a free panel on Pennsylvania’s budget winners and losers."
+draft = false
 event-date = 2024-07-25T18:00:00-04:00
 event-title = "Budget Breakdown"
 event-url = "https://zoom.us/webinar/register/WN_RNTwYiQ9QuuDy7A2hwX_-A#/"
