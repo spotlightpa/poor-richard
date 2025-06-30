@@ -2,6 +2,7 @@
 blurb = "On Aug. 22, Spotlight PA held a live panel on the challenges local governments face in attracting and retaining people to serve, and how they impact you."
 byline = "Spotlight PA Staff"
 description = "On Aug. 22, Spotlight PA held a live panel on why local governments in PA struggle to attract and retain effective leaders."
+draft = false
 event-date = 2024-08-22T18:00:00-04:00
 event-title = "People Power"
 event-url = "https://zoom.us/webinar/register/WN_1zi5TtGMSCudy9lA3Bvduw#/registration"
@@ -41,7 +42,7 @@ Spotlight PA held a free panel discussion on the challenges local governments fa
 
 - <strong>Tim Kearney, </strong>state senator, Delaware County
 
-{{<vimeo id="1001966755" >}}
+{{<youtube id="Tv9AgEHiaP8" loading="lazy">}}
 
 <strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system</strong>. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
