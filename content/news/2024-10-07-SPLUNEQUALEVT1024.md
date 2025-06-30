@@ -2,6 +2,7 @@
 blurb = "Spotlight PA held a virtual event on voting access in Pennsylvania and what your rights are."
 byline = "Spotlight PA Staff"
 description = "Spotlight PA held a virtual event on voting access in Pennsylvania and what your rights are."
+draft = false
 event-date = 2024-10-17T18:00:00-04:00
 event-title = "Spotlight PA Event: How accessible are Pennsylvania’s elections?"
 event-url = "https://zoom.us/webinar/register/WN_d_s1HgauSHWOGVQiZUOI1w#/registration"
@@ -40,5 +41,5 @@ On Thursday, Oct. 17, Spotlight PA held a live panel discussion on the accessibi
 
 - <strong>Peri Jude Radecic</strong>, chief executive officer, Disability Rights Pennsylvania
 
-{{<vimeo id="1021004555" >}}
+{{<youtube id="UE1TZfGdcp0" loading="lazy">}}
 
