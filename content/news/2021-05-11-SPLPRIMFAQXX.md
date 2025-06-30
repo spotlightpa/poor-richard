@@ -4,7 +4,9 @@ authors = ["Sarah Anne Hughes"]
 blurb = "Spotlight PA answers your questions about controversial constitutional amendments, judicial races, and more."
 byline = "Sarah Anne Hughes of Spotlight PA"
 description = "Spotlight PA answers your questions about controversial constitutional amendments, judicial races, and more."
+draft = false
 event-date = 2021-05-04T17:00:00-04:00
+feed-exclude = false
 image = "external/zyfzz59nbhjxte101eqp1nd9r4.jpeg"
 image-credit = "Fred Adams / Spotlight PA"
 image-description = "All voters, regardless of affiliation, will be asked to weigh in on four ballot questions, including two proposed constitutional amendments that could significantly shape Pennsylvania’s future response to disasters like the coronavirus pandemic."
@@ -12,6 +14,7 @@ internal-id = "SPLPRIMFAQXX"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-05-11T05:00:00-04:00
 slug = "pa-may-2021-primary-questions-answered"
 suppress-date = false
@@ -28,9 +31,7 @@ All voters, regardless of affiliation, will be asked to weigh in on four ballot 
 
 Democrats and Republicans, meanwhile, have a number of judicial and municipal races to consider.
 
-Below, Spotlight PA answers some of the most frequently asked questions about voting and what Pennsylvanians will see on their ballot. You can learn more by watching our recent live event on the ballot questions and judicial races with WHYY’s Katie Meyer.
-
-<iframe width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" src="https://www.crowdcast.io/e/may-primary?navlinks=false&embed=true" style="border: 1px solid #EEE;border-radius:3px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" allow="microphone; camera;"></iframe><a ng-href="https://www.crowdcast.io/?utm_source=embed&utm_medium=website&utm_campaign=embed" style="color: #aaa; font-family: 'Helvetica', 'Arial', sans-serif;text-decoration: none;display: block;text-align: center;font-size: 13px;padding: 5px 0">powered by Crowdcast</a>
+Below, Spotlight PA answers some of the most frequently asked questions about voting and what Pennsylvanians will see on their ballot. 
 
 ## Can I vote this May?
 
