@@ -2,6 +2,7 @@
 blurb = "Experts discuss Harrisburg’s former Black commercial hub and the people and businesses trying to preserve its legacy."
 byline = "Spotlight PA Staff"
 description = "Experts discuss Harrisburg’s former Black commercial hub and the people and businesses trying to preserve its legacy."
+draft = false
 event-date = 2024-03-07T18:00:00-05:00
 event-title = "PA’S BLACK WALL STREET"
 event-url = "https://zoom.us/webinar/register/WN_T52KsSqISmqO3-903arN2w#/registration"
@@ -35,13 +36,13 @@ Our panelists were:
 
 - <a href="https://www.spotlightpa.org/authors/tanisha-thomas/"><strong>Tanisha Thomas</strong></a>, newsletter writer, Spotlight PA
 
-- <a href="https://web.archive.org/20240111193327/https://www.dimitrageneva.com/"><strong>Dimitra</strong> <strong>Diggs</strong></a>, owner, Urban Snob
+- <a href="https://www.dimitrageneva.com/"><strong>Dimitra</strong> <strong>Diggs</strong></a>, owner, Urban Snob
 
 - <a href="https://www.sankofatheatrehbg.com/"><strong>Sharia Benn</strong></a>, artistic director, Sankofa African American Theater Company
 
-- <a href="https://web.archive.org/20200915211541/https://historicharrisburg.org/calobe-jackson-jr-bio/"><strong>Calobe Jackson Jr.</strong></a><strong>,</strong> resident historian, Historic Harrisburg Association<strong></strong>
+- <a href="https://historicharrisburg.org/calobe-jackson-jr-bio/"><strong>Calobe Jackson Jr.</strong></a><strong>,</strong> resident historian, Historic Harrisburg Association<strong></strong>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/921146780?h=553e3947a7&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{<youtube id="4osqScZ40Wk" loading="lazy">}}
 
-<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
