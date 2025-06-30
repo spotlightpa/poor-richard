@@ -2,6 +2,7 @@
 blurb = "Watch a panel discussion on Pa.’s private water companies and their impact on communities."
 byline = "Spotlight PA Staff"
 description = "Watch a panel discussion about Pa.’s private water companies and their impact on local quality of life."
+draft = false
 event-date = 2024-07-18T18:00:00-04:00
 event-title = "ROCKY WATERS"
 event-url = "https://zoom.us/webinar/register/WN_96qmbq8BRCm2pqNXm2sPXQ"
@@ -44,7 +45,7 @@ Spotlight PA held a free panel discussion on Pennsylvania’s private water indu
 
 - <strong>Rikardo Hull,</strong> chief operating officer, National Association of Water Companies
 
-{{<vimeo id="987122308" secret="e1c4d233eb" >}}
+{{<youtube id="bkS3ccy7kT8" loading="lazy">}}
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
