@@ -2,6 +2,7 @@
 blurb = "On Aug. 8, Spotlight PA held a live panel on taxpayer-funded school vouchers, what the research says, and whether they have a future in Pennsylvania."
 byline = "Spotlight PA Staff"
 description = "On Aug. 8, Spotlight PA held a live panel on taxpayer-funded school vouchers, what the research says, and whether they have a future in Pennsylvania."
+draft = false
 event-date = 2024-08-08T18:00:00-04:00
 event-title = "Voucher Debate"
 event-url = "https://zoom.us/webinar/register/WN_CpmZwfNfTAib9sIDImfDcA#/registration"
@@ -45,7 +46,7 @@ Spotlight PA held a free panel discussion on this research, the politics of the 
 
 - <strong>Susan Spicka</strong>, executive director, Education Voters of PA
 
-{{<vimeo id="996646600" secret="ea8dcec01b" >}}
+{{<youtube id="5BtGufuLWsY" loading="lazy">}}
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
