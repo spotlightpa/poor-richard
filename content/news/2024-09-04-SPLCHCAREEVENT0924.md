@@ -2,6 +2,7 @@
 blurb = "On Sept. 19, Spotlight PA held a live panel on the state’s child care staffing shortage and possible solutions"
 byline = "Spotlight PA Staff"
 description = "On Sept. 19, Spotlight PA held a live panel on the state’s child care staffing shortage and possible solutions"
+draft = false
 event-date = 2024-09-19T18:00:00-04:00
 event-title = "CARE CRISIS: A live panel on Pennsylvania’s child care staffing shortage"
 event-url = "https://zoom.us/webinar/register/WN_1MeQvg5_ReazLc5CrxHkmw"
@@ -39,7 +40,7 @@ Spotlight PA held a free panel discussion on Pennsylvania’s child care staffin
 
 - <strong>Judy Schwank, </strong>state senator, Berks County
 
-{{<vimeo id="1011156138" >}}
+{{<youtube id="eRNNwrivx9I" loading="lazy">}}
 
 <strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
