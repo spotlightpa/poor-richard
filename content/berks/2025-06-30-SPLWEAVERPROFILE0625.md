@@ -23,7 +23,7 @@ topics = ["Community Profile"]
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
 
-This week&#39;s Community Spotlight honoree is Janet Weaver, a 72-year-old community service officer for the Borough of Kutztown.
+This week&#39;s Community Spotlight honoree is Janet Weaver, a 72-year-old community safety officer for the Borough of Kutztown.
 
 Our conversation has been lightly edited for clarity.
 
