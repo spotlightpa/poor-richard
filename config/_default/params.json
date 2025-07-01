@@ -70,26 +70,26 @@
     "https://files.data.spotlightpa.org/uploads/01kw/gmdc/sunshine-week-2024-1024-512-px-1-.gif"
   ],
   "river-promo-mobile-width": 500,
-  "sidebar-sticky-description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
+  "sidebar-sticky-description": "Support Spotlight PA's independent reporting this Independence Day!",
   "sidebar-sticky-height": 250,
   "sidebar-sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
   ],
   "sidebar-sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-sticky",
   "sidebar-sticky-width": 300,
-  "sidebar-top-description": "Support unmatched election and investigative reporting for Pennsylvania.",
+  "sidebar-top-description": "Support Spotlight PA's independent reporting this Independence Day!",
   "sidebar-top-height": 250,
   "sidebar-top-images": [
     "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
   ],
   "sidebar-top-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
   "sidebar-top-width": 300,
-  "sticky-active": false,
-  "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
+  "sticky-active": true,
+  "sticky-image-description": "Support Spotlight PA's independent reporting this Independence Day!",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
+    "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
   ],
-  "sticky-link": "/newsletters",
+  "sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sticky-popup",
   "support-active": true,
   "support-bg-color": "#ffe0e0",
   "support-button-bg-color": "#ff0000",
@@ -113,7 +113,7 @@
   ],
   "topper-desktop-width": 1350,
   "topper-divider-color": "#ffffff",
-  "topper-image-description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+  "topper-image-description": "Support Spotlight PA's independent reporting this Independence Day!",
   "topper-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
   "topper-mobile-height": 512,
   "topper-mobile-images": [
