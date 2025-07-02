@@ -1,0 +1,53 @@
+{{ $lenPromos := len .promos }}
+{{ $shouldShuffle := gt $lenPromos 1 }}
+{{ $hasLabels := false }}
+{{ range .promos }}
+  {{ if .label }}
+    {{ $hasLabels = true }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+
+<div
+  class="{{ .wrapperClass }}"
+  {{ if $shouldShuffle }}
+    x-data="{ randomItem: Math.floor(Math.random() * (+$el.dataset.lenPromos))}"
+    data-len-promos="{{ $lenPromos }}"
+  {{ end }}
+>
+  {{ range $i, $param := .promos }}
+    <div
+      class="text-center font-sans text-sm uppercase text-g-8"
+      {{ if $shouldShuffle }}
+        x-show="randomItem === +$el.dataset.i" data-i="{{ $i }}"
+      {{ end }}
+      {{ if ne $i 0 }}
+        x-cloak
+      {{ end }}
+    >
+      {{ if $param.label }}
+        {{ partial "tag/maybe-link.html" (dict
+          "text" $param.label
+          "link"  $param.labelLink
+          "class" "block mb-1"
+          )
+        }}
+      {{ else if $hasLabels }}
+        <span class="mb-1 block">
+          <!-- non-blocking space so ads are all the same size with or without labels -->
+          &nbsp;
+        </span>
+      {{ end }}
+      {{ partial "tw/promo-single.html" (dict
+        "imageDescription" $param.description
+        "link" $param.link
+        "images" $param.sources
+        "width" $.width
+        "height" $.height
+        "class" $.class
+        )
+      }}
+    </div>
+  {{ end }}
+</div>

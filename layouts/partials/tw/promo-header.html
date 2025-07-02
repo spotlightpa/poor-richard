@@ -1,23 +1,27 @@
-{{ if .Param "promo-active" }}
-  {{ if eq (.Param "promo-type") "text" }}
-    {{ partialCached "tw/promo-text.html" . }}
-  {{ else }}
-    <div
-      class="bg-white px-6 pt-6"
-      data-fru-campaign="top-promo"
-      id="top-promo"
-    >
-      {{ partialCached "tw/promo-double.html" (dict
-        "imageDescription" (site.Param "promo-image-description")
-        "link" (site.Param "promo-link")
-        "desktopImages" (site.Param "promo-desktop-images")
-        "desktopWidth" (site.Param "promo-desktop-width")
-        "desktopHeight" (site.Param "promo-desktop-height")
-        "mobileImages" (site.Param "promo-mobile-images")
-        "mobileWidth" (site.Param "promo-mobile-width")
-        "mobileHeight" (site.Param "promo-mobile-height")
+{{ $desktop := page.Param "ad-header-desktop-active" }}
+{{ $mobile := page.Param "ad-header-mobile-active" }}
+{{ $wrapperClass := .wrapperClass | default "bg-white px-6 pt-6 no-js:hidden" }}
+
+{{ if or $desktop $mobile }}
+  <div class="{{ $wrapperClass }}" data-fru-campaign="header" id="promo-header">
+    {{ if $desktop }}
+      {{ partial "tw/promo-multi.html" (dict
+        "promos" (page.Param "ad-header-desktop")
+        "width" (page.Param "ad-header-desktop-width")
+        "height"  (page.Param "ad-header-desktop-height")
+        "wrapperClass" "hidden sm:block"
+        "class" "mx-auto sm:max-w-full md:max-w-3xl lg:max-w-[960px]"
         )
       }}
-    </div>
-  {{ end }}
+    {{ end }}
+    {{ if $mobile }}
+      {{ partial "tw/promo-multi.html" (dict
+        "promos" (page.Param "ad-header-mobile")
+        "width" (page.Param "ad-header-mobile-width")
+        "height"  (page.Param "ad-header-mobile-height")
+        "wrapperClass" "sm:hidden"
+        )
+      }}
+    {{ end }}
+  </div>
 {{ end }}

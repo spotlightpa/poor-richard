@@ -19,13 +19,8 @@
     {{ block "nav" . }}
       {{ partial "tw/nav.html" . }}
     {{ end }}
-    {{ block "topper" . }}
-      {{ if .Param "topper-active" }}
-        {{ partialCached "tw/promo-topper.html" . }}
-      {{ end }}
-    {{ end }}
     {{ block "promo" . }}
-      {{ partialCached "tw/promo-header.html" $ }}
+      {{ partial "tw/promo-header.html" (dict) }}
     {{ end }}
   </header>
 {{ end }}
