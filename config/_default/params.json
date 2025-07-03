@@ -13,6 +13,42 @@
     "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
   ],
   "ad-featured-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured-ad",
+  "ad-footer-desktop": [],
+  "ad-footer-desktop-active": false,
+  "ad-footer-desktop-height": 0,
+  "ad-footer-desktop-width": 0,
+  "ad-footer-mobile": [],
+  "ad-footer-mobile-active": false,
+  "ad-footer-mobile-height": 0,
+  "ad-footer-mobile-width": 0,
+  "ad-header-desktop": [
+    {
+      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m6/8etk/site-toppertracker-1-.gif"
+      ]
+    }
+  ],
+  "ad-header-desktop-active": true,
+  "ad-header-desktop-height": 175,
+  "ad-header-desktop-width": 1350,
+  "ad-header-mobile": [
+    {
+      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m6/8etk/newsmatch-2024-rectangles-1024-512-px-1-.gif"
+      ]
+    }
+  ],
+  "ad-header-mobile-active": true,
+  "ad-header-mobile-height": 512,
+  "ad-header-mobile-width": 1024,
   "ad-headwater-active": false,
   "ad-headwater-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-headwater-images": [
@@ -21,10 +57,70 @@
     "https://files.data.spotlightpa.org/uploads/01kw/gsvf/6.png"
   ],
   "ad-headwater-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-970-90",
+  "ad-hp-breaker-desktop": [],
+  "ad-hp-breaker-desktop-active": false,
+  "ad-hp-breaker-desktop-height": 0,
+  "ad-hp-breaker-desktop-width": 0,
+  "ad-hp-breaker-mobile": [],
+  "ad-hp-breaker-mobile-active": false,
+  "ad-hp-breaker-mobile-height": 0,
+  "ad-hp-breaker-mobile-width": 0,
+  "ad-hp-featured": [
+    {
+      "description": "Support unmatched election and investigative reporting for Pennsylvania.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured-ad",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+      ]
+    }
+  ],
+  "ad-hp-featured-active": true,
+  "ad-hp-headwater-desktop": [],
+  "ad-hp-headwater-desktop-active": false,
+  "ad-hp-headwater-desktop-height": 0,
+  "ad-hp-headwater-desktop-width": 0,
+  "ad-hp-headwater-mobile": [],
+  "ad-hp-headwater-mobile-active": false,
+  "ad-hp-headwater-mobile-height": 0,
+  "ad-hp-headwater-mobile-width": 0,
+  "ad-hp-river-desktop": [],
+  "ad-hp-river-desktop-active": false,
+  "ad-hp-river-desktop-height": 0,
+  "ad-hp-river-desktop-width": 0,
+  "ad-hp-river-mobile": [],
+  "ad-hp-river-mobile-active": false,
+  "ad-hp-river-mobile-height": 0,
+  "ad-hp-river-mobile-width": 0,
   "ad-rail-active": false,
   "ad-rail-image-description": "For a limited time, all gifts in support of Spotlight PA's nonprofit, nonpartisan journalism will be DOUBLED.",
   "ad-rail-images": [],
   "ad-rail-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail-600-300",
+  "ad-rail-sticky": [
+    {
+      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-sticky",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+      ]
+    }
+  ],
+  "ad-rail-sticky-active": true,
+  "ad-rail-top": [
+    {
+      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+      ]
+    }
+  ],
+  "ad-rail-top-active": true,
   "banner": "\u003cstrong\u003eNew here?\u003c/strong\u003e Learn more about Spotlight PA's nonpartisan, nonprofit reporting »",
   "banner-active": true,
   "banner-bg-color": "#99d9f1",
