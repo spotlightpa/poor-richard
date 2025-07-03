@@ -1,14 +1,6 @@
 {{ $nlBox := page.Param "newsletter-box" |
   default "tw/newsletter-box-lg.html"
 }}
-{{ $imageDescription := page.Param "river-promo-description" }}
-{{ $link := page.Param "river-promo-link" }}
-{{ $desktopImages := page.Param "river-promo-desktop-images" }}
-{{ $desktopWidth := page.Param "river-promo-desktop-width" }}
-{{ $desktopHeight := page.Param "river-promo-desktop-height" }}
-{{ $mobileImages := page.Param "river-promo-mobile-images" }}
-{{ $mobileWidth := page.Param "river-promo-mobile-width" }}
-{{ $mobileHeight := page.Param "river-promo-mobile-height" }}
 
 {{ $hiddenField := .hiddenField }}
 {{ $newsletterHed := .newsletterHed }}
@@ -152,22 +144,34 @@
 
   <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
 
-  {{ if page.Param "ad-breaker-active" }}
+  {{ $desktopBreaker := page.Param "ad-hp-breaker-desktop-active" }}
+  {{ $mobileBreaker := page.Param "ad-hp-breaker-mobile-active" }}
+  {{ if or $desktopBreaker $mobileBreaker }}
     <div
       x-intersect:enter.margin.100px="isSticky = false"
       class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:border-none md:py-0"
       data-ga-category="breaker"
       id="breaker"
     >
-      {{ partial "tw/promo-single.html" (dict
-        "class" "mx-auto flex items-center justify-center"
-        "images" (page.Param "ad-breaker-images")
-        "width" 970
-        "height" 90
-        "link" (page.Param "ad-breaker-link")
-        "description" (page.Param "ad-breaker-image-description")
-        )
-      }}
+      {{ if $desktopBreaker }}
+        {{ partial "tw/promo-multi.html" (dict
+          "promos" (page.Param "ad-hp-breaker-desktop")
+          "width" (page.Param "ad-hp-breaker-desktop-width")
+          "height"  (page.Param "ad-hp-breaker-desktop-height")
+          "wrapperClass" "hidden sm:block"
+          "class" "max-w-full md:max-w-3xl lg:max-w-[960px]"
+          )
+        }}
+      {{ end }}
+      {{ if $mobileBreaker }}
+        {{ partial "tw/promo-multi.html" (dict
+          "promos" (page.Param "ad-hp-breaker-mobile")
+          "width" (page.Param "ad-hp-breaker-mobile-width")
+          "height"  (page.Param "ad-hp-breaker-mobile-height")
+          "wrapperClass" "sm:hidden"
+          )
+        }}
+      {{ end }}
     </div>
   {{ end }}
 
@@ -250,21 +254,33 @@
     {{ end }}
   </div>
 
-  {{ if page.Param "ad-headwater-active" }}
+  {{ $desktopHeaderwater := page.Param "ad-hp-headwater-desktop-active" }}
+  {{ $mobileHeaderwater := page.Param "ad-hp-headwater-mobile-active" }}
+  {{ if or $desktopHeaderwater $mobileHeaderwater }}
     <div
       class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:gap-y-12 md:border-none md:py-0"
       data-ga-category="headwater"
       id="headwater"
     >
-      {{ partial "tw/promo-single.html" (dict
-        "class" "mx-auto flex items-center justify-center"
-        "images" (page.Param "ad-headwater-images")
-        "width" 970
-        "height" 90
-        "link" (page.Param "ad-headwater-link")
-        "description" (page.Param "ad-headwater-image-description")
-        )
-      }}
+      {{ if $desktopHeaderwater }}
+        {{ partial "tw/promo-multi.html" (dict
+          "promos" (page.Param "ad-hp-headwater-desktop")
+          "width" (page.Param "ad-hp-headwater-desktop-width")
+          "height"  (page.Param "ad-hp-headwater-desktop-height")
+          "wrapperClass" "hidden sm:block"
+          "class" "max-w-full md:max-w-3xl lg:max-w-[960px]"
+          )
+        }}
+      {{ end }}
+      {{ if $mobileHeaderwater }}
+        {{ partial "tw/promo-multi.html" (dict
+          "promos" (page.Param "ad-hp-headwater-mobile")
+          "width" (page.Param "ad-hp-headwater-mobile-width")
+          "height"  (page.Param "ad-hp-headwater-mobile-height")
+          "wrapperClass" "sm:hidden"
+          )
+        }}
+      {{ end }}
     </div>
   {{ end }}
 
@@ -332,23 +348,31 @@
                   )
                 }}
               </div>
-              {{ if eq (mod $i 5) 3 | and $desktopImages }}
+              {{ $desktopRiverAd := page.Param "ad-hp-river-desktop-active" }}
+              {{ $mobileRiverAd := page.Param "ad-hp-river-mobile-active" }}
+              {{ if eq (mod $i 5) 3 | and (or $desktopRiverAd $mobileRiverAd) }}
                 <div
-                  class="px-0 pt-0"
+                  class="px-0 pb-2 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
                 >
-                  {{ partial "tw/promo-double.html" (dict
-                    "class" "min-w-full no-js:hidden"
-                    "imageDescription" $imageDescription
-                    "link" $link
-                    "desktopImages" $desktopImages
-                    "desktopWidth" $desktopWidth
-                    "desktopHeight" $desktopHeight
-                    "mobileImages" $mobileImages
-                    "mobileWidth" $mobileWidth
-                    "mobileHeight" $mobileHeight
-                    )
-                  }}
+                  {{ if $desktopRiverAd }}
+                    {{ partial "tw/promo-multi.html" (dict
+                      "promos" (page.Param "ad-hp-river-desktop")
+                      "width" (page.Param "ad-hp-river-desktop-width")
+                      "height"  (page.Param "ad-hp-river-desktop-height")
+                      "wrapperClass" "hidden sm:block"
+                      )
+                    }}
+                  {{ end }}
+                  {{ if $mobileRiverAd }}
+                    {{ partial "tw/promo-multi.html" (dict
+                      "promos" (page.Param "ad-hp-river-mobile")
+                      "width" (page.Param "ad-hp-river-mobile-width")
+                      "height"  (page.Param "ad-hp-river-mobile-height")
+                      "wrapperClass" "sm:hidden"
+                      )
+                    }}
+                  {{ end }}
                 </div>
               {{ end }}
             {{ end }}
@@ -419,23 +443,6 @@
           </div>
         {{ end }}
       </div>
-    </div>
-  {{ end }}
-
-  {{ if page.Param "ad-headwater-active" }}
-    <div
-      class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:border-none md:py-0"
-      data-ga-category="headwater"
-    >
-      {{ partial "tw/promo-single.html" (dict
-        "class" "mx-auto flex items-center justify-center"
-        "images" (page.Param "ad-headwater-images")
-        "width" 970
-        "height" 90
-        "link" (page.Param "ad-headwater-link")
-        "description" (page.Param "ad-headwater-image-description")
-        )
-      }}
     </div>
   {{ end }}
 </div>
