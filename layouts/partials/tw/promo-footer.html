@@ -9,25 +9,23 @@
     id="footer-promo"
   >
     {{ if $desktop }}
-      <div class="hidden sm:block">
-        {{ partial "tw/promo-multi.html" (dict
-          "promos" (page.Param "ad-footer-desktop")
-          "width" (page.Param "ad-footer-desktop-width")
-          "height"  (page.Param "ad-footer-desktop-height")
-          "class" "mx-auto max-w-full md:max-w-3xl lg:max-w-[960px]"
-          )
-        }}
-      </div>
+      {{ partial "tw/promo-multi.html" (dict
+        "wrapperClass" "hidden sm:block"
+        "promos" (page.Param "ad-footer-desktop")
+        "width" (page.Param "ad-footer-desktop-width")
+        "height"  (page.Param "ad-footer-desktop-height")
+        "class" "mx-auto max-w-full md:max-w-3xl lg:max-w-[960px]"
+        )
+      }}
     {{ end }}
     {{ if $mobile }}
-      <div class="sm:hidden">
-        {{ partial "tw/promo-multi.html" (dict
-          "promos" (page.Param "ad-footer-mobile")
-          "width" (page.Param "ad-footer-mobile-width")
-          "height"  (page.Param "ad-footer-mobile-height")
-          )
-        }}
-      </div>
+      {{ partial "tw/promo-multi.html" (dict
+        "wrapperClass" "sm:hidden"
+        "promos" (page.Param "ad-footer-mobile")
+        "width" (page.Param "ad-footer-mobile-width")
+        "height"  (page.Param "ad-footer-mobile-height")
+        )
+      }}
     {{ end }}
   </div>
 {{ end }}
