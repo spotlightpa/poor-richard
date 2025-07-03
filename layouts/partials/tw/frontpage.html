@@ -66,14 +66,11 @@
         <div
           class="flex w-full items-center justify-center border-t py-12 md:mt-12 md:border-none md:py-0"
         >
-          {{ if page.Param "ad-featured-active" }}
-            {{ partial "tw/promo-single.html" (dict
-              "class" "mx-auto flex items-center justify-center"
-              "images" (page.Param "ad-featured-images")
-              "width" 300
-              "height" 250
-              "link" (page.Param "ad-featured-link")
-              "description" (page.Param "ad-featured-image-description")
+          {{ if page.Param "ad-hp-featured-active" }}
+            {{ partial "tw/promo-multi.html" (dict
+              "promos" (page.Param "ad-hp-featured")
+              "width" 600
+              "height"  500
               )
             }}
           {{ end }}
@@ -86,16 +83,11 @@
         <div
           class="flex w-full items-center justify-center border-t py-12 md:border-none md:py-0"
         >
-          {{ if page.Param "ad-featured-active" }}
-            {{ partial "tw/promo-single.html" (dict
-              "class" "mx-auto flex items-center justify-center"
-              "images" (page.Param "ad-featured-images")
-              "gaCategory" "featured"
-              "id" "featured"
-              "width" 300
-              "height" 250
-              "link" (page.Param "ad-featured-link")
-              "description" (page.Param "ad-featured-image-description")
+          {{ if page.Param "ad-hp-featured-active" }}
+            {{ partial "tw/promo-multi.html" (dict
+              "promos" (page.Param "ad-hp-featured")
+              "width" 640
+              "height"  535
               "eager" true
               )
             }}
@@ -396,14 +388,11 @@
         class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
       >
         <div data-ga-category="rail" id="rail" data-fru-campaign="sidebar">
-          {{ if page.Param "ad-rail-active" }}
-            {{ partial "tw/promo-single.html" (dict
-              "class" "mx-auto flex items-center justify-center"
-              "images" (page.Param "ad-rail-images")
-              "width" 300
-              "height" 600
-              "link" (page.Param "ad-rail-link")
-              "description" (page.Param "ad-rail-image-description")
+          {{ if page.Param "ad-hp-rail-active" }}
+            {{ partial "tw/promo-multi.html" (dict
+              "promos" (page.Param "ad-hp-rail")
+              "width" 600
+              "height"  500
               )
             }}
           {{ end }}
