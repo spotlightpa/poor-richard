@@ -6,7 +6,8 @@
   data-src="{{ $src }}"
 ></div>
 
-{{ if eq .Ordinal 0 }}
+{{ if page.Scratch.Get "has-flourish" | not }}
+  {{ page.Scratch.Set "has-flourish" true }}
   <script
     defer
     src="https://public.flourish.studio/resources/embed.js"
