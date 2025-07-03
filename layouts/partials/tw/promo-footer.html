@@ -1,22 +1,31 @@
-{{ $desktop := site.Param "footer-promo-desktop-images" }}
-{{ $mobile := site.Param "footer-promo-mobile-images" }}
+{{ $desktop := page.Param "ad-footer-desktop-active" }}
+{{ $mobile := page.Param "ad-footer-mobile-active" }}
+{{ $wrapperClass := .wrapperClass | default "bg-white px-6 pt-6" }}
+
 {{ if or $desktop $mobile }}
   <div
-    class="{{ .wrapperClass }}"
+    class="{{ $wrapperClass }}"
     data-fru-campaign="footer-promo"
     id="footer-promo"
   >
-    {{ partial "tw/promo-double.html" (dict
-      "class" "mt-5 px-5 flex justify-center"
-      "imageDescription" (site.Param "footer-promo-description")
-      "link" (site.Param "footer-promo-link")
-      "desktopImages" $desktop
-      "desktopWidth" (site.Param "footer-promo-desktop-width")
-      "desktopHeight" (site.Param "footer-promo-desktop-height")
-      "mobileImages" $mobile
-      "mobileWidth" (site.Param "footer-promo-mobile-width")
-      "mobileHeight" (site.Param "footer-promo-mobile-height")
-      )
-    }}
+    {{ if $desktop }}
+      {{ partial "tw/promo-multi.html" (dict
+        "wrapperClass" "hidden sm:block"
+        "promos" (page.Param "ad-footer-desktop")
+        "width" (page.Param "ad-footer-desktop-width")
+        "height"  (page.Param "ad-footer-desktop-height")
+        "class" "mx-auto max-w-full md:max-w-3xl lg:max-w-[960px]"
+        )
+      }}
+    {{ end }}
+    {{ if $mobile }}
+      {{ partial "tw/promo-multi.html" (dict
+        "wrapperClass" "sm:hidden"
+        "promos" (page.Param "ad-footer-mobile")
+        "width" (page.Param "ad-footer-mobile-width")
+        "height"  (page.Param "ad-footer-mobile-height")
+        )
+      }}
+    {{ end }}
   </div>
 {{ end }}
