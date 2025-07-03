@@ -235,10 +235,10 @@
       data-sf-campaign="701Dn000000YgoeIAC"
       class="row-start-1 mt-6 w-full"
     >
-      {{ if page.Param "ad-art-rail-active" }}
+      {{ if page.Param "ad-rail-top-active" }}
         {{ partial "tw/promo-multi.html" (dict
           "wrapperClass" "mb-5 w-0 min-w-full no-js:hidden flex justify-center lg:justify-start"
-          "promos" (page.Param "ad-art-rail")
+          "promos" (page.Param "ad-rail-top")
           "width" 640
           "height"  535
           )

@@ -388,9 +388,9 @@
         class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
       >
         <div data-ga-category="rail" id="rail" data-fru-campaign="sidebar">
-          {{ if page.Param "ad-hp-rail-active" }}
+          {{ if page.Param "ad-rail-top-active" }}
             {{ partial "tw/promo-multi.html" (dict
-              "promos" (page.Param "ad-hp-rail")
+              "promos" (page.Param "ad-rail-top")
               "width" 600
               "height"  500
               )
@@ -412,21 +412,18 @@
             </div>
           {{ end }}
         {{ end }}
-        {{ if page.Param "sidebar-sticky-images" }}
+        {{ if page.Param "ad-rail-sticky-active" }}
           <div
             class="sticky top-14 mx-auto self-start md:top-16"
             data-ga-category="sticky"
             data-fru-campaign="sidebar-sticky"
             x-intersect="$dispatch('close-sticky')"
           >
-            {{ partial "tw/promo-single.html" (dict
-              "id" "homepage-sticky"
+            {{ partial "tw/promo-mutli.html" (dict
               "class" "pt-5 min-w-full no-js:hidden"
-              "images" (page.Param "sidebar-sticky-images")
-              "width" (page.Param "sidebar-sticky-width")
-              "height" (page.Param "sidebar-sticky-height")
-              "link" (page.Param "sidebar-sticky-link")
-              "description" (page.Param "sidebar-sticky-description")
+              "promos" (page.Param "ad-rail-sticky")
+              "width" 640
+              "height" 535
               )
             }}
           </div>
