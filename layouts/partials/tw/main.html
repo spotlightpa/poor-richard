@@ -235,15 +235,15 @@
       data-sf-campaign="701Dn000000YgoeIAC"
       class="row-start-1 mt-6 w-full"
     >
-      {{ partial "tw/promo-single.html" (dict
-        "class" "mb-5 w-0 min-w-full no-js:hidden flex justify-center lg:justify-start"
-        "images" (.Param "sidebar-top-images")
-        "width" (.Param "sidebar-top-width")
-        "height" (.Param "sidebar-top-height")
-        "link"  (.Param "sidebar-top-link")
-        "description"  (.Param "sidebar-top-description")
-        )
-      }}
+      {{ if page.Param "ad-rail-top-active" }}
+        {{ partial "tw/promo-multi.html" (dict
+          "wrapperClass" "mb-5 w-0 min-w-full no-js:hidden flex justify-center lg:justify-start"
+          "promos" (page.Param "ad-rail-top")
+          "width" 640
+          "height"  535
+          )
+        }}
+      {{ end }}
     </div>
 
     <div class="col-start-1 row-start-1 row-end-3">
