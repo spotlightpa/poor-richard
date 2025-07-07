@@ -110,44 +110,165 @@
 
 <h2 class="font-bold text-black">Flourish Guidelines</h2>
 
-{{ $rows := slice
-  (dict "label" "Logo image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
-  (dict "label" "Logo height:" "value" "2.3")
-  (dict "label" "Top margin:" "value" "-0.1")
-  (dict "label" "Source label:" "value" "<b>Source:</b>")
-  (dict "label" "Note label:" "value" "<b>Graphic:</b>  First Last / Spotlight PA")
+<div class="font-serif">
+  <ul class="list-disc space-y-2 pl-5 font-serif">
+    <li>
+      Copy the following values to their corresponding input to keep our styles
+      consistent across Datawrapper and Flourish.
+    </li>
+    <li>
+      You can duplicate a graphic to avoid filling these styles out every time
+      if it is of the same graphic type.
+    </li>
+    <li>
+      Copy the
+      <b
+        style="background-color: #49c171; color: white; border-radius: 4px; padding: 0.15em 0.4em;"
+        >Script (recommended)</b
+      >
+      code to embed the graphic.
+    </li>
+  </ul>
+</div>
+
+<h3 class="mt-6 font-bold text-black">→ Layout Tab</h3>
+
+<button
+  class="group w-full cursor-pointer text-left"
+  onclick="copySource(this)"
+  aria-label="Copy to clipboard"
+>
+  <div
+    class="flex items-center space-x-3 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7"
+  >
+    <label class="min-w-[5rem] cursor-pointer self-center font-semibold">
+      Main font:
+    </label>
+    <input
+      type="text"
+      value="Source Sans Pro"
+      class="pointer-events-none flex-1 overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black"
+      readonly
+    />
+    <div>
+      <span class="icon-clipboard block group-[.copied]:hidden">
+        <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+          {{ partial "helper/svg.html" "clipboard" }}
+        </svg>
+      </span>
+      <span class="icon-check hidden group-[.copied]:block">
+        <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+          {{ partial "helper/svg.html" "check" }}
+        </svg>
+      </span>
+    </div>
+  </div>
+</button>
+
+<h3 class="mt-6 font-bold text-black">→ Header Tab</h3>
+
+<ul class="list-disc">
+  <li>Turn on the <b style="color: #1864E2;">Styling</b> toggle</li>
+
+  <li>
+    Change the title <b style="color: #1864E2;">Size</b> to the second option
+  </li>
+
+  <li>
+    Use the <b style="color: #1864E2;">Text</b> section (not Subtitle) for the
+    deck
+  </li>
+  <li>Enable the <b style="color: #1864E2;">Logo/Image</b> toggle</li>
+</ul>
+
+{{ $headerRows := slice
+  (dict "label" "Image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
+  (dict "label" "Height:" "value" "2.3")
+  (dict "label" "Top:" "value" "-0.1")
 }}
 
 
-<div class="mt-8 space-y-4">
-  {{ range $rows }}
-    <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
-      <label class="whitespace-nowrap text-sm font-semibold"
-        >{{ .label }}</label
+<div class="space-y-4">
+  {{ $headerRows := slice
+    (dict "label" "Image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
+    (dict "label" "Height:" "value" "2.3")
+    (dict "label" "Top:" "value" "-0.1")
+  }}
+
+  {{ range $headerRows }}
+    <button
+      class="group w-full cursor-pointer text-left"
+      onclick="copySource(this)"
+      aria-label="Copy to clipboard"
+    >
+      <div
+        class="flex items-center space-x-3 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7"
       >
-      <input
-        type="text"
-        value="{{ .value }}"
-        class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
-        readonly
-      />
-      <button
-        class="copy-btn text-blue hover:text-blue"
-        onclick="copySource(this)"
-        aria-label="Copy to clipboard"
+        <label class="min-w-[5rem] cursor-pointer self-center font-semibold">
+          {{ .label }}
+        </label>
+        <input
+          type="text"
+          value="{{ .value }}"
+          class="pointer-events-none flex-1 overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black"
+          readonly
+        />
+        <div>
+          <span class="icon-clipboard block group-[.copied]:hidden">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "clipboard" }}
+            </svg>
+          </span>
+          <span class="icon-check hidden group-[.copied]:block">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "check" }}
+            </svg>
+          </span>
+        </div>
+      </div>
+    </button>
+  {{ end }}
+</div>
+
+<h3 class="mt-6 font-bold text-black">→ Footer Tab</h3>
+<div class="space-y-4">
+  {{ $footerRows := slice
+    (dict "label" "Source label:" "value" "<b>Source:</b>")
+    (dict "label" "Note (byline):" "value" "<b>Graphic:</b>  First Last / Spotlight PA")
+  }}
+
+  {{ range $footerRows }}
+    <button
+      class="group w-full cursor-pointer text-left"
+      onclick="copySource(this)"
+      aria-label="Copy to clipboard"
+    >
+      <div
+        class="flex items-center space-x-3 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7"
       >
-        <span class="icon-clipboard block">
-          <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-blue">
-            {{ partial "helper/svg.html" "clipboard" }}
-          </svg>
-        </span>
-        <span class="icon-check hidden">
-          <svg viewBox="0 0 1 1" class="text-green-600 h-5 w-5 fill-current">
-            {{ partial "helper/svg.html" "check" }}
-          </svg>
-        </span>
-      </button>
-    </div>
+        <label class="min-w-[5rem] cursor-pointer self-center font-semibold">
+          {{ .label }}
+        </label>
+        <input
+          type="text"
+          value="{{ .value }}"
+          class="pointer-events-none flex-1 overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black"
+          readonly
+        />
+        <div>
+          <span class="icon-clipboard block group-[.copied]:hidden">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "clipboard" }}
+            </svg>
+          </span>
+          <span class="icon-check hidden group-[.copied]:block">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "check" }}
+            </svg>
+          </span>
+        </div>
+      </div>
+    </button>
   {{ end }}
 </div>
 
@@ -387,7 +508,7 @@
   });
 
   function copySource(button) {
-    const input = button.previousElementSibling;
+    const input = button.querySelector("input");
     const clipboardIcon = button.querySelector(".icon-clipboard");
     const checkIcon = button.querySelector(".icon-check");
 
