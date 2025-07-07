@@ -14,6 +14,33 @@
 
 <div class="mt-8 grid grid-cols-1 gap-6" id="colorGrid"></div>
 
+<h2 class="font-bold text-black">Color Guidelines</h2>
+
+<div class="font-serif">
+  <ul class="list-disc space-y-2 pl-5 font-serif">
+    <li>
+      Use the main color blocks for primary data elements, such as bars in a bar
+      chart.
+    </li>
+    <li>
+      Use the gradient shades only for continuous values within a single color
+      range—choropleth maps are a common example.
+    </li>
+    <li>
+      When using gradient shades, space them evenly. For example, avoid skipping
+      one step and then suddenly skipping two.
+    </li>
+    <li>
+      You may use red and green to convey meaning such as negative and positive.
+    </li>
+    <li>Avoid using low-contrast colors like yellow for text.</li>
+    <li>
+      Use consistent colors across graphics. If a category is blue in one
+      graphic, it should be in any additional graphics.
+    </li>
+  </ul>
+</div>
+
 <hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
 
 <h1 class="mb-4 mt-12 font-bold text-black">Datawrapper</h1>
@@ -33,6 +60,40 @@
   /></noscript>
 </div>
 
+<h2 class="font-bold text-black">Datawrapper Guidelines</h2>
+
+<div class="font-serif">
+  <ul class="list-disc space-y-2 pl-5 font-serif">
+    <li>
+      Copy the
+      <b
+        style="background-color: #007da0; color: white; border-radius: 4px; padding: 0.15em 0.4em;"
+        >Responsive iframe</b
+      >
+      to embed the graphic.
+    </li>
+    <li>
+      To make your Datawrapper embed always show the latest version of the
+      chart, remove the version number from the embed URL:<br />
+      <code>https://datawrapper.dwcdn.net/1Dg8P/<b>10</b>/</code><br />
+      <b>↓</b><br />
+      <code>https://datawrapper.dwcdn.net/1Dg8P/</code>
+    </li>
+    <li>
+      Visit the
+      <a
+        href="https://academy.datawrapper.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-600 hover:text-blue-800 underline"
+      >
+        Datawrapper Academy</a
+      >
+      for additional tips for each graphic type.
+    </li>
+  </ul>
+</div>
+
 <hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
 
 <h1 class="mb-4 mt-12 font-bold text-black">Flourish</h1>
@@ -46,6 +107,8 @@
       alt="Sample map visualization"
   /></noscript>
 </div>
+
+<h2 class="font-bold text-black">Flourish Guidelines</h2>
 
 {{ $rows := slice
   (dict "label" "Logo image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
