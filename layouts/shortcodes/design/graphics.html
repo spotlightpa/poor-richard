@@ -268,12 +268,13 @@
 
       const label = document.createElement("span");
       label.className =
-        "color-label text-white text-base font-bold tracking-wide transition-opacity group-hover:opacity-0";
+        "color-label text-white text-lg font-bold tracking-wide transition-opacity group-hover:opacity-0";
+
       label.textContent = color.hex;
 
       const overlay = document.createElement("span");
       overlay.className =
-        "copy-overlay absolute inset-0 flex items-center justify-center text-white text-sm font-semibold bg-black/60 rounded-t-md opacity-0 transition-opacity group-hover:opacity-100";
+        "copy-overlay absolute inset-0 flex items-center justify-center text-white text-lg font-semibold bg-black/60 rounded-t-md opacity-0 transition-opacity group-hover:opacity-100";
 
       overlay.textContent = "Click to copy";
 
