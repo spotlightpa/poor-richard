@@ -1,18 +1,14 @@
 <head>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
 </head>
 
-<h2 class="mb-4 !text-4xl font-bold text-black">Colors</h2>
+<h1 class="mb-4 font-bold text-black">Colors</h1>
 
 <div class="mb-4 flex items-center space-x-4">
   <span class="text-2xl font-bold">Hex</span>
   <label class="relative inline-flex cursor-pointer items-center">
     <input type="checkbox" id="colorToggle" class="peer sr-only" />
-    <div class="h-6 w-11 rounded-full bg-blue transition-colors"></div>
+    <div class="h-6 w-11 rounded-full bg-blue"></div>
     <div
       class="absolute left-1 top-1 h-4 w-4 rounded-full bg-white transition-transform peer-checked:translate-x-5"
     ></div>
@@ -24,7 +20,7 @@
 
 <hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
 
-<h2 class="mb-4 mt-12 !text-4xl font-bold text-black">Datawrapper</h2>
+<h1 class="mb-4 mt-12 font-bold text-black">Datawrapper</h1>
 
 <div style="min-height:449px" id="datawrapper-vis-1Dg8P">
   <script
@@ -35,13 +31,15 @@
     data-target="#datawrapper-vis-1Dg8P"
   ></script>
   <noscript
-    ><img src="https://datawrapper.dwcdn.net/1Dg8P/full.png" alt=""
+    ><img
+      src="https://datawrapper.dwcdn.net/1Dg8P/full.png"
+      alt="Sample area graph"
   /></noscript>
 </div>
 
 <hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
 
-<h2 class="mb-4 mt-12 !text-4xl font-bold text-black">Flourish</h2>
+<h1 class="mb-4 mt-12 font-bold text-black">Flourish</h1>
 
 <div class="flourish-embed flourish-map" data-src="visualisation/24021522">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -49,89 +47,60 @@
     ><img
       src="https://public.flourish.studio/visualisation/24021522/thumbnail"
       width="100%"
-      alt="map visualization"
+      alt="Sample map visualization"
   /></noscript>
 </div>
 
-<div class="mt-8 space-y-4" id="source-boxes">
-  <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
-    <label class="whitespace-nowrap text-sm font-semibold">Logo image:</label>
-    <input
-      type="text"
-      value="https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png"
-      class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
-      readonly
-    />
-    <button
-      class="copy-btn text-blue hover:text-blue"
-      onclick="copySource(this)"
-    >
-      <i class="fas fa-clipboard"></i>
-    </button>
-  </div>
+{{ $rows := slice
+  (dict "label" "Logo image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
+  (dict "label" "Logo height:" "value" "2.3")
+  (dict "label" "Top margin:" "value" "-0.1")
+  (dict "label" "Source label:" "value" "<b>Source:</b>")
+  (dict "label" "Note label:" "value" "<b>Graphic:</b>  First Last / Spotlight PA")
+}}
 
-  <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
-    <label class="whitespace-nowrap text-sm font-semibold">Logo height:</label>
-    <input
-      type="text"
-      value="2.3"
-      class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
-      readonly
-    />
-    <button
-      class="copy-btn text-blue hover:text-blue"
-      onclick="copySource(this)"
-    >
-      <i class="fas fa-clipboard"></i>
-    </button>
-  </div>
+<div class="mt-8 space-y-4">
+  {{ range $rows }}
+    <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
+      <label class="whitespace-nowrap text-sm font-semibold"
+        >{{ .label }}</label
+      >
+      <input
+        type="text"
+        value="{{ .value }}"
+        class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
+        readonly
+      />
+      <button
+        class="copy-btn text-blue hover:text-blue"
+        onclick="copySource(this)"
+        aria-label="Copy to clipboard"
+      >
+        <span class="icon-clipboard block">
+          <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-blue">
+            {{ partial "helper/svg.html" "clipboard" }}
+          </svg>
+        </span>
+        <span class="icon-check hidden">
+          <svg viewBox="0 0 1 1" class="text-green-600 h-5 w-5 fill-current">
+            {{ partial "helper/svg.html" "check" }}
+          </svg>
+        </span>
+      </button>
+    </div>
+  {{ end }}
+</div>
 
-  <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
-    <label class="whitespace-nowrap text-sm font-semibold">Top margin:</label>
-    <input
-      type="text"
-      value="-0.1"
-      class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
-      readonly
-    />
-    <button
-      class="copy-btn text-blue hover:text-blue"
-      onclick="copySource(this)"
-    >
-      <i class="fas fa-clipboard"></i>
-    </button>
+<div class="hidden">
+  <div id="icon-clipboard">
+    <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-white">
+      {{ partial "helper/svg.html" "clipboard" }}
+    </svg>
   </div>
-
-  <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
-    <label class="whitespace-nowrap text-sm font-semibold">Source label:</label>
-    <input
-      type="text"
-      value="<b>Source:</b>"
-      class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
-      readonly
-    />
-    <button
-      class="copy-btn text-blue hover:text-blue"
-      onclick="copySource(this)"
-    >
-      <i class="fas fa-clipboard"></i>
-    </button>
-  </div>
-
-  <div class="flex items-center space-x-4 rounded bg-white p-4 shadow">
-    <label class="whitespace-nowrap text-sm font-semibold">Note label:</label>
-    <input
-      type="text"
-      value="<b>Graphic:</b>  First Last / Spotlight PA"
-      class="border-gray font-mono bg-gray flex-1 rounded border px-2 py-1 text-sm"
-      readonly
-    />
-    <button
-      class="copy-btn text-blue hover:text-blue"
-      onclick="copySource(this)"
-    >
-      <i class="fas fa-clipboard"></i>
-    </button>
+  <div id="icon-check">
+    <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-white">
+      {{ partial "helper/svg.html" "check" }}
+    </svg>
   </div>
 </div>
 
@@ -251,6 +220,9 @@
   }
 
   function renderColorBlocks() {
+    const clipboardSVG = document.getElementById("icon-clipboard").innerHTML;
+    const checkSVG = document.getElementById("icon-check").innerHTML;
+
     const grid = document.getElementById("colorGrid");
     grid.innerHTML = "";
 
@@ -293,54 +265,38 @@
         shadeDiv.classList.add("flex-1");
 
         shadeDiv.style.backgroundColor = shade;
+
         const iconWrapper = document.createElement("div");
+        iconWrapper.innerHTML = clipboardSVG;
         iconWrapper.className = `
-              absolute top-1/2 left-1/2 
-              transform -translate-x-1/2 -translate-y-1/2 
-              bg-black/60 
-              rounded 
-              transition-opacity 
-              opacity-0 
-              group-hover:opacity-100 
-              pointer-events-none 
-              cursor-none 
-              px-2 py-1
-            `
+          icon-container
+          absolute top-1/2 left-1/2 
+          transform -translate-x-1/2 -translate-y-1/2 
+          opacity-0 group-hover:opacity-100 
+          transition-opacity 
+          pointer-events-none 
+          drop-shadow-[0_0_2px_black]
+        `
           .trim()
           .replace(/\s+/g, " ");
 
-        const icon = document.createElement("i");
-        icon.className = `
-              fas fa-clipboard 
-              text-white 
-              text-xl 
-              absolute 
-              top-1/2 left-1/2 
-              transform -translate-x-1/2 -translate-y-1/2 
-              opacity-0 
-              group-hover:opacity-100 
-              transition-opacity 
-              pointer-events-none 
-              drop-shadow-[0_0_2px_black] 
-              cursor-none
-            `
-          .trim()
-          .replace(/\s+/g, " ");
-
-        shadeDiv.appendChild(icon);
+        const clipboardIcon = iconWrapper.firstElementChild;
+        shadeDiv.appendChild(iconWrapper);
 
         shadeDiv.onclick = () => {
           const useHex = !document.getElementById("colorToggle").checked;
           const rgb = getComputedStyle(shadeDiv).backgroundColor;
           const textToCopy = useHex ? rgbToHex(rgb) : rgb;
 
+          const checkWrapper = document.createElement("div");
+          checkWrapper.innerHTML = checkSVG;
+          checkWrapper.className = iconWrapper.className;
+          const checkIcon = checkWrapper.firstElementChild;
+
           navigator.clipboard.writeText(textToCopy).then(() => {
-            icon.className = icon.className.replace("fa-clipboard", "fa-check");
+            shadeDiv.replaceChild(checkWrapper, iconWrapper);
             setTimeout(() => {
-              icon.className = icon.className.replace(
-                "fa-check",
-                "fa-clipboard",
-              );
+              shadeDiv.replaceChild(iconWrapper, checkWrapper);
             }, 1000);
           });
         };
@@ -363,11 +319,16 @@
 
   function copySource(button) {
     const input = button.previousElementSibling;
+    const clipboardIcon = button.querySelector(".icon-clipboard");
+    const checkIcon = button.querySelector(".icon-check");
+
     navigator.clipboard.writeText(input.value).then(() => {
-      const icon = button.querySelector("i");
-      icon.classList.replace("fa-clipboard", "fa-check");
+      clipboardIcon.classList.add("hidden");
+      checkIcon.classList.remove("hidden");
+
       setTimeout(() => {
-        icon.classList.replace("fa-check", "fa-clipboard");
+        clipboardIcon.classList.remove("hidden");
+        checkIcon.classList.add("hidden");
       }, 1000);
     });
   }
