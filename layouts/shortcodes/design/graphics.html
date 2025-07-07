@@ -139,18 +139,18 @@
   aria-label="Copy to clipboard"
 >
   <div
-    class="flex items-center space-x-3 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7"
+    class="flex flex-wrap items-center gap-x-3 gap-y-2 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7 sm:flex-nowrap"
   >
-    <label class="min-w-[5rem] cursor-pointer self-center font-semibold">
+    <label class="min-w-[100px] cursor-pointer self-center font-semibold">
       Main font:
     </label>
     <input
       type="text"
       value="Source Sans Pro"
-      class="pointer-events-none flex-1 overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black"
+      class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
       readonly
     />
-    <div>
+    <div class="hidden sm:block">
       <span class="icon-clipboard block group-[.copied]:hidden">
         <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
           {{ partial "helper/svg.html" "clipboard" }}
@@ -188,13 +188,7 @@
 }}
 
 
-<div class="space-y-4">
-  {{ $headerRows := slice
-    (dict "label" "Image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
-    (dict "label" "Height:" "value" "2.3")
-    (dict "label" "Top:" "value" "-0.1")
-  }}
-
+<div class="mt-4 space-y-4">
   {{ range $headerRows }}
     <button
       class="group w-full cursor-pointer text-left"
@@ -202,18 +196,18 @@
       aria-label="Copy to clipboard"
     >
       <div
-        class="flex items-center space-x-3 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7"
+        class="flex flex-wrap items-center gap-x-3 gap-y-2 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7 sm:flex-nowrap"
       >
-        <label class="min-w-[5rem] cursor-pointer self-center font-semibold">
+        <label class="min-w-[100px] cursor-pointer self-center font-semibold">
           {{ .label }}
         </label>
         <input
           type="text"
           value="{{ .value }}"
-          class="pointer-events-none flex-1 overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black"
+          class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
           readonly
         />
-        <div>
+        <div class="hidden sm:block">
           <span class="icon-clipboard block group-[.copied]:hidden">
             <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
               {{ partial "helper/svg.html" "clipboard" }}
@@ -231,12 +225,14 @@
 </div>
 
 <h3 class="mt-6 font-bold text-black">→ Footer Tab</h3>
-<div class="space-y-4">
-  {{ $footerRows := slice
-    (dict "label" "Source label:" "value" "<b>Source:</b>")
-    (dict "label" "Note (byline):" "value" "<b>Graphic:</b>  First Last / Spotlight PA")
-  }}
 
+{{ $footerRows := slice
+  (dict "label" "Source label:" "value" "<b>Source:</b>")
+  (dict "label" "Note (byline):" "value" "<b>Graphic:</b>  First Last / Spotlight PA")
+}}
+
+
+<div class="mt-4 space-y-4">
   {{ range $footerRows }}
     <button
       class="group w-full cursor-pointer text-left"
@@ -244,18 +240,18 @@
       aria-label="Copy to clipboard"
     >
       <div
-        class="flex items-center space-x-3 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7"
+        class="flex flex-wrap items-center gap-x-3 gap-y-2 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7 sm:flex-nowrap"
       >
-        <label class="min-w-[5rem] cursor-pointer self-center font-semibold">
+        <label class="min-w-[100px] cursor-pointer self-center font-semibold">
           {{ .label }}
         </label>
         <input
           type="text"
           value="{{ .value }}"
-          class="pointer-events-none flex-1 overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black"
+          class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
           readonly
         />
-        <div>
+        <div class="hidden sm:block">
           <span class="icon-clipboard block group-[.copied]:hidden">
             <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
               {{ partial "helper/svg.html" "clipboard" }}
