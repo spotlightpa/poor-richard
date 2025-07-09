@@ -18,7 +18,7 @@ slug = "pennsylvania-news-quiz-week-of-june-30-2025"
 suppress-date = false
 title = "Great PA News Quiz: Trump’s big budget bill, Philly on strike, and a ‘blue law’ repeal"
 title-tag = "PA News Quiz: Trump’s ‘big, beautiful bill,’ Philly on strike"
-topics = ["News Quiz", "Games"]
+topics = ["News Quiz"]
 +++
 
 In this week’s news quiz: A backer of Trump’s budget bill, a city worker strike in Philadelphia, and one of Pennsylvania’s last “blue laws” moves closer to repeal.
