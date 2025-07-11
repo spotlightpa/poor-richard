@@ -2,7 +2,9 @@
   "edCallout": [],
   "edImpact": [],
   "edInvestigations": [],
-  "featuredStories": [],
+  "featuredStories": [
+    "content/berks/2025-07-11-SPLPAGODA0708.md"
+  ],
   "subfeatures": [
     "content/berks/2025-06-25-SPLAUCTION0625.md",
     "content/berks/2025-01-20-SPLALBRIGHT1224.md"
