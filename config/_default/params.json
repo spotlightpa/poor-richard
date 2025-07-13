@@ -9,12 +9,12 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m6/8etk/site-toppertracker-1-.gif"
+        "https://files.data.spotlightpa.org/uploads/01kv/zqz8/newsmatch-2023-tracker-banners-37-.png"
       ]
     }
   ],
@@ -23,12 +23,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m6/8etk/newsmatch-2024-rectangles-1024-512-px-1-.gif"
+        "https://files.data.spotlightpa.org/uploads/01kv/zr2e/newsmatch-2024-rectangles-1024-512-px-7-.png"
       ]
     }
   ],
@@ -50,7 +50,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured-ad",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+        "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
       ]
     }
   ],
@@ -73,24 +73,24 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-sticky",
+      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's independent reporting this Independence Day!",
+      "description": "Support unmatched election and investigative reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+        "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
       ]
     }
   ],
@@ -109,12 +109,12 @@
   "featured-promo-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=via-longform-template",
   "featured-promo-width": 1024,
   "newsletter-active": false,
-  "sticky-active": true,
-  "sticky-image-description": "Support Spotlight PA's independent reporting this Independence Day!",
+  "sticky-active": false,
+  "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01m6/8etj/newsmatch-2024-rectangles-1024-512-px-300-x-250-px-.gif"
+    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
   ],
-  "sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sticky-popup",
+  "sticky-link": "/newsletters",
   "support-active": true,
   "support-bg-color": "#ffe0e0",
   "support-button-bg-color": "#ff0000",
@@ -123,7 +123,7 @@
   "support-hed": "Before you go, I have a request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's reporting is more important than ever, and why we need you now.\n\nAnd we're \u003cstrong\u003eseeking to raise $5K this Independence Day\u003c/strong\u003e in support of journalism in Pennsylvania that answers to no one but you.\n\nWe're independent, with no corporate owner or profit motives. We’re nonpartisan, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize investigative and public-service journalism that gets results.\n\nIf you're looking for a meaningful way to make a difference in these uncertain times, I can't think of a better investment than Spotlight PA's truthful, accurate, trusted reporting for Pennsylvania — journalism that gets real results.\n\n\u003cstrong\u003eYour tax-deductible support of any amount will ensure our vital work can continue.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's reporting is more important than ever, and why we need you now.\n\nWe're independent, with no corporate owner or profit motives. We’re nonpartisan, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize investigative and public-service journalism that gets results.\n\nIf you're looking for a meaningful way to make a difference in these uncertain times, I can't think of a better investment than Spotlight PA's truthful, accurate, trusted reporting for Pennsylvania — journalism that gets real results.\n\n\u003cstrong\u003eYour tax-deductible support of any amount will ensure our vital work can continue.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "We only have 6 days left to raise $12,000 to ensure our unmatched nonpartisan, nonprofit reporting can continue. Give to Spotlight PA today \u0026 get it DOUBLED »",
