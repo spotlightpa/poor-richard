@@ -1,6 +1,7 @@
 +++
 authors = ["Amanda Fries"]
 byline = "Amanda Fries of Spotlight PA"
+description = "Taxes increased in most Berks County school districts "
 draft = false
 feed-exclude = false
 image = "2025/07/01m7-2v4v-azda-27x3.jpeg"
@@ -14,7 +15,7 @@ published = 2025-07-14T07:55:00-04:00
 slug = "here-are-berks-county-school-property-tax-changes"
 suppress-date = false
 title = "Here are Berks County school property tax changes"
-title-tag = "SEO Description"
+title-tag = "Most Berks County school districts increase property taxes"
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
