@@ -59,7 +59,7 @@ link = "https://www.spotlightpa.org/newsletters/papost"
 
 [[explore]]
 newsletter = "Talk of the Town"
-schedule = "Every Thursday"
+schedule = "Each weekday"
 description = "The news that matters to your community — from the PA Wilds to Happy Valley."
 image = "2025/04/01m0-131a-ph40-jg94.png"
 width = 1200
