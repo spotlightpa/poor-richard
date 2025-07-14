@@ -7,6 +7,7 @@ feed-exclude = false
 image = "2025/07/01m7-2v4v-azda-27x3.jpeg"
 image-credit = "Susan Angstadt / For Spotlight PA"
 image-description = "A sign for the borough of Kutztown that says ‘ a most agreeable town’ in faded letters"
+image-gravity = "ce"
 internal-id = "SPLSCHOOL BUDGETS0725"
 kicker = "Education"
 modal-exclude = false
