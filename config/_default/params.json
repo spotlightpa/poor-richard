@@ -45,12 +45,12 @@
   "ad-hp-breaker-mobile-width": 0,
   "ad-hp-featured": [
     {
-      "description": "Support unmatched election and investigative reporting for Pennsylvania.",
+      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured-ad",
+      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
+        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
       ]
     }
   ],
@@ -85,12 +85,12 @@
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support unmatched election and investigative reporting for Pennsylvania.",
+      "description": "Sign up for Talk of the Town, a free daily newsletter from Spotlight PA State College",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=sidebar-top",
+      "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01kv/znwm/newsmatch-2023-squares-4-.gif"
+        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
       ]
     }
   ],
