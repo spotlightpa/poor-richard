@@ -1,12 +1,13 @@
 +++
 authors = ["Amanda Fries"]
+blurb = "Taxes increased in most Berks County school districts"
 byline = "Amanda Fries of Spotlight PA"
-description = "Taxes increased in most Berks County school districts "
+description = "Taxes increased in most Berks County school districts"
 draft = false
 feed-exclude = false
-image = "2025/07/01m7-2v4v-azda-27x3.jpeg"
-image-credit = "Susan Angstadt / For Spotlight PA"
-image-description = "A sign for the borough of Kutztown that says ‘ a most agreeable town’ in faded letters"
+image = "2024/01/01jv-055n-5p3p-2335.jpeg"
+image-credit = "Nate Smallwood / For Spotlight PA"
+image-description = "A row of lockers at Bennetts Valley Elementary School in Weedville, Pennsylvania on April 5, 2023."
 image-gravity = "ce"
 internal-id = "SPLSCHOOL BUDGETS0725"
 kicker = "Education"
@@ -17,6 +18,7 @@ slug = "here-are-berks-county-school-property-tax-changes"
 suppress-date = false
 title = "Here are Berks County school property tax changes"
 title-tag = "Most Berks County school districts increase property taxes"
+topics = ["Education"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
