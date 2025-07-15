@@ -30,6 +30,8 @@ State Rep. Stephenie Scialabba (R., Butler), chair of the state’s Artificial I
 
 “I frankly don&#39;t think that we are moving quickly enough,” she said. “I think that there&#39;s initiative there and there&#39;s interest. I believe, though, that we&#39;re going to need to really keep pushing. If we let up on the gas, even for a minute, we&#39;re going to lose.”
 
+<strong><em>&gt;&gt;READ MORE: </em></strong><a href="https://www.spotlightpa.org/news/2025/06/amazon-data-centers-pennsylvania-tax-break-energy-grid/"><strong><em>The unknown costs of Amazon’s $20B promise to build 2 data centers in Pennsylvania</em></strong></a><strong><em></em></strong>
+
 The promise and possibility of animating regions with a new industry is part of an AI and energy summit<a href="https://www.mccormick.senate.gov/energy-summit/"> Tuesday</a> at Carnegie Mellon University, where President Donald Trump and U.S. Sen. Dave McCormick announced<a href="https://technical.ly/civic-news/trump-mccormick-pennsylvania-90b-ai-energy-investment/"> $90 billion</a> in AI, energy, and data center investments.
 
 Data centers have been around for years, but artificial intelligence is driving demand for more centers across the country.
