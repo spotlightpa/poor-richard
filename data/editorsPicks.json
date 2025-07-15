@@ -3,17 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-07-14-SPLHHWVEHICLE0725.md"
+    "content/news/2025-07-15-APSECRETSERVICE0725.md"
   ],
   "subfeatures": [
-    "content/news/2025-06-27-SPLBUDDEADLINE0625.md",
-    "content/news/2025-06-30-APBUDSOON0625.md",
-    "content/news/2025-07-09-SPLSALESTAX0625.md",
-    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md"
+    "content/news/2024-10-18-APSSREPORT24.md",
+    "content/news/2024-08-20-SPLSHOOTFAIL0824.md",
+    "content/news/2024-08-08-SPLSHOTCAM0824.md"
   ],
   "topSlots": [
+    "content/news/2025-07-14-SPLHHWVEHICLE0725.md",
     "content/news/2025-07-11-SPLS4S0725.md",
-    "content/statecollege/2025-07-10-SPLBBBRURAL0725.md",
-    "content/news/2025-07-09-SPLSALESTAX0625.md"
+    "content/statecollege/2025-07-10-SPLBBBRURAL0725.md"
   ]
 }
