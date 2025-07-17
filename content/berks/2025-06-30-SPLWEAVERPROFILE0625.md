@@ -1,6 +1,6 @@
 +++
 authors = ["Lisa Scheid"]
-blurb = "Jan Weaver is a community safety officer for the Borough of Kutztown"
+blurb = "Jan Weaver is a community safety officer for the Borough of Kutztown."
 byline = "Lisa Scheid"
 description = "Jan Weaver is a community safety officer for the Borough of Kutztown"
 draft = false
@@ -10,7 +10,7 @@ image-caption = "Kutztown Borough crossing guard Jan Weaver hugs two children"
 image-credit = "Tiffani Schlegel"
 image-description = "Crossing guard Jan Weaver hugs two children"
 internal-id = "SPLWEAVERPROFILE0625"
-kicker = "Community Spotlight"
+kicker = "Community Profile"
 modal-exclude = false
 pinned = false
 published = 2025-06-30T16:33:54.712-04:00
