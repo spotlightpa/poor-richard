@@ -1,5 +1,6 @@
 +++
 authors = ["Lisa Scheid"]
+blurb = "Garrett Hyneman is an 18-year-old environment advocate and Eagle Scout."
 byline = "Lisa Scheid of Spotlight PA"
 description = "Garrett Hyneman is an environmental advocate"
 draft = false
@@ -8,6 +9,7 @@ image = "2025/07/01m6-x6f5-9d75-jnce.jpeg"
 image-caption = "Garrett Hyneman stands at a wooden bridge near Nolde Forest in Cumru Township."
 image-credit = "Laura Hill"
 image-description = "Young man at a bridge near the woods"
+image-gravity = "ce"
 internal-id = "SPLHYNEMANPROFILE0725"
 kicker = "Community profile"
 modal-exclude = false
