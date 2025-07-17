@@ -3,13 +3,14 @@ authors = ["Lisa Scheid"]
 blurb = "This week's inaugural Community Spotlight honoree is Florence “Flo” Pagan, a kitchen manager at a shelter that's been helping Reading's homeless population since 1984."
 byline = "Lisa Scheid"
 description = "Florence “Flo” Pagan is a kitchen manager at a shelter that's been helping Reading's homeless population since 1984."
+draft = false
 feed-exclude = false
 image = "2025/06/01m4-6k5s-n4fj-twkh.jpeg"
 image-caption = "Florence Pagan is cook and kitchen manager at Opportunity House in Reading."
 image-credit = "Photo submitted"
 image-description = "Florence Pagan is cook and kitchen manager at Opportunity House in Reading."
 internal-id = "SPLBERKSHELPER0625"
-kicker = "Berks"
+kicker = "Community Profile"
 modal-exclude = false
 pinned = false
 published = 2025-06-09T14:45:00-04:00
@@ -17,7 +18,7 @@ slug = "opportunity-house-reading-berks-pennsylvania-homeless-shelter"
 suppress-date = false
 title = "Meet a Berks County helper who’s cooking for a cause and feeding the homeless"
 title-tag = "Cooking for a cause in Berks County"
-topics = ["Berks County"]
+topics = ["Community Profile"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
