@@ -3,13 +3,14 @@ authors = ["Lisa Scheid"]
 blurb = "This week's Community Spotlight honoree is Jen Barkman, a Realtor helping to address period poverty in Berks County."
 byline = "Lisa Scheid"
 description = "Addressing period poverty in Berks"
+draft = false
 feed-exclude = false
 image = "2025/06/01m5-3pg8-yx0f-j9fm.jpeg"
 image-caption = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive addressing period poverty."
 image-credit = "Photo submitted"
 image-description = "Jen Barkman volunteers as campaign coordinator for the Help A Girl Out drive addressing period poverty."
 internal-id = "SPLBARKMANPROFILE0625"
-kicker = "Berks"
+kicker = "Community Profile"
 modal-exclude = false
 pinned = false
 published = 2025-06-17T15:07:49.376-04:00
@@ -17,7 +18,7 @@ slug = "period-poverty-berks-pennsylvania"
 suppress-date = false
 title = "Meet a Berks County health advocate helping girls in the community"
 title-tag = "Addressing period poverty in Berks"
-topics = ["Berks County"]
+topics = ["Community Profile"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
