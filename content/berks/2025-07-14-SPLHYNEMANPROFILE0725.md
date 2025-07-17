@@ -19,6 +19,7 @@ slug = "meet-young-berks-county-environmental-advocate"
 suppress-date = false
 title = "Meet a young Berks County environmental advocate"
 title-tag = "Garrett Hyneman saves trees and fights single-use plastics"
+topics = ["Community Profile"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
