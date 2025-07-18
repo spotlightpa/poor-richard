@@ -3,8 +3,10 @@ arc-id = "NNZRJ2WQPNF3HPRNIWSJTPKNM4"
 blurb = "Spotlight PA's panelists discussed Pennsylvania's patchwork system of local governments."
 byline = "Spotlight PA Staff"
 description = "Spotlight PA's panelists discussed Pennsylvania's patchwork system of local governments."
+draft = false
 event-date = 2023-01-26T18:00:00-05:00
 event-title = "Broken Boroughs"
+feed-exclude = false
 image = "external/jqkqx95mc5kkb49w25mtfnsdn4.jpeg"
 image-credit = "Min Xian / Spotlight PA"
 image-description = "Tioga elected officials’ decision to hire Timothy Loehmann as the borough’s sole police officer followed a long line of troubling actions taken by its leaders."
@@ -13,6 +15,7 @@ internal-id = "SPLBOREVENT"
 kicker = "Events"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2023-01-05T15:30:00-05:00
 slug = "tioga-tamir-rice-pennsylvania-local-accountability-event"
 suppress-date = false
@@ -43,6 +46,6 @@ Our panelists were:
 
 - <b>David Rusk</b>, senior fellow, D.C. Policy Center
 
-<iframe src="https://player.vimeo.com/video/793387652?h=3629934556" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SuBiTrIts-Q?si=GtLxkaS4QcrvdYKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
