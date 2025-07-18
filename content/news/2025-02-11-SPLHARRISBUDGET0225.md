@@ -2,6 +2,7 @@
 blurb = "Rep. Jordan Harris joined us on Feb. 20 to discuss Gov. Shapiro’s latest Pa. budget proposal and what happens next on weed, transit, education, and more."
 byline = "Spotlight PA Staff"
 description = "On Feb. 20, Rep. Jordan Harris joined us to talk PA’s latest budget proposal and what happens next on weed, education, and more."
+draft = false
 event-date = 2025-02-20T18:00:00-05:00
 event-title = "BUDGET QUESTIONS: Ask a top PA Democrat about Shapiro’s latest pitch"
 event-url = "https://zoom.us/webinar/register/WN_iTNCxmiESO-veclcuvwVpQ"
@@ -32,7 +33,7 @@ Lawmakers would need to use the last of Pennsylvania’s $3 billion surplus plus
 
 On Feb. 20, Spotlight PA’s Katie Meyer hosted a live conversation with state Rep. Jordan Harris (D., Philadelphia), who leads the House’s powerful Appropriations Committee, to unpack Shapiro’s proposals, discuss the commonwealth’s financial picture, and much more. You can watch the event below.
 
-{{<vimeo id="1059019865" >}}
+{{<youtube id="eNRPivGy0Yw" loading="lazy">}}
 
 <strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</strong> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
