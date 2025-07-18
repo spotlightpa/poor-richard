@@ -3,9 +3,11 @@ arc-id = "DKSQZSLFGVDY3EAZVXUUDIP67I"
 blurb = "Spotlight PA held a discussion on who won, what they promised on the campaign trail, and how those plans might get implemented once they are in office."
 byline = "Spotlight PA Staff"
 description = "Panelists discussed Gov.-elect Josh Shapiro, loser Doug Mastriano, control of the legislature, and what's next after the 2022 Pa. election."
+draft = false
 event-date = 2022-11-17T18:00:00-05:00
 event-title = "What's Next in Pennsylvania Politics After the 2022 Midterm Election?"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_SXHjTc4XTGWEQE3_FbLx3A"
+feed-exclude = false
 image = "external/5nkd2ahgmhkjqey197v3dghkwm.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A voter holds an “I Voted” sticker on Election Day 2022 in Pennsylvania."
@@ -14,6 +16,7 @@ internal-id = "SPLPOSTELEXEVENT22"
 kicker = "Events"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-11-11T12:05:11.849-05:00
 slug = "pa-election-2022-results-josh-shapiro-democrats-legislature-event"
 suppress-date = false
@@ -38,6 +41,6 @@ Watch the conversation below.
 
 - <b>Katie Meyer</b>, government editor/reporter for Spotlight PA
 
-<iframe src="https://player.vimeo.com/video/772490826?h=4cd8a348ca" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7l1NlAZTbMQ?si=qPvaIJ_5WZCsgSts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone. Right now all gifts will be matched dollar-for-dollar: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
