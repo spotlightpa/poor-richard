@@ -2,15 +2,18 @@
 blurb = "Panelists discuss mental health in Pennsylvania jails and how Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism reported one woman’s fight for freedom."
 byline = "Spotlight PA Staff"
 description = "Panelists discuss mental health in PA jails and how Spotlight PA and PINJ reported one woman’s fight for freedom."
+draft = false
 event-date = 2023-09-14T18:00:00-04:00
 event-title = "A Criminal Solution"
 event-url = "https://www.eventbrite.com/e/a-criminal-solution-a-live-panel-on-incarceration-and-mental-health-in-pa-tickets-706272950407?aff=oddtdtcreator"
+feed-exclude = false
 image = "external/39rq978hghymsw37kcxqppqqhr.jpeg"
 image-credit = "The Allegheny County Jail, where people deemed incompetent to stand trial wait for a spot in a state hospital."
 image-description = "Nate Smallwood / For Spotlight PA and PINJ"
 internal-id = "SPLPOIPARKEV"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-08-25T16:17:36.607-04:00
 series = ["A Criminal Solution"]
 slug = "pennsylvania-mental-health-jails-point-park-event"
@@ -36,7 +39,7 @@ Pennsylvania’s Mental Health Procedures Act of 1976 was designed to protect pe
 
 - <strong>Nev Jones</strong>, mental health researcher and professor, University of Pittsburgh
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/864936837?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="A Criminal Solution"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{<youtube id="fXDqxy0HXOU" loading="lazy">}}
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
 
