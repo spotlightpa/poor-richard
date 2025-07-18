@@ -3,9 +3,11 @@ arc-id = "6O42LXR2VBEW7PZD7BMMPP2KKA"
 blurb = "Election experts discuss Pennsylvania's patchwork voting policies and possible solutions."
 byline = "Spotlight PA Staff"
 description = "Election experts discuss Pennsylvania's patchwork voting policies and possible solutions."
+draft = false
 event-date = 2023-03-30T18:00:00-04:00
 event-title = "UNEQUAL ELECTIONS"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_Aco42gJ0Q0yAVEDbJeC_fw "
+feed-exclude = false
 image = "external/f98jyaza883casbzytgtmqpe6c.jpeg"
 image-credit = "Leise Hook / For Spotlight PA"
 image-description = "Pennsylvania voters did not have equal opportunities to cast or correct their ballots during the November 2022 election."
@@ -13,6 +15,7 @@ internal-budget = "You’re invited! A free panel Pa.’s unequal voting rules a
 internal-id = "SPLVOTPAN"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-03-10T14:18:19.112-05:00
 slug = "pa-elections-mail-ballot-drop-box-unequal-policies-event"
 suppress-date = false
@@ -46,7 +49,6 @@ Our panelists were:
 
 - <b>Susan Gobreski,</b> chair of Government Policy Committee, League of Women Voters of Pennsylvania
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/813579359?h=8198969ff3&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3nzdKKtn3Qs?si=ML_NafoFSC69tO6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p></p>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
