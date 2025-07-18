@@ -2,15 +2,18 @@
 blurb = "A panel of experts discussed local government oversight issues in PA and how residents can address them."
 byline = "Spotlight PA Staff"
 description = "A panel of experts discussed local government oversight issues in PA and how residents can address them."
+draft = false
 event-date = 2023-08-03T18:00:00-04:00
 event-title = "How Local Government Works"
 event-url = "https://zoom.us/webinar/register/WN_AAwGvhPYQH609cKLEsOC_w"
+feed-exclude = false
 image = "external/f75jebrwjgnx8tzx76k90f84s4.jpeg"
 image-credit = "Min Xian / Spotlight PA"
 image-description = "The municipal building of the City of DuBois, Pennsylvania."
 internal-id = "SPLGUVPROMO"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-07-25T13:48:51.29-04:00
 slug = "pennsylvania-local-government-accountability-explained-event"
 suppress-date = false
@@ -37,9 +40,9 @@ Our <a href="https://www.spotlightpa.org/news/2023/01/tioga-tamir-rice-pennsylva
 
 - <strong>Alice Elia, </strong>council member, Borough of Chambersburg<em></em>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/851677485?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How Local Government Works"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{<youtube id="p0p0GBMcSzc" loading="lazy">}}
 
 <a href="https://www.spotlightpa.org/topics/how-local-government-works/"><em>How Local Government Works</em></a><em> is a series of articles and events that focuses on issues and trends in Pennsylvania local governments and provides tools for readers to hold their local officials accountable.</em>
 
-<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
