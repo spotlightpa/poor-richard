@@ -2,9 +2,11 @@
 blurb = "Spotlight PA held a free event on Pa.’s 2024 primary candidates for treasurer, attorney general, and auditor general."
 byline = "Spotlight PA Staff"
 description = "Watch a video guide to Pennsylvania’s 2024 primary candidates for treasurer, attorney general, and auditor general."
+draft = false
 event-date = 2024-04-11T18:00:00-04:00
 event-title = "ROW RACES"
 event-url = "https://zoom.us/webinar/register/WN_85xV9pUUTIyJ2cR5Unf1CQ"
+feed-exclude = false
 image = "2022/11/01hp-mzh6-xtqe-9zax.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 image-description = "A voting sign sits Nov. 8, 2022, outside Allentown Public Library in Allentown, Lehigh County, Pennsylvania."
@@ -28,6 +30,7 @@ The winners will receive their party’s nomination and face off in the Nov. 5 g
 
 To help you cast an informed vote, Spotlight PA’s Capitol reporter Stephen Caruso hosted an event on the candidates’ backgrounds and their plans for the offices. Watch it below.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/933728619?h=e200193e43&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{<youtube id="DF1BDJgLD_A" loading="lazy">}}
 
-<strong>» <em>Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+<strong>» <em>Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+
