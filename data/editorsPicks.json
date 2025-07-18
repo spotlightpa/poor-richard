@@ -3,15 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-07-17-SPLFOSLABOR0725.md"
+    "content/statecollege/2025-07-18-SPLSUNHUNT0725.md"
   ],
   "subfeatures": [
-    "content/news/2025-06-17-SPLFOSPT10625.md",
-    "content/news/2025-06-16-SPLFOSBTR0625.md"
+    "content/statecollege/2024-10-03-SPLSUNDAYHUNT1024.md",
+    "content/statecollege/2023-12-13-SPLCHRONICWASTING.md"
   ],
   "topSlots": [
+    "content/news/2025-07-17-SPLFOSLABOR0725.md",
     "content/news/2025-07-17-SPLCYBERBILLS0725.md",
-    "content/news/2025-07-16-SPLTEAMARSON0725.md",
-    "content/news/2025-07-16-SPLCLOSEDPRIMARIES0725.md"
+    "content/news/2025-07-16-SPLTEAMARSON0725.md"
   ]
 }
