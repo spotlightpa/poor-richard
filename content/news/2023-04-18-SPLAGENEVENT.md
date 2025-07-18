@@ -3,9 +3,11 @@ arc-id = "KPKFU7YVCNFNPMGJS7YNYZUABA"
 blurb = "A panel of lawmakers and reporters discusses the Pennsylvania legislature’s agenda for 2023."
 byline = "Spotlight PA Staff"
 description = "A panel of lawmakers and reporters discusses the Pennsylvania legislature’s agenda for 2023."
+draft = false
 event-date = 2023-04-27T18:00:00-04:00
 event-title = "Legislative Agenda"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_KR94ms9WSMOlZi0gDm7Fhg#/registration"
+feed-exclude = false
 image = "external/k5599q2kgasyp4ybvk59gb2nfc.jpeg"
 image-credit = "Tom Gralish / Philadelphia Inquirer"
 image-description = "The Pennsylvania and American flags flutter in front of the Capitol building in Harrisburg."
@@ -13,6 +15,7 @@ internal-budget = "Spotlight PA's government team speaks with two legislators ab
 internal-id = "SPLAGENEVENT"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-04-18T15:19:59.135-04:00
 slug = "pa-legislature-2023-agenda-free-event"
 suppress-date = false
@@ -39,6 +42,6 @@ Our panelists were:
 
 - <b>State Rep. Matt Bradford (D., Montgomery)</b>, majority leader of the Pennsylvania House
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/822050646?h=b5abeb309f&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k8eWQhyUfyM?si=rKh6Tmu1MEplPkf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
