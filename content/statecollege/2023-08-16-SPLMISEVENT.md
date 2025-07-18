@@ -2,15 +2,18 @@
 blurb = "Experts discuss Penn State’s misconduct policies and transparency in higher education."
 byline = "Spotlight PA Staff"
 description = "Experts discuss Penn State’s misconduct policies and transparency in higher education."
+draft = false
 event-date = 2023-08-31T18:00:00-04:00
 event-title = "Missed Conduct"
 event-url = "https://zoom.us/webinar/register/WN_PECUx9dZSp2iYgGwQaI6HQ#/registration"
+feed-exclude = false
 image = "2023/08/01jc-th08-6era-k9p0.jpeg"
 image-credit = "Georgianna Sutherland / For Spotlight PA"
 image-description = "The main campus of Penn State University."
 internal-id = "SPLMISEVENT"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-08-16T15:22:13.123-04:00
 series = ["Missed Conduct"]
 slug = "pennsylvania-penn-state-sandusky-misconduct-investigation-event"
@@ -37,7 +40,7 @@ To further examine the issue, Spotlight PA hosted a panel on how the newsrooms r
 
 - <strong>Eugene DePasquale</strong>, former Pennsylvania auditor general
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/860181015?h=3a70f6d632&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{<youtube id="LKeSb2TJeyk" loading="lazy">}}
 
-<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
+<strong><em>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</em></strong><em> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>.</em>
 
