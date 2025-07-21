@@ -3,12 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/berks/2025-07-14-SPLSCHOOL BUDGETS0725.md"
+    "content/berks/2025-07-21-SPLAUCTIONMONEY.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/berks/2025-06-25-SPLAUCTION0625.md",
+    "content/berks/2025-01-20-SPLALBRIGHT1224.md"
+  ],
   "topSlots": [
+    "content/berks/2025-07-14-SPLSCHOOL BUDGETS0725.md",
     "content/berks/2025-07-14-SPLHYNEMANPROFILE0725.md",
-    "content/berks/2025-07-11-SPLPAGODA0708.md",
-    "content/berks/2025-06-25-SPLAUCTION0625.md"
+    "content/berks/2025-07-11-SPLPAGODA0708.md"
   ]
 }
