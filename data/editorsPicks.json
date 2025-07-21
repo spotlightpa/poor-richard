@@ -3,16 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-07-18-SPLBUDTHR0725.md"
+    "content/news/2025-07-21-SPLWEEDTALKS0725.md"
   ],
   "subfeatures": [
-    "content/news/2025-07-11-SPLS4S0725.md",
-    "content/news/2025-07-16-SPLTEAMARSON0725.md",
-    "content/news/2025-07-15-NGNDATACENTERS0725.md"
+    "content/news/2025-05-30-SPLWEEDTALKS.md",
+    "content/news/2025-05-13-SPLSENATEWEED0525.md",
+    "content/news/2025-05-05-SPLCANVOTE0525.md",
+    "content/news/2025-03-17-SPLWEEDLOBBY0325.md"
   ],
   "topSlots": [
+    "content/news/2025-07-18-SPLBUDTHR0725.md",
     "content/statecollege/2025-07-18-SPLSUNHUNT0725.md",
-    "content/news/2025-07-17-SPLCYBERBILLS0725.md",
-    "content/news/2025-07-17-SPLFOSLABOR0725.md"
+    "content/news/2025-07-17-SPLCYBERBILLS0725.md"
   ]
 }
