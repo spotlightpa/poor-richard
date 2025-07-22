@@ -231,6 +231,11 @@ a.spl-links-navy,
   @apply text-navy underline transition-colors duration-500 hover:text-yellow;
 }
 
+a.spl-links-yellow,
+.spl-links-yellow a {
+  @apply text-yellow underline transition-colors duration-500 hover:text-blue;
+}
+
 .btn-signup {
   @apply rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
 }

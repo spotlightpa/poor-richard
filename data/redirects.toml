@@ -1,14 +1,14 @@
 [[redirects]]
-from   = "/newsletters/howwecare"
-to     = "/newsletters"
+from = "/newsletters/howwecare"
+to = "/newsletters"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "/newsletters/howwecare/"
-to     = "/newsletters"
+from = "/newsletters/howwecare/"
+to = "/newsletters"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
 from = "/events/"
@@ -103,3 +103,7 @@ code = 200
 [[redirects]]
 from = "/membership/"
 to = "https://spotlightpa.donorsupport.co/login"
+
+[[redirects]]
+from = "/berks-report"
+to = "https://files.data.spotlightpa.org/uploads/01ka/7ev6/blueprint-for-berks-full-report.pdf"
