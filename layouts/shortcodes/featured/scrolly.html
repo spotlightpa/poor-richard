@@ -2,20 +2,17 @@
   x-data="{ activeIndex: -1 }"
   class="scrolly-container scroll-snap-y scroll-snap-mandatory bg-black text-white"
 >
-  {{ $lines := split .Inner "\n" }}
-  {{ range $i, $line := $lines }}
-    {{ if hasPrefix $line "bullet" }}
-      {{ $raw := replaceRE "^bullet\\s*" "" $line }}
-      {{ $highlighted := $raw | replaceRE "==([^=]+)==" "<span class='font-bold text-yellow'>${1}</span>" }}
-      <section
-        x-intersect.half="activeIndex = {{ $i }}"
-        class="step scroll-snap-center flex h-screen items-center justify-center p-6 text-center transition-opacity duration-500 ease-in-out"
-        :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
-      >
-        <div class="max-w-5xl text-4xl leading-tight md:text-6xl lg:text-7xl">
-          {{ $highlighted | markdownify }}
-        </div>
-      </section>
-    {{ end }}
+  {{ $steps := split .Inner "\n---\n" }}
+  {{ range $i, $step := $steps }}
+    {{ $html := replaceRE "==([^=]+)==" "<span class='font-bold text-yellow'>${1}</span>" $step }}
+    <section
+      x-intersect.half="activeIndex = {{ $i }}"
+      class="step scroll-snap-center flex h-screen items-center justify-center p-6 text-center transition-opacity duration-500 ease-in-out"
+      :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
+    >
+      <div class="max-w-5xl text-4xl leading-tight md:text-6xl lg:text-7xl">
+        {{ $html | markdownify }}
+      </div>
+    </section>
   {{ end }}
 </div>
