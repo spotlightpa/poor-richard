@@ -8,53 +8,63 @@
     {{ $html := replaceRE "==([^=]+)==" "<span class='font-bold text-yellow'>${1}</span>" $cleanStep }}
     {{ $images := findRE "\\[image: ([^\\]]+)\\]" $step }}
 
+
     <section
       x-intersect.half="activeIndex = {{ $i }}"
-      class="step scroll-snap-center flex h-screen items-center justify-center p-6 text-center transition-opacity duration-500 ease-in-out relative"
+      class="step scroll-snap-center relative flex h-screen items-center justify-center p-6 text-center transition-opacity duration-500 ease-in-out"
       :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
     >
-      <div class="max-w-4xl text-3xl leading-tight md:text-6xl lg:text-6xl z-10 relative">
+      <div
+        class="relative z-10 max-w-4xl text-3xl leading-tight md:text-6xl lg:text-6xl"
+      >
         {{ $html | markdownify }}
       </div>
 
       {{ if $images }}
-      <div class="show-images absolute inset-0 items-center justify-center pointer-events-none">
-        <div class="relative w-full max-w-7xl h-full">
-          {{ range $imgIndex, $imgRef := $images }}
-            {{ $parts := split (replace $imgRef "]" "") "|" }}
-            {{ $src := trim (replace (index $parts 0) "[image: " "") " " }}
-            {{ $position := "top-36 left-32" }}
-            {{ if ge (len $parts) 2 }}{{ $position = index $parts 1 }}{{ end }}
+        <div
+          class="show-images pointer-events-none absolute inset-0 items-center justify-center"
+        >
+          <div class="relative h-full w-full max-w-7xl">
+            {{ range $imgIndex, $imgRef := $images }}
+              {{ $parts := split (replace $imgRef "]" "") "|" }}
+              {{ $src := trim (replace (index $parts 0) "[image: " "") " " }}
+              {{ $position := "top-36 left-32" }}
+              {{ if ge (len $parts) 2 }}
+                {{ $position = index $parts 1 }}
+              {{ end }}
 
-            {{ $imgOpt := dict "filename" $src "width" 500 "height" 350 "resize" "fit" "ext" "jpeg" }}
-            {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
+              {{ $imgOpt := dict "filename" $src "width" 500 "height" 350 "resize" "fit" "ext" "jpeg" }}
+              {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
 
-            {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
-            {{ $allScales := slice "scale-100" "scale-110" "scale-95" "scale-105" "scale-90" "scale-100" "scale-105" "scale-95" }}
+              {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
+              {{ $allScales := slice "scale-100" "scale-110" "scale-95" "scale-105" "scale-90" "scale-100" "scale-105" "scale-95" }}
 
-            {{ $rotation := index $allRotations $imgIndex }}
-            {{ $scale := index $allScales $imgIndex }}
+              {{ $rotation := index $allRotations $imgIndex }}
+              {{ $scale := index $allScales $imgIndex }}
 
-            <div 
-              class="absolute {{ $position }} {{ $rotation }} {{ $scale }} transform translate-y-12 transition-all duration-700 ease-out delay-{{ mul $imgIndex 300 }}"
-              :class="{ 'opacity-100 translate-y-0': activeIndex === {{ $i }} }"
-              :style="`
+
+              <div
+                class="{{ $position }} {{ $rotation }} {{ $scale }} delay-{{ mul $imgIndex 300 }} absolute translate-y-12 transform transition-all duration-700 ease-out"
+                :class="{ 'opacity-100 translate-y-0': activeIndex === {{ $i }} }"
+                :style="`
                 z-index: {{ sub 10 $imgIndex }};
                 opacity: ${activeIndex === {{ $i }} ? '1' : '0'};
               `"
-            >
-              <div class="bg-white p-3 shadow-2xl transform hover:scale-110 transition-transform duration-300">
-                <img 
-                  src="{{ $imgSrc }}" 
-                  alt=""
-                  class="w-auto max-w-sm max-h-64 object-contain"
-                />
-                <div class="h-1 bg-gray-200 mt-2"></div>
+              >
+                <div
+                  class="transform bg-white p-3 shadow-2xl transition-transform duration-300 hover:scale-110"
+                >
+                  <img
+                    src="{{ $imgSrc }}"
+                    alt=""
+                    class="max-h-64 w-auto max-w-sm object-contain"
+                  />
+                  <div class="bg-gray-200 mt-2 h-1"></div>
+                </div>
               </div>
-            </div>
-          {{ end }}
+            {{ end }}
+          </div>
         </div>
-      </div>
       {{ end }}
     </section>
   {{ end }}
