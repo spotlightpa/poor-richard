@@ -1,0 +1,18 @@
+<div x-data="{ activeIndex: -1 }" class="scrolly-container bg-black text-white scroll-snap-y scroll-snap-mandatory">
+  {{ $lines := split .Inner "\n" }}
+  {{ range $i, $line := $lines }}
+    {{ if hasPrefix $line "bullet" }}
+      {{ $raw := replaceRE "^bullet\\s*" "" $line }}
+      {{ $highlighted := $raw | replaceRE "==([^=]+)==" "<span class='font-bold text-yellow'>${1}</span>" }}
+      <section
+        x-intersect.half="activeIndex = {{ $i }}"
+        class="step flex items-center justify-center h-screen p-6 text-center transition-opacity duration-500 ease-in-out scroll-snap-center"
+        :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
+      >
+        <div class="text-4xl md:text-6xl lg:text-7xl leading-tight max-w-5xl">
+          {{ $highlighted | markdownify }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+</div>
