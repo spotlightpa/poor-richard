@@ -4,14 +4,8 @@
 {{ $isOpen := eq (lower $open) "true" }}
 
 {{ if $isOpen }}
-  <figure class="clear-both w-full" x-data="{ isOpen: true }">
-    <audio
-      x-show="isOpen"
-      x-ref="player"
-      controls
-      src="{{ $src }}"
-      class="mt-6 w-full"
-    >
+  <figure class="clear-both w-full">
+    <audio controls src="{{ $src }}" class="mt-6 w-full">
       <a href="{{ $src }}">Download audio</a>
     </audio>
     <figcaption
