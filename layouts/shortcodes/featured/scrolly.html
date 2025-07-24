@@ -6,6 +6,7 @@
   {{ range $i, $step := $steps }}
     {{ $cleanStep := replaceRE "\\[image: ([^\\]]+)\\]" "" $step }}
     {{ $html := replaceRE "==([^=]+)==" "<span class='font-bold text-yellow'>${1}</span>" $cleanStep }}
+    {{ $paragraphs := split $html "\n\n" }}
     {{ $images := findRE "\\[image: ([^\\]]+)\\]" $step }}
 
 
@@ -17,7 +18,10 @@
       <div
         class="relative z-10 max-w-4xl text-3xl leading-tight md:text-6xl lg:text-6xl"
       >
-        {{ $html | markdownify }}
+        {{ range $paragraphs }}
+          <p class="mb-8">{{ . | safeHTML }}</p>
+        {{ end }}
+
       </div>
 
       {{ if $images }}
