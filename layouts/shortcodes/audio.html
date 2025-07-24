@@ -1,17 +1,39 @@
 {{ $label := .Get "label" | default `Click here to listen to an audio version of this story.` }}
 {{ $src := .Get "src" }}
+{{ $open := .Get "open" | default "false" }}
+{{ $isOpen := eq (lower $open) "true" }}
 
+{{ if not $isOpen }}
+  <figure class="clear-both" x-data="{ isOpen: false }">
+    <figcaption>
+      <button
+        class="cursor-pointer italic text-navy underline"
+        @click.once="isOpen = true; $refs.player.play()"
+      >
+        {{- $label -}}
+      </button>
+    </figcaption>
+    <audio x-show="isOpen" x-ref="player" controls src="{{ $src }}">
+      <a href="{{ $src }}">Download audio</a>
+    </audio>
+  </figure>
+{{ else }}
 
-<figure class="clear-both" x-data="{ isOpen: false }">
-  <figcaption>
-    <button
-      class="cursor-pointer italic text-navy underline"
-      @click.once="isOpen = true; $refs.player.play()"
+  <figure class="clear-both w-full" x-data="{ isOpen: true }">
+    <audio
+      x-show="isOpen"
+      x-ref="player"
+      controls
+      src="{{ $src }}"
+      class="mt-6 w-full"
+    >
+      <a href="{{ $src }}">Download audio</a>
+    </audio>
+    <figcaption
+      class="mt-6 font-sans leading-tight text-g-8"
+      itemprop="caption"
     >
       {{- $label -}}
-    </button>
-  </figcaption>
-  <audio x-show="isOpen" x-ref="player" controls src="{{ $src }}">
-    <a href="{{ $src }}">Download audio</a>
-  </audio>
-</figure>
+    </figcaption>
+  </figure>
+{{ end }}
