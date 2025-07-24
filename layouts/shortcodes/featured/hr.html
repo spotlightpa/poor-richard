@@ -1,4 +1,12 @@
 <!-- wrapper for content-area -->
-<div>
-  <hr class="mx-auto my-16 h-1 w-full border-none bg-yellow" />
-</div>
+{{ $short := .Get "short" }}
+
+{{ if eq $short "true" }}
+  <div class="my-16 flex justify-center">
+    <hr class="h-1 w-1/4 border-none bg-yellow" />
+  </div>
+{{ else }}
+  <div>
+    <hr class="mx-auto my-16 h-1 w-full border-none bg-yellow" />
+  </div>
+{{ end }}
