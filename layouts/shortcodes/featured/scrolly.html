@@ -29,6 +29,9 @@
           class="show-images pointer-events-none absolute inset-0 items-center justify-center"
         >
           <div class="relative h-full w-full max-w-7xl">
+            {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
+            {{ $allScales := slice "scale-100" "scale-110" "scale-95" "scale-105" "scale-90" "scale-100" "scale-105" "scale-95" }}
+
             {{ range $imgIndex, $imgRef := $images }}
               {{ $parts := split (replace $imgRef "]" "") "|" }}
               {{ $src := trim (replace (index $parts 0) "[image: " "") " " }}
@@ -39,9 +42,6 @@
 
               {{ $imgOpt := dict "filename" $src "width" 500 "height" 350 "resize" "fit" "ext" "jpeg" }}
               {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
-
-              {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
-              {{ $allScales := slice "scale-100" "scale-110" "scale-95" "scale-105" "scale-90" "scale-100" "scale-105" "scale-95" }}
 
               {{ $rotation := index $allRotations $imgIndex }}
               {{ $scale := index $allScales $imgIndex }}
