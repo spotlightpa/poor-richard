@@ -88,7 +88,8 @@
 
               <div
                 class="{{ $position }} {{ $rotation }} {{ $scale }} {{ $delay }} absolute translate-y-12 transform transition-all duration-700 ease-out"
-                :style="`z-index: ${10 - $imgIndex}; opacity: ${activeIndex === {{ $i }} ? '1' : '0'}; transform: ${activeIndex === {{ $i }} ? 'translateY(0)' : 'translateY(3rem)'}`"
+                style="z-index: {{ sub 10 $imgIndex }};"
+                :style="'opacity: ' + (activeIndex === {{ $i }} ? '1' : '0') + '; transform: ' + (activeIndex === {{ $i }} ? 'translateY(0)' : 'translateY(3rem)')"
               >
                 <div
                   class="transform bg-white p-3 shadow-2xl transition-transform duration-300 hover:scale-110"
