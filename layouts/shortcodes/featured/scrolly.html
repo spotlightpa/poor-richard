@@ -1,31 +1,27 @@
 <div
   x-data="{
-   activeIndex: -1,
-   buttonPosition: 'fixed',
-   
-   updateButtonPosition() {
-     const container = this.$refs.container;
-     const button = this.$refs.skipButton;
-     
-     if (!container || !button) return;
-     
-     const containerRect = container.getBoundingClientRect();
-     const viewportHeight = window.innerHeight;
-     
-     if (containerRect.bottom < viewportHeight - 6) {
-       this.buttonPosition = 'absolute';
-     } else {
-       this.buttonPosition = 'fixed';
-     }
-   }
- }"
-  x-init="
-   $nextTick(() => {
-     updateButtonPosition();
-     window.addEventListener('scroll', () => updateButtonPosition());
-     window.addEventListener('resize', () => updateButtonPosition());
-   });
- "
+    activeIndex: -1,
+    buttonPosition: 'fixed',
+
+    updateButtonPosition() {
+      const container = this.$refs.container;
+      const button = this.$refs.skipButton;
+
+      if (!container || !button) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      if (containerRect.bottom < viewportHeight - 6) {
+        this.buttonPosition = 'absolute';
+      } else {
+        this.buttonPosition = 'fixed';
+      }
+    }
+  }"
+  x-init="$nextTick(() => updateButtonPosition())"
+  @scroll.window.throttle.200ms="updateButtonPosition"
+  @resize.window.throttle.200ms="updateButtonPosition"
   class="scrolly-container scroll-snap-y scroll-snap-mandatory relative bg-black text-white"
   x-ref="container"
 >
