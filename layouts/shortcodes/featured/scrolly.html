@@ -26,7 +26,7 @@
 
       {{ if $images }}
         <div
-          class="show-images pointer-events-none absolute inset-0 items-center justify-center"
+          class="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex"
         >
           <div class="relative h-full w-full max-w-7xl">
             {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
@@ -75,15 +75,3 @@
     </section>
   {{ end }}
 </div>
-
-<style>
-  .show-images {
-    display: none;
-  }
-
-  @media screen and (min-width: 1116px) {
-    .show-images {
-      display: flex;
-    }
-  }
-</style>
