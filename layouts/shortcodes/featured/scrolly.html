@@ -5,8 +5,6 @@
   {{ $steps := split .Inner "\n---\n" }}
   {{ range $i, $step := $steps }}
     {{ $cleanStep := replaceRE "\\[image: ([^\\]]+)\\]" "" $step }}
-    {{ $html := replaceRE "==([^=]+)==" "<span class='font-bold text-yellow'>${1}</span>" $cleanStep }}
-    {{ $paragraphs := split $html "\n\n" }}
     {{ $images := findRE "\\[image: ([^\\]]+)\\]" $step }}
 
 
@@ -16,12 +14,9 @@
       :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
     >
       <div
-        class="relative z-10 max-w-4xl text-3xl leading-tight md:text-6xl lg:text-6xl"
+        class="relative z-10 max-w-4xl space-y-8 text-3xl leading-tight md:text-6xl lg:text-6xl [&_strong]:font-bold [&_strong]:text-yellow"
       >
-        {{ range $paragraphs }}
-          <p class="mb-8">{{ . | safeHTML }}</p>
-        {{ end }}
-
+        {{ $cleanStep | markdownify }}
       </div>
 
       {{ if $images }}
