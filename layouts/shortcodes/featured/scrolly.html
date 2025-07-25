@@ -56,7 +56,7 @@
       :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
     >
       <div
-        class="relative z-10 max-w-4xl space-y-8 text-4xl leading-snug tracking-normal md:text-5xl md:leading-snug md:tracking-tight lg:text-5xl lg:leading-snug lg:tracking-tight [&_strong]:font-bold [&_strong]:text-yellow"
+        class="relative z-10 max-w-4xl space-y-8 text-left text-4xl leading-snug tracking-normal md:text-5xl md:leading-snug md:tracking-tight lg:text-5xl lg:leading-snug lg:tracking-tight [&_strong]:font-bold [&_strong]:text-yellow"
       >
         {{ $cleanStep | markdownify }}
       </div>
