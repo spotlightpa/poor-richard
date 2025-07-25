@@ -31,6 +31,7 @@
           <div class="relative h-full w-full max-w-7xl">
             {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
             {{ $allScales := slice "scale-100" "scale-110" "scale-95" "scale-105" "scale-90" "scale-100" "scale-105" "scale-95" }}
+            {{ $allDelays := slice "delay-0" "delay-300" "delay-600" "delay-900" "delay-1200" "delay-1500" "delay-1800" "delay-2100" }}
 
             {{ range $imgIndex, $imgRef := $images }}
               {{ $parts := split (replace $imgRef "]" "") "|" }}
@@ -45,15 +46,16 @@
 
               {{ $rotation := index $allRotations $imgIndex }}
               {{ $scale := index $allScales $imgIndex }}
+              {{ $delay := index $allDelays $imgIndex }}
 
 
               <div
-                class="{{ $position }} {{ $rotation }} {{ $scale }} delay-{{ mul $imgIndex 300 }} absolute translate-y-12 transform transition-all duration-700 ease-out"
+                class="{{ $position }} {{ $rotation }} {{ $scale }} {{ $delay }} absolute translate-y-12 transform transition-all duration-700 ease-out"
                 :class="{ 'opacity-100 translate-y-0': activeIndex === {{ $i }} }"
                 :style="`
-                z-index: {{ sub 10 $imgIndex }};
-                opacity: ${activeIndex === {{ $i }} ? '1' : '0'};
-              `"
+                  z-index: {{ sub 10 $imgIndex }};
+                  opacity: ${activeIndex === {{ $i }} ? '1' : '0'};
+                `"
               >
                 <div
                   class="transform bg-white p-3 shadow-2xl transition-transform duration-300 hover:scale-110"
