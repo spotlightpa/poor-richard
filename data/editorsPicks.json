@@ -3,15 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-07-24-spl_pharmacies_0725.md"
+    "content/news/2025-07-25-SPLROADS0725.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-07-10-SPLBBBRURAL0725.md",
-    "content/news/2025-07-08-SPLOPIOIDRTK0725.md"
+    "content/news/2025-07-18-SPLBUDTHR0725.md",
+    "content/news/2025-07-14-SPLHHWVEHICLE0725.md",
+    "content/news/2025-07-09-SPLSALESTAX0625.md",
+    "content/news/2025-06-30-APBUDSOON0625.md"
   ],
   "topSlots": [
+    "content/news/2025-07-24-spl_pharmacies_0725.md",
     "content/news/2025-07-24-SPLAJP0725.md",
-    "content/statecollege/2025-07-23-SPLTRUSTEE0725.md",
-    "content/news/2025-07-21-SPLWEEDTALKS0725.md"
+    "content/statecollege/2025-07-23-SPLTRUSTEE0725.md"
   ]
 }
