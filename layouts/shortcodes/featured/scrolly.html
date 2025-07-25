@@ -2,10 +2,23 @@
   x-data="{ activeIndex: -1 }"
   class="scrolly-container scroll-snap-y scroll-snap-mandatory bg-black text-white"
 >
+  <button
+    @click="
+      const container = $el.closest('.scrolly-container');
+      const containerRect = container.getBoundingClientRect();
+      const containerBottom = window.scrollY + containerRect.bottom;
+      window.scrollTo({ top: containerBottom, behavior: 'smooth' });
+    "
+    class="fixed bottom-4 right-4 z-50 rounded border-2 border-yellow bg-black px-5 py-1 font-bold text-yellow transition hover:bg-yellow hover:text-black"
+  >
+    Skip
+  </button>
+
   {{ $steps := split .Inner "\n---\n" }}
   {{ range $i, $step := $steps }}
     {{ $cleanStep := replaceRE "\\[image: ([^\\]]+)\\]" "" $step }}
     {{ $images := findRE "\\[image: ([^\\]]+)\\]" $step }}
+    {{ $isLast := eq (add $i 1) (len $steps) }}
 
 
     <section
