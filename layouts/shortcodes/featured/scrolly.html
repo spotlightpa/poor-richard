@@ -1,15 +1,44 @@
 <div
-  x-data="{ activeIndex: -1 }"
-  class="scrolly-container scroll-snap-y scroll-snap-mandatory bg-black text-white"
+  x-data="{
+   activeIndex: -1,
+   buttonPosition: 'fixed',
+   
+   updateButtonPosition() {
+     const container = this.$refs.container;
+     const button = this.$refs.skipButton;
+     
+     if (!container || !button) return;
+     
+     const containerRect = container.getBoundingClientRect();
+     const viewportHeight = window.innerHeight;
+     
+     if (containerRect.bottom < viewportHeight - 6) {
+       this.buttonPosition = 'absolute';
+     } else {
+       this.buttonPosition = 'fixed';
+     }
+   }
+ }"
+  x-init="
+   $nextTick(() => {
+     updateButtonPosition();
+     window.addEventListener('scroll', () => updateButtonPosition());
+     window.addEventListener('resize', () => updateButtonPosition());
+   });
+ "
+  class="scrolly-container scroll-snap-y scroll-snap-mandatory relative bg-black text-white"
+  x-ref="container"
 >
   <button
+    x-ref="skipButton"
     @click="
-      const container = $el.closest('.scrolly-container');
-      const containerRect = container.getBoundingClientRect();
-      const containerBottom = window.scrollY + containerRect.bottom;
-      window.scrollTo({ top: containerBottom, behavior: 'smooth' });
-    "
-    class="fixed bottom-4 right-4 z-50 rounded border-2 border-yellow bg-black px-5 py-1 font-bold text-yellow transition hover:bg-yellow hover:text-black"
+     const container = $el.closest('.scrolly-container');
+     const containerRect = container.getBoundingClientRect();
+     const containerBottom = window.scrollY + containerRect.bottom;
+     window.scrollTo({ top: containerBottom, behavior: 'smooth' });
+   "
+    :style="`position: ${buttonPosition}; bottom: 1.5rem; right: 1.5rem;`"
+    class="z-50 rounded border-2 border-yellow bg-black px-5 py-1 font-bold text-yellow transition hover:bg-yellow hover:text-black"
   >
     Skip
   </button>
@@ -59,11 +88,7 @@
 
               <div
                 class="{{ $position }} {{ $rotation }} {{ $scale }} {{ $delay }} absolute translate-y-12 transform transition-all duration-700 ease-out"
-                :class="{ 'opacity-100 translate-y-0': activeIndex === {{ $i }} }"
-                :style="`
-                  z-index: {{ sub 10 $imgIndex }};
-                  opacity: ${activeIndex === {{ $i }} ? '1' : '0'};
-                `"
+                :style="`z-index: ${10 - $imgIndex}; opacity: ${activeIndex === {{ $i }} ? '1' : '0'}; transform: ${activeIndex === {{ $i }} ? 'translateY(0)' : 'translateY(3rem)'}`"
               >
                 <div
                   class="transform bg-white p-3 shadow-2xl transition-transform duration-300 hover:scale-110"
