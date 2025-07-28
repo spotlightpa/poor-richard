@@ -3,15 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-07-25-SPLROADS0725.md"
+    "content/news/2025-07-28-SPLMHFAILING0725.md"
   ],
   "subfeatures": [
-    "content/news/2025-07-18-SPLBUDTHR0725.md",
-    "content/news/2025-07-14-SPLHHWVEHICLE0725.md",
-    "content/news/2025-07-09-SPLSALESTAX0625.md",
-    "content/news/2025-06-30-APBUDSOON0625.md"
+    "content/news/2025-07-28-SPLFAILINGREPORTING0725.md",
+    "content/news/2023-03-09-SPLCOMPETENCY.md",
+    "content/news/2025-04-22-SPL302EXP0425.md"
   ],
   "topSlots": [
+    "content/news/2025-07-25-SPLROADS0725.md",
     "content/news/2025-07-24-spl_pharmacies_0725.md",
     "content/news/2025-07-24-SPLAJP0725.md",
     "content/statecollege/2025-07-23-SPLTRUSTEE0725.md"
