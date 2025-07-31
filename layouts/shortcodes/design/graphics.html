@@ -269,16 +269,20 @@
 </div>
 
 <div class="hidden">
-  <div id="icon-clipboard">
-    <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-white">
+  <template id="clipboard-template">
+    <svg
+      viewBox="0 0 1 1"
+      class="js-clipboard-ref h-5 w-5 fill-current text-white"
+    >
       {{ partial "helper/svg.html" "clipboard" }}
     </svg>
-  </div>
-  <div id="icon-check">
-    <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-white">
+  </template>
+
+  <template id="check-template">
+    <svg viewBox="0 0 1 1" class="js-check-ref h-5 w-5 fill-current text-white">
       {{ partial "helper/svg.html" "check" }}
     </svg>
-  </div>
+  </template>
   <div class="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
   <div
     class="rounded-t-md bg-black/60 opacity-0 transition-opacity group-hover:opacity-100"
@@ -406,8 +410,16 @@
   }
 
   function renderColorBlocks() {
-    const clipboardSVG = document.getElementById("icon-clipboard").innerHTML;
-    const checkSVG = document.getElementById("icon-check").innerHTML;
+    const clipboardTemplate = document.getElementById("clipboard-template");
+    const checkTemplate = document.getElementById("check-template");
+
+    function cloneClipboardIcon() {
+      return clipboardTemplate.content.firstElementChild.cloneNode(true);
+    }
+
+    function cloneCheckIcon() {
+      return checkTemplate.content.firstElementChild.cloneNode(true);
+    }
 
     const grid = document.getElementById("colorGrid");
     grid.innerHTML = "";
@@ -453,7 +465,8 @@
         shadeDiv.style.backgroundColor = shade;
 
         const iconWrapper = document.createElement("div");
-        iconWrapper.innerHTML = clipboardSVG;
+        const clipboardIcon = cloneClipboardIcon();
+        iconWrapper.appendChild(clipboardIcon);
         iconWrapper.className = `
           icon-container
           absolute top-1/2 left-1/2 
@@ -466,7 +479,6 @@
           .trim()
           .replace(/\s+/g, " ");
 
-        const clipboardIcon = iconWrapper.firstElementChild;
         shadeDiv.appendChild(iconWrapper);
 
         shadeDiv.onclick = () => {
@@ -475,9 +487,10 @@
           const textToCopy = useHex ? rgbToHex(rgb) : rgb;
 
           const checkWrapper = document.createElement("div");
-          checkWrapper.innerHTML = checkSVG;
+          const checkIcon = cloneCheckIcon();
+          checkWrapper.appendChild(checkIcon);
+
           checkWrapper.className = iconWrapper.className;
-          const checkIcon = checkWrapper.firstElementChild;
 
           navigator.clipboard.writeText(textToCopy).then(() => {
             shadeDiv.replaceChild(checkWrapper, iconWrapper);
@@ -505,16 +518,17 @@
 
   function copySource(button) {
     const input = button.querySelector("input");
-    const clipboardIcon = button.querySelector(".icon-clipboard");
-    const checkIcon = button.querySelector(".icon-check");
+    const iconContainer = button.querySelector("div.hidden.sm\\:block");
+    const clipboardSpan = iconContainer.querySelector(".icon-clipboard");
+    const checkSpan = iconContainer.querySelector(".icon-check");
 
     navigator.clipboard.writeText(input.value).then(() => {
-      clipboardIcon.classList.add("hidden");
-      checkIcon.classList.remove("hidden");
+      clipboardSpan.classList.add("hidden");
+      checkSpan.classList.remove("hidden");
 
       setTimeout(() => {
-        clipboardIcon.classList.remove("hidden");
-        checkIcon.classList.add("hidden");
+        clipboardSpan.classList.remove("hidden");
+        checkSpan.classList.add("hidden");
       }, 1000);
     });
   }
