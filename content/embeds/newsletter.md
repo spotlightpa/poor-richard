@@ -22,6 +22,14 @@ hint = "Override text for button"
 
 [[page-query-params]]
 name = "preselect"
-placeholder = "breaking_news, papost, investigator, palocal, state_college"
-hint = "Preselected option"
+hint = "Newsletter"
+options=[
+  {name="Default (PA Post)", value=""},
+  {name="PA Post", value="papost"},
+  {name="The Investigator", value="investigator"},
+  {name="PA Local", value="palocal"},
+  {name="Talk of the Town", value="talkofthetown"},
+  {name="Good Day, Berks", value="berks"},
+  {name="Penn State Alerts", value="pennstatealert"},
+]
 +++
