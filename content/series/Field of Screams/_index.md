@@ -9,4 +9,5 @@ title = "Field ᴏf Screams"
 dek = "Teen volunteers were harassed, groped, and pressured into sex by adults at a popular Pa. haunted attraction, former staff say"
 linktitle = "Teen volunteers were harassed, groped, and pressured into sex by adults at a popular Pa. haunted attraction, former staff say."
 description = "Volunteers say they brought allegations of abuse directly to owners of Field of Screams in Lancaster County, as well as to law enforcement."
+aliases = ["/fieldofscreams/"]
 +++
