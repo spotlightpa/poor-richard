@@ -42,12 +42,23 @@
                     >
                       {{ $param.hint }}
                     </label>
-                    <div class="control">
+                    {{ if .options }}
+                      <select
+                        class="spl-select cursor-pointer py-1 text-lg text-g-6"
+                        id="{{ $param.name }}-field"
+                        name="{{ $param.name }}"
+                        @input="updateParams"
+                      >
+                        {{ range .options }}
+                          <option value="{{ .value }}">{{ .name }}</option>
+                        {{ end }}
+                      </select>
+                    {{ else }}
                       <input
                         id="{{ $param.name }}-field"
                         placeholder="{{ $param.placeholder }}"
                         type="text"
-                        class="spl-input"
+                        class="spl-input placeholder:text-g-6"
                         name="{{ $param.name }}"
                         @input.debounce.500ms="updateParams"
                         {{ with $param.pattern }}
@@ -55,7 +66,7 @@
                           @blur="$event.currentTarget.reportValidity()"
                         {{ end }}
                       />
-                    </div>
+                    {{ end }}
                   </div>
                 {{ end }}
               {{ end }}
