@@ -72,7 +72,7 @@
   },
   "other": {
     "transparent": "transparent",
-    "current": "currentColor",
+    "gray": "#2e2e2e",
     "white": "#fff",
     "black": "#000",
     "beige": "#f4f1ee",
