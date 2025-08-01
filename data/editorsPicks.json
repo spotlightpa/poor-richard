@@ -3,16 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/statecollege/2025-07-31-SPLHUNTSTART0725.md"
+    "content/news/2025-08-01-SPLMHTAKEAWAYS0825.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-07-18-SPLSUNHUNT0725.md",
-    "content/statecollege/2024-11-27-SPLDEERSZN1124.md",
-    "content/statecollege/2024-10-03-SPLSUNDAYHUNT1024.md"
+    "content/news/2025-07-28-SPLMHFAILING0725.md",
+    "content/news/2025-07-28-SPLFAILINGREPORTING0725.md",
+    "content/news/2025-04-22-SPL302EXP0425.md",
+    "content/news/2023-03-09-SPLCOMPETENCY.md"
   ],
   "topSlots": [
+    "content/statecollege/2025-07-31-SPLHUNTSTART0725.md",
     "content/berks/2025-07-31-SPLBERKSICE0725.md",
-    "content/news/2025-07-30-SPLENERGYPRICE0725.md",
-    "content/news/2025-07-28-SPLMHFAILING0725.md"
+    "content/news/2025-07-30-SPLENERGYPRICE0725.md"
   ]
 }
