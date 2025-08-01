@@ -11,6 +11,9 @@ no-index = true
 ## [Colors](/design/colors)
 {{<featured/hr>}}
 
+## [Graphics style guide](/design/graphics)
+{{<featured/hr>}}
+
 ## [Page headings](/design/headings)
 {{<featured/hr>}}
 
