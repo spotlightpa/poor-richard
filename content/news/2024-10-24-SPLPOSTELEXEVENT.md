@@ -2,6 +2,7 @@
 blurb = "To help you make sense of what happened on Election Day in Pennsylvania, Spotlight PA hosted a live panel."
 byline = "Spotlight PA Staff"
 description = "To help you make sense of what happened on Election Day in Pennsylvania, Spotlight PA hosted a live panel."
+draft = false
 event-date = 2024-11-12T18:00:00-05:00
 event-title = "AFTER NOV. 5"
 event-url = "https://zoom.us/webinar/register/WN_7L60QRLAQG6TdR6FIQjRww"
@@ -35,7 +36,7 @@ To help you make sense of what happened on Election Day and what comes next, Spo
 
 - <strong>Ivey DeJesus</strong>, enterprise reporter, PennLive
 
-{{<vimeo id="1029289189" >}}
+{{<youtube id="BeAxCO3M1HY" loading="lazy">}}
 
 We answered audience questions during the event. Below are answers to questions we weren’t able to get to, via Meyer and Spotlight PA’s Stephen Caruso.
 

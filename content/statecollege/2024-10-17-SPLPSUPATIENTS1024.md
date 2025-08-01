@@ -3,6 +3,7 @@ authors = ["Charlotte Keith", "Wyatt Massey"]
 blurb = "Already sick, former patients of the failed kidney and liver transplant units face rejection and despair as they look elsewhere and grapple with the one thing they cannot afford to lose: time."
 byline = "Charlotte Keith of Spotlight PA and Wyatt Massey of Spotlight PA State College"
 description = "Transplant patients had to scramble to find new care after the sudden closure of the Milton S. Hershey Medical Center liver and kidney transplant units."
+draft = false
 feed-exclude = false
 image = "2024/10/01kg-xphe-31ww-qs2f.jpeg"
 image-credit = "Joed Viera / For Spotlight PA"
@@ -70,7 +71,7 @@ She crumpled the letter into a ball.
 
 “But maybe tomorrow will be better.”
 
-{{<vimeo id="1019941657" >}}
+{{<youtube id="stEOQ0J8LDc" loading="lazy">}}
 
 ## ‘Tremendous community need’
 

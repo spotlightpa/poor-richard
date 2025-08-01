@@ -2,6 +2,7 @@
 blurb = "Join us Nov. 21 for a behind-the-scenes panel on how Spotlight PA, the Butler Eagle, and ProPublica discovered long-standing flaws in Secret Service protections."
 byline = "Spotlight PA Staff"
 description = "Join us Nov. 21 for a behind-the-scenes panel on how Spotlight PA, the Butler Eagle, and ProPublica revealed long-standing security failures that led to the Trump assassination attempt."
+draft = false
 event-date = 2024-11-21T18:00:00-05:00
 event-title = "BEHIND THE REPORTING: How Spotlight PA, Butler Eagle, and more investigated the failures behind the Trump Rally shooting "
 event-url = "https://zoom.us/webinar/register/WN_hHgnyHvETlqsjXfOjkvtag"
@@ -40,7 +41,7 @@ To unpack how the reporters conducted their investigation, Spotlight PA held a b
 
 - <strong>Tracy Leturgey</strong>, assignments editor, Butler Eagle
 
-{{<vimeo id="1032384041" >}}
+{{<youtube id="0mJ74icTyGw" loading="lazy">}}
 
 <strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</strong> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 

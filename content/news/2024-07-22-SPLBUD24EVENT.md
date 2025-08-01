@@ -2,6 +2,7 @@
 blurb = "Spotlight PA hosted a free panel on what did — and didn’t — make it into Pennsylvania’s new budget."
 byline = "Spotlight PA Staff"
 description = "Spotlight PA hosted a free panel on Pennsylvania’s budget winners and losers."
+draft = false
 event-date = 2024-07-25T18:00:00-04:00
 event-title = "Budget Breakdown"
 event-url = "https://zoom.us/webinar/register/WN_RNTwYiQ9QuuDy7A2hwX_-A#/"
@@ -43,7 +44,7 @@ Spotlight PA held a free panel discussion on the major components of the budget,
 
 - <strong>Stan Saylor,</strong> former House GOP appropriations chair
 
-{{<vimeo id="990627534" secret="89f8de8242" >}}
+{{<youtube id="Yu-YHPP7-cU" loading="lazy">}}
 
 <strong>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</strong> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="http://spotlightpa.org/donate">spotlightpa.org/donate</a>.
 

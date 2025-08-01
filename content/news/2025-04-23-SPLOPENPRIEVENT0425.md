@@ -2,6 +2,7 @@
 blurb = "On May 6, Spotlight PA held a live event to discuss the effort to open PA’s primaries."
 byline = "Spotlight PA Staff"
 description = "On May 6, Spotlight PA held a live event to discuss the effort to open PA’s primaries."
+draft = false
 event-date = 2025-05-06T18:00:00-04:00
 event-title = "PRIVATE PRIMARY: Will Pa. ever let independents vote in primary elections? "
 event-url = "https://zoom.us/webinar/register/WN_OEevaDFHQoO1Z6EjV1028w#/registration"
@@ -29,5 +30,5 @@ Open primaries would allow 1.4 million independent and third-party Pennsylvanian
 
 To unpack the issue, we held a live conversation on May 6 about how open primaries would impact Pennsylvania, what we can learn from other states, and where the conversation stands in the legislature.
 
-{{<vimeo id="1082253451" >}}
+{{<youtube id="v2hg3C74RBo" loading="lazy">}}
 

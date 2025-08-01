@@ -1,0 +1,107 @@
+<div
+  x-data="{
+    activeIndex: -1,
+    buttonPosition: 'fixed',
+
+    updateButtonPosition() {
+      const container = this.$refs.container;
+      const button = this.$refs.skipButton;
+
+      if (!container || !button) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      if (containerRect.bottom < viewportHeight - 6) {
+        this.buttonPosition = 'absolute';
+      } else {
+        this.buttonPosition = 'fixed';
+      }
+    }
+  }"
+  x-init="$nextTick(() => updateButtonPosition())"
+  @scroll.window.throttle.200ms="updateButtonPosition"
+  @resize.window.throttle.200ms="updateButtonPosition"
+  class="scrolly-container scroll-snap-y scroll-snap-mandatory relative bg-black text-white"
+  x-ref="container"
+>
+  <button
+    x-ref="skipButton"
+    @click="
+     const container = $el.closest('.scrolly-container');
+     const containerRect = container.getBoundingClientRect();
+     const containerBottom = window.scrollY + containerRect.bottom;
+     window.scrollTo({ top: containerBottom, behavior: 'smooth' });
+   "
+    :style="`position: ${buttonPosition}; bottom: 1.5rem; right: 1.5rem;`"
+    class="z-50 rounded border-2 border-yellow bg-black px-5 py-1 font-bold text-yellow transition hover:bg-yellow hover:text-black"
+  >
+    Skip
+  </button>
+
+  {{ $steps := split .Inner "\n---\n" }}
+  {{ range $i, $step := $steps }}
+    {{ $cleanStep := replaceRE "\\[image: ([^\\]]+)\\]" "" $step }}
+    {{ $images := findRE "\\[image: ([^\\]]+)\\]" $step }}
+    {{ $isLast := eq (add $i 1) (len $steps) }}
+
+
+    <section
+      x-intersect.half="activeIndex = {{ $i }}"
+      class="step scroll-snap-center relative flex h-screen items-center justify-center p-6 text-center transition-opacity duration-500 ease-in-out"
+      :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
+    >
+      <div
+        class="relative z-10 max-w-4xl space-y-8 text-left text-4xl leading-snug tracking-normal md:text-5xl md:leading-snug md:tracking-tight lg:text-5xl lg:leading-snug lg:tracking-tight [&_strong]:font-bold [&_strong]:text-yellow"
+      >
+        {{ $cleanStep | markdownify }}
+      </div>
+
+      {{ if $images }}
+        <div
+          class="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex"
+        >
+          <div class="relative h-full w-full max-w-7xl">
+            {{ $allRotations := slice "-rotate-6" "rotate-4" "-rotate-3" "rotate-5" "-rotate-2" "rotate-3" "-rotate-4" "rotate-2" }}
+            {{ $allScales := slice "scale-100" "scale-110" "scale-95" "scale-105" "scale-90" "scale-100" "scale-105" "scale-95" }}
+            {{ $allDelays := slice "delay-0" "delay-300" "delay-600" "delay-900" "delay-1200" "delay-1500" "delay-1800" "delay-2100" }}
+
+            {{ range $imgIndex, $imgRef := $images }}
+              {{ $parts := split (replace $imgRef "]" "") "|" }}
+              {{ $src := trim (replace (index $parts 0) "[image: " "") " " }}
+              {{ $position := "top-36 left-32" }}
+              {{ if ge (len $parts) 2 }}
+                {{ $position = index $parts 1 }}
+              {{ end }}
+
+              {{ $imgOpt := dict "filename" $src "width" 500 "height" 350 "resize" "fit" "ext" "jpeg" }}
+              {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
+
+              {{ $rotation := index $allRotations $imgIndex }}
+              {{ $scale := index $allScales $imgIndex }}
+              {{ $delay := index $allDelays $imgIndex }}
+
+
+              <div
+                class="{{ $position }} {{ $rotation }} {{ $scale }} {{ $delay }} absolute translate-y-12 transform opacity-0 transition-all duration-700 ease-out"
+                :class="activeIndex === {{ $i }} ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'"
+                style="z-index: {{ sub 10 $imgIndex }};"
+              >
+                <div
+                  class="transform bg-white p-3 shadow-2xl transition-transform duration-300 hover:scale-110"
+                >
+                  <img
+                    src="{{ $imgSrc }}"
+                    alt=""
+                    class="max-h-64 w-auto max-w-sm object-contain"
+                  />
+                  <div class="bg-gray-200 mt-2 h-1"></div>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+</div>

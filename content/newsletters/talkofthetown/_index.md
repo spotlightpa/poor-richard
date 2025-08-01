@@ -3,17 +3,17 @@ layout = "individual-newsletter"
 max-width = "730px"
 
 title = "News for north-central PA"
-subhead = "Sign up for **Talk of the Town** for essential news from our State College bureau"
+subhead = "Sign up for **Talk of the Town** for essential news from Spotlight PA State College"
 
 deck = "The news that matters to your community — from the PA Wilds to Happy Valley"
 
 bullets = [
-  "Delivered straight to your inbox every Thursday",
-  "Local stories that dig deep, unique events, and natural beauty",
-  "Covers rural communities, local accountability, and Penn State"
+  "Delivered straight to your inbox every weekday",
+  "Curated local stories and unique events",
+  "Explore the people, places, and food that make our region amazing"
 ]
 
-device-image = "2025/04/01m0-1be1-cdwr-hm4f.png"
+device-image = "2025/07/01m7-a4ez-jsap-ah2m.png"
 device-image-width = 956
 device-image-height = 1712
 
@@ -32,7 +32,7 @@ linktitle = "Talk of the Town"
 weight = 6
 image-gravity = "ce"
 image-size = "inline"
-occurrence = "Every Thursday"
+occurrence = "Each weekday"
 blurb = "The news that matters to your community — from the PA Wilds to Happy Valley."
 
 [cascade]

@@ -3,9 +3,11 @@ arc-id = "NM4WO6S3MBB7FOXUK6LVJDGIOQ"
 blurb = "Spotlight PA spoke with a state representative about how special elections work in Pennsylvania and why they matter."
 byline = "Spotlight PA Staff"
 description = "Spotlight PA spoke with a state representative about how special elections work in Pennsylvania and why they matter."
+draft = false
 event-date = 2023-02-09T18:00:00-05:00
 event-title = "How Harrisburg Works: Special elections"
 event-url = "https://inquirer.zoom.us/webinar/register/WN_jK89LGEYRcWz7p6AxYvc6w"
+feed-exclude = false
 image = "external/dnbbyhe2k6j3q805rxptefhxpr.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Voters in Allegheny County went to the polls on Feb. 7 for three special elections."
@@ -13,6 +15,7 @@ internal-budget = "Spotlight PA held a free panel on Pennsylvania special electi
 internal-id = "SPLSPECEVENT"
 kicker = "Events"
 modal-exclude = false
+pinned = false
 published = 2023-01-31T16:09:13.043-05:00
 slug = "pa-house-special-elections-allegheny-countyhow-harrisburg-works-event"
 suppress-date = false
@@ -29,7 +32,7 @@ Special elections occur when someone in public office can no longer serve, which
 
 For our first “How Harrisburg Works” event, Spotlight PA’s Stephen Caruso spoke about the issue with Democratic state Rep. Chris Rabb, who proposed a bill to <a href="https://www.spotlightpa.org/news/2020/02/pennsylvania-legislature-retirements-resignations-special-elections/">add new requirements to the special elections nomination process</a>. Watch the conversation below.
 
-<iframe src="https://player.vimeo.com/video/797719851?h=89f7805f5a" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x3OCvseSjB4?si=bhwHGN28o3m-yFjv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 “How Harrisburg Works” is Spotlight PA’s <a href="https://www.spotlightpa.org/topics/how-harrisburg-works/">ongoing series</a> on the Capitol’s inner workings, and this event is the first in a quarterly series to explain how the legislature works (or doesn’t) and how you can get involved.
 
