@@ -53,7 +53,7 @@ async function submitNewsletter(baseURL, el) {
     body: JSON.stringify(obj),
   });
 
-  for (let msg of resp.data) {
+  for (let msg of resp.data || []) {
     await fetchOrRedirect(`${baseURL}/api/list-add`, {
       method: "POST",
       headers: {
