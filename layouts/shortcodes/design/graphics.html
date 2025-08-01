@@ -1,0 +1,535 @@
+<h1 class="mb-4 font-bold text-black">Colors</h1>
+
+<div class="mb-4 flex items-center space-x-4">
+  <span class="text-2xl font-bold">Hex</span>
+  <label class="relative inline-flex cursor-pointer items-center">
+    <input type="checkbox" id="colorToggle" class="peer sr-only" />
+    <div class="h-6 w-11 rounded-full bg-blue"></div>
+    <div
+      class="absolute left-1 top-1 h-4 w-4 rounded-full bg-white transition-transform peer-checked:translate-x-5"
+    ></div>
+  </label>
+  <span class="text-2xl font-bold">RGB</span>
+</div>
+
+<div class="mt-8 grid grid-cols-1 gap-6" id="colorGrid"></div>
+
+<h2 class="font-bold text-black">Color Guidelines</h2>
+
+<div class="font-serif">
+  <ul class="list-disc space-y-2 pl-5 font-serif">
+    <li>
+      Use the main color blocks for primary data elements, such as bars in a bar
+      chart.
+    </li>
+    <li>
+      Use the gradient shades only for continuous values within a single color
+      range—choropleth maps are a common example.
+    </li>
+    <li>
+      When using gradient shades, space them evenly. For example, avoid skipping
+      one step and then suddenly skipping two.
+    </li>
+    <li>
+      You may use red and green to convey meaning such as negative and positive.
+    </li>
+    <li>Avoid using low-contrast colors like yellow for text.</li>
+    <li>
+      Use consistent colors across graphics. If a category is blue in one
+      graphic, it should be in any additional graphics.
+    </li>
+  </ul>
+</div>
+
+<hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
+
+<h1 class="mb-4 mt-12 font-bold text-black">Datawrapper</h1>
+
+<div style="min-height:449px" id="datawrapper-vis-1Dg8P">
+  <script
+    type="text/javascript"
+    defer
+    src="https://datawrapper.dwcdn.net/1Dg8P/embed.js"
+    charset="utf-8"
+    data-target="#datawrapper-vis-1Dg8P"
+  ></script>
+  <noscript
+    ><img
+      src="https://datawrapper.dwcdn.net/1Dg8P/full.png"
+      alt="Sample area graph"
+  /></noscript>
+</div>
+
+<h2 class="font-bold text-black">Datawrapper Guidelines</h2>
+
+<div class="font-serif">
+  <ul class="list-disc space-y-2 pl-5 font-serif">
+    <li>
+      Copy the
+      <b
+        style="background-color: #007da0; color: white; border-radius: 4px; padding: 0.15em 0.4em;"
+        >Responsive iframe</b
+      >
+      to embed the graphic.
+    </li>
+    <li>
+      To make your Datawrapper embed always show the latest version of the
+      chart, remove the version number from the embed URL:<br />
+      <code>https://datawrapper.dwcdn.net/1Dg8P/<b>10</b>/</code><br />
+      <b>↓</b><br />
+      <code>https://datawrapper.dwcdn.net/1Dg8P/</code>
+    </li>
+    <li>
+      Visit the
+      <a
+        href="https://academy.datawrapper.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-600 hover:text-blue-800 underline"
+      >
+        Datawrapper Academy</a
+      >
+      for additional tips for each graphic type.
+    </li>
+  </ul>
+</div>
+
+<hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
+
+<h1 class="mb-4 mt-12 font-bold text-black">Flourish</h1>
+
+<div class="flourish-embed flourish-map" data-src="visualisation/24021522">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript
+    ><img
+      src="https://public.flourish.studio/visualisation/24021522/thumbnail"
+      width="100%"
+      alt="Sample map visualization"
+  /></noscript>
+</div>
+
+<h2 class="font-bold text-black">Flourish Guidelines</h2>
+
+<div class="font-serif">
+  <ul class="list-disc space-y-2 pl-5 font-serif">
+    <li>
+      Copy the following values to their corresponding input to keep our styles
+      consistent across Datawrapper and Flourish.
+    </li>
+    <li>
+      You can duplicate a graphic to avoid filling these styles out every time
+      if it is of the same graphic type.
+    </li>
+    <li>
+      Copy the
+      <b
+        style="background-color: #49c171; color: white; border-radius: 4px; padding: 0.15em 0.4em;"
+        >Script (recommended)</b
+      >
+      code to embed the graphic.
+    </li>
+  </ul>
+</div>
+
+<h3 class="mt-6 font-bold text-black">→ Layout Tab</h3>
+
+<button
+  class="group w-full cursor-pointer text-left"
+  onclick="copySource(this)"
+  aria-label="Copy to clipboard"
+>
+  <div
+    class="flex flex-wrap items-center gap-x-3 gap-y-2 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7 sm:flex-nowrap"
+  >
+    <label class="min-w-[100px] cursor-pointer self-center font-semibold">
+      Main font:
+    </label>
+    <input
+      type="text"
+      value="Source Sans Pro"
+      class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
+      readonly
+    />
+    <div class="hidden sm:block">
+      <span class="icon-clipboard block">
+        <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+          {{ partial "helper/svg.html" "clipboard" }}
+        </svg>
+      </span>
+      <span class="icon-check hidden">
+        <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+          {{ partial "helper/svg.html" "check" }}
+        </svg>
+      </span>
+    </div>
+  </div>
+</button>
+
+<h3 class="mt-6 font-bold text-black">→ Header Tab</h3>
+
+<ul class="list-disc">
+  <li>Turn on the <b style="color: #1864E2;">Styling</b> toggle</li>
+
+  <li>
+    Change the title <b style="color: #1864E2;">Size</b> to the second option
+  </li>
+
+  <li>
+    Use the <b style="color: #1864E2;">Text</b> section (not Subtitle) for the
+    deck
+  </li>
+  <li>Enable the <b style="color: #1864E2;">Logo/Image</b> toggle</li>
+</ul>
+
+{{ $headerRows := slice
+  (dict "label" "Image:" "value" "https://public.flourish.studio/uploads/2422245/a2361592-f316-4297-8efe-adcb88774852.png")
+  (dict "label" "Height:" "value" "2.3")
+  (dict "label" "Top:" "value" "-0.1")
+}}
+
+
+<div class="mt-4 space-y-4">
+  {{ range $headerRows }}
+    <button
+      class="group w-full cursor-pointer text-left"
+      onclick="copySource(this)"
+      aria-label="Copy to clipboard"
+    >
+      <div
+        class="flex flex-wrap items-center gap-x-3 gap-y-2 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7 sm:flex-nowrap"
+      >
+        <label class="min-w-[100px] cursor-pointer self-center font-semibold">
+          {{ .label }}
+        </label>
+        <input
+          type="text"
+          value="{{ .value }}"
+          class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
+          readonly
+        />
+        <div class="hidden sm:block">
+          <span class="icon-clipboard block">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "clipboard" }}
+            </svg>
+          </span>
+          <span class="icon-check hidden">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "check" }}
+            </svg>
+          </span>
+        </div>
+      </div>
+    </button>
+  {{ end }}
+</div>
+
+<h3 class="mt-6 font-bold text-black">→ Footer Tab</h3>
+
+{{ $footerRows := slice
+  (dict "label" "Source label:" "value" "<b>Source:</b>")
+  (dict "label" "Note (byline):" "value" "<b>Graphic:</b>  First Last / Spotlight PA")
+}}
+
+
+<div class="mt-4 space-y-4">
+  {{ range $footerRows }}
+    <button
+      class="group w-full cursor-pointer text-left"
+      onclick="copySource(this)"
+      aria-label="Copy to clipboard"
+    >
+      <div
+        class="flex flex-wrap items-center gap-x-3 gap-y-2 rounded bg-g-9 p-3 text-white shadow transition-colors duration-150 group-hover:bg-yellow-7 sm:flex-nowrap"
+      >
+        <label class="min-w-[100px] cursor-pointer self-center font-semibold">
+          {{ .label }}
+        </label>
+        <input
+          type="text"
+          value="{{ .value }}"
+          class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
+          readonly
+        />
+        <div class="hidden sm:block">
+          <span class="icon-clipboard block group-[.copied]:hidden">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "clipboard" }}
+            </svg>
+          </span>
+          <span class="icon-check hidden">
+            <svg viewBox="0 0 1 1" class="h-5 w-5 fill-current text-yellow">
+              {{ partial "helper/svg.html" "check" }}
+            </svg>
+          </span>
+        </div>
+      </div>
+    </button>
+  {{ end }}
+</div>
+
+<div class="hidden">
+  <template id="clipboard-template">
+    <svg
+      viewBox="0 0 1 1"
+      class="js-clipboard-ref h-5 w-5 fill-current text-white"
+    >
+      {{ partial "helper/svg.html" "clipboard" }}
+    </svg>
+  </template>
+
+  <template id="check-template">
+    <svg viewBox="0 0 1 1" class="js-check-ref h-5 w-5 fill-current text-white">
+      {{ partial "helper/svg.html" "check" }}
+    </svg>
+  </template>
+  <div class="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+  <div
+    class="rounded-t-md bg-black/60 opacity-0 transition-opacity group-hover:opacity-100"
+  ></div>
+  <div class="rounded-t-md group-hover:opacity-0"></div>
+  <div class="peer peer-checked:translate-x-5"></div>
+  <div
+    class="drop-shadow-[0_0_2px_black] hover:shadow-[inset_0_0_0_3px_white]"
+  ></div>
+</div>
+
+<script>
+  const colors = [
+    { hex: "#2e2e2e", rgb: "rgb(46, 46, 46)" },
+    { hex: "#ffcb03", rgb: "rgb(255, 203, 3)" },
+    { hex: "#009edb", rgb: "rgb(0, 158, 219)" },
+    { hex: "#78bc20", rgb: "rgb(120, 188, 32)" },
+    { hex: "#d70000", rgb: "rgb(215, 0, 0)" },
+    { hex: "#22416e", rgb: "rgb(34, 65, 110)" },
+    { hex: "#1b998b", rgb: "rgb(27, 153, 139)" },
+    { hex: "#ff6c36", rgb: "rgb(255, 108, 54)" },
+  ];
+
+  function hexToHSL(hex) {
+    const r = parseInt(hex.slice(1, 3), 16) / 255;
+    const g = parseInt(hex.slice(3, 5), 16) / 255;
+    const b = parseInt(hex.slice(5, 7), 16) / 255;
+    const max = Math.max(r, g, b),
+      min = Math.min(r, g, b);
+    let h,
+      s,
+      l = (max + min) / 2;
+
+    if (max !== min) {
+      const d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      switch (max) {
+        case r:
+          h = (g - b) / d + (g < b ? 6 : 0);
+          break;
+        case g:
+          h = (b - r) / d + 2;
+          break;
+        case b:
+          h = (r - g) / d + 4;
+          break;
+      }
+      h /= 6;
+    } else {
+      h = s = 0;
+    }
+
+    return {
+      h: Math.round(h * 360),
+      s: Math.round(s * 100),
+      l: Math.round(l * 100),
+    };
+  }
+
+  function generateShades(baseHex) {
+    const { h, s } = hexToHSL(baseHex);
+    const shades = [];
+    for (let i = 9; i >= 1; i--) {
+      const l = 15 + i * 8;
+      shades.push(`hsl(${h}, ${s}%, ${l}%)`);
+    }
+    return shades;
+  }
+
+  function rgbToHex(rgbStr) {
+    const result = rgbStr
+      .match(/\d+/g)
+      .map((n) => parseInt(n).toString(16).padStart(2, "0"));
+    return `#${result.join("")}`;
+  }
+
+  function getAccessibleTextColor(hex) {
+    const bigint = parseInt(hex.slice(1), 16);
+    const r = (bigint >> 16) & 255,
+      g = (bigint >> 8) & 255,
+      b = bigint & 255;
+    const srgb = [r, g, b].map((v) => {
+      v /= 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    const l = 0.2126 * srgb[0] + 0.7152 * srgb[1] + 0.0722 * srgb[2];
+    const white = (1 + 0.05) / (l + 0.05);
+    const black = (l + 0.05) / 0.05;
+    return white >= black ? "white" : "black";
+  }
+
+  function updateColorMode() {
+    const useHex = !document.getElementById("colorToggle").checked;
+    document.querySelectorAll(".color-cell").forEach((cell) => {
+      const hex = cell.dataset.hex;
+      const rgb = cell.dataset.rgb;
+      const label = cell.querySelector(".color-label");
+      const overlay = cell.querySelector(".copy-overlay");
+      const display = useHex ? hex : rgb;
+      const contrast = getAccessibleTextColor(hex);
+
+      label.textContent = display;
+      label.style.color = contrast;
+      overlay.style.color = "white";
+      cell.dataset.color = display;
+    });
+  }
+
+  function copyColor(el) {
+    const color = el.dataset.color;
+    const overlay = el.querySelector(".copy-overlay");
+    const label = el.querySelector(".color-label");
+
+    overlay.textContent = "Copied!";
+    overlay.classList.remove("opacity-0");
+    label.classList.add("opacity-0");
+
+    navigator.clipboard.writeText(color).then(() => {
+      setTimeout(() => {
+        overlay.textContent = "Click to copy";
+        overlay.classList.add("opacity-0");
+        label.classList.remove("opacity-0");
+      }, 1000);
+    });
+  }
+
+  function renderColorBlocks() {
+    const clipboardTemplate = document.getElementById("clipboard-template");
+    const checkTemplate = document.getElementById("check-template");
+
+    function cloneClipboardIcon() {
+      return clipboardTemplate.content.firstElementChild.cloneNode(true);
+    }
+
+    function cloneCheckIcon() {
+      return checkTemplate.content.firstElementChild.cloneNode(true);
+    }
+
+    const grid = document.getElementById("colorGrid");
+    grid.innerHTML = "";
+
+    colors.forEach((color) => {
+      const wrapper = document.createElement("div");
+
+      const main = document.createElement("div");
+      main.className =
+        "color-cell relative w-full h-32 shadow cursor-pointer flex items-center justify-center group rounded-t-md";
+      main.style.backgroundColor = color.hex;
+      main.dataset.hex = color.hex;
+      main.dataset.rgb = color.rgb;
+      main.dataset.color = color.hex;
+      main.onclick = () => copyColor(main);
+
+      const label = document.createElement("span");
+      label.className =
+        "color-label text-white text-lg font-bold tracking-wide transition-opacity group-hover:opacity-0";
+
+      label.textContent = color.hex;
+
+      const overlay = document.createElement("span");
+      overlay.className =
+        "copy-overlay absolute inset-0 flex items-center justify-center text-white text-lg font-semibold bg-black/60 rounded-t-md opacity-0 transition-opacity group-hover:opacity-100";
+
+      overlay.textContent = "Click to copy";
+
+      main.appendChild(label);
+      main.appendChild(overlay);
+      wrapper.appendChild(main);
+
+      const shadeRow = document.createElement("div");
+      shadeRow.className = "flex w-full h-16";
+
+      generateShades(color.hex).forEach((shade) => {
+        const shadeDiv = document.createElement("div");
+        shadeDiv.className =
+          "h-full relative group cursor-pointer transition-shadow hover:shadow-[inset_0_0_0_3px_white]";
+
+        shadeDiv.classList.add("flex-1");
+
+        shadeDiv.style.backgroundColor = shade;
+
+        const iconWrapper = document.createElement("div");
+        const clipboardIcon = cloneClipboardIcon();
+        iconWrapper.appendChild(clipboardIcon);
+        iconWrapper.className = `
+          icon-container
+          absolute top-1/2 left-1/2 
+          transform -translate-x-1/2 -translate-y-1/2 
+          opacity-0 group-hover:opacity-100 
+          transition-opacity 
+          pointer-events-none 
+          drop-shadow-[0_0_2px_black]
+        `
+          .trim()
+          .replace(/\s+/g, " ");
+
+        shadeDiv.appendChild(iconWrapper);
+
+        shadeDiv.onclick = () => {
+          const useHex = !document.getElementById("colorToggle").checked;
+          const rgb = getComputedStyle(shadeDiv).backgroundColor;
+          const textToCopy = useHex ? rgbToHex(rgb) : rgb;
+
+          const checkWrapper = document.createElement("div");
+          const checkIcon = cloneCheckIcon();
+          checkWrapper.appendChild(checkIcon);
+
+          checkWrapper.className = iconWrapper.className;
+
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            shadeDiv.replaceChild(checkWrapper, iconWrapper);
+            setTimeout(() => {
+              shadeDiv.replaceChild(iconWrapper, checkWrapper);
+            }, 1000);
+          });
+        };
+
+        shadeRow.appendChild(shadeDiv);
+      });
+
+      wrapper.appendChild(shadeRow);
+      grid.appendChild(wrapper);
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    renderColorBlocks();
+    updateColorMode();
+    document
+      .getElementById("colorToggle")
+      .addEventListener("change", updateColorMode);
+  });
+
+  function copySource(button) {
+    const input = button.querySelector("input");
+    const iconContainer = button.querySelector("div.hidden.sm\\:block");
+    const clipboardSpan = iconContainer.querySelector(".icon-clipboard");
+    const checkSpan = iconContainer.querySelector(".icon-check");
+
+    navigator.clipboard.writeText(input.value).then(() => {
+      clipboardSpan.classList.add("hidden");
+      checkSpan.classList.remove("hidden");
+
+      setTimeout(() => {
+        clipboardSpan.classList.remove("hidden");
+        checkSpan.classList.add("hidden");
+      }, 1000);
+    });
+  }
+</script>
