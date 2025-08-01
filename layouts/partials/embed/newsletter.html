@@ -11,16 +11,14 @@
       return this.params.get(name) || fallback;
     },
     get preselected() {
-      return this.params.get('preselect');
+      return this.params.get('preselect') || 'papost';
     },
   }"
   @focusin="hasFocused = true"
 >
   {{ partial "newsletter/basic-hidden.html" . }}
   <p class="hidden" hidden>
-    <template x-if="!! preselected">
-      <input type="hidden" :name="preselected" value="1" />
-    </template>
+    <input type="hidden" :name="preselected" value="1" />
   </p>
   <h2
     class="border-b border-black font-serif text-2xl italic leading-tight"

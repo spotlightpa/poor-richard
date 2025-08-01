@@ -1,7 +1,7 @@
 {{ $cta := .Get "cta" | htmlUnescape | default `Discover overlooked stories, unique investigations, and daily joy from across PA with our free daily newsletter.` }}
 {{ $eyebrow := .Get "eyebrow" | htmlUnescape | default `Stay informed` }}
 {{ $button := .Get "button" | htmlUnescape | default `Sign Up` }}
-{{ $preselect := .Get "preselect" | htmlUnescape | default `` }}
+{{ $preselect := .Get "preselect" | htmlUnescape | default `papost` }}
 
 {{ $idEmail := partial "helper/new-id" . }}
 
@@ -15,11 +15,11 @@
   @focusin="hasFocused = true"
 >
   {{ partial "newsletter/basic-hidden.html" . }}
-  {{ with $preselect }}
-    <p class="hidden" hidden>
-      <input type="hidden" name="{{ . }}" value="1" />
-    </p>
-  {{ end }}
+
+
+  <p class="hidden" hidden>
+    <input type="hidden" name="{{ $preselect }}" value="1" />
+  </p>
   <h2 class="border-b border-black font-serif text-2xl italic leading-tight">
     {{- $eyebrow -}}
   </h2>
