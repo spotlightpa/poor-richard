@@ -92,7 +92,7 @@
       "description": "Support Spotlight PA's unmatched reporting for Pennsylvania \u0026 for a limited time, all gifts DOUBLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage_rail",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail_top",
       "sources": [
         "https://files.data.spotlightpa.org/uploads/01m8/szev/1.png",
         "https://files.data.spotlightpa.org/uploads/01m8/szew/5.png",
@@ -100,7 +100,7 @@
       ]
     }
   ],
-  "ad-rail-top-active": false,
+  "ad-rail-top-active": true,
   "banner": "\u003cstrong\u003eNew here?\u003c/strong\u003e Learn more about Spotlight PA's nonpartisan, nonprofit reporting »",
   "banner-active": false,
   "banner-bg-color": "#99d9f1",
