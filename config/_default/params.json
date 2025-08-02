@@ -9,12 +9,12 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania \u0026 for a limited time, all gifts DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01kv/zqz8/newsmatch-2023-tracker-banners-37-.png"
+        "https://files.data.spotlightpa.org/uploads/01m8/szek/site-toppertracker-17-.png"
       ]
     }
   ],
@@ -23,12 +23,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania \u0026 for a limited time, all gifts DOUBLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper_mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01kv/zr2e/newsmatch-2024-rectangles-1024-512-px-7-.png"
+        "https://files.data.spotlightpa.org/uploads/01m8/szek/-week-of-giving-500-x-250.png"
       ]
     }
   ],
@@ -45,12 +45,14 @@
   "ad-hp-breaker-mobile-width": 0,
   "ad-hp-featured": [
     {
-      "description": "Sign up for Talk of the Town, a free daily newsletter from Spotlight PA State College",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania \u0026 for a limited time, all gifts DOUBLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper_mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
+        "https://files.data.spotlightpa.org/uploads/01m8/szev/1.png",
+        "https://files.data.spotlightpa.org/uploads/01m8/szew/5.png",
+        "https://files.data.spotlightpa.org/uploads/01m8/szew/4.png"
       ]
     }
   ],
@@ -73,30 +75,34 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania \u0026 for a limited time, all gifts DOUBLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail_sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01m8/szev/1.png",
+        "https://files.data.spotlightpa.org/uploads/01m8/szew/5.png",
+        "https://files.data.spotlightpa.org/uploads/01m8/szew/4.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Sign up for Talk of the Town, a free daily newsletter from Spotlight PA State College",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania \u0026 for a limited time, all gifts DOUBLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage_rail",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
+        "https://files.data.spotlightpa.org/uploads/01m8/szev/1.png",
+        "https://files.data.spotlightpa.org/uploads/01m8/szew/5.png",
+        "https://files.data.spotlightpa.org/uploads/01m8/szew/4.png"
       ]
     }
   ],
-  "ad-rail-top-active": true,
+  "ad-rail-top-active": false,
   "banner": "\u003cstrong\u003eNew here?\u003c/strong\u003e Learn more about Spotlight PA's nonpartisan, nonprofit reporting »",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#99d9f1",
   "banner-link": "/about",
   "banner-text-color": "#000000",
@@ -119,11 +125,11 @@
   "support-bg-color": "#ffe0e0",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "CONTRIBUTE NOW »",
+  "support-cta": "GIVE \u0026 GET 2X »",
   "support-hed": "Before you go, I have a request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's reporting is more important than ever, and why we need you now.\n\nWe're independent, with no corporate owner or profit motives. We’re nonpartisan, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize investigative and public-service journalism that gets results.\n\nIf you're looking for a meaningful way to make a difference in these uncertain times, I can't think of a better investment than Spotlight PA's truthful, accurate, trusted reporting for Pennsylvania — journalism that gets real results.\n\n\u003cstrong\u003eYour tax-deductible support of any amount will ensure our vital work can continue.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's unbiased reporting is more important than ever.\n\n\u003cstrong\u003eAnd for a very limited time, your support can go 2X as far.\u003c/strong\u003e\n\nWe're independent, with no corporate owner or profit motives. We’re unbiased, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize investigative and public-service journalism that gets results.\n\nIf you're looking for a meaningful way to make a difference in these uncertain times, I can't think of a better investment than Spotlight PA's truthful, accurate, trusted reporting for Pennsylvania — journalism that gets real results.\n\n\u003cstrong\u003eFor a limited time, during our Week of Giving, your tax-deductible support of any amount will be matched 2X — that's DOUBLED.\u003c/strong\u003e Your donation now is urgently needed.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "We only have 6 days left to raise $12,000 to ensure our unmatched nonpartisan, nonprofit reporting can continue. Give to Spotlight PA today \u0026 get it DOUBLED »",
