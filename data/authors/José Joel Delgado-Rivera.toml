@@ -1,0 +1,15 @@
+name = "José Joel Delgado-Rivera"
+firstName = "José Joel"
+lastName = "Delgado-Rivera"
+title = "General Manager Spotlight PA Berks County"
+email = "jose@spotlightpa.org"
+headshot = "2025/08/01m9-1wzz-f0rf-1xjh.jpeg"
+content = """José Joel Delgado-Rivera is the general manager for Spotlight PA’s Berks County regional bureau. He’s responsible for leading community engagement, cultivating partnerships, driving fundraising efforts, and expanding Spotlight PA’s presence across Berks County.
+
+Prior to joining Spotlight PA, José served as chief communications officer for the Animal Rescue League of Berks County, where he oversaw public relations, marketing, and community outreach initiatives. He also worked as an Integrated Communications Advisor for Universidad del Sagrado Corazón in Puerto Rico, providing strategic guidance on media relations, branding, and stakeholder engagement.
+
+José has a bachelor's degree in Journalism and a masters in Public Relations from Universidad del Sagrado Corazón.
+Originally from San Germán, Puerto Rico, José has called Reading home since 2020.
+"""
+active = true
+role = "admin"
