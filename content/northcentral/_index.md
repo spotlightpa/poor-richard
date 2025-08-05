@@ -4,6 +4,8 @@ link-title = "North-Central Listening Tour"
 title-tag = "North-Central Listening Tour"
 layout = "page-landing"
 hide-topper = true
+ad-header-desktop-active = false
+ad-header-mobile-active = false
 
 [[blocks]]
 layout = "events"
