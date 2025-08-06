@@ -3,15 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-08-05-SPLABUSEREPORT0825.md"
+    "content/news/2025-08-06-SPLPRIEQNH0825.md"
   ],
   "subfeatures": [
-    "content/news/2025-04-08-SPLCHILDADVO0425.md",
-    "content/berks/2025-07-28-SPLCYSSHORT0725.md"
+    "content/news/2025-05-21-SPLPEFOLO0525.md",
+    "content/news/2025-05-13-SPLPRIVEQU0525.md"
   ],
   "topSlots": [
+    "content/news/2025-08-05-SPLABUSEREPORT0825.md",
     "content/news/2025-08-04-SPLSHAINAG0825.md",
-    "content/news/2025-08-04-SPLVBMACHINES0825.md",
-    "content/news/2025-07-30-SPLENERGYPRICE0725.md"
+    "content/news/2025-08-04-SPLVBMACHINES0825.md"
   ]
 }
