@@ -7,7 +7,11 @@
     class="bg-black p-5 font-sans sm:py-5 md:py-16 xl:px-0"
   >
     <h2
-      class="m-auto flex max-w-screen-lg items-baseline gap-3 text-base font-bold uppercase tracking-widest text-white"
+      class="{{ if .largeTitle }}
+        text-4xl
+      {{ else }}
+        text-base
+      {{ end }} m-auto flex max-w-screen-lg items-baseline gap-3 font-bold uppercase tracking-widest text-white"
     >
       {{ .title }}
     </h2>
@@ -33,6 +37,15 @@
             "gravity" (.page.Param "image-gravity")
           }}
           {{ partial "tw/image-block.html" $imgOpts }}
+
+          {{ with $.block.dek }}
+            <div
+              class="mt-6 font-sans text-lg leading-relaxed text-white lg:text-xl"
+            >
+              {{ $.Page.RenderString . }}
+            </div>
+          {{ end }}
+
         </div>
       </div>
       <span
