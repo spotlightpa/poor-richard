@@ -3,30 +3,96 @@
     <div
       class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-16 md:gap-x-6 md:px-0 lg:gap-x-12"
     >
+      {{ with .Param "eyebrow" }}
+        <div class="mx-auto w-full md:w-7/12">
+          <p
+            class="ga:component:main:header:eyebrow inline-block border-2 border-white bg-white px-2 font-sans text-xs font-semibold uppercase text-black md:text-sm"
+          >
+            {{ . }}
+          </p>
+        </div>
+      {{ end }}
+
+
       <h1
-        class="mx-auto w-full max-w-prose pb-2 font-serif text-4xl font-semibold leading-tight text-white md:w-7/12 lg:text-5xl"
+        class="mx-auto mt-4 w-full pb-2 font-serif text-2xl font-semibold leading-tight text-white sm:text-4xl md:w-7/12 lg:text-5xl"
       >
         {{ .Title }}
       </h1>
-    </div>
 
-    <div
-      class="mx-auto flex w-full max-w-screen-xl flex-wrap px-4 py-6 md:px-0"
-      data-ga-category="content"
-    >
-      <div
-        class="mx-auto w-full overflow-hidden pb-4 font-serif leading-relaxed md:w-7/12"
-      >
-        {{ with .Param "dek" }}
-          <h2
-            class="mx-auto w-0 min-w-full text-xl text-white md:text-2xl md:leading-tight"
+      {{ $byline := .Param "byline" }}
+      {{ $outlet := .Param "outlet" | default "Spotlight PA" }}
+      {{ $bylineLink := "" }}
+
+      {{ with .Param "authors" }}
+        {{ if len . | eq 1 }}
+          {{ $name := index . 0 }}
+          {{ $author := partial "helper/get-author" $name }}
+          {{ if $author.link }}
+            {{ $bylineLink = $author.link }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $byline }}
+        <div
+          class="mx-auto mt-4 w-full leading-none text-white md:w-7/12 lg:text-lg"
+        >
+          <span class="font-sans">
+            by
+            {{ if $bylineLink }}
+              <a
+                href="{{ $bylineLink }}"
+                class="font-semibold underline hover:text-yellow"
+              >
+                {{ $byline }}
+              </a>
+            {{ else }}
+              <span class="font-semibold">{{ $byline }}</span>
+            {{ end }}
+            of
+            {{ $outlet }}
+          </span>
+        </div>
+      {{ end }}
+
+
+      <div class="mx-auto w-full md:w-7/12">
+        {{ partial "tw/horizontal-social-buttons.html" . }}
+      </div>
+
+      {{ with .Param "sign-up-button" }}
+        <div class="mx-auto mb-4 mt-8 w-full md:w-7/12">
+          <button
+            class="w-full rounded bg-blue py-3 text-center font-sans text-lg font-medium text-white"
           >
             {{ . }}
-          </h2>
-        {{ end }}
+          </button>
+        </div>
+      {{ end }}
+
+
+      <div
+        class="mx-auto flex w-full max-w-screen-xl flex-wrap px-4 py-6 md:px-0"
+        data-ga-category="content"
+      >
+        <div
+          class="mx-auto w-full overflow-hidden pb-4 font-serif leading-relaxed md:w-7/12"
+        >
+          {{ with .Param "dek" }}
+            <h2
+              class="mx-auto w-0 min-w-full text-xl text-white md:text-2xl md:leading-tight"
+            >
+              {{ . }}
+            </h2>
+          {{ end }}
+        </div>
       </div>
     </div>
   </section>
+
+  {{ partial "blocks/mobile-scroll.html" . }}
+
 
   <section class="bg-white" data-ga-category="about">
     <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
