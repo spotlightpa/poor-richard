@@ -1,11 +1,14 @@
 +++
-title = "Pennsylvania Restaurant Safety Tracker"
-dek = "Free, real-time updates about health inspections at restaurants near you."
+eyebrow = "Health"
+title = "Spotlight PA Restaurant Inspections"
 layout = "restaurant-inspections"
 url = "/restaurant-inspections/"
 
-instructions = "Search records across 61 Pennsylvania counties"
-search-placeholder = "Enter restaurant name, city, or zip"
+byline = "Alexandra Harris"
+outlet = "Spotlight PA"
+
+
+sign-up-button = "Sign up for alerts"
 
 about-title = "About This Tool"
 about-description  = """
@@ -35,5 +38,3 @@ credits = """
   >}}
   """
 +++
-
-
