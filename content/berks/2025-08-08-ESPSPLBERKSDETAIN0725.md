@@ -28,7 +28,7 @@ Las órdenes de retención del ICE son solicitudes voluntarias que piden a las c
 
 El condado de Berks no tiene un acuerdo formal para cooperar con los funcionarios federales de inmigración, pero su cárcel cumple las órdenes de retención del ICE.
 
-{{<embed/newsletter button="Sign me up!" cta="Good Day, Berks is your daily dose of Berks County essentials. Be the first to know about important news, events, and more." preselect="berks">}}
+{{<embed/newsletter button="Sign me up!" cta="Good Day, Berks is your daily dose of Berks County essentials. Be the first to know about important news, events, and more" preselect="berks">}}
 
 En febrero, la junta de prisiones del condado votó a favor de aumentar de <a href="https://www.readingeagle.com/2025/02/12/berks-prison-modifies-its-policy-on-ice-detainers/">4 a 24 horas </a>el tiempo que se puede mantener a los reclusos con órdenes de retención. La junta <a href="https://www.readingeagle.com/2025/04/09/berks-prison-once-again-revises-its-policy-on-ice-detainers/">modificó la política de nuevo en abril </a>para aumentar el tiempo a 48 horas.
 
