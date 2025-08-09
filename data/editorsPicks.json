@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/statecollege/2025-08-08-SPLCAMPTAX0825.md"
+    "content/news/2025-08-08-SPLHIDDENTALENTS0825.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-07-31-SPLHUNTSTART0725.md",
-    "content/statecollege/2025-07-18-SPLSUNHUNT0725.md",
-    "content/statecollege/2025-07-10-SPLBBBRURAL0725.md"
+    "content/news/2025-08-07-SPLNEWSQUIZAUG0425.md",
+    "content/news/2025-07-25-SPLRAILROAD0725.md",
+    "content/news/2025-05-09-SPLHIDDENTALENT0525.md"
   ],
   "topSlots": [
+    "content/statecollege/2025-08-08-SPLCAMPTAX0825.md",
     "content/news/2025-08-08-SPLVBVOTERROLL0825.md",
-    "content/news/2025-08-06-SPLTRANSUP0825.md",
-    "content/news/2025-08-06-SPLPRIEQNH0825.md"
+    "content/news/2025-08-06-SPLTRANSUP0825.md"
   ]
 }
