@@ -9,6 +9,8 @@ outlet = "Spotlight PA"
 
 
 sign-up-button = "Sign up for alerts"
+search-placeholder = "Search restaurants"
+search-location = true
 
 about-title = "About This Tool"
 about-description  = """
