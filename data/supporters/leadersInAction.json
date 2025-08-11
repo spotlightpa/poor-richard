@@ -694,13 +694,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Edwina Naylor",
-      "sort": "Naylor",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Kathleen Nelson",
       "sort": "Nelson",
       "url": "",
@@ -944,6 +937,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Robert and Suzanne Stetson",
+      "sort": "Stetson",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "E. Marvin Stouffer",
