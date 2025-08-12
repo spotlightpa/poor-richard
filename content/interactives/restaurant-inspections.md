@@ -38,5 +38,10 @@ credits = """
       role="Digital Growth Strategist"
       email="cbruno@spotlightpa.org"
   >}}
+  {{<featured/credit
+      eyebrow="Funding/assistance??"
+      name="American Journalism Project"
+      role="Liam, etc."
+  >}}
   """
 +++
