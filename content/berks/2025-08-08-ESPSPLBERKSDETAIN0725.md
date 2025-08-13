@@ -5,7 +5,7 @@ blurb = "El condado no tiene un acuerdo formal con el ICE, pero cumple con las �
 byline = "Gabriela Martínez de Spotlight PA"
 description = "El condado no tiene un acuerdo formal para cooperar con los funcionarios federales de inmigración, pero cumple con las órdenes de retención para mantener temporalmente a las personas en la cárcel."
 draft = false
-feed-exclude = false
+feed-exclude = true
 image = "2025/07/01m7-zxxh-y2fk-nr99.jpeg"
 image-credit = "Cortesía de la cárcel del condado de Berks"
 image-description = "Cárcel del condado de Berks en Leesport, Pensilvania"
@@ -19,7 +19,7 @@ slug = "condado-berks-ice-inmigracion-politica-detencion-espanol"
 suppress-date = false
 title = "Cómo el condado de Berks coopera con el ICE sin ayudarle a realizar arrestos"
 title-tag = "El condado de Berks cumple las órdenes de retención del ICE. ¿Qué significa esto?"
-topics = ["Español", "Berks County"]
+topics = ["Español"]
 +++
 
 READING — El presidente Donald Trump prometió llevar a cabo deportaciones masivas durante su campaña, y desde que regresó al cargo, su administración ha <a href="https://tracreports.org/reports/758/">aumentado el </a>uso de herramientas que promueven ese objetivo. Una de esas herramientas es la órden de retención migratoria del ICE.
