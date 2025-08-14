@@ -1,15 +1,17 @@
 +++
-eyebrow = "Health"
-title = "Spotlight PA Restaurant Inspections"
 layout = "restaurant-inspections"
 url = "/restaurant-inspections/"
+
+eyebrow = "Health"
+title = "Pennsylvania Restaurant Safety Tracker"
+deck = "Free, real-time updates about health inspections at restaurants near you."
 
 byline = "Alexandra Harris"
 outlet = "Spotlight PA"
 
-
 sign-up-button = "Sign up for alerts"
-search-placeholder = "Search restaurants"
+search-instructions = "Search by restaurant name, city, or zip across 61 counties"
+search-placeholder = "Search for restaurants"
 search-location = true
 
 about-title = "About This Tool"
@@ -37,11 +39,6 @@ credits = """
       name="Christina Bruno"
       role="Digital Growth Strategist"
       email="cbruno@spotlightpa.org"
-  >}}
-  {{<featured/credit
-      eyebrow="Funding/assistance??"
-      name="American Journalism Project"
-      role="Liam, etc."
   >}}
   """
 +++
