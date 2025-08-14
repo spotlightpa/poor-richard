@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <section class="bg-black pb-6">
+  <section class="bg-black pb-6 mt-6">
     <div
       class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-16 md:gap-x-6 md:px-0 lg:gap-x-12"
     >
@@ -89,7 +89,7 @@
         }}
       </div>
 
-      <div x-data="{ view: 'list' }" class="mx-auto mt-4 w-full md:w-7/12">
+      <div x-data="{ view: 'list' }" class="mx-auto mt-12 w-full md:w-7/12">
         <div
           class="flex w-full overflow-hidden rounded border-[3px] border-yellow-5"
         >
@@ -98,7 +98,7 @@
             :class="view === 'list' 
             ? 'bg-yellow' 
             : 'bg-white'"
-            class="w-1/2 border-r-[3px] border-yellow py-2 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
+            class="w-1/2 border-r-[1.5px] border-yellow-5 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
           >
             List
           </button>
@@ -108,7 +108,7 @@
             :class="view === 'map' 
             ? 'bg-yellow' 
             : 'bg-white'"
-            class="w-1/2 py-2 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
+            class="w-1/2 border-l-[1.5px] border-yellow-5 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
           >
             Map
           </button>
