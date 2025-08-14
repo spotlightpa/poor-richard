@@ -1,32 +1,9 @@
 import { storeItem, loadItem, allClosest } from "./dom-utils.js";
-import { recordNewsletterSignup, funnelStatus } from "./metrics.js";
+import { recordNewsletterSignup } from "./metrics.js";
 
 export const DO_NOT_TRACK_KEY = "do-not-track";
 
 let dnt = loadItem(DO_NOT_TRACK_KEY);
-
-function sendPlausible(action, params = {}) {
-  if (dnt) {
-    // eslint-disable-next-line no-console
-    console.log("Plausible", action, params);
-    return;
-  }
-
-  if (!action) return;
-  let payload = {
-    n: action,
-    u: location.href,
-    d: document.domain,
-    r: document.referrer,
-    w: window.innerWidth,
-    h: 0, // "H"ashmode, not "h"eight
-    p: params,
-  };
-  navigator.sendBeacon(
-    "https://plausible.io/api/event",
-    JSON.stringify(payload),
-  );
-}
 
 function buildGAClasses(el) {
   let component = allClosest(el, "[data-ga-category]")
@@ -57,24 +34,6 @@ export function addGAListeners() {
     console.warn("could not report page view!");
     return;
   }
-  let { gaPageTitle, byline } = el.dataset;
-
-  let pageCategory = allClosest(document.body, "[data-page-cat]")
-    .map((el) => el.dataset.pageCat)
-    .join(":");
-  // TODO: Add 404
-  sendPlausible("pageview", {
-    pageCategory,
-    title: gaPageTitle,
-    byline,
-    funnelStatus,
-  });
-
-  window.addEventListener("error", (ev) => {
-    sendPlausible("error", {
-      message: ev.message,
-    });
-  });
 
   window.addEventListener(
     "click",
