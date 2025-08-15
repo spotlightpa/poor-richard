@@ -5,8 +5,6 @@ url = "/legacy/"
 layout = "support"
 image = "2025/08/01m9-wbzt-8m3h-1g64.png"
 image-gravity = "ce"
-
-[[blocks]]
 +++
 
 {{<picture
