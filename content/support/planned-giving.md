@@ -1,18 +1,23 @@
 +++
 published = 2025-08-14T13:14:35.433Z
-title = "Your Legacy of Truth & Transparency "
 url = "/legacy/"
 layout = "support"
 image = "2025/08/01m9-wbzt-8m3h-1g64.png"
 image-gravity = "ce"
 +++
 
-{{<picture
-    src="2025/08/01m9-wbzt-8m3h-1g64.png"
-    description="The Spotlight PA Legacy Society"
-    width-ratio="2"
-    height-ratio="1"
->}}
+<div class="relative -top-12">
+  <div class="mx-auto max-w-xl sm:max-w-2xl">
+    <img
+      class="mx-auto h-full w-full object-cover"
+      alt="Spotlight PA Legacy Society"
+      title="Spotlight PA Legacy Society"
+      src="https://images.data.spotlightpa.org/w:669/h:334/MjAyNS8wOC8wMW05LXluYmotZXZ4OC1xMHEzLnBuZw.png"
+    >
+  </div>
+</div>
+
+<div class="relative -top-12 text-center text-4xl font-bold leading-tight text-black lg:text-5xl">Your Legacy of Truth & Transparency</div>
 
 {{<featured/large>}}Journalism has been foundational to the success of American democracy. The long legacy of press freedom was enshrined in the U.S. Constitution here in Pennsylvania almost 250 years ago, and it is Spotlight PA’s mission is to ensure that it continues to thrive throughout our Commonwealth. By adding a donation to Spotlight PA to your estate planning, known as a bequest, you can be a part of this legacy forever.
 <br><br>
