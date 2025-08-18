@@ -20,7 +20,7 @@ slug = "condado-berks-ice-inmigracion-politica-detencion-espanol"
 suppress-date = false
 title = "Cómo el condado de Berks coopera con el ICE sin ayudarle a realizar arrestos"
 title-tag = "El condado de Berks cumple las órdenes de retención del ICE. ¿Qué significa esto?"
-topics = ["Español"]
+topics = ["Español", "Berks County"]
 +++
 
 READING — El presidente Donald Trump prometió llevar a cabo deportaciones masivas durante su campaña, y desde que regresó al cargo, su administración ha <a href="https://tracreports.org/reports/758/">aumentado el </a>uso de herramientas que promueven ese objetivo. Una de esas herramientas es la órden de retención migratoria del ICE.
@@ -108,4 +108,3 @@ Casi 30 agencias locales de aplicación de la ley en Pensilvania habían <a href
 El condado de Berks <a href="https://www.berkspa.gov/getmedia/d46d22ff-e952-4737-9277-5806bfe734ee/InForce-Spring-2017.pdf">buscó </a>un acuerdo 287 (g) en 2017, pero actualmente no lo está haciendo.
 
 &#34;Nadie se ha acercado a la Junta de Comisionados con ningún interés en establecer una relación bajo la Sección 287 (g) de la Ley de Inmigración y Nacionalidad&#34;, dijo el portavoz del condado.
-

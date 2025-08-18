@@ -18,7 +18,7 @@ slug = "crowne-plaza-wyomissing-berks-county-blight"
 suppress-date = false
 title = "A major hotel in this Pa. county is sitting vacant. Officials are considering taking control."
 title-tag = "Wyomissing may seize control of shuttered Crowne Plaza hotel"
-topics = ["Housing"]
+topics = ["Housing", "Berks County"]
 +++
 
 WYOMISSING — Officials in the most populous borough of Berks County say they will take control of a hotel that has been shuttered for three years if its owner doesn’t step forward.
@@ -58,4 +58,3 @@ The hotel first opened as a <a href="https://berksnostalgia.com/the-sheraton-mot
 Bare stressed that the borough has worked tirelessly to get the former hotel back into operation since it closed. It’s critical to redevelop the property for the community’s benefit as well as to ensure a healthy tax base, she said. Bare said the borough has issued notices for grass and weeds for years, and often ends up hiring a landscaper and charging the cost to the owner.
 
 “We have spent significant staff time and resources taking every legal action we can to be on the record about what the issues are and what needs to be fixed,” Bare said. “And there is a consequence for failing to do so.”<strong></strong>
-

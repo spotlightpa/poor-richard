@@ -18,7 +18,7 @@ slug = "higher-education-albright-nets-unexpected-1m-in-art-auction"
 suppress-date = false
 title = "Albright College in Berks County nets unexpected $1M in art auction"
 title-tag = "Albright College art earns $1M at auction"
-topics = ["Higher education"]
+topics = ["Higher education", "Berks County"]
 +++
 
 READING — The public auction of Albright College’s Freedman Gallery collection garnered nearly $1 million for the private liberal arts school in Reading as it tries to get on solid financial footing after years of deficits.
@@ -46,4 +46,3 @@ Fleming declined to say how much the museum spent acquiring the artwork, which i
 <a href="http://www.readingpublicmuseum.org/">Museum</a> officials said they hope to exhibit the newly acquired artwork within the next year.
 
 “This was a meaningful outcome for all involved,” Gaddy said in the museum news release. “We’re proud to have preserved important works for the community and kept them accessible to the public.”
-

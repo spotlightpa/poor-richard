@@ -18,7 +18,7 @@ slug = "berks-county-jose-delgado-rivera-general-manager-editors-note"
 suppress-date = false
 title = "Meet José Delgado-Rivera, the first general manager of Spotlight PA’s Berks Bureau"
 title-tag = "Spotlight PA hires Berks Bureau general manager"
-topics = ["Editor's Notes"]
+topics = ["Editor's Notes", "Berks County"]
 +++
 
 José Joel Delgado-Rivera is Spotlight PA’s new general manager for the Berks Bureau. This is a newly created position, supported by the American Journalism Project, responsible for fundraising, partnerships, and community outreach for Spotlight PA’s newsroom in Berks County.
@@ -34,4 +34,3 @@ Berks is the second bureau in a <a href="https://www.spotlightpa.org/news/2025/0
 “We don’t want to just report on a community, we want to be a part of it,” said Christopher Baxter, CEO &amp; president of Spotlight PA. “José is the perfect choice to ensure Spotlight PA is a powerful force for good in Reading and Berks County.”
 
 Spotlight PA is an award-winning, independent, nonpartisan newsroom founded in 2019 to revitalize investigative and public-service reporting across Pennsylvania. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories regularly republished across 130 partner newsrooms, allowing our vital reporting to reach Pennsylvanians in all corners and drive positive change.
-

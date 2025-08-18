@@ -18,7 +18,7 @@ slug = "here-are-berks-county-school-property-tax-changes"
 suppress-date = false
 title = "Here are Berks County school property tax changes"
 title-tag = "Most Berks County school districts increase property taxes"
-topics = ["Education"]
+topics = ["Education", "Berks County"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
@@ -52,4 +52,3 @@ Other districts that have recently approved budgets include:
 - Muhlenberg School District approved a <a href="https://go.boarddocs.com/pa/muhl/Board.nsf/files/DHDPJ76258AD/$file/ADOPT%20FINAL%20BUDGET%2025-26%20SY.pdf">$92.2 million budget</a> for next year, which raised the tax rate 4.77% to 38.406 mills.
 
 - Reading School District approved a $481.6 million budget for the 2025-26 school year with no increase in property taxes. The tax rate remains at 17.93 mills, which is the lowest in the county.
-
