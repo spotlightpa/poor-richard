@@ -12,6 +12,7 @@ image-description = "Cárcel del condado de Berks en Leesport, Pensilvania"
 image-gravity = "ce"
 internal-id = "ESPSPLBERKSDETAIN0725"
 kicker = "Español"
+language-code = "es"
 modal-exclude = false
 pinned = false
 published = 2025-08-08T15:07:35.346-04:00
