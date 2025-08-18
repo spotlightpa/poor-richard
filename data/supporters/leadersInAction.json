@@ -1,13 +1,6 @@
 {
   "list": [
     {
-      "display": "Sharon Albrecht",
-      "sort": "Albrecht",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Kip Armstrong",
       "sort": "Armstrong",
       "url": "",
@@ -393,13 +386,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Kelly Heisey",
-      "sort": "Heisey",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Ardith Hilliard",
       "sort": "Hilliard",
       "url": "",
@@ -640,13 +626,6 @@
     {
       "display": "Sarah McCain",
       "sort": "McCain",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Jane and Mark Mendlow",
-      "sort": "Mendlow",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -977,8 +956,8 @@
       "display": "Stephanie Szakal",
       "sort": "Szakal",
       "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Richard S. Tabas/Harriette Steelman \u0026 Charles L. Tabas Foundation",
@@ -988,7 +967,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Anthony and Susan Tarantino",
+      "display": "Anthony Tarantino",
       "sort": "Tarantino",
       "url": "",
       "category": "$1,000-$2,499",
