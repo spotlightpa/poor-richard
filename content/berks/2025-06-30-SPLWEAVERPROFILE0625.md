@@ -18,7 +18,7 @@ slug = "meet-berks-county-community-safety-officer-protecting-kids"
 suppress-date = false
 title = "Meet a Berks County community safety officer protecting kids"
 title-tag = "Jan Weaver helps kids at busy intersections"
-topics = ["Community Profile"]
+topics = ["Community Profile", "Berks County"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
@@ -80,4 +80,3 @@ Although I had my parents, my great aunt and uncle mostly raised me. They saw to
 They took me to Disneyland when I was nine, and later on, at 20, the three of us went to Europe. Touring the cities of Amsterdam, Athens, and enjoying the beautiful country of Austria together. They showed me what it was like to be loved, and these influences I have carried with me all my life. Their passion for education, true love, and caring for others is something I have strived to share with the children in my life as well. I want all my walkers to know there is someone who truly cares — to know Crossing Guard Jan does! —Lisa Scheid, managing editor of Spotlight PA&#39;s Berks County Bureau
 
 <em>Know someone who deserves the Community Spotlight? </em><a href="mailto:lscheid@spotlightpa.org"><strong><em>Tell us.</em></strong></a><em> This positive news newsletter for Berks County is made possible thanks to a generous grant from the United Way of Berks County, which is celebrating 100 years of service to the community.</em> <strong></strong>
-
