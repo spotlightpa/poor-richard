@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-08-18-SPLpardonapp0825.md"
+    "content/news/2025-08-18-APGARRITY0825.md"
   ],
   "subfeatures": [
-    "content/news/2025-03-03-SPL_STALLWORTH0325.md",
-    "content/news/2024-12-12-splpardon1224.md",
-    "content/news/2025-03-21-SPLBOPDATA0325.md"
+    "content/news/2024-12-10-SPLFUTUREPOL1224.md",
+    "content/news/2024-10-04-SPLGARGEN.md",
+    "content/news/2024-11-06-SPLTRESRES24.md"
   ],
   "topSlots": [
+    "content/news/2025-08-18-SPLpardonapp0825.md",
     "content/news/2025-08-15-SPLTRANSITFOLO0825.md",
-    "content/news/2025-08-14-VBFRAUDANA0825.md",
-    "content/statecollege/2025-08-13-SPLPSULOBBY0825.md"
+    "content/news/2025-08-14-VBFRAUDANA0825.md"
   ]
 }
