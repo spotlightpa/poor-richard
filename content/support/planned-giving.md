@@ -4,6 +4,9 @@ url = "/legacy/"
 layout = "support"
 image = "2025/08/01m9-wbzt-8m3h-1g64.png"
 image-gravity = "ce"
+ad-header-desktop-active = false
+ad-header-mobile-active = false
+
 +++
 
 <div class="relative -top-12">
@@ -19,7 +22,7 @@ image-gravity = "ce"
 
 <div class="relative -top-12 text-center text-4xl font-bold leading-tight text-black lg:text-5xl">Your Legacy of Truth & Transparency</div>
 
-{{<featured/large>}}Journalism has been foundational to the success of American democracy. The long legacy of press freedom was enshrined in the U.S. Constitution here in Pennsylvania almost 250 years ago, and it is Spotlight PA’s mission is to ensure that it continues to thrive throughout our Commonwealth. By adding a donation to Spotlight PA to your estate planning, known as a bequest, you can be a part of this legacy forever.
+{{<featured/large>}}Journalism has been foundational to the success of American democracy. The long legacy of press freedom was enshrined in the U.S. Constitution here in Pennsylvania almost 250 years ago, and it is Spotlight PA’s mission to ensure that it continues to thrive throughout our Commonwealth. By adding a donation to Spotlight PA to your estate planning, known as a bequest, you can be a part of this legacy forever.
 <br><br>
 Please let us know if you are including Spotlight PA in your plans, so we can help ensure that you have the most up-to-date and accurate information necessary and that your donation will be used in the exact way that you wish. This will also allow us to plan ahead as an organization. Please contact Sean O’Riordan at <a href="mailto:soriordan@spotlightpa.org">soriordan@spotlightpa.org</a>.
 {{</featured/large>}}
