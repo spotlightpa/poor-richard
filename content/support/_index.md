@@ -1,5 +1,4 @@
 +++
-published = 2019-09-05T13:14:35.433Z
 title = "Support Spotlight PA"
 url = "/support/"
 aliases = ["/about/statecollege/", "/support/statecollege/", "/support/state-college/"]
