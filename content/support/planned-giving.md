@@ -1,5 +1,5 @@
 +++
-published = 2025-08-14T13:14:35.433Z
+title = "Support Spotlight PA with planned giving"
 url = "/legacy/"
 layout = "support"
 image = "2025/08/01m9-wbzt-8m3h-1g64.png"
@@ -41,7 +41,7 @@ Please let us know if you are including Spotlight PA in your plans, so we can he
 
 # For Professional Advisors
 
-{{<featured/large>}}Spotlight PA is ready to assist as you guide your clients in drafting their estate plans with a philanthropic legacy in mind. Spotlight PA’s investments are guided by our <a href="https://www.google.com/url?q=https://files.data.spotlightpa.org/uploads/01m2/emj5/investment-policy-statement.pdf&sa=D&source=docs&ust=1755205379479012&usg=AOvVaw2AHrtn90Wx68prqb3zqPsE">Investment Policy Statement</a> and overseen by the Finance Committee of our <a href="https://www.spotlightpa.org/about/board/">Board of Directors</a>. 
+{{<featured/large>}}Spotlight PA is ready to assist as you guide your clients in drafting their estate plans with a philanthropic legacy in mind. Spotlight PA’s investments are guided by our <a href="https://www.google.com/url?q=https://files.data.spotlightpa.org/uploads/01m2/emj5/investment-policy-statement.pdf&sa=D&source=docs&ust=1755205379479012&usg=AOvVaw2AHrtn90Wx68prqb3zqPsE">Investment Policy Statement</a> and overseen by the Finance Committee of our <a href="https://www.spotlightpa.org/about/board/">Board of Directors</a>.
 <br><br>
 Please feel free to <a href="mailto:membership@spotlightpa.org">contact us</a> directly for information or assistance on a confidential basis. We’re happy to work with you and your clients to develop a plan.{{</featured/large>}}
 
