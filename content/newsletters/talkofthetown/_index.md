@@ -27,7 +27,9 @@ hiddenField = "newsletter/talkofthetown-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "Talk of the Town"
+linktitle = "Talk of the Town - Essential News for North-Central PA"
+description = "Get the news that matters to your community — from the PA Wilds to Happy Valley — with our free daily newsletter from Spotlight PA State College.  "
+teamTitle = "Talk of the Town"
 
 weight = 6
 image-gravity = "ce"

@@ -26,7 +26,9 @@ hiddenField = "newsletter/papost-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "PA Post"
+linktitle = "PA Post - Your Daily Guide to Pennsylvania News"
+description = "Understand what's happening across Pennsylvania in five minutes or less with Spotlight PA's free daily newsletter."
+teamTitle = "PA Post"
 
 blurb = "Understand what's happening across PA - in less than five minutes a day."
 occurrence = "Each weekday"
