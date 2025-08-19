@@ -73,7 +73,7 @@ A Walmart spokesperson in August said it has 134 pharmacies in Pennsylvania — 
 
 Asked about the difference, a Pennsylvania Department of State spokesperson said the additional Walmart pharmacy was in an “active-address pending approval” status due to a location change. (Spotlight PA’s chart above also does not include stores under the name Sam’s Club, which is a <a href="https://corporate.walmart.com/about/samsclub/news/2025/04/11/sams-club-unveils-ambitious-growth-strategy-at-2025-investment-community-meeting">membership club and division of Walmart</a>.)
 
-A GIANT Company spokesperson said the business operates under multiple names, including seven Martin’s pharmacies in Pennsylvania. Those ones bring the company’s total pharmacies in the state to 115, according to the company spokesperson and state licensing data.
+A GIANT Company spokesperson said the business operates under multiple names, including seven MARTIN’S pharmacies in Pennsylvania. Those ones bring the company’s total pharmacies in the state to 115, according to the company spokesperson and state licensing data.
 
 A CVS spokesperson said it considers itself to have 455 traditional pharmacy locations in the state. One of the locations that Spotlight PA identified for CVS was a mail-order pharmacy, while two others were part of <a href="https://www.cvshealth.com/services/pharmacy/specialty-pharmacy.html">CVS&#39; specialty business</a>, the spokesperson said.
 
