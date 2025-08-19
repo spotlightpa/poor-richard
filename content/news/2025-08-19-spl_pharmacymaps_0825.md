@@ -61,7 +61,7 @@ The closures are also a concern in urban areas. The director of York city’s Bu
 
 A Spotlight PA analysis of pharmacy data shows that Rite Aid was one of the leading chains in the state, highlighting just how big of an impact the recent closures have had on Pennsylvania.
 
-{{<datawrapper src="https://datawrapper.dwcdn.net/6hQfA/14/" height="401" >}}
+{{<datawrapper src="https://datawrapper.dwcdn.net/6hQfA/20/" height="399" >}}
 
 Spotlight PA reached out to each of the businesses listed in the chart above to share the newsroom&#39;s findings and what its numbers were based upon. Responses varied.
 
