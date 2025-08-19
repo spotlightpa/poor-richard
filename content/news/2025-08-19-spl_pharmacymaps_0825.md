@@ -39,7 +39,7 @@ Here are three things you need to know:
 
 More than 800 licensed pharmacies have closed since January 2020. While some new ones opened during that time period, it wasn’t enough to make up the difference and the state still lost hundreds of pharmacies overall.
 
-{{<datawrapper src="https://datawrapper.dwcdn.net/PSbhj/6/" height="525" >}}
+{{<datawrapper src="https://datawrapper.dwcdn.net/PSbhj/7/" height="525" >}}
 
 Some <a href="https://www.palegis.us/senate/co-sponsorship/memo?memoID=47047">state lawmakers</a> have cited the closures as they push for legislation that would affect reimbursements pharmacies receive for their work.
 
