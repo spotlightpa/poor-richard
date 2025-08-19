@@ -26,7 +26,9 @@ blurb = "Be the first to know about important news, events, and more from our ne
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "Good Day, Berks"
+linktitle = "Good Day, Berks - Essential News for Berks County"
+description = "Every weekday morning, Good Day, Berks brings curated local stories, events and community highlights straight to your inbox."
+teamTitle = "Good Day, Berks"
 
 
 image-size = "inline"

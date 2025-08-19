@@ -23,7 +23,9 @@ hiddenField = "newsletter/pennstatealert-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "Penn State Alerts"
+linktitle = "Get Penn State Alerts from our State College Bureau"
+description = "Get notified immediately of new investigative coverage on Penn State from Spotlight PA’s State College team."
+teamTitle = "Penn State Alerts"
 
 weight = 8
 image-size = "inline"
