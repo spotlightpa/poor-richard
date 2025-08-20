@@ -3,16 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-08-19-SPLAMTRAK0825.md"
+    "content/news/2025-08-20-SPLIMPASSE0825.md"
   ],
   "subfeatures": [
     "content/news/2025-08-15-SPLTRANSITFOLO0825.md",
-    "content/news/2025-08-11-SPLHOUSESEPTA0825.md",
-    "content/news/2025-07-29-SPLBUDCON0725.md"
+    "content/news/2025-08-12-SPLSENBUDGET0825.md",
+    "content/news/2025-06-24-SPLSKILLSFIGHT0625.md",
+    "content/news/2025-06-27-SPLBUDDEADLINE0625.md"
   ],
   "topSlots": [
+    "content/news/2025-08-19-SPLAMTRAK0825.md",
     "content/news/2025-08-19-spl_pharmacymaps_0825.md",
-    "content/news/2025-08-18-SPLpardonapp0825.md",
-    "content/news/2025-08-15-SPLTRANSITFOLO0825.md"
+    "content/news/2025-08-18-SPLpardonapp0825.md"
   ]
 }
