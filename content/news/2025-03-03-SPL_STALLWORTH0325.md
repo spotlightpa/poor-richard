@@ -205,6 +205,13 @@ src=&#34;https://www.canva.com/design/DAGgOvh0Elk/efAP\_YKho217uN9SNLeJyw/view?e
 
 &lt;figcaption class=&#34;max-w-content mx-auto text-g-8 text-sm mt-4&#34;&gt;Board of Pardons Secretary Shelley Watson emailed Sabirha Williams and Sean Damon of the Amistad Law Project to inform them of a new vote on Gail Stallworth&#39;s commutation. (Courtesy of Sabirha Williams)&lt;/figcaption&gt;
 
+{{<featured/iframe
+  src="https://www.canva.com/design/DAGgOvh0Elk/efAP_YKho217uN9SNLeJyw/view?embed"
+  width="800"
+  height="400"
+  caption="Board of Pardons Secretary Shelley Watson emailed Sabirha Williams and Sean Damon of the Amistad Law Project to inform them of a new vote on Gail Stallworth's commutation. (Courtesy of Sabirha Williams)"
+>}}
+
 ### A changed process
 
 While clemency has existed in Pennsylvania since the state was a colony, the process Stallworth navigated has been in place only since 1997.
