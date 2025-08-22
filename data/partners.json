@@ -898,7 +898,7 @@
       "lat": "",
       "logo-url": "",
       "long": "",
-      "url": "MoreThanTheCurve.com"
+      "url": "https://MoreThanTheCurve.com"
     },
     {
       "City": "West Point",
@@ -1367,6 +1367,15 @@
       "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx72/york-dispatch.jpeg",
       "long": "",
       "url": "https://www.yorkdispatch.com"
+    },
+    {
+      "City": "West Chester",
+      "County": "Chester",
+      "Name": "Hello West Chester",
+      "lat": "",
+      "logo-url": "",
+      "long": "",
+      "url": "https://hellowestchesterpa.com"
     }
   ]
 }
