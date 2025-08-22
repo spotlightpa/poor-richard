@@ -24,33 +24,52 @@ To sign up, please register via the links.
 """
 
   [[blocks.entries]]
-  hed = "Location Name Goes Here"
-  date = "2025-08-12"
-  dateVerbose = "Aug. 12, 2025 at 6 p.m."
-  dek = "Spotlight PA State College is hosting an in-person listening session in XXX County."
+  hed = "Lycoming County"
+  date = "2025-09-30"
+  dateVerbose = "10 a.m.-1 p.m., Tuesday, Sept. 30"
+  dek = "Buzzsaw Coffee, 1307 Park Ave., Williamsport"
+
+  [[blocks.entries]]
+  hed = "Lycoming County Virtual"
+  date = "2025-10-01"
+  dateVerbose = "6-7 p.m., Wednesday, Oct. 1"
   registration = "https://www.spotlightpa.org/"
 
   [[blocks.entries]]
-  hed = "Zoom Session: Topic"
-  date = "2025-08-14"
-  dateVerbose = "Aug. 14, 2025 at 6 p.m."
-  dek = "Join us virtually to share your thoughts on local news and what matters most in your community."
-  registration = "https://www.zoom.com/"
+  hed = "Blair County"
+  date = "2025-10-06"
+  dateVerbose = "10 a.m.-1 p.m., Monday, Oct. 6"
+  dek = "Hard Bean Café & Bakery, 3535 State Route 764, Altoona"
 
   [[blocks.entries]]
-  hed = "Location Name Goes Here"
-  date = "2025-08-19"
-  dateVerbose = "Aug. 19, 2025 at 6 p.m."
-  dek = "Spotlight PA State College is hosting an in-person listening session in XXX County."
+  hed = "Blair County Virtual"
+  date = "2025-10-07"
+  dateVerbose = "6-7 p.m., Tuesday, Oct. 7"
   registration = "https://www.spotlightpa.org/"
 
   [[blocks.entries]]
-  hed = "Zoom Session: Topic"
-  date = "2025-08-21"
-  dateVerbose = "Aug. 21, 2025 at 6 p.m."
-  dek = "A second virtual opportunity to connect with Spotlight PA editors and reporters."
-  registration = "https://www.zoom.com/"
+  hed = "Centre County "
+  date = "2025-10-27"
+  dateVerbose = "10 a.m.-1 p.m., Monday, Oct. 27"
+  dek = "Webster’s Bookstore Cafe, 133 E. Beaver Ave., State College"
 
+  [[blocks.entries]]
+  hed = "Centre County Virtual"
+  date = "2025-10-28"
+  dateVerbose = "6-7 p.m., Tuesday, Oct. 28"
+  registration = "https://www.spotlightpa.org/"
+
+  [[blocks.entries]]
+  hed = "Clearfield County"
+  date = "2025-11-17"
+  dateVerbose = "10 a.m.-1 p.m., Monday, Nov. 17"
+  dek = "Webster’s Bookstore Cafe, 133 E. Beaver Ave., State College"
+
+  [[blocks.entries]]
+  hed = "Clearfield County Virtual"
+  date = "2025-11-18"
+  dateVerbose = "6-7 p.m., Tuesday, Nov. 18"
+  registration = "https://www.spotlightpa.org/"
 
 [[blocks]]
 layout = "text-footer"
