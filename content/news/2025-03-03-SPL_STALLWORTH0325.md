@@ -191,8 +191,8 @@ Watson, the board secretary, approached her.
 
 {{<featured/iframe
   src="https://www.canva.com/design/DAGgOvh0Elk/efAP_YKho217uN9SNLeJyw/view?embed"
-  width="850"
-  height="705"
+  width="800"
+  height="400"
   caption="Board of Pardons Secretary Shelley Watson emailed Sabirha Williams and Sean Damon of the Amistad Law Project to inform them of a new vote on Gail Stallworth's commutation. (Courtesy of Sabirha Williams)"
 >}}
 
