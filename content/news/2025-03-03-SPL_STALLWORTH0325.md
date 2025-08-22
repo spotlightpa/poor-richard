@@ -189,22 +189,6 @@ Watson, the board secretary, approached her.
 
 “I’m sorry about Gail.”
 
-&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-top: 38.3156%;
-
-padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-
-border-radius: 8px; will-change: transform;&#34;&gt;
-
-&lt;iframe loading=&#34;lazy&#34; style=&#34;position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;&#34;
-
-src=&#34;https://www.canva.com/design/DAGgOvh0Elk/efAP\_YKho217uN9SNLeJyw/view?embed&#34; allowfullscreen=&#34;allowfullscreen&#34; allow=&#34;fullscreen&#34;&gt;
-
-&lt;/iframe&gt;
-
-&lt;/div&gt;
-
-&lt;figcaption class=&#34;max-w-content mx-auto text-g-8 text-sm mt-4&#34;&gt;Board of Pardons Secretary Shelley Watson emailed Sabirha Williams and Sean Damon of the Amistad Law Project to inform them of a new vote on Gail Stallworth&#39;s commutation. (Courtesy of Sabirha Williams)&lt;/figcaption&gt;
-
 {{<featured/iframe
   src="https://www.canva.com/design/DAGgOvh0Elk/efAP_YKho217uN9SNLeJyw/view?embed"
   width="800"
