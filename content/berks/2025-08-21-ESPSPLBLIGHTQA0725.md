@@ -13,6 +13,7 @@ image-description = "El complejo de apartamentos de tres pisos en 501 North 8th 
 image-gravity = "ce"
 internal-id = "ESPSPLBLIGHTQA0725"
 kicker = "Español"
+language-code = "es"
 modal-exclude = false
 pinned = false
 published = 2025-08-21T13:57:45.808-04:00
@@ -20,7 +21,7 @@ slug = "reading-edificios-seguridad-inspeccion-guia-espanol"
 suppress-date = false
 title = "Reading no inspecciona las propiedades en arriendo con la frecuencia que debería. Aquí le explicamos cómo detectar problemas usted mismo."
 title-tag = "Lo que los inquilinos necesitan saber tras los recientes derrumbes de edificios en Reading"
-topics = ["Berks County"]
+topics = ["Berks County", "Español"]
 +++
 
 <a href="https://www.spotlightpa.org/berks/2025/07/reading-building-collapse-safety-inspection-guide-housing/"><em>Read in English</em></a><em></em>
