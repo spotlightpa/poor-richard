@@ -1,8 +1,8 @@
 +++
 authors = ["Stephen Caruso", "Katie Meyer"]
-blurb = "The Shapiro administration previously said the special transit funding, which the GOP wants to tap, was allocated to long-term projects."
+blurb = "However, the governor has rejected a GOP idea to use some of the transit money for roads and bridges."
 byline = "Stephen Caruso and Katie Meyer of Spotlight PA"
-description = "To reverse SEPTA cuts, PA Gov. Josh Shapiro is open to a GOP plan to use special transit funding, but only in a broader package."
+description = "To reverse SEPTA cuts, Gov. Josh Shapiro is open to a GOP plan to use special transit funding, but only in a broader package and with some changes."
 draft = false
 feed-exclude = false
 image = "cas/9y7f-g3f9-7vjp-gmhv.jpeg"
