@@ -63,7 +63,7 @@ To sign up, please register via the links.
   hed = "Clearfield County"
   date = "2025-11-17"
   dateVerbose = "10 a.m.-1 p.m., Monday, Nov. 17"
-  dek = "Webster’s Bookstore Cafe, 133 E. Beaver Ave., State College"
+  dek = "Aegis Coffee Roasters, 1290 Rich Highway, DuBois"
 
   [[blocks.entries]]
   hed = "Clearfield County Virtual"
