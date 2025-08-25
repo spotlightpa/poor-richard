@@ -64,3 +64,13 @@ A spokesperson for state Senate Majority Leader Joe Pittman (R., Indiana) did no
 
 A spokesperson for state House Democrats did not immediately respond to a request for comment.
 
+Both Shapiro and state House Democrats have publicly supported a plan that would send nearly $300 million more to agencies by increasing the percentage of the commonwealth’s sales and use tax revenue they get.
+
+The state already provides these agencies with about $2 billion in direct aid.
+
+A bill the state House advanced earlier this month would increase the portion of the tax that flows to trains, trolleys, and buses across the state by 1.75% — a $292.5 million increase. The measure would also send up to 0.25% of the tax revenue — roughly $41.8 million — into a fund for roads and bridges, in a gesture at Republicans’ priority.
+
+This change wouldn’t directly route money away from other programs. However, it would mean the state doesn’t have as much money for other uses.
+
+That has been a nonstarter for Republicans, who note that Pennsylvania is already running <a href="https://www.spotlightpa.org/news/2024/03/pennsylvania-budget-josh-shapiro-surplus-structural-deficit-explainer/">a structural deficit</a> in which it spends more than it takes in every year.
+
