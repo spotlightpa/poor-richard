@@ -3,10 +3,14 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/berks/2025-08-25-SPLWYOMPOLICE0825.md"
+    "content/berks/2025-08-26-SPLCHARTEREC0825.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/berks/2025-08-18-SPLCHARTER0825.md",
+    "content/berks/2025-08-14-SPLVZ0825.md"
+  ],
   "topSlots": [
+    "content/berks/2025-08-25-SPLWYOMPOLICE0825.md",
     "content/news/2025-08-25-SPLELEXAUDITOR0825.md",
     "content/berks/2025-08-18-SPLCHARTER0825.md",
     "content/berks/2025-08-14-SPLVZ0825.md"
