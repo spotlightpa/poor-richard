@@ -1,8 +1,8 @@
 +++
 authors = ["Amanda Fries"]
-blurb = "Wyomissing officials fired the officer without revealing his name to the public, violating a Pennsylvania transparency law."
+blurb = "Wyomissing officials fired the officer without revealing his name to the public, possibly violating a Pennsylvania transparency law."
 byline = "Amanda Fries of Spotlight PA"
-description = "Wyomissing officials fired the officer without revealing his name to the public, violating a Pennsylvania transparency law."
+description = "Wyomissing officials fired the officer without revealing his name to the public, possibly violating a Pennsylvania transparency law."
 draft = false
 feed-exclude = false
 image = "2025/08/01ma-efza-c5qt-e8ry.jpeg"
@@ -26,7 +26,7 @@ WYOMISSING — A police officer fired by Wyomissing Borough and identified as on
 
 At the time of his termination in July, Borough Council members offered no explanation for the move and refused to identify the name of the officer. It was revealed through a subsequent public records request filed by the news organization.
 
-Failing to provide the public with Estevez&#39;s name at the time of his firing was a violation of the state Sunshine Act, according to a transparency expert.
+Failing to provide the public with Estevez&#39;s name at the time of his firing was possibly a violation of the state Sunshine Act, according to a transparency expert.
 
 What’s more, borough officials, from manager to police chief, have continued to refuse to explain why Estevez was fired, saying they do not discuss personnel matters.
 
@@ -68,5 +68,7 @@ Pennsylvania’s Right-to-Know Law does allow agencies to withhold the reason fo
 
 Wyomissing Mayor Fred Levering, reached by phone Aug. 13, said he could not speak on personnel matters.
 
-It was “really a question of judgment,” Levering told Spotlight PA when asked about Estevez’s termination. “Our objective, of course, is to protect the community, and we have to make sure people are mindful of the effect of their actions.”<strong></strong>
+It was “really a question of judgment,” Levering told Spotlight PA when asked about Estevez’s termination. “Our objective, of course, is to protect the community, and we have to make sure people are mindful of the effect of their actions.”
+
+<em>This story was updated Aug. 26 to clarify information about the Sunshine Act.</em>
 
