@@ -9,6 +9,7 @@ image = "2025/08/01ma-erf7-3vnq-d9s9.jpeg"
 image-caption = "Publisher and community advocate Maria-Manautou-Matos."
 image-credit = "Photo Provided"
 image-description = "Maria-Manautou-Matos speaks into a microphone."
+image-gravity = "ea"
 internal-id = "SPLLOCALHEROES0825"
 kicker = "PA Local"
 modal-exclude = false
