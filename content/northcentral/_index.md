@@ -10,7 +10,7 @@ ad-header-mobile-active = false
 [[blocks]]
 layout = "events"
 id = "sessions"
-image = "2025/08/01m8-r8e4-q3yj-4hng.jpeg"
+image = "2025/08/01ma-w97p-8jnp-pkbz.jpeg"
 imageDescription = "A person places a sticky note on a large piece of paper listing issues that are critical to be reported on in the community."
 imageCredit = "Susan L. Angstadt / For Spotlight PA"
 title = "North-Central PA Listening Tour"
