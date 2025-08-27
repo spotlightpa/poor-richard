@@ -43,6 +43,8 @@ At the same time, the number of older adults who have died while their abuse and
 
 Some former employees have also criticized his administration over policy changes they believe defang the department’s oversight powers.
 
+{{<embed/raw srcdoc="&lt;iframe src=&#34;https://embed.documentcloud.org/documents/26076563-notice-of-lawsuit-llewellyn/?embed=1&#34; width=&#34;100%&#34; height=&#34;792&#34; style=&#34;border: 1px solid #d8dee2; border-radius: 0.5rem; width: 100%; height: 100%; aspect-ratio: 612 / 792&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;">}}
+
 Demand letters are formal, written notices of impending civil litigation. They provide a broad description of the allegations that would be leveled in a lawsuit, and give the prospective defendants the chance to avoid lengthy and costly litigation and resolve a dispute outside of court.
 
 In his demand letter, Llewellyn said he seeks unspecified compensatory and punitive damages. He wants to be reinstated to his position within the department, where he supervises staff who assess how well county-level aging agencies fare in keeping older adults safe.
