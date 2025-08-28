@@ -62,7 +62,9 @@ Heiser said the authority’s proximity — 8 miles from the center of Rock Spri
 
 “The connection to our existing system will provide close personal response to issues that may arise, redundant supplies, and create the ability to provide reliable fire protection,” he said. “All at, what we believe would be a more affordable rate for the customers. The authority works very hard to meet the needs of the communities it serves with quality, reliability, and affordability. The ability that we have to do that in the manner that we do is a huge aspect of what sets us apart.”
 
-A representative for Pennsylvania American did not respond to an email seeking comment.
+In an emailed statement, a Pennsylvania American representative told Spotlight PA the company is “dedicated to delivering safe and reliable service to Rock Spring customers.”
+
+“As the emergency receiver, we have concentrated on stabilizing the system while working toward a long-term solution,” said Gary Lobaugh, Pennsylvania American’s director of government and external affairs. “We believe the focus should be on protecting customers, promoting sustainable investments, and ensuring fair cost recovery.”
 
 Pennsylvania American — which said the water authority was the “most logical choice for a temporary takeover” earlier this year — estimated at least $400,000 in costs before being appointed as an emergency receiver. If Rock Spring is ultimately sold to the State College water authority, customers of the investor-owned utility “could unfairly be stuck” with that bill, a lawyer for the company wrote in a <a href="https://www.puc.pa.gov/pcdocs/1867988.pdf">February legal filing</a>.
 
