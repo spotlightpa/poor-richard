@@ -7,7 +7,7 @@ draft = false
 feed-exclude = false
 image = "2025/08/01ma-erf7-3vnq-d9s9.jpeg"
 image-caption = "Publisher and community advocate Maria-Manautou-Matos."
-image-credit = "Photo Provided"
+image-credit = "Courtesy of Pittsburgh Hispanic Development Corporation"
 image-description = "Maria-Manautou-Matos speaks into a microphone."
 image-gravity = "ea"
 internal-id = "SPLLOCALHEROES0825"
@@ -48,7 +48,7 @@ A mother of two and caregiver for her elderly mother, Manautou keeps a busy sche
 
 Her advocacy for her community inspired a Spotlight PA reader to nominate for PA Local Heroes, our monthly series sponsored by <a href="https://www.ballardspahr.com/">Ballard Spahr </a>that profiles community do-gooders and change-makers.
 
-Manautou-Matos moved to Pittsburgh from Puerto Rico in 1986 to study at Carnegie Mellon.
+Manautou-Matos moved to Pittsburgh from Puerto Rico in 1996 to study at Carnegie Mellon.
 
 It took a while for the city to become a home.
 
@@ -70,7 +70,7 @@ One Latino who had left Pittsburgh because he felt isolated actually told her he
 
 Manautou-Matos wants Pittsburgh Latino Magazine to eventually have a statewide audience, or even a national one. In the meantime, though, she plans to stick to the principles that have guided her so far: to connect, celebrate, and empower Latinos.
 
-“I&#39;m focused on making what I have as good as possible,” Manautou-Matos said.
+“I&#39;m focused on making what I have as good as possible,” Manautou-Matos said.<br/><br/><em>Update, Aug. 28: The year Manautou-Matos moved to Pittsburgh has been updated. She originally misspoke.</em>
 
 <em>Know someone worthy of a PA Local Heroes feature? </em><a href="mailto:newsletters@spotlightpa.org"><em>Let us know</em></a><em>!</em>
 
