@@ -1,13 +1,6 @@
 {
   "list": [
     {
-      "display": "Sharon Albrecht",
-      "sort": "Albrecht",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Kip Armstrong",
       "sort": "Armstrong",
       "url": "",
@@ -17,6 +10,13 @@
     {
       "display": "Dorothy \"Dee\" Aylward",
       "sort": "Aylward",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "James A. Backstrom, Esq.",
+      "sort": "Backstrom",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -115,6 +115,13 @@
     {
       "display": "Michael Bertram",
       "sort": "Bertram",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Michael Blett, in honor of George F. Blett II",
+      "sort": "Blett",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -358,6 +365,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Katie Hannon",
+      "sort": "Hannon",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Sandra Hardy",
       "sort": "Hardy",
       "url": "",
@@ -374,13 +388,6 @@
     {
       "display": "Karen Harvey",
       "sort": "Harvey",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Kelly Heisey",
-      "sort": "Heisey",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -430,6 +437,13 @@
     {
       "display": "Mary and Howard Hurtig",
       "sort": "Hurtig",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Sharon and Jeff Hyde",
+      "sort": "Hyde",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -486,6 +500,13 @@
     {
       "display": "Howard Kolus",
       "sort": "Kolus",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Marc Kramer",
+      "sort": "Kramer",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -617,13 +638,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Jane and Mark Mendlow",
-      "sort": "Mendlow",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Timothy Miksiewicz",
       "sort": "Miksiewicz",
       "url": "",
@@ -668,13 +682,6 @@
     {
       "display": "Bill Natale and Diane Bright",
       "sort": "Natale",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Edwina Naylor",
-      "sort": "Naylor",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -925,6 +932,13 @@
       "categoryRank": "4"
     },
     {
+      "display": "Robert and Suzanne Stetson",
+      "sort": "Stetson",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "E. Marvin Stouffer",
       "sort": "Stouffer",
       "url": "",
@@ -949,8 +963,8 @@
       "display": "Stephanie Szakal",
       "sort": "Szakal",
       "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Richard S. Tabas/Harriette Steelman \u0026 Charles L. Tabas Foundation",
@@ -960,7 +974,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Anthony and Susan Tarantino",
+      "display": "Anthony Tarantino",
       "sort": "Tarantino",
       "url": "",
       "category": "$1,000-$2,499",
@@ -1009,7 +1023,7 @@
       "categoryRank": "4"
     },
     {
-      "display": "Caitlin Virtue",
+      "display": "Caitlin and Patrick Virtue",
       "sort": "Virtue",
       "url": "",
       "category": "$1,000-$2,499",

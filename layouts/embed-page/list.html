@@ -43,16 +43,26 @@
                       {{ $param.hint }}
                     </label>
                     {{ if .options }}
-                      <select
-                        class="spl-select cursor-pointer py-1 text-lg text-g-6"
-                        id="{{ $param.name }}-field"
-                        name="{{ $param.name }}"
-                        @input="updateParams"
-                      >
-                        {{ range .options }}
-                          <option value="{{ .value }}">{{ .name }}</option>
-                        {{ end }}
-                      </select>
+                      <div class="relative">
+                        <select
+                          class="spl-select cursor-pointer text-g-6"
+                          id="{{ $param.name }}-field"
+                          name="{{ $param.name }}"
+                          @input="updateParams"
+                        >
+                          {{ range .options }}
+                            <option value="{{ .value }}">{{ .name }}</option>
+                          {{ end }}
+                        </select>
+                        <span
+                          class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
+                          aria-hidden="true"
+                        >
+                          <svg class="h-4 w-4 fill-g-5">
+                            {{ partial "helper/svg.html" "chevron" }}
+                          </svg>
+                        </span>
+                      </div>
                     {{ else }}
                       <input
                         id="{{ $param.name }}-field"

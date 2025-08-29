@@ -26,7 +26,9 @@ hiddenField = "newsletter/investigator-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "The Investigator"
+linktitle = "The Investigator - Weekly Accountability Journalism"
+description = "Sign up for The Investigator to get Spotlight  PA’s top investigative stories, plus an insider view into our reporting process, every Thursday."
+teamTitle = "The Investigator"
 
 image-size = "inline"
 published = 2020-09-03T01:14:40.334Z

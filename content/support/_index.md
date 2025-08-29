@@ -1,5 +1,4 @@
 +++
-published = 2019-09-05T13:14:35.433Z
 title = "Support Spotlight PA"
 url = "/support/"
 aliases = ["/about/statecollege/", "/support/statecollege/", "/support/state-college/"]
@@ -76,7 +75,7 @@ Make a contribution through your business or organization to support Spotlight P
 
 ## Estate Planning
 
-Journalism has been foundational to the success of American democracy. The long legacy of press freedom was enshrined in our constitution here in Pennsylvania almost 250 years ago, and it is the mission of Spotlight PA to ensure that it continues to thrive throughout our commonwealth. By adding a donation to Spotlight PA to your estate planning, known as a bequest, you can be a part of this legacy forever.
+Journalism has been foundational to the success of American democracy. The long legacy of press freedom was enshrined in our constitution here in Pennsylvania almost 250 years ago, and it is the mission of Spotlight PA to ensure that it continues to thrive throughout our commonwealth. By <a href="/legacy/">adding a donation to Spotlight PA to your estate planning</a>, known as a bequest, you can be a part of this legacy forever.
 
 Please let us know if you are including Spotlight PA in your plans, so we can help ensure that you have the most up-to-date and accurate information necessary and that your donation will be used in the exact way that you wish. This will also allow us to plan ahead as an organization. Please contact Sean O’Riordan at [soriordan@spotlightpa.org](mailto:soriordan@spotlightpa.org).
 

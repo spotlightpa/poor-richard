@@ -18,7 +18,7 @@
     </title>
     <link>{{ ($news.Page.OutputFormats.Get "html").Permalink }}</link>
     <description>{{ $description }}</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo {{ hugo.Version }} -- gohugo.io</generator>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
     <managingEditor>newsroom@spotlightpa.org (Spotlight PA)</managingEditor>
     <webMaster>webmaster@spotlightpa.org (Spotlight PA Webmaster)</webMaster>
@@ -27,38 +27,7 @@
       <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     {{- end }}
     {{ range first 50 $stories }}
-      <item>
-        <title>{{ .Title }}</title>
-        <link>{{ .Permalink }}</link>
-        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-        {{ range .Param "authors" }}
-          <dc:creator>{{ . }}</dc:creator>
-        {{ end }}
-        {{ with .Param "kicker" }}
-          <category>{{ . }}</category>
-        {{ end }}
-        <guid>{{ .Permalink }}</guid>
-        <description>
-          {{ .Content | html }}
-        </description>
-        {{ $imgName := .Param "image" }}
-        {{ $imgCredit := .Param "image-credit" }}
-        {{ $imgDescription := .Param "image-description" }}
-        {{ if $imgName }}
-          {{ $imgOpt := dict "filename" $imgName "width" 1000 "height" 1000 }}
-          {{ $url := partial "helper/imgproxy" $imgOpt }}
-          <media:content
-            url="{{ $url }}"
-            type="image/jpg"
-            expression="full"
-            width="1000"
-            height="1000"
-          >
-            <media:description type="plain">{{ $imgDescription }}</media:description>
-            <media:credit role="photographer" scheme="urn:ebu">{{ $imgCredit }}</media:credit>
-          </media:content>
-        {{ end }}
-      </item>
+      {{ partial "feed/item.xml" . }}
     {{ end }}
   </channel>
 </rss>

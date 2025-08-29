@@ -18,7 +18,7 @@ slug = "opportunity-house-reading-berks-pennsylvania-homeless-shelter"
 suppress-date = false
 title = "Meet a Berks County helper who’s cooking for a cause and feeding the homeless"
 title-tag = "Cooking for a cause in Berks County"
-topics = ["Community Profile"]
+topics = ["Community Profile", "Berks County"]
 +++
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
@@ -70,4 +70,3 @@ My mother. She was an outstanding cook, and I have fond memories of us working t
 <em>Know someone who deserves the Community Spotlight? </em><a href="mailto:gooddayberks@spotlightpa.org"><em>Tell us</em></a><em>.</em>
 
 <em>This positive news for Berks County is made possible thanks to a generous grant from the United Way of Berks County, which is celebrating 100 years of service to the community. </em><a href="https://spotlightpa.bluelena.io/lt.php?x=3DZy~GE6InKcEpR7zN26hRKgAXMgut9wjug0YnnGJnSb65V--Uy.0OFr1X_ziN9vkfY4bHPJInKg"><em>Learn more here</em></a><em> | </em><a href="https://spotlightpa.donorsupport.co/page/donate-onetime"><em>Become a supporter of Spotlight PA here</em></a><em>.</em>
-

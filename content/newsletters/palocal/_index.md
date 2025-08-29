@@ -24,7 +24,9 @@ hiddenField = "newsletter/palocal-hidden.html"
 cta = "Sign up"
 
 modal-exclude = true
-linktitle = "PA Local"
+linktitle = "PA Local - A Weekly Celebration of Pennsylvania"
+description = "Explore Pennsylvania's inspiring people, places, and food every Friday with Spotlight PA's award-winning and free weekly newsletter."
+teamTitle = "PA Local"
 
 image-size = "inline"
 image-gravity = "ea"

@@ -3,6 +3,7 @@ authors = ["Danielle Ohl"]
 blurb = "The Board of Pardons reopened the case after opposition from the victim’s family arrived two months after its first vote."
 byline = "Danielle Ohl of Spotlight PA"
 description = "Gail Stallworth thought her life sentence for murder would be commuted until an unheard-of revote. Advocates say the PA Board of Pardons lacks transparency."
+draft = false
 extended-kicker = "Special Investigation"
 feed-exclude = false
 image = "2025/02/01kv-ysw4-87qr-3p8v.jpeg"
@@ -189,9 +190,9 @@ Watson, the board secretary, approached her.
 “I’m sorry about Gail.”
 
 {{<featured/iframe
-  src="https://www.canva.com/design/DAGgO02zWf8/Cz7fhmkuJe9jWIKkvln8Jw/view?embed"
-  width="850"
-  height="705"
+  src="https://www.canva.com/design/DAGgOvh0Elk/efAP_YKho217uN9SNLeJyw/view?embed"
+  width="800"
+  height="400"
   caption="Board of Pardons Secretary Shelley Watson emailed Sabirha Williams and Sean Damon of the Amistad Law Project to inform them of a new vote on Gail Stallworth's commutation. (Courtesy of Sabirha Williams)"
 >}}
 

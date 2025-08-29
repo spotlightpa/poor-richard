@@ -20,7 +20,7 @@ title-tag = "Why people with mental illness end up in PA jails"
 topics = ["Health"]
 +++
 
-The Cost of Failing is the result of two years of reporting.
+<a href="https://www.spotlightpa.org/news/2025/07/pennsylvania-community-mental-health-crisis-funding-olmstead-implementation-health/">The Cost of Failing</a> is the result of two years of reporting.
 
 In 2023, Spotlight PA and the Pittsburgh Institute for Nonprofit Journalism published an investigation that found symptoms of serious mental illness have become criminalized in Pennsylvania. The newsrooms reported that people facing charges for behavior tied to their condition often languish in jail awaiting a competency evaluation, an assessment that determines if a person has the mental capacity to aid in their own defense.
 
@@ -28,7 +28,7 @@ After the investigation was <a href="https://www.spotlightpa.org/series/a-crimin
 
 This involved examining the history of mental health treatment in Pennsylvania, the experiences of local and state administrators responsible for providing care, and the outcomes for people seeking that support.
 
-The new investigation found that over nearly four decades, Pennsylvania has failed to build a community-based mental health system despite knowing the consequences.
+<a href="https://www.spotlightpa.org/news/2025/07/pennsylvania-community-mental-health-crisis-funding-olmstead-implementation-health/">The new investigation</a> found that over nearly four decades, Pennsylvania has failed to build a community-based mental health system despite knowing the consequences.
 
 Cuts former Gov. Tom Corbett made in 2013 to community mental health services were never fully restored. Since 2017, county mental health services have lost $150 million in spending and reached about 85,000 fewer people.
 

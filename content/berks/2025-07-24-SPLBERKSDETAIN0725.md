@@ -17,7 +17,7 @@ slug = "justice-system-berks-county-ice-detainer-policy-immigration-detention"
 suppress-date = false
 title = "How Berks County cooperates with ICE without helping it make arrests"
 title-tag = "Berks County honors ICE detainers. What does that mean?"
-topics = ["Justice System"]
+topics = ["Justice System", "Berks County"]
 +++
 
 READING — Carrying out mass deportations was a key campaign promise for President Donald Trump, and since he’s reentered office, his administration has <a href="https://tracreports.org/reports/758/">increased</a> use of a tool that furthers that goal — ICE detainers.
@@ -105,4 +105,3 @@ Nearly 30 local law enforcement agencies in Pennsylvania had <a href="https://ww
 Berks County <a href="https://www.berkspa.gov/getmedia/d46d22ff-e952-4737-9277-5806bfe734ee/InForce-Spring-2017.pdf">pursued</a> a 287(g) agreement in 2017, but is not currently doing so.
 
 “No one has approached the Board of Commissioners with any interest in establishing a relationship under Section 287(g) of the Immigration and Nationality Act,” the board’s spokesperson said in a statement on behalf of the county commissioners.
-

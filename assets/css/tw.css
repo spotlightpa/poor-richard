@@ -228,12 +228,12 @@
 
 a.spl-links-navy,
 .spl-links-navy a {
-  @apply text-navy underline transition-colors duration-500 hover:text-yellow;
+  @apply text-navy underline underline-offset-2 transition-colors duration-500 hover:text-yellow;
 }
 
 a.spl-links-yellow,
 .spl-links-yellow a {
-  @apply text-yellow underline transition-colors duration-500 hover:text-blue;
+  @apply text-yellow underline underline-offset-2 transition-colors duration-500 hover:text-blue;
 }
 
 .btn-signup {
