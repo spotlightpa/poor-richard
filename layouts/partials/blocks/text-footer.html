@@ -1,0 +1,33 @@
+{{ with .block }}
+  <section
+    class="py-10"
+    data-ga-category="links"
+    {{ with .id }}
+      x-data x-intersect.half="$dispatch('intersect:about', $el.id)"
+      id="{{ . }}"
+    {{ end }}
+  >
+    <div class="mx-auto max-w-screen-lg px-5 lg:px-0">
+      <h2
+        class="mb-10 text-3xl font-black uppercase leading-none text-g-6 md:text-4xl"
+      >
+        {{ .title }}
+      </h2>
+      {{ with .copy }}
+        <div class="article-content my-4 text-xl leading-relaxed lg:text-2xl">
+          {{ $.Page.RenderString . }}
+        </div>
+      {{ end }}
+      {{ with .cta }}
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
+          <a
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+            href="{{ .url }}"
+          >
+            {{- .copy -}}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
