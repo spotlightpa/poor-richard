@@ -28,48 +28,52 @@ To sign up, please register via the links.
   date = "2025-09-30"
   dateVerbose = "10 a.m.-1 p.m., Tuesday, Sept. 30"
   dek = "Buzzsaw Coffee, 1307 Park Ave., Williamsport"
+  registration = "https://www.eventbrite.com/e/spotlight-pa-north-central-pa-listening-tour-lycoming-county-tickets-1644907224789?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
 
   [[blocks.entries]]
   hed = "Lycoming County Virtual"
   date = "2025-10-01"
   dateVerbose = "6-7 p.m., Wednesday, Oct. 1"
-  registration = "https://www.spotlightpa.org/"
+  registration = "https://zoom.us/meeting/register/wwMYuN88SeytEtDB4W0CUQ"
 
   [[blocks.entries]]
   hed = "Blair County"
   date = "2025-10-06"
   dateVerbose = "10 a.m.-1 p.m., Monday, Oct. 6"
   dek = "Hard Bean Café & Bakery, 3535 State Route 764, Altoona"
+  registration = "https://www.eventbrite.com/e/spotlight-pa-north-central-pa-listening-tour-blair-county-tickets-1645067714819?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
 
   [[blocks.entries]]
   hed = "Blair County Virtual"
   date = "2025-10-07"
   dateVerbose = "6-7 p.m., Tuesday, Oct. 7"
-  registration = "https://www.spotlightpa.org/"
+  registration = "https://zoom.us/meeting/register/yJPC-fTQTpKRFOOMcERY9g"
 
   [[blocks.entries]]
   hed = "Centre County "
   date = "2025-10-27"
   dateVerbose = "10 a.m.-1 p.m., Monday, Oct. 27"
   dek = "Webster’s Bookstore Cafe, 133 E. Beaver Ave., State College"
+  registration = "https://www.eventbrite.com/e/spotlight-pa-north-central-pa-listening-tour-centre-county-tickets-1645070713789?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
 
   [[blocks.entries]]
   hed = "Centre County Virtual"
   date = "2025-10-28"
   dateVerbose = "6-7 p.m., Tuesday, Oct. 28"
-  registration = "https://www.spotlightpa.org/"
+  registration = "https://zoom.us/meeting/register/QE_8D7meT7mds_lLuRREUA"
 
   [[blocks.entries]]
   hed = "Clearfield County"
   date = "2025-11-17"
   dateVerbose = "10 a.m.-1 p.m., Monday, Nov. 17"
   dek = "Aegis Coffee Roasters, 1290 Rich Highway, DuBois"
+  registration = "https://www.eventbrite.com/e/spotlight-pa-north-central-pa-listening-tour-clearfield-county-tickets-1645076230289?aff=oddtdtcreator"
 
   [[blocks.entries]]
   hed = "Clearfield County Virtual"
   date = "2025-11-18"
   dateVerbose = "6-7 p.m., Tuesday, Nov. 18"
-  registration = "https://www.spotlightpa.org/"
+  registration = "https://zoom.us/meeting/register/Ge2ydBohSPGpUhA8s_3pPw"
 
 [[blocks]]
 layout = "text-footer"
