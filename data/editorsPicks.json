@@ -3,17 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-08-29-SPLUBERTAX0825.md"
+    "content/news/2025-09-01-SPLWHERE0925.md"
   ],
   "subfeatures": [
-    "content/news/2025-08-29-SPL101IMPASSE0825.md",
-    "content/news/2025-08-27-SPLSHAPBUDGET0825.md",
-    "content/news/2025-08-25-SPLBUDGUPDATE0825.md",
-    "content/news/2025-08-20-SPLIMPASSE0825.md"
+    "content/news/2025-07-28-SPLMHFAILING0725.md",
+    "content/news/2025-08-01-SPLMHTAKEAWAYS0825.md",
+    "content/news/2025-07-28-SPLFAILINGREPORTING0725.md",
+    "content/news/2023-03-09-SPLCOMPETENCY.md"
   ],
   "topSlots": [
+    "content/news/2025-08-29-SPLUBERTAX0825.md",
     "content/news/2025-08-29-SPLCYBERAG0825.md",
-    "content/news/2025-08-29-SPLCOASTER0825.md",
-    "content/news/2025-08-27-SPLWHISTLESUIT0825.md"
+    "content/news/2025-08-29-SPL101IMPASSE0825.md"
   ]
 }
