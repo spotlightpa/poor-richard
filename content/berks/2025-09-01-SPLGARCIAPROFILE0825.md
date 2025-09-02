@@ -23,7 +23,7 @@ topics = ["Community Profile"]
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
 
-This week&#39;s Community Spotlight honoree is Gena Oina-Garcia, an executive director at the YMCA of Reading &amp; Berks County and a volunteer who empowers and guides youth.
+This week&#39;s Community Spotlight honoree is Gena Pina-Garcia, an executive director at the YMCA of Reading &amp; Berks County and a volunteer who empowers and guides youth.
 
 This conversation, which took place over email, has been edited for length, clarity, and style.
 
