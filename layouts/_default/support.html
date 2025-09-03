@@ -10,11 +10,15 @@
     <div class="mx-auto max-w-screen-lg">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
-    <div class="mx-auto w-full max-w-screen-lg">
-      <h1 class="pb-2 text-4xl font-bold leading-tight text-black lg:text-5xl">
-        {{- .Title -}}
-      </h1>
-    </div>
+    {{ if and .Title (not (.Param "suppress-title")) }}
+      <div class="mx-auto w-full max-w-screen-lg">
+        <h1
+          class="pb-2 text-4xl font-bold leading-tight text-black lg:text-5xl"
+        >
+          {{- .Title -}}
+        </h1>
+      </div>
+    {{ end }}
   </header>
   <section class="bg-g-0 pt-4 font-sans">
     {{ if or (.Content) (.Page.Params.subhed) }}

@@ -1,5 +1,6 @@
 +++
 title = "Support Spotlight PA with planned giving"
+suppress-title = true
 url = "/legacy/"
 layout = "support"
 image = "2025/08/01m9-wbzt-8m3h-1g64.png"
