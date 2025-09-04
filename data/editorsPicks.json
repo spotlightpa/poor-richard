@@ -3,17 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-09-03-SPLVBRETAINELEX.md"
+    "content/news/2025-09-04-SPLLISTENING0825.md"
   ],
   "subfeatures": [
-    "content/news/2025-02-21-SPLRETENTIONPREV0225.md",
-    "content/news/2025-04-18-SPLLOCALVET0425.md",
-    "content/news/2025-05-20-SPLJUDGERESULTS0525.md",
-    "content/news/2025-07-16-SPLCLOSEDPRIMARIES0725.md"
+    "content/interactives/opioid-quiz.md",
+    "content/news/2025-02-12-spl_welfare_0225.md"
   ],
   "topSlots": [
+    "content/news/2025-09-03-SPLVBRETAINELEX.md",
     "content/news/2025-09-02-SPLNOREDIST0825.md",
-    "content/news/2025-08-29-SPLUBERTAX0825.md",
-    "content/news/2025-08-29-SPLCYBERAG0825.md"
+    "content/news/2025-08-29-SPLUBERTAX0825.md"
   ]
 }
