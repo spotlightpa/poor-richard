@@ -2,6 +2,9 @@
   <title>{{ .Title }}</title>
   <link>{{ .Permalink }}</link>
   <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+  <atom:updated>
+    {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}
+  </atom:updated>
   {{ range .Param "authors" }}
     <dc:creator>{{ . }}</dc:creator>
   {{ end }}
@@ -12,6 +15,9 @@
   <description>
     {{ .Content | html }}
   </description>
+  {{ with .Param "blurb" }}
+    <atom:summary>{{ . }}</atom:summary>
+  {{ end }}
   {{ $imgName := .Param "image" }}
   {{ $imgCredit := .Param "image-credit" }}
   {{ $imgDescription := .Param "image-description" }}
