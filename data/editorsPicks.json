@@ -3,17 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-09-05-SPLSEPTAFUND0925.md"
+    "content/news/2025-09-08-SPLCOVIDSHOT0925.md"
   ],
   "subfeatures": [
-    "content/news/2025-09-05-SPLIMPASSEMONEY0925.md",
-    "content/news/2025-09-05-APSEPTA0925.md",
-    "content/news/2025-08-29-SPLUBERTAX0825.md",
-    "content/news/2025-08-27-SPLSHAPBUDGET0825.md"
+    "content/news/2025-08-19-spl_pharmacymaps_0825.md",
+    "content/news/2025-07-24-spl_pharmacies_0725.md"
   ],
   "topSlots": [
-    "content/news/2025-09-04-SPLLISTENING0825.md",
-    "content/news/2025-09-03-SPLVBRETAINELEX.md",
-    "content/news/2025-09-02-SPLNOREDIST0825.md"
+    "content/news/2025-09-05-SPLSEPTAFUND0925.md",
+    "content/news/2025-09-05-SPLIMPASSEMONEY0925.md",
+    "content/news/2025-09-04-SPLLISTENING0825.md"
   ]
 }
