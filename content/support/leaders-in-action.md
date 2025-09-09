@@ -43,7 +43,7 @@ In an era where fraud and dishonesty among public officials (and their supporter
 [[blocks]]
 title =  "Spotlight PA's volunteer chairs"
 layout = "team"
-authors = ["Mark Sheppard", "David M Erdman", "Katie O’Toole", "Jennifer Bertetto"]
+authors = ["Robyn Holder", "Mark Sheppard", "David M Erdman", "Katie O’Toole"]
 
 +++
 
