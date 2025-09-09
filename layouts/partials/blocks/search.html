@@ -2,6 +2,8 @@
   {{ if .showLocation }}
     <button
       class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-yellow-5 bg-yellow"
+      aria-label="Use my location"
+      type="button"
     >
       <svg class="h-7 w-7 fill-yellow-9">
         {{ partial "helper/svg.html" "crosshairs" }}
@@ -9,26 +11,24 @@
     </button>
   {{ end }}
 
-
   <button
+    id="search-button"
     class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-yellow-5 bg-yellow"
+    aria-label="Search"
+    type="button"
   >
     <svg class="h-7 w-7 fill-yellow-9" viewBox="0 0 24 24">
       {{ partial "helper/svg.html" "search" }}
     </svg>
   </button>
 
-  <div
-    class="{{ if .showLocation }}
-      pl-20
-    {{ else }}
-      pl-4
-    {{ end }} flex w-full rounded border-2 border-[#b6b6b6] bg-white pr-28"
-  >
+  <div class="{{ if .showLocation }} pl-20 {{ else }} pl-4 {{ end }} flex w-full rounded border-2 border-[#b6b6b6] bg-white pr-28">
     <input
+      id="search-input"
       type="text"
       placeholder="{{ .placeholder }}"
       class="text-gray-5 placeholder-gray-4 flex-1 px-4 py-3 text-2xl focus:outline-none"
+      aria-label="Search restaurants"
     />
   </div>
 </div>
