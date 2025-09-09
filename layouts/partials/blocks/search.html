@@ -1,9 +1,10 @@
-<div class="relative w-full">
+<div class="relative w-full" x-data="searchUI()" x-init="init()">
   {{ if .showLocation }}
     <button
       class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-yellow-5 bg-yellow hover:bg-yellow-3"
       aria-label="Use my location"
       type="button"
+      @click="locate()"
     >
       <svg class="h-7 w-7 fill-yellow-9">
         {{ partial "helper/svg.html" "crosshairs" }}
@@ -17,6 +18,7 @@
     class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-yellow-5 bg-yellow hover:bg-yellow-3"
     aria-label="Search"
     type="button"
+    @click="doSearch()"
   >
     <svg class="h-7 w-7 fill-yellow-9" viewBox="0 0 24 24">
       {{ partial "helper/svg.html" "search" }}
@@ -32,10 +34,135 @@
   >
     <input
       id="search-input"
+      x-ref="input"
+      x-model="q"
       type="text"
       placeholder="{{ .placeholder }}"
       class="text-gray-5 placeholder-gray-4 flex-1 px-4 py-3 text-2xl focus:outline-none"
       aria-label="Search restaurants"
+      @keydown.enter.prevent="doSearch()"
     />
   </div>
 </div>
+
+<script>
+  function searchUI() {
+    return {
+      q: "",
+      cards: [],
+      index: new Map(),
+
+      init() {
+        this.cards = Array.from(
+          document.querySelectorAll('[data-card="inspection"]'),
+        );
+        const norm = (s) =>
+          (s || "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+        this.cards.forEach((card) => {
+          this.index.set(card, norm(card.dataset.index || card.textContent));
+        });
+      },
+
+      norm(s) {
+        return (s || "")
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+      },
+
+      doSearch(val) {
+        if (typeof val === "string") this.q = val;
+        const needle = this.norm(this.q);
+        let matches = 0;
+
+        this.cards.forEach((card) => {
+          const hit = !needle || this.index.get(card).includes(needle);
+          card.classList.toggle("hidden", !hit);
+          if (hit) matches++;
+        });
+
+        const noResultsEl = document.getElementById("no-results");
+        if (noResultsEl) noResultsEl.classList.toggle("hidden", matches !== 0);
+      },
+
+      async locate() {
+        if (!("geolocation" in navigator)) {
+          alert("Geolocation isn’t supported in this browser.");
+          return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+          async (pos) => {
+            try {
+              const { latitude: lat, longitude: lon } = pos.coords;
+
+              // Reverse geocode using OpenStreetMap Nominatim
+              const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&addressdetails=1`;
+              const res = await fetch(url, {
+                headers: {
+                  Accept: "application/json",
+                  "User-Agent":
+                    "SpotlightPA-Inspections/1.0 (aharris@spotlightpa.org)",
+                },
+              });
+              if (!res.ok) throw new Error("Reverse geocode failed");
+              const data = await res.json();
+
+              const a = data.address || {};
+              let city =
+                a.city ||
+                a.town ||
+                a.village ||
+                a.hamlet ||
+                a.municipality ||
+                a.county;
+              const zip = a.postcode;
+
+              if (city) {
+                // Remove "City of", "Town of", etc.
+                city = city.replace(
+                  /^(City|Town|Village|Borough|Municipality) of\s+/i,
+                  "",
+                );
+                // Remove "County" suffix
+                city = city.replace(/\s+County$/i, "");
+              }
+
+              const locationString = [city, zip].filter(Boolean).join(" ");
+
+              if (locationString) {
+                // If search already has text, append with comma
+                if (this.q && this.q.trim() !== "") {
+                  this.q = `${this.q}, ${locationString}`;
+                } else {
+                  this.q = locationString;
+                }
+                this.$refs.input.value = this.q;
+                this.doSearch(this.q);
+              } else {
+                alert("Couldn’t determine your city/ZIP from location.");
+              }
+            } catch (e) {
+              console.error(e);
+              alert("Sorry, we couldn’t look up your city/ZIP.");
+            }
+          },
+          (err) => {
+            console.warn(err);
+            if (err.code === err.PERMISSION_DENIED) {
+              alert("We need permission to use your location.");
+            } else {
+              alert("Couldn’t get your location. Please try again.");
+            }
+          },
+          { enableHighAccuracy: false, maximumAge: 60000, timeout: 10000 },
+        );
+      },
+    };
+  }
+</script>
