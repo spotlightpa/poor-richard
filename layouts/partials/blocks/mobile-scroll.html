@@ -7,7 +7,7 @@
         class="flex h-[120px] w-full items-center justify-center gap-6 rounded-t-[40px] bg-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)]"
       >
         <button
-          class="ml-6 flex w-1/2 items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-5"
+          class="ml-6 flex w-1/2 items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
         >
           <span>Filter</span>
           <svg class="ml-auto h-5 w-5 fill-yellow-9">
@@ -15,7 +15,7 @@
           </svg>
         </button>
         <button
-          class="mr-6 flex w-1/2 items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-5"
+          class="mr-6 flex w-1/2 items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
         >
           <span>Sort</span>
           <svg class="ml-auto h-5 w-5 fill-yellow-9">
@@ -34,8 +34,14 @@
 
       <div id="inspections-mount"></div>
 
-      <div id="no-results" class="w-full bg-white p-8 shadow md:p-10 hidden" aria-live="polite">
-        <p class="font-sans text-xl font-semibold text-g-7">No results found. Please try a different search.</p>
+      <div
+        id="no-results"
+        class="hidden w-full bg-white p-8 shadow md:p-10"
+        aria-live="polite"
+      >
+        <p class="font-sans text-xl font-semibold text-g-7">
+          No results found. Please try a different search.
+        </p>
       </div>
 
       <div
@@ -80,7 +86,7 @@
         </ul>
         <div class="pt-2">
           <button
-            class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-5"
+            class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
             aria-label="Read more about this inspection"
           >
             <span class="mx-auto">Read more</span>
@@ -122,7 +128,7 @@
           </ul>
           <div class="pt-2">
             <button
-              class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-5"
+              class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
               aria-label="Read more about this inspection"
             >
               <span class="mx-auto">Read more</span>
@@ -172,7 +178,7 @@
 
             <div class="pt-2">
               <button
-                class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-5"
+                class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
                 aria-label="Read more about this inspection"
               >
                 <span class="mx-auto">Read more</span>
@@ -191,13 +197,15 @@
 
   <script>
     (function () {
-      const input  = document.getElementById('search-input');
-      const button = document.getElementById('search-button');
-      const cards  = Array.from(document.querySelectorAll('[data-card="inspection"]'));
-      const noResultsEl = document.getElementById('no-results');
-    
+      const input = document.getElementById("search-input");
+      const button = document.getElementById("search-button");
+      const cards = Array.from(
+        document.querySelectorAll('[data-card="inspection"]'),
+      );
+      const noResultsEl = document.getElementById("no-results");
+
       if (!input || !button || cards.length === 0) return;
-    
+
       function normalize(str) {
         return (str || "")
           .toLowerCase()
@@ -205,35 +213,34 @@
           .replace(/\s+/g, " ")
           .trim();
       }
-    
+
       const index = new Map(
-        cards.map(card => {
+        cards.map((card) => {
           const hay = normalize(card.dataset.index || card.textContent);
           return [card, hay];
-        })
+        }),
       );
-    
+
       function doSearch() {
         const q = normalize(input.value);
         let matches = 0;
-    
-        cards.forEach(card => {
+
+        cards.forEach((card) => {
           const hit = !q || index.get(card).includes(q);
-          card.classList.toggle('hidden', !hit);
+          card.classList.toggle("hidden", !hit);
           if (hit) matches++;
         });
-    
-        if (noResultsEl) noResultsEl.classList.toggle('hidden', matches !== 0);
+
+        if (noResultsEl) noResultsEl.classList.toggle("hidden", matches !== 0);
       }
-    
-      button.addEventListener('click', doSearch);
-      input.addEventListener('keydown', e => {
-        if (e.key === 'Enter') {
+
+      button.addEventListener("click", doSearch);
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
           e.preventDefault();
           button.click();
         }
       });
     })();
-    </script>
-    
+  </script>
 </div>
