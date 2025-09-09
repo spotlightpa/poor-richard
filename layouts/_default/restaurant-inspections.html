@@ -89,7 +89,7 @@
         }}
       </div>
 
-      <div x-data="{ view: 'list' }" class="mx-auto mt-12 w-full md:w-7/12">
+      <div x-data="{ view: 'list' }" class="mx-auto mt-6 w-full md:w-7/12">
         <div
           class="flex w-full overflow-hidden rounded border-[3px] border-yellow-5"
         >
@@ -97,7 +97,7 @@
             @click="view = 'list'"
             :class="view === 'list' 
             ? 'bg-yellow' 
-            : 'bg-white'"
+            : 'bg-white text-yellow-9 hover:text-yellow-5'"
             class="w-1/2 border-r-[1.5px] border-yellow-5 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
           >
             List
@@ -106,8 +106,8 @@
           <button
             @click="view = 'map'"
             :class="view === 'map' 
-            ? 'bg-yellow' 
-            : 'bg-white'"
+          ? 'bg-yellow text-yellow-9' 
+          : 'bg-white text-yellow-9 hover:text-yellow-5'"
             class="w-1/2 border-l-[1.5px] border-yellow-5 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
           >
             Map
@@ -193,4 +193,5 @@
       </div>
     </section>
   {{ end }}
+
 {{ end }}
