@@ -1,5 +1,5 @@
 +++
-title = "5 ways you can support Spotlight PA and more independent, nonprofit journalism in the Lehigh Valley"
+title = "5 Ways to Support Spotlight PA's Lehigh Valley Project"
 link-title = "Lehigh Valley"
 title-tag = "Spotlight PA Lehigh Valley"
 description = ""
@@ -12,15 +12,8 @@ ad-header-desktop-active = false
 ad-header-mobile-active = false
 
 [[blocks]]
-layout = "text-3"
-title = "1. Complete our community survey"
-copy = """
-Tell us about your news habits and information needs, and you'll be entered to win a $50 Visa gift card. The survey will take 5 minutes. Take the survey [at this link.](https://www.surveymonkey.com/r/9XY6B9R)
-"""
-
-[[blocks]]
 layout = "takeover"
-title = "2. Subscribe to news & updates from Spotlight PA"
+title = "1. Subscribe to news & updates from Spotlight PA"
 dek = ""
 image = "2025/09/01mc-0vxd-myqd-80a9.jpeg"
 signupHed = "Get our weekly newsletter"
@@ -29,6 +22,13 @@ gaCategory = "newsletters:lehigh-valley"
 gaForm = "newsletters:lehigh-valley-full"
 hiddenField = "newsletter/lehigh-valley-hidden.html"
 eager = true
+
+[[blocks]]
+layout = "text-3"
+title = "2. Complete our community survey"
+copy = """
+Tell us about your news habits and information needs, and you'll be entered to win a $50 Visa gift card. The survey will take 5 minutes. Take the survey [at this link.](https://www.surveymonkey.com/r/9XY6B9R)
+"""
 
 [[blocks]]
 layout = "text-3"
