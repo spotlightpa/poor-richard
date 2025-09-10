@@ -1,19 +1,18 @@
 +++
-title = "5 Ways to Support Spotlight PA’s Lehigh Valley Project"
+title = "Spotlight PA Lehigh Valley"
 link-title = "Lehigh Valley"
-title-tag = "Spotlight PA Lehigh Valley"
 description = ""
 image = "2025/09/01mc-0vxp-zm49-ebq4.jpeg"
 image-description = "Lehigh Valley"
 image-credit = "Discover Lehigh Valley"
 layout = "page-landing"
-hide-topper = false
+hide-topper = true
 ad-header-desktop-active = false
 ad-header-mobile-active = false
 
 [[blocks]]
 layout = "takeover"
-title = "1. Subscribe to news & updates from Spotlight PA"
+title = "Subscribe to news & updates from Spotlight PA"
 dek = ""
 image = "2025/09/01mc-0vxd-myqd-80a9.jpeg"
 signupHed = "Get our weekly newsletter"
@@ -22,49 +21,37 @@ gaCategory = "newsletters:lehigh-valley"
 gaForm = "newsletters:lehigh-valley-full"
 hiddenField = "newsletter/lehigh-valley-hidden.html"
 eager = true
-
 [[blocks]]
-layout = "text-3"
-title = "2. Complete our community survey"
-copy = """
-Tell us about your news habits and information needs, and you'll be entered to win a $50 Visa gift card. The survey will take 5 minutes. Take the survey [at this link.](https://www.surveymonkey.com/r/9XY6B9R)
-"""
-
-[[blocks]]
-layout = "text"
-title = "3. Attend an event"
-copy = """
-We're planning some local events this fall, so keep an eye out for opportunities to discuss issues and ideas and to meet our team in person. We'll have information tables at festivals and back-to-school events and we'll be organizing listening sessions across the Lehigh Valley. Email [megan@spotlightpa.org](mailto:megan@spotlightpa.org) to find out more about local events.
-"""
-
-[[blocks]]
-layout = "text-3"
-title = "4. Send us a story tip "
-
-copy = """
-
-Some of Spotlight PA's best stories come from our readers giving us a tip. If you know of something you think Spotlight PA should cover, please let us know.
-
-{{<embed/tips>}}
-"""
-
-[[blocks]]
-layout = "text-2"
 title = ""
-copy = """
-# 5. Become a member
+layout = "promo"
 
-Spotlight PA is a 501c3 nonprofit organization. Gifts of any amount are appreciated and needed! Make a tax-deductible gift online at [spotlightpa.org/donate](/donate/) or send a check to Spotlight PA, PO Box 11728, Harrisburg, PA 17108-1728. For other ways to give, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org).
+[[blocks.entries]]
+image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
+hed = "Spotlight PA Lehigh Valley Survey"
+body = "Tell us about your news habits and information needs, and you'll be entered to win a $50 Visa gift card. The survey will take 5 minutes."
+actionText = "Take the Survey →"
+actionUrl = "https://www.surveymonkey.com/r/9XY6B9R"
 
-"""
-[[blocks.actions]]
-copy = "Donate"
-url = "/donate/"
+[[blocks.entries]]
+image = "2025/09/01mc-0vxp-zm49-ebq4.jpeg"
+hed = "Revitalize Local News"
+body = "Become a founding donor and help revitalize investigative and accountability reporting in Lehigh Valley."
+actionText = "Donate Now →"
+actionUrl = "/donate/"
 
-[[blocks.actions]]
-copy = "More Ways to Give"
-url = "/support/"
+[[blocks]]
+layout = "supplemental"
+title = "A Novel Approach to Reinvigorating Local News"
+creditName = "Megan Beste"
+creditHed = "Megan Beste"
+creditBio = "Lehigh Valley Project Lead"
+creditEmail = "megan@spotlightpa.org"
+body = """
+Amid the decline of legacy media in the region, Spotlight PA is exploring the creation of a potential new community newsroom in the Lehigh Valley. This newsroom would produce investigative and public-service journalism about topics of civic importance to Lehigh, Northampton, and Carbon counties.
 
+Spotlight PA is currently assessing information needs in the Lehigh Valley and studying feasibility for a community newsroom through conducting listening sessions and research, exploring content distribution methods, and developing the local newsroom strategy with the input and direction of local voices. Thanks to a private donation, Spotlight PA contracted Megan Beste of Taggart Associates to lead the planning process over six months in 2025.
+
+Interested in learning more? Contact Megan Beste, Lehigh Valley Project Lead, at [megan@spotlightpa.org](megan@spotlightpa.org)."""
 
 [[blocks]]
 layout = "text-3"
