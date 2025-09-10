@@ -1,5 +1,5 @@
 +++
-title = "5 Ways to Support Spotlight PA's Lehigh Valley Project"
+title = "5 Ways to Support Spotlight PA’s Lehigh Valley Project"
 link-title = "Lehigh Valley"
 title-tag = "Spotlight PA Lehigh Valley"
 description = ""
@@ -31,14 +31,14 @@ Tell us about your news habits and information needs, and you'll be entered to w
 """
 
 [[blocks]]
-layout = "text-3"
+layout = "text"
 title = "3. Attend an event"
 copy = """
 We're planning some local events this fall, so keep an eye out for opportunities to discuss issues and ideas and to meet our team in person. We'll have information tables at festivals and back-to-school events and we'll be organizing listening sessions across the Lehigh Valley. Email [megan@spotlightpa.org](mailto:megan@spotlightpa.org) to find out more about local events.
 """
 
 [[blocks]]
-layout = "text"
+layout = "text-3"
 title = "4. Send us a story tip "
 
 copy = """
