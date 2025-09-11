@@ -27,7 +27,7 @@ layout = "promo"
 
 [[blocks.entries]]
 image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
-hed = "Spotlight PA Lehigh Valley Survey"
+hed = "Take the Spotlight PA Lehigh Valley Survey"
 body = "Tell us about your news habits and information needs, and you'll be entered to win a $50 Visa gift card. The survey will take 5 minutes."
 actionText = "Take the Survey →"
 actionUrl = "https://www.surveymonkey.com/r/9XY6B9R"
