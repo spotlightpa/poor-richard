@@ -27,6 +27,7 @@ layout = "promo"
 
 [[blocks.entries]]
 image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
+image-credit = "Susan L. Angstadt"
 hed = "Take the Spotlight PA Lehigh Valley Survey"
 body = "Tell us about your news habits and information needs, and you'll be entered to win a $50 Visa gift card. The survey will take 5 minutes."
 actionText = "Take the Survey →"
@@ -34,6 +35,7 @@ actionUrl = "https://www.surveymonkey.com/r/9XY6B9R"
 
 [[blocks.entries]]
 image = "2025/09/01mc-0vxp-zm49-ebq4.jpeg"
+image-credit = "Discover Lehigh Valley"
 hed = "Revitalize Local News"
 body = "Support Spotlight PA’s efforts to revitalize investigative and accountability reporting statewide."
 actionText = "Donate Now →"
