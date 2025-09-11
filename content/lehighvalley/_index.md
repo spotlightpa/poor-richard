@@ -12,10 +12,10 @@ ad-header-mobile-active = false
 
 [[blocks]]
 layout = "takeover"
-title = "Subscribe to news & updates from Spotlight PA"
+title = "Help us write the future of journalism in the Lehigh Valley"
 dek = ""
 image = "2025/09/01mc-0vxd-myqd-80a9.jpeg"
-signupHed = "Get our weekly newsletter"
+signupHed = "Join our Lehigh Valley mailing list"
 signupDek = "Sign up for news and updates on Spotlight PA's Lehigh Valley project, plus a weekly roundup of top news and information from Spotlight PA's statewide newsroom."
 gaCategory = "newsletters:lehigh-valley"
 gaForm = "newsletters:lehigh-valley-full"
@@ -35,7 +35,7 @@ actionUrl = "https://www.surveymonkey.com/r/9XY6B9R"
 [[blocks.entries]]
 image = "2025/09/01mc-0vxp-zm49-ebq4.jpeg"
 hed = "Revitalize Local News"
-body = "Become a founding donor and help revitalize investigative and accountability reporting in Lehigh Valley."
+body = "Support Spotlight PA’s efforts to revitalize investigative and accountability reporting statewide."
 actionText = "Donate Now →"
 actionUrl = "/donate/"
 
