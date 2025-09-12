@@ -18,7 +18,7 @@ no-index = false
 promo = "{{<featured/election-promo>}}"
 disabled-text = """Polls in Pennsylvania have officially closed. Spotlight PA’s Election Assistant is no longer available.
 To see rolling tallies for various races, and official results when they are available after 8 p.m. on May 20, visit [spotlightpa.org/news/2025/05/pennsylvania-election-results-2025-primary/](https://www.spotlightpa.org/news/2025/05/pennsylvania-election-results-2025-primary/)."""
-disable-chatbot = true
+disable-chatbot = false
 +++
 
 ### Why and how we built this
