@@ -163,6 +163,10 @@ title = "Municipal Elections 101"
 link = "municipal-elections-101"
 
 [[blocks.link]]
+title = "PA Courts 101"
+link = "pa-courts-101"
+
+[[blocks.link]]
 title = "Election Assistant"
 link = "election-assistant"
 
@@ -192,6 +196,14 @@ slug = "municipal-elections-101"
 layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "series/municipal-elections-101/"
+collectionReadMore = "Read More"
+
+[[blocks]]
+title = "PA Courts 101"
+slug = "pa-courts-101"
+layout = "story-collection"
+timeFilter = "2024-12-31"
+collection = "series/pa-courts-101/"
 collectionReadMore = "Read More"
 
 [[blocks]]
