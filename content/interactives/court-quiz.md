@@ -12,7 +12,10 @@ image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
 image-description = "PA court candidates quiz"
 image-credit = "Illustration by Daniel Fishel / For Spotlight PA"
 layout = "page-landing"
-url = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commomwealth-court-quiz/"
+url = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commonwealth-court-quiz/"
+aliases = [
+  "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commomwealth-court-quiz/"
+]
 bg-img = true
 takeover = """
 {{<featured/main-takeover
@@ -48,6 +51,8 @@ ad-header-mobile-active = false
 +++
 
 Pennsylvania's Nov. 4 election will feature [critical statewide judicial races](/news/2025/09/pennsylvania-election-2025-commonwealth-superior-court-candidates-elections/), as well as retention elections that will [determine](/news/2025/09/judicial-retention-supreme-court-2025-guide-elections/) whether three Supreme Court justices get additional terms.
+
+How much do you know about the commonwealth’s three appellate courts? Test your knowledge using the quick quiz below.
 
 <div class="my-8 flex flex-row flex-wrap gap-4 justify-around">
 
