@@ -236,7 +236,7 @@ image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
 hed = "Court Quiz"
 dek = "Find out what Pennsylvania's Commonwealth, Superior, and Supreme Courts do and how they make decisions that affect your daily life."
 cta = "Take Our Quiz →"
-link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commomwealth-court-quiz"
+link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commonwealth-court-quiz"
 
 +++
 
@@ -248,6 +248,3 @@ This November, voters across Pennsylvania will cast their ballots in municipal r
 While we’re not able to cover the thousands of municipal races on the ballot this year, we’ll have voter guides, including one to help you vet candidates, along with some coverage on select local races in Berks County and the State College area.
 
 We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about [how we’re covering the 2025 Pennsylvania election](https://www.spotlightpa.org/news/2025/09/pennsylvania-2025-municipal-election-coverage-municipal-elections/).
-
-
-
