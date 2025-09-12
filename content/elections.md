@@ -186,7 +186,7 @@ link = "credits"
 title = "PA Election 2025: Voter Guides"
 slug = "guides"
 layout = "story-collection"
-timeFilter = "2025-05-01"
+timeFilter = "2025-09-01"
 collection = "series/voting-guides-2025/_index.md"
 collectionReadMore = "Read More Voter Guides"
 
@@ -204,7 +204,6 @@ slug = "pa-courts-101"
 layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "series/pa-courts-101/"
-collectionReadMore = "Read More"
 
 [[blocks]]
 layout = "ballyhoo"
