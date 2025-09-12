@@ -11,20 +11,18 @@ dek = "2025 is a municipal election year, and ballots will vary with local races
 extended-kicker = "Pa. Election Center 2025"
 linktitle = "Everything you need to prepare for Pa.’s 2025 election"
 blurb = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
-url = "/elections/"
+url = "/elections-primary-2025/"
 aliases = [
-    "/election/",
-    "/elections-2023/",
-    "/elections-2025/",
-    "/elections/contest/",
+  "/pa-election-primary-2025/",
+  "/elections/primary-2025/",
 ]
 layout = "page-landing"
 type = "elections"
 guide = "series/voting-guides-2025/_index.md"
 takeover = """
 {{<featured/main-takeover
-  title = "Pennsylvania Municipal Election 2025"
-  dek = "Pennsylvanians will vote in municipal and statewide judicial races on Nov. 4."
+  title = "Pennsylvania Primary Election 2025"
+  dek = "Democrats and Republicans in Pennsylvania will vote for their parties’ candidates in the municipal primary election on May 20."
   image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 >}}
 
@@ -125,19 +123,19 @@ sidebar = """
   {{<sidebar-links hed="Key Dates" event="true">}}
     {{<sidebar-link
     title="Last day to register to vote"
-    date="2025-10-20"
+    date="2025-05-05"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
     title="Last day to apply for mail ballot"
-    date="2025-10-28"
+    date="2025-05-13"
     link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
     >}}
 
     {{<sidebar-link
     title="Election Day"
-    date="2025-11-04"
+    date="2025-05-20"
     link="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
     >}}
@@ -159,14 +157,6 @@ title = "Voter Guides"
 link = "guides"
 
 [[blocks.link]]
-title = "Municipal Elections 101"
-link = "municipal-elections-101"
-
-[[blocks.link]]
-title = "PA Courts 101"
-link = "pa-courts-101"
-
-[[blocks.link]]
 title = "Election Assistant"
 link = "election-assistant"
 
@@ -175,8 +165,20 @@ title = "More Coverage"
 link = "coverage"
 
 [[blocks.link]]
-title = "Court Quiz"
-link = "court-quiz"
+title = "Mayor Quiz"
+link = "mayor-quiz"
+
+[[blocks.link]]
+title = "Español"
+link = "espanol"
+
+[[blocks.link]]
+title = "College Quiz"
+link = "college-quiz"
+
+[[blocks.link]]
+title = "Ask Us"
+link = "contact"
 
 [[blocks.link]]
 title = "Credits"
@@ -186,25 +188,9 @@ link = "credits"
 title = "PA Election 2025: Voter Guides"
 slug = "guides"
 layout = "story-collection"
-timeFilter = "2025-05-01"
+timeFilter = "2024-12-31"
 collection = "series/voting-guides-2025/_index.md"
 collectionReadMore = "Read More Voter Guides"
-
-[[blocks]]
-title = "Municipal Elections 101"
-slug = "municipal-elections-101"
-layout = "story-collection"
-timeFilter = "2024-12-31"
-collection = "series/municipal-elections-101/"
-collectionReadMore = "Read More"
-
-[[blocks]]
-title = "PA Courts 101"
-slug = "pa-courts-101"
-layout = "story-collection"
-timeFilter = "2024-12-31"
-collection = "series/pa-courts-101/"
-collectionReadMore = "Read More"
 
 [[blocks]]
 layout = "ballyhoo"
@@ -231,23 +217,48 @@ collectionReadMore = "Read More PA Election 2025 Stories"
 
 [[blocks]]
 layout = "ballyhoo"
-id = "court-quiz"
-image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
-hed = "Court Quiz"
-dek = "Find out what Pennsylvania's Commonwealth, Superior, and Supreme Courts do and how they make decisions that affect your daily life."
+id = "mayor-quiz"
+image = "2025/04/01m0-g0zk-wp3n-9vnt.jpeg"
+hed = "Your Next Mayor"
+dek = "Use our interactive tool to see which candidates for Pittsburgh mayor most closely align with what matters to you."
 cta = "Take Our Quiz →"
-link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commomwealth-court-quiz"
+link = "/news/2025/05/pittsburgh-mayor-election-2025-candidates-quiz/"
 
+[[blocks]]
+title = "Elecciones Pa. 2025: Traducciones al Español"
+id = "espanol"
+slug = "espanol"
+layout = "story-collection"
+timeFilter = "2025-01-01"
+collection = "topics/español/_index.md"
+collectionReadMore = "Leer Más Historias De La Elección PA 2025"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "college-quiz"
+image = "2025/04/01m0-52z0-0x40-19w0.jpeg"
+hed = "Pop Quiz"
+dek = "Use our interactive tool to see which candidates for State College Area School District Board of Directors most closely align with what matters to you."
+cta = "Take Our Quiz →"
+link = "/statecollege/2025/05/pennsylvania-state-college-school-board-scasd-primary-election-2025-anderson-huff-barlow-black-desmarais-mcternan-sogor-quiz/"
+
+[[blocks]]
+layout = "contact"
+slug = "contact"
+hed = "Ask Us Your Questions"
+showAnon = false
+submit = "Submit"
+recipient = "Elections"
+dek = "What do you want to know about Pennsylvania elections? Use the form to ask us."
+placeholder = "What you want to know about Pennsylvania elections…"
 +++
 
 
 Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you. Our goal is that the resources on this page will give you the critical information you need to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 
-This November, voters across Pennsylvania will cast their ballots in municipal races. Depending on where you live, your ballot could include races for mayor, school board, city council, various judicial offices, district attorney, and more. Statewide, every voter will also consider judicial races, as well as retention questions for Pennsylvania Supreme, Superior, and Commonwealth Courts on their ballot.
+This May, Democrats and Republicans across Pennsylvania will cast their ballots in municipal races. Depending on where you live, your ballot could include races for mayor, school board, city council, various judicial offices, district attorney, and more. While we’re not able to cover the thousands of municipal races on the ballot this year, we’ll have voter guides, including one to help you vet candidates, along with some coverage on select local races in Berks County and the State College area. 
 
-While we’re not able to cover the thousands of municipal races on the ballot this year, we’ll have voter guides, including one to help you vet candidates, along with some coverage on select local races in Berks County and the State College area.
-
-We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about [how we’re covering the 2025 Pennsylvania election](https://www.spotlightpa.org/news/2025/09/pennsylvania-2025-municipal-election-coverage-municipal-elections/).
+We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about [how we’re covering the 2025 Pennsylvania election](https://www.spotlightpa.org/news/2025/04/pennsylvania-2025-primary-election-coverage-municipal/).
 
 
 
