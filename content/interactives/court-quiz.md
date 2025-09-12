@@ -1,5 +1,6 @@
 +++
 internal-id = "COURTQUIZ"
+published = 2025-09-12T16:00:00Z
 extended-kicker = "News Quiz"
 title = "Test your knowledge of Pennsylvania's three appellate courts"
 linktitle = "INTERACTIVE: How much do you know about Pa.'s Supreme Court?"
