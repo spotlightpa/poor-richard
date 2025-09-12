@@ -1,7 +1,7 @@
 <div class="relative w-full" x-data="searchUI()" x-init="init()">
   {{ if .showLocation }}
     <button
-      class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-yellow-5 bg-yellow hover:bg-yellow-3"
+      class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3"
       aria-label="Use my location"
       type="button"
       @click="locate()"
@@ -15,7 +15,7 @@
 
   <button
     id="search-button"
-    class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-yellow-5 bg-yellow hover:bg-yellow-3"
+    class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3"
     aria-label="Search"
     type="button"
     @click="doSearch()"
@@ -30,7 +30,7 @@
       pl-20
     {{ else }}
       pl-4
-    {{ end }} flex w-full rounded border-2 border-[#b6b6b6] bg-white pr-28"
+    {{ end }} flex w-full rounded border-2 border-yellow-5 bg-white pr-28"
   >
     <input
       id="search-input"
