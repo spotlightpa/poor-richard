@@ -3,15 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-09-10-SPL101ELEX0925.md"
+    "content/news/2025-09-12-SPLRETENTION0925.md"
   ],
   "subfeatures": [
-    "content/news/2025-09-09-SPLERIC0925.md",
+    "content/news/2025-09-10-SPLCFUPDATE0925.md",
+    "content/news/2025-09-09-SPLJUDGEADS0925.md",
+    "content/news/2025-09-09-SPLCOURTGEN0925.md",
     "content/news/2025-09-03-SPLVBRETAINELEX.md"
   ],
   "topSlots": [
-    "content/news/2025-09-09-SPLCOURTGEN0925.md",
-    "content/news/2025-09-09-SPLJUDGEADS0925.md",
-    "content/news/2025-09-08-SPLCOVIDSHOT0925.md"
+    "content/news/2025-09-11-SPLRESREP0925.md",
+    "content/news/2025-09-10-SPLCFUPDATE0925.md",
+    "content/news/2025-09-10-SPL101ELEX0925.md"
   ]
 }
