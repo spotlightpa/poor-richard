@@ -1,5 +1,5 @@
 +++
-slug = "COURTQUIZ"
+internal-id = "COURTQUIZ"
 extended-kicker = "News Quiz"
 title = "Test your knowledge of Pennsylvania's three appellate courts"
 linktitle = "INTERACTIVE: How much do you know about Pa.'s Supreme Court?"

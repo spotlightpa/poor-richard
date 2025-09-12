@@ -1,5 +1,5 @@
 +++
-slug = "TREASURERQUIZ"
+internal-id = "TREASURERQUIZ"
 extended-kicker = "News Quiz"
 kicker = "State Treasurer"
 title = "See which Pa. treasurer candidate is right for you"

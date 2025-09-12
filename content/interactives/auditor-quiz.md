@@ -1,5 +1,5 @@
 +++
-slug = "AUDITORQUIZ"
+internal-id = "AUDITORQUIZ"
 extended-kicker = "News Quiz"
 kicker = "Auditor General"
 title = "See which Pa. auditor general candidate is right for you"
