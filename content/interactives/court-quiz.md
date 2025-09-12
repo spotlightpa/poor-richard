@@ -49,5 +49,7 @@ ad-header-mobile-active = false
 Pennsylvania's Nov. 4 election will feature [critical statewide judicial races](/news/2025/09/pennsylvania-election-2025-commonwealth-superior-court-candidates-elections/), as well as retention elections that will [determine](/news/2025/09/judicial-retention-supreme-court-2025-guide-elections/) whether three Supreme Court justices get additional terms.
 
 <div class="my-8 flex flex-row flex-wrap gap-4 justify-around">
-  <div data-tf-live="01K4WV2TTFD9R8N9MGMKJ9D0C5"></div><script src="//embed.typeform.com/next/embed.js"></script>
+
+{{<typeform id="01K4WV2TTFD9R8N9MGMKJ9D0C5">}}
+
 </div>
