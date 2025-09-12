@@ -1,5 +1,5 @@
 +++
-slug = "CANDIDATEQUIZ"
+internal-id = "CANDIDATEQUIZ"
 extended-kicker = "News Quiz"
 title = "Election 2024: See the best PA row office candidates for you"
 linktitle = "INTERACTIVE: See which Pa. statewide candidates are right for you"

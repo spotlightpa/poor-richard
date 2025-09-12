@@ -1,5 +1,5 @@
 +++
-slug = "AGQUIZ"
+internal-id = "AGQUIZ"
 extended-kicker = "News Quiz"
 kicker = "Attorney General"
 title = "See which Pa. attorney general candidate is right for you"
