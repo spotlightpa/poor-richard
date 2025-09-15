@@ -93,15 +93,19 @@
   "@context": "http://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {{ range $i, $page := $parents }}
-      {{ if ne $i 0 }},{{ end }}
-      {
-        "@type": "ListItem",
-        "@id": {{ .Permalink }},
-        "item": {{ .Permalink }},
-        "name": {{ .LinkTitle }},
-        "position": {{ add 1 $i }}
-      }
+    {{ $pos := 0 }}
+    {{ range $page := $parents }}
+      {{ if .Permalink }}
+        {{ if ne $pos 0 }},{{ end }}
+        {{ $pos = add 1 $pos }}
+        {
+          "@type": "ListItem",
+          "@id": {{ .Permalink }},
+          "item": {{ .Permalink }},
+          "name": {{ .LinkTitle }},
+          "position": {{ $pos }}
+        }
+      {{ end }}
     {{ end }}
   ]
 }
