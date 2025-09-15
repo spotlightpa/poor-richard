@@ -19,8 +19,8 @@ url = "/about/"
 weight = 4
 
 [[main]]
-name = "Impact"
-url = "/about/impact/"
+name = "Election 2025"
+url = "/elections/"
 weight = 5
 
 [[about]]
