@@ -159,6 +159,10 @@ title = "Voter Guides"
 link = "guides"
 
 [[blocks.link]]
+title = "Court Quiz"
+link = "court-quiz"
+
+[[blocks.link]]
 title = "Municipal Elections 101"
 link = "municipal-elections-101"
 
@@ -175,10 +179,6 @@ title = "More Coverage"
 link = "coverage"
 
 [[blocks.link]]
-title = "Court Quiz"
-link = "court-quiz"
-
-[[blocks.link]]
 title = "Credits"
 link = "credits"
 
@@ -189,6 +189,15 @@ layout = "story-collection"
 timeFilter = "2025-09-01"
 collection = "series/voting-guides-2025/_index.md"
 collectionReadMore = "Read More Voter Guides"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "court-quiz"
+image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
+hed = "Court Quiz"
+dek = "Find out what Pennsylvania's Commonwealth, Superior, and Supreme Courts do and how they make decisions that affect your daily life."
+cta = "Take Our Quiz →"
+link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commonwealth-court-quiz"
 
 [[blocks]]
 title = "Municipal Elections 101"
@@ -227,15 +236,6 @@ layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2025 Stories"
-
-[[blocks]]
-layout = "ballyhoo"
-id = "court-quiz"
-image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
-hed = "Court Quiz"
-dek = "Find out what Pennsylvania's Commonwealth, Superior, and Supreme Courts do and how they make decisions that affect your daily life."
-cta = "Take Our Quiz →"
-link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commonwealth-court-quiz"
 
 +++
 
