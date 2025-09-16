@@ -12,7 +12,6 @@
     </button>
   {{ end }}
 
-
   <button
     id="search-button"
     class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3"
@@ -53,15 +52,12 @@
       index: new Map(),
 
       init() {
-        this.cards = Array.from(
-          document.querySelectorAll('[data-card="inspection"]'),
-        );
-        const norm = (s) =>
-          (s || "")
-            .toLowerCase()
-            .replace(/[^a-z0-9\s]/g, "")
-            .replace(/\s+/g, " ")
-            .trim();
+        this.cards = Array.from(document.querySelectorAll('[data-card="inspection"]'));
+        const norm = (s) => (s || "")
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
         this.cards.forEach((card) => {
           this.index.set(card, norm(card.dataset.index || card.textContent));
         });
@@ -101,48 +97,32 @@
             try {
               const { latitude: lat, longitude: lon } = pos.coords;
 
-              // Reverse geocode using OpenStreetMap Nominatim
-              const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&addressdetails=1`;
+              const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(lat)}&lon=${encodeURIComponent(lon)}&addressdetails=1`;
+
               const res = await fetch(url, {
-                headers: {
-                  Accept: "application/json",
-                  "User-Agent":
-                    "SpotlightPA-Inspections/1.0 (aharris@spotlightpa.org)",
-                },
+                headers: { Accept: "application/json" },
               });
               if (!res.ok) throw new Error("Reverse geocode failed");
               const data = await res.json();
 
-              const a = data.address || {};
-              let city =
-                a.city ||
-                a.town ||
-                a.village ||
-                a.hamlet ||
-                a.municipality ||
-                a.county;
-              const zip = a.postcode;
+              const a = data?.address || {};
+              let city = a.city || a.town || a.village || a.hamlet || a.municipality || a.suburb || a.county || "";
+              const zip = a.postcode || "";
 
               if (city) {
-                // Remove "City of", "Town of", etc.
-                city = city.replace(
-                  /^(City|Town|Village|Borough|Municipality) of\s+/i,
-                  "",
-                );
-                // Remove "County" suffix
+                city = city.replace(/^(City|Town|Village|Borough|Municipality)\s+of\s+/i, "");
                 city = city.replace(/\s+County$/i, "");
               }
 
-              const locationString = [city, zip].filter(Boolean).join(" ");
+              const locationString = [city.trim(), zip.trim()].filter(Boolean).join(" ");
 
               if (locationString) {
-                // If search already has text, append with comma
                 if (this.q && this.q.trim() !== "") {
                   this.q = `${this.q}, ${locationString}`;
                 } else {
                   this.q = locationString;
                 }
-                this.$refs.input.value = this.q;
+                if (this.$refs?.input) this.$refs.input.value = this.q;
                 this.doSearch(this.q);
               } else {
                 alert("Couldn’t determine your city/ZIP from location.");
@@ -156,6 +136,10 @@
             console.warn(err);
             if (err.code === err.PERMISSION_DENIED) {
               alert("We need permission to use your location.");
+            } else if (err.code === err.POSITION_UNAVAILABLE) {
+              alert("Location unavailable. Try again.");
+            } else if (err.code === err.TIMEOUT) {
+              alert("Timed out getting your location. Try again.");
             } else {
               alert("Couldn’t get your location. Please try again.");
             }
