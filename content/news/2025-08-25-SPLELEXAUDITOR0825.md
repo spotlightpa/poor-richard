@@ -64,6 +64,8 @@ Many Pennsylvania municipalities have adopted home rule charters, which allow th
 
 Third-class cities in the commonwealth don’t elect a tax collector. Instead, they elect a treasurer to collect real estate taxes for the city.
 
+{{<dewey-assistant>}}
+
 ## What is an auditor?
 
 Boroughs and townships in Pennsylvania must annually audit local accounting records and ensure they accurately reflect the municipality’s financial position.
