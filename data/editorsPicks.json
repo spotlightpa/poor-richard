@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/interactives/court-quiz.md"
+    "content/news/2025-09-16-SPLBBAWARDS0925.md"
   ],
   "subfeatures": [
-    "content/news/2025-09-15-SPLNOV0425MAIL.md",
-    "content/news/2025-09-15-SPLELEXCOVMUN1125.md",
-    "content/news/2025-09-10-SPLCFUPDATE0925.md"
+    "content/news/2025-06-18-SPLBBCHANGES0625.md",
+    "content/news/2025-06-04-SPLBBGRANTS06025.md",
+    "content/news/2024-04-24-SPLBROADBANDCOST.md"
   ],
   "topSlots": [
+    "content/interactives/court-quiz.md",
     "content/news/2025-09-12-SPLRETENTION0925.md",
-    "content/news/2025-09-11-SPLRESREP0925.md",
-    "content/news/2025-09-10-SPL101ELEX0925.md"
+    "content/news/2025-09-11-SPLRESREP0925.md"
   ]
 }
