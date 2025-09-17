@@ -1,22 +1,15 @@
 {{ define "main" }}
   <section class="mt-6 bg-black pb-6">
-    <div
-      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-16 md:gap-x-6 md:px-0 lg:gap-x-12"
-    >
+    <div class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-16 md:gap-x-6 md:px-0 lg:gap-x-12">
       {{ with .Param "eyebrow" }}
         <div class="mx-auto w-full md:w-7/12">
-          <p
-            class="ga:component:main:header:eyebrow text-small inline-block border-2 border-white bg-white px-2 font-sans font-semibold uppercase text-black md:text-lg"
-          >
+          <p class="ga:component:main:header:eyebrow text-small inline-block border-2 border-white bg-white px-2 font-sans font-semibold uppercase text-black md:text-lg">
             {{ . }}
           </p>
         </div>
       {{ end }}
 
-
-      <h1
-        class="mx-auto mt-4 w-full pb-2 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl md:w-7/12 lg:text-5xl"
-      >
+      <h1 class="mx-auto mt-4 w-full pb-2 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl md:w-7/12 lg:text-5xl">
         {{ .Title }}
       </h1>
 
@@ -35,27 +28,18 @@
       {{ end }}
 
       {{ if $byline }}
-        <div
-          class="mx-auto mt-4 w-full text-lg leading-none text-white md:w-7/12 lg:text-xl"
-        >
+        <div class="mx-auto mt-4 w-full text-lg leading-none text-white md:w-7/12 lg:text-xl">
           <span class="font-sans">
             by
             {{ if $bylineLink }}
-              <a
-                href="{{ $bylineLink }}"
-                class="font-semibold underline hover:text-yellow"
-              >
-                {{ $byline }}
-              </a>
+              <a href="{{ $bylineLink }}" class="font-semibold underline hover:text-yellow">{{ $byline }}</a>
             {{ else }}
               <span class="font-semibold">{{ $byline }}</span>
             {{ end }}
-            of
-            {{ $outlet }}
+            of {{ $outlet }}
           </span>
         </div>
       {{ end }}
-
 
       <div class="mx-auto w-full md:w-7/12">
         {{ partial "tw/horizontal-social-buttons.html" . }}
@@ -63,129 +47,54 @@
 
       {{ with .Param "deck" }}
         <div class="mx-auto mt-4 w-full md:w-7/12">
-          <p class="font-serif text-xl text-white md:text-2xl md:leading-tight">
-            {{ . }}
-          </p>
+          <p class="font-serif text-xl text-white md:text-2xl md:leading-tight">{{ . }}</p>
         </div>
       {{ end }}
 
       {{ with .Param "search-instructions" }}
         <div class="mx-auto mt-8 w-full md:w-7/12">
-          <p
-            class="font-serif text-xl italic text-white md:text-2xl md:leading-tight"
-          >
-            {{ . }}
-          </p>
+          <p class="font-serif text-xl italic text-white md:text-2xl md:leading-tight">{{ . }}</p>
         </div>
       {{ end }}
 
-
-      <div class="mx-auto mt-6 w-full md:w-7/12">
+      <div class="mx-auto mt-6 w-full md:w-7/12" x-data="inspectionsUI()" x-init="init()">
         {{ partial "blocks/search.html" (dict
           "placeholder" (default "Search restaurants" (.Param "search-placeholder"))
           "showLocation" (.Param "search-location")
           "context" .
-          )
-        }}
-      </div>
-
-      <div x-data="{ view: 'list' }" class="mx-auto mt-6 w-full md:w-7/12">
-        <div
-          class="flex w-full overflow-hidden rounded border-[3px] border-yellow-5"
-        >
-          <button
-            @click="view = 'list'"
-            :class="view === 'list' 
-            ? 'bg-yellow' 
-            : 'bg-white text-yellow-9 hover:text-yellow-5'"
-            class="w-1/2 border-r-[1.5px] border-yellow-5 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
-          >
-            List
-          </button>
-
-          <button
-            @click="view = 'map'"
-            :class="view === 'map' 
-          ? 'bg-yellow text-yellow-9' 
-          : 'bg-white text-yellow-9 hover:text-yellow-5'"
-            class="w-1/2 border-l-[1.5px] border-yellow-5 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
-          >
-            Map
-          </button>
-        </div>
-      </div>
-
-      <div
-        class="mx-auto flex w-full max-w-screen-xl flex-wrap md:px-0"
-        data-ga-category="content"
-      >
-        <div
-          class="mx-auto w-full overflow-hidden pb-4 font-serif leading-relaxed md:w-7/12"
-        >
-          {{ with .Param "dek" }}
-            <h2
-              class="mx-auto w-0 min-w-full text-xl text-white md:text-2xl md:leading-tight"
-            >
-              {{ . }}
-            </h2>
-          {{ end }}
-        </div>
+        ) }}
       </div>
     </div>
   </section>
 
   {{ partial "blocks/mobile-scroll.html" . }}
 
-
   <section class="bg-white" data-ga-category="about">
     <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
       <div class="mx-auto w-full space-y-8 md:w-7/12">
         <div>
-          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
-            {{ .Param "about-title" }}
-          </h2>
-          <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "about-description" }}
-          </p>
+          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">{{ .Param "about-title" }}</h2>
+          <p class="pt-4 font-serif leading-relaxed text-black">{{ .Param "about-description" }}</p>
         </div>
 
         <div>
-          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
-            {{ .Param "questions-title" }}
-          </h2>
-          <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "questions-description" }}
-          </p>
+          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">{{ .Param "questions-title" }}</h2>
+          <p class="pt-4 font-serif leading-relaxed text-black">{{ .Param "questions-description" }}</p>
         </div>
 
         <div>
-          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
-            {{ .Param "tips-title" }}
-          </h2>
-          <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "tips-description" }}
-          </p>
+          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">{{ .Param "tips-title" }}</h2>
+          <p class="pt-4 font-serif leading-relaxed text-black">{{ .Param "tips-description" }}</p>
         </div>
       </div>
     </div>
   </section>
 
   {{ with .Page.RenderString (.Param "credits") }}
-    <section
-      class="bg-white"
-      id="credits"
-      data-ga-category="credits"
-      x-data
-      x-intersect.half="$dispatch('intersect:about', $el.id)"
-    >
+    <section class="bg-white" id="credits" data-ga-category="credits" x-data x-intersect.half="$dispatch('intersect:about', $el.id)">
       <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
         <div class="mx-auto w-full md:w-7/12">
-          <h2
-            class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
-          >
-            Credits
-          </h2>
-
+          <h2 class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl">Credits</h2>
           <div class="space-y-8 py-6">
             {{ . }}
           </div>
@@ -194,4 +103,213 @@
     </section>
   {{ end }}
 
+  <script>
+    function inspectionsUI() {
+      return {
+        q: "",
+        cards: [],
+        index: new Map(),
+        activeCard: null,
+        lastReadMoreButton: null,
+        initializedDelegates: false,
+
+        init() {
+          this.cards = Array.from(document.querySelectorAll('[data-card="inspection"]'));
+          this.cards.forEach((card) => {
+            if (!card.querySelector('.list-content')) {
+              const wrap = document.createElement('div');
+              wrap.className = 'list-content';
+              while (card.firstChild) wrap.appendChild(card.firstChild);
+              card.appendChild(wrap);
+            }
+          });
+          const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+          this.cards.forEach((card) => {
+            this.index.set(card, norm(card.dataset.index || card.textContent));
+          });
+          this.applySearch();
+          if (!this.initializedDelegates) {
+            document.addEventListener("click", (e) => {
+              const readMoreBtn = e.target.closest('button[aria-label="Read more about this inspection"]');
+              if (readMoreBtn) {
+                e.preventDefault();
+                const card = readMoreBtn.closest('[data-card="inspection"]');
+                if (card) {
+                  this.lastReadMoreButton = readMoreBtn;
+                  this.openDetails(card);
+                }
+                return;
+              }
+              const backBtn = e.target.closest('[data-action="back-to-results"]');
+              if (backBtn) {
+                e.preventDefault();
+                this.backToResults();
+                return;
+              }
+            });
+            this.initializedDelegates = true;
+          }
+        },
+
+        norm(s) { return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim(); },
+        syncHidden(card) {
+          const hide = card.classList.contains('hidden-by-search') || card.classList.contains('hidden-by-detail');
+          card.classList.toggle('hidden', hide);
+        },
+        escapeHTML(s) { return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); },
+
+        doSearch(val) { if (typeof val === "string") this.q = val; this.applySearch(); },
+        applySearch() {
+          const needle = this.norm(this.q); let visible = 0;
+          this.cards.forEach((card) => {
+            const hit = !needle || this.index.get(card).includes(needle);
+            card.classList.toggle('hidden-by-search', !hit);
+            this.syncHidden(card);
+            if (!card.classList.contains('hidden')) visible++;
+          });
+          const noResultsEl = document.getElementById("no-results");
+          if (noResultsEl) noResultsEl.classList.toggle("hidden", visible !== 0);
+        },
+
+        openDetails(card) {
+          this.cards.forEach((c) => {
+            if (c !== card) c.classList.add('hidden-by-detail');
+            else c.classList.remove('hidden-by-detail');
+            this.syncHidden(c);
+          });
+          const body = card;
+          const listContent = body.querySelector('.list-content');
+          let detail = body.querySelector('.detail-content');
+          if (!detail) {
+            detail = document.createElement('div');
+            detail.className = 'detail-content';
+            body.appendChild(detail);
+          }
+          detail.innerHTML = this.buildDetailHTML(card);
+          listContent?.classList.add('hidden');
+          detail.querySelector('[data-action="back-to-results"]')?.focus({ preventScroll: true });
+          card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          this.activeCard = card;
+          document.getElementById("no-results")?.classList.add("hidden");
+        },
+
+        backToResults() {
+          if (!this.activeCard) return;
+          const card = this.activeCard;
+          card.querySelector('.detail-content')?.remove();
+          card.querySelector('.list-content')?.classList.remove('hidden');
+          this.cards.forEach((c) => { c.classList.remove('hidden-by-detail'); this.syncHidden(c); });
+          this.applySearch();
+          this.lastReadMoreButton?.focus({ preventScroll: true });
+          this.activeCard = null;
+        },
+
+        buildDetailHTML(card) {
+          const title = (card.querySelector('h2')?.textContent || '').trim();
+          const infoLines = Array.from(card.querySelectorAll('.list-content span')).map(n => n.textContent.trim());
+          const location = infoLines.find(t => !/Last inspection:/i.test(t)) || '';
+          const lastDate = (infoLines.find(t => /Last inspection:/i.test(t)) || '').replace(/^Last inspection:\s*/i, '');
+          const violations = this.readViolations(card);
+          const items = violations.map(v => this.renderViolationItem(v)).join('') || `<li class="rounded-md border border-g-3 p-4"><p class="font-serif text-g-7">No violations listed.</p></li>`;
+          return `
+            <div class="space-y-5">
+              <button type="button" class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3" data-action="back-to-results">← Back</button>
+              <header class="rounded-t-[40px] bg-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)]">
+                <div class="flex items-start justify-between gap-6 px-4 py-6 sm:px-6">
+                  <div class="min-w-0">
+                    <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
+                    <div class="mt-2 space-y-1 text-g-6">
+                      ${location ? `<div>${this.escapeHTML(location)}</div>` : ''}
+                      ${lastDate ? `<div>Last inspection: ${this.escapeHTML(lastDate)}</div>` : ''}
+                    </div>
+                    <div class="mt-3">
+                      <button class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3">
+                        Get alerts
+                        <!-- <svg>bell icon</svg> -->
+                      </button>
+                      <p class="mt-1 text-sm font-sans text-g-6">Receive an email when new reports are available for this facility.</p>
+                    </div>
+                  </div>
+                  <!-- Share icons (commented out)
+                  <div class="hidden shrink-0 flex-col items-center gap-2 sm:flex">
+                    <button class="rounded-full p-2 hover:bg-g-2">[email icon]</button>
+                    <button class="rounded-full p-2 hover:bg-g-2">[facebook icon]</button>
+                    <button class="rounded-full p-2 hover:bg-g-2">[x icon]</button>
+                    <button class="rounded-full p-2 hover:bg-g-2">[share icon]</button>
+                  </div> -->
+                </div>
+              </header>
+              <section aria-labelledby="violations-title" class="space-y-3">
+
+                <ul class="space-y-3">${items}</ul>
+              </section>
+              <div class="pt-2">
+                <a href="#" class="inline-flex items-center gap-2 font-sans font-semibold text-g-7 underline hover:text-black">
+                  <!-- <svg>link icon</svg> -->
+                  Read the full report
+                </a>
+              </div>
+            </div>`;
+        },
+
+        renderViolationItem(v) {
+          const { level='low', title='', comment='' } = v;
+          return `
+            <li class="rounded-lg border border-g-3 p-4">
+              <div>
+                <!-- <svg class="h-5 w-5">${level}</svg> -->
+                <h4 class="font-sans text-lg font-bold text-black">${this.escapeHTML(title)}</h4>
+                ${comment ? `<p class="mt-2 font-serif leading-relaxed text-g-7">${this.escapeHTML(comment)}</p>` : ''}
+              </div>
+            </li>`;
+        },
+
+        readViolations(card) {
+          const list = card.querySelector('ul.violations-data');
+          if (list) {
+            return Array.from(list.querySelectorAll('li')).map(li => ({
+              level: li.getAttribute('data-level') || '',
+              title: li.querySelector('h4')?.textContent?.trim() || '',
+              comment: li.querySelector('p')?.textContent?.trim() || ''
+            })).filter(v => v.title || v.comment);
+          }
+          const csv = card.getAttribute('data-violations-csv');
+          if (csv) return this.parseViolationsCSV(csv);
+          return [];
+        },
+
+        parseViolationsCSV(csvText) {
+          const rows = []; let i = 0, s = csvText;
+          const nextField = () => {
+            if (s[i] === '"') {
+              i++; let out = '';
+              while (i < s.length) {
+                if (s[i] === '"' && s[i+1] === '"') { out += '"'; i += 2; continue; }
+                if (s[i] === '"' && (s[i+1] === ',' || s[i+1] === '\n' || i+1 === s.length)) { i++; return out; }
+                out += s[i++]; 
+              }
+              return out;
+            } else {
+              const start = i;
+              while (i < s.length && s[i] !== ',' && s[i] !== '\n') i++;
+              return s.slice(start, i);
+            }
+          };
+          const consume = ch => { if (s[i] === ch) i++; };
+          const peek = s.slice(0, 48).toLowerCase();
+          const hasHeader = peek.includes('level') && peek.includes('title');
+          if (hasHeader) { while (i < s.length && s[i] !== '\n') i++; if (s[i] === '\n') i++; }
+          while (i < s.length) {
+            const level = nextField(); consume(',');
+            const title = nextField(); consume(',');
+            const comment = nextField();
+            while (i < s.length && s[i] !== '\n') i++;
+            if (s[i] === '\n') i++;
+            if (title || comment) rows.push({ level, title, comment });
+          }
+          return rows;
+        }
+      };
+    }
+  </script>
 {{ end }}

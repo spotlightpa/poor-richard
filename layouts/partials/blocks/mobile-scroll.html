@@ -44,156 +44,171 @@
         </p>
       </div>
 
-      <div
-        data-card="inspection"
-        data-index="mcdonald’s lincoln e hwy downingtown 5/1/2025 1 high risk violation 1 moderate risk violation 1 low risk violation"
-        class="w-full space-y-3 bg-white p-8 shadow md:p-10"
-      >
-        <h2 class="text-3xl font-bold">McDonald’s</h2>
-        <div class="space-y-1 text-g-6">
-          <div class="flex items-center gap-1">
-            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-              {{ partial "helper/svg.html" "location" }}
-            </svg>
-            <span>Lincoln E HWY, Downingtown</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-              {{ partial "helper/svg.html" "calendar-day" }}
-            </svg>
-            <span>Last inspection: 5/1/2025</span>
-          </div>
-        </div>
-        <ul class="mt-2 space-y-2 text-lg font-semibold">
-          <li class="mt-4 flex items-start">
-            <svg class="mr-2 mt-1 h-5 w-5 fill-red-7">
-              {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <span>1 <span>high risk violation</span></span>
-          </li>
-          <li class="flex items-start">
-            <svg class="mr-2 mt-1 h-5 w-5 fill-yellow-4">
-              {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <span>1 <span>moderate risk violation</span></span>
-          </li>
-          <li class="flex items-start">
-            <svg class="mr-2 mt-1 h-5 w-5 fill-blue-6">
-              {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <span>1 <span>low risk violation</span></span>
-          </li>
-        </ul>
-        <div class="pt-2">
-          <button
-            class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
-            aria-label="Read more about this inspection"
-          >
-            <span class="mx-auto">Read more</span>
-            <svg class="absolute right-6 h-5 w-5 fill-yellow-9">
-              {{ partial "helper/svg.html" "chevron-right" }}
-            </svg>
-          </button>
-        </div>
-      </div>
 
-      <div class="mt-3 space-y-3 bg-g-3">
-        <div
-          data-card="inspection"
-          data-index="raku hibachi & sushi inc. reading 4/17/2025 0 violations"
-          class="w-full space-y-3 bg-white p-8 shadow md:p-10"
-        >
-          <h2 class="text-3xl font-bold">Raku Hibachi & Sushi Inc.</h2>
-          <div class="space-y-1 text-g-6">
-            <div class="flex items-center gap-1">
-              <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                {{ partial "helper/svg.html" "location" }}
-              </svg>
-              <span>Reading</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                {{ partial "helper/svg.html" "calendar-day" }}
-              </svg>
-              <span>Last inspection: 4/17/2025</span>
-            </div>
-          </div>
-          <ul class="mt-2 space-y-2 text-lg">
-            <li class="mt-4 flex items-start font-semibold">
-              <svg class="mr-2 mt-1 h-5 w-5 fill-election-green">
-                {{ partial "helper/svg.html" "circle-check" }}
-              </svg>
-              <span>0 <span>violations</span></span>
-            </li>
-          </ul>
-          <div class="pt-2">
-            <button
-              class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
-              aria-label="Read more about this inspection"
-            >
-              <span class="mx-auto">Read more</span>
-              <svg class="absolute right-6 h-5 w-5 fill-yellow-9">
-                {{ partial "helper/svg.html" "chevron-right" }}
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="mt-3 space-y-3 bg-g-3">
-          <div
-            data-card="inspection"
-            data-index="panera allentown 3/1/2025 5 moderate risk violations 1 low risk violation"
-            class="w-full space-y-3 bg-white p-8 shadow md:p-10"
-          >
-            <h2 class="text-3xl font-bold">Panera</h2>
-            <div class="space-y-1 text-g-6">
-              <div class="flex items-center gap-1">
-                <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                  {{ partial "helper/svg.html" "location" }}
-                </svg>
-                <span>Allentown</span>
-              </div>
-              <div class="flex items-center gap-1">
-                <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                  {{ partial "helper/svg.html" "calendar-day" }}
-                </svg>
-                <span>Last inspection: 3/1/2025</span>
-              </div>
-            </div>
-
-            <ul class="mt-2 space-y-2 text-lg font-semibold">
-              <li class="mt-4 flex items-start">
-                <svg class="mr-2 mt-1 h-5 w-5 fill-yellow-4">
-                  {{ partial "helper/svg.html" "triangle-exclamation" }}
-                </svg>
-                <span>5 <span>moderate risk violations</span></span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 mt-1 h-5 w-5 fill-blue-6">
-                  {{ partial "helper/svg.html" "triangle-exclamation" }}
-                </svg>
-                <span>1 <span>low risk violation</span></span>
-              </li>
-            </ul>
-
-            <div class="pt-2">
-              <button
-                class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
-                aria-label="Read more about this inspection"
-              >
-                <span class="mx-auto">Read more</span>
-                <svg class="absolute right-6 h-5 w-5 fill-yellow-9">
-                  {{ partial "helper/svg.html" "chevron-right" }}
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="h-[1px] w-full bg-g-3"></div>
-        </div>
-      </div>
+<div
+  data-card="inspection"
+  data-index="mcdonald’s lincoln e hwy downingtown 5/1/2025 1 high risk violation 1 moderate risk violation 1 low risk violation"
+  class="w-full space-y-3 bg-white p-8 shadow md:p-10"
+>
+  <h2 class="text-3xl font-bold">McDonald’s</h2>
+  <div class="space-y-1 text-g-6">
+    <div class="flex items-center gap-1">
+      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+        {{ partial "helper/svg.html" "location" }}
+      </svg>
+      <span>Lincoln E HWY, Downingtown</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+        {{ partial "helper/svg.html" "calendar-day" }}
+      </svg>
+      <span>Last inspection: 5/1/2025</span>
     </div>
   </div>
+  <ul class="mt-2 space-y-2 text-lg font-semibold">
+    <li class="mt-4 flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-red-7">
+        {{ partial "helper/svg.html" "triangle-exclamation" }}
+      </svg>
+      <span>1 <span>high risk violation</span></span>
+    </li>
+    <li class="flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-yellow-4">
+        {{ partial "helper/svg.html" "triangle-exclamation" }}
+      </svg>
+      <span>1 <span>moderate risk violation</span></span>
+    </li>
+    <li class="flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-blue-6">
+        {{ partial "helper/svg.html" "triangle-exclamation" }}
+      </svg>
+      <span>1 <span>low risk violation</span></span>
+    </li>
+  </ul>
+  <div class="pt-2">
+    <button
+      class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+      aria-label="Read more about this inspection"
+    >
+      <span class="mx-auto">Read more</span>
+      <svg class="absolute right-6 h-5 w-5 fill-yellow-9">
+        {{ partial "helper/svg.html" "chevron-right" }}
+      </svg>
+    </button>
+  </div>
+
+<ul class="violations-data" hidden>
+  <li data-level="high">
+    <h4>Food Sourcing, Handling, & Storage</h4>
+    <p>Some kitchen equipment was dirty and needs to be cleaned to prevent contamination.</p>
+  </li>
+  <li data-level="moderate">
+    <h4>Employee Health & Hygiene</h4>
+    <p>An employee did not wash their hands properly, which can spread germs to food.</p>
+  </li>
+  <li data-level="low">
+    <h4>Facility Management</h4>
+    <p>Drain pipe from dishwasher is directly in drain on the floor; there is no air gap for backflow prevention.</p>
+  </li>
+</ul>
+
+</div>
+
+<div
+  data-card="inspection"
+  data-index="raku hibachi & sushi inc. reading 4/17/2025 0 violations"
+  class="w-full space-y-3 bg-white p-8 shadow md:p-10"
+>
+  <h2 class="text-3xl font-bold">Raku Hibachi & Sushi Inc.</h2>
+  <div class="space-y-1 text-g-6">
+    <div class="flex items-center gap-1">
+      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+        {{ partial "helper/svg.html" "location" }}
+      </svg>
+      <span>Reading</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+        {{ partial "helper/svg.html" "calendar-day" }}
+      </svg>
+      <span>Last inspection: 4/17/2025</span>
+    </div>
+  </div>
+  <ul class="mt-2 space-y-2 text-lg">
+    <li class="mt-4 flex items-start font-semibold">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-election-green">
+        {{ partial "helper/svg.html" "circle-check" }}
+      </svg>
+      <span>0 <span>violations</span></span>
+    </li>
+  </ul>
+  <div class="pt-2">
+    <button
+      class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+      aria-label="Read more about this inspection"
+    >
+      <span class="mx-auto">Read more</span>
+      <svg class="absolute right-6 h-5 w-5 fill-yellow-9">
+        {{ partial "helper/svg.html" "chevron-right" }}
+      </svg>
+    </button>
+  </div>
+
+  <script type="application/json" class="violations-data">
+  []
+  </script>
+</div>
+
+<div
+  data-card="inspection"
+  data-index="panera allentown 3/1/2025 5 moderate risk violations 1 low risk violation"
+  class="w-full space-y-3 bg-white p-8 shadow md:p-10"
+>
+  <h2 class="text-3xl font-bold">Panera</h2>
+  <div class="space-y-1 text-g-6">
+    <div class="flex items-center gap-1">
+      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+        {{ partial "helper/svg.html" "location" }}
+      </svg>
+      <span>Allentown</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+        {{ partial "helper/svg.html" "calendar-day" }}
+      </svg>
+      <span>Last inspection: 3/1/2025</span>
+    </div>
+  </div>
+  <ul class="mt-2 space-y-2 text-lg font-semibold">
+    <li class="mt-4 flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-yellow-4">
+        {{ partial "helper/svg.html" "triangle-exclamation" }}
+      </svg>
+      <span>5 <span>moderate risk violations</span></span>
+    </li>
+    <li class="flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-blue-6">
+        {{ partial "helper/svg.html" "triangle-exclamation" }}
+      </svg>
+      <span>1 <span>low risk violation</span></span>
+    </li>
+  </ul>
+  <div class="pt-2">
+    <button
+      class="relative mt-4 flex w-full items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+      aria-label="Read more about this inspection"
+    >
+      <span class="mx-auto">Read more</span>
+      <svg class="absolute right-6 h-5 w-5 fill-yellow-9">
+        {{ partial "helper/svg.html" "chevron-right" }}
+      </svg>
+    </button>
+  </div>
+
+  <script type="application/json" class="violations-data">
+  []
+  </script>
+</div>
 
   <script>
     (function () {
