@@ -18,6 +18,7 @@
     "content_html" .Content
     "category" $params.kicker
     "language" (.Param "language-code" | default site.LanguageCode)
+    "blurb" $params.blurb
   -}}
   {{- $imgName := .Param "app-image" -}}
   {{- $gravity := .Param "app-image-gravity" -}}
