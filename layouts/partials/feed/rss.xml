@@ -1,0 +1,31 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+{{- $stories := sort .stories ".PublishDate" "desc" -}}
+{{- $stories = where $stories `Params.feed-exclude` "ne" true -}}
+{{- $stories = first 50 $stories -}}
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+  <channel>
+    <title>
+      {{- with .title }}{{ . }}{{- else -}}
+        {{- site.Title }}{{ with .page.Title }}: {{.}}{{ end -}}
+      {{- end -}}
+    </title>
+    <link>{{ (.page.OutputFormats.Get "html").Permalink }}</link>
+    <description>{{ .page.Description }}</description>
+    <generator>Hugo {{ hugo.Version }} -- gohugo.io</generator>
+    {{ with site.LanguageCode }}<language>{{.}}</language>{{end}}
+    <managingEditor>newsroom@spotlightpa.org (Spotlight PA)</managingEditor>
+    <webMaster>webmaster@spotlightpa.org (Spotlight PA Webmaster)</webMaster>
+    <copyright>{{ now.Format "2006"}}</copyright>
+    {{ if not .page.Date.IsZero -}}
+      <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+    {{ range $stories }}
+      {{ partial "feed/item.xml" . }}
+    {{ end }}
+  </channel>
+</rss>
