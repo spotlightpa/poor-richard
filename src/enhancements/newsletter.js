@@ -45,6 +45,12 @@ async function submitNewsletter(baseURL, el) {
     .join(":");
   obj.source = `Onsite ${pageCategory} ${component}`;
 
+  // Get any UTM parameters from the window
+  let params = new URLSearchParams(window.location.search);
+  obj.utm_source = params.get("utm_source");
+  obj.utm_medium = params.get("utm_medium");
+  obj.utm_campaign = params.get("utm_campaign");
+
   let resp = await fetchOrRedirect(`${baseURL}/api/verify-subscribe`, {
     method: "POST",
     headers: {
