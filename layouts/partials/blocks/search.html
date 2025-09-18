@@ -1,16 +1,50 @@
 <div class="relative w-full" x-data="searchUI()" x-init="init()">
   {{ if .showLocation }}
     <button
-      class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3"
+      class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-70"
       aria-label="Use my location"
+      :aria-busy="loadingLocation ? 'true' : 'false'"
       type="button"
       @click="locate()"
+      :disabled="loadingLocation"
     >
-      <svg class="h-7 w-7 fill-yellow-9">
+      <svg
+        x-show="!loadingLocation"
+        class="h-7 w-7 fill-yellow-9"
+        aria-hidden="true"
+      >
         {{ partial "helper/svg.html" "crosshairs" }}
       </svg>
+      <svg
+        x-show="loadingLocation"
+        class="h-7 w-7 animate-spin text-yellow-9"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+
+      <span
+        class="sr-only"
+        x-text="loadingLocation ? 'Locating…' : 'Use my location'"
+      ></span>
     </button>
   {{ end }}
+
 
   <button
     id="search-button"
@@ -19,7 +53,7 @@
     type="button"
     @click="doSearch()"
   >
-    <svg class="h-7 w-7 fill-yellow-9" viewBox="0 0 24 24">
+    <svg class="h-7 w-7 fill-yellow-9" viewBox="0 0 24 24" aria-hidden="true">
       {{ partial "helper/svg.html" "search" }}
     </svg>
   </button>
@@ -50,14 +84,18 @@
       q: "",
       cards: [],
       index: new Map(),
+      loadingLocation: false,
 
       init() {
-        this.cards = Array.from(document.querySelectorAll('[data-card="inspection"]'));
-        const norm = (s) => (s || "")
-          .toLowerCase()
-          .replace(/[^a-z0-9\s]/g, "")
-          .replace(/\s+/g, " ")
-          .trim();
+        this.cards = Array.from(
+          document.querySelectorAll('[data-card="inspection"]'),
+        );
+        const norm = (s) =>
+          (s || "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
         this.cards.forEach((card) => {
           this.index.set(card, norm(card.dataset.index || card.textContent));
         });
@@ -92,6 +130,7 @@
           return;
         }
 
+        this.loadingLocation = true;
         navigator.geolocation.getCurrentPosition(
           async (pos) => {
             try {
@@ -106,15 +145,28 @@
               const data = await res.json();
 
               const a = data?.address || {};
-              let city = a.city || a.town || a.village || a.hamlet || a.municipality || a.suburb || a.county || "";
+              let city =
+                a.city ||
+                a.town ||
+                a.village ||
+                a.hamlet ||
+                a.municipality ||
+                a.suburb ||
+                a.county ||
+                "";
               const zip = a.postcode || "";
 
               if (city) {
-                city = city.replace(/^(City|Town|Village|Borough|Municipality)\s+of\s+/i, "");
+                city = city.replace(
+                  /^(City|Town|Village|Borough|Municipality)\s+of\s+/i,
+                  "",
+                );
                 city = city.replace(/\s+County$/i, "");
               }
 
-              const locationString = [city.trim(), zip.trim()].filter(Boolean).join(" ");
+              const locationString = [city.trim(), zip.trim()]
+                .filter(Boolean)
+                .join(" ");
 
               if (locationString) {
                 if (this.q && this.q.trim() !== "") {
@@ -130,6 +182,8 @@
             } catch (e) {
               console.error(e);
               alert("Sorry, we couldn’t look up your city/ZIP.");
+            } finally {
+              this.loadingLocation = false;
             }
           },
           (err) => {
@@ -143,6 +197,7 @@
             } else {
               alert("Couldn’t get your location. Please try again.");
             }
+            this.loadingLocation = false;
           },
           { enableHighAccuracy: false, maximumAge: 60000, timeout: 10000 },
         );
