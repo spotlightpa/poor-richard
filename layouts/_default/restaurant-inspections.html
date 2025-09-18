@@ -347,15 +347,18 @@
     </section>
 
 
-      <div class="pt-5">
-        <a href="#" class="inline-flex items-center gap-2 font-sans font-semibold text-blue hover:text-blue-8">
-          <svg class="h-4 w-4 flex-shrink-0 fill-blue-600" aria-hidden="true">
-            {{ partial "helper/svg.html" "link" }}
-          </svg>
-          <span>Read the full report</span>
-        </a>
-      </div>
-    </div>`;
+<div class="pt-5">
+  <a href="#"
+     class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+    <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue"
+         aria-hidden="true">
+      {{ partial "helper/svg.html" "link" }}
+    </svg>
+    <span>Read the full report</span>
+  </a>
+</div>
+
+`;
   },
 
         renderViolationItem(v) {
