@@ -2,12 +2,8 @@
 layout = "restaurant-inspections"
 url = "/restaurant-inspections/"
 
-eyebrow = "Health"
 title = "Pennsylvania Restaurant Safety Tracker"
 deck = "Free, real-time updates about health inspections at restaurants near you."
-
-byline = "Alexandra Harris"
-outlet = "Spotlight PA"
 
 sign-up-button = "Sign up for alerts"
 search-instructions = "Search by restaurant name, city, or zip across 61 counties"
