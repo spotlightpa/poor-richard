@@ -1,6 +1,6 @@
 {{ $desktop := page.Param "ad-header-desktop-active" }}
 {{ $mobile := page.Param "ad-header-mobile-active" }}
-{{ $wrapperClass := .wrapperClass | default "bg-white px-6 pt-6 no-js:hidden" }}
+{{ $wrapperClass := .wrapperClass | default "bg-white px-6 pt-6 mb-6 no-js:hidden" }}
 
 {{ if or $desktop $mobile }}
   <div class="{{ $wrapperClass }}" data-fru-campaign="header" id="promo-header">
