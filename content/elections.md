@@ -1,5 +1,7 @@
 +++
 internal-id = "ELEXCENTER2025"
+ad-header-desktop-active = false
+ad-header-mobile-active = false
 image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
