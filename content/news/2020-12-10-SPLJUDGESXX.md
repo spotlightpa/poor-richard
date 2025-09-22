@@ -23,7 +23,6 @@ topics = ["Justice System"]
 +++
 
 <script defer src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script defer src="https://player.vimeo.com/api/player.js"></script>
 
 {{<featured/header
   image="2020/12/01fwjh52f5de8s2q.jpeg"
@@ -104,7 +103,7 @@ The result, court observers said, was a bloated, $237 million annual bureaucracy
 
 One district judge said he remembered the advice a colleague gave him shortly after being sworn in: “Remember, this is a part-time job. Don’t ruin it for the rest of us.”
 
-{{<featured/embed link="https://vimeo.com/489080838" caption="Everything you need to know about Pa. district judges, in 2 minutes.">}}<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/489080838?color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>{{</featured/embed>}}
+{{<featured/embed link="https://www.youtube.com/watch?v=pop4clYSLvM" caption="Everything you need to know about Pa. district judges, in 2 minutes.">}}{{<youtube pop4clYSLvM>}}{{</featured/embed>}}
 
 
 
@@ -380,5 +379,3 @@ _PennLive reporter Jan Murphy contributed to this story._
     email="cjohnson@spotlightpa.org"
   >}}
 {{</featured/footer>}}
-
-
