@@ -1,34 +1,25 @@
 +++
-event-date = 2021-02-11T17:00:00-05:00
 arc-id = "QQQPXSOR4ZH4HIK2O3CKCRRSGA"
-internal-id = "SPLEVENTXX"
-internal-budget = ""
-image = "external/7ym0rj5ct49ntf6pf01nxky390.jpeg"
-image-description = "On Feb. 11, Spotlight PA hosted a panel of medical experts and health advocates from across Pennsylvania to answer your questions on the state's vaccine distribution efforts, and latest variants."
-image-caption = ""
-image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
-image-size = ""
-published = 2021-02-12T19:44:28Z
-slug = "pa-covid-vaccine-help-providers-availability-questions-answers-spotlight-pa"
-authors = []
-byline = "Spotlight PA Staff"
-title = "WATCH: A live reader Q&A on Pa.’s COVID-19 vaccine distribution and the latest variants"
-subtitle = ""
-description = "On Feb. 11, Spotlight PA hosted a panel of medical experts and health advocates from across Pennsylvania to answer your questions."
 blurb = "On Feb. 11, Spotlight PA hosted a panel of medical experts and health advocates from across Pennsylvania to answer your questions."
+byline = "Spotlight PA Staff"
+description = "On Feb. 11, Spotlight PA hosted a panel of medical experts and health advocates from across Pennsylvania to answer your questions."
+draft = false
+event-date = 2021-02-11T17:00:00-05:00
+feed-exclude = false
+image = "external/7ym0rj5ct49ntf6pf01nxky390.jpeg"
+image-credit = "HEATHER KHALIFA / Philadelphia Inquirer"
+image-description = "On Feb. 11, Spotlight PA hosted a panel of medical experts and health advocates from across Pennsylvania to answer your questions on the state's vaccine distribution efforts, and latest variants."
+internal-id = "SPLEVENTXX"
 kicker = "Events"
-topics = ["Events"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2021-02-12T14:44:28-05:00
+slug = "pa-covid-vaccine-help-providers-availability-questions-answers-spotlight-pa"
+suppress-date = false
+suppress-featured = false
+title = "WATCH: A live reader Q&A on Pa.’s COVID-19 vaccine distribution and the latest variants"
+topics = ["Events"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -41,6 +32,6 @@ You can view a full recording of the event below.
 
 » <b>Our events operate on a “pay-what-you-can” honor system</b> so we can keep them free for those who need them most. Help Spotlight PA continue this essential public-service programming by <a href="/donate?campaign=701Dn000000YgozIAC" target=_blank>making a contribution and becoming a member today</a>.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/511728662?color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/DnlycuNgCt8?si=rzV1MmNIYZB8y_lp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>
