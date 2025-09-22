@@ -1,34 +1,26 @@
 +++
-event-date = 2020-10-19T10:00:00-04:00
 arc-id = "2EP7BQBVR5EVRJZTHOFQQJWQ4U"
-internal-id = "SPLBOOCKVARXX"
-internal-budget = ""
-image = "external/n09pht06b85qp39q8sp2prqb28.jpeg"
-image-description = "Secretary of the Commonwealth Kathy Boockvar called pre-canvassing \"an obvious solution\" to guarantee timely election results."
-image-caption = ""
-image-credit = "TIM TAI / Philadelphia Inquirer"
-image-size = ""
-published = 2020-10-19T18:41:40Z
-slug = "pa-kathy-boockvar-election-results-timely-tom-wolf-republicans-precanvassing"
 authors = ["Jamie Martines"]
-byline = "Jamie Martines of Spotlight PA"
-title = "Top Pa. election official says ‘overwhelming majority’ of votes will be counted by Friday after Election Day"
-subtitle = ""
-description = "Still, Secretary of the Commonwealth Kathy Boockvar is urging state lawmakers to take additional action to prevent the possibility of delayed results."
 blurb = "Still, Secretary of the Commonwealth Kathy Boockvar is urging state lawmakers to take additional action to prevent the possibility of delayed results."
+byline = "Jamie Martines of Spotlight PA"
+description = "Still, Secretary of the Commonwealth Kathy Boockvar is urging state lawmakers to take additional action to prevent the possibility of delayed results."
+draft = false
+event-date = 2020-10-19T10:00:00-04:00
+feed-exclude = false
+image = "external/n09pht06b85qp39q8sp2prqb28.jpeg"
+image-credit = "TIM TAI / Philadelphia Inquirer"
+image-description = "Secretary of the Commonwealth Kathy Boockvar called pre-canvassing \"an obvious solution\" to guarantee timely election results."
+internal-id = "SPLBOOCKVARXX"
 kicker = "Elections"
-topics = ["Elections", "Events"]
-series = []
-linktitle = ""
-suppress-featured = false
-weight = 0
-url = ""
-aliases = []
 modal-exclude = false
 no-index = false
-language-code = ""
-layout = ""
-extended-kicker = ""
+pinned = false
+published = 2020-10-19T14:41:40-04:00
+slug = "pa-kathy-boockvar-election-results-timely-tom-wolf-republicans-precanvassing"
+suppress-date = false
+suppress-featured = false
+title = "Top Pa. election official says ‘overwhelming majority’ of votes will be counted by Friday after Election Day"
+topics = ["Elections", "Events"]
 +++
 
 <a href="https://www.spotlightpa.org/"><i><b>Spotlight PA</b></i></a><i> is an independent, non-partisan newsroom powered by The Philadelphia Inquirer in partnership with PennLive/The Patriot-News, TribLIVE/Pittsburgh Tribune-Review, and WITF Public Media. </i><a href="https://www.spotlightpa.org/newsletters"><i>Sign up for our free newsletters</i></a><i>.</i>
@@ -41,8 +33,7 @@ That relief would come in the form of “<a href="https://www.spotlightpa.org/ne
 
 “It’s so rare that you have a circumstance like this where you have an obvious solution that’s legislative, it costs nothing, it completely solves the problem and it has zero negative side effects,” Boockvar told Spotlight PA’s Angela Couloumbis.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469848279?color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-<script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/3DpNdJO24Cc?si=kDQq7PNuroi51peL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <a class="is-sr-only" href="https://vimeo.com/469848279">Capitol Live: A Spotlight PA interview with Secretary of the Commonwealth Kathy Boockvar</a>
 
