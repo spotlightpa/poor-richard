@@ -3,7 +3,9 @@ arc-id = "S25A56K3CRCG5FZFNC6JBJ3RII"
 blurb = "On Oct. 8, Spotlight PA held a free Q&A on Alzheimer’s disease in Pennsylvania and possible solutions to the coming crisis."
 byline = "Spotlight PA Staff"
 description = "On Oct. 8, Spotlight PA held a free Q&A on Alzheimer’s disease in Pennsylvania and possible solutions to the coming crisis."
+draft = false
 event-date = 2021-10-08T12:00:00-04:00
+feed-exclude = false
 image = "external/jk52g1krg12ec6sc5rtj70ab8m.jpeg"
 image-credit = "Quinn Glabicki for Spotlight PA / PublicSource "
 image-description = "Alice “Candy” Loughney, 71, has Alzheimer’s disease and moved into a long-term care facility in Monroeville after her symptoms became too much for her husband to manage."
@@ -12,6 +14,7 @@ internal-id = "SPLALZEVENT"
 kicker = "Health"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-09-21T10:46:52.805-04:00
 series = ["Crisis Of Care"]
 slug = "pa-alzheimers-dementia-crisis-event"
@@ -30,8 +33,7 @@ The result, advocates warn, is a perfect storm of limited resources against soar
 
 On Friday, Oct. 8 at noon, Spotlight PA held a free panel on Alzheimer’s disease preparedness in Pennsylvania and possible solutions.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/626965396?h=676eb22b72&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Bnq2m3746Vo?si=LQzMjIKSUrwUFLl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 Spotlight PA has also compiled a list of resources for people caring for others with dementia.
 
 ## Family and caregiver resources
