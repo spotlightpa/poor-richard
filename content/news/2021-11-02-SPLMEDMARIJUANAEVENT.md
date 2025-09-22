@@ -3,7 +3,9 @@ arc-id = "CD4ZSWYHFRFS3M22SDTK222M2M"
 blurb = "Join Spotlight PA for a discussion on using medical marijuana to treat opioid addiction."
 byline = "Spotlight PA Staff"
 description = "Join Spotlight PA for a discussion on using medical marijuana to treat opioid addiction."
+draft = false
 event-date = 2021-11-11T19:00:00-05:00
+feed-exclude = false
 image = "external/9wtc5pbv4kqfqw21489ck7b0yg.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
 image-description = "Pennsylvania has one of the highest drug overdose death rates in the country, according to the Centers for Disease Control and Prevention."
@@ -12,6 +14,7 @@ internal-id = "SPLMEDMARIJUANAEVENT"
 kicker = "Events"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-11-02T16:50:56.906-04:00
 slug = "opioids-medical-marijuana-pennsylvania-addiction"
 suppress-date = false
@@ -41,7 +44,6 @@ Our panelists included:
 
 - <b>Dr. Kavita Fischer</b>, vice president of the Pennsylvania Psychiatric Society
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/645266486?h=76d8311834&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/645266486">Spotlight Live: Cannabis Conundrum</a> from <a href="https://vimeo.com/user107055379">Spotlight PA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/v-WI6mJLq3c?si=s9iapa5fTXrfyrbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s live events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. For a limited time, all gifts will be DOUBLED.</i>
