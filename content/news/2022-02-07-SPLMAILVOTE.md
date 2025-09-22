@@ -3,7 +3,9 @@ arc-id = "Q2A5ENCS5FG6LG3UT2FPKG7UFY"
 blurb = "Watch Spotlight PA's panel on why Act 77 is being challenged, and what to expect from the Pa. Supreme Court’s review of the law."
 byline = "Spotlight PA Staff"
 description = "Watch Spotlight PA's panel on why Act 77 is being challenged, and what to expect from the Pa. Supreme Court’s review of the law."
+draft = false
 event-date = 2022-02-17T17:00:00-05:00
+feed-exclude = false
 image = "external/cxbc41pes2k2hdhwzah6a5bafr.jpeg"
 image-credit = "Sue Dorfman / For Votebeat"
 image-description = "Act 77, Pennsylvania’s mail voting law, was ruled unconstitutional by a state court in January after a group of Republican lawmakers — many of whom voted for it — brought a challenge."
@@ -12,8 +14,10 @@ internal-id = "SPLMAILVOTE"
 kicker = "Events"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-02-07T12:41:00-05:00
 slug = "pa-mail-voting-supreme-court-act-77-unconstitutional"
+suppress-date = false
 title = "WATCH: A free virtual panel on the future of Pennsylvania’s mail voting law"
 topics = ["Events", "Elections"]
 +++
@@ -36,7 +40,7 @@ Our panelists included:
 
 - <b>Dan Moul</b>, Republican state representative, 91st District
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/679250619?h=7e57ee8a1d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ballot Battle Q&amp;amp;A"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/L20-vj402jg?si=P1BPTbrt2XIc4fLN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>
 
