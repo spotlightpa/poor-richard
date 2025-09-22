@@ -1,9 +1,11 @@
 +++
-event-date = 2021-09-09T12:00:00-04:00
 arc-id = "QBLX56WTEBCYHH4FQMCCTIZGAQ"
 blurb = "A recent Spotlight PA/KHN investigation found the Pennsylvania department tasked with oversight of these providers allowed some to continue operating despite harm to patients."
 byline = "Spotlight PA Staff"
 description = "A recent Spotlight PA/KHN investigation found the Pennsylvania department tasked with oversight of these providers allowed some to continue operating despite harm to patients."
+draft = false
+event-date = 2021-09-09T12:00:00-04:00
+feed-exclude = false
 image = "external/5wd8vd5s9h8ecm6en54fyrs5yc.jpeg"
 image-credit = "JESSICA GRIFFIN / Philadelphia Inquirer"
 image-description = "New Journeys in Recovery faces criminal charges for allegedly bribing recovery homes for referrals and forcing patients into substandard care, which prompted renewed calls from state lawmakers to strengthen oversight."
@@ -11,9 +13,11 @@ internal-id = "SPLDDAPEVENTXX"
 kicker = "Health"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-08-27T11:05:25.014-04:00
 series = ["Fundamental Flaws"]
 slug = "pa-addiction-recovery-oversight-event"
+suppress-date = false
 suppress-featured = false
 title = "WATCH: A free panel on how Pennsylvania can keep people in addiction recovery safe"
 topics = ["Health", "Events"]
@@ -41,6 +45,6 @@ On Thursday, Sept. 9 at noon, Spotlight PA held a free panel on how Pennsylvania
 
 » <b>Spotlight PA’s events operate on a “pay-what-you-can” honor system</b>. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="https://www.spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/601502991?h=cd5a06b498&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Bnq2m3746Vo?si=LD8hC1KtJlkLLMm2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
