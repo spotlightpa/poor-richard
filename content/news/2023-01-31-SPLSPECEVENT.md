@@ -32,7 +32,7 @@ Special elections occur when someone in public office can no longer serve, which
 
 For our first “How Harrisburg Works” event, Spotlight PA’s Stephen Caruso spoke about the issue with Democratic state Rep. Chris Rabb, who proposed a bill to <a href="https://www.spotlightpa.org/news/2020/02/pennsylvania-legislature-retirements-resignations-special-elections/">add new requirements to the special elections nomination process</a>. Watch the conversation below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x3OCvseSjB4?si=bhwHGN28o3m-yFjv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube x3OCvseSjB4>}}
 
 “How Harrisburg Works” is Spotlight PA’s <a href="https://www.spotlightpa.org/topics/how-harrisburg-works/">ongoing series</a> on the Capitol’s inner workings, and this event is the first in a quarterly series to explain how the legislature works (or doesn’t) and how you can get involved.
 

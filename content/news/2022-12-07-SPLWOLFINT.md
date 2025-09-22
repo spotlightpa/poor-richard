@@ -33,6 +33,6 @@ He presided as governor during a rocky period for Pennsylvania, and his response
 
 In this interview with Spotlight PA reporters Stephen Caruso and Angela Couloumbis, Wolf reflects on the legacy of his administration and discusses the impact of his many decisions. Watch below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FEKK_S5TF68?si=KHXrciOoyu2MS-Ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube FEKK_S5TF68>}}
 
 <i><b>&gt;&gt; Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone. Right now all gifts will be matched dollar-for-dollar: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>

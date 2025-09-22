@@ -53,7 +53,7 @@ The world has changed a lot since 1937 — the last time the legislature underto
 
 One provision requires that a lantern or equivalent light source be placed in every polling place. This was written at a time when electricity was not universal, especially in rural areas.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/7Z8sJqV02UQ?si=gRQV1Xyacmn4N3TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube 7Z8sJqV02UQ>}}
 
 An entire section of the code is dedicated to “voting machines,” a reference to mechanically operated devices like lever-action voting machines that have not been in use in Pennsylvania for roughly two decades.
 
@@ -74,4 +74,3 @@ However, Act 77 created new code conflicts and questions. Attempts to fix these 
 Other academics who spoke with Spotlight PA and Votebeat noted that other states have had an easier time passing voting legislation because party demographics in the state lean strongly one way or the other, and therefore the majority party isn’t concerned with losing power.
 
 <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-election-code-voting-rules/"><strong>Read the complete investigation here</strong></a><strong>.</strong>
-
