@@ -92,7 +92,7 @@ He is married with five adult children.
 
 Maines filled out a questionnaire from Spotlight PA to help inform this guide. See his full answers <a href="https://www.documentcloud.org/documents/26104502-josh-maines-spotlight-pa-clearfield-county-judge-questionnaire/#document/p1">here</a>.
 
-{{<picture src="caption" description="Ryan P. Sayers" caption="Ryan P. Sayers" credit="Courtesy of Ryan P. Sayers">}}
+{{<picture src="2025/09/01mc-v6vm-abqb-vfd3.png" description="Ryan P. Sayers" caption="Ryan P. Sayers" credit="Courtesy of Ryan P. Sayers">}}
 
 <h2 id="spl-heading-3">Ryan P. Sayers, Republican</h2>
 
