@@ -18,7 +18,6 @@ import mostPopular from "../enhancements/most-popular.js";
 import prefill from "../enhancements/prefill.js";
 import readmore from "../enhancements/read-more.js";
 import sanitizeText from "../enhancements/sanitize-text.js";
-import scrollVimeo from "../enhancements/scroll-vimeo.js";
 import searchArticles from "../enhancements/search-articles.js";
 import searchModal from "../enhancements/search-modal.js";
 import slider from "../enhancements/slider.js";
@@ -34,7 +33,6 @@ for (let [name, comp] of [
   ["mostPopular", mostPopular],
   ["prefill", prefill],
   ["readmore", readmore],
-  ["scrollVimeo", scrollVimeo],
   ["searchArticles", searchArticles],
   ["searchModal", searchModal],
   ["slider", slider],

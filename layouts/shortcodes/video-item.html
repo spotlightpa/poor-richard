@@ -9,14 +9,15 @@
   x-data="scrollVimeo"
 >
   <div class="mx-[calc(-50vw_+_50%)]">
-    <div
-      x-ref="splVideo"
-      class="relative mx-auto h-0 w-full pb-16x9"
-      x-intersect.half="play()"
-      x-intersect:leave="pause()"
-      data-vimeo-id="{{ $playerID }}"
-      data-vimeo-defer
-    ></div>
+    <iframe
+      class="aspect-[16/9] w-full"
+      src="https://www.youtube.com/embed/{{ $playerID }}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
   </div>
   {{ if $inner }}
     <figcaption
