@@ -14,6 +14,7 @@ modal-exclude = false
 og-title = "Your guide to Clearfield County judge candidates"
 pinned = false
 published = 2025-09-22T04:00:00-04:00
+series = ["Voting Guides 2025"]
 slug = "pennsylvania-election-clearfield-county-judge-candidate-guide-elections"
 suppress-date = false
 title = "Pa. election 2025: A complete guide to the candidates for Clearfield County judge"
