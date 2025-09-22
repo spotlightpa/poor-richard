@@ -32,6 +32,6 @@ You can view a full recording of the event below.
 
 » <b>Our events operate on a “pay-what-you-can” honor system</b> so we can keep them free for those who need them most. Help Spotlight PA continue this essential public-service programming by <a href="/donate?campaign=701Dn000000YgozIAC" target=_blank>making a contribution and becoming a member today</a>.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/DnlycuNgCt8?si=rzV1MmNIYZB8y_lp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube DnlycuNgCt8>}}
 
 <i><b>100% ESSENTIAL:</b></i><i> </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> relies on</i><a href="https://www.spotlightpa.org/support"><i> funding from foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results. Become a member today at </i><a href="/donate?campaign=701Dn000000YgovIAC"><i>spotlightpa.org/donate</i></a><i>.</i>

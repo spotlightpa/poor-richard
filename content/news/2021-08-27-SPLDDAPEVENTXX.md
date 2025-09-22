@@ -45,6 +45,6 @@ On Thursday, Sept. 9 at noon, Spotlight PA held a free panel on how Pennsylvania
 
 » <b>Spotlight PA’s events operate on a “pay-what-you-can” honor system</b>. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="https://www.spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Bnq2m3746Vo?si=LD8hC1KtJlkLLMm2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube Bnq2m3746Vo>}}
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>

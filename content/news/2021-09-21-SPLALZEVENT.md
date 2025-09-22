@@ -33,7 +33,8 @@ The result, advocates warn, is a perfect storm of limited resources against soar
 
 On Friday, Oct. 8 at noon, Spotlight PA held a free panel on Alzheimer’s disease preparedness in Pennsylvania and possible solutions.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Bnq2m3746Vo?si=LQzMjIKSUrwUFLl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube Bnq2m3746Vo>}}
+
 Spotlight PA has also compiled a list of resources for people caring for others with dementia.
 
 ## Family and caregiver resources

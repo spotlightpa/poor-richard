@@ -35,7 +35,7 @@ Our panel, hosted by Spotlight PA Editor in Chief Christopher Baxter, took place
 
 - Kevin Shivers, President and CEO of the Pennsylvania Association of Community Bankers
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/d_BHgkDPd0M?si=_LjC8mw7_9OXVJ0C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube d_BHgkDPd0M>}}
 
 Spotlight PA is an independent, non-partisan news organization funded by nonprofit institutions and readers across Pennsylvania who are committed to accountability journalism focused on the state government and urgent statewide issues. Spotlight PA editors and reporters operate independently of our funders and maintain editorial control over all of the content produces. Funders do not have input into the selection of which stories Spotlight PA pursues or the reporting process for those stories. Funders do not review any content before publication or have any special access to reporters or newsroom leadership.
 

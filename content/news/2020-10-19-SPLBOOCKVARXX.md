@@ -33,7 +33,7 @@ That relief would come in the form of “<a href="https://www.spotlightpa.org/ne
 
 “It’s so rare that you have a circumstance like this where you have an obvious solution that’s legislative, it costs nothing, it completely solves the problem and it has zero negative side effects,” Boockvar told Spotlight PA’s Angela Couloumbis.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/3DpNdJO24Cc?si=kDQq7PNuroi51peL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube 3DpNdJO24Cc>}}
 
 <a class="is-sr-only" href="https://vimeo.com/469848279">Capitol Live: A Spotlight PA interview with Secretary of the Commonwealth Kathy Boockvar</a>
 

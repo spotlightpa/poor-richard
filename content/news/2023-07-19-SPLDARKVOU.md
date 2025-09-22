@@ -52,7 +52,7 @@ Shapiro supported private school vouchers on the campaign trail, and his adminis
 
 Republicans have said that as the budget deadline approached, Shapiro negotiated a spending plan with state Senate GOP leaders that included a provision for a new voucher program that would allow children in “low-achieving” public school districts to apply for sums of state money that would go toward tuition or expenses at a private school.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/zROeSB4o7vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{<youtube zROeSB4o7vw>}}
 
 In exchange for that inclusion, Senate GOP leaders said they had acquiesced to higher overall spending than they would have otherwise tolerated.
 

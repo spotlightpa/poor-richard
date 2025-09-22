@@ -33,7 +33,7 @@ Some GOP lawmakers are pushing to change the way these judges are elected as the
 
 On Thursday, Oct. 21, Spotlight PA held a free panel on who is on the ballot this November, what’s at stake, and why it matters. Watch it below.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Qllry0kbsJo?si=cqhM8kmNGd8ssLB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube Qllry0kbsJo>}}
 
 <b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="https://www.spotlightpa.org/donate">spotlightpa.org/donate</a>.
 

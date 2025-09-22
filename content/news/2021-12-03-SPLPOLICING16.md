@@ -38,7 +38,7 @@ Our panelists were:
 
 Watch the video below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gBbPaAkzsZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{<youtube gBbPaAkzsZk>}}
 
 » Spotlight PA’s events operate on a “pay-what-you-can” honor system. If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="https://www.spotlightpa.org/donate">spotlightpa.org/donate</a>.
 

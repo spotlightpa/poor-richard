@@ -49,6 +49,6 @@ Our panelists were:
 
 - <b>Susan Gobreski,</b> chair of Government Policy Committee, League of Women Voters of Pennsylvania
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3nzdKKtn3Qs?si=ML_NafoFSC69tO6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p></p>
+{{<youtube 3nzdKKtn3Qs>}}
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>

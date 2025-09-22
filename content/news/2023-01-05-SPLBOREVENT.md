@@ -46,6 +46,6 @@ Our panelists were:
 
 - <b>David Rusk</b>, senior fellow, D.C. Policy Center
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SuBiTrIts-Q?si=GtLxkaS4QcrvdYKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube SuBiTrIts-Q>}}
 
 <i><b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b></i><i> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>.</i>

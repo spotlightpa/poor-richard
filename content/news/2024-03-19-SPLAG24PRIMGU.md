@@ -82,7 +82,7 @@ The official <a href="https://www.attorneygeneral.gov/the-office/#:~:text=protec
 
 The attorney general also <a href="https://penncapital-star.com/criminal-justice/fetterman-shapiro-say-they-both-believe-in-second-chances-pardons-board-votes-tell-two-different-stories/">sits</a> on the Board of Pardons and <a href="https://www.oca.pa.gov/">appoints</a> the state’s consumer advocate.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Cp1Fb3QtHrY?si=CwcJtIK_Z9scrx-p&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{<youtube Cp1Fb3QtHrY>}}
 
 Elected attorneys general often bring their own prosecutorial brand to the office’s work, based on their backgrounds and particular legal areas of interest. The attorney general’s job has also served as a stepping stone for running for higher office in Pennsylvania, including the governorship.
 
