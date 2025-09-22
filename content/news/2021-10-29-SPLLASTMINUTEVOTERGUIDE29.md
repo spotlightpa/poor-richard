@@ -4,6 +4,8 @@ authors = ["Colin Deppen"]
 blurb = "On the eve of the 2021 election, here’s a final primer on everything you need to know to vet and select candidates, and to vote."
 byline = "Colin Deppen of Spotlight PA"
 description = "On the eve of the 2021 election, here’s a final primer on everything you need to know to vet and select candidates, and to vote."
+draft = false
+feed-exclude = false
 image = "external/fv5my70ea0z8ez4mp0efy5tfpm.jpeg"
 image-credit = "TOM GRALISH / Philadelphia Inquirer"
 image-description = "The 2021 Pa. election on Nov. 2 will feature judicial, municipal, and school board races."
@@ -12,8 +14,10 @@ internal-id = "SPLLASTMINUTEVOTERGUIDE29"
 kicker = "Elections"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-10-29T05:00:00-04:00
 slug = "voter-guide-pennsylvania-2021-election-essential"
+suppress-date = false
 title = "2021 Pa. election: A last-minute guide to everything you need to know to vote Nov. 2"
 topics = ["Elections"]
 +++
@@ -64,6 +68,6 @@ Not convinced? Watch <a href="https://www.spotlightpa.org/news/2021/10/pa-electi
 
 Happy voting.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/637887104?h=291b7d70c4&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Qllry0kbsJo?si=kbU0psnBaQJMNWRX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
