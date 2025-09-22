@@ -3,12 +3,15 @@ authors = ["Kate Huangpu", "Carter Walker"]
 blurb = "Pennsylvania’s voting law has not had a comprehensive overhaul since 1937. That’s had consequences for election officials."
 byline = "Kate Huangpu of Spotlight PA and Carter Walker of Votebeat"
 description = "PA’s voting law has not had a comprehensive overhaul since 1937."
+draft = false
+feed-exclude = false
 image = "2023/10/01jk-f7db-7g6a-sc87.jpeg"
 image-credit = "Daniel Fishel / For Spotlight PA"
 image-description = "Pennsylvania’s Election Code still states that polling places need to have lanterns or a proper substitute."
 internal-id = "SPLCOFOLO"
 kicker = "Elections"
 modal-exclude = false
+pinned = false
 published = 2023-10-31T05:00:00-04:00
 series = ["Broken Code"]
 slug = "pennsylvania-election-code-voting-rules-outdated-mail-voting"
@@ -50,7 +53,7 @@ The world has changed a lot since 1937 — the last time the legislature underto
 
 One provision requires that a lantern or equivalent light source be placed in every polling place. This was written at a time when electricity was not universal, especially in rural areas.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/877151737?h=0d789173b0&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/7Z8sJqV02UQ?si=gRQV1Xyacmn4N3TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 An entire section of the code is dedicated to “voting machines,” a reference to mechanically operated devices like lever-action voting machines that have not been in use in Pennsylvania for roughly two decades.
 
