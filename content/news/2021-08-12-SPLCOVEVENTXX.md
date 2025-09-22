@@ -1,9 +1,11 @@
 +++
-event-date = 2021-08-25T17:00:00-04:00
 arc-id = "FMJDMM2FWZAJFATKOWXPSUH4IM"
 blurb = "On Wednesday, Aug. 25 at noon, Spotlight PA held a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
 byline = "Spotlight PA Staff"
 description = "On Wednesday, Aug. 25 at noon, Spotlight PA held a free Q&A on Pennsylvania’s response to the surge in COVID-19 cases and what you need to know going into the fall."
+draft = false
+event-date = 2021-08-25T17:00:00-04:00
+feed-exclude = false
 image = "external/br6bvtdwm3z3tbyj1fxb56ygxg.jpeg"
 image-credit = "Fred Adams / For Spotlight PA"
 image-description = "The state is launching initiatives to urge Pennsylvanians to get vaccinated, including setting up vaccine booths at county fairs."
@@ -11,8 +13,10 @@ internal-id = "SPLCOVEVENTXX"
 kicker = "Events"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2021-08-12T05:00:21-04:00
 slug = "pennsylvania-coronavirus-surge-live-qa-event"
+suppress-date = false
 suppress-featured = false
 title = "WATCH: A free reader Q&A on rising COVID-19 cases in Pennsylvania"
 topics = ["Events", "Coronavirus"]
@@ -40,6 +44,6 @@ Our panelists included:
 
 <b>» Spotlight PA’s events operate on a “pay-what-you-can” honor system.</b> If you value this public-service event, pay it forward and contribute any amount to Spotlight PA now so we can keep our programming free for everyone: <a href="https://www.spotlightpa.org/donate">spotlightpa.org/donate</a>.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592894023?h=5c590570d7&color=ffcb05&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/g3wCpcvcwco?si=zXdC-HV-k-oTjpXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <i><b>WHILE YOU’RE HERE...</b></i><i> If you learned something from this story, pay it forward and become a member of </i><a href="https://www.spotlightpa.org/"><i>Spotlight PA</i></a><i> so someone else can in the future at </i><a href="https://www.spotlightpa.org/donate"><i>spotlightpa.org/donate</i></a><i>. Spotlight PA is funded by</i><a href="https://www.spotlightpa.org/support"><i> foundations</i></a><i> </i><a href="https://www.spotlightpa.org/support"><i>and readers like you</i></a><i> who are committed to accountability journalism that gets results.</i>
