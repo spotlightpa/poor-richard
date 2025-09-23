@@ -28,7 +28,7 @@ HARRISBURG — Three Pennsylvania Supreme Court justices are up for retention on
 
 Justices Christine Donohue, Kevin Dougherty, and David Wecht were all elected as Democrats in 2015, and their party has held a majority on the state’s high court since. Republicans are pushing Pennsylvanians to vote “no” on their retention, which would lead to contested, partisan elections in 2027.
 
-The commonwealth’s top appellate court, controlled by a Democratic majority, has made <a href="https://www.spotlightpa.org/news/2025/09/judicial-retention-supreme-court-2025-guide-elections/#:~:text=What%20is%20this%20election%20about%3F">dozens of high-profile decisions</a> over the past decade that have shaped politics and policy. The accumulated impact has been noticeable to legal scholars — as well as political opponents.
+The commonwealth’s top appellate court has made <a href="https://www.spotlightpa.org/news/2025/09/judicial-retention-supreme-court-2025-guide-elections/#:~:text=What%20is%20this%20election%20about%3F">dozens of high-profile decisions</a> over the past decade that have shaped politics and policy. The accumulated impact has been noticeable to legal scholars — as well as political opponents.
 
 {{<embed/newsletter>}}
 
