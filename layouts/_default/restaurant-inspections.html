@@ -316,37 +316,41 @@
                     </div>
                   </div>
 
-        {{/*  switch to horizontal in line buttons for responsiveness  */}}
 
-        {{/*  <div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
-          <!-- Email -->
-          <button class="rounded-full p-2 hover:bg-g-2" aria-label="Share via Email">
-            <svg class="h-5 w-5 fill-g-7" aria-hidden="true">
-              {{ partial "helper/svg.html" "envelope" }}
-            </svg>
-          </button>
 
-          <!-- Facebook -->
-          <button class="rounded-full p-2 hover:bg-g-2" aria-label="Share on Facebook">
-            <svg class="h-5 w-5 fill-[#1877F2]" aria-hidden="true">
-              {{ partial "helper/svg.html" "fb" }}
-            </svg>
-          </button>
 
-          <!-- X (Twitter) -->
-          <button class="rounded-full p-2 hover:bg-g-2" aria-label="Share on X">
-            <svg class="h-5 w-5 fill-black" aria-hidden="true">
-              {{ partial "helper/svg.html" "twitter" }}
-            </svg>
-          </button>
 
-          <!-- Generic Share -->
-          <button class="rounded-full p-2 hover:bg-g-2" aria-label="Copy link">
-            <svg class="h-5 w-5 fill-g-7" aria-hidden="true">
-              {{ partial "helper/svg.html" "share" }}
-            </svg>
-          </button>
-        </div>  */}}
+<div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
+
+  <!-- Email -->
+  <button class="rounded-full p-2 bg-black hover:bg-gray-800" aria-label="Share via Email">
+    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+      {{ partial "helper/svg.html" "envelope" }}
+    </svg>
+  </button>
+
+  <!-- Facebook -->
+  <button class="rounded-full p-2 bg-black hover:bg-gray-800" aria-label="Share on Facebook">
+    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+      {{ partial "helper/svg.html" "fb" }}
+    </svg>
+  </button>
+
+  <!-- X (Twitter) -->
+  <button class="rounded-full p-2 bg-black hover:bg-gray-800" aria-label="Share on X">
+    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+      {{ partial "helper/svg.html" "twitter" }}
+    </svg>
+  </button>
+
+  <!-- Generic Share -->
+  <button class="rounded-full p-2 bg-orange hover:bg-orange" aria-label="Copy link">
+    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+      {{ partial "helper/svg.html" "share" }}
+    </svg>
+  </button>
+</div>
+
 
 
       </div>
