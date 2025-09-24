@@ -1,9 +1,11 @@
 <section class="mb-[72px] w-full pt-12">
   <div class="mx-auto max-w-prose px-4">
     <h3 class="border-b-2 border-g-4 pb-2 text-2xl font-bold text-g-9">
-      More Newsletters
+      {{ default "More Newsletters" (.Param "explore-title") }}
     </h3>
-    <p class="my-4">Explore other free newsletters from Spotlight PA.</p>
+    <p class="my-4">
+      {{ default "Explore other free newsletters from Spotlight PA." (.Param "explore-deck") }}
+    </p>
     <div class="font-sans">
       {{ range .Params.explore }}
         <a
