@@ -365,6 +365,13 @@
       "categoryRank": "1"
     },
     {
+      "display": "Judith Greco",
+      "sort": "Greco",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Janet Gross",
       "sort": "Gross",
       "url": "",
@@ -1095,6 +1102,13 @@
     {
       "display": "Robert Warner",
       "sort": "Warner",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Cynthia Weber",
+      "sort": "Weber",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
