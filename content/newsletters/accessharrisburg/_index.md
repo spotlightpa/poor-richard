@@ -34,8 +34,7 @@ linktitle = "Access Harrisburg"
 
 description = "Every weekday morning, Good Day, Berks brings curated local stories, events and community highlights straight to your inbox."
 
-teamTitle = "Good Day, Berks"
-
+meetTitle = "Meet Steven Caruso"
 
 image-size = "inline"
 image-gravity = "ea"
