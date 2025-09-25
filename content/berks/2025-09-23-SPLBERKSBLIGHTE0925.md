@@ -23,6 +23,14 @@ topics = ["Economy"]
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
 
+<strong><em>Update, Sept. 25: </em></strong>Berks County officials are giving the owners of the former Crowne Plaza hotel more time to apply for permits and rehabilitate the large event space before deciding whether to designate it as blighted.
+
+A committee of the Berks County Redevelopment Authority tabled the decision to consider the certification. It will meet again on Nov. 18.
+
+“I think we are pleased to see that progress has been made,” Wyomissing Borough Manager Michele Bare said during the virtual Zoom meeting. “We’ll be satisfied when building permits are submitted and work actually starts on the renovations.”
+
+<strong><em>Original story</em></strong>
+
 WYOMISSING — Berks County officials will meet today to consider formally designating the former Crowne Plaza hotel as blighted after three years of vacancy.
 
 Doing so would allow county officials to seize the large event space and hotel at 1741 Paper Mill Road in Wyomissing through eminent domain.
