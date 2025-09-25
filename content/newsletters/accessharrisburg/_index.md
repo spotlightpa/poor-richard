@@ -30,14 +30,14 @@ hiddenField = "newsletter/accessharrisburg-hidden.html"
 occurrence = "Each Thursday"
 blurb = "Be the first to know what’s happening in Harrisburg"
 
-cta = "Learn More"
+cta = "Subscribe"
 
 modal-exclude = true
 linktitle = "Access Harrisburg"
 
 description = "Every weekday morning, Good Day, Berks brings curated local stories, events and community highlights straight to your inbox."
 
-meetTitle = "Meet Steven Caruso"
+meetTitle = "Meet Stephen Caruso"
 
 image-size = "inline"
 image-gravity = "ea"
