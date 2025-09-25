@@ -26,15 +26,13 @@ topics = ["Events"]
 
 Spotlight PA launched a <a href="https://www.spotlightpa.org/berks">Berks community newsroom</a> in spring 2025 to produce in-depth investigative and public-service reporting on all levels of government in Berks County as well as urgent issues related to the spending of taxpayer dollars, jobs, the economy, quality of life, and more.
 
-As part of this effort, we will be hosting a bilingual listening session on Tuesday, Sept. 30 from 5 to 7 p.m. at the GoggleWorks Gardens at Lauer’s Park.
+As part of this effort, we will be hosting a bilingual listening session on Tuesday, Sept. 30, from 5 to 7 p.m. at the GoggleWorks Gardens at Lauer’s Park.
 
 Residents will have the opportunity to speak individually with a reporter and share the topics and issues that directly impact their community. Do you have a specific topic that you want to read more about? A local story idea or tip? Want to share your perspective on local news coverage? We’ll be there to listen!
 
 This is a FREE event. Habrá asistencia disponible en español.
 
-Drop by anytime between 5 p.m. to 7 p.m. on Tuesday, Sept. 30 to chat with our team.
+Drop by anytime between 5 p.m. and 7 p.m. on Tuesday, Sept. 30, to chat with our team.
 
-Questions? Email us at <a href="mailto:berks@spotlightpa.org">berks@spotlightpa.org</a>.
-
-Can&#39;t make it? You can always submit information and tips by visiting <a href="https://www.spotlightpa.org/tips/">https://www.spotlightpa.org/tips/</a><u></u>
+Questions? Email us at <a href="mailto:berks@spotlightpa.org">berks@spotlightpa.org</a>. Can&#39;t make it? You can always submit information and tips by visiting <a href="https://www.spotlightpa.org/tips/">spotlightpa.org/tips</a>.
 
