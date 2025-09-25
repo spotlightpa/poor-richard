@@ -31,7 +31,7 @@ occurrence = "Each Thursday"
 blurb = "Be the first to know what’s happening in Harrisburg"
 
 cta = "Subscribe"
-ctaDescription = "Link will open in Stripe, a secure payment portal"
+ctaDescription = "Link will open in Stripe, a secure payment portal. $199 for an annual subscription."
 
 modal-exclude = true
 linktitle = "Access Harrisburg"
