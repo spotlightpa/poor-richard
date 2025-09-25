@@ -47,6 +47,9 @@ weight = 5
 explore-title = "Reporting from Stephen Caruso"
 explore-deck = false
 
+exploreReporter = "Stephen Caruso"
+articleAmount = 3
+
 [cascade]
 image = "2025/04/01m1-4kkw-jepk-8rgx.png" 
 
@@ -59,33 +62,6 @@ Stephen Caruso has been covering Pennsylvania’s governor and 253-member Genera
 """
 
 headshot = "2024/01/01js-dt42-ygfb-3fnz.jpeg"
-
-[[explore]]
-newsletter = "Article One"
-schedule = "Subhead One"
-description = "Brief introduction of each article. The deck can go here."
-image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
-width = 3334
-height = 1880
-link = "https://www.spotlightpa.org/newsletters/papost"
-
-[[explore]]
-newsletter = "Article Two"
-schedule = "Subhead Two"
-description = "Brief introduction of each article. The deck can go here."
-image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
-width = 1200
-height = 1009
-link = "https://www.spotlightpa.org/newsletters/palocal"
-
-[[explore]]
-newsletter = "Article Three"
-schedule = "Subhead Three"
-description = "Brief introduction of each article. The deck can go here."
-image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
-width = 480
-height = 270
-link = "https://www.spotlightpa.org/newsletters/investigator"
 
 +++
 
