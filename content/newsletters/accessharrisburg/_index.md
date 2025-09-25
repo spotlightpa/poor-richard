@@ -13,7 +13,7 @@ bullets = [
   "Delivered straight to your inbox every Thursday"
 ]
 
-device-image = "2025/04/01m0-5ccv-txkj-1e7f.png"
+device-image = "2025/09/01md-91mf-t35x-83nh.png"
 device-image-width = 956
 device-image-height = 1712
 
@@ -57,27 +57,27 @@ Stephen Caruso has been covering Pennsylvania’s governor and 253-member Genera
 headshot = "2024/01/01js-dt42-ygfb-3fnz.jpeg"
 
 [[explore]]
-newsletter = "PA Post"
-schedule = "Each weekday"
-description = "Understand what's happening across PA - in less than five minutes a day."
+newsletter = "Article One"
+schedule = "Subhead One"
+description = "Brief introduction of each article. The deck can go here."
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
 width = 3334
 height = 1880
 link = "https://www.spotlightpa.org/newsletters/papost"
 
 [[explore]]
-newsletter = "PA Local"
-schedule = "Every Friday"
-description = "A fresh, positive look at the incredible people, places, and food our state has to offer. Plus events, guides, best-of, and more."
+newsletter = "Article Two"
+schedule = "Subhead Two"
+description = "Brief introduction of each article. The deck can go here."
 image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
 width = 1200
 height = 1009
 link = "https://www.spotlightpa.org/newsletters/palocal"
 
 [[explore]]
-newsletter = "The Investigator"
-schedule = "Every Thursday"
-description = "The best accountability journalism from across PA, plus behind-the-scenes looks at our reporting and updates from Harrisburg."
+newsletter = "Article Three"
+schedule = "Subhead Three"
+description = "Brief introduction of each article. The deck can go here."
 image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
 width = 480
 height = 270
