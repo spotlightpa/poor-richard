@@ -30,7 +30,7 @@ As part of this effort, we will be hosting a bilingual listening session on Tues
 
 Residents will have the opportunity to speak individually with a reporter and share the topics and issues that directly impact their community. Do you have a specific topic that you want to read more about? A local story idea or tip? Want to share your perspective on local news coverage? We’ll be there to listen!
 
-This is a FREE event. Habrá asistencia disponible en español.
+This is a FREE event. No RSVP is necessary, but you can register <a href="https://www.eventbrite.com/e/spotlight-pa-berks-county-bilingual-listening-session-reading-tickets-1743843144789?aff=ebdsshcopyurl&amp;utm-campaign=social&amp;utm-content=attendeeshare&amp;utm-medium=discovery&amp;utm-term=organizer-profile&amp;utm-share-source=organizer-profile">here</a>. Habrá asistencia disponible en español.
 
 Drop by anytime between 5 p.m. and 7 p.m. on Tuesday, Sept. 30, to chat with our team.
 
