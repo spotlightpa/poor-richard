@@ -6,10 +6,10 @@ description = "Residents will have the opportunity to share the issues that impa
 draft = false
 event-date = 2025-09-30T17:00:00-04:00
 event-title = "Bilingual Listening Session"
-feed-exclude = false
+feed-exclude = true
 image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
 image-caption = "Resident participates in a listening session at the West Lawn Library."
-image-credit = "Susan L Angstadt"
+image-credit = "Susan L. Angstadt / For Spotlight PA"
 image-description = "Listening session participant looking at a wall with sticky notes holding a pink sticky note with the words road, project, updates written on it."
 image-gravity = "ce"
 internal-id = "SPLBERKSLISTEN0925"
@@ -21,7 +21,7 @@ slug = "berks-county-listening-session-september-events"
 suppress-date = false
 title = "Spotlight PA Berks County: Listening session at the GoggleWorks’ Gardens"
 title-tag = "Spotlight PA Berks hosts listening session at the GoggleWorks’ Gardens at Lauer’s Park"
-topics = ["Events", "Berks County"]
+topics = ["Events"]
 +++
 
 Spotlight PA launched a <a href="https://www.spotlightpa.org/berks">Berks community newsroom</a> in spring 2025 to produce in-depth investigative and public-service reporting on all levels of government in Berks County as well as urgent issues related to the spending of taxpayer dollars, jobs, the economy, quality of life, and more.
