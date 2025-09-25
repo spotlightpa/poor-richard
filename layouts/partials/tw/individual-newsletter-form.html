@@ -2,10 +2,11 @@
 {{ $gaCategory := .Param "gaCategory" }}
 {{ $hiddenField := .Param "hiddenField" }}
 {{ $cta := .Param "cta" }}
+{{ $buttonLink := .Param "button-link" }}
 
 {{ $idEmail := partial "helper/new-id" . }}
 
-
+{{ if not (.Param "email-false") }}
 <form
   class="mt-4 font-sans text-black"
   x-data="newsletter($el.dataset.baseUrl)"
@@ -53,3 +54,14 @@
     </svg>
   </button>
 </form>
+{{ else }}
+  <a
+    href="{{ or $buttonLink `#` }}"
+    class="btn-signup mt-8 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow text-lg font-bold uppercase text-yellow-9"
+    data-ga-category="{{ $gaCategory }}"
+    data-ga-form="{{ $gaForm }}"
+    rel="noopener"
+  >
+    {{ $cta }}
+  </a>
+{{ end }}

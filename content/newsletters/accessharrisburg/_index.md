@@ -2,6 +2,9 @@
 layout = "individual-newsletter"
 max-width = "715px"
 
+email-false = true
+button-link = "https://stripe.com/"
+
 title = "Insider access, delivered weekly"
 subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
 
