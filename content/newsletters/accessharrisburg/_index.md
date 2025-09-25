@@ -31,6 +31,7 @@ occurrence = "Each Thursday"
 blurb = "Be the first to know what’s happening in Harrisburg"
 
 cta = "Subscribe"
+ctaDescription = "Link will open in Stripe, a secure payment portal"
 
 modal-exclude = true
 linktitle = "Access Harrisburg"
@@ -43,7 +44,7 @@ image-size = "inline"
 image-gravity = "ea"
 weight = 5 
 
-explore-title = "More Articles"
+explore-title = "Reporting from Stephen Caruso"
 explore-deck = "Explore other articles from Steven Caruso."
 
 [cascade]
