@@ -3,9 +3,12 @@
     <h3 class="border-b-2 border-g-4 pb-2 text-2xl font-bold text-g-9">
       {{ default "More Newsletters" (.Param "explore-title") }}
     </h3>
-    <p class="my-4">
-      {{ default "Explore other free newsletters from Spotlight PA." (.Param "explore-deck") }}
-    </p>
+    {{ $exploreDeck := .Param "explore-deck" }}
+    {{ if and (ne $exploreDeck false) (not (eq $exploreDeck "")) }}
+      <p class="my-4">
+        {{ default "Explore other free newsletters from Spotlight PA." $exploreDeck }}
+      </p>
+    {{ end }}
     <div class="font-sans">
       {{ range .Params.explore }}
         <a

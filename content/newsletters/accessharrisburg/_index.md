@@ -45,7 +45,7 @@ image-gravity = "ea"
 weight = 5 
 
 explore-title = "Reporting from Stephen Caruso"
-explore-deck = "Explore other articles from Steven Caruso."
+explore-deck = false
 
 [cascade]
 image = "2025/04/01m1-4kkw-jepk-8rgx.png" 
