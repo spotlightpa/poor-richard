@@ -6,6 +6,7 @@ description = "Residents will have the opportunity to share the issues that impa
 draft = false
 event-date = 2025-09-30T17:00:00-04:00
 event-title = "Bilingual Listening Session"
+event-url = "https://www.eventbrite.com/e/spotlight-pa-berks-county-bilingual-listening-session-reading-tickets-1743843144789"
 feed-exclude = true
 image = "2024/06/01k7-kgbr-ebbd-kr3a.webp"
 image-caption = "Resident participates in a listening session at the West Lawn Library."
