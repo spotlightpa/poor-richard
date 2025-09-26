@@ -40,7 +40,7 @@ Tim Potts, a former Democratic legislative staffer turned good-government advoca
 
 According to a draft agenda seen by Spotlight PA, the commission’s five-day itinerary includes visits to the Irish and Northern Irish parliaments, Trinity College, and the Jameson distillery. The trip will end with a “VIP Event with \[the Pittsburgh\] Steelers” and their Sunday game in the city.
 
-{{<embed/raw srcdoc="&lt;iframe src=&#34;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSenRobinsonPA%2Fposts%2Fpfbid0zoqoMov3o2XroxJppNAHTtqau5BDnBbvboiNXwgeFf8vFaDkqEtVV75gZw92VfVJl&amp;show_text=true&amp;width=500&#34; width=&#34;500&#34; height=&#34;839&#34; style=&#34;border:none;overflow:hidden&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;true&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&#34;&gt;&lt;/iframe&gt;">}}
+{{<embed/raw srcdoc="&lt;iframe src=&#34;https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSenRobinsonPA%2Fposts%2Fpfbid0zoqoMov3o2XroxJppNAHTtqau5BDnBbvboiNXwgeFf8vFaDkqEtVV75gZw92VfVJl&amp;show_text=true&amp;width=500&#34; width=&#34;100%&#34; height=&#34;839&#34; style=&#34;border:none;overflow:hidden&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;true&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share&#34;&gt;&lt;/iframe&gt;">}}
 
 The members of the Shapiro administration, including Department of Community and Economic Development Secretary Rick Siger and two lower-level staff, are also in the Emerald Isle. Their trip was paid for by taxpayer money.
 
