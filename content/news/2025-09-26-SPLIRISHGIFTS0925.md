@@ -32,7 +32,11 @@ Daley and Robinson sponsored legislation last session to create a Pennsylvania-I
 
 All four lawmakers say they paid for their own expenses.
 
-“I am a member of the 2026 NFL Draft Host Committee who just so happens to also bleed black and gold,” Ward said in a statement. “This trip is an opportunity to combine work on behalf of two things I am immensely proud to represent — Pennsylvania and Steeler Nation.”
+In a statement, Ward said that Irish businesses are a top employer in Pennsylvania and that the trip allowed her to advocate for “Ireland to consider investing even more in our state.”
+
+“Regarding the budget and with consideration of the Jewish holidays, the House and Senate are scheduled to return to session this coming week,” she said. “Hopefully, the House will vote on the budget the Senate passed and sent to them in August and the Senate will return to move bills around as needed.
+
+“Additionally, I am a member of the 2026 NFL Draft Host Committee who just so happens to also bleed black and gold. This trip is an opportunity to combine work on behalf of two things I am immensely proud to represent — Pennsylvania and Steeler Nation.”
 
 Tim Potts, a former Democratic legislative staffer turned good-government advocate, criticized the lawmakers for attending such a trip during a budget impasse that has stretched to three months.
 
@@ -77,4 +81,6 @@ International trade missions have a long, bipartisan history in Pennsylvania, an
 But academic studies of such missions across the globe have found mixed results and questioned whether they are a good use of public resources.
 
 “For public support to be justified, we have to make a case that there are positive spillovers from these relationships. … We have not established the presence of spillovers and this remains a subject for further research,” one <a href="https://www.swinburne.edu.au/media/swinburneeduau/research/research-centres/cti/working-papers/CTI-Working-Paper-1-17-Entering-Global-Production-Chains.pdf">2017 working paper</a> on trade missions concluded.
+
+<em>This story was updated to include more of state Sen. President Pro Tempore Kim Ward’s statement.</em>
 
