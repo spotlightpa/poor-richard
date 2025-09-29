@@ -16,7 +16,7 @@ bullets = [
   "Delivered straight to your inbox every Thursday"
 ]
 
-device-image = "2025/09/01md-b1vk-kj2v-8tyh.png"
+device-image = "2025/09/01md-nnrr-7g6e-9z7c.png"
 device-image-width = 956
 device-image-height = 1712
 
