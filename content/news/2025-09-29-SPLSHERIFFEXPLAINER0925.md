@@ -14,6 +14,7 @@ kicker = "Election"
 modal-exclude = false
 pinned = false
 published = 2025-09-29T05:00:00-04:00
+series = ["Municipal Elections 101"]
 slug = "election-sheriff-pennsylvania-election"
 suppress-date = false
 title = "Municipal Elections 101: Pa. voters will choose sheriffs in 33 counties this November"
