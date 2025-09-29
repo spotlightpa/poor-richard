@@ -64,6 +64,8 @@ Sheriffs here can authorize deputies to respond to emergency calls, but they are
 
 The Allegheny County Sheriff’s Office is the only one that has the full abilities of municipal police, Ott noted.
 
+{{<dewey-assistant>}}
+
 ## Do I elect a sheriff this year?
 
 The following counties have a sheriff election this year:
