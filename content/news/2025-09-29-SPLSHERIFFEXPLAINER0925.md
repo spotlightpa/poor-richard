@@ -1,6 +1,6 @@
 +++
 authors = ["Hanna Holthaus"]
-blurb = "On Nov. 4, you may be asked to consider candidates who want to be sheriff in your county. Here’s what you need to know"
+blurb = "On Nov. 4, you may be asked to consider candidates who want to be sheriff in your county. Here’s what you need to know."
 byline = "Hanna Holthaus of Spotlight PA"
 description = "On Nov. 4, you may be asked to consider candidates who want to be sheriff in your county. Here’s what you need to know."
 draft = false
