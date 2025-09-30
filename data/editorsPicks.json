@@ -3,15 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-09-29-SPLSHERIFFEXPLAINER0925.md"
+    "content/news/2025-09-30-SPLMAPMAILER0925.md"
   ],
   "subfeatures": [
-    "content/news/2025-09-10-SPL101ELEX0925.md",
-    "content/news/2025-08-25-SPLELEXAUDITOR0825.md"
+    "content/news/2025-09-23-SPLRETAINSPEND0925.md",
+    "content/news/2025-09-29-VBSCOERROR0925.md",
+    "content/news/2025-09-25-APDOJSUIT0925.md"
   ],
   "topSlots": [
-    "content/news/2025-09-26-SPLGOVINS0925.md",
+    "content/news/2025-09-29-SPLSHERIFFEXPLAINER0925.md",
     "content/news/2025-09-26-SPLIRISHGIFTS0925.md",
-    "content/news/2025-09-25-SPLVAX0925.md"
+    "content/news/2025-09-26-SPLGOVINS0925.md"
   ]
 }
