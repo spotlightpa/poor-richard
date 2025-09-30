@@ -4,6 +4,7 @@
 {{ $cta := .Param "cta" }}
 {{ $buttonLink := .Param "button-link" }}
 {{ $ctaDescription := .Param "ctaDescription" }}
+{{ $ctaSecondDescription := .Param "ctaSecondDescription" }}
 
 {{ $idEmail := partial "helper/new-id" . }}
 
@@ -56,10 +57,14 @@
   </form>
 {{ else }}
   {{ with $ctaDescription }}
-    <p class="text-left text-sm text-g-3">
-      {{ . }}
+    <p
+      class="text-left text-sm text-g-3 [&>a]:font-semibold [&>a]:text-blue [&>a]:underline hover:[&>a]:text-yellow"
+    >
+      {{ . | $.Page.RenderString }}
     </p>
   {{ end }}
+
+
   <a
     href="{{ or $buttonLink `#` }}"
     class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow font-sans text-lg font-bold uppercase text-yellow-9"
@@ -69,4 +74,12 @@
   >
     {{ $cta }}
   </a>
+{{ end }}
+
+{{ with $ctaSecondDescription }}
+  <p
+    class="mt-4 text-left text-sm text-g-3 [&>a]:font-semibold [&>a]:text-blue [&>a]:underline hover:[&>a]:text-yellow"
+  >
+    {{ . | $.Page.RenderString }}
+  </p>
 {{ end }}

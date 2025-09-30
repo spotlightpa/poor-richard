@@ -3,24 +3,22 @@ layout = "individual-newsletter"
 max-width = "715px"
 
 email-false = true
-button-link = "https://stripe.com/"
+button-link = "https://buy.stripe.com/9B66oJ5CHeP888q2BQ4ZG00"
 
 title = "Insider access, delivered weekly"
-subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
-
-deck = "Coming this fall … exclusive insight into PA politics and power players"
+subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government. Coming this fall."
 
 bullets = [
   "Scoops, expert analysis, and more from Capitol reporter Stephen Caruso",
-  "Insight you won’t find anywhere else",
-  "Delivered straight to your inbox every Thursday"
+  "Exclusive insight into PA politics you won’t find anywhere else",
+  "Delivered straight to your inbox weekly"
 ]
 
 device-image = "2025/09/01md-nnrr-7g6e-9z7c.png"
 device-image-width = 956
 device-image-height = 1712
 
-quote = "“I check Stephen Caruso's tweets every day.”"
+quote = "“I check Stephen Caruso’s tweets every day.”"
 quote-source = "— Spotlight PA reader"
 
 gaCategory = "newsletters:accessharrisburg"
@@ -31,7 +29,8 @@ occurrence = "Each Thursday"
 blurb = "Be the first to know what’s happening in Harrisburg"
 
 cta = "Subscribe"
-ctaDescription = "Link will open in Stripe, a secure payment portal. $199 for an annual subscription."
+ctaDescription = "$199 for an annual subscription for a single email. For group rates, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
+ctaSecondDescription = "Link will open in Stripe, a secure payment portal."
 
 modal-exclude = true
 linktitle = "Access Harrisburg"
