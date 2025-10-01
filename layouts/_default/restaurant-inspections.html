@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="col-span-2 flex flex-col overflow-y-auto">
+        <div class="col-span-2 flex min-h-0 flex-col">
           <div class="md:bg-white md:p-4 md:shadow">
             {{ partial "blocks/search.html" (dict
               "placeholder" (default "Search restaurants" (.Param "search-placeholder"))
@@ -135,8 +135,39 @@
             }}
           </div>
 
-          <div class="space-y-3 overflow-y-auto">
-            {{ partial "blocks/mobile-scroll.html" . }}
+          <div
+            class="relative min-h-0 grow overflow-hidden rounded-t-[40px] bg-g-3 md:rounded-none"
+            x-data="customScroll()"
+            x-init="init()"
+            @resize.window="update()"
+          >
+            <div
+              x-ref="viewport"
+              class="sb-hide h-full overflow-y-auto bg-white pr-[12px]"
+              @scroll="onScroll()"
+              tabindex="0"
+              aria-label="Inspection results list"
+            >
+              {{ partial "blocks/mobile-scroll.html" . }}
+            </div>
+
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex w-[12px] items-stretch"
+              aria-hidden="true"
+            >
+              <div
+                x-ref="track"
+                class="pointer-events-auto relative h-full w-full rounded-none bg-g-4 [box-shadow:inset_0_0_0_1px_rgba(0,0,0,0.06)]"
+                @mousedown.prevent="startDrag($event)"
+                @click.stop="trackJump($event)"
+              >
+                <div
+                  x-ref="thumb"
+                  class="absolute left-0 right-0 w-full rounded-none bg-g-7"
+                  :style="thumbStyle"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -293,7 +324,100 @@
             detail.className = 'detail-content';
             body.appendChild(detail);
           }
-          detail.innerHTML = this.buildDetailHTML(card);
+
+          const title = (card.querySelector('h2')?.textContent || '').trim();
+          const infoLines = Array.from(card.querySelectorAll('.list-content span')).map(n => n.textContent.trim());
+          const location = infoLines.find(t => !/Last inspection:/i.test(t)) || '';
+          const violations = this.readViolations(card);
+          const items = violations.map(v => this.renderViolationItem(v)).join('') || `
+            <li class="space-y-2">
+              <div class="flex items-start pt-3 gap-2">
+                <svg class="mt-1 h-5 w-5 fill-election-green" aria-hidden="true">
+                  {{ partial "helper/svg.html" "circle-check" }}
+                </svg>
+                <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
+                  No violations reported.
+                </h4>
+              </div>
+            </li>`;
+
+          detail.innerHTML = `
+            <div>
+              <button
+                type="button"
+                class="inline-flex items-center font-sans font-bold text-black-9 hover:text-yellow-3"
+                data-action="back-to-results"
+                aria-label="Back to results"
+              >
+                <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true">
+                  {{ partial "helper/svg.html" "chevron-left" }}
+                </svg>
+                <span class="ml-1.5">Back</span>
+              </button>
+
+              <div class="flex items-start justify-between gap-6 py-4 pr-4 sm:pr-6">
+                <div class="min-w-0">
+                  <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
+                  <div class="mt-2 space-y-1 text-g-6">
+                    ${location ? `
+                      <div class="flex items-center gap-1">
+                        <svg class="h-4 w-4 flex-shrink-0 fill-g-5" aria-hidden="true">
+                          {{ partial "helper/svg.html" "map-pin" }}
+                        </svg>
+                        <span>${this.escapeHTML(location)}</span>
+                      </div>
+                    ` : ''}
+                  </div>
+                  <div class="mt-3">
+                    <button class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3">
+                      <span>Get alerts</span>
+                      <svg class="h-5 w-5 fill-yellow-9" aria-hidden="true">
+                        {{ partial "helper/svg.html" "bell" }}
+                      </svg>
+                    </button>
+                    <p class="mt-2 text-sm font-sans text-g-6">Receive an email when new reports are available for this facility.</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
+                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share via Email">
+                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                      {{ partial "helper/svg.html" "envelope" }}
+                    </svg>
+                  </button>
+                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on Facebook">
+                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                      {{ partial "helper/svg.html" "fb" }}
+                    </svg>
+                  </button>
+                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on X">
+                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                      {{ partial "helper/svg.html" "twitter" }}
+                    </svg>
+                  </button>
+                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Copy link">
+                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                      {{ partial "helper/svg.html" "share" }}
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <section aria-labelledby="violations-title" class="space-y-3">
+                <ul class="space-y-3">${items}</ul>
+              </section>
+
+              <div class="pt-5">
+                <a href="#"
+                   class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+                  <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true">
+                    {{ partial "helper/svg.html" "link" }}
+                  </svg>
+                  <span>Read the full report</span>
+                </a>
+              </div>
+            </div>
+          `;
           listContent?.classList.add('hidden');
           detail.querySelector('[data-action="back-to-results"]')?.focus({ preventScroll: true });
           card.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -311,126 +435,6 @@
           this.lastReadMoreButton?.focus({ preventScroll: true });
           this.activeCard = null;
         },
-
-        buildDetailHTML(card) {
-          const title = (card.querySelector('h2')?.textContent || '').trim();
-          const infoLines = Array.from(card.querySelectorAll('.list-content span')).map(n => n.textContent.trim());
-          const location = infoLines.find(t => !/Last inspection:/i.test(t)) || '';
-          const lastDate = (infoLines.find(t => /Last inspection:/i.test(t)) || '').replace(/^Last inspection:\s*/i, '');
-          const violations = this.readViolations(card);
-          const items = violations.map(v => this.renderViolationItem(v)).join('') || `    <li class="space-y-2">
-      <div class="flex items-start pt-3 gap-2">
-        <svg class="mt-1 h-5 w-5 fill-election-green" aria-hidden="true">
-          {{ partial "helper/svg.html" "circle-check" }}
-        </svg>
-        <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
-          No violations reported.
-        </h4>
-      </div>
-    </li>`;
-          return `
-
-            <div>
-
-              <button
-                type="button"
-                class="inline-flex items-center font-sans font-bold text-black-9 hover:text-yellow-3"
-                data-action="back-to-results"
-                aria-label="Back to results"
-              >
-                <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true">
-                  {{ partial "helper/svg.html" "chevron-left" }}
-                </svg>
-                <span class="ml-1.5">Back</span>
-              </button>
-
-              <div class="flex items-start justify-between gap-6 py-4 pr-4 sm:pr-6">
-
-                  <div class="min-w-0">
-                    <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
-
-                  <div class="mt-2 space-y-1 text-g-6">
-                    ${location ? `
-                      <div class="flex items-center gap-1">
-                        <svg class="h-4 w-4 flex-shrink-0 fill-g-5" aria-hidden="true">
-                          {{ partial "helper/svg.html" "map-pin" }}
-                        </svg>
-                        <span>${this.escapeHTML(location)}</span>
-                      </div>
-                    ` : ''}
-                  </div>
-
-                    <div class="mt-3">
-
-                    <button class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3">
-                      <span>Get alerts</span>
-                      <svg class="h-5 w-5 fill-yellow-9" aria-hidden="true">
-                        {{ partial "helper/svg.html" "bell" }}
-                      </svg>
-                    </button>
-
-
-                      <p class="mt-2 text-sm font-sans text-g-6">Receive an email when new reports are available for this facility.</p>
-                    </div>
-                  </div>
-
-
-
-
-
-<div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
-
-  <!-- Email -->
-  <button class="rounded-full p-2 bg-black hover:bg-gray-800" aria-label="Share via Email">
-    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-      {{ partial "helper/svg.html" "envelope" }}
-    </svg>
-  </button>
-
-  <!-- Facebook -->
-  <button class="rounded-full p-2 bg-black hover:bg-gray-800" aria-label="Share on Facebook">
-    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-      {{ partial "helper/svg.html" "fb" }}
-    </svg>
-  </button>
-
-  <!-- X (Twitter) -->
-  <button class="rounded-full p-2 bg-black hover:bg-gray-800" aria-label="Share on X">
-    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-      {{ partial "helper/svg.html" "twitter" }}
-    </svg>
-  </button>
-
-  <!-- Generic Share -->
-  <button class="rounded-full p-2 bg-black hover:bg-orange" aria-label="Copy link">
-    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-      {{ partial "helper/svg.html" "share" }}
-    </svg>
-  </button>
-</div>
-
-
-
-      </div>
-    <section aria-labelledby="violations-title" class="space-y-3">
-
-      <ul class="space-y-3">${items}</ul>
-    </section>
-
-
-<div class="pt-5">
-  <a href="#"
-     class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
-    <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue"
-         aria-hidden="true">
-      {{ partial "helper/svg.html" "link" }}
-    </svg>
-    <span>Read the full report</span>
-  </a>
-</div>
-
-`;
-  },
 
         renderViolationItem(v) {
           const { level = 'low', title = '', comment = '' } = v;
@@ -513,6 +517,86 @@
           }
           return rows;
         }
+      };
+    }
+
+    function customScroll() {
+      return {
+        thumbTop: 0,
+        thumbH: 32,
+        thumbStyle: 'height:32px; transform:translateY(0);',
+        dragging: false,
+        dragStartY: 0,
+        dragStartTop: 0,
+        ro: null,
+
+        init() {
+          this.update();
+          this.onScroll();
+          this.ro = new ResizeObserver(() => this.update());
+          this.ro.observe(this.$refs.viewport);
+        },
+
+        update() {
+          const vp = this.$refs.viewport;
+          const trackH = this.$refs.track.clientHeight;
+          if (!vp || !trackH) return;
+          const vh = vp.clientHeight;
+          const sh = vp.scrollHeight;
+          const minThumb = 24;
+          const ratio = sh > 0 ? (vh / sh) : 1;
+          this.thumbH = Math.max(minThumb, Math.round(trackH * ratio));
+          this.onScroll();
+        },
+
+        onScroll() {
+          const vp = this.$refs.viewport;
+          const trackH = this.$refs.track.clientHeight;
+          const maxThumbTop = Math.max(0, trackH - this.thumbH);
+          const denom = Math.max(1, vp.scrollHeight - vp.clientHeight);
+          const pct = vp.scrollTop / denom;
+          this.thumbTop = Math.round(maxThumbTop * pct);
+          this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
+        },
+
+        startDrag(e) {
+          if (!e.target || e.target !== this.$refs.thumb) return;
+          this.dragging = true;
+          this.dragStartY = e.clientY;
+          this.dragStartTop = this.thumbTop;
+          const move = (ev) => this.onDrag(ev);
+          const up = () => this.stopDrag(move, up);
+          document.addEventListener('mousemove', move);
+          document.addEventListener('mouseup', up, { once: true });
+        },
+
+        onDrag(ev) {
+          if (!this.dragging) return;
+          const trackH = this.$refs.track.clientHeight;
+          const delta = ev.clientY - this.dragStartY;
+          const nextTop = Math.min(Math.max(0, this.dragStartTop + delta), trackH - this.thumbH);
+          this.thumbTop = nextTop;
+          const vp = this.$refs.viewport;
+          const ratio = nextTop / Math.max(1, trackH - this.thumbH);
+          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
+          this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
+        },
+
+        stopDrag(move, up) {
+          this.dragging = false;
+          document.removeEventListener('mousemove', move);
+          document.removeEventListener('mouseup', up);
+        },
+
+        trackJump(e) {
+          const rect = this.$refs.track.getBoundingClientRect();
+          const y = e.clientY - rect.top - this.thumbH / 2;
+          const trackH = this.$refs.track.clientHeight;
+          const top = Math.min(Math.max(0, y), trackH - this.thumbH);
+          const ratio = top / Math.max(1, trackH - this.thumbH);
+          const vp = this.$refs.viewport;
+          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
+        },
       };
     }
   </script>
