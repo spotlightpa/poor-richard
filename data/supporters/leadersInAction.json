@@ -134,6 +134,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Kevin Bevan",
+      "sort": "Bevan",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Michael Blett, in honor of George F. Blett II",
       "sort": "Blett",
       "url": "",
@@ -771,6 +778,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Kerry Ozer",
+      "sort": "Ozer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Pardekooper and Jennifer Mautone",
       "sort": "Pardekooper",
       "url": "",
@@ -809,8 +823,8 @@
       "display": "Sue and Jack Peck",
       "sort": "Peck",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "James \"Scott\" Pflumm",
