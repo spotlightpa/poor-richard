@@ -100,8 +100,8 @@
     x-init="init()"
   >
     <div class="w-full px-4 md:px-0">
-      <div class="grid h-[525px] grid-cols-5">
-        <div class="col-span-1 flex flex-col bg-red px-4 py-3">
+      <div class="grid h-[525px] grid-cols-[1fr_auto_2fr_2fr]">
+        <div class="flex flex-col bg-red px-4 py-3">
           <h3 class="font-sans text-3xl font-bold">Filters</h3>
 
           <div class="mt-4 hidden space-y-3 md:block">
@@ -125,7 +125,9 @@
           </div>
         </div>
 
-        <div class="col-span-2 flex min-h-0 flex-col">
+        <div aria-hidden="true" class="h-full w-3 bg-[#e9e9e9]"></div>
+
+        <div class="flex min-h-0 flex-col">
           <div class="md:bg-white md:p-4 md:shadow">
             {{ partial "blocks/search.html" (dict
               "placeholder" (default "Search" (or (.Param "search-desktop-placeholder") (.Param "search-placeholder")))
@@ -171,7 +173,7 @@
           </div>
         </div>
 
-        <div class="col-span-2 flex flex-col bg-blue p-4">
+        <div class="flex flex-col bg-blue p-4">
           <div
             class="flex h-full items-center justify-center font-sans text-xl font-bold text-white"
           >
