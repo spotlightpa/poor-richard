@@ -128,7 +128,7 @@
         <div class="col-span-2 flex min-h-0 flex-col">
           <div class="md:bg-white md:p-4 md:shadow">
             {{ partial "blocks/search.html" (dict
-              "placeholder" (default "Search restaurants" (.Param "search-placeholder"))
+              "placeholder" (default "Search" (or (.Param "search-desktop-placeholder") (.Param "search-placeholder")))
               "showLocation" (.Param "search-location")
               "context" .
               )
