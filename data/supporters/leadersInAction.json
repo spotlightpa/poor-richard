@@ -1065,6 +1065,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Bruce Toll",
+      "sort": "Toll",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Daniel and Linda Trevino",
       "sort": "Trevino",
       "url": "",
@@ -1077,6 +1084,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Umbrecht Family Foundation",
+      "sort": "Umbrecht",
+      "url": "",
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Christopher and Lee Van de Velde",
