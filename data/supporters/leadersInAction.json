@@ -8,6 +8,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Barbara Adams",
+      "sort": "Adams",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Kip Armstrong",
       "sort": "Armstrong",
       "url": "",
@@ -244,6 +251,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Jonathan Dale",
+      "sort": "Dale",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "John and Janet Dillon",
