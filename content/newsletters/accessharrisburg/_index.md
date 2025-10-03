@@ -33,9 +33,9 @@ ctaDescription = "$199 for an annual subscription for a single email. For group 
 ctaSecondDescription = "Link will open in Stripe, a secure payment portal."
 
 modal-exclude = true
-linktitle = "Access Harrisburg"
 
-description = "Every Thursday, Access Harrisburg delivers exclusive insight into PA politics and power players straight to your inbox."
+linktitle = "Access Harrisburg - Insider Access to PA Politics"
+description = "Get weekly scoops, expert analysis, and more from Capitol reporter Stephen Caruso. Be the first to know what’s happening in Pennsylvania state government."
 
 meetTitle = "Meet Stephen Caruso"
 
