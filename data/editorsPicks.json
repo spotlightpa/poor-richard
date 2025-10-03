@@ -3,16 +3,12 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-10-02-SPLNOV0425POLLWRK.md"
+    "content/news/2025-10-02-SPLREGISTRY1025.md"
   ],
-  "subfeatures": [
-    "content/news/2025-09-15-SPLNOV0425MAIL.md",
-    "content/news/2025-09-22-SPLSCOPARETAIN0925.md",
-    "content/news/2025-09-09-SPLCOURTGEN0925.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2025-10-02-SPLREGISTRY1025.md",
-    "content/news/2025-09-30-SPLMAPMAILER0925.md",
-    "content/news/2025-09-29-SPLSHERIFFEXPLAINER0925.md"
+    "content/news/2025-10-02-SPLNEWSQUIZSEPT2925.md",
+    "content/news/2025-10-02-SPLNOV0425POLLWRK.md",
+    "content/news/2025-10-01-SPLMOREIMPA1025.md"
   ]
 }
