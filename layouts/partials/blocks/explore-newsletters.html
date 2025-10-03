@@ -1,56 +1,122 @@
 <section class="mb-[72px] w-full pt-12">
   <div class="mx-auto max-w-prose px-4">
     <h3 class="border-b-2 border-g-4 pb-2 text-2xl font-bold text-g-9">
-      More Newsletters
+      {{ default "More Newsletters" (.Param "explore-title") }}
     </h3>
-    <p class="my-4">Explore other free newsletters from Spotlight PA.</p>
+    {{ if ne (.Param "explore-deck") false }}
+      <p class="my-4">Explore other free newsletters from Spotlight PA.</p>
+    {{ end }}
     <div class="font-sans">
-      {{ range .Params.explore }}
-        <a
-          href="{{ .link }}"
-          class="block hover:no-underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div
-            class="mt-[20px] flex min-h-52 w-full transform transition hover:scale-[1.02]"
-          >
+      {{ $exploreReporter := .Param "exploreReporter" }}
+      {{ if $exploreReporter }}
+        {{ $articleAmount := default 3 (.Param "articleAmount") }}
+        {{ $reporterArticles := where site.RegularPages ".Params.authors" "intersect" (slice $exploreReporter) }}
+        {{ $reporterArticles = $reporterArticles | first $articleAmount }}
+
+        {{ range $reporterArticles }}
+          <a href="{{ .RelPermalink }}" class="block hover:no-underline">
             <div
-              class="h-auto w-full rounded bg-g-1 p-[20px] transition-colors duration-200 hover:bg-g-2"
+              class="mt-[20px] flex min-h-52 w-full transform transition hover:scale-[1.02]"
             >
-              <div class="flex h-auto w-full flex-col sm:flex-row">
-                <div
-                  class="mb-4 flex w-full items-center justify-center sm:mb-0 sm:mr-2.5 sm:w-5/12"
-                >
+              <div
+                class="h-auto w-full rounded bg-g-1 p-[20px] transition-colors duration-200 hover:bg-g-2"
+              >
+                <div class="flex h-auto w-full flex-col sm:flex-row">
+                  {{ with .Param "image" }}
+                    <div
+                      class="mb-4 flex w-full items-center justify-center sm:mb-0 sm:mr-2.5 sm:w-5/12"
+                    >
+                      <div
+                        class="mx-auto flex min-h-[200px] w-full max-w-[300px] items-center justify-center"
+                      >
+                        {{ partial "tw/image-block.html" (dict
+                          "widths"       (slice 128 256 384 512 1280)
+                          "filename"     .
+                          "description"  (printf "Picture for %s" $.Title)
+                          "widthRatio"   ($.Param "image-width")
+                          "heightRatio"  ($.Param "image-height")
+                          "imgClass"     "object-contain w-auto max-h-full"
+                          )
+                        }}
+                      </div>
+                    </div>
+                  {{ end }}
                   <div
-                    class="mx-auto flex min-h-[200px] w-full max-w-[300px] items-center justify-center"
+                    class="{{ if .Param "image" }}
+                      sm:w-7/12
+                    {{ end }} flex w-full flex-col justify-center space-y-1 text-g-9 sm:ml-2.5"
                   >
-                    {{ partial "tw/image-block.html" (dict
-                      "widths"       (slice 128 256 384 512 1280)
-                      "filename"     .image
-                      "description"  (printf "Picture of %s" .newsletter)
-                      "widthRatio"   .width
-                      "heightRatio"  .height
-                      "imgClass"     "object-contain w-auto max-h-full"
-                      )
-                    }}
+                    <h4 class="text-xl font-bold lg:text-2xl">
+                      {{ .Title }}
+                    </h4>
+                    {{ with .Param "subhead" }}
+                      <p class="text-sm font-bold md:text-base">{{ . }}</p>
+                    {{ end }}
+                    {{ with .Param "deck" }}
+                      <p class="py-2 text-base font-normal leading-snug">
+                        {{ . }}
+                      </p>
+                    {{ else }}
+                      <p class="py-2 text-base font-normal leading-snug">
+                        {{ .Summary | truncate 120 }}
+                      </p>
+                    {{ end }}
                   </div>
-                </div>
-                <div
-                  class="flex w-full flex-col justify-center space-y-1 text-g-9 sm:ml-2.5 sm:w-7/12"
-                >
-                  <h4 class="text-xl font-bold lg:text-2xl">
-                    {{ .newsletter }}
-                  </h4>
-                  <p class="text-sm font-bold md:text-base">{{ .schedule }}</p>
-                  <p class="py-2 text-base font-normal leading-snug">
-                    {{ .description }}
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        {{ end }}
+      {{ else }}
+        {{ range .Params.explore }}
+          <a
+            href="{{ .link }}"
+            class="block hover:no-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div
+              class="mt-5 flex min-h-52 w-full transform transition hover:scale-[1.02]"
+            >
+              <div
+                class="h-auto w-full rounded bg-g-1 p-5 transition-colors duration-200 hover:bg-g-2"
+              >
+                <div class="flex h-auto w-full flex-col sm:flex-row">
+                  <div
+                    class="mb-4 flex w-full items-center justify-center sm:mb-0 sm:mr-2.5 sm:w-5/12"
+                  >
+                    <div
+                      class="mx-auto flex min-h-[200px] w-full max-w-[300px] items-center justify-center"
+                    >
+                      {{ partial "tw/image-block.html" (dict
+                        "widths"       (slice 128 256 384 512 1280)
+                        "filename"     .image
+                        "description"  (printf "Picture of %s" .newsletter)
+                        "widthRatio"   .width
+                        "heightRatio"  .height
+                        "imgClass"     "object-contain w-auto max-h-full"
+                        )
+                      }}
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full flex-col justify-center space-y-1 text-g-9 sm:ml-2.5 sm:w-7/12"
+                  >
+                    <h4 class="text-xl font-bold lg:text-2xl">
+                      {{ .newsletter }}
+                    </h4>
+                    <p class="text-sm font-bold md:text-base">
+                      {{ .schedule }}
+                    </p>
+                    <p class="py-2 text-base font-normal leading-snug">
+                      {{ .description }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        {{ end }}
       {{ end }}
     </div>
   </div>
