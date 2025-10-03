@@ -1,3 +1,13 @@
+{{ define "extra-head" }}
+  {{ if .Param "map" }}
+    {{ partial "header/maplibre.html" . }}
+  {{ end }}
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ partial "blocks/maplibre.html" . }}
+{{ end }}
+
 {{ define "main" }}
   <section class="mt-6 bg-black pb-6">
     <div
@@ -173,12 +183,14 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-blue p-4">
-          <div
-            class="flex h-full items-center justify-center font-sans text-xl font-bold text-white"
-          >
-            Map Placeholder
-          </div>
+        <div class="flex h-full flex-col">
+          {{ partial "blocks/maplibre-assets.html" (dict
+            "ctx" .
+            "id" "inspections-map"
+            "ariaLabel" "Pennsylvania inspections map"
+            "class" "relative h-full w-full"
+            )
+          }}
         </div>
       </div>
     </div>
@@ -255,23 +267,32 @@
         initializedDelegates: false,
 
         init() {
-          this.cards = Array.from(document.querySelectorAll('[data-card="inspection"]'));
+          this.cards = Array.from(
+            document.querySelectorAll('[data-card="inspection"]'),
+          );
           this.cards.forEach((card) => {
-            if (!card.querySelector('.list-content')) {
-              const wrap = document.createElement('div');
-              wrap.className = 'list-content';
+            if (!card.querySelector(".list-content")) {
+              const wrap = document.createElement("div");
+              wrap.className = "list-content";
               while (card.firstChild) wrap.appendChild(card.firstChild);
               card.appendChild(wrap);
             }
           });
-          const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+          const norm = (s) =>
+            (s || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, "")
+              .replace(/\s+/g, " ")
+              .trim();
           this.cards.forEach((card) => {
             this.index.set(card, norm(card.dataset.index || card.textContent));
           });
           this.applySearch();
           if (!this.initializedDelegates) {
             document.addEventListener("click", (e) => {
-              const readMoreBtn = e.target.closest('button[aria-label="Read more about this inspection"]');
+              const readMoreBtn = e.target.closest(
+                'button[aria-label="Read more about this inspection"]',
+              );
               if (readMoreBtn) {
                 e.preventDefault();
                 const card = readMoreBtn.closest('[data-card="inspection"]');
@@ -281,7 +302,9 @@
                 }
                 return;
               }
-              const backBtn = e.target.closest('[data-action="back-to-results"]');
+              const backBtn = e.target.closest(
+                '[data-action="back-to-results"]',
+              );
               if (backBtn) {
                 e.preventDefault();
                 this.backToResults();
@@ -292,46 +315,76 @@
           }
         },
 
-        norm(s) { return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim(); },
-        syncHidden(card) {
-          const hide = card.classList.contains('hidden-by-search') || card.classList.contains('hidden-by-detail');
-          card.classList.toggle('hidden', hide);
+        norm(s) {
+          return (s || "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
         },
-        escapeHTML(s) { return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); },
+        syncHidden(card) {
+          const hide =
+            card.classList.contains("hidden-by-search") ||
+            card.classList.contains("hidden-by-detail");
+          card.classList.toggle("hidden", hide);
+        },
+        escapeHTML(s) {
+          return String(s).replace(
+            /[&<>"']/g,
+            (m) =>
+              ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              })[m],
+          );
+        },
 
-        doSearch(val) { if (typeof val === "string") this.q = val; this.applySearch(); },
+        doSearch(val) {
+          if (typeof val === "string") this.q = val;
+          this.applySearch();
+        },
         applySearch() {
-          const needle = this.norm(this.q); let visible = 0;
+          const needle = this.norm(this.q);
+          let visible = 0;
           this.cards.forEach((card) => {
             const hit = !needle || this.index.get(card).includes(needle);
-            card.classList.toggle('hidden-by-search', !hit);
+            card.classList.toggle("hidden-by-search", !hit);
             this.syncHidden(card);
-            if (!card.classList.contains('hidden')) visible++;
+            if (!card.classList.contains("hidden")) visible++;
           });
           const noResultsEl = document.getElementById("no-results");
-          if (noResultsEl) noResultsEl.classList.toggle("hidden", visible !== 0);
+          if (noResultsEl)
+            noResultsEl.classList.toggle("hidden", visible !== 0);
         },
 
         openDetails(card) {
           this.cards.forEach((c) => {
-            if (c !== card) c.classList.add('hidden-by-detail');
-            else c.classList.remove('hidden-by-detail');
+            if (c !== card) c.classList.add("hidden-by-detail");
+            else c.classList.remove("hidden-by-detail");
             this.syncHidden(c);
           });
           const body = card;
-          const listContent = body.querySelector('.list-content');
-          let detail = body.querySelector('.detail-content');
+          const listContent = body.querySelector(".list-content");
+          let detail = body.querySelector(".detail-content");
           if (!detail) {
-            detail = document.createElement('div');
-            detail.className = 'detail-content';
+            detail = document.createElement("div");
+            detail.className = "detail-content";
             body.appendChild(detail);
           }
 
-          const title = (card.querySelector('h2')?.textContent || '').trim();
-          const infoLines = Array.from(card.querySelectorAll('.list-content span')).map(n => n.textContent.trim());
-          const location = infoLines.find(t => !/Last inspection:/i.test(t)) || '';
+          const title = (card.querySelector("h2")?.textContent || "").trim();
+          const infoLines = Array.from(
+            card.querySelectorAll(".list-content span"),
+          ).map((n) => n.textContent.trim());
+          const location =
+            infoLines.find((t) => !/Last inspection:/i.test(t)) || "";
           const violations = this.readViolations(card);
-          const items = violations.map(v => this.renderViolationItem(v)).join('') || `
+          const items =
+            violations.map((v) => this.renderViolationItem(v)).join("") ||
+            `
             <li class="space-y-2">
               <div class="flex items-start pt-3 gap-2">
                 <svg class="mt-1 h-5 w-5 fill-election-green" aria-hidden="true">
@@ -361,14 +414,18 @@
                 <div class="min-w-0">
                   <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
                   <div class="mt-2 space-y-1 text-g-6">
-                    ${location ? `
+                    ${
+                      location
+                        ? `
                       <div class="flex items-center gap-1">
                         <svg class="h-4 w-4 flex-shrink-0 fill-g-5" aria-hidden="true">
                           {{ partial "helper/svg.html" "map-pin" }}
                         </svg>
                         <span>${this.escapeHTML(location)}</span>
                       </div>
-                    ` : ''}
+                    `
+                        : ""
+                    }
                   </div>
                   <div class="mt-3">
                     <button class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3">
@@ -420,9 +477,11 @@
               </div>
             </div>
           `;
-          listContent?.classList.add('hidden');
-          detail.querySelector('[data-action="back-to-results"]')?.focus({ preventScroll: true });
-          card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          listContent?.classList.add("hidden");
+          detail
+            .querySelector('[data-action="back-to-results"]')
+            ?.focus({ preventScroll: true });
+          card.scrollIntoView({ behavior: "smooth", block: "start" });
           this.activeCard = card;
           document.getElementById("no-results")?.classList.add("hidden");
         },
@@ -430,25 +489,30 @@
         backToResults() {
           if (!this.activeCard) return;
           const card = this.activeCard;
-          card.querySelector('.detail-content')?.remove();
-          card.querySelector('.list-content')?.classList.remove('hidden');
-          this.cards.forEach((c) => { c.classList.remove('hidden-by-detail'); this.syncHidden(c); });
+          card.querySelector(".detail-content")?.remove();
+          card.querySelector(".list-content")?.classList.remove("hidden");
+          this.cards.forEach((c) => {
+            c.classList.remove("hidden-by-detail");
+            this.syncHidden(c);
+          });
           this.applySearch();
           this.lastReadMoreButton?.focus({ preventScroll: true });
           this.activeCard = null;
         },
 
         renderViolationItem(v) {
-          const { level = 'low', title = '', comment = '' } = v;
+          const { level = "low", title = "", comment = "" } = v;
 
           const iconFill =
-            level === 'high' ? 'fill-red-7'
-            : level === 'moderate' ? 'fill-yellow-4'
-            : 'fill-blue-6';
+            level === "high"
+              ? "fill-red-7"
+              : level === "moderate"
+                ? "fill-yellow-4"
+                : "fill-blue-6";
 
           const words = title.split(/\s+/);
           const lastWord = words.pop();
-          const before = words.join(' ');
+          const before = words.join(" ");
 
           return `
             <li class="space-y-2">
@@ -466,59 +530,84 @@
                   </span>
                 </h4>
               </div>
-              ${comment ? `
+              ${
+                comment
+                  ? `
                 <p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
                   ${this.escapeHTML(comment)}
-                </p>` : ''
+                </p>`
+                  : ""
               }
             </li>`;
         },
 
         readViolations(card) {
-          const list = card.querySelector('ul.violations-data');
+          const list = card.querySelector("ul.violations-data");
           if (list) {
-            return Array.from(list.querySelectorAll('li')).map(li => ({
-              level: li.getAttribute('data-level') || '',
-              title: li.querySelector('h4')?.textContent?.trim() || '',
-              comment: li.querySelector('p')?.textContent?.trim() || ''
-            })).filter(v => v.title || v.comment);
+            return Array.from(list.querySelectorAll("li"))
+              .map((li) => ({
+                level: li.getAttribute("data-level") || "",
+                title: li.querySelector("h4")?.textContent?.trim() || "",
+                comment: li.querySelector("p")?.textContent?.trim() || "",
+              }))
+              .filter((v) => v.title || v.comment);
           }
-          const csv = card.getAttribute('data-violations-csv');
+          const csv = card.getAttribute("data-violations-csv");
           if (csv) return this.parseViolationsCSV(csv);
           return [];
         },
 
         parseViolationsCSV(csvText) {
-          const rows = []; let i = 0, s = csvText;
+          const rows = [];
+          let i = 0,
+            s = csvText;
           const nextField = () => {
             if (s[i] === '"') {
-              i++; let out = '';
+              i++;
+              let out = "";
               while (i < s.length) {
-                if (s[i] === '"' && s[i+1] === '"') { out += '"'; i += 2; continue; }
-                if (s[i] === '"' && (s[i+1] === ',' || s[i+1] === '\n' || i+1 === s.length)) { i++; return out; }
+                if (s[i] === '"' && s[i + 1] === '"') {
+                  out += '"';
+                  i += 2;
+                  continue;
+                }
+                if (
+                  s[i] === '"' &&
+                  (s[i + 1] === "," || s[i + 1] === "\n" || i + 1 === s.length)
+                ) {
+                  i++;
+                  return out;
+                }
                 out += s[i++];
               }
               return out;
             } else {
               const start = i;
-              while (i < s.length && s[i] !== ',' && s[i] !== '\n') i++;
+              while (i < s.length && s[i] !== "," && s[i] !== "\n") i++;
               return s.slice(start, i);
             }
           };
-          const consume = ch => { if (s[i] === ch) i++; };
+          const consume = (ch) => {
+            if (s[i] === ch) i++;
+          };
           const peek = s.slice(0, 48).toLowerCase();
-          const hasHeader = peek.includes('level') && peek.includes('title');
-          if (hasHeader) { while (i < s.length && s[i] !== '\n') i++; if (s[i] === '\n') i++; }
+          const hasHeader = peek.includes("level") && peek.includes("title");
+          if (hasHeader) {
+            while (i < s.length && s[i] !== "\n") i++;
+            if (s[i] === "\n") i++;
+          }
           while (i < s.length) {
-            const level = nextField(); consume(',');
-            const title = nextField(); consume(',');
+            const level = nextField();
+            consume(",");
+            const title = nextField();
+            consume(",");
             const comment = nextField();
-            while (i < s.length && s[i] !== '\n') i++;
-            if (s[i] === '\n') i++;
+            while (i < s.length && s[i] !== "\n") i++;
+            if (s[i] === "\n") i++;
             if (title || comment) rows.push({ level, title, comment });
           }
           return rows;
-        }
+        },
       };
     }
 
@@ -526,7 +615,7 @@
       return {
         thumbTop: 0,
         thumbH: 32,
-        thumbStyle: 'height:32px; transform:translateY(0);',
+        thumbStyle: "height:32px; transform:translateY(0);",
         dragging: false,
         dragStartY: 0,
         dragStartTop: 0,
@@ -546,7 +635,7 @@
           const vh = vp.clientHeight;
           const sh = vp.scrollHeight;
           const minThumb = 24;
-          const ratio = sh > 0 ? (vh / sh) : 1;
+          const ratio = sh > 0 ? vh / sh : 1;
           this.thumbH = Math.max(minThumb, Math.round(trackH * ratio));
           this.onScroll();
         },
@@ -568,26 +657,30 @@
           this.dragStartTop = this.thumbTop;
           const move = (ev) => this.onDrag(ev);
           const up = () => this.stopDrag(move, up);
-          document.addEventListener('mousemove', move);
-          document.addEventListener('mouseup', up, { once: true });
+          document.addEventListener("mousemove", move);
+          document.addEventListener("mouseup", up, { once: true });
         },
 
         onDrag(ev) {
           if (!this.dragging) return;
           const trackH = this.$refs.track.clientHeight;
           const delta = ev.clientY - this.dragStartY;
-          const nextTop = Math.min(Math.max(0, this.dragStartTop + delta), trackH - this.thumbH);
+          const nextTop = Math.min(
+            Math.max(0, this.dragStartTop + delta),
+            trackH - this.thumbH,
+          );
           this.thumbTop = nextTop;
           const vp = this.$refs.viewport;
           const ratio = nextTop / Math.max(1, trackH - this.thumbH);
-          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
+          vp.scrollTop =
+            ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
           this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
         },
 
         stopDrag(move, up) {
           this.dragging = false;
-          document.removeEventListener('mousemove', move);
-          document.removeEventListener('mouseup', up);
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
         },
 
         trackJump(e) {
@@ -597,7 +690,8 @@
           const top = Math.min(Math.max(0, y), trackH - this.thumbH);
           const ratio = top / Math.max(1, trackH - this.thumbH);
           const vp = this.$refs.viewport;
-          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
+          vp.scrollTop =
+            ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
         },
       };
     }
