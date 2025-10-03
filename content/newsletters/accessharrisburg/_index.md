@@ -35,7 +35,7 @@ ctaSecondDescription = "Link will open in Stripe, a secure payment portal."
 modal-exclude = true
 linktitle = "Access Harrisburg"
 
-description = "Every weekday morning, Good Day, Berks brings curated local stories, events and community highlights straight to your inbox."
+description = "Every Thursday, Access Harrisburg delivers exclusive insight into PA politics and power players straight to your inbox."
 
 meetTitle = "Meet Stephen Caruso"
 
