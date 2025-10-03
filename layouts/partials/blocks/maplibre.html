@@ -1,0 +1,150 @@
+<script>
+  function maplibreComponent(opts) {
+    return {
+      id: opts?.id || "map-" + Math.random().toString(36).slice(2),
+      styleURL: opts?.styleURL || "https://demotiles.maplibre.org/style.json",
+      center: Array.isArray(opts?.center) ? opts.center : [-77.5, 40.9],
+      zoom: Number.isFinite(opts?.zoom) ? opts.zoom : 6,
+      bounds: Array.isArray(opts?.bounds) ? opts.bounds : null,
+      padding: Number.isFinite(opts?.padding) ? opts.padding : 24,
+      minZoom: Number.isFinite(opts?.minZoom) ? opts.minZoom : 3,
+      maxZoom: Number.isFinite(opts?.maxZoom) ? opts.maxZoom : 20,
+      bearing: Number.isFinite(opts?.bearing) ? opts.bearing : 0,
+      pitch: Number.isFinite(opts?.pitch) ? opts.pitch : 0,
+      controls: Array.isArray(opts?.controls) ? opts.controls : ["navigation"],
+      attributionCompact: opts?.attributionCompact ?? true,
+      markers: Array.isArray(opts?.markers) ? opts.markers : [],
+
+      map: null,
+      _ro: null,
+      _checkInterval: null,
+      _retryCount: 0,
+      _flyToHandler: null,
+
+      init() {
+        this.waitForMapLibre();
+        this._flyToHandler = (e) => {
+          const { lon, lat, zoom } = e.detail || {};
+          if (typeof lon === "number" && typeof lat === "number" && this.map) {
+            this.map.flyTo({
+              center: [lon, lat],
+              zoom: zoom ?? Math.max(this.map.getZoom(), 12),
+              speed: 0.7,
+            });
+          }
+        };
+        window.addEventListener("inspections:flyTo", this._flyToHandler);
+      },
+
+      waitForMapLibre() {
+        if (window.maplibregl) {
+          this.initMap();
+        } else {
+          this._checkInterval = setInterval(() => {
+            if (window.maplibregl) {
+              clearInterval(this._checkInterval);
+              this.initMap();
+            }
+          }, 50);
+        }
+      },
+
+      initMap() {
+        const el = this.$refs.canvas;
+        if (!el) {
+          console.error("Map canvas element not found");
+          return;
+        }
+
+        const rect = el.getBoundingClientRect();
+
+        if (rect.width === 0 || rect.height === 0) {
+          if (this._retryCount++ < 20) {
+            setTimeout(() => this.initMap(), 100);
+          } else {
+            console.error("Map container failed to get dimensions after 20 attempts");
+          }
+          return;
+        }
+
+        this._retryCount = 0;
+
+        try {
+          this.map = new maplibregl.Map({
+            container: el,
+            style: this.styleURL,
+            center: this.center,
+            zoom: this.zoom,
+            bearing: this.bearing,
+            pitch: this.pitch,
+            minZoom: this.minZoom,
+            maxZoom: this.maxZoom,
+            attributionControl: false,
+          });
+
+          if (this.controls.includes("navigation")) {
+            this.map.addControl(
+              new maplibregl.NavigationControl(),
+              "top-right",
+            );
+          }
+          if (this.controls.includes("fullscreen")) {
+            this.map.addControl(
+              new maplibregl.FullscreenControl(),
+              "top-right",
+            );
+          }
+          this.map.addControl(
+            new maplibregl.AttributionControl({
+              compact: this.attributionCompact,
+            }),
+          );
+
+          this.map.on("load", () => {
+            if (this.bounds) {
+              this.map.fitBounds(this.bounds, { padding: this.padding });
+            }
+            this.addMarkers();
+          });
+
+          this.map.on("error", (e) => {
+            console.error("Map error:", e);
+          });
+
+          this._ro = new ResizeObserver(() => {
+            if (this.map) this.map.resize();
+          });
+          this._ro.observe(el);
+        } catch (err) {
+          console.error("MapLibre initialization error:", err);
+        }
+      },
+
+      addMarkers() {
+        if (!this.map) return;
+        (this.markers || []).forEach((m) => {
+          if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
+          const marker = new maplibregl.Marker({
+            color: m.color || "#c0392b",
+          }).setLngLat([m.lon, m.lat]);
+          if (m.popupHTML)
+            marker.setPopup(new maplibregl.Popup().setHTML(m.popupHTML));
+          marker.addTo(this.map);
+        });
+      },
+
+      destroy() {
+        if (this._checkInterval) clearInterval(this._checkInterval);
+        if (this._flyToHandler) {
+          window.removeEventListener("inspections:flyTo", this._flyToHandler);
+        }
+        try {
+          this._ro?.disconnect();
+        } catch {}
+        try {
+          this.map?.remove();
+        } catch {}
+      },
+    };
+  }
+</script>
