@@ -62,7 +62,9 @@
           if (this._retryCount++ < 20) {
             setTimeout(() => this.initMap(), 100);
           } else {
-            console.error("Map container failed to get dimensions after 20 attempts");
+            console.error(
+              "Map container failed to get dimensions after 20 attempts",
+            );
           }
           return;
         }
