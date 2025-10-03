@@ -18,8 +18,8 @@ device-image = "2025/09/01md-nnrr-7g6e-9z7c.png"
 device-image-width = 956
 device-image-height = 1712
 
-quote = "“I check Stephen Caruso’s tweets every day.”"
-quote-source = "— Spotlight PA reader"
+quote = "Stephen Caruso “clearly is paying attention.”"
+quote-source = "— Bryan Cutler, Pennsylvania State Representative"
 
 gaCategory = "newsletters:accessharrisburg"
 gaForm = "newsletters:accessharrisburg-full"
