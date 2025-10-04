@@ -2,7 +2,7 @@
 {{- $id := .id | default "map" -}}
 {{- $defaults := dict
   "id"       $id
-  "styleURL" "https://demotiles.maplibre.org/style.json"
+  "styleURL" "https://tiles.openfreemap.org/styles/positron"
   "center"   (slice -77.5 40.9)
   "zoom"     6
   "bounds"   nil
@@ -20,7 +20,7 @@
 
 {{- $siteCfg := site.Params.maplibre | default (dict) -}}
 {{- $pageCfg := ($ctx.Param "map") | default (dict) -}}
-{{- $cfg := merge $defaults $siteCfg $pageCfg . -}}
+{{- $cfg := merge . $pageCfg $siteCfg $defaults -}}
 
 
 <div

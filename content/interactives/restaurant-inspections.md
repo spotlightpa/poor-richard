@@ -46,5 +46,5 @@ padding = 24
 minZoom = 3
 maxZoom = 18
 zoom = 6
-styleURL = "https://tiles.openfreemap.org/styles/liberty"
+styleURL = "https://tiles.openfreemap.org/styles/positron"
 +++
