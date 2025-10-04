@@ -344,13 +344,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Audrey Fisher",
-      "sort": "Fisher",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Mary and Kenneth France",
       "sort": "France",
       "url": "",
@@ -596,6 +589,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "David Laigaie",
+      "sort": "Laigaie",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Michael and Karen Leader",
       "sort": "Leader",
       "url": "",
@@ -661,9 +661,7 @@
     {
       "display": "Mary Marger",
       "sort": "Marger",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "url": ""
     },
     {
       "display": "Lynn Marks",
@@ -678,13 +676,6 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
-    },
-    {
-      "display": "Martina Martin",
-      "sort": "Martin",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "Richard and Susan Master",
@@ -745,6 +736,13 @@
     {
       "display": "David and Cathy Myers",
       "sort": "Myers",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "W. Michael Nailor",
+      "sort": "Nailor",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -927,6 +925,13 @@
     {
       "display": "Richard Salezze",
       "sort": "Salezze",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "John Salveson",
+      "sort": "Salveson",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
