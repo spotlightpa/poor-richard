@@ -90,6 +90,35 @@
 
 
       <div
+        x-data="{ view: 'list' }"
+        class="mx-auto mb-4 mt-12 w-full md:hidden md:w-7/12"
+      >
+        <div
+          class="flex w-full overflow-hidden rounded border-[3px] border-yellow"
+        >
+          <button
+            @click="view = 'list'"
+            :class="view === 'list' 
+            ? 'bg-yellow' 
+            : 'bg-white'"
+            class="w-1/2 border-r-[3px] border-yellow py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
+          >
+            List
+          </button>
+
+          <button
+            @click="view = 'map'"
+            :class="view === 'map' 
+            ? 'bg-yellow' 
+            : 'bg-white'"
+            class="w-1/2 py-3 pl-4 pr-12 text-center font-sans text-2xl font-bold text-yellow-9 transition-colors duration-200"
+          >
+            Map
+          </button>
+        </div>
+      </div>
+
+      <div
         class="mx-auto mt-6 w-full md:hidden"
         x-data="inspectionsUI()"
         x-init="init()"
@@ -193,8 +222,24 @@
     </div>
   </section>
 
-  <div class="md:hidden">
-    {{ partial "blocks/mobile-scroll.html" . }}
+  <div
+    class="md:hidden"
+    x-data="{ view: 'list' }"
+    @click.window="view = $event.target.closest('[x-data]')?.view || view"
+  >
+    <div x-show="view === 'list'">
+      {{ partial "blocks/mobile-scroll.html" . }}
+    </div>
+
+    <div x-show="view === 'map'" class="h-[500px] w-full bg-white">
+      {{ partial "blocks/maplibre-assets.html" (dict
+        "ctx" .
+        "id" "inspections-map-mobile"
+        "ariaLabel" "Pennsylvania inspections map"
+        "class" "relative h-full w-full"
+        )
+      }}
+    </div>
   </div>
 
   <section class="bg-white" data-ga-category="about">
