@@ -89,7 +89,6 @@
       {{ end }}
 
 
-      <!-- Mobile Map/List Toggle -->
       <div
         x-data="mobileViewToggle()"
         x-init="init()"
@@ -224,7 +223,6 @@
     </div>
   </section>
 
-  <!-- Mobile View Container -->
   <div
     class="md:hidden"
     x-data="mobileViewToggle()"
@@ -310,13 +308,11 @@
         view: 'list',
 
         init() {
-          // Initialize view state
           this.view = 'list';
         },
 
         setView(newView) {
           this.view = newView;
-          // Dispatch event to sync all instances
           window.dispatchEvent(new CustomEvent('mobile-view-changed', {
             detail: { view: newView }
           }));
