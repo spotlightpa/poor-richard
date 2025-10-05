@@ -85,10 +85,12 @@
           });
 
           if (this.controls.includes("navigation")) {
-            this.map.addControl(
-              new maplibregl.NavigationControl(),
-              "top-right",
-            );
+            const nav = new maplibregl.NavigationControl({
+              showCompass: false,
+              showZoom: true,
+              visualizePitch: false
+            });
+            this.map.addControl(nav, "top-right");
           }
           if (this.controls.includes("fullscreen")) {
             this.map.addControl(
