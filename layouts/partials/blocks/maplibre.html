@@ -82,13 +82,14 @@
             minZoom: this.minZoom,
             maxZoom: this.maxZoom,
             attributionControl: false,
+            cooperativeGestures: true,
           });
 
           if (this.controls.includes("navigation")) {
             const nav = new maplibregl.NavigationControl({
               showCompass: false,
               showZoom: true,
-              visualizePitch: false
+              visualizePitch: false,
             });
             this.map.addControl(nav, "top-right");
           }
