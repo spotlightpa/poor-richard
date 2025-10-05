@@ -107,6 +107,57 @@
               this.map.fitBounds(this.bounds, { padding: this.padding });
             }
             this.addMarkers();
+
+            try {
+              if (this.map.getLayer("state-borders"))
+                this.map.removeLayer("state-borders");
+
+              const boundaryLayer = this.map
+                .getStyle()
+                .layers.find((l) => l["source-layer"] === "boundary");
+              const boundarySourceId = boundaryLayer?.source;
+              if (!boundarySourceId) {
+                console.warn(
+                  "Couldn't find 'boundary' source-layer; skipping border styling.",
+                );
+              } else {
+                const beforeId = this.map
+                  .getStyle()
+                  .layers.find((l) => l.type === "symbol")?.id;
+
+                this.map.addLayer(
+                  {
+                    id: "state-borders",
+                    type: "line",
+                    source: boundarySourceId,
+                    "source-layer": "boundary",
+                    filter: ["==", ["get", "admin_level"], 4],
+                    layout: { "line-cap": "round", "line-join": "round" },
+                    paint: {
+                      "line-color": "rgb(230, 204, 207)",
+                      "line-opacity": 1,
+                      "line-blur": 0,
+                      "line-width": [
+                        "interpolate",
+                        ["exponential", 1.3],
+                        ["zoom"],
+                        3,
+                        1.8,
+                        8,
+                        3.2,
+                        12,
+                        5.2,
+                        22,
+                        11.8,
+                      ],
+                    },
+                  },
+                  beforeId,
+                );
+              }
+            } catch (err) {
+              console.error("Failed to add styled borders:", err);
+            }
           });
 
           this.map.on("error", (e) => {
