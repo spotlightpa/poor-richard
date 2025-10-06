@@ -720,6 +720,13 @@
       "categoryRank": "4"
     },
     {
+      "display": "Rashele Moore",
+      "sort": "Moore",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Joan Miller Moran",
       "sort": "Moran",
       "url": "",
@@ -771,13 +778,6 @@
     {
       "display": "John Nichols",
       "sort": "Nichols",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Edward Nielsen",
-      "sort": "Nielsen",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
