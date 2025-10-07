@@ -1,4 +1,5 @@
 +++
+aliases = ["/news/2025/10/pensilvania-elecciones-2025-como-convertirse-trabajador-electoral-espa-ol/"]
 app-image-gravity = "ce"
 authors = ["Kate Huangpu", "Elizabeth Estrada"]
 blurb = "Los trabajadores electorales de Pensilvania ayudan a que la votación se desarrolle sin problemas el día de las elecciones. Aquí le explicamos cómo puede ser uno de ellos."
@@ -20,6 +21,7 @@ suppress-date = false
 title = "Elecciones Pa. 2025: Cómo convertirse en trabajador electoral el 4 de noviembre"
 title-tag = "Elecciones PA 2025: Cómo convertirse en trabajador electoral en PA"
 topics = ["Español"]
+url = "/news/2025/10/pensilvania-elecciones-2025-como-convertirse-trabajador-electoral-espanol/"
 +++
 
 <a href="https://www.spotlightpa.org/news/2025/10/pennsylvania-municipal-election-nov-2025-how-to-be-poll-worker-guide-elections/"><em>Read in English</em></a>
