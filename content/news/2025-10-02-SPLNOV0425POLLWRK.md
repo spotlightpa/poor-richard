@@ -23,6 +23,8 @@ title-tag = "Election 2025: How to become a poll worker for the PA municipal ele
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/10/pensilvania-elecciones-2025-como-convertirse-trabajador-electoral-espanol/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — When Pennsylvania holds its 2025 municipal election on Nov. 4, thousands of poll workers will ensure that voting runs smoothly — and you could be one of them.
 
 Poll workers are a critical component of our election process, but counties often have trouble filling all the necessary slots. They are currently recruiting people to work at the state’s approximately 9,000 voting locations.
