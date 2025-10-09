@@ -19,7 +19,7 @@ slug = "pennsylvania-local-berks-county-center-for-childrens-justice-cathleen-pa
 suppress-date = false
 title = "PA Local Heroes: Meet the survivor who became a ‘constant advocate’ for child victims"
 title-tag = "A survivor who became a child protection advocate"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "A survivor who became a child protection advocate"
 +++
 
