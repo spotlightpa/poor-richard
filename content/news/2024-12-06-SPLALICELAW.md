@@ -3,6 +3,7 @@ authors = ["Colin Deppen"]
 blurb = "After Lynn Fiedler’s mother was abused in a memory care center near Lewisburg, Fiedler went to Harrisburg to change the laws."
 byline = "Colin Deppen of Spotlight PA"
 description = "After Lynn Fiedler’s mother was abused in a memory care center near Lewisburg, Fiedler went to Harrisburg to change the laws."
+draft = false
 feed-exclude = false
 image = "2023/08/01jd-ah86-718t-zjan.jpeg"
 image-caption = "The exterior of the Pennsylvania Capitol in Harrisburg."
@@ -18,7 +19,7 @@ slug = "pennsylvania-nursing-home-elder-abuse-harrisburg-legislators-lynda-schle
 suppress-date = false
 title = "PA Local Heroes: The accidental activist lobbying Harrisburg to protect older adults from abuse"
 title-tag = "A daughter’s crusade in PA's Capitol"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "A daughter’s Capitol crusade"
 +++
 
