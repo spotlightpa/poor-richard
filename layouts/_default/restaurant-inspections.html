@@ -135,34 +135,105 @@
   </section>
 
   <section class="hidden md:block" x-data="inspectionsUI()" x-init="init()">
-    <div class="bg-black pb-8 md:pb-12"></div>
+    <div class="bg-black pb-8 md:pb-8"></div>
     <div class="w-full bg-white px-4 md:px-0">
-      <div class="grid h-[525px] grid-cols-[1fr_auto_2fr_2fr]">
+      <div class="grid h-[550px] grid-cols-[1fr_auto_2fr_2fr]">
         <div class="flex flex-col px-4 py-3">
-          <h3 class="font-sans text-3xl font-bold">Filters</h3>
+          <h3 class="font-sans text-xl font-bold">Sort By</h3>
 
           <div class="mt-4 hidden space-y-3 md:block">
-            <button
-              class="flex w-full items-center justify-between gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 font-sans text-lg font-semibold text-yellow-9 transition hover:bg-yellow-3"
+            <label
+              class="flex cursor-pointer items-center gap-3 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 font-sans text-base font-semibold text-yellow-9"
             >
-              <span>Filter</span>
-              <svg class="h-5 w-5 fill-yellow-9">
-                {{ partial "helper/svg.html" "filter" }}
-              </svg>
-            </button>
+              <input
+                type="radio"
+                name="sort"
+                value="date"
+                class="h-5 w-5 shrink-0 accent-yellow-9"
+                checked
+              />
+              <span>Most Recent</span>
+            </label>
 
-            <button
-              class="flex w-full items-center justify-between gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 font-sans text-lg font-semibold text-yellow-9 transition hover:bg-yellow-3"
+            <label
+              class="flex cursor-pointer items-center gap-3 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 font-sans text-base font-semibold text-yellow-9"
             >
-              <span>Sort</span>
-              <svg class="h-5 w-5 fill-yellow-9">
+              <input
+                type="radio"
+                name="sort"
+                value="high-risk"
+                class="h-5 w-5 shrink-0 accent-yellow-9"
+              />
+              <span>Highest Risk</span>
+            </label>
+
+            <label
+              class="flex cursor-pointer items-center gap-3 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 font-sans text-base font-semibold text-yellow-9"
+            >
+              <input
+                type="radio"
+                name="sort"
+                value="alphabetical"
+                class="h-5 w-5 shrink-0 accent-yellow-9"
+              />
+              <span>Alphabetical</span>
+            </label>
+          </div>
+
+          <div class="my-6 border-t-2 border-g-2"></div>
+          <h3 class="font-sans text-xl font-bold">Filter</h3>
+
+          <div class="mt-4 hidden flex-col gap-3 md:flex">
+            <div class="relative">
+              <select
+                id="cuisine-filter"
+                class="w-full cursor-pointer appearance-none rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 pr-10 font-sans text-base font-semibold text-yellow-9 focus:border-yellow-5 focus:outline-none focus:ring-1 focus:ring-yellow-5"
+              >
+                <option value="">All Cuisines</option>
+                <option value="american">American</option>
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="mexican">Mexican</option>
+                <option value="other">Other</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-yellow-9"
+              >
                 {{ partial "helper/svg.html" "chevron" }}
               </svg>
-            </button>
+            </div>
+
+            <div class="relative">
+              <select
+                id="city-filter"
+                class="w-full cursor-pointer appearance-none rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 pr-10 font-sans text-base font-semibold text-yellow-9 focus:border-yellow-5 focus:outline-none focus:ring-1 focus:ring-yellow-5"
+              >
+                <option value="">All Cities</option>
+                <option value="philadelphia">Philadelphia</option>
+                <option value="pittsburgh">Pittsburgh</option>
+                <option value="harrisburg">Harrisburg</option>
+                <option value="other">Other</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-yellow-9"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
           </div>
+
+          <button
+            @click="
+            document.getElementById('cuisine-filter').value = '';
+            document.getElementById('city-filter').value = '';
+          "
+            class="mt-5 w-full rounded border-2 border-red-7 bg-red-5 px-4 py-2 font-sans text-base font-semibold text-white transition-colors duration-200 hover:bg-red-7 hover:text-white"
+          >
+            Clear
+          </button>
         </div>
 
-        <div aria-hidden="true" class="h-full w-3 bg-[#e9e9e9]"></div>
+        <div aria-hidden="true" class="h-full w-3 bg-g-3"></div>
 
         <div class="flex min-h-0 flex-col">
           <div class="md:bg-white md:p-4 md:shadow">
