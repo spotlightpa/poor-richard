@@ -1,6 +1,7 @@
 +++
 layout = "restaurant-inspections"
 url = "/restaurant-inspections/"
+suppress-footer-newsletter = true
 
 title = "Pennsylvania Restaurant Safety Tracker"
 deck = "Free, real-time updates about health inspections at restaurants near you."
