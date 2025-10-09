@@ -3,6 +3,7 @@ authors = ["Colin Deppen"]
 blurb = "Camp Dreamcatcher in Chester County, launched at the height of ‘90s stigma around HIV, has served thousands of children living with or affected by the virus."
 byline = "Colin Deppen of Spotlight PA"
 description = "Camp Dreamcatcher in Chester County, launched at the height of ‘90s stigma around HIV, has served thousands of children living with or affected by the virus."
+draft = false
 feed-exclude = false
 image = "2025/03/01kw-kcea-bxs1-sb2v.jpeg"
 image-caption = "Campers and volunteers at Camp Dreamcatcher in Chester County, Pennsylvania."
@@ -18,7 +19,7 @@ slug = "hiv-aids-chester-county-pennsylvania-summer-camp-dreamcatcher-outdoors"
 suppress-date = false
 title = "PA Local Heroes: A summer camp where HIV stigma stops"
 title-tag = "A summer camp where HIV stigma stops"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "A summer camp where HIV stigma stops"
 +++
 
