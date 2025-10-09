@@ -20,7 +20,7 @@ slug = "pittsburgh-maria-manautou-matos-latino-magazine-pennsylvania-local"
 suppress-date = false
 title = "PA Local Heroes: The publisher connecting, championing Latinos in her community"
 title-tag = "Meet the publisher amplifying Latino voices in Pittsburgh"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "Meet the publisher amplifying Latino voices in Pittsburgh"
 +++
 
