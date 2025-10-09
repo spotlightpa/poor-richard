@@ -3,6 +3,7 @@ authors = ["Asha Prihar"]
 blurb = "Mandy Mastros, pastor at the Moravian Center of Lancaster, wears many hats in her hometown’s community, from adult day center chaplain to advocacy board advisor."
 byline = "Asha Prihar of Spotlight PA"
 description = "As pastor at the Moravian Center of Lancaster, Mandy Mastros’ work extends far beyond leading Sunday services."
+draft = false
 feed-exclude = false
 image = "2025/04/01m0-n22z-nkkf-v2h8.jpeg"
 image-credit = "Provided by Mandy Mastros"
@@ -17,7 +18,7 @@ slug = "moravian-church-homelessness-outreach-lancaster-pennsylvania-mandy-mastr
 suppress-date = false
 title = "PA Local Heroes: Meet the social worker and pastor helping people through ‘all of the human stuff’"
 title-tag = "The pastor/social worker reaching out to Lancaster’s unhoused community"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "The pastor-slash-social worker reaching out to Lancaster’s unhoused community"
 +++
 
