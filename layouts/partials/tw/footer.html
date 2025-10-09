@@ -2,12 +2,18 @@
 
 
 <div class="bg-beige font-sans print:hidden" data-fru-campaign="footer">
-  {{ partial "tw/newsletter-box-lg.html" (dict
-    "showLogo" true
-    "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
-    "newsletterField" "newsletter/papost-hidden.html"
-    )
-  }}
+  {{ if not (.Param "suppress-footer-newsletter") }}
+    {{ partial "tw/newsletter-box-lg.html" (dict
+      "showLogo" true
+      "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
+      "newsletterField" "newsletter/papost-hidden.html"
+      )
+    }}
+  {{ end }}
+
+  {{ if .Param "suppress-footer-newsletter" }}
+    <div class="pt-10"></div>
+  {{ end }}
 
 
   <nav
