@@ -2,7 +2,8 @@
 {{ $id := .Get "id" }}
 {{ $header := .Get "header" }}
 
-{{ $data := site.Data.candidates2024 }}
+{{ $candidateSrc := page.Param "candidateSrc" | default "candidates2024" }}
+{{ $data := index site.Data $candidateSrc }}
 {{ $name := "" }}
 {{ $party := "" }}
 {{ $image := "" }}

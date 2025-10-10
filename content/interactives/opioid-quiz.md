@@ -22,7 +22,7 @@ slug = "pennsylvania-opioid-settlement-decide-spending"
 suppress-date = false
 title = "You can decide how billions to fight the opioid epidemic should be spent with our new tool"
 title-tag = "Pa. opioid settlement money: How should it be spent?"
-topics = ["Health"]
+topics = ["Health", "News Quiz"]
 url = "/news/2025/03/pennsylvania-opioid-settlement-decide-spending/"
 
 [[blocks]]
