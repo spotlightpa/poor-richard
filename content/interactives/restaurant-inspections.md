@@ -15,6 +15,10 @@ search-location = true
 [data]
 source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
 popup = false
+cacheVersion = 1
+maxCacheAge = 24
+delimiter = "\t"
+numericFields = ["Latitude", "Longitude"]
 
 [params]
 about-title = "About This Tool"
@@ -44,7 +48,6 @@ credits = """
     email="cbruno@spotlightpa.org"
 >}}
 """
-+++
 
 [map]
 controls = ["navigation", "fullscreen"]
@@ -54,3 +57,4 @@ minZoom = 3
 maxZoom = 18
 zoom = 6
 styleURL = "https://tiles.openfreemap.org/styles/positron"
++++

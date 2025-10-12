@@ -1,0 +1,446 @@
+<script>
+    function s3DataLoader() {
+      return {
+        dataSourceURL: {{ .Param "data.source" | default "" }},
+        showPopup: {{ .Param "data.popup" | default "false" }},
+        cacheVersion: {{ .Param "data.cacheVersion" | default 1 }},
+        maxCacheAge: {{ .Param "data.maxCacheAge" | default 24 }} * 60 * 60 * 1000,
+        delimiter: {{ .Param "data.delimiter" | default "\t" }},
+        numericFields: {{ .Param "data.numericFields" | default "[]" }},
+        
+        cacheName: '',
+        dbName: 'SpotlightPA-DataCache',
+        loading: false,
+        loadingProgress: 0,
+        loadingMessage: 'Initializing...',
+        error: null,
+        data: [],
+        retryCount: 0,
+        maxRetries: 2,
+        initialized: false,
+  
+        async init() {
+          if (this.initialized) return;
+          this.initialized = true;
+  
+          if (!this.dataSourceURL) {
+            this.error = 'No data source URL configured';
+            return;
+          }
+  
+          this.cacheName = this.generateCacheName(this.dataSourceURL);
+  
+          await this.loadData();
+        },
+  
+        generateCacheName(url) {
+          let hash = 0;
+          for (let i = 0; i < url.length; i++) {
+            const char = url.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash;
+          }
+          return `data-cache-${Math.abs(hash)}`;
+        },
+  
+        async loadData() {
+          this.loading = true;
+          this.error = null;
+          this.loadingProgress = 0;
+  
+          try {
+            const cachedData = await this.loadFromCache();
+  
+            if (cachedData) {
+              this.data = cachedData;
+              this.loadingMessage = 'Loading from cache...';
+              this.loadingProgress = 100;
+  
+              this.refreshDataInBackground();
+            } else {
+              await this.loadFromS3();
+            }
+  
+          } catch (err) {
+            await this.handleError(err);
+          } finally {
+            setTimeout(() => {
+              this.loading = false;
+            }, 300);
+          }
+        },
+  
+        async loadFromS3() {
+          const response = await fetch(this.dataSourceURL, {
+            mode: 'cors',
+            cache: 'no-cache',
+            headers: {
+              'Accept-Encoding': 'gzip'
+            }
+          });
+  
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+          }
+  
+          this.loadingMessage = 'Downloading data...';
+          this.loadingProgress = 0;
+  
+          const contentLength = response.headers.get('content-length');
+          const total = parseInt(contentLength, 10);
+  
+          const reader = response.body.getReader();
+          const chunks = [];
+          let received = 0;
+  
+          while (true) {
+            const { done, value } = await reader.read();
+  
+            if (done) break;
+  
+            chunks.push(value);
+            received += value.length;
+  
+            if (total) {
+              const rawProgress = (received / total) * 70;
+              const calculatedProgress = Math.min(70, Math.round(rawProgress));
+              if (calculatedProgress > this.loadingProgress) {
+                this.loadingProgress = calculatedProgress;
+              }
+            }
+          }
+  
+          if (this.loadingProgress < 70) {
+            this.loadingProgress = 70;
+          }
+  
+          this.loadingMessage = 'Preparing data...';
+          await new Promise(resolve => setTimeout(resolve, 50));
+          const blob = new Blob(chunks);
+          const text = await blob.text();
+  
+          if (this.loadingProgress < 80) {
+            this.loadingProgress = 80;
+          }
+  
+          this.loadingMessage = 'Processing data...';
+          await new Promise(resolve => setTimeout(resolve, 50));
+          const parsed = this.parseCSV(text);
+  
+          if (this.loadingProgress < 90) {
+            this.loadingProgress = 90;
+          }
+  
+          this.loadingMessage = 'Loading...';
+          await new Promise(resolve => setTimeout(resolve, 50));
+          await this.saveToCache(parsed);
+  
+          this.loadingProgress = 100;
+          this.data = parsed;
+        },
+  
+        parseCSV(text) {
+          const lines = text.split('\n');
+          const headers = lines[0].split(this.delimiter).map(h => h.trim());
+          const data = [];
+          const numericSet = new Set(this.numericFields);
+  
+          for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (!line) continue;
+  
+            const values = line.split(this.delimiter);
+            const row = {};
+  
+            headers.forEach((header, index) => {
+              let value = values[index] ? values[index].trim() : '';
+  
+              if (numericSet.has(header)) {
+                value = parseFloat(value) || null;
+              }
+  
+              row[header] = value;
+            });
+  
+            data.push(row);
+          }
+  
+          return data;
+        },
+  
+        async loadFromCache() {
+          try {
+            const db = await this.openDB();
+            const tx = db.transaction('dataCache', 'readonly');
+            const store = tx.objectStore('dataCache');
+            const cached = await store.get(this.cacheName);
+  
+            if (!cached) return null;
+  
+            const age = Date.now() - cached.timestamp;
+            if (age > this.maxCacheAge) {
+              return null;
+            }
+  
+            if (cached.version !== this.cacheVersion) {
+              return null;
+            }
+  
+            return cached.data;
+  
+          } catch (err) {
+            return null;
+          }
+        },
+  
+        async saveToCache(data) {
+          try {
+            const db = await this.openDB();
+            const tx = db.transaction('dataCache', 'readwrite');
+            const store = tx.objectStore('dataCache');
+  
+            await store.put({
+              id: this.cacheName,
+              data: data,
+              timestamp: Date.now(),
+              version: this.cacheVersion
+            });
+          } catch (err) {
+          }
+        },
+  
+        openDB() {
+          return new Promise((resolve, reject) => {
+            const request = indexedDB.open(this.dbName, 1);
+  
+            request.onerror = () => reject(request.error);
+            request.onsuccess = () => resolve(request.result);
+  
+            request.onupgradeneeded = (event) => {
+              const db = event.target.result;
+              if (!db.objectStoreNames.contains('dataCache')) {
+                db.createObjectStore('dataCache', { keyPath: 'id' });
+              }
+            };
+          });
+        },
+  
+        async refreshDataInBackground() {
+          try {
+            const response = await fetch(this.dataSourceURL, {
+              mode: 'cors',
+              cache: 'no-cache'
+            });
+  
+            if (!response.ok) return;
+  
+            const text = await response.text();
+            const parsed = this.parseCSV(text);
+  
+            if (JSON.stringify(parsed).length !== JSON.stringify(this.data).length) {
+              this.data = parsed;
+              await this.saveToCache(parsed);
+            }
+          } catch (err) {
+          }
+        },
+  
+        async handleError(err) {
+          this.retryCount++;
+  
+          if (this.retryCount <= this.maxRetries) {
+            this.error = `Loading failed. Retrying (${this.retryCount}/${this.maxRetries})...`;
+            this.loadingMessage = 'Retrying...';
+  
+            const delay = Math.min(1000 * Math.pow(2, this.retryCount - 1), 5000);
+            await new Promise(resolve => setTimeout(resolve, delay));
+  
+            await this.loadData();
+          } else {
+            const cachedData = await this.loadFromCache();
+  
+            if (cachedData) {
+              this.error = 'Using cached data (offline mode)';
+              this.data = cachedData;
+            } else {
+              this.error = `Failed to load data: ${err.message}. Please refresh the page.`;
+              this.loading = false;
+            }
+          }
+        },
+  
+        async retry() {
+          this.retryCount = 0;
+          await this.loadData();
+        }
+      };
+    }
+  </script>
+  
+<div
+  x-data="s3DataLoader()"
+  x-init="init()"
+  x-show="showPopup && (loading || error)"
+  class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+  x-cloak
+>
+  <div class="w-full max-w-md rounded-lg bg-white p-8 shadow-xl">
+    <template x-if="loading && !error">
+      <div>
+        <div class="mb-4 flex items-center justify-center">
+          <svg
+            class="h-12 w-12 animate-spin text-yellow"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+            ></path>
+          </svg>
+        </div>
+
+        <h3
+          class="mb-2 text-center font-sans text-xl font-bold text-black"
+          x-text="loadingMessage"
+        ></h3>
+
+        <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
+          <div
+            class="h-full rounded-full bg-yellow transition-all duration-300"
+            :style="`width: ${loadingProgress}%`"
+          ></div>
+        </div>
+
+        <p class="text-center font-sans text-sm text-g-6">
+          <span x-text="loadingProgress"></span>% complete
+        </p>
+      </div>
+    </template>
+
+    <template x-if="error">
+      <div>
+        <div class="mb-4 flex items-center justify-center">
+          <svg
+            class="h-12 w-12 text-red-7"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">
+          Unable to Load Data
+        </h3>
+
+        <p
+          class="mb-6 text-center font-sans text-sm text-g-6"
+          x-text="error"
+        ></p>
+
+        <button
+          @click="retry()"
+          class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+        >
+          Try Again
+        </button>
+      </div>
+    </template>
+  </div>
+</div>
+
+<div
+  x-data="s3DataLoader()"
+  x-init="init()"
+  x-show="!showPopup && (loading || error)"
+  class="w-full bg-white p-8 shadow md:p-10"
+>
+  <template x-if="loading && !error">
+    <div>
+      <div class="mb-4 flex items-center justify-center">
+        <svg
+          class="h-12 w-12 animate-spin text-yellow"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+          ></path>
+        </svg>
+      </div>
+
+      <h3
+        class="mb-2 text-center font-sans text-xl font-bold text-black"
+        x-text="loadingMessage"
+      ></h3>
+
+      <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
+        <div
+          class="h-full rounded-full bg-yellow transition-all duration-300"
+          :style="`width: ${loadingProgress}%`"
+        ></div>
+      </div>
+
+      <p class="text-center font-sans text-sm text-g-6">
+        <span x-text="loadingProgress"></span>% complete
+      </p>
+    </div>
+  </template>
+
+  <template x-if="error">
+    <div>
+      <div class="mb-4 flex items-center justify-center">
+        <svg
+          class="h-12 w-12 text-red-7"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+
+      <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">
+        Unable to Load Data
+      </h3>
+
+      <p class="mb-6 text-center font-sans text-sm text-g-6" x-text="error"></p>
+
+      <button
+        @click="retry()"
+        class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+      >
+        Try Again
+      </button>
+    </div>
+  </template>
+</div>
