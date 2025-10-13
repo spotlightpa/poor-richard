@@ -337,28 +337,70 @@
         <template x-if="loading && !error">
           <div>
             <div class="mb-4 flex items-center justify-center">
-              <svg class="h-12 w-12 animate-spin text-yellow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+              <svg
+                class="h-12 w-12 animate-spin text-yellow"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                ></path>
               </svg>
             </div>
-            <h3 class="mb-2 text-center font-sans text-xl font-bold text-black" x-text="loadingMessage"></h3>
+            <h3
+              class="mb-2 text-center font-sans text-xl font-bold text-black"
+              x-text="loadingMessage"
+            ></h3>
             <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
-              <div class="h-full rounded-full bg-yellow transition-all duration-300" :style="`width: ${loadingProgress}%`"></div>
+              <div
+                class="h-full rounded-full bg-yellow transition-all duration-300"
+                :style="`width: ${loadingProgress}%`"
+              ></div>
             </div>
-            <p class="text-center font-sans text-sm text-g-6"><span x-text="loadingProgress"></span>% complete</p>
+            <p class="text-center font-sans text-sm text-g-6">
+              <span x-text="loadingProgress"></span>% complete
+            </p>
           </div>
         </template>
         <template x-if="error">
           <div>
             <div class="mb-4 flex items-center justify-center">
-              <svg class="h-12 w-12 text-red-7" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+              <svg
+                class="h-12 w-12 text-red-7"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </div>
-            <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">Unable to Load Data</h3>
-            <p class="mb-6 text-center font-sans text-sm text-g-6" x-text="error"></p>
-            <button @click="retry()" class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3">Try Again</button>
+            <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">
+              Unable to Load Data
+            </h3>
+            <p
+              class="mb-6 text-center font-sans text-sm text-g-6"
+              x-text="error"
+            ></p>
+            <button
+              @click="retry()"
+              class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+            >
+              Try Again
+            </button>
           </div>
         </template>
       </div>
@@ -369,28 +411,70 @@
       <template x-if="loading && !error">
         <div>
           <div class="mb-4 flex items-center justify-center">
-            <svg class="h-12 w-12 animate-spin text-yellow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+            <svg
+              class="h-12 w-12 animate-spin text-yellow"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+              ></path>
             </svg>
           </div>
-          <h3 class="mb-2 text-center font-sans text-xl font-bold text-black" x-text="loadingMessage"></h3>
+          <h3
+            class="mb-2 text-center font-sans text-xl font-bold text-black"
+            x-text="loadingMessage"
+          ></h3>
           <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
-            <div class="h-full rounded-full bg-yellow transition-all duration-300" :style="`width: ${loadingProgress}%`"></div>
+            <div
+              class="h-full rounded-full bg-yellow transition-all duration-300"
+              :style="`width: ${loadingProgress}%`"
+            ></div>
           </div>
-          <p class="text-center font-sans text-sm text-g-6"><span x-text="loadingProgress"></span>% complete</p>
+          <p class="text-center font-sans text-sm text-g-6">
+            <span x-text="loadingProgress"></span>% complete
+          </p>
         </div>
       </template>
       <template x-if="error">
         <div>
           <div class="mb-4 flex items-center justify-center">
-            <svg class="h-12 w-12 text-red-7" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+            <svg
+              class="h-12 w-12 text-red-7"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+              />
             </svg>
           </div>
-          <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">Unable to Load Data</h3>
-          <p class="mb-6 text-center font-sans text-sm text-g-6" x-text="error"></p>
-          <button @click="retry()" class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3">Try Again</button>
+          <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">
+            Unable to Load Data
+          </h3>
+          <p
+            class="mb-6 text-center font-sans text-sm text-g-6"
+            x-text="error"
+          ></p>
+          <button
+            @click="retry()"
+            class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+          >
+            Try Again
+          </button>
         </div>
       </template>
     </div>

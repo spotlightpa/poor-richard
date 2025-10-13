@@ -29,7 +29,114 @@
       {{ partial "s3-data-loader.html" . }}
 
 
-      <div id="inspections-mount"></div>
+      <script>
+        (function () {
+          function getTemplateBits() {
+            const tplCard = document.querySelector('[data-card="inspection"]');
+            if (!tplCard) return null;
+
+            const detailsBlock = tplCard.querySelector(".space-y-1");
+            const detailSvgs = detailsBlock
+              ? detailsBlock.querySelectorAll("svg")
+              : [];
+            const locationSVG = detailSvgs[0] ? detailSvgs[0].outerHTML : "";
+            const calendarSVG = detailSvgs[1] ? detailSvgs[1].outerHTML : "";
+
+            const violationsUL = tplCard.querySelector("ul.mt-2");
+            const violationsHTML = violationsUL ? violationsUL.outerHTML : "";
+
+            const readMoreBlock = tplCard.querySelector(".pt-2");
+            const readMoreHTML = readMoreBlock ? readMoreBlock.outerHTML : "";
+
+            return { locationSVG, calendarSVG, violationsHTML, readMoreHTML };
+          }
+
+          window.addEventListener("inspections-data-ready", function (event) {
+            const allData = event.detail.data;
+            const testData = allData.slice(0, 10);
+            renderInspectionCards(testData);
+          });
+
+          function renderInspectionCards(data) {
+            const mountPoints = document.querySelectorAll(".inspections-mount");
+            if (mountPoints.length === 0) return;
+
+            const tpl = getTemplateBits();
+            if (!tpl) return;
+
+            mountPoints.forEach((mountPoint) => {
+              mountPoint.innerHTML = "";
+              data.forEach((row) => {
+                mountPoint.appendChild(createInspectionCard(row, tpl));
+              });
+            });
+          }
+
+          function createInspectionCard(data, tpl) {
+            const facilityName = data.facility || "Facility";
+            const address = data.address || "";
+            const city = data.city || "";
+            const inspectionDate = data.inspection_date || "";
+
+            let addressLine = "";
+            if (address && city) addressLine = `${address}, ${city}`;
+            else if (address) addressLine = address;
+            else if (city) addressLine = city;
+
+            const searchIndex = [facilityName, address, city, inspectionDate]
+              .join(" ")
+              .toLowerCase();
+
+            const card = document.createElement("div");
+            card.setAttribute("data-card", "inspection");
+            card.setAttribute("data-index", searchIndex);
+            card.className = "w-full space-y-3 bg-white p-8 shadow md:p-10";
+            const addressRow = addressLine
+              ? `
+                <div class="flex items-center gap-1">
+                  ${tpl.locationSVG}
+                  <span>${escapeHTML(addressLine)}</span>
+                </div>
+              `
+              : "";
+
+            const dateRow = inspectionDate
+              ? `
+                <div class="flex items-center gap-1">
+                  ${tpl.calendarSVG}
+                  <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
+                </div>
+              `
+              : "";
+
+            const detailsHTML = `
+              <div class="space-y-1 text-g-6">
+                ${addressRow}
+                ${dateRow}
+              </div>
+            `;
+
+            card.innerHTML = `
+              <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
+              ${detailsHTML}
+              ${tpl.violationsHTML}
+              ${tpl.readMoreHTML}
+              <ul class="violations-data" hidden></ul>
+            `;
+
+            return card;
+          }
+
+          function escapeHTML(str) {
+            if (!str) return "";
+            const div = document.createElement("div");
+            div.textContent = str;
+            return div.innerHTML;
+          }
+        })();
+      </script>
+
+      <div class="inspections-mount space-y-3"></div>
 
       <div
         id="no-results"
