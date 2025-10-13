@@ -28,7 +28,7 @@ credits = """
       email="cjohnson@spotlightpa.org"
   >}}
 
-  <span class="spl-links-navy">Spotlight PA's State College team wrote this quiz based on information from candidate questionnaires. Send feedback to [State College Managing Editor Sarah Rafacz](mailto:srafacz@spotlightpa.org).</span>
+  <span class="spl-links-navy">Spotlight PA’s Berks team wrote this quiz based on information from the candidates. Send feedback to [Berks Bureau Managing Editor Lisa Scheid](mailto:lscheid@spotlightpa.org).</span>
   """
 promo = "{{<featured/election-promo>}}"
 [[blocks]]
