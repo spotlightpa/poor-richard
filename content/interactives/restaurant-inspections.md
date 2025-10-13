@@ -17,7 +17,7 @@ source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2
 popup = false
 cacheVersion = 1
 maxCacheAge = 24
-delimiter = "\t"
+delimiter = ","
 numericFields = ["Latitude", "Longitude"]
 
 [params]
