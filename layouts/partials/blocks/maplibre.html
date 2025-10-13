@@ -16,13 +16,43 @@
       markers: Array.isArray(opts?.markers) ? opts.markers : [],
 
       map: null,
+      _io: null,
       _ro: null,
-      _checkInterval: null,
-      _retryCount: 0,
+      _initializing: false,
       _flyToHandler: null,
+      _mobileViewHandler: null,
 
       init() {
-        this.waitForMapLibre();
+        const el = this.$refs.canvas;
+        if (!el) {
+          console.error("Map canvas element not found");
+          return;
+        }
+
+        this._io = new IntersectionObserver(
+          (entries) => {
+            if (entries.some((e) => e.isIntersecting)) this.tryInit();
+          },
+          { root: null, threshold: 0 },
+        );
+
+        this._ro = new ResizeObserver(() => this.tryInit());
+
+        this._io.observe(el);
+        this._ro.observe(el);
+
+        this._mobileViewHandler = (e) => {
+          const view = e.detail?.view;
+          if (view === "map") {
+            if (this.map) {
+              this.map.resize();
+            } else {
+              this.tryInit(true);
+            }
+          }
+        };
+        window.addEventListener("mobile-view-changed", this._mobileViewHandler);
+
         this._flyToHandler = (e) => {
           const { lon, lat, zoom } = e.detail || {};
           if (typeof lon === "number" && typeof lat === "number" && this.map) {
@@ -34,42 +64,37 @@
           }
         };
         window.addEventListener("inspections:flyTo", this._flyToHandler);
+
+        this.tryInit();
       },
 
-      waitForMapLibre() {
-        if (window.maplibregl) {
-          this.initMap();
-        } else {
-          this._checkInterval = setInterval(() => {
-            if (window.maplibregl) {
-              clearInterval(this._checkInterval);
-              this.initMap();
-            }
-          }, 50);
+      hasSize() {
+        const el = this.$refs.canvas;
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.width > 0 && rect.height > 0;
+      },
+
+      tryInit(force = false) {
+        if (this.map || this._initializing) return;
+        const el = this.$refs.canvas;
+        if (!el) return;
+
+        if (!this.hasSize() && !force) return;
+
+        if (!window.maplibregl) {
+          setTimeout(() => this.tryInit(force), 50);
+          return;
         }
+
+        this._initializing = true;
+        this.initMap();
+        this._initializing = false;
       },
 
       initMap() {
         const el = this.$refs.canvas;
-        if (!el) {
-          console.error("Map canvas element not found");
-          return;
-        }
-
-        const rect = el.getBoundingClientRect();
-
-        if (rect.width === 0 || rect.height === 0) {
-          if (this._retryCount++ < 20) {
-            setTimeout(() => this.initMap(), 100);
-          } else {
-            console.error(
-              "Map container failed to get dimensions after 20 attempts",
-            );
-          }
-          return;
-        }
-
-        this._retryCount = 0;
+        if (!el) return;
 
         try {
           this.map = new maplibregl.Map({
@@ -119,11 +144,7 @@
                 .getStyle()
                 .layers.find((l) => l["source-layer"] === "boundary");
               const boundarySourceId = boundaryLayer?.source;
-              if (!boundarySourceId) {
-                console.warn(
-                  "Couldn't find 'boundary' source-layer; skipping border styling.",
-                );
-              } else {
+              if (boundarySourceId) {
                 const beforeId = this.map
                   .getStyle()
                   .layers.find((l) => l.type === "symbol")?.id;
@@ -157,6 +178,10 @@
                   },
                   beforeId,
                 );
+              } else {
+                console.warn(
+                  "Couldn't find 'boundary' source-layer; skipping border styling.",
+                );
               }
             } catch (err) {
               console.error("Failed to add styled borders:", err);
@@ -167,10 +192,9 @@
             console.error("Map error:", e);
           });
 
-          this._ro = new ResizeObserver(() => {
-            if (this.map) this.map.resize();
-          });
-          this._ro.observe(el);
+          const ro = new ResizeObserver(() => this.map && this.map.resize());
+          ro.observe(el);
+          this._ro = ro;
         } catch (err) {
           console.error("MapLibre initialization error:", err);
         }
@@ -190,13 +214,21 @@
       },
 
       destroy() {
-        if (this._checkInterval) clearInterval(this._checkInterval);
-        if (this._flyToHandler) {
-          window.removeEventListener("inspections:flyTo", this._flyToHandler);
-        }
+        try {
+          this._io?.disconnect();
+        } catch {}
         try {
           this._ro?.disconnect();
         } catch {}
+        if (this._flyToHandler) {
+          window.removeEventListener("inspections:flyTo", this._flyToHandler);
+        }
+        if (this._mobileViewHandler) {
+          window.removeEventListener(
+            "mobile-view-changed",
+            this._mobileViewHandler,
+          );
+        }
         try {
           this.map?.remove();
         } catch {}
