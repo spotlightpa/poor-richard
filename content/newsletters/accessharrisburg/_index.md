@@ -6,7 +6,7 @@ email-false = true
 button-link = "https://buy.stripe.com/9B66oJ5CHeP888q2BQ4ZG00"
 
 title = "Insider access, delivered weekly"
-subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government. Coming this fall."
+subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
 
 bullets = [
   "Scoops, expert analysis, and more from Capitol reporter Stephen Caruso",
