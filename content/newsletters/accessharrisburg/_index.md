@@ -50,7 +50,7 @@ exploreReporter = "Stephen Caruso"
 articleAmount = 3
 
 [cascade]
-image = "2025/10/01me-x7t0-hwa7-mp96.png" 
+image = "2025/10/01me-x90h-tbme-av96.png" 
 
 
 [[staff]]
