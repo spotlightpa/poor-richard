@@ -160,45 +160,47 @@
             return card;
           }
 
-          function createMapMarkers(data) {
-            const markers = data
-              .map((row, index) => {
-                const lat = parseFloat(row.Latitude);
-                const lon = parseFloat(row.Longitude);
+function createMapMarkers(data) {
+  const markers = data
+    .map((row, index) => {
+      const lat = parseFloat(row.Latitude);
+      const lon = parseFloat(row.Longitude);
 
-                if (!lat || !lon || isNaN(lat) || isNaN(lon)) {
-                  return null;
-                }
+      if (!lat || !lon || isNaN(lat) || isNaN(lon)) {
+        return null;
+      }
 
-                const facilityName = escapeHTML(row.facility || "Facility");
-                const address = escapeHTML(row.address || "");
-                const city = escapeHTML(row.city || "");
+      const facilityName = escapeHTML(row.facility || "Facility");
+      const address = escapeHTML(row.address || "");
+      const city = escapeHTML(row.city || "");
 
-                return {
-                  lon: lon,
-                  lat: lat,
-                  color: "#c0392b",
-                  inspectionId: `inspection-${index}`,
-                  popupHTML: `
-                    <div class="p-2">
-                      <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
-                      <p class="text-xs text-gray-600">${address}${address && city ? ', ' : ''}${city}</p>
-                      <button
-                        class="mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold"
-                        onclick="window.dispatchEvent(new CustomEvent('marker-click', {detail: {id: 'inspection-${index}'}}))"
-                      >
-                        View details →
-                      </button>
-                    </div>
-                  `
-                };
-              })
-              .filter(Boolean);
+      return {
+        lon: lon,
+        lat: lat,
+        color: "#c0392b",
+        inspectionId: `inspection-${index}`,
+        popupHTML: `
+          <div class="p-2">
+            <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
+            <p class="text-xs text-gray-600">${address}${address && city ? ', ' : ''}${city}</p>
+            <button
+              class="mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold"
+              onclick="window.dispatchEvent(new CustomEvent('marker-click', {detail: {id: 'inspection-${index}'}}))"
+            >
+              View details →
+            </button>
+          </div>
+        `
+      };
+    })
+    .filter(Boolean);
 
-            window.dispatchEvent(new CustomEvent('inspections-markers-ready', {
-              detail: { markers }
-            }));
-          }
+  window.__inspectionsMarkers = markers;
+
+  window.dispatchEvent(new CustomEvent('inspections-markers-ready', {
+    detail: { markers }
+  }));
+}
 
           function escapeHTML(str) {
             if (!str) return "";

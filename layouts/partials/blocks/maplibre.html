@@ -47,6 +47,8 @@
           if (view === "map") {
             if (this.map) {
               this.map.resize();
+              const m = window.__inspectionsMarkers;
+              if (Array.isArray(m) && m.length) this.updateMarkers(m);
             } else {
               this.tryInit(true);
             }
@@ -193,6 +195,11 @@
               }
             } catch (err) {
               console.error("Failed to add styled borders:", err);
+            }
+
+            const latest = window.__inspectionsMarkers;
+            if (Array.isArray(latest) && latest.length) {
+              this.updateMarkers(latest);
             }
           });
 
