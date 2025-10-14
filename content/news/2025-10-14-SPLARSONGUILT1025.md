@@ -15,7 +15,7 @@ pinned = false
 published = 2025-10-14T12:31:04.796-04:00
 slug = "pennsylvania-governor-shapiro-assassination-attempt-guilty-plea-josh-shapiro"
 suppress-date = false
-title = "Gov. Josh Shapiro calls 25-50 year sentence for man who perpetrated arson attack ‘a just outcome’"
+title = "Gov. Josh Shapiro calls 25-50 year sentence for man who perpetrated arson attack ‘just outcome’"
 title-tag = "Shapiro speaks out on assassination attempt after Balmer pleads guilty"
 topics = ["Josh Shapiro"]
 +++
