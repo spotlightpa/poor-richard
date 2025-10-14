@@ -549,11 +549,8 @@
           this.refreshCards();
 
           this.initSortListeners();
-
           this.initFilterListeners();
-
           this.initCityTypeahead();
-
           this.initMapMarkers();
 
           if (!this.initializedDelegates) {
@@ -586,7 +583,6 @@
         initMapMarkers() {
           window.addEventListener("inspections-markers-ready", (event) => {
             const markers = event.detail?.markers || [];
-
             window.dispatchEvent(
               new CustomEvent("update-map-markers", {
                 detail: { markers },
@@ -638,7 +634,6 @@
               typeaheadBuffer = "";
               return;
             }
-
             if (e.key.length > 1 && e.key !== "Backspace") return;
 
             if (e.key === "Backspace") {
@@ -693,6 +688,7 @@
           this.cards = Array.from(
             document.querySelectorAll('[data-card="inspection"]'),
           );
+
           this.cards.forEach((card) => {
             if (!card.querySelector(".list-content")) {
               const wrap = document.createElement("div");
@@ -701,18 +697,20 @@
               card.appendChild(wrap);
             }
           });
+
           const norm = (s) =>
             (s || "")
               .toLowerCase()
               .replace(/[^a-z0-9\s]/g, "")
               .replace(/\s+/g, " ")
               .trim();
+
           this.cards.forEach((card) => {
             this.index.set(card, norm(card.dataset.index || card.textContent));
-
             const city = this.extractCity(card);
             this.cityMap.set(card, city);
           });
+
           if (this.dataLoaded) {
             this.sortCards();
             this.applyFilters();
@@ -727,7 +725,7 @@
           const spans = card.querySelectorAll(".list-content span");
           for (const span of spans) {
             const text = span.textContent;
-            if (text.includes(",")) {
+            if (text && text.includes(",")) {
               const parts = text.split(",");
               if (parts.length >= 2) {
                 const potentialCity = parts[parts.length - 1].trim();
@@ -746,72 +744,69 @@
 
         getCityCategory(city) {
           if (!city) return "Other";
-
           const normalizedCity = city.trim();
           const match = this.paCities.find(
             (paCity) =>
               normalizedCity.toLowerCase() === paCity.toLowerCase() ||
               normalizedCity.toLowerCase().includes(paCity.toLowerCase()),
           );
-
           return match || "Other";
         },
 
         sortCards() {
           if (this.cards.length === 0) return;
 
-          const container = this.cards[0].parentElement;
-          if (!container) return;
-
-          const sortedCards = [...this.cards];
-
-          switch (this.currentSort) {
-            case "date":
-              sortedCards.sort((a, b) => {
-                const dateA = this.getInspectionDate(a);
-                const dateB = this.getInspectionDate(b);
-                return dateB - dateA;
-              });
-              break;
-
-            case "alphabetical":
-              sortedCards.sort((a, b) => {
-                const nameA = this.getFacilityName(a).toLowerCase();
-                const nameB = this.getFacilityName(b).toLowerCase();
-                return nameA.localeCompare(nameB);
-              });
-              break;
-
-            case "high-risk":
-              // Placeholder for future high-risk sorting
-              // For now, keep current order
-              break;
-          }
-
-          sortedCards.forEach((card) => {
-            container.appendChild(card);
+          const groups = new Map();
+          this.cards.forEach((card) => {
+            const parent = card.parentElement;
+            if (!parent) return;
+            if (!groups.has(parent)) groups.set(parent, []);
+            groups.get(parent).push(card);
           });
 
-          this.cards = sortedCards;
+          groups.forEach((cards, container) => {
+            const sorted = [...cards];
+
+            switch (this.currentSort) {
+              case "date":
+                sorted.sort(
+                  (a, b) =>
+                    this.getInspectionDate(b) - this.getInspectionDate(a),
+                );
+                break;
+
+              case "alphabetical":
+                sorted.sort((a, b) => {
+                  const nameA = this.getFacilityName(a).toLowerCase();
+                  const nameB = this.getFacilityName(b).toLowerCase();
+                  return nameA.localeCompare(nameB);
+                });
+                break;
+
+              case "high-risk":
+                break;
+            }
+
+            sorted.forEach((card) => {
+              container.appendChild(card);
+            });
+          });
         },
 
         getInspectionDate(card) {
-          const dateText = card.querySelector("[data-date]")?.dataset.date;
-          if (dateText) {
-            return new Date(dateText);
-          }
+          const attr = card.getAttribute("data-date");
+          if (attr) return new Date(attr);
 
           const spans = card.querySelectorAll(".list-content span");
           for (const span of spans) {
-            const text = span.textContent;
+            const text = span.textContent || "";
             if (text.includes("Last inspection:")) {
-              const dateMatch = text.match(/Last inspection:\s*(.+)/i);
-              if (dateMatch && dateMatch[1]) {
-                return new Date(dateMatch[1].trim());
+              const m = text.match(/Last inspection:\s*(.+)/i);
+              if (m && m[1]) {
+                return new Date(m[1].trim());
               }
             }
           }
-
           return new Date(0);
         },
 
@@ -903,6 +898,7 @@
             else c.classList.remove("hidden-by-detail");
             this.syncHidden(c);
           });
+
           const body = card;
           const listContent = body.querySelector(".list-content");
           let detail = body.querySelector(".detail-content");
