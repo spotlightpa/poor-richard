@@ -554,6 +554,8 @@
 
           this.initCityTypeahead();
 
+          this.initMapMarkers();
+
           if (!this.initializedDelegates) {
             document.addEventListener("click", (e) => {
               const readMoreBtn = e.target.closest(
@@ -579,6 +581,18 @@
             });
             this.initializedDelegates = true;
           }
+        },
+
+        initMapMarkers() {
+          window.addEventListener("inspections-markers-ready", (event) => {
+            const markers = event.detail?.markers || [];
+
+            window.dispatchEvent(
+              new CustomEvent("update-map-markers", {
+                detail: { markers },
+              }),
+            );
+          });
         },
 
         initSortListeners() {

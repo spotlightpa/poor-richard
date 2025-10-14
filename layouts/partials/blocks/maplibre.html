@@ -21,6 +21,7 @@
       _initializing: false,
       _flyToHandler: null,
       _mobileViewHandler: null,
+      _markerInstances: [],
 
       init() {
         const el = this.$refs.canvas;
@@ -64,6 +65,13 @@
           }
         };
         window.addEventListener("inspections:flyTo", this._flyToHandler);
+
+        window.addEventListener("update-map-markers", (e) => {
+          const markers = e.detail?.markers;
+          if (markers) {
+            this.updateMarkers(markers);
+          }
+        });
 
         this.tryInit();
       },
@@ -213,6 +221,69 @@
         });
       },
 
+      updateMarkers(newMarkers) {
+        if (!this.map || !Array.isArray(newMarkers)) return;
+
+        if (this._markerInstances) {
+          this._markerInstances.forEach((m) => m.remove());
+        }
+        this._markerInstances = [];
+
+        newMarkers.forEach((m) => {
+          if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
+
+          const markerEl = document.createElement("div");
+          markerEl.className = "cursor-pointer";
+          markerEl.innerHTML = `
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="${m.color || "#c0392b"}">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          `;
+
+          const marker = new maplibregl.Marker({
+            element: markerEl,
+            anchor: "bottom",
+          }).setLngLat([m.lon, m.lat]);
+
+          if (m.popupHTML) {
+            marker.setPopup(
+              new maplibregl.Popup({
+                offset: 25,
+                closeButton: true,
+                closeOnClick: true,
+              }).setHTML(m.popupHTML),
+            );
+          }
+
+          if (m.inspectionId) {
+            markerEl.addEventListener("click", () => {
+              window.dispatchEvent(
+                new CustomEvent("marker-click", {
+                  detail: { id: m.inspectionId },
+                }),
+              );
+            });
+          }
+
+          marker.addTo(this.map);
+          this._markerInstances.push(marker);
+        });
+
+        if (newMarkers.length > 0) {
+          const bounds = new maplibregl.LngLatBounds();
+          newMarkers.forEach((m) => {
+            if (typeof m?.lon === "number" && typeof m?.lat === "number") {
+              bounds.extend([m.lon, m.lat]);
+            }
+          });
+          this.map.fitBounds(bounds, {
+            padding: this.padding,
+            maxZoom: 12,
+            duration: 1000,
+          });
+        }
+      },
+
       destroy() {
         try {
           this._io?.disconnect();
@@ -228,6 +299,9 @@
             "mobile-view-changed",
             this._mobileViewHandler,
           );
+        }
+        if (this._markerInstances) {
+          this._markerInstances.forEach((m) => m.remove());
         }
         try {
           this.map?.remove();
