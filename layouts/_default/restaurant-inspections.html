@@ -404,29 +404,27 @@
         activeCard: null,
         lastReadMoreButton: null,
         initializedDelegates: false,
+        dataLoaded: false,
 
         init() {
-          this.cards = Array.from(
-            document.querySelectorAll('[data-card="inspection"]'),
-          );
-          this.cards.forEach((card) => {
-            if (!card.querySelector(".list-content")) {
-              const wrap = document.createElement("div");
-              wrap.className = "list-content";
-              while (card.firstChild) wrap.appendChild(card.firstChild);
-              card.appendChild(wrap);
+          const noResultsEl = document.getElementById("no-results");
+          if (noResultsEl) {
+            noResultsEl.classList.add("hidden");
+          }
+
+          window.addEventListener('inspections-data-ready', () => {
+            this.dataLoaded = true;
+            this.refreshCards();
+            if (noResultsEl) {
+              noResultsEl.classList.add("hidden");
             }
           });
-          const norm = (s) =>
-            (s || "")
-              .toLowerCase()
-              .replace(/[^a-z0-9\s]/g, "")
-              .replace(/\s+/g, " ")
-              .trim();
-          this.cards.forEach((card) => {
-            this.index.set(card, norm(card.dataset.index || card.textContent));
-          });
-          this.applySearch();
+
+          if (typeof window.inspectionsDataLoaded === 'function' && window.inspectionsDataLoaded()) {
+            this.dataLoaded = true;
+          }
+
+          this.refreshCards();
           if (!this.initializedDelegates) {
             document.addEventListener("click", (e) => {
               const readMoreBtn = e.target.closest(
@@ -451,6 +449,32 @@
               }
             });
             this.initializedDelegates = true;
+          }
+        },
+
+        refreshCards() {
+          this.cards = Array.from(
+            document.querySelectorAll('[data-card="inspection"]'),
+          );
+          this.cards.forEach((card) => {
+            if (!card.querySelector(".list-content")) {
+              const wrap = document.createElement("div");
+              wrap.className = "list-content";
+              while (card.firstChild) wrap.appendChild(card.firstChild);
+              card.appendChild(wrap);
+            }
+          });
+          const norm = (s) =>
+            (s || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, "")
+              .replace(/\s+/g, " ")
+              .trim();
+          this.cards.forEach((card) => {
+            this.index.set(card, norm(card.dataset.index || card.textContent));
+          });
+          if (this.dataLoaded) {
+            this.applySearch();
           }
         },
 
@@ -486,6 +510,14 @@
           this.applySearch();
         },
         applySearch() {
+          if (!this.dataLoaded || this.cards.length === 0) {
+            const noResultsEl = document.getElementById("no-results");
+            if (noResultsEl) {
+              noResultsEl.classList.add("hidden");
+            }
+            return;
+          }
+
           const needle = this.norm(this.q);
           let visible = 0;
           this.cards.forEach((card) => {
