@@ -47,111 +47,115 @@
               });
             });
           }
+function createInspectionCard(data) {
+  const facilityName = data.facility || "Facility";
+  const address = data.address || "";
+  const city = data.city || "";
+  const inspectionDate = data.inspection_date || "";
 
-          function createInspectionCard(data) {
-            const facilityName = data.facility || "Facility";
-            const address = data.address || "";
-            const city = data.city || "";
-            const inspectionDate = data.inspection_date || "";
+  let addressLine = "";
+  if (address && city) addressLine = `${address}, ${city}`;
+  else if (address) addressLine = address;
+  else if (city) addressLine = city;
 
-            let addressLine = "";
-            if (address && city) addressLine = `${address}, ${city}`;
-            else if (address) addressLine = address;
-            else if (city) addressLine = city;
+  const searchIndex = [facilityName, address, city, inspectionDate]
+    .join(" ")
+    .toLowerCase();
 
-            const searchIndex = [facilityName, address, city, inspectionDate]
-              .join(" ")
-              .toLowerCase();
+  const card = document.createElement("div");
+  card.setAttribute("data-card", "inspection");
+  card.setAttribute("data-index", searchIndex);
+  card.setAttribute("data-date", inspectionDate);
+  card.setAttribute("data-city", city);
+  card.className = "w-full space-y-3 bg-white p-8 shadow md:p-10";
 
-            const card = document.createElement("div");
-            card.setAttribute("data-card", "inspection");
-            card.setAttribute("data-index", searchIndex);
-            card.className = "w-full space-y-3 bg-white p-8 shadow md:p-10";
+  const addressRow = addressLine
+    ? `
+      <div class="flex items-center gap-1">
+        <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+          {{ partial "helper/svg.html" "location" }}
+        </svg>
+        <span>${escapeHTML(addressLine)}</span>
+      </div>
+    `
+    : "";
 
-            const addressRow = addressLine
-              ? `
-                <div class="flex items-center gap-1">
-                  <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                    {{ partial "helper/svg.html" "location" }}
-                  </svg>
-                  <span>${escapeHTML(addressLine)}</span>
-                </div>
-              `
-              : "";
+  const dateRow = inspectionDate
+    ? `
+      <div class="flex items-center gap-1">
+        <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+          {{ partial "helper/svg.html" "calendar-day" }}
+        </svg>
+        <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
+      </div>
+    `
+    : "";
 
-            const dateRow = inspectionDate
-              ? `
-                <div class="flex items-center gap-1">
-                  <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                    {{ partial "helper/svg.html" "calendar-day" }}
-                  </svg>
-                  <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
-                </div>
-              `
-              : "";
+  card.innerHTML = `
+    <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
+    <div class="space-y-1 text-g-6">
+      ${addressRow}
+      ${dateRow}
+    </div>
+    <ul class="mt-2 space-y-2 text-lg font-semibold">
+      <li class="mt-4 flex items-start">
+        <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
+          {{ partial "helper/svg.html" "triangle-exclamation" }}
+        </svg>
+        <span>1 <span>high risk violation</span></span>
+      </li>
+      <li class="flex items-start">
+        <svg class="mr-2 mt-1 h-5 w-5 text-yellow fill-current stroke-current">
+          {{ partial "helper/svg.html" "triangle-exclamation" }}
+        </svg>
+        <span>1 <span>moderate risk violation</span></span>
+      </li>
+      <li class="flex items-start">
+        <svg class="mr-2 mt-1 h-5 w-5 text-blue fill-current stroke-current">
+          {{ partial "helper/svg.html" "triangle-exclamation" }}
+        </svg>
+        <span>1 <span>low risk violation</span></span>
+      </li>
+    </ul>
+    <div class="pt-2">
+      <button
+        class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+        aria-label="Read more about this inspection"
+      >
+        <span class="mx-auto">Read more</span>
+        <svg class="h-5 w-5 fill-yellow-9">
+          {{ partial "helper/svg.html" "chevron-right" }}
+        </svg>
+      </button>
+    </div>
+    <ul class="violations-data" hidden>
+      <li data-level="high">
+        <h4>Food Sourcing, Handling, & Storage</h4>
+        <p>Some kitchen equipment was dirty and needs to be cleaned to prevent contamination.</p>
+      </li>
+      <li data-level="moderate">
+        <h4>Employee Health & Hygiene</h4>
+        <p>An employee did not wash their hands properly, which can spread germs to food.</p>
+      </li>
+      <li data-level="low">
+        <h4>Facility Management</h4>
+        <p>Minor maintenance issue needs attention.</p>
+      </li>
+    </ul>
+  `;
 
-            card.innerHTML = `
-              <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
-              <div class="space-y-1 text-g-6">
-                ${addressRow}
-                ${dateRow}
-              </div>
-              <ul class="mt-2 space-y-2 text-lg font-semibold">
-                <li class="mt-4 flex items-start">
-                  <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  <span>1 <span>high risk violation</span></span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="mr-2 mt-1 h-5 w-5 text-yellow fill-current stroke-current">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  <span>1 <span>moderate risk violation</span></span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="mr-2 mt-1 h-5 w-5 text-blue fill-current stroke-current">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  <span>1 <span>low risk violation</span></span>
-                </li>
-              </ul>
-          <div class="pt-2">
-            <button
-              class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
-              aria-label="Read more about this inspection"
-            >
-              <span class="mx-auto">Read more</span>
-              <svg class="h-5 w-5 fill-yellow-9">
-                {{ partial "helper/svg.html" "chevron-right" }}
-              </svg>
-            </button>
-          </div>
-              <ul class="violations-data" hidden>
-                <li data-level="high">
-                  <h4>Food Sourcing, Handling, & Storage</h4>
-                  <p>Some kitchen equipment was dirty and needs to be cleaned to prevent contamination.</p>
-                </li>
-                <li data-level="moderate">
-                  <h4>Employee Health & Hygiene</h4>
-                  <p>An employee did not wash their hands properly, which can spread germs to food.</p>
-                </li>
-                <li data-level="low">
-                  <h4>Facility Management</h4>
-                  <p>Minor maintenance issue needs attention.</p>
-                </li>
-              </ul>
-            `;
+  return card;
+}
 
-            return card;
-          }
+function escapeHTML(str) {
+  if (!str) return "";
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
 
-          function escapeHTML(str) {
-            if (!str) return "";
-            const div = document.createElement("div");
-            div.textContent = str;
-            return div.innerHTML;
-          }
+
+
         })();
       </script>
 

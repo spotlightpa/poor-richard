@@ -207,10 +207,63 @@
                 class="w-full cursor-pointer appearance-none rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 pr-10 font-sans text-base font-semibold text-yellow-9 focus:border-yellow-5 focus:outline-none focus:ring-1 focus:ring-yellow-5"
               >
                 <option value="">All Cities</option>
-                <option value="philadelphia">Philadelphia</option>
-                <option value="pittsburgh">Pittsburgh</option>
-                <option value="harrisburg">Harrisburg</option>
-                <option value="other">Other</option>
+                <option value="Aliquippa">Aliquippa</option>
+                <option value="Allentown">Allentown</option>
+                <option value="Altoona">Altoona</option>
+                <option value="Arnold">Arnold</option>
+                <option value="Beaver Falls">Beaver Falls</option>
+                <option value="Bethlehem">Bethlehem</option>
+                <option value="Bradford">Bradford</option>
+                <option value="Butler">Butler</option>
+                <option value="Carbondale">Carbondale</option>
+                <option value="Chester">Chester</option>
+                <option value="Clairton">Clairton</option>
+                <option value="Coatesville">Coatesville</option>
+                <option value="Connellsville">Connellsville</option>
+                <option value="Corry">Corry</option>
+                <option value="DuBois">DuBois</option>
+                <option value="Duquesne">Duquesne</option>
+                <option value="Easton">Easton</option>
+                <option value="Erie">Erie</option>
+                <option value="Farrell">Farrell</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greensburg">Greensburg</option>
+                <option value="Harrisburg">Harrisburg</option>
+                <option value="Hazleton">Hazleton</option>
+                <option value="Hermitage">Hermitage</option>
+                <option value="Jeannette">Jeannette</option>
+                <option value="Johnstown">Johnstown</option>
+                <option value="Lancaster">Lancaster</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lock Haven">Lock Haven</option>
+                <option value="Lower Burrell">Lower Burrell</option>
+                <option value="McKeesport">McKeesport</option>
+                <option value="Meadville">Meadville</option>
+                <option value="Monessen">Monessen</option>
+                <option value="Monongahela">Monongahela</option>
+                <option value="Nanticoke">Nanticoke</option>
+                <option value="New Castle">New Castle</option>
+                <option value="New Kensington">New Kensington</option>
+                <option value="Oil City">Oil City</option>
+                <option value="Parker">Parker</option>
+                <option value="Philadelphia">Philadelphia</option>
+                <option value="Pittsburgh">Pittsburgh</option>
+                <option value="Pittston">Pittston</option>
+                <option value="Pottsville">Pottsville</option>
+                <option value="Reading">Reading</option>
+                <option value="Scranton">Scranton</option>
+                <option value="Shamokin">Shamokin</option>
+                <option value="Sharon">Sharon</option>
+                <option value="St. Marys">St. Marys</option>
+                <option value="Sunbury">Sunbury</option>
+                <option value="Titusville">Titusville</option>
+                <option value="Uniontown">Uniontown</option>
+                <option value="Warren">Warren</option>
+                <option value="Washington">Washington</option>
+                <option value="Wilkes-Barre">Wilkes-Barre</option>
+                <option value="Williamsport">Williamsport</option>
+                <option value="York">York</option>
+                <option value="Other">Other</option>
               </select>
               <svg
                 class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-yellow-9"
@@ -378,21 +431,24 @@
     </section>
   {{ end }}
 
+
   <script>
     function mobileViewToggle() {
       return {
-        view: 'list',
+        view: "list",
 
         init() {
-          this.view = 'list';
+          this.view = "list";
         },
 
         setView(newView) {
           this.view = newView;
-          window.dispatchEvent(new CustomEvent('mobile-view-changed', {
-            detail: { view: newView }
-          }));
-        }
+          window.dispatchEvent(
+            new CustomEvent("mobile-view-changed", {
+              detail: { view: newView },
+            }),
+          );
+        },
       };
     }
 
@@ -401,10 +457,71 @@
         q: "",
         cards: [],
         index: new Map(),
+        cityMap: new Map(),
         activeCard: null,
         lastReadMoreButton: null,
         initializedDelegates: false,
         dataLoaded: false,
+        currentSort: "date",
+        currentCity: "",
+        paCities: [
+          "Aliquippa",
+          "Allentown",
+          "Altoona",
+          "Arnold",
+          "Beaver Falls",
+          "Bethlehem",
+          "Bradford",
+          "Butler",
+          "Carbondale",
+          "Chester",
+          "Clairton",
+          "Coatesville",
+          "Connellsville",
+          "Corry",
+          "DuBois",
+          "Duquesne",
+          "Easton",
+          "Erie",
+          "Farrell",
+          "Franklin",
+          "Greensburg",
+          "Harrisburg",
+          "Hazleton",
+          "Hermitage",
+          "Jeannette",
+          "Johnstown",
+          "Lancaster",
+          "Lebanon",
+          "Lock Haven",
+          "Lower Burrell",
+          "McKeesport",
+          "Meadville",
+          "Monessen",
+          "Monongahela",
+          "Nanticoke",
+          "New Castle",
+          "New Kensington",
+          "Oil City",
+          "Parker",
+          "Philadelphia",
+          "Pittsburgh",
+          "Pittston",
+          "Pottsville",
+          "Reading",
+          "Scranton",
+          "Shamokin",
+          "Sharon",
+          "St. Marys",
+          "Sunbury",
+          "Titusville",
+          "Uniontown",
+          "Warren",
+          "Washington",
+          "Wilkes-Barre",
+          "Williamsport",
+          "York",
+        ],
 
         init() {
           const noResultsEl = document.getElementById("no-results");
@@ -412,7 +529,7 @@
             noResultsEl.classList.add("hidden");
           }
 
-          window.addEventListener('inspections-data-ready', () => {
+          window.addEventListener("inspections-data-ready", () => {
             this.dataLoaded = true;
             this.refreshCards();
             if (noResultsEl) {
@@ -420,11 +537,21 @@
             }
           });
 
-          if (typeof window.inspectionsDataLoaded === 'function' && window.inspectionsDataLoaded()) {
+          if (
+            typeof window.inspectionsDataLoaded === "function" &&
+            window.inspectionsDataLoaded()
+          ) {
             this.dataLoaded = true;
           }
 
           this.refreshCards();
+
+          this.initSortListeners();
+
+          this.initFilterListeners();
+
+          this.initCityTypeahead();
+
           if (!this.initializedDelegates) {
             document.addEventListener("click", (e) => {
               const readMoreBtn = e.target.closest(
@@ -452,6 +579,100 @@
           }
         },
 
+        initSortListeners() {
+          const sortRadios = document.querySelectorAll('input[name="sort"]');
+          sortRadios.forEach((radio) => {
+            radio.addEventListener("change", (e) => {
+              if (e.target.checked) {
+                this.currentSort = e.target.value;
+                this.sortCards();
+              }
+            });
+          });
+        },
+
+        initFilterListeners() {
+          const cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.addEventListener("change", (e) => {
+              this.currentCity = e.target.value;
+              this.applyFilters();
+            });
+          }
+
+          const clearButtons = document.querySelectorAll('[class*="Clear"]');
+          clearButtons.forEach((btn) => {
+            if (btn.textContent.trim().toLowerCase().includes("clear")) {
+              btn.addEventListener("click", () => {
+                this.clearFilters();
+              });
+            }
+          });
+        },
+
+        initCityTypeahead() {
+          const cityFilter = document.getElementById("city-filter");
+          if (!cityFilter) return;
+
+          let typeaheadBuffer = "";
+          let typeaheadTimeout = null;
+
+          cityFilter.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+              typeaheadBuffer = "";
+              return;
+            }
+
+            if (e.key.length > 1 && e.key !== "Backspace") return;
+
+            if (e.key === "Backspace") {
+              typeaheadBuffer = typeaheadBuffer.slice(0, -1);
+            } else if (e.key.length === 1) {
+              typeaheadBuffer += e.key.toLowerCase();
+            }
+
+            clearTimeout(typeaheadTimeout);
+            typeaheadTimeout = setTimeout(() => {
+              typeaheadBuffer = "";
+            }, 1000);
+
+            if (typeaheadBuffer) {
+              const options = Array.from(cityFilter.options);
+              const match = options.find((opt) =>
+                opt.text.toLowerCase().startsWith(typeaheadBuffer),
+              );
+
+              if (match) {
+                cityFilter.value = match.value;
+                cityFilter.dispatchEvent(new Event("input", { bubbles: true }));
+              }
+            }
+          });
+
+          cityFilter.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              cityFilter.dispatchEvent(new Event("change", { bubbles: true }));
+              typeaheadBuffer = "";
+            }
+          });
+        },
+
+        clearFilters() {
+          const cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.value = "";
+            this.currentCity = "";
+          }
+
+          const cuisineFilter = document.getElementById("cuisine-filter");
+          if (cuisineFilter) {
+            cuisineFilter.value = "";
+          }
+
+          this.applyFilters();
+        },
+
         refreshCards() {
           this.cards = Array.from(
             document.querySelectorAll('[data-card="inspection"]'),
@@ -472,10 +693,115 @@
               .trim();
           this.cards.forEach((card) => {
             this.index.set(card, norm(card.dataset.index || card.textContent));
+
+            const city = this.extractCity(card);
+            this.cityMap.set(card, city);
           });
           if (this.dataLoaded) {
-            this.applySearch();
+            this.sortCards();
+            this.applyFilters();
           }
+        },
+
+        extractCity(card) {
+          if (card.dataset.city) {
+            return card.dataset.city.trim();
+          }
+
+          const spans = card.querySelectorAll(".list-content span");
+          for (const span of spans) {
+            const text = span.textContent;
+            if (text.includes(",")) {
+              const parts = text.split(",");
+              if (parts.length >= 2) {
+                const potentialCity = parts[parts.length - 1].trim();
+                const match = this.paCities.find((city) =>
+                  potentialCity.toLowerCase().includes(city.toLowerCase()),
+                );
+                if (match) {
+                  return match;
+                }
+              }
+            }
+          }
+
+          return "";
+        },
+
+        getCityCategory(city) {
+          if (!city) return "Other";
+
+          const normalizedCity = city.trim();
+          const match = this.paCities.find(
+            (paCity) =>
+              normalizedCity.toLowerCase() === paCity.toLowerCase() ||
+              normalizedCity.toLowerCase().includes(paCity.toLowerCase()),
+          );
+
+          return match || "Other";
+        },
+
+        sortCards() {
+          if (this.cards.length === 0) return;
+
+          const container = this.cards[0].parentElement;
+          if (!container) return;
+
+          const sortedCards = [...this.cards];
+
+          switch (this.currentSort) {
+            case "date":
+              sortedCards.sort((a, b) => {
+                const dateA = this.getInspectionDate(a);
+                const dateB = this.getInspectionDate(b);
+                return dateB - dateA;
+              });
+              break;
+
+            case "alphabetical":
+              sortedCards.sort((a, b) => {
+                const nameA = this.getFacilityName(a).toLowerCase();
+                const nameB = this.getFacilityName(b).toLowerCase();
+                return nameA.localeCompare(nameB);
+              });
+              break;
+
+            case "high-risk":
+              // Placeholder for future high-risk sorting
+              // For now, keep current order
+              break;
+          }
+
+          sortedCards.forEach((card) => {
+            container.appendChild(card);
+          });
+
+          this.cards = sortedCards;
+        },
+
+        getInspectionDate(card) {
+          const dateText = card.querySelector("[data-date]")?.dataset.date;
+          if (dateText) {
+            return new Date(dateText);
+          }
+
+          const spans = card.querySelectorAll(".list-content span");
+          for (const span of spans) {
+            const text = span.textContent;
+            if (text.includes("Last inspection:")) {
+              const dateMatch = text.match(/Last inspection:\s*(.+)/i);
+              if (dateMatch && dateMatch[1]) {
+                return new Date(dateMatch[1].trim());
+              }
+            }
+          }
+
+          return new Date(0);
+        },
+
+        getFacilityName(card) {
+          const h2 = card.querySelector("h2");
+          return h2 ? h2.textContent.trim() : "";
         },
 
         norm(s) {
@@ -485,12 +811,15 @@
             .replace(/\s+/g, " ")
             .trim();
         },
+
         syncHidden(card) {
           const hide =
             card.classList.contains("hidden-by-search") ||
+            card.classList.contains("hidden-by-city") ||
             card.classList.contains("hidden-by-detail");
           card.classList.toggle("hidden", hide);
         },
+
         escapeHTML(s) {
           return String(s).replace(
             /[&<>"']/g,
@@ -507,9 +836,14 @@
 
         doSearch(val) {
           if (typeof val === "string") this.q = val;
-          this.applySearch();
+          this.applyFilters();
         },
+
         applySearch() {
+          this.applyFilters();
+        },
+
+        applyFilters() {
           if (!this.dataLoaded || this.cards.length === 0) {
             const noResultsEl = document.getElementById("no-results");
             if (noResultsEl) {
@@ -520,12 +854,28 @@
 
           const needle = this.norm(this.q);
           let visible = 0;
+
           this.cards.forEach((card) => {
-            const hit = !needle || this.index.get(card).includes(needle);
-            card.classList.toggle("hidden-by-search", !hit);
+            const searchHit = !needle || this.index.get(card).includes(needle);
+            card.classList.toggle("hidden-by-search", !searchHit);
+
+            let cityHit = true;
+            if (this.currentCity) {
+              const cardCity = this.cityMap.get(card) || "";
+              const cardCityCategory = this.getCityCategory(cardCity);
+
+              if (this.currentCity === "Other") {
+                cityHit = cardCityCategory === "Other";
+              } else {
+                cityHit = cardCityCategory === this.currentCity;
+              }
+            }
+            card.classList.toggle("hidden-by-city", !cityHit);
+
             this.syncHidden(card);
             if (!card.classList.contains("hidden")) visible++;
           });
+
           const noResultsEl = document.getElementById("no-results");
           if (noResultsEl)
             noResultsEl.classList.toggle("hidden", visible !== 0);
@@ -556,98 +906,98 @@
           const items =
             violations.map((v) => this.renderViolationItem(v)).join("") ||
             `
-            <li class="space-y-2">
-              <div class="flex items-start pt-3 gap-2">
-                <svg class="mt-1 h-5 w-5 fill-election-green" aria-hidden="true">
-                  {{ partial "helper/svg.html" "circle-check" }}
-                </svg>
-                <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
-                  No violations reported.
-                </h4>
-              </div>
-            </li>`;
+        <li class="space-y-2">
+          <div class="flex items-start pt-3 gap-2">
+            <svg class="mt-1 h-5 w-5 fill-election-green" aria-hidden="true">
+              <use href="#circle-check"></use>
+            </svg>
+            <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
+              No violations reported.
+            </h4>
+          </div>
+        </li>`;
 
           detail.innerHTML = `
-            <div>
-              <button
-                type="button"
-                class="inline-flex items-center font-sans font-bold text-black-9 hover:text-yellow-3"
-                data-action="back-to-results"
-                aria-label="Back to results"
-              >
-                <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true">
-                  {{ partial "helper/svg.html" "chevron-left" }}
-                </svg>
-                <span class="ml-1.5">Back</span>
-              </button>
+        <div>
+          <button
+            type="button"
+            class="inline-flex items-center font-sans font-bold text-black-9 hover:text-yellow-3"
+            data-action="back-to-results"
+            aria-label="Back to results"
+          >
+            <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true">
+              <use href="#chevron-left"></use>
+            </svg>
+            <span class="ml-1.5">Back</span>
+          </button>
 
-              <div class="flex items-start justify-between gap-6 py-4 pr-4 sm:pr-6">
-                <div class="min-w-0">
-                  <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
-                  <div class="mt-2 space-y-1 text-g-6">
-                    ${
-                      location
-                        ? `
-                      <div class="flex items-center gap-1">
-                        <svg class="h-4 w-4 flex-shrink-0 fill-g-5" aria-hidden="true">
-                          {{ partial "helper/svg.html" "map-pin" }}
-                        </svg>
-                        <span>${this.escapeHTML(location)}</span>
-                      </div>
-                    `
-                        : ""
-                    }
+          <div class="flex items-start justify-between gap-6 py-4 pr-4 sm:pr-6">
+            <div class="min-w-0">
+              <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
+              <div class="mt-2 space-y-1 text-g-6">
+                ${
+                  location
+                    ? `
+                  <div class="flex items-center gap-1">
+                    <svg class="h-4 w-4 flex-shrink-0 fill-g-5" aria-hidden="true">
+                      <use href="#map-pin"></use>
+                    </svg>
+                    <span>${this.escapeHTML(location)}</span>
                   </div>
-                  <div class="mt-3">
-                    <button class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3">
-                      <span>Get alerts</span>
-                      <svg class="h-5 w-5 fill-yellow-9" aria-hidden="true">
-                        {{ partial "helper/svg.html" "bell" }}
-                      </svg>
-                    </button>
-                    <p class="mt-2 text-sm font-sans text-g-6">Receive an email when new reports are available for this facility.</p>
-                  </div>
-                </div>
-
-                <div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
-                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share via Email">
-                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-                      {{ partial "helper/svg.html" "envelope" }}
-                    </svg>
-                  </button>
-                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on Facebook">
-                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-                      {{ partial "helper/svg.html" "fb" }}
-                    </svg>
-                  </button>
-                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on X">
-                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-                      {{ partial "helper/svg.html" "twitter" }}
-                    </svg>
-                  </button>
-                  <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Copy link">
-                    <svg class="h-5 w-5 fill-white" aria-hidden="true">
-                      {{ partial "helper/svg.html" "share" }}
-                    </svg>
-                  </button>
-                </div>
+                `
+                    : ""
+                }
               </div>
-
-              <section aria-labelledby="violations-title" class="space-y-3">
-                <ul class="space-y-3">${items}</ul>
-              </section>
-
-              <div class="pt-5">
-                <a href="#"
-                   class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
-                  <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true">
-                    {{ partial "helper/svg.html" "link" }}
+              <div class="mt-3">
+                <button class="inline-flex items-center gap-2 rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-2 font-sans font-semibold text-yellow-9 hover:bg-yellow-3">
+                  <span>Get alerts</span>
+                  <svg class="h-5 w-5 fill-yellow-9" aria-hidden="true">
+                    <use href="#bell"></use>
                   </svg>
-                  <span>Read the full report</span>
-                </a>
+                </button>
+                <p class="mt-2 text-sm font-sans text-g-6">Receive an email when new reports are available for this facility.</p>
               </div>
             </div>
-          `;
+
+            <div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
+              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share via Email">
+                <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                  <use href="#envelope"></use>
+                </svg>
+              </button>
+              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on Facebook">
+                <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                  <use href="#fb"></use>
+                </svg>
+              </button>
+              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on X">
+                <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                  <use href="#twitter"></use>
+                </svg>
+              </button>
+              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Copy link">
+                <svg class="h-5 w-5 fill-white" aria-hidden="true">
+                  <use href="#share"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <section aria-labelledby="violations-title" class="space-y-3">
+            <ul class="space-y-3">${items}</ul>
+          </section>
+
+          <div class="pt-5">
+            <a href="#"
+               class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+              <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true">
+                <use href="#link"></use>
+              </svg>
+              <span>Read the full report</span>
+            </a>
+          </div>
+        </div>
+      `;
           listContent?.classList.add("hidden");
           detail
             .querySelector('[data-action="back-to-results"]')
@@ -666,7 +1016,7 @@
             c.classList.remove("hidden-by-detail");
             this.syncHidden(c);
           });
-          this.applySearch();
+          this.applyFilters();
           this.lastReadMoreButton?.focus({ preventScroll: true });
           this.activeCard = null;
         },
@@ -686,30 +1036,30 @@
           const before = words.join(" ");
 
           return `
-            <li class="space-y-2">
-              <div class="flex items-start pt-5 gap-2">
-                <svg class="mt-1 h-5 w-5 ${iconFill}" aria-hidden="true">
-                  {{ partial "helper/svg.html" "triangle-exclamation" }}
+        <li class="space-y-2">
+          <div class="flex items-start pt-5 gap-2">
+            <svg class="mt-1 h-5 w-5 ${iconFill}" aria-hidden="true">
+              <use href="#triangle-exclamation"></use>
+            </svg>
+            <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
+              ${before}
+              <span class="inline-flex items-center gap-1">
+                ${lastWord}
+                <svg class="h-5 w-5 ml-1 color-red" aria-hidden="true">
+                  <use href="#circle-question"></use>
                 </svg>
-                <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
-                  ${before}
-                  <span class="inline-flex items-center gap-1">
-                    ${lastWord}
-                    <svg class="h-5 w-5 ml-1 color-red" aria-hidden="true">
-                      {{ partial "helper/svg.html" "circle-question" }}
-                    </svg>
-                  </span>
-                </h4>
-              </div>
-              ${
-                comment
-                  ? `
-                <p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
-                  ${this.escapeHTML(comment)}
-                </p>`
-                  : ""
-              }
-            </li>`;
+              </span>
+            </h4>
+          </div>
+          ${
+            comment
+              ? `
+            <p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
+              ${this.escapeHTML(comment)}
+            </p>`
+              : ""
+          }
+        </li>`;
         },
 
         readViolations(card) {
@@ -782,128 +1132,127 @@
       };
     }
 
-function customScroll() {
-  return {
-    thumbTop: 0,
-    thumbH: 32,
-    thumbStyle: "height:32px; transform:translateY(0);",
-    dragging: false,
-    dragStartY: 0,
-    dragStartTop: 0,
-    ro: null,
-    mo: null,
+    function customScroll() {
+      return {
+        thumbTop: 0,
+        thumbH: 32,
+        thumbStyle: "height:32px; transform:translateY(0);",
+        dragging: false,
+        dragStartY: 0,
+        dragStartTop: 0,
+        ro: null,
+        mo: null,
 
-    init() {
-      this.update();
-      this.onScroll();
+        init() {
+          this.update();
+          this.onScroll();
 
-      this.ro = new ResizeObserver(() => this.update());
-      this.ro.observe(this.$refs.viewport);
+          this.ro = new ResizeObserver(() => this.update());
+          this.ro.observe(this.$refs.viewport);
 
-      this.mo = new MutationObserver(() => {
-        requestAnimationFrame(() => this.update());
-      });
+          this.mo = new MutationObserver(() => {
+            requestAnimationFrame(() => this.update());
+          });
 
-      this.mo.observe(this.$refs.viewport, {
-        childList: true,
-        subtree: true,
-        characterData: true
-      });
+          this.mo.observe(this.$refs.viewport, {
+            childList: true,
+            subtree: true,
+            characterData: true,
+          });
 
-      window.addEventListener('inspections-data-ready', () => {
-        setTimeout(() => this.update(), 100);
-      });
+          window.addEventListener("inspections-data-ready", () => {
+            setTimeout(() => this.update(), 100);
+          });
 
-      document.addEventListener('click', (e) => {
-        const isReadMore = e.target.closest('[aria-label="Read more about this inspection"]');
-        const isBack = e.target.closest('[data-action="back-to-results"]');
-        if (isReadMore || isBack) {
-          setTimeout(() => this.update(), 50);
-        }
-      });
-    },
+          document.addEventListener("click", (e) => {
+            const isReadMore = e.target.closest(
+              '[aria-label="Read more about this inspection"]',
+            );
+            const isBack = e.target.closest('[data-action="back-to-results"]');
+            if (isReadMore || isBack) {
+              setTimeout(() => this.update(), 50);
+            }
+          });
+        },
 
-    update() {
-      const vp = this.$refs.viewport;
-      const track = this.$refs.track;
-      if (!vp || !track) return;
+        update() {
+          const vp = this.$refs.viewport;
+          const track = this.$refs.track;
+          if (!vp || !track) return;
 
-      const trackH = track.clientHeight;
-      const vh = vp.clientHeight;
-      const sh = vp.scrollHeight;
+          const trackH = track.clientHeight;
+          const vh = vp.clientHeight;
+          const sh = vp.scrollHeight;
 
-      if (sh <= vh) {
-        this.thumbH = 0;
-        this.thumbStyle = "height:0; transform:translateY(0);";
-        return;
-      }
+          if (sh <= vh) {
+            this.thumbH = 0;
+            this.thumbStyle = "height:0; transform:translateY(0);";
+            return;
+          }
 
-      const minThumb = 24;
-      const ratio = vh / sh;
-      this.thumbH = Math.max(minThumb, Math.round(trackH * ratio));
-      this.onScroll();
-    },
+          const minThumb = 24;
+          const ratio = vh / sh;
+          this.thumbH = Math.max(minThumb, Math.round(trackH * ratio));
+          this.onScroll();
+        },
 
-    onScroll() {
-      const vp = this.$refs.viewport;
-      const track = this.$refs.track;
-      if (!vp || !track) return;
+        onScroll() {
+          const vp = this.$refs.viewport;
+          const track = this.$refs.track;
+          if (!vp || !track) return;
 
-      const trackH = track.clientHeight;
-      const maxThumbTop = Math.max(0, trackH - this.thumbH);
-      const denom = Math.max(1, vp.scrollHeight - vp.clientHeight);
-      const pct = vp.scrollTop / denom;
-      this.thumbTop = Math.round(maxThumbTop * pct);
-      this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
-    },
+          const trackH = track.clientHeight;
+          const maxThumbTop = Math.max(0, trackH - this.thumbH);
+          const denom = Math.max(1, vp.scrollHeight - vp.clientHeight);
+          const pct = vp.scrollTop / denom;
+          this.thumbTop = Math.round(maxThumbTop * pct);
+          this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
+        },
 
-    startDrag(e) {
-      if (!e.target || e.target !== this.$refs.thumb) return;
-      this.dragging = true;
-      this.dragStartY = e.clientY;
-      this.dragStartTop = this.thumbTop;
-      const move = (ev) => this.onDrag(ev);
-      const up = () => this.stopDrag(move, up);
-      document.addEventListener("mousemove", move);
-      document.addEventListener("mouseup", up, { once: true });
-    },
+        startDrag(e) {
+          if (!e.target || e.target !== this.$refs.thumb) return;
+          this.dragging = true;
+          this.dragStartY = e.clientY;
+          this.dragStartTop = this.thumbTop;
+          const move = (ev) => this.onDrag(ev);
+          const up = () => this.stopDrag(move, up);
+          document.addEventListener("mousemove", move);
+          document.addEventListener("mouseup", up, { once: true });
+        },
 
-    onDrag(ev) {
-      if (!this.dragging) return;
-      const track = this.$refs.track;
-      const trackH = track.clientHeight;
-      const delta = ev.clientY - this.dragStartY;
-      const nextTop = Math.min(
-        Math.max(0, this.dragStartTop + delta),
-        trackH - this.thumbH,
-      );
-      this.thumbTop = nextTop;
-      const vp = this.$refs.viewport;
-      const ratio = nextTop / Math.max(1, trackH - this.thumbH);
-      vp.scrollTop =
-        ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
-      this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
-    },
+        onDrag(ev) {
+          if (!this.dragging) return;
+          const track = this.$refs.track;
+          const trackH = track.clientHeight;
+          const delta = ev.clientY - this.dragStartY;
+          const nextTop = Math.min(
+            Math.max(0, this.dragStartTop + delta),
+            trackH - this.thumbH,
+          );
+          this.thumbTop = nextTop;
+          const vp = this.$refs.viewport;
+          const ratio = nextTop / Math.max(1, trackH - this.thumbH);
+          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
+          this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
+        },
 
-    stopDrag(move, up) {
-      this.dragging = false;
-      document.removeEventListener("mousemove", move);
-      document.removeEventListener("mouseup", up);
-    },
+        stopDrag(move, up) {
+          this.dragging = false;
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        },
 
-    trackJump(e) {
-      const track = this.$refs.track;
-      const rect = track.getBoundingClientRect();
-      const y = e.clientY - rect.top - this.thumbH / 2;
-      const trackH = track.clientHeight;
-      const top = Math.min(Math.max(0, y), trackH - this.thumbH);
-      const ratio = top / Math.max(1, trackH - this.thumbH);
-      const vp = this.$refs.viewport;
-      vp.scrollTop =
-        ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
-    },
-  };
-}
-
+        trackJump(e) {
+          const track = this.$refs.track;
+          const rect = track.getBoundingClientRect();
+          const y = e.clientY - rect.top - this.thumbH / 2;
+          const trackH = track.clientHeight;
+          const top = Math.min(Math.max(0, y), trackH - this.thumbH);
+          const ratio = top / Math.max(1, trackH - this.thumbH);
+          const vp = this.$refs.viewport;
+          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
+        },
+      };
+    }
   </script>
 {{ end }}
