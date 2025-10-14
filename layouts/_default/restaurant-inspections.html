@@ -275,9 +275,11 @@
 
           <button
             @click="
-            document.getElementById('cuisine-filter').value = '';
-            document.getElementById('city-filter').value = '';
-          "
+          document.getElementById('cuisine-filter').value = '';
+          document.getElementById('city-filter').value = '';
+          currentCity = '';
+          applyFilters();
+        "
             class="mt-5 w-full rounded border-2 border-red-7 bg-red-5 px-4 py-2 font-sans text-base font-semibold text-white transition-colors duration-200 hover:bg-red-7 hover:text-white"
           >
             Clear
