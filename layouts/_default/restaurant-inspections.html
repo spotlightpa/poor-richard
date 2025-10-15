@@ -547,11 +547,15 @@
           }
 
           this.refreshCards();
-
           this.initSortListeners();
           this.initFilterListeners();
           this.initCityTypeahead();
           this.initMapMarkers();
+
+          window.addEventListener("inspections-cards-changed", () => {
+            this.refreshCards();
+            this.applyFilters();
+          });
 
           if (!this.initializedDelegates) {
             document.addEventListener("click", (e) => {
@@ -584,9 +588,7 @@
           window.addEventListener("inspections-markers-ready", (event) => {
             const markers = event.detail?.markers || [];
             window.dispatchEvent(
-              new CustomEvent("update-map-markers", {
-                detail: { markers },
-              }),
+              new CustomEvent("update-map-markers", { detail: { markers } }),
             );
           });
         },
@@ -652,7 +654,6 @@
               const match = options.find((opt) =>
                 opt.text.toLowerCase().startsWith(typeaheadBuffer),
               );
-
               if (match) {
                 cityFilter.value = match.value;
                 cityFilter.dispatchEvent(new Event("input", { bubbles: true }));
@@ -675,12 +676,10 @@
             cityFilter.value = "";
             this.currentCity = "";
           }
-
           const cuisineFilter = document.getElementById("cuisine-filter");
           if (cuisineFilter) {
             cuisineFilter.value = "";
           }
-
           this.applyFilters();
         },
 
@@ -688,7 +687,6 @@
           this.cards = Array.from(
             document.querySelectorAll('[data-card="inspection"]'),
           );
-
           this.cards.forEach((card) => {
             if (!card.querySelector(".list-content")) {
               const wrap = document.createElement("div");
@@ -697,20 +695,17 @@
               card.appendChild(wrap);
             }
           });
-
           const norm = (s) =>
             (s || "")
               .toLowerCase()
               .replace(/[^a-z0-9\s]/g, "")
               .replace(/\s+/g, " ")
               .trim();
-
           this.cards.forEach((card) => {
             this.index.set(card, norm(card.dataset.index || card.textContent));
             const city = this.extractCity(card);
             this.cityMap.set(card, city);
           });
-
           if (this.dataLoaded) {
             this.sortCards();
             this.applyFilters();
@@ -718,10 +713,7 @@
         },
 
         extractCity(card) {
-          if (card.dataset.city) {
-            return card.dataset.city.trim();
-          }
-
+          if (card.dataset.city) return card.dataset.city.trim();
           const spans = card.querySelectorAll(".list-content span");
           for (const span of spans) {
             const text = span.textContent;
@@ -732,13 +724,10 @@
                 const match = this.paCities.find((city) =>
                   potentialCity.toLowerCase().includes(city.toLowerCase()),
                 );
-                if (match) {
-                  return match;
-                }
+                if (match) return match;
               }
             }
           }
-
           return "";
         },
 
@@ -755,7 +744,6 @@
 
         sortCards() {
           if (this.cards.length === 0) return;
-
           const groups = new Map();
           this.cards.forEach((card) => {
             const parent = card.parentElement;
@@ -766,7 +754,6 @@
 
           groups.forEach((cards, container) => {
             const sorted = [...cards];
-
             switch (this.currentSort) {
               case "date":
                 sorted.sort(
@@ -774,7 +761,6 @@
                     this.getInspectionDate(b) - this.getInspectionDate(a),
                 );
                 break;
-
               case "alphabetical":
                 sorted.sort((a, b) => {
                   const nameA = this.getFacilityName(a).toLowerCase();
@@ -782,29 +768,22 @@
                   return nameA.localeCompare(nameB);
                 });
                 break;
-
               case "high-risk":
                 break;
             }
-
-            sorted.forEach((card) => {
-              container.appendChild(card);
-            });
+            sorted.forEach((card) => container.appendChild(card));
           });
         },
 
         getInspectionDate(card) {
           const attr = card.getAttribute("data-date");
           if (attr) return new Date(attr);
-
           const spans = card.querySelectorAll(".list-content span");
           for (const span of spans) {
             const text = span.textContent || "";
             if (text.includes("Last inspection:")) {
               const m = text.match(/Last inspection:\s*(.+)/i);
-              if (m && m[1]) {
-                return new Date(m[1].trim());
-              }
+              if (m && m[1]) return new Date(m[1].trim());
             }
           }
           return new Date(0);
@@ -857,12 +836,9 @@
         applyFilters() {
           if (!this.dataLoaded || this.cards.length === 0) {
             const noResultsEl = document.getElementById("no-results");
-            if (noResultsEl) {
-              noResultsEl.classList.add("hidden");
-            }
+            if (noResultsEl) noResultsEl.classList.add("hidden");
             return;
           }
-
           const needle = this.norm(this.q);
           let visible = 0;
 
@@ -874,7 +850,6 @@
             if (this.currentCity) {
               const cardCity = this.cityMap.get(card) || "";
               const cardCityCategory = this.getCityCategory(cardCity);
-
               if (this.currentCity === "Other") {
                 cityHit = cardCityCategory === "Other";
               } else {
@@ -898,7 +873,6 @@
             else c.classList.remove("hidden-by-detail");
             this.syncHidden(c);
           });
-
           const body = card;
           const listContent = body.querySelector(".list-content");
           let detail = body.querySelector(".detail-content");
@@ -972,22 +946,22 @@
             </div>
 
             <div class="shrink-0 flex flex-col items-center gap-2 sm:flex mt-[-4px]">
-              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share via Email">
+              <button class="rounded-full p-2 bg-[#000000]" aria-label="Share via Email">
                 <svg class="h-5 w-5 fill-white" aria-hidden="true">
                   <use href="#envelope"></use>
                 </svg>
               </button>
-              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on Facebook">
+              <button class="rounded-full p-2 bg-[#000000]" aria-label="Share on Facebook">
                 <svg class="h-5 w-5 fill-white" aria-hidden="true">
                   <use href="#fb"></use>
                 </svg>
               </button>
-              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Share on X">
+              <button class="rounded-full p-2 bg-[#000000]" aria-label="Share on X">
                 <svg class="h-5 w-5 fill-white" aria-hidden="true">
                   <use href="#twitter"></use>
                 </svg>
               </button>
-              <button class="rounded-full p-2 bg-[#000000] hover:bg-[#333333]" aria-label="Copy link">
+              <button class="rounded-full p-2 bg-[#000000]" aria-label="Copy link">
                 <svg class="h-5 w-5 fill-white" aria-hidden="true">
                   <use href="#share"></use>
                 </svg>
@@ -1035,18 +1009,15 @@
 
         renderViolationItem(v) {
           const { level = "low", title = "", comment = "" } = v;
-
           const iconFill =
             level === "high"
               ? "fill-red-7"
               : level === "moderate"
                 ? "fill-yellow-4"
                 : "fill-blue-6";
-
           const words = title.split(/\s+/);
           const lastWord = words.pop();
           const before = words.join(" ");
-
           return `
         <li class="space-y-2">
           <div class="flex items-start pt-5 gap-2">

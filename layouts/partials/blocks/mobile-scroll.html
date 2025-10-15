@@ -28,205 +28,284 @@
     <div class="mt-3 space-y-3 bg-g-3 pb-3">
       {{ partial "s3-data-loader.html" . }}
 
-      <script>
-        (function () {
-          window.addEventListener("inspections-data-ready", function (event) {
-            const allData = event.detail.data;
-            const testData = allData.slice(0, 10);
-            renderInspectionCards(testData);
-          });
+<script>
+  (function () {
+    var CHUNK = 10;
+    var all = [];
+    var loaded = 0;
+    var rendering = false;
 
-          function renderInspectionCards(data) {
-            const mountPoints = document.querySelectorAll(".inspections-mount");
-            if (mountPoints.length === 0) return;
+    window.__inspectionsMarkers = window.__inspectionsMarkers || [];
 
-            mountPoints.forEach((mountPoint) => {
-              mountPoint.innerHTML = "";
-              data.forEach((row, index) => {
-                mountPoint.appendChild(createInspectionCard(row, index));
-              });
-            });
+    window.addEventListener("inspections-data-ready", function (event) {
+      all = event.detail && event.detail.data ? event.detail.data : [];
+      loaded = 0;
+      rendering = false;
+      window.__inspectionsMarkers = [];
+      clearMounts();
+      renderMore(CHUNK);
+      var vp = document.querySelector('[aria-label="Inspection results list"]');
+      if (vp) vp.addEventListener("scroll", maybeLoadMore);
+      window.addEventListener("scroll", maybeLoadMore);
+      window.addEventListener("resize", maybeLoadMore);
+      window.addEventListener("mobile-view-changed", function (e) {
+        var view = e.detail && e.detail.view;
+        if (view === "list") {
+          maybeLoadMore();
+        } else if (view === "map") {
+          syncMarkers();
+        }
+      });
+    });
 
-            createMapMarkers(data);
-          }
+    function getMountPoints() {
+      return Array.from(document.querySelectorAll(".inspections-mount"));
+    }
 
-          function createInspectionCard(data, index) {
-            const facilityName = data.facility || "Facility";
-            const address = data.address || "";
-            const city = data.city || "";
-            const inspectionDate = data.inspection_date || "";
-            const uniqueId = `inspection-${index}`;
+    function clearMounts() {
+      getMountPoints().forEach(function (m) {
+        m.innerHTML = "";
+      });
+    }
 
-            let addressLine = "";
-            if (address && city) addressLine = `${address}, ${city}`;
-            else if (address) addressLine = address;
-            else if (city) addressLine = city;
+    function renderMore(count) {
+      if (rendering) return;
+      if (loaded >= all.length) return;
+      rendering = true;
+      var start = loaded;
+      var end = Math.min(start + count, all.length);
+      var slice = all.slice(start, end);
+      appendCards(slice, start);
+      var newMarkers = rowsToMarkers(slice, start);
+      window.__inspectionsMarkers = window.__inspectionsMarkers.concat(newMarkers);
+      syncMarkers();
+      loaded = end;
+      rendering = false;
+      window.dispatchEvent(new CustomEvent("inspections-cards-changed"));
+    }
 
-            const searchIndex = [facilityName, address, city, inspectionDate]
-              .join(" ")
-              .toLowerCase();
+    function appendCards(rows, startIndex) {
+      var mounts = getMountPoints();
+      if (mounts.length === 0) return;
+      mounts.forEach(function (mount) {
+        rows.forEach(function (row, i) {
+          mount.appendChild(createInspectionCard(row, startIndex + i));
+        });
+      });
+    }
 
-            const card = document.createElement("div");
-            card.setAttribute("data-card", "inspection");
-            card.setAttribute("data-index", searchIndex);
-            card.setAttribute("data-date", inspectionDate);
-            card.setAttribute("data-city", city);
-            card.setAttribute("data-inspection-id", uniqueId);
-            card.setAttribute("id", uniqueId);
-
-            if (data.Latitude && data.Longitude) {
-              card.setAttribute("data-lat", data.Latitude);
-              card.setAttribute("data-lon", data.Longitude);
-            }
-
-            card.className = "w-full space-y-3 bg-white p-8 shadow md:p-10";
-
-            const addressRow = addressLine
-              ? `
-                <div class="flex items-center gap-1">
-                  <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                    {{ partial "helper/svg.html" "location" }}
-                  </svg>
-                  <span>${escapeHTML(addressLine)}</span>
-                </div>
-              `
-              : "";
-
-            const dateRow = inspectionDate
-              ? `
-                <div class="flex items-center gap-1">
-                  <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
-                    {{ partial "helper/svg.html" "calendar-day" }}
-                  </svg>
-                  <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
-                </div>
-              `
-              : "";
-
-            card.innerHTML = `
-              <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
-              <div class="space-y-1 text-g-6">
-                ${addressRow}
-                ${dateRow}
-              </div>
-              <ul class="mt-2 space-y-2 text-lg font-semibold">
-                <li class="mt-4 flex items-start">
-                  <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  <span>1 <span>high risk violation</span></span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="mr-2 mt-1 h-5 w-5 text-yellow fill-current stroke-current">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  <span>1 <span>moderate risk violation</span></span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="mr-2 mt-1 h-5 w-5 text-blue fill-current stroke-current">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  <span>1 <span>low risk violation</span></span>
-                </li>
-              </ul>
-              <div class="pt-2">
+    function rowsToMarkers(rows, startIndex) {
+      return rows
+        .map(function (row, i) {
+          var lat = parseFloat(row.Latitude);
+          var lon = parseFloat(row.Longitude);
+          if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
+          var facilityName = escapeHTML(row.facility || "Facility");
+          var address = escapeHTML(row.address || "");
+          var city = escapeHTML(row.city || "");
+          var id = "inspection-" + (startIndex + i);
+          return {
+            lon: lon,
+            lat: lat,
+            color: "#c0392b",
+            inspectionId: id,
+            popupHTML: `
+              <div class="p-2">
+                <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
+                <p class="text-xs text-gray-600">${address}${address && city ? ", " : ""}${city}</p>
                 <button
-                  class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
-                  aria-label="Read more about this inspection"
-                  data-read-more="${uniqueId}"
+                  class="mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold"
+                  onclick="window.dispatchEvent(new CustomEvent('marker-click', {detail: {id: '${id}'}}))"
                 >
-                  <span class="mx-auto">Read more</span>
-                  <svg class="h-5 w-5 fill-yellow-9">
-                    {{ partial "helper/svg.html" "chevron-right" }}
-                  </svg>
+                  View details →
                 </button>
               </div>
-              <ul class="violations-data" hidden>
-                <li data-level="high">
-                  <h4>Food Sourcing, Handling, & Storage</h4>
-                  <p>Some kitchen equipment was dirty and needs to be cleaned to prevent contamination.</p>
-                </li>
-                <li data-level="moderate">
-                  <h4>Employee Health & Hygiene</h4>
-                  <p>An employee did not wash their hands properly, which can spread germs to food.</p>
-                </li>
-                <li data-level="low">
-                  <h4>Facility Management</h4>
-                  <p>Minor maintenance issue needs attention.</p>
-                </li>
-              </ul>
-            `;
+            `,
+          };
+        })
+        .filter(Boolean);
+    }
 
-            return card;
-          }
+    function syncMarkers() {
+      window.dispatchEvent(
+        new CustomEvent("update-map-markers", {
+          detail: { markers: window.__inspectionsMarkers },
+        }),
+      );
+    }
 
-function createMapMarkers(data) {
-  const markers = data
-    .map((row, index) => {
-      const lat = parseFloat(row.Latitude);
-      const lon = parseFloat(row.Longitude);
+    function isVisible(el) {
+      if (!el) return false;
+      if (el.offsetParent === null) {
+        var s = getComputedStyle(el);
+        if (s.display === "none" || s.visibility === "hidden" || parseFloat(s.opacity) === 0) return false;
+      }
+      var r = el.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
+    }
 
-      if (!lat || !lon || isNaN(lat) || isNaN(lon)) {
-        return null;
+    function maybeLoadMore() {
+      if (rendering || loaded >= all.length) return;
+      var vp = document.querySelector('[aria-label="Inspection results list"]');
+      var threshold = 300;
+      if (vp && isVisible(vp)) {
+        if (vp.scrollTop + vp.clientHeight >= vp.scrollHeight - threshold) {
+          renderMore(CHUNK);
+          return;
+        }
+      }
+      var mount = document.querySelector(".inspections-mount");
+      if (mount && isVisible(mount)) {
+        var rect = mount.getBoundingClientRect();
+        if (rect.bottom - window.innerHeight < threshold) {
+          renderMore(CHUNK);
+        }
+      }
+    }
+
+    function createInspectionCard(data, index) {
+      var facilityName = data.facility || "Facility";
+      var address = data.address || "";
+      var city = data.city || "";
+      var inspectionDate = data.inspection_date || "";
+      var uniqueId = "inspection-" + index;
+
+      var addressLine = "";
+      if (address && city) addressLine = address + ", " + city;
+      else if (address) addressLine = address;
+      else if (city) addressLine = city;
+
+      var searchIndex = [facilityName, address, city, inspectionDate]
+        .join(" ")
+        .toLowerCase();
+
+      var card = document.createElement("div");
+      card.setAttribute("data-card", "inspection");
+      card.setAttribute("data-index", searchIndex);
+      card.setAttribute("data-date", inspectionDate);
+      card.setAttribute("data-city", city);
+      card.setAttribute("data-inspection-id", uniqueId);
+      card.setAttribute("id", uniqueId);
+
+      if (data.Latitude && data.Longitude) {
+        card.setAttribute("data-lat", data.Latitude);
+        card.setAttribute("data-lon", data.Longitude);
       }
 
-      const facilityName = escapeHTML(row.facility || "Facility");
-      const address = escapeHTML(row.address || "");
-      const city = escapeHTML(row.city || "");
+      card.className = "w-full space-y-3 bg-white p-8 shadow md:p-10";
 
-      return {
-        lon: lon,
-        lat: lat,
-        color: "#c0392b",
-        inspectionId: `inspection-${index}`,
-        popupHTML: `
-          <div class="p-2">
-            <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
-            <p class="text-xs text-gray-600">${address}${address && city ? ', ' : ''}${city}</p>
-            <button
-              class="mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold"
-              onclick="window.dispatchEvent(new CustomEvent('marker-click', {detail: {id: 'inspection-${index}'}}))"
-            >
-              View details →
-            </button>
+      var addressRow = addressLine
+        ? `
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+              {{ partial "helper/svg.html" "location" }}
+            </svg>
+            <span>${escapeHTML(addressLine)}</span>
           </div>
         `
-      };
-    })
-    .filter(Boolean);
+        : "";
 
-  window.__inspectionsMarkers = markers;
+      var dateRow = inspectionDate
+        ? `
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+              {{ partial "helper/svg.html" "calendar-day" }}
+            </svg>
+            <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
+          </div>
+        `
+        : "";
 
-  window.dispatchEvent(new CustomEvent('inspections-markers-ready', {
-    detail: { markers }
-  }));
-}
+      card.innerHTML = `
+        <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
+        <div class="space-y-1 text-g-6">
+          ${addressRow}
+          ${dateRow}
+        </div>
+        <ul class="mt-2 space-y-2 text-lg font-semibold">
+          <li class="mt-4 flex items-start">
+            <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
+              {{ partial "helper/svg.html" "triangle-exclamation" }}
+            </svg>
+            <span>1 <span>high risk violation</span></span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 mt-1 h-5 w-5 text-yellow fill-current stroke-current">
+              {{ partial "helper/svg.html" "triangle-exclamation" }}
+            </svg>
+            <span>1 <span>moderate risk violation</span></span>
+          </li>
+          <li class="flex items-start">
+            <svg class="mr-2 mt-1 h-5 w-5 text-blue fill-current stroke-current">
+              {{ partial "helper/svg.html" "triangle-exclamation" }}
+            </svg>
+            <span>1 <span>low risk violation</span></span>
+          </li>
+        </ul>
+        <div class="pt-2">
+          <button
+            class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+            aria-label="Read more about this inspection"
+            data-read-more="${uniqueId}"
+          >
+            <span class="mx-auto">Read more</span>
+            <svg class="h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "chevron-right" }}
+            </svg>
+          </button>
+        </div>
+        <ul class="violations-data" hidden>
+          <li data-level="high">
+            <h4>Food Sourcing, Handling, & Storage</h4>
+            <p>Some kitchen equipment was dirty and needs to be cleaned to prevent contamination.</p>
+          </li>
+          <li data-level="moderate">
+            <h4>Employee Health & Hygiene</h4>
+            <p>An employee did not wash their hands properly, which can spread germs to food.</p>
+          </li>
+          <li data-level="low">
+            <h4>Facility Management</h4>
+            <p>Minor maintenance issue needs attention.</p>
+          </li>
+        </ul>
+      `;
 
-          function escapeHTML(str) {
-            if (!str) return "";
-            const div = document.createElement("div");
-            div.textContent = str;
-            return div.innerHTML;
-          }
+      return card;
+    }
 
-          window.addEventListener('marker-click', function(event) {
-            const inspectionId = event.detail?.id;
-            if (!inspectionId) return;
+    function escapeHTML(str) {
+      if (!str) return "";
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
 
-            const card = document.getElementById(inspectionId);
-            if (!card) return;
+    window.addEventListener("marker-click", function (event) {
+      var inspectionId = event.detail && event.detail.id;
+      if (!inspectionId) return;
 
-            const readMoreBtn = card.querySelector('[data-read-more]');
-            if (readMoreBtn) {
-              readMoreBtn.click();
+      var nodes = Array.from(document.querySelectorAll("#" + CSS.escape(inspectionId)));
+      var card = null;
+      for (var i = 0; i < nodes.length; i++) {
+        var el = nodes[i];
+        if (isVisible(el)) {
+          card = el;
+          break;
+        }
+      }
+      if (!card && nodes.length) card = nodes[0];
+      if (!card) return;
 
-              setTimeout(() => {
-                card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }, 100);
-            }
-          });
-        })();
-      </script>
+      var readMoreBtn = card.querySelector("[data-read-more]");
+      if (readMoreBtn) {
+        readMoreBtn.click();
+        setTimeout(function () {
+          card.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    });
+  })();
+</script>
 
       <div class="inspections-mount space-y-3"></div>
 
