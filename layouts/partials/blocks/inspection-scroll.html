@@ -342,7 +342,7 @@
     }
 
     function maybeLoadMore() {
-      if (isSearching) return; // Don't load more while searching
+      if (isSearching) return;
 
       var now = Date.now();
       if (now - lastCheck < debounceDelay) return;
@@ -605,13 +605,11 @@
             );
           }
 
-          // Desktop search button
           var button = document.getElementById("search-button");
           if (button) {
             button.addEventListener("click", triggerSearch);
           }
 
-          // Desktop search input enter key
           var input = document.getElementById("search-input");
           if (input) {
             input.addEventListener("keydown", function (e) {
@@ -622,7 +620,6 @@
             });
           }
 
-          // City filter changes should also trigger search
           var cityFilter = document.getElementById("city-filter");
           if (cityFilter) {
             cityFilter.addEventListener("change", triggerSearch);
@@ -630,16 +627,13 @@
         })();
       </script>
 
-      <!-- Update searchUI Alpine component to use global search -->
       <script>
-        // Patch the searchUI function to trigger global search
         if (typeof window.searchUI_original === "undefined") {
           window.searchUI_original = window.searchUI || function () {};
 
           window.searchUI = function () {
             var instance = window.searchUI_original();
 
-            // Override doSearch to trigger global search event
             var originalDoSearch = instance.doSearch;
             instance.doSearch = function (val) {
               if (typeof val === "string") this.q = val;
@@ -660,11 +654,9 @@
         }
       </script>
 
-      <!-- Clear filters should also trigger search -->
       <script>
         window.addEventListener("DOMContentLoaded", function () {
           setTimeout(function () {
-            // Handle clear button clicks
             document.addEventListener("click", function (e) {
               var clearButton = e.target.closest("button");
               if (
