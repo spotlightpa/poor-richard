@@ -24,8 +24,6 @@ topics = ["Elections"]
 
 HARRISBURG — The first test of the 2024 presidential election has come and gone in Iowa, where former President Donald Trump emerged on top of the Republican field.
 
-{{<embed/raw srcdoc="&lt;iframe src=&#34;https://www.google.com/maps/d/u/0/embed?mid=1Jl9tWlFqAcIzJVHx-IeDDU6CKpRlkd4&amp;ehbc=2E312F&#34; width=&#34;100%&#34; height=&#34;480&#34;&gt;&lt;/iframe&gt;">}}
-
 Dozens of other states will hold primary elections and caucuses in the coming months, including Pennsylvania, though commonwealth voters will have to wait to have their say.
 
 Here’s what you need to know about Pennsylvania’s 2024 presidential primary election date and more:
