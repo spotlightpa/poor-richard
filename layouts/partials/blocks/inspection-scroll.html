@@ -133,27 +133,122 @@
         }),
       );
     }
+
     function isVisible(el) {
-          if (!el) return false;
-          if (el.offsetParent === null) {
-            var s = getComputedStyle(el);
-            if (s.display === "none" || s.visibility === "hidden" || parseFloat(s.opacity) === 0) return false;
+      if (!el) return false;
+      if (el.offsetParent === null) {
+        var s = getComputedStyle(el);
+        if (s.display === "none" || s.visibility === "hidden" || parseFloat(s.opacity) === 0) return false;
+      }
+      var r = el.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
+    }
+
+    var lastCheck = 0;
+    var debounceDelay = 150;
+    var loadMoreTimeout = null;
+    var loadCooldown = 1000;
+
+    if (typeof window.__isLoadingMore === 'undefined') {
+      window.__isLoadingMore = false;
+    }
+    if (typeof window.__lastLoadTime === 'undefined') {
+      window.__lastLoadTime = 0;
+    }
+
+    function showLoadingSpinner() {
+      if (document.getElementById('loading-spinner')) {
+        return;
+      }
+
+      var spinner = document.createElement('div');
+      spinner.id = 'loading-spinner';
+      spinner.className = 'w-full bg-white p-8 shadow md:p-10';
+      spinner.style.display = 'flex';
+      spinner.style.alignItems = 'center';
+      spinner.style.justifyContent = 'center';
+      spinner.style.minHeight = '100px';
+      spinner.innerHTML = `
+        <div style="
+          width: 48px;
+          height: 48px;
+          border: 4px solid #f3f4f6;
+          border-top: 4px solid #fbbf24;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+        "></div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
           }
-          var r = el.getBoundingClientRect();
-          return r.width > 0 && r.height > 0;
+        </style>
+      `;
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      var visibleMount = null;
+      for (var i = 0; i < mounts.length; i++) {
+        var m = mounts[i];
+        var rect = m.getBoundingClientRect();
+        var isVis = rect.width > 0 && rect.height > 0;
+        if (isVis && !visibleMount) {
+          visibleMount = m;
         }
+      }
+
+      if (visibleMount) {
+        visibleMount.appendChild(spinner);
+      }
+    }
+
+    function hideLoadingSpinner() {
+      var spinner = document.getElementById('loading-spinner');
+      if (spinner) {
+        spinner.remove();
+      }
+    }
 
     function maybeLoadMore() {
-      if (rendering || loaded >= all.length) return;
+      var now = Date.now();
+      if (now - lastCheck < debounceDelay) return;
+      lastCheck = now;
 
-      var threshold = 300;
+      if (window.__isLoadingMore) {
+        return;
+      }
 
+      var timeSinceLastLoad = now - window.__lastLoadTime;
+      if (timeSinceLastLoad < loadCooldown) {
+        return;
+      }
+
+      if (rendering || loaded >= all.length || loadMoreTimeout) {
+        return;
+      }
+
+      var threshold = 50;
       var vp = document.querySelector('[aria-label="Inspection results list"]');
+
       if (vp && isVisible(vp)) {
         if (vp.scrollTop + vp.clientHeight >= vp.scrollHeight - threshold) {
-          renderMore(CHUNK);
-          return;
+          window.__isLoadingMore = true;
+          loadMoreTimeout = setTimeout(function() {
+            if (rendering || loaded >= all.length) {
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+              return;
+            }
+            showLoadingSpinner();
+            setTimeout(function() {
+              renderMore(CHUNK);
+              hideLoadingSpinner();
+              window.__lastLoadTime = Date.now();
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+            }, 500);
+          }, 0);
         }
+        return;
       }
 
       var scrollContainer = document.querySelector('.mt-3.space-y-3.bg-g-3.pb-3');
@@ -166,11 +261,24 @@
           var distanceFromBottom = containerScrollHeight - containerBottom;
 
           if (distanceFromBottom < threshold) {
-            renderMore(CHUNK);
-            return;
-          } else {
-            return;
+            window.__isLoadingMore = true;
+            loadMoreTimeout = setTimeout(function() {
+              if (rendering || loaded >= all.length) {
+                loadMoreTimeout = null;
+                window.__isLoadingMore = false;
+                return;
+              }
+              showLoadingSpinner();
+              setTimeout(function() {
+                renderMore(CHUNK);
+                hideLoadingSpinner();
+                window.__lastLoadTime = Date.now();
+                loadMoreTimeout = null;
+                window.__isLoadingMore = false;
+              }, 500);
+            }, 0);
           }
+          return;
         }
       }
 
@@ -181,10 +289,26 @@
         var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
         if (rect.bottom - viewportHeight < threshold) {
-          renderMore(CHUNK);
+          window.__isLoadingMore = true;
+          loadMoreTimeout = setTimeout(function() {
+            if (rendering || loaded >= all.length) {
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+              return;
+            }
+            showLoadingSpinner();
+            setTimeout(function() {
+              renderMore(CHUNK);
+              hideLoadingSpinner();
+              window.__lastLoadTime = Date.now();
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+            }, 500);
+          }, 0);
         }
       }
     }
+
     function createInspectionCard(data, index) {
       var facilityName = data.facility || "Facility";
       var address = data.address || "";
@@ -240,7 +364,7 @@
 
       card.innerHTML = `
         <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
-        <div class="space-y-1 text-g-6">
+        <div class="mt-2 space-y-1 text-g-6">
           ${addressRow}
           ${dateRow}
         </div>
