@@ -311,7 +311,7 @@
               tabindex="0"
               aria-label="Inspection results list"
             >
-              {{ partial "blocks/mobile-scroll.html" . }}
+              {{ partial "blocks/inspection-scroll.html" . }}
             </div>
 
             <div
@@ -354,7 +354,7 @@
     @mobile-view-changed.window="view = $event.detail.view"
   >
     <div x-show="view === 'list'">
-      {{ partial "blocks/mobile-scroll.html" . }}
+      {{ partial "blocks/inspection-scroll.html" . }}
     </div>
 
     <template x-if="view === 'map'">
