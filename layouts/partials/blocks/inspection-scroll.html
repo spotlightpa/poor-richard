@@ -133,36 +133,58 @@
         }),
       );
     }
-
     function isVisible(el) {
-      if (!el) return false;
-      if (el.offsetParent === null) {
-        var s = getComputedStyle(el);
-        if (s.display === "none" || s.visibility === "hidden" || parseFloat(s.opacity) === 0) return false;
-      }
-      var r = el.getBoundingClientRect();
-      return r.width > 0 && r.height > 0;
-    }
+          if (!el) return false;
+          if (el.offsetParent === null) {
+            var s = getComputedStyle(el);
+            if (s.display === "none" || s.visibility === "hidden" || parseFloat(s.opacity) === 0) return false;
+          }
+          var r = el.getBoundingClientRect();
+          return r.width > 0 && r.height > 0;
+        }
 
     function maybeLoadMore() {
       if (rendering || loaded >= all.length) return;
-      var vp = document.querySelector('[aria-label="Inspection results list"]');
+
       var threshold = 300;
+
+      var vp = document.querySelector('[aria-label="Inspection results list"]');
       if (vp && isVisible(vp)) {
         if (vp.scrollTop + vp.clientHeight >= vp.scrollHeight - threshold) {
           renderMore(CHUNK);
           return;
         }
       }
-      var mount = document.querySelector(".inspections-mount");
-      if (mount && isVisible(mount)) {
-        var rect = mount.getBoundingClientRect();
-        if (rect.bottom - window.innerHeight < threshold) {
+
+      var scrollContainer = document.querySelector('.mt-3.space-y-3.bg-g-3.pb-3');
+      if (scrollContainer) {
+        var isScrollable = scrollContainer.scrollHeight > scrollContainer.clientHeight;
+
+        if (isScrollable) {
+          var containerBottom = scrollContainer.scrollTop + scrollContainer.clientHeight;
+          var containerScrollHeight = scrollContainer.scrollHeight;
+          var distanceFromBottom = containerScrollHeight - containerBottom;
+
+          if (distanceFromBottom < threshold) {
+            renderMore(CHUNK);
+            return;
+          } else {
+            return;
+          }
+        }
+      }
+
+      var cards = document.querySelectorAll('[data-card="inspection"]');
+      if (cards.length > 0) {
+        var lastCard = cards[cards.length - 1];
+        var rect = lastCard.getBoundingClientRect();
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        if (rect.bottom - viewportHeight < threshold) {
           renderMore(CHUNK);
         }
       }
     }
-
     function createInspectionCard(data, index) {
       var facilityName = data.facility || "Facility";
       var address = data.address || "";
