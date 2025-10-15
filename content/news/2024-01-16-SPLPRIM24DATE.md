@@ -3,6 +3,8 @@ authors = ["Sarah Anne Hughes"]
 blurb = "Pennsylvania will hold its 2024 presidential primary election on April 23, one of the latest primary dates in the U.S."
 byline = "Sarah Anne Hughes of Spotlight PA"
 description = "Pennsylvania will hold its 2024 presidential primary election on April 23, one of the latest primary dates in the U.S."
+draft = false
+feed-exclude = false
 image = "external/jvns82s2njq5smj5bpbck08xkc.jpeg"
 image-credit = "Amanda Berg / For Spotlight PA"
 image-description = "Voters went to the polls in Pennsylvania on Election Day 2022."
@@ -22,9 +24,13 @@ topics = ["Elections"]
 
 HARRISBURG — The first test of the 2024 presidential election has come and gone in Iowa, where former President Donald Trump emerged on top of the Republican field.
 
+{{<embed/raw srcdoc="&lt;iframe src=&#34;https://www.google.com/maps/d/embed?mid=1mKVM3H4kEbhCo50AVRrqIBKMksv-lgw&amp;ehbc=2E312F&#34; width=&#34;100%&#34; height=&#34;480&#34;&gt;&lt;/iframe&gt;">}}
+
 Dozens of other states will hold primary elections and caucuses in the coming months, including Pennsylvania, though commonwealth voters will have to wait to have their say.
 
 Here’s what you need to know about Pennsylvania’s 2024 presidential primary election date and more:
+
+{{<toc>}}
 
 ### Table of Contents
 
@@ -42,19 +48,23 @@ Here’s what you need to know about Pennsylvania’s 2024 presidential primary 
 
 - <a href="#spl-heading-7">What are the arguments against moving the primary?</a>
 
+- <a href="#spl-heading-8">Who is running in the 2024 election?</a>
+
+{{</toc>}}
+
 <h2 id="spl-heading-1">When is Pennsylvania’s 2024 primary election?</h2>
 
 Pennsylvania’s primary election is scheduled for April 23, 2024.
 
 <h2 id="spl-heading-2">Where does Pennsylvania’s 2024 presidential primary rank compared to other states?</h2>
 
-Pennsylvania has <a href="https://web.archive.org/20230224014511/https://www.ncsl.org/elections-and-campaigns/2024-state-primary-election-dates">one of the latest dates</a> for a presidential primary election.
+Pennsylvania has <a href="https://www.ncsl.org/elections-and-campaigns/2024-state-primary-election-dates">one of the latest dates</a> for a presidential primary election.
 
 Just 10 states — Indiana, Kentucky, Maryland, Montana, Nebraska, New Jersey, New Mexico, Oregon, South Dakota, and West Virginia — have later primary election dates for both Democrats and Republicans; Washington, D.C., will hold its Democratic primary in June.
 
 Other states hold presidential caucuses, including Idaho, where the Democratic caucus is not set to take place until late May.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/newsletter/"></div>
+{{<embed/newsletter>}}
 
 <h2 id="spl-heading-3">Who can vote in Pennsylvania’s 2024 primary?</h2>
 
@@ -78,7 +88,7 @@ Some lawmakers argue that moving Pennsylvania’s primary to an earlier date wou
 
 “By the time Pennsylvanians have the opportunity to select candidates for the general election, many potentially good candidates have already exited the race due to results in earlier primary states,” state Senate President Pro Tempore Kim Ward (R., Westmoreland) said in a <a href="https://www.pasenategop.com/news/senate-president-pro-tempore-kim-ward-on-moving-up-the-pennsylvania-primary-date-for-the-2024-election/">statement</a> in September 2023.
 
-<script src="https://www.spotlightpa.org/embed.js" async></script><div data-spl-embed-version="1" data-spl-src="https://www.spotlightpa.org/embeds/donate/"></div>
+{{<embed/donate>}}
 
 <h2 id="spl-heading-7">What are the arguments against moving the primary?</h2>
 
@@ -88,4 +98,7 @@ In a September 2023 <a href="https://twitter.com/ByCarterWalker/status/170788132
 
 “In many instances, contracts to receive polling places are made a year in advance,” the board’s members — including lawmakers and county commissioners — wrote. “Clerks, inspectors, and volunteers have already been recruited and planned their schedules around the anticipated primary date.”
 
-<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="https://www.spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+<h2 id="spl-heading-8">Who is running in the 2024 election?</h2>
+
+<strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at </em><a href="http://spotlightpa.org/donate"><em>spotlightpa.org/donate</em></a><em>. Spotlight PA is funded by</em><a href="https://www.spotlightpa.org/support"><em> foundations and readers like you</em></a><em> who are committed to accountability journalism that gets results.</em>
+
