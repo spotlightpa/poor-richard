@@ -31,19 +31,23 @@
 <script>
   (function () {
     var CHUNK = 10;
-    var all = [];
+    var allData = [];
+    var filteredData = [];
     var loaded = 0;
     var rendering = false;
+    var isSearching = false;
 
     window.__inspectionsMarkers = window.__inspectionsMarkers || [];
 
     window.addEventListener("inspections-data-ready", function (event) {
-      all = event.detail && event.detail.data ? event.detail.data : [];
+      allData = event.detail && event.detail.data ? event.detail.data : [];
+      filteredData = allData;
       loaded = 0;
       rendering = false;
       window.__inspectionsMarkers = [];
       clearMounts();
       renderMore(CHUNK);
+
       var vp = document.querySelector('[aria-label="Inspection results list"]');
       if (vp) vp.addEventListener("scroll", maybeLoadMore);
       window.addEventListener("scroll", maybeLoadMore);
@@ -58,6 +62,129 @@
       });
     });
 
+    window.addEventListener("inspections-search", function(event) {
+      var query = event.detail.query || "";
+      var city = event.detail.city || "";
+      performSearch(query, city);
+    });
+
+    function performSearch(query, city) {
+      isSearching = true;
+      showSearchSpinner();
+
+      setTimeout(function() {
+        var normalizedQuery = normalizeString(query);
+
+        filteredData = allData.filter(function(row) {
+          var searchMatch = true;
+          if (normalizedQuery) {
+            var searchText = [
+              row.facility || "",
+              row.address || "",
+              row.city || "",
+              row.inspection_date || ""
+            ].join(" ");
+            searchMatch = normalizeString(searchText).includes(normalizedQuery);
+          }
+
+          var cityMatch = true;
+          if (city) {
+            var rowCity = row.city || "";
+            if (city === "Other") {
+              cityMatch = !isPACity(rowCity);
+            } else {
+              cityMatch = rowCity.toLowerCase() === city.toLowerCase();
+            }
+          }
+
+          return searchMatch && cityMatch;
+        });
+
+        loaded = 0;
+        window.__inspectionsMarkers = [];
+        clearMounts();
+        renderMore(CHUNK);
+
+        hideSearchSpinner();
+        isSearching = false;
+
+        var noResultsEl = document.getElementById("no-results");
+        if (noResultsEl) {
+          noResultsEl.classList.toggle("hidden", filteredData.length > 0);
+        }
+      }, 100);
+    }
+
+    function normalizeString(str) {
+      return (str || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function isPACity(city) {
+      var paCities = [
+        "Aliquippa", "Allentown", "Altoona", "Arnold", "Beaver Falls",
+        "Bethlehem", "Bradford", "Butler", "Carbondale", "Chester",
+        "Clairton", "Coatesville", "Connellsville", "Corry", "DuBois",
+        "Duquesne", "Easton", "Erie", "Farrell", "Franklin",
+        "Greensburg", "Harrisburg", "Hazleton", "Hermitage", "Jeannette",
+        "Johnstown", "Lancaster", "Lebanon", "Lock Haven", "Lower Burrell",
+        "McKeesport", "Meadville", "Monessen", "Monongahela", "Nanticoke",
+        "New Castle", "New Kensington", "Oil City", "Parker", "Philadelphia",
+        "Pittsburgh", "Pittston", "Pottsville", "Reading", "Scranton",
+        "Shamokin", "Sharon", "St. Marys", "Sunbury", "Titusville",
+        "Uniontown", "Warren", "Washington", "Wilkes-Barre", "Williamsport", "York"
+      ];
+      return paCities.some(function(pc) {
+        return city.toLowerCase() === pc.toLowerCase();
+      });
+    }
+
+    function showSearchSpinner() {
+      hideSearchSpinner();
+
+      var spinner = document.createElement('div');
+      spinner.id = 'search-loading-spinner';
+      spinner.className = 'w-full bg-white p-8 shadow md:p-10';
+      spinner.style.cssText = 'display:flex; align-items:center; justify-content:center; min-height:200px;';
+      spinner.innerHTML = `
+        <div style="text-align: center;">
+          <div style="
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #fbbf24;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+          "></div>
+          <p style="margin-top: 16px; font-family: sans-serif; font-size: 16px; color: #6b7280;">
+            Searching through all facilities...
+          </p>
+        </div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
+      `;
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      if (mounts[0]) {
+        mounts[0].insertBefore(spinner, mounts[0].firstChild);
+      }
+    }
+
+    function hideSearchSpinner() {
+      var spinner = document.getElementById('search-loading-spinner');
+      if (spinner) {
+        spinner.remove();
+      }
+    }
+
     function getMountPoints() {
       return Array.from(document.querySelectorAll(".inspections-mount"));
     }
@@ -70,15 +197,19 @@
 
     function renderMore(count) {
       if (rendering) return;
-      if (loaded >= all.length) return;
+      if (loaded >= filteredData.length) return;
       rendering = true;
+
       var start = loaded;
-      var end = Math.min(start + count, all.length);
-      var slice = all.slice(start, end);
+      var end = Math.min(start + count, filteredData.length);
+      var slice = filteredData.slice(start, end);
+
       appendCards(slice, start);
+
       var newMarkers = rowsToMarkers(slice, start);
       window.__inspectionsMarkers = window.__inspectionsMarkers.concat(newMarkers);
       syncMarkers();
+
       loaded = end;
       rendering = false;
       window.dispatchEvent(new CustomEvent("inspections-cards-changed"));
@@ -100,10 +231,12 @@
           var lat = parseFloat(row.Latitude);
           var lon = parseFloat(row.Longitude);
           if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
+
           var facilityName = escapeHTML(row.facility || "Facility");
           var address = escapeHTML(row.address || "");
           var city = escapeHTML(row.city || "");
           var id = "inspection-" + (startIndex + i);
+
           return {
             lon: lon,
             lat: lat,
@@ -157,7 +290,7 @@
     }
 
     function showLoadingSpinner() {
-      if (document.getElementById('loading-spinner')) {
+      if (document.getElementById('loading-spinner') || isSearching) {
         return;
       }
 
@@ -209,6 +342,8 @@
     }
 
     function maybeLoadMore() {
+      if (isSearching) return; // Don't load more while searching
+
       var now = Date.now();
       if (now - lastCheck < debounceDelay) return;
       lastCheck = now;
@@ -222,7 +357,7 @@
         return;
       }
 
-      if (rendering || loaded >= all.length || loadMoreTimeout) {
+      if (rendering || loaded >= filteredData.length || loadMoreTimeout) {
         return;
       }
 
@@ -233,7 +368,7 @@
         if (vp.scrollTop + vp.clientHeight >= vp.scrollHeight - threshold) {
           window.__isLoadingMore = true;
           loadMoreTimeout = setTimeout(function() {
-            if (rendering || loaded >= all.length) {
+            if (rendering || loaded >= filteredData.length) {
               loadMoreTimeout = null;
               window.__isLoadingMore = false;
               return;
@@ -263,7 +398,7 @@
           if (distanceFromBottom < threshold) {
             window.__isLoadingMore = true;
             loadMoreTimeout = setTimeout(function() {
-              if (rendering || loaded >= all.length) {
+              if (rendering || loaded >= filteredData.length) {
                 loadMoreTimeout = null;
                 window.__isLoadingMore = false;
                 return;
@@ -291,7 +426,7 @@
         if (rect.bottom - viewportHeight < threshold) {
           window.__isLoadingMore = true;
           loadMoreTimeout = setTimeout(function() {
-            if (rendering || loaded >= all.length) {
+            if (rendering || loaded >= filteredData.length) {
               loadMoreTimeout = null;
               window.__isLoadingMore = false;
               return;
@@ -452,6 +587,102 @@
     });
   })();
 </script>
+
+      <!-- Updated search button handlers -->
+      <script>
+        (function () {
+          function triggerSearch() {
+            var input = document.getElementById("search-input");
+            var cityFilter = document.getElementById("city-filter");
+
+            var query = input ? input.value : "";
+            var city = cityFilter ? cityFilter.value : "";
+
+            window.dispatchEvent(
+              new CustomEvent("inspections-search", {
+                detail: { query: query, city: city },
+              }),
+            );
+          }
+
+          // Desktop search button
+          var button = document.getElementById("search-button");
+          if (button) {
+            button.addEventListener("click", triggerSearch);
+          }
+
+          // Desktop search input enter key
+          var input = document.getElementById("search-input");
+          if (input) {
+            input.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                triggerSearch();
+              }
+            });
+          }
+
+          // City filter changes should also trigger search
+          var cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.addEventListener("change", triggerSearch);
+          }
+        })();
+      </script>
+
+      <!-- Update searchUI Alpine component to use global search -->
+      <script>
+        // Patch the searchUI function to trigger global search
+        if (typeof window.searchUI_original === "undefined") {
+          window.searchUI_original = window.searchUI || function () {};
+
+          window.searchUI = function () {
+            var instance = window.searchUI_original();
+
+            // Override doSearch to trigger global search event
+            var originalDoSearch = instance.doSearch;
+            instance.doSearch = function (val) {
+              if (typeof val === "string") this.q = val;
+
+              var cityFilter = document.getElementById("city-filter");
+              window.dispatchEvent(
+                new CustomEvent("inspections-search", {
+                  detail: {
+                    query: this.q,
+                    city: cityFilter ? cityFilter.value : "",
+                  },
+                }),
+              );
+            };
+
+            return instance;
+          };
+        }
+      </script>
+
+      <!-- Clear filters should also trigger search -->
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            // Handle clear button clicks
+            document.addEventListener("click", function (e) {
+              var clearButton = e.target.closest("button");
+              if (
+                clearButton &&
+                clearButton.textContent.toLowerCase().includes("clear")
+              ) {
+                setTimeout(function () {
+                  window.dispatchEvent(
+                    new CustomEvent("inspections-search", {
+                      detail: { query: "", city: "" },
+                    }),
+                  );
+                }, 50);
+              }
+            });
+          }, 500);
+        });
+      </script>
 
       <div class="inspections-mount space-y-3"></div>
 
