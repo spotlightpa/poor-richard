@@ -524,64 +524,76 @@
           "York",
         ],
 
-        init() {
-          const noResultsEl = document.getElementById("no-results");
-          if (noResultsEl) {
-            noResultsEl.classList.add("hidden");
-          }
+    init() {
+      const noResultsEl = document.getElementById("no-results");
+      if (noResultsEl) {
+        noResultsEl.classList.add("hidden");
+      }
 
-          window.addEventListener("inspections-data-ready", () => {
-            this.dataLoaded = true;
-            this.refreshCards();
-            if (noResultsEl) {
-              noResultsEl.classList.add("hidden");
+      const savedSort = localStorage.getItem("inspections-sort");
+      if (savedSort) this.currentSort = savedSort;
+
+      window.addEventListener("inspections-data-ready", () => {
+        this.dataLoaded = true;
+        this.refreshCards();
+        if (noResultsEl) {
+          noResultsEl.classList.add("hidden");
+        }
+        this.sortCards();
+      });
+
+      if (
+        typeof window.inspectionsDataLoaded === "function" &&
+        window.inspectionsDataLoaded()
+      ) {
+        this.dataLoaded = true;
+      }
+
+      this.refreshCards();
+      this.initSortListeners();
+      this.initFilterListeners();
+      this.initCityTypeahead();
+      this.initMapMarkers();
+
+      window.addEventListener("set-sort", (e) => {
+        const v = (e && e.detail && e.detail.value) || "date";
+        this.currentSort = v;
+        localStorage.setItem("inspections-sort", v);
+        this.sortCards();
+        this.syncDesktopSortUI(v);
+      });
+
+      window.addEventListener("inspections-cards-changed", () => {
+        this.refreshCards();
+        this.applyFilters();
+      });
+
+      if (!this.initializedDelegates) {
+        document.addEventListener("click", (e) => {
+          const readMoreBtn = e.target.closest(
+            'button[aria-label="Read more about this inspection"]',
+          );
+          if (readMoreBtn) {
+            e.preventDefault();
+            const card = readMoreBtn.closest('[data-card="inspection"]');
+            if (card) {
+              this.lastReadMoreButton = readMoreBtn;
+              this.openDetails(card);
             }
-          });
-
-          if (
-            typeof window.inspectionsDataLoaded === "function" &&
-            window.inspectionsDataLoaded()
-          ) {
-            this.dataLoaded = true;
+            return;
           }
-
-          this.refreshCards();
-          this.initSortListeners();
-          this.initFilterListeners();
-          this.initCityTypeahead();
-          this.initMapMarkers();
-
-          window.addEventListener("inspections-cards-changed", () => {
-            this.refreshCards();
-            this.applyFilters();
-          });
-
-          if (!this.initializedDelegates) {
-            document.addEventListener("click", (e) => {
-              const readMoreBtn = e.target.closest(
-                'button[aria-label="Read more about this inspection"]',
-              );
-              if (readMoreBtn) {
-                e.preventDefault();
-                const card = readMoreBtn.closest('[data-card="inspection"]');
-                if (card) {
-                  this.lastReadMoreButton = readMoreBtn;
-                  this.openDetails(card);
-                }
-                return;
-              }
-              const backBtn = e.target.closest(
-                '[data-action="back-to-results"]',
-              );
-              if (backBtn) {
-                e.preventDefault();
-                this.backToResults();
-                return;
-              }
-            });
-            this.initializedDelegates = true;
+          const backBtn = e.target.closest(
+            '[data-action="back-to-results"]',
+          );
+          if (backBtn) {
+            e.preventDefault();
+            this.backToResults();
+            return;
           }
-        },
+        });
+        this.initializedDelegates = true;
+      }
+    },
 
         initMapMarkers() {
           window.addEventListener("inspections-markers-ready", (event) => {
@@ -594,15 +606,34 @@
 
         initSortListeners() {
           const sortRadios = document.querySelectorAll('input[name="sort"]');
+
+          const savedSort = localStorage.getItem("inspections-sort") || this.currentSort || "date";
+          sortRadios.forEach((r) => {
+            r.checked = r.value === savedSort;
+          });
+          this.currentSort = savedSort;
+
           sortRadios.forEach((radio) => {
             radio.addEventListener("change", (e) => {
               if (e.target.checked) {
                 this.currentSort = e.target.value;
+                localStorage.setItem("inspections-sort", this.currentSort);
                 this.sortCards();
+                window.dispatchEvent(
+                  new CustomEvent("set-sort", { detail: { value: this.currentSort } })
+                );
               }
             });
           });
         },
+
+        syncDesktopSortUI(value) {
+          const sortRadios = document.querySelectorAll('input[name="sort"]');
+          sortRadios.forEach((r) => {
+            r.checked = r.value === value;
+          });
+        },
+
 
         initFilterListeners() {
           const cityFilter = document.getElementById("city-filter");
