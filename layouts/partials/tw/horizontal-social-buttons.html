@@ -1,0 +1,79 @@
+{{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
+{{ $emailSubject := .LinkTitle }}
+{{ $btnClass := `w-10 h-10 flex items-center justify-center rounded-full transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8` }}
+
+
+<nav
+  class="mt-4 flex flex-wrap items-center gap-2 text-white print:hidden"
+  data-ga-category="social-buttons"
+>
+  <a
+    href="mailto:?subject={{ $emailSubject }}&amp;body={{ $emailBody }}"
+    class="{{ $btnClass }} bg-green"
+    title="Share this page by email"
+    data-ga-category="email"
+  >
+    <svg class="h-5 w-5 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "email" }}
+    </svg>
+  </a>
+
+  <a
+    class="{{ $btnClass }} bg-[#0866FF]"
+    href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ .Permalink }}"
+    data-ga-category="facebook"
+    title="Share this page on Facebook"
+  >
+    <svg class="h-5 w-5 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "fb" }}
+    </svg>
+  </a>
+
+  <a
+    class="{{ $btnClass }} bg-[#0085ff]"
+    href="https://bsky.app/intent/compose?text={{ .LinkTitle }}%20{{ .Permalink }}"
+    data-ga-category="bluesky"
+    title="Share this page on Bluesky"
+  >
+    <svg class="h-5 w-5 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "bluesky" }}
+    </svg>
+  </a>
+
+  <a
+    class="{{ $btnClass }} bg-white"
+    href="https://twitter.com/intent/tweet?text={{ .LinkTitle }}&via=SpotlightPA&url={{ .Permalink }}&tw_p=tweetbutton"
+    data-ga-category="twitter"
+    title="Tweet about this page"
+  >
+    <svg class="h-5 w-5 text-black md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "twitter" }}
+    </svg>
+  </a>
+
+  <a
+    class="{{ $btnClass }} bg-[#FF5700]"
+    href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .LinkTitle }}"
+    data-ga-category="reddit"
+    title="Share on Reddit"
+  >
+    <svg class="h-5 w-5 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "reddit" }}
+    </svg>
+  </a>
+
+  <button
+    class="{{ $btnClass }} bg-orange"
+    data-share-text="Read “{{ .LinkTitle }}” from Spotlight PA"
+    data-ga-category="sharesheet"
+    x-report-click
+    title="More ways to share this page"
+    x-data
+    x-bind="shareButton"
+    x-cloak
+  >
+    <svg class="h-5 w-5 fill-current md:h-6 md:w-6">
+      {{ partial "helper/svg.html" "share" }}
+    </svg>
+  </button>
+</nav>
