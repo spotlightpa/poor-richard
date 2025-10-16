@@ -12,7 +12,7 @@ subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a un
 bullets = [
   "Scoops, expert analysis, and more from Capitol reporter Stephen Caruso",
   "Exclusive insight into PA politics you won’t find anywhere else",
-  "Delivered straight to your inbox weekly"
+  "Delivered straight to your inbox weekly for just $4/week"
 ]
 
 device-image = "2025/09/01md-nnrr-7g6e-9z7c.png"
