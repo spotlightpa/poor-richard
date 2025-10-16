@@ -866,31 +866,41 @@
             noResultsEl.classList.toggle("hidden", visible !== 0);
         },
 
-        openDetails(card) {
-          this.cards.forEach((c) => {
-            if (c !== card) c.classList.add("hidden-by-detail");
-            else c.classList.remove("hidden-by-detail");
-            this.syncHidden(c);
-          });
-          const body = card;
-          const listContent = body.querySelector(".list-content");
-          let detail = body.querySelector(".detail-content");
-          if (!detail) {
-            detail = document.createElement("div");
-            detail.className = "detail-content";
-            body.appendChild(detail);
-          }
+  openDetails(card) {
 
-          const title = (card.querySelector("h2")?.textContent || "").trim();
-          const infoLines = Array.from(
-            card.querySelectorAll(".list-content span"),
-          ).map((n) => n.textContent.trim());
-          const location =
-            infoLines.find((t) => !/Last inspection:/i.test(t)) || "";
-          const violations = this.readViolations(card);
-          const items =
-            violations.map((v) => this.renderViolationItem(v)).join("") ||
-            `
+  const scroller =
+    card.closest('[aria-label="Inspection results list"]') || null;
+
+  const baseTop = scroller
+    ? scroller.getBoundingClientRect().top
+    : 0;
+  const prevTop = card.getBoundingClientRect().top - baseTop;
+
+  this.cards.forEach((c) => {
+    if (c !== card) c.classList.add("hidden-by-detail");
+    else c.classList.remove("hidden-by-detail");
+    this.syncHidden(c);
+  });
+
+  const body = card;
+  const listContent = body.querySelector(".list-content");
+  let detail = body.querySelector(".detail-content");
+  if (!detail) {
+    detail = document.createElement("div");
+    detail.className = "detail-content";
+    body.appendChild(detail);
+  }
+
+  const title = (card.querySelector("h2")?.textContent || "").trim();
+  const infoLines = Array.from(
+    card.querySelectorAll(".list-content span"),
+  ).map((n) => n.textContent.trim());
+  const location =
+    infoLines.find((t) => !/Last inspection:/i.test(t)) || "";
+  const violations = this.readViolations(card);
+  const items =
+    violations.map((v) => this.renderViolationItem(v)).join("") ||
+    `
         <li class="space-y-2">
           <div class="flex items-start pt-3 gap-2">
             <svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b; aria-hidden="true">
@@ -902,7 +912,7 @@
           </div>
         </li>`;
 
-detail.innerHTML = `
+  detail.innerHTML = `
   <div>
     <button
       type="button"
@@ -987,28 +997,55 @@ detail.innerHTML = `
           </div>
         </div>`;
 
-          listContent?.classList.add("hidden");
-          detail
-            .querySelector('[data-action="back-to-results"]')
-            ?.focus({ preventScroll: true });
-          card.scrollIntoView({ behavior: "smooth", block: "start" });
-          this.activeCard = card;
-          document.getElementById("no-results")?.classList.add("hidden");
-        },
+  listContent?.classList.add("hidden");
 
-        backToResults() {
-          if (!this.activeCard) return;
-          const card = this.activeCard;
-          card.querySelector(".detail-content")?.remove();
-          card.querySelector(".list-content")?.classList.remove("hidden");
-          this.cards.forEach((c) => {
-            c.classList.remove("hidden-by-detail");
-            this.syncHidden(c);
-          });
-          this.applyFilters();
-          this.lastReadMoreButton?.focus({ preventScroll: true });
-          this.activeCard = null;
-        },
+  detail
+    .querySelector('[data-action="back-to-results"]')
+    ?.focus({ preventScroll: true });
+
+  const nextTop = card.getBoundingClientRect().top - baseTop;
+  const delta = nextTop - prevTop;
+  if (scroller) {
+    scroller.scrollTop += delta;
+  } else {
+    window.scrollBy(0, delta);
+  }
+
+  this.activeCard = card;
+  document.getElementById("no-results")?.classList.add("hidden");
+},
+
+    backToResults() {
+      if (!this.activeCard) return;
+      const card = this.activeCard;
+
+      const scroller =
+        card.closest('[aria-label="Inspection results list"]') || null;
+
+      const baseTop = scroller
+        ? scroller.getBoundingClientRect().top
+        : 0;
+      const prevTop = card.getBoundingClientRect().top - baseTop;
+
+      card.querySelector(".detail-content")?.remove();
+      card.querySelector(".list-content")?.classList.remove("hidden");
+      this.cards.forEach((c) => {
+        c.classList.remove("hidden-by-detail");
+        this.syncHidden(c);
+      });
+      this.applyFilters();
+
+      const nextTop = card.getBoundingClientRect().top - baseTop;
+      const delta = nextTop - prevTop;
+      if (scroller) {
+        scroller.scrollTop += delta;
+      } else {
+        window.scrollBy(0, delta);
+      }
+
+      this.lastReadMoreButton?.focus({ preventScroll: true });
+      this.activeCard = null;
+    },
 
       renderViolationItem(v) {
         const title = (v.title || "").trim();

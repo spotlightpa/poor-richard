@@ -585,7 +585,7 @@
       var card = null;
       for (var i = 0; i < nodes.length; i++) {
         var el = nodes[i];
-        if (isVisible(el)) {
+        if (el && el.offsetParent !== null) {
           card = el;
           break;
         }
@@ -596,12 +596,9 @@
       var readMoreBtn = card.querySelector("[data-read-more]");
       if (readMoreBtn) {
         readMoreBtn.click();
-        setTimeout(function () {
-          card.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
       }
     });
-  })();
+    })();
 </script>
 
       <script>
