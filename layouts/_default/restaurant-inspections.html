@@ -893,7 +893,7 @@
             `
         <li class="space-y-2">
           <div class="flex items-start pt-3 gap-2">
-            <svg class="mt-1 h-5 w-5 fill-election-green" aria-hidden="true">
+            <svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b; aria-hidden="true">
                 {{ partial "helper/svg.html" "circle-check" }}
             </svg>
             <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
@@ -1010,54 +1010,35 @@ detail.innerHTML = `
           this.activeCard = null;
         },
 
-        renderViolationItem(v) {
-          const { level = "low", title = "", comment = "" } = v;
-          const iconFill =
-            level === "high"
-              ? "text-red-7"
-              : level === "moderate"
-                ? "text-yellow-4"
-                : "text-blue-6";
-          const words = title.split(/\s+/);
-          const lastWord = words.pop();
-          const before = words.join(" ");
-          return `
-        <li class="space-y-2">
-          <div class="flex items-start pt-2 gap-2">
-            <svg class="mt-1 h-5 w-5 ${iconFill}" aria-hidden="true">
+      renderViolationItem(v) {
+        const title = (v.title || "").trim();
+        const comment = v.comment || "";
+        return `
+          <li class="space-y-2">
+            <div class="flex items-start pt-2 gap-2">
+              <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current" aria-hidden="true">
                 {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
-              ${before}
-              <span class="inline-flex items-center gap-1">
-                ${lastWord}
-              </span>
-            </h4>
-          </div>
-          ${
-            comment
-              ? `
-            <p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
-              ${this.escapeHTML(comment)}
-            </p>`
-              : ""
-          }
-        </li>`;
-        },
+              </svg>
+              <h4 class="font-sans text-lg font-bold text-black break-words">
+                ${this.escapeHTML(title)}
+              </h4>
+            </div>
+            ${
+              comment
+                ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
+                    ${this.escapeHTML(comment)}
+                  </p>`
+                : ""
+            }
+          </li>`;
+      },
 
         readViolations(card) {
-          const list = card.querySelector("ul.violations-data");
-          if (list) {
-            return Array.from(list.querySelectorAll("li"))
-              .map((li) => ({
-                level: li.getAttribute("data-level") || "",
-                title: li.querySelector("h4")?.textContent?.trim() || "",
-                comment: li.querySelector("p")?.textContent?.trim() || "",
-              }))
-              .filter((v) => v.title || v.comment);
+          const title = (card.getAttribute("data-violation-description") || "").trim();
+          const comment = (card.getAttribute("data-violation-comment") || "").trim();
+          if (title || comment) {
+            return [{ title, comment }];
           }
-          const csv = card.getAttribute("data-violations-csv");
-          if (csv) return this.parseViolationsCSV(csv);
           return [];
         },
 

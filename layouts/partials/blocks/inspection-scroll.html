@@ -484,6 +484,9 @@
       card.setAttribute("data-date", inspectionDate);
       card.setAttribute("data-city", city);
       card.setAttribute("data-inspection-id", uniqueId);
+      card.setAttribute("data-violation-description", data.violation_description || "");
+      card.setAttribute("data-violation-comment", data.comment || "");
+
       card.setAttribute("id", uniqueId);
 
       if (data.Latitude && data.Longitude) {
@@ -521,26 +524,28 @@
           ${addressRow}
           ${dateRow}
         </div>
-        <ul class="mt-2 space-y-2 text-lg font-semibold">
-          <li class="mt-4 flex items-start">
-            <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
-              {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <span>1 <span>high risk violation</span></span>
-          </li>
-          <li class="flex items-start">
-            <svg class="mr-2 mt-1 h-5 w-5 text-yellow fill-current stroke-current">
-              {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <span>1 <span>moderate risk violation</span></span>
-          </li>
-          <li class="flex items-start">
-            <svg class="mr-2 mt-1 h-5 w-5 text-blue fill-current stroke-current">
-              {{ partial "helper/svg.html" "triangle-exclamation" }}
-            </svg>
-            <span>1 <span>low risk violation</span></span>
-          </li>
-        </ul>
+       <ul class="mt-2 space-y-2 text-lg font-semibold">
+  ${
+    (data.violation_description || "").trim()
+      ? `
+        <li class="mt-4 flex items-start">
+          <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
+            {{ partial "helper/svg.html" "triangle-exclamation" }}
+          </svg>
+          <span>Violation reported</span>
+        </li>
+      `
+      : `
+        <li class="mt-4 flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;">
+            {{ partial "helper/svg.html" "circle-check" }}
+          </svg>
+          <span>No violations reported.</span>
+        </li>
+      `
+  }
+</ul>
+
         <div class="pt-2">
           <button
             class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
@@ -553,20 +558,6 @@
             </svg>
           </button>
         </div>
-        <ul class="violations-data" hidden>
-          <li data-level="high">
-            <h4>Food Sourcing, Handling, & Storage</h4>
-            <p>Some kitchen equipment was dirty and needs to be cleaned to prevent contamination.</p>
-          </li>
-          <li data-level="moderate">
-            <h4>Employee Health & Hygiene</h4>
-            <p>An employee did not wash their hands properly, which can spread germs to food.</p>
-          </li>
-          <li data-level="low">
-            <h4>Facility Management</h4>
-            <p>Minor maintenance issue needs attention.</p>
-          </li>
-        </ul>
       `;
 
       return card;
@@ -606,7 +597,6 @@
   })();
 </script>
 
-      <!-- Updated search button handlers -->
       <script>
         (function () {
           function triggerSearch() {
