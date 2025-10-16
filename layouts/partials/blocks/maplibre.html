@@ -22,6 +22,7 @@
       _flyToHandler: null,
       _mobileViewHandler: null,
       _markerInstances: [],
+      _baseMarkerInstances: [],
 
       init() {
         const el = this.$refs.canvas;
@@ -100,6 +101,38 @@
         this._initializing = true;
         this.initMap();
         this._initializing = false;
+      },
+
+      _createMarkerElement(m = {}) {
+        const color = m.color || "#c0392b";
+        const size = Number.isFinite(m.size) ? m.size : 40; // px
+        const markerEl = document.createElement("div");
+        markerEl.className = "cursor-pointer";
+        markerEl.style.width = `${size}px`;
+        markerEl.style.height = `${size}px`;
+        markerEl.style.transform = "translateY(-2px)";
+        markerEl.innerHTML = `
+          <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+              </filter>
+            </defs>
+            <g filter="url(#markerShadow)">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z
+                   M12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                fill="${color}"
+                stroke="#ffffff"
+                stroke-width="1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              />
+              <circle cx="12" cy="9.5" r="2.5" fill="#ffffff"/>
+            </g>
+          </svg>
+        `;
+        return markerEl;
       },
 
       initMap() {
@@ -217,14 +250,32 @@
 
       addMarkers() {
         if (!this.map) return;
+
         (this.markers || []).forEach((m) => {
           if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
+
+          const markerEl = this._createMarkerElement(m);
           const marker = new maplibregl.Marker({
-            color: m.color || "#c0392b",
+            element: markerEl,
+            anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
-          if (m.popupHTML)
+
+          if (m.popupHTML) {
             marker.setPopup(new maplibregl.Popup().setHTML(m.popupHTML));
+          }
+
+          if (m.inspectionId) {
+            markerEl.addEventListener("click", () => {
+              window.dispatchEvent(
+                new CustomEvent("marker-click", {
+                  detail: { id: m.inspectionId },
+                }),
+              );
+            });
+          }
+
           marker.addTo(this.map);
+          this._baseMarkerInstances.push(marker);
         });
       },
 
@@ -239,14 +290,7 @@
         newMarkers.forEach((m) => {
           if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
 
-          const markerEl = document.createElement("div");
-          markerEl.className = "cursor-pointer";
-          markerEl.innerHTML = `
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="${m.color || "#c0392b"}">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-          `;
-
+          const markerEl = this._createMarkerElement(m);
           const marker = new maplibregl.Marker({
             element: markerEl,
             anchor: "bottom",
@@ -309,6 +353,9 @@
         }
         if (this._markerInstances) {
           this._markerInstances.forEach((m) => m.remove());
+        }
+        if (this._baseMarkerInstances) {
+          this._baseMarkerInstances.forEach((m) => m.remove());
         }
         try {
           this.map?.remove();
