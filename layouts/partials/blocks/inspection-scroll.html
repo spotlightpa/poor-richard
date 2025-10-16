@@ -451,10 +451,28 @@
       var inspectionDate = data.inspection_date || "";
       var uniqueId = "inspection-" + index;
 
-      var addressLine = "";
-      if (address && city) addressLine = address + ", " + city;
-      else if (address) addressLine = address;
-      else if (city) addressLine = city;
+    function simplifyAddress(fullAddress) {
+      try {
+        const parts = fullAddress.split(",");
+        if (parts.length >= 3) {
+          return parts.slice(0, 2).join(",").trim();
+        } else if (parts.length === 2) {
+          return parts[0].trim();
+        }
+        return fullAddress.trim();
+      } catch (err) {
+        return fullAddress;
+      }
+    }
+
+    var addressLine = "";
+    var simplifiedAddress = simplifyAddress(address || "");
+
+    if (simplifiedAddress)
+      addressLine = simplifiedAddress;
+    else if (city)
+      addressLine = city;
+
 
       var searchIndex = [facilityName, address, city, inspectionDate]
         .join(" ")
