@@ -6,14 +6,80 @@
       <div
         class="flex h-[120px] w-full items-center justify-center gap-6 rounded-t-[40px] bg-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)] md:hidden md:rounded-none"
       >
-        <button
-          class="ml-6 flex w-1/2 items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
-        >
-          <span>Filter</span>
-          <svg class="ml-auto h-5 w-5 fill-yellow-9">
-            {{ partial "helper/svg.html" "filter" }}
-          </svg>
-        </button>
+        <div
+          class="relative ml-6 w-1/2"
+          x-data="{
+              open: false,
+              options: [],
+              selectedText: '',
+              label() { return 'Filter: ' + (this.selectedText || 'All Cities'); },
+              init() {
+                const sel = document.getElementById('city-filter');
+                this.options = Array.from(sel?.options || []).map(o => ({ value: o.value, text: o.text }));
+
+                if (sel) {
+                  this.selectedText = sel.options[sel.selectedIndex]?.text || '';
+                }
+
+                window.addEventListener('inspections-search', (e) => {
+                  const city = e.detail?.city || '';
+                  if (!city) {
+                    this.selectedText = sel?.options?.[0]?.text || '';
+                    return;
+                  }
+                  const match = this.options.find(o =>
+                    o.value.toLowerCase() === city.toLowerCase() ||
+                    o.text.toLowerCase() === city.toLowerCase()
+                  );
+                  this.selectedText = match ? match.text : city;
+                });
+
+                sel?.addEventListener('change', () => {
+                  this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : (sel.options?.[0]?.text || '');
+                });
+              },
+              choose(value, text) {
+                const sel = document.getElementById('city-filter');
+                if (sel) {
+                  sel.value = value;
+                  sel.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+                this.selectedText = text || (sel?.options?.[0]?.text || '');
+                this.open = false;
+              }
+            }"
+          >
+          <button
+            @click="open = !open"
+            :aria-expanded="open"
+            aria-haspopup="menu"
+            class="flex w-full items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+          >
+            <span x-text="label()"></span>
+            <svg class="ml-auto h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "filter" }}
+            </svg>
+          </button>
+
+          <div
+            x-show="open"
+            x-transition
+            @click.outside="open = false"
+            class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-lg border-2 border-yellow-5 bg-white shadow"
+            role="menu"
+          >
+            <template x-for="opt in options" :key="opt.value + '::' + opt.text">
+              <button
+                class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+                :class="selectedText === opt.text ? 'font-semibold text-yellow-9' : 'text-black'"
+                @click="choose(opt.value, opt.text)"
+                role="menuitem"
+                x-text="opt.text"
+              ></button>
+            </template>
+          </div>
+        </div>
+
         <div
           class="relative mr-6 w-1/2"
           x-data="{
