@@ -3,17 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-10-15-SPLIMPINT1025.md"
+    "content/news/2025-10-16-SPLAGINGDATA1025.md"
   ],
   "subfeatures": [
-    "content/news/2025-10-08-SPLDUMPNRUN1025.md",
-    "content/news/2025-10-08-SPLPHEAADELAYS1025.md",
-    "content/news/2025-10-01-SPLMOREIMPA1025.md",
-    "content/news/2025-09-05-SPLIMPASSEMONEY0925.md"
+    "content/news/2025-08-27-SPLWHISTLESUIT0825.md",
+    "content/news/2025-08-12-SPLAAACON0825.md",
+    "content/news/2025-06-03-SPLAGINGGRADE0625.md"
   ],
   "topSlots": [
     "content/news/2025-10-15-SPLVBFULTON1025.md",
-    "content/news/2025-10-14-SPLLEAVEPJM1025.md",
+    "content/news/2025-10-15-SPLIMPINT1025.md",
     "content/news/2025-10-14-SPLARSONGUILT1025.md"
   ]
 }
