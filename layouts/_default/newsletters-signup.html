@@ -16,7 +16,7 @@
 
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
-  {{ $pages := where .Pages "Kind" "section" }}
+  {{ $pages := where (where .Pages "Kind" "section") ".Params.hide-from-newsletters" "!=" true }}
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form

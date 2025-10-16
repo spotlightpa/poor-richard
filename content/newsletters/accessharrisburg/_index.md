@@ -4,6 +4,7 @@ max-width = "715px"
 
 email-false = true
 button-link = "https://buy.stripe.com/9B66oJ5CHeP888q2BQ4ZG00"
+hide-from-newsletters = true
 
 title = "Insider access, delivered weekly"
 subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
