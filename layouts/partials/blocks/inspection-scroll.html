@@ -14,14 +14,61 @@
             {{ partial "helper/svg.html" "filter" }}
           </svg>
         </button>
-        <button
-          class="mr-6 flex w-1/2 items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+        <div
+          class="relative mr-6 w-1/2"
+          x-data="{
+            open: false,
+            selected: localStorage.getItem('inspections-sort') || 'date',
+            labelMap: { 'date': 'Most Recent', 'high-risk': 'Highest Risk TK', 'alphabetical': 'Alphabetical' },
+            get label(){ return 'Sort: ' + (this.labelMap[this.selected] || 'Most Recent'); },
+            choose(v){
+              this.selected = v;
+              localStorage.setItem('inspections-sort', v);
+              window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: v }}));
+              this.open = false;
+            }
+          }"
         >
-          <span>Sort</span>
-          <svg class="ml-auto h-5 w-5 fill-yellow-9">
-            {{ partial "helper/svg.html" "chevron" }}
-          </svg>
-        </button>
+          <button
+            @click="open = !open"
+            :aria-expanded="open"
+            class="flex w-full items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+          >
+            <span x-text="label"></span>
+            <svg class="ml-auto h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "chevron" }}
+            </svg>
+          </button>
+
+          <div
+            x-show="open"
+            x-transition
+            @click.outside="open = false"
+            class="absolute right-0 z-20 mt-2 w-full rounded-lg border-2 border-yellow-5 bg-white shadow"
+          >
+            <button
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+              :class="selected==='date' ? 'font-semibold text-yellow-9' : 'text-black'"
+              @click="choose('date')"
+            >
+              Most Recent
+            </button>
+            <button
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+              :class="selected==='high-risk' ? 'font-semibold text-yellow-9' : 'text-black'"
+              @click="choose('high-risk')"
+            >
+              Highest Risk TK
+            </button>
+            <button
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+              :class="selected==='alphabetical' ? 'font-semibold text-yellow-9' : 'text-black'"
+              @click="choose('alphabetical')"
+            >
+              Alphabetical
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
