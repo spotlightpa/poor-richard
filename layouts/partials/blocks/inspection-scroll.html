@@ -274,43 +274,61 @@
       });
     }
 
-    function rowsToMarkers(rows, startIndex) {
-      return rows
-        .map(function (row, i) {
-          var lat = parseFloat(row.Latitude);
-          var lon = parseFloat(row.Longitude);
-          if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
-
-          var hasViolation =
-            !!(row.violation_description && String(row.violation_description).trim());
-          var color = hasViolation ? "#c0392b" : "#1b998b";
-
-          var facilityName = escapeHTML(row.facility || "Facility");
-          var address = escapeHTML(row.address || "");
-          var city = escapeHTML(row.city || "");
-          var id = "inspection-" + (startIndex + i);
-
-          return {
-            lon: lon,
-            lat: lat,
-            color: color,
-            inspectionId: id,
-            popupHTML: `
-              <div class="p-2">
-                <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
-                <p class="text-xs text-gray-600">${address}${address && city ? ", " : ""}${city}</p>
-                <button
-                  class="mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold"
-                  onclick="window.dispatchEvent(new CustomEvent('marker-click', {detail: {id: '${id}'}}))"
-                >
-                  View details →
-                </button>
-              </div>
-            `,
-          };
-        })
-        .filter(Boolean);
+function rowsToMarkers(rows, startIndex) {
+  function simplifyAddress(fullAddress) {
+    try {
+      const parts = String(fullAddress || "").split(",");
+      if (parts.length >= 3) {
+        return parts.slice(0, 2).join(",").trim();
+      } else if (parts.length === 2) {
+        return parts[0].trim();
+      }
+      return String(fullAddress || "").trim();
+    } catch (err) {
+      return String(fullAddress || "").trim();
     }
+  }
+
+  return rows
+    .map(function (row, i) {
+      var lat = parseFloat(row.Latitude);
+      var lon = parseFloat(row.Longitude);
+      if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
+
+      var hasViolation =
+        !!(row.violation_description && String(row.violation_description).trim());
+      var color = hasViolation ? "#c0392b" : "#1b998b";
+
+      var facilityName = escapeHTML(row.facility || "Facility");
+      var simplifiedAddress = simplifyAddress(row.address || "");
+      var addressLine = "";
+      if (simplifiedAddress) {
+        addressLine = simplifiedAddress;
+      } else if (row.city) {
+        addressLine = row.city;
+      }
+
+      var id = "inspection-" + (startIndex + i);
+
+      return {
+        lon: lon,
+        lat: lat,
+        color: color,
+        inspectionId: id,
+        popupHTML: `
+          <div class="p-2">
+            <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
+            ${
+              addressLine
+                ? `<p class="text-xs text-g-6">${escapeHTML(addressLine)}</p>`
+                : ""
+            }
+          </div>
+        `,
+      };
+    })
+    .filter(Boolean);
+}
 
     function syncMarkers() {
       window.dispatchEvent(
