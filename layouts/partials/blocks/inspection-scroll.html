@@ -196,6 +196,8 @@
     }
 
     function renderMore(count) {
+      if (document.querySelector('.detail-content')) return;
+
       if (rendering) return;
       if (loaded >= filteredData.length) return;
       rendering = true;
@@ -347,6 +349,7 @@
 
     function maybeLoadMore() {
       if (isSearching) return;
+      if (document.querySelector('.detail-content')) return;
 
       var now = Date.now();
       if (now - lastCheck < debounceDelay) return;
