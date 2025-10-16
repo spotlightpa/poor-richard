@@ -3,6 +3,7 @@ authors = ["Colin Deppen"]
 blurb = "Hope Haven Farm Sanctuary in Allegheny County is run by Karen Phillips, a veterinarian, and is home to over 100 rescued animals."
 byline = "Colin Deppen of Spotlight PA"
 description = "Hope Haven Farm Sanctuary in Allegheny County is run by Karen Phillips, a veterinarian, and is home to over 100 rescued animals."
+draft = false
 feed-exclude = false
 image = "2024/11/01kk-4ffb-pyzg-t4v6.jpeg"
 image-caption = "Karen Phillips and friends at Hope Haven Farm Sanctuary in Allegheny County."
@@ -18,7 +19,7 @@ slug = "pennsylvania-farm-animal-rescue-allegheny-county-vegan-hope-haven"
 suppress-date = false
 title = "PA Local Heroes: The veterinarian behind a growing farm animal rescue"
 title-tag = "PA Local Heroes: Where farm animals go to thrive"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "Where farm animals go to thrive"
 +++
 

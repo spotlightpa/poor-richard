@@ -3,6 +3,7 @@ authors = ["Asha Prihar"]
 blurb = "Garden of Health started in 2015 as a pantry that specialized in allergy-friendly foods, and it’s since grown into a nonprofit that distributes millions of pounds of “food for all.”"
 byline = "Asha Prihar of Spotlight PA"
 description = "Garden of Health has grown from a pantry specializing in allergy-friendly foods into a nonprofit that distributes millions of pounds of “food for all.”"
+draft = false
 feed-exclude = false
 image = "2025/03/01ky-av5a-5tbk-f3d3.jpeg"
 image-credit = "Photo provided by Garden of Health, Inc."
@@ -18,7 +19,7 @@ slug = "garden-of-health-montgomery-county-food-insecurity-gluten-free"
 suppress-date = false
 title = "PA Local Heroes: A Montco mom’s mission to provide friendly foods to all"
 title-tag = "A Montco mom’s mission to fight food insecurity"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "A mom’s mission to provide friendly foods to all"
 +++
 
