@@ -232,6 +232,10 @@
           var lon = parseFloat(row.Longitude);
           if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
 
+          var hasViolation =
+            !!(row.violation_description && String(row.violation_description).trim());
+          var color = hasViolation ? "#c0392b" : "#1b998b";
+
           var facilityName = escapeHTML(row.facility || "Facility");
           var address = escapeHTML(row.address || "");
           var city = escapeHTML(row.city || "");
@@ -240,7 +244,7 @@
           return {
             lon: lon,
             lat: lat,
-            color: "#c0392b",
+            color: color,
             inspectionId: id,
             popupHTML: `
               <div class="p-2">
