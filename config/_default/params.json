@@ -9,12 +9,15 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+      "description": "Support Spotlight PA's unmatched election reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01kv/zqz8/newsmatch-2023-tracker-banners-37-.png"
+        "https://files.data.spotlightpa.org/uploads/01mf/1mmy/13.png",
+        "https://files.data.spotlightpa.org/uploads/01mf/1mmy/14.png",
+        "https://files.data.spotlightpa.org/uploads/01mf/1mmz/15.png",
+        "https://files.data.spotlightpa.org/uploads/01mf/1mn0/16.png"
       ]
     }
   ],
@@ -28,7 +31,10 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01kv/zr2e/newsmatch-2024-rectangles-1024-512-px-7-.png"
+        "https://files.data.spotlightpa.org/uploads/01mf/1ndh/1.png",
+        "https://files.data.spotlightpa.org/uploads/01mf/1ndj/2.png",
+        "https://files.data.spotlightpa.org/uploads/01mf/1ndk/3.png",
+        "https://files.data.spotlightpa.org/uploads/01mf/1ndk/4.png"
       ]
     }
   ],
