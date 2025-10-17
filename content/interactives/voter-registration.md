@@ -14,12 +14,12 @@ image-alt = "Illustration of election pins"
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
 
 [data]
-source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
+source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx"
 popup = true
 cacheVersion = 1
 maxCacheAge = 24
 delimiter = ","
-numericFields = ["Latitude", "Longitude"]
+numericFields = ["Total"]
 
 [map]
 controls = ["navigation", "fullscreen"]
