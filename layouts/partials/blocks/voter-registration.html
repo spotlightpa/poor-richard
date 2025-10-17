@@ -6,57 +6,61 @@
   {{ partial "blocks/maplibre.html" . }}
 {{ end }}
 
+{{ partial "s3-data-loader.html" . }}
 
-<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-  <div
-    class="flex h-96 flex-col justify-center rounded-lg border-2 border-black bg-white p-6 text-left text-black"
-  >
-    <p class="mb-4 text-2xl font-semibold">Total Registered Voters</p>
-    <p class="text-4xl font-bold">8,882,802</p>
-
-    <div class="mt-6 space-y-2">
-      <p class="text-lg">Democrats: <span class="font-bold">3,550,506</span></p>
-      <p class="text-lg">
-        Republicans: <span class="font-bold">3,496,659</span>
-      </p>
-      <p class="text-lg">
-        No Affiliation: <span class="font-bold">1,318,415</span>
-      </p>
-      <p class="text-lg">Other: <span class="font-bold">1,318,415</span></p>
-    </div>
-  </div>
-
-  <div
-    class="flex h-96 items-stretch justify-stretch overflow-hidden rounded-lg"
-  >
+<div x-data="s3DataLoader()" x-init="init()">
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
     <div
-      x-data='maplibreComponent({
-      id: "pa-map",
-      styleURL: "https://tiles.openfreemap.org/styles/positron",
-      bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-      padding: 24,
-      minZoom: 3,
-      maxZoom: 18,
-      zoom: 6,
-      controls: ["navigation","fullscreen"],
-      attributionCompact: true,
-      ariaLabel: "Pennsylvania voter registration map",
-      class: "relative w-full h-full"
-    })'
-      x-init="init()"
-      role="region"
-      aria-label="Pennsylvania voter registration map"
-      class="relative h-full w-full"
+      class="flex h-96 flex-col justify-center rounded-lg border-2 border-black bg-white p-6 text-left text-black"
     >
-      <div x-ref="canvas" class="h-full w-full"></div>
+      <p class="mb-4 text-2xl font-semibold">Total Registered Voters</p>
+      <p
+        class="text-4xl font-bold"
+        x-text="totalRegistered().toLocaleString()"
+      ></p>
+
+      <div class="mt-6 space-y-2">
+        <template x-for="row in partyRows()" :key="row.Party">
+          <p class="text-lg">
+            <span x-text="row.Party"></span>:
+            <span class="font-bold" x-text="row.Total.toLocaleString()"></span>
+          </p>
+        </template>
+      </div>
     </div>
-  </div>
 
-  <div class="flex h-96 items-center justify-center bg-red">
-    <p class="text-2xl font-semibold text-white">Block 3</p>
-  </div>
+    <div
+      class="flex h-96 items-stretch justify-stretch overflow-hidden rounded-lg"
+    >
+      <div
+        x-data='maplibreComponent({
+          id: "pa-map",
+          styleURL: "https://tiles.openfreemap.org/styles/positron",
+          bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
+          padding: 24,
+          minZoom: 3,
+          maxZoom: 18,
+          zoom: 6,
+          controls: ["navigation","fullscreen"],
+          attributionCompact: true,
+          ariaLabel: "Pennsylvania voter registration map",
+          class: "relative w-full h-full"
+        })'
+        x-init="init()"
+        role="region"
+        aria-label="Pennsylvania voter registration map"
+        class="relative h-full w-full"
+      >
+        <div x-ref="canvas" class="h-full w-full"></div>
+      </div>
+    </div>
 
-  <div class="flex h-96 items-center justify-center bg-orange">
-    <p class="text-2xl font-semibold text-white">Block 4</p>
+    <div class="flex h-96 items-center justify-center bg-red">
+      <p class="text-2xl font-semibold text-white">Block 3</p>
+    </div>
+
+    <div class="flex h-96 items-center justify-center bg-orange">
+      <p class="text-2xl font-semibold text-white">Block 4</p>
+    </div>
   </div>
 </div>
