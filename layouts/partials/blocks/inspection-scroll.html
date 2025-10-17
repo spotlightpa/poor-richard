@@ -1,0 +1,887 @@
+<div class="bg-black font-serif">
+  <div class="overflow-hidden rounded-t-[40px] bg-g-3 md:rounded-none">
+    <div
+      class="h-[120px] w-full rounded-t-[40px] bg-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)] md:hidden md:rounded-none"
+    >
+      <div
+        class="flex h-[120px] w-full items-center justify-center gap-6 rounded-t-[40px] bg-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)] md:hidden md:rounded-none"
+      >
+        <div
+          class="relative ml-6 w-1/2"
+          x-data="{
+              open: false,
+              options: [],
+              selectedText: '',
+              label() { return 'Filter: ' + (this.selectedText || 'All Cities'); },
+              init() {
+                const sel = document.getElementById('city-filter');
+                this.options = Array.from(sel?.options || []).map(o => ({ value: o.value, text: o.text }));
+
+                if (sel) {
+                  this.selectedText = sel.options[sel.selectedIndex]?.text || '';
+                }
+
+                window.addEventListener('inspections-search', (e) => {
+                  const city = e.detail?.city || '';
+                  if (!city) {
+                    this.selectedText = sel?.options?.[0]?.text || '';
+                    return;
+                  }
+                  const match = this.options.find(o =>
+                    o.value.toLowerCase() === city.toLowerCase() ||
+                    o.text.toLowerCase() === city.toLowerCase()
+                  );
+                  this.selectedText = match ? match.text : city;
+                });
+
+                sel?.addEventListener('change', () => {
+                  this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : (sel.options?.[0]?.text || '');
+                });
+              },
+              choose(value, text) {
+                const sel = document.getElementById('city-filter');
+                if (sel) {
+                  sel.value = value;
+                  sel.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+                this.selectedText = text || (sel?.options?.[0]?.text || '');
+                this.open = false;
+              }
+            }"
+        >
+          <button
+            @click="open = !open"
+            :aria-expanded="open"
+            aria-haspopup="menu"
+            class="flex w-full items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+          >
+            <span x-text="label()"></span>
+            <svg class="ml-auto h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "filter" }}
+            </svg>
+          </button>
+
+          <div
+            x-show="open"
+            x-transition
+            @click.outside="open = false"
+            class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-lg border-2 border-yellow-5 bg-white shadow"
+            role="menu"
+          >
+            <template x-for="opt in options" :key="opt.value + '::' + opt.text">
+              <button
+                class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+                :class="selectedText === opt.text ? 'font-semibold text-yellow-9' : 'text-black'"
+                @click="choose(opt.value, opt.text)"
+                role="menuitem"
+                x-text="opt.text"
+              ></button>
+            </template>
+          </div>
+        </div>
+
+        <div
+          class="relative mr-6 w-1/2"
+          x-data="{
+            open: false,
+            selected: localStorage.getItem('inspections-sort') || 'date',
+            labelMap: { 'date': 'Most Recent', 'high-risk': 'Highest Risk TK', 'alphabetical': 'Alphabetical' },
+            get label(){ return 'Sort: ' + (this.labelMap[this.selected] || 'Most Recent'); },
+            choose(v){
+              this.selected = v;
+              localStorage.setItem('inspections-sort', v);
+              window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: v }}));
+              this.open = false;
+            }
+          }"
+        >
+          <button
+            @click="open = !open"
+            :aria-expanded="open"
+            class="flex w-full items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+          >
+            <span x-text="label"></span>
+            <svg class="ml-auto h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "chevron" }}
+            </svg>
+          </button>
+
+          <div
+            x-show="open"
+            x-transition
+            @click.outside="open = false"
+            class="absolute right-0 z-20 mt-2 w-full rounded-lg border-2 border-yellow-5 bg-white shadow"
+          >
+            <button
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+              :class="selected==='date' ? 'font-semibold text-yellow-9' : 'text-black'"
+              @click="choose('date')"
+            >
+              Most Recent
+            </button>
+            <button
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+              :class="selected==='high-risk' ? 'font-semibold text-yellow-9' : 'text-black'"
+              @click="choose('high-risk')"
+            >
+              Highest Risk TK
+            </button>
+            <button
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
+              :class="selected==='alphabetical' ? 'font-semibold text-yellow-9' : 'text-black'"
+              @click="choose('alphabetical')"
+            >
+              Alphabetical
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-3 space-y-3 bg-g-3 pb-3">
+      {{ partial "s3-data-loader.html" . }}
+
+<script>
+  (function () {
+    var CHUNK = 10;
+    var allData = [];
+    var filteredData = [];
+    var loaded = 0;
+    var rendering = false;
+    var isSearching = false;
+
+    window.__inspectionsMarkers = window.__inspectionsMarkers || [];
+
+    window.addEventListener("inspections-data-ready", function (event) {
+      allData = event.detail && event.detail.data ? event.detail.data : [];
+      filteredData = allData;
+      loaded = 0;
+      rendering = false;
+      window.__inspectionsMarkers = [];
+      clearMounts();
+      renderMore(CHUNK);
+
+      var vp = document.querySelector('[aria-label="Inspection results list"]');
+      if (vp) vp.addEventListener("scroll", maybeLoadMore);
+      window.addEventListener("scroll", maybeLoadMore);
+      window.addEventListener("resize", maybeLoadMore);
+      window.addEventListener("mobile-view-changed", function (e) {
+        var view = e.detail && e.detail.view;
+        if (view === "list") {
+          maybeLoadMore();
+        } else if (view === "map") {
+          syncMarkers();
+        }
+      });
+    });
+
+    window.addEventListener("inspections-search", function(event) {
+      var query = event.detail.query || "";
+      var city = event.detail.city || "";
+      performSearch(query, city);
+    });
+
+    function performSearch(query, city) {
+      isSearching = true;
+      showSearchSpinner();
+
+      setTimeout(function() {
+        var normalizedQuery = normalizeString(query);
+
+        filteredData = allData.filter(function(row) {
+          var searchMatch = true;
+          if (normalizedQuery) {
+            var searchText = [
+              row.facility || "",
+              row.address || "",
+              row.city || "",
+              row.inspection_date || ""
+            ].join(" ");
+            searchMatch = normalizeString(searchText).includes(normalizedQuery);
+          }
+
+          var cityMatch = true;
+          if (city) {
+            var rowCity = row.city || "";
+            if (city === "Other") {
+              cityMatch = !isPACity(rowCity);
+            } else {
+              cityMatch = rowCity.toLowerCase() === city.toLowerCase();
+            }
+          }
+
+          return searchMatch && cityMatch;
+        });
+
+        loaded = 0;
+        window.__inspectionsMarkers = [];
+        clearMounts();
+        renderMore(CHUNK);
+
+        hideSearchSpinner();
+        isSearching = false;
+
+        var noResultsEl = document.getElementById("no-results");
+        if (noResultsEl) {
+          noResultsEl.classList.toggle("hidden", filteredData.length > 0);
+        }
+      }, 100);
+    }
+
+    function normalizeString(str) {
+      return (str || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function isPACity(city) {
+      var paCities = [
+        "Aliquippa", "Allentown", "Altoona", "Arnold", "Beaver Falls",
+        "Bethlehem", "Bradford", "Butler", "Carbondale", "Chester",
+        "Clairton", "Coatesville", "Connellsville", "Corry", "DuBois",
+        "Duquesne", "Easton", "Erie", "Farrell", "Franklin",
+        "Greensburg", "Harrisburg", "Hazleton", "Hermitage", "Jeannette",
+        "Johnstown", "Lancaster", "Lebanon", "Lock Haven", "Lower Burrell",
+        "McKeesport", "Meadville", "Monessen", "Monongahela", "Nanticoke",
+        "New Castle", "New Kensington", "Oil City", "Parker", "Philadelphia",
+        "Pittsburgh", "Pittston", "Pottsville", "Reading", "Scranton",
+        "Shamokin", "Sharon", "St. Marys", "Sunbury", "Titusville",
+        "Uniontown", "Warren", "Washington", "Wilkes-Barre", "Williamsport", "York"
+      ];
+      return paCities.some(function(pc) {
+        return city.toLowerCase() === pc.toLowerCase();
+      });
+    }
+
+    function showSearchSpinner() {
+      hideSearchSpinner();
+
+      var spinner = document.createElement('div');
+      spinner.id = 'search-loading-spinner';
+      spinner.className = 'w-full bg-white p-8 shadow md:p-10';
+      spinner.style.cssText = 'display:flex; align-items:center; justify-content:center; min-height:200px;';
+      spinner.innerHTML = `
+        <div style="text-align: center;">
+          <div style="
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #fbbf24;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+          "></div>
+          <p style="margin-top: 16px; font-family: sans-serif; font-size: 16px; color: #6b7280;">
+            Searching through all facilities...
+          </p>
+        </div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
+      `;
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      if (mounts[0]) {
+        mounts[0].insertBefore(spinner, mounts[0].firstChild);
+      }
+    }
+
+    function hideSearchSpinner() {
+      var spinner = document.getElementById('search-loading-spinner');
+      if (spinner) {
+        spinner.remove();
+      }
+    }
+
+    function getMountPoints() {
+      return Array.from(document.querySelectorAll(".inspections-mount"));
+    }
+
+    function clearMounts() {
+      getMountPoints().forEach(function (m) {
+        m.innerHTML = "";
+      });
+    }
+
+    function renderMore(count) {
+      if (document.querySelector('.detail-content')) return;
+
+      if (rendering) return;
+      if (loaded >= filteredData.length) return;
+      rendering = true;
+
+      var start = loaded;
+      var end = Math.min(start + count, filteredData.length);
+      var slice = filteredData.slice(start, end);
+
+      appendCards(slice, start);
+
+      var newMarkers = rowsToMarkers(slice, start);
+      window.__inspectionsMarkers = window.__inspectionsMarkers.concat(newMarkers);
+      syncMarkers();
+
+      loaded = end;
+      rendering = false;
+      window.dispatchEvent(new CustomEvent("inspections-cards-changed"));
+    }
+
+    function appendCards(rows, startIndex) {
+      var mounts = getMountPoints();
+      if (mounts.length === 0) return;
+      mounts.forEach(function (mount) {
+        rows.forEach(function (row, i) {
+          mount.appendChild(createInspectionCard(row, startIndex + i));
+        });
+      });
+    }
+
+function rowsToMarkers(rows, startIndex) {
+  function simplifyAddress(fullAddress) {
+    try {
+      const parts = String(fullAddress || "").split(",");
+      if (parts.length >= 3) {
+        return parts.slice(0, 2).join(",").trim();
+      } else if (parts.length === 2) {
+        return parts[0].trim();
+      }
+      return String(fullAddress || "").trim();
+    } catch (err) {
+      return String(fullAddress || "").trim();
+    }
+  }
+
+  return rows
+    .map(function (row, i) {
+      var lat = parseFloat(row.Latitude);
+      var lon = parseFloat(row.Longitude);
+      if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
+
+      var hasViolation =
+        !!(row.violation_description && String(row.violation_description).trim());
+      var color = hasViolation ? "#c0392b" : "#1b998b";
+
+      var facilityName = escapeHTML(row.facility || "Facility");
+      var simplifiedAddress = simplifyAddress(row.address || "");
+      var addressLine = "";
+      if (simplifiedAddress) {
+        addressLine = simplifiedAddress;
+      } else if (row.city) {
+        addressLine = row.city;
+      }
+
+      var id = "inspection-" + (startIndex + i);
+
+      return {
+        lon: lon,
+        lat: lat,
+        color: color,
+        inspectionId: id,
+        popupHTML: `
+          <div class="p-2">
+            <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
+            ${
+              addressLine
+                ? `<p class="text-xs text-g-6">${escapeHTML(addressLine)}</p>`
+                : ""
+            }
+          </div>
+        `,
+      };
+    })
+    .filter(Boolean);
+}
+
+    function syncMarkers() {
+      window.dispatchEvent(
+        new CustomEvent("update-map-markers", {
+          detail: { markers: window.__inspectionsMarkers },
+        }),
+      );
+    }
+
+    function isVisible(el) {
+      if (!el) return false;
+      if (el.offsetParent === null) {
+        var s = getComputedStyle(el);
+        if (s.display === "none" || s.visibility === "hidden" || parseFloat(s.opacity) === 0) return false;
+      }
+      var r = el.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
+    }
+
+    var lastCheck = 0;
+    var debounceDelay = 150;
+    var loadMoreTimeout = null;
+    var loadCooldown = 1000;
+
+    if (typeof window.__isLoadingMore === 'undefined') {
+      window.__isLoadingMore = false;
+    }
+    if (typeof window.__lastLoadTime === 'undefined') {
+      window.__lastLoadTime = 0;
+    }
+
+    function showLoadingSpinner() {
+      if (document.getElementById('loading-spinner') || isSearching) {
+        return;
+      }
+
+      var spinner = document.createElement('div');
+      spinner.id = 'loading-spinner';
+      spinner.className = 'w-full bg-white p-8 shadow md:p-10';
+      spinner.style.display = 'flex';
+      spinner.style.alignItems = 'center';
+      spinner.style.justifyContent = 'center';
+      spinner.style.minHeight = '100px';
+      spinner.innerHTML = `
+        <div style="
+          width: 48px;
+          height: 48px;
+          border: 4px solid #f3f4f6;
+          border-top: 4px solid #fbbf24;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+        "></div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
+      `;
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      var visibleMount = null;
+      for (var i = 0; i < mounts.length; i++) {
+        var m = mounts[i];
+        var rect = m.getBoundingClientRect();
+        var isVis = rect.width > 0 && rect.height > 0;
+        if (isVis && !visibleMount) {
+          visibleMount = m;
+        }
+      }
+
+      if (visibleMount) {
+        visibleMount.appendChild(spinner);
+      }
+    }
+
+    function hideLoadingSpinner() {
+      var spinner = document.getElementById('loading-spinner');
+      if (spinner) {
+        spinner.remove();
+      }
+    }
+
+    function maybeLoadMore() {
+      if (isSearching) return;
+      if (document.querySelector('.detail-content')) return;
+
+      var now = Date.now();
+      if (now - lastCheck < debounceDelay) return;
+      lastCheck = now;
+
+      if (window.__isLoadingMore) {
+        return;
+      }
+
+      var timeSinceLastLoad = now - window.__lastLoadTime;
+      if (timeSinceLastLoad < loadCooldown) {
+        return;
+      }
+
+      if (rendering || loaded >= filteredData.length || loadMoreTimeout) {
+        return;
+      }
+
+      var threshold = 50;
+      var vp = document.querySelector('[aria-label="Inspection results list"]');
+
+      if (vp && isVisible(vp)) {
+        if (vp.scrollTop + vp.clientHeight >= vp.scrollHeight - threshold) {
+          window.__isLoadingMore = true;
+          loadMoreTimeout = setTimeout(function() {
+            if (rendering || loaded >= filteredData.length) {
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+              return;
+            }
+            showLoadingSpinner();
+            setTimeout(function() {
+              renderMore(CHUNK);
+              hideLoadingSpinner();
+              window.__lastLoadTime = Date.now();
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+            }, 500);
+          }, 0);
+        }
+        return;
+      }
+
+      var scrollContainer = document.querySelector('.mt-3.space-y-3.bg-g-3.pb-3');
+      if (scrollContainer) {
+        var isScrollable = scrollContainer.scrollHeight > scrollContainer.clientHeight;
+
+        if (isScrollable) {
+          var containerBottom = scrollContainer.scrollTop + scrollContainer.clientHeight;
+          var containerScrollHeight = scrollContainer.scrollHeight;
+          var distanceFromBottom = containerScrollHeight - containerBottom;
+
+          if (distanceFromBottom < threshold) {
+            window.__isLoadingMore = true;
+            loadMoreTimeout = setTimeout(function() {
+              if (rendering || loaded >= filteredData.length) {
+                loadMoreTimeout = null;
+                window.__isLoadingMore = false;
+                return;
+              }
+              showLoadingSpinner();
+              setTimeout(function() {
+                renderMore(CHUNK);
+                hideLoadingSpinner();
+                window.__lastLoadTime = Date.now();
+                loadMoreTimeout = null;
+                window.__isLoadingMore = false;
+              }, 500);
+            }, 0);
+          }
+          return;
+        }
+      }
+
+      var cards = document.querySelectorAll('[data-card="inspection"]');
+      if (cards.length > 0) {
+        var lastCard = cards[cards.length - 1];
+        var rect = lastCard.getBoundingClientRect();
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        if (rect.bottom - viewportHeight < threshold) {
+          window.__isLoadingMore = true;
+          loadMoreTimeout = setTimeout(function() {
+            if (rendering || loaded >= filteredData.length) {
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+              return;
+            }
+            showLoadingSpinner();
+            setTimeout(function() {
+              renderMore(CHUNK);
+              hideLoadingSpinner();
+              window.__lastLoadTime = Date.now();
+              loadMoreTimeout = null;
+              window.__isLoadingMore = false;
+            }, 500);
+          }, 0);
+        }
+      }
+    }
+
+    function createInspectionCard(data, index) {
+      var facilityName = data.facility || "Facility";
+      var address = data.address || "";
+      var city = data.city || "";
+      var inspectionDate = data.inspection_date || "";
+      var uniqueId = "inspection-" + index;
+
+    function simplifyAddress(fullAddress) {
+      try {
+        const parts = fullAddress.split(",");
+        if (parts.length >= 3) {
+          return parts.slice(0, 2).join(",").trim();
+        } else if (parts.length === 2) {
+          return parts[0].trim();
+        }
+        return fullAddress.trim();
+      } catch (err) {
+        return fullAddress;
+      }
+    }
+
+    var addressLine = "";
+    var simplifiedAddress = simplifyAddress(address || "");
+
+    if (simplifiedAddress)
+      addressLine = simplifiedAddress;
+    else if (city)
+      addressLine = city;
+
+
+      var searchIndex = [facilityName, address, city, inspectionDate]
+        .join(" ")
+        .toLowerCase();
+
+      var card = document.createElement("div");
+      card.setAttribute("data-card", "inspection");
+      card.setAttribute("data-index", searchIndex);
+      card.setAttribute("data-date", inspectionDate);
+      card.setAttribute("data-city", city);
+      card.setAttribute("data-inspection-id", uniqueId);
+      card.setAttribute("data-violation-description", data.violation_description || "");
+      card.setAttribute("data-violation-comment", data.comment || "");
+
+      card.setAttribute("id", uniqueId);
+
+      if (data.Latitude && data.Longitude) {
+        card.setAttribute("data-lat", data.Latitude);
+        card.setAttribute("data-lon", data.Longitude);
+      }
+
+      card.className = "w-full space-y-3 bg-white p-8 shadow md:p-10";
+
+      var addressRow = addressLine
+        ? `
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+              {{ partial "helper/svg.html" "location" }}
+            </svg>
+            <span>${escapeHTML(addressLine)}</span>
+          </div>
+        `
+        : "";
+
+      var dateRow = inspectionDate
+        ? `
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+              {{ partial "helper/svg.html" "calendar-day" }}
+            </svg>
+            <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
+          </div>
+        `
+        : "";
+
+      card.innerHTML = `
+        <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
+        <div class="mt-2 space-y-1 text-g-6">
+          ${addressRow}
+          ${dateRow}
+        </div>
+       <ul class="mt-2 space-y-2 text-lg font-semibold">
+  ${
+    (data.violation_description || "").trim()
+      ? `
+        <li class="mt-4 flex items-start">
+          <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
+            {{ partial "helper/svg.html" "triangle-exclamation" }}
+          </svg>
+          <span>Violation reported</span>
+        </li>
+      `
+      : `
+        <li class="mt-4 flex items-start">
+      <svg class="mr-2 mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;">
+            {{ partial "helper/svg.html" "circle-check" }}
+          </svg>
+          <span>No violations reported.</span>
+        </li>
+      `
+  }
+</ul>
+
+        <div class="pt-2">
+          <button
+            class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+            aria-label="Read more about this inspection"
+            data-read-more="${uniqueId}"
+          >
+            <span class="mx-auto">Read more</span>
+            <svg class="h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "chevron-right" }}
+            </svg>
+          </button>
+        </div>
+      `;
+
+      return card;
+    }
+
+    function escapeHTML(str) {
+      if (!str) return "";
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    window.addEventListener("marker-click", function (event) {
+      var inspectionId = event.detail && event.detail.id;
+      if (!inspectionId) return;
+
+      var nodes = Array.from(document.querySelectorAll("#" + CSS.escape(inspectionId)));
+      var card = null;
+      for (var i = 0; i < nodes.length; i++) {
+        var el = nodes[i];
+        if (el && el.offsetParent !== null) {
+          card = el;
+          break;
+        }
+      }
+      if (!card && nodes.length) card = nodes[0];
+      if (!card) return;
+
+      var readMoreBtn = card.querySelector("[data-read-more]");
+      if (readMoreBtn) {
+        readMoreBtn.click();
+      }
+    });
+    })();
+</script>
+
+      <script>
+        (function () {
+          function triggerSearch() {
+            var input = document.getElementById("search-input");
+            var cityFilter = document.getElementById("city-filter");
+
+            var query = input ? input.value : "";
+            var city = cityFilter ? cityFilter.value : "";
+
+            window.dispatchEvent(
+              new CustomEvent("inspections-search", {
+                detail: { query: query, city: city },
+              }),
+            );
+          }
+
+          var button = document.getElementById("search-button");
+          if (button) {
+            button.addEventListener("click", triggerSearch);
+          }
+
+          var input = document.getElementById("search-input");
+          if (input) {
+            input.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                triggerSearch();
+              }
+            });
+          }
+
+          var cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.addEventListener("change", triggerSearch);
+          }
+        })();
+      </script>
+
+      <script>
+        if (typeof window.searchUI_original === "undefined") {
+          window.searchUI_original = window.searchUI || function () {};
+
+          window.searchUI = function () {
+            var instance = window.searchUI_original();
+
+            var originalDoSearch = instance.doSearch;
+            instance.doSearch = function (val) {
+              if (typeof val === "string") this.q = val;
+
+              var cityFilter = document.getElementById("city-filter");
+              window.dispatchEvent(
+                new CustomEvent("inspections-search", {
+                  detail: {
+                    query: this.q,
+                    city: cityFilter ? cityFilter.value : "",
+                  },
+                }),
+              );
+            };
+
+            return instance;
+          };
+        }
+      </script>
+
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            document.addEventListener("click", function (e) {
+              var clearButton = e.target.closest("button");
+              if (
+                clearButton &&
+                clearButton.textContent.toLowerCase().includes("clear")
+              ) {
+                setTimeout(function () {
+                  window.dispatchEvent(
+                    new CustomEvent("inspections-search", {
+                      detail: { query: "", city: "" },
+                    }),
+                  );
+                }, 50);
+              }
+            });
+          }, 500);
+        });
+      </script>
+
+      <div class="inspections-mount space-y-3"></div>
+
+      <div
+        id="no-results"
+        class="hidden w-full bg-white p-8 shadow md:p-10"
+        aria-live="polite"
+      >
+        <p class="font-sans text-xl font-semibold text-g-7">
+          No results found. Please try a different search.
+        </p>
+      </div>
+
+      <script>
+        (function () {
+          const input = document.getElementById("search-input");
+          const button = document.getElementById("search-button");
+          const noResultsEl = document.getElementById("no-results");
+
+          if (!input || !button) return;
+
+          function normalize(str) {
+            return (str || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, "")
+              .replace(/\s+/g, " ")
+              .trim();
+          }
+
+          function doSearch() {
+            const cards = Array.from(
+              document.querySelectorAll('[data-card="inspection"]'),
+            );
+
+            if (cards.length === 0) {
+              if (noResultsEl) noResultsEl.classList.remove("hidden");
+              return;
+            }
+
+            const q = normalize(input.value);
+            let matches = 0;
+
+            cards.forEach((card) => {
+              const haystack = normalize(
+                card.dataset.index || card.textContent,
+              );
+              const hit = !q || haystack.includes(q);
+              card.classList.toggle("hidden", !hit);
+              if (hit) matches++;
+            });
+
+            if (noResultsEl)
+              noResultsEl.classList.toggle("hidden", matches !== 0);
+          }
+
+          button.addEventListener("click", doSearch);
+          input.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              button.click();
+            }
+          });
+        })();
+      </script>
+    </div>
+  </div>
+</div>
