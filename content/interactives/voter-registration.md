@@ -13,4 +13,12 @@ image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-alt = "Illustration of election pins"
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
 
+[map]
+controls = ["navigation", "fullscreen"]
+bounds = [[-80.5199, 39.7198], [-74.6895, 42.26986]]
+padding = 24
+minZoom = 3
+maxZoom = 18
+zoom = 6
+styleURL = "https://tiles.openfreemap.org/styles/positron"
 +++
