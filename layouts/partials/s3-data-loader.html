@@ -1,329 +1,389 @@
 <script>
-    window._inspectionsDataDispatched = window._inspectionsDataDispatched || false;
-    function s3DataLoader() {
-      return {
-        dataSourceURL: {{ .Param "data.source" | default "" }},
-        showPopup: {{ .Param "data.popup" | default "false" }},
-        cacheVersion: {{ .Param "data.cacheVersion" | default 1 }},
-        maxCacheAge: {{ .Param "data.maxCacheAge" | default 24 }} * 60 * 60 * 1000,
-        delimiter: {{ .Param "data.delimiter" | default "," }},
-        numericFields: {{ .Param "data.numericFields" | default "[]" }},
-        cacheName: '',
-        dbName: 'SpotlightPA-DataCache',
-        loading: false,
-        loadingProgress: 0,
-        loadingMessage: 'Initializing...',
-        error: null,
-        data: [],
-        retryCount: 0,
-        maxRetries: 2,
-        initialized: false,
-        async init() {
-          if (this.initialized) return;
-          this.initialized = true;
-          if (!this.dataSourceURL) {
-            this.error = 'No data source URL configured';
-            return;
-          }
-          const onReady = () => {
-            this.loading = false;
-            this.error = null;
-            this.loadingMessage = 'Loaded';
-            this.loadingProgress = 100;
-          };
-          window.addEventListener('inspections-data-ready', onReady, { once: false });
-          this.cacheName = this.generateCacheName(this.dataSourceURL);
-          await this.loadData();
-        },
-        generateCacheName(url) {
-          let hash = 0;
-          for (let i = 0; i < url.length; i++) {
-            const char = url.charCodeAt(i);
-            hash = ((hash << 5) - hash) + char;
-            hash = hash & hash;
-          }
-          return `data-cache-${Math.abs(hash)}`;
-        },
-        async loadData() {
-          this.loading = true;
+  window._inspectionsDataDispatched = window._inspectionsDataDispatched || false;
+  function s3DataLoader() {
+    return {
+      dataSourceURL: {{ .Param "data.source" | default "" }},
+      showPopup: {{ .Param "data.popup" | default "false" }},
+      cacheVersion: {{ .Param "data.cacheVersion" | default 1 }},
+      maxCacheAge: {{ .Param "data.maxCacheAge" | default 24 }} * 60 * 60 * 1000,
+      delimiter: {{ .Param "data.delimiter" | default "," }},
+      numericFields: {{ .Param "data.numericFields" | default "[]" }},
+      cacheName: "",
+      dbName: "SpotlightPA-DataCache",
+      loading: false,
+      loadingProgress: 0,
+      loadingMessage: "Initializing...",
+      error: null,
+      data: [],
+      retryCount: 0,
+      maxRetries: 2,
+      initialized: false,
+      async init() {
+        if (this.initialized) return;
+        this.initialized = true;
+        if (!this.dataSourceURL) {
+          this.error = "No data source URL configured";
+          return;
+        }
+        const onReady = () => {
+          this.loading = false;
           this.error = null;
-          this.loadingProgress = 2;
-          try {
-            const cachedData = await this.loadFromCache();
-            if (cachedData) {
-              this.data = cachedData;
-              this.loadingMessage = 'Loading from cache...';
-              this.loadingProgress = 100;
-              this.loading = false;
-              this.refreshDataInBackground();
-              if (!window._inspectionsDataDispatched) {
-                this.notifyDataReady();
-              }
-            } else {
-              await this.loadFromS3();
+          this.loadingMessage = "Loaded";
+          this.loadingProgress = 100;
+        };
+        window.addEventListener("inspections-data-ready", onReady, { once: false });
+        this.cacheName = this.generateCacheName(this.dataSourceURL);
+        await this.loadData();
+      },
+      generateCacheName(url) {
+        let hash = 0;
+        for (let i = 0; i < url.length; i++) {
+          const char = url.charCodeAt(i);
+          hash = ((hash << 5) - hash) + char;
+          hash = hash & hash;
+        }
+        return `data-cache-${Math.abs(hash)}`;
+      },
+      async ensureXLSX() {
+        if (window.XLSX) return;
+        if (this._xlsxPromise) return this._xlsxPromise;
+        this._xlsxPromise = new Promise((resolve, reject) => {
+          const s = document.createElement("script");
+          s.src = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+          s.onload = () => resolve();
+          s.onerror = (e) => reject(new Error("Failed to load XLSX library"));
+          document.head.appendChild(s);
+        });
+        return this._xlsxPromise;
+      },
+      detectType(url, contentType) {
+        const u = (url || "").toLowerCase().split("?")[0];
+        const ext = u.split(".").pop();
+        if (contentType) {
+          const ct = contentType.toLowerCase();
+          if (ct.includes("sheet") || ct.includes("spreadsheet") || ct.includes("excel")) return "xlsx";
+          if (ct.includes("csv")) return "csv";
+          if (ct.includes("tsv")) return "tsv";
+          if (ct.includes("json")) return "json";
+          if (ct.includes("text")) return "csv";
+        }
+        if (ext === "xlsx" || ext === "xls") return "xlsx";
+        if (ext === "csv") return "csv";
+        if (ext === "tsv") return "tsv";
+        if (ext === "json") return "json";
+        return "csv";
+      },
+      async loadData() {
+        this.loading = true;
+        this.error = null;
+        this.loadingProgress = 2;
+        try {
+          const cachedData = await this.loadFromCache();
+          if (cachedData) {
+            this.data = cachedData;
+            this.loadingMessage = "Loading from cache...";
+            this.loadingProgress = 100;
+            this.loading = false;
+            this.refreshDataInBackground();
+            if (!window._inspectionsDataDispatched) {
+              this.notifyDataReady();
             }
-          } catch (err) {
-            await this.handleError(err);
-          } finally {
-            if (this.data.length > 0 && !this.error) {
-              this.loading = false;
-              await this.waitForLoadingTransition();
-              if (!window._inspectionsDataDispatched) {
-                this.notifyDataReady();
-              }
+          } else {
+            await this.loadFromS3();
+          }
+        } catch (err) {
+          await this.handleError(err);
+        } finally {
+          if (this.data.length > 0 && !this.error) {
+            this.loading = false;
+            await this.waitForLoadingTransition();
+            if (!window._inspectionsDataDispatched) {
+              this.notifyDataReady();
             }
           }
-        },
-        async waitForLoadingTransition() {
-          return new Promise((resolve) => {
-            requestAnimationFrame(() => {
-              const root = this.$root || document;
-              const spinners = root.querySelectorAll('[x-show]');
-              let maxDuration = 0;
-              const active = [];
-              spinners.forEach(el => {
-                const style = window.getComputedStyle(el);
-                const display = style.display;
-                const opacity = style.opacity;
-                const dur = style.transitionDuration || '0s';
-                const durationMs = parseFloat(dur) * 1000;
-                if ((display !== 'none' || opacity !== '0') && durationMs > 0) {
-                  active.push({ el, durationMs });
-                  maxDuration = Math.max(maxDuration, durationMs);
-                }
-              });
-              if (active.length === 0 || maxDuration === 0) {
-                resolve();
-                return;
+        }
+      },
+      async waitForLoadingTransition() {
+        return new Promise((resolve) => {
+          requestAnimationFrame(() => {
+            const root = this.$root || document;
+            const spinners = root.querySelectorAll("[x-show]");
+            let maxDuration = 0;
+            const active = [];
+            spinners.forEach(el => {
+              const style = window.getComputedStyle(el);
+              const display = style.display;
+              const opacity = style.opacity;
+              const dur = style.transitionDuration || "0s";
+              const durationMs = parseFloat(dur) * 1000;
+              if ((display !== "none" || opacity !== "0") && durationMs > 0) {
+                active.push({ el, durationMs });
+                maxDuration = Math.max(maxDuration, durationMs);
               }
-              let doneCount = 0;
-              const total = active.length;
-              const onDone = () => {
-                doneCount++;
-                if (doneCount >= total) resolve();
+            });
+            if (active.length === 0 || maxDuration === 0) {
+              resolve();
+              return;
+            }
+            let doneCount = 0;
+            const total = active.length;
+            const onDone = () => {
+              doneCount++;
+              if (doneCount >= total) resolve();
+            };
+            active.forEach(({ el, durationMs }) => {
+              let finished = false;
+              const end = (e) => {
+                if (!finished && (e.target === el || el.contains(e.target))) {
+                  finished = true;
+                  el.removeEventListener("transitionend", end);
+                  onDone();
+                }
               };
-              active.forEach(({ el, durationMs }) => {
-                let finished = false;
-                const end = (e) => {
-                  if (!finished && (e.target === el || el.contains(e.target))) {
-                    finished = true;
-                    el.removeEventListener('transitionend', end);
-                    onDone();
-                  }
-                };
-                el.addEventListener('transitionend', end);
-                setTimeout(() => {
-                  if (!finished) {
-                    finished = true;
-                    el.removeEventListener('transitionend', end);
-                    onDone();
-                  }
-                }, durationMs + 120);
-              });
+              el.addEventListener("transitionend", end);
+              setTimeout(() => {
+                if (!finished) {
+                  finished = true;
+                  el.removeEventListener("transitionend", end);
+                  onDone();
+                }
+              }, durationMs + 120);
             });
           });
-        },
-        async loadFromS3() {
-          const response = await fetch(this.dataSourceURL, {
-            mode: 'cors',
-            cache: 'no-cache',
-            headers: { 'Accept-Encoding': 'gzip' }
-          });
-          if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-          this.loadingMessage = 'Downloading data...';
-          this.loadingProgress = 5;
-          const contentLength = response.headers.get('content-length');
-          const total = parseInt(contentLength, 10);
-          const reader = response.body.getReader();
-          const chunks = [];
-          let received = 0;
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            chunks.push(value);
-            received += value.length;
-            if (total) {
-              const rawProgress = (received / total) * 70;
-              const calculatedProgress = Math.min(70, Math.round(rawProgress));
-              if (calculatedProgress > this.loadingProgress) {
-                this.loadingProgress = calculatedProgress;
-                this.loadingMessage = `Downloading data...`;
-              }
-            }
-          }
-          if (this.loadingProgress < 70) this.loadingProgress = 70;
-          this.loadingMessage = 'Preparing data...';
-          await new Promise(r => setTimeout(r, 50));
-          const blob = new Blob(chunks);
-          const text = await blob.text();
-          if (this.loadingProgress < 80) this.loadingProgress = 80;
-          this.loadingMessage = 'Processing data...';
-          await new Promise(r => setTimeout(r, 50));
-          const parsed = this.parseCSV(text);
-          if (this.loadingProgress < 90) this.loadingProgress = 90;
-          this.loadingMessage = 'Loading...';
-          await new Promise(r => setTimeout(r, 50));
-          await this.saveToCache(parsed);
-          this.loadingProgress = 100;
-          this.data = parsed;
-        },
-        notifyDataReady() {
-          if (!window._inspectionsDataDispatched) {
-            window._inspectionsDataDispatched = true;
-            window.dispatchEvent(new CustomEvent('inspections-data-ready', {
-              detail: { data: this.data }
-            }));
-          }
-          this.loading = false;
-          this.loadingProgress = 100;
-          this.loadingMessage = 'Loaded';
-        },
-        parseCSV(text) {
-          const records = [];
-          let currentRecord = [];
-          let currentField = '';
-          let inQuotes = false;
-          let i = 0;
-          while (i < text.length) {
-            const char = text[i];
-            if (char === '"') {
-              if (inQuotes && text[i + 1] === '"') {
-                currentField += '"';
-                i += 2;
-              } else {
-                inQuotes = !inQuotes;
-                i++;
-              }
-            } else if (char === ',' && !inQuotes) {
-              currentRecord.push(currentField.trim());
-              currentField = '';
-              i++;
-            } else if (char === '\n' && !inQuotes) {
-              currentRecord.push(currentField.trim());
-              if (currentRecord.some(f => f.length > 0)) records.push(currentRecord);
-              currentRecord = [];
-              currentField = '';
-              i++;
-            } else if (char === '\r' && text[i + 1] === '\n' && !inQuotes) {
-              currentRecord.push(currentField.trim());
-              if (currentRecord.some(f => f.length > 0)) records.push(currentRecord);
-              currentRecord = [];
-              currentField = '';
+        });
+      },
+      async loadFromS3() {
+        const response = await fetch(this.dataSourceURL, { mode: "cors", cache: "no-cache" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        const contentType = response.headers.get("content-type") || "";
+        const type = this.detectType(this.dataSourceURL, contentType);
+        this.loadingMessage = "Downloading data...";
+        this.loadingProgress = 5;
+        let parsed;
+        if (type === "xlsx") {
+          const buf = await response.arrayBuffer();
+          this.loadingProgress = Math.max(this.loadingProgress, 70);
+          this.loadingMessage = "Processing data...";
+          await this.ensureXLSX();
+          parsed = this.parseXLSX(buf);
+        } else if (type === "json") {
+          const text = await response.text();
+          this.loadingProgress = Math.max(this.loadingProgress, 70);
+          this.loadingMessage = "Processing data...";
+          parsed = this.parseJSON(text);
+        } else {
+          const text = await response.text();
+          this.loadingProgress = Math.max(this.loadingProgress, 70);
+          this.loadingMessage = "Processing data...";
+          const delim = type === "tsv" ? "\t" : this.delimiter || ",";
+          parsed = this.parseDelimited(text, delim);
+        }
+        this.loadingProgress = Math.max(this.loadingProgress, 90);
+        this.loadingMessage = "Loading...";
+        await this.saveToCache(parsed);
+        this.loadingProgress = 100;
+        this.data = parsed;
+      },
+      notifyDataReady() {
+        try { console.log("voter-data", this.data); } catch(e) {}
+        if (!window._inspectionsDataDispatched) {
+          window._inspectionsDataDispatched = true;
+          window.dispatchEvent(new CustomEvent("inspections-data-ready", { detail: { data: this.data } }));
+        }
+        this.loading = false;
+        this.loadingProgress = 100;
+        this.loadingMessage = "Loaded";
+      },
+      parseXLSX(arrayBuffer) {
+        const wb = XLSX.read(arrayBuffer, { type: "array" });
+        const sheetName = wb.SheetNames[0];
+        const ws = wb.Sheets[sheetName];
+        const rows = XLSX.utils.sheet_to_json(ws, { defval: "" });
+        return this.coerceNumeric(rows);
+      },
+      parseJSON(text) {
+        let obj = JSON.parse(text);
+        if (Array.isArray(obj)) return this.coerceNumeric(obj);
+        if (obj && Array.isArray(obj.data)) return this.coerceNumeric(obj.data);
+        return [];
+      },
+      parseDelimited(text, delim) {
+        const records = [];
+        let currentRecord = [];
+        let currentField = "";
+        let inQuotes = false;
+        let i = 0;
+        while (i < text.length) {
+          const char = text[i];
+          if (char === '"') {
+            if (inQuotes && text[i + 1] === '"') {
+              currentField += '"';
               i += 2;
             } else {
-              currentField += char;
+              inQuotes = !inQuotes;
               i++;
             }
-          }
-          if (currentField || currentRecord.length > 0) {
-            currentRecord.push(currentField.trim());
-            if (currentRecord.some(f => f.length > 0)) records.push(currentRecord);
-          }
-          if (records.length === 0) return [];
-          const headers = records[0];
-          const data = [];
-          const numericSet = new Set(this.numericFields);
-          for (let i = 1; i < records.length; i++) {
-            const values = records[i];
-            if (values.length < headers.length / 2) continue;
-            const row = {};
-            headers.forEach((header, idx) => {
-              let value = values[idx] || '';
-              if (numericSet.has(header)) value = parseFloat(value) || null;
-              row[header] = value;
-            });
-            data.push(row);
-          }
-          return data;
-        },
-        async loadFromCache() {
-          try {
-            const db = await this.openDB();
-            const tx = db.transaction('dataCache', 'readonly');
-            const store = tx.objectStore('dataCache');
-            const cached = await store.get(this.cacheName);
-            if (!cached) return null;
-            const age = Date.now() - cached.timestamp;
-            if (age > this.maxCacheAge) return null;
-            if (cached.version !== this.cacheVersion) return null;
-            return cached.data;
-          } catch {
-            return null;
-          }
-        },
-        async saveToCache(data) {
-          try {
-            const db = await this.openDB();
-            const tx = db.transaction('dataCache', 'readwrite');
-            const store = tx.objectStore('dataCache');
-            await store.put({
-              id: this.cacheName,
-              data,
-              timestamp: Date.now(),
-              version: this.cacheVersion
-            });
-          } catch {}
-        },
-        openDB() {
-          return new Promise((resolve, reject) => {
-            const request = indexedDB.open(this.dbName, 1);
-            request.onerror = () => reject(request.error);
-            request.onsuccess = () => resolve(request.result);
-            request.onupgradeneeded = (event) => {
-              const db = event.target.result;
-              if (!db.objectStoreNames.contains('dataCache')) {
-                db.createObjectStore('dataCache', { keyPath: 'id' });
-              }
-            };
-          });
-        },
-        async refreshDataInBackground() {
-          try {
-            const response = await fetch(this.dataSourceURL, { mode: 'cors', cache: 'no-cache' });
-            if (!response.ok) return;
-            const text = await response.text();
-            const parsed = this.parseCSV(text);
-            const currentLen = JSON.stringify(this.data).length;
-            const newLen = JSON.stringify(parsed).length;
-            if (newLen !== currentLen) {
-              this.data = parsed;
-              await this.saveToCache(parsed);
-              if (!window._inspectionsDataDispatched) {
-                this.notifyDataReady();
-              } else {
-                window.dispatchEvent(new CustomEvent('inspections-data-updated', { detail: { data: parsed } }));
-              }
-            }
-          } catch {}
-        },
-        async handleError(err) {
-          this.retryCount++;
-          if (this.retryCount <= this.maxRetries) {
-            this.error = `Loading failed. Retrying (${this.retryCount}/${this.maxRetries})...`;
-            this.loadingMessage = 'Retrying...';
-            const delay = Math.min(1000 * Math.pow(2, this.retryCount - 1), 5000);
-            await new Promise(resolve => setTimeout(resolve, delay));
-            await this.loadData();
+          } else if (char === delim && !inQuotes) {
+            currentRecord.push(currentField);
+            currentField = "";
+            i++;
+          } else if ((char === "\n" || char === "\r") && !inQuotes) {
+            if (char === "\r" && text[i + 1] === "\n") i++;
+            currentRecord.push(currentField);
+            if (currentRecord.some(f => (f + "").trim().length > 0)) records.push(currentRecord);
+            currentRecord = [];
+            currentField = "";
+            i++;
           } else {
-            const cachedData = await this.loadFromCache();
-            if (cachedData) {
-              this.error = 'Using cached data (offline mode)';
-              this.data = cachedData;
-              this.loading = false;
+            currentField += char;
+            i++;
+          }
+        }
+        if (currentField.length || currentRecord.length) {
+          currentRecord.push(currentField);
+          if (currentRecord.some(f => (f + "").trim().length > 0)) records.push(currentRecord);
+        }
+        if (!records.length) return [];
+        const headers = records[0].map(h => (h + "").trim());
+        const out = [];
+        for (let r = 1; r < records.length; r++) {
+          const rowArr = records[r];
+          const row = {};
+          headers.forEach((h, idx) => {
+            row[h] = (rowArr[idx] ?? "").toString().trim();
+          });
+          out.push(row);
+        }
+        return this.coerceNumeric(out);
+      },
+      coerceNumeric(rows) {
+        if (!Array.isArray(rows)) return [];
+        const numericSet = new Set(this.numericFields);
+        return rows.map(row => {
+          const r = {};
+          Object.keys(row).forEach(k => {
+            let v = row[k];
+            if (numericSet.has(k)) {
+              if (typeof v === "number") {
+                r[k] = v;
+              } else {
+                const num = parseFloat((v + "").replace(/,/g, ""));
+                r[k] = isNaN(num) ? null : num;
+              }
+            } else {
+              r[k] = v;
+            }
+          });
+          return r;
+        });
+      },
+      async loadFromCache() {
+        try {
+          const db = await this.openDB();
+          const tx = db.transaction("dataCache", "readonly");
+          const store = tx.objectStore("dataCache");
+          const cached = await store.get(this.cacheName);
+          if (!cached) return null;
+          const age = Date.now() - cached.timestamp;
+          if (age > this.maxCacheAge) return null;
+          if (cached.version !== this.cacheVersion) return null;
+          return cached.data;
+        } catch {
+          return null;
+        }
+      },
+      async saveToCache(data) {
+        try {
+          const db = await this.openDB();
+          const tx = db.transaction("dataCache", "readwrite");
+          const store = tx.objectStore("dataCache");
+          await store.put({ id: this.cacheName, data, timestamp: Date.now(), version: this.cacheVersion });
+        } catch {}
+      },
+      openDB() {
+        return new Promise((resolve, reject) => {
+          const request = indexedDB.open(this.dbName, 1);
+          request.onerror = () => reject(request.error);
+          request.onsuccess = () => resolve(request.result);
+          request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains("dataCache")) {
+              db.createObjectStore("dataCache", { keyPath: "id" });
+            }
+          };
+        });
+      },
+      async refreshDataInBackground() {
+        try {
+          const response = await fetch(this.dataSourceURL, { mode: "cors", cache: "no-cache" });
+          if (!response.ok) return;
+          const contentType = response.headers.get("content-type") || "";
+          const type = this.detectType(this.dataSourceURL, contentType);
+          let parsed;
+          if (type === "xlsx") {
+            await this.ensureXLSX();
+            parsed = this.parseXLSX(await response.arrayBuffer());
+          } else if (type === "json") {
+            parsed = this.parseJSON(await response.text());
+          } else {
+            const delim = type === "tsv" ? "\t" : this.delimiter || ",";
+            parsed = this.parseDelimited(await response.text(), delim);
+          }
+          const currentLen = JSON.stringify(this.data).length;
+          const newLen = JSON.stringify(parsed).length;
+          if (newLen !== currentLen) {
+            this.data = parsed;
+            await this.saveToCache(parsed);
+            if (!window._inspectionsDataDispatched) {
               this.notifyDataReady();
             } else {
-              this.error = `Failed to load data: ${err.message}. Please refresh the page.`;
-              this.loading = false;
+              window.dispatchEvent(new CustomEvent("inspections-data-updated", { detail: { data: parsed } }));
             }
           }
-        },
-        async retry() {
-          window._inspectionsDataDispatched = false;
-          this.retryCount = 0;
+        } catch {}
+      },
+      partyRows() {
+        if (!Array.isArray(this.data)) return [];
+        return this.data.filter(r => r.Party && r.Party !== "Total");
+      },
+      totalRegistered() {
+        if (!Array.isArray(this.data)) return 0;
+        const t = this.data.find(r => r.Party === "Total");
+        if (t && typeof t.Total === "number") return t.Total;
+        return this.partyRows().reduce((acc, r) => acc + (typeof r.Total === "number" ? r.Total : 0), 0);
+      },
+      valueFor(party) {
+        const r = (this.data || []).find(x => x.Party === party);
+        return r && typeof r.Total === "number" ? r.Total : null;
+      },
+      async retry() {
+        window._inspectionsDataDispatched = false;
+        this.retryCount = 0;
+        await this.loadData();
+      },
+      async handleError(err) {
+        this.retryCount++;
+        if (this.retryCount <= this.maxRetries) {
+          this.error = `Loading failed. Retrying (${this.retryCount}/${this.maxRetries})...`;
+          this.loadingMessage = "Retrying...";
+          const delay = Math.min(1000 * Math.pow(2, this.retryCount - 1), 5000);
+          await new Promise(resolve => setTimeout(resolve, delay));
           await this.loadData();
+        } else {
+          const cachedData = await this.loadFromCache();
+          if (cachedData) {
+            this.error = "Using cached data (offline mode)";
+            this.data = cachedData;
+            this.loading = false;
+            this.notifyDataReady();
+          } else {
+            this.error = `Failed to load data: ${err.message}. Please refresh the page.`;
+            this.loading = false;
+          }
         }
-      };
-    }
+      }
+    };
+  }
 </script>
 
 <div x-data="s3DataLoader()" x-init="init()">
