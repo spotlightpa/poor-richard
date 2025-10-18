@@ -1,10 +1,14 @@
 <script>
   window._inspectionsDataDispatched = window._inspectionsDataDispatched || false;
+  window._geojsonDataDispatched = window._geojsonDataDispatched || false;
+  
   function s3DataLoader() {
     return {
       dataSourceURL: {{ .Param "data.source" | default "" }},
+      geojsonSources: {{ .Param "geojson.sources" | default "[]" }},
       showPopup: {{ .Param "data.popup" | default "false" }},
       cacheVersion: {{ .Param "data.cacheVersion" | default 1 }},
+      geojsonCacheVersion: {{ .Param "geojson.cacheVersion" | default 1 }},
       maxCacheAge: {{ .Param "data.maxCacheAge" | default 24 }} * 60 * 60 * 1000,
       delimiter: {{ .Param "data.delimiter" | default "," }},
       numericFields: {{ .Param "data.numericFields" | default "[]" }},
@@ -15,26 +19,44 @@
       loadingMessage: "Initializing...",
       error: null,
       data: [],
+      geojsonData: {},
       retryCount: 0,
       maxRetries: 2,
       initialized: false,
+      totalTasks: 0,
+      completedTasks: 0,
+      
       async init() {
         if (this.initialized) return;
         this.initialized = true;
-        if (!this.dataSourceURL) {
-          this.error = "No data source URL configured";
+        
+        this.totalTasks = 0;
+        if (this.dataSourceURL) this.totalTasks++;
+        if (Array.isArray(this.geojsonSources) && this.geojsonSources.length > 0) {
+          this.totalTasks += this.geojsonSources.length;
+        }
+        
+        if (this.totalTasks === 0) {
+          this.error = "No data sources configured";
           return;
         }
+        
         const onReady = () => {
           this.loading = false;
           this.error = null;
           this.loadingMessage = "Loaded";
           this.loadingProgress = 100;
         };
+        
         window.addEventListener("inspections-data-ready", onReady, { once: false });
-        this.cacheName = this.generateCacheName(this.dataSourceURL);
-        await this.loadData();
+        
+        if (this.dataSourceURL) {
+          this.cacheName = this.generateCacheName(this.dataSourceURL);
+        }
+        
+        await this.loadAllData();
       },
+      
       generateCacheName(url) {
         let hash = 0;
         for (let i = 0; i < url.length; i++) {
@@ -44,6 +66,151 @@
         }
         return `data-cache-${Math.abs(hash)}`;
       },
+      
+      getFileName(url) {
+        const parts = url.split('/');
+        const filename = parts[parts.length - 1];
+        return filename.replace('.geojson', '');
+      },
+      
+      updateProgress() {
+        if (this.totalTasks === 0) return;
+        this.loadingProgress = Math.floor((this.completedTasks / this.totalTasks) * 100);
+      },
+      
+      async loadAllData() {
+        this.loading = true;
+        this.error = null;
+        this.completedTasks = 0;
+        this.loadingProgress = 2;
+        this.loadingMessage = "Loading data...";
+        
+        try {
+          if (this.dataSourceURL) {
+            await this.loadData();
+          }
+          
+          if (Array.isArray(this.geojsonSources) && this.geojsonSources.length > 0) {
+            await this.loadAllGeoJSON();
+          }
+          
+          if (!window._inspectionsDataDispatched) {
+            await this.waitForLoadingTransition();
+            this.notifyDataReady();
+          }
+          
+        } catch (err) {
+          await this.handleError(err);
+        } finally {
+          if ((this.data.length > 0 || Object.keys(this.geojsonData).length > 0) && !this.error) {
+            this.loading = false;
+          }
+        }
+      },
+      
+      async loadAllGeoJSON() {
+        const results = {};
+        
+        this.loadingMessage = "Loading map data...";
+        
+        for (let i = 0; i < this.geojsonSources.length; i++) {
+          const url = this.geojsonSources[i];
+          const fileName = this.getFileName(url);
+          
+          try {
+            const cachedData = await this.loadGeoJSONFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+              console.log(`${fileName} loaded from cache`);
+            } else {
+              const data = await this.fetchGeoJSON(url);
+              results[fileName] = data;
+              await this.saveGeoJSONToCache(url, data);
+              console.log(`${fileName} loaded from network`);
+            }
+          } catch (err) {
+            console.error(`Failed to load ${fileName}:`, err);
+            const cachedData = await this.loadGeoJSONFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+              console.log(`${fileName} loaded from cache (fallback)`);
+            }
+          }
+          
+          this.completedTasks++;
+          this.updateProgress();
+        }
+        
+        this.geojsonData = results;
+        this.notifyGeoJSONReady();
+      },
+      
+      async fetchGeoJSON(url) {
+        const response = await fetch(url, { mode: "cors", cache: "no-cache" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        return await response.json();
+      },
+      
+      async loadGeoJSONFromCache(url) {
+        try {
+          const cacheName = this.generateCacheName(url);
+          const db = await this.openDB();
+          const tx = db.transaction("geojsonCache", "readonly");
+          const store = tx.objectStore("geojsonCache");
+          const cached = await store.get(cacheName);
+          
+          if (!cached) return null;
+          
+          const age = Date.now() - cached.timestamp;
+          if (age > this.maxCacheAge) return null;
+          if (cached.version !== this.geojsonCacheVersion) return null;
+          
+          return cached.data;
+        } catch {
+          return null;
+        }
+      },
+      
+      async saveGeoJSONToCache(url, data) {
+        try {
+          const cacheName = this.generateCacheName(url);
+          const db = await this.openDB();
+          const tx = db.transaction("geojsonCache", "readwrite");
+          const store = tx.objectStore("geojsonCache");
+          await store.put({
+            id: cacheName,
+            data,
+            timestamp: Date.now(),
+            version: this.geojsonCacheVersion
+          });
+        } catch (err) {
+          console.error("Failed to save GeoJSON to cache:", err);
+        }
+      },
+      
+      notifyGeoJSONReady() {
+        if (Object.keys(this.geojsonData).length === 0) return;
+        
+        console.log("=== GeoJSON Data Loaded ===");
+        Object.keys(this.geojsonData).forEach(key => {
+          console.log(`${key}:`, this.geojsonData[key]);
+        });
+        console.log("===========================");
+        
+        if (!window._geojsonDataDispatched) {
+          window._geojsonDataDispatched = true;
+          window.dispatchEvent(new CustomEvent("geojson-data-ready", {
+            detail: { data: this.geojsonData }
+          }));
+        }
+      },
+      
+      getGeoJSON(name) {
+        return this.geojsonData[name] || null;
+      },
+      
       async ensureXLSX() {
         if (window.XLSX) return;
         if (this._xlsxPromise) return this._xlsxPromise;
@@ -56,6 +223,7 @@
         });
         return this._xlsxPromise;
       },
+      
       detectType(url, contentType) {
         const u = (url || "").toLowerCase().split("?")[0];
         const ext = u.split(".").pop();
@@ -73,36 +241,28 @@
         if (ext === "json") return "json";
         return "csv";
       },
+      
       async loadData() {
-        this.loading = true;
         this.error = null;
-        this.loadingProgress = 2;
+        
         try {
           const cachedData = await this.loadFromCache();
           if (cachedData) {
             this.data = cachedData;
             this.loadingMessage = "Loading from cache...";
-            this.loadingProgress = 100;
-            this.loading = false;
+            this.completedTasks++;
+            this.updateProgress();
             this.refreshDataInBackground();
-            if (!window._inspectionsDataDispatched) {
-              this.notifyDataReady();
-            }
           } else {
             await this.loadFromS3();
+            this.completedTasks++;
+            this.updateProgress();
           }
         } catch (err) {
-          await this.handleError(err);
-        } finally {
-          if (this.data.length > 0 && !this.error) {
-            this.loading = false;
-            await this.waitForLoadingTransition();
-            if (!window._inspectionsDataDispatched) {
-              this.notifyDataReady();
-            }
-          }
+          throw err;
         }
       },
+      
       async waitForLoadingTransition() {
         return new Promise((resolve) => {
           requestAnimationFrame(() => {
@@ -152,48 +312,58 @@
           });
         });
       },
+      
       async loadFromS3() {
         const response = await fetch(this.dataSourceURL, { mode: "cors", cache: "no-cache" });
         if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         const contentType = response.headers.get("content-type") || "";
         const type = this.detectType(this.dataSourceURL, contentType);
         this.loadingMessage = "Downloading data...";
-        this.loadingProgress = 5;
+        
         let parsed;
         if (type === "xlsx") {
           const buf = await response.arrayBuffer();
-          this.loadingProgress = Math.max(this.loadingProgress, 70);
           this.loadingMessage = "Processing data...";
           await this.ensureXLSX();
           parsed = this.parseXLSX(buf);
         } else if (type === "json") {
           const text = await response.text();
-          this.loadingProgress = Math.max(this.loadingProgress, 70);
           this.loadingMessage = "Processing data...";
           parsed = this.parseJSON(text);
         } else {
           const text = await response.text();
-          this.loadingProgress = Math.max(this.loadingProgress, 70);
           this.loadingMessage = "Processing data...";
           const delim = type === "tsv" ? "\t" : this.delimiter || ",";
           parsed = this.parseDelimited(text, delim);
         }
-        this.loadingProgress = Math.max(this.loadingProgress, 90);
+        
         this.loadingMessage = "Loading...";
         await this.saveToCache(parsed);
-        this.loadingProgress = 100;
         this.data = parsed;
       },
+      
       notifyDataReady() {
-        try { console.log("voter-data", this.data); } catch(e) {}
+        try { 
+          console.log("voter-data", this.data); 
+          if (Object.keys(this.geojsonData).length > 0) {
+            console.log("geojson-data", this.geojsonData);
+          }
+        } catch(e) {}
+        
         if (!window._inspectionsDataDispatched) {
           window._inspectionsDataDispatched = true;
-          window.dispatchEvent(new CustomEvent("inspections-data-ready", { detail: { data: this.data } }));
+          window.dispatchEvent(new CustomEvent("inspections-data-ready", { 
+            detail: { 
+              data: this.data,
+              geojsonData: this.geojsonData 
+            } 
+          }));
         }
         this.loading = false;
         this.loadingProgress = 100;
         this.loadingMessage = "Loaded";
       },
+      
       parseXLSX(arrayBuffer) {
         const wb = XLSX.read(arrayBuffer, { type: "array" });
         const sheetName = wb.SheetNames[0];
@@ -201,12 +371,14 @@
         const rows = XLSX.utils.sheet_to_json(ws, { defval: "" });
         return this.coerceNumeric(rows);
       },
+      
       parseJSON(text) {
         let obj = JSON.parse(text);
         if (Array.isArray(obj)) return this.coerceNumeric(obj);
         if (obj && Array.isArray(obj.data)) return this.coerceNumeric(obj.data);
         return [];
       },
+      
       parseDelimited(text, delim) {
         const records = [];
         let currentRecord = [];
@@ -256,6 +428,7 @@
         }
         return this.coerceNumeric(out);
       },
+      
       coerceNumeric(rows) {
         if (!Array.isArray(rows)) return [];
         const numericSet = new Set(this.numericFields);
@@ -277,6 +450,7 @@
           return r;
         });
       },
+      
       async loadFromCache() {
         try {
           const db = await this.openDB();
@@ -292,6 +466,7 @@
           return null;
         }
       },
+      
       async saveToCache(data) {
         try {
           const db = await this.openDB();
@@ -300,9 +475,10 @@
           await store.put({ id: this.cacheName, data, timestamp: Date.now(), version: this.cacheVersion });
         } catch {}
       },
+      
       openDB() {
         return new Promise((resolve, reject) => {
-          const request = indexedDB.open(this.dbName, 1);
+          const request = indexedDB.open(this.dbName, 2);
           request.onerror = () => reject(request.error);
           request.onsuccess = () => resolve(request.result);
           request.onupgradeneeded = (event) => {
@@ -310,9 +486,13 @@
             if (!db.objectStoreNames.contains("dataCache")) {
               db.createObjectStore("dataCache", { keyPath: "id" });
             }
+            if (!db.objectStoreNames.contains("geojsonCache")) {
+              db.createObjectStore("geojsonCache", { keyPath: "id" });
+            }
           };
         });
       },
+      
       async refreshDataInBackground() {
         try {
           const response = await fetch(this.dataSourceURL, { mode: "cors", cache: "no-cache" });
@@ -342,25 +522,32 @@
           }
         } catch {}
       },
+      
       partyRows() {
         if (!Array.isArray(this.data)) return [];
         return this.data.filter(r => r.Party && r.Party !== "Total");
       },
+      
       totalRegistered() {
         if (!Array.isArray(this.data)) return 0;
         const t = this.data.find(r => r.Party === "Total");
         if (t && typeof t.Total === "number") return t.Total;
         return this.partyRows().reduce((acc, r) => acc + (typeof r.Total === "number" ? r.Total : 0), 0);
       },
+      
       valueFor(party) {
         const r = (this.data || []).find(x => x.Party === party);
         return r && typeof r.Total === "number" ? r.Total : null;
       },
+      
       async retry() {
         window._inspectionsDataDispatched = false;
+        window._geojsonDataDispatched = false;
         this.retryCount = 0;
-        await this.loadData();
+        this.completedTasks = 0;
+        await this.loadAllData();
       },
+      
       async handleError(err) {
         this.retryCount++;
         if (this.retryCount <= this.maxRetries) {
@@ -368,7 +555,8 @@
           this.loadingMessage = "Retrying...";
           const delay = Math.min(1000 * Math.pow(2, this.retryCount - 1), 5000);
           await new Promise(resolve => setTimeout(resolve, delay));
-          await this.loadData();
+          this.completedTasks = 0;
+          await this.loadAllData();
         } else {
           const cachedData = await this.loadFromCache();
           if (cachedData) {
