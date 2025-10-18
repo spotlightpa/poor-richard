@@ -21,6 +21,14 @@ maxCacheAge = 24
 delimiter = ","
 numericFields = ["Total"]
 
+[geojson]
+sources = [
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/pa-counties.geojson",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/house-2022.geojson",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/congress-2022.geojson",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/senate-2022.geojson"
+]
+
 [map]
 controls = ["navigation", "fullscreen"]
 bounds = [[-80.5199, 39.7198], [-74.6895, 42.26986]]
