@@ -30,52 +30,68 @@
     </div>
 
     <div class="h-96 overflow-hidden rounded-lg">
-      <div class="grid h-full grid-cols-4">
-        <div class="flex flex-col divide-y divide-white bg-g-9">
+      <div class="relative h-full w-full">
+        <div
+          x-data='maplibreComponent({
+            id: "pa-map",
+            styleURL: "https://tiles.openfreemap.org/styles/positron",
+            bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
+            padding: 24,
+            minZoom: 3,
+            maxZoom: 18,
+            zoom: 6,
+            controls: ["navigation","fullscreen"],
+            attributionCompact: true,
+            ariaLabel: "Pennsylvania voter registration map",
+            class: "relative w-full h-full"
+          })'
+          x-init="init()"
+          role="region"
+          aria-label="Pennsylvania voter registration map"
+          class="absolute inset-0"
+        >
+          <div x-ref="canvas" class="h-full w-full"></div>
+        </div>
+
+        <div
+          x-data="{ selected: 'county' }"
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow"
+        >
           <button
-            class="hover:bg-g-7 flex-1 text-lg font-semibold text-white"
+            :data-checked="selected === 'county'"
+            @click="selected='county'"
+            title="County"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
           >
-            County
+            Counties
           </button>
+
           <button
-            class="hover:bg-g-7 flex-1 text-lg font-semibold text-white"
+            :data-checked="selected === 'congressional'"
+            @click="selected='congressional'"
+            title="Congressional"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
           >
             Congressional
           </button>
+
           <button
-            class="hover:bg-g-7 flex-1 text-lg font-semibold text-white"
+            :data-checked="selected === 'senate'"
+            @click="selected='senate'"
+            title="Senate"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
           >
             Senate
           </button>
+
           <button
-            class="hover:bg-g-7 flex-1 text-lg font-semibold text-white"
+            :data-checked="selected === 'house'"
+            @click="selected='house'"
+            title="House"
+            class="px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
           >
             House
           </button>
-        </div>
-
-        <div class="relative col-span-3">
-          <div
-            x-data='maplibreComponent({
-          id: "pa-map",
-          styleURL: "https://tiles.openfreemap.org/styles/positron",
-          bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-          padding: 24,
-          minZoom: 3,
-          maxZoom: 18,
-          zoom: 6,
-          controls: ["navigation","fullscreen"],
-          attributionCompact: true,
-          ariaLabel: "Pennsylvania voter registration map",
-          class: "relative w-full h-full"
-        })'
-            x-init="init()"
-            role="region"
-            aria-label="Pennsylvania voter registration map"
-            class="absolute inset-0"
-          >
-            <div x-ref="canvas" class="h-full w-full"></div>
-          </div>
         </div>
       </div>
     </div>
