@@ -203,17 +203,17 @@
           const el = this.$refs.mapCanvas;
           if (!el || this.map) return;
           
-          const mapComponent = window.maplibreComponent({
-            id: 'pa-map',
-            styleURL: 'https://tiles.openfreemap.org/styles/positron',
-            bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-            padding: 24,
-            minZoom: 3,
-            maxZoom: 18,
-            zoom: 6,
-            controls: ['navigation','fullscreen'],
-            attributionCompact: true
-          });
+        const mapComponent = window.maplibreComponent({
+          id: 'pa-map',
+          styleURL: 'https://tiles.openfreemap.org/styles/positron',
+          bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
+          padding: 24,
+          minZoom: 3,
+          maxZoom: 18,
+          zoom: 6,
+          controls: ['navigation'], // ← only navigation
+          attributionCompact: true
+        });
           
           mapComponent.init.call({
             $refs: { canvas: el },
@@ -246,8 +246,6 @@
                 showZoom: true,
                 visualizePitch: false
               }), 'top-right');
-              
-              this.map.addControl(new maplibregl.FullscreenControl(), 'top-right');
               
               this.map.addControl(new maplibregl.AttributionControl({
                 compact: true

@@ -20,7 +20,7 @@
 
 {{- $siteCfg := site.Params.maplibre | default (dict) -}}
 {{- $pageCfg := ($ctx.Param "map") | default (dict) -}}
-{{- $cfg := merge . $pageCfg $siteCfg $defaults -}}
+{{- $cfg := merge $defaults $siteCfg $pageCfg -}}
 
 
 <div
