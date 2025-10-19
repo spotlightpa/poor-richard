@@ -8,6 +8,7 @@
 
 {{ partial "s3-data-loader.html" . }}
 
+
 <div x-data="s3DataLoader()" x-init="init()">
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
     <div
@@ -30,31 +31,243 @@
     </div>
 
     <div class="h-96 overflow-hidden rounded-lg">
-      <div class="relative h-full w-full">
-        <div
-          x-data='maplibreComponent({
-            id: "pa-map",
-            styleURL: "https://tiles.openfreemap.org/styles/positron",
+      <div
+        class="relative h-full w-full"
+        x-data="{
+        selected: 'county',
+        map: null,
+        geojsonData: {},
+        
+        async loadGeoJSON() {
+          const sources = {{ .Params.geojson.sources | jsonify }};
+          const [counties, house, congress, senate] = await Promise.all(
+            sources.map(url => fetch(url).then(r => r.json()))
+          );
+          this.geojsonData = {
+            county: counties,
+            house: house,
+            congressional: congress,
+            senate: senate
+          };
+          
+          if (this.map && this.map.loaded()) {
+            this.setupLayers();
+          }
+        },
+        
+        setupLayers() {
+          if (!this.map || !this.geojsonData.county) return;
+          
+          if (!this.map.getSource('counties')) {
+            this.map.addSource('counties', {
+              type: 'geojson',
+              data: this.geojsonData.county
+            });
+            this.map.addLayer({
+              id: 'counties-fill',
+              type: 'fill',
+              source: 'counties',
+              paint: {
+                'fill-color': '#627BC1',
+                'fill-opacity': 0.2
+              }
+            });
+            this.map.addLayer({
+              id: 'counties-outline',
+              type: 'line',
+              source: 'counties',
+              paint: {
+                'line-color': '#627BC1',
+                'line-width': 2
+              }
+            });
+          }
+          
+          if (!this.map.getSource('house') && this.geojsonData.house) {
+            this.map.addSource('house', {
+              type: 'geojson',
+              data: this.geojsonData.house
+            });
+            this.map.addLayer({
+              id: 'house-fill',
+              type: 'fill',
+              source: 'house',
+              layout: {
+                visibility: 'none'
+              },
+              paint: {
+                'fill-color': '#E67E22',
+                'fill-opacity': 0.2
+              }
+            });
+            this.map.addLayer({
+              id: 'house-outline',
+              type: 'line',
+              source: 'house',
+              layout: {
+                visibility: 'none'
+              },
+              paint: {
+                'line-color': '#E67E22',
+                'line-width': 2
+              }
+            });
+          }
+          
+          if (!this.map.getSource('congressional') && this.geojsonData.congressional) {
+            this.map.addSource('congressional', {
+              type: 'geojson',
+              data: this.geojsonData.congressional
+            });
+            this.map.addLayer({
+              id: 'congressional-fill',
+              type: 'fill',
+              source: 'congressional',
+              layout: {
+                visibility: 'none'
+              },
+              paint: {
+                'fill-color': '#8E44AD',
+                'fill-opacity': 0.2
+              }
+            });
+            this.map.addLayer({
+              id: 'congressional-outline',
+              type: 'line',
+              source: 'congressional',
+              layout: {
+                visibility: 'none'
+              },
+              paint: {
+                'line-color': '#8E44AD',
+                'line-width': 2
+              }
+            });
+          }
+          
+          if (!this.map.getSource('senate') && this.geojsonData.senate) {
+            this.map.addSource('senate', {
+              type: 'geojson',
+              data: this.geojsonData.senate
+            });
+            this.map.addLayer({
+              id: 'senate-fill',
+              type: 'fill',
+              source: 'senate',
+              layout: {
+                visibility: 'none'
+              },
+              paint: {
+                'fill-color': '#27AE60',
+                'fill-opacity': 0.2
+              }
+            });
+            this.map.addLayer({
+              id: 'senate-outline',
+              type: 'line',
+              source: 'senate',
+              layout: {
+                visibility: 'none'
+              },
+              paint: {
+                'line-color': '#27AE60',
+                'line-width': 2
+              }
+            });
+          }
+          
+          this.updateLayerVisibility();
+        },
+        
+        updateLayerVisibility() {
+          if (!this.map) return;
+          
+          const layers = {
+            county: ['counties-fill', 'counties-outline'],
+            congressional: ['congressional-fill', 'congressional-outline'],
+            senate: ['senate-fill', 'senate-outline'],
+            house: ['house-fill', 'house-outline']
+          };
+          
+          Object.entries(layers).forEach(([key, layerIds]) => {
+            const visibility = key === this.selected ? 'visible' : 'none';
+            layerIds.forEach(id => {
+              if (this.map.getLayer(id)) {
+                this.map.setLayoutProperty(id, 'visibility', visibility);
+              }
+            });
+          });
+        },
+        
+        initMap() {
+          const el = this.$refs.mapCanvas;
+          if (!el || this.map) return;
+          
+          const mapComponent = window.maplibreComponent({
+            id: 'pa-map',
+            styleURL: 'https://tiles.openfreemap.org/styles/positron',
             bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
             padding: 24,
             minZoom: 3,
             maxZoom: 18,
             zoom: 6,
-            controls: ["navigation","fullscreen"],
-            attributionCompact: true,
-            ariaLabel: "Pennsylvania voter registration map",
-            class: "relative w-full h-full"
-          })'
-          x-init="init()"
-          role="region"
-          aria-label="Pennsylvania voter registration map"
-          class="absolute inset-0"
-        >
-          <div x-ref="canvas" class="h-full w-full"></div>
-        </div>
+            controls: ['navigation','fullscreen'],
+            attributionCompact: true
+          });
+          
+          mapComponent.init.call({
+            $refs: { canvas: el },
+            map: null,
+            _io: null,
+            _ro: null,
+            _initializing: false,
+            _flyToHandler: null,
+            _mobileViewHandler: null,
+            _markerInstances: [],
+            _baseMarkerInstances: [],
+            ...mapComponent
+          });
+          
+          setTimeout(() => {
+            if (window.maplibregl && window.maplibregl.Map) {
+              this.map = new maplibregl.Map({
+                container: el,
+                style: 'https://tiles.openfreemap.org/styles/positron',
+                center: [-77.5, 40.9],
+                zoom: 6,
+                minZoom: 3,
+                maxZoom: 18,
+                attributionControl: false,
+                cooperativeGestures: true
+              });
+              
+              this.map.addControl(new maplibregl.NavigationControl({
+                showCompass: false,
+                showZoom: true,
+                visualizePitch: false
+              }), 'top-right');
+              
+              this.map.addControl(new maplibregl.FullscreenControl(), 'top-right');
+              
+              this.map.addControl(new maplibregl.AttributionControl({
+                compact: true
+              }));
+              
+              this.map.on('load', () => {
+                this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
+                this.setupLayers();
+              });
+              
+              this.loadGeoJSON();
+            }
+          }, 100);
+        }
+      }"
+        x-init="initMap(); $watch('selected', () => updateLayerVisibility())"
+      >
+        <div x-ref="mapCanvas" class="absolute inset-0 h-full w-full"></div>
 
         <div
-          x-data="{ selected: 'county' }"
           class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow"
         >
           <button
