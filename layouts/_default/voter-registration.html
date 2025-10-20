@@ -1,4 +1,91 @@
 {{ define "main" }}
+
+  {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+  {{ $bylineLink := "" }}
+  {{ with .Param "authors" }}
+    {{ if len . | eq 1 }}
+      {{ $name := index . 0 }}
+      {{ $author := partial "helper/get-author" $name }}
+      {{ if $author.link }}
+        {{ $bylineLink = $author.link }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+
+  <div class="w-screen h-screen grid grid-cols-12 grid-rows-6">
+    <div class="bg-black col-span-5 row-span-2 flex flex-col justify-center items-start p-12 text-white">
+      {{ with .Param "kicker" }}
+        <p class="font-sans font-bold uppercase text-yellow">
+          {{ . }}
+        </p>
+      {{ end }}
+
+      <h1 class="font-serif text-3xl lg:text-4xl mt-2 uppercase leading-hed">
+        {{ .Title }}
+      </h1>
+
+      {{ with .Param "dek" }}
+        <p class="text-2xl mb-4">{{ . }}</p>
+      {{ else }}
+        {{ with .Description }}
+          <p class="text-2xl mb-4">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+
+      {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+      {{ $bylineLink := "" }}
+      {{ with .Param "authors" }}
+        {{ if len . | eq 1 }}
+          {{ $name := index . 0 }}
+          {{ $author := partial "helper/get-author" $name }}
+          {{ if $author.link }}{{ $bylineLink = $author.link }}{{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ with $params.byline }}
+        <p class="text-base font-light">
+          <span>by</span>
+          <span class="font-semibold">
+            {{ if $bylineLink }}
+              <a href="{{ $bylineLink }}">{{ $params.byline }}</a>
+            {{ else }}
+              {{ $params.byline }}
+            {{ end }}
+          </span>
+          {{ if not $params.evergreen | and $params.published }}
+            <span> | Last updated:
+              <time datetime="{{ $params.publishedISO }}">{{ $params.published }}</time>
+            </span>
+          {{ end }}
+        </p>
+      {{ end }}
+
+      {{ if not $params.evergreen | and $params.published }}
+        <a
+          href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics"
+          target="_blank" rel="noopener noreferrer"
+          class="mt-2 block font-semibold"
+        >
+          Source: Pennsylvania Department of State
+        </a>
+      {{ end }}
+    </div>
+
+    <div class="bg-red col-span-7 row-span-2"></div>
+
+    <div class="bg-blue col-span-5"></div>
+    <div class="bg-red col-span-7"></div>
+
+    <div class="bg-blue col-span-5"></div>
+    <div class="bg-red col-span-7"></div>
+
+    <div class="bg-orange col-span-12"></div>
+
+    <div class="bg-orange col-span-12"></div>
+  </div>
+
+
   <section
     class="mx-auto mt-12 max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 text-g-9 lg:grid lg:gap-x-8 xl:px-0"
     id="article"
@@ -12,24 +99,11 @@
         </p>
       {{ end }}
 
-
       <h1
         class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
       >
         {{ .Title }}
       </h1>
-
-      {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
-      {{ $bylineLink := "" }}
-      {{ with .Param "authors" }}
-        {{ if len . | eq 1 }}
-          {{ $name := index . 0 }}
-          {{ $author := partial "helper/get-author" $name }}
-          {{ if $author.link }}
-            {{ $bylineLink = $author.link }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
 
       {{ with $params.byline }}
         <h2
