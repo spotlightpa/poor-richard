@@ -498,6 +498,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Robert F. Hunsicker Charitable Foundation",
+      "sort": "Hunsicker",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Mary and Howard Hurtig",
       "sort": "Hurtig",
       "url": "",
@@ -666,11 +673,6 @@
       "categoryRank": "4"
     },
     {
-      "display": "Mary Marger",
-      "sort": "Marger",
-      "url": ""
-    },
-    {
       "display": "Lynn Marks",
       "sort": "Marks",
       "url": "",
@@ -683,6 +685,13 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
+    },
+    {
+      "display": "Mary Marger",
+      "sort": "Marger",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Richard and Susan Master",
