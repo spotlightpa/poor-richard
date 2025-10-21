@@ -324,6 +324,8 @@
         geojsonData: {},
         countyData: [],
         popup: null,
+        hoveredId: null,
+
 
         properCase(str) {
           return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
@@ -395,8 +397,10 @@ setupLayers() {
           if (!this.map.getSource('counties')) {
             this.map.addSource('counties', {
               type: 'geojson',
-              data: this.geojsonData.county
+              data: this.geojsonData.county,
+              generateId: true
             });
+
             this.map.addLayer({
               id: 'counties-fill',
               type: 'fill',
@@ -423,16 +427,76 @@ setupLayers() {
               type: 'line',
               source: 'counties',
               paint: {
-                'line-color': '#fff',
-                'line-width': 1
+                'line-color': [
+                'case',
+                ['boolean', ['feature-state', 'hover'], false],
+                '#000000',
+                '#ffffff'
+              ],
+              'line-width': [
+                'case',
+                ['boolean', ['feature-state', 'hover'], false],
+                3,
+                1]
               }
             });
+
+            this.map.addLayer({
+              id: 'counties-outline-hover',
+              type: 'line',
+              source: 'counties',
+              layout: {
+                'line-join': 'round',
+                'line-cap': 'round'
+              },
+              paint: {
+                'line-color': '#000000',
+                'line-width': 4,
+                'line-opacity': [
+                  'case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  1,
+                  0
+                ]
+              }
+            });
+
 
             this.map.on('mousemove', 'counties-fill', (e) => {
               if (e.features.length > 0) {
                 this.map.getCanvas().style.cursor = 'crosshair';
                 
                 const feature = e.features[0];
+
+                if (this.hoveredId !== feature.id) {
+                if (this.hoveredId) {
+                this.map.setFeatureState(
+                  { source: 'counties', id: this.hoveredId },
+                  { hover: false }
+                );
+                }
+                this.hoveredId = feature.id;
+                this.map.setFeatureState(
+                { source: 'counties', id: this.hoveredId },
+                { hover: true }
+                );
+                }
+
+
+                if (this.hoveredId !== feature.id) {
+                  if (this.hoveredId) {
+                    this.map.setFeatureState(
+                      { source: 'counties', id: this.hoveredId },
+                      { hover: false }
+                    );
+                  }
+                  this.hoveredId = feature.id;
+                  this.map.setFeatureState(
+                    { source: 'counties', id: this.hoveredId },
+                    { hover: true }
+                  );
+                }
+
                 const countyName = feature.properties.county_nam;
                 const democratShare = feature.properties.democratShare;
                 const democratTotal = feature.properties.democratTotal;
@@ -496,12 +560,23 @@ if (contentEl) {
               }
             });
 
-            this.map.on('mouseleave', 'counties-fill', () => {
-              this.map.getCanvas().style.cursor = '';
-              if (this.popup) {
-                this.popup.remove();
-              }
-            });
+        this.map.on('mouseleave', 'counties-fill', () => {
+          this.map.getCanvas().style.cursor = '';
+
+          if (this.hoveredId) {
+            this.map.setFeatureState(
+              { source: 'counties', id: this.hoveredId },
+              { hover: false }
+            );
+            this.hoveredId = null;
+          }
+
+          if (this.popup) {
+            this.popup.remove();
+          }
+        });
+
+
           }
 
           if (!this.map.getSource('house') && this.geojsonData.house) {
