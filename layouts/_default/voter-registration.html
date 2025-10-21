@@ -214,7 +214,7 @@
     </div>
 
     <div
-      class="col-span-7 row-span-4 flex flex-col overflow-hidden bg-black px-4 pb-4 pt-12"
+      class="col-span-7 row-span-4 flex flex-col overflow-hidden bg-black px-4 pb-4 pr-12 pt-12"
       x-data="{
     selectedParty: 'democrat',
     partyConfig: {
@@ -611,9 +611,11 @@
       "
     ></div>
 
-    <div class="col-span-12 bg-orange"></div>
-
-    <div class="col-span-12 bg-orange"></div>
+    <div class="col-span-12 row-span-2 bg-orange px-12 py-4">
+      <div class="h-full w-full bg-g-1">
+        {{/* Line chart will go here */}}
+      </div>
+    </div>
   </div>
 {{ end }}
 
