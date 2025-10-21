@@ -382,6 +382,8 @@
                 feature.properties.republicanShare = countyRecord['Republican Share'];
                 feature.properties.noPartyShare = countyRecord['No Affiliation Share'];
                 feature.properties.otherShare = countyRecord['Other Share'];
+                feature.properties.democratTotal = Number(countyRecord['Democrat']) || null;
+
               }
             });
           }
@@ -433,6 +435,9 @@ setupLayers() {
                 const feature = e.features[0];
                 const countyName = feature.properties.county_nam;
                 const democratShare = feature.properties.democratShare;
+                const democratTotal = feature.properties.democratTotal;
+                const sharePct = Number.isFinite(democratShare) ? Math.max(0, Math.min(100, Math.round(democratShare))) : null;
+
                 
                 if (democratShare !== null && democratShare !== undefined) {
                   if (!this.popup) {
@@ -442,17 +447,51 @@ setupLayers() {
                     });
                   }
                   
-                const htmlContent = [
-                  '<div style=&quot;padding: 8px; font-family: sans-serif;&quot;>',
-                  '<strong>', countyName, '</strong><br/>',
-                  'Democrat Share: ', democratShare.toFixed(1), '%',
-                  '</div>'
-                ].join('');
-                  
-                  this.popup
-                    .setLngLat(e.lngLat)
-                    .setHTML(htmlContent)
-                    .addTo(this.map);
+
+
+
+const htmlContent = [
+  '<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>',
+    '<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>', countyName, ' County</strong>',
+
+    '<div style=&quot;position: relative; width: calc(100% - 14px); height: 18px; border: 1px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>',
+      '<div style=&quot;width:', (sharePct !== null ? sharePct : 0), '%; background:#0079d1; height:100%; position:relative;&quot;>',
+        (sharePct !== null && sharePct >= 30
+          ? '<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:#ffffff; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>' + sharePct + '%</span>'
+          : ''),
+      '</div>',
+
+      (sharePct !== null && sharePct < 30
+        ? '<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(' + sharePct + '% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>' + sharePct + '%</span>'
+        : ''),
+    '</div>',
+
+    '<div style=&quot;height:6px;&quot;></div>',
+    '<span style=&quot;font-size:0.95rem;&quot;>Total: ', (Number.isFinite(democratTotal) ? democratTotal.toLocaleString() : '—'), '</span>',
+  '</div>'
+].join('');
+
+
+this.popup
+  .setLngLat(e.lngLat)
+  .setHTML(htmlContent)
+  .addTo(this.map);
+
+this.popup.getElement().style.zIndex = '9999';this.popup
+  .setLngLat(e.lngLat)
+  .setHTML(htmlContent)
+  .addTo(this.map);
+
+const popupEl = this.popup.getElement();
+popupEl.style.zIndex = '9999';
+
+const contentEl = popupEl.querySelector('.maplibregl-popup-content');
+if (contentEl) {
+  contentEl.style.padding = '8px';
+  contentEl.style.boxSizing = 'border-box';
+}
+
+
                 }
               }
             });
