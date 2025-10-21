@@ -14,7 +14,12 @@
 
   {{ partial "s3-data-loader.html" . }}
 
-  <div class="grid h-screen w-screen grid-cols-12 grid-rows-6" x-data="s3DataLoader()" x-init="init()">
+
+  <div
+    class="grid h-screen w-screen grid-cols-12 grid-rows-6"
+    x-data="s3DataLoader()"
+    x-init="init()"
+  >
     <div
       class="col-span-5 row-span-2 flex flex-col items-start justify-center bg-black p-12 text-white"
     >
@@ -23,6 +28,7 @@
           {{ . }}
         </p>
       {{ end }}
+
 
       <h1 class="mt-2 font-serif text-3xl uppercase leading-hed lg:text-4xl">
         {{ .Title }}
@@ -49,7 +55,9 @@
           {{ if not $params.evergreen | and $params.published }}
             <span>
               | Last updated:
-              <time datetime="{{ $params.publishedISO }}">{{ $params.published }}</time>
+              <time datetime="{{ $params.publishedISO }}"
+                >{{ $params.published }}</time
+              >
             </span>
           {{ end }}
         </p>
@@ -344,7 +352,7 @@
       </div>
     </div>
 
-    <div 
+    <div
       class="col-span-5 row-span-2 flex flex-col gap-1"
       x-data="{
         getPartyData() {
@@ -390,36 +398,48 @@
     >
       <div class="flex flex-1 gap-1">
         <template x-for="(item, idx) in getPartyData().slice(0, 2)" :key="idx">
-          <div 
+          <div
             class="flex flex-col items-center justify-center p-4 text-white transition-all duration-300"
             :class="item.color"
             :style="`flex: ${item.pct}`"
           >
-            <div 
+            <div
               class="font-bold transition-all duration-300"
               :class="item.pct > 25 ? 'text-4xl' : item.pct > 15 ? 'text-3xl' : 'text-2xl'"
               x-text="item.count.toLocaleString()"
             ></div>
-            <div class="text-sm font-semibold uppercase" x-text="item.party"></div>
-            <div class="mt-1 text-xs opacity-90" x-text="`${item.pct.toFixed(1)}%`"></div>
+            <div
+              class="text-sm font-semibold uppercase"
+              x-text="item.party"
+            ></div>
+            <div
+              class="mt-1 text-xs opacity-90"
+              x-text="`${item.pct.toFixed(1)}%`"
+            ></div>
           </div>
         </template>
       </div>
-      
+
       <div class="flex flex-1 gap-1">
         <template x-for="(item, idx) in getPartyData().slice(2, 4)" :key="idx">
-          <div 
+          <div
             class="flex flex-col items-center justify-center p-4 text-white transition-all duration-300"
             :class="item.color"
             :style="`flex: ${item.pct}`"
           >
-            <div 
+            <div
               class="font-bold transition-all duration-300"
               :class="item.pct > 15 ? 'text-3xl' : item.pct > 8 ? 'text-2xl' : 'text-xl'"
               x-text="item.count.toLocaleString()"
             ></div>
-            <div class="text-sm font-semibold uppercase" x-text="item.party"></div>
-            <div class="mt-1 text-xs opacity-90" x-text="`${item.pct.toFixed(1)}%`"></div>
+            <div
+              class="text-sm font-semibold uppercase"
+              x-text="item.party"
+            ></div>
+            <div
+              class="mt-1 text-xs opacity-90"
+              x-text="`${item.pct.toFixed(1)}%`"
+            ></div>
           </div>
         </template>
       </div>
@@ -442,6 +462,7 @@
           {{ . }}
         </p>
       {{ end }}
+
 
       <h1
         class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
@@ -467,7 +488,9 @@
           {{ if not $params.evergreen | and $params.published }}
             <span class="font-light">
               | Last updated:
-              <time datetime="{{ $params.publishedISO }}">{{ $params.published }}</time>
+              <time datetime="{{ $params.publishedISO }}"
+                >{{ $params.published }}</time
+              >
             </span>
 
             <a

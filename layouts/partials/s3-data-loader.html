@@ -121,19 +121,16 @@
             const cachedData = await this.loadGeoJSONFromCache(url);
             if (cachedData) {
               results[fileName] = cachedData;
-              console.log(`${fileName} loaded from cache`);
             } else {
               const data = await this.fetchGeoJSON(url);
               results[fileName] = data;
               await this.saveGeoJSONToCache(url, data);
-              console.log(`${fileName} loaded from network`);
             }
           } catch (err) {
             console.error(`Failed to load ${fileName}:`, err);
             const cachedData = await this.loadGeoJSONFromCache(url);
             if (cachedData) {
               results[fileName] = cachedData;
-              console.log(`${fileName} loaded from cache (fallback)`);
             }
           }
 
@@ -192,12 +189,6 @@
 
       notifyGeoJSONReady() {
         if (Object.keys(this.geojsonData).length === 0) return;
-
-        console.log("=== GeoJSON Data Loaded ===");
-        Object.keys(this.geojsonData).forEach(key => {
-          console.log(`${key}:`, this.geojsonData[key]);
-        });
-        console.log("===========================");
 
         if (!window._geojsonDataDispatched) {
           window._geojsonDataDispatched = true;
@@ -344,10 +335,6 @@
 
       notifyDataReady() {
         try {
-          console.log("voter-data", this.data);
-          if (Object.keys(this.geojsonData).length > 0) {
-            console.log("geojson-data", this.geojsonData);
-          }
         } catch(e) {}
 
         if (!window._inspectionsDataDispatched) {
