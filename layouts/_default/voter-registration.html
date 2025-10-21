@@ -52,7 +52,7 @@
             name: 'No Affiliation',
             party: 'No Party', 
             value: typeof noParty.Total === 'number' ? noParty.Total : 0, 
-            color: '#E59500'
+            color: '#ffcb03'
           },
           { 
             name: 'Other',
@@ -213,7 +213,107 @@
       {{ end }}
     </div>
 
-    <div class="col-span-7 row-span-4 overflow-hidden bg-red p-4">
+    <div
+      class="col-span-7 row-span-4 flex flex-col overflow-hidden bg-black px-4 pb-4 pt-12"
+      x-data="{
+    selectedParty: 'democrat',
+    partyConfig: {
+      democrat: {
+        colors: ['#94e1ff', '#6bd5ff', '#42caff', '#1abeff', '#00acf0', '#008fc7', '#00719e', '#005475'],
+        labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
+        borderColor: '#1abeff'
+      },
+      republican: {
+        colors: ['#ff9494', '#ff6b6b', '#ff4242', '#ff1a1a', '#f00000', '#c70000', '#9e0000', '#750000'],
+        labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
+        borderColor: '#ff1a1a'
+      },
+      'no-party': {
+        colors: ['#ffea94', '#ffe16b', '#ffd942', '#ffd11a', '#f0c000', '#c79f00', '#9e7e00', '#755e00'],
+        labels: ['3%', '6%', '9%', '12%', '15%', '18%', '21%'],
+        borderColor: '#f0c000'
+      },
+      other: {
+        colors: ['#a4efe6', '#81e9dd', '#5fe3d3', '#3cddca', '#24ccb8', '#1ea999', '#188679', '#12645a'],
+        labels: ['1%', '2%', '3%', '4%', '5%', '6%', '7%'],
+        borderColor: '#24ccb8'
+      }
+    }
+  }"
+    >
+      <div class="relative mb-4 w-full">
+        <select
+          x-model="selectedParty"
+          :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
+          class="w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
+        >
+          <option value="democrat">Democrats</option>
+          <option value="republican">Republicans</option>
+          <option value="no-party">No Party</option>
+          <option value="other">Other</option>
+        </select>
+        <div
+          class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+        >
+          <svg
+            class="text-gray-700 h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="relative mb-10 w-full">
+        <div class="flex h-5 w-full gap-[1px] bg-black">
+          <template
+            x-for="(color, index) in partyConfig[selectedParty].colors"
+            :key="index"
+          >
+            <div class="flex-1" :style="`background-color: ${color}`"></div>
+          </template>
+        </div>
+        <div
+          class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
+        >
+          <span
+            class="absolute left-[12.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[0]"
+          ></span>
+          <span
+            class="absolute left-[25%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[1]"
+          ></span>
+          <span
+            class="absolute left-[37.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[2]"
+          ></span>
+          <span
+            class="absolute left-[50%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[3]"
+          ></span>
+          <span
+            class="absolute left-[62.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[4]"
+          ></span>
+          <span
+            class="absolute left-[75%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[5]"
+          ></span>
+          <span
+            class="absolute left-[87.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[6]"
+          ></span>
+        </div>
+      </div>
+
       <div
         class="relative h-full w-full"
         x-data="{
