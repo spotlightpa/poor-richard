@@ -219,7 +219,7 @@
     selectedParty: 'democrat',
     partyConfig: {
       democrat: {
-        colors: ['#94e1ff', '#6bd5ff', '#42caff', '#1abeff', '#00acf0', '#008fc7', '#00719e', '#005475'],
+        colors: ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
         labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
         borderColor: '#1abeff'
       },
@@ -272,7 +272,9 @@
       </div>
 
       <div class="relative mb-10 w-full">
-        <div class="flex h-5 w-full gap-[1px] bg-black">
+        <div
+          class="flex h-6 w-full gap-[1px] rounded-sm border border-g-1 bg-g-1"
+        >
           <template
             x-for="(color, index) in partyConfig[selectedParty].colors"
             :key="index"
@@ -320,12 +322,27 @@
         selected: 'county',
         map: null,
         geojsonData: {},
+        countyData: [],
+        popup: null,
+
+        properCase(str) {
+          return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+        },
 
         async loadGeoJSON() {
           const sources = {{ .Params.geojson.sources | jsonify }};
           const [counties, house, congress, senate] = await Promise.all(
             sources.map(url => fetch(url).then(r => r.json()))
           );
+          
+          if (counties && counties.features) {
+            counties.features.forEach(feature => {
+              if (feature.properties && feature.properties.county_nam) {
+                feature.properties.county_nam = this.properCase(feature.properties.county_nam);
+              }
+            });
+          }
+          
           this.geojsonData = {
             county: counties,
             house: house,
@@ -334,11 +351,43 @@
           };
 
           if (this.map && this.map.loaded()) {
+            await this.joinCountyData();
             this.setupLayers();
           }
         },
 
-        setupLayers() {
+        async joinCountyData() {
+          await new Promise(resolve => {
+            if (this.datasets && this.datasets.county) {
+              resolve();
+            } else {
+              const checkData = setInterval(() => {
+                if (this.datasets && this.datasets.county) {
+                  clearInterval(checkData);
+                  resolve();
+                }
+              }, 100);
+            }
+          });
+
+          this.countyData = this.datasets.county || [];
+          
+          if (this.geojsonData.county && this.geojsonData.county.features) {
+            this.geojsonData.county.features.forEach(feature => {
+              const countyName = feature.properties.county_nam;
+              const countyRecord = this.countyData.find(d => d.CountyName === countyName);
+              
+              if (countyRecord) {
+                feature.properties.democratShare = countyRecord['Democrat Share'];
+                feature.properties.republicanShare = countyRecord['Republican Share'];
+                feature.properties.noPartyShare = countyRecord['No Affiliation Share'];
+                feature.properties.otherShare = countyRecord['Other Share'];
+              }
+            });
+          }
+        },
+
+setupLayers() {
           if (!this.map || !this.geojsonData.county) return;
 
           if (!this.map.getSource('counties')) {
@@ -351,8 +400,20 @@
               type: 'fill',
               source: 'counties',
               paint: {
-                'fill-color': '#627BC1',
-                'fill-opacity': 0.2
+'fill-color': [
+  'case',
+  ['==', ['get', 'democratShare'], null], '#cccccc',
+  ['<',  ['get', 'democratShare'], 10],  '#d4f1ff',
+  ['<',  ['get', 'democratShare'], 20],  '#8fd6ff',
+  ['<',  ['get', 'democratShare'], 30],  '#4bbcff',
+  ['<',  ['get', 'democratShare'], 40],  '#009eff',
+  ['<',  ['get', 'democratShare'], 50],  '#0079d1',
+  ['<',  ['get', 'democratShare'], 60],  '#005aa3',
+  ['<=', ['get', 'democratShare'], 70],  '#003c75',
+  '#001f47'
+],
+'fill-opacity': 1.0
+
               }
             });
             this.map.addLayer({
@@ -360,8 +421,46 @@
               type: 'line',
               source: 'counties',
               paint: {
-                'line-color': '#627BC1',
-                'line-width': 2
+                'line-color': '#fff',
+                'line-width': 1
+              }
+            });
+
+            this.map.on('mousemove', 'counties-fill', (e) => {
+              if (e.features.length > 0) {
+                this.map.getCanvas().style.cursor = 'crosshair';
+                
+                const feature = e.features[0];
+                const countyName = feature.properties.county_nam;
+                const democratShare = feature.properties.democratShare;
+                
+                if (democratShare !== null && democratShare !== undefined) {
+                  if (!this.popup) {
+                    this.popup = new maplibregl.Popup({
+                      closeButton: false,
+                      closeOnClick: false
+                    });
+                  }
+                  
+                const htmlContent = [
+                  '<div style=&quot;padding: 8px; font-family: sans-serif;&quot;>',
+                  '<strong>', countyName, '</strong><br/>',
+                  'Democrat Share: ', democratShare.toFixed(1), '%',
+                  '</div>'
+                ].join('');
+                  
+                  this.popup
+                    .setLngLat(e.lngLat)
+                    .setHTML(htmlContent)
+                    .addTo(this.map);
+                }
+              }
+            });
+
+            this.map.on('mouseleave', 'counties-fill', () => {
+              this.map.getCanvas().style.cursor = '';
+              if (this.popup) {
+                this.popup.remove();
               }
             });
           }
@@ -536,7 +635,9 @@
 
               this.map.on('load', () => {
                 this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
-                this.setupLayers();
+                this.joinCountyData().then(() => {
+                  this.setupLayers();
+                });
               });
 
               this.loadGeoJSON();
