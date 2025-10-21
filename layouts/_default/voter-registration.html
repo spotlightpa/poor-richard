@@ -243,12 +243,13 @@
     >
       <div class="relative mb-4 w-full">
         <select
+          @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
           x-model="selectedParty"
           :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
           class="w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
         >
-          <option value="democrat">Democrats</option>
-          <option value="republican">Republicans</option>
+          <option value="democrat">Democrat</option>
+          <option value="republican">Republican</option>
           <option value="no-party">No Party</option>
           <option value="other">Other</option>
         </select>
@@ -320,6 +321,7 @@
         class="relative h-full w-full"
         x-data="{
         selected: 'county',
+        selectedParty: 'democrat',
         map: null,
         geojsonData: {},
         countyData: [],
@@ -380,16 +382,55 @@
               const countyRecord = this.countyData.find(d => d.CountyName === countyName);
               
               if (countyRecord) {
-                feature.properties.democratShare = countyRecord['Democrat Share'];
+                feature.properties.democratShare   = countyRecord['Democrat Share'];
                 feature.properties.republicanShare = countyRecord['Republican Share'];
-                feature.properties.noPartyShare = countyRecord['No Affiliation Share'];
-                feature.properties.otherShare = countyRecord['Other Share'];
-                feature.properties.democratTotal = Number(countyRecord['Democrat']) || null;
+                feature.properties.noPartyShare    = countyRecord['No Affiliation Share'];
+                feature.properties.otherShare      = countyRecord['Other Share'];
 
+                feature.properties.democratTotal   = Number(countyRecord['Democrat']) || null;
+                feature.properties.republicanTotal = Number(countyRecord['Republican']) || null;
+                feature.properties.noPartyTotal    = Number(countyRecord['No Affiliation']) || null;
+                feature.properties.otherTotal      = Number(countyRecord['Other']) || null;
               }
             });
           }
         },
+
+
+        getBreaksForParty(party) {
+  if (party === 'no-party') return [3, 6, 9, 12, 15, 18, 21, 999];
+  if (party === 'other')    return [1, 2, 3, 4, 5, 6, 7, 999];
+  return [10, 20, 30, 40, 50, 60, 70, 999];
+},
+getPaletteForParty(party) {
+  const cfg = {
+    democrat:   ['#d4f1ff','#8fd6ff','#4bbcff','#009eff','#0079d1','#005aa3','#003c75','#001f47'],
+    republican: ['#ff9494','#ff6b6b','#ff4242','#ff1a1a','#f00000','#c70000','#9e0000','#750000'],
+    'no-party': ['#ffea94','#ffe16b','#ffd942','#ffd11a','#f0c000','#c79f00','#9e7e00','#755e00'],
+    other:      ['#a4efe6','#81e9dd','#5fe3d3','#3cddca','#24ccb8','#1ea999','#188679','#12645a']
+  };
+  return cfg[party];
+},
+getSharePropKey(party) {
+  return ({
+    democrat: 'democratShare',
+    republican: 'republicanShare',
+    'no-party': 'noPartyShare',
+    other: 'otherShare'
+  })[party];
+},
+buildFillColorExpression(party) {
+  const key = this.getSharePropKey(party);
+  const breaks = this.getBreaksForParty(party);
+  const colors = this.getPaletteForParty(party);
+  const expr = ['case', ['==', ['get', key], null], '#cccccc'];
+  for (let i = 0; i < breaks.length - 1; i++) {
+    expr.push(['<', ['get', key], breaks[i]], colors[i]);
+  }
+  expr.push(colors[colors.length - 1]);
+  return expr;
+},
+
 
 setupLayers() {
           if (!this.map || !this.geojsonData.county) return;
@@ -405,22 +446,11 @@ setupLayers() {
               id: 'counties-fill',
               type: 'fill',
               source: 'counties',
-              paint: {
-'fill-color': [
-  'case',
-  ['==', ['get', 'democratShare'], null], '#cccccc',
-  ['<',  ['get', 'democratShare'], 10],  '#d4f1ff',
-  ['<',  ['get', 'democratShare'], 20],  '#8fd6ff',
-  ['<',  ['get', 'democratShare'], 30],  '#4bbcff',
-  ['<',  ['get', 'democratShare'], 40],  '#009eff',
-  ['<',  ['get', 'democratShare'], 50],  '#0079d1',
-  ['<',  ['get', 'democratShare'], 60],  '#005aa3',
-  ['<=', ['get', 'democratShare'], 70],  '#003c75',
-  '#001f47'
-],
-'fill-opacity': 1.0
+paint: {
+  'fill-color': this.buildFillColorExpression('democrat'),
+  'fill-opacity': 1.0
+}
 
-              }
             });
             this.map.addLayer({
               id: 'counties-outline',
@@ -461,104 +491,123 @@ setupLayers() {
               }
             });
 
+this.map.on('mousemove', 'counties-fill', (e) => {
+  if (e.features.length > 0) {
+    this.map.getCanvas().style.cursor = 'crosshair';
+    const feature = e.features[0];
 
-            this.map.on('mousemove', 'counties-fill', (e) => {
-              if (e.features.length > 0) {
-                this.map.getCanvas().style.cursor = 'crosshair';
-                
-                const feature = e.features[0];
+    if (this.hoveredId !== feature.id) {
+      if (this.hoveredId) {
+        this.map.setFeatureState(
+          { source: 'counties', id: this.hoveredId },
+          { hover: false }
+        );
+      }
+      this.hoveredId = feature.id;
+      this.map.setFeatureState(
+        { source: 'counties', id: this.hoveredId },
+        { hover: true }
+      );
+    }
 
-                if (this.hoveredId !== feature.id) {
-                if (this.hoveredId) {
-                this.map.setFeatureState(
-                  { source: 'counties', id: this.hoveredId },
-                  { hover: false }
-                );
-                }
-                this.hoveredId = feature.id;
-                this.map.setFeatureState(
-                { source: 'counties', id: this.hoveredId },
-                { hover: true }
-                );
-                }
+    if (!this.popup) {
+      this.popup = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+    }
 
+    const partyKeyMap = {
+      democrat:   { share: 'democratShare',   total: 'democratTotal',   color: '#0079d1', text: '#ffffff', label: 'Democrat' },
+      republican: { share: 'republicanShare', total: 'republicanTotal', color: '#d70000', text: '#ffffff', label: 'Republican' },
+      'no-party': { share: 'noPartyShare',    total: 'noPartyTotal',    color: '#ffcb03', text: '#000000', label: 'No Party' },
+      other:      { share: 'otherShare',      total: 'otherTotal',      color: '#1b998b', text: '#ffffff', label: 'Other' }
+    };
 
-                if (this.hoveredId !== feature.id) {
-                  if (this.hoveredId) {
-                    this.map.setFeatureState(
-                      { source: 'counties', id: this.hoveredId },
-                      { hover: false }
-                    );
-                  }
-                  this.hoveredId = feature.id;
-                  this.map.setFeatureState(
-                    { source: 'counties', id: this.hoveredId },
-                    { hover: true }
-                  );
-                }
+    const activeParty = this.selectedParty;
+    const active = partyKeyMap[activeParty];
 
-                const countyName = feature.properties.county_nam;
-                const democratShare = feature.properties.democratShare;
-                const democratTotal = feature.properties.democratTotal;
-                const sharePct = Number.isFinite(democratShare) ? Math.max(0, Math.min(100, Math.round(democratShare))) : null;
+    const shareVal = feature.properties[active.share];
+    const totalVal = feature.properties[active.total];
+    const sharePct = Number.isFinite(shareVal)
+      ? Math.max(0, Math.min(100, Math.round(shareVal)))
+      : null;
 
-                
-                if (democratShare !== null && democratShare !== undefined) {
-                  if (!this.popup) {
-                    this.popup = new maplibregl.Popup({
-                      closeButton: false,
-                      closeOnClick: false
-                    });
-                  }
-                  
+    const others = Object.entries(partyKeyMap)
+      .filter(([k]) => k !== activeParty)
+      .map(([k, meta]) => ({
+        label: meta.label,
+        color: meta.color,
+        textColor: meta.text,
+        pct: Number.isFinite(feature.properties[meta.share])
+          ? Math.max(0, Math.min(100, Math.round(feature.properties[meta.share])))
+          : 0
+      }));
 
+    const countyName = feature.properties.county_nam;
 
+    const renderBar = ({ label, pct, color, textColor }) => [
+      '<div style=&quot;margin-top:8px;&quot;>',
+      `<span style=&quot;font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;&quot;>${label}:</span>`,
+      '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;&quot;>',
+      `<div style=&quot;width:${pct || 0}%; background:${color}; height:100%; position:relative;&quot;>`,
+      (pct >= 30
+        ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${pct}%</span>`
+        : ''),
+      '</div>',
+      (pct < 30
+        ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct ||
+            0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${pct}%</span>`
+        : ''),
+      '</div>',
+      '</div>'
+    ].join('');
 
-const htmlContent = [
-  '<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>',
-    '<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>', countyName, ' County</strong>',
+    const htmlContent = [
+      '<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>',
+      `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${countyName} County</strong>`,
 
-    '<div style=&quot;position: relative; width: calc(100% - 14px); height: 18px; border: 1px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>',
-      '<div style=&quot;width:', (sharePct !== null ? sharePct : 0), '%; background:#0079d1; height:100%; position:relative;&quot;>',
-        (sharePct !== null && sharePct >= 30
-          ? '<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:#ffffff; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>' + sharePct + '%</span>'
-          : ''),
+      // ACTIVE PARTY (top)
+      '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>',
+      `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
+      (sharePct !== null && sharePct >= 30
+        ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+        : ''),
+      '</div>',
+      (sharePct !== null && sharePct < 30
+        ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+        : ''),
       '</div>',
 
-      (sharePct !== null && sharePct < 30
-        ? '<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(' + sharePct + '% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>' + sharePct + '%</span>'
-        : ''),
-    '</div>',
+      '<div style=&quot;height:6px;&quot;></div>',
+      '<span style=&quot;font-size:0.95rem; font-weight:700;&quot;>Total:</span> ',
+      `<span style=&quot;font-size:0.95rem;&quot;>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : '—'}</span>`,
 
-    '<div style=&quot;height:6px;&quot;></div>',
-    '<span style=&quot;font-size:0.95rem;&quot;>Total: ', (Number.isFinite(democratTotal) ? democratTotal.toLocaleString() : '—'), '</span>',
-  '</div>'
-].join('');
+      '<div style=&quot;height:8px;&quot;></div>',
+      '<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>',
 
+      // INACTIVE PARTIES
+      renderBar(others[0]),
+      renderBar(others[1]),
+      renderBar(others[2]),
+      '</div>'
+    ].join('');
 
-this.popup
-  .setLngLat(e.lngLat)
-  .setHTML(htmlContent)
-  .addTo(this.map);
+    this.popup
+      .setLngLat(e.lngLat)
+      .setHTML(htmlContent)
+      .addTo(this.map);
 
-this.popup.getElement().style.zIndex = '9999';this.popup
-  .setLngLat(e.lngLat)
-  .setHTML(htmlContent)
-  .addTo(this.map);
+    const popupEl = this.popup.getElement();
+    popupEl.style.zIndex = '9999';
+    const contentEl = popupEl.querySelector('.maplibregl-popup-content');
+    if (contentEl) {
+      contentEl.style.padding = '8px';
+      contentEl.style.boxSizing = 'border-box';
+    }
+  }
+});
 
-const popupEl = this.popup.getElement();
-popupEl.style.zIndex = '9999';
-
-const contentEl = popupEl.querySelector('.maplibregl-popup-content');
-if (contentEl) {
-  contentEl.style.padding = '8px';
-  contentEl.style.boxSizing = 'border-box';
-}
-
-
-                }
-              }
-            });
 
         this.map.on('mouseleave', 'counties-fill', () => {
           this.map.getCanvas().style.cursor = '';
@@ -751,6 +800,10 @@ if (contentEl) {
                 this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
                 this.joinCountyData().then(() => {
                   this.setupLayers();
+                  if (this.map.getLayer('counties-fill')) {
+  this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
+}
+
                 });
               });
 
@@ -759,7 +812,16 @@ if (contentEl) {
           }, 100);
         }
       }"
-        x-init="initMap(); $watch('selected', () => updateLayerVisibility())"
+        x-init="
+  initMap();
+  $watch('selected', () => updateLayerVisibility());
+  window.addEventListener('party-changed', (e) => {
+    selectedParty = e.detail;
+    if (map && map.getLayer('counties-fill')) {
+      map.setPaintProperty('counties-fill', 'fill-color', buildFillColorExpression(selectedParty));
+    }
+  });
+"
       >
         <div x-ref="mapCanvas" class="absolute inset-0 h-full w-full"></div>
 
