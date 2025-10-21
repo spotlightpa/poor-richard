@@ -214,7 +214,7 @@
     </div>
 
     <div
-      class="col-span-7 row-span-4 flex flex-col overflow-hidden bg-black px-4 pb-4 pr-12 pt-12"
+      class="col-span-7 row-span-4 flex flex-col overflow-visible bg-black px-4 pb-4 pr-12 pt-12"
       x-data="{
     selectedParty: 'democrat',
 partyConfig: {
@@ -844,7 +844,11 @@ this.map.on('mousemove', 'counties-fill', (e) => {
   });
 "
       >
-        <div x-ref="mapCanvas" class="absolute inset-0 h-full w-full"></div>
+        <div
+          x-ref="mapCanvas"
+          class="absolute inset-0 h-full w-full"
+          style="overflow: visible;"
+        ></div>
 
         <div
           class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow"
@@ -910,13 +914,8 @@ this.map.on('mousemove', 'counties-fill', (e) => {
     ></div>
 
     <div class="col-span-12 row-span-2 bg-orange px-12 py-8">
-      <div class="h-full w-full bg-g-1 p-4">
-        Historical data TK
-      </div>
+      <div class="h-full w-full bg-g-1 p-4">Historical data TK</div>
     </div>
-
-
-    
   </div>
 {{ end }}
 
