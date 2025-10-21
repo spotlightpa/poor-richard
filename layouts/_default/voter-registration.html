@@ -217,28 +217,29 @@
       class="col-span-7 row-span-4 flex flex-col overflow-hidden bg-black px-4 pb-4 pr-12 pt-12"
       x-data="{
     selectedParty: 'democrat',
-    partyConfig: {
-      democrat: {
-        colors: ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
-        labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
-        borderColor: '#1abeff'
-      },
-      republican: {
-        colors: ['#ff9494', '#ff6b6b', '#ff4242', '#ff1a1a', '#f00000', '#c70000', '#9e0000', '#750000'],
-        labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
-        borderColor: '#ff1a1a'
-      },
-      'no-party': {
-        colors: ['#ffea94', '#ffe16b', '#ffd942', '#ffd11a', '#f0c000', '#c79f00', '#9e7e00', '#755e00'],
-        labels: ['3%', '6%', '9%', '12%', '15%', '18%', '21%'],
-        borderColor: '#f0c000'
-      },
-      other: {
-        colors: ['#a4efe6', '#81e9dd', '#5fe3d3', '#3cddca', '#24ccb8', '#1ea999', '#188679', '#12645a'],
-        labels: ['1%', '2%', '3%', '4%', '5%', '6%', '7%'],
-        borderColor: '#24ccb8'
-      }
-    }
+partyConfig: {
+  democrat: {
+    colors: ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
+    labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
+    borderColor: '#1abeff'
+  },
+  republican: {
+    colors: ['#ffe0e0', '#ffb3b3', '#ff8080', '#ff4d4d', '#e00000', '#b30000', '#7a0000', '#330000'],
+    labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
+    borderColor: '#ff1a1a'
+  },
+  'no-party': {
+    colors: ['#fff6cc', '#ffe999', '#ffdc66', '#ffcf33', '#e0b300', '#b38600', '#7a5c00', '#332600'],
+    labels: ['3%', '6%', '9%', '12%', '15%', '18%', '21%'],
+    borderColor: '#f0c000'
+  },
+  other: {
+    colors: ['#d8fbf6', '#aff5ea', '#86efe0', '#5de9d6', '#22cdb8', '#199e8e', '#0f6f63', '#083934'],
+    labels: ['1%', '2%', '3%', '4%', '5%', '6%', '7%'],
+    borderColor: '#24ccb8'
+  }
+}
+
   }"
     >
       <div class="relative mb-4 w-full">
@@ -404,10 +405,10 @@
 },
 getPaletteForParty(party) {
   const cfg = {
-    democrat:   ['#d4f1ff','#8fd6ff','#4bbcff','#009eff','#0079d1','#005aa3','#003c75','#001f47'],
-    republican: ['#ff9494','#ff6b6b','#ff4242','#ff1a1a','#f00000','#c70000','#9e0000','#750000'],
-    'no-party': ['#ffea94','#ffe16b','#ffd942','#ffd11a','#f0c000','#c79f00','#9e7e00','#755e00'],
-    other:      ['#a4efe6','#81e9dd','#5fe3d3','#3cddca','#24ccb8','#1ea999','#188679','#12645a']
+    democrat:   ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
+    republican: ['#ffe0e0', '#ffb3b3', '#ff8080', '#ff4d4d', '#e00000', '#b30000', '#7a0000', '#330000'],
+    'no-party': ['#fff6cc', '#ffe999', '#ffdc66', '#ffcf33', '#e0b300', '#b38600', '#7a5c00', '#332600'],
+    other:      ['#d8fbf6', '#aff5ea', '#86efe0', '#5de9d6', '#22cdb8', '#199e8e', '#0f6f63', '#083934']
   };
   return cfg[party];
 },
@@ -567,7 +568,6 @@ this.map.on('mousemove', 'counties-fill', (e) => {
       '<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>',
       `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${countyName} County</strong>`,
 
-      // ACTIVE PARTY (top)
       '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>',
       `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
       (sharePct !== null && sharePct >= 30
@@ -586,7 +586,6 @@ this.map.on('mousemove', 'counties-fill', (e) => {
       '<div style=&quot;height:8px;&quot;></div>',
       '<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>',
 
-      // INACTIVE PARTIES
       renderBar(others[0]),
       renderBar(others[1]),
       renderBar(others[2]),
