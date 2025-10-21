@@ -52,7 +52,7 @@ We know not everyone reading this will fit exactly what we've described. We enco
 
 ### [Apply here](https://spotlightpa.applytojob.com/apply/FIsBWvEduM/Newsletter-WriterReporter-Guild-Position)
 
-**Summary**: We are seeking a passionate, dynamic voice to write and contribute to our growing newsletter portfolio. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across dozens of partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners.
+**Summary**: We are seeking a passionate, dynamic voice to write and contribute to our growing newsletter portfolio. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across dozens of partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners. **This job listing will close Oct. 27 at 9 a.m.**
 
 **What you'll do**: The newsletter writer will report to Spotlight PA's Lead Editor, News Products. Their primary responsibilities will be:
 
