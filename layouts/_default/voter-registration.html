@@ -443,34 +443,44 @@ setupLayers() {
               generateId: true
             });
 
-            this.map.addLayer({
-              id: 'counties-fill',
-              type: 'fill',
-              source: 'counties',
-paint: {
-  'fill-color': this.buildFillColorExpression('democrat'),
-  'fill-opacity': 1.0
-}
 
-            });
-            this.map.addLayer({
-              id: 'counties-outline',
-              type: 'line',
-              source: 'counties',
-              paint: {
-                'line-color': [
-                'case',
-                ['boolean', ['feature-state', 'hover'], false],
-                '#000000',
-                '#ffffff'
-              ],
-              'line-width': [
-                'case',
-                ['boolean', ['feature-state', 'hover'], false],
-                3,
-                1]
-              }
-            });
+const labelLayerId = this.map.getStyle().layers.find(l =>
+  l.type === 'symbol' && l.layout && l.layout['text-field']
+)?.id;
+
+
+this.map.addLayer({
+  id: 'counties-fill',
+  type: 'fill',
+  source: 'counties',
+  paint: {
+    'fill-color': this.buildFillColorExpression('democrat'),
+    'fill-opacity': 1.0
+  }
+}, labelLayerId);
+
+
+
+this.map.addLayer({
+  id: 'counties-outline',
+  type: 'line',
+  source: 'counties',
+  paint: {
+    'line-color': [
+      'case',
+      ['boolean', ['feature-state', 'hover'], false],
+      '#000000',
+      '#ffffff'
+    ],
+    'line-width': [
+      'case',
+      ['boolean', ['feature-state', 'hover'], false],
+      3,
+      1
+    ]
+  }
+}, labelLayerId);
+
 
             this.map.addLayer({
               id: 'counties-outline-hover',
@@ -797,6 +807,18 @@ this.map.on('mousemove', 'counties-fill', (e) => {
 
               this.map.on('load', () => {
                 this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
+
+
+              this.map.getStyle().layers.forEach(layer => {
+                if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
+                  this.map.setPaintProperty(layer.id, 'text-halo-color', '#ffffff');
+                  this.map.setPaintProperty(layer.id, 'text-halo-width', 2.5);
+                  this.map.setPaintProperty(layer.id, 'text-halo-blur', 0.5);  
+                  this.map.setPaintProperty(layer.id, 'text-color', '#111111');
+                }
+              });
+
+
                 this.joinCountyData().then(() => {
                   this.setupLayers();
                   if (this.map.getLayer('counties-fill')) {
