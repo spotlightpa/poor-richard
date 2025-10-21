@@ -17,7 +17,143 @@
 
   <div
     class="grid h-screen w-screen grid-cols-12 grid-rows-6"
-    x-data="s3DataLoader()"
+    x-data="{
+      ...s3DataLoader(),
+      
+      getPartyData() {
+        const datasets = this.datasets || {};
+        const totalData = datasets['total'] || [];
+        
+        if (!Array.isArray(totalData) || totalData.length === 0) {
+          return [];
+        }
+        
+        const rows = totalData.filter(r => r.Party && r.Party !== 'Total');
+        
+        const dem = rows.find(r => r.Party === 'Democrat') || { Total: 0 };
+        const rep = rows.find(r => r.Party === 'Republican') || { Total: 0 };
+        const noParty = rows.find(r => r.Party === 'No Affiliation') || { Total: 0 };
+        const other = rows.find(r => r.Party === 'Other') || { Total: 0 };
+
+        return [
+          { 
+            name: 'Democrat',
+            party: 'Dem.', 
+            value: typeof dem.Total === 'number' ? dem.Total : 0, 
+            color: '#009edb'
+          },
+          { 
+            name: 'Republican',
+            party: 'Rep.', 
+            value: typeof rep.Total === 'number' ? rep.Total : 0, 
+            color: '#d70000'
+          },
+          { 
+            name: 'No Affiliation',
+            party: 'No Party', 
+            value: typeof noParty.Total === 'number' ? noParty.Total : 0, 
+            color: '#E59500'
+          },
+          { 
+            name: 'Other',
+            party: 'Other', 
+            value: typeof other.Total === 'number' ? other.Total : 0, 
+            color: '#1b998b'
+          }
+        ];
+      },
+
+      renderTreemap() {
+        const container = this.$refs.treemapContainer;
+        if (!container) return;
+
+        const partyData = this.getPartyData();
+        if (partyData.length === 0) return;
+
+        const sortedData = [...partyData].sort((a, b) => b.value - a.value);
+        
+        container.innerHTML = '';
+
+        const containerWidth = container.clientWidth;
+        const containerHeight = container.clientHeight;
+        
+        if (containerWidth < 100 || containerHeight < 100) {
+          return;
+        }
+
+        const margin = { top: 10, right: 80, bottom: 10, left: 100 };
+        const width = containerWidth - margin.left - margin.right;
+        const height = containerHeight - margin.top - margin.bottom;
+
+        const svg = d3.select(container)
+          .append('svg')
+          .attr('width', containerWidth)
+          .attr('height', containerHeight)
+          .append('g')
+          .attr('transform', `translate(${margin.left},${margin.top})`);
+
+        const x = d3.scaleLinear()
+          .domain([0, d3.max(sortedData, d => d.value)])
+          .range([0, width]);
+
+        const y = d3.scaleBand()
+          .domain(sortedData.map(d => d.name))
+          .range([0, height])
+          .padding(0.3)
+          .paddingOuter(0.15);
+
+        const gap = y.step() - y.bandwidth();
+        svg.selectAll('.separator')
+          .data(sortedData.slice(1))
+          .join('line')
+          .attr('class', 'separator')
+          .attr('x1', -margin.left)
+          .attr('x2', width)
+          .attr('y1', d => y(d.name) - gap / 2)
+          .attr('y2', d => y(d.name) - gap / 2)
+          .attr('stroke', '#e5e7eb')
+          .attr('stroke-width', 1)
+          .attr('stroke-dasharray', '3,3');
+
+        const bars = svg.selectAll('.bar')
+          .data(sortedData)
+          .join('g')
+          .attr('class', 'bar');
+
+        bars.append('rect')
+          .attr('x', 0)
+          .attr('y', d => y(d.name))
+          .attr('width', d => Math.max(0, x(d.value)))
+          .attr('height', y.bandwidth())
+          .attr('fill', d => d.color);
+
+        bars.append('text')
+          .attr('x', -margin.left + 12)
+          .attr('y', d => y(d.name) + y.bandwidth() / 2)
+          .attr('dy', '0.35em')
+          .attr('text-anchor', 'start')
+          .attr('fill', '#374151')
+          .attr('font-size', '16px')
+          .attr('font-weight', '700')
+          .text(d => d.party);
+
+        bars.append('text')
+          .attr('x', d => {
+            if (d.value < 1500000) {
+              return Math.max(0, x(d.value)) + 12;
+            } else {
+              return Math.max(0, x(d.value) - 12);
+            }
+          })
+          .attr('y', d => y(d.name) + y.bandwidth() / 2)
+          .attr('dy', '0.35em')
+          .attr('text-anchor', d => d.value < 1500000 ? 'start' : 'end')
+          .attr('fill', d => d.value < 1500000 ? '#000000' : 'white')
+          .attr('font-size', '18px')
+          .attr('font-weight', '700')
+          .text(d => d.value.toLocaleString());
+      }
+    }"
     x-init="init()"
   >
     <div
@@ -352,97 +488,26 @@
       </div>
     </div>
 
-    <div
-      class="col-span-5 row-span-2 flex flex-col gap-1"
-      x-data="{
-        getPartyData() {
-          const rows = partyRows();
-          const total = totalRegistered();
-
-          // More flexible party matching
-          const dem = rows.find(r => 
-            r.Party && (
-              r.Party.toLowerCase().includes('democrat') || 
-              r.Party.toLowerCase().includes('dem')
-            )
-          ) || { Total: 0 };
-
-          const rep = rows.find(r => 
-            r.Party && (
-              r.Party.toLowerCase().includes('republican') || 
-              r.Party.toLowerCase().includes('rep')
-            )
-          ) || { Total: 0 };
-
-          const noParty = rows.find(r => 
-            r.Party && (
-              r.Party.toLowerCase().includes('no affiliation') || 
-              r.Party.toLowerCase().includes('none') ||
-              r.Party.toLowerCase().includes('no party') ||
-              r.Party.toLowerCase().includes('independent')
-            )
-          ) || { Total: 0 };
-
-          const other = rows.find(r => 
-            r.Party && r.Party.toLowerCase().includes('other')
-          ) || { Total: 0 };
-
-          return [
-            { party: 'Dem.', count: dem.Total, color: 'bg-blue-6', pct: (dem.Total / total * 100) },
-            { party: 'Rep.', count: rep.Total, color: 'bg-red-7', pct: (rep.Total / total * 100) },
-            { party: 'No party', count: noParty.Total, color: 'bg-[#E59500]', pct: (noParty.Total / total * 100) },
-            { party: 'Other', count: other.Total, color: 'bg-election-green', pct: (other.Total / total * 100) }
-          ].sort((a, b) => b.count - a.count);
-        }
-      }"
+    <div 
+      class="col-span-5 row-span-2 bg-white p-2"
+      x-ref="treemapContainer"
+      x-show="datasets && datasets.total && datasets.total.length > 0"
+      x-init="
+        window.addEventListener('inspections-data-ready', () => {
+          $nextTick(() => renderTreemap());
+        });
+        $watch('datasets', () => { 
+          if (datasets && datasets.total && datasets.total.length > 0) { 
+            $nextTick(() => renderTreemap()); 
+          } 
+        });
+        window.addEventListener('resize', () => {
+          if (datasets && datasets.total && datasets.total.length > 0) {
+            renderTreemap();
+          }
+        });
+      "
     >
-      <div class="flex flex-1 gap-1">
-        <template x-for="(item, idx) in getPartyData().slice(0, 2)" :key="idx">
-          <div
-            class="flex flex-col items-center justify-center p-4 text-white transition-all duration-300"
-            :class="item.color"
-            :style="`flex: ${item.pct}`"
-          >
-            <div
-              class="font-bold transition-all duration-300"
-              :class="item.pct > 25 ? 'text-4xl' : item.pct > 15 ? 'text-3xl' : 'text-2xl'"
-              x-text="item.count.toLocaleString()"
-            ></div>
-            <div
-              class="text-sm font-semibold uppercase"
-              x-text="item.party"
-            ></div>
-            <div
-              class="mt-1 text-xs opacity-90"
-              x-text="`${item.pct.toFixed(1)}%`"
-            ></div>
-          </div>
-        </template>
-      </div>
-
-      <div class="flex flex-1 gap-1">
-        <template x-for="(item, idx) in getPartyData().slice(2, 4)" :key="idx">
-          <div
-            class="flex flex-col items-center justify-center p-4 text-white transition-all duration-300"
-            :class="item.color"
-            :style="`flex: ${item.pct}`"
-          >
-            <div
-              class="font-bold transition-all duration-300"
-              :class="item.pct > 15 ? 'text-3xl' : item.pct > 8 ? 'text-2xl' : 'text-xl'"
-              x-text="item.count.toLocaleString()"
-            ></div>
-            <div
-              class="text-sm font-semibold uppercase"
-              x-text="item.party"
-            ></div>
-            <div
-              class="mt-1 text-xs opacity-90"
-              x-text="`${item.pct.toFixed(1)}%`"
-            ></div>
-          </div>
-        </template>
-      </div>
     </div>
 
     <div class="col-span-12 bg-orange"></div>
@@ -517,6 +582,7 @@
 
 {{ define "extra-head" }}
   {{ partial "header/maplibre.html" . }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 {{ end }}
 
 {{ define "extra-footer" }}
