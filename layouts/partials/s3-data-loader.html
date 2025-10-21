@@ -4,7 +4,7 @@
 
   function s3DataLoader() {
     return {
-      dataSourceURL: {{ .Param "data.source" | default "" }},
+      dataSources: {{ .Param "data.sources" | default "[]" }},
       geojsonSources: {{ .Param "geojson.sources" | default "[]" }},
       showPopup: {{ .Param "data.popup" | default "false" }},
       cacheVersion: {{ .Param "data.cacheVersion" | default 1 }},
@@ -12,13 +12,12 @@
       maxCacheAge: {{ .Param "data.maxCacheAge" | default 24 }} * 60 * 60 * 1000,
       delimiter: {{ .Param "data.delimiter" | default "," }},
       numericFields: {{ .Param "data.numericFields" | default "[]" }},
-      cacheName: "",
       dbName: "SpotlightPA-DataCache",
       loading: false,
       loadingProgress: 0,
       loadingMessage: "Initializing...",
       error: null,
-      data: [],
+      datasets: {},
       geojsonData: {},
       retryCount: 0,
       maxRetries: 2,
@@ -31,7 +30,9 @@
         this.initialized = true;
 
         this.totalTasks = 0;
-        if (this.dataSourceURL) this.totalTasks++;
+        if (Array.isArray(this.dataSources) && this.dataSources.length > 0) {
+          this.totalTasks += this.dataSources.length;
+        }
         if (Array.isArray(this.geojsonSources) && this.geojsonSources.length > 0) {
           this.totalTasks += this.geojsonSources.length;
         }
@@ -50,10 +51,6 @@
 
         window.addEventListener("inspections-data-ready", onReady, { once: false });
 
-        if (this.dataSourceURL) {
-          this.cacheName = this.generateCacheName(this.dataSourceURL);
-        }
-
         await this.loadAllData();
       },
 
@@ -70,7 +67,7 @@
       getFileName(url) {
         const parts = url.split('/');
         const filename = parts[parts.length - 1];
-        return filename.replace('.geojson', '');
+        return filename.replace(/\.(xlsx?|csv|tsv|json)$/i, '');
       },
 
       updateProgress() {
@@ -86,8 +83,8 @@
         this.loadingMessage = "Loading data...";
 
         try {
-          if (this.dataSourceURL) {
-            await this.loadData();
+          if (Array.isArray(this.dataSources) && this.dataSources.length > 0) {
+            await this.loadAllDatasets();
           }
 
           if (Array.isArray(this.geojsonSources) && this.geojsonSources.length > 0) {
@@ -102,10 +99,44 @@
         } catch (err) {
           await this.handleError(err);
         } finally {
-          if ((this.data.length > 0 || Object.keys(this.geojsonData).length > 0) && !this.error) {
+          if ((Object.keys(this.datasets).length > 0 || Object.keys(this.geojsonData).length > 0) && !this.error) {
             this.loading = false;
           }
         }
+      },
+
+      async loadAllDatasets() {
+        const results = {};
+
+        this.loadingMessage = "Loading datasets...";
+
+        for (let i = 0; i < this.dataSources.length; i++) {
+          const url = this.dataSources[i];
+          const fileName = this.getFileName(url);
+
+          try {
+            const cachedData = await this.loadFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+              this.refreshDatasetInBackground(url, fileName);
+            } else {
+              const data = await this.loadFromS3(url);
+              results[fileName] = data;
+              await this.saveToCache(url, data);
+            }
+          } catch (err) {
+            console.error(`Failed to load ${fileName}:`, err);
+            const cachedData = await this.loadFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+            }
+          }
+
+          this.completedTasks++;
+          this.updateProgress();
+        }
+
+        this.datasets = results;
       },
 
       async loadAllGeoJSON() {
@@ -202,6 +233,10 @@
         return this.geojsonData[name] || null;
       },
 
+      getDataset(name) {
+        return this.datasets[name] || null;
+      },
+
       async ensureXLSX() {
         if (window.XLSX) return;
         if (this._xlsxPromise) return this._xlsxPromise;
@@ -231,27 +266,6 @@
         if (ext === "tsv") return "tsv";
         if (ext === "json") return "json";
         return "csv";
-      },
-
-      async loadData() {
-        this.error = null;
-
-        try {
-          const cachedData = await this.loadFromCache();
-          if (cachedData) {
-            this.data = cachedData;
-            this.loadingMessage = "Loading from cache...";
-            this.completedTasks++;
-            this.updateProgress();
-            this.refreshDataInBackground();
-          } else {
-            await this.loadFromS3();
-            this.completedTasks++;
-            this.updateProgress();
-          }
-        } catch (err) {
-          throw err;
-        }
       },
 
       async waitForLoadingTransition() {
@@ -304,44 +318,35 @@
         });
       },
 
-      async loadFromS3() {
-        const response = await fetch(this.dataSourceURL, { mode: "cors", cache: "no-cache" });
+      async loadFromS3(url) {
+        const response = await fetch(url, { mode: "cors", cache: "no-cache" });
         if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         const contentType = response.headers.get("content-type") || "";
-        const type = this.detectType(this.dataSourceURL, contentType);
-        this.loadingMessage = "Downloading data...";
+        const type = this.detectType(url, contentType);
 
         let parsed;
         if (type === "xlsx") {
           const buf = await response.arrayBuffer();
-          this.loadingMessage = "Processing data...";
           await this.ensureXLSX();
           parsed = this.parseXLSX(buf);
         } else if (type === "json") {
           const text = await response.text();
-          this.loadingMessage = "Processing data...";
           parsed = this.parseJSON(text);
         } else {
           const text = await response.text();
-          this.loadingMessage = "Processing data...";
           const delim = type === "tsv" ? "\t" : this.delimiter || ",";
           parsed = this.parseDelimited(text, delim);
         }
 
-        this.loadingMessage = "Loading...";
-        await this.saveToCache(parsed);
-        this.data = parsed;
+        return parsed;
       },
 
       notifyDataReady() {
-        try {
-        } catch(e) {}
-
         if (!window._inspectionsDataDispatched) {
           window._inspectionsDataDispatched = true;
           window.dispatchEvent(new CustomEvent("inspections-data-ready", {
             detail: {
-              data: this.data,
+              datasets: this.datasets,
               geojsonData: this.geojsonData
             }
           }));
@@ -438,12 +443,13 @@
         });
       },
 
-      async loadFromCache() {
+      async loadFromCache(url) {
         try {
+          const cacheName = this.generateCacheName(url);
           const db = await this.openDB();
           const tx = db.transaction("dataCache", "readonly");
           const store = tx.objectStore("dataCache");
-          const cached = await store.get(this.cacheName);
+          const cached = await store.get(cacheName);
           if (!cached) return null;
           const age = Date.now() - cached.timestamp;
           if (age > this.maxCacheAge) return null;
@@ -454,13 +460,21 @@
         }
       },
 
-      async saveToCache(data) {
+      async saveToCache(url, data) {
         try {
+          const cacheName = this.generateCacheName(url);
           const db = await this.openDB();
           const tx = db.transaction("dataCache", "readwrite");
           const store = tx.objectStore("dataCache");
-          await store.put({ id: this.cacheName, data, timestamp: Date.now(), version: this.cacheVersion });
-        } catch {}
+          await store.put({
+            id: cacheName,
+            data,
+            timestamp: Date.now(),
+            version: this.cacheVersion
+          });
+        } catch (err) {
+          console.error("Failed to save to cache:", err);
+        }
       },
 
       openDB() {
@@ -480,50 +494,49 @@
         });
       },
 
-      async refreshDataInBackground() {
+      async refreshDatasetInBackground(url, fileName) {
         try {
-          const response = await fetch(this.dataSourceURL, { mode: "cors", cache: "no-cache" });
-          if (!response.ok) return;
-          const contentType = response.headers.get("content-type") || "";
-          const type = this.detectType(this.dataSourceURL, contentType);
-          let parsed;
-          if (type === "xlsx") {
-            await this.ensureXLSX();
-            parsed = this.parseXLSX(await response.arrayBuffer());
-          } else if (type === "json") {
-            parsed = this.parseJSON(await response.text());
-          } else {
-            const delim = type === "tsv" ? "\t" : this.delimiter || ",";
-            parsed = this.parseDelimited(await response.text(), delim);
-          }
-          const currentLen = JSON.stringify(this.data).length;
-          const newLen = JSON.stringify(parsed).length;
+          const data = await this.loadFromS3(url);
+          const currentLen = JSON.stringify(this.datasets[fileName]).length;
+          const newLen = JSON.stringify(data).length;
+
           if (newLen !== currentLen) {
-            this.data = parsed;
-            await this.saveToCache(parsed);
+            this.datasets[fileName] = data;
+            await this.saveToCache(url, data);
+
             if (!window._inspectionsDataDispatched) {
               this.notifyDataReady();
             } else {
-              window.dispatchEvent(new CustomEvent("inspections-data-updated", { detail: { data: parsed } }));
+              window.dispatchEvent(new CustomEvent("inspections-data-updated", {
+                detail: {
+                  datasets: this.datasets,
+                  updated: fileName
+                }
+              }));
             }
           }
-        } catch {}
+        } catch (err) {
+          console.error(`Failed to refresh ${fileName}:`, err);
+        }
       },
 
       partyRows() {
-        if (!Array.isArray(this.data)) return [];
-        return this.data.filter(r => r.Party && r.Party !== "Total");
+        const totalData = this.datasets['total'];
+        if (!Array.isArray(totalData)) return [];
+        return totalData.filter(r => r.Party && r.Party !== "Total");
       },
 
       totalRegistered() {
-        if (!Array.isArray(this.data)) return 0;
-        const t = this.data.find(r => r.Party === "Total");
+        const totalData = this.datasets['total'];
+        if (!Array.isArray(totalData)) return 0;
+        const t = totalData.find(r => r.Party === "Total");
         if (t && typeof t.Total === "number") return t.Total;
         return this.partyRows().reduce((acc, r) => acc + (typeof r.Total === "number" ? r.Total : 0), 0);
       },
 
       valueFor(party) {
-        const r = (this.data || []).find(x => x.Party === party);
+        const totalData = this.datasets['total'];
+        const r = (totalData || []).find(x => x.Party === party);
         return r && typeof r.Total === "number" ? r.Total : null;
       },
 
@@ -545,10 +558,18 @@
           this.completedTasks = 0;
           await this.loadAllData();
         } else {
-          const cachedData = await this.loadFromCache();
-          if (cachedData) {
+          let hasCache = false;
+          for (const url of this.dataSources) {
+            const fileName = this.getFileName(url);
+            const cachedData = await this.loadFromCache(url);
+            if (cachedData) {
+              this.datasets[fileName] = cachedData;
+              hasCache = true;
+            }
+          }
+
+          if (hasCache) {
             this.error = "Using cached data (offline mode)";
-            this.data = cachedData;
             this.loading = false;
             this.notifyDataReady();
           } else {

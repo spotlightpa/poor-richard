@@ -16,12 +16,15 @@ image-alt = "Illustration of election pins"
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
 
 [data]
-source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx"
+sources = [
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county.xlsx"
+]
 popup = true
 cacheVersion = 1
 maxCacheAge = 24
 delimiter = ","
-numericFields = ["Total"]
+numericFields = ["Total", "Democrat", "Republican", "No Affiliation", "Other", "Democrat Share", "Republican Share", "No Affiliation Share", "Other Share"]
 
 [geojson]
 sources = [
