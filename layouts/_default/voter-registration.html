@@ -490,8 +490,8 @@
       </div>
     </div>
 
-    <div 
-      class="col-span-5 row-span-2 bg-black pl-12 pr-2 pb-2"
+    <div
+      class="col-span-5 row-span-2 bg-black pb-2 pl-12 pr-2"
       x-ref="treemapContainer"
       x-show="datasets && datasets.total && datasets.total.length > 0"
       x-init="
@@ -509,77 +509,12 @@
           }
         });
       "
-    >
-    </div>
+    ></div>
 
     <div class="col-span-12 bg-orange"></div>
 
     <div class="col-span-12 bg-orange"></div>
   </div>
-
-  <section
-    class="mx-auto mt-12 max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 text-g-9 lg:grid lg:gap-x-8 xl:px-0"
-    id="article"
-  >
-    <header data-ga-category="header" class="mb-8 w-full lg:col-span-12">
-      {{ with .Param "kicker" }}
-        <p
-          class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
-        >
-          {{ . }}
-        </p>
-      {{ end }}
-
-
-      <h1
-        class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
-      >
-        {{ .Title }}
-      </h1>
-
-      {{ with $params.byline }}
-        <h2
-          class="mt-1 font-sans text-base leading-tight tracking-normal text-g-8 sm:leading-normal"
-        >
-          <span class="font-semibold">
-            by
-            <span>
-              {{ if $bylineLink }}
-                <a href="{{ $bylineLink }}">{{ . }}</a>
-              {{ else }}
-                {{ . }}
-              {{ end }}
-            </span>
-          </span>
-
-          {{ if not $params.evergreen | and $params.published }}
-            <span class="font-light">
-              | Last updated:
-              <time datetime="{{ $params.publishedISO }}"
-                >{{ $params.published }}</time
-              >
-            </span>
-
-            <a
-              href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block font-semibold"
-            >
-              Source: Pa. Department of State
-            </a>
-          {{ end }}
-        </h2>
-      {{ end }}
-    </header>
-
-    <article class="w-full lg:col-span-12">
-      <div class="w-full">
-        {{ .Content }}
-        {{ partial "blocks/voter-registration.html" . }}
-      </div>
-    </article>
-  </section>
 {{ end }}
 
 {{ define "extra-head" }}
