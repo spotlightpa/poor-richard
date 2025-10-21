@@ -81,7 +81,7 @@
           return;
         }
 
-        const margin = { top: 10, right: 80, bottom: 10, left: 100 };
+        const margin = { top: 0, right: 80, bottom: 10, left: 0 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -92,9 +92,10 @@
           .append('g')
           .attr('transform', `translate(${margin.left},${margin.top})`);
 
+        const labelWidth = 80;
         const x = d3.scaleLinear()
           .domain([0, d3.max(sortedData, d => d.value)])
-          .range([0, width]);
+          .range([labelWidth, width]);
 
         const y = d3.scaleBand()
           .domain(sortedData.map(d => d.name))
@@ -107,11 +108,11 @@
           .data(sortedData.slice(1))
           .join('line')
           .attr('class', 'separator')
-          .attr('x1', -margin.left)
+          .attr('x1', 0)
           .attr('x2', width)
           .attr('y1', d => y(d.name) - gap / 2)
           .attr('y2', d => y(d.name) - gap / 2)
-          .attr('stroke', '#e5e7eb')
+          .attr('stroke', '#4b5563')
           .attr('stroke-width', 1)
           .attr('stroke-dasharray', '3,3');
 
@@ -121,34 +122,35 @@
           .attr('class', 'bar');
 
         bars.append('rect')
-          .attr('x', 0)
+          .attr('x', labelWidth)
           .attr('y', d => y(d.name))
-          .attr('width', d => Math.max(0, x(d.value)))
+          .attr('width', d => Math.max(0, x(d.value) - labelWidth))
           .attr('height', y.bandwidth())
           .attr('fill', d => d.color);
 
         bars.append('text')
-          .attr('x', -margin.left + 12)
+          .attr('x', 0)
           .attr('y', d => y(d.name) + y.bandwidth() / 2)
           .attr('dy', '0.35em')
           .attr('text-anchor', 'start')
-          .attr('fill', '#374151')
+          .attr('fill', '#ffffff')
           .attr('font-size', '16px')
           .attr('font-weight', '700')
           .text(d => d.party);
 
         bars.append('text')
           .attr('x', d => {
+            const barWidth = x(d.value) - labelWidth;
             if (d.value < 1500000) {
-              return Math.max(0, x(d.value)) + 12;
+              return x(d.value) + 12;
             } else {
-              return Math.max(0, x(d.value) - 12);
+              return x(d.value) - 12;
             }
           })
           .attr('y', d => y(d.name) + y.bandwidth() / 2)
           .attr('dy', '0.35em')
           .attr('text-anchor', d => d.value < 1500000 ? 'start' : 'end')
-          .attr('fill', d => d.value < 1500000 ? '#000000' : 'white')
+          .attr('fill', '#ffffff')
           .attr('font-size', '18px')
           .attr('font-weight', '700')
           .text(d => d.value.toLocaleString());
@@ -489,7 +491,7 @@
     </div>
 
     <div 
-      class="col-span-5 row-span-2 bg-white p-2"
+      class="col-span-5 row-span-2 bg-black pl-12 pr-2 pb-2"
       x-ref="treemapContainer"
       x-show="datasets && datasets.total && datasets.total.length > 0"
       x-init="
