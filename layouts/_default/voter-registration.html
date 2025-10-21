@@ -12,8 +12,9 @@
     {{ end }}
   {{ end }}
 
+  {{ partial "s3-data-loader.html" . }}
 
-  <div class="grid h-screen w-screen grid-cols-12 grid-rows-6">
+  <div class="grid h-screen w-screen grid-cols-12 grid-rows-6" x-data="s3DataLoader()" x-init="init()">
     <div
       class="col-span-5 row-span-2 flex flex-col items-start justify-center bg-black p-12 text-white"
     >
@@ -22,7 +23,6 @@
           {{ . }}
         </p>
       {{ end }}
-
 
       <h1 class="mt-2 font-serif text-3xl uppercase leading-hed lg:text-4xl">
         {{ .Title }}
@@ -49,9 +49,7 @@
           {{ if not $params.evergreen | and $params.published }}
             <span>
               | Last updated:
-              <time datetime="{{ $params.publishedISO }}"
-                >{{ $params.published }}</time
-              >
+              <time datetime="{{ $params.publishedISO }}">{{ $params.published }}</time>
             </span>
           {{ end }}
         </p>
@@ -76,7 +74,7 @@
         selected: 'county',
         map: null,
         geojsonData: {},
-        
+
         async loadGeoJSON() {
           const sources = {{ .Params.geojson.sources | jsonify }};
           const [counties, house, congress, senate] = await Promise.all(
@@ -88,15 +86,15 @@
             congressional: congress,
             senate: senate
           };
-          
+
           if (this.map && this.map.loaded()) {
             this.setupLayers();
           }
         },
-        
+
         setupLayers() {
           if (!this.map || !this.geojsonData.county) return;
-          
+
           if (!this.map.getSource('counties')) {
             this.map.addSource('counties', {
               type: 'geojson',
@@ -121,7 +119,7 @@
               }
             });
           }
-          
+
           if (!this.map.getSource('house') && this.geojsonData.house) {
             this.map.addSource('house', {
               type: 'geojson',
@@ -152,7 +150,7 @@
               }
             });
           }
-          
+
           if (!this.map.getSource('congressional') && this.geojsonData.congressional) {
             this.map.addSource('congressional', {
               type: 'geojson',
@@ -183,7 +181,7 @@
               }
             });
           }
-          
+
           if (!this.map.getSource('senate') && this.geojsonData.senate) {
             this.map.addSource('senate', {
               type: 'geojson',
@@ -209,25 +207,25 @@
                 visibility: 'none'
               },
               paint: {
-                'fill-color': '#27AE60',
+                'line-color': '#27AE60',
                 'line-width': 2
               }
             });
           }
-          
+
           this.updateLayerVisibility();
         },
-        
+
         updateLayerVisibility() {
           if (!this.map) return;
-          
+
           const layers = {
             county: ['counties-fill', 'counties-outline'],
             congressional: ['congressional-fill', 'congressional-outline'],
             senate: ['senate-fill', 'senate-outline'],
             house: ['house-fill', 'house-outline']
           };
-          
+
           Object.entries(layers).forEach(([key, layerIds]) => {
             const visibility = key === this.selected ? 'visible' : 'none';
             layerIds.forEach(id => {
@@ -237,23 +235,23 @@
             });
           });
         },
-        
+
         initMap() {
           const el = this.$refs.mapCanvas;
           if (!el || this.map) return;
-          
-        const mapComponent = window.maplibreComponent({
-          id: 'pa-map',
-          styleURL: 'https://tiles.openfreemap.org/styles/positron',
-          bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-          padding: 24,
-          minZoom: 3,
-          maxZoom: 18,
-          zoom: 6,
-          controls: ['navigation'],
-          attributionCompact: true
-        });
-          
+
+          const mapComponent = window.maplibreComponent({
+            id: 'pa-map',
+            styleURL: 'https://tiles.openfreemap.org/styles/positron',
+            bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
+            padding: 24,
+            minZoom: 3,
+            maxZoom: 18,
+            zoom: 6,
+            controls: ['navigation'],
+            attributionCompact: true
+          });
+
           mapComponent.init.call({
             $refs: { canvas: el },
             map: null,
@@ -266,7 +264,7 @@
             _baseMarkerInstances: [],
             ...mapComponent
           });
-          
+
           setTimeout(() => {
             if (window.maplibregl && window.maplibregl.Map) {
               this.map = new maplibregl.Map({
@@ -279,22 +277,22 @@
                 attributionControl: false,
                 cooperativeGestures: true
               });
-              
+
               this.map.addControl(new maplibregl.NavigationControl({
                 showCompass: false,
                 showZoom: true,
                 visualizePitch: false
               }), 'top-right');
-              
+
               this.map.addControl(new maplibregl.AttributionControl({
                 compact: true
               }));
-              
+
               this.map.on('load', () => {
                 this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
                 this.setupLayers();
               });
-              
+
               this.loadGeoJSON();
             }
           }, 100);
@@ -346,8 +344,86 @@
       </div>
     </div>
 
-    <div class="col-span-5 bg-blue"></div>
-    <div class="col-span-5 bg-blue"></div>
+    <div 
+      class="col-span-5 row-span-2 flex flex-col gap-2"
+      x-data="{
+        getPartyData() {
+          const rows = partyRows();
+          const total = totalRegistered();
+
+          // More flexible party matching
+          const dem = rows.find(r => 
+            r.Party && (
+              r.Party.toLowerCase().includes('democrat') || 
+              r.Party.toLowerCase().includes('dem')
+            )
+          ) || { Total: 0 };
+
+          const rep = rows.find(r => 
+            r.Party && (
+              r.Party.toLowerCase().includes('republican') || 
+              r.Party.toLowerCase().includes('rep')
+            )
+          ) || { Total: 0 };
+
+          const noParty = rows.find(r => 
+            r.Party && (
+              r.Party.toLowerCase().includes('no affiliation') || 
+              r.Party.toLowerCase().includes('none') ||
+              r.Party.toLowerCase().includes('no party') ||
+              r.Party.toLowerCase().includes('independent')
+            )
+          ) || { Total: 0 };
+
+          const other = rows.find(r => 
+            r.Party && r.Party.toLowerCase().includes('other')
+          ) || { Total: 0 };
+
+          return [
+            { party: 'Dem.', count: dem.Total, color: 'bg-blue-6', pct: (dem.Total / total * 100) },
+            { party: 'Rep.', count: rep.Total, color: 'bg-red-7', pct: (rep.Total / total * 100) },
+            { party: 'No party', count: noParty.Total, color: 'bg-[#E59500]', pct: (noParty.Total / total * 100) },
+            { party: 'Other', count: other.Total, color: 'bg-election-green', pct: (other.Total / total * 100) }
+          ].sort((a, b) => b.count - a.count);
+        }
+      }"
+    >
+      <div class="flex flex-1 gap-2">
+        <template x-for="(item, idx) in getPartyData().slice(0, 2)" :key="idx">
+          <div 
+            class="flex flex-col items-center justify-center p-4 text-white transition-all duration-300"
+            :class="item.color"
+            :style="`flex: ${item.pct}`"
+          >
+            <div 
+              class="font-bold transition-all duration-300"
+              :class="item.pct > 25 ? 'text-4xl' : item.pct > 15 ? 'text-3xl' : 'text-2xl'"
+              x-text="item.count.toLocaleString()"
+            ></div>
+            <div class="text-sm font-semibold uppercase" x-text="item.party"></div>
+            <div class="mt-1 text-xs opacity-90" x-text="`${item.pct.toFixed(1)}%`"></div>
+          </div>
+        </template>
+      </div>
+      
+      <div class="flex flex-1 gap-2">
+        <template x-for="(item, idx) in getPartyData().slice(2, 4)" :key="idx">
+          <div 
+            class="flex flex-col items-center justify-center p-4 text-white transition-all duration-300"
+            :class="item.color"
+            :style="`flex: ${item.pct}`"
+          >
+            <div 
+              class="font-bold transition-all duration-300"
+              :class="item.pct > 15 ? 'text-3xl' : item.pct > 8 ? 'text-2xl' : 'text-xl'"
+              x-text="item.count.toLocaleString()"
+            ></div>
+            <div class="text-sm font-semibold uppercase" x-text="item.party"></div>
+            <div class="mt-1 text-xs opacity-90" x-text="`${item.pct.toFixed(1)}%`"></div>
+          </div>
+        </template>
+      </div>
+    </div>
 
     <div class="col-span-12 bg-orange"></div>
 
@@ -366,7 +442,6 @@
           {{ . }}
         </p>
       {{ end }}
-
 
       <h1
         class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
@@ -392,9 +467,7 @@
           {{ if not $params.evergreen | and $params.published }}
             <span class="font-light">
               | Last updated:
-              <time datetime="{{ $params.publishedISO }}"
-                >{{ $params.published }}</time
-              >
+              <time datetime="{{ $params.publishedISO }}">{{ $params.published }}</time>
             </span>
 
             <a
