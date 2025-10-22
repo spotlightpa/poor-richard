@@ -340,13 +340,16 @@ partyConfig: {
             sources.map(url => fetch(url).then(r => r.json()))
           );
           
-          if (counties && counties.features) {
-            counties.features.forEach(feature => {
-              if (feature.properties && feature.properties.county_nam) {
-                feature.properties.county_nam = this.properCase(feature.properties.county_nam);
-              }
-            });
-          }
+if (counties && counties.features) {
+  counties.features.forEach(feature => {
+    if (feature.properties && feature.properties.county_nam) {
+      feature.properties.county_nam = this.properCase(feature.properties.county_nam);
+    }
+    const name = feature.properties?.county_nam || '';
+    feature.properties.__id = name.toLowerCase().replace(/\s+/g, '_');
+  });
+}
+
           
           this.geojsonData = {
             county: counties,
@@ -438,10 +441,11 @@ setupLayers() {
 
           if (!this.map.getSource('counties')) {
             this.map.addSource('counties', {
-              type: 'geojson',
-              data: this.geojsonData.county,
-              generateId: true
-            });
+  type: 'geojson',
+  data: this.geojsonData.county,
+  promoteId: '__id'
+});
+
 
 
 const labelLayerId = this.map.getStyle().layers.find(l =>
