@@ -150,3 +150,5 @@ Philadelphia Court of Common Pleas <a href="https://www.aclupa.org/cases/baxter-
 
 While the Department of State has made various efforts to <a href="https://www.spotlightpa.org/news/2024/05/pennsylvania-election-2024-mail-ballot-rejection-reasons-incorrect-date/">curb common errors</a> made by voters that could lead to their vote being rejected, mistakes still happen. In 2020, over 34,000 mail ballots were rejected. In 2024, that number went down to <a href="https://www.wtae.com/article/pennsylvania-mail-ballot-rejection-rate/63652172">11,000</a>.
 
+To learn how the Supreme Court has impacted rural communities, <a href="https://www.spotlightpa.org/news/2025/10/rural-pennsylvania-supreme-court-judge-retention-agriculture-stormwater-environment-elections/">click here</a>.
+
