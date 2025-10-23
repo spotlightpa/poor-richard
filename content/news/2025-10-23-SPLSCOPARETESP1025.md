@@ -8,6 +8,7 @@ feed-exclude = false
 image = "2025/09/01mc-rtbh-s1y6-t30b.png"
 image-credit = "Cortesía de los candidatos y Commonwealth Media Services."
 image-description = "Los jueces de la Corte Suprema de Pensilvania Christine Donohue, Kevin Dougherty y David Wecht."
+image-gravity = "ce"
 internal-id = "SPLSCOPARETESP1025"
 kicker = "Español"
 modal-exclude = false
