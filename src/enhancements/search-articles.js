@@ -64,9 +64,6 @@ export default function searchArticles() {
         this.page = 0;
         this.search();
       });
-      this.$watch("page", () => {
-        if (this.page) this.search();
-      });
     },
 
     search() {
@@ -123,10 +120,13 @@ export default function searchArticles() {
     },
 
     scrollToTop() {
-      this.$refs.top.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      // Seems to need to wait to scroll to prevent layout jank
+      window.setTimeout(() => {
+        this.$refs.top.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 150);
     },
 
     get hasNextPage() {
@@ -136,8 +136,8 @@ export default function searchArticles() {
 
     async nextPage() {
       this.page++;
-      // Seems to need to wait to scroll to prevent layout jank
-      window.setTimeout(() => this.scrollToTop(), 150);
+      this.search();
+      this.scrollToTop();
     },
 
     get hasPreviousPage() {
@@ -146,6 +146,7 @@ export default function searchArticles() {
 
     previousPage() {
       this.page--;
+      this.search();
       this.scrollToTop();
     },
   };
