@@ -18,6 +18,7 @@ slug = "corte-suprema-retencion-elecciones-2025-pensilvania-donohue-dougherty-we
 suppress-date = false
 title = "Elecciones Pa. 2025: Guía completa de los candidatos a la retención judicial en la Corte Suprema"
 title-tag = "Elecciones PA 2025: Guía de candidatos a la retención judicial en la Corte Suprema"
+topics = ["Español"]
 +++
 
 <a href="https://www.spotlightpa.org/news/2025/09/supreme-court-retention-election-2025-pennsylvania-donohue-dougherty-wecht-elections/"><em>Read in English</em></a><em></em>
