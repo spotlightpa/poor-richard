@@ -22,6 +22,8 @@ title-tag = "PA election 2025: A guide to who is on the ballot and how to vote"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/10/pensilvania-elecciones-municipal-2025-votar-informacion-espanol/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — On Nov. 4, voters across Pennsylvania will elect candidates to fill various municipal offices and statewide judicial roles.
 
 While the local races on your ballot will vary depending on where you live, voters statewide will consider candidates to fill a vacancy each on <a href="https://www.spotlightpa.org/news/2025/09/pennsylvania-election-2025-commonwealth-superior-court-candidates-elections/">Commonwealth and Superior Courts</a>, and weigh in on whether to retain three justices on the <a href="https://www.spotlightpa.org/news/2025/09/supreme-court-retention-election-2025-pennsylvania-donohue-dougherty-wecht-elections/">state Supreme Court</a>.
