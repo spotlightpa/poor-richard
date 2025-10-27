@@ -18,7 +18,8 @@ image-credit = "Illustration by Leise Hook / For Spotlight PA"
 [data]
 sources = [
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county.xlsx"
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county.xlsx",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/party-year.xlsx"
 ]
 popup = true
 cacheVersion = 1
