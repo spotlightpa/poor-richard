@@ -6,6 +6,7 @@
     return {
       dataSources: {{ .Param "data.sources" | default "[]" }},
       geojsonSources: {{ .Param "geojson.sources" | default "[]" }},
+      metadataURL: {{ .Param "data.metadata" | default "" | jsonify | safeJS }},
       showPopup: {{ .Param "data.popup" | default "false" }},
       cacheVersion: {{ .Param "data.cacheVersion" | default 1 }},
       geojsonCacheVersion: {{ .Param "geojson.cacheVersion" | default 1 }},
@@ -17,6 +18,7 @@
       loadingProgress: 0,
       loadingMessage: "Initializing...",
       error: null,
+      metadata: null,
       datasets: {},
       geojsonData: {},
       retryCount: 0,
@@ -35,6 +37,10 @@
         }
         if (Array.isArray(this.geojsonSources) && this.geojsonSources.length > 0) {
           this.totalTasks += this.geojsonSources.length;
+        }
+
+        if (this.metadataURL && this.metadataURL !== "") {
+          this.totalTasks += 1;
         }
 
         if (this.totalTasks === 0) {
@@ -89,6 +95,10 @@
 
           if (Array.isArray(this.geojsonSources) && this.geojsonSources.length > 0) {
             await this.loadAllGeoJSON();
+          }
+
+          if (this.metadataURL && this.metadataURL !== "") {
+            await this.loadMetadata();
           }
 
           if (!window._inspectionsDataDispatched) {
@@ -341,13 +351,67 @@
         return parsed;
       },
 
+      async loadMetadata() {
+        this.loadingMessage = "Loading metadata...";
+        try {
+          const cached = await this.loadFromCache(this.metadataURL);
+          if (cached) {
+            this.metadata = cached;
+            this.refreshMetadataInBackground();
+          } else {
+            const res = await fetch(this.metadataURL, { mode: "cors", cache: "no-cache" });
+            if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+            const obj = await res.json();
+            this.metadata = obj;
+            await this.saveToCache(this.metadataURL, obj);
+          }
+        } catch (err) {
+          console.error("Failed to load metadata:", err);
+          const cached = await this.loadFromCache(this.metadataURL);
+          if (cached) this.metadata = cached;
+        } finally {
+          this.completedTasks++;
+          this.updateProgress();
+        }
+      },
+
+      async refreshMetadataInBackground() {
+        try {
+          const res = await fetch(this.metadataURL, { mode: "cors", cache: "no-cache" });
+          if (!res.ok) return;
+          const obj = await res.json();
+          const curr = JSON.stringify(this.metadata || {});
+          const next = JSON.stringify(obj || {});
+          if (curr !== next) {
+            this.metadata = obj;
+            await this.saveToCache(this.metadataURL, obj);
+            if (!window._inspectionsDataDispatched) {
+              this.notifyDataReady();
+            } else {
+              window.dispatchEvent(new CustomEvent("inspections-data-updated", {
+                detail: {
+                  datasets: this.datasets,
+                  geojsonData: this.geojsonData,
+                  updated: "__metadata__",
+                  metadata: this.metadata
+                }
+              }));
+            }
+          }
+        } catch (err) {
+          console.error("Failed to refresh metadata:", err);
+        }
+      },
+
       notifyDataReady() {
         if (!window._inspectionsDataDispatched) {
           window._inspectionsDataDispatched = true;
           window.dispatchEvent(new CustomEvent("inspections-data-ready", {
             detail: {
               datasets: this.datasets,
-              geojsonData: this.geojsonData
+              geojsonData: this.geojsonData,
+              metadata: this.metadata
+
             }
           }));
         }

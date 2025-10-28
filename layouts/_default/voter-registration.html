@@ -20,6 +20,26 @@
     x-data="{
       ...s3DataLoader(),
       
+      apDateLabelFromMDY(mdy) {
+        if (!mdy || typeof mdy !== 'string') return null;
+        const parts = mdy.split('/');
+        if (parts.length !== 3) return null;
+        const [mm, dd, yyyy] = parts.map(p => parseInt(p, 10));
+        if (!mm || !dd || !yyyy) return null;
+        const months = ['Jan.','Feb.','March','April','May','June','July','Aug.','Sept.','Oct.','Nov.','Dec.'];
+        return `${months[mm - 1] || ''} ${dd}, ${yyyy}`;
+      },
+      isoFromMDY(mdy) {
+        if (!mdy || typeof mdy !== 'string') return null;
+        const parts = mdy.split('/');
+        if (parts.length !== 3) return null;
+        const [mm, dd, yyyy] = parts.map(p => parseInt(p, 10));
+        if (!mm || !dd || !yyyy) return null;
+        const mm2 = String(mm).padStart(2,'0');
+        const dd2 = String(dd).padStart(2,'0');
+        return `${yyyy}-${mm2}-${dd2}`;
+      },
+
       getPartyData() {
         const datasets = this.datasets || {};
         const totalData = datasets['total'] || [];
@@ -193,11 +213,15 @@
           {{ if not $params.evergreen | and $params.published }}
             <span>
               | Last updated:
-              <time datetime="{{ $params.publishedISO }}"
-                >{{ $params.published }}</time
+              <time
+                :datetime="(metadata && (metadata.generated_at_utc || isoFromMDY(metadata.last_updated))) || {{ $params.publishedISO | jsonify }}"
+                x-text="(metadata && apDateLabelFromMDY(metadata.last_updated)) || {{ $params.published | jsonify }}"
               >
+                {{ $params.published }}
+              </time>
             </span>
           {{ end }}
+
         </p>
       {{ end }}
 
