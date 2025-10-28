@@ -1477,27 +1477,23 @@ window.dispatchEvent(new Event('legend-clear'));
         }
       }"
         x-init="
-     initMap();
+          initMap();
+            $watch('selected', () => {
+            updateLayerVisibility();
+            window.dispatchEvent(new Event('legend-clear'));
+          });
 
-$watch('selected', () => {
-  updateLayerVisibility();
-  window.dispatchEvent(new Event('legend-clear'));
-});
-
-window.addEventListener('party-changed', (e) => {
-  this.selectedParty = e.detail;
-  const map = this.map;
-  if (map) {
-    ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach((layerId) => {
-      if (map.getLayer(layerId)) {
-        map.setPaintProperty(layerId, 'fill-color', this.buildFillColorExpression(this.selectedParty));
-      }
-    });
-    window.dispatchEvent(new Event('legend-clear'));
-  }
-});
-
-
+            window.addEventListener('party-changed', (e) => {
+              selectedParty = e.detail;
+            if (map) {
+              ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
+                if (map.getLayer(layerId)) {
+                  map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
+                }
+              });
+              window.dispatchEvent(new Event('legend-clear'));
+            }
+            });
           "
       >
         <div
