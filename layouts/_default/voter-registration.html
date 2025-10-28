@@ -1596,14 +1596,110 @@ window.dispatchEvent(new Event('legend-clear'));
       "
     ></div>
 
-<div class="col-span-12 row-span-2 bg-black px-12 py-8">
-  <div class="flex h-[50px] w-full mb-2">
-    <div class="w-1/2 h-full bg-red"></div>
-    <div class="w-1/2 h-full bg-yellow"></div>
-  </div>
-  
-  <div
-    x-data="{
+    <div class="col-span-12 row-span-2 bg-black px-12 py-8">
+      <div class="mt-4 flex h-[60px] w-full">
+        <div
+          class="justify-left flex h-full w-1/2 items-center bg-g-1 p-8 font-serif text-2xl font-semibold text-black"
+        >
+          Voter registration over time
+        </div>
+        <div class="flex h-full w-1/2 items-center bg-g-1 pl-3">
+          <div class="relative flex h-full w-full items-center bg-g-1">
+            <select
+              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
+            >
+              <option value="Adams">Adams</option>
+              <option value="Allegheny">Allegheny</option>
+              <option value="Armstrong">Armstrong</option>
+              <option value="Beaver">Beaver</option>
+              <option value="Bedford">Bedford</option>
+              <option value="Berks">Berks</option>
+              <option value="Blair">Blair</option>
+              <option value="Bradford">Bradford</option>
+              <option value="Bucks">Bucks</option>
+              <option value="Butler">Butler</option>
+              <option value="Cambria">Cambria</option>
+              <option value="Cameron">Cameron</option>
+              <option value="Carbon">Carbon</option>
+              <option value="Centre">Centre</option>
+              <option value="Chester">Chester</option>
+              <option value="Clarion">Clarion</option>
+              <option value="Clearfield">Clearfield</option>
+              <option value="Clinton">Clinton</option>
+              <option value="Columbia">Columbia</option>
+              <option value="Crawford">Crawford</option>
+              <option value="Cumberland">Cumberland</option>
+              <option value="Dauphin">Dauphin</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Elk">Elk</option>
+              <option value="Erie">Erie</option>
+              <option value="Fayette">Fayette</option>
+              <option value="Forest">Forest</option>
+              <option value="Franklin">Franklin</option>
+              <option value="Fulton">Fulton</option>
+              <option value="Greene">Greene</option>
+              <option value="Huntingdon">Huntingdon</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Jefferson">Jefferson</option>
+              <option value="Juniata">Juniata</option>
+              <option value="Lackawanna">Lackawanna</option>
+              <option value="Lancaster">Lancaster</option>
+              <option value="Lawrence">Lawrence</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Lehigh">Lehigh</option>
+              <option value="Luzerne">Luzerne</option>
+              <option value="Lycoming">Lycoming</option>
+              <option value="Mckean">Mckean</option>
+              <option value="Mercer">Mercer</option>
+              <option value="Mifflin">Mifflin</option>
+              <option value="Monroe">Monroe</option>
+              <option value="Montgomery">Montgomery</option>
+              <option value="Montour">Montour</option>
+              <option value="Northampton">Northampton</option>
+              <option value="Northumberland">Northumberland</option>
+              <option value="Perry">Perry</option>
+              <option value="Philadelphia">Philadelphia</option>
+              <option value="Pike">Pike</option>
+              <option value="Potter">Potter</option>
+              <option value="Schuylkill">Schuylkill</option>
+              <option value="Snyder">Snyder</option>
+              <option value="Somerset">Somerset</option>
+              <option value="Sullivan">Sullivan</option>
+              <option value="Susquehanna">Susquehanna</option>
+              <option value="Tioga">Tioga</option>
+              <option value="Union">Union</option>
+              <option value="Venango">Venango</option>
+              <option value="Warren">Warren</option>
+              <option value="Washington">Washington</option>
+              <option value="Wayne">Wayne</option>
+              <option value="Westmoreland">Westmoreland</option>
+              <option value="Wyoming">Wyoming</option>
+              <option value="York">York</option>
+            </select>
+
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+            >
+              <svg
+                class="text-gray-700 h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        x-data="{
     datasets: {},
     svg: null,
     init() {
@@ -1635,7 +1731,7 @@ window.dispatchEvent(new Event('legend-clear'));
 
       const W = Math.max(640, wrap.clientWidth);
       const H = Math.max(300, wrap.clientHeight);
-      const margin = { top: 12, right: 96, bottom: 30, left: 64 };
+      const margin = { top: 12, right: 96, bottom: 30, left: 40 };
       const width = W - margin.left - margin.right;
       const height = H - margin.top - margin.bottom;
 
@@ -1775,10 +1871,7 @@ window.dispatchEvent(new Event('legend-clear'));
   }"
         class="w-full bg-g-1 p-4"
       >
-        <div
-          x-ref="wrap"
-          class="relative h-[300px] w-full"
-        >
+        <div x-ref="wrap" class="relative h-[300px] w-full">
           <svg x-ref="svg" class="absolute inset-0 h-full w-full"></svg>
           <div
             x-ref="tooltip"
