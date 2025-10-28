@@ -411,6 +411,7 @@ partyConfig: {
 
       <div
         class="relative h-full w-full"
+        @search-submitted.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
         x-data="{
         selected: 'county',
         selectedParty: 'democrat',
@@ -420,6 +421,203 @@ partyConfig: {
         popup: null,
         hoveredId: null,
         hoveredDistrictId: null,
+        searchPopup: null,
+
+
+
+
+async geocodeAddress(q) {
+  if (!q || typeof q !== 'string') return null;
+  const map = this.map;
+  const bounds = map && map.getBounds();
+  const params = new URLSearchParams({
+    format: 'jsonv2',
+    q,
+    countrycodes: 'us',
+    limit: '1'
+  });
+  if (bounds) {
+    params.set('viewbox', [
+      bounds.getWest().toFixed(6),
+      bounds.getNorth().toFixed(6),
+      bounds.getEast().toFixed(6),
+      bounds.getSouth().toFixed(6)
+    ].join(','));
+    params.set('bounded', '1');
+  }
+  const res = await fetch(`https://nominatim.openstreetmap.org/search?${params.toString()}`, {
+    headers: { 'Accept-Language': 'en' }
+  }).catch(() => null);
+  if (!res || !res.ok) return null;
+  const data = await res.json().catch(() => null);
+  if (!Array.isArray(data) || !data.length) return null;
+  const hit = data[0];
+  const lon = parseFloat(hit.lon);
+  const lat = parseFloat(hit.lat);
+  return (Number.isFinite(lon) && Number.isFinite(lat)) ? { lon, lat } : null;
+},
+
+isPointInRing([x, y], ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const xi = ring[i][0], yi = ring[i][1];
+    const xj = ring[j][0], yj = ring[j][1];
+    const intersect = ((yi > y) !== (yj > y)) && (x < ((xj - xi) * (y - yi)) / (yj - yi) + xi);
+    if (intersect) inside = !inside;
+  }
+  return inside;
+},
+
+isPointInFeature([x, y], feature) {
+  const g = feature?.geometry;
+  if (!g) return false;
+  if (g.type === 'Polygon') {
+    const [outer, ...holes] = g.coordinates;
+    if (!this.isPointInRing([x,y], outer)) return false;
+    return !holes.some(h => this.isPointInRing([x,y], h));
+  }
+  if (g.type === 'MultiPolygon') {
+    return g.coordinates.some(poly => {
+      const [outer, ...holes] = poly;
+      if (!this.isPointInRing([x,y], outer)) return false;
+      return !holes.some(h => this.isPointInRing([x,y], h));
+    });
+  }
+  return false;
+},
+
+getFeatureBounds(feature) {
+  const g = feature.geometry;
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  const walk = (coords) => {
+    if (typeof coords[0] === 'number') {
+      const [x, y] = coords;
+      if (x < minX) minX = x; if (y < minY) minY = y;
+      if (x > maxX) maxX = x; if (y > maxY) maxY = y;
+    } else coords.forEach(walk);
+  };
+  walk(g.coordinates);
+  return [[minX, minY], [maxX, maxY]];
+},
+
+findContainingFeature(lon, lat) {
+  const order = [this.selected, 'county'];
+  for (const layer of order) {
+    const fc = this.geojsonData?.[layer];
+    if (!fc?.features) continue;
+    const hit = fc.features.find(f => this.isPointInFeature([lon, lat], f));
+    if (hit) return { layerType: layer, feature: hit };
+  }
+  return null;
+},
+
+buildHoverPopupHTML(feature, layerType) {
+  const partyKeyMap = {
+    democrat:   { share: 'democratShare',   total: 'democratTotal',   color: '#0079d1', text: '#ffffff', label: 'Democrat' },
+    republican: { share: 'republicanShare', total: 'republicanTotal', color: '#d70000', text: '#ffffff', label: 'Republican' },
+    'no-party': { share: 'noPartyShare',    total: 'noPartyTotal',    color: '#ffcb03', text: '#000000', label: 'No Party' },
+    other:      { share: 'otherShare',      total: 'otherTotal',      color: '#1b998b', text: '#ffffff', label: 'Other' }
+  };
+
+  const activeParty = this.selectedParty;
+  const active = partyKeyMap[activeParty];
+
+  const shareVal = feature.properties?.[active.share];
+  const totalVal = feature.properties?.[active.total];
+  const sharePct = Number.isFinite(shareVal)
+    ? Math.max(0, Math.min(100, Math.round(shareVal)))
+    : null;
+
+  {
+    const breaks = this.getBreaksForParty(activeParty);
+    let idx = -1;
+    if (Number.isFinite(sharePct)) {
+      idx = breaks.findIndex(b => sharePct < b);
+      if (idx === -1) idx = breaks.length - 1;
+    }
+    window.dispatchEvent(new CustomEvent('legend-active-bin', { detail: { party: activeParty, index: idx } }));
+  }
+
+  const title = (layerType === 'county')
+    ? `${feature.properties?.county_nam || 'County'} County`
+    : feature.properties?.districtName || `District ${feature.properties?.DISTRICT || ''}`;
+
+  const others = Object.entries(partyKeyMap)
+    .filter(([k]) => k !== activeParty)
+    .map(([k, meta]) => ({
+      label: meta.label,
+      color: meta.color,
+      textColor: meta.text,
+      pct: Number.isFinite(feature.properties?.[meta.share])
+        ? Math.max(0, Math.min(100, Math.round(feature.properties?.[meta.share])))
+        : 0
+    }));
+
+  const renderBar = ({ label, pct, color, textColor }) => [
+    '<div style=&quot;margin-top:8px;&quot;>',
+    `<span style=&quot;font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;&quot;>${label}:</span>`,
+    '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;&quot;>',
+    `<div style=&quot;width:${pct || 0}%; background:${color}; height:100%; position:relative;&quot;>`,
+    (pct >= 30
+      ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${pct}%</span>`
+      : ''),
+    '</div>',
+    (pct < 30
+      ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${pct}%</span>`
+      : ''),
+    '</div>',
+    '</div>'
+  ].join('');
+
+  const html = [
+    '<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>',
+    `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${title}</strong>`,
+
+    '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>',
+    `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
+    (sharePct !== null && sharePct >= 30
+      ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+      : ''),
+    '</div>',
+    (sharePct !== null && sharePct < 30
+      ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+      : ''),
+    '</div>',
+
+    '<div style=&quot;height:6px;&quot;></div>',
+    '<span style=&quot;font-size:0.95rem; font-weight:700;&quot;>Total:</span> ',
+    `<span style=&quot;font-size:0.95rem;&quot;>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : '—'}</span>`,
+
+    '<div style=&quot;height:8px;&quot;></div>',
+    '<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>',
+
+    renderBar(others[0]),
+    renderBar(others[1]),
+    renderBar(others[2]),
+    '</div>'
+  ].join('');
+
+  return html;
+},
+
+
+async handleAddressSearch(query) {
+  const hit = await this.geocodeAddress(query);
+  if (!hit) return alert('Address not found');
+  const { lon, lat } = hit;
+
+  const containing = this.findContainingFeature(lon, lat);
+  if (containing) {
+    const { feature, layerType } = containing;
+    if (layerType !== this.selected) { this.selected = layerType; this.updateLayerVisibility?.(); }
+    this.map.fitBounds(this.getFeatureBounds(feature), { padding: 32, maxZoom: 10 });
+    if (!this.popup) this.popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
+    this.popup.setLngLat([lon, lat]).setHTML(this.buildHoverPopupHTML(feature, layerType)).addTo(this.map);
+  } else {
+    this.map.flyTo({ center: [lon, lat], zoom: 12 });
+    if (this.popup) this.popup.remove();
+  }
+},
 
 
         properCase(str) {
@@ -1279,23 +1477,27 @@ window.dispatchEvent(new Event('legend-clear'));
         }
       }"
         x-init="
-          initMap();
-            $watch('selected', () => {
-            updateLayerVisibility();
-            window.dispatchEvent(new Event('legend-clear'));
-          });
+     initMap();
 
-            window.addEventListener('party-changed', (e) => {
-              selectedParty = e.detail;
-            if (map) {
-              ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
-                if (map.getLayer(layerId)) {
-                  map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
-                }
-              });
-              window.dispatchEvent(new Event('legend-clear'));
-            }
-            });
+$watch('selected', () => {
+  updateLayerVisibility();
+  window.dispatchEvent(new Event('legend-clear'));
+});
+
+window.addEventListener('party-changed', (e) => {
+  this.selectedParty = e.detail;
+  const map = this.map;
+  if (map) {
+    ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach((layerId) => {
+      if (map.getLayer(layerId)) {
+        map.setPaintProperty(layerId, 'fill-color', this.buildFillColorExpression(this.selectedParty));
+      }
+    });
+    window.dispatchEvent(new Event('legend-clear'));
+  }
+});
+
+
           "
       >
         <div
