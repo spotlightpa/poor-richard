@@ -22,7 +22,8 @@ sources = [
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/party-year.xlsx",
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/congress.xlsx",
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/senate.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/house.xlsx"
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/house.xlsx",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county-year.xlsx"
 ]
 popup = true
 cacheVersion = 1
