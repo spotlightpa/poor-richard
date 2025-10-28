@@ -239,8 +239,10 @@
 
     <div
       class="col-span-7 row-span-4 flex flex-col overflow-visible bg-black px-4 pb-4 pr-12 pt-12"
+      @search-complete.window="isSearching = false"
       x-data="{
     selectedParty: 'democrat',
+    isSearching: false,
 partyConfig: {
   democrat: {
     colors: ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
@@ -300,7 +302,7 @@ partyConfig: {
         </div>
 
         <form
-          @submit.prevent="window.dispatchEvent(new CustomEvent('search-submitted', { detail: { query: $refs.addressSearch.value } }))"
+          @submit.prevent="isSearching = true; window.dispatchEvent(new CustomEvent('search-submitted', { detail: { query: $refs.addressSearch.value } }))"
           class="relative h-full"
         >
           <input
@@ -316,6 +318,7 @@ partyConfig: {
             title="Search"
           >
             <svg
+              x-show="!isSearching"
               class="h-5 w-5"
               fill="none"
               stroke="currentColor"
@@ -327,6 +330,27 @@ partyConfig: {
                 stroke-width="2.5"
                 d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
               />
+            </svg>
+
+            <svg
+              x-show="isSearching"
+              class="h-5 w-5 animate-spin"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
             </svg>
           </button>
         </form>
@@ -422,6 +446,7 @@ partyConfig: {
         hoveredId: null,
         hoveredDistrictId: null,
         searchPopup: null,
+        isSearching: false, 
 
 
 
@@ -602,23 +627,29 @@ buildHoverPopupHTML(feature, layerType) {
 
 
 async handleAddressSearch(query) {
-  const hit = await this.geocodeAddress(query);
-  if (!hit) return alert('Address not found');
-  const { lon, lat } = hit;
+  try {
+    const hit = await this.geocodeAddress(query);
+    if (!hit) {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      return alert('Address not found');
+    }
+    const { lon, lat } = hit;
 
-  const containing = this.findContainingFeature(lon, lat);
-  if (containing) {
-    const { feature, layerType } = containing;
-    if (layerType !== this.selected) { this.selected = layerType; this.updateLayerVisibility?.(); }
-    this.map.fitBounds(this.getFeatureBounds(feature), { padding: 32, maxZoom: 10 });
-    if (!this.popup) this.popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
-    this.popup.setLngLat([lon, lat]).setHTML(this.buildHoverPopupHTML(feature, layerType)).addTo(this.map);
-  } else {
-    this.map.flyTo({ center: [lon, lat], zoom: 12 });
-    if (this.popup) this.popup.remove();
+    const containing = this.findContainingFeature(lon, lat);
+    if (containing) {
+      const { feature, layerType } = containing;
+      if (layerType !== this.selected) { this.selected = layerType; this.updateLayerVisibility?.(); }
+      this.map.fitBounds(this.getFeatureBounds(feature), { padding: 32, maxZoom: 10 });
+      if (!this.popup) this.popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
+      this.popup.setLngLat([lon, lat]).setHTML(this.buildHoverPopupHTML(feature, layerType)).addTo(this.map);
+    } else {
+      this.map.flyTo({ center: [lon, lat], zoom: 12 });
+      if (this.popup) this.popup.remove();
+    }
+  } finally {
+    window.dispatchEvent(new CustomEvent('search-complete'));
   }
 },
-
 
         properCase(str) {
           return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
