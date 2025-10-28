@@ -275,15 +275,47 @@ partyConfig: {
 
       <div class="relative mb-10 w-full">
         <div
+          x-ref="legend"
           class="flex h-6 w-full gap-[1px] rounded-sm border border-g-1 bg-g-1"
+          x-init="
+    const highlight = (idx) => {
+      const bins = $refs.legend.querySelectorAll('.legend-bin');
+      const clear = idx == null || idx < 0 || Number.isNaN(idx);
+      bins.forEach((b, i) => {
+        const active = !clear && i === idx;
+        b.style.outline = active ? '4px solid #fff' : '';
+        b.style.outlineOffset = '-2px';
+        b.style.opacity = clear ? '1' : (active ? '1' : '0.4');
+        b.style.transition = 'opacity 0.15s ease, outline 0.15s ease';
+      });
+    };
+
+
+    window.addEventListener('legend-active-bin', (e) => {
+      if (e.detail.party !== selectedParty) return;
+      highlight(e.detail.index);
+    });
+
+    window.addEventListener('legend-clear', () => {
+      const bins = $refs.legend.querySelectorAll('.legend-bin');
+      bins.forEach(b => {
+        b.style.outline = '';
+        b.style.opacity = '1';
+      });
+    });
+  "
         >
           <template
             x-for="(color, index) in partyConfig[selectedParty].colors"
             :key="index"
           >
-            <div class="flex-1" :style="`background-color: ${color}`"></div>
+            <div
+              class="legend-bin flex-1"
+              :style="`background-color: ${color}`"
+            ></div>
           </template>
         </div>
+
         <div
           class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
         >
@@ -537,9 +569,18 @@ handleDistrictHover(e, layerType) {
     
     const shareVal = feature.properties[active.share];
     const totalVal = feature.properties[active.total];
-    const sharePct = Number.isFinite(shareVal)
-      ? Math.max(0, Math.min(100, Math.round(shareVal)))
-      : null;
+const sharePct = Number.isFinite(shareVal)
+  ? Math.max(0, Math.min(100, Math.round(shareVal)))
+  : null;
+{
+  const breaks = this.getBreaksForParty(activeParty);
+  let idx = -1;
+  if (Number.isFinite(sharePct)) {
+    idx = breaks.findIndex(b => sharePct < b);
+    if (idx === -1) idx = breaks.length - 1;
+  }
+  window.dispatchEvent(new CustomEvent('legend-active-bin', { detail: { party: activeParty, index: idx } }));
+}
     
     const others = Object.entries(partyKeyMap)
       .filter(([k]) => k !== activeParty)
@@ -618,6 +659,8 @@ handleDistrictLeave(layerType) {
   if (this.popup) {
     this.popup.remove();
   }
+
+  window.dispatchEvent(new Event('legend-clear'));
   
   if (this.hoveredDistrictId !== undefined) {
     this.map.setFeatureState(
@@ -761,9 +804,19 @@ this.map.on('mousemove', 'counties-fill', (e) => {
 
     const shareVal = feature.properties[active.share];
     const totalVal = feature.properties[active.total];
-    const sharePct = Number.isFinite(shareVal)
-      ? Math.max(0, Math.min(100, Math.round(shareVal)))
-      : null;
+const sharePct = Number.isFinite(shareVal)
+  ? Math.max(0, Math.min(100, Math.round(shareVal)))
+  : null;
+
+{
+  const breaks = this.getBreaksForParty(activeParty);
+  let idx = -1;
+  if (Number.isFinite(sharePct)) {
+    idx = breaks.findIndex(b => sharePct < b);
+    if (idx === -1) idx = breaks.length - 1;
+  }
+  window.dispatchEvent(new CustomEvent('legend-active-bin', { detail: { party: activeParty, index: idx } }));
+}
 
     const others = Object.entries(partyKeyMap)
       .filter(([k]) => k !== activeParty)
@@ -850,9 +903,11 @@ this.map.on('mousemove', 'counties-fill', (e) => {
             this.hoveredId = null;
           }
 
-          if (this.popup) {
-            this.popup.remove();
-          }
+if (this.popup) {
+  this.popup.remove();
+}
+window.dispatchEvent(new Event('legend-clear'));
+
         });
 }
           
@@ -1131,29 +1186,33 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 compact: true
               }));
 
-              this.map.on('load', () => {
-                this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
+        this.map.on('load', () => {
+          this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
 
+          this.map.getStyle().layers.forEach(layer => {
+            if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
+              this.map.setPaintProperty(layer.id, 'text-halo-color', '#ffffff');
+              this.map.setPaintProperty(layer.id, 'text-halo-width', 2.5);
+              this.map.setPaintProperty(layer.id, 'text-halo-blur', 0.5);  
+              this.map.setPaintProperty(layer.id, 'text-color', '#111111');
+            }
+          });
 
-              this.map.getStyle().layers.forEach(layer => {
-                if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
-                  this.map.setPaintProperty(layer.id, 'text-halo-color', '#ffffff');
-                  this.map.setPaintProperty(layer.id, 'text-halo-width', 2.5);
-                  this.map.setPaintProperty(layer.id, 'text-halo-blur', 0.5);  
-                  this.map.setPaintProperty(layer.id, 'text-color', '#111111');
-                }
-              });
+          Promise.all([
+            this.joinCountyData(),
+            this.joinDistrictData()
+          ]).then(() => {
+            this.setupLayers();
+            if (this.map.getLayer('counties-fill')) {
+              this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
+            }
+          });
 
-              Promise.all([
-                  this.joinCountyData(),
-                  this.joinDistrictData()
-                ]).then(() => {
-                  this.setupLayers();
-                  if (this.map.getLayer('counties-fill')) {
-                    this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
-                  }
-                });
-              });
+          this.map.getCanvas().addEventListener('mouseleave', () => {
+            window.dispatchEvent(new Event('legend-clear'));
+          });
+        });
+
 
               this.loadGeoJSON();
             }
@@ -1162,16 +1221,21 @@ this.map.on('mousemove', 'counties-fill', (e) => {
       }"
         x-init="
           initMap();
-            $watch('selected', () => updateLayerVisibility());
+            $watch('selected', () => {
+            updateLayerVisibility();
+            window.dispatchEvent(new Event('legend-clear'));
+          });
+
             window.addEventListener('party-changed', (e) => {
               selectedParty = e.detail;
-              if (map) {
-                ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
-                  if (map.getLayer(layerId)) {
-                    map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
-                  }
-                });
-              }
+            if (map) {
+              ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
+                if (map.getLayer(layerId)) {
+                  map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
+                }
+              });
+              window.dispatchEvent(new Event('legend-clear'));
+            }
             });
           "
       >
