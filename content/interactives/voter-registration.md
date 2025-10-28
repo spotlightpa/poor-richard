@@ -19,13 +19,16 @@ image-credit = "Illustration by Leise Hook / For Spotlight PA"
 sources = [
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx",
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/party-year.xlsx"
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/party-year.xlsx",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/congress.xlsx",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/senate.xlsx",
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/house.xlsx"
 ]
 popup = true
 cacheVersion = 1
 maxCacheAge = 24
 delimiter = ","
-numericFields = ["Total", "Democrat", "Republican", "No Affiliation", "Other", "Democrat Share", "Republican Share", "No Affiliation Share", "Other Share"]
+numericFields = ["Total", "Democrat", "Democratic", "Republican", "No Affiliation", "Other", "Democrat Share", "Republican Share", "No Affiliation Share", "Other Share"]
 
 [geojson]
 sources = [
