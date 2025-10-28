@@ -211,15 +211,18 @@
             {{ end }}
           </span>
           {{ if not $params.evergreen | and $params.published }}
-            <span>
-              | Last updated:
-              <time
-                :datetime="(metadata && (metadata.generated_at_utc || isoFromMDY(metadata.last_updated))) || {{ $params.publishedISO | jsonify }}"
-                x-text="(metadata && apDateLabelFromMDY(metadata.last_updated)) || {{ $params.published | jsonify }}"
-              >
-                {{ $params.published }}
-              </time>
-            </span>
+            <template
+              x-cloak
+              x-if="metadata && (metadata.last_updated || metadata.generated_at_utc)"
+            >
+              <span>
+                |
+                <time
+                  :datetime="metadata.generated_at_utc || isoFromMDY(metadata.last_updated)"
+                  x-text="apDateLabelFromMDY(metadata.last_updated)"
+                ></time>
+              </span>
+            </template>
           {{ end }}
 
         </p>
@@ -1610,6 +1613,7 @@ window.dispatchEvent(new Event('legend-clear'));
             <select
               class="h-full w-3/5 cursor-pointer appearance-none rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
             >
+              <option value="Pennsylvania">Pennsylvania</option>
               <option value="Adams">Adams</option>
               <option value="Allegheny">Allegheny</option>
               <option value="Armstrong">Armstrong</option>
