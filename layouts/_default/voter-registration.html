@@ -1596,9 +1596,14 @@ window.dispatchEvent(new Event('legend-clear'));
       "
     ></div>
 
-    <div class="col-span-12 row-span-2 bg-black px-12 py-8">
-      <div
-        x-data="{
+<div class="col-span-12 row-span-2 bg-black px-12 py-8">
+  <div class="flex h-[50px] w-full mb-2">
+    <div class="w-1/2 h-full bg-red"></div>
+    <div class="w-1/2 h-full bg-yellow"></div>
+  </div>
+  
+  <div
+    x-data="{
     datasets: {},
     svg: null,
     init() {
@@ -1768,11 +1773,11 @@ window.dispatchEvent(new Event('legend-clear'));
         });
     }
   }"
-        class="h-full w-full bg-g-1 p-4"
+        class="w-full bg-g-1 p-4"
       >
         <div
           x-ref="wrap"
-          class="relative h-[360px] w-full md:h-[420px] lg:h-[460px]"
+          class="relative h-[300px] w-full"
         >
           <svg x-ref="svg" class="absolute inset-0 h-full w-full"></svg>
           <div
