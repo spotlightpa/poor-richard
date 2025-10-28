@@ -328,6 +328,7 @@ partyConfig: {
         countyData: [],
         popup: null,
         hoveredId: null,
+        hoveredDistrictId: null,
 
 
         properCase(str) {
@@ -340,15 +341,15 @@ partyConfig: {
             sources.map(url => fetch(url).then(r => r.json()))
           );
           
-if (counties && counties.features) {
-  counties.features.forEach(feature => {
-    if (feature.properties && feature.properties.county_nam) {
-      feature.properties.county_nam = this.properCase(feature.properties.county_nam);
-    }
-    const name = feature.properties?.county_nam || '';
-    feature.properties.__id = name.toLowerCase().replace(/\s+/g, '_');
-  });
-}
+          if (counties && counties.features) {
+            counties.features.forEach(feature => {
+              if (feature.properties && feature.properties.county_nam) {
+                feature.properties.county_nam = this.properCase(feature.properties.county_nam);
+              }
+              const name = feature.properties?.county_nam || '';
+              feature.properties.__id = name.toLowerCase().replace(/\s+/g, '_');
+            });
+          }
 
           
           this.geojsonData = {
@@ -360,6 +361,7 @@ if (counties && counties.features) {
 
           if (this.map && this.map.loaded()) {
             await this.joinCountyData();
+            await this.joinDistrictData();
             this.setupLayers();
           }
         },
@@ -400,12 +402,232 @@ if (counties && counties.features) {
           }
         },
 
+        async joinDistrictData() {
+          await new Promise(resolve => {
+            if (this.datasets && this.datasets.congress && this.datasets.senate && this.datasets.house) {
+              resolve();
+            } else {
+              const checkData = setInterval(() => {
+                if (this.datasets && this.datasets.congress && this.datasets.senate && this.datasets.house) {
+                  clearInterval(checkData);
+                  resolve();
+                }
+              }, 100);
+            }
+          });
 
-        getBreaksForParty(party) {
+          if (this.geojsonData.congressional && this.geojsonData.congressional.features && this.datasets.congress) {
+            this.geojsonData.congressional.features.forEach(feature => {
+              const districtId = feature.properties.DISTRICT;
+              const districtRecord = this.datasets.congress.find(d => Number(d.DistrictCode) === Number(districtId));
+              
+              if (districtRecord) {
+                const total = Number(districtRecord.Total) || 1;
+                const dem = Number(districtRecord.Democratic || districtRecord.Democrat) || 0;
+                const rep = Number(districtRecord.Republican) || 0;
+                const noParty = Number(districtRecord['No Affiliation']) || 0;
+                const other = Number(districtRecord.Other) || 0;
+                
+                feature.properties.democratShare = (dem / total) * 100;
+                feature.properties.republicanShare = (rep / total) * 100;
+                feature.properties.noPartyShare = (noParty / total) * 100;
+                feature.properties.otherShare = (other / total) * 100;
+                
+                feature.properties.democratTotal = dem;
+                feature.properties.republicanTotal = rep;
+                feature.properties.noPartyTotal = noParty;
+                feature.properties.otherTotal = other;
+                feature.properties.districtName = `Congressional District ${districtId}`;
+              }
+            });
+          }
+
+          if (this.geojsonData.senate && this.geojsonData.senate.features && this.datasets.senate) {
+            this.geojsonData.senate.features.forEach(feature => {
+              const districtId = feature.properties.DISTRICT;
+              const districtRecord = this.datasets.senate.find(d => Number(d.DistrictCode) === Number(districtId));
+              
+              if (districtRecord) {
+                const total = Number(districtRecord.Total) || 1;
+                const dem = Number(districtRecord.Democratic || districtRecord.Democrat) || 0;
+                const rep = Number(districtRecord.Republican) || 0;
+                const noParty = Number(districtRecord['No Affiliation']) || 0;
+                const other = Number(districtRecord.Other) || 0;
+                
+                feature.properties.democratShare = (dem / total) * 100;
+                feature.properties.republicanShare = (rep / total) * 100;
+                feature.properties.noPartyShare = (noParty / total) * 100;
+                feature.properties.otherShare = (other / total) * 100;
+                
+                feature.properties.democratTotal = dem;
+                feature.properties.republicanTotal = rep;
+                feature.properties.noPartyTotal = noParty;
+                feature.properties.otherTotal = other;
+                feature.properties.districtName = `Senate District ${districtId}`;
+              }
+            });
+          }
+
+          if (this.geojsonData.house && this.geojsonData.house.features && this.datasets.house) {
+            this.geojsonData.house.features.forEach(feature => {
+              const districtId = feature.properties.DISTRICT;
+              const districtRecord = this.datasets.house.find(d => Number(d.DistrictCode) === Number(districtId));
+              
+              if (districtRecord) {
+                const total = Number(districtRecord.Total) || 1;
+                const dem = Number(districtRecord.Democratic || districtRecord.Democrat) || 0;
+                const rep = Number(districtRecord.Republican) || 0;
+                const noParty = Number(districtRecord['No Affiliation']) || 0;
+                const other = Number(districtRecord.Other) || 0;
+                
+                feature.properties.democratShare = (dem / total) * 100;
+                feature.properties.republicanShare = (rep / total) * 100;
+                feature.properties.noPartyShare = (noParty / total) * 100;
+                feature.properties.otherShare = (other / total) * 100;
+                
+                feature.properties.democratTotal = dem;
+                feature.properties.republicanTotal = rep;
+                feature.properties.noPartyTotal = noParty;
+                feature.properties.otherTotal = other;
+                feature.properties.districtName = `House District ${districtId}`;
+              }
+            });
+          }
+},
+
+getBreaksForParty(party) {
   if (party === 'no-party') return [3, 6, 9, 12, 15, 18, 21, 999];
   if (party === 'other')    return [1, 2, 3, 4, 5, 6, 7, 999];
   return [10, 20, 30, 40, 50, 60, 70, 999];
 },
+
+handleDistrictHover(e, layerType) {
+  if (e.features.length > 0) {
+    this.map.getCanvas().style.cursor = 'crosshair';
+    const feature = e.features[0];
+    
+    if (this.hoveredDistrictId !== undefined && this.hoveredDistrictId !== feature.id) {
+      this.map.setFeatureState(
+        { source: layerType, id: this.hoveredDistrictId },
+        { hover: false }
+      );
+    }
+    this.hoveredDistrictId = feature.id;
+    this.map.setFeatureState(
+      { source: layerType, id: this.hoveredDistrictId },
+      { hover: true }
+    );
+    
+    if (!this.popup) {
+      this.popup = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+    }
+    
+    const partyKeyMap = {
+      democrat:   { share: 'democratShare',   total: 'democratTotal',   color: '#0079d1', text: '#ffffff', label: 'Democrat' },
+      republican: { share: 'republicanShare', total: 'republicanTotal', color: '#d70000', text: '#ffffff', label: 'Republican' },
+      'no-party': { share: 'noPartyShare',    total: 'noPartyTotal',    color: '#ffcb03', text: '#000000', label: 'No Party' },
+      other:      { share: 'otherShare',      total: 'otherTotal',      color: '#1b998b', text: '#ffffff', label: 'Other' }
+    };
+    
+    const activeParty = this.selectedParty;
+    const active = partyKeyMap[activeParty];
+    
+    const shareVal = feature.properties[active.share];
+    const totalVal = feature.properties[active.total];
+    const sharePct = Number.isFinite(shareVal)
+      ? Math.max(0, Math.min(100, Math.round(shareVal)))
+      : null;
+    
+    const others = Object.entries(partyKeyMap)
+      .filter(([k]) => k !== activeParty)
+      .map(([k, meta]) => ({
+        label: meta.label,
+        color: meta.color,
+        textColor: meta.text,
+        pct: Number.isFinite(feature.properties[meta.share])
+          ? Math.max(0, Math.min(100, Math.round(feature.properties[meta.share])))
+          : 0
+      }));
+    
+    const districtName = feature.properties.districtName || `District ${feature.properties.DISTRICT}`;
+    
+    const renderBar = ({ label, pct, color, textColor }) => [
+      '<div style=&quot;margin-top:8px;&quot;>',
+      `<span style=&quot;font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;&quot;>${label}:</span>`,
+      '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;&quot;>',
+      `<div style=&quot;width:${pct || 0}%; background:${color}; height:100%; position:relative;&quot;>`,
+      (pct >= 30
+        ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${pct}%</span>`
+        : ''),
+      '</div>',
+      (pct < 30
+        ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${pct}%</span>`
+        : ''),
+      '</div>',
+      '</div>'
+    ].join('');
+    
+    const htmlContent = [
+      '<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>',
+      `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${districtName}</strong>`,
+      
+      '<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>',
+      `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
+      (sharePct !== null && sharePct >= 30
+        ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+        : ''),
+      '</div>',
+      (sharePct !== null && sharePct < 30
+        ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+        : ''),
+      '</div>',
+      
+      '<div style=&quot;height:6px;&quot;></div>',
+      '<span style=&quot;font-size:0.95rem; font-weight:700;&quot;>Total:</span> ',
+      `<span style=&quot;font-size:0.95rem;&quot;>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : '—'}</span>`,
+      
+      '<div style=&quot;height:8px;&quot;></div>',
+      '<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>',
+      
+      renderBar(others[0]),
+      renderBar(others[1]),
+      renderBar(others[2]),
+      '</div>'
+    ].join('');
+    
+    this.popup
+      .setLngLat(e.lngLat)
+      .setHTML(htmlContent)
+      .addTo(this.map);
+    
+    const popupEl = this.popup.getElement();
+    popupEl.style.zIndex = '9999';
+    const contentEl = popupEl.querySelector('.maplibregl-popup-content');
+    if (contentEl) {
+      contentEl.style.padding = '8px';
+      contentEl.style.boxSizing = 'border-box';
+    }
+}
+},
+
+handleDistrictLeave(layerType) {
+  this.map.getCanvas().style.cursor = '';
+  if (this.popup) {
+    this.popup.remove();
+  }
+  
+  if (this.hoveredDistrictId !== undefined) {
+    this.map.setFeatureState(
+      { source: layerType, id: this.hoveredDistrictId },
+      { hover: false }
+    );
+    this.hoveredDistrictId = undefined;
+  }
+},
+
 getPaletteForParty(party) {
   const cfg = {
     democrat:   ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
@@ -435,9 +657,12 @@ buildFillColorExpression(party) {
   return expr;
 },
 
-
 setupLayers() {
           if (!this.map || !this.geojsonData.county) return;
+
+          const labelLayerId = this.map.getStyle().layers.find(l =>
+            l.type === 'symbol' && l.layout && l.layout['text-field']
+          )?.id;
 
           if (!this.map.getSource('counties')) {
             this.map.addSource('counties', {
@@ -445,13 +670,6 @@ setupLayers() {
   data: this.geojsonData.county,
   promoteId: '__id'
 });
-
-
-
-const labelLayerId = this.map.getStyle().layers.find(l =>
-  l.type === 'symbol' && l.layout && l.layout['text-field']
-)?.id;
-
 
 this.map.addLayer({
   id: 'counties-fill',
@@ -462,7 +680,6 @@ this.map.addLayer({
     'fill-opacity': 1.0
   }
 }, labelLayerId);
-
 
 
 this.map.addLayer({
@@ -486,25 +703,25 @@ this.map.addLayer({
 }, labelLayerId);
 
 
-            this.map.addLayer({
-              id: 'counties-outline-hover',
-              type: 'line',
-              source: 'counties',
-              layout: {
-                'line-join': 'round',
-                'line-cap': 'round'
-              },
-              paint: {
-                'line-color': '#000000',
-                'line-width': 4,
-                'line-opacity': [
-                  'case',
-                  ['boolean', ['feature-state', 'hover'], false],
-                  1,
-                  0
-                ]
-              }
-            });
+this.map.addLayer({
+  id: 'counties-outline-hover',
+  type: 'line',
+  source: 'counties',
+  layout: {
+    'line-join': 'round',
+    'line-cap': 'round'
+  },
+  paint: {
+    'line-color': '#000000',
+    'line-width': 4,
+    'line-opacity': [
+      'case',
+      ['boolean', ['feature-state', 'hover'], false],
+      1,
+      0
+    ]
+  }
+});
 
 this.map.on('mousemove', 'counties-fill', (e) => {
   if (e.features.length > 0) {
@@ -637,14 +854,13 @@ this.map.on('mousemove', 'counties-fill', (e) => {
             this.popup.remove();
           }
         });
-
-
-          }
-
-          if (!this.map.getSource('house') && this.geojsonData.house) {
+}
+          
+        if (!this.map.getSource('house') && this.geojsonData.house) {
             this.map.addSource('house', {
               type: 'geojson',
-              data: this.geojsonData.house
+              data: this.geojsonData.house,
+              promoteId: 'DISTRICT'
             });
             this.map.addLayer({
               id: 'house-fill',
@@ -654,10 +870,11 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 visibility: 'none'
               },
               paint: {
-                'fill-color': '#E67E22',
-                'fill-opacity': 0.2
+                'fill-color': this.buildFillColorExpression(this.selectedParty),
+                'fill-opacity': 1.0
               }
-            });
+            }, labelLayerId);
+
             this.map.addLayer({
               id: 'house-outline',
               type: 'line',
@@ -666,16 +883,51 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 visibility: 'none'
               },
               paint: {
-                'line-color': '#E67E22',
-                'line-width': 2
+                'line-color': '#ffffff',
+                'line-width': 1
+              }
+            }, labelLayerId);
+
+            this.map.addLayer({
+              id: 'house-outline-hover',
+              type: 'line',
+              source: 'house',
+              layout: {
+                visibility: 'none',
+                'line-join': 'round',
+                'line-cap': 'round'
+              },
+              paint: {
+                'line-color': '#000000',
+                'line-width': 4,
+                'line-opacity': [
+                  'case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  1,
+                  0
+                ]
+              }
+            }, labelLayerId);
+            
+            this.map.on('mousemove', 'house-fill', (e) => {
+              if (this.selected === 'house') {
+                this.handleDistrictHover(e, 'house');
+              }
+            });
+            
+            this.map.on('mouseleave', 'house-fill', () => {
+              if (this.selected === 'house') {
+                this.handleDistrictLeave('house');
               }
             });
           }
 
-          if (!this.map.getSource('congressional') && this.geojsonData.congressional) {
+
+        if (!this.map.getSource('congressional') && this.geojsonData.congressional) {
             this.map.addSource('congressional', {
               type: 'geojson',
-              data: this.geojsonData.congressional
+              data: this.geojsonData.congressional,
+              promoteId: 'DISTRICT'
             });
             this.map.addLayer({
               id: 'congressional-fill',
@@ -685,10 +937,12 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 visibility: 'none'
               },
               paint: {
-                'fill-color': '#8E44AD',
-                'fill-opacity': 0.2
+                'fill-color': this.buildFillColorExpression(this.selectedParty),
+                'fill-opacity': 1.0
               }
-            });
+            }, labelLayerId);
+
+
             this.map.addLayer({
               id: 'congressional-outline',
               type: 'line',
@@ -697,29 +951,65 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 visibility: 'none'
               },
               paint: {
-                'line-color': '#8E44AD',
-                'line-width': 2
+                'line-color': '#ffffff',
+                'line-width': 1
+              }
+            }, labelLayerId);
+
+            this.map.addLayer({
+              id: 'congressional-outline-hover',
+              type: 'line',
+              source: 'congressional',
+              layout: {
+                visibility: 'none',
+                'line-join': 'round',
+                'line-cap': 'round'
+              },
+              paint: {
+                'line-color': '#000000',
+                'line-width': 4,
+                'line-opacity': [
+                  'case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  1,
+                  0
+                ]
+              }
+            }, labelLayerId);
+            
+            this.map.on('mousemove', 'congressional-fill', (e) => {
+              if (this.selected === 'congressional') {
+                this.handleDistrictHover(e, 'congressional');
+              }
+            });
+            
+            this.map.on('mouseleave', 'congressional-fill', () => {
+              if (this.selected === 'congressional') {
+                this.handleDistrictLeave('congressional');
               }
             });
           }
 
           if (!this.map.getSource('senate') && this.geojsonData.senate) {
-            this.map.addSource('senate', {
-              type: 'geojson',
-              data: this.geojsonData.senate
-            });
-            this.map.addLayer({
-              id: 'senate-fill',
-              type: 'fill',
-              source: 'senate',
-              layout: {
-                visibility: 'none'
-              },
-              paint: {
-                'fill-color': '#27AE60',
-                'fill-opacity': 0.2
-              }
-            });
+                      this.map.addSource('senate', {
+                        type: 'geojson',
+                        data: this.geojsonData.senate,
+                        promoteId: 'DISTRICT'
+                      });
+                      this.map.addLayer({
+                        id: 'senate-fill',
+                        type: 'fill',
+                        source: 'senate',
+                        layout: {
+                          visibility: 'none'
+                        },
+                        paint: {
+                          'fill-color': this.buildFillColorExpression(this.selectedParty),
+                          'fill-opacity': 1.0
+                        }
+                      }, labelLayerId);
+
+
             this.map.addLayer({
               id: 'senate-outline',
               type: 'line',
@@ -728,23 +1018,55 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 visibility: 'none'
               },
               paint: {
-                'line-color': '#27AE60',
-                'line-width': 2
+                'line-color': '#ffffff',
+                'line-width': 1
+              }
+            }, labelLayerId);
+
+            this.map.addLayer({
+              id: 'senate-outline-hover',
+              type: 'line',
+              source: 'senate',
+              layout: {
+                visibility: 'none',
+                'line-join': 'round',
+                'line-cap': 'round'
+              },
+              paint: {
+                'line-color': '#000000',
+                'line-width': 4,
+                'line-opacity': [
+                  'case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  1,
+                  0
+                ]
+              }
+            }, labelLayerId);
+            
+            this.map.on('mousemove', 'senate-fill', (e) => {
+              if (this.selected === 'senate') {
+                this.handleDistrictHover(e, 'senate');
+              }
+            });
+            
+            this.map.on('mouseleave', 'senate-fill', () => {
+              if (this.selected === 'senate') {
+                this.handleDistrictLeave('senate');
               }
             });
           }
-
           this.updateLayerVisibility();
         },
 
-        updateLayerVisibility() {
+      updateLayerVisibility() {
           if (!this.map) return;
 
           const layers = {
-            county: ['counties-fill', 'counties-outline'],
-            congressional: ['congressional-fill', 'congressional-outline'],
-            senate: ['senate-fill', 'senate-outline'],
-            house: ['house-fill', 'house-outline']
+            county: ['counties-fill', 'counties-outline', 'counties-outline-hover'],
+            congressional: ['congressional-fill', 'congressional-outline', 'congressional-outline-hover'],
+            senate: ['senate-fill', 'senate-outline', 'senate-outline-hover'],
+            house: ['house-fill', 'house-outline', 'house-outline-hover']
           };
 
           Object.entries(layers).forEach(([key, layerIds]) => {
@@ -822,13 +1144,14 @@ this.map.on('mousemove', 'counties-fill', (e) => {
                 }
               });
 
-
-                this.joinCountyData().then(() => {
+              Promise.all([
+                  this.joinCountyData(),
+                  this.joinDistrictData()
+                ]).then(() => {
                   this.setupLayers();
                   if (this.map.getLayer('counties-fill')) {
-  this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
-}
-
+                    this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
+                  }
                 });
               });
 
@@ -838,15 +1161,19 @@ this.map.on('mousemove', 'counties-fill', (e) => {
         }
       }"
         x-init="
-  initMap();
-  $watch('selected', () => updateLayerVisibility());
-  window.addEventListener('party-changed', (e) => {
-    selectedParty = e.detail;
-    if (map && map.getLayer('counties-fill')) {
-      map.setPaintProperty('counties-fill', 'fill-color', buildFillColorExpression(selectedParty));
-    }
-  });
-"
+          initMap();
+            $watch('selected', () => updateLayerVisibility());
+            window.addEventListener('party-changed', (e) => {
+              selectedParty = e.detail;
+              if (map) {
+                ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
+                  if (map.getLayer(layerId)) {
+                    map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
+                  }
+                });
+              }
+            });
+          "
       >
         <div
           x-ref="mapCanvas"
