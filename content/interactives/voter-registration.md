@@ -29,6 +29,7 @@ cacheVersion = 1
 maxCacheAge = 24
 delimiter = ","
 numericFields = ["Total", "Democrat", "Democratic", "Republican", "No Affiliation", "Other", "Democrat Share", "Republican Share", "No Affiliation Share", "Other Share"]
+metadata = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/metadata.json"
 
 [geojson]
 sources = [
