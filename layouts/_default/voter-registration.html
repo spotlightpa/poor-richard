@@ -266,35 +266,70 @@ partyConfig: {
 
   }"
     >
-      <div class="relative mb-4 w-full">
-        <select
-          @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
-          x-model="selectedParty"
-          :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
-          class="w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
-        >
-          <option value="democrat">Democrat</option>
-          <option value="republican">Republican</option>
-          <option value="no-party">No Party</option>
-          <option value="other">Other</option>
-        </select>
-        <div
-          class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
-        >
-          <svg
-            class="text-gray-700 h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+      <div class="mb-4 grid w-full grid-cols-2 items-stretch gap-3">
+        <div class="relative h-full">
+          <select
+            @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
+            x-model="selectedParty"
+            :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
+            class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2.5"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+            <option value="democrat">Democrat</option>
+            <option value="republican">Republican</option>
+            <option value="no-party">No Party</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+          >
+            <svg
+              class="text-gray-700 h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
         </div>
+
+        <form
+          @submit.prevent="window.dispatchEvent(new CustomEvent('search-submitted', { detail: { query: $refs.addressSearch.value } }))"
+          class="relative h-full"
+        >
+          <input
+            x-ref="addressSearch"
+            type="text"
+            placeholder="Search by address"
+            class="placeholder-gray-5 h-full w-full rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
+          />
+
+          <button
+            type="submit"
+            class="absolute inset-y-0 right-0 flex items-center pr-4 text-g-7 hover:opacity-80 focus:outline-none"
+            title="Search"
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+              />
+            </svg>
+          </button>
+        </form>
       </div>
 
       <div class="relative mb-10 w-full">
