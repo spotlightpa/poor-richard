@@ -271,7 +271,7 @@ partyConfig: {
 
   }"
     >
-      <div class="mb-4 grid w-full grid-cols-2 items-stretch gap-3">
+      <div class="mb-4 grid w-full grid-cols-1 sm:grid-cols-2 items-stretch gap-3">
         <div class="relative h-full">
           <select
             @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
