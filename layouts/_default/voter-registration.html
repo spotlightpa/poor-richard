@@ -1475,17 +1475,20 @@ window.dispatchEvent(new Event('legend-clear'));
 
           setTimeout(() => {
             if (window.maplibregl && window.maplibregl.Map) {
-              this.map = new maplibregl.Map({
-                container: el,
-                style: 'https://tiles.openfreemap.org/styles/positron',
-                center: [-77.5, 40.9],
-                zoom: 6,
-                minZoom: 3,
-                maxZoom: 18,
-                attributionControl: false,
-                cooperativeGestures: true
-              });
-
+          this.map = new maplibregl.Map({
+            container: el,
+            style: 'https://tiles.openfreemap.org/styles/positron',
+            center: [-77.5, 40.9],
+            zoom: 6,
+            minZoom: 5.5, // Prevent zooming out too far
+            maxZoom: 18,
+            maxBounds: [
+              [-83, 38],
+              [-72, 43.5]
+            ],
+            attributionControl: false,
+            cooperativeGestures: true
+          });
               this.map.addControl(new maplibregl.NavigationControl({
                 showCompass: false,
                 showZoom: true,
@@ -1948,8 +1951,8 @@ window.dispatchEvent(new Event('legend-clear'));
           }"
         class="w-full bg-g-1 p-4"
       >
-<div x-ref="wrap" class="relative h-[300px] w-full overflow-x-auto">
-  <svg x-ref="svg"></svg>
+        <div x-ref="wrap" class="relative h-[300px] w-full overflow-x-auto">
+          <svg x-ref="svg"></svg>
           <div
             x-ref="tooltip"
             class="pointer-events-none absolute hidden rounded bg-black/90 px-2 py-1 text-xs font-semibold text-white shadow"
