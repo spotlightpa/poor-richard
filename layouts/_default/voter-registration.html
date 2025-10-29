@@ -16,7 +16,7 @@
 
 
   <div
-    class="grid min-h-screen w-screen grid-cols-1 grid-rows-[auto_minmax(300px,auto)_minmax(500px,1fr)_auto] lg:grid-cols-12 lg:grid-rows-[repeat(4,minmax(0,1fr))_auto_auto]"
+    class="grid min-h-screen w-screen grid-cols-1 grid-rows-[auto_minmax(300px,auto)_minmax(500px,1fr)_auto_auto] lg:grid-cols-12 lg:grid-rows-[repeat(4,minmax(0,1fr))_auto_auto_auto]"
     x-data="{
       ...s3DataLoader(),
       
@@ -188,7 +188,7 @@
       {{ end }}
 
 
-      <h1 class="mt-2 font-serif text-3xl uppercase leading-hed lg:text-4xl">
+      <h1 class="my-2 font-serif text-3xl uppercase leading-hed lg:text-4xl">
         {{ .Title }}
       </h1>
 
@@ -233,9 +233,10 @@
           href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics"
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-2 block font-semibold"
+          class="mt-2 block"
         >
-          Source: Pennsylvania Department of State
+          <span class="font-semibold">Source:</span> Pennsylvania Department of
+          State
         </a>
       {{ end }}
     </div>
@@ -403,38 +404,38 @@ partyConfig: Object.freeze({
           </template>
         </div>
 
-      <div
-        class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
-      >
-        <span
-          class="absolute left-[12.5%] -translate-x-1/2"
-          x-text="partyConfig[selectedParty].labels[0]"
-        ></span>
-        <span
-          class="absolute left-[25%] -translate-x-1/2 hidden min-[460px]:block"
-          x-text="partyConfig[selectedParty].labels[1]"
-        ></span>
-        <span
-          class="absolute left-[37.5%] -translate-x-1/2"
-          x-text="partyConfig[selectedParty].labels[2]"
-        ></span>
-        <span
-          class="absolute left-[50%] -translate-x-1/2 hidden min-[460px]:block"
-          x-text="partyConfig[selectedParty].labels[3]"
-        ></span>
-        <span
-          class="absolute left-[62.5%] -translate-x-1/2"
-          x-text="partyConfig[selectedParty].labels[4]"
-        ></span>
-        <span
-          class="absolute left-[75%] -translate-x-1/2 hidden min-[460px]:block"
-          x-text="partyConfig[selectedParty].labels[5]"
-        ></span>
-        <span
-          class="absolute left-[87.5%] -translate-x-1/2"
-          x-text="partyConfig[selectedParty].labels[6]"
-        ></span>
-      </div>
+        <div
+          class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
+        >
+          <span
+            class="absolute left-[12.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[0]"
+          ></span>
+          <span
+            class="absolute left-[25%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[1]"
+          ></span>
+          <span
+            class="absolute left-[37.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[2]"
+          ></span>
+          <span
+            class="absolute left-[50%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[3]"
+          ></span>
+          <span
+            class="absolute left-[62.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[4]"
+          ></span>
+          <span
+            class="absolute left-[75%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[5]"
+          ></span>
+          <span
+            class="absolute left-[87.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[6]"
+          ></span>
+        </div>
       </div>
 
       <div
@@ -1651,18 +1652,18 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
     ></div>
 
     <div
-      class="order-4 col-span-1 row-span-1 bg-black px-4 py-4 lg:col-span-12 lg:row-span-2 lg:px-12 lg:py-8"
+      class="order-4 col-span-1 row-span-1 bg-black px-4 py-6 lg:col-span-12 lg:row-span-2 lg:px-12 lg:py-8 lg:pb-20"
       x-data="{ selectedCounty: 'Pennsylvania' }"
     >
       <div class="flex h-[76px] w-full">
         <div
-          class="justify-left hidden h-full w-1/2 items-center bg-g-1 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-black md:flex"
+          class="justify-left hidden h-full w-1/2 items-center bg-g-9 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-white md:flex"
         >
           Voter registration over time
         </div>
-        <div class="flex h-full w-full items-center bg-g-1 px-3 pt-4 md:w-1/2">
+        <div class="flex h-full w-full items-center bg-g-9 px-3 pt-4 md:w-1/2">
           <div
-            class="relative flex h-full w-full items-center justify-end bg-g-1"
+            class="relative flex h-full w-full items-center justify-end bg-g-9"
           >
             <select
               x-model="selectedCounty"
@@ -1819,8 +1820,8 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
               }
 
               const W = wrap.clientWidth;
-              const H = 300;
-              const margin = { top: 12, right: 50, bottom: 30, left: 30 };
+              const H = 350;
+              const margin = { top: 12, right: 50, bottom: 30, left: 40 };
               const width = Math.max(200, W - margin.left - margin.right);
               const height = H - margin.top - margin.bottom;
 
@@ -1873,7 +1874,7 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
             .attr('class', 'x-axis')
             .attr('transform', `translate(0,${height})`)
             .call(xAxis)
-            .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#888').attr('dy', '1em'));
+            .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#f9f9f9').attr('dy', '1em'));
 
 
               g.append('g')
@@ -1884,7 +1885,7 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
                     .tickFormat(d => d === 0 ? '' : d3.format('~s')(d).replace('G','B'))
                     .tickSize(0)
                 )
-                .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#A2A2A2').attr('dx', '-3'))
+                .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#e2e2e2').attr('dx', '-3'))
                 .call(a => a.select('.domain').remove());
 
               const line = d3.line()
@@ -1972,14 +1973,248 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
                 });
             }
           }"
-        class="w-full bg-g-1 p-4"
+        class="w-full bg-g-9 p-4"
       >
-        <div x-ref="wrap" class="relative h-[300px] w-full overflow-x-auto">
+        <div x-ref="wrap" class="relative h-[350px] w-full overflow-x-auto">
           <svg x-ref="svg"></svg>
           <div
             x-ref="tooltip"
             class="pointer-events-none absolute hidden rounded bg-black/90 px-2 py-1 text-xs font-semibold text-white shadow"
           ></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="order-5 col-span-1 row-span-1 bg-white px-4 py-8 lg:col-span-12 lg:px-12 lg:py-12"
+    >
+      <div class="mx-auto w-full max-w-7xl">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
+          <div
+            class="article-content font-serif leading-relaxed lg:col-span-2 lg:border-r-[2px] lg:border-g-4 lg:pr-8"
+          >
+            <h1
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              About the Data
+            </h1>
+            <p class="mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+              <br /><br />
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+
+            <div class="my-8 flex justify-center">
+              <hr
+                class="w-24 rounded-full border-t-4 border-yellow shadow-sm"
+              />
+            </div>
+
+            <h1
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              Frequently Asked Questions
+            </h1>
+
+            <h2
+              class="mx-auto mt-4 w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              How do I register to vote?
+            </h2>
+            <p class="mb-4">
+              To register to vote in Pennsylvania, you can complete a voter
+              registration application online, by mail, or in person at various
+              government agencies, including Pennsylvania Department of
+              Transportation (PennDOT) photo license and driver's license
+              centers, and your county election office. The deadline to register
+              is typically 15 days before the election. If you do not register,
+              you will not be able to vote.
+            </p>
+
+            <h2
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              How do I check my voter registration?
+            </h2>
+            <p class="mb-4">
+              To check your voter registration in Pennsylvania, you can visit
+              the Department of State's website. There, you can look up your
+              status by name or driver's license / PennDOT ID number.
+            </p>
+
+            <h2
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              Can I switch my party registration before the election?
+            </h2>
+            <p class="mb-4">
+              In Pennsylvania, you can switch your party registration at any
+              time. However, if you want the change to take effect for an
+              upcoming election, you must do so at least 15 days before that
+              election. If you make the change within 15 days of the election,
+              it will take effect for the next election cycle. To change your
+              party affiliation, fill out a voter registration form and select
+              the box indicating a "change of party."
+            </p>
+
+            <h2
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              Can I vote if I’m registered independent or not registered with a
+              party?
+            </h2>
+            <p class="mb-4">
+              Voters unaffiliated with a specific political party are able to
+              vote in elections in Pennsylvania, with the exception of primary
+              elections, because Pennsylvania has a closed primary system.
+              However, such voters can still participate in statewide referenda,
+              local ballot initiatives, and special elections that coincide with
+              the primaries. All registered voters can participate in general
+              elections.
+            </p>
+
+            <h2
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              Can I vote if my registration is inactive?
+            </h2>
+            <p class="mb-4">
+              If your voter registration is marked as inactive, you can still
+              vote. A voter is marked inactive if they have not voted for two
+              consecutive federal election cycles and haven’t responded to a
+              county notice about their registration. If that’s your status, you
+              can still vote on election day. You’ll just have to sign a form
+              confirming your eligibility when you visit your polling place.
+            </p>
+
+            <div class="my-8 flex justify-center">
+              <hr
+                class="w-24 rounded-full border-t-4 border-yellow shadow-sm"
+              />
+            </div>
+
+            <h1
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              Need Help?
+            </h1>
+
+            <p class="mb-4">
+              If you have any questions or need assistance with voting, you can
+              reach out to the
+              <a href="https://www.pa.gov/agencies/vote">
+                Pennsylvania Department of State
+              </a>
+              for guidance.
+            </p>
+          </div>
+
+          <div class="lg:col-span-1">
+            <div class="rounded-lg bg-g-1 p-6">
+              <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
+                Election Resources
+              </h3>
+              <div class="space-y-3">
+                <a
+                  href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">🗳️</span>
+                  <span
+                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    >Register to vote</span
+                  >
+                </a>
+                <a
+                  href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📝</span>
+                  <span
+                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    >Check your registration status</span
+                  >
+                </a>
+                <a
+                  href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📍</span>
+                  <span
+                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    >Find your polling place</span
+                  >
+                </a>
+                <a
+                  href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">✉️</span>
+                  <span
+                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    >Request a mail ballot</span
+                  >
+                </a>
+                <a
+                  href="https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📱</span>
+                  <span
+                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    >Contact your county election office</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            {{ with site.GetPage "topics/elections" }}
+              {{ $stories := (where .RegularPages "Date" ">" (time "2024-12-31")) | first 4 }}
+
+
+              <div class="mt-6 rounded-lg bg-g-1 p-6">
+                <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
+                  More Election Coverage
+                </h3>
+                <ul class="space-y-3">
+                  {{ range $stories }}
+                    <li>
+                      <a
+                        href="{{ .RelPermalink }}"
+                        class="flex items-start text-black transition-colors hover:text-blue"
+                      >
+                        <span class="mr-2">📰</span>
+                        <span class="font-semibold">
+                          {{ .Title }}
+                          <span class="block text-sm font-normal text-g-7">
+                            {{ .Date | time.Format "Jan. 2, 2006" }}
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  {{ end }}
+                  <li>
+                    <a
+                      href="/elections/#coverage"
+                      class="flex items-center text-black transition-colors hover:text-blue"
+                    >
+                      <span class="mr-2">➕</span>
+                      <span class="font-bold">See all election stories →</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            {{ end }}
+
+          </div>
         </div>
       </div>
     </div>
