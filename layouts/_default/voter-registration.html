@@ -271,7 +271,9 @@ partyConfig: {
 
   }"
     >
-      <div class="mb-4 grid w-full grid-cols-1 sm:grid-cols-2 items-stretch gap-3">
+      <div
+        class="mb-4 grid w-full grid-cols-1 items-stretch gap-3 sm:grid-cols-2"
+      >
         <div class="relative h-full">
           <select
             @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
@@ -1628,18 +1630,18 @@ window.dispatchEvent(new Event('legend-clear'));
     >
       <div class="flex h-[76px] w-full">
         <div
-          class="justify-left flex h-full w-1/2 items-center bg-g-1 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-black"
+          class="justify-left hidden h-full w-1/2 items-center bg-g-1 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-black md:flex"
         >
           Voter registration over time
         </div>
-        <div class="flex h-full w-1/2 items-center bg-g-1 px-3 pt-4">
+        <div class="flex h-full w-full items-center bg-g-1 px-3 pt-4 md:w-1/2">
           <div
             class="relative flex h-full w-full items-center justify-end bg-g-1"
           >
             <select
               x-model="selectedCounty"
               @change="$dispatch('county-changed', selectedCounty)"
-              class="h-full w-3/5 cursor-pointer appearance-none rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
+              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0 md:w-3/5"
             >
               <option value="Pennsylvania">Pennsylvania</option>
               <option value="Adams">Adams</option>
@@ -1823,15 +1825,23 @@ window.dispatchEvent(new Event('legend-clear'));
                 .call(g => g.select('.domain').remove())
                 .selectAll('line').attr('stroke', '#9ca3af');
 
-              g.append('g')
-                .attr('class', 'x-axis')
-                .attr('transform', `translate(0,${height})`)
-                .call(
-                  d3.axisBottom(x)
-                    .tickFormat(d => d === 1998 ? '' : d3.format('d')(d))
-                    .tickSize(0)
-                )
-                .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#888').attr('dy', '1em'));
+              const isMobile = window.innerWidth < 768;
+              const xAxis = d3.axisBottom(x).tickSize(0);
+
+              if (isMobile) {
+                const allYears = data.map(d => d.Year);
+                const filteredYears = allYears.filter((_, i) => i % 2 === 0);
+                xAxis.tickValues(filteredYears);
+                xAxis.tickFormat(d => d === 1998 ? '' : `'${String(d).slice(-2)}`);
+              } else {
+                xAxis.tickFormat(d => d === 1998 ? '' : d3.format('d')(d));
+              }
+
+          g.append('g')
+            .attr('class', 'x-axis')
+            .attr('transform', `translate(0,${height})`)
+            .call(xAxis)
+            .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#888').attr('dy', '1em'));
 
 
               g.append('g')
