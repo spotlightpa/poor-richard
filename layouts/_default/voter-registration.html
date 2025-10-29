@@ -15,8 +15,8 @@
   {{ partial "s3-data-loader.html" . }}
 
 
-  <div
-    class="grid min-h-screen w-screen grid-cols-12 grid-rows-[repeat(4,minmax(0,1fr))_auto_auto]"
+<div
+    class="grid min-h-screen w-screen grid-cols-1 lg:grid-cols-12 grid-rows-[auto_minmax(300px,auto)_minmax(500px,1fr)_auto] lg:grid-rows-[repeat(4,minmax(0,1fr))_auto_auto]"
     x-data="{
       ...s3DataLoader(),
       
@@ -178,8 +178,8 @@
     }"
     x-init="init()"
   >
-    <div
-      class="col-span-5 row-span-2 flex flex-col items-start justify-center bg-black p-12 text-white"
+<div
+      class="col-span-1 lg:col-span-5 row-span-1 lg:row-span-2 flex flex-col items-start justify-center bg-black p-6 lg:p-12 text-white order-1"
     >
       {{ with .Param "kicker" }}
         <p class="font-sans font-bold uppercase text-yellow">
@@ -240,8 +240,8 @@
       {{ end }}
     </div>
 
-    <div
-      class="col-span-7 row-span-4 flex flex-col overflow-visible bg-black px-4 pb-4 pr-12 pt-12"
+<div
+      class="col-span-1 lg:col-span-7 row-span-1 lg:row-span-4 flex flex-col overflow-visible bg-black p-4 lg:px-4 lg:pb-4 lg:pr-12 lg:pt-12 order-3 lg:order-2"
       @search-complete.window="isSearching = false"
       x-data="{
     selectedParty: 'democrat',
@@ -311,7 +311,7 @@ partyConfig: {
           <input
             x-ref="addressSearch"
             type="text"
-            placeholder="Search by address"
+            placeholder="Search map"
             class="placeholder-gray-5 h-full w-full rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
           />
 
@@ -1578,8 +1578,8 @@ window.dispatchEvent(new Event('legend-clear'));
       </div>
     </div>
 
-    <div
-      class="col-span-5 row-span-2 bg-black pb-2 pl-12 pr-2"
+<div
+      class="col-span-1 lg:col-span-5 row-span-1 lg:row-span-2 bg-black p-4 lg:pb-2 lg:pl-12 lg:pr-2 order-2 lg:order-3"
       x-ref="treemapContainer"
       x-show="datasets && datasets.total && datasets.total.length > 0"
       x-init="
@@ -1599,8 +1599,8 @@ window.dispatchEvent(new Event('legend-clear'));
       "
     ></div>
 
-    <div
-      class="col-span-12 row-span-2 bg-black px-12 py-8"
+<div
+      class="col-span-1 lg:col-span-12 row-span-1 lg:row-span-2 bg-black px-4 py-4 lg:px-12 lg:py-8 order-4"
       x-data="{ selectedCounty: 'Pennsylvania' }"
     >
       <div class="flex h-[76px] w-full">
