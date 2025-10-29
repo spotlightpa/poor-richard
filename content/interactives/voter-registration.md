@@ -1,12 +1,12 @@
 +++
 title = "Voter registration"
-title-tag = "Pennsylvania Voter Registration"
-description = "Track key data about voter registration trends in Pennsylvania."
+title-tag = "Tracking Pennsylvania voter registration trends"
+description = "Explore the latest voter registration changes in Pennsylvania by party and county with our interactive graphics."
 kicker = "Elections"
 authors = ["Alexandra Harris"]
 published = "2025-09-29T00:00:00-04:00"
 layout = "voter-registration"
-url = "/news/voter-registration/"
+url = "/pennsylvania-voter-registration"
 no-index = false
 ad-header-desktop-active = false
 ad-header-mobile-active = false
