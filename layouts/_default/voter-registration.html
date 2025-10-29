@@ -15,8 +15,8 @@
   {{ partial "s3-data-loader.html" . }}
 
 
-<div
-    class="grid min-h-screen w-screen grid-cols-1 lg:grid-cols-12 grid-rows-[auto_minmax(300px,auto)_minmax(500px,1fr)_auto] lg:grid-rows-[repeat(4,minmax(0,1fr))_auto_auto]"
+  <div
+    class="grid min-h-screen w-screen grid-cols-1 grid-rows-[auto_minmax(300px,auto)_minmax(500px,1fr)_auto] lg:grid-cols-12 lg:grid-rows-[repeat(4,minmax(0,1fr))_auto_auto]"
     x-data="{
       ...s3DataLoader(),
       
@@ -178,8 +178,8 @@
     }"
     x-init="init()"
   >
-<div
-      class="col-span-1 lg:col-span-5 row-span-1 lg:row-span-2 flex flex-col items-start justify-center bg-black p-6 lg:p-12 text-white order-1"
+    <div
+      class="order-1 col-span-1 row-span-1 flex flex-col items-start justify-center bg-black p-6 text-white lg:col-span-5 lg:row-span-2 lg:p-12"
     >
       {{ with .Param "kicker" }}
         <p class="font-sans font-bold uppercase text-yellow">
@@ -240,8 +240,8 @@
       {{ end }}
     </div>
 
-<div
-      class="col-span-1 lg:col-span-7 row-span-1 lg:row-span-4 flex flex-col overflow-visible bg-black p-4 lg:px-4 lg:pb-4 lg:pr-12 lg:pt-12 order-3 lg:order-2"
+    <div
+      class="order-3 col-span-1 row-span-1 flex flex-col overflow-visible bg-black p-4 lg:order-2 lg:col-span-7 lg:row-span-4 lg:px-4 lg:pb-4 lg:pr-12 lg:pt-12"
       @search-complete.window="isSearching = false"
       x-data="{
     selectedParty: 'democrat',
@@ -525,6 +525,23 @@ getFeatureBounds(feature) {
     } else coords.forEach(walk);
   };
   walk(g.coordinates);
+  return [[minX, minY], [maxX, maxY]];
+},
+
+getGeoJSONBounds() {
+  const fc = this.geojsonData?.county;
+  if (!fc?.features?.length) return [[-80.5199, 39.7198], [-74.6895, 42.26986]];
+  
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  
+  fc.features.forEach(feature => {
+    const [[fMinX, fMinY], [fMaxX, fMaxY]] = this.getFeatureBounds(feature);
+    if (fMinX < minX) minX = fMinX;
+    if (fMinY < minY) minY = fMinY;
+    if (fMaxX > maxX) maxX = fMaxX;
+    if (fMaxY > maxY) maxY = fMaxY;
+  });
+  
   return [[minX, minY], [maxX, maxY]];
 },
 
@@ -1433,7 +1450,7 @@ window.dispatchEvent(new Event('legend-clear'));
             id: 'pa-map',
             styleURL: 'https://tiles.openfreemap.org/styles/positron',
             bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-            padding: 24,
+            padding: window.innerWidth < 768 ? 80 : 40,
             minZoom: 3,
             maxZoom: 18,
             zoom: 6,
@@ -1477,8 +1494,10 @@ window.dispatchEvent(new Event('legend-clear'));
                 compact: true
               }));
 
-        this.map.on('load', () => {
-          this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { padding: 24 });
+          this.map.on('load', () => {
+            this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { 
+              padding: window.innerWidth < 768 ? 80 : 40 
+            });
 
           this.map.getStyle().layers.forEach(layer => {
             if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
@@ -1497,8 +1516,12 @@ window.dispatchEvent(new Event('legend-clear'));
             if (this.map.getLayer('counties-fill')) {
               this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
             }
+            
+            this.map.fitBounds(this.getGeoJSONBounds(), { 
+              padding: window.innerWidth < 768 ? 80 : 40,
+              duration: 0
+            });
           });
-
           this.map.getCanvas().addEventListener('mouseleave', () => {
             window.dispatchEvent(new Event('legend-clear'));
           });
@@ -1578,8 +1601,8 @@ window.dispatchEvent(new Event('legend-clear'));
       </div>
     </div>
 
-<div
-      class="col-span-1 lg:col-span-5 row-span-1 lg:row-span-2 bg-black p-4 lg:pb-2 lg:pl-12 lg:pr-2 order-2 lg:order-3"
+    <div
+      class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pb-2 lg:pl-12 lg:pr-2"
       x-ref="treemapContainer"
       x-show="datasets && datasets.total && datasets.total.length > 0"
       x-init="
@@ -1599,8 +1622,8 @@ window.dispatchEvent(new Event('legend-clear'));
       "
     ></div>
 
-<div
-      class="col-span-1 lg:col-span-12 row-span-1 lg:row-span-2 bg-black px-4 py-4 lg:px-12 lg:py-8 order-4"
+    <div
+      class="order-4 col-span-1 row-span-1 bg-black px-4 py-4 lg:col-span-12 lg:row-span-2 lg:px-12 lg:py-8"
       x-data="{ selectedCounty: 'Pennsylvania' }"
     >
       <div class="flex h-[76px] w-full">
