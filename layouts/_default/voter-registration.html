@@ -246,29 +246,28 @@
       x-data="{
     selectedParty: 'democrat',
     isSearching: false,
-partyConfig: {
+partyConfig: Object.freeze({
   democrat: {
-    colors: ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
-    labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
+    colors: Object.freeze(['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47']),
+    labels: Object.freeze(['10%', '20%', '30%', '40%', '50%', '60%', '70%']),
     borderColor: '#1abeff'
   },
   republican: {
-    colors: ['#ffe0e0', '#ffb3b3', '#ff8080', '#ff4d4d', '#e00000', '#b30000', '#7a0000', '#330000'],
-    labels: ['10%', '20%', '30%', '40%', '50%', '60%', '70%'],
+    colors: Object.freeze(['#ffe0e0', '#ffb3b3', '#ff8080', '#ff4d4d', '#e00000', '#b30000', '#7a0000', '#330000']),
+    labels: Object.freeze(['10%', '20%', '30%', '40%', '50%', '60%', '70%']),
     borderColor: '#ff1a1a'
   },
   'no-party': {
-    colors: ['#fff6cc', '#ffe999', '#ffdc66', '#ffcf33', '#e0b300', '#b38600', '#7a5c00', '#332600'],
-    labels: ['3%', '6%', '9%', '12%', '15%', '18%', '21%'],
+    colors: Object.freeze(['#fff6cc', '#ffe999', '#ffdc66', '#ffcf33', '#e0b300', '#b38600', '#7a5c00', '#332600']),
+    labels: Object.freeze(['3%', '6%', '9%', '12%', '15%', '18%', '21%']),
     borderColor: '#f0c000'
   },
   other: {
-    colors: ['#d8fbf6', '#aff5ea', '#86efe0', '#5de9d6', '#22cdb8', '#199e8e', '#0f6f63', '#083934'],
-    labels: ['1%', '2%', '3%', '4%', '5%', '6%', '7%'],
+    colors: Object.freeze(['#d8fbf6', '#aff5ea', '#86efe0', '#5de9d6', '#22cdb8', '#199e8e', '#0f6f63', '#083934']),
+    labels: Object.freeze(['1%', '2%', '3%', '4%', '5%', '6%', '7%']),
     borderColor: '#24ccb8'
   }
-}
-
+})
   }"
     >
       <div
@@ -988,7 +987,7 @@ getPaletteForParty(party) {
     'no-party': ['#fff6cc', '#ffe999', '#ffdc66', '#ffcf33', '#e0b300', '#b38600', '#7a5c00', '#332600'],
     other:      ['#d8fbf6', '#aff5ea', '#86efe0', '#5de9d6', '#22cdb8', '#199e8e', '#0f6f63', '#083934']
   };
-  return cfg[party];
+  return [...cfg[party]]; 
 },
 getSharePropKey(party) {
   return ({
@@ -1001,13 +1000,19 @@ getSharePropKey(party) {
 buildFillColorExpression(party) {
   const key = this.getSharePropKey(party);
   const breaks = this.getBreaksForParty(party);
-  const colors = this.getPaletteForParty(party);
+  const colorMap = {
+    democrat:   ['#d4f1ff', '#8fd6ff', '#4bbcff', '#009eff', '#0079d1', '#005aa3', '#003c75', '#001f47'],
+    republican: ['#ffe0e0', '#ffb3b3', '#ff8080', '#ff4d4d', '#e00000', '#b30000', '#7a0000', '#330000'],
+    'no-party': ['#fff6cc', '#ffe999', '#ffdc66', '#ffcf33', '#e0b300', '#b38600', '#7a5c00', '#332600'],
+    other:      ['#d8fbf6', '#aff5ea', '#86efe0', '#5de9d6', '#22cdb8', '#199e8e', '#0f6f63', '#083934']
+  };
+  const colors = [...colorMap[party]];
   const expr = ['case', ['==', ['get', key], null], '#cccccc'];
   for (let i = 0; i < breaks.length - 1; i++) {
     expr.push(['<', ['get', key], breaks[i]], colors[i]);
   }
   expr.push(colors[colors.length - 1]);
-  return expr;
+  return JSON.parse(JSON.stringify(expr));
 },
 
 setupLayers() {
@@ -1499,10 +1504,14 @@ window.dispatchEvent(new Event('legend-clear'));
                 compact: true
               }));
 
-          this.map.on('load', () => {
-            this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { 
-              padding: window.innerWidth < 768 ? 80 : 40 
-            });
+this.map.on('load', () => {
+  setTimeout(() => {
+    if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
+      this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { 
+        padding: window.innerWidth < 768 ? 80 : 40 
+      });
+    }
+  }, 100);
 
           this.map.getStyle().layers.forEach(layer => {
             if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
@@ -1522,10 +1531,24 @@ window.dispatchEvent(new Event('legend-clear'));
               this.map.setPaintProperty('counties-fill', 'fill-color', this.buildFillColorExpression(this.selectedParty));
             }
             
-            this.map.fitBounds(this.getGeoJSONBounds(), { 
-              padding: window.innerWidth < 768 ? 80 : 40,
-              duration: 0
-            });
+if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
+  try {
+    this.map.fitBounds(this.getGeoJSONBounds(), { 
+      padding: window.innerWidth < 768 ? 80 : 40,
+      duration: 0
+    });
+  } catch (e) {
+    console.warn('Could not fit bounds, will retry', e);
+    setTimeout(() => {
+      if (this.map) {
+        this.map.fitBounds(this.getGeoJSONBounds(), { 
+          padding: window.innerWidth < 768 ? 80 : 40,
+          duration: 0
+        });
+      }
+    }, 200);
+  }
+}
           });
           this.map.getCanvas().addEventListener('mouseleave', () => {
             window.dispatchEvent(new Event('legend-clear'));
