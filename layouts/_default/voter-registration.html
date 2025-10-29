@@ -1599,7 +1599,10 @@ window.dispatchEvent(new Event('legend-clear'));
       "
     ></div>
 
-    <div class="col-span-12 row-span-2 bg-black px-12 py-8">
+    <div
+      class="col-span-12 row-span-2 bg-black px-12 py-8"
+      x-data="{ selectedCounty: 'Pennsylvania' }"
+    >
       <div class="flex h-[76px] w-full">
         <div
           class="justify-left flex h-full w-1/2 items-center bg-g-1 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-black"
@@ -1611,6 +1614,8 @@ window.dispatchEvent(new Event('legend-clear'));
             class="relative flex h-full w-full items-center justify-end bg-g-1"
           >
             <select
+              x-model="selectedCounty"
+              @change="$dispatch('county-changed', selectedCounty)"
               class="h-full w-3/5 cursor-pointer appearance-none rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
             >
               <option value="Pennsylvania">Pennsylvania</option>
@@ -1706,175 +1711,202 @@ window.dispatchEvent(new Event('legend-clear'));
 
       <div
         x-data="{
-    datasets: {},
-    svg: null,
-    init() {
-      const onReady = (e) => { this.datasets = e.detail.datasets || {}; this.render(); };
-      window.addEventListener('inspections-data-ready', onReady);
-      window.addEventListener('inspections-data-updated', (e) => { this.datasets = (e.detail && e.detail.datasets) || this.datasets; this.render(); });
-      window.addEventListener('resize', () => this.render());
-      this.$nextTick(() => this.render());
-    },
-    parseRows() {
-      const rows = (this.datasets['party-year'] || []).map(d => ({
-        Year: +d.Year,
-        Democrat: +d.Democrat,
-        Republican: +d.Republican,
-        Other: +(d['Other Parties'] ?? d.Other ?? 0)
-      })).filter(d => Number.isFinite(d.Year));
-      rows.sort((a,b) => a.Year - b.Year);
-      return rows;
-    },
-    render() {
-      const data = this.parseRows();
-      const wrap = this.$refs.wrap;
-      const svg = d3.select(this.$refs.svg);
+              datasets: {},
+              svg: null,
+              selectedCounty: 'Pennsylvania',
+              init() {
+                const onReady = (e) => { this.datasets = e.detail.datasets || {}; this.render(); };
+                window.addEventListener('inspections-data-ready', onReady);
+                window.addEventListener('inspections-data-updated', (e) => { this.datasets = (e.detail && e.detail.datasets) || this.datasets; this.render(); });
+                window.addEventListener('resize', () => this.render());
+                
+                window.addEventListener('county-changed', (e) => {
+                  this.selectedCounty = e.detail;
+                  this.render();
+                });
+                
+                this.$nextTick(() => this.render());
+              },
+              parseRows() {
+                let sourceData;
+                
+                if (this.selectedCounty === 'Pennsylvania') {
+                  sourceData = this.datasets['party-year'] || [];
+                } else {
+                  const countyYearData = this.datasets['county-year'] || [];
+                  sourceData = countyYearData.filter(d => d.County === this.selectedCounty);
+                }
+                
+                const rows = sourceData.map(d => ({
+                  Year: +d.Year,
+                  Democrat: +(d.Democrat || d.Democratic || 0),
+                  Republican: +d.Republican,
+                  Other: +(d['Other Parties'] ?? d.Other ?? 0)
+                })).filter(d => Number.isFinite(d.Year) && d.Year > 0);
+                
+                rows.sort((a,b) => a.Year - b.Year);
+                return rows;
+              },
+              formatNumber(num) {
+                if (num >= 1000000) {
+                  const millions = num / 1000000;
+                  return millions % 1 === 0 ? `${millions}M` : `${millions.toFixed(1)}M`;
+                } else if (num >= 1000) {
+                  const thousands = num / 1000;
+                  return thousands % 1 === 0 ? `${thousands}K` : `${thousands.toFixed(1)}K`;
+                }
+                return num.toLocaleString();
+              },
+            render() {
+              const data = this.parseRows();
+              const wrap = this.$refs.wrap;
+              const svg = d3.select(this.$refs.svg);
 
-      if (!wrap || data.length === 0) {
-        if (svg) svg.selectAll('*').remove();
-        return;
-      }
+              if (!wrap || data.length === 0) {
+                if (svg) svg.selectAll('*').remove();
+                return;
+              }
 
-      const W = Math.max(640, wrap.clientWidth);
-      const H = Math.max(300, wrap.clientHeight);
-      const margin = { top: 12, right: 96, bottom: 30, left: 40 };
-      const width = W - margin.left - margin.right;
-      const height = H - margin.top - margin.bottom;
+              const W = Math.max(640, wrap.clientWidth);
+              const H = Math.max(300, wrap.clientHeight);
+              const margin = { top: 12, right: 96, bottom: 30, left: 40 };
+              const width = W - margin.left - margin.right;
+              const height = H - margin.top - margin.bottom;
 
-      svg.selectAll('*').remove();
-      svg.attr('viewBox', `0 0 ${W} ${H}`);
+              svg.selectAll('*').remove();
+              svg.attr('viewBox', `0 0 ${W} ${H}`);
 
-      const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+              const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-      const series = [
-        { key: 'Democrat',   color: '#009edb', label: 'Democrat' },
-        { key: 'Republican', color: '#d70000', label: 'Republican' },
-        { key: 'Other',      color: '#1b998b', label: 'Other parties' }
-      ];
+              const series = [
+                { key: 'Democrat',   color: '#009edb', label: 'Democrat' },
+                { key: 'Republican', color: '#d70000', label: 'Republican' },
+                { key: 'Other',      color: '#1b998b', label: 'Other parties' }
+              ];
 
-      const x = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.Year))
-        .range([0, width]);
+              const x = d3.scaleLinear()
+                .domain(d3.extent(data, d => d.Year))
+                .range([0, width]);
 
-      const y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => Math.max(d.Democrat, d.Republican, d.Other)) * 1.05])
-        .nice()
-        .range([height, 0]);
+              const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => Math.max(d.Democrat, d.Republican, d.Other)) * 1.05])
+                .nice()
+                .range([height, 0]);
 
-      g.append('g')
-        .attr('class', 'y-grid')
-        .attr('opacity', 0.25)
-        .call(d3.axisLeft(y).tickSize(-width).tickFormat('').tickSizeOuter(0))
-        .call(g => g.select('.domain').remove())
-        .selectAll('line').attr('stroke', '#9ca3af');
+              g.append('g')
+                .attr('class', 'y-grid')
+                .attr('opacity', 0.25)
+                .call(d3.axisLeft(y).tickSize(-width).tickFormat('').tickSizeOuter(0))
+                .call(g => g.select('.domain').remove())
+                .selectAll('line').attr('stroke', '#9ca3af');
 
-      g.append('g')
-        .attr('class', 'x-axis')
-        .attr('transform', `translate(0,${height})`)
-        .call(
-          d3.axisBottom(x)
-            .tickFormat(d => d === 1998 ? '' : d3.format('d')(d))
-            .tickSize(0)
-        )
-        .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#888').attr('dy', '1em'));
+              g.append('g')
+                .attr('class', 'x-axis')
+                .attr('transform', `translate(0,${height})`)
+                .call(
+                  d3.axisBottom(x)
+                    .tickFormat(d => d === 1998 ? '' : d3.format('d')(d))
+                    .tickSize(0)
+                )
+                .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#888').attr('dy', '1em'));
 
 
-      g.append('g')
-        .attr('class', 'y-axis')
-        .call(
-          d3.axisLeft(y)
-            .ticks(6)
-            .tickFormat(d => d === 0 ? '' : d3.format('~s')(d).replace('G','B'))
-            .tickSize(0)
-        )
-        .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#A2A2A2').attr('dx', '-3'))
-        .call(a => a.select('.domain').remove());
+              g.append('g')
+                .attr('class', 'y-axis')
+                .call(
+                  d3.axisLeft(y)
+                    .ticks(6)
+                    .tickFormat(d => d === 0 ? '' : d3.format('~s')(d).replace('G','B'))
+                    .tickSize(0)
+                )
+                .call(a => a.selectAll('text').attr('font-size', 14).attr('fill', '#A2A2A2').attr('dx', '-3'))
+                .call(a => a.select('.domain').remove());
 
-      const line = d3.line()
-        .defined(d => Number.isFinite(d.value))
-        .x(d => x(d.Year))
-        .y(d => y(d.value))
-        .curve(d3.curveMonotoneX);
+              const line = d3.line()
+                .defined(d => Number.isFinite(d.value))
+                .x(d => x(d.Year))
+                .y(d => y(d.value))
+                .curve(d3.curveMonotoneX);
 
-      series.forEach(s => {
-        const values = data.map(d => ({ Year: d.Year, value: d[s.key] }));
-        g.append('path')
-          .datum(values)
-          .attr('fill', 'none')
-          .attr('stroke', s.color)
-          .attr('stroke-width', 3)
-          .attr('d', line);
-      });
+              series.forEach(s => {
+                const values = data.map(d => ({ Year: d.Year, value: d[s.key] }));
+                g.append('path')
+                  .datum(values)
+                  .attr('fill', 'none')
+                  .attr('stroke', s.color)
+                  .attr('stroke-width', 3)
+                  .attr('d', line);
+              });
 
-      const shortLabel = { Democrat: 'Dem.', Republican: 'Rep.', Other: 'Other' };
-      series.forEach(s => {
-        const last = data[data.length - 1];
-        if (Number.isFinite(last[s.key])) {
-          g.append('text')
-            .attr('x', x(last.Year) + 6)
-            .attr('y', y(last[s.key]))
-            .attr('dominant-baseline', 'middle')
-            .attr('font-weight', 700)
-            .attr('font-size', 14)
-            .attr('fill', s.color)
-            .text(shortLabel[s.key]);
-        }
-      });
+              const shortLabel = { Democrat: 'Dem.', Republican: 'Rep.', Other: 'Other' };
+              series.forEach(s => {
+                const last = data[data.length - 1];
+                if (Number.isFinite(last[s.key])) {
+                  g.append('text')
+                    .attr('x', x(last.Year) + 6)
+                    .attr('y', y(last[s.key]))
+                    .attr('dominant-baseline', 'middle')
+                    .attr('font-weight', 700)
+                    .attr('font-size', 14)
+                    .attr('fill', s.color)
+                    .text(shortLabel[s.key]);
+                }
+              });
 
-      const bisect = d3.bisector(d => d.Year).left;
+              const bisect = d3.bisector(d => d.Year).left;
 
-      const focus = g.append('g').style('display', 'none');
-      focus.append('line')
-        .attr('class', 'x-guide')
-        .attr('y1', 0).attr('y2', height)
-        .attr('stroke', '#111').attr('stroke-dasharray', '3,3').attr('opacity', 0.4);
+              const focus = g.append('g').style('display', 'none');
+              focus.append('line')
+                .attr('class', 'x-guide')
+                .attr('y1', 0).attr('y2', height)
+                .attr('stroke', '#111').attr('stroke-dasharray', '3,3').attr('opacity', 0.4);
 
-      const dots = {};
-      series.forEach(s => {
-        dots[s.key] = focus.append('circle').attr('r', 4.5).attr('fill', s.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
-      });
+              const dots = {};
+              series.forEach(s => {
+                dots[s.key] = focus.append('circle').attr('r', 4.5).attr('fill', s.color).attr('stroke', '#fff').attr('stroke-width', 1.5);
+              });
 
-      const tooltip = d3.select(this.$refs.tooltip);
+              const tooltip = d3.select(this.$refs.tooltip);
 
-      svg.append('rect')
-        .attr('transform', `translate(${margin.left},${margin.top})`)
-        .attr('width', width).attr('height', height)
-        .attr('fill', 'transparent')
-        .style('cursor', 'crosshair')
-        .on('mousemove', (event) => {
-          const [px] = d3.pointer(event);
-          const year = Math.round(x.invert(px));
-          const idx = Math.min(Math.max(bisect(data, year) - 1, 0), data.length - 1);
-          const d = data[idx];
+              svg.append('rect')
+                .attr('transform', `translate(${margin.left},${margin.top})`)
+                .attr('width', width).attr('height', height)
+                .attr('fill', 'transparent')
+                .style('cursor', 'crosshair')
+                .on('mousemove', (event) => {
+                  const [px] = d3.pointer(event);
+                  const year = Math.round(x.invert(px));
+                  const idx = Math.min(Math.max(bisect(data, year) - 1, 0), data.length - 1);
+                  const d = data[idx];
 
-          focus.style('display', null);
-          focus.select('.x-guide').attr('transform', `translate(${x(d.Year)},0)`);
+                  focus.style('display', null);
+                  focus.select('.x-guide').attr('transform', `translate(${x(d.Year)},0)`);
 
-          series.forEach(s => {
-            dots[s.key].attr('cx', x(d.Year)).attr('cy', y(d[s.key]));
-          });
+                  series.forEach(s => {
+                    dots[s.key].attr('cx', x(d.Year)).attr('cy', y(d[s.key]));
+                  });
 
-          tooltip.classed('hidden', false)
-            .html(`
-              <div style='font-weight:700; margin-bottom:4px'>${d.Year}</div>
-              <div>Democrat: ${d3.format(',')(d.Democrat)}</div>
-              <div>Republican: ${d3.format(',')(d.Republican)}</div>
-              <div>Other: ${d3.format(',')(d.Other)}</div>
-            `);
+                  tooltip.classed('hidden', false)
+                    .html(`
+                      <div style='font-weight:700; margin-bottom:4px'>${d.Year}</div>
+                      <div>Democrat: ${d3.format(',')(d.Democrat)}</div>
+                      <div>Republican: ${d3.format(',')(d.Republican)}</div>
+                      <div>Other: ${d3.format(',')(d.Other)}</div>
+                    `);
 
-          const tW = tooltip.node().offsetWidth || 140;
-          const tH = tooltip.node().offsetHeight || 60;
-          const tx = margin.left + x(d.Year) + 12 + tW > W ? margin.left + x(d.Year) - 12 - tW : margin.left + x(d.Year) + 12;
-          const minY = Math.min(y(d.Democrat), y(d.Republican), y(d.Other));
-          const ty = margin.top + minY - tH - 8;
-          tooltip.style('left', `${Math.max(8, tx)}px`).style('top', `${Math.max(8, ty)}px`);
-        })
-        .on('mouseleave', () => {
-          focus.style('display', 'none');
-          tooltip.classed('hidden', true);
-        });
-    }
-  }"
+                  const tW = tooltip.node().offsetWidth || 140;
+                  const tH = tooltip.node().offsetHeight || 60;
+                  const tx = margin.left + x(d.Year) + 12 + tW > W ? margin.left + x(d.Year) - 12 - tW : margin.left + x(d.Year) + 12;
+                  const minY = Math.min(y(d.Democrat), y(d.Republican), y(d.Other));
+                  const ty = margin.top + minY - tH - 8;
+                  tooltip.style('left', `${Math.max(8, tx)}px`).style('top', `${Math.max(8, ty)}px`);
+                })
+                .on('mouseleave', () => {
+                  focus.style('display', 'none');
+                  tooltip.classed('hidden', true);
+                });
+            }
+          }"
         class="w-full bg-g-1 p-4"
       >
         <div x-ref="wrap" class="relative h-[300px] w-full">
