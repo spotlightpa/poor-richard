@@ -1792,14 +1792,14 @@ window.dispatchEvent(new Event('legend-clear'));
                 return;
               }
 
-              const W = Math.max(640, wrap.clientWidth);
-              const H = Math.max(300, wrap.clientHeight);
+              const W = wrap.clientWidth;
+              const H = 300; 
               const margin = { top: 12, right: 96, bottom: 30, left: 40 };
-              const width = W - margin.left - margin.right;
+              const width = Math.max(200, W - margin.left - margin.right);
               const height = H - margin.top - margin.bottom;
 
               svg.selectAll('*').remove();
-              svg.attr('viewBox', `0 0 ${W} ${H}`);
+              svg.attr('width', W).attr('height', H); 
 
               const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -1828,12 +1828,18 @@ window.dispatchEvent(new Event('legend-clear'));
               const isMobile = window.innerWidth < 768;
               const xAxis = d3.axisBottom(x).tickSize(0);
 
-              if (isMobile) {
-                const allYears = data.map(d => d.Year);
-                const filteredYears = allYears.filter((_, i) => i % 2 === 0);
-                xAxis.tickValues(filteredYears);
-                xAxis.tickFormat(d => d === 1998 ? '' : `'${String(d).slice(-2)}`);
-              } else {
+            if (isMobile) {
+              const allYears = data.map(d => d.Year);
+              const isVerySmall = window.innerWidth < 580;
+              const filteredYears = allYears.filter(year => {
+                if (isVerySmall) {
+                  return year % 4 === 0;
+                }
+                return year % 2 === 0;
+              });
+              xAxis.tickValues(filteredYears);
+              xAxis.tickFormat(d => d === 1998 ? '' : `'${String(d).slice(-2)}`);
+            } else {
                 xAxis.tickFormat(d => d === 1998 ? '' : d3.format('d')(d));
               }
 
@@ -1942,8 +1948,8 @@ window.dispatchEvent(new Event('legend-clear'));
           }"
         class="w-full bg-g-1 p-4"
       >
-        <div x-ref="wrap" class="relative h-[300px] w-full">
-          <svg x-ref="svg" class="absolute inset-0 h-full w-full"></svg>
+<div x-ref="wrap" class="relative h-[300px] w-full overflow-x-auto">
+  <svg x-ref="svg"></svg>
           <div
             x-ref="tooltip"
             class="pointer-events-none absolute hidden rounded bg-black/90 px-2 py-1 text-xs font-semibold text-white shadow"
