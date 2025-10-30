@@ -1753,8 +1753,17 @@
          .style('cursor', 'crosshair')
          .on('mousemove', (event) => {
          const [px] = d3.pointer(event);
-         const year = Math.round(x.invert(px));
-         const idx = Math.min(Math.max(bisect(data, year) - 1, 0), data.length - 1);
+         const year = x.invert(px);
+         let idx = bisect(data, year);
+         if (idx > 0 && idx < data.length) {
+         const d0 = data[idx - 1];
+         const d1 = data[idx];
+         idx = year - d0.Year > d1.Year - year ? idx : idx - 1;
+         } else if (idx >= data.length) {
+         idx = data.length - 1;
+         } else {
+         idx = 0;
+         }
          const d = data[idx];
          focus.style('display', null);
          focus.select('.x-guide').attr('transform', `translate(${x(d.Year)},0)`);
