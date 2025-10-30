@@ -397,7 +397,7 @@
         </div>
       </div>
       <div
-        class="relative h-full w-full"
+        class="relative h-full w-full max-[440px]"
         @search-submitted.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
         x-data="{
          selected: 'county',
@@ -1395,33 +1395,32 @@
       >
         <div
           x-ref="mapCanvas"
-          class="absolute inset-0 h-full w-full"
+          class="absolute inset-0 max-[440px]:top-[44px] h-full w-full"
           style="overflow: visible;"
         ></div>
         <div
-          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow"
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:h-11 max-[440px]:shadow-none"
+
         >
           <button
             :data-checked="selected === 'county'"
             @click="selected='county'"
             title="County"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
-          >
-            Counties
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          ><span class="max-[440px]:hidden">Counties</span><span class="hidden max-[440px]:inline">County</span>
           </button>
           <button
             :data-checked="selected === 'congressional'"
             @click="selected='congressional'"
             title="Congressional"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
-          >
-            Congressional
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          ><span class="max-[440px]:hidden">Congressional</span><span class="hidden max-[440px]:inline">Congress</span>
           </button>
           <button
             :data-checked="selected === 'senate'"
             @click="selected='senate'"
             title="Senate"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
           >
             Senate
           </button>
@@ -1429,7 +1428,7 @@
             :data-checked="selected === 'house'"
             @click="selected='house'"
             title="House"
-            class="px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
           >
             House
           </button>
