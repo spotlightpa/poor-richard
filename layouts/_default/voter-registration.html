@@ -453,37 +453,17 @@ partyConfig: Object.freeze({
         searchPopup: null,
         isSearching: false, 
 
-
-
-
 async geocodeAddress(q) {
   if (!q || typeof q !== 'string') return null;
-  const map = this.map;
-  const bounds = map && map.getBounds();
-  const params = new URLSearchParams({
-    format: 'jsonv2',
-    q,
-    countrycodes: 'us',
-    limit: '1'
-  });
-  if (bounds) {
-    params.set('viewbox', [
-      bounds.getWest().toFixed(6),
-      bounds.getNorth().toFixed(6),
-      bounds.getEast().toFixed(6),
-      bounds.getSouth().toFixed(6)
-    ].join(','));
-    params.set('bounded', '1');
-  }
-  const res = await fetch(`https://nominatim.openstreetmap.org/search?${params.toString()}`, {
-    headers: { 'Accept-Language': 'en' }
-  }).catch(() => null);
+  const params = new URLSearchParams({ address: q });
+  const res = await fetch(`https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?${params.toString()}`).catch(() => null);
   if (!res || !res.ok) return null;
   const data = await res.json().catch(() => null);
-  if (!Array.isArray(data) || !data.length) return null;
-  const hit = data[0];
-  const lon = parseFloat(hit.lon);
-  const lat = parseFloat(hit.lat);
+  if (!data || data.status !== 'OK' || !data.results || !data.results.length) return null;
+  const location = data.results[0].geometry?.location;
+  if (!location) return null;
+  const lon = parseFloat(location.lng);
+  const lat = parseFloat(location.lat);
   return (Number.isFinite(lon) && Number.isFinite(lat)) ? { lon, lat } : null;
 },
 
