@@ -1295,28 +1295,28 @@
          const el = this.$refs.mapCanvas;
          if (!el || this.map) return;
          const mapComponent = window.maplibreComponent({
-         id: 'pa-map',
-         styleURL: 'https://tiles.openfreemap.org/styles/positron',
-         bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-         padding: window.innerWidth < 768 ? 20 : 40,
-         minZoom: 3,
-         maxZoom: 18,
-         zoom: 6,
-         controls: ['navigation'],
-         attributionCompact: true
-         });
-         mapComponent.init.call({
-         $refs: { canvas: el },
-         map: null,
-         _io: null,
-         _ro: null,
-         _initializing: false,
-         _flyToHandler: null,
-         _mobileViewHandler: null,
-         _markerInstances: [],
-         _baseMarkerInstances: [],
-         ...mapComponent
-         });
+          id: 'pa-map',
+          styleURL: 'https://tiles.openfreemap.org/styles/positron',
+          bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
+          padding: window.innerWidth < 768 ? 20 : 40,
+          minZoom: 3,
+          maxZoom: 18,
+          zoom: 6,
+          controls: ['navigation'],
+          attributionCompact: true
+        });
+        mapComponent.init.call({
+          $refs: { canvas: el },
+          map: null,
+          _io: null,
+          _ro: null,
+          _initializing: false,
+          _flyToHandler: null,
+          _mobileViewHandler: null,
+          _markerInstances: [],
+          _baseMarkerInstances: [],
+          ...mapComponent
+        });
          setTimeout(() => {
          if (window.maplibregl && window.maplibregl.Map) {
          this.map = new maplibregl.Map({
@@ -1333,14 +1333,19 @@
          attributionControl: false,
          cooperativeGestures: true
          });
-         this.map.addControl(new maplibregl.NavigationControl({
-         showCompass: false,
-         showZoom: true,
-         visualizePitch: false
-         }), 'top-right');
-         this.map.addControl(new maplibregl.AttributionControl({
-         compact: true
-         }));
+        this.map.addControl(new maplibregl.NavigationControl({
+          showCompass: false,
+          showZoom: true,
+          visualizePitch: false
+        }), 'top-right');
+
+        ['.maplibregl-ctrl-attrib', '.mapboxgl-ctrl-attrib'].forEach(sel => {
+          document.querySelectorAll(sel).forEach(el => el.remove());
+        });
+
+        const attribCtrl = new maplibregl.AttributionControl({ compact: true });
+        this.map.addControl(attribCtrl, 'bottom-right');
+
          this.map.on('load', () => {
          setTimeout(() => {
          if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
