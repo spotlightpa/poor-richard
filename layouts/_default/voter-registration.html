@@ -397,7 +397,7 @@
         </div>
       </div>
       <div
-        class="relative h-full w-full max-[440px]"
+        class="max-[440px] relative h-full w-full"
         @search-submitted.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
         x-data="{
          selected: 'county',
@@ -1395,26 +1395,29 @@
       >
         <div
           x-ref="mapCanvas"
-          class="absolute inset-0 max-[440px]:top-[44px] h-full w-full"
+          class="absolute inset-0 h-full w-full max-[440px]:top-[44px]"
           style="overflow: visible;"
         ></div>
         <div
-          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:h-11 max-[440px]:shadow-none"
-
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:h-11 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:shadow-none"
         >
           <button
             :data-checked="selected === 'county'"
             @click="selected='county'"
             title="County"
             class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
-          ><span class="max-[440px]:hidden">Counties</span><span class="hidden max-[440px]:inline">County</span>
+          >
+            <span class="max-[440px]:hidden">Counties</span
+            ><span class="hidden max-[440px]:inline">County</span>
           </button>
           <button
             :data-checked="selected === 'congressional'"
             @click="selected='congressional'"
             title="Congressional"
             class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
-          ><span class="max-[440px]:hidden">Congressional</span><span class="hidden max-[440px]:inline">Congress</span>
+          >
+            <span class="max-[440px]:hidden">Congressional</span
+            ><span class="hidden max-[440px]:inline">Congress</span>
           </button>
           <button
             :data-checked="selected === 'senate'"
@@ -1455,8 +1458,8 @@
       });
       "
     ></div>
-<div
-      class="max-[440px]:pt-16 order-4 col-span-1 row-span-1 bg-black px-4 py-6 lg:col-span-12 lg:row-span-2 lg:px-12 lg:py-8 lg:pb-20"
+    <div
+      class="order-4 col-span-1 row-span-1 bg-black px-4 py-6 max-[440px]:pt-16 lg:col-span-12 lg:row-span-2 lg:px-12 lg:py-8 lg:pb-20"
       x-data="{ selectedCounty: 'Pennsylvania' }"
     >
       <div class="flex h-[76px] w-full">
@@ -1465,9 +1468,9 @@
         >
           Voter registration over time
         </div>
-        <div class="flex h-full w-full items-center rounded-tr-lg bg-g-9 px-3 pt-4 md:w-1/2 max-[849px]:rounded-tl-lg">
-
-
+        <div
+          class="flex h-full w-full items-center rounded-tr-lg bg-g-9 px-3 pt-4 max-[849px]:rounded-tl-lg md:w-1/2"
+        >
           <div
             class="relative flex h-full w-full items-center justify-end bg-g-9"
           >
@@ -1565,7 +1568,9 @@
           </div>
         </div>
       </div>
-      <div class="bg-g-9 pt-4 flex items-center justify-center gap-4 px-3 max-[449px]:flex hidden">
+      <div
+        class="flex hidden items-center justify-center gap-4 bg-g-9 px-3 pt-4 max-[449px]:flex"
+      >
         <div class="flex items-center gap-1.5">
           <div class="h-1 w-8 bg-[#009edb]"></div>
           <span class="text-sm font-semibold text-white">Dem.</span>
@@ -1789,12 +1794,22 @@
               About the Data
             </h1>
             <p class="mb-4">
-              The data comes from the <a href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics#accordion-6cb6ca8a99-item-df8c67bfea">
-                official website of the Commonwealth of Pennsylvania</a>, using the state's Voting & Election Statistics data.
+              The data comes from the
+              <a
+                href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics#accordion-6cb6ca8a99-item-df8c67bfea"
+              >
+                official website of the Commonwealth of Pennsylvania</a
+              >, using the state's Voting & Election Statistics data.
               <br /><br />
-              The maps shows the total number of registered voters in each county, broken down by political party. The “No party” column includes only voters whose registration lists “No affiliation” exactly. It does not include voters whose party field is blank or listed as “none” or another unaffiliated designation.
+              The maps shows the total number of registered voters in each
+              county, broken down by political party. The “No party” column
+              includes only voters whose registration lists “No affiliation”
+              exactly. It does not include voters whose party field is blank or
+              listed as “none” or another unaffiliated designation.
               <br /><br />
-              Historical data is compiled from totals reported each November, using only party categories that have appeared consistently over the years.
+              Historical data is compiled from totals reported each November,
+              using only party categories that have appeared consistently over
+              the years.
             </p>
             <div class="my-8 flex justify-center">
               <hr
