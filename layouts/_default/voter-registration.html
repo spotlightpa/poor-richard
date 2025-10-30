@@ -574,7 +574,10 @@
          if (containing) {
          const { feature, layerType } = containing;
          if (layerType !== this.selected) { this.selected = layerType; this.updateLayerVisibility?.(); }
-         this.map.fitBounds(this.getFeatureBounds(feature), { padding: 32, maxZoom: 10 });
+         this.map.fitBounds(this.getFeatureBounds(feature), { 
+         padding: window.innerWidth < 768 ? 20 : 32, 
+         maxZoom: window.innerWidth < 768 ? 8 : 10 
+         });
          if (!this.popup) this.popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
          this.popup.setLngLat([lon, lat]).setHTML(this.buildHoverPopupHTML(feature, layerType)).addTo(this.map);
          } else {
@@ -1273,7 +1276,7 @@
          id: 'pa-map',
          styleURL: 'https://tiles.openfreemap.org/styles/positron',
          bounds: [[-80.5199, 39.7198], [-74.6895, 42.26986]],
-         padding: window.innerWidth < 768 ? 80 : 40,
+         padding: window.innerWidth < 768 ? 20 : 40,
          minZoom: 3,
          maxZoom: 18,
          zoom: 6,
@@ -1298,8 +1301,8 @@
          container: el,
          style: 'https://tiles.openfreemap.org/styles/positron',
          center: [-77.5, 40.9],
-         zoom: 6,
-         minZoom: 5.5, // Prevent zooming out too far
+         zoom: window.innerWidth < 768 ? 5.5 : 6,
+         minZoom: window.innerWidth < 768 ? 5 : 5.5,
          maxZoom: 18,
          maxBounds: [
          [-83, 38],
@@ -1320,7 +1323,8 @@
          setTimeout(() => {
          if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
          this.map.fitBounds([[-80.5199, 39.7198], [-74.6895, 42.26986]], { 
-         padding: window.innerWidth < 768 ? 80 : 40 
+         padding: window.innerWidth < 768 ? 20 : 40,
+         maxZoom: window.innerWidth < 768 ? 6 : 8
          });
          }
          }, 100);
@@ -1343,7 +1347,8 @@
          if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
          try {
          this.map.fitBounds(this.getGeoJSONBounds(), { 
-         padding: window.innerWidth < 768 ? 80 : 40,
+         padding: window.innerWidth < 768 ? 20 : 40,
+         maxZoom: window.innerWidth < 768 ? 6 : 8,
          duration: 0
          });
          } catch (e) {
@@ -1351,7 +1356,8 @@
          setTimeout(() => {
          if (this.map) {
          this.map.fitBounds(this.getGeoJSONBounds(), { 
-         padding: window.innerWidth < 768 ? 80 : 40,
+         padding: window.innerWidth < 768 ? 20 : 40,
+         maxZoom: window.innerWidth < 768 ? 6 : 8,
          duration: 0
          });
          }
