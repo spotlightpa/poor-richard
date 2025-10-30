@@ -188,7 +188,7 @@
       {{ end }}
 
 
-      <h1 class="my-2 font-serif text-3xl uppercase leading-hed lg:text-4xl">
+      <h1 class="my-4 font-serif text-3xl uppercase leading-hed lg:text-4xl">
         {{ .Title }}
       </h1>
 
@@ -1657,18 +1657,18 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
     >
       <div class="flex h-[76px] w-full">
         <div
-          class="justify-left hidden h-full w-1/2 items-center bg-g-9 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-white md:flex"
+          class="rounded-tl-lg justify-left hidden h-full w-1/2 items-center bg-g-9 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-white md:flex"
         >
           Voter registration over time
         </div>
-        <div class="flex h-full w-full items-center bg-g-9 px-3 pt-4 md:w-1/2">
+        <div class="rounded-tr-lg flex h-full w-full items-center bg-g-9 px-3 pt-4 md:w-1/2">
           <div
             class="relative flex h-full w-full items-center justify-end bg-g-9"
           >
             <select
               x-model="selectedCounty"
               @change="$dispatch('county-changed', selectedCounty)"
-              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0 md:w-3/5"
+              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-8 bg-black px-4 py-3.5 pr-12 text-base font-semibold text-g-4 transition-all duration-200 focus:outline-none focus:ring-0 md:w-3/5"
             >
               <option value="Pennsylvania">Pennsylvania</option>
               <option value="Adams">Adams</option>
@@ -1744,7 +1744,7 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
               class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
             >
               <svg
-                class="text-gray-700 h-5 w-5"
+                class="text-g-4 h-5 w-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -1973,7 +1973,7 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
                 });
             }
           }"
-        class="w-full bg-g-9 p-4"
+        class="rounded-b-lg w-full bg-g-9 p-4"
       >
         <div x-ref="wrap" class="relative h-[350px] w-full overflow-x-auto">
           <svg x-ref="svg"></svg>
@@ -2206,7 +2206,6 @@ if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
                       href="/elections/#coverage"
                       class="flex items-center text-black transition-colors hover:text-blue"
                     >
-                      <span class="mr-2">➕</span>
                       <span class="font-bold">See all election stories →</span>
                     </a>
                   </li>
