@@ -1565,6 +1565,20 @@
           </div>
         </div>
       </div>
+      <div class="bg-g-9 pt-4 flex items-center justify-center gap-4 px-3 max-[449px]:flex hidden">
+        <div class="flex items-center gap-1.5">
+          <div class="h-1 w-8 bg-[#009edb]"></div>
+          <span class="text-sm font-semibold text-white">Dem.</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <div class="h-1 w-8 bg-[#d70000]"></div>
+          <span class="text-sm font-semibold text-white">Rep.</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <div class="h-1 w-8 bg-[#1b998b]"></div>
+          <span class="text-sm font-semibold text-white">Other</span>
+        </div>
+      </div>
       <div
         x-data="{
          datasets: {},
@@ -1618,7 +1632,7 @@
          }
          const W = wrap.clientWidth;
          const H = 350;
-         const margin = { top: 12, right: 50, bottom: 30, left: 40 };
+         const margin = { top: 12, right: window.innerWidth < 450 ? 10 : 50, bottom: 30, left: 40 };
          const width = Math.max(200, W - margin.left - margin.right);
          const height = H - margin.top - margin.bottom;
          svg.selectAll('*').remove();
@@ -1688,6 +1702,8 @@
          .attr('d', line);
          });
          const shortLabel = { Democrat: 'Dem.', Republican: 'Rep.', Other: 'Other' };
+         const isSmallScreen = window.innerWidth < 450;
+         if (!isSmallScreen) {
          series.forEach(s => {
          const last = data[data.length - 1];
          if (Number.isFinite(last[s.key])) {
@@ -1701,6 +1717,7 @@
          .text(shortLabel[s.key]);
          }
          });
+         }
          const bisect = d3.bisector(d => d.Year).left;
          const focus = g.append('g').style('display', 'none');
          focus.append('line')
