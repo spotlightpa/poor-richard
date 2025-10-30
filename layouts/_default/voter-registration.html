@@ -417,7 +417,19 @@
          if (!res || !res.ok) return null;
          const data = await res.json().catch(() => null);
          if (!data || data.status !== 'OK' || !data.results || !data.results.length) return null;
-         const location = data.results[0].geometry?.location;
+         const result = data.results[0];
+         const addressComponents = result.address_components || [];
+         const isJustState = addressComponents.length <= 2 && result.types.includes('administrative_area_level_1');
+         if (isJustState) return null;
+         const hasPennsylvania = addressComponents.some(c => 
+         (c.types.includes('administrative_area_level_1') && (c.short_name === 'PA' || c.long_name === 'Pennsylvania'))
+         );
+         if (!hasPennsylvania) return null;
+         const hasCounty = addressComponents.some(c => c.types.includes('administrative_area_level_2'));
+         const hasLocality = addressComponents.some(c => c.types.includes('locality'));
+         const hasStreetAddress = addressComponents.some(c => c.types.includes('street_number') || c.types.includes('route'));
+         if (!hasCounty && !hasLocality && !hasStreetAddress) return null;
+         const location = result.geometry?.location;
          if (!location) return null;
          const lon = parseFloat(location.lng);
          const lat = parseFloat(location.lat);
@@ -564,10 +576,20 @@
          },
          async handleAddressSearch(query) {
          try {
+         if (!query || query.trim() === '') {
+         window.dispatchEvent(new CustomEvent('search-complete'));
+         return;
+         }
          const hit = await this.geocodeAddress(query);
          if (!hit) {
          window.dispatchEvent(new CustomEvent('search-complete'));
-         return alert('Address not found');
+         const input = document.querySelector('input[placeholder*=&quot;Search&quot;]');
+         if (input) {
+         input.value = '';
+         input.placeholder = 'Not Found';
+         setTimeout(() => { input.placeholder = 'Search map'; }, 3000);
+         }
+         return;
          }
          const { lon, lat } = hit;
          const containing = this.findContainingFeature(lon, lat);
