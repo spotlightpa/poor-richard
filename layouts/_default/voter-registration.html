@@ -1709,18 +1709,30 @@
          const shortLabel = { Democrat: 'Dem.', Republican: 'Rep.', Other: 'Other' };
          const isSmallScreen = window.innerWidth < 450;
          if (!isSmallScreen) {
-         series.forEach(s => {
          const last = data[data.length - 1];
-         if (Number.isFinite(last[s.key])) {
+         const labelPositions = series
+         .filter(s => Number.isFinite(last[s.key]))
+         .map(s => ({ series: s, y: y(last[s.key]) }))
+         .sort((a, b) => a.y - b.y);
+         
+         const minGap = 18;
+         for (let i = 1; i < labelPositions.length; i++) {
+         const prev = labelPositions[i - 1];
+         const curr = labelPositions[i];
+         if (curr.y - prev.y < minGap) {
+         curr.y = prev.y + minGap;
+         }
+         }
+         
+         labelPositions.forEach(({ series: s, y: adjustedY }) => {
          g.append('text')
          .attr('x', x(last.Year) + 6)
-         .attr('y', y(last[s.key]))
+         .attr('y', adjustedY)
          .attr('dominant-baseline', 'middle')
          .attr('font-weight', 700)
          .attr('font-size', 14)
          .attr('fill', s.color)
          .text(shortLabel[s.key]);
-         }
          });
          }
          const bisect = d3.bisector(d => d.Year).left;
@@ -1901,8 +1913,8 @@
               If you have any questions or need assistance with voting, you can
               reach out to the
               <a href="https://www.pa.gov/agencies/vote">
-                Pennsylvania Department of State
-              </a>
+                Pennsylvania Department of State</a
+              >
               for guidance.
             </p>
           </div>
