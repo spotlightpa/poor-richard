@@ -206,5 +206,5 @@ El condado de Chester, por ejemplo, tendrá una pregunta <a href="https://www.ch
 
 <a href="https://www.pa.gov/agencies/vote/recursos-en-espanol/contact-us-spanish/county-contact-spanish">Consulte con la oficina electoral de su condado para confirmar las candidaturas y las preguntas</a>, y para ver una papeleta electoral de muestra.
 
-<u>Obtenga aquí más información</u> sobre cómo Spotlight PA está cubriendo las elecciones de 2025.
+<a href="https://www.spotlightpa.org/news/2025/09/pennsylvania-2025-municipal-election-coverage-municipal-elections/">Obtenga aquí más información</a> sobre cómo Spotlight PA está cubriendo las elecciones de 2025.
 
