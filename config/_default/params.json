@@ -9,15 +9,12 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched election reporting for Pennsylvania.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mf/1mmy/13.png",
-        "https://files.data.spotlightpa.org/uploads/01mf/1mmy/14.png",
-        "https://files.data.spotlightpa.org/uploads/01mf/1mmz/15.png",
-        "https://files.data.spotlightpa.org/uploads/01mf/1mn0/16.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1m/site-toppertracker.mp4"
       ]
     }
   ],
@@ -26,15 +23,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mf/1ndh/1.png",
-        "https://files.data.spotlightpa.org/uploads/01mf/1ndj/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mf/1ndk/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mf/1ndk/4.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1k/newsmatch-2025-rectangles-1024-512-px-.png"
       ]
     }
   ],
@@ -58,6 +52,22 @@
       "sources": [
         "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
       ]
+    },
+    {
+      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be TRIPLED.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1m/newsmatch-2022-squares-66-.png"
+      ]
+    },
+    {
+      "description": "Sign up for Spotlight PA's free daily newsletter for Berks County.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
+      "sources": []
     }
   ],
   "ad-hp-featured-active": true,
@@ -97,6 +107,22 @@
       "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
       "sources": [
         "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
+      ]
+    },
+    {
+      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
+      "sources": []
+    },
+    {
+      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be TRIPLED.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1m/newsmatch-2022-squares-66-.png"
       ]
     }
   ],
