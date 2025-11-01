@@ -1,0 +1,367 @@
+<script>
+  window.maplibreComponent = function (opts) {
+    return {
+      id: opts?.id || "map-" + Math.random().toString(36).slice(2),
+      styleURL: opts?.styleURL || "https://demotiles.maplibre.org/style.json",
+      center: Array.isArray(opts?.center) ? opts.center : [-77.5, 40.9],
+      zoom: Number.isFinite(opts?.zoom) ? opts.zoom : 6,
+      bounds: Array.isArray(opts?.bounds) ? opts.bounds : null,
+      padding: Number.isFinite(opts?.padding) ? opts.padding : 24,
+      minZoom: Number.isFinite(opts?.minZoom) ? opts.minZoom : 3,
+      maxZoom: Number.isFinite(opts?.maxZoom) ? opts.maxZoom : 20,
+      bearing: Number.isFinite(opts?.bearing) ? opts.bearing : 0,
+      pitch: Number.isFinite(opts?.pitch) ? opts.pitch : 0,
+      controls: Array.isArray(opts?.controls) ? opts.controls : ["navigation"],
+      attributionCompact: opts?.attributionCompact ?? true,
+      markers: Array.isArray(opts?.markers) ? opts.markers : [],
+
+      map: null,
+      _io: null,
+      _ro: null,
+      _initializing: false,
+      _flyToHandler: null,
+      _mobileViewHandler: null,
+      _markerInstances: [],
+      _baseMarkerInstances: [],
+
+      init() {
+        const el = this.$refs.canvas;
+        if (!el) {
+          console.error("Map canvas element not found");
+          return;
+        }
+
+        this._io = new IntersectionObserver(
+          (entries) => {
+            if (entries.some((e) => e.isIntersecting)) this.tryInit();
+          },
+          { root: null, threshold: 0 },
+        );
+
+        this._ro = new ResizeObserver(() => this.tryInit());
+
+        this._io.observe(el);
+        this._ro.observe(el);
+
+        this._mobileViewHandler = (e) => {
+          const view = e.detail?.view;
+          if (view === "map") {
+            if (this.map) {
+              this.map.resize();
+              const m = window.__inspectionsMarkers;
+              if (Array.isArray(m) && m.length) this.updateMarkers(m);
+            } else {
+              this.tryInit(true);
+            }
+          }
+        };
+        window.addEventListener("mobile-view-changed", this._mobileViewHandler);
+
+        this._flyToHandler = (e) => {
+          const { lon, lat, zoom } = e.detail || {};
+          if (typeof lon === "number" && typeof lat === "number" && this.map) {
+            this.map.flyTo({
+              center: [lon, lat],
+              zoom: zoom ?? Math.max(this.map.getZoom(), 12),
+              speed: 0.7,
+            });
+          }
+        };
+        window.addEventListener("inspections:flyTo", this._flyToHandler);
+
+        window.addEventListener("update-map-markers", (e) => {
+          const markers = e.detail?.markers;
+          if (markers) {
+            this.updateMarkers(markers);
+          }
+        });
+
+        this.tryInit();
+      },
+
+      hasSize() {
+        const el = this.$refs.canvas;
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.width > 0 && rect.height > 0;
+      },
+
+      tryInit(force = false) {
+        if (this.map || this._initializing) return;
+        const el = this.$refs.canvas;
+        if (!el) return;
+
+        if (!this.hasSize() && !force) return;
+
+        if (!window.maplibregl) {
+          setTimeout(() => this.tryInit(force), 50);
+          return;
+        }
+
+        this._initializing = true;
+        this.initMap();
+        this._initializing = false;
+      },
+
+      _createMarkerElement(m = {}) {
+        const color = m.color || "#c0392b";
+        const size = Number.isFinite(m.size) ? m.size : 40; // px
+        const markerEl = document.createElement("div");
+        markerEl.className = "cursor-pointer";
+        markerEl.style.width = `${size}px`;
+        markerEl.style.height = `${size}px`;
+        markerEl.style.transform = "translateY(-2px)";
+        markerEl.innerHTML = `
+          <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+              </filter>
+            </defs>
+            <g filter="url(#markerShadow)">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z
+                   M12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                fill="${color}"
+                stroke="#ffffff"
+                stroke-width="1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              />
+              <circle cx="12" cy="9.5" r="2.5" fill="#ffffff"/>
+            </g>
+          </svg>
+        `;
+        return markerEl;
+      },
+
+      initMap() {
+        const el = this.$refs.canvas;
+        if (!el) return;
+
+        try {
+          this.map = new maplibregl.Map({
+            container: el,
+            style: this.styleURL,
+            center: this.center,
+            zoom: this.zoom,
+            bearing: this.bearing,
+            pitch: this.pitch,
+            minZoom: this.minZoom,
+            maxZoom: this.maxZoom,
+            attributionControl: false,
+            cooperativeGestures: true,
+          });
+
+          if (this.controls.includes("navigation")) {
+            const nav = new maplibregl.NavigationControl({
+              showCompass: false,
+              showZoom: true,
+              visualizePitch: false,
+            });
+            this.map.addControl(nav, "top-right");
+          }
+          if (this.controls.includes("fullscreen")) {
+            this.map.addControl(
+              new maplibregl.FullscreenControl(),
+              "top-right",
+            );
+          }
+          this.map.addControl(
+            new maplibregl.AttributionControl({
+              compact: this.attributionCompact,
+            }),
+          );
+
+          this.map.on("load", () => {
+            if (this.bounds) {
+              this.map.fitBounds(this.bounds, { padding: this.padding });
+            }
+            this.addMarkers();
+
+            try {
+              if (this.map.getLayer("state-borders"))
+                this.map.removeLayer("state-borders");
+
+              const boundaryLayer = this.map
+                .getStyle()
+                .layers.find((l) => l["source-layer"] === "boundary");
+              const boundarySourceId = boundaryLayer?.source;
+              if (boundarySourceId) {
+                const beforeId = this.map
+                  .getStyle()
+                  .layers.find((l) => l.type === "symbol")?.id;
+
+                this.map.addLayer(
+                  {
+                    id: "state-borders",
+                    type: "line",
+                    source: boundarySourceId,
+                    "source-layer": "boundary",
+                    filter: ["==", ["get", "admin_level"], 4],
+                    layout: { "line-cap": "round", "line-join": "round" },
+                    paint: {
+                      "line-color": "#A9B3BD",
+                      "line-opacity": 1,
+                      "line-blur": 0,
+                      "line-width": [
+                        "interpolate",
+                        ["exponential", 1.3],
+                        ["zoom"],
+                        3,
+                        1.0,
+                        8,
+                        2.1,
+                        12,
+                        3.6,
+                        22,
+                        8.2,
+                      ],
+                      "line-dasharray": [4, 2],
+                    },
+                  },
+                  beforeId,
+                );
+              } else {
+                console.warn(
+                  "Couldn't find 'boundary' source-layer; skipping border styling.",
+                );
+              }
+            } catch (err) {
+              console.error("Failed to add styled borders:", err);
+            }
+
+            const latest = window.__inspectionsMarkers;
+            if (Array.isArray(latest) && latest.length) {
+              this.updateMarkers(latest);
+            }
+          });
+
+          this.map.on("error", (e) => {
+            console.error("Map error:", e);
+          });
+
+          const ro = new ResizeObserver(() => this.map && this.map.resize());
+          ro.observe(el);
+          this._ro = ro;
+        } catch (err) {
+          console.error("MapLibre initialization error:", err);
+        }
+      },
+
+      addMarkers() {
+        if (!this.map) return;
+
+        (this.markers || []).forEach((m) => {
+          if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
+
+          const markerEl = this._createMarkerElement(m);
+          const marker = new maplibregl.Marker({
+            element: markerEl,
+            anchor: "bottom",
+          }).setLngLat([m.lon, m.lat]);
+
+          if (m.popupHTML) {
+            marker.setPopup(new maplibregl.Popup().setHTML(m.popupHTML));
+          }
+
+          if (m.inspectionId) {
+            markerEl.addEventListener("click", () => {
+              window.dispatchEvent(
+                new CustomEvent("marker-click", {
+                  detail: { id: m.inspectionId },
+                }),
+              );
+            });
+          }
+
+          marker.addTo(this.map);
+          this._baseMarkerInstances.push(marker);
+        });
+      },
+
+      updateMarkers(newMarkers) {
+        if (!this.map || !Array.isArray(newMarkers)) return;
+
+        if (this._markerInstances) {
+          this._markerInstances.forEach((m) => m.remove());
+        }
+        this._markerInstances = [];
+
+        newMarkers.forEach((m) => {
+          if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
+
+          const markerEl = this._createMarkerElement(m);
+          const marker = new maplibregl.Marker({
+            element: markerEl,
+            anchor: "bottom",
+          }).setLngLat([m.lon, m.lat]);
+
+          if (m.popupHTML) {
+            marker.setPopup(
+              new maplibregl.Popup({
+                offset: 25,
+                closeButton: true,
+                closeOnClick: true,
+              }).setHTML(m.popupHTML),
+            );
+          }
+
+          if (m.inspectionId) {
+            markerEl.addEventListener("click", () => {
+              window.dispatchEvent(
+                new CustomEvent("marker-click", {
+                  detail: { id: m.inspectionId },
+                }),
+              );
+            });
+          }
+
+          marker.addTo(this.map);
+          this._markerInstances.push(marker);
+        });
+
+        if (newMarkers.length > 0) {
+          const bounds = new maplibregl.LngLatBounds();
+          newMarkers.forEach((m) => {
+            if (typeof m?.lon === "number" && typeof m?.lat === "number") {
+              bounds.extend([m.lon, m.lat]);
+            }
+          });
+          this.map.fitBounds(bounds, {
+            padding: this.padding,
+            maxZoom: 12,
+            duration: 1000,
+          });
+        }
+      },
+
+      destroy() {
+        try {
+          this._io?.disconnect();
+        } catch {}
+        try {
+          this._ro?.disconnect();
+        } catch {}
+        if (this._flyToHandler) {
+          window.removeEventListener("inspections:flyTo", this._flyToHandler);
+        }
+        if (this._mobileViewHandler) {
+          window.removeEventListener(
+            "mobile-view-changed",
+            this._mobileViewHandler,
+          );
+        }
+        if (this._markerInstances) {
+          this._markerInstances.forEach((m) => m.remove());
+        }
+        if (this._baseMarkerInstances) {
+          this._baseMarkerInstances.forEach((m) => m.remove());
+        }
+        try {
+          this.map?.remove();
+        } catch {}
+      },
+    };
+  };
+</script>

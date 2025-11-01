@@ -1,0 +1,852 @@
+<script
+  data-data-sources="{{ .Param `data.sources` | default (slice) | jsonify }}"
+  data-geojson-sources="{{ .Param `geojson.sources` | default (slice) | jsonify }}"
+  data-metadata-url="{{ .Param `data.metadata` | default `` }}"
+  data-show-popup="{{ .Param `data.popup` | default `false` }}"
+  data-cache-version="{{ .Param `data.cacheVersion` | default 1 }}"
+  data-geojson-cache-version="{{ .Param `geojson.cacheVersion` | default 1 }}"
+  data-max-cache-age="{{ .Param `data.maxCacheAge` | default 24 }}"
+  data-delimiter="{{ .Param `data.delimiter` | default `,` }}"
+  data-numeric-fields="{{ .Param `data.numericFields` | default (slice) | jsonify }}"
+>
+  window._inspectionsDataDispatched =
+    window._inspectionsDataDispatched || false;
+  window._geojsonDataDispatched = window._geojsonDataDispatched || false;
+  let params = document.currentScript.dataset;
+  function s3DataLoader() {
+    return {
+      dataSources: JSON.parse(params.dataSources),
+      geojsonSources: JSON.parse(params.geojsonSources),
+      metadataURL: params.metadataUrl,
+      showPopup: params.showPopup === "true",
+      cacheVersion: params.cacheVersion,
+      geojsonCacheVersion: params.geojsonCacheVersion,
+      maxCacheAge: params.maxCacheAge * 60 * 60 * 1000,
+      delimiter: params.delimiter,
+      numericFields: JSON.parse(params.numericFields),
+      dbName: "SpotlightPA-DataCache",
+      loading: false,
+      loadingProgress: 0,
+      loadingMessage: "Initializing...",
+      error: null,
+      metadata: null,
+      datasets: {},
+      geojsonData: {},
+      retryCount: 0,
+      maxRetries: 2,
+      initialized: false,
+      totalTasks: 0,
+      completedTasks: 0,
+
+      async init() {
+        if (this.initialized) return;
+        this.initialized = true;
+
+        this.totalTasks = 0;
+        if (Array.isArray(this.dataSources) && this.dataSources.length > 0) {
+          this.totalTasks += this.dataSources.length;
+        }
+        if (
+          Array.isArray(this.geojsonSources) &&
+          this.geojsonSources.length > 0
+        ) {
+          this.totalTasks += this.geojsonSources.length;
+        }
+
+        if (this.metadataURL && this.metadataURL !== "") {
+          this.totalTasks += 1;
+        }
+
+        if (this.totalTasks === 0) {
+          this.error = "No data sources configured";
+          return;
+        }
+
+        const onReady = () => {
+          this.loading = false;
+          this.error = null;
+          this.loadingMessage = "Loaded";
+          this.loadingProgress = 100;
+        };
+
+        window.addEventListener("inspections-data-ready", onReady, {
+          once: false,
+        });
+
+        await this.loadAllData();
+      },
+
+      generateCacheName(url) {
+        let hash = 0;
+        for (let i = 0; i < url.length; i++) {
+          const char = url.charCodeAt(i);
+          hash = (hash << 5) - hash + char;
+          hash = hash & hash;
+        }
+        return `data-cache-${Math.abs(hash)}`;
+      },
+
+      getFileName(url) {
+        const parts = url.split("/");
+        const filename = parts[parts.length - 1];
+        return filename.replace(/\.(xlsx?|csv|tsv|json)$/i, "");
+      },
+
+      updateProgress() {
+        if (this.totalTasks === 0) return;
+        this.loadingProgress = Math.floor(
+          (this.completedTasks / this.totalTasks) * 100,
+        );
+      },
+
+      async loadAllData() {
+        this.loading = true;
+        this.error = null;
+        this.completedTasks = 0;
+        this.loadingProgress = 2;
+        this.loadingMessage = "Loading data...";
+
+        try {
+          if (Array.isArray(this.dataSources) && this.dataSources.length > 0) {
+            await this.loadAllDatasets();
+          }
+
+          if (
+            Array.isArray(this.geojsonSources) &&
+            this.geojsonSources.length > 0
+          ) {
+            await this.loadAllGeoJSON();
+          }
+
+          if (this.metadataURL && this.metadataURL !== "") {
+            await this.loadMetadata();
+          }
+
+          if (!window._inspectionsDataDispatched) {
+            await this.waitForLoadingTransition();
+            this.notifyDataReady();
+          }
+        } catch (err) {
+          await this.handleError(err);
+        } finally {
+          if (
+            (Object.keys(this.datasets).length > 0 ||
+              Object.keys(this.geojsonData).length > 0) &&
+            !this.error
+          ) {
+            this.loading = false;
+          }
+        }
+      },
+
+      async loadAllDatasets() {
+        const results = {};
+
+        this.loadingMessage = "Loading datasets...";
+
+        for (let i = 0; i < this.dataSources.length; i++) {
+          const url = this.dataSources[i];
+          const fileName = this.getFileName(url);
+
+          try {
+            const cachedData = await this.loadFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+              this.refreshDatasetInBackground(url, fileName);
+            } else {
+              const data = await this.loadFromS3(url);
+              results[fileName] = data;
+              await this.saveToCache(url, data);
+            }
+          } catch (err) {
+            console.error(`Failed to load ${fileName}:`, err);
+            const cachedData = await this.loadFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+            }
+          }
+
+          this.completedTasks++;
+          this.updateProgress();
+        }
+
+        this.datasets = results;
+      },
+
+      async loadAllGeoJSON() {
+        const results = {};
+
+        this.loadingMessage = "Loading map data...";
+
+        for (let i = 0; i < this.geojsonSources.length; i++) {
+          const url = this.geojsonSources[i];
+          const fileName = this.getFileName(url);
+
+          try {
+            const cachedData = await this.loadGeoJSONFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+            } else {
+              const data = await this.fetchGeoJSON(url);
+              results[fileName] = data;
+              await this.saveGeoJSONToCache(url, data);
+            }
+          } catch (err) {
+            console.error(`Failed to load ${fileName}:`, err);
+            const cachedData = await this.loadGeoJSONFromCache(url);
+            if (cachedData) {
+              results[fileName] = cachedData;
+            }
+          }
+
+          this.completedTasks++;
+          this.updateProgress();
+        }
+
+        this.geojsonData = results;
+        this.notifyGeoJSONReady();
+      },
+
+      async fetchGeoJSON(url) {
+        const response = await fetch(url, { mode: "cors", cache: "no-cache" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        return await response.json();
+      },
+
+      async loadGeoJSONFromCache(url) {
+        try {
+          const cacheName = this.generateCacheName(url);
+          const db = await this.openDB();
+          const tx = db.transaction("geojsonCache", "readonly");
+          const store = tx.objectStore("geojsonCache");
+          const cached = await store.get(cacheName);
+
+          if (!cached) return null;
+
+          const age = Date.now() - cached.timestamp;
+          if (age > this.maxCacheAge) return null;
+          if (cached.version !== this.geojsonCacheVersion) return null;
+
+          return cached.data;
+        } catch {
+          return null;
+        }
+      },
+
+      async saveGeoJSONToCache(url, data) {
+        try {
+          const cacheName = this.generateCacheName(url);
+          const db = await this.openDB();
+          const tx = db.transaction("geojsonCache", "readwrite");
+          const store = tx.objectStore("geojsonCache");
+          await store.put({
+            id: cacheName,
+            data,
+            timestamp: Date.now(),
+            version: this.geojsonCacheVersion,
+          });
+        } catch (err) {
+          console.error("Failed to save GeoJSON to cache:", err);
+        }
+      },
+
+      notifyGeoJSONReady() {
+        if (Object.keys(this.geojsonData).length === 0) return;
+
+        if (!window._geojsonDataDispatched) {
+          window._geojsonDataDispatched = true;
+          window.dispatchEvent(
+            new CustomEvent("geojson-data-ready", {
+              detail: { data: this.geojsonData },
+            }),
+          );
+        }
+      },
+
+      getGeoJSON(name) {
+        return this.geojsonData[name] || null;
+      },
+
+      getDataset(name) {
+        return this.datasets[name] || null;
+      },
+
+      async ensureXLSX() {
+        if (window.XLSX) return;
+        if (this._xlsxPromise) return this._xlsxPromise;
+        this._xlsxPromise = new Promise((resolve, reject) => {
+          const s = document.createElement("script");
+          s.src =
+            "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+          s.onload = () => resolve();
+          s.onerror = (e) => reject(new Error("Failed to load XLSX library"));
+          document.head.appendChild(s);
+        });
+        return this._xlsxPromise;
+      },
+
+      detectType(url, contentType) {
+        const u = (url || "").toLowerCase().split("?")[0];
+        const ext = u.split(".").pop();
+        if (contentType) {
+          const ct = contentType.toLowerCase();
+          if (
+            ct.includes("sheet") ||
+            ct.includes("spreadsheet") ||
+            ct.includes("excel")
+          )
+            return "xlsx";
+          if (ct.includes("csv")) return "csv";
+          if (ct.includes("tsv")) return "tsv";
+          if (ct.includes("json")) return "json";
+          if (ct.includes("text")) return "csv";
+        }
+        if (ext === "xlsx" || ext === "xls") return "xlsx";
+        if (ext === "csv") return "csv";
+        if (ext === "tsv") return "tsv";
+        if (ext === "json") return "json";
+        return "csv";
+      },
+
+      async waitForLoadingTransition() {
+        return new Promise((resolve) => {
+          requestAnimationFrame(() => {
+            const root = this.$root || document;
+            const spinners = root.querySelectorAll("[x-show]");
+            let maxDuration = 0;
+            const active = [];
+            spinners.forEach((el) => {
+              const style = window.getComputedStyle(el);
+              const display = style.display;
+              const opacity = style.opacity;
+              const dur = style.transitionDuration || "0s";
+              const durationMs = parseFloat(dur) * 1000;
+              if ((display !== "none" || opacity !== "0") && durationMs > 0) {
+                active.push({ el, durationMs });
+                maxDuration = Math.max(maxDuration, durationMs);
+              }
+            });
+            if (active.length === 0 || maxDuration === 0) {
+              resolve();
+              return;
+            }
+            let doneCount = 0;
+            const total = active.length;
+            const onDone = () => {
+              doneCount++;
+              if (doneCount >= total) resolve();
+            };
+            active.forEach(({ el, durationMs }) => {
+              let finished = false;
+              const end = (e) => {
+                if (!finished && (e.target === el || el.contains(e.target))) {
+                  finished = true;
+                  el.removeEventListener("transitionend", end);
+                  onDone();
+                }
+              };
+              el.addEventListener("transitionend", end);
+              setTimeout(() => {
+                if (!finished) {
+                  finished = true;
+                  el.removeEventListener("transitionend", end);
+                  onDone();
+                }
+              }, durationMs + 120);
+            });
+          });
+        });
+      },
+
+      async loadFromS3(url) {
+        const response = await fetch(url, { mode: "cors", cache: "no-cache" });
+        if (!response.ok)
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        const contentType = response.headers.get("content-type") || "";
+        const type = this.detectType(url, contentType);
+
+        let parsed;
+        if (type === "xlsx") {
+          const buf = await response.arrayBuffer();
+          await this.ensureXLSX();
+          parsed = this.parseXLSX(buf);
+        } else if (type === "json") {
+          const text = await response.text();
+          parsed = this.parseJSON(text);
+        } else {
+          const text = await response.text();
+          const delim = type === "tsv" ? "\t" : this.delimiter || ",";
+          parsed = this.parseDelimited(text, delim);
+        }
+
+        return parsed;
+      },
+
+      async loadMetadata() {
+        this.loadingMessage = "Loading metadata...";
+        try {
+          const cached = await this.loadFromCache(this.metadataURL);
+          if (cached) {
+            this.metadata = cached;
+            this.refreshMetadataInBackground();
+          } else {
+            const res = await fetch(this.metadataURL, {
+              mode: "cors",
+              cache: "no-cache",
+            });
+            if (!res.ok)
+              throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+            const obj = await res.json();
+            this.metadata = obj;
+            await this.saveToCache(this.metadataURL, obj);
+          }
+        } catch (err) {
+          console.error("Failed to load metadata:", err);
+          const cached = await this.loadFromCache(this.metadataURL);
+          if (cached) this.metadata = cached;
+        } finally {
+          this.completedTasks++;
+          this.updateProgress();
+        }
+      },
+
+      async refreshMetadataInBackground() {
+        try {
+          const res = await fetch(this.metadataURL, {
+            mode: "cors",
+            cache: "no-cache",
+          });
+          if (!res.ok) return;
+          const obj = await res.json();
+          const curr = JSON.stringify(this.metadata || {});
+          const next = JSON.stringify(obj || {});
+          if (curr !== next) {
+            this.metadata = obj;
+            await this.saveToCache(this.metadataURL, obj);
+            if (!window._inspectionsDataDispatched) {
+              this.notifyDataReady();
+            } else {
+              window.dispatchEvent(
+                new CustomEvent("inspections-data-updated", {
+                  detail: {
+                    datasets: this.datasets,
+                    geojsonData: this.geojsonData,
+                    updated: "__metadata__",
+                    metadata: this.metadata,
+                  },
+                }),
+              );
+            }
+          }
+        } catch (err) {
+          console.error("Failed to refresh metadata:", err);
+        }
+      },
+
+      notifyDataReady() {
+        if (!window._inspectionsDataDispatched) {
+          window._inspectionsDataDispatched = true;
+          window.dispatchEvent(
+            new CustomEvent("inspections-data-ready", {
+              detail: {
+                datasets: this.datasets,
+                geojsonData: this.geojsonData,
+                metadata: this.metadata,
+              },
+            }),
+          );
+        }
+        this.loading = false;
+        this.loadingProgress = 100;
+        this.loadingMessage = "Loaded";
+      },
+
+      parseXLSX(arrayBuffer) {
+        const wb = XLSX.read(arrayBuffer, { type: "array" });
+        const sheetName = wb.SheetNames[0];
+        const ws = wb.Sheets[sheetName];
+        const rows = XLSX.utils.sheet_to_json(ws, { defval: "" });
+        return this.coerceNumeric(rows);
+      },
+
+      parseJSON(text) {
+        let obj = JSON.parse(text);
+        if (Array.isArray(obj)) return this.coerceNumeric(obj);
+        if (obj && Array.isArray(obj.data)) return this.coerceNumeric(obj.data);
+        return [];
+      },
+
+      parseDelimited(text, delim) {
+        const records = [];
+        let currentRecord = [];
+        let currentField = "";
+        let inQuotes = false;
+        let i = 0;
+        while (i < text.length) {
+          const char = text[i];
+          if (char === '"') {
+            if (inQuotes && text[i + 1] === '"') {
+              currentField += '"';
+              i += 2;
+            } else {
+              inQuotes = !inQuotes;
+              i++;
+            }
+          } else if (char === delim && !inQuotes) {
+            currentRecord.push(currentField);
+            currentField = "";
+            i++;
+          } else if ((char === "\n" || char === "\r") && !inQuotes) {
+            if (char === "\r" && text[i + 1] === "\n") i++;
+            currentRecord.push(currentField);
+            if (currentRecord.some((f) => (f + "").trim().length > 0))
+              records.push(currentRecord);
+            currentRecord = [];
+            currentField = "";
+            i++;
+          } else {
+            currentField += char;
+            i++;
+          }
+        }
+        if (currentField.length || currentRecord.length) {
+          currentRecord.push(currentField);
+          if (currentRecord.some((f) => (f + "").trim().length > 0))
+            records.push(currentRecord);
+        }
+        if (!records.length) return [];
+        const headers = records[0].map((h) => (h + "").trim());
+        const out = [];
+        for (let r = 1; r < records.length; r++) {
+          const rowArr = records[r];
+          const row = {};
+          headers.forEach((h, idx) => {
+            row[h] = (rowArr[idx] ?? "").toString().trim();
+          });
+          out.push(row);
+        }
+        return this.coerceNumeric(out);
+      },
+
+      coerceNumeric(rows) {
+        if (!Array.isArray(rows)) return [];
+        const numericSet = new Set(this.numericFields);
+        return rows.map((row) => {
+          const r = {};
+          Object.keys(row).forEach((k) => {
+            let v = row[k];
+            if (numericSet.has(k)) {
+              if (typeof v === "number") {
+                r[k] = v;
+              } else {
+                const num = parseFloat((v + "").replace(/,/g, ""));
+                r[k] = isNaN(num) ? null : num;
+              }
+            } else {
+              r[k] = v;
+            }
+          });
+          return r;
+        });
+      },
+
+      async loadFromCache(url) {
+        try {
+          const cacheName = this.generateCacheName(url);
+          const db = await this.openDB();
+          const tx = db.transaction("dataCache", "readonly");
+          const store = tx.objectStore("dataCache");
+          const cached = await store.get(cacheName);
+          if (!cached) return null;
+          const age = Date.now() - cached.timestamp;
+          if (age > this.maxCacheAge) return null;
+          if (cached.version !== this.cacheVersion) return null;
+          return cached.data;
+        } catch {
+          return null;
+        }
+      },
+
+      async saveToCache(url, data) {
+        try {
+          const cacheName = this.generateCacheName(url);
+          const db = await this.openDB();
+          const tx = db.transaction("dataCache", "readwrite");
+          const store = tx.objectStore("dataCache");
+          await store.put({
+            id: cacheName,
+            data,
+            timestamp: Date.now(),
+            version: this.cacheVersion,
+          });
+        } catch (err) {
+          console.error("Failed to save to cache:", err);
+        }
+      },
+
+      openDB() {
+        return new Promise((resolve, reject) => {
+          const request = indexedDB.open(this.dbName, 2);
+          request.onerror = () => reject(request.error);
+          request.onsuccess = () => resolve(request.result);
+          request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains("dataCache")) {
+              db.createObjectStore("dataCache", { keyPath: "id" });
+            }
+            if (!db.objectStoreNames.contains("geojsonCache")) {
+              db.createObjectStore("geojsonCache", { keyPath: "id" });
+            }
+          };
+        });
+      },
+
+      async refreshDatasetInBackground(url, fileName) {
+        try {
+          const data = await this.loadFromS3(url);
+          const currentLen = JSON.stringify(this.datasets[fileName]).length;
+          const newLen = JSON.stringify(data).length;
+
+          if (newLen !== currentLen) {
+            this.datasets[fileName] = data;
+            await this.saveToCache(url, data);
+
+            if (!window._inspectionsDataDispatched) {
+              this.notifyDataReady();
+            } else {
+              window.dispatchEvent(
+                new CustomEvent("inspections-data-updated", {
+                  detail: {
+                    datasets: this.datasets,
+                    updated: fileName,
+                  },
+                }),
+              );
+            }
+          }
+        } catch (err) {
+          console.error(`Failed to refresh ${fileName}:`, err);
+        }
+      },
+
+      partyRows() {
+        const totalData = this.datasets["total"];
+        if (!Array.isArray(totalData)) return [];
+        return totalData.filter((r) => r.Party && r.Party !== "Total");
+      },
+
+      totalRegistered() {
+        const totalData = this.datasets["total"];
+        if (!Array.isArray(totalData)) return 0;
+        const t = totalData.find((r) => r.Party === "Total");
+        if (t && typeof t.Total === "number") return t.Total;
+        return this.partyRows().reduce(
+          (acc, r) => acc + (typeof r.Total === "number" ? r.Total : 0),
+          0,
+        );
+      },
+
+      valueFor(party) {
+        const totalData = this.datasets["total"];
+        const r = (totalData || []).find((x) => x.Party === party);
+        return r && typeof r.Total === "number" ? r.Total : null;
+      },
+
+      async retry() {
+        window._inspectionsDataDispatched = false;
+        window._geojsonDataDispatched = false;
+        this.retryCount = 0;
+        this.completedTasks = 0;
+        await this.loadAllData();
+      },
+
+      async handleError(err) {
+        this.retryCount++;
+        if (this.retryCount <= this.maxRetries) {
+          this.error = `Loading failed. Retrying (${this.retryCount}/${this.maxRetries})...`;
+          this.loadingMessage = "Retrying...";
+          const delay = Math.min(1000 * Math.pow(2, this.retryCount - 1), 5000);
+          await new Promise((resolve) => setTimeout(resolve, delay));
+          this.completedTasks = 0;
+          await this.loadAllData();
+        } else {
+          let hasCache = false;
+          for (const url of this.dataSources) {
+            const fileName = this.getFileName(url);
+            const cachedData = await this.loadFromCache(url);
+            if (cachedData) {
+              this.datasets[fileName] = cachedData;
+              hasCache = true;
+            }
+          }
+
+          if (hasCache) {
+            this.error = "Using cached data (offline mode)";
+            this.loading = false;
+            this.notifyDataReady();
+          } else {
+            this.error = `Failed to load data: ${err.message}. Please refresh the page.`;
+            this.loading = false;
+          }
+        }
+      },
+    };
+  }
+</script>
+
+<div x-data="s3DataLoader()" x-init="init()">
+  <template x-if="showPopup">
+    <div
+      x-show="loading || error"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+      x-cloak
+    >
+      <div class="w-full max-w-md rounded-lg bg-white p-8 shadow-xl">
+        <template x-if="loading && !error">
+          <div>
+            <div class="mb-4 flex items-center justify-center">
+              <svg
+                class="h-12 w-12 animate-spin text-yellow"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                ></path>
+              </svg>
+            </div>
+            <h3
+              class="mb-2 text-center font-sans text-xl font-bold text-black"
+              x-text="loadingMessage"
+            ></h3>
+            <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
+              <div
+                class="h-full rounded-full bg-yellow transition-all duration-300"
+                :style="`width: ${loadingProgress}%`"
+              ></div>
+            </div>
+            <p class="text-center font-sans text-sm text-g-6">
+              <span x-text="loadingProgress"></span>% complete
+            </p>
+          </div>
+        </template>
+        <template x-if="error">
+          <div>
+            <div class="mb-4 flex items-center justify-center">
+              <svg
+                class="h-12 w-12 text-red-7"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">
+              Unable to Load Data
+            </h3>
+            <p
+              class="mb-6 text-center font-sans text-sm text-g-6"
+              x-text="error"
+            ></p>
+            <button
+              @click="retry()"
+              class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+            >
+              Try Again
+            </button>
+          </div>
+        </template>
+      </div>
+    </div>
+  </template>
+  <template x-if="!showPopup">
+    <div x-show="loading || error" class="w-full bg-white p-8 shadow md:p-10">
+      <template x-if="loading && !error">
+        <div>
+          <div class="mb-4 flex items-center justify-center">
+            <svg
+              class="h-12 w-12 animate-spin text-yellow"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+              ></path>
+            </svg>
+          </div>
+          <h3
+            class="mb-2 text-center font-sans text-xl font-bold text-black"
+            x-text="loadingMessage"
+          ></h3>
+          <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
+            <div
+              class="h-full rounded-full bg-yellow transition-all duration-300"
+              :style="`width: ${loadingProgress}%`"
+            ></div>
+          </div>
+          <p class="text-center font-sans text-sm text-g-6">
+            <span x-text="loadingProgress"></span>% complete
+          </p>
+        </div>
+      </template>
+      <template x-if="error">
+        <div>
+          <div class="mb-4 flex items-center justify-center">
+            <svg
+              class="h-12 w-12 text-red-7"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <h3 class="mb-2 text-center font-sans text-xl font-bold text-black">
+            Unable to Load Data
+          </h3>
+          <p
+            class="mb-6 text-center font-sans text-sm text-g-6"
+            x-text="error"
+          ></p>
+          <button
+            @click="retry()"
+            class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+          >
+            Try Again
+          </button>
+        </div>
+      </template>
+    </div>
+  </template>
+</div>
