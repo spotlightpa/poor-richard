@@ -777,38 +777,38 @@
             }));
           const renderBar = ({ label, pct, color, textColor }) =>
             [
-              "<div style=&quot;margin-top:8px;&quot;>",
-              `<span style=&quot;font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;&quot;>${label}:</span>`,
-              "<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;&quot;>",
-              `<div style=&quot;width:${pct || 0}%; background:${color}; height:100%; position:relative;&quot;>`,
+              "<div style='margin-top:8px;'>",
+              `<span style='font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;'>${label}:</span>`,
+              "<div style='position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;'>",
+              `<div style='width:${pct || 0}%; background:${color}; height:100%; position:relative;'>`,
               pct >= 30
-                ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${pct}%</span>`
+                ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${pct}%</span>`
                 : "",
               "</div>",
               pct < 30
-                ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${pct}%</span>`
+                ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${pct}%</span>`
                 : "",
               "</div>",
               "</div>",
             ].join("");
           const html = [
-            "<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>",
-            `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${title}</strong>`,
-            "<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>",
-            `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
+            "<div style='padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;'>",
+            `<strong style='font-size: 1.15rem; display: block; margin-bottom: 6px;'>${title}</strong>`,
+            "<div style='position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;'>",
+            `<div style='width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;'>`,
             sharePct !== null && sharePct >= 30
-              ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+              ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${sharePct}%</span>`
               : "",
             "</div>",
             sharePct !== null && sharePct < 30
-              ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+              ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${sharePct}%</span>`
               : "",
             "</div>",
-            "<div style=&quot;height:6px;&quot;></div>",
-            "<span style=&quot;font-size:0.95rem; font-weight:700;&quot;>Total:</span> ",
-            `<span style=&quot;font-size:0.95rem;&quot;>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
-            "<div style=&quot;height:8px;&quot;></div>",
-            "<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>",
+            "<div style='height:6px;'></div>",
+            "<span style='font-size:0.95rem; font-weight:700;'>Total:</span> ",
+            `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
+            "<div style='height:8px;'></div>",
+            "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
             renderBar(others[0]),
             renderBar(others[1]),
             renderBar(others[2]),
@@ -1125,38 +1125,38 @@
               `District ${feature.properties.DISTRICT}`;
             const renderBar = ({ label, pct, color, textColor }) =>
               [
-                "<div style=&quot;margin-top:8px;&quot;>",
-                `<span style=&quot;font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;&quot;>${label}:</span>`,
-                "<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;&quot;>",
-                `<div style=&quot;width:${pct || 0}%; background:${color}; height:100%; position:relative;&quot;>`,
+                "<div style='margin-top:8px;'>",
+                `<span style='font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;'>${label}:</span>`,
+                "<div style='position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;'>",
+                `<div style='width:${pct || 0}%; background:${color}; height:100%; position:relative;'>`,
                 pct >= 30
-                  ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${pct}%</span>`
+                  ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${pct}%</span>`
                   : "",
                 "</div>",
                 pct < 30
-                  ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${pct}%</span>`
+                  ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${pct}%</span>`
                   : "",
                 "</div>",
                 "</div>",
               ].join("");
             const htmlContent = [
-              "<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>",
-              `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${districtName}</strong>`,
-              "<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>",
-              `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
+              "<div style='padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;'>",
+              `<strong style='font-size: 1.15rem; display: block; margin-bottom: 6px;'>${districtName}</strong>`,
+              "<div style='position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;'>",
+              `<div style='width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;'>`,
               sharePct !== null && sharePct >= 30
-                ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+                ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${sharePct}%</span>`
                 : "",
               "</div>",
               sharePct !== null && sharePct < 30
-                ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+                ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${sharePct}%</span>`
                 : "",
               "</div>",
-              "<div style=&quot;height:6px;&quot;></div>",
-              "<span style=&quot;font-size:0.95rem; font-weight:700;&quot;>Total:</span> ",
-              `<span style=&quot;font-size:0.95rem;&quot;>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
-              "<div style=&quot;height:8px;&quot;></div>",
-              "<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>",
+              "<div style='height:6px;'></div>",
+              "<span style='font-size:0.95rem; font-weight:700;'>Total:</span> ",
+              `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
+              "<div style='height:8px;'></div>",
+              "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
               renderBar(others[0]),
               renderBar(others[1]),
               renderBar(others[2]),
@@ -1452,40 +1452,40 @@
                 const countyName = feature.properties.county_nam;
                 const renderBar = ({ label, pct, color, textColor }) =>
                   [
-                    "<div style=&quot;margin-top:8px;&quot;>",
-                    `<span style=&quot;font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;&quot;>${label}:</span>`,
-                    "<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;&quot;>",
-                    `<div style=&quot;width:${pct || 0}%; background:${color}; height:100%; position:relative;&quot;>`,
+                    "<div style='margin-top:8px;'>",
+                    `<span style='font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;'>${label}:</span>`,
+                    "<div style='position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;'>",
+                    `<div style='width:${pct || 0}%; background:${color}; height:100%; position:relative;'>`,
                     pct >= 30
-                      ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${pct}%</span>`
+                      ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${pct}%</span>`
                       : "",
                     "</div>",
                     pct < 30
-                      ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${
+                      ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${
                           pct || 0
-                        }% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${pct}%</span>`
+                        }% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${pct}%</span>`
                       : "",
                     "</div>",
                     "</div>",
                   ].join("");
                 const htmlContent = [
-                  "<div style=&quot;padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;&quot;>",
-                  `<strong style=&quot;font-size: 1.15rem; display: block; margin-bottom: 6px;&quot;>${countyName} County</strong>`,
-                  "<div style=&quot;position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;&quot;>",
-                  `<div style=&quot;width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;&quot;>`,
+                  "<div style='padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;'>",
+                  `<strong style='font-size: 1.15rem; display: block; margin-bottom: 6px;'>${countyName} County</strong>`,
+                  "<div style='position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;'>",
+                  `<div style='width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;'>`,
                   sharePct !== null && sharePct >= 30
-                    ? `<span style=&quot;position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+                    ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${sharePct}%</span>`
                     : "",
                   "</div>",
                   sharePct !== null && sharePct < 30
-                    ? `<span style=&quot;position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;&quot;>${sharePct}%</span>`
+                    ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${sharePct}%</span>`
                     : "",
                   "</div>",
-                  "<div style=&quot;height:6px;&quot;></div>",
-                  "<span style=&quot;font-size:0.95rem; font-weight:700;&quot;>Total:</span> ",
-                  `<span style=&quot;font-size:0.95rem;&quot;>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
-                  "<div style=&quot;height:8px;&quot;></div>",
-                  "<div style=&quot;height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;&quot;></div>",
+                  "<div style='height:6px;'></div>",
+                  "<span style='font-size:0.95rem; font-weight:700;'>Total:</span> ",
+                  `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
+                  "<div style='height:8px;'></div>",
+                  "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
                   renderBar(others[0]),
                   renderBar(others[1]),
                   renderBar(others[2]),
