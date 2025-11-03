@@ -2,15 +2,14 @@
 {{ $relink := .RelPermalink }}
 {{ $link := .Permalink }}
 <link
-  rel="dns-prefetch"
-  href="https://plausible.io"
+  rel="preconnect"
+  href="https://www.googletagmanager.com"
   data-ga-settings
   data-ga-page-title="{{ $title }}"
   data-ga-page-path="{{ $relink }}"
   data-ga-page-url="{{ $link }}"
   data-byline="{{ .Param `byline` }}"
 />
-<link rel="preconnect" href="https://www.googletagmanager.com" />
 <script>
   window.dataLayer = [{ "gtm.start": new Date().getTime(), event: "gtm.js" }];
 </script>

@@ -9,12 +9,12 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unbiased reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01md/8z98/site-toppertracker-44-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/ah9f/site-toppertracker-54-.png"
       ]
     }
   ],
@@ -23,12 +23,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's unbiased reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper-mobile",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01md/8z98/september-campaign-mobile-topperrectangles-28-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1k/newsmatch-2025-rectangles-1024-512-px-.png"
       ]
     }
   ],
@@ -54,16 +54,16 @@
       ]
     },
     {
-      "description": "Support Spotlight PA's unbiased reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be TRIPLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-feature",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mc/368q/september-300x250-squares-14-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1m/newsmatch-2022-squares-66-.png"
       ]
     },
     {
-      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
+      "description": "Sign up for Spotlight PA's free daily newsletter for Berks County.",
       "label": "",
       "labelLink": "",
       "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
@@ -91,29 +91,47 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA's unbiased reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
+      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
+      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mc/368q/september-300x250-squares-14-.png"
+        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's unbiased reporting for Pennsylvania and for a limited time, your gift will be DOUBLED.",
+      "description": "Sign up for Talk of the Town, a free daily newsletter from Spotlight PA State College",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
+      ]
+    },
+    {
+      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
+      ]
+    },
+    {
+      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be TRIPLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mc/351w/september-300x250-squares-13-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/ag1m/newsmatch-2022-squares-66-.png"
       ]
     }
   ],
   "ad-rail-top-active": true,
-  "banner": "\u003cstrong\u003eNew here?\u003c/strong\u003e Learn more about Spotlight PA's nonpartisan, nonprofit reporting »",
+  "banner": "\u003cstrong\u003eNew here?\u003c/strong\u003e Learn more about Spotlight PA's independent, unbiased reporting »",
   "banner-active": true,
   "banner-bg-color": "#99d9f1",
   "banner-link": "/about",
@@ -138,10 +156,10 @@
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "CONTRIBUTE NOW »",
-  "support-hed": "An urgent request (and a special 2X offer)",
+  "support-hed": "Before you go, I have an urgent request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We find ourselves at pivotal crossroads, and the future — and our own legacy — is at stake.\n\nThere are more forces at work than ever to silence free and fearless reporting, and there are fewer resources than ever to undertake the unbiased investigative journalism Spotlight PA produces.\n\nThis legacy is not about us or me or Spotlight PA. It’s not even about journalism or the news. It’s about a free society, which necessarily depends on the free flow of information grounded in truth and reality. If we lose that, we lose everything — and we will be forced to reckon with our own inaction.\n\n\u003cstrong\u003eBut there is still time to join together and chart a better course.\u003c/strong\u003e\n\nThere are still professional journalists and independent organizations like Spotlight PA willing to take on the tough task of fighting on the front lines for the truth without fear or favor. They don’t do it for fame or glory, but out of a sense of duty and service. And they cannot do it without you.\n\nRight now, your tax-deductible support will ensure our vital work can continue.\n\n\u003cstrong\u003eAnd for a limited time, every dollar you give will be matched — that's DOUBLE your gift — by the Lenfest Institute for Journalism.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and thousands of readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA.\n\n\u003cstrong\u003eJoin them now \u0026amp;amp;amp; for a very limited time, your gift will be TRIPLED.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "We only have 6 days left to raise $12,000 to ensure our unmatched nonpartisan, nonprofit reporting can continue. Give to Spotlight PA today \u0026 get it DOUBLED »",

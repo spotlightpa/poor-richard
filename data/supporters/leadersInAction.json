@@ -8,6 +8,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Barbara Adams",
+      "sort": "Adams",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Kip Armstrong",
       "sort": "Armstrong",
       "url": "",
@@ -15,8 +22,22 @@
       "categoryRank": "6"
     },
     {
+      "display": "Jonathan Auerbach and Karoline Adler",
+      "sort": "Auerbach",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Dorothy \"Dee\" Aylward",
       "sort": "Aylward",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Mitchell Bach",
+      "sort": "Bach",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -127,6 +148,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Kevin Bevan",
+      "sort": "Bevan",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Michael Blett, in honor of George F. Blett II",
       "sort": "Blett",
       "url": "",
@@ -139,6 +167,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Ross and Wendy Born",
+      "sort": "Born",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Jim Boscov",
@@ -225,6 +260,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Jonathan Dale",
+      "sort": "Dale",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "John and Janet Dillon",
       "sort": "Dillon",
       "url": "",
@@ -304,13 +346,6 @@
     {
       "display": "Ronald Filippelli",
       "sort": "Filippelli",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Audrey Fisher",
-      "sort": "Fisher",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -463,6 +498,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Robert F. Hunsicker Charitable Foundation",
+      "sort": "Hunsicker",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Mary and Howard Hurtig",
       "sort": "Hurtig",
       "url": "",
@@ -491,11 +533,11 @@
       "categoryRank": "5"
     },
     {
-      "display": "Lisa Kabnick",
+      "display": "Lisa D. Kabnick and John H. McFadden",
       "sort": "Kabnick",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Richard and Sally Kalin",
@@ -556,6 +598,13 @@
     {
       "display": "Balasios Lahaniatis, in honor of Lucine Sihelnik",
       "sort": "Lahaniatis",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "David Laigaie",
+      "sort": "Laigaie",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -624,8 +673,8 @@
       "categoryRank": "4"
     },
     {
-      "display": "Mary Marger",
-      "sort": "Marger",
+      "display": "Kathi Marks",
+      "sort": "Marks",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -645,8 +694,8 @@
       "categoryRank": "5"
     },
     {
-      "display": "Martina Martin",
-      "sort": "Martin",
+      "display": "Mary Marger",
+      "sort": "Marger",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -687,6 +736,13 @@
       "categoryRank": "4"
     },
     {
+      "display": "Rashele Moore",
+      "sort": "Moore",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Joan Miller Moran",
       "sort": "Moran",
       "url": "",
@@ -710,6 +766,13 @@
     {
       "display": "David and Cathy Myers",
       "sort": "Myers",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "W. Michael Nailor",
+      "sort": "Nailor",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -757,6 +820,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Kerry Ozer",
+      "sort": "Ozer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Robert and Ann Pangborn",
+      "sort": "Pangborn",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Pardekooper and Jennifer Mautone",
       "sort": "Pardekooper",
       "url": "",
@@ -795,8 +872,8 @@
       "display": "Sue and Jack Peck",
       "sort": "Peck",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "James \"Scott\" Pflumm",
@@ -878,6 +955,13 @@
     {
       "display": "Richard Salezze",
       "sort": "Salezze",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "John Salveson",
+      "sort": "Salveson",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1037,6 +1121,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Bruce Toll",
+      "sort": "Toll",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Daniel and Linda Trevino",
       "sort": "Trevino",
       "url": "",
@@ -1049,6 +1140,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Umbrecht Family Foundation",
+      "sort": "Umbrecht",
+      "url": "",
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Christopher and Lee Van de Velde",

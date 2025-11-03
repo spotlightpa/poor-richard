@@ -3,6 +3,7 @@ authors = ["Asha Prihar"]
 blurb = "Erie’s Black Wall Street offers a workshop to prospective homebuyers in Erie County to help them navigate the purchase. “Homeownership helps create community,” says the nonprofit’s director."
 byline = "Asha Prihar of Spotlight PA"
 description = "Local organizers turned a Facebook group into a nonprofit that addresses racial disparities in home ownership in Erie County."
+draft = false
 feed-exclude = false
 image = "2025/06/01m5-631m-qtkq-q2w6.jpeg"
 image-credit = "Provided"
@@ -16,7 +17,7 @@ slug = "erie-black-wall-street-homeownership-pennsylvania-greenwood-tulsa"
 suppress-date = false
 title = "PA Local Heroes: Meet the community organizer helping boost Black homeownership rates"
 title-tag = "Erie’s Black Wall Street helps renters become owners"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 +++
 
 <em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em>

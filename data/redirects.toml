@@ -107,3 +107,7 @@ to = "https://spotlightpa.donorsupport.co/login"
 [[redirects]]
 from = "/berks-report"
 to = "https://files.data.spotlightpa.org/uploads/01ka/7ev6/blueprint-for-berks-full-report.pdf"
+
+[[redirects]]
+from = "/palocalnom"
+to = "https://docs.google.com/forms/d/e/1FAIpQLSfy8HLO3tQBzjuqOogc04ogyEDXFw_qLV9Nv2XTP7cNdLvnLw/viewform"

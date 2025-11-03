@@ -1,8 +1,8 @@
 +++
-aliases = ["/quizbash/"]
 blurb = "For the second year, the “Clink and Think” Quiz Bash Fundraiser was a sold-out affair at Axemann Brewery in Bellefonte."
 byline = "Spotlight PA Staff"
 description = "Pennsylvania-themed trivia fundraiser, hosted by Penn State play-by-play announcer Steve Jones, supports investigative and public-service journalism."
+draft = false
 event-date = 2024-09-15T16:30:00-04:00
 event-title = "Clink and Think Quiz Bash!"
 feed-exclude = false

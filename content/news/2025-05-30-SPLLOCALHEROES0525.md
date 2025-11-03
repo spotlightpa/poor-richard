@@ -3,6 +3,7 @@ authors = ["Colin Deppen"]
 blurb = "Philly Children’s Theatre has drawn headlines for sensory-friendly and interactive performances, a pay-what-you-can approach, and free child care services."
 byline = "Colin Deppen of Spotlight PA"
 description = "Philly Children’s Theatre has drawn headlines for sensory-friendly and interactive performances, a pay-what-you-can approach, and free child care services."
+draft = false
 feed-exclude = false
 image = "2025/05/01m3-hhc1-bkdg-ykyw.png"
 image-caption = "Sarah Gordin of Philly Children's Theatre."
@@ -18,7 +19,7 @@ slug = "philadelphia-childrens-theatre-sarah-gordin-pennsylvania"
 suppress-date = false
 title = "PA Local Heroes: Meet the artist behind a shush-free, stress-free family theater experience"
 title-tag = "A shush-free, stress-free theater experience"
-topics = ["PA Local"]
+topics = ["PA Local", "PA Local Heroes"]
 twitter-title = "A shush-free, stress-free theater experience"
 +++
 

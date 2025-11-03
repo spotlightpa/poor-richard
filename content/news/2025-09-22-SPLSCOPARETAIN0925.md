@@ -24,11 +24,13 @@ title-tag = "PA election 2025: Supreme Court retention candidate guide"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/10/corte-suprema-retencion-elecciones-2025-pensilvania-donohue-dougherty-wecht-espanol/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — Three Pennsylvania Supreme Court justices are up for retention on Nov. 4, in elections that could set the stage for a total remaking of the court.
 
 Justices Christine Donohue, Kevin Dougherty, and David Wecht were all elected as Democrats in 2015, and their party has held a majority on the state’s high court since. Republicans are pushing Pennsylvanians to vote “no” on their retention, which would lead to contested, partisan elections in 2027.
 
-The commonwealth’s top appellate court has made <a href="https://www.spotlightpa.org/news/2025/09/judicial-retention-supreme-court-2025-guide-elections/#:~:text=What%20is%20this%20election%20about%3F">dozens of high-profile decisions</a> over the past decade that have shaped politics and policy. The accumulated impact has been noticeable to legal scholars — as well as political opponents.
+The commonwealth’s top appellate court, controlled by a Democratic majority, has made <a href="https://www.spotlightpa.org/news/2025/09/judicial-retention-supreme-court-2025-guide-elections/#:~:text=What%20is%20this%20election%20about%3F">dozens of high-profile decisions</a> over the past decade that have shaped politics and policy. The accumulated impact has been noticeable to legal scholars — as well as political opponents.
 
 {{<embed/newsletter>}}
 
@@ -81,6 +83,8 @@ She also wrote the 2024 <a href="https://www.pacourts.us/assets/opinions/Supreme
 She based that ruling on, among other things, what she framed as “the unremarkable conclusion that to treat a woman differently based on a characteristic unique to her sex is to treat her differently because of her sex, which triggers enforcement of our Equal Rights Amendment.”
 
 While that case is pending before Commonwealth Court, it will likely go back to the high court.
+
+{{<dewey-assistant>}}
 
 At a September forum with the other retention candidates, Donohue said of her reason for pursuing a new term, “I want to be certain that the seeds that we&#39;ve sown in terms of extending protections that have always been there, but have not been recognized, under the Pennsylvania Constitution continue to be recognized by the court that I sit on.”
 
