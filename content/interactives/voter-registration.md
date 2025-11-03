@@ -10,6 +10,7 @@ url = "/pennsylvania-voter-registration"
 no-index = false
 ad-header-desktop-active = false
 ad-header-mobile-active = false
+internal-id = "SPLVOTERREG"
 
 image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-alt = "Illustration of election pins"
