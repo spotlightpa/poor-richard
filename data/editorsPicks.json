@@ -1,23 +1,23 @@
 {
   "edCallout": [
-    "content/news/2025-09-22-SPLSCOPARETAIN0925.md",
-    "content/news/2025-09-09-SPLCOURTGEN0925.md"
+    "content/news/2025-10-30-SPLFOS1025.md",
+    "content/news/2025-10-24-SPLRESCOSTS1025.md"
   ],
   "edImpact": [],
   "edInvestigations": [
     "content/news/2025-07-28-SPLMHFAILING0725.md"
   ],
   "featuredStories": [
-    "content/news/2025-10-30-SPLREGDRIVE1025.md"
+    "content/news/2025-10-31-SPLBUDMEET1025.md"
   ],
   "subfeatures": [
-    "content/news/2025-08-14-VBFRAUDANA0825.md",
-    "content/news/2025-08-04-SPLVBMACHINES0825.md",
-    "content/news/2025-07-17-SPLDOJDATA0725.md"
+    "content/news/2025-10-27-SPLSDIMPS1025.md",
+    "content/news/2025-10-24-SPLIMPFUND1025.md",
+    "content/news/2025-10-15-SPLIMPINT1025.md"
   ],
   "topSlots": [
-    "content/news/2025-10-31-SPLBUDMEET1025.md",
-    "content/news/2025-10-30-SPLFOS1025.md",
-    "content/news/2025-10-29-SPLIELAW1025.md"
+    "content/news/2025-10-15-SPLNOV4MUNIFULLGU.md",
+    "content/news/2025-09-22-SPLSCOPARETAIN0925.md",
+    "content/news/2025-09-12-SPLRETENTION0925.md"
   ]
 }
