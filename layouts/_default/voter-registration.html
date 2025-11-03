@@ -14,6 +14,22 @@
   <script data-sources="{{ .Params.geojson.sources | jsonify }}">
     let sourcesParam = JSON.parse(document.currentScript.dataset.sources);
 
+    function pollUntil(conditionCallback) {
+      return new Promise((resolve) => {
+        if (conditionCallback()) {
+          resolve();
+        } else {
+          let interval;
+          interval = setInterval(() => {
+            if (conditionCallback()) {
+              clearInterval(interval);
+              resolve();
+            }
+          }, 100);
+        }
+      });
+    }
+
     function splVoterRegGraphic() {
       return {
         apDateLabelFromMDY(mdy) {
@@ -882,18 +898,7 @@
           }
         },
         async joinCountyData() {
-          await new Promise((resolve) => {
-            if (this.datasets && this.datasets.county) {
-              resolve();
-            } else {
-              const checkData = setInterval(() => {
-                if (this.datasets && this.datasets.county) {
-                  clearInterval(checkData);
-                  resolve();
-                }
-              }, 100);
-            }
-          });
+          await pollUntil(() => this.datasets && this.datasets.county);
           this.countyData = this.datasets.county || [];
           if (this.geojsonData.county && this.geojsonData.county.features) {
             this.geojsonData.county.features.forEach((feature) => {
@@ -922,28 +927,13 @@
           }
         },
         async joinDistrictData() {
-          await new Promise((resolve) => {
-            if (
+          await pollUntil(
+            () =>
               this.datasets &&
               this.datasets.congress &&
               this.datasets.senate &&
-              this.datasets.house
-            ) {
-              resolve();
-            } else {
-              const checkData = setInterval(() => {
-                if (
-                  this.datasets &&
-                  this.datasets.congress &&
-                  this.datasets.senate &&
-                  this.datasets.house
-                ) {
-                  clearInterval(checkData);
-                  resolve();
-                }
-              }, 100);
-            }
-          });
+              this.datasets.house,
+          );
           if (
             this.geojsonData.congressional &&
             this.geojsonData.congressional.features &&
