@@ -27,9 +27,9 @@ Pennsylvania’s two intermediate appellate courts play critical roles in the st
 
 Judges who sit on Commonwealth and Superior Courts also frequently go on to serve on the high court.
 
-In the Superior Court race, the Associated Press called the race for Tsai at 10:47 p.m. Unofficial results show Tsai with 55.4% of the vote to Republican Matthew Wolford’s 44.6%.
+In the Commonwealth Court race, the Associated Press called the race for Tsai at 10:47 p.m. Unofficial results show Tsai with 55.4% of the vote to Republican Matthew Wolford’s 44.6%.
 
-For Commonwealth Court, the AP called the race for<strong> </strong>Neuman<strong> </strong>at 10:48 p.m. Unofficial results show Neuman<strong> </strong>with 54.6% of the vote to Republican Maria Battista’s 43.4% and Liberal Party candidate Daniel Wassmer’s 2%.
+For Superior Court, the AP called the race for<strong> </strong>Neuman<strong> </strong>at 10:48 p.m. Unofficial results show Neuman<strong> </strong>with 54.6% of the vote to Republican Maria Battista’s 43.4% and Liberal Party candidate Daniel Wassmer’s 2%.
 
 {{<embed/newsletter>}}
 
