@@ -16,6 +16,21 @@ image = "external/9b02rsyscxwdnw0xpe9w7p3jar.jpeg"
 image-alt = "People in line at a polling place."
 image-credit = "Amanda Berg / For Spotlight PA"
 
+credits = """
+{{<featured/credit
+    eyebrow="Design and development"
+    name="Alexandra Harris"
+    role="Newsroom Developer"
+    email="aharris@spotlightpa.org"
+>}}
+{{<featured/credit
+    eyebrow="Data analysis"
+    name="Carlana Johnson"
+    role="Director of Technology"
+    email="cjohnson@spotlightpa.org"
+>}}
+"""
+
 [data]
 sources = [
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-turnout/counts.csv"

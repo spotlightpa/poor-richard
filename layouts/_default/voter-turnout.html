@@ -2472,6 +2472,7 @@
                 </a>
               </div>
             </div>
+
             {{ with site.GetPage "topics/elections" }}
               {{ $stories := (where .RegularPages "Date" ">" (time "2024-12-31")) | first 4 }}
               <div class="mt-6 rounded-lg bg-g-1 p-6">
@@ -2506,6 +2507,18 @@
                 </ul>
               </div>
             {{ end }}
+            <div
+              class="mt-6 rounded-lg bg-g-1 p-6"
+              id="credits"
+              data-ga-category="credits"
+            >
+              <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
+                Credits
+              </h3>
+              <div class="mt-4 flex flex-col gap-4">
+                {{ .Params.credits | markdownify }}
+              </div>
+            </div>
           </div>
         </div>
       </div>
