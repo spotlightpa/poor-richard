@@ -93,12 +93,6 @@
               color: "#d70000",
             },
             {
-              name: "No Affiliation",
-              party: "No Party",
-              value: typeof noParty.Total === "number" ? noParty.Total : 0,
-              color: "#ffcb03",
-            },
-            {
               name: "Other",
               party: "Other",
               value: typeof other.Total === "number" ? other.Total : 0,
@@ -242,28 +236,6 @@
               "70%",
             ]),
             borderColor: "#ff1a1a",
-          },
-          "no-party": {
-            colors: Object.freeze([
-              "#fff6cc",
-              "#ffe999",
-              "#ffdc66",
-              "#ffcf33",
-              "#e0b300",
-              "#b38600",
-              "#7a5c00",
-              "#332600",
-            ]),
-            labels: Object.freeze([
-              "3%",
-              "6%",
-              "9%",
-              "12%",
-              "15%",
-              "18%",
-              "21%",
-            ]),
-            borderColor: "#f0c000",
           },
           other: {
             colors: Object.freeze([
@@ -722,13 +694,6 @@
               text: "#ffffff",
               label: "Republican",
             },
-            "no-party": {
-              share: "noPartyShare",
-              total: "noPartyTotal",
-              color: "#ffcb03",
-              text: "#000000",
-              label: "No Party",
-            },
             other: {
               share: "otherShare",
               total: "otherTotal",
@@ -1029,7 +994,6 @@
           }
         },
         getBreaksForParty(party) {
-          if (party === "no-party") return [3, 6, 9, 12, 15, 18, 21, 999];
           if (party === "other") return [1, 2, 3, 4, 5, 6, 7, 999];
           return [10, 20, 30, 40, 50, 60, 70, 999];
         },
@@ -1071,13 +1035,6 @@
                 color: "#d70000",
                 text: "#ffffff",
                 label: "Republican",
-              },
-              "no-party": {
-                share: "noPartyShare",
-                total: "noPartyTotal",
-                color: "#ffcb03",
-                text: "#000000",
-                label: "No Party",
               },
               other: {
                 share: "otherShare",
@@ -1210,16 +1167,6 @@
               "#7a0000",
               "#330000",
             ],
-            "no-party": [
-              "#fff6cc",
-              "#ffe999",
-              "#ffdc66",
-              "#ffcf33",
-              "#e0b300",
-              "#b38600",
-              "#7a5c00",
-              "#332600",
-            ],
             other: [
               "#d8fbf6",
               "#aff5ea",
@@ -1237,7 +1184,6 @@
           return {
             democrat: "democratShare",
             republican: "republicanShare",
-            "no-party": "noPartyShare",
             other: "otherShare",
           }[party];
         },
@@ -1264,16 +1210,6 @@
               "#b30000",
               "#7a0000",
               "#330000",
-            ],
-            "no-party": [
-              "#fff6cc",
-              "#ffe999",
-              "#ffdc66",
-              "#ffcf33",
-              "#e0b300",
-              "#b38600",
-              "#7a5c00",
-              "#332600",
             ],
             other: [
               "#d8fbf6",
@@ -1397,13 +1333,6 @@
                     color: "#d70000",
                     text: "#ffffff",
                     label: "Republican",
-                  },
-                  "no-party": {
-                    share: "noPartyShare",
-                    total: "noPartyTotal",
-                    color: "#ffcb03",
-                    text: "#000000",
-                    label: "No Party",
                   },
                   other: {
                     share: "otherShare",
@@ -1987,7 +1916,6 @@
           >
             <option value="democrat">Democrat</option>
             <option value="republican">Republican</option>
-            <option value="no-party">No Party</option>
             <option value="other">Other</option>
           </select>
           <div
