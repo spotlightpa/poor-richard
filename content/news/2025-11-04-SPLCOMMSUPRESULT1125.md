@@ -87,7 +87,7 @@ Battista, a Clarion County resident, previously served as assistant general coun
 
 She ran unsuccessfully for Superior Court in 2023, during which she received the state Republican Party’s endorsement during her primary. This time around, the state party chose Ann Marie Wheatcraft, a Common Pleas judge from the Philadelphia suburbs, in its primary endorsement. After Wheatcraft lost the primary, the state party endorsed Battista.
 
-The Pennsylvania Bar Association did not recommend Battista because she did not participate in its rating process.
+The Pennsylvania Bar Association did not recommend Battista because she did not participate in its rating process.<br/>
 
 As of Oct. 20, Neuman and Battista had spent about $505,000 and $120,000, respectively, from their campaign accounts. These numbers include in-kind donations.
 
