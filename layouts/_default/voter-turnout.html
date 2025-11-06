@@ -64,18 +64,64 @@
           const dd2 = String(dd).padStart(2, "0");
           return `${yyyy}-${mm2}-${dd2}`;
         },
+
         getPartyData() {
           const datasets = this.datasets || {};
-          const totalData = datasets["total"] || [];
-          if (!Array.isArray(totalData) || totalData.length === 0) {
-            return [];
+
+          if (Array.isArray(datasets.counts) && datasets.counts.length > 0) {
+            const row =
+              datasets.counts.find(
+                (r) => (r.Area || "").toLowerCase() === "pennsylvania",
+              ) || datasets.counts[0];
+
+            const num = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  ) || 0;
+
+            const demTurnout = num(row["Democratic turnout"]);
+            const repTurnout = num(row["Republican turnout"]);
+            const otherTurnout = num(row["Other party turnout"]);
+
+            const demPct = num(row["Democratic percentage of total turnout"]);
+            const repPct = num(row["Republican percentage of registration"]);
+            const otherPct = num(row["Other party percentage of registration"]);
+
+            return [
+              {
+                name: "Democrat",
+                party: "Dem.",
+                value: demTurnout,
+                pct: demPct,
+                color: "#009edb",
+              },
+              {
+                name: "Republican",
+                party: "Rep.",
+                value: repTurnout,
+                pct: repPct,
+                color: "#d70000",
+              },
+              {
+                name: "Other",
+                party: "Other",
+                value: otherTurnout,
+                pct: otherPct,
+                color: "#1b998b",
+              },
+            ];
           }
+
+          const totalData = datasets["total"] || [];
+          if (!Array.isArray(totalData) || totalData.length === 0) return [];
           const rows = totalData.filter((r) => r.Party && r.Party !== "Total");
           const dem = rows.find((r) => r.Party === "Democrat") || { Total: 0 };
           const rep = rows.find((r) => r.Party === "Republican") || {
-            Total: 0,
-          };
-          const noParty = rows.find((r) => r.Party === "No Affiliation") || {
             Total: 0,
           };
           const other = rows.find((r) => r.Party === "Other") || { Total: 0 };
@@ -100,91 +146,133 @@
             },
           ];
         },
+
         renderTreemap() {
           const container = this.$refs.treemapContainer;
           if (!container) return;
+
           const partyData = this.getPartyData();
           if (partyData.length === 0) return;
+
           const sortedData = [...partyData].sort((a, b) => b.value - a.value);
+
           container.innerHTML = "";
           const containerWidth = container.clientWidth;
           const containerHeight = container.clientHeight;
-          if (containerWidth < 100 || containerHeight < 100) {
-            return;
-          }
-          const margin = { top: 0, right: 80, bottom: 10, left: 0 };
+          if (containerWidth < 100 || containerHeight < 100) return;
+
+          const margin = { top: 32, right: 0, bottom: 28, left: 0 };
+
           const width = containerWidth - margin.left - margin.right;
           const height = containerHeight - margin.top - margin.bottom;
+
+          const PADDING_RIGHT = 0;
+          const LABEL_COL_W = 0;
+
           const svg = d3
             .select(container)
             .append("svg")
             .attr("width", containerWidth)
             .attr("height", containerHeight)
+            .style("display", "block")
+            .style("max-width", "100%")
+            .attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`)
+            .attr("preserveAspectRatio", "xMidYMid meet")
             .append("g")
             .attr("transform", `translate(${margin.left},${margin.top})`);
-          const labelWidth = 80;
+
           const x = d3
             .scaleLinear()
-            .domain([0, d3.max(sortedData, (d) => d.value)])
-            .range([labelWidth, width]);
+            .domain([0, 100])
+            .range([0, width - PADDING_RIGHT - LABEL_COL_W]);
+
           const y = d3
             .scaleBand()
             .domain(sortedData.map((d) => d.name))
             .range([0, height])
-            .padding(0.3)
-            .paddingOuter(0.15);
+            .padding(0.6)
+            .paddingOuter(0);
+
           const gap = y.step() - y.bandwidth();
+
+          const clampX = (val) =>
+            Math.max(LABEL_COL_W, Math.min(val, width - PADDING_RIGHT));
+
           svg
             .selectAll(".separator")
             .data(sortedData.slice(1))
             .join("line")
             .attr("class", "separator")
             .attr("x1", 0)
-            .attr("x2", width)
+            .attr("x2", width - PADDING_RIGHT)
             .attr("y1", (d) => y(d.name) - gap / 2)
             .attr("y2", (d) => y(d.name) - gap / 2)
             .attr("stroke", "#4b5563")
             .attr("stroke-width", 1)
             .attr("stroke-dasharray", "3,3");
+
           const bars = svg
             .selectAll(".bar")
             .data(sortedData)
             .join("g")
             .attr("class", "bar");
+
           bars
             .append("rect")
-            .attr("x", labelWidth)
+            .attr("x", LABEL_COL_W)
             .attr("y", (d) => y(d.name))
-            .attr("width", (d) => Math.max(0, x(d.value) - labelWidth))
+            .attr("width", width - PADDING_RIGHT - LABEL_COL_W)
+            .attr("height", y.bandwidth())
+            .attr("fill", "#e5e7eb");
+
+          bars
+            .append("rect")
+            .attr("x", LABEL_COL_W)
+            .attr("y", (d) => y(d.name))
+            .attr("width", (d) => x(d.pct))
             .attr("height", y.bandwidth())
             .attr("fill", (d) => d.color);
+
           bars
             .append("text")
-            .attr("x", 0)
-            .attr("y", (d) => y(d.name) + y.bandwidth() / 2)
-            .attr("dy", "0.35em")
+            .attr("x", LABEL_COL_W)
+            .attr("y", (d) => y(d.name) - 6)
             .attr("text-anchor", "start")
             .attr("fill", "#ffffff")
-            .attr("font-size", "16px")
+            .attr("font-size", "20px")
             .attr("font-weight", "700")
-            .text((d) => d.party);
+            .text((d) => {
+              if (d.name === "Democrat") return "Democratic Party";
+              if (d.name === "Republican") return "Republican Party";
+              if (d.name === "Other") return "Other";
+            });
+
+          bars
+            .append("text")
+            .attr("x", width - PADDING_RIGHT - 4)
+            .attr("y", (d) => y(d.name) + y.bandwidth() + 22)
+            .attr("text-anchor", "end")
+            .attr("fill", "#ffffff")
+            .attr("font-size", "18px")
+            .attr("font-weight", "400")
+            .text((d) => {
+              const base = d.value.toLocaleString();
+              return d.name === "Democrat" ? `${base} registered voters` : base;
+            });
+
           bars
             .append("text")
             .attr("x", (d) => {
-              const barWidth = x(d.value) - labelWidth;
-              if (d.value < 1500000) {
-                return x(d.value) + 12;
-              } else {
-                return x(d.value) - 12;
-              }
+              const end = LABEL_COL_W + x(d.pct);
+              return d.pct >= 25 ? end - 8 : end + 8;
             })
             .attr("y", (d) => y(d.name) + y.bandwidth() / 2)
             .attr("dy", "0.35em")
-            .attr("text-anchor", (d) => (d.value < 1500000 ? "start" : "end"))
-            .attr("fill", "#ffffff")
-            .attr("font-size", "18px")
+            .attr("text-anchor", (d) => (d.pct >= 25 ? "end" : "start"))
+            .attr("fill", (d) => (d.pct >= 25 ? "#ffffff" : "#111111"))
+            .attr("font-size", "20px")
             .attr("font-weight", "700")
-            .text((d) => d.value.toLocaleString());
+            .text((d) => `${Math.round(d.pct)}%`);
         },
       };
     }
@@ -1846,7 +1934,7 @@
     x-init="init()"
   >
     <div
-      class="order-1 col-span-1 row-span-1 flex flex-col items-start justify-center bg-black p-6 text-white lg:col-span-5 lg:row-span-2 lg:p-12"
+      class="order-1 col-span-1 row-span-1 flex flex-col items-start justify-center bg-black px-6 pt-6 text-white lg:col-span-5 lg:row-span-2 lg:px-12 lg:pt-12"
     >
       {{ with .Param "kicker" }}
         <p class="font-sans font-bold uppercase text-yellow">{{ . }}</p>
@@ -2131,23 +2219,22 @@
     <div
       class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pb-2 lg:pl-12 lg:pr-2"
       x-ref="treemapContainer"
-      x-show="datasets && datasets.total && datasets.total.length > 0"
+      x-show="datasets && ((datasets.counts && datasets.counts.length > 0) || (datasets.total && datasets.total.length > 0))"
       x-init="
-      window.addEventListener('inspections-data-ready', () => {
-      $nextTick(() => renderTreemap());
-      });
-      $watch('datasets', () => {
-      if (datasets && datasets.total && datasets.total.length > 0) {
-      $nextTick(() => renderTreemap());
+    window.addEventListener('inspections-data-ready', () => { $nextTick(() => renderTreemap()); });
+    $watch('datasets', () => {
+      if (datasets && ((datasets.counts && datasets.counts.length > 0) || (datasets.total && datasets.total.length > 0))) {
+        $nextTick(() => renderTreemap());
       }
-      });
-      window.addEventListener('resize', () => {
-      if (datasets && datasets.total && datasets.total.length > 0) {
-      renderTreemap();
+    });
+    window.addEventListener('resize', () => {
+      if (datasets && ((datasets.counts && datasets.counts.length > 0) || (datasets.total && datasets.total.length > 0))) {
+        renderTreemap();
       }
-      });
-      "
+    });
+  "
     ></div>
+
     <div
       class="order-4 col-span-1 row-span-1 bg-black px-4 py-6 max-[440px]:pt-16 lg:col-span-12 lg:row-span-2 lg:px-12 lg:py-8 lg:pb-20"
       x-data="{ selectedCounty: 'Pennsylvania' }"
