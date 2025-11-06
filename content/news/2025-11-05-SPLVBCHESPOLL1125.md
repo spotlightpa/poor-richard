@@ -23,11 +23,15 @@ topics = ["Elections"]
 
 <em>This article is made possible through </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> collaboration with </em><a href="https://www.votebeat.org/"><em>Votebeat</em></a><em>, a nonpartisan news organization covering local election administration and voting. </em><a href="https://www.votebeat.org/newsletters/"><em>Sign up for Votebeat&#39;s free newsletters here</em></a><em>.</em>
 
+<strong><em>UPDATE 12 P.M., Nov. 6:</em></strong><em> This article has been updated to include the number of provisional ballots received by the county. </em><strong><em></em></strong>
+
 An error that affected the ability of tens of thousands of Chester County voters to cast regular ballots on Election Day happened after county officials mistakenly failed to extract third party and unaffiliated voters from the state’s voter registration management database when creating a pollbook file for printing.
 
 State officials say the county only extracted Republican and Democrat voters when the county prepared its pollbooks, leaving out the third party and unaffiliated voters. Pollbooks are lists of registered voters that workers use to check them in at voting locations.
 
 “That is something that you sometimes see counties do, correctly, in a primary election,” Secretary of the Commonwealth Al Schmidt said, referring to the fact that third party and unaffiliated voters can’t participate in Pennsylvania primaries. “It appears that Chester did that pollbook extract and only included major party voters.”
+
+On Thursday, Chester County confirmed voters submitted more than 12,100 provisional ballots, an amount far more than in other recent elections.
 
 {{<embed/newsletter>}}
 
@@ -47,7 +51,11 @@ County officials said all the supplemental pollbooks were delivered to all 230 p
 
 Brain said Tuesday that no precincts ran out of provisional ballots. Schmidt also said that Delaware and Philadelphia counties provided additional provisional ballot envelopes to the county, since those cannot be printed as quickly as additional ballots.
 
-Brain said Wednesday afternoon that the county did not yet have a full count of how many provisional ballots voters cast Tuesday. In the 2023 and 2021 municipal elections the county received 843 and 626 provisional ballots, respectively, according to state data.
+In the 2023 and 2021 municipal elections the county received 843 and 626 provisional ballots, respectively, according to state data.
+
+In last year’s presidential election, the county received 3,454 provisional ballots.
+
+Processing the ballots will begin Friday morning and continue for 12 hours each day until complete, according to a statement from the county Thursday.
 
 {{<embed/donate>}}
 
