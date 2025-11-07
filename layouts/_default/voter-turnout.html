@@ -2129,11 +2129,9 @@
         </p>
       {{ end }}
       {{ if not $params.evergreen | and $params.published }}
-        <div
-          class="mt-2 block"
-        >
+        <div class="mt-2 block">
           <span class="font-semibold">Source:</span> State of Pennsylvania
-      </div>
+        </div>
       {{ end }}
     </div>
     <div
@@ -2400,11 +2398,20 @@
               About the Data
             </h1>
             <p class="mb-4">
-              This data was produced by processing voter registration files provided by the state of Pennsylvania.
+              This data was produced by processing voter registration files
+              provided by the state of Pennsylvania.
               <br /><br />
-              The voter registration file contains the name, voting precinct, party affiliation, and date last voted for each voter in the state.
+              The voter registration file contains the name, voting precinct,
+              party affiliation, and date last voted for each voter in the
+              state.
               <br /><br />
-              By seeing which voters voted in the most recent election, we built a map of voter turnout for various precincts and affiliations. Code for the analysis can be examined <a href="https://gist.github.com/earthboundkid/ccb3fb4d4440f8c5261833bfd4a6f2fe">here</a>.
+              By seeing which voters voted in the most recent election, we built
+              a map of voter turnout for various precincts and affiliations.
+              Code for the analysis can be examined
+              <a
+                href="https://gist.github.com/earthboundkid/ccb3fb4d4440f8c5261833bfd4a6f2fe"
+                >here</a
+              >.
             </p>
             <div class="my-8 flex justify-center">
               <hr
