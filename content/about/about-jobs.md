@@ -83,19 +83,6 @@ This position is based in Centre County. We can provide a moving stipend if the 
 
 - - -
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Sign up to receive alerts so you don't miss new job postings.
 
 {{<newsletter/jobs-form>}}
