@@ -322,9 +322,31 @@
     }
     function splPartyChart() {
       return {
-        selectedParty: "democrat",
+        selectedParty: "total",
         isSearching: false,
         partyConfig: Object.freeze({
+          total: {
+            colors: Object.freeze([
+              "#d8fbf6",
+              "#aff5ea",
+              "#86efe0",
+              "#5de9d6",
+              "#22cdb8",
+              "#199e8e",
+              "#0f6f63",
+              "#083934",
+            ]),
+            labels: Object.freeze([
+              "10%",
+              "20%",
+              "30%",
+              "40%",
+              "50%",
+              "60%",
+              "70%",
+            ]),
+            borderColor: "#1b998b",
+          },
           democrat: {
             colors: Object.freeze([
               "#d4f1ff",
@@ -668,7 +690,7 @@
     function splMapData() {
       return {
         selected: "county",
-        selectedParty: "democrat",
+        selectedParty: "total",
         map: null,
         geojsonData: {},
         countyData: [],
@@ -813,6 +835,13 @@
 
         buildHoverPopupHTML(feature, layerType) {
           const partyKeyMap = {
+            total: {
+              share: "totalShare",
+              total: "totalRegistered",
+              color: "#1b998b",
+              text: "#ffffff",
+              label: "Total turnout",
+            },
             democrat: {
               share: "democratShare",
               total: "democratTotal",
@@ -835,6 +864,7 @@
               label: "Other",
             },
           };
+
           const activeParty = this.selectedParty;
           const active = partyKeyMap[activeParty];
           const shareVal = feature.properties?.[active.share];
@@ -864,6 +894,7 @@
           const others = Object.entries(partyKeyMap)
             .filter(([k]) => k !== activeParty)
             .map(([k, meta]) => ({
+              key: k,
               label: meta.label,
               color: meta.color,
               textColor: meta.text,
@@ -874,6 +905,15 @@
                   )
                 : 0,
             }));
+
+          const ordered =
+            activeParty !== "total"
+              ? [
+                  ...others.filter((o) => o.key !== "total"),
+                  ...others.filter((o) => o.key === "total"),
+                ]
+              : others;
+
           const renderBar = ({ label, pct, color, textColor }) =>
             [
               "<div style='margin-top:8px;'>",
@@ -908,8 +948,8 @@
             `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
             "<div style='height:8px;'></div>",
             "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
-            renderBar(others[0]),
-            renderBar(others[1]),
+            ordered.map(renderBar).join(""),
+
             "</div>",
           ].join("");
           return html;
@@ -1061,6 +1101,12 @@
                   Number(countyRecord["Republicans registered"]) || 0;
                 feature.properties.otherTotal =
                   Number(countyRecord["Other party registered"]) || 0;
+
+                feature.properties.totalShare = pct(
+                  countyRecord["Turnout percentage"],
+                );
+                feature.properties.totalRegistered =
+                  Number(countyRecord["Total registered"]) || 0;
               } else {
                 console.warn(`No data found for county: ${countyName}`);
               }
@@ -1141,6 +1187,10 @@
               feature.properties.otherTotal =
                 toNum(rec["Other party registered"]) || 0;
 
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
               feature.properties.districtName = `Congressional District ${districtId}`;
             });
           }
@@ -1207,6 +1257,10 @@
               feature.properties.otherTotal =
                 toNum(rec["Other party registered"]) || 0;
 
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
               feature.properties.districtName = `Senate District ${districtId}`;
             });
           }
@@ -1272,6 +1326,10 @@
               feature.properties.otherTotal =
                 toNum(rec["Other party registered"]) || 0;
 
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
               feature.properties.districtName = `House District ${districtId}`;
             });
           }
@@ -1305,6 +1363,13 @@
               });
             }
             const partyKeyMap = {
+              total: {
+                share: "totalShare",
+                total: "totalRegistered",
+                color: "#1b998b",
+                text: "#ffffff",
+                label: "Total turnout",
+              },
               democrat: {
                 share: "democratShare",
                 total: "democratTotal",
@@ -1327,6 +1392,7 @@
                 label: "Other",
               },
             };
+
             const activeParty = this.selectedParty;
             const active = partyKeyMap[activeParty];
             const shareVal = feature.properties[active.share];
@@ -1351,16 +1417,29 @@
             const others = Object.entries(partyKeyMap)
               .filter(([k]) => k !== activeParty)
               .map(([k, meta]) => ({
+                key: k,
                 label: meta.label,
                 color: meta.color,
                 textColor: meta.text,
-                pct: Number.isFinite(feature.properties[meta.share])
+                pct: Number.isFinite(feature.properties?.[meta.share])
                   ? Math.max(
                       0,
-                      Math.min(100, Math.round(feature.properties[meta.share])),
+                      Math.min(
+                        100,
+                        Math.round(feature.properties?.[meta.share]),
+                      ),
                     )
                   : 0,
               }));
+
+            const ordered =
+              activeParty !== "total"
+                ? [
+                    ...others.filter((o) => o.key !== "total"),
+                    ...others.filter((o) => o.key === "total"),
+                  ]
+                : others;
+
             const districtName =
               feature.properties.districtName ||
               `District ${feature.properties.DISTRICT}`;
@@ -1398,8 +1477,8 @@
               `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
               "<div style='height:8px;'></div>",
               "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
-              renderBar(others[0]),
-              renderBar(others[1]),
+              ordered.map(renderBar).join(""),
+
               "</div>",
             ].join("");
             this.popup.setLngLat(e.lngLat).setHTML(htmlContent).addTo(this.map);
@@ -1430,6 +1509,16 @@
         },
         getPaletteForParty(party) {
           const cfg = {
+            total: [
+              "#d8fbf6",
+              "#aff5ea",
+              "#86efe0",
+              "#5de9d6",
+              "#22cdb8",
+              "#199e8e",
+              "#0f6f63",
+              "#083934",
+            ],
             democrat: [
               "#d4f1ff",
               "#8fd6ff",
@@ -1461,10 +1550,12 @@
               "#332600",
             ],
           };
+
           return [...cfg[party]];
         },
         getSharePropKey(party) {
           return {
+            total: "totalShare",
             democrat: "democratShare",
             republican: "republicanShare",
             other: "otherShare",
@@ -1474,6 +1565,16 @@
           const key = this.getSharePropKey(party);
           const breaks = this.getBreaksForParty(party);
           const colorMap = {
+            total: [
+              "#d8fbf6",
+              "#aff5ea",
+              "#86efe0",
+              "#5de9d6",
+              "#22cdb8",
+              "#199e8e",
+              "#0f6f63",
+              "#083934",
+            ],
             democrat: [
               "#d4f1ff",
               "#8fd6ff",
@@ -1505,6 +1606,7 @@
               "#332600",
             ],
           };
+
           const colors = [...colorMap[party]];
           const expr = ["case", ["==", ["get", key], null], "#cccccc"];
           for (let i = 0; i < breaks.length - 1; i++) {
@@ -1532,7 +1634,10 @@
                 type: "fill",
                 source: "counties",
                 paint: {
-                  "fill-color": this.buildFillColorExpression("democrat"),
+                  "fill-color": this.buildFillColorExpression(
+                    this.selectedParty,
+                  ),
+
                   "fill-opacity": 1.0,
                 },
               },
@@ -1603,6 +1708,13 @@
                   });
                 }
                 const partyKeyMap = {
+                  total: {
+                    share: "totalShare",
+                    total: "totalRegistered",
+                    color: "#1b998b",
+                    text: "#ffffff",
+                    label: "Total turnout",
+                  },
                   democrat: {
                     share: "democratShare",
                     total: "democratTotal",
@@ -1625,6 +1737,7 @@
                     label: "Other",
                   },
                 };
+
                 const activeParty = this.selectedParty;
                 const active = partyKeyMap[activeParty];
                 const shareVal = feature.properties[active.share];
@@ -1649,19 +1762,29 @@
                 const others = Object.entries(partyKeyMap)
                   .filter(([k]) => k !== activeParty)
                   .map(([k, meta]) => ({
+                    key: k,
                     label: meta.label,
                     color: meta.color,
                     textColor: meta.text,
-                    pct: Number.isFinite(feature.properties[meta.share])
+                    pct: Number.isFinite(feature.properties?.[meta.share])
                       ? Math.max(
                           0,
                           Math.min(
                             100,
-                            Math.round(feature.properties[meta.share]),
+                            Math.round(feature.properties?.[meta.share]),
                           ),
                         )
                       : 0,
                   }));
+
+                const ordered =
+                  activeParty !== "total"
+                    ? [
+                        ...others.filter((o) => o.key !== "total"),
+                        ...others.filter((o) => o.key === "total"),
+                      ]
+                    : others;
+
                 const countyName = feature.properties.county_nam;
                 const renderBar = ({ label, pct, color, textColor }) =>
                   [
@@ -1699,8 +1822,8 @@
                   `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
                   "<div style='height:8px;'></div>",
                   "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
-                  renderBar(others[0]),
-                  renderBar(others[1]),
+                  ordered.map(renderBar).join(""),
+
                   "</div>",
                 ].join("");
                 this.popup
@@ -2186,6 +2309,7 @@
             :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
             class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
           >
+            <option value="total">Total turnout</option>
             <option value="democrat">Democratic Party</option>
             <option value="republican">Republican Party</option>
             <option value="other">Other party</option>
