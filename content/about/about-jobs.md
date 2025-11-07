@@ -9,6 +9,7 @@ aliases = ["/jobs/"]
 ### Current openings
 
 * [Major Gifts Directors, Eastern & Western Pa., Spotlight PA](#major-gifts-directors-eastern--western-pa-spotlight-pa)
+* [Penn State Investigative Reporter, Spotlight PA State College (Guild Position)](#penn-state-investigative-reporter-spotlight-pa-state-college-guild-position)
 
 ## Major Gifts Directors, Eastern & Western Pa., Spotlight PA
 
@@ -43,6 +44,42 @@ This job is full-time and includes benefits.  The first two years of these posit
 Applicants should include a resume and a one-page cover letter answering the following prompts: **1) What makes you uniquely able to grow Spotlight PA's major gifts program in your region, and how would you do it?; and 2) Tell us about specific examples where your work resulted in major/transformative gifts to a nonprofit.**
 
 We know not everyone reading this will fit exactly what we've described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
+
+- - -
+
+## Penn State Investigative Reporter, Spotlight PA State College (Guild Position)
+
+### [Apply here](https://spotlightpa.applytojob.com/apply/Yhc2TjpWRW/Penn-State-Investigative-Reporter-Spotlight-PA-State-College-Guild-Position)
+
+**Summary**: We are seeking a passionate reporter to provide vital accountability reporting on Penn State University for Spotlight PA, an award-winning, independent, and nonpartisan newsroom focused on urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. This investigative reporter is an integral part of Spotlight PA’s State College regional bureau.
+
+Penn State has a nearly $10 billion budget, campuses across the commonwealth, and a health system that serves tens of thousands of people. It is the most influential university in Pennsylvania, as well as one of the 10 largest employers in the state.
+
+Spotlight PA State College’s award-winning coverage of Penn State revealed deeply rooted flaws and distrust in the university’s post-Sandusky scandal reforms. It also uncovered that a top surgeon in Penn State Health’s abdominal transplant program had alerted leaders to problems months before he was dismissed and the program closed amid federal scrutiny.
+
+Penn State holds a special exemption in Pennsylvania’s open records law, which allows it to keep the vast majority of its information secret despite being a public university and receiving hundreds of millions of taxpayer dollars each year. Spotlight PA’s work has resulted in greater transparency from the university, including a recent legal settlement between the Penn State Board of Trustees and the newsroom that requires more public disclosures about trustee business. All voting members of the board completed legal training as part of the agreement.
+
+**What you'll do**: This reporter will lead Spotlight PA’s coverage of Penn State. While there may be occasional daily reporting, this position will primarily allow the reporter to take the time to go beneath the surface to scrutinize the inner workings of the institution.
+
+-   This reporter will also examine how the mammoth institution influences the community around it. 
+
+-   This is an enterprise beat, and the reporter will be expected to regularly uncover and write stories and investigate issues that are otherwise getting little to no attention.
+
+-   Spotlight PA partners with more than 120 newsrooms across the state to share stories, and this reporter will frequently collaborate with other journalists in the pursuit of impact-driven reporting.
+
+**Who we're looking for**: Ideal candidates will have investigative clips that show an ability to report beyond daily news, build a diverse network of sources, and aggressively fight for and use public records. We want someone who can penetrate guarded and closed-off institutions, persistently pitch stories, and keep several projects of varying lengths cooking at one time. The best candidates will bring big ideas and a sense of urgency to work each day, and be eager to work with Spotlight PA’s team of like-minded reporters.
+
+Some other ideal traits, though not essential:
+
+-   Knowledge of Pennsylvania and/or sprawling university systems
+
+-   A comfort with requesting, scrutinizing, and using data in the reporting process
+
+-   Familiarity with public records requests and managing appeals
+
+This is a full-time Guild position and includes benefits. While we have the flexibility to find a compensation package that will work for the right candidate, this position is budgeted for a salary from $65,000-$75,000, depending on experience.
+
+This position is based in Centre County. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
 
 - - -
 
