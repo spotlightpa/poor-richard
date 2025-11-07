@@ -2129,15 +2129,11 @@
         </p>
       {{ end }}
       {{ if not $params.evergreen | and $params.published }}
-        <a
-          href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           class="mt-2 block"
         >
-          <span class="font-semibold">Source:</span> TKTK Pennsylvania
-          Department of State
-        </a>
+          <span class="font-semibold">Source:</span> State of Pennsylvania
+      </div>
       {{ end }}
     </div>
     <div
@@ -2404,22 +2400,11 @@
               About the Data
             </h1>
             <p class="mb-4">
-              The data comes from the
-              <a
-                href="https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics#accordion-6cb6ca8a99-item-df8c67bfea"
-              >
-                official website of the Commonwealth of Pennsylvania</a
-              >, using the state's Voting & Election Statistics data.
+              This data was produced by processing voter registration files provided by the state of Pennsylvania.
               <br /><br />
-              The maps shows the total number of registered voters in each
-              county, broken down by political party. The “No party” column
-              includes only voters whose registration lists “No affiliation”
-              exactly. It does not include voters whose party field is blank or
-              listed as “none” or another unaffiliated designation.
+              The voter registration file contains the name, voting precinct, party affiliation, and date last voted for each voter in the state.
               <br /><br />
-              Historical data is compiled from totals reported each November,
-              using only party categories that have appeared consistently over
-              the years.
+              By seeing which voters voted in the most recent election, we built a map of voter turnout for various precincts and affiliations. Code for the analysis can be examined <a href="https://gist.github.com/earthboundkid/ccb3fb4d4440f8c5261833bfd4a6f2fe">here</a>.
             </p>
             <div class="my-8 flex justify-center">
               <hr
