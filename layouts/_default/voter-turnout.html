@@ -965,9 +965,7 @@
               this.datasets &&
               (this.datasets.counts ||
                 this.datasets.Counts ||
-                this.datasets.Sheet1) &&
-              this.datasets.senate &&
-              this.datasets.house,
+                this.datasets.Sheet1),
           );
 
           this.countyData =
@@ -1036,8 +1034,6 @@
           await pollUntil(
             () =>
               this.datasets &&
-              this.datasets.congress &&
-              this.datasets.senate &&
               (this.datasets.counts ||
                 this.datasets.Counts ||
                 this.datasets.Sheet1),

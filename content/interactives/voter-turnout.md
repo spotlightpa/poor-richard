@@ -1,10 +1,11 @@
 +++
 title = "Voter turnout"
 title-tag = "Tracking Pennsylvania voter turnout trends"
-description = "Explore the latest voter registration changes in Pennsylvania by party and county with our interactive graphics."
+description = "Explore voter turnout in Pennsylvania by party and county with our interactive graphics."
 kicker = "Elections"
-authors = ["Alexandra Harris"]
+authors = ["Alexandra Harris", "Carlana Johnson"]
 published = "2025-11-10T00:00:00-04:00"
+display-date = "Dec. 10, 2025"
 layout = "voter-turnout"
 url = "/pennsylvania-voter-turnout"
 no-index = false
@@ -33,7 +34,7 @@ credits = """
 
 [data]
 sources = [
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-turnout/counts.csv"
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-turnout/counts.xlsx"
 ]
 popup = true
 cacheVersion = 1
