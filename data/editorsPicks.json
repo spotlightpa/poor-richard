@@ -8,15 +8,16 @@
     "content/news/2025-07-28-SPLMHFAILING0725.md"
   ],
   "featuredStories": [
-    "content/news/2025-11-05-SPLVBCHESPOLL1125.md"
+    "content/news/2025-11-07-SPLCOMPETENCY1125.md"
   ],
   "subfeatures": [
-    "content/news/2025-11-04-VBCHESTPOLL1125.md",
-    "content/news/2025-11-04-SPLAPGENRES1125.md"
+    "content/news/2025-11-07-SPLCOMPETENCY1125.md",
+    "content/news/2025-07-28-SPLMHFAILING0725.md",
+    "content/news/2023-03-09-SPLCOMPMINSIDE.md"
   ],
   "topSlots": [
+    "content/news/2025-11-05-SPLVBCHESPOLL1125.md",
     "content/statecollege/2025-11-05-SPLCLEARJUDGE1125.md",
-    "content/news/2025-11-04-SPLCOMMSUPRESULT1125.md",
-    "content/news/2025-11-04-SPLRETENTRES1125.md"
+    "content/news/2025-11-04-SPLCOMMSUPRESULT1125.md"
   ]
 }
