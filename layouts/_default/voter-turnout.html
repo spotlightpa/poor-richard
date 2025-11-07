@@ -371,17 +371,17 @@
           },
           other: {
             colors: Object.freeze([
-              "#d8fbf6",
-              "#aff5ea",
-              "#86efe0",
-              "#5de9d6",
-              "#22cdb8",
-              "#199e8e",
-              "#0f6f63",
-              "#083934",
+              "#fff6cc",
+              "#ffe999",
+              "#ffdc66",
+              "#ffcf33",
+              "#e0b300",
+              "#b38600",
+              "#7a5c00",
+              "#332600",
             ]),
             labels: Object.freeze(["1%", "2%", "3%", "4%", "5%", "6%", "7%"]),
-            borderColor: "#24ccb8",
+            borderColor: "#facc15",
           },
         }),
       };
@@ -830,8 +830,8 @@
             other: {
               share: "otherShare",
               total: "otherTotal",
-              color: "#1b998b",
-              text: "#ffffff",
+              color: "#ffcb03",
+              text: "#111111",
               label: "Other",
             },
           };
@@ -1322,8 +1322,8 @@
               other: {
                 share: "otherShare",
                 total: "otherTotal",
-                color: "#1b998b",
-                text: "#ffffff",
+                color: "#ffcb03",
+                text: "#111111",
                 label: "Other",
               },
             };
@@ -1451,14 +1451,14 @@
               "#330000",
             ],
             other: [
-              "#d8fbf6",
-              "#aff5ea",
-              "#86efe0",
-              "#5de9d6",
-              "#22cdb8",
-              "#199e8e",
-              "#0f6f63",
-              "#083934",
+              "#fff6cc",
+              "#ffe999",
+              "#ffdc66",
+              "#ffcf33",
+              "#e0b300",
+              "#b38600",
+              "#7a5c00",
+              "#332600",
             ],
           };
           return [...cfg[party]];
@@ -1495,14 +1495,14 @@
               "#330000",
             ],
             other: [
-              "#d8fbf6",
-              "#aff5ea",
-              "#86efe0",
-              "#5de9d6",
-              "#22cdb8",
-              "#199e8e",
-              "#0f6f63",
-              "#083934",
+              "#fff6cc",
+              "#ffe999",
+              "#ffdc66",
+              "#ffcf33",
+              "#e0b300",
+              "#b38600",
+              "#7a5c00",
+              "#332600",
             ],
           };
           const colors = [...colorMap[party]];
@@ -1620,8 +1620,8 @@
                   other: {
                     share: "otherShare",
                     total: "otherTotal",
-                    color: "#1b998b",
-                    text: "#ffffff",
+                    color: "#ffcb03",
+                    text: "#111111",
                     label: "Other",
                   },
                 };
@@ -2186,9 +2186,9 @@
             :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
             class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
           >
-            <option value="democrat">Democrat</option>
-            <option value="republican">Republican</option>
-            <option value="other">Other</option>
+            <option value="democrat">Democratic Party</option>
+            <option value="republican">Republican Party</option>
+            <option value="other">Other party</option>
           </select>
           <div
             class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
