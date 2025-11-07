@@ -1038,8 +1038,11 @@
               this.datasets &&
               this.datasets.congress &&
               this.datasets.senate &&
-              this.datasets.house,
+              (this.datasets.counts ||
+                this.datasets.Counts ||
+                this.datasets.Sheet1),
           );
+
           if (
             this.geojsonData.congressional &&
             this.geojsonData.congressional.features
@@ -1174,36 +1177,69 @@
               feature.properties.districtName = `Senate District ${districtId}`;
             });
           }
+          if (this.geojsonData.house && this.geojsonData.house.features) {
+            const countsTable =
+              this.datasets.counts ||
+              this.datasets.Counts ||
+              this.datasets.Sheet1 ||
+              [];
 
-          if (
-            this.geojsonData.house &&
-            this.geojsonData.house.features &&
-            this.datasets.house
-          ) {
+            const toNum = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  );
+
+            const pct = (v) => {
+              const n = toNum(v);
+              return Number.isFinite(n)
+                ? n > 0 && n <= 1
+                  ? n * 100
+                  : n
+                : null;
+            };
+
             this.geojsonData.house.features.forEach((feature) => {
               const districtId = feature.properties.DISTRICT;
-              const districtRecord = this.datasets.house.find(
-                (d) => Number(d.DistrictCode) === Number(districtId),
+              const pad3 = (n) => String(Number(n)).padStart(3, "0");
+              const areaCode = `STH${pad3(districtId)}`;
+
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || d.District || d.DistrictCode || "")
+                  .toString()
+                  .trim()
+                  .toUpperCase();
+                return (
+                  area === areaCode ||
+                  area === pad3(districtId) ||
+                  area === String(districtId)
+                );
+              });
+
+              if (!rec) return;
+
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
               );
-              if (districtRecord) {
-                const total = Number(districtRecord.Total) || 1;
-                const dem =
-                  Number(
-                    districtRecord.Democratic || districtRecord.Democrat,
-                  ) || 0;
-                const rep = Number(districtRecord.Republican) || 0;
-                const noParty = Number(districtRecord["No Affiliation"]) || 0;
-                const other = Number(districtRecord.Other) || 0;
-                feature.properties.democratShare = (dem / total) * 100;
-                feature.properties.republicanShare = (rep / total) * 100;
-                feature.properties.noPartyShare = (noParty / total) * 100;
-                feature.properties.otherShare = (other / total) * 100;
-                feature.properties.democratTotal = dem;
-                feature.properties.republicanTotal = rep;
-                feature.properties.noPartyTotal = noParty;
-                feature.properties.otherTotal = other;
-                feature.properties.districtName = `House District ${districtId}`;
-              }
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
+
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
+
+              feature.properties.districtName = `House District ${districtId}`;
             });
           }
         },
