@@ -803,13 +803,7 @@
           const shareVal = feature.properties?.[active.share];
           const totalVal = feature.properties?.[active.total];
           const sharePct = Number.isFinite(shareVal)
-            ? Math.max(
-                0,
-                Math.min(
-                  100,
-                  Math.round(shareVal <= 1 ? shareVal * 100 : shareVal),
-                ),
-              )
+            ? Math.max(0, Math.min(100, Math.round(shareVal)))
             : null;
 
           {
@@ -1115,37 +1109,72 @@
             });
           }
 
-          if (
-            this.geojsonData.senate &&
-            this.geojsonData.senate.features &&
-            this.datasets.senate
-          ) {
+          if (this.geojsonData.senate && this.geojsonData.senate.features) {
+            const countsTable =
+              this.datasets.counts ||
+              this.datasets.Counts ||
+              this.datasets.Sheet1 ||
+              [];
+
+            const toNum = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  );
+
+            const pct = (v) => {
+              const n = toNum(v);
+              return Number.isFinite(n)
+                ? n > 0 && n <= 1
+                  ? n * 100
+                  : n
+                : null;
+            };
+
             this.geojsonData.senate.features.forEach((feature) => {
               const districtId = feature.properties.DISTRICT;
-              const districtRecord = this.datasets.senate.find(
-                (d) => Number(d.DistrictCode) === Number(districtId),
+              const pad2 = (n) => String(Number(n)).padStart(2, "0");
+              const areaCode = `STS${pad2(districtId)}`;
+
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || d.District || d.DistrictCode || "")
+                  .toString()
+                  .trim()
+                  .toUpperCase();
+                return (
+                  area === areaCode ||
+                  area === pad2(districtId) ||
+                  area === String(districtId)
+                );
+              });
+
+              if (!rec) return;
+
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
               );
-              if (districtRecord) {
-                const total = Number(districtRecord.Total) || 1;
-                const dem =
-                  Number(
-                    districtRecord.Democratic || districtRecord.Democrat,
-                  ) || 0;
-                const rep = Number(districtRecord.Republican) || 0;
-                const noParty = Number(districtRecord["No Affiliation"]) || 0;
-                const other = Number(districtRecord.Other) || 0;
-                feature.properties.democratShare = (dem / total) * 100;
-                feature.properties.republicanShare = (rep / total) * 100;
-                feature.properties.noPartyShare = (noParty / total) * 100;
-                feature.properties.otherShare = (other / total) * 100;
-                feature.properties.democratTotal = dem;
-                feature.properties.republicanTotal = rep;
-                feature.properties.noPartyTotal = noParty;
-                feature.properties.otherTotal = other;
-                feature.properties.districtName = `Senate District ${districtId}`;
-              }
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
+
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
+
+              feature.properties.districtName = `Senate District ${districtId}`;
             });
           }
+
           if (
             this.geojsonData.house &&
             this.geojsonData.house.features &&
@@ -1234,13 +1263,7 @@
             const shareVal = feature.properties[active.share];
             const totalVal = feature.properties[active.total];
             const sharePct = Number.isFinite(shareVal)
-              ? Math.max(
-                  0,
-                  Math.min(
-                    100,
-                    Math.round(shareVal <= 1 ? shareVal * 100 : shareVal),
-                  ),
-                )
+              ? Math.max(0, Math.min(100, Math.round(shareVal)))
               : null;
 
             {
@@ -1538,13 +1561,7 @@
                 const shareVal = feature.properties[active.share];
                 const totalVal = feature.properties[active.total];
                 const sharePct = Number.isFinite(shareVal)
-                  ? Math.max(
-                      0,
-                      Math.min(
-                        100,
-                        Math.round(shareVal <= 1 ? shareVal * 100 : shareVal),
-                      ),
-                    )
+                  ? Math.max(0, Math.min(100, Math.round(shareVal)))
                   : null;
 
                 {
