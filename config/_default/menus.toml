@@ -19,8 +19,8 @@ url = "/about/"
 weight = 4
 
 [[main]]
-name = "Election 2025"
-url = "/elections/"
+name = "Events"
+url = "/topics/events/"
 weight = 5
 
 [[about]]
