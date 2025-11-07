@@ -67,12 +67,14 @@
 
         getPartyData() {
           const datasets = this.datasets || {};
+          const counts =
+            datasets.counts || datasets["Counts"] || datasets["Sheet1"];
 
-          if (Array.isArray(datasets.counts) && datasets.counts.length > 0) {
+          if (Array.isArray(counts) && counts.length > 0) {
             const row =
-              datasets.counts.find(
+              counts.find(
                 (r) => (r.Area || "").toLowerCase() === "pennsylvania",
-              ) || datasets.counts[0];
+              ) || counts[0];
 
             const num = (v) =>
               typeof v === "number"
@@ -84,13 +86,18 @@
                       .trim(),
                   ) || 0;
 
-            const demTurnout = num(row["Democratic turnout"]);
-            const repTurnout = num(row["Republican turnout"]);
-            const otherTurnout = num(row["Other party turnout"]);
+            const pct = (v) => {
+              const n = num(v);
+              return n > 0 && n <= 1 ? n * 100 : n;
+            };
 
-            const demPct = num(row["Democratic percentage of total turnout"]);
-            const repPct = num(row["Republican percentage of registration"]);
-            const otherPct = num(row["Other party percentage of registration"]);
+            const demTurnout = num(row["Democrats registered"]);
+            const repTurnout = num(row["Republicans registered"]);
+            const otherTurnout = num(row["Other party registered"]);
+
+            const demPct = pct(row["Democratic turnout percentage"]);
+            const repPct = pct(row["Republican turnout percentage"]);
+            const otherPct = pct(row["Other party turnout percentage"]);
 
             return [
               {
@@ -147,8 +154,8 @@
           ];
         },
 
-        renderTreemap() {
-          const container = this.$refs.treemapContainer;
+        renderBarchart() {
+          const container = this.$refs.barchartContainer;
           if (!container) return;
 
           const partyData = this.getPartyData();
@@ -766,6 +773,7 @@
           }
           return null;
         },
+
         buildHoverPopupHTML(feature, layerType) {
           const partyKeyMap = {
             democrat: {
@@ -795,8 +803,15 @@
           const shareVal = feature.properties?.[active.share];
           const totalVal = feature.properties?.[active.total];
           const sharePct = Number.isFinite(shareVal)
-            ? Math.max(0, Math.min(100, Math.round(shareVal)))
+            ? Math.max(
+                0,
+                Math.min(
+                  100,
+                  Math.round(shareVal <= 1 ? shareVal * 100 : shareVal),
+                ),
+              )
             : null;
+
           {
             const breaks = this.getBreaksForParty(activeParty);
             let idx = -1;
@@ -864,7 +879,6 @@
             "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
             renderBar(others[0]),
             renderBar(others[1]),
-            renderBar(others[2]),
             "</div>",
           ].join("");
           return html;
@@ -950,31 +964,73 @@
             this.setupLayers();
           }
         },
+
         async joinCountyData() {
-          await pollUntil(() => this.datasets && this.datasets.county);
-          this.countyData = this.datasets.county || [];
+          await pollUntil(
+            () =>
+              this.datasets &&
+              (this.datasets.counts ||
+                this.datasets.Counts ||
+                this.datasets.Sheet1),
+          );
+          this.countyData =
+            this.datasets.counts ||
+            this.datasets.Counts ||
+            this.datasets.Sheet1 ||
+            [];
+
           if (this.geojsonData.county && this.geojsonData.county.features) {
             this.geojsonData.county.features.forEach((feature) => {
               const countyName = feature.properties.county_nam;
-              const countyRecord = this.countyData.find(
-                (d) => d.CountyName === countyName,
-              );
+
+              const countyRecord = this.countyData.find((d) => {
+                const value = d.Area || d.County || d.CountyName || d.county;
+                if (!value) return false;
+                return (
+                  value.toLowerCase() === countyName.toLowerCase() ||
+                  value.toLowerCase().replace(" county", "") ===
+                    countyName.toLowerCase()
+                );
+              });
+
               if (countyRecord) {
-                feature.properties.democratShare =
-                  countyRecord["Democrat Share"];
-                feature.properties.republicanShare =
-                  countyRecord["Republican Share"];
-                feature.properties.noPartyShare =
-                  countyRecord["No Affiliation Share"];
-                feature.properties.otherShare = countyRecord["Other Share"];
+                const toNum = (v) =>
+                  typeof v === "number"
+                    ? v
+                    : Number(
+                        String(v ?? "")
+                          .replace(/,/g, "")
+                          .replace(/%/g, "")
+                          .trim(),
+                      );
+
+                const pct = (v) => {
+                  const n = toNum(v);
+                  return Number.isFinite(n)
+                    ? n > 0 && n <= 1
+                      ? n * 100
+                      : n
+                    : null;
+                };
+
+                feature.properties.democratShare = pct(
+                  countyRecord["Democratic turnout percentage"],
+                );
+                feature.properties.republicanShare = pct(
+                  countyRecord["Republican turnout percentage"],
+                );
+                feature.properties.otherShare = pct(
+                  countyRecord["Other party turnout percentage"],
+                );
+
                 feature.properties.democratTotal =
-                  Number(countyRecord["Democrat"]) || null;
+                  Number(countyRecord["Democrats registered"]) || 0;
                 feature.properties.republicanTotal =
-                  Number(countyRecord["Republican"]) || null;
-                feature.properties.noPartyTotal =
-                  Number(countyRecord["No Affiliation"]) || null;
+                  Number(countyRecord["Republicans registered"]) || 0;
                 feature.properties.otherTotal =
-                  Number(countyRecord["Other"]) || null;
+                  Number(countyRecord["Other party registered"]) || 0;
+              } else {
+                console.warn(`No data found for county: ${countyName}`);
               }
             });
           }
@@ -1137,8 +1193,15 @@
             const shareVal = feature.properties[active.share];
             const totalVal = feature.properties[active.total];
             const sharePct = Number.isFinite(shareVal)
-              ? Math.max(0, Math.min(100, Math.round(shareVal)))
+              ? Math.max(
+                  0,
+                  Math.min(
+                    100,
+                    Math.round(shareVal <= 1 ? shareVal * 100 : shareVal),
+                  ),
+                )
               : null;
+
             {
               const breaks = this.getBreaksForParty(activeParty);
               let idx = -1;
@@ -1204,7 +1267,6 @@
               "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
               renderBar(others[0]),
               renderBar(others[1]),
-              renderBar(others[2]),
               "</div>",
             ].join("");
             this.popup.setLngLat(e.lngLat).setHTML(htmlContent).addTo(this.map);
@@ -1435,8 +1497,15 @@
                 const shareVal = feature.properties[active.share];
                 const totalVal = feature.properties[active.total];
                 const sharePct = Number.isFinite(shareVal)
-                  ? Math.max(0, Math.min(100, Math.round(shareVal)))
+                  ? Math.max(
+                      0,
+                      Math.min(
+                        100,
+                        Math.round(shareVal <= 1 ? shareVal * 100 : shareVal),
+                      ),
+                    )
                   : null;
+
                 {
                   const breaks = this.getBreaksForParty(activeParty);
                   let idx = -1;
@@ -1505,7 +1574,6 @@
                   "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
                   renderBar(others[0]),
                   renderBar(others[1]),
-                  renderBar(others[2]),
                   "</div>",
                 ].join("");
                 this.popup
@@ -1959,19 +2027,14 @@
               {{ . }}
             {{ end }}
           </span>
-          {{ if not $params.evergreen | and $params.published }}
-            <template
-              x-cloak
-              x-if="metadata && (metadata.last_updated || metadata.generated_at_utc)"
-            >
-              <span>
-                |
-                <time
-                  :datetime="metadata.generated_at_utc || isoFromMDY(metadata.last_updated)"
-                  x-text="apDateLabelFromMDY(metadata.last_updated)"
-                ></time>
-              </span>
-            </template>
+          {{ if and (not $params.evergreen) $params.published }}
+            {{ $display := $.Param "display-date" }}
+            {{ $published := $.Param "published" }}
+            {{ if $display }}
+              <span
+                >| <time datetime="{{ $published }}">{{ $display }}</time></span
+              >
+            {{ end }}
           {{ end }}
         </p>
       {{ end }}
@@ -1982,8 +2045,8 @@
           rel="noopener noreferrer"
           class="mt-2 block"
         >
-          <span class="font-semibold">Source:</span> Pennsylvania Department of
-          State
+          <span class="font-semibold">Source:</span> TKTK Pennsylvania
+          Department of State
         </a>
       {{ end }}
     </div>
@@ -2218,20 +2281,22 @@
     </div>
     <div
       class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pb-2 lg:pl-12 lg:pr-2"
-      x-ref="treemapContainer"
-      x-show="datasets && ((datasets.counts && datasets.counts.length > 0) || (datasets.total && datasets.total.length > 0))"
+      x-ref="barchartContainer"
+      x-show="datasets && ((((datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1']) || []).length > 0) || (datasets.total && datasets.total.length > 0))"
       x-init="
-    window.addEventListener('inspections-data-ready', () => { $nextTick(() => renderTreemap()); });
-    $watch('datasets', () => {
-      if (datasets && ((datasets.counts && datasets.counts.length > 0) || (datasets.total && datasets.total.length > 0))) {
-        $nextTick(() => renderTreemap());
-      }
-    });
-    window.addEventListener('resize', () => {
-      if (datasets && ((datasets.counts && datasets.counts.length > 0) || (datasets.total && datasets.total.length > 0))) {
-        renderTreemap();
-      }
-    });
+          window.addEventListener('inspections-data-ready', () => { $nextTick(() => renderBarchart()); });
+          $watch('datasets', () => {
+            const counts = (datasets && (datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1'])) || [];
+            if ((counts.length > 0) || (datasets && datasets.total && datasets.total.length > 0)) {
+              $nextTick(() => renderBarchart());
+            }
+          });
+          window.addEventListener('resize', () => {
+            const counts = (datasets && (datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1'])) || [];
+            if ((counts.length > 0) || (datasets && datasets.total && datasets.total.length > 0)) {
+              renderBarchart();
+            }
+          });
   "
     ></div>
 
@@ -2371,6 +2436,7 @@
         </div>
       </div>
     </div>
+
     <div
       class="order-5 col-span-1 row-span-1 bg-white px-4 py-8 lg:col-span-12 lg:px-12 lg:py-12"
     >
