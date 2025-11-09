@@ -9,12 +9,12 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all monthly gifts will be matched 12X and all one-time gifts doubled.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mg/wk9b/newsmatch-2025-tracker-banners.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/zg77/sustainer-week-banner.png"
       ]
     }
   ],
@@ -28,7 +28,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mg/wk9b/newsmatch-2025-rectangles-1024-512-px-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/zg75/newsmatch-2025-rectangles-1024-512-px-4-.png"
       ]
     }
   ],
@@ -59,7 +59,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mg/wk9b/newsmatch-2025-squares-3-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/zg76/newsmatch-2025-squares-5-.png"
       ]
     },
     {
@@ -126,7 +126,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mg/wk9b/newsmatch-2025-squares-3-.png"
+        "https://files.data.spotlightpa.org/uploads/01mg/zg76/newsmatch-2025-squares-5-.png"
       ]
     }
   ],
@@ -159,7 +159,7 @@
   "support-hed": "Before you go, I have an urgent request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and thousands of readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA.\n\n\u003cstrong\u003eJoin them now and until midnight TONIGHT, your gift will be TRIPLED.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and thousands of readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA.\n\n\u003cstrong\u003eJoin them now and for a very limited time, all new monthly gifts will be matched 12X, and all new one-time gifts will be doubled.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "We only have 6 days left to raise $12,000 to ensure our unmatched nonpartisan, nonprofit reporting can continue. Give to Spotlight PA today \u0026 get it DOUBLED »",
