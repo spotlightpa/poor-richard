@@ -12,4 +12,5 @@ PA Local Heroes is a monthly feature sponsored by <a href="https://www.ballardsp
 Know a do-gooder who deserves the spotlight? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy8HLO3tQBzjuqOogc04ogyEDXFw_qLV9Nv2XTP7cNdLvnLw/viewform">Nominate them</a>.
 """
 linktitle = "PA Local Heroes is a monthly feature sponsored by Ballard Spahr"
+aliases = ["/palocalheroes/"]
 +++
