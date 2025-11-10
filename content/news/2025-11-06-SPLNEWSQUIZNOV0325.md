@@ -1,5 +1,5 @@
 +++
-authors = ["Colin Deppen"]
+authors = ["Asha Prihar"]
 blurb = "In this week’s news quiz: Election winners and losers, a museum director gets fired, and Philadelphia and Pittsburgh are in the running to host the same international sporting event."
 byline = "Colin Deppen of Spotlight PA"
 description = "In this week’s news quiz: Election winners and losers, a museum director gets fired, and Philadelphia and Pittsburgh seek to host the same event."
