@@ -195,128 +195,86 @@
           const sortedData = [...partyData].sort((a, b) => b.value - a.value);
 
           container.innerHTML = "";
-          const containerWidth = container.clientWidth;
-          const containerHeight = container.clientHeight;
-          if (containerWidth < 100 || containerHeight < 100) return;
 
-          const margin = { top: 48, right: 0, bottom: 50, left: 0 };
+          const wrapper = document.createElement("div");
+          wrapper.style.cssText =
+            "display: flex; flex-direction: column; gap: 0px; width: 100%; padding: 0px 0;";
 
-          const width = containerWidth - margin.left - margin.right;
-          const height = containerHeight - margin.top - margin.bottom;
+          sortedData.forEach((d, idx) => {
+            const section = document.createElement("div");
+            section.style.cssText = "display: flex; flex-direction: column;";
 
-          const PADDING_RIGHT = 0;
-          const LABEL_COL_W = 0;
+            if (idx > 0) {
+              const separator = document.createElement("div");
+              separator.style.cssText =
+                "height: 20px; display: flex; align-items: center; margin-bottom: 8px;";
+              const line = document.createElement("div");
+              line.style.cssText =
+                "width: 100%; height: 0; border-top: 1px dashed #4b5563; opacity: 1;";
+              separator.appendChild(line);
+              section.appendChild(separator);
+            } else {
+              const spacer = document.createElement("div");
+              spacer.style.cssText = "height: 4px;";
+              section.appendChild(spacer);
+            }
 
-          const svg = d3
-            .select(container)
-            .append("svg")
-            .attr("width", containerWidth)
-            .attr("height", containerHeight)
-            .style("display", "block")
-            .style("max-width", "100%")
-            .attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`)
-            .attr("preserveAspectRatio", "xMidYMid meet")
-            .append("g")
-            .attr("transform", `translate(${margin.left},${margin.top})`);
+            const labelContainer = document.createElement("div");
+            labelContainer.style.cssText = "margin-bottom: 8px; padding: 0;";
+            const label = document.createElement("div");
+            label.style.cssText =
+              "color: #ffffff; font-size: 20px; font-weight: 700; line-height: 1.2;";
+            const labelText =
+              d.name === "Pennsylvania"
+                ? "Pennsylvania"
+                : d.name === "Democrat"
+                  ? "Democratic Party"
+                  : d.name === "Republican"
+                    ? "Republican Party"
+                    : "Other party";
+            label.textContent = labelText;
+            labelContainer.appendChild(label);
+            section.appendChild(labelContainer);
 
-          const x = d3
-            .scaleLinear()
-            .domain([0, 100])
-            .range([0, width - PADDING_RIGHT - LABEL_COL_W]);
+            const barContainer = document.createElement("div");
+            const isMobile = window.innerWidth < 768;
+            const barHeight = isMobile ? 50 : 40;
+            barContainer.style.cssText = `position: relative; width: 100%; height: ${barHeight}px; background: #e5e7eb; margin-bottom: 8px;`;
+            const fill = document.createElement("div");
+            fill.style.cssText = `position: absolute; left: 0; top: 0; height: 100%; width: ${d.pct}%; background: ${d.color}; display: flex; align-items: center; justify-content: ${d.pct >= 25 ? "flex-end" : "flex-start"};`;
 
-          const y = d3
-            .scaleBand()
-            .domain(sortedData.map((d) => d.name))
-            .range([0, height])
-            .padding(0.65)
+            const pctLabel = document.createElement("div");
+            if (d.pct >= 25) {
+              pctLabel.style.cssText = `color: #ffffff; font-size: 20px; font-weight: 700; padding: 0 8px 0 0;`;
+              pctLabel.textContent = `${Math.round(d.pct)}%`;
+              fill.appendChild(pctLabel);
+              barContainer.appendChild(fill);
+            } else {
+              pctLabel.style.cssText = `position: absolute; left: ${d.pct}%; top: 50%; transform: translateY(-50%); margin-left: 8px; color: #111111; font-size: 20px; font-weight: 700; white-space: nowrap;`;
+              pctLabel.textContent = `${Math.round(d.pct)}%`;
+              barContainer.appendChild(fill);
+              barContainer.appendChild(pctLabel);
+            }
+            section.appendChild(barContainer);
 
-            .paddingOuter(0);
+            const valueContainer = document.createElement("div");
+            valueContainer.style.cssText =
+              "text-align: right; padding-right: 4px; margin-bottom: 4px;";
+            const value = document.createElement("div");
+            value.style.cssText =
+              "color: #ffffff; font-size: 18px; font-weight: 400;";
+            const valueText =
+              d.name === "Pennsylvania"
+                ? `${d.value.toLocaleString()} registered voters`
+                : d.value.toLocaleString();
+            value.textContent = valueText;
+            valueContainer.appendChild(value);
+            section.appendChild(valueContainer);
 
-          const gap = y.step() - y.bandwidth();
+            wrapper.appendChild(section);
+          });
 
-          const clampX = (val) =>
-            Math.max(LABEL_COL_W, Math.min(val, width - PADDING_RIGHT));
-
-          svg
-            .selectAll(".separator")
-            .data(sortedData.slice(1))
-            .join("line")
-            .attr("class", "separator")
-            .attr("x1", 0)
-            .attr("x2", width - PADDING_RIGHT)
-            .attr("y1", (d) => y(d.name) - gap / 2 + 0)
-            .attr("y2", (d) => y(d.name) - gap / 2 + 0)
-
-            .attr("stroke", "#4b5563")
-            .attr("stroke-width", 1)
-            .attr("stroke-dasharray", "3,3");
-
-          const bars = svg
-            .selectAll(".bar")
-            .data(sortedData)
-            .join("g")
-            .attr("class", "bar");
-
-          bars
-            .append("rect")
-            .attr("x", LABEL_COL_W)
-            .attr("y", (d) => y(d.name))
-            .attr("width", width - PADDING_RIGHT - LABEL_COL_W)
-            .attr("height", y.bandwidth())
-            .attr("fill", "#e5e7eb");
-
-          bars
-            .append("rect")
-            .attr("x", LABEL_COL_W)
-            .attr("y", (d) => y(d.name))
-            .attr("width", (d) => x(d.pct))
-            .attr("height", y.bandwidth())
-            .attr("fill", (d) => d.color);
-
-          bars
-            .append("text")
-            .attr("x", LABEL_COL_W)
-            .attr("y", (d) => y(d.name) - 13)
-
-            .attr("text-anchor", "start")
-            .attr("fill", "#ffffff")
-            .attr("font-size", "20px")
-            .attr("font-weight", "700")
-            .text((d) => {
-              if (d.name === "Pennsylvania") return "Pennsylvania";
-              if (d.name === "Democrat") return "Democratic Party";
-              if (d.name === "Republican") return "Republican Party";
-              if (d.name === "Other") return "Other party";
-            });
-
-          bars
-            .append("text")
-            .attr("x", width - PADDING_RIGHT - 4)
-            .attr("y", (d) => y(d.name) + y.bandwidth() + 22)
-
-            .attr("text-anchor", "end")
-            .attr("fill", "#ffffff")
-            .attr("font-size", "18px")
-            .attr("font-weight", "400")
-            .text((d) => {
-              const base = d.value.toLocaleString();
-              if (d.name === "Pennsylvania") return `${base} registered voters`;
-              return base;
-            });
-
-          bars
-            .append("text")
-            .attr("x", (d) => {
-              const end = LABEL_COL_W + x(d.pct);
-              return d.pct >= 25 ? end - 8 : end + 8;
-            })
-            .attr("y", (d) => y(d.name) + y.bandwidth() / 2)
-            .attr("dy", "0.35em")
-            .attr("text-anchor", (d) => (d.pct >= 25 ? "end" : "start"))
-            .attr("fill", (d) => (d.pct >= 25 ? "#ffffff" : "#111111"))
-            .attr("font-size", "20px")
-            .attr("font-weight", "700")
-            .text((d) => `${Math.round(d.pct)}%`);
+          container.appendChild(wrapper);
         },
       };
     }
@@ -2525,7 +2483,7 @@
       </div>
     </div>
     <div
-      class="order-2 col-span-1 row-span-1 min-h-[440px] bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:min-h-[520px] lg:pb-2 lg:pl-12 lg:pr-2"
+      class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pb-2 lg:pl-12 lg:pr-2"
       x-ref="barchartContainer"
       x-show="datasets && ((((datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1']) || []).length > 0) || (datasets.total && datasets.total.length > 0))"
       x-init="
