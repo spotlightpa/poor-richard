@@ -267,6 +267,13 @@
       "categoryRank": "4"
     },
     {
+      "display": "Richard and Susan DeWyngaert",
+      "sort": "DeWyngaert",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John and Janet Dillon",
       "sort": "Dillon",
       "url": "",
@@ -575,6 +582,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Sally Kennard",
+      "sort": "Kennard",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Roger and Karen Klotz",
       "sort": "Klotz",
       "url": "",
@@ -765,6 +779,13 @@
     },
     {
       "display": "Gaylon Morris",
+      "sort": "Morris",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "James and Susan Morris",
       "sort": "Morris",
       "url": "",
       "category": "$1,000-$2,499",
