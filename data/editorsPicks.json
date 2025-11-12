@@ -10,12 +10,10 @@
   "featuredStories": [
     "content/news/2025-11-12-SPLBUDGDEAL1125.md"
   ],
-  "subfeatures": [
-    "content/news/2025-11-10-SPLRGGIBUD1125.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
+    "content/news/2025-11-12-SPLRGGIDEAD1125.md",
     "content/news/2025-11-12-VBCHESTUP1125.md",
-    "content/statecollege/2025-11-12-SPLHERMUPDATE1125.md",
-    "content/news/2025-11-10-SPLSCOPA25.md"
+    "content/statecollege/2025-11-12-SPLHERMUPDATE1125.md"
   ]
 }
