@@ -968,7 +968,18 @@
         },
         async loadGeoJSON() {
           const sources = sourcesParam;
-          const [counties, house, congress, senate] = await Promise.all(
+          const [
+            counties,
+            house,
+            congress,
+            senate,
+            alleghenyPrecincts,
+            bucksPrecincts,
+            delawarePrecincts,
+            montgomeryPrecincts,
+            philadelphiaPrecincts,
+            yorkPrecincts,
+          ] = await Promise.all(
             sources.map((url) => fetch(url).then((r) => r.json())),
           );
           if (counties && counties.features) {
@@ -987,6 +998,12 @@
             house: house,
             congressional: congress,
             senate: senate,
+            "precinct-allegheny": alleghenyPrecincts,
+            "precinct-bucks": bucksPrecincts,
+            "precinct-delaware": delawarePrecincts,
+            "precinct-montgomery": montgomeryPrecincts,
+            "precinct-philadelphia": philadelphiaPrecincts,
+            "precinct-york": yorkPrecincts,
           };
           if (this.map && this.map.loaded()) {
             await this.joinCountyData();
@@ -2034,6 +2051,56 @@
               }
             });
           }
+
+          const precinctCounties = [
+            "allegheny",
+            "bucks",
+            "delaware",
+            "montgomery",
+            "philadelphia",
+            "york",
+          ];
+          precinctCounties.forEach((countyName) => {
+            const sourceKey = `precinct-${countyName}`;
+            if (!this.map.getSource(sourceKey) && this.geojsonData[sourceKey]) {
+              this.map.addSource(sourceKey, {
+                type: "geojson",
+                data: this.geojsonData[sourceKey],
+                promoteId: "OBJECTID",
+              });
+              this.map.addLayer(
+                {
+                  id: `${sourceKey}-fill`,
+                  type: "fill",
+                  source: sourceKey,
+                  layout: {
+                    visibility: "none",
+                  },
+                  paint: {
+                    "fill-color": "#cccccc",
+                    "fill-opacity": 0.6,
+                  },
+                },
+                labelLayerId,
+              );
+              this.map.addLayer(
+                {
+                  id: `${sourceKey}-outline`,
+                  type: "line",
+                  source: sourceKey,
+                  layout: {
+                    visibility: "none",
+                  },
+                  paint: {
+                    "line-color": "#ffffff",
+                    "line-width": 1,
+                  },
+                },
+                labelLayerId,
+              );
+            }
+          });
+
           this.updateLayerVisibility();
         },
         updateLayerVisibility() {
@@ -2682,16 +2749,57 @@
         @search-submitted-second.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
         x-init="
   initMap();
+  
   window.addEventListener('party-changed-second', (e) => {
     selectedParty = e.detail;
     if (map) {
-      ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
-        if (map.getLayer(layerId)) {
-          map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
+      const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
+      precinctCounties.forEach(countyName => {
+        const sourceKey = `precinct-${countyName.toLowerCase()}`;
+        if (map.getLayer(`${sourceKey}-fill`)) {
+          map.setPaintProperty(`${sourceKey}-fill`, 'fill-color', buildFillColorExpression(selectedParty));
         }
       });
       window.dispatchEvent(new Event('legend-clear'));
     }
+  });
+  
+  window.addEventListener('county-changed', (e) => {
+    const newCounty = e.detail;
+    if (!map) return;
+    const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
+    precinctCounties.forEach(countyName => {
+      const sourceKey = `precinct-${countyName.toLowerCase()}`;
+      const visibility = countyName.toLowerCase() === newCounty.toLowerCase() ? 'visible' : 'none';
+      if (map.getLayer(`${sourceKey}-fill`)) {
+        map.setLayoutProperty(`${sourceKey}-fill`, 'visibility', visibility);
+      }
+      if (map.getLayer(`${sourceKey}-outline`)) {
+        map.setLayoutProperty(`${sourceKey}-outline`, 'visibility', visibility);
+      }
+    });
+  });
+  
+  $nextTick(() => {
+    setTimeout(() => {
+      if (map) {
+        ['counties-fill', 'counties-outline', 'counties-outline-hover', 
+         'congressional-fill', 'congressional-outline', 'congressional-outline-hover',
+         'senate-fill', 'senate-outline', 'senate-outline-hover',
+         'house-fill', 'house-outline', 'house-outline-hover'].forEach(layerId => {
+          if (map.getLayer(layerId)) {
+            map.setLayoutProperty(layerId, 'visibility', 'none');
+          }
+        });
+        
+        if (map.getLayer('precinct-allegheny-fill')) {
+          map.setLayoutProperty('precinct-allegheny-fill', 'visibility', 'visible');
+        }
+        if (map.getLayer('precinct-allegheny-outline')) {
+          map.setLayoutProperty('precinct-allegheny-outline', 'visibility', 'visible');
+        }
+      }
+    }, 500);
   });
 "
       >
