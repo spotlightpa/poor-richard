@@ -6,7 +6,7 @@
 {{ $eyebrow := .Get "flag_text" | htmlUnescape | default `Tips` }}
 {{ $formName := .Get "form_name" | htmlUnescape | default `contact-page` }}
 
-{{ partial "tag/content-well-end" . }}
+
 <div
   class="my-6 rounded-lg border border-g-5 bg-g-2 p-7 font-sans md:p-10 xl:px-12 xl:py-7 print:hidden"
   data-ga-category="embed:contact"
@@ -152,4 +152,3 @@
     </div>
   </form>
 </div>
-{{ partial "tag/content-well-start" . }}
