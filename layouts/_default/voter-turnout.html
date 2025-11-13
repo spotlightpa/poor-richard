@@ -2506,6 +2506,7 @@
     <div
       class="order-4 col-span-1 row-span-1 bg-black px-4 py-12 text-white lg:col-span-12 lg:px-12 lg:py-8"
       x-data="splPartyChart()"
+      @search-complete.window="isSearching = false"
       x-init="
     window.addEventListener('party-changed-second', (e) => {
       selectedParty = e.detail;
@@ -2522,7 +2523,7 @@
             <select
               x-model="selectedCounty"
               @change="$dispatch('county-changed', selectedCounty)"
-              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-5 bg-g-2 px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
+              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-5 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
             >
               <option value="Allegheny">Allegheny</option>
               <option value="Bucks">Bucks</option>
@@ -2679,6 +2680,7 @@
       <div
         class="relative mt-10 h-[400px] w-full"
         x-data="splMapData()"
+        @search-submitted-second.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
         x-init="
   initMap();
   window.addEventListener('party-changed-second', (e) => {
