@@ -2504,6 +2504,48 @@
     ></div>
 
     <div
+      class="order-4 col-span-1 row-span-1 bg-black px-4 py-12 text-white lg:col-span-12 lg:px-12 lg:py-8"
+    >
+      <div class="flex items-center justify-between">
+        <p class="text-3xl font-semibold">Precinct turnout by county</p>
+
+        <div class="relative w-full max-w-xs">
+          <select
+            x-model="selectedCounty"
+            @change="$dispatch('county-changed', selectedCounty)"
+            class="w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-5 bg-g-2 px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
+          >
+            <option value="Allegheny">Allegheny</option>
+            <option value="Bucks">Bucks</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Montgomery">Montgomery</option>
+            <option value="Philadelphia">Philadelphia</option>
+            <option value="York">York</option>
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+          >
+            <svg
+              class="h-5 w-5 text-g-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 h-[400px] w-full bg-red"></div>
+    </div>
+
+    <div
       class="order-5 col-span-1 row-span-1 bg-white px-4 py-8 lg:col-span-12 lg:px-12 lg:py-12"
     >
       <div class="mx-auto w-full max-w-7xl">
