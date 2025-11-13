@@ -2513,13 +2513,11 @@
     });
   "
     >
-      <div class="flex items-center gap-16">
-        <p class="whitespace-nowrap text-3xl font-semibold">
-          Precinct turnout by county
-        </p>
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+        <p class="text-3xl font-semibold">Precinct turnout by county</p>
 
-        <div class="flex flex-1 items-stretch gap-3">
-          <div class="relative flex-1">
+        <div class="flex flex-col gap-3 sm:flex-row lg:flex-1">
+          <div class="relative w-full sm:flex-1">
             <select
               x-model="selectedCounty"
               @change="$dispatch('county-changed', selectedCounty)"
@@ -2552,7 +2550,7 @@
           </div>
           <form
             @submit.prevent="isSearching = true; window.dispatchEvent(new CustomEvent('search-submitted-second', { detail: { query: $refs.addressSearchSecond.value } }))"
-            class="relative flex-1"
+            class="relative w-full sm:flex-1"
           >
             <input
               x-ref="addressSearchSecond"
