@@ -2505,44 +2505,241 @@
 
     <div
       class="order-4 col-span-1 row-span-1 bg-black px-4 py-12 text-white lg:col-span-12 lg:px-12 lg:py-8"
+      x-data="splPartyChart()"
+      x-init="
+    window.addEventListener('party-changed-second', (e) => {
+      selectedParty = e.detail;
+    });
+  "
     >
-      <div class="flex items-center justify-between">
-        <p class="text-3xl font-semibold">Precinct turnout by county</p>
+      <div class="flex items-center gap-16">
+        <p class="whitespace-nowrap text-3xl font-semibold">
+          Precinct turnout by county
+        </p>
 
-        <div class="relative w-full max-w-xs">
-          <select
-            x-model="selectedCounty"
-            @change="$dispatch('county-changed', selectedCounty)"
-            class="w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-5 bg-g-2 px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
-          >
-            <option value="Allegheny">Allegheny</option>
-            <option value="Bucks">Bucks</option>
-            <option value="Delaware">Delaware</option>
-            <option value="Montgomery">Montgomery</option>
-            <option value="Philadelphia">Philadelphia</option>
-            <option value="York">York</option>
-          </select>
-          <div
-            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
-          >
-            <svg
-              class="h-5 w-5 text-g-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        <div class="flex flex-1 items-stretch gap-3">
+          <div class="relative flex-1">
+            <select
+              x-model="selectedCounty"
+              @change="$dispatch('county-changed', selectedCounty)"
+              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-5 bg-g-2 px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:outline-none focus:ring-0"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+              <option value="Allegheny">Allegheny</option>
+              <option value="Bucks">Bucks</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Montgomery">Montgomery</option>
+              <option value="Philadelphia">Philadelphia</option>
+              <option value="York">York</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+            >
+              <svg
+                class="h-5 w-5 text-g-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
           </div>
+          <form
+            @submit.prevent="isSearching = true; window.dispatchEvent(new CustomEvent('search-submitted-second', { detail: { query: $refs.addressSearchSecond.value } }))"
+            class="relative flex-1"
+          >
+            <input
+              x-ref="addressSearchSecond"
+              type="text"
+              placeholder="Search location"
+              class="placeholder-gray-5 h-full w-full rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
+            />
+            <button
+              type="submit"
+              class="absolute inset-y-0 right-0 flex items-center pr-4 text-g-7 hover:opacity-80 focus:outline-none"
+              title="Search"
+            >
+              <svg
+                x-show="!isSearching"
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+                />
+              </svg>
+              <svg
+                x-show="isSearching"
+                class="h-5 w-5 animate-spin"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
 
-      <div class="mt-6 h-[400px] w-full bg-red"></div>
+      <div class="relative mt-6 w-full">
+        <div
+          x-ref="legend"
+          class="flex h-6 w-full gap-[1px] rounded-sm border border-g-1 bg-g-1"
+          x-init="
+        const highlight = (idx) => {
+        const bins = $refs.legend.querySelectorAll('.legend-bin');
+        const clear = idx == null || idx < 0 || Number.isNaN(idx);
+        bins.forEach((b, i) => {
+        const active = !clear && i === idx;
+        b.style.outline = active ? '4px solid #fff' : '';
+        b.style.outlineOffset = '-2px';
+        b.style.opacity = clear ? '1' : (active ? '1' : '0.4');
+        b.style.transition = 'opacity 0.15s ease, outline 0.15s ease';
+        });
+        };
+        window.addEventListener('legend-active-bin', (e) => {
+        if (e.detail.party !== selectedParty) return;
+        highlight(e.detail.index);
+        });
+        window.addEventListener('legend-clear', () => {
+        const bins = $refs.legend.querySelectorAll('.legend-bin');
+        bins.forEach(b => {
+        b.style.outline = '';
+        b.style.opacity = '1';
+        });
+        });
+        "
+        >
+          <template
+            x-for="(color, index) in partyConfig[selectedParty].colors"
+            :key="index"
+          >
+            <div
+              class="legend-bin flex-1"
+              :style="`background-color: ${color}`"
+            ></div>
+          </template>
+        </div>
+        <div
+          class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
+        >
+          <span
+            class="absolute left-[12.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[0]"
+          ></span>
+          <span
+            class="absolute left-[25%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[1]"
+          ></span>
+          <span
+            class="absolute left-[37.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[2]"
+          ></span>
+          <span
+            class="absolute left-[50%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[3]"
+          ></span>
+          <span
+            class="absolute left-[62.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[4]"
+          ></span>
+          <span
+            class="absolute left-[75%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[5]"
+          ></span>
+          <span
+            class="absolute left-[87.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[6]"
+          ></span>
+        </div>
+      </div>
+
+      <div
+        class="relative mt-10 h-[400px] w-full"
+        x-data="splMapData()"
+        x-init="
+  initMap();
+  window.addEventListener('party-changed-second', (e) => {
+    selectedParty = e.detail;
+    if (map) {
+      ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
+        if (map.getLayer(layerId)) {
+          map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
+        }
+      });
+      window.dispatchEvent(new Event('legend-clear'));
+    }
+  });
+"
+      >
+        <div
+          x-ref="mapCanvas"
+          class="absolute inset-0 h-full w-full"
+          style="overflow: visible"
+        ></div>
+        <div
+          x-ref="tooltip"
+          class="pointer-events-none absolute z-50 hidden rounded-md border-2 border-black bg-white p-3 text-sm shadow-xl"
+        ></div>
+        <div
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow"
+        >
+          <button
+            :data-checked="selectedParty === 'total'"
+            @click="selectedParty='total'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'total' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('total')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Total"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+          >
+            Total
+          </button>
+          <button
+            :data-checked="selectedParty === 'democrat'"
+            @click="selectedParty='democrat'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'democrat' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('democrat')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Democrat"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+          >
+            Democrat
+          </button>
+          <button
+            :data-checked="selectedParty === 'republican'"
+            @click="selectedParty='republican'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'republican' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('republican')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Republican"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+          >
+            Republican
+          </button>
+          <button
+            :data-checked="selectedParty === 'other'"
+            @click="selectedParty='other'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'other' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('other')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Other"
+            class="px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+          >
+            Other
+          </button>
+        </div>
+      </div>
     </div>
 
     <div
