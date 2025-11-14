@@ -856,8 +856,10 @@
           const title =
             layerType === "county"
               ? `${feature.properties?.county_nam || "County"} County`
-              : feature.properties?.districtName ||
-                `District ${feature.properties?.DISTRICT || ""}`;
+              : layerType.startsWith("precinct-")
+                ? `Precinct ${feature.properties?.precinctId || ""}`
+                : feature.properties?.districtName ||
+                  `District ${feature.properties?.DISTRICT || ""}`;
           const others = Object.entries(partyKeyMap)
             .filter(([k]) => k !== activeParty)
             .map(([k, meta]) => ({
@@ -1326,6 +1328,8 @@
               feature.properties.totalShare = pct(rec["Turnout percentage"]);
               feature.properties.totalRegistered =
                 toNum(rec["Total registered"]) || 0;
+
+              feature.properties.precinctId = formattedId;
             });
           });
         },
@@ -1656,9 +1660,10 @@
                   ]
                 : others;
 
-            const districtName =
-              feature.properties.districtName ||
-              `District ${feature.properties.DISTRICT}`;
+            const districtName = layerType.startsWith("precinct-")
+              ? `Precinct ${feature.properties?.precinctId || ""}`
+              : feature.properties.districtName ||
+                `District ${feature.properties.DISTRICT}`;
             const renderBar = ({ label, pct, color, textColor }) =>
               [
                 "<div style='margin-top:8px;'>",
