@@ -1,7 +1,7 @@
 +++
 title = "Voter turnout"
-title-tag = "Tracking Pennsylvania voter turnout trends"
-description = "Explore voter turnout in Pennsylvania by party and county with our interactive graphics."
+title-tag = "Pennsylvania Voter Turnout"
+description = "See how many people voted in Pennsylvania's latest election and explore trends by party, county, and precinct with our interactive graphics."
 kicker = "Elections"
 authors = ["Alexandra Harris", "Carlana Johnson"]
 published = "2025-11-10T00:00:00-04:00"
