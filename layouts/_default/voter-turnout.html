@@ -993,7 +993,6 @@
             bucksPrecincts,
             delawarePrecincts,
             montgomeryPrecincts,
-            philadelphiaPrecincts,
           ] = await Promise.all(
             sources.map((url) => fetch(url).then((r) => r.json())),
           );
@@ -1017,7 +1016,6 @@
             "precinct-bucks": bucksPrecincts,
             "precinct-delaware": delawarePrecincts,
             "precinct-montgomery": montgomeryPrecincts,
-            "precinct-philadelphia": philadelphiaPrecincts,
           };
 
           if (this.map && this.map.loaded()) {
@@ -2311,7 +2309,6 @@
             "bucks",
             "delaware",
             "montgomery",
-            "philadelphia",
           ];
           precinctCounties.forEach((countyName) => {
             const sourceKey = `precinct-${countyName}`;
@@ -2869,7 +2866,6 @@
               <option value="Bucks">Bucks</option>
               <option value="Delaware">Delaware</option>
               <option value="Montgomery">Montgomery</option>
-              <option value="Philadelphia">Philadelphia</option>
             </select>
             <div
               class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
@@ -3043,7 +3039,7 @@
     
     const { lon, lat } = hit;
     
-    const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
+    const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery'];
     let foundCounty = null;
     
     for (const countyName of precinctCounties) {
@@ -3089,7 +3085,7 @@
 window.addEventListener('party-changed-second', (e) => {
             selectedParty = e.detail;
             if (map) {
-              const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
+              const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery'];
               precinctCounties.forEach(countyName => {
                 const sourceKey = `precinct-${countyName.toLowerCase()}`;
                 if (map.getLayer(`${sourceKey}-fill`)) {
@@ -3104,7 +3100,7 @@ window.addEventListener('party-changed-second', (e) => {
   const newCounty = e.detail;
   if (!map) return;
   
-  const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
+  const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery'];
   precinctCounties.forEach(countyName => {
     const sourceKey = `precinct-${countyName.toLowerCase()}`;
     const visibility = countyName.toLowerCase() === newCounty.toLowerCase() ? 'visible' : 'none';
