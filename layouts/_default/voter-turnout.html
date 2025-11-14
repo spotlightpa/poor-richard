@@ -983,149 +983,162 @@
           return str.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
         },
         async loadGeoJSON() {
-          const sources = sourcesParam;
-          const [
-            counties,
-            house,
-            congress,
-            senate,
-            alleghenyPrecincts,
-            bucksPrecincts,
-            delawarePrecincts,
-            montgomeryPrecincts,
-          ] = await Promise.all(
-            sources.map((url) => fetch(url).then((r) => r.json())),
-          );
-          if (counties && counties.features) {
-            counties.features.forEach((feature) => {
-              if (feature.properties && feature.properties.county_nam) {
-                feature.properties.county_nam = this.properCase(
-                  feature.properties.county_nam,
-                );
-              }
-              const name = feature.properties?.county_nam || "";
-              feature.properties.__id = name.toLowerCase().replace(/\s+/g, "_");
-            });
-          }
-          this.geojsonData = {
-            county: counties,
-            house: house,
-            congressional: congress,
-            senate: senate,
-            "precinct-allegheny": alleghenyPrecincts,
-            "precinct-bucks": bucksPrecincts,
-            "precinct-delaware": delawarePrecincts,
-            "precinct-montgomery": montgomeryPrecincts,
-          };
-
-          if (this.map && this.map.loaded()) {
-            await this.joinCountyData();
-            await this.joinDistrictData();
-            await this.joinPrecinctData();
-            this.setupLayers();
-
-            if (this.isSecondMap) {
-              [
-                "counties-fill",
-                "counties-outline",
-                "counties-outline-hover",
-                "congressional-fill",
-                "congressional-outline",
-                "congressional-outline-hover",
-                "senate-fill",
-                "senate-outline",
-                "senate-outline-hover",
-                "house-fill",
-                "house-outline",
-                "house-outline-hover",
-              ].forEach((layerId) => {
-                if (this.map.getLayer(layerId)) {
-                  this.map.setLayoutProperty(layerId, "visibility", "none");
+          try {
+            if (!this.map || !this.map.getContainer()) {
+              console.warn("Map not ready for GeoJSON loading");
+              setTimeout(() => this.loadGeoJSON(), 200);
+              return;
+            }
+            const sources = sourcesParam;
+            const [
+              counties,
+              house,
+              congress,
+              senate,
+              alleghenyPrecincts,
+              bucksPrecincts,
+              delawarePrecincts,
+              montgomeryPrecincts,
+            ] = await Promise.all(
+              sources.map((url) => fetch(url).then((r) => r.json())),
+            );
+            if (counties && counties.features) {
+              counties.features.forEach((feature) => {
+                if (feature.properties && feature.properties.county_nam) {
+                  feature.properties.county_nam = this.properCase(
+                    feature.properties.county_nam,
+                  );
                 }
+                const name = feature.properties?.county_nam || "";
+                feature.properties.__id = name
+                  .toLowerCase()
+                  .replace(/\s+/g, "_");
               });
+            }
+            this.geojsonData = {
+              county: counties,
+              house: house,
+              congressional: congress,
+              senate: senate,
+              "precinct-allegheny": alleghenyPrecincts,
+              "precinct-bucks": bucksPrecincts,
+              "precinct-delaware": delawarePrecincts,
+              "precinct-montgomery": montgomeryPrecincts,
+            };
 
-              if (this.map.getLayer("precinct-allegheny-fill")) {
-                this.map.setLayoutProperty(
-                  "precinct-allegheny-fill",
-                  "visibility",
-                  "visible",
-                );
-                this.map.setPaintProperty(
-                  "precinct-allegheny-fill",
-                  "fill-color",
-                  this.buildFillColorExpression(this.selectedParty),
-                );
-              }
-              if (this.map.getLayer("precinct-allegheny-outline")) {
-                this.map.setLayoutProperty(
-                  "precinct-allegheny-outline",
-                  "visibility",
-                  "visible",
-                );
-              }
+            if (this.map && this.map.getContainer() && this.map.loaded()) {
+              await this.joinCountyData();
+              await this.joinDistrictData();
+              await this.joinPrecinctData();
+              this.setupLayers();
 
-              const calculateCountyBounds = (countyName) => {
-                const sourceKey = `precinct-${countyName.toLowerCase()}`;
-                const features = this.geojsonData[sourceKey]?.features;
-                if (!features || features.length === 0) return null;
-
-                let minX = Infinity,
-                  minY = Infinity,
-                  maxX = -Infinity,
-                  maxY = -Infinity;
-                features.forEach((feature) => {
-                  const [[fMinX, fMinY], [fMaxX, fMaxY]] =
-                    this.getFeatureBounds(feature);
-                  if (fMinX < minX) minX = fMinX;
-                  if (fMinY < minY) minY = fMinY;
-                  if (fMaxX > maxX) maxX = fMaxX;
-                  if (fMaxY > maxY) maxY = fMaxY;
-                });
-
-                return [
-                  [minX, minY],
-                  [maxX, maxY],
-                ];
-              };
-
-              const alleghenyBounds = calculateCountyBounds("allegheny");
-              if (alleghenyBounds) {
-                this.map.fitBounds(alleghenyBounds, {
-                  padding: window.innerWidth < 768 ? 20 : 40,
-                  duration: 0,
-                });
-              }
-            } else {
-              if (this.map.getLayer("counties-fill")) {
-                this.map.setPaintProperty(
+              if (this.isSecondMap) {
+                [
                   "counties-fill",
-                  "fill-color",
-                  this.buildFillColorExpression(this.selectedParty),
-                );
-              }
+                  "counties-outline",
+                  "counties-outline-hover",
+                  "congressional-fill",
+                  "congressional-outline",
+                  "congressional-outline-hover",
+                  "senate-fill",
+                  "senate-outline",
+                  "senate-outline-hover",
+                  "house-fill",
+                  "house-outline",
+                  "house-outline-hover",
+                ].forEach((layerId) => {
+                  if (this.map.getLayer(layerId)) {
+                    this.map.setLayoutProperty(layerId, "visibility", "none");
+                  }
+                });
 
-              const el = this.map.getContainer();
-              if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
-                try {
-                  this.map.fitBounds(this.getGeoJSONBounds(), {
+                if (this.map.getLayer("precinct-allegheny-fill")) {
+                  this.map.setLayoutProperty(
+                    "precinct-allegheny-fill",
+                    "visibility",
+                    "visible",
+                  );
+                  this.map.setPaintProperty(
+                    "precinct-allegheny-fill",
+                    "fill-color",
+                    this.buildFillColorExpression(this.selectedParty),
+                  );
+                }
+                if (this.map.getLayer("precinct-allegheny-outline")) {
+                  this.map.setLayoutProperty(
+                    "precinct-allegheny-outline",
+                    "visibility",
+                    "visible",
+                  );
+                }
+
+                const calculateCountyBounds = (countyName) => {
+                  const sourceKey = `precinct-${countyName.toLowerCase()}`;
+                  const features = this.geojsonData[sourceKey]?.features;
+                  if (!features || features.length === 0) return null;
+
+                  let minX = Infinity,
+                    minY = Infinity,
+                    maxX = -Infinity,
+                    maxY = -Infinity;
+                  features.forEach((feature) => {
+                    const [[fMinX, fMinY], [fMaxX, fMaxY]] =
+                      this.getFeatureBounds(feature);
+                    if (fMinX < minX) minX = fMinX;
+                    if (fMinY < minY) minY = fMinY;
+                    if (fMaxX > maxX) maxX = fMaxX;
+                    if (fMaxY > maxY) maxY = fMaxY;
+                  });
+
+                  return [
+                    [minX, minY],
+                    [maxX, maxY],
+                  ];
+                };
+
+                const alleghenyBounds = calculateCountyBounds("allegheny");
+                if (alleghenyBounds) {
+                  this.map.fitBounds(alleghenyBounds, {
                     padding: window.innerWidth < 768 ? 20 : 40,
-                    maxZoom: window.innerWidth < 768 ? 6 : 8,
                     duration: 0,
                   });
-                } catch (e) {
-                  console.warn("Could not fit bounds, will retry", e);
-                  setTimeout(() => {
-                    if (this.map) {
-                      this.map.fitBounds(this.getGeoJSONBounds(), {
-                        padding: window.innerWidth < 768 ? 20 : 40,
-                        maxZoom: window.innerWidth < 768 ? 6 : 8,
-                        duration: 0,
-                      });
-                    }
-                  }, 200);
+                }
+              } else {
+                if (this.map.getLayer("counties-fill")) {
+                  this.map.setPaintProperty(
+                    "counties-fill",
+                    "fill-color",
+                    this.buildFillColorExpression(this.selectedParty),
+                  );
+                }
+
+                const el = this.map?.getContainer();
+                if (!el) return;
+                if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
+                  try {
+                    this.map.fitBounds(this.getGeoJSONBounds(), {
+                      padding: window.innerWidth < 768 ? 20 : 40,
+                      maxZoom: window.innerWidth < 768 ? 6 : 8,
+                      duration: 0,
+                    });
+                  } catch (e) {
+                    console.warn("Could not fit bounds, will retry", e);
+                    setTimeout(() => {
+                      if (this.map) {
+                        this.map.fitBounds(this.getGeoJSONBounds(), {
+                          padding: window.innerWidth < 768 ? 20 : 40,
+                          maxZoom: window.innerWidth < 768 ? 6 : 8,
+                          duration: 0,
+                        });
+                      }
+                    }, 200);
+                  }
                 }
               }
             }
+          } catch (error) {
+            console.error("Error loading GeoJSON:", error);
+            setTimeout(() => this.loadGeoJSON(), 500);
           }
         },
 
@@ -2416,6 +2429,11 @@
         },
         initMap() {
           const el = this.$refs.mapCanvas;
+          if (!el) {
+            console.warn("Map canvas not ready, retrying...");
+            setTimeout(() => this.initMap(), 100);
+            return;
+          }
           if (!el || this.map) return;
           const mapComponent = window.maplibreComponent({
             id: "pa-map",
@@ -2758,7 +2776,9 @@
         @search-submitted.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
         x-data="splMapData()"
         x-init="
-         initMap();
+          $nextTick(() => {
+            setTimeout(() => initMap(), 100);
+          });
          $watch('selected', () => {
          updateLayerVisibility();
          window.dispatchEvent(new Event('legend-clear'));
