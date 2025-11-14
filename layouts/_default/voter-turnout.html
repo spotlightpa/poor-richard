@@ -855,11 +855,17 @@
           }
           const title =
             layerType === "county"
-              ? `${feature.properties?.county_nam || "County"} County`
+              ? feature.properties?.county_nam
+                ? `${feature.properties.county_nam} County`
+                : "No data available"
               : layerType.startsWith("precinct-")
-                ? `Precinct ${feature.properties?.precinctId || ""}`
+                ? feature.properties?.precinctId
+                  ? `Precinct ${feature.properties.precinctId}`
+                  : "No data available"
                 : feature.properties?.districtName ||
-                  `District ${feature.properties?.DISTRICT || ""}`;
+                  (feature.properties?.DISTRICT
+                    ? `District ${feature.properties.DISTRICT}`
+                    : "No data available");
           const others = Object.entries(partyKeyMap)
             .filter(([k]) => k !== activeParty)
             .map(([k, meta]) => ({
@@ -1661,9 +1667,13 @@
                 : others;
 
             const districtName = layerType.startsWith("precinct-")
-              ? `Precinct ${feature.properties?.precinctId || ""}`
+              ? feature.properties?.precinctId
+                ? `Precinct ${feature.properties.precinctId}`
+                : "No data available"
               : feature.properties.districtName ||
-                `District ${feature.properties.DISTRICT}`;
+                (feature.properties?.DISTRICT
+                  ? `District ${feature.properties.DISTRICT}`
+                  : "No data available");
             const renderBar = ({ label, pct, color, textColor }) =>
               [
                 "<div style='margin-top:8px;'>",
@@ -2006,7 +2016,8 @@
                       ]
                     : others;
 
-                const countyName = feature.properties.county_nam;
+                const countyName =
+                  feature.properties.county_nam || "No data available";
                 const renderBar = ({ label, pct, color, textColor }) =>
                   [
                     "<div style='margin-top:8px;'>",
