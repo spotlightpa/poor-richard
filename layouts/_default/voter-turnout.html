@@ -1203,132 +1203,132 @@
           }
         },
 
-    async joinPrecinctData() {
-  await pollUntil(
-    () =>
-      this.datasets &&
-      (this.datasets.counts ||
-        this.datasets.Counts ||
-        this.datasets.Sheet1),
-  );
+        async joinPrecinctData() {
+          await pollUntil(
+            () =>
+              this.datasets &&
+              (this.datasets.counts ||
+                this.datasets.Counts ||
+                this.datasets.Sheet1),
+          );
 
-  const countsTable =
-    this.datasets.counts ||
-    this.datasets.Counts ||
-    this.datasets.Sheet1 ||
-    [];
+          const countsTable =
+            this.datasets.counts ||
+            this.datasets.Counts ||
+            this.datasets.Sheet1 ||
+            [];
 
-  const toNum = (v) =>
-    typeof v === "number"
-      ? v
-      : Number(
-          String(v ?? "")
-            .replace(/,/g, "")
-            .replace(/%/g, "")
-            .trim(),
-        );
+          const toNum = (v) =>
+            typeof v === "number"
+              ? v
+              : Number(
+                  String(v ?? "")
+                    .replace(/,/g, "")
+                    .replace(/%/g, "")
+                    .trim(),
+                );
 
-  const pct = (v) => {
-    const n = toNum(v);
-    return Number.isFinite(n) ? (n > 0 && n <= 1 ? n * 100 : n) : null;
-  };
+          const pct = (v) => {
+            const n = toNum(v);
+            return Number.isFinite(n) ? (n > 0 && n <= 1 ? n * 100 : n) : null;
+          };
 
-  const countyConfig = {
-    allegheny: {
-      idFields: [
-        "MWD_PAD_1",
-        "PRECINCT_ID",
-        "PrecinctID",
-        "precinct_id",
-      ],
-      formatId: (id) => id,
-    },
-    bucks: {
-      idFields: ["precinctid"],
-      formatId: (id) => {
-        const match = String(id).match(/^(\d+)-/);
-        return match ? match[1] : id;
-      },
-    },
-    delaware: {
-      idFields: ["precinctid"],
-      formatId: (id) => {
-        const match = String(id).match(/^(\d+)-/);
-        return match ? match[1] : id;
-      },
-    },
-    montgomery: {
-      idFields: ["Precinct_Number"],
-      formatId: (id) => id,
-    },
-  };
+          const countyConfig = {
+            allegheny: {
+              idFields: [
+                "MWD_PAD_1",
+                "PRECINCT_ID",
+                "PrecinctID",
+                "precinct_id",
+              ],
+              formatId: (id) => id,
+            },
+            bucks: {
+              idFields: ["precinctid"],
+              formatId: (id) => {
+                const match = String(id).match(/^(\d+)-/);
+                return match ? match[1] : id;
+              },
+            },
+            delaware: {
+              idFields: ["precinctid"],
+              formatId: (id) => {
+                const match = String(id).match(/^(\d+)-/);
+                return match ? match[1] : id;
+              },
+            },
+            montgomery: {
+              idFields: ["Precinct_Number"],
+              formatId: (id) => id,
+            },
+          };
 
-  const precinctCounties = [
-    "allegheny",
-    "bucks",
-    "delaware",
-    "montgomery",
-  ];
+          const precinctCounties = [
+            "allegheny",
+            "bucks",
+            "delaware",
+            "montgomery",
+          ];
 
-  precinctCounties.forEach((countyName) => {
-    const sourceKey = `precinct-${countyName}`;
-    const geojson = this.geojsonData[sourceKey];
+          precinctCounties.forEach((countyName) => {
+            const sourceKey = `precinct-${countyName}`;
+            const geojson = this.geojsonData[sourceKey];
 
-    if (!geojson || !geojson.features) {
-      return;
-    }
+            if (!geojson || !geojson.features) {
+              return;
+            }
 
-    const config = countyConfig[countyName];
+            const config = countyConfig[countyName];
 
-    geojson.features.forEach((feature) => {
-      let precinctId = null;
-      for (const field of config.idFields) {
-        if (feature.properties[field]) {
-          precinctId = feature.properties[field];
-          break;
-        }
-      }
+            geojson.features.forEach((feature) => {
+              let precinctId = null;
+              for (const field of config.idFields) {
+                if (feature.properties[field]) {
+                  precinctId = feature.properties[field];
+                  break;
+                }
+              }
 
-      if (!precinctId) {
-        return;
-      }
+              if (!precinctId) {
+                return;
+              }
 
-      const formattedId = config.formatId(precinctId);
-      const areaPrefix = countyName.toUpperCase();
-      const areaCode = `${areaPrefix}-${formattedId}`;
+              const formattedId = config.formatId(precinctId);
+              const areaPrefix = countyName.toUpperCase();
+              const areaCode = `${areaPrefix}-${formattedId}`;
 
-      const rec = countsTable.find((d) => {
-        const area = (d.Area || "").toString().trim().toUpperCase();
-        return area === areaCode.toUpperCase();
-      });
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || "").toString().trim().toUpperCase();
+                return area === areaCode.toUpperCase();
+              });
 
-      if (!rec) {
-        return;
-      }
+              if (!rec) {
+                return;
+              }
 
-      feature.properties.democratShare = pct(
-        rec["Democratic turnout percentage"],
-      );
-      feature.properties.republicanShare = pct(
-        rec["Republican turnout percentage"],
-      );
-      feature.properties.otherShare = pct(
-        rec["Other party turnout percentage"],
-      );
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
+              );
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
 
-      feature.properties.democratTotal =
-        toNum(rec["Democrats registered"]) || 0;
-      feature.properties.republicanTotal =
-        toNum(rec["Republicans registered"]) || 0;
-      feature.properties.otherTotal =
-        toNum(rec["Other party registered"]) || 0;
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
 
-      feature.properties.totalShare = pct(rec["Turnout percentage"]);
-      feature.properties.totalRegistered =
-        toNum(rec["Total registered"]) || 0;
-    });
-  });
-},
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+            });
+          });
+        },
 
         async joinDistrictData() {
           await pollUntil(
