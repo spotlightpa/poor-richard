@@ -1013,10 +1013,115 @@
             "precinct-philadelphia": philadelphiaPrecincts,
             "precinct-york": yorkPrecincts,
           };
+
           if (this.map && this.map.loaded()) {
             await this.joinCountyData();
             await this.joinDistrictData();
+            await this.joinPrecinctData();
             this.setupLayers();
+
+            if (this.isSecondMap) {
+              [
+                "counties-fill",
+                "counties-outline",
+                "counties-outline-hover",
+                "congressional-fill",
+                "congressional-outline",
+                "congressional-outline-hover",
+                "senate-fill",
+                "senate-outline",
+                "senate-outline-hover",
+                "house-fill",
+                "house-outline",
+                "house-outline-hover",
+              ].forEach((layerId) => {
+                if (this.map.getLayer(layerId)) {
+                  this.map.setLayoutProperty(layerId, "visibility", "none");
+                }
+              });
+
+              if (this.map.getLayer("precinct-allegheny-fill")) {
+                this.map.setLayoutProperty(
+                  "precinct-allegheny-fill",
+                  "visibility",
+                  "visible",
+                );
+                this.map.setPaintProperty(
+                  "precinct-allegheny-fill",
+                  "fill-color",
+                  this.buildFillColorExpression(this.selectedParty),
+                );
+              }
+              if (this.map.getLayer("precinct-allegheny-outline")) {
+                this.map.setLayoutProperty(
+                  "precinct-allegheny-outline",
+                  "visibility",
+                  "visible",
+                );
+              }
+
+              const calculateCountyBounds = (countyName) => {
+                const sourceKey = `precinct-${countyName.toLowerCase()}`;
+                const features = this.geojsonData[sourceKey]?.features;
+                if (!features || features.length === 0) return null;
+
+                let minX = Infinity,
+                  minY = Infinity,
+                  maxX = -Infinity,
+                  maxY = -Infinity;
+                features.forEach((feature) => {
+                  const [[fMinX, fMinY], [fMaxX, fMaxY]] =
+                    this.getFeatureBounds(feature);
+                  if (fMinX < minX) minX = fMinX;
+                  if (fMinY < minY) minY = fMinY;
+                  if (fMaxX > maxX) maxX = fMaxX;
+                  if (fMaxY > maxY) maxY = fMaxY;
+                });
+
+                return [
+                  [minX, minY],
+                  [maxX, maxY],
+                ];
+              };
+
+              const alleghenyBounds = calculateCountyBounds("allegheny");
+              if (alleghenyBounds) {
+                this.map.fitBounds(alleghenyBounds, {
+                  padding: window.innerWidth < 768 ? 20 : 40,
+                  duration: 0,
+                });
+              }
+            } else {
+              if (this.map.getLayer("counties-fill")) {
+                this.map.setPaintProperty(
+                  "counties-fill",
+                  "fill-color",
+                  this.buildFillColorExpression(this.selectedParty),
+                );
+              }
+
+              const el = this.map.getContainer();
+              if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
+                try {
+                  this.map.fitBounds(this.getGeoJSONBounds(), {
+                    padding: window.innerWidth < 768 ? 20 : 40,
+                    maxZoom: window.innerWidth < 768 ? 6 : 8,
+                    duration: 0,
+                  });
+                } catch (e) {
+                  console.warn("Could not fit bounds, will retry", e);
+                  setTimeout(() => {
+                    if (this.map) {
+                      this.map.fitBounds(this.getGeoJSONBounds(), {
+                        padding: window.innerWidth < 768 ? 20 : 40,
+                        maxZoom: window.innerWidth < 768 ? 6 : 8,
+                        duration: 0,
+                      });
+                    }
+                  }, 200);
+                }
+              }
+            }
           }
         },
 
@@ -1097,6 +1202,134 @@
             });
           }
         },
+
+    async joinPrecinctData() {
+  await pollUntil(
+    () =>
+      this.datasets &&
+      (this.datasets.counts ||
+        this.datasets.Counts ||
+        this.datasets.Sheet1),
+  );
+
+  const countsTable =
+    this.datasets.counts ||
+    this.datasets.Counts ||
+    this.datasets.Sheet1 ||
+    [];
+
+  const toNum = (v) =>
+    typeof v === "number"
+      ? v
+      : Number(
+          String(v ?? "")
+            .replace(/,/g, "")
+            .replace(/%/g, "")
+            .trim(),
+        );
+
+  const pct = (v) => {
+    const n = toNum(v);
+    return Number.isFinite(n) ? (n > 0 && n <= 1 ? n * 100 : n) : null;
+  };
+
+  const countyConfig = {
+    allegheny: {
+      idFields: [
+        "MWD_PAD_1",
+        "PRECINCT_ID",
+        "PrecinctID",
+        "precinct_id",
+      ],
+      formatId: (id) => id,
+    },
+    bucks: {
+      idFields: ["precinctid"],
+      formatId: (id) => {
+        const match = String(id).match(/^(\d+)-/);
+        return match ? match[1] : id;
+      },
+    },
+    delaware: {
+      idFields: ["precinctid"],
+      formatId: (id) => {
+        const match = String(id).match(/^(\d+)-/);
+        return match ? match[1] : id;
+      },
+    },
+    montgomery: {
+      idFields: ["Precinct_Number"],
+      formatId: (id) => id,
+    },
+  };
+
+  const precinctCounties = [
+    "allegheny",
+    "bucks",
+    "delaware",
+    "montgomery",
+  ];
+
+  precinctCounties.forEach((countyName) => {
+    const sourceKey = `precinct-${countyName}`;
+    const geojson = this.geojsonData[sourceKey];
+
+    if (!geojson || !geojson.features) {
+      return;
+    }
+
+    const config = countyConfig[countyName];
+
+    geojson.features.forEach((feature) => {
+      let precinctId = null;
+      for (const field of config.idFields) {
+        if (feature.properties[field]) {
+          precinctId = feature.properties[field];
+          break;
+        }
+      }
+
+      if (!precinctId) {
+        return;
+      }
+
+      const formattedId = config.formatId(precinctId);
+      const areaPrefix = countyName.toUpperCase();
+      const areaCode = `${areaPrefix}-${formattedId}`;
+
+      const rec = countsTable.find((d) => {
+        const area = (d.Area || "").toString().trim().toUpperCase();
+        return area === areaCode.toUpperCase();
+      });
+
+      if (!rec) {
+        return;
+      }
+
+      feature.properties.democratShare = pct(
+        rec["Democratic turnout percentage"],
+      );
+      feature.properties.republicanShare = pct(
+        rec["Republican turnout percentage"],
+      );
+      feature.properties.otherShare = pct(
+        rec["Other party turnout percentage"],
+      );
+
+      feature.properties.democratTotal =
+        toNum(rec["Democrats registered"]) || 0;
+      feature.properties.republicanTotal =
+        toNum(rec["Republicans registered"]) || 0;
+      feature.properties.otherTotal =
+        toNum(rec["Other party registered"]) || 0;
+
+      feature.properties.totalShare = pct(rec["Turnout percentage"]);
+      feature.properties.totalRegistered =
+        toNum(rec["Total registered"]) || 0;
+    });
+  });
+},
+
         async joinDistrictData() {
           await pollUntil(
             () =>
@@ -2084,8 +2317,10 @@
                     visibility: "none",
                   },
                   paint: {
-                    "fill-color": "#cccccc",
-                    "fill-opacity": 0.6,
+                    "fill-color": this.buildFillColorExpression(
+                      this.selectedParty,
+                    ),
+                    "fill-opacity": 1.0,
                   },
                 },
                 labelLayerId,
@@ -2105,6 +2340,40 @@
                 },
                 labelLayerId,
               );
+              this.map.addLayer(
+                {
+                  id: `${sourceKey}-outline-hover`,
+                  type: "line",
+                  source: sourceKey,
+                  layout: {
+                    visibility: "none",
+                    "line-join": "round",
+                    "line-cap": "round",
+                  },
+                  paint: {
+                    "line-color": "#000000",
+                    "line-width": 4,
+                    "line-opacity": [
+                      "case",
+                      ["boolean", ["feature-state", "hover"], false],
+                      1,
+                      0,
+                    ],
+                  },
+                },
+                labelLayerId,
+              );
+
+              this.map.on("mousemove", `${sourceKey}-fill`, (e) => {
+                if (this.selectedCounty.toLowerCase() === countyName) {
+                  this.handleDistrictHover(e, sourceKey);
+                }
+              });
+              this.map.on("mouseleave", `${sourceKey}-fill`, () => {
+                if (this.selectedCounty.toLowerCase() === countyName) {
+                  this.handleDistrictLeave(sourceKey);
+                }
+              });
             }
           });
 
@@ -2252,44 +2521,12 @@
                     );
                   }
                 });
-                Promise.all([
-                  this.joinCountyData(),
-                  this.joinDistrictData(),
-                ]).then(() => {
-                  this.setupLayers();
-                  if (this.map.getLayer("counties-fill")) {
-                    this.map.setPaintProperty(
-                      "counties-fill",
-                      "fill-color",
-                      this.buildFillColorExpression(this.selectedParty),
-                    );
-                  }
-                  if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
-                    try {
-                      this.map.fitBounds(this.getGeoJSONBounds(), {
-                        padding: window.innerWidth < 768 ? 20 : 40,
-                        maxZoom: window.innerWidth < 768 ? 6 : 8,
-                        duration: 0,
-                      });
-                    } catch (e) {
-                      console.warn("Could not fit bounds, will retry", e);
-                      setTimeout(() => {
-                        if (this.map) {
-                          this.map.fitBounds(this.getGeoJSONBounds(), {
-                            padding: window.innerWidth < 768 ? 20 : 40,
-                            maxZoom: window.innerWidth < 768 ? 6 : 8,
-                            duration: 0,
-                          });
-                        }
-                      }, 200);
-                    }
-                  }
-                });
                 this.map.getCanvas().addEventListener("mouseleave", () => {
                   window.dispatchEvent(new Event("legend-clear"));
                 });
+
+                this.loadGeoJSON();
               });
-              this.loadGeoJSON();
             }
           }, 100);
         },
@@ -2837,7 +3074,7 @@
         x-init="
           initMap();
           
-          window.addEventListener('party-changed-second', (e) => {
+window.addEventListener('party-changed-second', (e) => {
             selectedParty = e.detail;
             if (map) {
               const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
