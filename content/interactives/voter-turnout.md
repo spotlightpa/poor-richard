@@ -87,8 +87,7 @@ sources = [
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/bucks-precincts.geojson",
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/delaware-precincts.geojson",
   "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/montgomery-precincts.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/philadelphia-precincts.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/york-precincts.geojson"
+  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/philadelphia-precincts.geojson"
 ]
 
 [map]
