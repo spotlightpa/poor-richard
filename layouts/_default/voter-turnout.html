@@ -2142,7 +2142,7 @@
             minZoom: 3,
             maxZoom: 18,
             zoom: 6,
-            controls: ["navigation"],
+            controls: [],
             attributionCompact: true,
           });
           mapComponent.init.call({
@@ -2173,6 +2173,7 @@
                 attributionControl: false,
                 cooperativeGestures: true,
               });
+
               this.map.addControl(
                 new maplibregl.NavigationControl({
                   showCompass: false,
@@ -2181,6 +2182,22 @@
                 }),
                 "top-right",
               );
+
+              if (this.isSecondMap) {
+                setTimeout(() => {
+                  const navContainer = this.map
+                    .getContainer()
+                    .querySelector(".maplibregl-ctrl-top-right");
+                  if (navContainer) {
+                    const updatePosition = () => {
+                      navContainer.style.top =
+                        window.innerWidth <= 440 ? "50px" : "10px";
+                    };
+                    updatePosition();
+                    window.addEventListener("resize", updatePosition);
+                  }
+                }, 100);
+              }
 
               [".maplibregl-ctrl-attrib", ".mapboxgl-ctrl-attrib"].forEach(
                 (sel) => {
@@ -2572,8 +2589,8 @@
     ></div>
 
     <div
-      class="order-4 col-span-1 row-span-1 bg-black px-4 py-12 text-white lg:col-span-12 lg:px-12 lg:py-8"
-      x-data="splPartyChart()"
+      class="order-4 col-span-1 row-span-1 bg-black px-4 py-12 pb-24 text-white lg:col-span-12 lg:px-12 lg:py-12 lg:pb-16"
+      x-data="{ ...splPartyChart(), selectedCounty: 'Allegheny' }"
       @search-complete.window="isSearching = false"
       x-init="
     window.addEventListener('party-changed-second', (e) => {
@@ -2745,44 +2762,145 @@
 
       <div
         class="relative mt-10 h-[400px] w-full"
-        x-data="splMapData()"
-        @search-submitted-second.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
-        x-init="
-  initMap();
-  
-  window.addEventListener('party-changed-second', (e) => {
-    selectedParty = e.detail;
-    if (map) {
-      const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
-      precinctCounties.forEach(countyName => {
-        const sourceKey = `precinct-${countyName.toLowerCase()}`;
-        if (map.getLayer(`${sourceKey}-fill`)) {
-          map.setPaintProperty(`${sourceKey}-fill`, 'fill-color', buildFillColorExpression(selectedParty));
-        }
+        x-data="{ ...splMapData(), selected: 'precinct', isSecondMap: true }"
+        @search-submitted-second.window="(async (query) => {
+  try {
+    const searchQuery = ($event.detail?.query || '').trim();
+    if (!searchQuery) {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      return;
+    }
+    
+    const hit = await geocodeAddress(searchQuery + ', Pennsylvania');
+    if (!hit) {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      const input = $refs.addressSearchSecond;
+      if (input) {
+        input.value = '';
+        input.placeholder = 'Please try again';
+        setTimeout(() => {
+          input.placeholder = 'Search location';
+        }, 3000);
+      }
+      return;
+    }
+    
+    const { lon, lat } = hit;
+    
+    const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
+    let foundCounty = null;
+    
+    for (const countyName of precinctCounties) {
+      const sourceKey = `precinct-${countyName}`;
+      const features = geojsonData[sourceKey]?.features;
+      if (!features) continue;
+      
+      const hit = features.find(f => isPointInFeature([lon, lat], f));
+      if (hit) {
+        foundCounty = countyName.charAt(0).toUpperCase() + countyName.slice(1);
+        break;
+      }
+    }
+    
+    if (foundCounty) {
+      selectedCounty = foundCounty;
+      window.dispatchEvent(new CustomEvent('county-changed', { detail: foundCounty }));
+      
+      map.flyTo({
+        center: [lon, lat],
+        zoom: 12,
+        duration: 2000,
+        essential: true
       });
-      window.dispatchEvent(new Event('legend-clear'));
+    } else {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      const input = $refs.addressSearchSecond;
+      if (input) {
+        input.value = '';
+        input.placeholder = 'Please try again';
+        setTimeout(() => {
+          input.placeholder = 'Search location';
+        }, 3000);
+      }
+    }
+  } finally {
+    window.dispatchEvent(new CustomEvent('search-complete'));
+  }
+})()"
+        x-init="
+          initMap();
+          
+          window.addEventListener('party-changed-second', (e) => {
+            selectedParty = e.detail;
+            if (map) {
+              const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
+              precinctCounties.forEach(countyName => {
+                const sourceKey = `precinct-${countyName.toLowerCase()}`;
+                if (map.getLayer(`${sourceKey}-fill`)) {
+                  map.setPaintProperty(`${sourceKey}-fill`, 'fill-color', buildFillColorExpression(selectedParty));
+                }
+              });
+              window.dispatchEvent(new Event('legend-clear'));
+            }
+          });
+          
+ window.addEventListener('county-changed', (e) => {
+  const newCounty = e.detail;
+  if (!map) return;
+  
+  const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
+  precinctCounties.forEach(countyName => {
+    const sourceKey = `precinct-${countyName.toLowerCase()}`;
+    const visibility = countyName.toLowerCase() === newCounty.toLowerCase() ? 'visible' : 'none';
+    if (map.getLayer(`${sourceKey}-fill`)) {
+      map.setLayoutProperty(`${sourceKey}-fill`, 'visibility', visibility);
+    }
+    if (map.getLayer(`${sourceKey}-outline`)) {
+      map.setLayoutProperty(`${sourceKey}-outline`, 'visibility', visibility);
     }
   });
   
-  window.addEventListener('county-changed', (e) => {
-    const newCounty = e.detail;
-    if (!map) return;
-    const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia', 'york'];
-    precinctCounties.forEach(countyName => {
-      const sourceKey = `precinct-${countyName.toLowerCase()}`;
-      const visibility = countyName.toLowerCase() === newCounty.toLowerCase() ? 'visible' : 'none';
-      if (map.getLayer(`${sourceKey}-fill`)) {
-        map.setLayoutProperty(`${sourceKey}-fill`, 'visibility', visibility);
-      }
-      if (map.getLayer(`${sourceKey}-outline`)) {
-        map.setLayoutProperty(`${sourceKey}-outline`, 'visibility', visibility);
-      }
-    });
+const calculateCountyBounds = (countyName) => {
+  const sourceKey = `precinct-${countyName.toLowerCase()}`;
+  const features = geojsonData[sourceKey]?.features;
+  if (!features || features.length === 0) return null;
+  
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  features.forEach(feature => {
+    if (!feature || !feature.geometry || !feature.geometry.coordinates) {
+      console.warn('Skipping feature with null geometry in', countyName);
+      return;
+    }
+    
+    const [[fMinX, fMinY], [fMaxX, fMaxY]] = getFeatureBounds(feature);
+    if (fMinX < minX) minX = fMinX;
+    if (fMinY < minY) minY = fMinY;
+    if (fMaxX > maxX) maxX = fMaxX;
+    if (fMaxY > maxY) maxY = fMaxY;
   });
   
-  $nextTick(() => {
-    setTimeout(() => {
-      if (map) {
+  return [[minX, minY], [maxX, maxY]];
+};
+  
+  const countyBounds = calculateCountyBounds(newCounty);
+  if (countyBounds) {
+    map.fitBounds(countyBounds, {
+      padding: window.innerWidth < 768 ? 20 : 40,
+      duration: 2000,
+      essential: true
+    });
+  }
+});
+
+if (isSecondMap) {
+  const waitForDataAndInit = () => {
+    const checkInterval = setInterval(() => {
+      if (geojsonData['precinct-allegheny']?.features?.length > 0 && 
+          map && 
+          map.loaded() && 
+          map.getLayer('precinct-allegheny-fill')) {
+        clearInterval(checkInterval);
+        
         ['counties-fill', 'counties-outline', 'counties-outline-hover', 
          'congressional-fill', 'congressional-outline', 'congressional-outline-hover',
          'senate-fill', 'senate-outline', 'senate-outline-hover',
@@ -2794,18 +2912,56 @@
         
         if (map.getLayer('precinct-allegheny-fill')) {
           map.setLayoutProperty('precinct-allegheny-fill', 'visibility', 'visible');
+          map.setPaintProperty('precinct-allegheny-fill', 'fill-color', buildFillColorExpression(selectedParty));
         }
+        
         if (map.getLayer('precinct-allegheny-outline')) {
           map.setLayoutProperty('precinct-allegheny-outline', 'visibility', 'visible');
         }
+        
+        const calculateCountyBounds = (countyName) => {
+          const sourceKey = `precinct-${countyName.toLowerCase()}`;
+          const features = geojsonData[sourceKey]?.features;
+          if (!features || features.length === 0) return null;
+          
+          let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+          features.forEach(feature => {
+            const [[fMinX, fMinY], [fMaxX, fMaxY]] = getFeatureBounds(feature);
+            if (fMinX < minX) minX = fMinX;
+            if (fMinY < minY) minY = fMinY;
+            if (fMaxX > maxX) maxX = fMaxX;
+            if (fMaxY > maxY) maxY = fMaxY;
+          });
+          
+          return [[minX, minY], [maxX, maxY]];
+        };
+
+        const alleghenyBounds = calculateCountyBounds('allegheny');
+        if (alleghenyBounds) {
+          requestAnimationFrame(() => {
+            map.fitBounds(alleghenyBounds, {
+              padding: window.innerWidth < 768 ? 20 : 40,
+              duration: 0
+            });
+          });
+        }
       }
-    }, 500);
+    }, 200);
+    
+    setTimeout(() => {
+      clearInterval(checkInterval);
+    }, 10000);
+  };
+
+  $nextTick(() => {
+    waitForDataAndInit();
   });
+}
 "
       >
         <div
           x-ref="mapCanvas"
-          class="absolute inset-0 h-full w-full"
+          class="absolute inset-0 h-full w-full max-[440px]:top-[44px]"
           style="overflow: visible"
         ></div>
         <div
@@ -2813,13 +2969,13 @@
           class="pointer-events-none absolute z-50 hidden rounded-md border-2 border-black bg-white p-3 text-sm shadow-xl"
         ></div>
         <div
-          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow"
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:h-11 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:shadow-none"
         >
           <button
             :data-checked="selectedParty === 'total'"
             @click="selectedParty='total'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'total' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('total')); } }); window.dispatchEvent(new Event('legend-clear')); }"
             title="Total"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
           >
             Total
           </button>
@@ -2827,7 +2983,7 @@
             :data-checked="selectedParty === 'democrat'"
             @click="selectedParty='democrat'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'democrat' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('democrat')); } }); window.dispatchEvent(new Event('legend-clear')); }"
             title="Democrat"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
           >
             Democrat
           </button>
@@ -2835,7 +2991,7 @@
             :data-checked="selectedParty === 'republican'"
             @click="selectedParty='republican'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'republican' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('republican')); } }); window.dispatchEvent(new Event('legend-clear')); }"
             title="Republican"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
           >
             Republican
           </button>
@@ -2843,7 +2999,7 @@
             :data-checked="selectedParty === 'other'"
             @click="selectedParty='other'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'other' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('other')); } }); window.dispatchEvent(new Event('legend-clear')); }"
             title="Other"
-            class="px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2"
+            class="px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
           >
             Other
           </button>
