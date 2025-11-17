@@ -18,7 +18,7 @@
             "scriptSrc" $scriptSrc
           }}
           <div
-            class="mb-10 rounded border border-g-4 bg-g-2 p-5 shadow"
+            class="border-g-4 bg-g-2 mb-10 rounded-sm border p-5 shadow-sm"
             x-data="embedList({
               url: $el.dataset.url,
               scriptSrc: $el.dataset.scriptSrc
@@ -27,7 +27,7 @@
             data-script-src="{{ $scriptSrc }}"
           >
             <h2
-              class="mb-3 text-2xl font-black leading-none text-black md:text-5xl"
+              class="mb-3 text-2xl leading-none font-black text-black md:text-5xl"
             >
               {{ .Title }}
             </h2>
@@ -35,7 +35,7 @@
               {{ if $params }}
                 <h2 class="mt-5 font-sans text-2xl font-light">Parameters:</h2>
                 {{ range $param := $params }}
-                  <div class="mb-1 mt-5">
+                  <div class="mt-5 mb-1">
                     <label
                       for="{{ $param.name }}-field"
                       class="font-sans font-black"
@@ -45,7 +45,7 @@
                     {{ if .options }}
                       <div class="relative">
                         <select
-                          class="spl-select cursor-pointer text-g-6"
+                          class="spl-select text-g-6 cursor-pointer"
                           id="{{ $param.name }}-field"
                           name="{{ $param.name }}"
                           @input="updateParams"
@@ -55,10 +55,10 @@
                           {{ end }}
                         </select>
                         <span
-                          class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
+                          class="text-g-6 pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none"
                           aria-hidden="true"
                         >
-                          <svg class="h-4 w-4 fill-g-5">
+                          <svg class="fill-g-5 h-4 w-4">
                             {{ partial "helper/svg.html" "chevron" }}
                           </svg>
                         </span>
@@ -84,21 +84,21 @@
 
               <h3 class="mt-5 font-sans font-black">Code:</h3>
               <div class="mb-5" description="embed code">
-                <div class="mb-1 mt-5">
+                <div class="mt-5 mb-1">
                   <div class="control">
                     <code
                       contenteditable="true"
-                      class="mx-0 block break-all rounded-sm border border-g-4 bg-white p-2 text-black"
+                      class="border-g-4 mx-0 block rounded-xs border bg-white p-2 break-all text-black"
                       x-text="embedCode"
                     ></code>
                   </div>
                 </div>
-                <div class="mb-1 mt-5">
+                <div class="mt-5 mb-1">
                   <div class="flex items-center">
                     <button
                       type="button"
                       title="Copy"
-                      class="m-2 mx-0 flex items-center rounded bg-blue px-5 py-2 font-black tracking-wider text-white shadow"
+                      class="bg-blue m-2 mx-0 flex items-center rounded-sm px-5 py-2 font-black tracking-wider text-white shadow-sm"
                       @click="copy()"
                     >
                       <svg class="mr-3 h-6 w-6 fill-white">
@@ -113,11 +113,11 @@
                       x-transition:enter-start="fade-enter"
                       x-transition:leave="fade-leave-active"
                       x-transition:leave-end="fade-leave-to"
-                      class="ml-2 flex items-baseline gap-2 font-black text-blue"
+                      class="text-blue ml-2 flex items-baseline gap-2 font-black"
                     >
                       <span>Copied</span>
                       <svg
-                        class="h-4 w-4 translate-y-px fill-current text-green"
+                        class="text-green h-4 w-4 translate-y-px fill-current"
                       >
                         {{ partial "helper/svg.html" "check" }}
                       </svg>

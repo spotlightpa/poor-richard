@@ -48,14 +48,14 @@
         {{- $title -}}
       </p>
       <time
-        class="pt-1 font-sans text-sm font-bold uppercase tracking-wide text-black"
+        class="pt-1 font-sans text-sm font-bold tracking-wide text-black uppercase"
         datetime="{{ $date }}"
       >
         {{- $dateVerbose -}}
       </time>
 
       <span
-        class="border-transparent pt-1 font-sans text-sm uppercase tracking-wide text-blue underline underline-offset-2 hover:text-g-6"
+        class="text-blue hover:text-g-6 border-transparent pt-1 font-sans text-sm tracking-wide uppercase underline underline-offset-2"
         type="button"
         >Add to Calendar</span
       >
@@ -66,14 +66,14 @@
         {{- $title -}}
       </p>
       <time
-        class="pt-1 font-sans text-sm font-bold uppercase tracking-wide text-black"
+        class="pt-1 font-sans text-sm font-bold tracking-wide text-black uppercase"
         datetime="{{ $date }}"
       >
         {{- $dateVerbose -}}
       </time>
     </div>
   {{ else }}
-    <a class="font-bold text-blue hover:text-g-6" href="{{ $link }}">
+    <a class="text-blue hover:text-g-6 font-bold" href="{{ $link }}">
       {{ emojify $emoji }}
       <span class="underline underline-offset-2 hover:no-underline"
         >{{- $title -}}</span

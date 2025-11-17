@@ -20,7 +20,7 @@
   class="bg-g-2 p-5 font-sans md:flex"
 >
   <div
-    class="{{ $wrapperClass }} mx-auto w-full max-w-screen-lg justify-between md:flex"
+    class="{{ $wrapperClass }} mx-auto w-full max-w-(--breakpoint-lg) justify-between md:flex"
   >
     {{ $srcset := partial "helper/build-srcset" (dict
       "filename" $filename
@@ -30,7 +30,7 @@
     }}
 
     {{ with $filename }}
-      <figure class="flex overflow-hidden rounded md:w-5/12">
+      <figure class="flex overflow-hidden rounded-sm md:w-5/12">
         <img srcset="{{ $srcset }}" class="object-cover" sizes="100vh" />
       </figure>
     {{ end }}
@@ -40,7 +40,7 @@
       </h2>
       {{ with $sub }}
         <h3
-          class="mt-4 max-w-xl text-2xl font-semibold leading-none tracking-wide"
+          class="mt-4 max-w-xl text-2xl leading-none font-semibold tracking-wide"
         >
           {{ $sub }}
         </h3>

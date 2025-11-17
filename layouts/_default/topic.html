@@ -11,13 +11,13 @@
 
   {{ if eq .Paginator.PageNumber 1 }}
     <section
-      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
+      class="mx-4 mb-5 flex max-w-(--breakpoint-xl) flex-wrap gap-6 space-y-6 px-4 pt-12 pb-2 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
     >
       <header
         class="flex w-full flex-wrap items-baseline justify-between border-b border-black md:flex-nowrap"
       >
         <h2
-          class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+          class="flex-auto font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
         >
           {{ with $calloutTitle }}
             {{ . }}
@@ -31,7 +31,7 @@
       </header>
       {{ with .Content }}
         <div
-          class="flex w-full items-baseline justify-between rounded-lg bg-beige p-6 font-sans leading-relaxed"
+          class="bg-beige flex w-full items-baseline justify-between rounded-lg p-6 font-sans leading-relaxed"
         >
           <div
             class="mx-auto my-6 max-w-prose"
@@ -52,7 +52,9 @@
       <div
         class="mt-7 flex flex-auto self-stretch sm:max-w-[280px] md:space-y-12 lg:max-w-[300px]"
       >
-        <div class="article-content rounded bg-black p-6 font-sans text-white">
+        <div
+          class="article-content rounded-sm bg-black p-6 font-sans text-white"
+        >
           {{ if $blurb }}
             <h2 class="text-2xl font-extrabold">
               About our {{ $title }} coverage
@@ -152,7 +154,7 @@
         {{ partial "tw/newsletter-box-lg.html" (dict
           "newsletterHed" (page.Param "newsletter-hed")
           "newsletterDek" (page.Param "newsletter-dek")
-          "newsletterWrapper" "bg-g-1 border border-g-4 rounded shadow-md p-4 sm:py-8 text-black"
+          "newsletterWrapper" "bg-g-1 border border-g-4 rounded-sm shadow-md p-4 sm:py-8 text-black"
           "newsletterField" "newsletter/basic-visible.html"
           )
         }}
@@ -161,7 +163,7 @@
         data-ga-category="donate"
         x-cloak
         x-show="isSubscriber"
-        class="md:relative md:overflow-hidden md:rounded"
+        class="md:relative md:overflow-hidden md:rounded-sm"
       >
         {{ partial "tw/donate-prefill-lg.html" (dict
           "donateHed" (page.Param "donate-hed")
@@ -189,10 +191,10 @@
 
   {{ if $river }}
     <div
-      class="mx-4 mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:mx-auto lg:gap-x-8 lg:px-20"
+      class="mx-4 mt-10 max-w-(--breakpoint-xl) items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:mx-auto lg:gap-x-8 lg:px-20"
     >
       <h2
-        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
       >
         {{ if eq .Paginator.PageNumber 1 }}
           More stories about
@@ -245,7 +247,7 @@
           </div>
 
           <div class="flex py-8">
-            <div class="mx-auto w-full max-w-screen-lg">
+            <div class="mx-auto w-full max-w-(--breakpoint-lg)">
               {{ partial "tw/paginator-level.html" .Paginator }}
             </div>
           </div>

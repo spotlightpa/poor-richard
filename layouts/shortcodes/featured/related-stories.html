@@ -30,10 +30,10 @@
   <div x-data="carousel" class="mx-auto w-full overflow-clip">
     <nav class="pt-4 font-sans md:pt-5">
       <h2
-        class="z-30 w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide text-black md:text-3xl"
+        class="z-30 w-full font-sans text-2xl leading-tight font-extrabold tracking-wide text-black capitalize md:text-3xl"
       >
         <a
-          class="tracking-wide text-black no-underline hover:text-blue-9"
+          class="hover:text-blue-9 tracking-wide text-black no-underline"
           {{ with $link }}
             href="{{ $link }}"
           {{ else }}
@@ -59,7 +59,7 @@
         <!-- Prev Button -->
         <button
           x-on:click="prev"
-          class="absolute bottom-0 left-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-r from-white to-transparent text-6xl"
+          class="absolute top-0 bottom-0 left-0 z-20 flex w-20 items-center justify-center bg-linear-to-r from-white to-transparent text-6xl"
           :aria-disabled="atBeginning"
           :tabindex="atBeginning ? -1 : 0"
           :class="{ 'opacity-1': atEnd, 'opacity-0': !atEnd }"
@@ -67,7 +67,7 @@
           <span aria-hidden="true">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="text-gray-600 -ml-8 h-16 w-16 md:-ml-12"
+              class="-ml-8 h-16 w-16 text-gray-600 md:-ml-12"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -99,14 +99,14 @@
             tabindex="0"
             role="region"
             aria-labelledby="carousel-label"
-            class="flex h-[26rem] w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
+            class="flex h-104 w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
           >
             {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | first $limit }}
               <li
                 data-pos="{{ $i }}"
                 x-bind="disableNextAndPreviousButtons"
                 role="option"
-                class="mr-6 h-24 w-9/12 max-w-md snap-center py-2 font-bold md:w-5/6 [&:nth-child(-n+4)]:snap-start [&:nth-last-child(-n+4)]:snap-end"
+                class="mr-6 h-24 w-9/12 max-w-md snap-center py-2 font-bold nth-[-n+4]:snap-start nth-last-[-n+4]:snap-end md:w-5/6"
               >
                 {{ $params := partialCached "helper/page-params" . .RelPermalink }}
                 {{ $imgOpts := dict
@@ -147,7 +147,7 @@
         </div>
         <button
           @click="next()"
-          class="absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-l from-white to-transparent text-6xl"
+          class="absolute top-0 right-0 bottom-0 z-20 flex w-20 items-center justify-center bg-linear-to-l from-white to-transparent text-6xl"
           :aria-disabled="atEnd"
           :tabindex="atEnd ? -1 : 0"
           :class="{ 'opacity-1' : atBeginning, 'opacity-0': !atBeginning }"
@@ -155,7 +155,7 @@
           <span aria-hidden="true">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="text-gray-600 -mr-8 h-16 w-16 md:-mr-12"
+              class="-mr-8 h-16 w-16 text-gray-600 md:-mr-12"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -176,7 +176,7 @@
     {{ with $cta }}
       <a
         href="{{ $link }}"
-        class="focus:blue-red-7 mb-3 mt-1 inline-flex min-w-[145px] items-center justify-center rounded bg-blue px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-2 ring-transparent hover:bg-blue-7 active:ring-blue-5 sm:text-lg md:min-w-[218px] md:py-3 md:tracking-widest"
+        class="focus:blue-red-7 bg-blue hover:bg-blue-7 active:ring-blue-5 mt-1 mb-3 inline-flex min-w-[145px] items-center justify-center rounded-sm px-6 py-2 font-sans font-semibold tracking-widest text-white uppercase no-underline ring-2 ring-transparent outline-hidden sm:text-lg md:min-w-[218px] md:py-3 md:tracking-widest"
       >
         {{ $cta }}</a
       >

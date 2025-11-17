@@ -3,14 +3,14 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="bg-white px-4 pb-6 pt-12">
+  <article class="bg-white px-4 pt-12 pb-6">
     <div class="mx-auto w-full max-w-prose">
       <header>
-        <h1 class="text-4xl font-semibold leading-none text-black">
+        <h1 class="text-4xl leading-none font-semibold text-black">
           {{ .Title }}
         </h1>
         <h2
-          class="mx-auto mt-2 w-0 min-w-full text-xl font-semibold leading-tight text-g-7 md:text-3xl"
+          class="text-g-7 mx-auto mt-2 w-0 min-w-full text-xl leading-tight font-semibold md:text-3xl"
         >
           {{ .Param "dek" }}
         </h2>
@@ -24,17 +24,17 @@
 {{ end }}
 
 {{ define "extra-main" }}
-  <section class="bg-white px-4 pb-12 pt-6" id="archives">
+  <section class="bg-white px-4 pt-6 pb-12" id="archives">
     {{ $p := partial "helper/paginator" . }}
     {{ range $p.PageGroups }}
       {{ partial "tw/list-3-col-story.html" (dict
         "hed" .Key
         "pages" .Pages
-        "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
+        "wrapperClass" "mb-16 mx-auto max-w-(--breakpoint-lg)"
         )
       }}
     {{ end }}
-    <div class="mx-auto max-w-screen-lg">
+    <div class="mx-auto max-w-(--breakpoint-lg)">
       {{ partial "tw/paginator-level.html" .Paginator }}
     </div>
   </section>

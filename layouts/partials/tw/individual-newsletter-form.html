@@ -20,11 +20,11 @@
 
 
     <div
-      class="flex h-[44px] w-full items-center justify-between rounded-md border border-g-4 bg-white px-[20px]"
+      class="border-g-4 flex h-[44px] w-full items-center justify-between rounded-md border bg-white px-[20px]"
     >
       <input
         id="{{ $idEmail }}"
-        class="w-full bg-white font-bold text-g-8 placeholder-g-6 focus:outline-none"
+        class="text-g-8 placeholder-g-6 w-full bg-white font-bold focus:outline-hidden"
         type="email"
         name="EMAIL"
         placeholder="Email address"
@@ -32,7 +32,7 @@
       />
       <svg
         aria-hidden="true"
-        class="ml-2 h-[20px] w-[20px] fill-current text-g-4"
+        class="text-g-4 ml-2 h-[20px] w-[20px] fill-current"
       >
         {{ partial "helper/svg.html" "envelope" }}
       </svg>
@@ -40,7 +40,7 @@
 
     <button
       type="submit"
-      class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow text-lg font-bold uppercase text-yellow-9"
+      class="btn-signup border-yellow-5 bg-yellow text-yellow-9 mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] text-lg font-bold uppercase"
       :disabled="isLoading"
     >
       {{ $cta }}
@@ -58,7 +58,7 @@
 {{ else }}
   {{ with $ctaDescription }}
     <p
-      class="text-left text-sm text-g-3 [&>a]:font-semibold [&>a]:text-blue [&>a]:underline hover:[&>a]:text-yellow"
+      class="text-g-3 [&>a]:text-blue [&>a]:hover:text-yellow text-left text-sm [&>a]:font-semibold [&>a]:underline"
     >
       {{ . | $.Page.RenderString }}
     </p>
@@ -67,7 +67,7 @@
 
   <a
     href="{{ or $buttonLink `#` }}"
-    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow font-sans text-lg font-bold uppercase text-yellow-9"
+    class="btn-signup border-yellow-5 bg-yellow text-yellow-9 mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] font-sans text-lg font-bold uppercase"
     data-ga-category="{{ $gaCategory }}"
     data-ga-form="{{ $gaForm }}"
     rel="noopener"
@@ -78,7 +78,7 @@
 
 {{ with $ctaSecondDescription }}
   <p
-    class="mt-4 text-left text-sm text-g-3 [&>a]:font-semibold [&>a]:text-blue [&>a]:underline hover:[&>a]:text-yellow"
+    class="text-g-3 [&>a]:text-blue [&>a]:hover:text-yellow mt-4 text-left text-sm [&>a]:font-semibold [&>a]:underline"
   >
     {{ . | $.Page.RenderString }}
   </p>

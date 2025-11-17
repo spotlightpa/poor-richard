@@ -27,28 +27,28 @@
           "containerClass" "min-w-full h-full overflow-clip"
           "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
           "sizeHint" "400px"
-          "rounded" false
-          "shadow" false
+          "rounded-sm" false
+          "shadow-sm" false
           "gravity" (.Page.Param "image-gravity")
         }}
         {{ with $name }}
           <div
-            class="w-full overflow-hidden rounded bg-black lg:mr-16 lg:w-auto lg:self-stretch"
+            class="w-full overflow-hidden rounded-sm bg-black lg:mr-16 lg:w-auto lg:self-stretch"
           >
             {{ partial "tw/image-block.html" $imgOpts }}
           </div>
         {{ end }}
         <div
-          class="relative z-10 row-span-1 row-start-3 mx-4 -mt-12 mb-16 mr-4 flex max-w-md flex-wrap justify-end rounded border-b-4 border-black bg-black sm:mr-16 lg:mr-0 lg:justify-start"
+          class="relative z-10 row-span-1 row-start-3 mx-4 -mt-12 mr-4 mb-16 flex max-w-md flex-wrap justify-end rounded-sm border-b-4 border-black bg-black sm:mr-16 lg:mr-0 lg:justify-start"
         >
           <p
-            class="w-full p-5 text-sm leading-relaxed text-white group-first:sm:max-w-xl md:text-base lg:text-lg"
+            class="w-full p-5 text-sm leading-relaxed text-white sm:group-first:max-w-xl md:text-base lg:text-lg"
           >
             {{ .body }}
           </p>
           <a
             href="{{ .url }}"
-            class="btn-signup-lg -mb-12 mr-8 sm:-mr-10 lg:-ml-10 lg:mr-0"
+            class="btn-signup-lg mr-8 -mb-12 sm:-mr-10 lg:mr-0 lg:-ml-10"
             >{{ .actionText }}</a
           >
         </div>
@@ -61,7 +61,7 @@
             <li>
               <div class="">
                 <span
-                  class="inline-block border-2 border-eyebrow-bg bg-black px-2 font-sans text-xs font-semibold uppercase text-white md:text-sm"
+                  class="border-eyebrow-bg inline-block border-2 bg-black px-2 font-sans text-xs font-semibold text-white uppercase md:text-sm"
                   data-ga-category="eyebrow"
                   >{{ .eyebrow }}</span
                 >

@@ -16,13 +16,13 @@
 {{ $pages := $series.Pages.ByPublishDate }}
 {{ if gt $pages.Len 1 }}
   <aside
-    class="{{ $sideClass }} sm:shape-outside mb-4 w-full font-sans sm:mb-0 sm:mt-[95px] sm:w-auto"
+    class="{{ $sideClass }} sm:shape-outside mb-4 w-full font-sans sm:mt-[95px] sm:mb-0 sm:w-auto"
     data-ga-category="inline:related"
   >
     <nav class="py-4">
       <h2 class="font-bold uppercase sm:text-xl">
         <a
-          class="whitespace-nowrap border-b-2 border-black tracking-wide"
+          class="border-b-2 border-black tracking-wide whitespace-nowrap"
           href="{{ $series.RelPermalink }}"
         >
           More From
@@ -35,7 +35,7 @@
         {{ range where $pages ".RelPermalink" "!=" $self | last $limit }}
           <li class="font-bold">
             <a
-              class="text-navy transition-colors duration-500 hover:text-yellow"
+              class="text-navy hover:text-yellow transition-colors duration-500"
               href="{{ .RelPermalink }}"
               >{{ .LinkTitle }}</a
             >

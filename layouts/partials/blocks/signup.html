@@ -12,10 +12,10 @@
 
   <section class="bg-g-3" data-ga-category="inline">
     <div
-      class="mx-auto max-w-screen-lg px-3 py-6 md:grid md:grid-cols-12 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
+      class="mx-auto max-w-(--breakpoint-lg) px-3 py-6 md:grid md:grid-cols-12 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
     >
       <div class="md:col-span-5 md:col-start-2">
-        <h2 class="mb-10 text-5xl font-black leading-none text-black">
+        <h2 class="mb-10 text-5xl leading-none font-black text-black">
           {{ .hed }}
         </h2>
         {{ with .copy }}
@@ -42,7 +42,7 @@
               </label>
               <input
                 id="{{ $idFname }}"
-                class="block w-full appearance-none rounded border-2 border-g-4 bg-white px-4 py-2 tracking-wider text-g-8 placeholder-g-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+                class="border-g-4 text-g-8 placeholder-g-4 placeholder-opacity-100 ring-red-7 block w-full appearance-none rounded-sm border-2 bg-white px-4 py-2 tracking-wider outline-hidden focus:ring-2"
                 type="text"
                 name="FNAME"
                 placeholder="William"
@@ -56,7 +56,7 @@
               </label>
               <input
                 id="{{ $idLname }}"
-                class="block w-full appearance-none rounded border-2 border-g-4 bg-white px-4 py-2 tracking-wider text-g-8 placeholder-g-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+                class="border-g-4 text-g-8 placeholder-g-4 placeholder-opacity-100 ring-red-7 block w-full appearance-none rounded-sm border-2 bg-white px-4 py-2 tracking-wider outline-hidden focus:ring-2"
                 type="text"
                 name="LNAME"
                 placeholder="Penn"
@@ -69,7 +69,7 @@
               </label>
               <input
                 id="{{ $idEmail }}"
-                class="block w-full appearance-none rounded border-2 border-g-4 bg-white px-4 py-2 tracking-wider text-g-8 placeholder-g-4 placeholder-opacity-100 outline-none ring-red-7 focus:ring-2"
+                class="border-g-4 text-g-8 placeholder-g-4 placeholder-opacity-100 ring-red-7 block w-full appearance-none rounded-sm border-2 bg-white px-4 py-2 tracking-wider outline-hidden focus:ring-2"
                 type="email"
                 name="EMAIL"
                 placeholder="billpenn@example.com"
@@ -93,11 +93,11 @@
               </svg>
             </button>
           </div>
-          <p class="text-sm text-g-7">{{ .disclaimer }}</p>
+          <p class="text-g-7 text-sm">{{ .disclaimer }}</p>
         </form>
       </div>
       <div
-        class="items-center justify-center self-center overflow-hidden rounded border border-g-5 shadow md:col-span-4 md:col-start-8"
+        class="border-g-5 items-center justify-center self-center overflow-hidden rounded-sm border shadow-sm md:col-span-4 md:col-start-8"
       >
         {{ $name := .image }}
         {{ $imgOpts := dict
@@ -106,7 +106,7 @@
           "figClass" "col-start-1"
           "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
           "sizeHint" "400px"
-          "rounded" true
+          "rounded-sm" true
           "gravity" (.Page.Param "image-gravity")
 
           "filename" $name

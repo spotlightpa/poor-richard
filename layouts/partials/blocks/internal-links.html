@@ -7,7 +7,7 @@
   >
     {{ with .link }}
       <div
-        class="mx-auto flex max-w-screen-xl flex-col md:flex-row"
+        class="mx-auto flex max-w-(--breakpoint-xl) flex-col md:flex-row"
         data-ga-category="sticky"
       >
         <div class="no-js:hidden relative mx-auto w-96 max-w-full md:hidden">
@@ -22,10 +22,10 @@
             {{ end }}
           </select>
           <span
-            class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
+            class="text-g-6 pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none"
             aria-hidden="true"
           >
-            <svg class="h-4 w-4 fill-g-5">
+            <svg class="fill-g-5 h-4 w-4">
               {{ partial "helper/svg.html" "chevron" }}
             </svg>
           </span>
@@ -38,7 +38,7 @@
             <a
               data-about-id="{{ .link }}"
               data-ga-category="item"
-              class="my-2 mr-3 inline-flex w-auto items-center rounded border border-black px-4 py-2 text-sm leading-4 last:ml-auto last:mr-0 hover:border-red-7 hover:text-red-7 active:bg-black active:text-white lg:my-0 lg:mr-5 lg:text-base"
+              class="hover:border-red-7 hover:text-red-7 my-2 mr-3 inline-flex w-auto items-center rounded-sm border border-black px-4 py-2 text-sm leading-4 last:mr-0 last:ml-auto active:bg-black active:text-white lg:my-0 lg:mr-5 lg:text-base"
               :class="
             aboutActive === $el.dataset.aboutId ?
             'bg-black text-white hover:border-blue-3 hover:text-blue-3' :

@@ -94,6 +94,7 @@ allow = [
   '^postcss$',
   '^babel$',
   '^git$',
+  '^tailwindcss$',
 ]
 
 [security.funcs]
