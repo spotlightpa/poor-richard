@@ -1,8 +1,5 @@
 {
-  "edCallout": [
-    "content/news/2025-10-30-SPLFOS1025.md",
-    "content/news/2025-10-24-SPLRESCOSTS1025.md"
-  ],
+  "edCallout": [],
   "edImpact": [],
   "edInvestigations": [
     "content/news/2025-07-28-SPLMHFAILING0725.md"
