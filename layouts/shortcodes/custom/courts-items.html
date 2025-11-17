@@ -13,12 +13,12 @@
   :class="{'pt-20': selected === 'issue-{{ $title | urlize }}' }"
 >
   <h2
-    class="mx-auto max-w-screen-lg border-b-4 border-black pb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+    class="mx-auto max-w-(--breakpoint-lg) border-b-4 border-black pb-1 font-sans text-xl leading-none font-extrabold tracking-wider uppercase"
   >
     {{ $title }}
   </h2>
   <div
-    class="mx-auto max-w-screen-lg items-stretch justify-start md:flex md:flex-wrap md:gap-5"
+    class="mx-auto max-w-(--breakpoint-lg) items-stretch justify-start md:flex md:flex-wrap md:gap-5"
   >
     <aside class="mt-8 md:w-2/6">
       {{ $srcset := partial "helper/build-srcset" (dict
@@ -33,7 +33,7 @@
       >
         <img
           srcset="{{ $srcset }}"
-          class="rounded object-cover"
+          class="rounded-sm object-cover"
           sizes="100vh"
         />
       </picture>
@@ -42,7 +42,7 @@
       {{ .Inner }}
     </div>
   </div>
-  <p class="mx-auto max-w-screen-lg text-sm">
+  <p class="mx-auto max-w-(--breakpoint-lg) text-sm">
     Think we missed an important case?
     <a
       class="text-bold text-blue underline underline-offset-2 hover:no-underline"

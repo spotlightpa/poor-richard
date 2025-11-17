@@ -2,7 +2,7 @@
 <section
   x-data="searchModal"
   @modal:search:open.window="isOpen = true"
-  class="fixed inset-0 z-[2000]"
+  class="fixed inset-0 z-2000"
   x-cloak
   x-show="isOpen"
   x-trap.noscroll.inert="isOpen"
@@ -15,24 +15,24 @@
   aria-modal="true"
   aria-labelledby="{{ $idSearch }}"
 >
-  <div class="absolute inset-0 bg-g-4 opacity-75"></div>
-  <div class="absolute inset-0 backdrop-blur-sm backdrop-filter"></div>
+  <div class="bg-g-4 absolute inset-0 opacity-75"></div>
+  <div class="absolute inset-0 backdrop-blur-xs backdrop-filter"></div>
   <div class="absolute inset-1 flex overflow-y-auto">
     <div
-      class="m-auto flex h-3/4 w-full max-w-prose flex-col overflow-hidden rounded-lg text-center font-sans text-g-9 shadow-lg"
+      class="text-g-9 m-auto flex h-3/4 w-full max-w-prose flex-col overflow-hidden rounded-lg text-center font-sans shadow-lg"
       @click.outside="isOpen = false"
       @keydown.escape="isOpen = false"
       tabindex="-1"
     >
       <header class="relative flex flex-none bg-black text-white">
         <h2
-          class="mx-auto px-4 py-2 text-lg font-semibold uppercase leading-none tracking-wider"
+          class="mx-auto px-4 py-2 text-lg leading-none font-semibold tracking-wider uppercase"
         >
           <span id="{{ $idSearch }}"> Search </span>
         </h2>
         <p class="absolute inset-y-0 right-0 flex items-center p-4">
           <button
-            class="group flex rounded-full text-g-4 hover:text-yellow"
+            class="group text-g-4 hover:text-yellow flex rounded-full"
             type="button"
             aria-label="close"
             x-ref="closer"

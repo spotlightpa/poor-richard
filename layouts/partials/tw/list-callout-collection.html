@@ -8,7 +8,7 @@
   class="flex w-full items-baseline justify-between border-b border-black"
 >
   <h2
-    class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+    class="flex-auto font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
   >
     {{ with $title }}
       {{ $title }}
@@ -71,7 +71,7 @@
     "gravity" (.Param "image-gravity")
   }}
   <div
-    class="flex max-w-full md:w-2/12 md:min-w-[20%] md:max-w-[272px] md:flex-1 lg:w-1/6 xl:w-72"
+    class="flex max-w-full md:w-2/12 md:max-w-[272px] md:min-w-[20%] md:flex-1 lg:w-1/6 xl:w-72"
     data-ga-category="story-{{ add 2 $i }}"
   >
     {{ $eyebrow := $params.published }}
@@ -94,11 +94,11 @@
 {{ with $readMoreText }}
   <div
     data-ga-category="readmore"
-    class="mx-auto mt-8 flex w-full max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
+    class="mx-auto mt-8 flex w-full max-w-(--breakpoint-xl) items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
   >
     <a
       href="{{ $readMoreLink }}"
-      class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
+      class="decoration text-g-9 hover:text-blue underline underline-offset-4"
     >
       {{- $readMoreText | default "Read More" -}}
     </a>

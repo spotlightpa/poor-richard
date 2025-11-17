@@ -700,7 +700,7 @@
   <template x-if="showPopup">
     <div
       x-show="loading || error"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+      class="bg-opacity-50 fixed inset-0 z-50 flex items-center justify-center bg-black"
       x-cloak
     >
       <div class="w-full max-w-md rounded-lg bg-white p-8 shadow-xl">
@@ -708,7 +708,7 @@
           <div>
             <div class="mb-4 flex items-center justify-center">
               <svg
-                class="h-12 w-12 animate-spin text-yellow"
+                class="text-yellow h-12 w-12 animate-spin"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -732,13 +732,13 @@
               class="mb-2 text-center font-sans text-xl font-bold text-black"
               x-text="loadingMessage"
             ></h3>
-            <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
+            <div class="bg-g-3 mb-2 h-3 w-full overflow-hidden rounded-full">
               <div
-                class="h-full rounded-full bg-yellow transition-all duration-300"
+                class="bg-yellow h-full rounded-full transition-all duration-300"
                 :style="`width: ${loadingProgress}%`"
               ></div>
             </div>
-            <p class="text-center font-sans text-sm text-g-6">
+            <p class="text-g-6 text-center font-sans text-sm">
               <span x-text="loadingProgress"></span>% complete
             </p>
           </div>
@@ -747,7 +747,7 @@
           <div>
             <div class="mb-4 flex items-center justify-center">
               <svg
-                class="h-12 w-12 text-red-7"
+                class="text-red-7 h-12 w-12"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -762,12 +762,12 @@
               Unable to Load Data
             </h3>
             <p
-              class="mb-6 text-center font-sans text-sm text-g-6"
+              class="text-g-6 mb-6 text-center font-sans text-sm"
               x-text="error"
             ></p>
             <button
               @click="retry()"
-              class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+              class="border-yellow-5 bg-yellow text-yellow-9 hover:bg-yellow-3 w-full rounded-lg border-2 px-6 py-3 font-sans text-lg font-bold transition"
             >
               Try Again
             </button>
@@ -777,12 +777,15 @@
     </div>
   </template>
   <template x-if="!showPopup">
-    <div x-show="loading || error" class="w-full bg-white p-8 shadow md:p-10">
+    <div
+      x-show="loading || error"
+      class="w-full bg-white p-8 shadow-sm md:p-10"
+    >
       <template x-if="loading && !error">
         <div>
           <div class="mb-4 flex items-center justify-center">
             <svg
-              class="h-12 w-12 animate-spin text-yellow"
+              class="text-yellow h-12 w-12 animate-spin"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -806,13 +809,13 @@
             class="mb-2 text-center font-sans text-xl font-bold text-black"
             x-text="loadingMessage"
           ></h3>
-          <div class="mb-2 h-3 w-full overflow-hidden rounded-full bg-g-3">
+          <div class="bg-g-3 mb-2 h-3 w-full overflow-hidden rounded-full">
             <div
-              class="h-full rounded-full bg-yellow transition-all duration-300"
+              class="bg-yellow h-full rounded-full transition-all duration-300"
               :style="`width: ${loadingProgress}%`"
             ></div>
           </div>
-          <p class="text-center font-sans text-sm text-g-6">
+          <p class="text-g-6 text-center font-sans text-sm">
             <span x-text="loadingProgress"></span>% complete
           </p>
         </div>
@@ -821,7 +824,7 @@
         <div>
           <div class="mb-4 flex items-center justify-center">
             <svg
-              class="h-12 w-12 text-red-7"
+              class="text-red-7 h-12 w-12"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -836,12 +839,12 @@
             Unable to Load Data
           </h3>
           <p
-            class="mb-6 text-center font-sans text-sm text-g-6"
+            class="text-g-6 mb-6 text-center font-sans text-sm"
             x-text="error"
           ></p>
           <button
             @click="retry()"
-            class="w-full rounded-lg border-2 border-yellow-5 bg-yellow px-6 py-3 font-sans text-lg font-bold text-yellow-9 transition hover:bg-yellow-3"
+            class="border-yellow-5 bg-yellow text-yellow-9 hover:bg-yellow-3 w-full rounded-lg border-2 px-6 py-3 font-sans text-lg font-bold transition"
           >
             Try Again
           </button>

@@ -11,7 +11,7 @@
 
 
   <nav
-    class="gap-5 px-4 sm:grid sm:grid-cols-2 md:mx-auto md:mt-16 md:max-w-screen-lg md:grid-cols-4"
+    class="gap-5 px-4 sm:grid sm:grid-cols-2 md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg) md:grid-cols-4"
   >
     {{ $context := dict
       "category" "about"
@@ -21,9 +21,9 @@
     }}
     {{ block "tw-footer" $context }}
       <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
-        <h3 class="font-bold uppercase tracking-wide hover:underline">
+        <h3 class="font-bold tracking-wide uppercase hover:underline">
           <a
-            class="transition-color text-black duration-500 hover:text-blue hover:underline"
+            class="transition-color hover:text-blue text-black duration-500 hover:underline"
             href="{{ .link }}"
             >{{ .name }}</a
           >
@@ -32,7 +32,7 @@
           {{ range .menu }}
             <li>
               <a
-                class="transition-color block text-black duration-500 hover:text-blue hover:underline"
+                class="transition-color hover:text-blue block text-black duration-500 hover:underline"
                 href="{{ .URL }}"
                 {{ with .Params.dispatch }}
                   x-data @click.prevent="$dispatch($el.dataset.dispatch)"
@@ -71,11 +71,11 @@
         <a
           data-fru-campaign="footer-promo"
           data-ga-category="donate"
-          class="group relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
+          class="group from-red-7 to-red hover:from-blue-7 hover:to-blue relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-linear-to-r p-2 sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
           href="{{ .link }}"
         >
           <span
-            class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
+            class="relative inline-flex flex-0 flex-wrap items-center text-xs leading-none font-bold tracking-wide text-white uppercase md:text-lg md:leading-none"
           >
             <svg
               class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
@@ -90,7 +90,7 @@
           {{ range .menu }}
             <li>
               <a
-                class="transition-color block text-black duration-500 hover:text-blue hover:underline"
+                class="transition-color hover:text-blue block text-black duration-500 hover:underline"
                 href="{{ .URL }}"
                 {{ with .Params.dispatch }}
                   x-data @click.prevent="$dispatch($el.dataset.dispatch)"
@@ -107,7 +107,7 @@
 
   </nav>
   <nav
-    class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg"
+    class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg)"
     data-ga-category="follow"
   >
     <h3 class="mb-4 text-lg font-bold uppercase">Follow Us</h3>
@@ -116,7 +116,7 @@
         <li class="inline-flex">
           <a
             href="{{ .URL }}"
-            class="inline-flex items-center hover:text-blue"
+            class="hover:text-blue inline-flex items-center"
             {{ with .Params.dispatch }}
               x-data @click.prevent="$dispatch($el.dataset.dispatch)"
               data-dispatch="{{ . }}"
@@ -138,13 +138,13 @@
     </ul>
   </nav>
   <div
-    class="mt-10 px-4 pb-4 text-xs sm:flex sm:justify-between md:mx-auto md:mt-16 md:max-w-screen-lg"
+    class="mt-10 px-4 pb-4 text-xs sm:flex sm:justify-between md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg)"
   >
     <p class="text-center">
       &copy; {{ now.Format "2006" }} Spotlight PA.&nbsp;
       <br class="sm:hidden" />
       <a
-        class="underline transition-colors duration-500 hover:text-blue"
+        class="hover:text-blue underline transition-colors duration-500"
         href="https://www.netlify.com/"
         >This site is powered by Netlify</a
       >
@@ -152,14 +152,14 @@
     <div class="mt-10 flex justify-between sm:mt-0 sm:self-end">
       <a
         href="/about/terms/"
-        class="underline transition-colors duration-500 hover:text-blue"
+        class="hover:text-blue underline transition-colors duration-500"
       >
         Terms of use
       </a>
       &nbsp;
       <a
         href="/about/privacy/"
-        class="underline transition-colors duration-500 hover:text-blue"
+        class="hover:text-blue underline transition-colors duration-500"
       >
         Privacy policy
       </a>

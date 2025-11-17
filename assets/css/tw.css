@@ -1,379 +1,397 @@
-@import "./font-merri.css";
+@import "./font-merri.css" layer(base);
 
-@tailwind base;
+@import "tailwindcss";
 
-@tailwind components;
+@config "../../tailwind.config.js";
 
-/* Workaround for the sticky nav obscuring #anchor links. */
-/* Just push the scroll margin of all id="" elements down by 85px, */
-/* which is approximately enough for mobile and desktop. */
-/* Individual items can override the default scroll-margin if necessary. */
-/*! purgecss start ignore */
-[id] {
-  @apply scroll-mt-[100px];
-}
-/*! purgecss end ignore */
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-.featured-content > p a {
-  @apply text-navy underline;
-  @apply transition-colors duration-500;
-}
-
-.featured-content > p a:hover {
-  @apply text-yellow;
-}
-
-.featured-content > p del {
-  @apply text-orange line-through;
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-.featured-content > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
-.featured-content > :where(ol, ul) > li + li,
-.featured-content > :where(ol, ul) > li > p + p,
-.featured-content > p + p,
-.featured-content > aside + p,
-.featured-content > figure + p {
-  @apply mt-8;
+@utility shape-outside {
+  shape-outside: border-box;
 }
 
-.featured-content > h2 {
-  @apply mb-2 mt-8 font-sans text-4xl font-semibold leading-tight;
+@utility text-shadow {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.featured-content > h3 {
-  @apply mb-8 font-sans text-3xl italic leading-none;
+@utility sideways-heading {
+  @apply flex justify-end;
+  transform: rotate(180deg);
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
 }
 
-.featured-content > h3:before {
-  content: "";
-  @apply mb-4 mt-16 block h-1 w-12 bg-yellow;
+@utility contain-content {
+  contain: layout paint style inline-size;
 }
 
-.featured-content > h4 {
-  @apply mb-4 mt-8 font-sans text-lg font-semibold leading-tight;
-}
+@layer components {
+  /* Workaround for the sticky nav obscuring #anchor links. */
+  /* Just push the scroll margin of all id="" elements down by 85px, */
+  /* which is approximately enough for mobile and desktop. */
+  /* Individual items can override the default scroll-margin if necessary. */
+  /*! purgecss start ignore */
+  [id] {
+    @apply scroll-mt-[100px];
+  }
+  /*! purgecss end ignore */
 
-.featured-content > h5 {
-  @apply mb-2 mt-6 text-base font-semibold leading-tight;
-}
+  .featured-content > p a {
+    @apply text-navy underline;
+    @apply transition-colors duration-500;
+  }
 
-.featured-content > h6 {
-  @apply mb-1 mt-4 text-base italic leading-tight;
-}
+  .featured-content > p a:hover {
+    @apply text-yellow;
+  }
 
-.featured-content > ul {
-  @apply list-disc pl-6;
-}
+  .featured-content > p del {
+    @apply text-orange line-through;
+  }
 
-.featured-content > ol {
-  @apply list-decimal pl-6;
-}
+  .featured-content > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
+  .featured-content > :where(ol, ul) > li + li,
+  .featured-content > :where(ol, ul) > li > p + p,
+  .featured-content > p + p,
+  .featured-content > aside + p,
+  .featured-content > figure + p {
+    @apply mt-8;
+  }
 
-.article-content > :where(p, aside, figure, ol, ul, hr) {
-  @apply mb-4 mt-4;
-}
+  .featured-content > h2 {
+    @apply mt-8 mb-2 font-sans text-4xl leading-tight font-semibold;
+  }
 
-.article-content > :where(iframe) {
-  @apply my-12;
-}
+  .featured-content > h3 {
+    @apply mb-8 font-sans text-3xl leading-none italic;
+  }
 
-.article-content > :first-child {
-  @apply mt-0;
-}
+  .featured-content > h3:before {
+    content: "";
+    @apply bg-yellow mt-16 mb-4 block h-1 w-12;
+  }
 
-.article-content > :last-child {
-  @apply mb-0;
-}
+  .featured-content > h4 {
+    @apply mt-8 mb-4 font-sans text-lg leading-tight font-semibold;
+  }
 
-.article-content
-  > :where(p, ol, ul, div, figure)
-  + :where(h1, h2, h3, h4, h5, h6) {
-  @apply mt-8;
-}
+  .featured-content > h5 {
+    @apply mt-6 mb-2 text-base leading-tight font-semibold;
+  }
 
-.article-content > h1 {
-  @apply mb-4 font-sans text-3xl font-semibold leading-tight;
-}
+  .featured-content > h6 {
+    @apply mt-4 mb-1 text-base leading-tight italic;
+  }
 
-.article-content > h2 {
-  @apply mb-4 text-2xl font-semibold leading-tight;
-}
+  .featured-content > ul {
+    @apply list-disc pl-6;
+  }
 
-.article-content > h3 {
-  @apply mb-4 text-xl font-semibold leading-tight;
-}
+  .featured-content > ol {
+    @apply list-decimal pl-6;
+  }
 
-.article-content > h4 {
-  @apply mb-4 text-lg font-semibold leading-tight;
-}
+  .article-content > :where(p, aside, figure, ol, ul, hr) {
+    @apply mt-4 mb-4;
+  }
 
-.article-content > h5 {
-  @apply mb-4 text-base font-semibold leading-tight;
-}
+  .article-content > :where(iframe) {
+    @apply my-12;
+  }
 
-.article-content > h6 {
-  @apply mb-4 text-base italic leading-tight;
-}
+  .article-content > :first-child {
+    @apply mt-0;
+  }
 
-.article-content > ul {
-  @apply list-disc pl-8;
-}
+  .article-content > :last-child {
+    @apply mb-0;
+  }
 
-.article-content > :where(ul, ol) :where(ul, ol) {
-  @apply pl-6;
-}
+  .article-content
+    > :where(p, ol, ul, div, figure)
+    + :where(h1, h2, h3, h4, h5, h6) {
+    @apply mt-8;
+  }
 
-.article-content > :where(ul, ol) ul {
-  @apply list-[circle];
-}
+  .article-content > h1 {
+    @apply mb-4 font-sans text-3xl leading-tight font-semibold;
+  }
 
-.article-content .toc {
-  @apply my-8 rounded border border-g-3 bg-g-2 px-6 py-4 shadow;
-}
+  .article-content > h2 {
+    @apply mb-4 text-2xl leading-tight font-semibold;
+  }
 
-.article-content .toc h3 {
-  @apply mb-2 text-xl font-semibold leading-tight;
-}
-.article-content .toc ul {
-  @apply list-disc pl-5;
-}
+  .article-content > h3 {
+    @apply mb-4 text-xl leading-tight font-semibold;
+  }
 
-.article-content .toc :where(ul, ol) :where(ul, ol) {
-  @apply pl-6;
-}
+  .article-content > h4 {
+    @apply mb-4 text-lg leading-tight font-semibold;
+  }
 
-.article-content .toc :where(ul, ol) ul {
-  @apply list-[circle];
-}
+  .article-content > h5 {
+    @apply mb-4 text-base leading-tight font-semibold;
+  }
 
-.article-content > ol {
-  @apply list-decimal pl-8;
-}
+  .article-content > h6 {
+    @apply mb-4 text-base leading-tight italic;
+  }
 
-.article-content :where(code) {
-  @apply -my-[2px] mx-1 rounded-sm bg-g-2 px-1 py-[2px] text-red-8;
-}
+  .article-content > ul {
+    @apply list-disc pl-8;
+  }
 
-.article-content :where(a) {
-  @apply text-navy underline;
-  @apply transition-colors duration-500;
-}
+  .article-content > :where(ul, ol) :where(ul, ol) {
+    @apply pl-6;
+  }
 
-.article-content :where(a:hover) {
-  @apply text-yellow;
-}
+  .article-content > :where(ul, ol) ul {
+    @apply list-[circle];
+  }
 
-.article-content > p del {
-  @apply text-orange line-through;
-}
+  .article-content .toc {
+    @apply border-g-3 bg-g-2 my-8 rounded-sm border px-6 py-4 shadow-sm;
+  }
 
-.content-aside > p {
-  @apply leading-relaxed;
-}
+  .article-content .toc h3 {
+    @apply mb-2 text-xl leading-tight font-semibold;
+  }
+  .article-content .toc ul {
+    @apply list-disc pl-5;
+  }
 
-.content-aside a {
-  @apply text-navy underline;
-  @apply transition-colors duration-500;
-}
+  .article-content .toc :where(ul, ol) :where(ul, ol) {
+    @apply pl-6;
+  }
 
-.content-aside a:hover {
-  @apply text-yellow;
-}
+  .article-content .toc :where(ul, ol) ul {
+    @apply list-[circle];
+  }
 
-.content-aside > ul {
-  @apply list-inside list-disc;
-}
+  .article-content > ol {
+    @apply list-decimal pl-8;
+  }
 
-.content-aside > ol {
-  @apply list-inside list-decimal;
-}
+  .article-content :where(code) {
+    @apply bg-g-2 text-red-8 mx-1 -my-[2px] rounded-xs px-1 py-[2px];
+  }
 
-@screen sm {
+  .article-content :where(a) {
+    @apply text-navy underline;
+    @apply transition-colors duration-500;
+  }
+
+  .article-content :where(a:hover) {
+    @apply text-yellow;
+  }
+
+  .article-content > p del {
+    @apply text-orange line-through;
+  }
+
+  .content-aside > p {
+    @apply leading-relaxed;
+  }
+
+  .content-aside a {
+    @apply text-navy underline;
+    @apply transition-colors duration-500;
+  }
+
+  .content-aside a:hover {
+    @apply text-yellow;
+  }
+
   .content-aside > ul {
-    @apply list-outside;
+    @apply list-inside list-disc;
   }
 
   .content-aside > ol {
-    @apply list-outside;
+    @apply list-inside list-decimal;
   }
-}
 
-.content-aside > h1,
-.content-aside > h2,
-.content-aside > h3,
-.content-aside > h4 {
-  @apply text-lg font-bold uppercase leading-none;
-}
+  @media (width >= theme(--breakpoint-sm)) {
+    .content-aside > ul {
+      @apply list-outside;
+    }
 
-.content-aside > * + h1,
-.content-aside > * + h2,
-.content-aside > * + h3,
-.content-aside > * + h4 {
-  @apply mt-8;
-}
+    .content-aside > ol {
+      @apply list-outside;
+    }
+  }
 
-.content-aside > * + *,
-.content-aside ul > li + li,
-.content-aside ol > li + li {
-  @apply mt-3;
-}
+  .content-aside > h1,
+  .content-aside > h2,
+  .content-aside > h3,
+  .content-aside > h4 {
+    @apply text-lg leading-none font-bold uppercase;
+  }
 
-.spl-input {
-  @apply w-full rounded border border-g-4 py-2 pl-4 pr-7 font-sans leading-normal text-g-9 outline-none ring-2 ring-transparent focus:ring-yellow;
-}
+  .content-aside > * + h1,
+  .content-aside > * + h2,
+  .content-aside > * + h3,
+  .content-aside > * + h4 {
+    @apply mt-8;
+  }
 
-.spl-select {
-  @apply block w-full appearance-none rounded border border-g-4 bg-white py-2 pl-4 pr-7 font-sans text-g-6 outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
-}
+  .content-aside > * + *,
+  .content-aside ul > li + li,
+  .content-aside ol > li + li {
+    @apply mt-3;
+  }
 
-a.spl-links-navy,
-.spl-links-navy a {
-  @apply text-navy underline underline-offset-2 transition-colors duration-500 hover:text-yellow;
-}
+  .spl-input {
+    @apply border-g-4 text-g-9 focus:ring-yellow w-full rounded-sm border py-2 pr-7 pl-4 font-sans leading-normal ring-2 ring-transparent outline-hidden;
+  }
 
-a.spl-links-yellow,
-.spl-links-yellow a {
-  @apply text-yellow underline underline-offset-2 transition-colors duration-500 hover:text-blue;
-}
+  .spl-select {
+    @apply border-g-4 text-g-6 focus:ring-yellow active:ring-yellow-6 block w-full appearance-none rounded-sm border bg-white py-2 pr-7 pl-4 font-sans ring-2 ring-transparent outline-hidden;
+  }
 
-.btn-signup {
-  @apply rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
-}
+  a.spl-links-navy,
+  .spl-links-navy a {
+    @apply text-navy hover:text-yellow underline underline-offset-2 transition-colors duration-500;
+  }
 
-.btn-signup-slim {
-  @apply w-full rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase leading-tight tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
-}
+  a.spl-links-yellow,
+  .spl-links-yellow a {
+    @apply text-yellow hover:text-blue underline underline-offset-2 transition-colors duration-500;
+  }
 
-.btn-signup-lg {
-  @apply inline-block rounded bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
-}
+  .btn-signup {
+    @apply border-yellow-5 bg-yellow-4 text-yellow-9 ring-yellow-6 hover:bg-yellow-3 rounded-sm border-2 px-8 py-2 text-center leading-normal font-bold tracking-widest uppercase outline-hidden focus:ring-2;
+  }
 
-.btn-donate {
-  @apply inline-block rounded border-2 border-red bg-red px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-red-7 hover:bg-red-5 focus:ring-2 focus:ring-red-7 active:ring-red-9;
-}
+  .btn-signup-slim {
+    @apply border-yellow-5 bg-yellow-4 text-yellow-9 ring-yellow-6 hover:bg-yellow-3 w-full rounded-sm border-2 px-8 py-2 leading-tight font-bold tracking-widest uppercase outline-hidden focus:ring-2;
+  }
 
-.btn-donate-slim {
-  @apply w-full rounded bg-red px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-2 ring-transparent hover:bg-red-7 focus:ring-red-7 active:ring-red-5;
-}
+  .btn-signup-lg {
+    @apply bg-yellow-4 text-yellow-9 ring-yellow-6 hover:bg-yellow-3 inline-block rounded-sm px-8 py-5 font-sans text-lg font-bold tracking-wide outline-hidden focus:ring-2 lg:text-xl lg:tracking-widest;
+  }
 
-.btn-donate-lg {
-  @apply inline-flex min-w-[145px] items-center justify-center rounded bg-red px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px] md:py-5;
-}
-.btn-select {
-  @apply inline-block rounded border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-blue hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
-}
+  .btn-donate {
+    @apply border-red bg-red ring-red-7 hover:bg-red-5 focus:ring-red-7 active:ring-red-9 inline-block rounded-sm border-2 px-6 py-2 text-center font-sans font-semibold tracking-widest text-white uppercase no-underline outline-hidden focus:ring-2;
+  }
 
-.spl-newsletter {
-  @apply my-2 sm:float-right sm:ml-3 sm:w-1/2 md:-mr-12 md:max-w-[439px] lg:-mr-0 lg:w-full lg:max-w-96 xl:-mr-20 xl:max-w-[475px];
-}
+  .btn-donate-slim {
+    @apply bg-red hover:bg-red-7 focus:ring-red-7 active:ring-red-5 w-full rounded-sm px-6 py-2 font-sans font-semibold tracking-widest text-white uppercase no-underline ring-2 ring-transparent outline-hidden;
+  }
 
-.spl-donate {
-  @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96;
-}
+  .btn-donate-lg {
+    @apply bg-red hover:bg-red-5 focus:ring-red-7 active:ring-red-9 inline-flex min-w-[145px] items-center justify-center rounded-sm px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline ring-3 ring-transparent outline-hidden md:min-w-[218px] md:py-5;
+  }
+  .btn-select {
+    @apply border-blue bg-blue ring-blue hover:bg-blue-7 focus:ring-blue active:ring-blue inline-block rounded-sm border-2 px-6 py-2 text-center font-sans font-semibold tracking-widest text-white uppercase no-underline outline-hidden focus:ring-2;
+  }
 
-.demo-embeds .spl-newsletter,
-.demo-embeds .spl-donate {
-  float: none !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+  .spl-newsletter {
+    @apply my-2 sm:float-right sm:ml-3 sm:w-1/2 md:-mr-12 md:max-w-[439px] lg:mr-0 lg:w-full lg:max-w-96 xl:-mr-20 xl:max-w-[475px];
+  }
 
-.demo-embeds .spl-newsletter .mx-auto {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  max-width: 100% !important;
-}
+  .spl-donate {
+    @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96;
+  }
 
-.clip-triangle {
-  clip-path: polygon(0 0, 0% 100%, 15% 50%);
-}
+  .demo-embeds .spl-newsletter,
+  .demo-embeds .spl-donate {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
-.bg-key {
-  background-image: url("/featured/img/icon__key__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 150px;
-}
+  .demo-embeds .spl-newsletter .mx-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
 
-.bg-info {
-  background-image: url("/featured/img/icon__info__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 150px;
-}
+  .clip-triangle {
+    clip-path: polygon(0 0, 0% 100%, 15% 50%);
+  }
 
-.bg-pullquote {
-  background-image: url("/featured/img/quote__graphic.png");
-  background-repeat: no-repeat;
-  background-size: 100px;
-}
+  .bg-key {
+    background-image: url("/featured/img/icon__key__graphic.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150px;
+  }
 
-.custom-scrollbar {
-  scrollbar-color: transparent transparent;
-}
+  .bg-info {
+    background-image: url("/featured/img/icon__info__graphic.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150px;
+  }
 
-.custom-scrollbar:hover {
-  scrollbar-color: #f5f5f5 transparent;
-}
+  .bg-pullquote {
+    background-image: url("/featured/img/quote__graphic.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
 
-.custom-scrollbar::-webkit-scrollbar {
-  @apply h-2 bg-transparent;
-}
+  .custom-scrollbar {
+    scrollbar-color: transparent transparent;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-transparent;
-}
+  .custom-scrollbar:hover {
+    scrollbar-color: #f5f5f5 transparent;
+  }
 
-.custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  @apply bg-g-2;
-}
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply h-2 bg-transparent;
+  }
 
-.embed-prose :where(b, strong) {
-  @apply font-extrabold;
-}
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-transparent;
+  }
 
-.embed-prose-highlight :where(b, strong) {
-  @apply bg-yellow-3/75 p-1 font-semibold;
-}
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    @apply bg-g-2;
+  }
 
-@tailwind utilities;
+  .embed-prose :where(b, strong) {
+    @apply font-extrabold;
+  }
 
-.print-exact {
-  print-color-adjust: exact;
-}
-
-@layer base {
-  :root {
-    --eyebrow-color: theme("colors.white");
-    --eyebrow-bg: theme("colors.black");
-    --hed-color: theme("colors.black");
-    --dek-color: theme("colors.g.9");
-    --byline-color: theme("colors.g.9");
-    --date-color: theme("colors.g.9");
-    --credit-color: theme("colors.g.7");
+  .embed-prose-highlight :where(b, strong) {
+    @apply bg-yellow-3/75 p-1 font-semibold;
   }
 }
 
 @layer utilities {
-  .shape-outside {
-    shape-outside: border-box;
+  .print-exact {
+    print-color-adjust: exact;
   }
+}
 
-  .text-shadow {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  }
-
-  .sideways-heading {
-    @apply flex justify-end;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    writing-mode: vertical-rl;
-  }
-
-  .contain-content {
-    contain: layout paint style inline-size;
+@layer base {
+  :root {
+    --eyebrow-color: var(--color-white);
+    --eyebrow-bg: var(--color-black);
+    --hed-color: var(--color-black);
+    --dek-color: var(--color-g-9);
+    --byline-color: var(--color-g-9);
+    --date-color: var(--color-g-9);
+    --credit-color: var(--color-g-7);
   }
 }
 

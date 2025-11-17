@@ -1,6 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="rounded bg-black p-8 text-center font-sans text-white shadow md:px-12"
+  class="rounded-sm bg-black p-8 text-center font-sans text-white shadow-sm md:px-12"
   data-ga-category="tout"
   x-data="newsletter($el.dataset.baseUrl)"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
@@ -8,7 +8,7 @@
 >
   {{ partial "newsletter/talkofthetown-hidden.html" . }}
   <h6
-    class="bg-gradient-to-r from-orange via-yellow to-white bg-clip-text text-base font-bold uppercase tracking-widest text-transparent"
+    class="from-orange via-yellow bg-linear-to-r to-white bg-clip-text text-base font-bold tracking-widest text-transparent uppercase"
   >
     Sign Up For Talk of the Town
   </h6>
@@ -23,7 +23,7 @@
   </p>
 
   <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
-    <p class="relative flex-grow">
+    <p class="relative grow">
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
@@ -34,7 +34,7 @@
         required
       />
       <span
-        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+        class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
         aria-hidden="true"
       >
         <svg class="h-4 w-4 fill-current">
@@ -42,7 +42,7 @@
         </svg>
       </span>
     </p>
-    <p class="mt-4 sm:ml-1 sm:mt-0">
+    <p class="mt-4 sm:mt-0 sm:ml-1">
       <button class="btn-signup" type="submit" :disabled="isLoading">
         Sign Up
         <svg

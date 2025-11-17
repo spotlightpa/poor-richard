@@ -6,7 +6,7 @@
   class="no-js:hidden p-1 text-left font-sans"
 >
   <div class="flex">
-    <div class="flex-grow">
+    <div class="grow">
       <label class="sr-only" for="{{ $idInput }}">Search</label>
       <input
         id="{{ $idInput }}"
@@ -38,12 +38,12 @@
     </div>
   </div>
   <div class="mt-1">
-    <p class="font-light text-g-6">
+    <p class="text-g-6 font-light">
       <span x-text="resultsText"></span>
       &nbsp;
     </p>
     <template x-if="error">
-      <div class="font-light text-orange" x-template>
+      <div class="text-orange font-light" x-template>
         Could not load results. ${error.message}
       </div>
     </template>

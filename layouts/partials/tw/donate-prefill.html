@@ -10,14 +10,14 @@
 
 <div
   data-ga-category="donate-prefill"
-  class="no-js:hidden rounded border border-g-4 p-6 font-sans shadow"
+  class="no-js:hidden border-g-4 rounded-sm border p-6 font-sans shadow-sm"
   data-active="{{ $activeClass }}"
   data-inactive="{{ $inactiveClass }}"
   x-data="prefill"
 >
   <div>
-    <h2 class="font-bold uppercase text-red">{{ $eyebrow }}</h2>
-    <h2 class="mt-8 text-center text-3xl font-bold leading-none">
+    <h2 class="text-red font-bold uppercase">{{ $eyebrow }}</h2>
+    <h2 class="mt-8 text-center text-3xl leading-none font-bold">
       {{ $hed }}
     </h2>
     <p class="mt-2 text-center text-xl leading-none">
@@ -44,7 +44,7 @@
     </div>
     <div class="mt-6 flex justify-center gap-2">
       {{ define "tw-donate-prefill-button" }}
-        {{ $btnClass := `outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent` }}
+        {{ $btnClass := `outline-hidden inline-block rounded-sm px-3 py-2 text-base font-semibold tracking-wide ring-3 ring-transparent` }}
         {{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
 
         {{ $amount := index . 0 }}
@@ -111,12 +111,12 @@
         <input
           id="{{ $idOther }}"
           type="text"
-          class="block w-full appearance-none rounded border-2 border-g-4 bg-white py-2 pl-10 tracking-wider text-g-8 placeholder-g-4 placeholder-opacity-100 outline-none ring-1 ring-transparent focus:ring-red-4"
+          class="border-g-4 text-g-8 placeholder-g-4 placeholder-opacity-100 focus:ring-red-4 block w-full appearance-none rounded-sm border-2 bg-white py-2 pl-10 tracking-wider ring-1 ring-transparent outline-hidden"
           inputmode="numeric"
           x-model="amount"
         />
         <span
-          class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-g-4"
+          class="text-g-4 pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl leading-none font-semibold"
           aria-hidden="true"
         >
           $

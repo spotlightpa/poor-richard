@@ -10,7 +10,7 @@
   <div class="absolute inset-x-0 bottom-0 sm:hidden" x-show="!isOpen">
     <button
       :aria-expanded="isOpen"
-      class="group mb-4 leading-4 text-navy hover:text-yellow"
+      class="group text-navy hover:text-yellow mb-4 leading-4"
       @click="isOpen = true"
       x-report-click
       data-ga-category="toggle-sidebar"
@@ -31,7 +31,7 @@
   >
     {{ .Inner | .Page.RenderString (dict "display" "block") }}
     <div
-      class="absolute inset-0 bg-gradient-to-t from-white sm:hidden"
+      class="absolute inset-0 bg-linear-to-t from-white sm:hidden"
       x-show="!isOpen"
     ></div>
     <hr hidden />

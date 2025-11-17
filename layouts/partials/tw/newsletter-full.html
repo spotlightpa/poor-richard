@@ -11,11 +11,11 @@
 
 <section class="bg-g-3 md:px-4" data-ga-category="inline">
   <div
-    class="mx-auto max-w-screen-lg px-4 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:py-24 lg:px-0"
+    class="mx-auto max-w-(--breakpoint-lg) px-4 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:py-24 lg:px-0"
   >
     <div class="md:col-span-5 md:col-start-1">
       <h2
-        class="max-w-lg text-2xl font-black leading-none text-black md:text-5xl"
+        class="max-w-lg text-2xl leading-none font-black text-black md:text-5xl"
       >
         {{ .hed }}
       </h2>
@@ -87,7 +87,7 @@
             </svg>
           </button>
         </div>
-        <p class="text-sm text-g-7">{{ .disclaimer }}</p>
+        <p class="text-g-7 text-sm">{{ .disclaimer }}</p>
       </form>
     </div>
     {{ $name := .image }}
@@ -98,7 +98,7 @@
       "widths" (slice 128 256 384 512 1280)
       "figClass" "items-center hidden md:block justify-center self-center md:col-span-5 md:col-start-7"
       "sizeHint" "400px"
-      "rounded" true
+      "rounded-sm" true
       "gravity" .gravity
     }}
     {{ partial "tw/image-block.html" $imgOpts }}

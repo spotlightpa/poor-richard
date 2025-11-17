@@ -14,7 +14,7 @@
     {{ end }}
   >
     <div class="mx-auto max-w-2xl px-5 md:px-0">
-      <h2 class="my-8 text-lg font-bold leading-snug">
+      <h2 class="my-8 text-lg leading-snug font-bold">
         Here’s how your answers aligned with each candidate.
       </h2>
 
@@ -53,9 +53,9 @@
             class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
           >
             <template x-if="!! candidate.image">
-              <picture class="min-h-full w-7 bg-g-3 md:w-11">
+              <picture class="bg-g-3 min-h-full w-7 md:w-11">
                 <img
-                  class="min-h-full min-w-full rounded object-cover"
+                  class="min-h-full min-w-full rounded-sm object-cover"
                   :alt="`Picture of ${candidate.name}`"
                   :src="candidate.image"
                   loading="lazy"
@@ -64,10 +64,10 @@
             </template>
             <template x-if="!candidate.image">
               <div
-                class="aspect-[88/80] min-h-full w-7 rounded bg-g-3 p-1 md:w-11"
+                class="bg-g-3 aspect-88/80 min-h-full w-7 rounded-sm p-1 md:w-11"
               >
                 <svg
-                  class="aspect-[88/80] w-full overflow-hidden fill-current text-g-8"
+                  class="text-g-8 aspect-88/80 w-full overflow-hidden fill-current"
                   viewBox="0 0 1 1"
                   aria-hidden="true"
                 >
@@ -79,17 +79,17 @@
             <div class="flex w-1/2 flex-col justify-end">
               <h3
                 x-text="candidate.name"
-                class="text-xl font-bold leading-none"
+                class="text-xl leading-none font-bold"
               ></h3>
               <p
                 x-text="candidate.title"
-                class="mt-1 text-base leading-tight text-g-8"
+                class="text-g-8 mt-1 text-base leading-tight"
               ></p>
             </div>
             <div class="flex h-6 w-full max-w-[248px]">
               <template x-for="_ in new Array( candidate.points ).fill(null)">
                 <span
-                  class="mr-1 block h-6 w-6 rounded-sm bg-election-green last:mr-0"
+                  class="bg-election-green mr-1 block h-6 w-6 rounded-xs last:mr-0"
                 ></span>
               </template>
             </div>
@@ -120,13 +120,13 @@
     {{ with index . "answer-key" }}
       <div
         x-data="{ active: 1 }"
-        class="mx-auto max-w-2xl space-y-4 px-5 pb-12 pt-6 lg:px-0"
+        class="mx-auto max-w-2xl space-y-4 px-5 pt-6 pb-12 lg:px-0"
       >
         <h2 class="leading-tight; mb-4 text-3xl font-bold">
           How the Candidates Stack Up
         </h2>
         <p
-          class="mt-2 text-pretty font-sans text-dek sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+          class="text-dek mt-2 font-sans text-pretty sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
         >
           Here is how each question and answer in the quiz aligns with each
           candidate.

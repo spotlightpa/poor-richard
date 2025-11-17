@@ -12,7 +12,7 @@
 <div class="order-0 max-w-full" data-ga-category="threeup">
   {{ with .hed }}
     <h2
-      class="border-b-4 border-black pb-2 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+      class="border-b-4 border-black pb-2 font-sans text-xl leading-none font-extrabold tracking-wider uppercase"
     >
       {{ . }}
     </h2>
@@ -70,11 +70,11 @@
   {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
     <div
       data-ga-category="readmore"
-      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
+      class="mx-auto mt-8 flex max-w-(--breakpoint-xl) items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
     >
       <a
         href="{{ .readMoreLink }}"
-        class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
+        class="decoration text-g-9 hover:text-blue underline underline-offset-4"
       >
         {{- .readMore | default "Read More" -}}
       </a>

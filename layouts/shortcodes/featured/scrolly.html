@@ -34,7 +34,7 @@
      window.scrollTo({ top: containerBottom, behavior: 'smooth' });
    "
     :style="`position: ${buttonPosition}; bottom: 1.5rem; right: 1.5rem;`"
-    class="z-50 rounded border-2 border-yellow bg-black px-5 py-1 font-bold text-yellow transition hover:bg-yellow hover:text-black"
+    class="border-yellow text-yellow hover:bg-yellow z-50 rounded-sm border-2 bg-black px-5 py-1 font-bold transition hover:text-black"
   >
     Skip
   </button>
@@ -52,7 +52,7 @@
       :class="{ 'opacity-100': activeIndex === {{ $i }}, 'opacity-20': activeIndex !== {{ $i }} }"
     >
       <div
-        class="relative z-10 max-w-4xl space-y-8 text-left text-4xl leading-snug tracking-normal md:text-5xl md:leading-snug md:tracking-tight lg:text-5xl lg:leading-snug lg:tracking-tight [&_strong]:font-bold [&_strong]:text-yellow"
+        class="[&_strong]:text-yellow relative z-10 max-w-4xl space-y-8 text-left text-4xl leading-snug tracking-normal md:text-5xl md:leading-snug md:tracking-tight lg:text-5xl lg:leading-snug lg:tracking-tight [&_strong]:font-bold"
       >
         {{ $cleanStep | markdownify }}
       </div>
@@ -95,7 +95,7 @@
                     alt=""
                     class="max-h-64 w-auto max-w-sm object-contain"
                   />
-                  <div class="bg-gray-200 mt-2 h-1"></div>
+                  <div class="mt-2 h-1 bg-gray-200"></div>
                 </div>
               </div>
             {{ end }}

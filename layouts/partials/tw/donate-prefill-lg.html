@@ -8,10 +8,10 @@
 {{ $donateTheme := .donateTheme | default "donate" }}
 {{ $donateAmounts := .donateAmounts | default "10,15,25" }}
 
-{{ $btnClass := ` btn-select font-black flex-auto border-none outline-none inline-block` }}
+{{ $btnClass := ` btn-select font-black flex-auto border-none outline-hidden inline-block` }}
 {{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
 {{ $activeClass := `text-white` }}
-{{ $submitClass := ` btn-donate font-black flex-auto border-none outline-none inline-block` }}
+{{ $submitClass := ` btn-donate font-black flex-auto border-none outline-hidden inline-block` }}
 {{ $donateAmount := split $donateAmounts "," }}
 {{ $donateFirst := index $donateAmount 0 }}
 {{ $donateDefault := int $donateFirst }}
@@ -29,7 +29,7 @@
   >
     <div class="flex-1 md:w-1/2">
       <h2
-        class="text-2xl font-bold leading-tight tracking-wide text-white md:text-4xl"
+        class="text-2xl leading-tight font-bold tracking-wide text-white md:text-4xl"
       >
         {{ $donateHed }}
 
@@ -60,7 +60,7 @@
       </div>
       <div class="hidden w-full flex-wrap justify-center gap-2 md:flex">
         {{ define "tw-donate-prefill-button-lg" }}
-          {{ $btnClass := `btn-select font-black flex-auto border-none outline-none inline-block` }}
+          {{ $btnClass := `btn-select font-black flex-auto border-none outline-hidden inline-block` }}
           {{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
 
           {{ $amount := index . 0 }}
@@ -132,12 +132,12 @@
           <input
             id="other-amount"
             type="text"
-            class="block w-full appearance-none rounded border-2 border-g-4 bg-white py-2 pl-10 font-sans text-lg font-black tracking-wide placeholder-g-4 placeholder-opacity-25 outline-none ring-1 ring-transparent focus:ring-red-4"
+            class="border-g-4 placeholder-g-4 placeholder-opacity-25 focus:ring-red-4 block w-full appearance-none rounded-sm border-2 bg-white py-2 pl-10 font-sans text-lg font-black tracking-wide ring-1 ring-transparent outline-hidden"
             inputmode="numeric"
             x-model="amount"
           />
           <span
-            class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-g-4"
+            class="text-g-4 pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl leading-none font-semibold"
             aria-hidden="true"
           >
             $

@@ -2,7 +2,7 @@
 {{ $text := .Get "text" }}
 <li class="contents">
   <a
-    class="block flex-1 whitespace-nowrap rounded-sm bg-election-green p-4 text-center font-sans font-semibold text-white shadow hover:bg-election-green-lighter sm:flex-none"
+    class="bg-election-green hover:bg-election-green-lighter block flex-1 rounded-xs p-4 text-center font-sans font-semibold whitespace-nowrap text-white shadow-sm sm:flex-none"
     href="{{ $link }}"
   >
     {{- $text -}}

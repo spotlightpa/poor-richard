@@ -12,21 +12,21 @@
         {{ $takeover }}
       {{ else }}
         <div
-          class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 pt-16 md:gap-x-6 lg:gap-x-12"
+          class="mx-auto w-full max-w-(--breakpoint-xl) flex-wrap gap-4 pt-16 md:gap-x-6 lg:gap-x-12"
         >
           <h1
             class="{{ if .Param `sidebar` }}
               max-w-prose
             {{ else }}
               md:w-7/12
-            {{ end }} mx-auto w-full max-w-prose pb-2 font-sans text-4xl font-bold leading-tight text-black md:w-7/12 lg:text-5xl"
+            {{ end }} mx-auto w-full max-w-prose pb-2 font-sans text-4xl leading-tight font-bold text-black md:w-7/12 lg:text-5xl"
           >
             {{ .Title }}
           </h1>
         </div>
       {{ end }}
       <div
-        class="mx-auto flex w-full max-w-screen-xl flex-wrap px-4 py-10 md:px-0"
+        class="mx-auto flex w-full max-w-(--breakpoint-xl) flex-wrap px-4 py-10 md:px-0"
         data-ga-category="content"
       >
         <div
@@ -50,7 +50,7 @@
 
     {{ with .Page.RenderString (.Param "supplemental") }}
       <article
-        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-(--breakpoint-xl) px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>
@@ -79,7 +79,7 @@
     >
       <div class="mx-auto w-full max-w-prose">
         <h2
-          class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+          class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
         >
           Credits
         </h2>
