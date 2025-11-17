@@ -145,7 +145,7 @@
   "featured-promo-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=via-longform-template",
   "featured-promo-width": 1024,
   "newsletter-active": false,
-  "sticky-active": true,
+  "sticky-active": false,
   "sticky-image-description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania and today, your gift will be DOUBLED.",
   "sticky-images": [
     "https://files.data.spotlightpa.org/uploads/01mh/q6p4/newsmatch-2025-doubled.png"
