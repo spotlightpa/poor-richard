@@ -1,8 +1,9 @@
-@import "./font-merri.css" layer(base);
-
 @import "tailwindcss";
-
-@config "../../tailwind.config.js";
+@config "./tailwind.config.js";
+@source "hugo_stats.json";
+@layer base {
+  @import "./font-merri.css";
+}
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,

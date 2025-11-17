@@ -1,5 +1,6 @@
-{{ $css := resources.Get "css/tw.css" | css.PostCSS (dict "inlineImports" true) | fingerprint }}
+{{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+{{ $css := resources.Get "css/tw.css" | css.TailwindCSS $opts | fingerprint }}
 {{ if not hugo.IsServer }}
-  {{ $css = $css | minify | resources.PostProcess }}
+  {{ $css = $css | minify }}
 {{ end }}
 {{ return $css.RelPermalink }}
