@@ -14,7 +14,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mh/fv70/double-banner.png"
+        "https://files.data.spotlightpa.org/uploads/01mh/q6p5/newsmatch-2025-tracker-banners-1-.png"
       ]
     }
   ],
@@ -28,7 +28,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mh/fv70/double-match.png"
+        "https://files.data.spotlightpa.org/uploads/01mh/q6p4/newsmatch-2025-rectangles-1024-512-px-5-.png"
       ]
     }
   ],
@@ -59,7 +59,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mh/fv70/newsmatch-2025-squares-6-.png"
+        "https://files.data.spotlightpa.org/uploads/01mh/q6p4/newsmatch-2025-doubled.png"
       ]
     },
     {
@@ -126,7 +126,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mh/fv70/newsmatch-2025-squares-6-.png"
+        "https://files.data.spotlightpa.org/uploads/01mh/q6p4/newsmatch-2025-doubled.png"
       ]
     }
   ],
@@ -145,12 +145,12 @@
   "featured-promo-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=via-longform-template",
   "featured-promo-width": 1024,
   "newsletter-active": false,
-  "sticky-active": false,
-  "sticky-image-description": "Get the top news from across Pennsylvania, plus some fun and a puzzle, all in one free daily email newsletter.",
+  "sticky-active": true,
+  "sticky-image-description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania and today, your gift will be DOUBLED.",
   "sticky-images": [
-    "https://files.data.spotlightpa.org/uploads/01j9/9jza/19.png"
+    "https://files.data.spotlightpa.org/uploads/01mh/q6p4/newsmatch-2025-doubled.png"
   ],
-  "sticky-link": "/newsletters",
+  "sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=corner_sticky",
   "support-active": true,
   "support-bg-color": "#ffe0e0",
   "support-button-bg-color": "#ff0000",
