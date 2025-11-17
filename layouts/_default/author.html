@@ -97,7 +97,7 @@
           <p class="text-sm font-black uppercase">{{ $author.title }}</p>
           <dl class="mt-3 flex flex-wrap">
             {{ with $author.email }}
-              <dt class="mr-2 flex flex-0 items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "email" }}
@@ -117,7 +117,7 @@
               </dd>
             {{ end }}
             {{ with $author.bluesky }}
-              <dt class="mr-2 flex flex-0 items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "bluesky" }}
@@ -137,7 +137,7 @@
               </dd>
             {{ end }}
             {{ with $author.tel }}
-              <dt class="mr-2 flex flex-0 items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
                     {{ partial "helper/svg.html" "phone" }}
@@ -155,7 +155,7 @@
               </dd>
             {{ end }}
             {{ with $author.signal }}
-              <dt class="mr-2 flex flex-0 items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
                     {{ partial "helper/svg.html" "chat" }}
