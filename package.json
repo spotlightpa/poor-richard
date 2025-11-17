@@ -40,10 +40,11 @@
     "postcss": "^8.4.31",
     "postcss-cli": "^11.0.0",
     "purgecss": "^5.0.0",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.17",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
@@ -55,7 +56,6 @@
     "eslint-plugin-standard": "^5.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-go-template": "^0.0.15",
-    "prettier-plugin-tailwindcss": "^0.7.1",
-    "tailwindcss": "^4.1.17"
+    "prettier-plugin-tailwindcss": "^0.7.1"
   }
 }
