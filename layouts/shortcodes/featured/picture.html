@@ -57,7 +57,7 @@
     </picture>
   </div>
   <figcaption class="{{ $capClass }}">
-    {{ $caption }}
-    {{ if $credit }}({{ $credit }}){{ end }}
+    {{ with $caption }}<span itemprop="caption">{{ . }}</span>{{ end }}
+    {{ with $credit }}<span itemprop="creditText">({{ . }})</span>{{ end }}
   </figcaption>
 </figure>
