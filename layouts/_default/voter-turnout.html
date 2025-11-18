@@ -3048,7 +3048,7 @@
       window.dispatchEvent(new CustomEvent('search-complete'));
       return;
     }
-    
+
     const hit = await geocodeAddress(searchQuery + ', Pennsylvania');
     if (!hit) {
       window.dispatchEvent(new CustomEvent('search-complete'));
@@ -3062,28 +3062,28 @@
       }
       return;
     }
-    
+
     const { lon, lat } = hit;
-    
+
     const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
     let foundCounty = null;
-    
+
     for (const countyName of precinctCounties) {
       const sourceKey = `precinct-${countyName}`;
       const features = geojsonData[sourceKey]?.features;
       if (!features) continue;
-      
+
       const hit = features.find(f => isPointInFeature([lon, lat], f));
       if (hit) {
         foundCounty = countyName.charAt(0).toUpperCase() + countyName.slice(1);
         break;
       }
     }
-    
+
     if (foundCounty) {
       selectedCounty = foundCounty;
       window.dispatchEvent(new CustomEvent('county-changed', { detail: foundCounty }));
-      
+
       map.flyTo({
         center: [lon, lat],
         zoom: 12,
@@ -3107,7 +3107,7 @@
 })()"
         x-init="
           initMap();
-          
+
 window.addEventListener('party-changed-second', (e) => {
             selectedParty = e.detail;
             if (map) {
@@ -3121,11 +3121,11 @@ window.addEventListener('party-changed-second', (e) => {
               window.dispatchEvent(new Event('legend-clear'));
             }
           });
-          
+
  window.addEventListener('county-changed', (e) => {
   const newCounty = e.detail;
   if (!map) return;
-  
+
   const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
   precinctCounties.forEach(countyName => {
     const sourceKey = `precinct-${countyName.toLowerCase()}`;
@@ -3137,29 +3137,29 @@ window.addEventListener('party-changed-second', (e) => {
       map.setLayoutProperty(`${sourceKey}-outline`, 'visibility', visibility);
     }
   });
-  
+
 const calculateCountyBounds = (countyName) => {
   const sourceKey = `precinct-${countyName.toLowerCase()}`;
   const features = geojsonData[sourceKey]?.features;
   if (!features || features.length === 0) return null;
-  
+
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
   features.forEach(feature => {
     if (!feature || !feature.geometry || !feature.geometry.coordinates) {
       console.warn('Skipping feature with null geometry in', countyName);
       return;
     }
-    
+
     const [[fMinX, fMinY], [fMaxX, fMaxY]] = getFeatureBounds(feature);
     if (fMinX < minX) minX = fMinX;
     if (fMinY < minY) minY = fMinY;
     if (fMaxX > maxX) maxX = fMaxX;
     if (fMaxY > maxY) maxY = fMaxY;
   });
-  
+
   return [[minX, minY], [maxX, maxY]];
 };
-  
+
   const countyBounds = calculateCountyBounds(newCounty);
   if (countyBounds) {
     map.fitBounds(countyBounds, {
@@ -3173,13 +3173,13 @@ const calculateCountyBounds = (countyName) => {
 if (isSecondMap) {
   const waitForDataAndInit = () => {
     const checkInterval = setInterval(() => {
-      if (geojsonData['precinct-allegheny']?.features?.length > 0 && 
-          map && 
-          map.loaded() && 
+      if (geojsonData['precinct-allegheny']?.features?.length > 0 &&
+          map &&
+          map.loaded() &&
           map.getLayer('precinct-allegheny-fill')) {
         clearInterval(checkInterval);
-        
-        ['counties-fill', 'counties-outline', 'counties-outline-hover', 
+
+        ['counties-fill', 'counties-outline', 'counties-outline-hover',
          'congressional-fill', 'congressional-outline', 'congressional-outline-hover',
          'senate-fill', 'senate-outline', 'senate-outline-hover',
          'house-fill', 'house-outline', 'house-outline-hover'].forEach(layerId => {
@@ -3187,21 +3187,21 @@ if (isSecondMap) {
             map.setLayoutProperty(layerId, 'visibility', 'none');
           }
         });
-        
+
         if (map.getLayer('precinct-allegheny-fill')) {
           map.setLayoutProperty('precinct-allegheny-fill', 'visibility', 'visible');
           map.setPaintProperty('precinct-allegheny-fill', 'fill-color', buildFillColorExpression(selectedParty));
         }
-        
+
         if (map.getLayer('precinct-allegheny-outline')) {
           map.setLayoutProperty('precinct-allegheny-outline', 'visibility', 'visible');
         }
-        
+
         const calculateCountyBounds = (countyName) => {
           const sourceKey = `precinct-${countyName.toLowerCase()}`;
           const features = geojsonData[sourceKey]?.features;
           if (!features || features.length === 0) return null;
-          
+
           let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
           features.forEach(feature => {
             const [[fMinX, fMinY], [fMaxX, fMaxY]] = getFeatureBounds(feature);
@@ -3210,7 +3210,7 @@ if (isSecondMap) {
             if (fMaxX > maxX) maxX = fMaxX;
             if (fMaxY > maxY) maxY = fMaxY;
           });
-          
+
           return [[minX, minY], [maxX, maxY]];
         };
 
@@ -3225,7 +3225,7 @@ if (isSecondMap) {
         }
       }
     }, 200);
-    
+
     setTimeout(() => {
       clearInterval(checkInterval);
     }, 10000);
