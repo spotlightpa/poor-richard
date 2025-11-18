@@ -34,7 +34,7 @@ credits = """
 
 [data]
 sources = [
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-turnout/counts.xlsx"
+  "https://interactives.data.spotlightpa.org/2025/voter-turnout/counts.xlsx"
 ]
 popup = true
 cacheVersion = 1
@@ -75,18 +75,18 @@ numericFields = [
   "Other party percentage of total turnout",
   "Other party turnout performance"
 ]
-metadata = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/metadata.json"
+metadata = "https://interactives.data.spotlightpa.org/2025/voter-registration/metadata.json"
 
 [geojson]
 sources = [
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/pa-counties.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/house-2022.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/congress-2022.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/senate-2022.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/allegheny-precincts.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/bucks-precincts.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/delaware-precincts.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/precincts/montgomery-precincts.geojson"
+  "https://interactives.data.spotlightpa.org/map-files/pa-counties.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/house-2022.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/congress-2022.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/senate-2022.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/precincts/allegheny-precincts.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/precincts/bucks-precincts.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/precincts/delaware-precincts.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/precincts/montgomery-precincts.geojson"
 ]
 
 [map]

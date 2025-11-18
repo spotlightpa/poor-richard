@@ -18,27 +18,27 @@ image-credit = "Illustration by Leise Hook / For Spotlight PA"
 
 [data]
 sources = [
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/party-year.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/congress.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/senate.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/house.xlsx",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/county-year.xlsx"
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/total.xlsx",
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/county.xlsx",
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/party-year.xlsx",
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/congress.xlsx",
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/senate.xlsx",
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/house.xlsx",
+  "https://interactives.data.spotlightpa.org/2025/voter-registration/county-year.xlsx"
 ]
 popup = true
 cacheVersion = 1
 maxCacheAge = 24
 delimiter = ","
 numericFields = ["Total", "Democrat", "Democratic", "Republican", "No Affiliation", "Other", "Democrat Share", "Republican Share", "No Affiliation Share", "Other Share"]
-metadata = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/voter-registration/metadata.json"
+metadata = "https://interactives.data.spotlightpa.org/2025/voter-registration/metadata.json"
 
 [geojson]
 sources = [
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/pa-counties.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/house-2022.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/congress-2022.geojson",
-  "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/map-files/senate-2022.geojson"
+  "https://interactives.data.spotlightpa.org/map-files/pa-counties.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/house-2022.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/congress-2022.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/senate-2022.geojson"
 ]
 
 [map]
