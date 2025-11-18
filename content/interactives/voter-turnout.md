@@ -34,7 +34,7 @@ credits = """
 
 [data]
 sources = [
-  "https://interactives.data.spotlightpa.org/2025/voter-turnout/counts.xlsx"
+  "https://interactives.data.spotlightpa.org/2025/voter-turnout/counts-2025-11-17.xlsx"
 ]
 popup = true
 cacheVersion = 1
