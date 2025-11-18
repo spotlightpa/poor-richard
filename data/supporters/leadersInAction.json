@@ -421,6 +421,13 @@
       "categoryRank": "1"
     },
     {
+      "display": "Kathleen Gottschall",
+      "sort": "Gottschall",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Judith Greco",
       "sort": "Greco",
       "url": "",
@@ -612,6 +619,13 @@
     {
       "display": "Marc Kramer",
       "sort": "Kramer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Robert Krasne",
+      "sort": "Krasne",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
