@@ -86,7 +86,8 @@ sources = [
   "https://interactives.data.spotlightpa.org/map-files/precincts/allegheny-precincts.geojson",
   "https://interactives.data.spotlightpa.org/map-files/precincts/bucks-precincts.geojson",
   "https://interactives.data.spotlightpa.org/map-files/precincts/delaware-precincts.geojson",
-  "https://interactives.data.spotlightpa.org/map-files/precincts/montgomery-precincts.geojson"
+  "https://interactives.data.spotlightpa.org/map-files/precincts/montgomery-precincts.geojson",
+  "https://interactives.data.spotlightpa.org/map-files/precincts/philadelphia-precincts.geojson"
 ]
 
 [map]
