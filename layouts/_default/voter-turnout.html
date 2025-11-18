@@ -1665,7 +1665,9 @@
 
             const districtName = layerType.startsWith("precinct-")
               ? feature.properties?.precinctId
-                ? `Precinct ${feature.properties.precinctId}`
+                ? layerType === "precinct-philadelphia"
+                  ? `Ward ${feature.properties.precinctId}`
+                  : `Precinct ${feature.properties.precinctId}`
                 : "No data available"
               : feature.properties.districtName ||
                 (feature.properties?.DISTRICT
@@ -2873,7 +2875,10 @@
   "
     >
       <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
-        <p class="text-3xl font-semibold">Precinct turnout by county</p>
+        <p
+          class="text-3xl font-semibold"
+          x-text="selectedCounty === 'Philadelphia' ? 'Ward turnout by county' : 'Precinct turnout by county'"
+        ></p>
 
         <div class="flex flex-col gap-3 sm:flex-row lg:flex-1">
           <div class="relative w-full sm:flex-1">
