@@ -5,14 +5,17 @@
     "content/news/2025-07-28-SPLMHFAILING0725.md"
   ],
   "featuredStories": [
-    "content/berks/2025-11-18-SPLBYHEART1125.md"
+    "content/news/2025-11-18-SPLVBCHESPROV1125.md"
   ],
   "subfeatures": [
-    "content/berks/2025-10-24-SPLRACPBERKS21025.md"
+    "content/news/2025-11-05-SPLVBCHESPOLL1125.md",
+    "content/news/2025-11-12-VBCHESTUP1125.md",
+    "content/news/2025-11-04-SPLAPGENRES1125.md",
+    "content/news/2025-11-04-SPLRETENTRES1125.md"
   ],
   "topSlots": [
+    "content/berks/2025-11-18-SPLBYHEART1125.md",
     "content/statecollege/2025-11-18-SPLARPA1125.md",
-    "content/news/2025-11-17-SPLGARRTRUMP1125.md",
-    "content/news/2025-11-13-SPLCHIPP1125.md"
+    "content/news/2025-11-17-SPLGARRTRUMP1125.md"
   ]
 }
