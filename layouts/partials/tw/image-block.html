@@ -14,6 +14,7 @@
 {{ $wrapperClass := .wrapperClass | default "block" }}
 {{ $pictureClass := .pictureClass | default "flex" }}
 {{ $captionClass := .captionClass | default `mt-6 font-sans leading-tight text-g-8` }}
+{{ $inlineCredit := .inlineCredit }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
@@ -85,15 +86,21 @@
       ></div>
     {{ end }}
   </div>
-
-  {{ with $credit }}
-    <div class="{{ $creditClass }}" itemprop="creditText">
-      {{ $credit }}
-    </div>
-  {{ end }}
-  {{ with .caption }}
-    <figcaption class="{{ $captionClass }}" itemprop="caption">
-      {{- . -}}
+  {{ if $inlineCredit }}
+    <figcaption class="{{ $creditClass }}">
+      {{ with .caption }}<span itemprop="caption">{{ . }}</span>{{ end }}
+      {{ with $credit }}<span itemprop="creditText">({{ . }})</span>{{ end }}
     </figcaption>
+  {{ else }}
+    {{ with $credit }}
+      <div class="{{ $creditClass }}" itemprop="creditText">
+        {{ $credit }}
+      </div>
+    {{ end }}
+    {{ with .caption }}
+      <figcaption class="{{ $captionClass }}" itemprop="caption">
+        {{- . -}}
+      </figcaption>
+    {{ end }}
   {{ end }}
 </figure>

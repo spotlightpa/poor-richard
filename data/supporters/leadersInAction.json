@@ -176,7 +176,7 @@
       "categoryRank": "5"
     },
     {
-      "display": "Jim Boscov",
+      "display": "Jim and Judy Boscov",
       "sort": "Boscov",
       "url": "",
       "category": "$5,000-$9,999",
@@ -265,6 +265,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Richard and Susan DeWyngaert",
+      "sort": "DeWyngaert",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "John and Janet Dillon",
@@ -372,6 +379,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Amy Gerney",
+      "sort": "Gerney",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "David Gibbons",
+      "sort": "Gibbons",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Patricia Giles",
       "sort": "Giles",
       "url": "",
@@ -400,6 +421,13 @@
       "categoryRank": "1"
     },
     {
+      "display": "Kathleen Gottschall",
+      "sort": "Gottschall",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Judith Greco",
       "sort": "Greco",
       "url": "",
@@ -409,6 +437,13 @@
     {
       "display": "Janet Gross",
       "sort": "Gross",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Kathleen Guinn",
+      "sort": "Guinn",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -561,6 +596,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Sally Kennard",
+      "sort": "Kennard",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Roger and Karen Klotz",
       "sort": "Klotz",
       "url": "",
@@ -577,6 +619,13 @@
     {
       "display": "Marc Kramer",
       "sort": "Kramer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Robert Krasne",
+      "sort": "Krasne",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -645,7 +694,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Annie McCain Madonia and William Madonia",
+      "display": "Annie McCain Madonia",
       "sort": "Madonia",
       "url": "",
       "category": "$2,500-$4,999",
@@ -757,6 +806,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "James and Susan Morris",
+      "sort": "Morris",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Kevin and Kim Murphy",
       "sort": "Murphy",
       "url": "",
@@ -811,6 +867,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Mary Okolowicz",
+      "sort": "Okolowicz",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "David Ottaway",
