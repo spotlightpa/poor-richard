@@ -16,7 +16,7 @@
 {{ $pages := $series.Pages.ByPublishDate }}
 {{ if gt $pages.Len 1 }}
   <aside
-    class="{{ $sideClass }} sm:shape-outside mb-4 w-full font-sans sm:mb-0 sm:w-auto"
+    class="{{ $sideClass }} sm:float-offset mb-4 w-full font-sans sm:mb-0 sm:w-auto"
     data-ga-category="inline:related"
   >
     <nav class="py-4">
