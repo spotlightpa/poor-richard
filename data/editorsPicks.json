@@ -1,5 +1,8 @@
 {
-  "edCallout": [],
+  "edCallout": [
+    "content/interactives/voter-turnout.md",
+    "content/news/2025-11-13-SPLCHIPP1125.md"
+  ],
   "edImpact": [],
   "edInvestigations": [
     "content/news/2025-07-28-SPLMHFAILING0725.md"
