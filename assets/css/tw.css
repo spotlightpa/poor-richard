@@ -27,7 +27,7 @@
   @apply text-orange line-through;
 }
 
-.featured-content > :where(p, aside, figure, ol, ul) + :where(p, ol, ul),
+.featured-content > :where(p, aside, figure, form, ol, ul) + :where(p, ol, ul),
 .featured-content > :where(ol, ul) > li + li,
 .featured-content > :where(ol, ul) > li > p + p,
 .featured-content > p + p,
