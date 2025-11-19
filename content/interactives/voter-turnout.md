@@ -1,7 +1,7 @@
 +++
 title = "Voter turnout"
 title-tag = "Pennsylvania Voter Turnout"
-link-title = "INTERACTIVE: Explore statewide, county, and precinct turnout for Pa.'s Nov. 4 election"
+linktitle = "INTERACTIVE: Explore statewide, county, and precinct turnout for Pa.'s Nov. 4 election"
 description = "See how many people voted in Pennsylvania's Nov. 4, 2025, election and explore trends by party, county, and precinct with our interactive graphics."
 blurb = "Our new interactive tool allows you to explore voter turnout by party and location for the commonwealth's 2025 general election."
 kicker = "Elections"
