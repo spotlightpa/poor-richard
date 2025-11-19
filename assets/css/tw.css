@@ -358,7 +358,10 @@ a.spl-links-yellow,
 
 @layer utilities {
   .shape-outside {
-    shape-outside: border-box;
+    --so-offset-height: 7rem;
+    --so-padding-top: 0.5rem;
+    shape-outside: inset(var(--so-offset-height) 0 0 0);
+    padding-top: calc(var(--so-offset-height) + var(--so-padding-top));
   }
 
   .text-shadow {
