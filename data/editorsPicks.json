@@ -8,16 +8,16 @@
     "content/news/2025-07-28-SPLMHFAILING0725.md"
   ],
   "featuredStories": [
-    "content/news/2025-11-19-SPLINFLULOB1125.md"
+    "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
   ],
   "subfeatures": [
-    "content/news/2025-11-14-SPLEDSUP1125.md",
-    "content/news/2025-11-14-ICNSOLAR1125.md",
-    "content/news/2025-11-13-PMPBUDGET1125.md"
+    "content/statecollege/2024-10-17-SPLPSUPATIENTS1024.md",
+    "content/statecollege/2024-06-20-SPLLYNCH.md",
+    "content/statecollege/2024-05-28-SPLTRANSPLANT0524.md"
   ],
   "topSlots": [
+    "content/news/2025-11-19-SPLINFLULOB1125.md",
     "content/news/2025-11-18-SPLVBCHESPROV1125.md",
-    "content/statecollege/2025-11-18-SPLARPA1125.md",
-    "content/berks/2025-11-18-SPLBYHEART1125.md"
+    "content/statecollege/2025-11-18-SPLARPA1125.md"
   ]
 }
