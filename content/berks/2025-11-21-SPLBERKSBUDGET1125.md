@@ -46,7 +46,7 @@ County commissioners set the annual budget goals and have historically found tha
 
 Property taxes are a county’s primary funding source for operational costs (many being mandatory, such as running the courthouse and public safety). The county commissioners’ priorities during Patrizio’s time <a href="https://www.ifo.state.pa.us/getfile.cfm?file=Resources/Documents/RB_2023_08_Property_Tax_Burden_by_County.pdf&amp;view=true">historically</a> have been to keep property tax increases minimal, so budget cuts are prioritized.
 
-{{<datawrapper src="https://datawrapper.dwcdn.net/Kyl1R/1/" height="520" >}}
+{{<datawrapper src="https://datawrapper.dwcdn.net/Kyl1R/3/" height="495" >}}
 
 “When we get to a point where our operating cost, that bottom line, is going to be a deficit, we recommend a tax increase,” Patrizio said. “Well, we try to cut what we can, but we only have so many discretionary programs.”
 
