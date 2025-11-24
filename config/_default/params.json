@@ -14,7 +14,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mj/7b0y/newsmatch-2025-tracker-banners-5-.png"
+        "https://files.data.spotlightpa.org/uploads/01mj/9sqd/newsmatch-2025-tracker-banners-6-.png"
       ]
     }
   ],
@@ -28,7 +28,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mj/7b10/newsmatch-2025-rectangles-1024-512-px-9-.png"
+        "https://files.data.spotlightpa.org/uploads/01mj/9sqc/newsmatch-2025-rectangles-1024-512-px-10-.png"
       ]
     }
   ],
@@ -131,11 +131,11 @@
     }
   ],
   "ad-rail-top-active": true,
-  "banner": "\u003cstrong\u003eBREAKING NEWS: Penn State cancer chief resigns after Spotlight PA investigation »\u003c/strong\u003e",
+  "banner": "\u003cstrong\u003eALL GIFTS DOUBLED: Our investigative reporting gets results, and it needs your support »\u003c/strong\u003e",
   "banner-active": true,
-  "banner-bg-color": "#ffcb03",
-  "banner-link": "/statecollege/2025/11/penn-state-health-cancer-institute-raymond-hohl-penn-state/",
-  "banner-text-color": "#000000",
+  "banner-bg-color": "#ff0000",
+  "banner-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=banner",
+  "banner-text-color": "#ffffff",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
   "featured-promo-image-description": "Support Spotlight PA's nonpartisan journalism and your gift will be DOUBLED.",
