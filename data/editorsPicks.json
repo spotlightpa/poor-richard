@@ -1,23 +1,21 @@
 {
   "edCallout": [
-    "content/interactives/voter-turnout.md",
-    "content/news/2025-11-13-SPLCHIPP1125.md"
-  ],
-  "edImpact": [],
-  "edInvestigations": [
+    "content/statecollege/2025-11-21-SPLPSUCENTER1125.md",
     "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
   ],
+  "edImpact": [],
+  "edInvestigations": [],
   "featuredStories": [
-    "content/news/2025-11-25-SPLTAXCRED1125.md"
+    "content/news/2025-12-01-SPLSKILLFUTURE1225.md"
   ],
   "subfeatures": [
-    "content/news/2025-11-12-SPLBUDGDEAL1125.md",
-    "content/news/2025-11-14-SPLEDSUP1125.md",
-    "content/news/2025-11-12-SPLRGGIDEAD1125.md"
+    "content/news/2025-11-25-SPLTAXCRED1125.md",
+    "content/statecollege/2025-11-24-SPLRURALBUD1125.md",
+    "content/news/2025-11-14-SPLEDSUP1125.md"
   ],
   "topSlots": [
     "content/statecollege/2025-11-25-SPLPSUSUPREME1125.md",
-    "content/statecollege/2025-11-24-SPLRURALBUD1125.md",
-    "content/statecollege/2025-11-21-SPLHOHLRESIGN1125.md"
+    "content/news/2025-11-24-VBTIEELEX1125.md",
+    "content/news/2025-11-20-SPLRESUP1125.md"
   ]
 }
