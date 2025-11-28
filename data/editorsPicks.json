@@ -1,19 +1,16 @@
 {
   "edCallout": [],
   "edImpact": [],
-  "edInvestigations": [
-    "content/statecollege/2025-11-21-SPLPSUCENTER1125.md",
+  "edInvestigations": [],
+  "featuredStories": [
     "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
   ],
-  "featuredStories": [
-    "content/news/2025-11-27-SPLNEWSQUIZNOV2425.md"
-  ],
   "subfeatures": [
-    "content/news/2025-11-27-SPLPUZZLES1125.md"
+    "content/statecollege/2025-11-21-SPLHOHLRESIGN1125.md"
   ],
   "topSlots": [
-    "content/news/2025-12-01-SPLSKILLFUTURE1225.md",
-    "content/news/2025-11-25-VBPARDON1125.md",
-    "content/news/2025-11-25-SPLTAXCRED1125.md"
+    "content/statecollege/2025-11-21-SPLPSUCENTER1125.md",
+    "content/news/2025-07-28-SPLMHFAILING0725.md",
+    "content/news/2025-10-30-SPLFOS1025.md"
   ]
 }
