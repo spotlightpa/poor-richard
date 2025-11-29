@@ -132,7 +132,7 @@
   ],
   "ad-rail-top-active": true,
   "banner": "\u003cstrong\u003eALL GIFTS DOUBLED: Our investigative reporting cannot continue without you »\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#ff0000",
   "banner-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=banner",
   "banner-text-color": "#ffffff",
@@ -163,7 +163,7 @@
   "support-text-color": "#000000",
   "takeover-active": true,
   "takeover-dek": "Today, all gifts will be DOUBLED in support of Spotlight PA's unmatched investigative reporting  »",
-  "takeover-hed": "A REQUEST FOR HELP",
+  "takeover-hed": "REQUEST FOR HELP",
   "takeover-image": "external/1z7jwjg6fk0wbgs99th1m9kwbm.jpeg",
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=takeover"
 }
