@@ -14,7 +14,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mj/szp5/newsmatch-2025-tracker-banners-9-.png"
+        "https://files.data.spotlightpa.org/uploads/01mj/whm1/newsmatch-2025-tracker-banners.gif"
       ]
     }
   ],
@@ -28,7 +28,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mj/szp5/newsmatch-2025-rectangles-1024-512-px-13-.png"
+        "https://files.data.spotlightpa.org/uploads/01mj/whm2/newsmatch-2025-rectangles-1024-512-px-14-.png"
       ]
     }
   ],
@@ -45,30 +45,12 @@
   "ad-hp-breaker-mobile-width": 0,
   "ad-hp-featured": [
     {
-      "description": "Sign up for Talk of the Town, a free daily newsletter from Spotlight PA State College",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
-      ]
-    },
-    {
       "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
       "sources": [
         "https://files.data.spotlightpa.org/uploads/01mj/szp4/newsmatch-2025-tripled.png"
-      ]
-    },
-    {
-      "description": "Sign up for Spotlight PA's free daily newsletter for Berks County.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
       ]
     }
   ],
@@ -102,24 +84,6 @@
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
-    {
-      "description": "Sign up for Talk of the Town, a free daily newsletter from Spotlight PA State College",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/talkofthetown/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m7/acxv/talk-of-the-town-daily-web-fb-.png"
-      ]
-    },
-    {
-      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
-      ]
-    },
     {
       "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be DOUBLED.",
       "label": "",
@@ -161,8 +125,8 @@
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
   "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\n\u003cstrong\u003eFor #GivingTuesday, your support will be TRIPLED.\u003c/strong\u003e\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and thousands of readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA.\n\n\u003cstrong\u003eJoin them now and for a very limited time, all gifts will be TRIPLED.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": false,
-  "takeover-dek": "Today, all gifts will be DOUBLED in support of Spotlight PA's unmatched investigative reporting  »",
+  "takeover-active": true,
+  "takeover-dek": "We need to raise $15K for #GivingTuesday, and all gifts will be TRIPLED in support of Spotlight PA's unbiased reporting  »",
   "takeover-hed": "REQUEST FOR HELP",
   "takeover-image": "external/1z7jwjg6fk0wbgs99th1m9kwbm.jpeg",
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=takeover"
