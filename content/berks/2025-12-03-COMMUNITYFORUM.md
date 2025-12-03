@@ -5,7 +5,6 @@ description = "The event series will cover topics of interest to the local commu
 draft = false
 feed-exclude = false
 image = "2025/12/01mk-0trg-pzgg-30ja.jpeg"
-image-caption = "Berks County residents participate in a Community Forum organized by Berks County Community Foundation."
 image-credit = "Berks County Community Foundation"
 image-description = "Berks County residents participate in a Community Forum organized by Berks County Community Foundation at the John R. Post Center in Reading, PA.\n"
 internal-id = "COMMUNITYFORUM"
