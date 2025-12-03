@@ -4,10 +4,10 @@ byline = "Spotlight PA Staff"
 description = "The event series will cover topics of interest to the local community."
 draft = false
 feed-exclude = false
-image = "https://drive.google.com/file/d/1nGBs8zFbNmhacSzw-U94xu4RrfVbi73e/view?usp=sharing"
+image = "2025/12/01mk-0trg-pzgg-30ja.jpeg"
 image-caption = "Berks County residents participate in a Community Forum organized by Berks County Community Foundation."
-image-credit = "Lede image description"
-image-description = "Berks County residents participate in a Community Forum organized by Berks County Community Foundation at the John R. Post Center in Reading, PA."
+image-credit = "Berks County Community Foundation"
+image-description = "Berks County residents participate in a Community Forum organized by Berks County Community Foundation at the John R. Post Center in Reading, PA.\n"
 internal-id = "COMMUNITYFORUM"
 kicker = "Editor's Notes"
 modal-exclude = false
