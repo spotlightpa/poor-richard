@@ -8,7 +8,7 @@ promo-active = false
 banner-active = false
 modal-exclude = true
 
-[_build]
+[build]
 list = false
 render = false
 +++
