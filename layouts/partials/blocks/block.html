@@ -1,8 +1,8 @@
 {{ $output := "" }}
 {{ with .block.layout }}
-  {{ $template := printf "_partials/blocks/%s.html" . }}
+  {{ $template := printf "partials/blocks/%s.html" . }}
   {{ if templates.Exists $template }}
-    {{ $output = partial (printf "blocks/%s.html" .) $ }}
+    {{ $output = partial $template $ }}
   {{ else }}
     {{ $output = partial "blocks/default.html" $ }}
   {{ end }}
