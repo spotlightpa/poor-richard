@@ -6,7 +6,6 @@ description = "The future of journalism in Berks County is here. We’re in your
 image = "2023/09/01jf-h6pe-1sks-18dz.jpeg"
 image-description = "Berks County, PA on the horizon"
 image-credit = "Abby Drey / Centre Daily Times"
-layout = "page-landing"
 signupHed = "Join our mailing list "
 signupDek = "Be the first to know about important news, events, and more from our new bureau in Reading and Berks County."
 hide-topper = true
