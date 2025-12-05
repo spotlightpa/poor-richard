@@ -7,7 +7,7 @@
     {{ . }}
   {{ else }}
     <header class="bg-white px-5 pt-8 pb-4 text-black">
-      <div class="mx-auto max-w-(--breakpoint-lg)">
+      <div class="mx-auto max-w-screen-lg">
         {{ partial "tw/breadcrumbs.html" . }}
       </div>
       <div class="mx-auto w-full max-w-2xl">
@@ -45,7 +45,7 @@
     {{ with .Page.RenderString (.Param "supplemental") }}
 
       <article
-        class="article-content mx-auto max-w-(--breakpoint-xl) px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>
@@ -86,7 +86,7 @@
     {{ end }}
   {{ end }}
   <section class="px-2 pb-10 font-sans">
-    <div class="mx-auto my-14 w-full max-w-(--breakpoint-xl)">
+    <div class="mx-auto my-14 w-full max-w-screen-xl">
       <ul
         class="mx-auto my-14 mt-10 flex w-full flex-wrap gap-8"
         data-ga-category="inline-footer:author"

@@ -1,13 +1,13 @@
 {{ with .block }}
   <div class="bg-g-2 px-2 py-14">
     <h2
-      class="text-g-8 mx-auto mb-5 max-w-(--breakpoint-xl) text-5xl font-black uppercase"
+      class="text-g-8 mx-auto mb-5 max-w-screen-xl text-5xl font-black uppercase"
     >
       {{ .title }}
     </h2>
     {{ with .entries }}
       <ul
-        class="mx-auto flex max-w-(--breakpoint-xl) flex-wrap items-stretch justify-between gap-2 md:gap-8"
+        class="mx-auto flex max-w-screen-xl flex-wrap items-stretch justify-between gap-2 md:gap-8"
       >
         {{ range . }}
           {{ $name := .image }}

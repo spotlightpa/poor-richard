@@ -35,7 +35,7 @@
   >
     {{ partial "newsletter/basic-hidden.html" . }}
     <section x-data class="bg-white px-4 pt-12 pb-2 md:pb-0">
-      <header class="mx-auto w-full max-w-(--breakpoint-lg)">
+      <header class="mx-auto w-full max-w-screen-lg">
         <h1
           class="text-center font-sans text-3xl leading-none font-bold tracking-wide uppercase sm:text-4xl md:text-6xl"
         >
@@ -44,9 +44,7 @@
 
         {{ partial "tw/image-hero.html" . }}
       </header>
-      <div
-        class="mx-auto max-w-(--breakpoint-xl) py-14 text-lg font-medium lg:px-0"
-      >
+      <div class="mx-auto max-w-screen-xl py-14 text-lg font-medium lg:px-0">
         {{ with .Content }}
           <div class="article-content mx-auto mb-6 max-w-prose md:mb-12">
             {{ . }}
@@ -150,7 +148,7 @@
         class="animate-become-sticky bg-g-2 sticky -mx-4 w-screen shadow-[0_-3px_4px_0_rgba(0,0,0,.1)]"
       >
         <div
-          class="mx-auto max-w-(--breakpoint-lg) p-3 md:grid md:grid-cols-10 md:items-baseline md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
+          class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:items-baseline md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
           x-data="{ isOpen: false }"
         >
           {{ $idFname := partial "helper/new-id" . }}

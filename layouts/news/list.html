@@ -30,11 +30,11 @@
       {{ partial "tw/list-3-col-story.html" (dict
         "hed" .Key
         "pages" .Pages
-        "wrapperClass" "mb-16 mx-auto max-w-(--breakpoint-lg)"
+        "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
         )
       }}
     {{ end }}
-    <div class="mx-auto max-w-(--breakpoint-lg)">
+    <div class="mx-auto max-w-screen-lg">
       {{ partial "tw/paginator-level.html" .Paginator }}
     </div>
   </section>
