@@ -106,7 +106,7 @@
                 data-pos="{{ $i }}"
                 x-bind="disableNextAndPreviousButtons"
                 role="option"
-                class="mr-6 h-24 w-9/12 max-w-md snap-center py-2 font-bold md:w-5/6 nth-[-n+4]:snap-start nth-last-[-n+4]:snap-end"
+                class="mr-6 h-24 w-9/12 max-w-md snap-center py-2 font-bold nth-[-n+4]:snap-start nth-last-[-n+4]:snap-end md:w-5/6"
               >
                 {{ $params := partialCached "helper/page-params" . .RelPermalink }}
                 {{ $imgOpts := dict

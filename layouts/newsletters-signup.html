@@ -44,7 +44,9 @@
 
         {{ partial "tw/image-hero.html" . }}
       </header>
-      <div class="mx-auto max-w-(--breakpoint-xl) py-14 text-lg font-medium lg:px-0">
+      <div
+        class="mx-auto max-w-(--breakpoint-xl) py-14 text-lg font-medium lg:px-0"
+      >
         {{ with .Content }}
           <div class="article-content mx-auto mb-6 max-w-prose md:mb-12">
             {{ . }}

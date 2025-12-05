@@ -1,9 +1,9 @@
-@import './font-merri.css' layer(base);
-
-@import 'tailwindcss';
-
-@config '../../tailwind.config.js';
-
+@import "tailwindcss";
+@config "./tailwind.config.js";
+@source "hugo_stats.json";
+@layer base {
+  @import "./font-merri.css";
+}
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -86,7 +86,7 @@
   }
 
   .featured-content > h3:before {
-    content: '';
+    content: "";
     @apply bg-yellow mt-16 mb-4 block h-1 w-12;
   }
 
@@ -332,21 +332,21 @@
   }
 
   .bg-key {
-    background-image: url('/featured/img/icon__key__graphic.png');
+    background-image: url("/featured/img/icon__key__graphic.png");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 150px;
   }
 
   .bg-info {
-    background-image: url('/featured/img/icon__info__graphic.png');
+    background-image: url("/featured/img/icon__info__graphic.png");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 150px;
   }
 
   .bg-pullquote {
-    background-image: url('/featured/img/quote__graphic.png');
+    background-image: url("/featured/img/quote__graphic.png");
     background-repeat: no-repeat;
     background-size: 100px;
   }

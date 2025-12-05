@@ -777,7 +777,10 @@
     </div>
   </template>
   <template x-if="!showPopup">
-    <div x-show="loading || error" class="w-full bg-white p-8 shadow-sm md:p-10">
+    <div
+      x-show="loading || error"
+      class="w-full bg-white p-8 shadow-sm md:p-10"
+    >
       <template x-if="loading && !error">
         <div>
           <div class="mb-4 flex items-center justify-center">

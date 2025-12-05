@@ -22,11 +22,13 @@
     {{ end }}
 
     {{ block "preload" . }}
-      <link
-        rel="preload"
-        href="{{ partialCached `helper/build-tailwind` . }}"
-        as="style"
-      />
+      {{ with (templates.Defer (dict "key" "global")) }}
+        <link
+          rel="preload"
+          href="{{ partial `helper/build-tailwind` . }}"
+          as="style"
+        />
+      {{ end }}
       <link
         rel="modulepreload"
         href="{{ partialCached `helper/get-enhancements` . }}"
