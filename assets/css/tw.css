@@ -346,13 +346,13 @@ a.spl-links-yellow,
 
 @layer base {
   :root {
-    --eyebrow-color: theme("colors.white");
-    --eyebrow-bg: theme("colors.black");
-    --hed-color: theme("colors.black");
-    --dek-color: theme("colors.g.9");
-    --byline-color: theme("colors.g.9");
-    --date-color: theme("colors.g.9");
-    --credit-color: theme("colors.g.7");
+    --eyebrow-color: #fff;
+    --eyebrow-bg: #000;
+    --hed-color: #000;
+    --dek-color: #2e2e2e;
+    --byline-color: #2e2e2e;
+    --date-color: #2e2e2e;
+    --credit-color: #787878;
   }
 }
 
