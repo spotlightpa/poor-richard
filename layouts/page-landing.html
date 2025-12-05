@@ -12,7 +12,7 @@
         {{ $takeover }}
       {{ else }}
         <div
-          class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 pt-16 md:gap-x-6 lg:gap-x-12"
+          class="mx-auto w-full max-w-(--breakpoint-xl) flex-wrap gap-4 pt-16 md:gap-x-6 lg:gap-x-12"
         >
           <h1
             class="{{ if .Param `sidebar` }}
@@ -26,7 +26,7 @@
         </div>
       {{ end }}
       <div
-        class="mx-auto flex w-full max-w-screen-xl flex-wrap px-4 py-10 md:px-0"
+        class="mx-auto flex w-full max-w-(--breakpoint-xl) flex-wrap px-4 py-10 md:px-0"
         data-ga-category="content"
       >
         <div
@@ -50,7 +50,7 @@
 
     {{ with .Page.RenderString (.Param "supplemental") }}
       <article
-        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-(--breakpoint-xl) px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>

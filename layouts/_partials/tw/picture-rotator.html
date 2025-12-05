@@ -6,7 +6,7 @@
 
 {{ $bgClass := cond (not .transparent) "bg-g-3" "" }}
 {{ $hasDesktop := .desktopImages | not | not }}
-{{ $desktopClasses := cond $hasDesktop "sm:aspect-[var(--desktopRatio)] sm:w-[var(--desktopWidth)]" "" }}
+{{ $desktopClasses := cond $hasDesktop "sm:aspect-(--desktopRatio) sm:w-(--desktopWidth)" "" }}
 {{ $hasMobile := .mobileImages | not | not }}
 {{ $mobileClasses := cond $hasMobile "" "hidden sm:block" }}
 
@@ -48,7 +48,7 @@
   />
 
   <img
-    class="{{ $bgClass }} {{ $desktopClasses }} {{ $mobileClasses }} aspect-[var(--mobileRatio)] h-auto w-[var(--mobileWidth)] max-w-full object-cover"
+    class="{{ $bgClass }} {{ $desktopClasses }} {{ $mobileClasses }} aspect-(--mobileRatio) h-auto w-(--mobileWidth) max-w-full object-cover"
     src="{{ $magicPixel }}"
     {{ if .eager }}
       fetchpriority="high"

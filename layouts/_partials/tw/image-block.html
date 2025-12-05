@@ -7,8 +7,8 @@
 {{ $eager := .eager | default false }}
 {{ $gravity := .gravity }}
 {{ $absURL := .absURL }}
-{{ $rounded := cond (.rounded|not|not) "rounded" "" }}
-{{ $shadow := cond (.shadow|not|not) "shadow" "" }}
+{{ $rounded := cond (.rounded|not|not) "rounded-sm" "" }}
+{{ $shadow := cond (.shadow|not|not) "shadow-sm" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
 {{ $containerClass := .containerClass | default "relative w-full overflow-clip bg-g-3" }}
 {{ $wrapperClass := .wrapperClass | default "block" }}
@@ -72,7 +72,7 @@
       <figcaption
         class="{{ if .rounded }}
           rounded-b overflow-clip
-        {{ end }} backdrop-fallback text-g-0 absolute inset-x-0 bottom-0 p-4 font-sans text-base backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
+        {{ end }} backdrop-fallback text-g-0 absolute inset-x-0 bottom-0 p-4 font-sans text-base backdrop-blur-xs backdrop-brightness-50 backdrop-filter"
         x-show="showOverlay"
         x-transition.opacity
         itemprop="caption"

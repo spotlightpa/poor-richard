@@ -17,11 +17,11 @@
   <h3 class="mb-8 font-sans text-3xl leading-none italic">
     Inline Newsletter Box Lg Signup
   </h3>
-  <div class="mx-[calc(-50vw_+_50%)]">
+  <div class="mx-[calc(-50vw+50%)]">
     {{ partial "tw/newsletter-box-lg.html" (dict
       "newsletterHed" "Newsletter Full Box"
       "newsletterDek" "Customize subscriber list via `newsletterField` option. Slide-down select list option featured"
-      "newsletterWrapper" "bg-g-1 border border-g-4 rounded shadow-md p-4 sm:py-8 text-black"
+      "newsletterWrapper" "bg-g-1 border border-g-4 rounded-sm shadow-md p-4 sm:py-8 text-black"
       "newsletterField" "newsletter/basic-visible.html"
       )
     }}
@@ -51,7 +51,7 @@
   <h3 class="mb-8 font-sans text-3xl leading-none italic">
     Inline Newsletter Full Signup
   </h3>
-  <div class="mx-[calc(-50vw_+_50%)]">
+  <div class="mx-[calc(-50vw+50%)]">
     {{ partial "tw/newsletter-full.html" (dict
       "image" "2023/02/01hx-t3ph-mmqa-hkt2.jpeg"
       "dek" "Be the first to know about our latest investigative and accountability journalism about Penn State University. "
@@ -83,14 +83,14 @@
   {{ $actionColor := "#FFCB05" }}
 
 
-  <div class="mx-[calc(-50vw_+_50%)]">
+  <div class="mx-[calc(-50vw+50%)]">
     <div class="mt-36 w-full overflow-y-scroll pt-11">
       <div
         style="background-color: {{ $actionColor }};"
         class="w-full border-t-2 border-b-2 font-sans"
       >
         <div
-          class="mx-5 -mt-11 grid max-w-screen-xl grid-cols-6 items-start gap-x-5 md:mx-auto md:mr-auto md:ml-auto md:grid-cols-12"
+          class="mx-5 -mt-11 grid max-w-(--breakpoint-xl) grid-cols-6 items-start gap-x-5 md:mx-auto md:mr-auto md:ml-auto md:grid-cols-12"
         >
           <button
             style="color: {{ $actionColor }};"
@@ -111,7 +111,7 @@
             </svg>
           </button>
           <form
-            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2 bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
+            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,auto)] gap-0 overflow-hidden rounded-sm border-2 bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-data="newsletter($el.dataset.baseUrl)"
             data-base-url="{{ page.Param `newsletters-base-url` }}"
             @submit.prevent="submit"
@@ -172,7 +172,7 @@
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class="text-g-8 placeholder-g-6 placeholder-opacity-100 ring-blue-2 box-border w-full appearance-none rounded rounded-tl rounded-bl border border-black bg-white p-2 tracking-wider outline-none focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+                class="text-g-8 placeholder-g-6 placeholder-opacity-100 ring-blue-2 box-border w-full appearance-none rounded-sm rounded-tl rounded-bl border border-black bg-white p-2 tracking-wider outline-hidden focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -181,7 +181,7 @@
               />
               <button
                 style="color: {{ $actionColor }};"
-                class="box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-t-none sm:rounded-tr sm:rounded-b sm:rounded-bl-none md:px-8"
+                class="box-border w-5/12 rounded-sm bg-black py-2 font-black tracking-wider hover:shadow-sm sm:rounded-t-none sm:rounded-tr sm:rounded-b sm:rounded-bl-none md:px-8"
                 type="submit"
                 :disabled="isLoading"
               >
@@ -212,7 +212,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class="hover:accent-yellow-4 mr-3 h-4 w-4 rounded border border-black p-1 accent-black"
+                    class="hover:accent-yellow-4 mr-3 h-4 w-4 rounded-sm border border-black p-1 accent-black"
                     name="papost"
                     value="1"
                     checked
@@ -226,7 +226,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class="hover:accent-yellow-4 mr-3 h-4 w-4 rounded border border-black p-1 accent-black"
+                    class="hover:accent-yellow-4 mr-3 h-4 w-4 rounded-sm border border-black p-1 accent-black"
                     name="investigator"
                     value="1"
                     checked
@@ -241,7 +241,7 @@
                 <label>
                   <input
                     type="checkbox"
-                    class="hover:accent-yellow-4 mr-3 h-4 w-4 rounded border border-black p-1 accent-black"
+                    class="hover:accent-yellow-4 mr-3 h-4 w-4 rounded-sm border border-black p-1 accent-black"
                     name="palocal"
                     value="1"
                     checked

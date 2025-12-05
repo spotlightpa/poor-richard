@@ -12,7 +12,7 @@
 
 
 <section id="{{ $id }}" class="bg-g-2 p-5 font-sans md:flex md:py-16 lg:py-24">
-  <div class="mx-auto w-full max-w-screen-lg justify-between md:flex">
+  <div class="mx-auto w-full max-w-(--breakpoint-lg) justify-between md:flex">
     {{ $srcset := partial "helper/build-srcset" (dict
       "filename" $filename
       "sizes" $sizes
@@ -21,7 +21,7 @@
     }}
 
 
-    <figure class="flex overflow-hidden rounded md:w-5/12">
+    <figure class="flex overflow-hidden rounded-sm md:w-5/12">
       <img srcset="{{ $srcset }}" class="object-cover" sizes="100vh" />
     </figure>
     <div class="md:w-1/2">

@@ -139,7 +139,7 @@
   aria-label="Copy to clipboard"
 >
   <div
-    class="bg-g-9 group-hover:bg-yellow-7 flex flex-wrap items-center gap-x-3 gap-y-2 rounded p-3 text-white shadow transition-colors duration-150 sm:flex-nowrap"
+    class="bg-g-9 group-hover:bg-yellow-7 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-sm p-3 text-white shadow-sm transition-colors duration-150 sm:flex-nowrap"
   >
     <label class="min-w-[100px] cursor-pointer self-center font-semibold">
       Main font:
@@ -147,7 +147,7 @@
     <input
       type="text"
       value="Source Sans Pro"
-      class="border-yellow pointer-events-none w-full overflow-x-auto rounded border-2 bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
+      class="border-yellow pointer-events-none w-full overflow-x-auto rounded-sm border-2 bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
       readonly
     />
     <div class="hidden sm:block">
@@ -196,7 +196,7 @@
       aria-label="Copy to clipboard"
     >
       <div
-        class="bg-g-9 group-hover:bg-yellow-7 flex flex-wrap items-center gap-x-3 gap-y-2 rounded p-3 text-white shadow transition-colors duration-150 sm:flex-nowrap"
+        class="bg-g-9 group-hover:bg-yellow-7 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-sm p-3 text-white shadow-sm transition-colors duration-150 sm:flex-nowrap"
       >
         <label class="min-w-[100px] cursor-pointer self-center font-semibold">
           {{ .label }}
@@ -204,7 +204,7 @@
         <input
           type="text"
           value="{{ .value }}"
-          class="border-yellow pointer-events-none w-full overflow-x-auto rounded border-2 bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
+          class="border-yellow pointer-events-none w-full overflow-x-auto rounded-sm border-2 bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
           readonly
         />
         <div class="hidden sm:block">
@@ -240,7 +240,7 @@
       aria-label="Copy to clipboard"
     >
       <div
-        class="bg-g-9 group-hover:bg-yellow-7 flex flex-wrap items-center gap-x-3 gap-y-2 rounded p-3 text-white shadow transition-colors duration-150 sm:flex-nowrap"
+        class="bg-g-9 group-hover:bg-yellow-7 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-sm p-3 text-white shadow-sm transition-colors duration-150 sm:flex-nowrap"
       >
         <label class="min-w-[100px] cursor-pointer self-center font-semibold">
           {{ .label }}
@@ -248,7 +248,7 @@
         <input
           type="text"
           value="{{ .value }}"
-          class="border-yellow pointer-events-none w-full overflow-x-auto rounded border-2 bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
+          class="border-yellow pointer-events-none w-full overflow-x-auto rounded-sm border-2 bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
           readonly
         />
         <div class="hidden sm:block">
@@ -429,7 +429,7 @@
 
       const main = document.createElement("div");
       main.className =
-        "color-cell relative w-full h-32 shadow cursor-pointer flex items-center justify-center group rounded-t-md";
+        "color-cell relative w-full h-32 shadow-sm cursor-pointer flex items-center justify-center group rounded-t-md";
       main.style.backgroundColor = color.hex;
       main.dataset.hex = color.hex;
       main.dataset.rgb = color.rgb;

@@ -22,7 +22,7 @@
           <li id="{{ $author.slug }}">
             <a
               href="{{ $author.link }}"
-              class="group hover:bg-g-2 flex w-full items-center justify-start gap-4 rounded p-4 transition-all duration-500 hover:shadow"
+              class="group hover:bg-g-2 flex w-full items-center justify-start gap-4 rounded-sm p-4 transition-all duration-500 hover:shadow-sm"
             >
               {{ if $author.headshot }}
                 {{ $sizes := (slice
@@ -47,7 +47,7 @@
                 <div class="col-span-1">
                   <div class="m-auto flex aspect-square h-16 w-16">
                     {{ partial "tag/picture.html" (dict
-                      "pictureClass" "w-full h-full rounded-full overflow-hidden grayscale shadow"
+                      "pictureClass" "w-full h-full rounded-full overflow-hidden grayscale shadow-sm"
                       "imgClass" "w-full h-full object-cover"
                       "sizeHint" "64px"
                       "eager" false

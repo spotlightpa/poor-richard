@@ -24,7 +24,7 @@
     >
       <input
         id="{{ $idEmail }}"
-        class="text-g-8 placeholder-g-6 w-full bg-white font-bold focus:outline-none"
+        class="text-g-8 placeholder-g-6 w-full bg-white font-bold focus:outline-hidden"
         type="email"
         name="EMAIL"
         placeholder="Email address"
@@ -58,7 +58,7 @@
 {{ else }}
   {{ with $ctaDescription }}
     <p
-      class="text-g-3 [&>a]:text-blue hover:[&>a]:text-yellow text-left text-sm [&>a]:font-semibold [&>a]:underline"
+      class="text-g-3 [&>a]:text-blue [&>a]:hover:text-yellow text-left text-sm [&>a]:font-semibold [&>a]:underline"
     >
       {{ . | $.Page.RenderString }}
     </p>
@@ -78,7 +78,7 @@
 
 {{ with $ctaSecondDescription }}
   <p
-    class="text-g-3 [&>a]:text-blue hover:[&>a]:text-yellow mt-4 text-left text-sm [&>a]:font-semibold [&>a]:underline"
+    class="text-g-3 [&>a]:text-blue [&>a]:hover:text-yellow mt-4 text-left text-sm [&>a]:font-semibold [&>a]:underline"
   >
     {{ . | $.Page.RenderString }}
   </p>

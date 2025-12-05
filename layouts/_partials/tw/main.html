@@ -17,12 +17,12 @@
 
 
 <section
-  class="text-g-9 mx-auto mt-12 max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 lg:grid lg:gap-x-8 xl:px-0"
+  class="text-g-9 mx-auto mt-12 max-w-(--breakpoint-xl) grid-cols-12 bg-white px-4 pb-6 lg:grid lg:gap-x-8 xl:px-0"
   id="article"
 >
   <header
     data-ga-category="header"
-    class="mx-auto w-full max-w-screen-md lg:col-span-10 lg:max-w-screen-lg"
+    class="mx-auto w-full max-w-(--breakpoint-md) lg:col-span-10 lg:max-w-(--breakpoint-lg)"
   >
     {{ if $params.rubric }}
       <a
@@ -90,15 +90,15 @@
 
   </header>
   <article
-    class="mx-auto flex max-w-screen-md flex-wrap md:justify-center md:gap-x-12 lg:col-span-8 lg:justify-start lg:gap-x-8 print:mx-0 print:block print:max-w-none"
+    class="mx-auto flex max-w-(--breakpoint-md) flex-wrap md:justify-center md:gap-x-12 lg:col-span-8 lg:justify-start lg:gap-x-8 print:mx-0 print:block print:max-w-none"
   >
-    <div class="w-full print:!max-w-md">
+    <div class="w-full print:max-w-md!">
       {{ partial "tw/image-hero.html" . }}
     </div>
     <div class="w-full sm:w-12 md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
       {{ partial "tw/social-buttons.html" . }}
     </div>
-    <div class="w-full max-w-screen-sm flex-1 md:mx-5 xl:-mr-8">
+    <div class="w-full max-w-(--breakpoint-sm) flex-1 md:mx-5 xl:-mr-8">
       <div x-data x-intersect.once="$dispatch('open-sticky')"></div>
       {{ partial "tw/content-well.html" . }}
 
@@ -226,7 +226,7 @@
 
   </article>
   <aside
-    class="mt-6 justify-self-end md:mx-auto md:max-w-screen-sm lg:col-span-4 lg:col-start-9 lg:row-start-2 lg:row-end-auto lg:max-w-80 print:!hidden"
+    class="mt-6 justify-self-end md:mx-auto md:max-w-(--breakpoint-sm) lg:col-span-4 lg:col-start-9 lg:row-start-2 lg:row-end-auto lg:max-w-80 print:hidden!"
     data-ga-category="sidebar"
     id="sidebar"
   >

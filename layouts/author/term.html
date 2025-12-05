@@ -8,13 +8,13 @@
 {{ define "main" }}
   {{ $author  := partial "helper/get-author" .Title }}
   <section class="bg-g-0 px-5 py-14 text-lg font-medium lg:px-0">
-    <div class="mx-auto max-w-screen-md">
+    <div class="mx-auto max-w-(--breakpoint-md)">
       {{ partial "tw/breadcrumbs.html" . }}
     </div>
     {{ if $author.active }}
       <header
         id="{{ $author.slug }}"
-        class="mx-auto mb-8 grid max-w-screen-md grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 font-sans shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
+        class="mx-auto mb-8 grid max-w-(--breakpoint-md) grid-cols-[repeat(2,114px)_repeat(3,1fr)] grid-rows-[auto_auto_auto] gap-5 rounded-sm bg-white p-5 font-sans shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%-1rem)]"
       >
         {{ if $author.headshot }}
           {{ $sizes := (slice
@@ -40,7 +40,7 @@
             {{ partial "tag/picture-maybe-link.html" (dict
               "link" $author.link
               "wrapperClass" "m-auto flex max-h-full"
-              "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+              "pictureClass" "w-full h-full rounded-full overflow-hidden shadow-sm"
               "imgClass" "w-full h-full object-cover"
               "sizeHint" "256px"
               "eager" false
@@ -59,7 +59,7 @@
           >
             <span class="m-auto flex aspect-square max-h-full">
               <svg
-                class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow"
+                class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow-sm"
                 viewBox="0 0 1 1"
                 aria-hidden="true"
               >
@@ -187,7 +187,7 @@
     {{ end }}
 
 
-    <div class="mx-auto max-w-screen-md" data-ga-category="author">
+    <div class="mx-auto max-w-(--breakpoint-md)" data-ga-category="author">
       <div>
         <h2
           class="mb-1 font-sans text-xl leading-none font-extrabold tracking-wider uppercase"

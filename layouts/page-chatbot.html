@@ -22,11 +22,11 @@
 
   {{ if .Param "disable-chatbot" }}
     <div
-      class="mx-auto flex w-full max-w-screen-xl flex-wrap py-10"
+      class="mx-auto flex w-full max-w-(--breakpoint-xl) flex-wrap py-10"
       data-ga-category="content"
     >
       <div
-        class="article-content border-g-4 bg-g-3 mx-auto w-full overflow-hidden rounded border p-4 leading-relaxed shadow md:w-7/12"
+        class="article-content border-g-4 bg-g-3 mx-auto w-full overflow-hidden rounded-sm border p-4 leading-relaxed shadow-sm md:w-7/12"
       >
         {{ .Param "disabled-text" | page.RenderString }}
       </div>
@@ -34,13 +34,13 @@
   {{ else }}
     <div
       id="dewey-chat"
-      class="bg-g-1 mx-5 my-10 box-content max-w-screen-xl rounded-lg p-4 shadow md:mx-auto"
+      class="bg-g-1 mx-5 my-10 box-content max-w-(--breakpoint-xl) rounded-lg p-4 shadow-sm md:mx-auto"
     ></div>
   {{ end }}
 
 
   <section
-    class="mx-auto flex w-full max-w-screen-xl flex-wrap py-10"
+    class="mx-auto flex w-full max-w-(--breakpoint-xl) flex-wrap py-10"
     data-ga-category="content"
   >
     <div

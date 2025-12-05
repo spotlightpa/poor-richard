@@ -1,7 +1,7 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
 
-{{ $btnClass := `w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-g-9 transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8` }}
+{{ $btnClass := `w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-g-9 transition-shadow outline-hidden ring-2 ring-transparent focus:ring-g-4 active:ring-g-8` }}
 <nav
   class="sticky top-24 mt-6 flex w-full items-center gap-2 space-x-1 text-white sm:w-12 sm:flex-col sm:items-start md:items-end xl:w-20 print:hidden"
   data-ga-category="social-buttons"

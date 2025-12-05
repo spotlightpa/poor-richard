@@ -10,7 +10,7 @@
 
 <div
   data-ga-category="donate-prefill"
-  class="no-js:hidden border-g-4 rounded border p-6 font-sans shadow"
+  class="no-js:hidden border-g-4 rounded-sm border p-6 font-sans shadow-sm"
   data-active="{{ $activeClass }}"
   data-inactive="{{ $inactiveClass }}"
   x-data="prefill"
@@ -44,7 +44,7 @@
     </div>
     <div class="mt-6 flex justify-center gap-2">
       {{ define "tw-donate-prefill-button" }}
-        {{ $btnClass := `outline-none inline-block rounded px-3 py-2 text-base font-semibold tracking-wide ring ring-transparent` }}
+        {{ $btnClass := `outline-hidden inline-block rounded-sm px-3 py-2 text-base font-semibold tracking-wide ring-3 ring-transparent` }}
         {{ $inactiveClass := `bg-g-2 text-g-9 hover:bg-g-3 focus:ring-g-7 active:ring-g-9` }}
 
         {{ $amount := index . 0 }}
@@ -111,7 +111,7 @@
         <input
           id="{{ $idOther }}"
           type="text"
-          class="border-g-4 text-g-8 placeholder-g-4 placeholder-opacity-100 focus:ring-red-4 block w-full appearance-none rounded border-2 bg-white py-2 pl-10 tracking-wider ring-1 ring-transparent outline-none"
+          class="border-g-4 text-g-8 placeholder-g-4 placeholder-opacity-100 focus:ring-red-4 block w-full appearance-none rounded-sm border-2 bg-white py-2 pl-10 tracking-wider ring-1 ring-transparent outline-hidden"
           inputmode="numeric"
           x-model="amount"
         />

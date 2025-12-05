@@ -11,7 +11,7 @@
   aria-labelledby="top"
 >
   <div
-    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-4 lg:relative lg:gap-x-6 xl:px-0 print:hidden"
+    class="mx-auto flex max-w-(--breakpoint-xl) flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-4 lg:relative lg:gap-x-6 xl:px-0 print:hidden"
   >
     <div
       class="z-40 h-10 w-36 max-sm:flex-auto sm:order-0 sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-64 lg:w-72"
@@ -19,7 +19,7 @@
     >
       <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
         <svg
-          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-[13rem] md:mr-0 md:h-12 md:w-48 lg:h-14 lg:w-[15rem]"
+          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-52 md:mr-0 md:h-12 md:w-48 lg:h-14 lg:w-60"
           x-show="atTop"
           x-transition:enter="transition ease-out duration-150"
           x-transition:enter-start="opacity-0 scale-10"
@@ -47,7 +47,7 @@
       <div
         id="hamburger-menu"
         x-cloak
-        class="border-g-5 absolute right-2 left-2 z-30 -mt-2 max-h-screen max-w-screen overflow-x-hidden rounded border bg-white py-12 after:absolute after:top-0 after:right-0 after:left-0 after:z-30 after:h-20 after:bg-gradient-to-b after:from-white after:via-white after:to-transparent after:content-[''] sm:right-3 sm:left-auto sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:right-0 lg:left-0"
+        class="border-g-5 absolute right-2 left-2 z-30 -mt-2 max-h-screen max-w-screen overflow-x-hidden rounded-sm border bg-white py-12 after:absolute after:top-0 after:right-0 after:left-0 after:z-30 after:h-20 after:bg-linear-to-b after:from-white after:via-white after:to-transparent after:content-[''] sm:right-3 sm:left-auto sm:w-[calc(100%-1.5rem)] sm:grid-cols-2 lg:right-0 lg:left-0"
         :class="{ 'hidden': !isOpen, '': isOpen }"
         x-trap="isOpen"
         role="menu"
@@ -55,7 +55,7 @@
         :aria-expanded="isOpen"
       >
         <div
-          class="grid grid-cols-2 gap-5 px-4 sm:grid-cols-4 md:mx-auto md:mt-16 md:max-w-screen-lg xl:gap-12"
+          class="grid grid-cols-2 gap-5 px-4 sm:grid-cols-4 md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg) xl:gap-12"
         >
           {{ $context := dict
             "category" "news"
@@ -165,7 +165,7 @@
     >
       <a
         href="/newsletters"
-        class="group from-blue-7 to-blue hover:from-blue-5 hover:to-blue-9 hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r p-2 text-white sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
+        class="group from-blue-7 to-blue hover:from-blue-5 hover:to-blue-9 hidden items-center justify-around overflow-hidden rounded-md bg-linear-to-r p-2 text-white sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
       >
         <span
           class="relative inline-flex flex-0 flex-wrap items-center text-xs leading-none font-bold tracking-wide uppercase md:text-sm md:leading-none"
@@ -182,7 +182,7 @@
       <a
         data-fru-campaign="navbar"
         data-ga-category="donate"
-        class="group from-red-7 to-red hover:from-red-5 hover:to-red-9 flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r p-2 text-white sm:justify-center md:-my-1 md:p-2 lg:px-4"
+        class="group from-red-7 to-red hover:from-red-5 hover:to-red-9 flex items-center justify-around overflow-hidden rounded-md bg-linear-to-r p-2 text-white sm:justify-center md:-my-1 md:p-2 lg:px-4"
         href="/donate/"
         {{ if not (page.Param "modal-exclude") }}
           x-data
@@ -241,7 +241,7 @@
     x-transition:leave-end="opacity-0 scale-10"
   >
     <div
-      class="relative mx-auto flex h-full w-full max-w-screen-xl items-stretch justify-between px-3 md:justify-center"
+      class="relative mx-auto flex h-full w-full max-w-(--breakpoint-xl) items-stretch justify-between px-3 md:justify-center"
     >
       <ul
         class="ml-1 box-content hidden max-w-4xl flex-1 items-center justify-evenly gap-2 overflow-hidden px-16 sm:flex md:px-0"

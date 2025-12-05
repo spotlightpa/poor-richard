@@ -12,14 +12,14 @@
   class="m-auto w-full justify-center md:py-4 xl:px-0"
 >
   <header class="top-0 w-full bg-white md:relative">
-    <div class="m-auto max-w-screen-lg px-5 md:flex md:items-baseline md:gap-3">
+    <div class="m-auto max-w-(--breakpoint-lg) px-5 md:flex md:items-baseline md:gap-3">
       <h3
         x-text="selectedCounty"
         class="mb-2 py-2 font-sans text-3xl leading-tight font-semibold tracking-wide sm:text-4xl lg:text-5xl"
       ></h3>
 
       <div
-        class="no-js:hidden sticky top-0 mx-auto w-96 max-w-full bg-white px-5 py-2 shadow md:relative md:shadow-none"
+        class="no-js:hidden sticky top-0 mx-auto w-96 max-w-full bg-white px-5 py-2 shadow-sm md:relative md:shadow-none"
       >
         <select
           x-data
@@ -63,7 +63,7 @@
     <div
       id="{{ . | urlize }}"
       x-show="selectedCounty === '{{ . }} County'"
-      class="border-g-4 mx-auto max-w-screen-lg border-t p-5 pt-0 md:flex md:gap-6"
+      class="border-g-4 mx-auto max-w-(--breakpoint-lg) border-t p-5 pt-0 md:flex md:gap-6"
       :class="{'': selectedCounty === '{{ . }} County' }"
     >
       {{ with . }}
@@ -81,7 +81,7 @@
       {{ end }}
       <span class="border-g-3 w-0 border"></span>
       <ul
-        class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
+        class="mx-auto w-full max-w-(--breakpoint-lg) space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
       >
         {{ range where $data "County" . }}
           <li class="flex-auto md:w-1/3">

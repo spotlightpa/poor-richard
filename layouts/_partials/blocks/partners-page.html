@@ -18,7 +18,7 @@
     x-data="{ selectedCounty: 'Allegheny' }"
   >
     <div
-      class="bg-navy-2 from-navy-1 via-navy-2 to-navy-2 bg-gradient-to-b via-95% to-100% py-8 md:py-24"
+      class="bg-navy-2 from-navy-1 via-navy-2 to-navy-2 bg-linear-to-b via-95% to-100% py-8 md:py-24"
     >
       <div class="mx-auto max-w-4xl px-5 lg:px-0">
         {{ with .title }}
@@ -74,10 +74,10 @@
     {{ with $partnerCounties }}
       <div class="m-auto w-full justify-center md:p-4 lg:pt-10 xl:px-0">
         <header
-          class="sticky top-0 w-full bg-white shadow md:relative md:shadow-none"
+          class="sticky top-0 w-full bg-white shadow-sm md:relative md:shadow-none"
         >
           <div
-            class="m-auto max-w-screen-lg px-5 sm:flex md:items-center md:gap-3 md:px-0"
+            class="m-auto max-w-(--breakpoint-lg) px-5 sm:flex md:items-center md:gap-3 md:px-0"
           >
             <h3
               x-text="selectedCounty"
@@ -116,7 +116,7 @@
           <div
             id="{{ . | urlize }}"
             x-show="selectedCounty === '{{ . }}'"
-            class="border-g-4 mx-auto flex max-w-screen-lg border-t p-5 pt-0 sm:gap-6"
+            class="border-g-4 mx-auto flex max-w-(--breakpoint-lg) border-t p-5 pt-0 sm:gap-6"
             :class="{'': selectedCounty === '{{ . }}' }"
           >
             {{ with . }}
@@ -134,7 +134,7 @@
             {{ end }}
             <span class="border-g-3 hidden w-0 border sm:block"></span>
             <ul
-              class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
+              class="mx-auto w-full max-w-(--breakpoint-lg) space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
             >
               {{ range where $data "County" . }}
                 <li class="flex-auto md:w-1/3">

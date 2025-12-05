@@ -5,7 +5,7 @@
 {{ define "main" }}
   <article class="bg-white px-4 pt-12 pb-2 md:pb-6">
     <header>
-      <div class="mx-auto w-full max-w-screen-lg">
+      <div class="mx-auto w-full max-w-(--breakpoint-lg)">
         <h1
           class="text-center font-sans text-3xl leading-none font-bold tracking-wide uppercase sm:text-4xl md:text-6xl"
         >
@@ -38,7 +38,7 @@
   <section class="bg-white px-4 pt-6 pb-12 font-serif">
     {{ partial "tw/list-3-col-story.html" (dict
       "pages" $pages
-      "wrapperClass" "mb-16 mx-auto max-w-screen-lg"
+      "wrapperClass" "mb-16 mx-auto max-w-(--breakpoint-lg)"
       "eyebrow" "rubric"
       )
     }}

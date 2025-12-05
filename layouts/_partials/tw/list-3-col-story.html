@@ -10,7 +10,7 @@
 
 
 <div
-  class="{{ .wrapperClass | default `mx-auto max-w-screen-lg` }}"
+  class="{{ .wrapperClass | default `mx-auto max-w-(--breakpoint-lg)` }}"
   data-ga-category="threeup"
 >
   {{ with .hed }}
@@ -67,7 +67,7 @@
   {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
     <div
       data-ga-category="readmore"
-      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
+      class="mx-auto mt-8 flex max-w-(--breakpoint-xl) items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
     >
       <a
         href="{{ .readMoreLink }}"

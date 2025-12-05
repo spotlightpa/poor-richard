@@ -34,13 +34,13 @@
   </button>
   <div class="mx-4 my-2 flex p-4">
     <a
-      class="ring-yellow flex focus:ring-2 focus:outline-none"
+      class="ring-yellow flex focus:ring-2 focus:outline-hidden"
       @click.capture="close()"
       @click.outside="close()"
       href="{{ $link }}"
       data-fru-campaign="sidebar-sticky"
       ><img
-        class="shadow-beige rounded"
+        class="shadow-beige rounded-sm"
         {{ if eq (len $images) 1 }}
           src="{{ index $images 0 }}"
         {{ else }}

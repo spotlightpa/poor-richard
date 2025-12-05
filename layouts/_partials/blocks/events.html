@@ -11,13 +11,13 @@
         text-4xl
       {{ else }}
         text-base
-      {{ end }} m-auto flex max-w-screen-lg items-baseline gap-3 font-bold tracking-widest text-white uppercase"
+      {{ end }} m-auto flex max-w-(--breakpoint-lg) items-baseline gap-3 font-bold tracking-widest text-white uppercase"
     >
       {{ .title }}
     </h2>
 
     <div
-      class="m-auto mt-4 max-w-screen-lg md:mt-6 md:flex md:items-stretch md:justify-between"
+      class="m-auto mt-4 max-w-(--breakpoint-lg) md:mt-6 md:flex md:items-stretch md:justify-between"
     >
       <div class="flex-0 md:w-5/12">
         {{ $name := .image }}

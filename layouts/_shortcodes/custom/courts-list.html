@@ -7,7 +7,7 @@
 
 
 <li
-  class="rounded border-4 border-white text-center text-xl font-bold shadow-lg lg:text-2xl"
+  class="rounded-sm border-4 border-white text-center text-xl font-bold shadow-lg lg:text-2xl"
 >
   <a
     x-data="{ issue: $el.dataset.issue }"
@@ -28,7 +28,7 @@
     "
     :class="{'bg-black': selected === issue }"
   >
-    <span class="relative z-10 inline-block drop-shadow">{{ $issue }}</span>
+    <span class="relative z-10 inline-block drop-shadow-sm">{{ $issue }}</span>
     {{ $srcset := partial "helper/build-srcset" (dict
       "filename" $filename
       "sizes" $sizes

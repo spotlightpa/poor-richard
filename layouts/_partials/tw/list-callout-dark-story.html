@@ -10,10 +10,10 @@
 
 
 <div
-  class="-mx-4 bg-black px-4 py-16 text-white xl:mx-[calc(-50vw_+_50%)] xl:px-0"
+  class="-mx-4 bg-black px-4 py-16 text-white xl:mx-[calc(-50vw+50%)] xl:px-0"
 >
   <div
-    class="mx-auto flex max-w-screen-xl flex-wrap gap-6 sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse"
+    class="mx-auto flex max-w-(--breakpoint-xl) flex-wrap gap-6 sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse"
   >
     {{ with .hed }}
       <h2
@@ -74,7 +74,7 @@
       </div>
     {{ end }}
     <span
-      class="mt-7 mb-4 hidden w-[1px] self-stretch bg-black lg:inline-flex"
+      class="mt-7 mb-4 hidden w-px self-stretch bg-black lg:inline-flex"
     ></span>
 
     {{ range after 1 $page }}
@@ -129,7 +129,7 @@
     {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
       <div
         data-ga-category="readmore"
-        class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
+        class="mx-auto mt-8 flex max-w-(--breakpoint-xl) items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
       >
         <a
           href="{{ .readMoreLink }}"

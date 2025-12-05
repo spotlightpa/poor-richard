@@ -18,7 +18,7 @@
             "scriptSrc" $scriptSrc
           }}
           <div
-            class="border-g-4 bg-g-2 mb-10 rounded border p-5 shadow"
+            class="border-g-4 bg-g-2 mb-10 rounded-sm border p-5 shadow-sm"
             x-data="embedList({
               url: $el.dataset.url,
               scriptSrc: $el.dataset.scriptSrc
@@ -88,7 +88,7 @@
                   <div class="control">
                     <code
                       contenteditable="true"
-                      class="border-g-4 mx-0 block rounded-sm border bg-white p-2 break-all text-black"
+                      class="border-g-4 mx-0 block rounded-xs border bg-white p-2 break-all text-black"
                       x-text="embedCode"
                     ></code>
                   </div>
@@ -98,7 +98,7 @@
                     <button
                       type="button"
                       title="Copy"
-                      class="bg-blue m-2 mx-0 flex items-center rounded px-5 py-2 font-black tracking-wider text-white shadow"
+                      class="bg-blue m-2 mx-0 flex items-center rounded-sm px-5 py-2 font-black tracking-wider text-white shadow-sm"
                       @click="copy()"
                     >
                       <svg class="mr-3 h-6 w-6 fill-white">

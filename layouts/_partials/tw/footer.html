@@ -11,7 +11,7 @@
 
 
   <nav
-    class="gap-5 px-4 sm:grid sm:grid-cols-2 md:mx-auto md:mt-16 md:max-w-screen-lg md:grid-cols-4"
+    class="gap-5 px-4 sm:grid sm:grid-cols-2 md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg) md:grid-cols-4"
   >
     {{ $context := dict
       "category" "about"
@@ -71,7 +71,7 @@
         <a
           data-fru-campaign="footer-promo"
           data-ga-category="donate"
-          class="group from-red-7 to-red hover:from-blue-7 hover:to-blue relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-gradient-to-r p-2 sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
+          class="group from-red-7 to-red hover:from-blue-7 hover:to-blue relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-linear-to-r p-2 sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
           href="{{ .link }}"
         >
           <span
@@ -107,7 +107,7 @@
 
   </nav>
   <nav
-    class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg"
+    class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg)"
     data-ga-category="follow"
   >
     <h3 class="mb-4 text-lg font-bold uppercase">Follow Us</h3>
@@ -138,7 +138,7 @@
     </ul>
   </nav>
   <div
-    class="mt-10 px-4 pb-4 text-xs sm:flex sm:justify-between md:mx-auto md:mt-16 md:max-w-screen-lg"
+    class="mt-10 px-4 pb-4 text-xs sm:flex sm:justify-between md:mx-auto md:mt-16 md:max-w-(--breakpoint-lg)"
   >
     <p class="text-center">
       &copy; {{ now.Format "2006" }} Spotlight PA.&nbsp;

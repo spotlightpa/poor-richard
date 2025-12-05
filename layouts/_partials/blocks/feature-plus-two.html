@@ -13,7 +13,7 @@
       >
         {{ range . }}
           <div
-            class="group relative col-span-6 flex flex-col items-center justify-end first:row-span-2 first:pt-60 sm:overflow-hidden sm:first:col-span-12 md:col-span-5 md:first:col-span-9 first:md:pt-[460px] lg:col-span-6 lg:first:col-span-8"
+            class="group relative col-span-6 flex flex-col items-center justify-end first:row-span-2 first:pt-60 sm:overflow-hidden sm:first:col-span-12 md:col-span-5 md:first:col-span-9 md:first:pt-[460px] lg:col-span-6 lg:first:col-span-8"
           >
             {{ $name := .image }}
             {{ $imgOpts := dict
@@ -27,8 +27,8 @@
               "containerClass" "min-w-full h-full overflow-clip"
               "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
               "sizeHint" "400px"
-              "rounded" false
-              "shadow" false
+              "rounded-sm" false
+              "shadow-sm" false
               "gravity" (.Page.Param "image-gravity")
             }}
             {{ with $name }}
@@ -41,16 +41,16 @@
 
 
             <div
-              class="group-first:sm:border-yellow z-10 row-span-1 row-start-3 mx-4 my-10 mr-4 mb-16 flex max-w-md flex-wrap items-end justify-end rounded border-b-4 border-black bg-black group-first:max-w-none group-first:self-start sm:mb-20 sm:ml-0 sm:rounded-l-none sm:rounded-r group-first:sm:mr-24"
+              class="sm:group-first:border-yellow z-10 row-span-1 row-start-3 mx-4 my-10 mr-4 mb-16 flex max-w-md flex-wrap items-end justify-end rounded-sm border-b-4 border-black bg-black group-first:max-w-none group-first:self-start sm:mb-20 sm:ml-0 sm:rounded-l-none sm:rounded-r sm:group-first:mr-24"
             >
               <p
-                class="w-full p-5 text-sm leading-relaxed group-first:sm:max-w-xl md:text-base lg:text-lg"
+                class="w-full p-5 text-sm leading-relaxed sm:group-first:max-w-xl md:text-base lg:text-lg"
               >
                 {{ .body }}
               </p>
               <a
                 href="{{ .url }}"
-                class="btn-signup-lg mr-8 -mb-12 sm:mr-0 group-first:sm:-mr-10"
+                class="btn-signup-lg mr-8 -mb-12 sm:mr-0 sm:group-first:-mr-10"
                 >{{ .actionText }}</a
               >
             </div>

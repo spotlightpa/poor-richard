@@ -28,7 +28,7 @@
     aria-hidden="true"
   >
     <div
-      class="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-60"
+      class="absolute inset-0 bg-linear-to-t from-black via-black to-transparent opacity-60"
     ></div>
   </div>
   <div class="px-4 py-8 leading-tight sm:p-12">
@@ -55,7 +55,7 @@
       {{ with $hiddenField }}
         <label
           for="{{ $idFname }}"
-          class="backdrop-fallback ring-g-7 mx-auto my-8 block w-full rounded p-8 shadow ring-1 backdrop-blur-sm backdrop-brightness-50 backdrop-filter"
+          class="backdrop-fallback ring-g-7 mx-auto my-8 block w-full rounded-sm p-8 shadow-sm ring-1 backdrop-blur-xs backdrop-brightness-50 backdrop-filter"
         >
           <form
             class="p-1 font-sans text-white"

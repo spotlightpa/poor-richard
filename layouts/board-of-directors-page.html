@@ -7,7 +7,7 @@
     {{ . }}
   {{ else }}
     <header class="bg-white px-5 pt-8 pb-4 text-black">
-      <div class="mx-auto max-w-screen-lg">
+      <div class="mx-auto max-w-(--breakpoint-lg)">
         {{ partial "tw/breadcrumbs.html" . }}
       </div>
       <div class="mx-auto w-full max-w-2xl">
@@ -45,7 +45,7 @@
     {{ with .Page.RenderString (.Param "supplemental") }}
 
       <article
-        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+        class="article-content mx-auto max-w-(--breakpoint-xl) px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
       >
         {{ . }}
       </article>
@@ -86,7 +86,7 @@
     {{ end }}
   {{ end }}
   <section class="px-2 pb-10 font-sans">
-    <div class="mx-auto my-14 w-full max-w-screen-xl">
+    <div class="mx-auto my-14 w-full max-w-(--breakpoint-xl)">
       <ul
         class="mx-auto my-14 mt-10 flex w-full flex-wrap gap-8"
         data-ga-category="inline-footer:author"
@@ -103,13 +103,13 @@
   {{ $author := . }}
   <li
     id="{{ $author.slug }}"
-    class="relative grid auto-rows-min grid-cols-5 grid-rows-subgrid gap-x-4 gap-y-8 rounded bg-white p-6 pb-16 shadow-md sm:flex-[0_0_calc(50%_-_2rem)]"
+    class="relative grid auto-rows-min grid-cols-5 grid-rows-subgrid gap-x-4 gap-y-8 rounded-sm bg-white p-6 pb-16 shadow-md sm:flex-[0_0_calc(50%-2rem)]"
     x-data="{ isOpen: false }"
     :style="!isOpen && { height: '560px' }"
     :class="{'overflow-hidden': !isOpen}"
   >
     <div
-      class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white via-40% px-4 pt-12 pb-4"
+      class="absolute inset-x-0 bottom-0 bg-linear-to-t from-white via-white via-40% px-4 pt-12 pb-4"
     >
       <button
         x-show="!isOpen"
@@ -168,7 +168,7 @@
         {{ partial "tag/picture-maybe-link.html" (dict
           "link" $author.link
           "wrapperClass" "m-auto flex aspect-square max-h-full max-w-[256px]"
-          "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+          "pictureClass" "w-full h-full rounded-full overflow-hidden shadow-sm"
           "imgClass" "w-full h-full object-cover"
           "sizeHint" "256px"
           "eager" false
@@ -187,7 +187,7 @@
       >
         <span class="m-auto flex aspect-square max-h-full max-w-[256px]">
           <svg
-            class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow"
+            class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow-sm"
             viewBox="0 0 1 1"
             aria-hidden="true"
           >
