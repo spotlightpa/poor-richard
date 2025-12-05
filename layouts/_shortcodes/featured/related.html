@@ -19,7 +19,7 @@
   >
     <nav class="py-4">
       <h2 class="font-bold uppercase sm:text-2xl">
-        <span class="whitespace-nowrap border-b-2 border-black tracking-wide">
+        <span class="border-b-2 border-black tracking-wide whitespace-nowrap">
           More From Spotlight PA
         </span>
       </h2>
@@ -29,7 +29,7 @@
         {{ range $related }}
           <li class="font-bold">
             <a
-              class="text-navy transition-colors duration-500 hover:text-yellow"
+              class="text-navy hover:text-yellow transition-colors duration-500"
               href="{{ .RelPermalink }}"
               >{{ .LinkTitle }}</a
             >

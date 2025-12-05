@@ -9,7 +9,7 @@
   class="mx-auto flex max-w-5xl flex-col justify-center py-6"
   style="--item-pct: {{ $percent }}%;"
 >
-  <div class="relative my-3 h-9 overflow-hidden rounded bg-yellow-7 md:h-12">
+  <div class="bg-yellow-7 relative my-3 h-9 overflow-hidden rounded md:h-12">
     <span
       x-show="onScreen"
       class="block h-9 max-w-[--item-pct] bg-[size:auto_48px] bg-repeat-x md:h-12"
@@ -28,7 +28,7 @@
       x-transition:leave="transition ease-in duration-500"
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
-      class="absolute bottom-0 left-0 top-0 z-10 flex items-center px-2 font-sans font-bold leading-none text-white md:text-4xl"
+      class="absolute top-0 bottom-0 left-0 z-10 flex items-center px-2 font-sans leading-none font-bold text-white md:text-4xl"
     ></p>
   </div>
   <figcaption class="w-full">

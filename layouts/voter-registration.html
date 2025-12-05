@@ -1920,9 +1920,9 @@
       class="order-1 col-span-1 row-span-1 flex flex-col items-start justify-center bg-black p-6 text-white lg:col-span-5 lg:row-span-2 lg:p-12"
     >
       {{ with .Param "kicker" }}
-        <p class="font-sans font-bold uppercase text-yellow">{{ . }}</p>
+        <p class="text-yellow font-sans font-bold uppercase">{{ . }}</p>
       {{ end }}
-      <h1 class="my-4 font-serif text-3xl uppercase leading-hed lg:text-4xl">
+      <h1 class="leading-hed my-4 font-serif text-3xl uppercase lg:text-4xl">
         {{ .Title }}
       </h1>
       {{ with .Param "dek" }}
@@ -1971,7 +1971,7 @@
       {{ end }}
     </div>
     <div
-      class="order-3 col-span-1 row-span-1 flex flex-col overflow-visible bg-black p-4 max-[440px]:pb-4 lg:order-2 lg:col-span-7 lg:row-span-4 lg:px-4 lg:pb-4 lg:pr-12 lg:pt-12"
+      class="order-3 col-span-1 row-span-1 flex flex-col overflow-visible bg-black p-4 max-[440px]:pb-4 lg:order-2 lg:col-span-7 lg:row-span-4 lg:px-4 lg:pt-12 lg:pr-12 lg:pb-4"
       @search-complete.window="isSearching = false"
       x-data="splPartyChart()"
     >
@@ -1983,7 +1983,7 @@
             @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
             x-model="selectedParty"
             :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
-            class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
+            class="h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:ring-0 focus:outline-none"
           >
             <option value="democrat">Democrat</option>
             <option value="republican">Republican</option>
@@ -1994,7 +1994,7 @@
             class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
           >
             <svg
-              class="text-gray-700 h-5 w-5"
+              class="h-5 w-5 text-gray-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -2016,11 +2016,11 @@
             x-ref="addressSearch"
             type="text"
             placeholder="Search location"
-            class="placeholder-gray-5 h-full w-full rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:outline-none focus:ring-0"
+            class="placeholder-gray-5 border-g-4 h-full w-full rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:ring-0 focus:outline-none"
           />
           <button
             type="submit"
-            class="absolute inset-y-0 right-0 flex items-center pr-4 text-g-7 hover:opacity-80 focus:outline-none"
+            class="text-g-7 absolute inset-y-0 right-0 flex items-center pr-4 hover:opacity-80 focus:outline-none"
             title="Search"
           >
             <svg
@@ -2063,7 +2063,7 @@
       <div class="relative mb-10 w-full">
         <div
           x-ref="legend"
-          class="flex h-6 w-full gap-[1px] rounded-sm border border-g-1 bg-g-1"
+          class="border-g-1 bg-g-1 flex h-6 w-full gap-[1px] rounded-sm border"
           x-init="
             const highlight = (idx) => {
             const bins = $refs.legend.querySelectorAll('.legend-bin');
@@ -2100,7 +2100,7 @@
           </template>
         </div>
         <div
-          class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
+          class="absolute top-6 left-0 w-full text-base font-extrabold text-white"
         >
           <span
             class="absolute left-[12.5%] -translate-x-1/2"
@@ -2161,13 +2161,13 @@
           style="overflow: visible"
         ></div>
         <div
-          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:h-11 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:shadow-none"
+          class="border-g-3 absolute top-[10px] right-[50px] z-20 flex overflow-hidden rounded-md border bg-white shadow max-[440px]:top-0 max-[440px]:right-0 max-[440px]:left-0 max-[440px]:h-11 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:shadow-none"
         >
           <button
             :data-checked="selected === 'county'"
             @click="selected='county'"
             title="County"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+            class="border-g-3 hover:bg-g-1 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 border-r px-3 py-2 text-sm font-semibold text-black focus:ring-2 focus:outline-none max-[440px]:flex-1"
           >
             <span class="max-[440px]:hidden">Counties</span
             ><span class="hidden max-[440px]:inline">County</span>
@@ -2176,7 +2176,7 @@
             :data-checked="selected === 'congressional'"
             @click="selected='congressional'"
             title="Congressional"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+            class="border-g-3 hover:bg-g-1 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 border-r px-3 py-2 text-sm font-semibold text-black focus:ring-2 focus:outline-none max-[440px]:flex-1"
           >
             <span class="max-[440px]:hidden">Congressional</span
             ><span class="hidden max-[440px]:inline">Congress</span>
@@ -2185,7 +2185,7 @@
             :data-checked="selected === 'senate'"
             @click="selected='senate'"
             title="Senate"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+            class="border-g-3 hover:bg-g-1 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 border-r px-3 py-2 text-sm font-semibold text-black focus:ring-2 focus:outline-none max-[440px]:flex-1"
           >
             Senate
           </button>
@@ -2193,7 +2193,7 @@
             :data-checked="selected === 'house'"
             @click="selected='house'"
             title="House"
-            class="border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:outline-none focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+            class="border-g-3 hover:bg-g-1 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 border-r px-3 py-2 text-sm font-semibold text-black focus:ring-2 focus:outline-none max-[440px]:flex-1"
           >
             House
           </button>
@@ -2201,7 +2201,7 @@
       </div>
     </div>
     <div
-      class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pb-2 lg:pl-12 lg:pr-2"
+      class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pr-2 lg:pb-2 lg:pl-12"
       x-ref="treemapContainer"
       x-show="datasets && datasets.total && datasets.total.length > 0"
       x-init="
@@ -2226,20 +2226,20 @@
     >
       <div class="flex h-[76px] w-full">
         <div
-          class="justify-left hidden h-full w-1/2 items-center rounded-tl-lg bg-g-9 px-8 pb-4 pt-8 font-serif text-2xl font-semibold text-white md:flex"
+          class="justify-left bg-g-9 hidden h-full w-1/2 items-center rounded-tl-lg px-8 pt-8 pb-4 font-serif text-2xl font-semibold text-white md:flex"
         >
           Voter registration over time
         </div>
         <div
-          class="flex h-full w-full items-center rounded-tr-lg bg-g-9 px-3 pt-4 max-[849px]:rounded-tl-lg md:w-1/2"
+          class="bg-g-9 flex h-full w-full items-center rounded-tr-lg px-3 pt-4 max-[849px]:rounded-tl-lg md:w-1/2"
         >
           <div
-            class="relative flex h-full w-full items-center justify-end bg-g-9"
+            class="bg-g-9 relative flex h-full w-full items-center justify-end"
           >
             <select
               x-model="selectedCounty"
               @change="$dispatch('county-changed', selectedCounty)"
-              class="h-full w-full cursor-pointer appearance-none rounded-lg border-[2px] border-g-8 bg-black px-4 py-3.5 pr-12 text-base font-semibold text-g-4 transition-all duration-200 focus:outline-none focus:ring-0 md:w-3/5"
+              class="border-g-8 text-g-4 h-full w-full cursor-pointer appearance-none rounded-lg border-[2px] bg-black px-4 py-3.5 pr-12 text-base font-semibold transition-all duration-200 focus:ring-0 focus:outline-none md:w-3/5"
             >
               <option value="Pennsylvania">Pennsylvania</option>
               <option value="Adams">Adams</option>
@@ -2314,7 +2314,7 @@
               class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
             >
               <svg
-                class="h-5 w-5 text-g-4"
+                class="text-g-4 h-5 w-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -2331,7 +2331,7 @@
         </div>
       </div>
       <div
-        class="flex hidden items-center justify-center gap-4 bg-g-9 px-3 pt-4 max-[449px]:flex"
+        class="bg-g-9 flex hidden items-center justify-center gap-4 px-3 pt-4 max-[449px]:flex"
       >
         <div class="flex items-center gap-1.5">
           <div class="h-1 w-8 bg-[#009edb]"></div>
@@ -2346,7 +2346,7 @@
           <span class="text-sm font-semibold text-white">Other</span>
         </div>
       </div>
-      <div x-data="splRenderData()" class="w-full rounded-b-lg bg-g-9 p-4">
+      <div x-data="splRenderData()" class="bg-g-9 w-full rounded-b-lg p-4">
         <div x-ref="wrap" class="relative h-[350px] w-full overflow-x-auto">
           <svg x-ref="svg"></svg>
           <div
@@ -2362,7 +2362,7 @@
       <div class="mx-auto w-full max-w-7xl">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
           <div
-            class="article-content font-serif leading-relaxed lg:col-span-2 lg:border-r-[2px] lg:border-g-4 lg:pr-8"
+            class="article-content lg:border-g-4 font-serif leading-relaxed lg:col-span-2 lg:border-r-[2px] lg:pr-8"
           >
             <h1
               class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
@@ -2389,7 +2389,7 @@
             </p>
             <div class="my-8 flex justify-center">
               <hr
-                class="w-24 rounded-full border-t-4 border-yellow shadow-sm"
+                class="border-yellow w-24 rounded-full border-t-4 shadow-sm"
               />
             </div>
             <h1
@@ -2465,7 +2465,7 @@
             </p>
             <div class="my-8 flex justify-center">
               <hr
-                class="w-24 rounded-full border-t-4 border-yellow shadow-sm"
+                class="border-yellow w-24 rounded-full border-t-4 shadow-sm"
               />
             </div>
             <h1
@@ -2483,67 +2483,67 @@
             </p>
           </div>
           <div class="lg:col-span-1">
-            <div class="rounded-lg bg-g-1 p-6">
+            <div class="bg-g-1 rounded-lg p-6">
               <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
                 Election Resources
               </h3>
               <div class="space-y-3">
                 <a
                   href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
-                  class="flex items-center text-black transition-colors hover:text-blue"
+                  class="hover:text-blue flex items-center text-black transition-colors"
                 >
                   <span class="mr-2">🗳️</span>
                   <span
-                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    class="ga:component:main:content:check-your-registration-status text-blue hover:text-g-6 font-bold font-semibold"
                     >Register to vote</span
                   >
                 </a>
                 <a
                   href="https://www.spotlightpa.org/pennsylvania-voter-turnout/"
-                  class="flex items-center text-black transition-colors hover:text-blue"
+                  class="hover:text-blue flex items-center text-black transition-colors"
                 >
                   <span class="mr-2">📈</span>
-                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                  <span class="text-blue hover:text-g-6 font-bold font-semibold"
                     >Track voter turnout</span
                   >
                 </a>
                 <a
                   href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
-                  class="flex items-center text-black transition-colors hover:text-blue"
+                  class="hover:text-blue flex items-center text-black transition-colors"
                 >
                   <span class="mr-2">📝</span>
                   <span
-                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    class="ga:component:main:content:check-your-registration-status text-blue hover:text-g-6 font-bold font-semibold"
                     >Check your registration status</span
                   >
                 </a>
                 <a
                   href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
-                  class="flex items-center text-black transition-colors hover:text-blue"
+                  class="hover:text-blue flex items-center text-black transition-colors"
                 >
                   <span class="mr-2">📍</span>
                   <span
-                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    class="ga:component:main:content:check-your-registration-status text-blue hover:text-g-6 font-bold font-semibold"
                     >Find your polling place</span
                   >
                 </a>
                 <a
                   href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin"
-                  class="flex items-center text-black transition-colors hover:text-blue"
+                  class="hover:text-blue flex items-center text-black transition-colors"
                 >
                   <span class="mr-2">✉️</span>
                   <span
-                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    class="ga:component:main:content:check-your-registration-status text-blue hover:text-g-6 font-bold font-semibold"
                     >Request a mail ballot</span
                   >
                 </a>
                 <a
                   href="https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
-                  class="flex items-center text-black transition-colors hover:text-blue"
+                  class="hover:text-blue flex items-center text-black transition-colors"
                 >
                   <span class="mr-2">📱</span>
                   <span
-                    class="ga:component:main:content:check-your-registration-status font-bold font-semibold text-blue hover:text-g-6"
+                    class="ga:component:main:content:check-your-registration-status text-blue hover:text-g-6 font-bold font-semibold"
                     >Contact your county election office</span
                   >
                 </a>
@@ -2551,7 +2551,7 @@
             </div>
             {{ with site.GetPage "topics/elections" }}
               {{ $stories := (where .RegularPages "Date" ">" (time "2024-12-31")) | first 4 }}
-              <div class="mt-6 rounded-lg bg-g-1 p-6">
+              <div class="bg-g-1 mt-6 rounded-lg p-6">
                 <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
                   More Election Coverage
                 </h3>
@@ -2560,12 +2560,12 @@
                     <li>
                       <a
                         href="{{ .RelPermalink }}"
-                        class="flex items-start text-black transition-colors hover:text-blue"
+                        class="hover:text-blue flex items-start text-black transition-colors"
                       >
                         <span class="mr-2">📰</span>
                         <span class="font-semibold">
                           {{ .Title }}
-                          <span class="block text-sm font-normal text-g-7">
+                          <span class="text-g-7 block text-sm font-normal">
                             {{ .Date | time.Format "Jan. 2, 2006" }}
                           </span>
                         </span>
@@ -2575,7 +2575,7 @@
                   <li>
                     <a
                       href="/elections/#coverage"
-                      class="flex items-center text-black transition-colors hover:text-blue"
+                      class="hover:text-blue flex items-center text-black transition-colors"
                     >
                       <span class="font-bold">See all election stories →</span>
                     </a>

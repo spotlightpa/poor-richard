@@ -53,7 +53,7 @@
   {{ if eq .Kind "home" }}{{ $pageCat = "home" }}{{ end }}
   <body
     class="{{ block `body-class` . }}
-    {{ end }} bg-white text-base leading-normal text-g-9"
+    {{ end }} text-g-9 bg-white text-base leading-normal"
     data-page-cat="{{ $pageCat }}"
     {{ block `body-attributes` . }}{{ end }}
   >

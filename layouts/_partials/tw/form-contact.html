@@ -49,13 +49,13 @@
 {{ $cta := .submit | default "Submit" }}
 <section
   id="{{ $formID }}"
-  class="relative -mx-4 bg-g-3 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
+  class="bg-g-3 relative -mx-4 font-sans sm:rounded sm:px-5 md:mx-[calc(-50vw_+_50%)] md:w-screen md:rounded-none md:px-4"
 >
   <div
     class="mx-auto max-w-screen-lg px-3 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
   >
     <header class="md:col-span-4 md:col-start-1">
-      <h2 class="text-2xl font-black leading-none text-black md:text-5xl">
+      <h2 class="text-2xl leading-none font-black text-black md:text-5xl">
         {{ $hed }}
       </h2>
       <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
@@ -100,9 +100,9 @@
               required
             />
             <span
-              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+              class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
             >
-              <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
+              <svg class="fill-g-4 h-4 w-4" viewBox="0 0 1 1">
                 {{ partial "helper/svg.html" "user" }}
               </svg>
             </span>
@@ -119,9 +119,9 @@
               name="email"
             />
             <span
-              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+              class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
             >
-              <svg class="h-4 w-4 fill-g-4" viewBox="0 0 1 1">
+              <svg class="fill-g-4 h-4 w-4" viewBox="0 0 1 1">
                 {{ partial "helper/svg.html" "email" }}
               </svg>
             </span>
@@ -153,10 +153,10 @@
                 </select>
                 <input type="hidden" name="CC" :value="cc" />
                 <span
-                  class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
+                  class="text-g-6 pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none"
                   aria-hidden="true"
                 >
-                  <svg class="h-4 w-4 fill-g-5">
+                  <svg class="fill-g-5 h-4 w-4">
                     {{ partial "helper/svg.html" "chevron" }}
                   </svg>
                 </span>
@@ -173,7 +173,7 @@
           <div class="control">
             <textarea
               id="{{ $idBody }}"
-              class="input min-h-[128px] w-full rounded border border-g-4 p-1 font-sans shadow"
+              class="input border-g-4 min-h-[128px] w-full rounded border p-1 font-sans shadow"
               placeholder="{{ $placeholder }}"
               name="comment"
             ></textarea>
@@ -189,7 +189,7 @@
               >
               <input
                 id="{{ $idAnonymous }}"
-                class="mr-3 h-6 w-6 rounded border border-g-4 p-1 accent-yellow hover:accent-yellow-4"
+                class="border-g-4 accent-yellow hover:accent-yellow-4 mr-3 h-6 w-6 rounded border p-1"
                 type="checkbox"
                 name="anonymous"
               />

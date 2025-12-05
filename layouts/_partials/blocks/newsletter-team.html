@@ -1,7 +1,7 @@
 {{ if .Params.staff }}
   <section class="mb-6 w-full pt-12">
     <div class="mx-auto max-w-prose px-4">
-      <h3 class="border-b-2 border-g-3 pb-2 text-2xl font-bold text-g-9">
+      <h3 class="border-g-3 text-g-9 border-b-2 pb-2 text-2xl font-bold">
         {{ with $.Param "meetTitle" }}
           {{ . }}
         {{ else }}
@@ -32,7 +32,7 @@
 
 
             <div>
-              <div class="text-[24px] text-lg font-bold text-blue">
+              <div class="text-blue text-lg text-[24px] font-bold">
                 {{ $staff.name }}
               </div>
               <div class="mb-1 font-bold uppercase">

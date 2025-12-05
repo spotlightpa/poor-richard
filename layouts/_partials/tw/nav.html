@@ -3,7 +3,7 @@
 </a>
 
 <div
-  class="top-0 border-b border-black bg-beige font-sans transition-all sm:h-[145px] md:h-[165px] print:hidden"
+  class="bg-beige top-0 border-b border-black font-sans transition-all sm:h-[145px] md:h-[165px] print:hidden"
   x-data="{ isOpen: false }"
   :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': !atTop, 'sm:h-[145px] md:h-[165px] transition-all': atTop }"
   data-ga-category="top-banner"
@@ -14,7 +14,7 @@
     class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-x-2 px-3 py-2 sm:gap-x-4 lg:relative lg:gap-x-6 xl:px-0 print:hidden"
   >
     <div
-      class="sm:order-0 z-40 h-10 w-36 max-sm:flex-auto sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-64 lg:w-72"
+      class="z-40 h-10 w-36 max-sm:flex-auto sm:order-0 sm:flex sm:h-12 sm:w-56 sm:flex-auto sm:grow-0 sm:items-stretch sm:justify-center md:h-14 md:w-64 lg:w-72"
       :class="isOpen ? 'sm:translate-y-2' : ''"
     >
       <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
@@ -47,7 +47,7 @@
       <div
         id="hamburger-menu"
         x-cloak
-        class="max-w-screen absolute left-2 right-2 z-30 -mt-2 max-h-screen overflow-x-hidden rounded border border-g-5 bg-white py-12 after:absolute after:left-0 after:right-0 after:top-0 after:z-30 after:h-20 after:bg-gradient-to-b after:from-white after:via-white after:to-transparent after:content-[''] sm:left-auto sm:right-3 sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:left-0 lg:right-0"
+        class="border-g-5 absolute right-2 left-2 z-30 -mt-2 max-h-screen max-w-screen overflow-x-hidden rounded border bg-white py-12 after:absolute after:top-0 after:right-0 after:left-0 after:z-30 after:h-20 after:bg-gradient-to-b after:from-white after:via-white after:to-transparent after:content-[''] sm:right-3 sm:left-auto sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:right-0 lg:left-0"
         :class="{ 'hidden': !isOpen, '': isOpen }"
         x-trap="isOpen"
         role="menu"
@@ -65,9 +65,9 @@
           }}
           {{ block "tw-header" $context }}
             <div class="mt-10 text-sm" data-ga-category="{{ .category }}">
-              <h3 class="font-bold uppercase tracking-wide hover:underline">
+              <h3 class="font-bold tracking-wide uppercase hover:underline">
                 <a
-                  class="transition-color text-black duration-500 hover:text-blue hover:underline"
+                  class="transition-color hover:text-blue text-black duration-500 hover:underline"
                   href="{{ .link }}"
                   >{{ .name }}</a
                 >
@@ -76,7 +76,7 @@
                 {{ range .menu }}
                   <li>
                     <a
-                      class="transition-color block text-black duration-500 hover:text-blue hover:underline"
+                      class="transition-color hover:text-blue block text-black duration-500 hover:underline"
                       href="{{ .URL }}"
                       {{ with .Params.dispatch }}
                         x-data @click.prevent="$dispatch($el.dataset.dispatch)"
@@ -137,7 +137,7 @@
       >
         {{ block "nav-hamburger-button" . }}
           <span
-            class="hidden text-sm font-bold uppercase leading-none tracking-wide text-black hover:underline hover:underline-offset-2 sm:inline-block md:leading-none"
+            class="hidden text-sm leading-none font-bold tracking-wide text-black uppercase hover:underline hover:underline-offset-2 sm:inline-block md:leading-none"
             >Menu</span
           >
           <span class="flex h-5 w-5 cursor-pointer items-center justify-center">
@@ -165,10 +165,10 @@
     >
       <a
         href="/newsletters"
-        class="group hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-blue-7 to-blue p-2 text-white hover:from-blue-5 hover:to-blue-9 sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
+        class="group from-blue-7 to-blue hover:from-blue-5 hover:to-blue-9 hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r p-2 text-white sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
       >
         <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
+          class="relative inline-flex flex-0 flex-wrap items-center text-xs leading-none font-bold tracking-wide uppercase md:text-sm md:leading-none"
         >
           <svg
             class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
@@ -182,7 +182,7 @@
       <a
         data-fru-campaign="navbar"
         data-ga-category="donate"
-        class="group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 text-white hover:from-red-5 hover:to-red-9 sm:justify-center md:-my-1 md:p-2 lg:px-4"
+        class="group from-red-7 to-red hover:from-red-5 hover:to-red-9 flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r p-2 text-white sm:justify-center md:-my-1 md:p-2 lg:px-4"
         href="/donate/"
         {{ if not (page.Param "modal-exclude") }}
           x-data
@@ -190,7 +190,7 @@
         {{ end }}
       >
         <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
+          class="relative inline-flex flex-0 flex-wrap items-center text-xs leading-none font-bold tracking-wide uppercase md:text-sm md:leading-none"
         >
           <svg
             class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
@@ -217,7 +217,7 @@
     </nav>
 
     <p
-      class="flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base print:hidden"
+      class="order-1 -mx-3 mt-2 -mb-3 w-screen flex-0 border-t border-b border-black bg-white py-3 text-center text-xs leading-none font-extrabold tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base print:hidden"
       x-show="atTop"
       x-transition:enter="transition ease-out duration-150"
       x-transition:enter-start="opacity-0 scale-10"
@@ -267,7 +267,7 @@
 <!-- hidden item classes to prevent alpinejs classes from being CSS purged -->
 <div hidden>
   <span
-    class="opacity-1 w-0 w-5 -translate-x-3 -translate-y-1.5 translate-x-3 translate-y-1.5 -rotate-45 rotate-45 opacity-0 sm:-translate-x-10 sm:translate-x-0 sm:translate-x-8 sm:translate-y-2 lg:translate-y-0"
+    class="w-0 w-5 -translate-x-3 translate-x-3 -translate-y-1.5 translate-y-1.5 -rotate-45 rotate-45 opacity-0 opacity-1 sm:-translate-x-10 sm:translate-x-0 sm:translate-x-8 sm:translate-y-2 lg:translate-y-0"
     hidden
   ></span>
 </div>

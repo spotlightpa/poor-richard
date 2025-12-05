@@ -2,7 +2,7 @@
   <section class="bg-g-2 px-2 py-10">
     <div class="mx-auto my-14 w-full max-w-screen-xl">
       <h2
-        class="mb-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+        class="text-g-6 mb-10 text-4xl leading-none font-black uppercase md:text-6xl"
       >
         {{ .title }}
       </h2>
@@ -63,7 +63,7 @@
                     class="m-auto flex aspect-square max-h-full max-w-[256px]"
                   >
                     <svg
-                      class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow"
+                      class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow"
                       viewBox="0 0 1 1"
                       aria-hidden="true"
                     >
@@ -102,7 +102,7 @@
       {{ with .cta }}
         <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
-            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+            class="hover:border-red-7 hover:text-red-7 border border-black px-4 py-2 text-center text-xl leading-tight font-bold duration-300 lg:text-2xl"
             href="{{ .url }}"
           >
             {{- .copy -}}

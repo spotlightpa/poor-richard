@@ -7,7 +7,7 @@
 
 
 <form
-  class="spl-newsletter clear-all my-6 rounded-lg border border-g-5 bg-g-2 p-7 font-sans leading-tight md:p-10 xl:px-12 xl:py-7 print:hidden"
+  class="spl-newsletter clear-all border-g-5 bg-g-2 my-6 rounded-lg border p-7 font-sans leading-tight md:p-10 xl:px-12 xl:py-7 print:hidden"
   data-ga-category="embed:newsletter"
   x-data="newsletter($el.dataset.baseUrl)"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
@@ -20,7 +20,7 @@
   <p class="hidden" hidden>
     <input type="hidden" name="{{ $preselect }}" value="1" />
   </p>
-  <h2 class="border-b border-black font-serif text-2xl italic leading-tight">
+  <h2 class="border-b border-black font-serif text-2xl leading-tight italic">
     {{- $eyebrow -}}
   </h2>
   <h2 class="mt-2 font-sans text-lg">
@@ -38,7 +38,7 @@
         required
       />
       <span
-        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+        class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
         aria-hidden="true"
       >
         <svg class="h-4 w-4 fill-current">

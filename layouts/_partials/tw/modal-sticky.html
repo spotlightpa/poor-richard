@@ -6,7 +6,7 @@
 
 <section
   data-modal-kind="sticky"
-  class="max-w-screen fixed bottom-0 right-0 z-10"
+  class="fixed right-0 bottom-0 z-10 max-w-screen"
   x-data="sticky"
   x-show="isOpen"
   x-transition:enter="transition ease-out duration-500"
@@ -23,7 +23,7 @@
 >
   <button
     type="button"
-    class="absolute left-4 top-2 flex h-6 w-6 rounded-full bg-black bg-opacity-40 text-white hover:text-yellow"
+    class="bg-opacity-40 hover:text-yellow absolute top-2 left-4 flex h-6 w-6 rounded-full bg-black text-white"
     aria-label="close"
     @click="close"
     x-ref="close"
@@ -34,13 +34,13 @@
   </button>
   <div class="mx-4 my-2 flex p-4">
     <a
-      class="flex ring-yellow focus:outline-none focus:ring-2"
+      class="ring-yellow flex focus:ring-2 focus:outline-none"
       @click.capture="close()"
       @click.outside="close()"
       href="{{ $link }}"
       data-fru-campaign="sidebar-sticky"
       ><img
-        class="rounded shadow-beige"
+        class="shadow-beige rounded"
         {{ if eq (len $images) 1 }}
           src="{{ index $images 0 }}"
         {{ else }}

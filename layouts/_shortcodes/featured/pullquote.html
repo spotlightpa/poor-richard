@@ -10,7 +10,7 @@
 {{ $short := lt (countwords .Inner) 10 }}
 {{ $textClass := cond $short "text-3xl md:text-4xl" "text-2xl md:text-3xl" }}
 <aside
-  class="{{ $sideClass }} bg-pullquote relative mb-0 mt-12 pb-4 sm:bg-contain lg:-ml-16 lg:-mr-16"
+  class="{{ $sideClass }} bg-pullquote relative mt-12 mb-0 pb-4 sm:bg-contain lg:-mr-16 lg:-ml-16"
   data-ga-category="inline:pullquote"
 >
   <blockquote class="{{ $textClass }} leading-tight">{{ .Inner }}</blockquote>

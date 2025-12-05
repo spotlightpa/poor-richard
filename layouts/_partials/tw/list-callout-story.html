@@ -11,7 +11,7 @@
 >
   {{ if .hed }}
     <h2
-      class="w-full border-b border-black font-sans text-2xl font-extrabold leading-tight tracking-wide md:col-span-3 md:text-3xl"
+      class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide md:col-span-3 md:text-3xl"
     >
       {{ if .moreLink }}
         <a href="{{ .moreLink }}" class="hover:text-blue">{{ .hed }}</a>
@@ -69,7 +69,7 @@
     </div>
   {{ end }}
   <span
-    class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
+    class="mt-7 mb-4 hidden w-[1px] self-stretch bg-black lg:inline-flex"
   ></span>
 
   {{ range first 1 ($pages | after 1) }}

@@ -27,7 +27,7 @@
           <p>
             <span style="white-space: nowrap;">
               <svg
-                class="-ml-6 -mt-2 mr-1 inline-block h-9 w-9 fill-blue"
+                class="fill-blue -mt-2 mr-1 -ml-6 inline-block h-9 w-9"
                 aria-label="Quote"
               >
                 {{ partial "helper/svg.html" "openquote" }}
@@ -40,7 +40,7 @@
             <span style="white-space: nowrap;">
               <span class="font-bold">PA.</span>
               <svg
-                class="-mt-2 mr-1 inline-block h-8 w-8 fill-blue"
+                class="fill-blue -mt-2 mr-1 inline-block h-8 w-8"
                 aria-label="Quote"
               >
                 {{ partial "helper/svg.html" "closequote" }}
@@ -48,7 +48,7 @@
             </span>
           </p>
 
-          <cite class="mr-4 mt-4 block text-right text-lg italic">
+          <cite class="mt-4 mr-4 block text-right text-lg italic">
             &ndash; <span>{{ .Params.quoteSource }}</span>
           </cite>
         </blockquote>
@@ -68,7 +68,7 @@
 
       {{ if .Params.how }}
         <p
-          class="text-gray-700 px-4 pb-16 text-lg font-normal leading-relaxed md:px-0"
+          class="px-4 pb-16 text-lg leading-relaxed font-normal text-gray-700 md:px-0"
         >
           {{ .Params.how }}
         </p>

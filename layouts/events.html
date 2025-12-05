@@ -13,13 +13,13 @@
 
   {{ if $upcomingEvents }}
     <section
-      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 gap-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
+      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 gap-y-6 px-4 pt-12 pb-2 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
     >
       <header
         class="flex w-full items-baseline justify-between border-b border-black"
       >
         <h2
-          class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+          class="flex-auto font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
         >
           {{ with $calloutTitle }}
             {{ . }}
@@ -32,7 +32,7 @@
 
       {{ with .Content }}
         <div
-          class="flex w-full items-baseline justify-between rounded-lg bg-beige p-6 font-sans leading-relaxed"
+          class="bg-beige flex w-full items-baseline justify-between rounded-lg p-6 font-sans leading-relaxed"
         >
           <div
             class="mx-auto my-6 max-w-prose"
@@ -213,7 +213,7 @@
     @touchstart.passive.once="load()"
   >
     <h2
-      class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+      class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
     >
       Past Events
     </h2>

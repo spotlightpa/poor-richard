@@ -3,18 +3,18 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="bg-white px-4 pb-2 pt-12 md:pb-6">
+  <article class="bg-white px-4 pt-12 pb-2 md:pb-6">
     <header>
       <div class="mx-auto w-full max-w-screen-lg">
         <h1
-          class="text-center font-sans text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl md:text-6xl"
+          class="text-center font-sans text-3xl leading-none font-bold tracking-wide uppercase sm:text-4xl md:text-6xl"
         >
           {{- .Title -}}
         </h1>
       </div>
       <div class="mx-auto w-full max-w-prose">
         <h2
-          class="mt-4 text-center font-sans text-lg font-semibold leading-tight text-g-6"
+          class="text-g-6 mt-4 text-center font-sans text-lg leading-tight font-semibold"
         >
           {{ .Param "dek" | default .Params.description }}
         </h2>
@@ -35,7 +35,7 @@
   {{ end }}
 
 
-  <section class="bg-white px-4 pb-12 pt-6 font-serif">
+  <section class="bg-white px-4 pt-6 pb-12 font-serif">
     {{ partial "tw/list-3-col-story.html" (dict
       "pages" $pages
       "wrapperClass" "mb-16 mx-auto max-w-screen-lg"

@@ -1,12 +1,12 @@
 {{ $css := resources.Get "css/carousel.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
-<div class="carousel-container bg-gray-300 relative flex w-full items-center">
+<div class="carousel-container relative flex w-full items-center bg-gray-300">
   <div
-    class="carousel-arrow left-arrow absolute left-0 top-1/2 z-30 -translate-y-1/2 cursor-pointer"
+    class="carousel-arrow left-arrow absolute top-1/2 left-0 z-30 -translate-y-1/2 cursor-pointer"
   >
     <svg
-      class="stroke-gray-800 h-16 w-16 fill-white stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+      class="h-16 w-16 fill-white stroke-gray-800 stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
     >
       {{ partial "helper/svg.html" "chevron-left" }}
     </svg>
@@ -21,7 +21,7 @@
         data-index="{{ $index }}"
       >
         <img
-          class="carousel-photo absolute left-0 top-0 z-[1] h-full w-full object-cover"
+          class="carousel-photo absolute top-0 left-0 z-[1] h-full w-full object-cover"
           src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 1200 "height" 800) }}"
           alt="{{ $item.alt }}"
         />
@@ -78,10 +78,10 @@
   </div>
 
   <div
-    class="carousel-arrow right-arrow absolute right-0 top-1/2 z-30 -translate-y-1/2 cursor-pointer"
+    class="carousel-arrow right-arrow absolute top-1/2 right-0 z-30 -translate-y-1/2 cursor-pointer"
   >
     <svg
-      class="stroke-gray-800 h-16 w-16 fill-white stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+      class="h-16 w-16 fill-white stroke-gray-800 stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
     >
       {{ partial "helper/svg.html" "chevron-right" }}
     </svg>
@@ -90,10 +90,10 @@
 
 <div class="bottom-bar relative h-[170px] w-full bg-[#424242]">
   <div
-    class="bottom-bar-gradient-box left-gradient-box pointer-events-none absolute left-[35px] top-0 z-[3] h-full w-[75px]"
+    class="bottom-bar-gradient-box left-gradient-box pointer-events-none absolute top-0 left-[35px] z-[3] h-full w-[75px]"
   ></div>
   <div
-    class="bottom-bar-gradient-box right-gradient-box pointer-events-none absolute right-[35px] top-0 z-[3] h-full w-[75px]"
+    class="bottom-bar-gradient-box right-gradient-box pointer-events-none absolute top-0 right-[35px] z-[3] h-full w-[75px]"
   ></div>
 
   <div class="bottom-bar-arrows">
@@ -102,7 +102,7 @@
   </div>
 
   <div
-    class="bottom-bar-boxes-container scrollbar-hide absolute left-[35px] right-[35px] top-1/2 z-[2] h-[130px] -translate-y-1/2 overflow-x-auto overflow-y-hidden"
+    class="bottom-bar-boxes-container scrollbar-hide absolute top-1/2 right-[35px] left-[35px] z-[2] h-[130px] -translate-y-1/2 overflow-x-auto overflow-y-hidden"
   >
     <div class="impact-boxes-wrapper inline-flex gap-[20px]">
       {{ range $index, $item := site.Data.carousel.items }}
@@ -119,12 +119,12 @@
           </div>
           <div class="impact-box-text-container w-full">
             <div
-              class="impact-box-tag ml-[10px] w-fit bg-black p-[1px_5px] text-[13px] font-bold uppercase text-white"
+              class="impact-box-tag ml-[10px] w-fit bg-black p-[1px_5px] text-[13px] font-bold text-white uppercase"
             >
               {{ $item.tagline }}
             </div>
             <div
-              class="impact-box-text whitespace-normal p-[5px_0px_0px_10px] text-[13px] text-white"
+              class="impact-box-text p-[5px_0px_0px_10px] text-[13px] whitespace-normal text-white"
             >
               {{ $item.short }}
             </div>

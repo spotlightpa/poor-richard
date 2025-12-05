@@ -17,7 +17,7 @@
 
 
 <section
-  class="mx-auto mt-12 max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 text-g-9 lg:grid lg:gap-x-8 xl:px-0"
+  class="text-g-9 mx-auto mt-12 max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 lg:grid lg:gap-x-8 xl:px-0"
   id="article"
 >
   <header
@@ -26,7 +26,7 @@
   >
     {{ if $params.rubric }}
       <a
-        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
+        class="border-eyebrow-bg bg-eyebrow-bg text-eyebrow inline-block border-2 px-2 font-sans text-xs font-semibold uppercase md:text-sm"
         href="{{ $params.rubric.RelPermalink }}"
         data-ga-category="eyebrow"
       >
@@ -34,7 +34,7 @@
       </a>
     {{ else if $params.kicker }}
       <p
-        class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
+        class="border-eyebrow-bg bg-eyebrow-bg text-eyebrow inline-block border-2 px-2 font-sans text-xs font-semibold uppercase md:text-sm"
       >
         {{- $params.kicker -}}
       </p>
@@ -44,7 +44,7 @@
       {{ $eighteenMonthsAgo := now.AddDate 0 -18 0 }}
       {{ if .PublishDate.Before $eighteenMonthsAgo }}
         <p
-          class="ml-1 inline-block bg-orange px-3 font-sans text-base font-semibold uppercase text-white"
+          class="bg-orange ml-1 inline-block px-3 font-sans text-base font-semibold text-white uppercase"
         >
           From the archives
           {{ .PublishDate.Format "2006" }}
@@ -54,14 +54,14 @@
 
 
     <h1
-      class="mt-1 text-2xl font-bold leading-tight tracking-tight text-black sm:text-4xl"
+      class="mt-1 text-2xl leading-tight font-bold tracking-tight text-black sm:text-4xl"
     >
       {{ .Title }}
     </h1>
 
     {{ with $params.byline }}
       <h2
-        class="mt-1 font-sans text-base leading-tight tracking-normal text-g-8 sm:leading-normal"
+        class="text-g-8 mt-1 font-sans text-base leading-tight tracking-normal sm:leading-normal"
       >
         {{ if $bylineLink }}
           <a href="{{ $bylineLink }}">
@@ -121,7 +121,7 @@
                     itemprop="image"
                     src="{{ $author.thumb | absURL }}"
                     alt="Photo of {{ $author.name }}"
-                    class="m-auto rounded-full ring-1 ring-g-6 grayscale filter"
+                    class="ring-g-6 m-auto rounded-full ring-1 grayscale filter"
                     loading="lazy"
                     decoding="async"
                     width="256"
@@ -133,7 +133,7 @@
                 {{ $showLink := and $author.active $author.link | not | not }}
                 {{ $color := cond $showLink "text-blue" "text-g-7" }}
                 <h3
-                  class="{{ $color }} border-b border-black text-xl font-bold leading-tight md:text-2xl"
+                  class="{{ $color }} border-b border-black text-xl leading-tight font-bold md:text-2xl"
                   data-ga-category="name"
                   itemprop="name"
                 >
@@ -147,7 +147,7 @@
                 </h3>
                 {{ if and $author.active $author.title }}
                   <h3
-                    class="mt-1 text-xs font-black uppercase leading-snug text-black"
+                    class="mt-1 text-xs leading-snug font-black text-black uppercase"
                     data-ga-category="role"
                     itemprop="jobTitle"
                   >
@@ -161,18 +161,18 @@
                   {{ end }}
                   <div class="mt-2 flex flex-wrap gap-x-2 text-sm font-bold">
                     {{ if $author.email }}
-                      <p class="flex-0 mr-2 flex items-center gap-x-1">
+                      <p class="mr-2 flex flex-0 items-center gap-x-1">
                         <a
                           href="mailto:{{ $author.email }}"
                           title="Email"
-                          class="h-4 w-4 text-blue"
+                          class="text-blue h-4 w-4"
                         >
                           <svg viewBox="0 0 1 1">
                             {{ partial "helper/svg.html" "email" }}
                           </svg>
                         </a>
                         <a
-                          class="font-normal text-blue"
+                          class="text-blue font-normal"
                           href="mailto:{{ $author.email }}"
                         >
                           {{ $author.email }}
@@ -180,18 +180,18 @@
                       </p>
                     {{ end }}
                     {{ with $author.twitter }}
-                      <p class="flex-0 mr-2 flex items-center gap-x-1">
+                      <p class="mr-2 flex flex-0 items-center gap-x-1">
                         <a
                           href="https://www.twitter.com/{{ . }}"
                           title="Twitter"
-                          class="h-4 w-4 text-blue"
+                          class="text-blue h-4 w-4"
                         >
                           <svg viewBox="0 0 1 1">
                             {{ partial "helper/svg.html" "twitter" }}
                           </svg>
                         </a>
                         <a
-                          class="font-normal text-blue"
+                          class="text-blue font-normal"
                           href="https://www.twitter.com/{{ . }}"
                         >
                           @{{ . }}

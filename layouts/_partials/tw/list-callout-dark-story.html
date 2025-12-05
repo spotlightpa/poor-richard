@@ -17,7 +17,7 @@
   >
     {{ with .hed }}
       <h2
-        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3 md:text-3xl"
+        class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:col-span-3 md:text-3xl"
       >
         {{ . }}
       </h2>
@@ -74,7 +74,7 @@
       </div>
     {{ end }}
     <span
-      class="mb-4 mt-7 hidden w-[1px] self-stretch bg-black lg:inline-flex"
+      class="mt-7 mb-4 hidden w-[1px] self-stretch bg-black lg:inline-flex"
     ></span>
 
     {{ range after 1 $page }}
@@ -129,11 +129,11 @@
     {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
       <div
         data-ga-category="readmore"
-        class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
+        class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
       >
         <a
           href="{{ .readMoreLink }}"
-          class="decoration text-white underline underline-offset-4 hover:text-yellow"
+          class="decoration hover:text-yellow text-white underline underline-offset-4"
         >
           {{- .readMore | default "Read More" -}}
         </a>

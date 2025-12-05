@@ -8,7 +8,7 @@
 >
   {{ $url := "https://www.spotlightpa.com/" }}
   <a
-    class="m-2 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
+    class="bg-blue-7 m-2 flex items-center rounded px-5 py-2 font-black tracking-wider text-white shadow"
     href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ $url }}"
     data-ga-category="facebook"
     title="Share your donation on Facebook"
@@ -23,7 +23,7 @@
   {{ $url = "https://www.spotlightpa.com/donate/" }}
   {{ $text := `I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:` }}
   <a
-    class="m-2 flex items-center rounded bg-blue-4 px-5 py-2 font-black tracking-wider text-white shadow"
+    class="bg-blue-4 m-2 flex items-center rounded px-5 py-2 font-black tracking-wider text-white shadow"
     href="https://twitter.com/intent/tweet?text={{ $text }}&via=SpotlightPA&url={{ $url }}&tw_p=tweetbutton"
     data-ga-category="twitter"
     title="Tweet about your donation"
@@ -37,7 +37,7 @@
   </a>
   <a
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
-    class="m-2 flex items-center rounded bg-green px-5 py-2 font-black tracking-wider text-white no-underline shadow"
+    class="bg-green m-2 flex items-center rounded px-5 py-2 font-black tracking-wider text-white no-underline shadow"
     title="Share your donation by email"
     data-ga-category="email"
   >

@@ -15,7 +15,7 @@
     <div class="m-auto max-w-screen-lg px-5 md:flex md:items-baseline md:gap-3">
       <h3
         x-text="selectedCounty"
-        class="mb-2 py-2 font-sans text-3xl font-semibold leading-tight tracking-wide sm:text-4xl lg:text-5xl"
+        class="mb-2 py-2 font-sans text-3xl leading-tight font-semibold tracking-wide sm:text-4xl lg:text-5xl"
       ></h3>
 
       <div
@@ -48,10 +48,10 @@
           {{ end }}
         </select>
         <span
-          class="pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none text-g-6"
+          class="text-g-6 pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none"
           aria-hidden="true"
         >
-          <svg class="h-4 w-4 fill-g-5">
+          <svg class="fill-g-5 h-4 w-4">
             {{ partial "helper/svg.html" "chevron" }}
           </svg>
         </span>
@@ -63,14 +63,14 @@
     <div
       id="{{ . | urlize }}"
       x-show="selectedCounty === '{{ . }} County'"
-      class="mx-auto max-w-screen-lg border-t border-g-4 p-5 pt-0 md:flex md:gap-6"
+      class="border-g-4 mx-auto max-w-screen-lg border-t p-5 pt-0 md:flex md:gap-6"
       :class="{'': selectedCounty === '{{ . }} County' }"
     >
       {{ with . }}
         <div class="flex w-80 max-w-xs justify-center pt-5">
           <svg
             width="100%"
-            class="inline-block bg-none fill-blue stroke-white stroke-2"
+            class="fill-blue inline-block bg-none stroke-white stroke-2"
           >
             <use
               xlink:href="#{{ . }}"
@@ -79,17 +79,17 @@
           </svg>
         </div>
       {{ end }}
-      <span class="w-0 border border-g-3"></span>
+      <span class="border-g-3 w-0 border"></span>
       <ul
         class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
       >
         {{ range where $data "County" . }}
           <li class="flex-auto md:w-1/3">
-            <h4 class="text-xl font-bold leading-5">
+            <h4 class="text-xl leading-5 font-bold">
               {{ if .url }}
                 <a
                   href="{{ .url }}"
-                  class="no-underline underline-offset-2 hover:text-blue hover:underline"
+                  class="hover:text-blue no-underline underline-offset-2 hover:underline"
                   >{{ .Name }}</a
                 >
               {{ else }}

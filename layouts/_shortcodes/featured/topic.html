@@ -25,7 +25,7 @@
     <nav class="py-4">
       <h2 class="font-bold uppercase sm:text-xl">
         <a
-          class="whitespace-nowrap border-b-2 border-black tracking-wide"
+          class="border-b-2 border-black tracking-wide whitespace-nowrap"
           href="{{ $topic.RelPermalink }}"
         >
           More From
@@ -38,7 +38,7 @@
         {{ range where $pages ".RelPermalink" "!=" $self | last $limit }}
           <li class="font-bold">
             <a
-              class="text-navy transition-colors duration-500 hover:text-yellow"
+              class="text-navy hover:text-yellow transition-colors duration-500"
               href="{{ .RelPermalink }}"
               >{{ .LinkTitle }}</a
             >

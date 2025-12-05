@@ -86,16 +86,16 @@
         data-ga-category="inline:sidebar"
       >
         {{ with $menuTitle }}
-          <h2 class="mb-4 mt-0 text-2xl font-semibold">
+          <h2 class="mt-0 mb-4 text-2xl font-semibold">
             {{ . }}
           </h2>
         {{ end }}
         <ul
-          class="relative sm:flex sm:h-auto sm:flex-wrap sm:items-center sm:justify-start sm:space-x-4 md:block md:space-x-0 md:space-y-3"
+          class="relative sm:flex sm:h-auto sm:flex-wrap sm:items-center sm:justify-start sm:space-x-4 md:block md:space-y-3 md:space-x-0"
         >
           {{ range . }}
             <li class="text-base">
-              <a class="font-bold text-blue hover:text-g-6" href="{{ .url }}">
+              <a class="text-blue hover:text-g-6 font-bold" href="{{ .url }}">
                 <span class="underline underline-offset-2 hover:no-underline"
                   >{{- .actionText -}}</span
                 >

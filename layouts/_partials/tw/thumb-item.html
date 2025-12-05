@@ -45,7 +45,7 @@
   {{ end }}
   <div class="group mt-2 flex-1 md:mb-4">
     <h3
-      class="{{ $hedSize }} {{ $hedColor }} text-balance leading-tight tracking-tight"
+      class="{{ $hedSize }} {{ $hedColor }} leading-tight tracking-tight text-balance"
     >
       <a
         class="group-hover:underline"
@@ -57,7 +57,7 @@
     </h3>
     {{ if ( and ( .byline ) ( $showByline ) ) }}
       <h4
-        class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-blue"
+        class="text-blue mt-2 font-sans text-base leading-tight font-normal tracking-normal"
       >
         <a
           href="{{ .link }}"
@@ -69,7 +69,7 @@
       </h4>
     {{ end }}
     {{ if .dek }}
-      <h4 class="{{ $dekSize }} {{ $linkColor }} mt-2 text-pretty font-sans">
+      <h4 class="{{ $dekSize }} {{ $linkColor }} mt-2 font-sans text-pretty">
         <a
           href="{{ .link }}"
           class="group-hover:underline"
@@ -82,7 +82,7 @@
 
     {{- if .showDate }}
       <h3
-        class="mt-2 font-sans text-base font-light leading-tight tracking-normal text-date"
+        class="text-date mt-2 font-sans text-base leading-tight font-light tracking-normal"
         data-ga-category="time"
       >
         <a href="{{ .link }}" class="group-hover:underline">
@@ -95,15 +95,15 @@
   </div>
   {{ if .subitems }}
     <h4
-      class="mt-9 text-left font-sans text-base font-bold uppercase leading-none tracking-wider text-black"
+      class="mt-9 text-left font-sans text-base leading-none font-bold tracking-wider text-black uppercase"
     >
       Related Stories
     </h4>
     <ul
-      class="list-outside space-y-3 border-b border-black pb-10 pt-2 font-sans font-light sm:border-none"
+      class="list-outside space-y-3 border-b border-black pt-2 pb-10 font-sans font-light sm:border-none"
     >
       {{ range .subitems }}
-        <li class="ml-4 list-[square] leading-snug tracking-normal text-g-8">
+        <li class="text-g-8 ml-4 list-[square] leading-snug tracking-normal">
           <a
             href="{{ .link }}"
             class="{{ $linkColor }} underline-offset-2 hover:underline"

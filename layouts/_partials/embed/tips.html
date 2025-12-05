@@ -2,7 +2,7 @@
 {{ $idEmail := partial "helper/new-id" . }}
 {{ $idTip := partial "helper/new-id" . }}
 <div
-  class="rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7"
+  class="border-g-5 bg-g-2 rounded-lg border p-7 md:p-10 xl:px-12 xl:py-7"
   data-ga-category="contact"
   x-data="{
     showSpanish: false,
@@ -22,13 +22,13 @@
 >
   <h2
     x-show="!showSpanish"
-    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl leading-tight italic"
   >
     <span x-show="!showSpanish" x-text="_('flag_text', $el.innerText)"
       >Tips</span
     >
     <button
-      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
+      class="text-g-9 float-right inline-block pl-3 font-sans text-sm font-semibold uppercase"
       type="button"
       data-ga-category="toggle-language:spanish"
       @click="showSpanish = true"
@@ -39,7 +39,7 @@
   <h2
     x-cloak
     x-show="showSpanish"
-    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl leading-tight italic"
   >
     <span x-show="showSpanish" x-text="_('flag_text', $el.innerText)"
       >Escríbenos</span
@@ -47,7 +47,7 @@
     <button
       x-cloak
       type="button"
-      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
+      class="text-g-9 float-right inline-block pl-3 font-sans text-sm font-semibold uppercase"
       data-ga-category="toggle-language:english"
       @click="showSpanish = false"
     >
@@ -55,11 +55,11 @@
     </button>
   </h2>
   <div
-    class="embed-prose pb-4 pt-6 text-lg leading-tight"
+    class="embed-prose pt-6 pb-4 text-lg leading-tight"
     x-show="!showSpanish"
     x-rich-text="_('tip_text', '')"
   ></div>
-  <div x-cloak class="pb-4 pt-6 text-lg leading-tight" x-show="showSpanish">
+  <div x-cloak class="pt-6 pb-4 text-lg leading-tight" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
@@ -97,7 +97,7 @@
           required
         />
         <span
-          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+          class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -118,7 +118,7 @@
           required
         />
         <span
-          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+          class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -131,7 +131,7 @@
       <label class="sr-only" for="{{ $idTip }}">Your tip or comment</label>
       <textarea
         id="{{ $idTip }}"
-        class="w-full rounded border border-g-4 p-4 text-g-8 placeholder-g-5 placeholder-opacity-100 outline-none ring-2 ring-transparent focus:ring-red-7"
+        class="border-g-4 text-g-8 placeholder-g-5 placeholder-opacity-100 focus:ring-red-7 w-full rounded border p-4 ring-2 ring-transparent outline-none"
         :placeholder="showSpanish? '¿Qué debemos saber?': 'What should we know?'"
         name="comment"
         rows="3"
@@ -151,7 +151,7 @@
       <a
         x-show="!showSpanish"
         href="/tips/"
-        class="font-semibold text-g-7"
+        class="text-g-7 font-semibold"
         target="_blank"
       >
         Or see more secure ways to contact us
@@ -160,14 +160,14 @@
         x-cloak
         x-show="showSpanish"
         href="/tips/"
-        class="font-semibold text-g-7"
+        class="text-g-7 font-semibold"
         target="_blank"
       >
         Ver otras maneras más privadas de contactarnos
       </a>
     </div>
   </form>
-  <div class="mt-10 text-right text-g-9 md:mt-4">
+  <div class="text-g-9 mt-10 text-right md:mt-4">
     <a href="/" target="_blank">
       <svg
         class="inline-block h-8 w-48 fill-current"
