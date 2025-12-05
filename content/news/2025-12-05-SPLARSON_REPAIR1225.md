@@ -46,7 +46,7 @@ One company, Facility Optimization Solutions, billed State Police $7,560.11 for 
 
 That invoice, however, estimated the total job order would cost $138,717.60, and noted that it is for “Governor’s Home Security System and Fencing Install.” The dates of service are listed from Aug. 13 through the end of this month.
 
-Spotlight PA has learned from two sources with knowledge of the purchase that though the state bought the fencing — which was nonrefundable — it did not end up being installed at the Shapiros’ house. It is not clear why, or whether the fencing can be repurposed.
+Spotlight PA has learned from two sources with knowledge of the purchase that though the state bought the fencing — which was nonrefundable — it did not end up being installed at the Shapiros’ house. It is not clear why, but State Police officials said it is being repurposed for an unspecified project at the agency’s training academy.
 
 Another company, I.B. Able, expects to charge State Police $598,527.12 for multiple items and services, according to a copy of the purchase order. The order was issued late last month, but lists its effective date as Aug. 12.
 
