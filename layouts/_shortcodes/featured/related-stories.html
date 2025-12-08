@@ -62,7 +62,7 @@
           class="absolute top-0 bottom-0 left-0 z-20 flex w-20 items-center justify-center bg-linear-to-r from-white to-transparent text-6xl"
           :aria-disabled="atBeginning"
           :tabindex="atBeginning ? -1 : 0"
-          :class="{ 'opacity-1': atEnd, 'opacity-0': !atEnd }"
+          :class="{ 'opacity-100': atEnd, 'opacity-0': !atEnd }"
         >
           <span aria-hidden="true">
             <svg
@@ -150,7 +150,7 @@
           class="absolute top-0 right-0 bottom-0 z-20 flex w-20 items-center justify-center bg-linear-to-l from-white to-transparent text-6xl"
           :aria-disabled="atEnd"
           :tabindex="atEnd ? -1 : 0"
-          :class="{ 'opacity-1' : atBeginning, 'opacity-0': !atBeginning }"
+          :class="{ 'opacity-100' : atBeginning, 'opacity-0': !atBeginning }"
         >
           <span aria-hidden="true">
             <svg

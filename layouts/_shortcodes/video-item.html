@@ -30,7 +30,7 @@
         x-show="onScreen"
         x-transition:enter="transition-all ease-out duration-1000 delay-700"
         x-transition:enter-start=" opacity-0"
-        x-transition:enter-end="opacity-1"
+        x-transition:enter-end="opacity-100"
       >
         {{ $hed }}
       </h3>
@@ -39,7 +39,7 @@
         x-show="onScreen"
         x-transition:enter="transition-all ease-out duration-700 delay-1000"
         x-transition:enter-start=" opacity-0"
-        x-transition:enter-end="opacity-1"
+        x-transition:enter-end="opacity-100"
       >
         {{ $inner | markdownify }}
       </p>
