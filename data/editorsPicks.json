@@ -6,16 +6,16 @@
     "content/statecollege/2025-11-21-SPLPSUCENTER1125.md"
   ],
   "featuredStories": [
-    "content/news/2025-12-05-SPLARSON_REPAIR1225.md"
+    "content/statecollege/2025-12-08-SPLROCKSPRING1225.md"
   ],
   "subfeatures": [
-    "content/news/2025-11-20-SPLRESUP1125.md",
-    "content/news/2025-10-24-SPLRESCOSTS1025.md",
-    "content/news/2025-04-18-SPLPSPMILLER0425.md"
+    "content/statecollege/2025-10-23-SPLROCKPUC1025.md",
+    "content/statecollege/2025-09-17-SPLROCKINPUT0925.md",
+    "content/statecollege/2025-08-28-SPLROCKSPRING0825.md"
   ],
   "topSlots": [
+    "content/news/2025-12-05-SPLARSON_REPAIR1225.md",
     "content/news/2025-12-04-SPLSATELLITE1225.md",
-    "content/news/2025-12-03-SPLFATALREV1225.md",
-    "content/news/2025-12-02-SPLCYBER1225.md"
+    "content/news/2025-12-03-SPLFATALREV1225.md"
   ]
 }
