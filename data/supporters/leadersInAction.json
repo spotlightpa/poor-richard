@@ -64,6 +64,13 @@
       "categoryRank": "5"
     },
     {
+      "display": "Anthony Barbieri",
+      "sort": "Barbieri",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Michael Barley",
       "sort": "Barley",
       "url": "",
@@ -330,7 +337,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Mary Evans",
+      "display": "Mary Clements Evans",
       "sort": "Evans",
       "url": "",
       "category": "$5,000-$9,999",
@@ -591,6 +598,13 @@
     {
       "display": "Richard and Sally Kalin",
       "sort": "Kalin",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Mark Kampf",
+      "sort": "Kampf",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1130,6 +1144,13 @@
     {
       "display": "Susan and Ron Smith",
       "sort": "Smith",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Edward Spitzer and Yvonne Payne",
+      "sort": "Spitzer",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
