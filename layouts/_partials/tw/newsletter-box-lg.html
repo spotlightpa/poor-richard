@@ -43,12 +43,12 @@
   >
     {{ partial "newsletter/basic-hidden.html" . }}
     <div
-      class="relative mt-5 flex flex-wrap items-stretch justify-start gap-2 sm:flex-nowrap sm:items-center sm:gap-0 md:col-start-1 md:col-end-3"
+      class="relative mt-5 flex flex-wrap items-stretch justify-start gap-2 sm:flex-nowrap sm:gap-0"
     >
       <label class="sr-only" for="{{ $idEmail }}">Email address</label>
       <input
         id="{{ $idEmail }}"
-        class="text-g-8 placeholder-g-6 placeholder-opacity-100 shadow-yellow ring-yellow-9 m-1 box-content w-full appearance-none rounded-sm rounded-tl rounded-bl bg-white p-3 font-bold tracking-wider shadow-[0_0_0_4px] outline-hidden focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
+        class="text-g-8 placeholder-g-5 shadow-yellow ring-yellow-9 m-1 box-content w-full appearance-none rounded-sm rounded-tl rounded-bl bg-white p-3 font-bold tracking-wider shadow-[0_0_0_4px] outline-hidden focus:ring-2 sm:w-7/12 sm:rounded-tr-none sm:rounded-br-none"
         @focus.once="hasFocused = true"
         type="email"
         name="EMAIL"
