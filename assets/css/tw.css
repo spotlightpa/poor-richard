@@ -260,7 +260,7 @@
   }
 
   .spl-input {
-    @apply border-g-4 text-g-9 focus:ring-yellow w-full rounded-sm border py-2 pr-7 pl-4 font-sans leading-normal ring-2 ring-transparent outline-hidden;
+    @apply border-g-4 text-g-9 focus:ring-yellow placeholder-g-5 w-full rounded-sm border bg-white py-2 pr-7 pl-4 font-sans leading-normal ring-2 ring-transparent outline-hidden;
   }
 
   .spl-select {
