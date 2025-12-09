@@ -33,6 +33,8 @@ cta = "Subscribe"
 ctaDescription = "$199 for an annual subscription for a single email. For group rates, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
 ctaSecondDescription = "Link will open in Stripe, a secure payment portal."
 
+premium-newsletter = true
+
 modal-exclude = true
 
 linktitle = "Access Harrisburg - Insider Access to PA Politics"
