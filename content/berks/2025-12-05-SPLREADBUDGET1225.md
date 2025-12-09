@@ -21,6 +21,16 @@ title-tag = "Reading city council scheduled to vote on 9% tax hike"
 topics = ["Local Government"]
 +++
 
+<strong>UPDATE:</strong> Reading City Council passed the 2026 budget Dec. 8 without approving Mayor Eddie Morán’s proposal of a 9% property tax increase, instead opting for a 6% increase. Councilors also defunded a number of his administration&#39;s priorities for the upcoming year.
+
+Council picked away at projects across departments, including $1 million in capital improvements (projects or upgrades), $600,000 for a seasonal ice skating rink, $32,000 reduction in management salary raises across departments, $15,000 for council event expenses, $30,000 for mayoral office sponsorships and promotions, among other reductions. The adopted decreases subtract around the $1.8 million that the Morán administration expected to receive in revenue from the full 9% property tax increase.
+
+Managing Director Jack Gombach told Spotlight PA after the vote that the cuts from council do not handle the growing structural deficit the city is facing, but are instead a one-time bandaid.
+
+The administration repeatedly said that without the full increase, there likely would be layoffs of city employees — or another tax increase in 2027 — to fund rising personnel costs stemming largely from union contracts, healthcare costs, and recruitment efforts.
+
+The administration will be looking into ways to reduce headcount other than layoffs, such as through retirement buyouts, furloughs, or eliminating vacant positions, he said. They cannot yet predict if another tax increase will be necessary for 2027.
+
 READING — Monday may be the <a href="https://www.readingpa.gov/calendar#year=2025&amp;month=12&amp;day=3&amp;view=month">last chance for residents</a> to give their opinions about the City of Reading proposed 2026 budget. City Council currently is scheduled to vote on the 9% property tax increase after discussing around $1 million in cuts this week.
 
 A home valued at $100,000 would see a $163 property tax increase under the proposal, and the city would generate an estimated $1.8 million to help cover the growing structural deficit, Finance Director Jamar Kelly told Spotlight PA this week. The mayor’s administration presented a different millage rate in October that reflected a 6% tax increase, but did not include the mils dedicated to the shade tree and library funds.
