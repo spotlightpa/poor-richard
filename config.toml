@@ -92,7 +92,6 @@ allow = [
   '^go$',
   '^npx$',
   '^postcss$',
-  '^babel$',
   '^git$',
   '^tailwindcss$',
 ]
