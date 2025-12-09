@@ -23,10 +23,6 @@ export default defineConfig([
 
       ecmaVersion: "latest",
       sourceType: "module",
-
-      parserOptions: {
-        parser: "babel-eslint",
-      },
     },
 
     extends: compat.extends(
