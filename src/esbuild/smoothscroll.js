@@ -1,3 +1,1 @@
-import smoothscroll from "smoothscroll-polyfill";
-
-smoothscroll.polyfill();
+// TODO: Remove me
