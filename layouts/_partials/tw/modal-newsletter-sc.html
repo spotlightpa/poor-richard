@@ -15,9 +15,9 @@
   aria-modal="true"
   aria-label="Newsletter sign up"
 >
-  <div class="bg-g-4 absolute inset-0 opacity-75"></div>
+  <div class="absolute inset-0 bg-g-4 opacity-75"></div>
   <div
-    class="absolute inset-0 backdrop-blur-xs backdrop-filter"
+    class="backdrop-blur-xs absolute inset-0 backdrop-filter"
     x-transition.delay.150ms
   ></div>
   <div
@@ -26,7 +26,7 @@
     x-transition.delay.50ms
   >
     <form
-      class="text-g-9 m-auto w-full max-w-prose overflow-hidden rounded-lg text-center font-sans shadow-lg"
+      class="m-auto w-full max-w-prose overflow-hidden rounded-lg text-center font-sans text-g-9 shadow-lg"
       x-data="newsletter($el.dataset.baseUrl)"
       data-base-url="{{ page.Param `newsletters-base-url` }}"
       @submit.prevent="submit"
@@ -36,21 +36,21 @@
     >
       {{ partial "newsletter/talkofthetown-hidden.html" . }}
       <header
-        class="bg-blue-1 relative flex h-56 flex-none justify-between bg-cover text-white md:h-48"
+        class="relative flex h-56 flex-none justify-between bg-blue-1 bg-cover text-white md:h-48"
         style="
           background-image: url('https://www.spotlightpa.org/imgproxy/insecure/rt:fill/w:1000/h:750/g:sm/el:1/q:75/ZXh0ZXJuYWwvaHg3Z2gzeTMwZ3MzcW43bXF3cmoyNTliM20uanBlZw==.webp');
           background-position: center;
         "
       >
         <h6
-          class="text-shadow absolute bottom-4 text-xl leading-tight font-bold tracking-wider text-white uppercase"
+          class="text-shadow absolute bottom-4 text-xl font-bold uppercase leading-tight tracking-wider text-white"
         >
           Get all the top news and notes from State College & north-central PA.
         </h6>
 
-        <p class="absolute top-0 right-0 flex items-center p-4">
+        <p class="absolute right-0 top-0 flex items-center p-4">
           <button
-            class="group hover:text-orange focus:text-g-3 flex rounded-full text-white"
+            class="group flex rounded-full text-white hover:text-orange focus:text-g-3"
             type="button"
             aria-label="close"
             x-ref="closer"
@@ -87,7 +87,7 @@
               required
             />
             <span
-              class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
               aria-hidden="true"
             >
               <svg class="h-4 w-4 fill-current">
@@ -97,7 +97,7 @@
           </p>
         </div>
         <button
-          class="bg-orange mt-6 rounded-sm px-8 py-2 font-semibold tracking-wider text-white uppercase hover:shadow-sm"
+          class="mt-6 rounded-sm bg-orange px-8 py-2 font-semibold uppercase tracking-wider text-white hover:shadow-sm"
           type="submit"
           :disabled="isLoading"
         >
@@ -114,7 +114,7 @@
         </button>
         <p class="mt-5 flex space-x-2">
           <button
-            class="text-g-6 grow hover:underline"
+            class="grow text-g-6 hover:underline"
             aria-label="close"
             type="button"
             @click="seenIt()"
@@ -122,7 +122,7 @@
             I’m already a subscriber
           </button>
           <button
-            class="text-g-6 grow hover:underline"
+            class="grow text-g-6 hover:underline"
             aria-label="close"
             type="button"
             @click="isOpen = false"

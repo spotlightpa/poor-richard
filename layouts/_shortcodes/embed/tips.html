@@ -8,19 +8,19 @@
 
 
 <div
-  class="border-g-5 bg-g-2 my-6 rounded-lg border p-7 font-sans md:p-10 xl:px-12 xl:py-7 print:hidden"
+  class="my-6 rounded-lg border border-g-5 bg-g-2 p-7 font-sans md:p-10 xl:px-12 xl:py-7 print:hidden"
   data-ga-category="embed:contact"
   x-data="{
     showSpanish: false,
   }"
 >
   <h2
-    class="flex items-baseline justify-between border-b border-black font-serif text-2xl leading-tight italic"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
     x-show="!showSpanish"
   >
     <span>{{ $eyebrow }}</span>
     <button
-      class="text-g-9 float-right inline-block pl-3 font-sans text-sm font-semibold uppercase"
+      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
       type="button"
       data-ga-category="toggle-language:spanish"
       @click="showSpanish = true"
@@ -31,12 +31,12 @@
   <h2
     x-cloak
     x-show="showSpanish"
-    class="flex items-baseline justify-between border-b border-black font-serif text-2xl leading-tight italic"
+    class="flex items-baseline justify-between border-b border-black font-serif text-2xl italic leading-tight"
   >
     <span>Escríbenos</span>
     <button
       type="button"
-      class="text-g-9 float-right inline-block pl-3 font-sans text-sm font-semibold uppercase"
+      class="float-right inline-block pl-3 font-sans text-sm font-semibold uppercase text-g-9"
       data-ga-category="toggle-language:english"
       @click="showSpanish = false"
     >
@@ -44,12 +44,12 @@
     </button>
   </h2>
   <div
-    class="embed-prose pt-6 pb-4 text-lg leading-tight"
+    class="embed-prose pb-4 pt-6 text-lg leading-tight"
     x-show="!showSpanish"
   >
     {{- $tip -}}
   </div>
-  <div x-cloak class="pt-6 pb-4 text-lg leading-tight" x-show="showSpanish">
+  <div x-cloak class="pb-4 pt-6 text-lg leading-tight" x-show="showSpanish">
     ¿Tienes información que debemos saber? <strong>Escríbenos.</strong>
   </div>
   <form
@@ -81,7 +81,7 @@
           required
         />
         <span
-          class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -102,7 +102,7 @@
           required
         />
         <span
-          class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
+          class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
           aria-hidden="true"
         >
           <svg class="h-4 w-4 fill-current">
@@ -115,7 +115,7 @@
       <label class="sr-only" for="{{ $idTip }}">Your tip or comment</label>
       <textarea
         id="{{ $idTip }}"
-        class="border-g-4 text-g-8 placeholder-g-5 focus:ring-red-7 w-full rounded-sm border p-4 ring-2 ring-transparent outline-hidden"
+        class="outline-hidden w-full rounded-sm border border-g-4 p-4 text-g-8 placeholder-g-5 ring-2 ring-transparent focus:ring-red-7"
         :placeholder="showSpanish? '¿Qué debemos saber?': 'What should we know?'"
         name="comment"
         rows="3"
@@ -135,7 +135,7 @@
       <a
         x-show="!showSpanish"
         href="/tips/"
-        class="text-g-7 font-semibold"
+        class="font-semibold text-g-7"
         target="_blank"
       >
         Or see more secure ways to contact us
@@ -144,7 +144,7 @@
         x-cloak
         x-show="showSpanish"
         href="/tips/"
-        class="text-g-7 font-semibold"
+        class="font-semibold text-g-7"
         target="_blank"
       >
         Ver otras maneras más privadas de contactarnos

@@ -6,13 +6,13 @@
   {{ with .Page.RenderString (.Param "takeover") }}
     {{ . }}
   {{ else }}
-    <header class="bg-white px-5 pt-8 pb-4 text-black">
+    <header class="bg-white px-5 pb-4 pt-8 text-black">
       <div class="mx-auto max-w-screen-lg">
         {{ partial "tw/breadcrumbs.html" . }}
       </div>
       <div class="mx-auto w-full max-w-2xl">
         <h1
-          class="font-sans text-3xl leading-tight font-bold text-black sm:text-4xl lg:text-5xl"
+          class="font-sans text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
         >
           {{- .Title -}}
         </h1>
@@ -57,7 +57,7 @@
         x-data
         x-intersect.half="$dispatch('intersect:support', $el.id)"
         data-ga-category="blocks"
-        class="bg-g-0 w-full"
+        class="w-full bg-g-0"
       >
         {{ partial "blocks/block" (dict
           "Page" $
@@ -109,11 +109,11 @@
     :class="{'overflow-hidden': !isOpen}"
   >
     <div
-      class="absolute inset-x-0 bottom-0 bg-linear-to-t from-white via-white via-40% px-4 pt-12 pb-4"
+      class="bg-linear-to-t absolute inset-x-0 bottom-0 from-white via-white via-40% px-4 pb-4 pt-12"
     >
       <button
         x-show="!isOpen"
-        class="group text-navy hover:text-yellow leading-4"
+        class="group leading-4 text-navy hover:text-yellow"
         @click="isOpen = true"
         x-report-click
         data-ga-category="toggle-bio"
@@ -129,7 +129,7 @@
       </button>
       <button
         x-show="isOpen"
-        class="group text-navy hover:text-yellow leading-4"
+        class="group leading-4 text-navy hover:text-yellow"
         @click="isOpen = false"
         x-report-click
         data-ga-category="toggle-bio"
@@ -187,7 +187,7 @@
       >
         <span class="m-auto flex aspect-square max-h-full max-w-[256px]">
           <svg
-            class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow-sm"
+            class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow-sm"
             viewBox="0 0 1 1"
             aria-hidden="true"
           >
@@ -204,7 +204,7 @@
       {{ with $author.beat }}
         <h3 class="mb-auto leading-snug">
           <span
-            class="border-eyebrow-bg bg-eyebrow-bg text-eyebrow border-2 box-decoration-clone px-2 font-sans text-sm font-semibold uppercase"
+            class="border-2 border-eyebrow-bg bg-eyebrow-bg box-decoration-clone px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
           >
             {{- . -}}
           </span>
@@ -234,7 +234,7 @@
             </dt>
             <dd>
               <a
-                class="text-blue break-all"
+                class="break-all text-blue"
                 data-ga-category="author-email"
                 href="mailto:{{ . }}"
                 title="Email"
@@ -256,7 +256,7 @@
             </dt>
             <dd>
               <a
-                class="text-blue break-all"
+                class="break-all text-blue"
                 data-ga-category="author-twitter"
                 href="https://www.twitter.com/{{ . }}"
                 title="Twitter"
@@ -278,7 +278,7 @@
             </dt>
             <dd>
               <a
-                class="text-blue break-all"
+                class="break-all text-blue"
                 title="Telephone"
                 href="tel:+1{{ replaceRE `\D` `` . }}"
                 >{{ . }}</a
@@ -298,7 +298,7 @@
             </dt>
             <dd>
               <a
-                class="text-blue break-all"
+                class="break-all text-blue"
                 title="Contact via the Signal app"
                 href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
                 >{{ . }}</a

@@ -56,12 +56,12 @@
   <div class="bg-black text-white md:w-2/5 md:min-w-min">
     <div class="px-8 pb-10 sm:px-12">
       <div
-        class="mt-16 mb-4 border-t border-b border-white pt-8 pb-4 lg:mt-20 lg:mb-12 lg:pb-10"
+        class="mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
       >
-        <div class="text-yellow font-sans font-bold uppercase">
+        <div class="font-sans font-bold uppercase text-yellow">
           {{ $eyebrow }}
         </div>
-        <h1 class="{{ $hedSizes }} leading-hed mt-4 uppercase">
+        <h1 class="{{ $hedSizes }} mt-4 uppercase leading-hed">
           {{ $hed }}
         </h1>
         <h2 class="mt-4 lg:text-xl lg:leading-relaxed">{{ $dek }}</h2>
@@ -108,7 +108,7 @@
 
       <div class="mt-4 font-sans">
         <a
-          class="bg-red inline-flex items-baseline rounded-sm px-3 py-1 font-semibold text-white uppercase"
+          class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold uppercase text-white"
           href="/donate/"
           data-ga-category="donate"
         >
@@ -125,8 +125,8 @@
     </div>
   </div>
 
-  <div class="pb-16x9 relative order-first md:order-0 md:w-3/5">
-    <picture class="bg-g-3 absolute inset-0">
+  <div class="md:order-0 relative order-first pb-16x9 md:w-3/5">
+    <picture class="absolute inset-0 bg-g-3">
       {{ if $videoSrc }}
         <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />
         <img

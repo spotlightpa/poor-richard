@@ -1,4 +1,4 @@
-<section class="bg-g-9 mb-6 w-full pt-12">
+<section class="mb-6 w-full bg-g-9 pt-12">
   {{ $maxWidth := .Param "max-width" }}
   {{ $breakpoint := cond (eq $maxWidth "prose") "750px" $maxWidth }}
   {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" (print "max-w-[" $maxWidth "]") }}
@@ -35,7 +35,7 @@
         </h1>
 
         <h2
-          class="[&_strong]:text-yellow mb-4 text-lg font-semibold text-white"
+          class="mb-4 text-lg font-semibold text-white [&_strong]:text-yellow"
         >
           {{ .Param "subhead" | markdownify }}
         </h2>
@@ -77,11 +77,11 @@
 
     {{ if and (.Param "quote") (.Param "quote-source") }}
       <p
-        class="border-yellow mt-8 mb-2 border-l-4 py-3 pl-2 text-2xl font-bold text-white"
+        class="mb-2 mt-8 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
       >
         {{ .Param "quote" }}
       </p>
-      <p class="mb-5 text-right text-white italic">
+      <p class="mb-5 text-right italic text-white">
         {{ .Param "quote-source" }}
       </p>
     {{ end }}

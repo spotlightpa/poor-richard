@@ -26,10 +26,10 @@
   role="option"
   class="h-full w-11/12 flex-[0_0_auto] snap-center px-0 font-bold first:snap-start last:snap-end md:w-11/12"
 >
-  <figure class="group flex-none snap-center pb-2 focus:outline-hidden">
-    <div class="pb-16x9 relative h-0 w-full">
+  <figure class="focus:outline-hidden group flex-none snap-center pb-2">
+    <div class="relative h-0 w-full pb-16x9">
       <picture
-        class="bg-g-3 absolute inset-0 block overflow-hidden transition-shadow duration-300 group-focus:shadow-md"
+        class="absolute inset-0 block overflow-hidden bg-g-3 transition-shadow duration-300 group-focus:shadow-md"
       >
         <source type="image/webp" srcset="{{ $srcset }}" />
         <img
@@ -44,7 +44,7 @@
       </picture>
     </div>
     <figcaption
-      class="{{ $capClass }} mx-auto box-content max-w-prose px-16 select-text"
+      class="{{ $capClass }} mx-auto box-content max-w-prose select-text px-16"
     >
       {{ $caption }}
       {{ $credit }}

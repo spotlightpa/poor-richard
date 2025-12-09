@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-6xl px-5">
       <div class="lg:flex">
         <h2
-          class="lg:sideways-heading mb-4 text-4xl leading-none font-black text-white uppercase opacity-40 md:text-6xl lg:mb-0"
+          class="lg:sideways-heading mb-4 text-4xl font-black uppercase leading-none text-white opacity-40 md:text-6xl lg:mb-0"
         >
           {{ .title }}
         </h2>
@@ -21,7 +21,7 @@
         >
           {{ range . }}
             <a
-              class="hover:border-red-7 hover:text-red-7 border border-white px-4 py-2 text-xl font-bold text-white duration-300 lg:text-2xl"
+              class="border border-white px-4 py-2 text-xl font-bold text-white duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
               href="{{ .url }}"
             >
               {{- .copy -}}

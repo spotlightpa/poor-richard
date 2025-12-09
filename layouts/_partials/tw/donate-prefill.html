@@ -10,14 +10,14 @@
 
 <div
   data-ga-category="donate-prefill"
-  class="no-js:hidden border-g-4 rounded-sm border p-6 font-sans shadow-sm"
+  class="no-js:hidden rounded-sm border border-g-4 p-6 font-sans shadow-sm"
   data-active="{{ $activeClass }}"
   data-inactive="{{ $inactiveClass }}"
   x-data="prefill"
 >
   <div>
-    <h2 class="text-red font-bold uppercase">{{ $eyebrow }}</h2>
-    <h2 class="mt-8 text-center text-3xl leading-none font-bold">
+    <h2 class="font-bold uppercase text-red">{{ $eyebrow }}</h2>
+    <h2 class="mt-8 text-center text-3xl font-bold leading-none">
       {{ $hed }}
     </h2>
     <p class="mt-2 text-center text-xl leading-none">
@@ -111,12 +111,12 @@
         <input
           id="{{ $idOther }}"
           type="text"
-          class="border-g-4 text-g-8 focus:ring-red-4 block w-full appearance-none rounded-sm border-2 bg-white py-2 pl-10 tracking-wider ring-1 ring-transparent outline-hidden"
+          class="outline-hidden block w-full appearance-none rounded-sm border-2 border-g-4 bg-white py-2 pl-10 tracking-wider text-g-8 ring-1 ring-transparent focus:ring-red-4"
           inputmode="numeric"
           x-model="amount"
         />
         <span
-          class="text-g-4 pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl leading-none font-semibold"
+          class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-g-4"
           aria-hidden="true"
         >
           $

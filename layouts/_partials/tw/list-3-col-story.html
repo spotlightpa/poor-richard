@@ -15,7 +15,7 @@
 >
   {{ with .hed }}
     <h2
-      class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
+      class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
     >
       {{ . }}
     </h2>
@@ -67,11 +67,11 @@
   {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
     <div
       data-ga-category="readmore"
-      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold tracking-widest uppercase"
+      class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
     >
       <a
         href="{{ .readMoreLink }}"
-        class="decoration text-g-9 hover:text-blue underline underline-offset-4"
+        class="decoration text-g-9 underline underline-offset-4 hover:text-blue"
       >
         {{- .readMore | default "Read More" -}}
       </a>

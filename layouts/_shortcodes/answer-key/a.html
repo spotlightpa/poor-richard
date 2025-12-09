@@ -26,10 +26,10 @@
 
 
 <li
-  class="odd:bg-g-2 mx-auto my-2 flex w-full flex-wrap items-center justify-stretch gap-3 rounded-lg px-2 py-2"
+  class="mx-auto my-2 flex w-full flex-wrap items-center justify-stretch gap-3 rounded-lg px-2 py-2 odd:bg-g-2"
 >
   {{ if $image }}
-    <picture class="bg-g-3 min-h-full w-7 md:w-11">
+    <picture class="min-h-full w-7 bg-g-3 md:w-11">
       <img
         class="min-h-full min-w-full rounded-sm object-cover"
         alt="Picture of {{ $name }}"
@@ -40,36 +40,36 @@
   {{ end }}
   {{ with $header }}
     <div class="flex w-full flex-1 flex-col justify-end">
-      <h3 class="text-lg leading-none font-bold">{{ . }}</h3>
+      <h3 class="text-lg font-bold leading-none">{{ . }}</h3>
     </div>
   {{ end }}
   {{ if or $name $party }}
     <div class="flex w-full flex-1 flex-col justify-end">
       {{ with $name }}
-        <h3 class="text-lg leading-none font-bold">{{ . }}</h3>
+        <h3 class="text-lg font-bold leading-none">{{ . }}</h3>
       {{ end }}
       {{ with $party }}
-        <p class="text-g-8 mt-1 text-base leading-none">{{ . }}</p>
+        <p class="mt-1 text-base leading-none text-g-8">{{ . }}</p>
       {{ end }}
     </div>
   {{ end }}
   {{ with $answer }}
     {{ if ( eq $answer "Yes") }}
       <div
-        class="border-election-green-darker bg-election-green text-g-1 flex w-20 justify-center rounded-sm border-2 px-5 py-1 text-base font-bold uppercase"
+        class="flex w-20 justify-center rounded-sm border-2 border-election-green-darker bg-election-green px-5 py-1 text-base font-bold uppercase text-g-1"
       >
         {{- . -}}
       </div>
     {{ else }}
       <div
-        class="border-yellow-5 bg-yellow text-yellow-9 flex w-20 justify-center rounded-sm border-2 px-5 py-1 text-base font-bold uppercase"
+        class="flex w-20 justify-center rounded-sm border-2 border-yellow-5 bg-yellow px-5 py-1 text-base font-bold uppercase text-yellow-9"
       >
         {{- . -}}
       </div>
     {{ end }}
   {{ end }}
   {{ with .Inner }}
-    <p class="border-g-3 text-g-8 w-full border-t-2 pt-1 text-lg italic">
+    <p class="w-full border-t-2 border-g-3 pt-1 text-lg italic text-g-8">
       {{ . }}
     </p>
   {{ end }}

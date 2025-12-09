@@ -13,17 +13,17 @@
 
 
   <section
-    class="text-g-9 min-h-[65vh] bg-white pb-20"
+    class="min-h-[65vh] bg-white pb-20 text-g-9"
     data-ga-category="partners"
     x-data="{ selectedCounty: 'Allegheny' }"
   >
     <div
-      class="bg-navy-2 from-navy-1 via-navy-2 to-navy-2 bg-linear-to-b via-95% to-100% py-8 md:py-24"
+      class="bg-linear-to-b bg-navy-2 from-navy-1 via-navy-2 via-95% to-navy-2 to-100% py-8 md:py-24"
     >
       <div class="mx-auto max-w-4xl px-5 lg:px-0">
         {{ with .title }}
           <h2
-            class="lg:mb0 mb-4 text-4xl leading-none font-black uppercase opacity-40 md:text-6xl"
+            class="lg:mb0 mb-4 text-4xl font-black uppercase leading-none opacity-40 md:text-6xl"
           >
             {{ . }}
           </h2>
@@ -62,7 +62,7 @@
       {{ with .cta }}
         <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
-            class="hover:border-red-7 hover:text-red-7 border border-black px-4 py-2 text-center text-xl leading-tight font-bold text-black duration-300 lg:text-2xl"
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight text-black duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
             href="{{ .url }}"
           >
             {{- .copy -}}
@@ -81,7 +81,7 @@
           >
             <h3
               x-text="selectedCounty"
-              class="mb-2 py-2 font-sans text-3xl leading-tight font-bold tracking-wide sm:text-4xl"
+              class="mb-2 py-2 font-sans text-3xl font-bold leading-tight tracking-wide sm:text-4xl"
               :class="{ 'w-full' : selectedCounty != '' }"
             ></h3>
 
@@ -101,10 +101,10 @@
                 <option value="Regional/At-large">Regional/At-large</option>
               </select>
               <span
-                class="text-g-6 pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none"
+                class="pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none text-g-6"
                 aria-hidden="true"
               >
-                <svg class="text-g-5 h-4 w-4">
+                <svg class="h-4 w-4 text-g-5">
                   {{ partial "helper/svg.html" "chevron" }}
                 </svg>
               </span>
@@ -116,14 +116,14 @@
           <div
             id="{{ . | urlize }}"
             x-show="selectedCounty === '{{ . }}'"
-            class="border-g-4 mx-auto flex max-w-screen-lg border-t p-5 pt-0 sm:gap-6"
+            class="mx-auto flex max-w-screen-lg border-t border-g-4 p-5 pt-0 sm:gap-6"
             :class="{'': selectedCounty === '{{ . }}' }"
           >
             {{ with . }}
               <div class="hidden w-80 max-w-xs justify-center pt-5 sm:flex">
                 <svg
                   width="100%"
-                  class="fill-blue inline-block bg-none stroke-white stroke-2"
+                  class="inline-block bg-none fill-blue stroke-white stroke-2"
                 >
                   <use
                     xlink:href="#{{ . }}"
@@ -132,17 +132,17 @@
                 </svg>
               </div>
             {{ end }}
-            <span class="border-g-3 hidden w-0 border sm:block"></span>
+            <span class="hidden w-0 border border-g-3 sm:block"></span>
             <ul
               class="mx-auto w-full max-w-screen-lg space-y-2 pt-5 md:flex md:flex-wrap md:items-baseline md:gap-4"
             >
               {{ range where $data "County" . }}
                 <li class="flex-auto md:w-1/3">
-                  <h4 class="text-xl leading-5 font-bold">
+                  <h4 class="text-xl font-bold leading-5">
                     {{ if .url }}
                       <a
                         href="{{ .url }}"
-                        class="hover:text-blue no-underline underline-offset-2 hover:underline"
+                        class="no-underline underline-offset-2 hover:text-blue hover:underline"
                         >{{ .Name }}</a
                       >
                     {{ else }}

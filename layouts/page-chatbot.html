@@ -9,10 +9,10 @@
   {{ with .Page.RenderString (.Param "takeover") }}
     {{ . }}
   {{ else }}
-    <header class="bg-white px-5 pt-8 pb-4 text-black">
+    <header class="bg-white px-5 pb-4 pt-8 text-black">
       <div class="mx-auto w-full max-w-2xl">
         <h1
-          class="font-sans text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
+          class="font-sans text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
         >
           {{- .Title -}}
         </h1>
@@ -26,7 +26,7 @@
       data-ga-category="content"
     >
       <div
-        class="article-content border-g-4 bg-g-3 mx-auto w-full overflow-hidden rounded-sm border p-4 leading-relaxed shadow-sm md:w-7/12"
+        class="article-content mx-auto w-full overflow-hidden rounded-sm border border-g-4 bg-g-3 p-4 leading-relaxed shadow-sm md:w-7/12"
       >
         {{ .Param "disabled-text" | page.RenderString }}
       </div>
@@ -34,7 +34,7 @@
   {{ else }}
     <div
       id="dewey-chat"
-      class="bg-g-1 mx-5 my-10 box-content max-w-screen-xl rounded-lg p-4 shadow-sm md:mx-auto"
+      class="mx-5 my-10 box-content max-w-screen-xl rounded-lg bg-g-1 p-4 shadow-sm md:mx-auto"
     ></div>
   {{ end }}
 
@@ -84,7 +84,7 @@
     >
       <div class="mx-auto w-full max-w-prose">
         <h2
-          class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
+          class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
         >
           Credits
         </h2>

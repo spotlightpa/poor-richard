@@ -1,5 +1,5 @@
 {{ with .block }}
-  <section class="bg-g-2 w-screen p-4 sm:px-5 sm:py-8 md:py-12 lg:px-0">
+  <section class="w-screen bg-g-2 p-4 sm:px-5 sm:py-8 md:py-12 lg:px-0">
     {{ with .title }}
       <h2 class="mx-auto max-w-5xl text-xl font-black sm:text-2xl">{{ . }}</h2>
     {{ end }}
@@ -10,7 +10,7 @@
         {{ range . }}
           <a
             href="{{ .url }}"
-            class="flex flex-1 last:justify-end even:justify-center hover:underline sm:even:border-r sm:even:border-l md:w-1/4"
+            class="flex flex-1 last:justify-end even:justify-center hover:underline sm:even:border-l sm:even:border-r md:w-1/4"
           >
             <span
               class="flex-auto text-2xl font-thin sm:px-5 sm:text-3xl md:max-w-[230px] md:px-0 md:text-5xl"

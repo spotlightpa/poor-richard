@@ -9,7 +9,7 @@
 >
   <h4 class="mb-0 font-sans">
     <span
-      class="border-eyebrow-bg bg-eyebrow-bg text-eyebrow inline-block border-2 px-2 font-sans text-sm font-semibold uppercase"
+      class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
       >Case</span
     >
     <a
@@ -22,11 +22,11 @@
 
 
   <div
-    class="sticky inset-x-0 bottom-0 bg-linear-to-t from-white via-white via-40% pt-12 pb-4"
+    class="bg-linear-to-t sticky inset-x-0 bottom-0 from-white via-white via-40% pb-4 pt-12"
   >
     <button
       x-show="!isOpen"
-      class="group text-navy hover:text-yellow leading-4"
+      class="group leading-4 text-navy hover:text-yellow"
       @click="isOpen = true"
       x-report-click
       data-ga-category="toggle-bio"
@@ -40,7 +40,7 @@
     </button>
     <button
       x-show="isOpen"
-      class="group text-navy hover:text-yellow leading-4"
+      class="group leading-4 text-navy hover:text-yellow"
       @click="isOpen = false"
       x-report-click
       data-ga-category="toggle-bio"

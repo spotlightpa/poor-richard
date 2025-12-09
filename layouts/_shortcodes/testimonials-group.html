@@ -10,11 +10,11 @@
     {{ $js.Content | safeJS }}
   </script>
 
-<section class="bg-g-2 min-h-[65vh] py-20" data-ga-category="links">
+<section class="min-h-[65vh] bg-g-2 py-20" data-ga-category="links">
   <div class="mx-auto max-w-6xl px-5">
     <div class="lg:flex">
       <h2
-        class="lg:sideways-heading mb-4 text-4xl leading-none font-black text-black uppercase md:text-6xl lg:mb-0 lg:rotate-180"
+        class="lg:sideways-heading mb-4 text-4xl font-black uppercase leading-none text-black md:text-6xl lg:mb-0 lg:rotate-180"
       >
         {{ $title }}
       </h2>
@@ -22,11 +22,11 @@
         {{ with $featuredQuote }}
           <blockquote class="max-w-4xl self-center">
             <p
-              class="mt-2 px-4 text-center text-2xl leading-snug font-semibold md:pr-16 md:pl-12 md:text-4xl"
+              class="mt-2 px-4 text-center text-2xl font-semibold leading-snug md:pl-12 md:pr-16 md:text-4xl"
             >
               <q class="inline before:content-[''] after:content-['']">
                 <svg
-                  class="text-blue -mt-4 inline-block h-10 w-10 md:-mt-6 md:-ml-11 md:h-14 md:w-14"
+                  class="-mt-4 inline-block h-10 w-10 text-blue md:-ml-11 md:-mt-6 md:h-14 md:w-14"
                   aria-label="Quote"
                 >
                   {{ partial "helper/svg.html" "openquote" }}
@@ -34,7 +34,7 @@
 
                 {{ $featuredQuote | markdownify }}
                 <svg
-                  class="text-blue -mr-5 -mb-1 inline-block h-10 w-10 md:-mr-11 md:h-14 md:w-14"
+                  class="-mb-1 -mr-5 inline-block h-10 w-10 text-blue md:-mr-11 md:h-14 md:w-14"
                   aria-label="Unquote"
                 >
                   {{ partial "helper/svg.html" "closequote" }}
@@ -116,7 +116,7 @@
               <span aria-hidden="true">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-12 w-12 pr-4 text-gray-600"
+                  class="text-gray-600 h-12 w-12 pr-4"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -136,7 +136,7 @@
               tabindex="0"
               role="listbox"
               aria-labelledby="carousel-content-label"
-              class="flex-no-wrap hide-scrollbars flex flex-1 overflow-x-scroll overflow-y-hidden md:-mx-4"
+              class="flex-no-wrap hide-scrollbars flex flex-1 overflow-y-hidden overflow-x-scroll md:-mx-4"
             >
               {{ .Inner }}
             </ul>
@@ -151,7 +151,7 @@
               <span aria-hidden="true">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-12 w-12 pl-4 text-gray-600"
+                  class="text-gray-600 h-12 w-12 pl-4"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

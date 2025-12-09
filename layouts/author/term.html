@@ -59,7 +59,7 @@
           >
             <span class="m-auto flex aspect-square max-h-full">
               <svg
-                class="bg-g-4 text-g-7 h-full w-full overflow-hidden rounded-full fill-current p-5 shadow-sm"
+                class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow-sm"
                 viewBox="0 0 1 1"
                 aria-hidden="true"
               >
@@ -71,12 +71,12 @@
 
 
         <div
-          class="col-span-5 row-2 row-span-1 mt-6 mb-2 flex h-max max-w-xs flex-col items-start sm:col-span-3 sm:row-1"
+          class="row-2 sm:row-1 col-span-5 row-span-1 mb-2 mt-6 flex h-max max-w-xs flex-col items-start sm:col-span-3"
         >
           {{ with $author.beat }}
             <h3 class="inline-block self-start leading-snug">
               <span
-                class="border-eyebrow-bg bg-eyebrow-bg text-eyebrow border-2 px-2 font-sans text-sm font-semibold uppercase"
+                class="border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
               >
                 {{- . -}}
               </span>
@@ -190,14 +190,14 @@
     <div class="mx-auto max-w-screen-md" data-ga-category="author">
       <div>
         <h2
-          class="mb-1 font-sans text-xl leading-none font-extrabold tracking-wider uppercase"
+          class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
         >
           Stories by
           {{ .Title }}
         </h2>
         <hr class="mb-5 border-b-2" />
       </div>
-      <div class="mt-3 mb-8 flex flex-col gap-y-8 sm:gap-y-6" x-ref="archives">
+      <div class="mb-8 mt-3 flex flex-col gap-y-8 sm:gap-y-6" x-ref="archives">
         {{ range $page := (partial "helper/paginator" .).Pages }}
           {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
         {{ end }}

@@ -66,28 +66,28 @@
   }
 
   .featured-content > h2 {
-    @apply mt-8 mb-2 font-sans text-4xl leading-tight font-semibold;
+    @apply mb-2 mt-8 font-sans text-4xl font-semibold leading-tight;
   }
 
   .featured-content > h3 {
-    @apply mb-8 font-sans text-3xl leading-none italic;
+    @apply mb-8 font-sans text-3xl italic leading-none;
   }
 
   .featured-content > h3:before {
     content: "";
-    @apply bg-yellow mt-16 mb-4 block h-1 w-12;
+    @apply mb-4 mt-16 block h-1 w-12 bg-yellow;
   }
 
   .featured-content > h4 {
-    @apply mt-8 mb-4 font-sans text-lg leading-tight font-semibold;
+    @apply mb-4 mt-8 font-sans text-lg font-semibold leading-tight;
   }
 
   .featured-content > h5 {
-    @apply mt-6 mb-2 text-base leading-tight font-semibold;
+    @apply mb-2 mt-6 text-base font-semibold leading-tight;
   }
 
   .featured-content > h6 {
-    @apply mt-4 mb-1 text-base leading-tight italic;
+    @apply mb-1 mt-4 text-base italic leading-tight;
   }
 
   .featured-content > ul {
@@ -99,7 +99,7 @@
   }
 
   .article-content > :where(p, aside, figure, ol, ul, hr) {
-    @apply mt-4 mb-4;
+    @apply mb-4 mt-4;
   }
 
   .article-content > :where(iframe) {
@@ -121,27 +121,27 @@
   }
 
   .article-content > h1 {
-    @apply mb-4 font-sans text-3xl leading-tight font-semibold;
+    @apply mb-4 font-sans text-3xl font-semibold leading-tight;
   }
 
   .article-content > h2 {
-    @apply mb-4 text-2xl leading-tight font-semibold;
+    @apply mb-4 text-2xl font-semibold leading-tight;
   }
 
   .article-content > h3 {
-    @apply mb-4 text-xl leading-tight font-semibold;
+    @apply mb-4 text-xl font-semibold leading-tight;
   }
 
   .article-content > h4 {
-    @apply mb-4 text-lg leading-tight font-semibold;
+    @apply mb-4 text-lg font-semibold leading-tight;
   }
 
   .article-content > h5 {
-    @apply mb-4 text-base leading-tight font-semibold;
+    @apply mb-4 text-base font-semibold leading-tight;
   }
 
   .article-content > h6 {
-    @apply mb-4 text-base leading-tight italic;
+    @apply mb-4 text-base italic leading-tight;
   }
 
   .article-content > ul {
@@ -157,11 +157,11 @@
   }
 
   .article-content .toc {
-    @apply border-g-3 bg-g-2 my-8 rounded-sm border px-6 py-4 shadow-sm;
+    @apply my-8 rounded-sm border border-g-3 bg-g-2 px-6 py-4 shadow-sm;
   }
 
   .article-content .toc h3 {
-    @apply mb-2 text-xl leading-tight font-semibold;
+    @apply mb-2 text-xl font-semibold leading-tight;
   }
   .article-content .toc ul {
     @apply list-disc pl-5;
@@ -180,7 +180,7 @@
   }
 
   .article-content :where(code) {
-    @apply bg-g-2 text-red-8 mx-1 -my-[2px] rounded-xs px-1 py-[2px];
+    @apply rounded-xs -my-[2px] mx-1 bg-g-2 px-1 py-[2px] text-red-8;
   }
 
   .article-content :where(a) {
@@ -231,7 +231,7 @@
   .content-aside > h2,
   .content-aside > h3,
   .content-aside > h4 {
-    @apply text-lg leading-none font-bold uppercase;
+    @apply text-lg font-bold uppercase leading-none;
   }
 
   .content-aside > * + h1,
@@ -248,48 +248,48 @@
   }
 
   .spl-input {
-    @apply border-g-4 text-g-9 focus:ring-yellow placeholder-g-5 w-full rounded-sm border bg-white py-2 pr-7 pl-4 font-sans leading-normal ring-2 ring-transparent outline-hidden;
+    @apply outline-hidden w-full rounded-sm border border-g-4 bg-white py-2 pl-4 pr-7 font-sans leading-normal text-g-9 placeholder-g-5 ring-2 ring-transparent focus:ring-yellow;
   }
 
   .spl-select {
-    @apply border-g-4 text-g-5 focus:ring-yellow active:ring-yellow-6 block w-full appearance-none rounded-sm border bg-white py-2 pr-7 pl-4 font-sans ring-2 ring-transparent outline-hidden;
+    @apply outline-hidden block w-full appearance-none rounded-sm border border-g-4 bg-white py-2 pl-4 pr-7 font-sans text-g-5 ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
   }
 
   a.spl-links-navy,
   .spl-links-navy a {
-    @apply text-navy hover:text-yellow underline underline-offset-2 transition-colors duration-500;
+    @apply text-navy underline underline-offset-2 transition-colors duration-500 hover:text-yellow;
   }
 
   a.spl-links-yellow,
   .spl-links-yellow a {
-    @apply text-yellow hover:text-blue underline underline-offset-2 transition-colors duration-500;
+    @apply text-yellow underline underline-offset-2 transition-colors duration-500 hover:text-blue;
   }
 
   .btn-signup {
-    @apply border-yellow-5 bg-yellow-4 text-yellow-9 ring-yellow-6 hover:bg-yellow-3 rounded-sm border-2 px-8 py-2 text-center leading-normal font-bold tracking-widest uppercase outline-hidden focus:ring-2;
+    @apply outline-hidden rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
   }
 
   .btn-signup-slim {
-    @apply border-yellow-5 bg-yellow-4 text-yellow-9 ring-yellow-6 hover:bg-yellow-3 w-full rounded-sm border-2 px-8 py-2 leading-tight font-bold tracking-widest uppercase outline-hidden focus:ring-2;
+    @apply outline-hidden w-full rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase leading-tight tracking-widest text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
   }
 
   .btn-signup-lg {
-    @apply bg-yellow-4 text-yellow-9 ring-yellow-6 hover:bg-yellow-3 inline-block rounded-sm px-8 py-5 font-sans text-lg font-bold tracking-wide outline-hidden focus:ring-2 lg:text-xl lg:tracking-widest;
+    @apply outline-hidden inline-block rounded-sm bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
   }
 
   .btn-donate {
-    @apply border-red bg-red ring-red-7 hover:bg-red-5 focus:ring-red-7 active:ring-red-9 inline-block rounded-sm border-2 px-6 py-2 text-center font-sans font-semibold tracking-widest text-white uppercase no-underline outline-hidden focus:ring-2;
+    @apply outline-hidden inline-block rounded-sm border-2 border-red bg-red px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline ring-red-7 hover:bg-red-5 focus:ring-2 focus:ring-red-7 active:ring-red-9;
   }
 
   .btn-donate-slim {
-    @apply bg-red hover:bg-red-7 focus:ring-red-7 active:ring-red-5 w-full rounded-sm px-6 py-2 font-sans font-semibold tracking-widest text-white uppercase no-underline ring-2 ring-transparent outline-hidden;
+    @apply outline-hidden w-full rounded-sm bg-red px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline ring-2 ring-transparent hover:bg-red-7 focus:ring-red-7 active:ring-red-5;
   }
 
   .btn-donate-lg {
-    @apply bg-red hover:bg-red-5 focus:ring-red-7 active:ring-red-9 inline-flex min-w-[145px] items-center justify-center rounded-sm px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline ring-3 ring-transparent outline-hidden md:min-w-[218px] md:py-5;
+    @apply ring-3 outline-hidden inline-flex min-w-[145px] items-center justify-center rounded-sm bg-red px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px] md:py-5;
   }
   .btn-select {
-    @apply border-blue bg-blue ring-blue hover:bg-blue-7 focus:ring-blue active:ring-blue inline-block rounded-sm border-2 px-6 py-2 text-center font-sans font-semibold tracking-widest text-white uppercase no-underline outline-hidden focus:ring-2;
+    @apply outline-hidden inline-block rounded-sm border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline ring-blue hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
   }
 
   .spl-newsletter {

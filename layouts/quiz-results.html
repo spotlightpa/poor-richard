@@ -9,13 +9,13 @@
   {{ with .Page.RenderString (.Param "takeover") }}
     {{ . }}
   {{ else }}
-    <header class="bg-white px-5 pt-8 pb-4 text-black">
+    <header class="bg-white px-5 pb-4 pt-8 text-black">
       <div class="mx-auto max-w-screen-lg">
         {{ partial "tw/breadcrumbs.html" . }}
       </div>
       <div class="mx-auto w-full max-w-2xl">
         <h1
-          class="font-sans text-3xl leading-none font-bold text-black sm:text-4xl lg:text-5xl"
+          class="font-sans text-3xl font-bold leading-none text-black sm:text-4xl lg:text-5xl"
         >
           {{- .Title -}}
         </h1>
@@ -84,7 +84,7 @@
     >
       <div class="mx-auto flex max-w-2xl flex-col flex-wrap py-12 md:flex-row">
         <h2
-          class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
+          class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
         >
           Credits
         </h2>
@@ -98,7 +98,7 @@
             27, and a forum hosted by the Philadelphia Citizen, Spotlight PA,
             6abc and WURD Radio. Send feedback to
             <a
-              class="text-navy hover:text-yellow underline transition-colors duration-500"
+              class="text-navy underline transition-colors duration-500 hover:text-yellow"
               href="mailto:"
               >Deputy Editor Sarah Anne Hughes</a
             >.

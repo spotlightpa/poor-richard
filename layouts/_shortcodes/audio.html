@@ -9,7 +9,7 @@
       <a href="{{ $src }}">Download audio</a>
     </audio>
     <figcaption
-      class="text-g-8 mt-6 font-sans leading-tight"
+      class="mt-6 font-sans leading-tight text-g-8"
       itemprop="caption"
     >
       {{- $label -}}
@@ -19,7 +19,7 @@
   <figure class="clear-both" x-data="{ isOpen: false }">
     <figcaption>
       <button
-        class="text-navy cursor-pointer italic underline"
+        class="cursor-pointer italic text-navy underline"
         @click.once="isOpen = true; $refs.player.play()"
       >
         {{- $label -}}

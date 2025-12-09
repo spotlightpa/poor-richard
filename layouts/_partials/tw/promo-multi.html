@@ -18,7 +18,7 @@
 >
   {{ range $i, $param := .promos }}
     <div
-      class="text-g-8 text-center font-sans text-sm uppercase"
+      class="text-center font-sans text-sm uppercase text-g-8"
       {{ if $shouldShuffle }}
         x-show="randomItem === +$el.dataset.i" data-i="{{ $i }}"
       {{ end }}

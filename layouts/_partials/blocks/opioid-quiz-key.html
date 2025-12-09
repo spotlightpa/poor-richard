@@ -3,11 +3,11 @@
     x-data="{ active: null }"
     class="mx-auto max-w-2xl space-y-4 px-5 lg:px-0"
   >
-    <h2 class="mb-4 text-3xl leading-tight font-bold">
+    <h2 class="mb-4 text-3xl font-bold leading-tight">
       {{ .hed }}
     </h2>
     <p
-      class="text-dek font-sans text-pretty sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+      class="text-pretty font-sans text-dek sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
     >
       {{ .dek }}
     </p>
@@ -25,7 +25,7 @@
         :id="id"
         role="region"
       >
-        <h2 class="mb-4 font-sans text-2xl leading-tight font-extrabold">
+        <h2 class="mb-4 font-sans text-2xl font-extrabold leading-tight">
           <button
             @click="expanded = !expanded"
             :aria-expanded="expanded"

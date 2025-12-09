@@ -7,7 +7,7 @@
 
 {{ define "feature-credit-image" }}
   <img
-    class="float-left mr-4 mb-5 h-16 w-16 rounded-full grayscale filter"
+    class="float-left mb-5 mr-4 h-16 w-16 rounded-full grayscale filter"
     src="{{ .thumb }}"
     alt="Picture of {{ .name }}"
   />
@@ -46,7 +46,7 @@
     {{ with $author.link }}
       <a
         href="{{ . }}"
-        class="hover:text-yellow transition-colors duration-500"
+        class="transition-colors duration-500 hover:text-yellow"
       >
         {{ $name }}
       </a>
@@ -60,7 +60,7 @@
   {{ if $email }}
     <div class="text-sm">
       <a
-        class="text-navy hover:text-yellow underline transition-colors duration-500"
+        class="text-navy underline transition-colors duration-500 hover:text-yellow"
         href="mailto:{{ $email }}"
         >{{ $email }}</a
       >

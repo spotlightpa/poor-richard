@@ -13,25 +13,25 @@
   >
     <div class="flex-1">
       <h2
-        class="{{ $hedSize }} {{ $hedColor }} leading-tight font-bold tracking-tight group-hover:underline"
+        class="{{ $hedSize }} {{ $hedColor }} font-bold leading-tight tracking-tight group-hover:underline"
       >
         {{ .hed }}
       </h2>
       <span
-        class="font-sm text-yellow font-sans font-bold tracking-wide uppercase group-hover:underline"
+        class="font-sm font-sans font-bold uppercase tracking-wide text-yellow group-hover:underline"
         >Attend</span
       >
     </div>
     {{ if .showDate }}
       <h3
-        class="text-date -order-1 font-sans text-base leading-tight font-extrabold tracking-normal text-white"
+        class="-order-1 font-sans text-base font-extrabold leading-tight tracking-normal text-date text-white"
         data-ga-category="time"
       >
         <time
           datetime="{{ .dateISO }}"
           class="flex w-14 flex-auto flex-col items-stretch overflow-hidden rounded-sm text-center"
         >
-          <span class="bg-yellow text-yellow-9 uppercase">
+          <span class="bg-yellow uppercase text-yellow-9">
             {{ $date | time.Format "Jan" }}</span
           >
           <span class="bg-white py-2 text-4xl text-black">

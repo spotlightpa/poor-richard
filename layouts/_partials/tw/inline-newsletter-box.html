@@ -9,7 +9,7 @@
 >
   {{ partial "newsletter/basic-hidden.html" . }}
   <h6
-    class="from-orange via-yellow bg-linear-to-r to-white bg-clip-text text-base font-bold tracking-widest text-transparent uppercase"
+    class="bg-linear-to-r from-orange via-yellow to-white bg-clip-text text-base font-bold uppercase tracking-widest text-transparent"
   >
     Sign Up For Our Free Newsletters
   </h6>
@@ -30,7 +30,7 @@
         required
       />
       <span
-        class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
+        class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
         aria-hidden="true"
       >
         <svg class="h-4 w-4 fill-current">
@@ -38,7 +38,7 @@
         </svg>
       </span>
     </p>
-    <p class="mt-4 sm:mt-0 sm:ml-1">
+    <p class="mt-4 sm:ml-1 sm:mt-0">
       <button class="btn-signup" type="submit" :disabled="isLoading">
         Sign Up
         <svg

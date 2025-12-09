@@ -2,7 +2,7 @@
 
 
 <form
-  class="bg-g-2 mx-auto w-full rounded-sm p-4 font-sans shadow-sm"
+  class="mx-auto w-full rounded-sm bg-g-2 p-4 font-sans shadow-sm"
   data-ga-category="rail-newsletter"
   x-data="newsletter($el.dataset.baseUrl)"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
@@ -10,7 +10,7 @@
 >
   {{ partial "newsletter/berks-county-hidden.html" . }}
   <h2
-    class="text-orange text-center text-xl font-semibold tracking-wide uppercase"
+    class="text-center text-xl font-semibold uppercase tracking-wide text-orange"
   >
     Good Day, Berks
   </h2>
@@ -29,7 +29,7 @@
       required
     />
     <span
-      class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
+      class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
       aria-hidden="true"
     >
       <svg class="h-4 w-4 fill-current">

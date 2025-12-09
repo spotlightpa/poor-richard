@@ -56,7 +56,7 @@
         class="order-4 col-span-3 row-start-1 mt-9 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
       >
         <div class="rounded-sm bg-black p-6 font-sans text-white">
-          <h2 class="mb-4 text-2xl leading-tight font-extrabold font-semibold">
+          <h2 class="mb-4 text-2xl font-extrabold font-semibold leading-tight">
             About our {{ $title }} coverage
           </h2>
           <div class="spl-links-yellow text-xl leading-relaxed">
@@ -281,7 +281,7 @@
       class="mx-auto mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:gap-x-8 lg:px-20"
     >
       <h2
-        class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
+        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
       >
         {{ with .riverTitle }}
           More {{ . }} Stories
@@ -344,7 +344,7 @@
               {{ $mobileRiverAd := page.Param "ad-hp-river-mobile-active" }}
               {{ if eq (mod $i 5) 3 | and (or $desktopRiverAd $mobileRiverAd) }}
                 <div
-                  class="px-0 pt-0 pb-2"
+                  class="px-0 pb-2 pt-0"
                   data-ga-category="{{ div $i 4 | add 1 }}"
                 >
                   {{ if $desktopRiverAd }}
@@ -374,7 +374,7 @@
             <div class="mx-auto">
               <a
                 href="{{ .moreLink }}"
-                class="bg-blue-6 hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7 inline-block rounded-lg px-4 py-3 font-sans text-base leading-none font-bold tracking-widest text-white uppercase shadow-sm ring-2 ring-transparent outline-hidden"
+                class="outline-hidden inline-block rounded-lg bg-blue-6 px-4 py-3 font-sans text-base font-bold uppercase leading-none tracking-widest text-white shadow-sm ring-2 ring-transparent hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7"
               >
                 {{- "More Stories" -}}
               </a>

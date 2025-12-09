@@ -38,12 +38,12 @@
     </div>
   </div>
   <div class="mt-1">
-    <p class="text-g-6 font-light">
+    <p class="font-light text-g-6">
       <span x-text="resultsText"></span>
       &nbsp;
     </p>
     <template x-if="error">
-      <div class="text-orange font-light" x-template>
+      <div class="font-light text-orange" x-template>
         Could not load results. ${error.message}
       </div>
     </template>

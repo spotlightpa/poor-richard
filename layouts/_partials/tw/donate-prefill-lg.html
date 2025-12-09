@@ -29,7 +29,7 @@
   >
     <div class="flex-1 md:w-1/2">
       <h2
-        class="text-2xl leading-tight font-bold tracking-wide text-white md:text-4xl"
+        class="text-2xl font-bold leading-tight tracking-wide text-white md:text-4xl"
       >
         {{ $donateHed }}
 
@@ -132,12 +132,12 @@
           <input
             id="other-amount"
             type="text"
-            class="border-g-4 focus:ring-red-4 block w-full appearance-none rounded-sm border-2 bg-white py-2 pl-10 font-sans text-lg font-black tracking-wide ring-1 ring-transparent outline-hidden"
+            class="outline-hidden block w-full appearance-none rounded-sm border-2 border-g-4 bg-white py-2 pl-10 font-sans text-lg font-black tracking-wide ring-1 ring-transparent focus:ring-red-4"
             inputmode="numeric"
             x-model="amount"
           />
           <span
-            class="text-g-4 pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl leading-none font-semibold"
+            class="pointer-events-none absolute inset-y-0 left-0 z-10 inline-flex w-10 items-center justify-center text-xl font-semibold leading-none text-g-4"
             aria-hidden="true"
           >
             $
