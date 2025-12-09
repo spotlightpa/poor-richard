@@ -28,7 +28,6 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@newswire/frames": "^1.0.0",
     "@tailwindcss/cli": "^4.1.17",
     "alpinejs": "^3.12.3",
