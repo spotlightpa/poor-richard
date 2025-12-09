@@ -4,21 +4,11 @@
 @layer base {
   @import "./font-merri.css";
 }
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+@layer utilities {
+  :root {
+    --fo-offset-height: 7rem;
+    --fo-padding-top: 0.5rem;
   }
 }
 
@@ -47,11 +37,9 @@
   /* Just push the scroll margin of all id="" elements down by 85px, */
   /* which is approximately enough for mobile and desktop. */
   /* Individual items can override the default scroll-margin if necessary. */
-  /*! purgecss start ignore */
   [id] {
     @apply scroll-mt-[100px];
   }
-  /*! purgecss end ignore */
 
   .featured-content > p a {
     @apply text-navy underline;
@@ -398,13 +386,6 @@
   }
 }
 
-@layer utilities {
-  :root {
-    --fo-offset-height: 7rem;
-    --fo-padding-top: 0.5rem;
-  }
-}
-
 /* if backdrop support: very transparent and blurred */
 @supports (
   not (-webkit-backdrop-filter: none) and not (backdrop-filter: none)
@@ -414,7 +395,6 @@
   }
 }
 
-/*! purgecss start ignore */
 [x-cloak] {
   display: none !important;
 }
@@ -442,5 +422,3 @@
 .has-old-js .no-js\:static {
   position: static;
 }
-
-/*! purgecss end ignore */
