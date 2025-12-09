@@ -102,7 +102,7 @@
             <span
               class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
             >
-              <svg class="fill-g-4 h-4 w-4" viewBox="0 0 1 1">
+              <svg class="text-g-4 h-4 w-4" viewBox="0 0 1 1">
                 {{ partial "helper/svg.html" "user" }}
               </svg>
             </span>
@@ -121,7 +121,7 @@
             <span
               class="text-g-4 pointer-events-none absolute inset-y-0 right-3 inline-flex items-center"
             >
-              <svg class="fill-g-4 h-4 w-4" viewBox="0 0 1 1">
+              <svg class="text-g-4 h-4 w-4" viewBox="0 0 1 1">
                 {{ partial "helper/svg.html" "email" }}
               </svg>
             </span>
@@ -153,7 +153,7 @@
                 </select>
                 <input type="hidden" name="CC" :value="cc" />
                 <span
-                  class="text-g-6 pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none"
+                  class="text-g-5 pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none"
                   aria-hidden="true"
                 >
                   <svg class="fill-g-5 h-4 w-4">
@@ -173,7 +173,7 @@
           <div class="control">
             <textarea
               id="{{ $idBody }}"
-              class="input border-g-4 min-h-[128px] w-full rounded-sm border p-1 font-sans shadow-sm"
+              class="input placeholder-g-5 border-g-4 min-h-[128px] w-full rounded-sm border bg-white p-4 font-sans shadow-sm"
               placeholder="{{ $placeholder }}"
               name="comment"
             ></textarea>

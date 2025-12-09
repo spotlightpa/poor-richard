@@ -1,12 +1,12 @@
 {{ $css := resources.Get "css/carousel.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
-<div class="carousel-container relative flex w-full items-center bg-gray-300">
+<div class="carousel-container relative flex w-full items-center">
   <div
     class="carousel-arrow left-arrow absolute top-1/2 left-0 z-30 -translate-y-1/2 cursor-pointer"
   >
     <svg
-      class="h-16 w-16 fill-white stroke-gray-800 stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+      class="h-16 w-16 stroke-[4px] text-white drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
     >
       {{ partial "helper/svg.html" "chevron-left" }}
     </svg>
@@ -22,7 +22,7 @@
       >
         <img
           class="carousel-photo absolute top-0 left-0 z-1 h-full w-full object-cover"
-          src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 1200 "height" 800) }}"
+          src="{{ partial `helper/imgproxy` (dict `filename` $item.image `width` 1200 `height` 800) }}"
           alt="{{ $item.alt }}"
         />
         <div
@@ -63,7 +63,7 @@
                 target="_blank"
               >
                 {{ $item.linkText }}
-                <svg class="ml-4 h-5 w-5 fill-black">
+                <svg class="ml-4 h-5 w-5 text-white">
                   {{ partial "helper/svg.html" "right" }}
                 </svg>
               </a>
@@ -81,7 +81,7 @@
     class="carousel-arrow right-arrow absolute top-1/2 right-0 z-30 -translate-y-1/2 cursor-pointer"
   >
     <svg
-      class="h-16 w-16 fill-white stroke-gray-800 stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+      class="h-16 w-16 stroke-[4px] text-white drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
     >
       {{ partial "helper/svg.html" "chevron-right" }}
     </svg>
