@@ -1,8 +1,0 @@
-{{ $mainJS := resources.Get "js/static/nomodules.frozen.minjs" }}
-{{ $mainJS = slice $mainJS | resources.Concat "/@src/nomodules.js" | fingerprint }}
-{{ if false }}
-  {{ $jsOpts := dict "targetPath" "/@src/nomodules.js" }}
-  {{ $mainJS = resources.Get "js/esbuild/nomodules.js" | js.Build $jsOpts }}
-  {{ $mainJS = $mainJS | babel | minify | fingerprint }}
-{{ end }}
-{{ return $mainJS.RelPermalink }}
