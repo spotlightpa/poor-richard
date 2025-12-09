@@ -3,7 +3,7 @@
 
 {{ $btnClass := `w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-g-9 transition-shadow outline-hidden ring-2 ring-transparent focus:ring-g-4 active:ring-g-8` }}
 <nav
-  class="sticky top-24 mt-6 flex w-full items-center gap-2 space-x-1 text-white sm:w-12 sm:flex-col sm:items-start md:items-end xl:w-20 print:hidden"
+  class="sticky top-24 mt-6 flex w-full items-center gap-x-3 gap-y-2 text-white sm:w-12 sm:flex-col sm:items-start md:items-end xl:w-20 print:hidden"
   data-ga-category="social-buttons"
 >
   <span class="text-g-9 font-sans text-sm font-bold uppercase sm:hidden"
@@ -73,7 +73,7 @@
     x-bind="shareButton"
     x-cloak
   >
-    <svg class="h-4 w-4 fill-current">
+    <svg class="h-3 w-3 fill-current md:h-6 md:w-6">
       {{ partial "helper/svg.html" "share" }}
     </svg>
   </button>
