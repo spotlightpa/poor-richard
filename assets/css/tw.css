@@ -252,7 +252,7 @@
   }
 
   .spl-select {
-    @apply border-g-4 text-g-6 focus:ring-yellow active:ring-yellow-6 block w-full appearance-none rounded-sm border bg-white py-2 pr-7 pl-4 font-sans ring-2 ring-transparent outline-hidden;
+    @apply border-g-4 text-g-5 focus:ring-yellow active:ring-yellow-6 block w-full appearance-none rounded-sm border bg-white py-2 pr-7 pl-4 font-sans ring-2 ring-transparent outline-hidden;
   }
 
   a.spl-links-navy,
