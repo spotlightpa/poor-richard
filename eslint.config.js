@@ -1,19 +1,19 @@
-const { includeIgnoreFile } = require("@eslint/compat");
-const { defineConfig } = require("eslint/config");
+import { includeIgnoreFile } from "@eslint/compat";
+import { defineConfig } from "eslint/config";
 
-const globals = require("globals");
-const js = require("@eslint/js");
+import globals from "globals";
+import js from "@eslint/js";
 
-const { FlatCompat } = require("@eslint/eslintrc");
+import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: import.meta.dirname,
   recommendedConfig: js.configs.recommended,
   allConfig: js.configs.all,
 });
 
-module.exports = defineConfig([
-  includeIgnoreFile(__dirname + "/.gitignore"),
+export default defineConfig([
+  includeIgnoreFile(import.meta.dirname + "/.gitignore"),
   {
     languageOptions: {
       globals: {

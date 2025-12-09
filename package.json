@@ -1,5 +1,6 @@
 {
   "name": "poor-richard",
+  "type": "module",
   "version": "0.0.1",
   "description": "Static website for Spotlight PA",
   "repository": "git@github.com:spotlightpa/poor-richard.git",
