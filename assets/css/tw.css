@@ -5,6 +5,23 @@
   @import "./font-merri.css";
 }
 
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :root {
+    --eyebrow-color: #fff;
+    --eyebrow-bg: #000;
+    --hed-color: #000;
+    --dek-color: #2e2e2e;
+    --byline-color: #2e2e2e;
+    --date-color: #2e2e2e;
+    --credit-color: #787878;
+  }
+}
+
 @layer utilities {
   :root {
     --fo-offset-height: 7rem;
@@ -30,6 +47,10 @@
 
 @utility contain-content {
   contain: layout paint style inline-size;
+}
+
+@utility print-exact {
+  print-color-adjust: exact;
 }
 
 @layer components {
@@ -365,24 +386,6 @@
 
   .embed-prose-highlight :where(b, strong) {
     @apply bg-yellow-3/75 p-1 font-semibold;
-  }
-}
-
-@layer utilities {
-  .print-exact {
-    print-color-adjust: exact;
-  }
-}
-
-@layer base {
-  :root {
-    --eyebrow-color: #fff;
-    --eyebrow-bg: #000;
-    --hed-color: #000;
-    --dek-color: #2e2e2e;
-    --byline-color: #2e2e2e;
-    --date-color: #2e2e2e;
-    --credit-color: #787878;
   }
 }
 
