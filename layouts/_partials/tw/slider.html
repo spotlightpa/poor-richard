@@ -1,10 +1,5 @@
 {{ $id := partial "helper/new-id" . }}
 {{ $wrapperClass := .wrapperClass | default "relative mx-auto mt-8 overflow-clip rounded-sm bg-black lg:-mx-32 xl:-mx-48" }}
-{{ $jsOpts := dict
-  "minify" true
-}}
-{{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
-<script src="{{ $js.RelPermalink }}" type="module"></script>
 <div x-data="carousel" class="{{ $wrapperClass }}">
   <a class="sr-only font-sans text-sm focus:not-sr-only" href="#{{ $id }}"
     >Skip slideshow…</a

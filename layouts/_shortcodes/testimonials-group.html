@@ -2,13 +2,6 @@
 {{ $featuredQuote := .Get "featuredQuote" }}
 {{ $featuredCite := .Get "featuredCite" | default "Anonymous" }}
 
-{{ $jsOpts := dict
-  "minify" true
-}}
-{{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
-  <script type="module">
-    {{ $js.Content | safeJS }}
-  </script>
 
 <section class="min-h-[65vh] bg-g-2 py-20" data-ga-category="links">
   <div class="mx-auto max-w-6xl px-5">

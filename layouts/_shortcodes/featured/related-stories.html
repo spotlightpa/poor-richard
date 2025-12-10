@@ -22,11 +22,6 @@
 {{ end }}
 {{ $pages := $topic.Pages.ByPublishDate.Reverse }}
 {{ if gt $pages.Len 1 }}
-  {{ $jsOpts := dict
-    "minify" true
-  }}
-  {{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
-  <script src="{{ $js.RelPermalink }}" type="module"></script>
   <div x-data="carousel" class="mx-auto w-full overflow-clip">
     <nav class="pt-4 font-sans md:pt-5">
       <h2
