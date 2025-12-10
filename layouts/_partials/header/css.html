@@ -1,5 +1,5 @@
 {{ with (templates.Defer (dict "key" "global")) }}
-  <link rel="stylesheet" href="{{ partialCached `helper/build-tailwind` . }}" />
+  <link rel="stylesheet" href="{{ partial `helper/build-tailwind` . }}" />
 {{ end }}
 
 {{ $color := "#f4f1ee" }}
