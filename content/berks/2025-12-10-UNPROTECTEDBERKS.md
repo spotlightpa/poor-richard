@@ -4,7 +4,7 @@ byline = "Staff at Spotlight PA"
 description = "Documentary screening and conversation with Spotlight PA CEO Chris Baxter and investigative reporter Angela Couloumbis"
 draft = false
 event-date = 2026-01-22T19:00:00-05:00
-event-title = "Unprotected Premiere"
+event-title = "Unprotected Premiere - Berks County"
 event-url = "https://www.eventbrite.com/e/unprotected-berks-county-premiere-tickets-1976908691112?aff=oddtdtcreator"
 feed-exclude = false
 image = "2025/02/01kt-z33w-dzax-gnjd.jpeg"
