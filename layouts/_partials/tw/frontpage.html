@@ -12,7 +12,7 @@
   font-sans text-base font-bold
   uppercase leading-none tracking-widest
   text-white shadow
-  outline-none ring-2 ring-transparent
+  outline-hidden ring-2 ring-transparent
   hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7`
 }}
 
@@ -23,11 +23,11 @@
   data-takeover-active="{{ cond (page.Param `takeover-active`) `1` `` }}"
 >
   <div
-    class="gap-y-14 md:grid md:grid-cols-9 xl:grid-cols-[repeat(14,_auto)] xl:items-stretch xl:justify-evenly"
+    class="gap-y-14 md:grid md:grid-cols-9 xl:grid-cols-[repeat(14,auto)] xl:items-stretch xl:justify-evenly"
   >
     {{ if .featuredStories }}
       <span
-        class="row-start-1 mt-7 hidden w-[1px] bg-black md:col-start-6 md:mx-auto md:inline-flex xl:col-start-4 xl:row-end-5 xl:mx-10"
+        class="row-start-1 mt-7 hidden w-px bg-black md:col-start-6 md:mx-auto md:inline-flex xl:col-start-4 xl:row-end-5 xl:mx-10"
       ></span>
       <div
         class="row-start-1 w-full md:col-span-5 md:col-start-1 xl:col-span-6 xl:col-start-5 xl:row-end-4 xl:min-w-[512px]"
@@ -35,7 +35,7 @@
         {{ partial "tw/featured.html" .featuredStories }}
       </div>
       <span
-        class="row-start-1 row-end-4 mt-7 hidden w-[1px] bg-black xl:col-start-11 xl:mx-10 xl:inline-flex"
+        class="row-start-1 row-end-4 mt-7 hidden w-px bg-black xl:col-start-11 xl:mx-10 xl:inline-flex"
       ></span>
     {{ end }}
     {{ if .pinnedStories }}
@@ -55,7 +55,7 @@
       <div
         class="order-4 col-span-3 row-start-1 mt-9 xl:col-start-12 xl:row-end-4 xl:w-[300px]"
       >
-        <div class="rounded bg-black p-6 font-sans text-white">
+        <div class="rounded-sm bg-black p-6 font-sans text-white">
           <h2 class="mb-4 text-2xl font-extrabold font-semibold leading-tight">
             About our {{ $title }} coverage
           </h2>
@@ -102,18 +102,18 @@
     {{ end }}
     <div
       data-ga-category="midpage"
-      class="bottom-0 row-start-4 md:relative md:col-span-9 md:mx-0 md:overflow-hidden md:rounded xl:col-span-10"
-      :class="isSticky ? '-mx-4 bottom-0 md:mx-0' : 'relative mx-0 rounded overflow-hidden'"
+      class="bottom-0 row-start-4 md:relative md:col-span-9 md:mx-0 md:overflow-hidden md:rounded-sm xl:col-span-10"
+      :class="isSticky ? '-mx-4 bottom-0 md:mx-0' : 'relative mx-0 rounded-sm overflow-hidden'"
     >
       <div
-        class="md:relative md:overflow-hidden md:rounded"
+        class="md:relative md:overflow-hidden md:rounded-sm"
         x-data="funnelStatus"
       >
         <div x-show="!isSubscriber">
           {{ partial $nlBox (dict
             "newsletterHed" (page.Param "newsletter-hed")
             "newsletterDek" (page.Param "newsletter-dek")
-            "newsletterWrapper" "bg-g-1 border border-g-4 rounded shadow-md p-4 sm:py-8 text-black"
+            "newsletterWrapper" "bg-g-1 border border-g-4 rounded-sm shadow-md p-4 sm:py-8 text-black"
             "newsletterField" (page.Param "newsletter-field")
             )
           }}
@@ -374,7 +374,7 @@
             <div class="mx-auto">
               <a
                 href="{{ .moreLink }}"
-                class="inline-block rounded-lg bg-blue-6 px-4 py-3 font-sans text-base font-bold uppercase leading-none tracking-widest text-white shadow outline-none ring-2 ring-transparent hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7"
+                class="outline-hidden inline-block rounded-lg bg-blue-6 px-4 py-3 font-sans text-base font-bold uppercase leading-none tracking-widest text-white shadow-sm ring-2 ring-transparent hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7"
               >
                 {{- "More Stories" -}}
               </a>

@@ -17,7 +17,7 @@
 >
   <div class="absolute inset-0 bg-g-4 opacity-75"></div>
   <div
-    class="absolute inset-0 backdrop-blur-sm backdrop-filter"
+    class="backdrop-blur-xs absolute inset-0 backdrop-filter"
     x-transition.delay.150ms
   ></div>
   <div
@@ -76,7 +76,7 @@
           our region.
         </p>
         <div class="mx-auto mt-8 items-stretch sm:flex sm:max-w-2xl">
-          <p class="relative flex-grow">
+          <p class="relative grow">
             <label class="sr-only" for="{{ $idEmail }}">Email address</label>
             <input
               id="{{ $idEmail }}"
@@ -97,7 +97,7 @@
           </p>
         </div>
         <button
-          class="mt-6 rounded bg-orange px-8 py-2 font-semibold uppercase tracking-wider text-white hover:shadow"
+          class="mt-6 rounded-sm bg-orange px-8 py-2 font-semibold uppercase tracking-wider text-white hover:shadow-sm"
           type="submit"
           :disabled="isLoading"
         >
@@ -114,7 +114,7 @@
         </button>
         <p class="mt-5 flex space-x-2">
           <button
-            class="flex-grow text-g-6 hover:underline"
+            class="grow text-g-6 hover:underline"
             aria-label="close"
             type="button"
             @click="seenIt()"
@@ -122,7 +122,7 @@
             I’m already a subscriber
           </button>
           <button
-            class="flex-grow text-g-6 hover:underline"
+            class="grow text-g-6 hover:underline"
             aria-label="close"
             type="button"
             @click="isOpen = false"

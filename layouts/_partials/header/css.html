@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="{{ partialCached `helper/build-tailwind` . }}" />
+{{ with (templates.Defer (dict "key" "global")) }}
+  <link rel="stylesheet" href="{{ partial `helper/build-tailwind` . }}" />
+{{ end }}
 
 {{ $color := "#f4f1ee" }}
 {{ if .Param "banner-active" }}

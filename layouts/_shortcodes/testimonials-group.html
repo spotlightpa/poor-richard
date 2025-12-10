@@ -2,13 +2,6 @@
 {{ $featuredQuote := .Get "featuredQuote" }}
 {{ $featuredCite := .Get "featuredCite" | default "Anonymous" }}
 
-{{ $jsOpts := dict
-  "minify" true
-}}
-{{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
-  <script type="module">
-    {{ $js.Content | safeJS }}
-  </script>
 
 <section class="min-h-[65vh] bg-g-2 py-20" data-ga-category="links">
   <div class="mx-auto max-w-6xl px-5">
@@ -26,7 +19,7 @@
             >
               <q class="inline before:content-[''] after:content-['']">
                 <svg
-                  class="-mt-4 inline-block h-10 w-10 fill-blue md:-ml-11 md:-mt-6 md:h-14 md:w-14"
+                  class="-mt-4 inline-block h-10 w-10 text-blue md:-ml-11 md:-mt-6 md:h-14 md:w-14"
                   aria-label="Quote"
                 >
                   {{ partial "helper/svg.html" "openquote" }}
@@ -34,7 +27,7 @@
 
                 {{ $featuredQuote | markdownify }}
                 <svg
-                  class="-mb-1 -mr-5 inline-block h-10 w-10 fill-blue md:-mr-11 md:h-14 md:w-14"
+                  class="-mb-1 -mr-5 inline-block h-10 w-10 text-blue md:-mr-11 md:h-14 md:w-14"
                   aria-label="Unquote"
                 >
                   {{ partial "helper/svg.html" "closequote" }}

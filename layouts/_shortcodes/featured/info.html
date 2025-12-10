@@ -31,7 +31,7 @@
   >
     {{ .Inner | .Page.RenderString (dict "display" "block") }}
     <div
-      class="absolute inset-0 bg-gradient-to-t from-white sm:hidden"
+      class="bg-linear-to-t absolute inset-0 from-white sm:hidden"
       x-show="!isOpen"
     ></div>
     <hr hidden />

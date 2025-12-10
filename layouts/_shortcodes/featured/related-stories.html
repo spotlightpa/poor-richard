@@ -22,11 +22,6 @@
 {{ end }}
 {{ $pages := $topic.Pages.ByPublishDate.Reverse }}
 {{ if gt $pages.Len 1 }}
-  {{ $jsOpts := dict
-    "minify" true
-  }}
-  {{ $js := resources.Get "js/esbuild/smoothscroll.js" | js.Build $jsOpts }}
-  <script src="{{ $js.RelPermalink }}" type="module"></script>
   <div x-data="carousel" class="mx-auto w-full overflow-clip">
     <nav class="pt-4 font-sans md:pt-5">
       <h2
@@ -59,10 +54,10 @@
         <!-- Prev Button -->
         <button
           x-on:click="prev"
-          class="absolute bottom-0 left-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-r from-white to-transparent text-6xl"
+          class="bg-linear-to-r absolute bottom-0 left-0 top-0 z-20 flex w-20 items-center justify-center from-white to-transparent text-6xl"
           :aria-disabled="atBeginning"
           :tabindex="atBeginning ? -1 : 0"
-          :class="{ 'opacity-1': atEnd, 'opacity-0': !atEnd }"
+          :class="{ 'opacity-100': atEnd, 'opacity-0': !atEnd }"
         >
           <span aria-hidden="true">
             <svg
@@ -99,14 +94,14 @@
             tabindex="0"
             role="region"
             aria-labelledby="carousel-label"
-            class="flex h-[26rem] w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
+            class="h-104 flex w-full snap-x snap-mandatory flex-col flex-wrap overflow-x-scroll"
           >
             {{ range $i, $pages := where $pages ".RelPermalink" "!=" $self | first $limit }}
               <li
                 data-pos="{{ $i }}"
                 x-bind="disableNextAndPreviousButtons"
                 role="option"
-                class="mr-6 h-24 w-9/12 max-w-md snap-center py-2 font-bold md:w-5/6 [&:nth-child(-n+4)]:snap-start [&:nth-last-child(-n+4)]:snap-end"
+                class="nth-[-n+4]:snap-start nth-last-[-n+4]:snap-end mr-6 h-24 w-9/12 max-w-md snap-center py-2 font-bold md:w-5/6"
               >
                 {{ $params := partialCached "helper/page-params" . .RelPermalink }}
                 {{ $imgOpts := dict
@@ -147,10 +142,10 @@
         </div>
         <button
           @click="next()"
-          class="absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center bg-gradient-to-l from-white to-transparent text-6xl"
+          class="bg-linear-to-l absolute bottom-0 right-0 top-0 z-20 flex w-20 items-center justify-center from-white to-transparent text-6xl"
           :aria-disabled="atEnd"
           :tabindex="atEnd ? -1 : 0"
-          :class="{ 'opacity-1' : atBeginning, 'opacity-0': !atBeginning }"
+          :class="{ 'opacity-100' : atBeginning, 'opacity-0': !atBeginning }"
         >
           <span aria-hidden="true">
             <svg
@@ -176,7 +171,7 @@
     {{ with $cta }}
       <a
         href="{{ $link }}"
-        class="focus:blue-red-7 mb-3 mt-1 inline-flex min-w-[145px] items-center justify-center rounded bg-blue px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-2 ring-transparent hover:bg-blue-7 active:ring-blue-5 sm:text-lg md:min-w-[218px] md:py-3 md:tracking-widest"
+        class="focus:blue-red-7 outline-hidden mb-3 mt-1 inline-flex min-w-[145px] items-center justify-center rounded-sm bg-blue px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline ring-2 ring-transparent hover:bg-blue-7 active:ring-blue-5 sm:text-lg md:min-w-[218px] md:py-3 md:tracking-widest"
       >
         {{ $cta }}</a
       >

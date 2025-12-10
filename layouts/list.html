@@ -56,7 +56,9 @@
       <div
         class="mt-7 flex flex-auto self-stretch sm:max-w-[280px] md:space-y-12 lg:max-w-[300px]"
       >
-        <div class="article-content rounded bg-black p-6 font-sans text-white">
+        <div
+          class="article-content rounded-sm bg-black p-6 font-sans text-white"
+        >
           {{ if $blurb }}
             <h2 class="text-2xl font-extrabold">
               About our {{ $title }} coverage
@@ -156,7 +158,7 @@
         {{ partial "tw/newsletter-box-lg.html" (dict
           "newsletterHed" (page.Param "newsletter-hed")
           "newsletterDek" (page.Param "newsletter-dek")
-          "newsletterWrapper" "bg-g-1 border border-g-4 rounded shadow-md p-4 sm:py-8 text-black"
+          "newsletterWrapper" "bg-g-1 border border-g-4 rounded-sm shadow-md p-4 sm:py-8 text-black"
           "newsletterField" "newsletter/basic-visible.html"
           )
         }}
@@ -165,7 +167,7 @@
         data-ga-category="donate"
         x-cloak
         x-show="isSubscriber"
-        class="md:relative md:overflow-hidden md:rounded"
+        class="md:relative md:overflow-hidden md:rounded-sm"
       >
         {{ partial "tw/donate-prefill-lg.html" (dict
           "donateHed" (page.Param "donate-hed")

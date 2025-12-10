@@ -31,7 +31,7 @@
   {{ if $image }}
     <picture class="min-h-full w-7 bg-g-3 md:w-11">
       <img
-        class="min-h-full min-w-full rounded object-cover"
+        class="min-h-full min-w-full rounded-sm object-cover"
         alt="Picture of {{ $name }}"
         src="{{ $image }}"
         loading="lazy"
@@ -56,13 +56,13 @@
   {{ with $answer }}
     {{ if ( eq $answer "Yes") }}
       <div
-        class="flex w-20 justify-center rounded border-2 border-election-green-darker bg-election-green px-5 py-1 text-base font-bold uppercase text-g-1"
+        class="flex w-20 justify-center rounded-sm border-2 border-election-green-darker bg-election-green px-5 py-1 text-base font-bold uppercase text-g-1"
       >
         {{- . -}}
       </div>
     {{ else }}
       <div
-        class="flex w-20 justify-center rounded border-2 border-yellow-5 bg-yellow px-5 py-1 text-base font-bold uppercase text-yellow-9"
+        class="flex w-20 justify-center rounded-sm border-2 border-yellow-5 bg-yellow px-5 py-1 text-base font-bold uppercase text-yellow-9"
       >
         {{- . -}}
       </div>

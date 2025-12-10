@@ -8,9 +8,9 @@
   class="mx-auto w-full bg-black text-white md:h-auto"
   x-data="scrollVimeo"
 >
-  <div class="mx-[calc(-50vw_+_50%)]">
+  <div class="mx-[calc(-50vw+50%)]">
     <iframe
-      class="aspect-[16/9] w-full"
+      class="aspect-video w-full"
       src="https://www.youtube.com/embed/{{ $playerID }}"
       title="YouTube video player"
       frameborder="0"
@@ -30,7 +30,7 @@
         x-show="onScreen"
         x-transition:enter="transition-all ease-out duration-1000 delay-700"
         x-transition:enter-start=" opacity-0"
-        x-transition:enter-end="opacity-1"
+        x-transition:enter-end="opacity-100"
       >
         {{ $hed }}
       </h3>
@@ -39,7 +39,7 @@
         x-show="onScreen"
         x-transition:enter="transition-all ease-out duration-700 delay-1000"
         x-transition:enter-start=" opacity-0"
-        x-transition:enter-end="opacity-1"
+        x-transition:enter-end="opacity-100"
       >
         {{ $inner | markdownify }}
       </p>

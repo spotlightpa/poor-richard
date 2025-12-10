@@ -1,12 +1,12 @@
 {{ $css := resources.Get "css/carousel.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
-<div class="carousel-container bg-gray-300 relative flex w-full items-center">
+<div class="carousel-container relative flex w-full items-center">
   <div
     class="carousel-arrow left-arrow absolute left-0 top-1/2 z-30 -translate-y-1/2 cursor-pointer"
   >
     <svg
-      class="stroke-gray-800 h-16 w-16 fill-white stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+      class="h-16 w-16 stroke-[4px] text-white drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
     >
       {{ partial "helper/svg.html" "chevron-left" }}
     </svg>
@@ -21,12 +21,12 @@
         data-index="{{ $index }}"
       >
         <img
-          class="carousel-photo absolute left-0 top-0 z-[1] h-full w-full object-cover"
-          src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 1200 "height" 800) }}"
+          class="carousel-photo z-1 absolute left-0 top-0 h-full w-full object-cover"
+          src="{{ partial `helper/imgproxy` (dict `filename` $item.image `width` 1200 `height` 800) }}"
           alt="{{ $item.alt }}"
         />
         <div
-          class="carousel-blurb z-[2] flex flex-1 items-center justify-center bg-black/70 p-[25px_25px_25px_70px]"
+          class="carousel-blurb z-2 flex flex-1 items-center justify-center bg-black/70 p-[25px_25px_25px_70px]"
         >
           <div class="carousel-grid">
             <div class="carousel-title-container">
@@ -63,7 +63,7 @@
                 target="_blank"
               >
                 {{ $item.linkText }}
-                <svg class="ml-4 h-5 w-5 fill-black">
+                <svg class="ml-4 h-5 w-5 text-white">
                   {{ partial "helper/svg.html" "right" }}
                 </svg>
               </a>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div
-          class="carousel-right-half relative z-[2] flex-1 bg-transparent"
+          class="carousel-right-half z-2 relative flex-1 bg-transparent"
         ></div>
       </div>
     {{ end }}
@@ -81,7 +81,7 @@
     class="carousel-arrow right-arrow absolute right-0 top-1/2 z-30 -translate-y-1/2 cursor-pointer"
   >
     <svg
-      class="stroke-gray-800 h-16 w-16 fill-white stroke-[4px] drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+      class="h-16 w-16 stroke-[4px] text-white drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
     >
       {{ partial "helper/svg.html" "chevron-right" }}
     </svg>
@@ -90,10 +90,10 @@
 
 <div class="bottom-bar relative h-[170px] w-full bg-[#424242]">
   <div
-    class="bottom-bar-gradient-box left-gradient-box pointer-events-none absolute left-[35px] top-0 z-[3] h-full w-[75px]"
+    class="bottom-bar-gradient-box left-gradient-box z-3 pointer-events-none absolute left-[35px] top-0 h-full w-[75px]"
   ></div>
   <div
-    class="bottom-bar-gradient-box right-gradient-box pointer-events-none absolute right-[35px] top-0 z-[3] h-full w-[75px]"
+    class="bottom-bar-gradient-box right-gradient-box z-3 pointer-events-none absolute right-[35px] top-0 h-full w-[75px]"
   ></div>
 
   <div class="bottom-bar-arrows">
@@ -102,7 +102,7 @@
   </div>
 
   <div
-    class="bottom-bar-boxes-container scrollbar-hide absolute left-[35px] right-[35px] top-1/2 z-[2] h-[130px] -translate-y-1/2 overflow-x-auto overflow-y-hidden"
+    class="bottom-bar-boxes-container scrollbar-hide z-2 absolute left-[35px] right-[35px] top-1/2 h-[130px] -translate-y-1/2 overflow-x-auto overflow-y-hidden"
   >
     <div class="impact-boxes-wrapper inline-flex gap-[20px]">
       {{ range $index, $item := site.Data.carousel.items }}

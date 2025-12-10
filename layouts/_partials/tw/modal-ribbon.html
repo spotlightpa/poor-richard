@@ -5,7 +5,7 @@
 
 <div
   data-modal-kind="newsletter"
-  class="fixed inset-0 z-[5000] overflow-y-scroll"
+  class="z-5000 fixed inset-0 overflow-y-scroll"
   data-ga-category="modal:newsletter:multi"
   x-data="modal"
   x-cloak
@@ -18,7 +18,7 @@
 >
   <div class="absolute inset-0 bg-g-4 opacity-75"></div>
   <div
-    class="absolute inset-0 backdrop-blur-sm backdrop-filter"
+    class="backdrop-blur-xs absolute inset-0 backdrop-filter"
     x-transition.opacity
   ></div>
   <div
@@ -58,7 +58,7 @@
             </svg>
           </button>
           <form
-            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,_auto)] gap-0 overflow-hidden rounded border-2 bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
+            class="col-span-5 col-start-1 row-start-1 -mr-5 grid-cols-[repeat(5,auto)] gap-0 overflow-hidden rounded-sm border-2 bg-white md:col-span-7 md:col-start-3 md:row-start-1 md:-ml-5 md:grid md:flex-col md:flex-wrap"
             x-data="newsletter($el.dataset.baseUrl)"
             data-base-url="{{ page.Param `newsletters-base-url` }}"
             @submit.prevent="submit"
@@ -119,7 +119,7 @@
               <label class="sr-only" for="{{ $idEmail }}">Email address</label>
               <input
                 id="{{ $idEmail }}"
-                class="box-border w-full appearance-none rounded rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 placeholder-opacity-100 outline-none ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
+                class="outline-hidden box-border w-full appearance-none rounded-sm rounded-bl rounded-tl border border-black bg-white p-2 tracking-wider text-g-8 placeholder-g-6 ring-blue-2 focus:ring-2 sm:w-7/12 sm:rounded-br-none sm:rounded-tr-none"
                 @focus.once="hasFocused = true"
                 type="email"
                 name="EMAIL"
@@ -128,7 +128,7 @@
               />
               <button
                 style="color: {{ $actionColor }};"
-                class="box-border w-5/12 rounded bg-black py-2 font-black tracking-wider hover:shadow sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
+                class="box-border w-5/12 rounded-sm bg-black py-2 font-black tracking-wider hover:shadow-sm sm:rounded-b sm:rounded-t-none sm:rounded-bl-none sm:rounded-tr md:px-8"
                 type="submit"
                 :disabled="isLoading"
               >

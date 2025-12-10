@@ -24,9 +24,9 @@
 <li
   x-bind="disableNextAndPreviousButtons"
   role="option"
-  class="h-full w-11/12 flex-[0_0_auto] snap-center px-0 font-bold md:w-11/12 [&:first-child]:snap-start [&:last-child]:snap-end"
+  class="h-full w-11/12 flex-[0_0_auto] snap-center px-0 font-bold first:snap-start last:snap-end md:w-11/12"
 >
-  <figure class="group flex-none snap-center pb-2 focus:outline-none">
+  <figure class="focus:outline-hidden group flex-none snap-center pb-2">
     <div class="relative h-0 w-full pb-16x9">
       <picture
         class="absolute inset-0 block overflow-hidden bg-g-3 transition-shadow duration-300 group-focus:shadow-md"

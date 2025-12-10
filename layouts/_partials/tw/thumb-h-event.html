@@ -1,5 +1,5 @@
-{{ $thumbClass := .thumbClass | default `w-full flex-shrink-0 sm:w-40 md:w-64` }}
-{{ $storyClass := .storyClass | default `w-full flex-grow` }}
+{{ $thumbClass := .thumbClass | default `w-full shrink-0 sm:w-40 md:w-64` }}
+{{ $storyClass := .storyClass | default `w-full grow` }}
 {{ $hedSize := .hedSize | default `text-lg` }}
 {{ $dekSize := .dekSize | default `text-xl` }}
 {{ $hedColor := .hedColor | default `text-white ` }}
@@ -29,7 +29,7 @@
       >
         <time
           datetime="{{ .dateISO }}"
-          class="flex w-14 flex-auto flex-col items-stretch overflow-hidden rounded text-center"
+          class="flex w-14 flex-auto flex-col items-stretch overflow-hidden rounded-sm text-center"
         >
           <span class="bg-yellow uppercase text-yellow-9">
             {{ $date | time.Format "Jan" }}</span

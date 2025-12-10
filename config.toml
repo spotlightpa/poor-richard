@@ -88,12 +88,9 @@ newsletters-base-url = "https://email-alerts.data.spotlightpa.org"
 
 [security.exec]
 allow = [
-  '^dart-sass-embedded$',
-  '^go$',
   '^npx$',
-  '^postcss$',
-  '^babel$',
   '^git$',
+  '^tailwindcss$',
 ]
 
 [security.funcs]

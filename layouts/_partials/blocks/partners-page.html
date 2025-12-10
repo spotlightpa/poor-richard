@@ -18,7 +18,7 @@
     x-data="{ selectedCounty: 'Allegheny' }"
   >
     <div
-      class="bg-navy-2 bg-gradient-to-b from-navy-1 via-navy-2 via-95% to-navy-2 to-100% py-8 md:py-24"
+      class="bg-linear-to-b bg-navy-2 from-navy-1 via-navy-2 via-95% to-navy-2 to-100% py-8 md:py-24"
     >
       <div class="mx-auto max-w-4xl px-5 lg:px-0">
         {{ with .title }}
@@ -74,7 +74,7 @@
     {{ with $partnerCounties }}
       <div class="m-auto w-full justify-center md:p-4 lg:pt-10 xl:px-0">
         <header
-          class="sticky top-0 w-full bg-white shadow md:relative md:shadow-none"
+          class="sticky top-0 w-full bg-white shadow-sm md:relative md:shadow-none"
         >
           <div
             class="m-auto max-w-screen-lg px-5 sm:flex md:items-center md:gap-3 md:px-0"
@@ -104,7 +104,7 @@
                 class="pointer-events-none absolute inset-y-0 right-8 z-10 inline-flex items-center justify-center leading-none text-g-6"
                 aria-hidden="true"
               >
-                <svg class="h-4 w-4 fill-g-5">
+                <svg class="h-4 w-4 text-g-5">
                   {{ partial "helper/svg.html" "chevron" }}
                 </svg>
               </span>

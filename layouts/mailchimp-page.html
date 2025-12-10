@@ -1,11 +1,7 @@
 {{ define "body-class" }}font-serif{{ end }}
 
 {{ define "extra-head" }}
-  {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true }}
-  {{ $styles := resources.Get "css/mailchimp.scss" | toCSS $scssOptions | postCSS }}
-  {{ if not hugo.IsServer }}
-    {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
-  {{ end }}
+  {{ $styles := resources.Get "css/mailchimp.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ end }}
 

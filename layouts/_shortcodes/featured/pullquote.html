@@ -1,10 +1,10 @@
 {{ $side := .Get "side" | default "center" }}
-{{ $sideClass := "pl-8 md:pl-12 lg:pl-16 bg-left-top" }}
+{{ $sideClass := "pl-8 md:pl-12 lg:pl-16 bg-top-left" }}
 {{ if eq $side "right" }}
-  {{ $sideClass = "pr-8 md:pr-12 lg:pr-16 bg-right-top text-right lg:translate-x-24" }}
+  {{ $sideClass = "pr-8 md:pr-12 lg:pr-16 bg-top-right text-right lg:translate-x-24" }}
 {{ end }}
 {{ if eq $side "left" }}
-  {{ $sideClass = "pl-8 md:pl-12 lg:pl-16 bg-left-top lg:-translate-x-24" }}
+  {{ $sideClass = "pl-8 md:pl-12 lg:pl-16 bg-top-left lg:-translate-x-24" }}
 {{ end }}
 
 {{ $short := lt (countwords .Inner) 10 }}

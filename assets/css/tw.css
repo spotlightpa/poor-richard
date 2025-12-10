@@ -1,358 +1,24 @@
-@import "./font-merri.css";
-
-@tailwind base;
-
-@tailwind components;
-
-/* Workaround for the sticky nav obscuring #anchor links. */
-/* Just push the scroll margin of all id="" elements down by 85px, */
-/* which is approximately enough for mobile and desktop. */
-/* Individual items can override the default scroll-margin if necessary. */
-/*! purgecss start ignore */
-[id] {
-  @apply scroll-mt-[100px];
-}
-/*! purgecss end ignore */
-
-.featured-content > p a {
-  @apply text-navy underline;
-  @apply transition-colors duration-500;
-}
-
-.featured-content > p a:hover {
-  @apply text-yellow;
-}
-
-.featured-content > p del {
-  @apply text-orange line-through;
-}
-
-.featured-content > :where(p, aside, figure, form, ol, ul) + :where(p, ol, ul),
-.featured-content > :where(ol, ul) > li + li,
-.featured-content > :where(ol, ul) > li > p + p,
-.featured-content > p + p,
-.featured-content > aside + p,
-.featured-content > figure + p {
-  @apply mt-8;
-}
-
-.featured-content > h2 {
-  @apply mb-2 mt-8 font-sans text-4xl font-semibold leading-tight;
-}
-
-.featured-content > h3 {
-  @apply mb-8 font-sans text-3xl italic leading-none;
-}
-
-.featured-content > h3:before {
-  content: "";
-  @apply mb-4 mt-16 block h-1 w-12 bg-yellow;
-}
-
-.featured-content > h4 {
-  @apply mb-4 mt-8 font-sans text-lg font-semibold leading-tight;
-}
-
-.featured-content > h5 {
-  @apply mb-2 mt-6 text-base font-semibold leading-tight;
-}
-
-.featured-content > h6 {
-  @apply mb-1 mt-4 text-base italic leading-tight;
-}
-
-.featured-content > ul {
-  @apply list-disc pl-6;
-}
-
-.featured-content > ol {
-  @apply list-decimal pl-6;
-}
-
-.article-content > :where(p, aside, figure, ol, ul, hr) {
-  @apply mb-4 mt-4;
-}
-
-.article-content > :where(iframe) {
-  @apply my-12;
-}
-
-.article-content > :first-child {
-  @apply mt-0;
-}
-
-.article-content > :last-child {
-  @apply mb-0;
-}
-
-.article-content
-  > :where(p, ol, ul, div, figure)
-  + :where(h1, h2, h3, h4, h5, h6) {
-  @apply mt-8;
-}
-
-.article-content > h1 {
-  @apply mb-4 font-sans text-3xl font-semibold leading-tight;
-}
-
-.article-content > h2 {
-  @apply mb-4 text-2xl font-semibold leading-tight;
-}
-
-.article-content > h3 {
-  @apply mb-4 text-xl font-semibold leading-tight;
-}
-
-.article-content > h4 {
-  @apply mb-4 text-lg font-semibold leading-tight;
-}
-
-.article-content > h5 {
-  @apply mb-4 text-base font-semibold leading-tight;
-}
-
-.article-content > h6 {
-  @apply mb-4 text-base italic leading-tight;
-}
-
-.article-content > ul {
-  @apply list-disc pl-8;
-}
-
-.article-content > :where(ul, ol) :where(ul, ol) {
-  @apply pl-6;
-}
-
-.article-content > :where(ul, ol) ul {
-  @apply list-[circle];
-}
-
-.article-content .toc {
-  @apply my-8 rounded border border-g-3 bg-g-2 px-6 py-4 shadow;
-}
-
-.article-content .toc h3 {
-  @apply mb-2 text-xl font-semibold leading-tight;
-}
-.article-content .toc ul {
-  @apply list-disc pl-5;
-}
-
-.article-content .toc :where(ul, ol) :where(ul, ol) {
-  @apply pl-6;
-}
-
-.article-content .toc :where(ul, ol) ul {
-  @apply list-[circle];
-}
-
-.article-content > ol {
-  @apply list-decimal pl-8;
-}
-
-.article-content :where(code) {
-  @apply -my-[2px] mx-1 rounded-sm bg-g-2 px-1 py-[2px] text-red-8;
-}
-
-.article-content :where(a) {
-  @apply text-navy underline;
-  @apply transition-colors duration-500;
-}
-
-.article-content :where(a:hover) {
-  @apply text-yellow;
-}
-
-.article-content > p del {
-  @apply text-orange line-through;
-}
-
-.content-aside > p {
-  @apply leading-relaxed;
-}
-
-.content-aside a {
-  @apply text-navy underline;
-  @apply transition-colors duration-500;
-}
-
-.content-aside a:hover {
-  @apply text-yellow;
-}
-
-.content-aside > ul {
-  @apply list-inside list-disc;
-}
-
-.content-aside > ol {
-  @apply list-inside list-decimal;
-}
-
-@screen sm {
-  .content-aside > ul {
-    @apply list-outside;
-  }
-
-  .content-aside > ol {
-    @apply list-outside;
-  }
-}
-
-.content-aside > h1,
-.content-aside > h2,
-.content-aside > h3,
-.content-aside > h4 {
-  @apply text-lg font-bold uppercase leading-none;
-}
-
-.content-aside > * + h1,
-.content-aside > * + h2,
-.content-aside > * + h3,
-.content-aside > * + h4 {
-  @apply mt-8;
-}
-
-.content-aside > * + *,
-.content-aside ul > li + li,
-.content-aside ol > li + li {
-  @apply mt-3;
-}
-
-.spl-input {
-  @apply w-full rounded border border-g-4 py-2 pl-4 pr-7 font-sans leading-normal text-g-9 outline-none ring-2 ring-transparent focus:ring-yellow;
-}
-
-.spl-select {
-  @apply block w-full appearance-none rounded border border-g-4 bg-white py-2 pl-4 pr-7 font-sans text-g-6 outline-none ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
-}
-
-a.spl-links-navy,
-.spl-links-navy a {
-  @apply text-navy underline underline-offset-2 transition-colors duration-500 hover:text-yellow;
-}
-
-a.spl-links-yellow,
-.spl-links-yellow a {
-  @apply text-yellow underline underline-offset-2 transition-colors duration-500 hover:text-blue;
-}
-
-.btn-signup {
-  @apply rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
-}
-
-.btn-signup-slim {
-  @apply w-full rounded border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase leading-tight tracking-widest text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
-}
-
-.btn-signup-lg {
-  @apply inline-block rounded bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 outline-none ring-yellow-6 hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
-}
-
-.btn-donate {
-  @apply inline-block rounded border-2 border-red bg-red px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-red-7 hover:bg-red-5 focus:ring-2 focus:ring-red-7 active:ring-red-9;
-}
-
-.btn-donate-slim {
-  @apply w-full rounded bg-red px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-2 ring-transparent hover:bg-red-7 focus:ring-red-7 active:ring-red-5;
-}
-
-.btn-donate-lg {
-  @apply inline-flex min-w-[145px] items-center justify-center rounded bg-red px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline outline-none ring ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px] md:py-5;
-}
-.btn-select {
-  @apply inline-block rounded border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline outline-none ring-blue hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
-}
-
-.spl-newsletter {
-  @apply my-2 sm:float-right sm:ml-3 sm:w-1/2 md:-mr-12 md:max-w-[439px] lg:-mr-0 lg:w-full lg:max-w-96 xl:-mr-20 xl:max-w-[475px];
-}
-
-.spl-donate {
-  @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96;
-}
-
-.demo-embeds .spl-newsletter,
-.demo-embeds .spl-donate {
-  float: none !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.demo-embeds .spl-newsletter .mx-auto {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  max-width: 100% !important;
-}
-
-.clip-triangle {
-  clip-path: polygon(0 0, 0% 100%, 15% 50%);
-}
-
-.bg-key {
-  background-image: url("/featured/img/icon__key__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 150px;
-}
-
-.bg-info {
-  background-image: url("/featured/img/icon__info__graphic.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 150px;
-}
-
-.bg-pullquote {
-  background-image: url("/featured/img/quote__graphic.png");
-  background-repeat: no-repeat;
-  background-size: 100px;
-}
-
-.custom-scrollbar {
-  scrollbar-color: transparent transparent;
-}
-
-.custom-scrollbar:hover {
-  scrollbar-color: #f5f5f5 transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  @apply h-2 bg-transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-transparent;
-}
-
-.custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  @apply bg-g-2;
-}
-
-.embed-prose :where(b, strong) {
-  @apply font-extrabold;
-}
-
-.embed-prose-highlight :where(b, strong) {
-  @apply bg-yellow-3/75 p-1 font-semibold;
-}
-
-@tailwind utilities;
-
-.print-exact {
-  print-color-adjust: exact;
+@import "tailwindcss";
+@config "./tailwind.config.js";
+@source "hugo_stats.json";
+@layer base {
+  @import "./font-merri.css";
 }
 
 @layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
   :root {
-    --eyebrow-color: theme("colors.white");
-    --eyebrow-bg: theme("colors.black");
-    --hed-color: theme("colors.black");
-    --dek-color: theme("colors.g.9");
-    --byline-color: theme("colors.g.9");
-    --date-color: theme("colors.g.9");
-    --credit-color: theme("colors.g.7");
+    --eyebrow-color: #fff;
+    --eyebrow-bg: #000;
+    --hed-color: #000;
+    --dek-color: #2e2e2e;
+    --byline-color: #2e2e2e;
+    --date-color: #2e2e2e;
+    --credit-color: #787878;
   }
 }
 
@@ -361,25 +27,365 @@ a.spl-links-yellow,
     --fo-offset-height: 7rem;
     --fo-padding-top: 0.5rem;
   }
+}
 
-  .float-offset {
-    shape-outside: inset(var(--fo-offset-height) 0 0 0);
-    padding-top: calc(var(--fo-offset-height) + var(--fo-padding-top));
+@utility float-offset {
+  shape-outside: inset(var(--fo-offset-height) 0 0 0);
+  padding-top: calc(var(--fo-offset-height) + var(--fo-padding-top));
+}
+
+@utility text-shadow {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+@utility sideways-heading {
+  @apply flex justify-end;
+  transform: rotate(180deg);
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+}
+
+@utility contain-content {
+  contain: layout paint style inline-size;
+}
+
+@utility print-exact {
+  print-color-adjust: exact;
+}
+
+@layer components {
+  /* Workaround for the sticky nav obscuring #anchor links. */
+  /* Just push the scroll margin of all id="" elements down by 85px, */
+  /* which is approximately enough for mobile and desktop. */
+  /* Individual items can override the default scroll-margin if necessary. */
+  [id] {
+    @apply scroll-mt-[100px];
   }
 
-  .text-shadow {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  .featured-content > p a {
+    @apply text-navy underline;
+    @apply transition-colors duration-500;
   }
 
-  .sideways-heading {
-    @apply flex justify-end;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    writing-mode: vertical-rl;
+  .featured-content > p a:hover {
+    @apply text-yellow;
   }
 
-  .contain-content {
-    contain: layout paint style inline-size;
+  .featured-content > p del {
+    @apply text-orange line-through;
+  }
+
+  .featured-content
+    > :where(p, aside, figure, form, ol, ul)
+    + :where(p, ol, ul),
+  .featured-content > :where(ol, ul) > li + li,
+  .featured-content > :where(ol, ul) > li > p + p,
+  .featured-content > p + p,
+  .featured-content > aside + p,
+  .featured-content > figure + p {
+    @apply mt-8;
+  }
+
+  .featured-content > h2 {
+    @apply mb-2 mt-8 font-sans text-4xl font-semibold leading-tight;
+  }
+
+  .featured-content > h3 {
+    @apply mb-8 font-sans text-3xl italic leading-none;
+  }
+
+  .featured-content > h3:before {
+    content: "";
+    @apply mb-4 mt-16 block h-1 w-12 bg-yellow;
+  }
+
+  .featured-content > h4 {
+    @apply mb-4 mt-8 font-sans text-lg font-semibold leading-tight;
+  }
+
+  .featured-content > h5 {
+    @apply mb-2 mt-6 text-base font-semibold leading-tight;
+  }
+
+  .featured-content > h6 {
+    @apply mb-1 mt-4 text-base italic leading-tight;
+  }
+
+  .featured-content > ul {
+    @apply list-disc pl-6;
+  }
+
+  .featured-content > ol {
+    @apply list-decimal pl-6;
+  }
+
+  .article-content > :where(p, aside, figure, ol, ul, hr) {
+    @apply mb-4 mt-4;
+  }
+
+  .article-content > :where(iframe) {
+    @apply my-12;
+  }
+
+  .article-content > :first-child {
+    @apply mt-0;
+  }
+
+  .article-content > :last-child {
+    @apply mb-0;
+  }
+
+  .article-content
+    > :where(p, ol, ul, div, figure)
+    + :where(h1, h2, h3, h4, h5, h6) {
+    @apply mt-8;
+  }
+
+  .article-content > h1 {
+    @apply mb-4 font-sans text-3xl font-semibold leading-tight;
+  }
+
+  .article-content > h2 {
+    @apply mb-4 text-2xl font-semibold leading-tight;
+  }
+
+  .article-content > h3 {
+    @apply mb-4 text-xl font-semibold leading-tight;
+  }
+
+  .article-content > h4 {
+    @apply mb-4 text-lg font-semibold leading-tight;
+  }
+
+  .article-content > h5 {
+    @apply mb-4 text-base font-semibold leading-tight;
+  }
+
+  .article-content > h6 {
+    @apply mb-4 text-base italic leading-tight;
+  }
+
+  .article-content > ul {
+    @apply list-disc pl-8;
+  }
+
+  .article-content > :where(ul, ol) :where(ul, ol) {
+    @apply pl-6;
+  }
+
+  .article-content > :where(ul, ol) ul {
+    @apply list-[circle];
+  }
+
+  .article-content .toc {
+    @apply my-8 rounded-sm border border-g-3 bg-g-2 px-6 py-4 shadow-sm;
+  }
+
+  .article-content .toc h3 {
+    @apply mb-2 text-xl font-semibold leading-tight;
+  }
+  .article-content .toc ul {
+    @apply list-disc pl-5;
+  }
+
+  .article-content .toc :where(ul, ol) :where(ul, ol) {
+    @apply pl-6;
+  }
+
+  .article-content .toc :where(ul, ol) ul {
+    @apply list-[circle];
+  }
+
+  .article-content > ol {
+    @apply list-decimal pl-8;
+  }
+
+  .article-content :where(code) {
+    @apply rounded-xs -my-[2px] mx-1 bg-g-2 px-1 py-[2px] text-red-8;
+  }
+
+  .article-content :where(a) {
+    @apply text-navy underline;
+    @apply transition-colors duration-500;
+  }
+
+  .article-content :where(a:hover) {
+    @apply text-yellow;
+  }
+
+  .article-content > p del {
+    @apply text-orange line-through;
+  }
+
+  .content-aside > p {
+    @apply leading-relaxed;
+  }
+
+  .content-aside a {
+    @apply text-navy underline;
+    @apply transition-colors duration-500;
+  }
+
+  .content-aside a:hover {
+    @apply text-yellow;
+  }
+
+  .content-aside > ul {
+    @apply list-inside list-disc;
+  }
+
+  .content-aside > ol {
+    @apply list-inside list-decimal;
+  }
+
+  @media (width >= theme(--breakpoint-sm)) {
+    .content-aside > ul {
+      @apply list-outside;
+    }
+
+    .content-aside > ol {
+      @apply list-outside;
+    }
+  }
+
+  .content-aside > h1,
+  .content-aside > h2,
+  .content-aside > h3,
+  .content-aside > h4 {
+    @apply text-lg font-bold uppercase leading-none;
+  }
+
+  .content-aside > * + h1,
+  .content-aside > * + h2,
+  .content-aside > * + h3,
+  .content-aside > * + h4 {
+    @apply mt-8;
+  }
+
+  .content-aside > * + *,
+  .content-aside ul > li + li,
+  .content-aside ol > li + li {
+    @apply mt-3;
+  }
+
+  .spl-input {
+    @apply outline-hidden w-full rounded-sm border border-g-4 bg-white py-2 pl-4 pr-7 font-sans leading-normal text-g-9 placeholder-g-5 ring-2 ring-transparent focus:ring-yellow;
+  }
+
+  .spl-select {
+    @apply outline-hidden block w-full appearance-none rounded-sm border border-g-4 bg-white py-2 pl-4 pr-7 font-sans text-g-5 ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
+  }
+
+  a.spl-links-navy,
+  .spl-links-navy a {
+    @apply text-navy underline underline-offset-2 transition-colors duration-500 hover:text-yellow;
+  }
+
+  a.spl-links-yellow,
+  .spl-links-yellow a {
+    @apply text-yellow underline underline-offset-2 transition-colors duration-500 hover:text-blue;
+  }
+
+  .btn-signup {
+    @apply outline-hidden rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
+  }
+
+  .btn-signup-slim {
+    @apply outline-hidden w-full rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase leading-tight tracking-widest text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
+  }
+
+  .btn-signup-lg {
+    @apply outline-hidden inline-block rounded-sm bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
+  }
+
+  .btn-donate {
+    @apply outline-hidden inline-block rounded-sm border-2 border-red bg-red px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline ring-red-7 hover:bg-red-5 focus:ring-2 focus:ring-red-7 active:ring-red-9;
+  }
+
+  .btn-donate-slim {
+    @apply outline-hidden w-full rounded-sm bg-red px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline ring-2 ring-transparent hover:bg-red-7 focus:ring-red-7 active:ring-red-5;
+  }
+
+  .btn-donate-lg {
+    @apply ring-3 outline-hidden inline-flex min-w-[145px] items-center justify-center rounded-sm bg-red px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px] md:py-5;
+  }
+  .btn-select {
+    @apply outline-hidden inline-block rounded-sm border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline ring-blue hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
+  }
+
+  .spl-newsletter {
+    @apply my-2 sm:float-right sm:ml-3 sm:w-1/2 md:-mr-12 md:max-w-[439px] lg:mr-0 lg:w-full lg:max-w-96 xl:-mr-20 xl:max-w-[475px];
+  }
+
+  .spl-donate {
+    @apply my-2 sm:float-left sm:mr-3 sm:w-1/2 md:max-w-[439px] lg:w-full lg:max-w-96;
+  }
+
+  .demo-embeds .spl-newsletter,
+  .demo-embeds .spl-donate {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .demo-embeds .spl-newsletter .mx-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .clip-triangle {
+    clip-path: polygon(0 0, 0% 100%, 15% 50%);
+  }
+
+  .bg-key {
+    background-image: url("/featured/img/icon__key__graphic.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150px;
+  }
+
+  .bg-info {
+    background-image: url("/featured/img/icon__info__graphic.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150px;
+  }
+
+  .bg-pullquote {
+    background-image: url("/featured/img/quote__graphic.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
+
+  .custom-scrollbar {
+    scrollbar-color: transparent transparent;
+  }
+
+  .custom-scrollbar:hover {
+    scrollbar-color: #f5f5f5 transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply h-2 bg-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-transparent;
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    @apply bg-g-2;
+  }
+
+  .embed-prose :where(b, strong) {
+    @apply font-extrabold;
+  }
+
+  .embed-prose-highlight :where(b, strong) {
+    @apply bg-yellow-3/75 p-1 font-semibold;
   }
 }
 
@@ -392,7 +398,6 @@ a.spl-links-yellow,
   }
 }
 
-/*! purgecss start ignore */
 [x-cloak] {
   display: none !important;
 }
@@ -420,5 +425,3 @@ a.spl-links-yellow,
 .has-old-js .no-js\:static {
   position: static;
 }
-
-/*! purgecss end ignore */
