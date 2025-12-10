@@ -4,7 +4,7 @@ byline = "Staff at Spotlight PA"
 description = "Documentary screening and conversation with Spotlight PA CEO Chris Baxter and investigative reporter Angela Couloumbis"
 draft = false
 event-date = 2026-01-22T19:00:00-05:00
-event-title = "Unprotected Premier"
+event-title = "Unprotected Premiere"
 event-url = "https://www.eventbrite.com/e/unprotected-berks-county-premiere-tickets-1976908691112?aff=oddtdtcreator"
 feed-exclude = false
 image = "2025/02/01kt-z33w-dzax-gnjd.jpeg"
@@ -17,12 +17,12 @@ pinned = false
 published = 2025-12-10T15:58:15.219-05:00
 slug = "unprotected-berks-premier-events"
 suppress-date = false
-title = "Unprotected Premier"
-title-tag = "Unprotected documentary premier in Berks County"
+title = "Unprotected Premiere - Berks County"
+title-tag = "Unprotected documentary premiere in Berks County"
 topics = ["Events"]
 +++
 
-Chris Baxter, President/CEO of Spotlight PA, will provide an overview before screening the premiere in Berks County of Spotlight PA&#39;s first-ever documentary, <em>Unprotected</em>. <em>Unprotected</em> goes behind the scenes of the Spotlight PA&#39;s reporting on Pennsylvania&#39;s broken system for protecting older adults from abuse.
+Chris Baxter, President/CEO of Spotlight PA, will provide an overview before screening the premiere in Berks County of Spotlight PA&#39;s first-ever documentary, <em>Unprotected</em>. <em>Unprotected</em> goes behind the scenes of Spotlight PA&#39;s reporting on Pennsylvania&#39;s broken system for protecting older adults from abuse.
 
 Baxter will be joined by Angela Couloumbis, Spotlight PA&#39;s award-winning investigative reporter, who will give audience members an inside account of revelations found from her years of research and <a href="https://www.spotlightpa.org/series/unprotected/">reporting on this topic</a>, followed by an open Q&amp;A discussion.
 
