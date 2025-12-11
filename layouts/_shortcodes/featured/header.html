@@ -108,12 +108,12 @@
 
       <div class="mt-4 font-sans">
         <a
-          class="inline-flex items-baseline rounded bg-red px-3 py-1 font-semibold uppercase text-white"
+          class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold uppercase text-white"
           href="/donate/"
           data-ga-category="donate"
         >
           <svg
-            class="relative top-[1px] mr-[2px] inline-block h-4 w-4 fill-current align-middle"
+            class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
             viewBox="0 0 20 20"
             aria-hidden="true"
           >
@@ -125,7 +125,7 @@
     </div>
   </div>
 
-  <div class="relative order-first pb-16x9 md:order-none md:w-3/5">
+  <div class="md:order-0 relative order-first pb-16x9 md:w-3/5">
     <picture class="absolute inset-0 bg-g-3">
       {{ if $videoSrc }}
         <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />

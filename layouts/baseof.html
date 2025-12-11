@@ -22,11 +22,13 @@
     {{ end }}
 
     {{ block "preload" . }}
-      <link
-        rel="preload"
-        href="{{ partialCached `helper/build-tailwind` . }}"
-        as="style"
-      />
+      {{ with (templates.Defer (dict "key" "global")) }}
+        <link
+          rel="preload"
+          href="{{ partial `helper/build-tailwind` . }}"
+          as="style"
+        />
+      {{ end }}
       <link
         rel="modulepreload"
         href="{{ partialCached `helper/get-enhancements` . }}"
@@ -67,7 +69,7 @@
         x-data="{ atTop: true }"
         data-ga-category="header"
         @scroll.window.debounce.passive="atTop = window.pageYOffset <= 10"
-        class="no-js:static sticky top-0 z-[1000]"
+        class="no-js:static z-1000 sticky top-0"
       >
         {{ block "banner" . }}
           {{ if .Param "banner-active" }}
@@ -97,7 +99,7 @@
     </main>
     <footer id="footer" data-ga-category="footer">
       {{ block "before-footer" . }}
-        {{ partialCached "tw/promo-footer.html" (dict
+        {{ partial "tw/promo-footer.html" (dict
           "wrapperClass" "bg-white pt-2 pb-14 px-6 no-js:hidden")
         }}
       {{ end }}
@@ -129,9 +131,8 @@
 
 
     <script
-      src="{{ partialCached `helper/get-enhancements` . }}"
+      src="{{ partial `helper/get-enhancements` . }}"
       type="module"
-      onerror="Array.from(document.querySelectorAll('script[nomodule]')).forEach(el=>{ let newEl = document.createElement('script'); newEl.src = el.src; document.head.append(newEl); });"
     ></script>
     {{ partial "header/third-party.html" . }}
     {{ partial "header/ld-json.html" . }}

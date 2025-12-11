@@ -18,7 +18,7 @@
             "scriptSrc" $scriptSrc
           }}
           <div
-            class="mb-10 rounded border border-g-4 bg-g-2 p-5 shadow"
+            class="mb-10 rounded-sm border border-g-4 bg-g-2 p-5 shadow-sm"
             x-data="embedList({
               url: $el.dataset.url,
               scriptSrc: $el.dataset.scriptSrc
@@ -55,10 +55,10 @@
                           {{ end }}
                         </select>
                         <span
-                          class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-6"
+                          class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none"
                           aria-hidden="true"
                         >
-                          <svg class="h-4 w-4 fill-g-5">
+                          <svg class="h-4 w-4 text-g-5">
                             {{ partial "helper/svg.html" "chevron" }}
                           </svg>
                         </span>
@@ -88,7 +88,7 @@
                   <div class="control">
                     <code
                       contenteditable="true"
-                      class="mx-0 block break-all rounded-sm border border-g-4 bg-white p-2 text-black"
+                      class="rounded-xs mx-0 block break-all border border-g-4 bg-white p-2 text-black"
                       x-text="embedCode"
                     ></code>
                   </div>
@@ -98,10 +98,10 @@
                     <button
                       type="button"
                       title="Copy"
-                      class="m-2 mx-0 flex items-center rounded bg-blue px-5 py-2 font-black tracking-wider text-white shadow"
+                      class="m-2 mx-0 flex items-center rounded-sm bg-blue px-5 py-2 font-black tracking-wider text-white shadow-sm"
                       @click="copy()"
                     >
-                      <svg class="mr-3 h-6 w-6 fill-white">
+                      <svg class="mr-3 h-6 w-6 text-white">
                         {{ partial "helper/svg.html" "copy" }}
                       </svg>
                       <span>Copy text</span>

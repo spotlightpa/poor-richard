@@ -1,6 +1,6 @@
 {{ $emailBody := printf "Read this from Spotlight PA\n\n%s\n%s\n\n%s" .LinkTitle .Description .Permalink }}
 {{ $emailSubject := .LinkTitle }}
-{{ $btnClass := `flex h-12 w-12 self-center rounded transition-colors duration-500` }}
+{{ $btnClass := `flex h-12 w-12 self-center rounded-sm transition-colors duration-500` }}
 
 
 <nav class="flex flex-col space-y-1 text-g-4" data-ga-category="social-buttons">

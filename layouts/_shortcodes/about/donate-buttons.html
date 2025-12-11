@@ -8,12 +8,12 @@
 >
   {{ $url := "https://www.spotlightpa.com/" }}
   <a
-    class="m-2 flex items-center rounded bg-blue-7 px-5 py-2 font-black tracking-wider text-white shadow"
+    class="m-2 flex items-center rounded-sm bg-blue-7 px-5 py-2 font-black tracking-wider text-white no-underline shadow-sm"
     href="https://www.facebook.com/dialog/feed?app_id=589296315209793&display=page&link={{ $url }}"
     data-ga-category="facebook"
     title="Share your donation on Facebook"
   >
-    <span class="mr-3 h-6 w-6 fill-white">
+    <span class="mr-3 h-6 w-6 text-white">
       <svg viewBox="0 0 1 1">
         {{ partial "helper/svg.html" "fb" }}
       </svg>
@@ -23,12 +23,12 @@
   {{ $url = "https://www.spotlightpa.com/donate/" }}
   {{ $text := `I just donated to @SpotlightPA because Pennsylvania needs more accountability journalism. Join me:` }}
   <a
-    class="m-2 flex items-center rounded bg-blue-4 px-5 py-2 font-black tracking-wider text-white shadow"
+    class="m-2 flex items-center rounded-sm bg-blue-4 px-5 py-2 font-black tracking-wider text-white no-underline shadow-sm"
     href="https://twitter.com/intent/tweet?text={{ $text }}&via=SpotlightPA&url={{ $url }}&tw_p=tweetbutton"
     data-ga-category="twitter"
     title="Tweet about your donation"
   >
-    <span class="mr-3 h-6 w-6 fill-white">
+    <span class="mr-3 h-6 w-6 text-white">
       <svg viewBox="0 0 1 1">
         {{ partial "helper/svg.html" "twitter" }}
       </svg>
@@ -37,11 +37,11 @@
   </a>
   <a
     href="mailto:?subject={{ $subject }}&amp;body={{ $emailBody }}"
-    class="m-2 flex items-center rounded bg-green px-5 py-2 font-black tracking-wider text-white no-underline shadow"
+    class="m-2 flex items-center rounded-sm bg-green px-5 py-2 font-black tracking-wider text-white no-underline shadow-sm"
     title="Share your donation by email"
     data-ga-category="email"
   >
-    <span class="mr-3 h-6 w-6 fill-white">
+    <span class="mr-3 h-6 w-6 text-white">
       <svg viewBox="0 0 1 1">
         {{ partial "helper/svg.html" "email" }}
       </svg>

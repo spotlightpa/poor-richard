@@ -14,7 +14,7 @@
     {{ if $author.active }}
       <header
         id="{{ $author.slug }}"
-        class="mx-auto mb-8 grid max-w-screen-md grid-cols-[repeat(2,_114px)_repeat(3,_1fr)] grid-rows-[auto_auto_auto] gap-5 rounded bg-white p-5 font-sans shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%_-_1rem)]"
+        class="mx-auto mb-8 grid max-w-screen-md grid-cols-[repeat(2,114px)_repeat(3,1fr)] grid-rows-[auto_auto_auto] gap-5 rounded-sm bg-white p-5 font-sans shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%-1rem)]"
       >
         {{ if $author.headshot }}
           {{ $sizes := (slice
@@ -40,7 +40,7 @@
             {{ partial "tag/picture-maybe-link.html" (dict
               "link" $author.link
               "wrapperClass" "m-auto flex max-h-full"
-              "pictureClass" "w-full h-full rounded-full overflow-hidden shadow"
+              "pictureClass" "w-full h-full rounded-full overflow-hidden shadow-sm"
               "imgClass" "w-full h-full object-cover"
               "sizeHint" "256px"
               "eager" false
@@ -59,7 +59,7 @@
           >
             <span class="m-auto flex aspect-square max-h-full">
               <svg
-                class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow"
+                class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow-sm"
                 viewBox="0 0 1 1"
                 aria-hidden="true"
               >
@@ -97,7 +97,7 @@
           <p class="text-sm font-black uppercase">{{ $author.title }}</p>
           <dl class="mt-3 flex flex-wrap">
             {{ with $author.email }}
-              <dt class="flex-0 mr-2 flex items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "email" }}
@@ -117,7 +117,7 @@
               </dd>
             {{ end }}
             {{ with $author.bluesky }}
-              <dt class="flex-0 mr-2 flex items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1">
                     {{ partial "helper/svg.html" "bluesky" }}
@@ -137,7 +137,7 @@
               </dd>
             {{ end }}
             {{ with $author.tel }}
-              <dt class="flex-0 mr-2 flex items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
                     {{ partial "helper/svg.html" "phone" }}
@@ -155,7 +155,7 @@
               </dd>
             {{ end }}
             {{ with $author.signal }}
-              <dt class="flex-0 mr-2 flex items-center">
+              <dt class="mr-2 flex items-center">
                 <span class="mr-2 h-4 w-4">
                   <svg viewBox="0 0 1 1" aria-hidden="true">
                     {{ partial "helper/svg.html" "chat" }}

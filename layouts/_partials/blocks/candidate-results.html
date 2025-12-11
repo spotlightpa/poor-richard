@@ -55,7 +55,7 @@
             <template x-if="!! candidate.image">
               <picture class="min-h-full w-7 bg-g-3 md:w-11">
                 <img
-                  class="min-h-full min-w-full rounded object-cover"
+                  class="min-h-full min-w-full rounded-sm object-cover"
                   :alt="`Picture of ${candidate.name}`"
                   :src="candidate.image"
                   loading="lazy"
@@ -64,10 +64,10 @@
             </template>
             <template x-if="!candidate.image">
               <div
-                class="aspect-[88/80] min-h-full w-7 rounded bg-g-3 p-1 md:w-11"
+                class="aspect-88/80 min-h-full w-7 rounded-sm bg-g-3 p-1 md:w-11"
               >
                 <svg
-                  class="aspect-[88/80] w-full overflow-hidden fill-current text-g-8"
+                  class="aspect-88/80 w-full overflow-hidden fill-current text-g-8"
                   viewBox="0 0 1 1"
                   aria-hidden="true"
                 >
@@ -89,7 +89,7 @@
             <div class="flex h-6 w-full max-w-[248px]">
               <template x-for="_ in new Array( candidate.points ).fill(null)">
                 <span
-                  class="mr-1 block h-6 w-6 rounded-sm bg-election-green last:mr-0"
+                  class="rounded-xs mr-1 block h-6 w-6 bg-election-green last:mr-0"
                 ></span>
               </template>
             </div>

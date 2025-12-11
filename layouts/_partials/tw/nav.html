@@ -19,7 +19,7 @@
     >
       <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
         <svg
-          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-[13rem] md:mr-0 md:h-12 md:w-48 lg:h-14 lg:w-[15rem]"
+          class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-52 md:mr-0 md:h-12 md:w-48 lg:h-14 lg:w-60"
           x-show="atTop"
           x-transition:enter="transition ease-out duration-150"
           x-transition:enter-start="opacity-0 scale-10"
@@ -47,7 +47,7 @@
       <div
         id="hamburger-menu"
         x-cloak
-        class="max-w-screen absolute left-2 right-2 z-30 -mt-2 max-h-screen overflow-x-hidden rounded border border-g-5 bg-white py-12 after:absolute after:left-0 after:right-0 after:top-0 after:z-30 after:h-20 after:bg-gradient-to-b after:from-white after:via-white after:to-transparent after:content-[''] sm:left-auto sm:right-3 sm:w-[calc(100%_-_1.5rem)] sm:grid-cols-2 lg:left-0 lg:right-0"
+        class="max-w-screen after:bg-linear-to-b absolute left-2 right-2 z-30 -mt-2 max-h-screen overflow-x-hidden rounded-sm border border-g-5 bg-white py-12 after:absolute after:left-0 after:right-0 after:top-0 after:z-30 after:h-20 after:from-white after:via-white after:to-transparent after:content-[''] sm:left-auto sm:right-3 sm:w-[calc(100%-1.5rem)] sm:grid-cols-2 lg:left-0 lg:right-0"
         :class="{ 'hidden': !isOpen, '': isOpen }"
         x-trap="isOpen"
         role="menu"
@@ -148,7 +148,7 @@
               ></span>
               <span
                 class="mt-1 block h-[2px] w-5 origin-center rounded-full bg-black transition-transform ease-in-out"
-                :class="isOpen ? 'w-0 opacity-0' : 'opacity-1'"
+                :class="isOpen ? 'w-0 opacity-0' : 'opacity-100'"
               ></span>
               <span
                 class="mt-1 block h-[2px] w-3 origin-center rounded-full bg-black transition-transform ease-in-out"
@@ -165,10 +165,10 @@
     >
       <a
         href="/newsletters"
-        class="group hidden items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-blue-7 to-blue p-2 text-white hover:from-blue-5 hover:to-blue-9 sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
+        class="bg-linear-to-r group hidden items-center justify-around overflow-hidden rounded-md from-blue-7 to-blue p-2 text-white hover:from-blue-5 hover:to-blue-9 sm:flex sm:justify-center md:-my-1 md:p-2 lg:px-4"
       >
         <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
+          class="relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
         >
           <svg
             class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
@@ -182,7 +182,7 @@
       <a
         data-fru-campaign="navbar"
         data-ga-category="donate"
-        class="group flex items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 text-white hover:from-red-5 hover:to-red-9 sm:justify-center md:-my-1 md:p-2 lg:px-4"
+        class="bg-linear-to-r group flex items-center justify-around overflow-hidden rounded-md from-red-7 to-red p-2 text-white hover:from-red-5 hover:to-red-9 sm:justify-center md:-my-1 md:p-2 lg:px-4"
         href="/donate/"
         {{ if not (page.Param "modal-exclude") }}
           x-data
@@ -190,7 +190,7 @@
         {{ end }}
       >
         <span
-          class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
+          class="relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide md:text-sm md:leading-none"
         >
           <svg
             class="mr-1 hidden h-4 w-4 fill-current md:inline-block md:h-5 md:w-5"
@@ -217,7 +217,7 @@
     </nav>
 
     <p
-      class="flex-0 order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold leading-none tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base print:hidden"
+      class="order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base print:hidden"
       x-show="atTop"
       x-transition:enter="transition ease-out duration-150"
       x-transition:enter-start="opacity-0 scale-10"
@@ -267,7 +267,7 @@
 <!-- hidden item classes to prevent alpinejs classes from being CSS purged -->
 <div hidden>
   <span
-    class="opacity-1 w-0 w-5 -translate-x-3 -translate-y-1.5 translate-x-3 translate-y-1.5 -rotate-45 rotate-45 opacity-0 sm:-translate-x-10 sm:translate-x-0 sm:translate-x-8 sm:translate-y-2 lg:translate-y-0"
+    class="w-0 w-5 -translate-x-3 -translate-y-1.5 translate-x-3 translate-y-1.5 -rotate-45 rotate-45 opacity-0 opacity-100 sm:-translate-x-10 sm:translate-x-0 sm:translate-x-8 sm:translate-y-2 lg:translate-y-0"
     hidden
   ></span>
 </div>

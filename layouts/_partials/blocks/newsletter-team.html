@@ -14,7 +14,7 @@
           {{ $staff := . }}
           <div class="flex flex-col gap-6 sm:flex-row">
             {{ with $staff.headshot }}
-              <div class="h-40 w-40 flex-shrink-0 self-center sm:self-start">
+              <div class="h-40 w-40 shrink-0 self-center sm:self-start">
                 {{ partial "tag/picture.html" (dict
                   "imgClass" "w-full h-full object-cover rounded-full"
                   "description" (printf "Photo of %s" $staff.name)

@@ -12,7 +12,7 @@
         {{ range . }}
           {{ $name := .image }}
           <li
-            class="mb-2 flex flex-col rounded bg-white p-5 shadow-md sm:flex-1 lg:flex-row lg:gap-4"
+            class="mb-2 flex flex-col rounded-sm bg-white p-5 shadow-md sm:flex-1 lg:flex-row lg:gap-4"
           >
             {{ if $name }}
               {{ $imgOpts := dict
@@ -24,8 +24,8 @@
                 "figClass" "col-start-1"
                 "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
                 "sizeHint" "480px"
-                "rounded" true
-                "shadow" false
+                "rounded-sm" true
+                "shadow-sm" false
                 "gravity" (index . "image-gravity")
               }}
               <div

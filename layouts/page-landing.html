@@ -100,10 +100,6 @@
     <div class="bg-white font-sans">
       {{ . }}
     </div>
-  {{ else }}
-    {{ partialCached "tw/promo-footer.html" (dict
-      "wrapperClass" "bg-white pt-2 pb-14 hidden")
-    }}
   {{ end }}
 
 {{ end }}
