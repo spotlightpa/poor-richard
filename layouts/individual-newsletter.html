@@ -11,9 +11,10 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ partial "blocks/newsletter-topper.html" . }}
-  {{ if .Param "premium-newsletter" }}
+  {{ if index .Params "premium-newsletter" }}
     {{ partial "blocks/premium-newsletter.html" . }}
+  {{ else }}
+    {{ partial "blocks/newsletter-topper.html" . }}
   {{ end }}
   {{ partial "blocks/newsletter-team.html" . }}
   {{ partial "blocks/explore-newsletters.html" . }}

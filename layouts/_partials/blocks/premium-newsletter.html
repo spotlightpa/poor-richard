@@ -1,47 +1,153 @@
-<section
-  class="-mt-6 flex min-h-[350px] w-full items-center justify-center bg-beige py-8"
->
-  <div class="w-full max-w-prose px-4 md:px-0">
-    <div class="flex flex-col items-stretch gap-[15px] md:flex-row">
-      <div class="relative flex flex-1 flex-col">
-        <div
-          class="flex min-h-[240px] flex-1 flex-col items-center rounded bg-white p-6 pt-[64px] text-black"
-        >
-          <div class="text-lg font-bold">Monthly</div>
-          <div class="mt-2 font-sans text-4xl font-extrabold">$19.99</div>
-          <div class="mb-4 mt-2 text-g-7 md:mb-0 md:mt-2">per month</div>
+<section class="mb-6 w-full bg-g-9 pt-12">
+  {{ $maxWidth := .Param "max-width" }}
+  {{ $breakpoint := cond (eq $maxWidth "prose") "750px" $maxWidth }}
+  {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" (print "max-w-[" $maxWidth "]") }}
 
-          <a
-            href="/newsletters/accessharrisburg/monthly"
-            class="mt-auto w-full rounded-full border-[2px] border-black bg-white px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-black transition hover:bg-black hover:text-white"
+  <style>
+    @media (max-width: {{ $breakpoint }}) {
+      .spl-max-w\:hidden {
+        display: none;
+      }
+      .spl-max-w\:flex-col {
+        flex-direction: column;
+      }
+      .spl-max-w\:w-full {
+        width: 100%;
+      }
+      .spl-max-w\:pr-0 {
+        padding-right: 0;
+      }
+      .spl-max-w\:pb-16 {
+        padding-bottom: 4rem;
+      }
+    }
+  </style>
+
+  <div class="{{ $maxWidthClass }} mx-auto px-4 pb-6">
+    <div
+      class="spl-max-w:flex-col {{ if not (and (.Param "quote") (.Param "quote-source")) }}
+        spl-max-w:pb-16
+      {{ end }} flex"
+    >
+      <div class="w-full">
+        <h1 class="my-4 text-4xl font-semibold text-white">
+          {{ .Title }}
+        </h1>
+
+        <h2
+          class="mb-4 text-lg font-semibold text-white [&_strong]:text-yellow"
+        >
+          {{ .Param "subhead" | markdownify }}
+        </h2>
+
+        <p class="text-white">
+          {{ .Param "deck" }}
+        </p>
+
+        <ul class="my-4 mb-7 ml-4 list-outside list-disc text-base text-white">
+          {{ range .Params.bullets }}
+            <li>{{ . | safeHTML }}</li>
+          {{ end }}
+        </ul>
+
+        <div
+          class="mb-8 flex max-w-full flex-col items-stretch gap-4 md:flex-row"
+        >
+          <div class="relative flex flex-1 flex-col">
+            <div
+              class="flex min-h-[240px] flex-1 flex-col items-center rounded bg-white p-6 pt-[64px] text-black"
+            >
+              <div class="text-lg font-bold">Monthly</div>
+              <div class="mt-2 font-sans text-4xl font-extrabold">$19.99</div>
+              <div class="mb-4 mt-2 text-g-7 md:mb-0 md:mt-2">per month</div>
+              <a
+                href="/newsletters/accessharrisburg/monthly"
+                class="mt-auto w-full rounded-full border-[2px] border-black bg-white px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-black transition hover:bg-black hover:text-white"
+              >
+                Subscribe
+              </a>
+            </div>
+          </div>
+
+          <div class="relative flex flex-1 flex-col">
+            <div
+              class="font-xl w-full rounded-t-lg bg-yellow py-2 text-center font-sans font-bold uppercase tracking-wide text-yellow-9"
+            >
+              Save 17%
+            </div>
+            <div
+              class="flex min-h-[230px] flex-1 flex-col items-center rounded-b border-[2px] border-yellow bg-white p-6 text-black"
+            >
+              <div class="text-lg font-bold">Annual</div>
+              <div class="mt-2 font-sans text-4xl font-extrabold">$199</div>
+              <div class="mt-2 text-g-7">per year</div>
+              <a
+                href="/newsletters/accessharrisburg/annual"
+                class="mt-auto w-full rounded-full border-[3px] border-yellow-5 bg-yellow px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-yellow-9 transition hover:bg-yellow-3"
+              >
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {{ $cta := .Param "cta" }}
+        {{ $buttonLink := .Param "button-link" }}
+
+
+        <a
+          href="{{ or $buttonLink `#` }}"
+          class="group mt-6 flex w-full items-center gap-4 rounded-lg border-2 border-solid border-blue-5 bg-blue-0 p-3 transition hover:bg-blue-1"
+        >
+          <div
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-4 text-white"
           >
-            Subscribe
-          </a>
-        </div>
-      </div>
-
-      <div class="relative flex flex-1 flex-col">
-        <div
-          class="font-xl w-full rounded-t-lg bg-yellow py-2 text-center font-sans font-bold uppercase tracking-wide text-yellow-9"
-        >
-          Save 17%
-        </div>
-
-        <div
-          class="flex min-h-[240px] flex-1 flex-col items-center rounded-b border-[2px] border-yellow bg-white p-6 text-black"
-        >
-          <div class="text-lg font-bold">Annual</div>
-          <div class="mt-2 font-sans text-4xl font-extrabold">$199</div>
-          <div class="mt-2 text-g-7">per year</div>
-
-          <a
-            href="/newsletters/accessharrisburg/annual"
-            class="mt-auto w-full rounded-full border-[3px] border-yellow-5 bg-yellow px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-yellow-9 transition hover:bg-yellow-3"
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <span class="text-base font-bold text-blue-9">{{ $cta }}</span>
+            <span class="text-base font-medium text-blue-7">
+              — See what you'll get each week</span
+            >
+          </div>
+          <svg
+            class="h-6 w-6 text-blue-6 transition group-hover:translate-x-1 group-hover:text-blue-9"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            Subscribe
-          </a>
-        </div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
       </div>
     </div>
+
+    {{ if and (.Param "quote") (.Param "quote-source") }}
+      <p
+        class="mb-2 mt-8 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
+      >
+        {{ .Param "quote" }}
+      </p>
+      <p class="mb-5 text-right italic text-white">
+        {{ .Param "quote-source" }}
+      </p>
+    {{ end }}
   </div>
 </section>
