@@ -19,7 +19,7 @@ slug = "bucks-county-peace-center-barbara-simmons-pennsylvania-local"
 suppress-date = false
 title = "PA Local Heroes: How a peace activist found her calling"
 title-tag = "PA Local Heroes: How a peace activist found her calling"
-topics = ["PA Local Heroes"]
+topics = ["PA Local Heroes", "PA Local"]
 twitter-title = "PA Local Heroes: How a peace activist found her calling"
 +++
 
