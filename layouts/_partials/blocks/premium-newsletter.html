@@ -1,33 +1,13 @@
-<section class="mb-6 w-full bg-g-9 pt-12">
+<section class="@container mb-6 w-full bg-g-9 pt-12">
   {{ $maxWidth := .Param "max-width" }}
-  {{ $breakpoint := cond (eq $maxWidth "prose") "750px" $maxWidth }}
   {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" (print "max-w-[" $maxWidth "]") }}
 
-  <style>
-    @media (max-width: {{ $breakpoint }}) {
-      .spl-max-w\:hidden {
-        display: none;
-      }
-      .spl-max-w\:flex-col {
-        flex-direction: column;
-      }
-      .spl-max-w\:w-full {
-        width: 100%;
-      }
-      .spl-max-w\:pr-0 {
-        padding-right: 0;
-      }
-      .spl-max-w\:pb-16 {
-        padding-bottom: 4rem;
-      }
-    }
-  </style>
 
   <div class="{{ $maxWidthClass }} mx-auto px-4 pb-6">
     <div
-      class="spl-max-w:flex-col {{ if not (and (.Param "quote") (.Param "quote-source")) }}
-        spl-max-w:pb-16
-      {{ end }} flex"
+      class="@md:flex-row {{ if not (and (.Param "quote") (.Param "quote-source")) }}
+        pb-16 @md:pb-0
+      {{ end }} flex flex-col"
     >
       <div class="w-full">
         <h1 class="my-4 text-4xl font-semibold text-white">
@@ -51,7 +31,7 @@
         </ul>
 
         <div
-          class="mb-8 flex max-w-full flex-col items-stretch gap-10 md:flex-row"
+          class="@md:flex-row @md:gap-4 @lg:gap-8 mb-8 flex max-w-full flex-col items-stretch gap-8"
         >
           <div class="relative flex flex-1 flex-col">
             <div
@@ -64,7 +44,7 @@
             >
               <div class="text-lg font-bold">Monthly</div>
               <div class="mt-2 font-sans text-4xl font-extrabold">$19.99</div>
-              <div class="mb-4 mt-2 text-g-7 md:mb-0 md:mt-2">per month</div>
+              <div class="@md:mb-0 @md:mt-2 mb-4 mt-2 text-g-7">per month</div>
               <a
                 href="/newsletters/accessharrisburg/monthly"
                 class="mt-auto w-full rounded-full border-[2px] border-black bg-white px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-black transition hover:bg-black hover:text-white"
