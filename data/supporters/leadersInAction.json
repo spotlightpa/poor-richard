@@ -862,22 +862,8 @@
       "categoryRank": "6"
     },
     {
-      "display": "David and Cathy Myers",
-      "sort": "Myers",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "W. Michael Nailor",
       "sort": "Nailor",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Bill Natale and Diane Bright",
-      "sort": "Natale",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1098,13 +1084,6 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
-    },
-    {
-      "display": "Amy Sebastian",
-      "sort": "Sebastian",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "Kai and Peter Seelaus",
