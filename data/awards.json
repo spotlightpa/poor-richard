@@ -1,19 +1,6 @@
 [
   {
-    "year": "2025",
-    "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
-    "award_category": "Excellence in Written Journalism, News Feature – Division 1",
-    "winner_or_finalist_honorable_mention": "Winner",
-    "national_or_state": "State",
-    "other_info": "",
-    "story": "For \"Unprotected,\" an investigation into the state and county agencies in charge of keeping older Pennsylvanians safe from abuse and neglect",
-    "Link": "",
-    "category": "Caregiving",
-    "secondary_category": "Investigations",
-    "link": "https://www.westernpapressclub.org/past-winners-and-photos"
-  },
-  {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Video/Broadcast Journalism, Public Affairs/Politics/Government",
     "winner_or_finalist_honorable_mention": "Winner",
@@ -26,7 +13,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Public Affairs/Politics/Government – Division 1",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -39,7 +26,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Public Affairs/Politics/Government – Division 1",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -52,7 +39,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Education – Division 1",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -65,7 +52,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Education – Division 1",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -78,20 +65,20 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Video/Broadcast Journalism, Medical/Health",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
     "national_or_state": "State",
     "other_info": "",
-    "story": "For “The big business of medical marijuana cards\"",
+    "story": "For “The big business of medical marijuana cards",
     "Link": "",
     "category": "Health",
     "secondary_category": "Video",
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Medical/Health – Division 1",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -104,7 +91,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Journalistic Craft Achievement, Multiplatform Project",
     "winner_or_finalist_honorable_mention": "Winner",
@@ -117,20 +104,20 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Journalistic Craft Achievement, Digital Presentation",
     "winner_or_finalist_honorable_mention": "Winner",
     "national_or_state": "State",
     "other_info": "",
-    "story": "For \"As problems roiled Penn State Health’s transplant programs, unknowing patients kept hope. Then they were blindsided.\"",
+    "story": "For \"As problems roiled Penn State Health’s transplant programs, unknowing patients kept hope. Then they were blindsided.",
     "Link": "",
     "category": "Health",
     "secondary_category": "Investigations",
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Collaboration",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -143,7 +130,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Enterprise/Investigative — Division 2",
     "winner_or_finalist_honorable_mention": "Winner",
@@ -156,7 +143,7 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
     "award_category": "Excellence in Written Journalism, Enterprise/Investigative — Division 1",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
@@ -169,17 +156,160 @@
     "link": "https://www.westernpapressclub.org/past-winners-and-photos"
   },
   {
-    "year": "2025",
+    "year": 2025,
     "entity": "American Illustration",
     "award_category": "Annual juried competition",
     "winner_or_finalist_honorable_mention": "Winner",
     "national_or_state": "National",
     "other_info": "",
     "story": "Elder abuse illustration",
-    "link": "",
+    "Link": "",
     "category": "Illustration",
     "secondary_category": "Investigations",
-    "": ""
+    "link": ""
+  },
+  {
+    "year": 2025,
+    "entity": "ONA Online Journalism Awards",
+    "award_category": "General Excellence in Online Journalism, Small Newsroom",
+    "winner_or_finalist_honorable_mention": "Winner",
+    "national_or_state": "National",
+    "other_info": "",
+    "story": "",
+    "Link": "",
+    "category": "",
+    "secondary_category": "",
+    "link": ""
+  },
+  {
+    "year": 2025,
+    "entity": "National Press Club Journalism Institute",
+    "award_category": "Sandy Hume Award for Excellence in Political Journalism",
+    "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
+    "national_or_state": "National",
+    "other_info": "",
+    "story": "For \"Vetting Shapiro",
+    "Link": "",
+    "category": "Capitol",
+    "secondary_category": "Investigations",
+    "link": "https://www.press.org/events/52nd-annual-national-press-club-journalism-awards-dinner"
+  },
+  {
+    "year": 2025,
+    "entity": "National Press Club Journalism Institute",
+    "award_category": "Joseph D. Ryle Award for Excellence in Writing on the Problems of Geriatrics",
+    "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
+    "national_or_state": "National",
+    "other_info": "",
+    "story": "For \"Unprotected,\" a series on elder abuse",
+    "Link": "",
+    "category": "Aging",
+    "secondary_category": "Investigations",
+    "link": "https://www.press.org/newsroom/ap-bloomberg-news-wall-street-journal-win-awards-national-press-club"
+  },
+  {
+    "year": 2025,
+    "entity": "Pa. NewsMedia Association, Keystone Media Awards",
+    "award_category": "Enterprise Reporting, Division I",
+    "winner_or_finalist_honorable_mention": "Winner",
+    "national_or_state": "State",
+    "other_info": "",
+    "story": "Abuse and neglect investigations of aging Pennsylvanians are woefully slow. The results can be devastating.",
+    "Link": "",
+    "category": "Aging",
+    "secondary_category": "Investigations",
+    "link": "https://panewsmedia.org/wp-content/uploads/Awards/Keystone_Awards_Professional/2025_Keystones/2025-Professional-Keystone-Winners-DI.pdf"
+  },
+  {
+    "year": 2025,
+    "entity": "Pa. NewsMedia Association, Keystone Media Awards",
+    "award_category": "Best Enterprise Reporting - Division - TV I",
+    "winner_or_finalist_honorable_mention": "Winner",
+    "national_or_state": "State",
+    "other_info": "",
+    "story": "Medical marijuana",
+    "Link": "",
+    "category": "Health",
+    "secondary_category": "Investigations",
+    "link": "https://panewsmedia.org/wp-content/uploads/Awards/Keystone_Awards_Professional/2025_Keystones/2025-Professional-Keystone-Winners-TVI.pdf"
+  },
+  {
+    "year": 2025,
+    "entity": "National Press Club Journalism Institute",
+    "award_category": "Neil and Susan Sheehan Award for Investigative Journalism",
+    "winner_or_finalist_honorable_mention": "Winner",
+    "national_or_state": "National",
+    "other_info": "",
+    "story": "Opioid settlement coverage",
+    "Link": "",
+    "category": "Health",
+    "secondary_category": "Investigations",
+    "link": "https://www.press.org/newsroom/ed-mahon-spotlight-pa-named-2025-recipient-npcjis-sheehan-award-investigative-journalism"
+  },
+  {
+    "year": 2025,
+    "entity": "Pennsylvania NewsMedia Association, A-Mark Foundation",
+    "award_category": "A-Mark Prize for Investigative Journalism",
+    "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
+    "national_or_state": "State",
+    "other_info": "Third place",
+    "story": "“Top Penn State Health surgeon warned leaders about transplant problems months before shutdown. Then he was let go.",
+    "Link": "",
+    "category": "Health",
+    "secondary_category": "Investigations",
+    "link": ""
+  },
+  {
+    "year": 2025,
+    "entity": "Pennsylvania NewsMedia Association Foundation, A-Mark Foundation",
+    "award_category": "A-Mark Prize for Investigative Journalism in Pennsylvania",
+    "winner_or_finalist_honorable_mention": "Winner",
+    "national_or_state": "State",
+    "other_info": "1st place",
+    "story": "Opioid settlement coverage, in partnership with WESA",
+    "Link": "",
+    "category": "Health",
+    "secondary_category": "Investigations",
+    "link": "https://panewsmedia.org/contests-and-awards/a-mark-prize-for-investigative-journalism-in-pennsylvania/"
+  },
+  {
+    "year": 2025,
+    "entity": "Pennsylvania NewsMedia Association, A-Mark Foundation",
+    "award_category": "A-Mark Prize for Investigative Journalismm in Pennsylvania",
+    "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
+    "national_or_state": "State",
+    "other_info": "Second place",
+    "story": "For Unprotected, a series on elder abuse. https://www.spotlightpa.org/series/unprotected/",
+    "Link": "",
+    "category": "Aging",
+    "secondary_category": "Investigations",
+    "link": "https://panewsmedia.org/contests-and-awards/a-mark-prize-for-investigative-journalism-in-pennsylvania/"
+  },
+  {
+    "year": 2025,
+    "entity": "LION Publishers, Sustainability Awards",
+    "award_category": "Collaboration of the Year",
+    "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
+    "national_or_state": "National",
+    "other_info": "Finalist",
+    "story": "Opioid settlement coverage. in partnership with WESA",
+    "Link": "",
+    "category": "Health",
+    "secondary_category": "Investigations",
+    "link": "https://lionpublishers.com/meet-the-51-finalists-for-the-2025-lion-sustainability-awards/#2025Collaboration"
+  },
+  {
+    "year": 2025,
+    "entity": "National Press Foundation",
+    "award_category": "AARP Award for Excellence in Journalism on Aging",
+    "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
+    "national_or_state": "National",
+    "other_info": "",
+    "story": "For Unprotected, a series on elder abuse. https://www.spotlightpa.org/series/unprotected/",
+    "Link": "",
+    "category": "Aging",
+    "secondary_category": "Investigations",
+    "link": ""
   },
   {
     "year": "2024",
