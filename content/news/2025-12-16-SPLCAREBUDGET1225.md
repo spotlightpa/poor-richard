@@ -51,7 +51,7 @@ A spokesperson for state Senate Appropriations Committee Chair Scott Martin (R.,
 
 Meanwhile, a spokesperson for State House Majority Leader Matt Bradford (D., Montgomery) said the child care funding is intended to be recurring, and the direct service workers’ rate increase “is the new minimum, pending a rate change.”
 
-Child care
+## Child care
 
 The $25 million for child care comes from the newly created Child Care Staff Recruitment and Retention Program, which will be overseen by the Pennsylvania Department of Human Services. The program provides workers with a one-time $450 bonus next year
 
