@@ -2,17 +2,12 @@
 
 
 <div class="bg-beige font-sans print:hidden" data-fru-campaign="footer">
-  {{ if not (.Param "suppress-footer-newsletter") }}
-    {{ partial "tw/newsletter-box-lg.html" (dict
-      "showLogo" true
-      "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
-      "newsletterField" "newsletter/papost-hidden.html"
-      )
-    }}
-  {{ end }}
-
-  {{ if .Param "suppress-footer-newsletter" }}
-  {{ end }}
+  {{ partial "tw/newsletter-box-lg.html" (dict
+    "showLogo" true
+    "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
+    "newsletterField" "newsletter/papost-hidden.html"
+    )
+  }}
 
 
   <nav
@@ -76,11 +71,11 @@
         <a
           data-fru-campaign="footer-promo"
           data-ga-category="donate"
-          class="group relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-gradient-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
+          class="bg-linear-to-r group relative flex w-40 items-center justify-around overflow-hidden rounded-md from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
           href="{{ .link }}"
         >
           <span
-            class="flex-0 relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
+            class="relative inline-flex flex-wrap items-center text-xs font-bold uppercase leading-none tracking-wide text-white md:text-lg md:leading-none"
           >
             <svg
               class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"

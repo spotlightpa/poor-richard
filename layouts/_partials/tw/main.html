@@ -17,7 +17,7 @@
 
 
 <section
-  class="mx-auto max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 pt-12 text-g-9 lg:grid lg:gap-x-8 xl:px-0"
+  class="mx-auto mt-12 max-w-screen-xl grid-cols-12 bg-white px-4 pb-6 text-g-9 lg:grid lg:gap-x-8 xl:px-0"
   id="article"
 >
   <header
@@ -44,7 +44,7 @@
       {{ $eighteenMonthsAgo := now.AddDate 0 -18 0 }}
       {{ if .PublishDate.Before $eighteenMonthsAgo }}
         <p
-          class="ml-1 inline-block bg-orange px-3 font-sans text-base font-semibold uppercase text-white"
+          class="ml-1 inline-block border-2 border-orange bg-orange px-2 font-sans text-xs font-semibold uppercase text-white md:text-sm"
         >
           From the archives
           {{ .PublishDate.Format "2006" }}
@@ -92,7 +92,7 @@
   <article
     class="mx-auto flex max-w-screen-md flex-wrap md:justify-center md:gap-x-12 lg:col-span-8 lg:justify-start lg:gap-x-8 print:mx-0 print:block print:max-w-none"
   >
-    <div class="w-full print:!max-w-md">
+    <div class="print:max-w-md! w-full">
       {{ partial "tw/image-hero.html" . }}
     </div>
     <div class="w-full sm:w-12 md:w-0 lg:col-span-1 lg:row-start-3 lg:w-auto">
@@ -161,7 +161,7 @@
                   {{ end }}
                   <div class="mt-2 flex flex-wrap gap-x-2 text-sm font-bold">
                     {{ if $author.email }}
-                      <p class="flex-0 mr-2 flex items-center gap-x-1">
+                      <p class="mr-2 flex items-center gap-x-1">
                         <a
                           href="mailto:{{ $author.email }}"
                           title="Email"
@@ -180,7 +180,7 @@
                       </p>
                     {{ end }}
                     {{ with $author.twitter }}
-                      <p class="flex-0 mr-2 flex items-center gap-x-1">
+                      <p class="mr-2 flex items-center gap-x-1">
                         <a
                           href="https://www.twitter.com/{{ . }}"
                           title="Twitter"
@@ -226,7 +226,7 @@
 
   </article>
   <aside
-    class="mt-6 justify-self-end md:mx-auto md:max-w-screen-sm lg:col-span-4 lg:col-start-9 lg:row-start-2 lg:row-end-auto lg:max-w-80 print:!hidden"
+    class="print:hidden! mt-6 justify-self-end md:mx-auto md:max-w-screen-sm lg:col-span-4 lg:col-start-9 lg:row-start-2 lg:row-end-auto lg:max-w-80"
     data-ga-category="sidebar"
     id="sidebar"
   >
