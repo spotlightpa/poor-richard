@@ -1,0 +1,46 @@
+{{ $issue := .Get "issue-title" }}
+{{ $filename := .Get "issue-icon" }}
+{{ $sizes := slice
+  (dict "width" 296 "height" 296)
+  (dict "width" 480 "height" 480)
+}}
+
+
+<li
+  class="rounded-sm border-4 border-white text-center text-xl font-bold shadow-lg lg:text-2xl"
+>
+  <a
+    x-data="{ issue: $el.dataset.issue }"
+    data-issue="issue-{{ $issue | urlize }}"
+    href="#"
+    class="relative flex aspect-square items-end justify-center pb-4 text-white"
+    @click.prevent="
+      selected = issue;
+      window.setTimeout(() => {
+        document.
+          getElementById(issue).
+          scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start',
+          });
+      }, 250);
+    "
+    :class="{'bg-black': selected === issue }"
+  >
+    <span class="relative z-10 inline-block drop-shadow-sm">{{ $issue }}</span>
+    {{ $srcset := partial "helper/build-srcset" (dict
+      "filename" $filename
+      "sizes" $sizes
+      "gravity" "ce"
+      )
+    }}
+    <picture
+      class="absolute inset-0 z-0 block overflow-hidden"
+      aria-hidden="true"
+      :class="{'opacity-50': selected === issue }"
+    >
+      <img srcset="{{ $srcset }}" class="h-full object-cover" sizes="100vh" />
+    </picture>
+  </a>
+</li>

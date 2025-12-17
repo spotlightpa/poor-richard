@@ -1,19 +1,21 @@
 {
   "edCallout": [],
   "edImpact": [],
-  "edInvestigations": [],
+  "edInvestigations": [
+    "content/statecollege/2025-11-20-SPLPSUCANCER1125.md",
+    "content/statecollege/2025-11-21-SPLPSUCENTER1125.md"
+  ],
   "featuredStories": [
-    "content/news/2025-10-15-SPLIMPINT1025.md"
+    "content/news/2025-12-16-SPLCAREBUDGET1225.md"
   ],
   "subfeatures": [
-    "content/news/2025-10-08-SPLDUMPNRUN1025.md",
-    "content/news/2025-10-08-SPLPHEAADELAYS1025.md",
-    "content/news/2025-10-01-SPLMOREIMPA1025.md",
-    "content/news/2025-09-05-SPLIMPASSEMONEY0925.md"
+    "content/news/2025-11-12-SPLBUDGDEAL1125.md",
+    "content/news/2025-07-07-SPLHOMECARE0625.md",
+    "content/news/2025-11-13-PMPBUDGET1125.md"
   ],
   "topSlots": [
-    "content/news/2025-10-15-SPLVBFULTON1025.md",
-    "content/news/2025-10-14-SPLLEAVEPJM1025.md",
-    "content/news/2025-10-14-SPLARSONGUILT1025.md"
+    "content/news/2025-12-15-spl_bills_1225.md",
+    "content/news/2025-12-10-spl_opioids_1225.md",
+    "content/news/2025-12-09-SPLDOC1225.md"
   ]
 }

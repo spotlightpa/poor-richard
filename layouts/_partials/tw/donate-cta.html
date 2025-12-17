@@ -1,0 +1,48 @@
+{{ $eyebrow := .eyebrow | default "Like what you read?" }}
+{{ $hed := .hed | default "Become a Member" }}
+{{ $text := .body | default "Help Spotlight PA hold the powerful to account with a gift today." }}
+{{ $cta := .cta | default "Donate Now" }}
+
+
+<div
+  class="flow-root rounded-sm border border-red font-sans leading-tight shadow-sm"
+  data-ga-category="donate"
+>
+  <h2
+    class="inline-block rounded-br bg-red px-4 py-3 font-semibold uppercase tracking-wider text-white sm:text-lg"
+  >
+    <a class="block" href="/donate/">
+      {{- $eyebrow -}}
+    </a>
+  </h2>
+  <h2 class="mt-8 text-center font-semibold sm:mt-12 sm:text-xl md:text-2xl">
+    <a
+      href="/donate/"
+      class="block w-full px-4 sm:px-8 md:px-24"
+      data-ga-category="body"
+      target="_blank"
+    >
+      {{- $text -}}
+    </a>
+  </h2>
+  <div
+    class="mt-8 text-center text-lg font-semibold uppercase tracking-wider sm:mt-12 sm:text-xl"
+  >
+    <a
+      href="/donate/"
+      class="btn-donate-lg"
+      data-ga-category="button"
+      target="_blank"
+    >
+      {{- $cta -}}
+    </a>
+  </div>
+  <div class="mt-10 text-right text-g-9 md:mt-4">
+    <svg
+      class="inline-block h-8 w-48 fill-current"
+      aria-label="Spotlight PA logo"
+    >
+      {{ partial "helper/svg.html" "banner" }}
+    </svg>
+  </div>
+</div>

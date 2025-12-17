@@ -1,0 +1,52 @@
+{{ $side := .Get "side" | default "left" }}
+{{ $limit := .Get "limit" | default 5 | int }}
+{{ $sideClass :=
+  cond (eq $side "right")
+  "float-right sm:px-4 lg:-mr-24 xl:-mr-40"
+  "float-left sm:px-6 lg:-ml-24"
+}}
+{{ $self := .Page.RelPermalink }}
+{{ $params := partialCached "helper/page-params" .Page $self }}
+{{ $series := $params.series }}
+{{ $name := "This Series" }}
+{{ with .Get "series" }}
+  {{ $series = site.GetPage (printf "series/%s" (urlize .)) }}
+  {{ $name = "Spotlight PA" }}
+{{ end }}
+{{ $pages := $series.Pages.ByPublishDate }}
+{{ if gt $pages.Len 1 }}
+  <aside
+    class="{{ $sideClass }} sm:float-offset mb-4 w-full font-sans sm:mb-0 sm:w-auto"
+    data-ga-category="inline:related"
+  >
+    <nav class="py-4">
+      <h2 class="font-bold uppercase sm:text-xl">
+        <a
+          class="whitespace-nowrap border-b-2 border-black tracking-wide"
+          href="{{ $series.RelPermalink }}"
+        >
+          More From
+          {{ $name }}
+        </a>
+      </h2>
+      <ul
+        class="mt-4 min-w-full space-y-4 text-sm leading-tight sm:w-0 sm:text-base"
+      >
+        {{ range where $pages ".RelPermalink" "!=" $self | last $limit }}
+          <li class="font-bold">
+            <a
+              class="text-navy transition-colors duration-500 hover:text-yellow"
+              href="{{ .RelPermalink }}"
+              >{{ .LinkTitle }}</a
+            >
+          </li>
+        {{ end }}
+      </ul>
+      <hr hidden />
+    </nav>
+  </aside>
+{{ else }}
+  {{ if hugo.IsServer }}
+    <h3 class="text-lg font-bold uppercase">No series stories</h3>
+  {{ end }}
+{{ end }}

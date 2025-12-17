@@ -57,7 +57,7 @@ description = "Understand what's happening across PA - in less than five minutes
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
 width = 3334
 height = 1880
-link = "https://www.spotlightpa.org/newsletters/papost"
+link = "/newsletters/papost/"
 
 [[explore]]
 newsletter = "Talk of the Town"
@@ -66,7 +66,7 @@ description = "The news that matters to your community — from the PA Wilds to 
 image = "2025/04/01m0-131a-ph40-jg94.png"
 width = 1200
 height = 1075
-link = "https://www.spotlightpa.org/newsletters/talkofthetown"
+link = "/newsletters/talkofthetown/"
 
 [[explore]]
 newsletter = "Good Day, Berks"

@@ -1,0 +1,114 @@
+{{ with .block }}
+  <section class="bg-g-2 px-2 py-10">
+    <div class="mx-auto my-14 w-full max-w-screen-xl">
+      <h2
+        class="mb-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+      >
+        {{ .title }}
+      </h2>
+
+      {{ with .authors }}
+        <ul
+          class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+          data-ga-category="inline-footer:author"
+        >
+          {{ range $name := . }}
+            {{ $author := partial "helper/get-author" $name }}
+            <li
+              id="{{ $author.slug }}"
+              class="row-span-3 grid auto-rows-min grid-cols-5 grid-rows-subgrid gap-x-4 gap-y-8 rounded-sm bg-white p-6 shadow-md sm:max-md:row-span-2 lg:row-span-2"
+            >
+              {{ if $author.headshot }}
+                {{ $sizes := (slice
+                  (dict "width" 256 "height" 256)
+                  (dict "width" 512 "height" 512)
+                  )
+                }}
+                {{ $srcset := partial "helper/build-srcset" (dict
+                  "sizes" $sizes
+                  "filename" $author.headshot
+                  "gravity" $author.gravity
+                  )
+                }}
+
+                {{ $imgOpt := dict
+                  "filename" $author.headshot
+                  "width" 256
+                  "height" 256
+                  "gravity" $author.gravity
+                }}
+                {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+                <div class="col-span-5 sm:max-md:col-span-2 lg:col-span-2">
+                  {{ partial "tag/picture-maybe-link.html" (dict
+                    "link" $author.link
+                    "wrapperClass" "m-auto flex aspect-square max-h-full max-w-[256px]"
+                    "pictureClass" "w-full h-full rounded-full overflow-hidden shadow-sm"
+                    "imgClass" "w-full h-full object-cover"
+                    "sizeHint" "256px"
+                    "eager" false
+                    "description" (printf "Photo of %s" $author.name)
+                    "srcset" $srcset
+                    "src" $imgSmallSrc
+                    "width" 256
+                    "height" 256
+                    )
+                  }}
+                </div>
+              {{ else }}
+                <a
+                  class="col-span-5 sm:max-md:col-span-2 lg:col-span-2"
+                  href="{{ $author.link }}"
+                >
+                  <span
+                    class="m-auto flex aspect-square max-h-full max-w-[256px]"
+                  >
+                    <svg
+                      class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow-sm"
+                      viewBox="0 0 1 1"
+                      aria-hidden="true"
+                    >
+                      {{ partial "helper/svg.html" "user" }}
+                    </svg>
+                  </span>
+                </a>
+              {{ end }}
+
+
+              <header
+                class="col-span-5 flex flex-col justify-end gap-2 sm:max-md:col-span-3 lg:col-span-3"
+              >
+                <h2
+                  class="flex items-end text-2xl font-bold"
+                  data-ga-category="author-articles"
+                >
+                  {{ if $author.link }}
+                    <a class="text-blue" href="{{ $author.link }}"
+                      >{{ $author.name }}</a
+                    >
+                  {{ else }}
+                    {{ $author.name }}
+                  {{ end }}
+                </h2>
+                <p class="text-sm font-black uppercase">{{ $author.title }}</p>
+              </header>
+              <div class="article-content col-span-5">
+                {{ $author.content|markdownify }}
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+      {{ with .cta }}
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
+          <a
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+            href="{{ .url }}"
+          >
+            {{- .copy -}}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

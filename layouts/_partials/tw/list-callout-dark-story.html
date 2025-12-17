@@ -1,0 +1,143 @@
+{{ $rows := .rows | default 2 }}
+{{ $limit := 0 }}
+{{ if gt $rows 0 }}
+  {{ $limit = mul $rows 1 }}
+{{ end }}
+{{ $page := .pages }}
+{{ if $limit }}
+  {{ $page = first $limit .pages }}
+{{ end }}
+
+
+<div
+  class="-mx-4 bg-black px-4 py-16 text-white xl:mx-[calc(-50vw+50%)] xl:px-0"
+>
+  <div
+    class="mx-auto flex max-w-screen-xl flex-wrap gap-6 sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse"
+  >
+    {{ with .hed }}
+      <h2
+        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3 md:text-3xl"
+      >
+        {{ . }}
+      </h2>
+    {{ end }}
+
+    {{ range $page | first 1 }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 3
+        "heightRatio" 2
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-2"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div
+        class="max-w-full md:w-5/12 md:flex-auto lg:w-8/12"
+        data-ga-category="story-1"
+      >
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-9"
+          "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
+          "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+          "hedColor" "text-white "
+          "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+          "linkColor" "text-white "
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "eyebrowColor" `bg-white text-black`
+          "link" $params.link
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          "dek" $params.blurb
+          )
+        }}
+      </div>
+    {{ end }}
+    <span
+      class="mb-4 mt-7 hidden w-px self-stretch bg-black lg:inline-flex"
+    ></span>
+
+    {{ range after 1 $page }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+      {{ $imgOpts := dict
+        "filename" (.Param "image")
+        "credit" (.Param "image-credit")
+        "description" (.Param "image-description")
+        "link" $params.link
+        "widthRatio" 16
+        "heightRatio" 9
+        "widths" (slice 128 256 384 512 1280)
+        "figClass" "mt-2"
+        "sizeHint" "(min-width: 850px) 328px, 90vw"
+        "gravity" (.Param "image-gravity")
+      }}
+      <div
+        class="max-w-full md:w-2/12 md:flex-auto lg:w-2/12 xl:w-72"
+        data-ga-category="story-2"
+      >
+        {{ $eyebrow := $params.published }}
+        {{ $rubricLink := $params.link }}
+        {{ $thumbClass := $params.thumbClass }}
+        {{ if eq $.eyebrow "rubric" }}
+          {{ $eyebrow = $params.kicker }}
+        {{ else if eq $.eyebrow "eventDate" }}
+          {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ end }}
+        {{ if eq $.rubricLink "rubric" }}
+          {{ $rubricLink = $params.rubric.RelPermalink }}
+        {{ end }}
+        {{ partial "tw/thumb-item.html" (dict
+          "wrapperClass" "flex flex-wrap gap-x-4"
+          "thumbClass" "w-2/5 md:w-full"
+          "imgOpts" $imgOpts
+          "rubricLink" $rubricLink
+          "eyebrow" $eyebrow
+          "eyebrowColor" `bg-white text-black`
+          "link" $params.link
+          "linkColor" "text-white "
+          "hedColor" "text-white "
+          "hed" .LinkTitle
+          "byline" $params.byline
+          "showDate" false
+          "showByline" $.showByline
+          "linkColor" "text-white"
+          )
+        }}
+      </div>
+    {{ end }}
+
+    {{ if gt $limit 0 | and (gt (len .pages) $limit) | and .readMoreLink }}
+      <div
+        data-ga-category="readmore"
+        class="mx-auto mt-8 flex max-w-screen-xl items-baseline justify-end gap-3 text-right font-sans text-base font-bold uppercase tracking-widest"
+      >
+        <a
+          href="{{ .readMoreLink }}"
+          class="decoration text-white underline underline-offset-4 hover:text-yellow"
+        >
+          {{- .readMore | default "Read More" -}}
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</div>

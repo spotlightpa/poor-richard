@@ -24,6 +24,10 @@ title-tag = "PA election 2025: Supreme Court retention candidate guide"
 topics = ["Elections"]
 +++
 
+<strong><em>UPDATE, Nov. 4: </em></strong><a href="https://www.spotlightpa.org/news/2025/11/pa-election-results-supreme-court-retention-donohue-dougherty-wecht/"><strong><em>All 3 Democratic Supreme Court justices win retention races</em></strong></a><strong><em></em></strong>
+
+<a href="https://www.spotlightpa.org/news/2025/10/corte-suprema-retencion-elecciones-2025-pensilvania-donohue-dougherty-wecht-espanol/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — Three Pennsylvania Supreme Court justices are up for retention on Nov. 4, in elections that could set the stage for a total remaking of the court.
 
 Justices Christine Donohue, Kevin Dougherty, and David Wecht were all elected as Democrats in 2015, and their party has held a majority on the state’s high court since. Republicans are pushing Pennsylvanians to vote “no” on their retention, which would lead to contested, partisan elections in 2027.

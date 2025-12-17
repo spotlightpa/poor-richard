@@ -1,0 +1,79 @@
+{{ $idInput := partial "helper/new-id" . }}
+<form
+  x-data="searchArticles"
+  @submit.prevent="document.activeElement.blur()"
+  data-ga-category="search"
+  class="no-js:hidden p-1 text-left font-sans"
+>
+  <div class="flex">
+    <div class="grow">
+      <label class="sr-only" for="{{ $idInput }}">Search</label>
+      <input
+        id="{{ $idInput }}"
+        class="spl-input scroll-mt-4 rounded-r-none"
+        @input="isLoading = true"
+        x-model.debounce.500ms="query"
+        placeholder="Search Spotlight PA news…"
+        x-ref="top"
+      />
+    </div>
+    <div class="z-10 mt-0">
+      <button class="btn-signup-slim h-full rounded-l-none">
+        <svg
+          x-show="!isLoading"
+          aria-label="Search"
+          class="h-4 w-4 fill-current"
+        >
+          {{ partial "helper/svg.html" "search" }}
+        </svg>
+        <svg
+          x-cloak
+          aria-label="Loading results"
+          x-show="isLoading"
+          class="h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mt-1">
+    <p class="font-light text-g-6">
+      <span x-text="resultsText"></span>
+      &nbsp;
+    </p>
+    <template x-if="error">
+      <div class="font-light text-orange" x-template>
+        Could not load results. ${error.message}
+      </div>
+    </template>
+  </div>
+
+  <div
+    class="flex flex-col space-y-8 font-serif sm:space-y-6"
+    x-data="{ showDate: true }"
+  >
+    <template x-for="story in stories" :key="story.url">
+      {{ partial "tw/thumb-h-story-js.html" . }}
+    </template>
+    <div class="flex justify-between font-sans">
+      <button
+        x-show="hasPreviousPage"
+        class="btn-signup-slim w-auto"
+        type="button"
+        @click="previousPage"
+      >
+        Show previous results
+      </button>
+      <button
+        x-cloak
+        x-show="hasNextPage"
+        class="btn-signup-slim w-auto"
+        type="button"
+        @click="nextPage"
+      >
+        Show next results
+      </button>
+    </div>
+  </div>
+</form>

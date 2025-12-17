@@ -1,0 +1,80 @@
+{{ with .block }}
+  {{ $impactStories := partial "helper/get-impact-stories" "impact" }}
+
+
+  <div class="mx-auto max-w-7xl">
+    <section
+      class="my-6 grid-flow-row grid-cols-14 justify-start overflow-hidden bg-white md:my-12 md:grid md:items-start"
+    >
+      <h2
+        class="relative z-10 mx-auto mb-5 w-full max-w-7xl self-center px-4 text-xl font-black sm:px-5 sm:text-2xl md:col-span-full md:col-start-1 md:row-span-1 md:row-start-1 md:mb-11 md:self-start md:text-4xl xl:px-0"
+      >
+        {{ .title }}
+      </h2>
+
+      <div
+        class="flex flex-col items-end px-4 sm:px-5 md:col-span-7 md:col-start-8 md:row-span-2 md:row-start-2 lg:row-start-1 xl:px-0"
+      >
+        {{ $name := .image }}
+        {{ $imgOpts := dict
+          "filename" $name
+          "widthRatio" 3
+          "heightRatio" 2
+          "sizeHint" "50vw"
+          "credit" ""
+          "widths" (slice 128 256 384 512 1280)
+          "figClass" "min-w-full h-full opacity-60"
+          "containerClass" "min-w-full h-full overflow-clip"
+          "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+          "sizeHint" "400px"
+          "rounded-sm" false
+          "shadow-sm" false
+          "gravity" (.Page.Param "image-gravity")
+        }}
+        {{ with $name }}
+          <div
+            class="w-full overflow-hidden rounded-sm bg-black lg:mr-16 lg:w-auto lg:self-stretch"
+          >
+            {{ partial "tw/image-block.html" $imgOpts }}
+          </div>
+        {{ end }}
+        <div
+          class="relative z-10 row-span-1 row-start-3 mx-4 -mt-12 mb-16 mr-4 flex max-w-md flex-wrap justify-end rounded-sm border-b-4 border-black bg-black sm:mr-16 lg:mr-0 lg:justify-start"
+        >
+          <p
+            class="w-full p-5 text-sm leading-relaxed text-white sm:group-first:max-w-xl md:text-base lg:text-lg"
+          >
+            {{ .body }}
+          </p>
+          <a
+            href="{{ .url }}"
+            class="btn-signup-lg -mb-12 mr-8 sm:-mr-10 lg:-ml-10 lg:mr-0"
+            >{{ .actionText }}</a
+          >
+        </div>
+      </div>
+      <ul
+        class="my-6 space-y-5 px-4 sm:px-5 md:col-span-7 md:col-start-1 md:row-start-2 md:space-y-5 lg:col-span-6 xl:px-0"
+      >
+        {{ range $i, $story := sort $impactStories "date" "desc" | first 3 }}
+          {{ if .page }}
+            <li>
+              <div class="">
+                <span
+                  class="inline-block border-2 border-eyebrow-bg bg-black px-2 font-sans text-xs font-semibold uppercase text-white md:text-sm"
+                  data-ga-category="eyebrow"
+                  >{{ .eyebrow }}</span
+                >
+                <div
+                  class="article-content mt-2 text-sm leading-relaxed md:text-base"
+                >
+                  {{ .body | markdownify }}
+                </div>
+              </div>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+{{ end }}

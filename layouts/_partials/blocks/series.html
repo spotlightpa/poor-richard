@@ -1,0 +1,79 @@
+{{ with .block }}
+  <section class="min-h-[65vh] bg-g-2 py-10" data-ga-category="series">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2
+        class="mb-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+      >
+        {{ .title }}
+      </h2>
+      {{ with .series }}
+        {{ range $index, $series := . }}
+          {{ $even := modBool $index 2 }}
+          {{ $classes := dict
+            "block" "flex flex-wrap my-10"
+            "image" "w-full md:w-3/5 md:pr-10"
+            "text" "w-full md:w-2/5"
+          }}
+          {{ if not $even }}
+            {{ $classes = dict
+              "block" "flex flex-wrap my-10 md:flex-row-reverse"
+              "image" "w-full md:w-4/6 md:pl-10"
+              "text" "w-full md:w-2/6 md:text-right"
+            }}
+          {{ end }}
+          {{ with $seriesPage := site.GetPage (printf "series/%s" (urlize .)) }}
+            <div class="{{ $classes.block }}">
+              <div class="{{ $classes.image }}">
+                {{ $name := .Page.Param "image" }}
+                {{ $credit := .Page.Param "image-credit" }}
+                {{ $description := .Page.Param "image-description" }}
+                {{ $imgOpts := dict
+                  "filename" $name
+                  "credit" $credit
+                  "description" $description
+                  "widths" (slice 128 256 384 512 1280)
+                  "widthRatio" 16
+                  "heightRatio" 9
+                  "sizeHint" "(min-width: 850px) 627px, 100vw"
+                  "rounded-sm" true
+                  "link" .Page.RelPermalink
+                  "gravity" (.Page.Param "image-gravity")
+                }}
+                {{ partial "tw/image-block.html" $imgOpts }}
+              </div>
+              <div class="{{ $classes.text }} group">
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="hed"
+                  ><h3 class="text-3xl font-black text-black">
+                    {{- .Page.Params.kicker | default .Page.Title -}}
+                  </h3></a
+                >
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="blurb"
+                  ><p class="leading-tight">
+                    {{- .Page.Params.description -}}
+                  </p></a
+                >
+                <a href="{{ .Page.RelPermalink }}" data-ga-category="length"
+                  ><p
+                    class="mt-4 text-base uppercase tracking-wider decoration-yellow decoration-4 underline-offset-4 group-hover:underline"
+                  >
+                    {{- printf "%d Articles" (.RegularPages.Len) -}}
+                  </p></a
+                >
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with .cta }}
+        <div class="mt-12 flex justify-center" data-ga-category="cta">
+          <a
+            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+            href="{{ .url }}"
+          >
+            {{- .copy -}}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

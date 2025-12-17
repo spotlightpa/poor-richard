@@ -1,0 +1,138 @@
+{{ with .block }}
+  {{ $candidateSrc := page.Param "candidateSrc" | default "candidates2024" }}
+  {{ $data := index site.Data $candidateSrc }}
+  {{ $text := .shareText }}
+  <div class="flex justify-center">
+    {{ partial "thirdparty/typeform.html" (dict "id" .typeformid) }}
+  </div>
+
+  <div id="results" class="scroll-mt-10"></div>
+  <div
+    {{ if not .showResults }}
+      x-data="{ showResults: !!window.location.search.match(/show_results/) }"
+      x-show="showResults"
+    {{ end }}
+  >
+    <div class="mx-auto max-w-2xl px-5 md:px-0">
+      <h2 class="my-8 text-lg font-bold leading-snug">
+        Here’s how your answers aligned with each candidate.
+      </h2>
+
+     <script type="application/json" id="candidates-data">
+     {{ $data }}
+     </script>
+
+      <script>
+        function candidates() {
+          let candidateData = JSON.parse(
+            document.getElementById("candidates-data").textContent,
+          );
+          let candidateScores = Object.fromEntries(
+            new URL(window.location).searchParams.entries(),
+          );
+
+          let candidateObjs = candidateData.map((obj) => ({
+            name: obj.name,
+            id: obj.id,
+            points: Number(candidateScores[obj.id]),
+            image: obj.image,
+            title: obj.title,
+          }));
+
+          let rankedCandidates = candidateObjs.filter((pol) => pol.points >= 0);
+
+          rankedCandidates.sort((b, a) => a.points - b.points);
+
+          return { candidates: rankedCandidates };
+        }
+      </script>
+
+      <div x-data="candidates()">
+        <template x-for="candidate in candidates">
+          <div
+            class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
+          >
+            <template x-if="!! candidate.image">
+              <picture class="min-h-full w-7 bg-g-3 md:w-11">
+                <img
+                  class="min-h-full min-w-full rounded-sm object-cover"
+                  :alt="`Picture of ${candidate.name}`"
+                  :src="candidate.image"
+                  loading="lazy"
+                />
+              </picture>
+            </template>
+            <template x-if="!candidate.image">
+              <div
+                class="aspect-88/80 min-h-full w-7 rounded-sm bg-g-3 p-1 md:w-11"
+              >
+                <svg
+                  class="aspect-88/80 w-full overflow-hidden fill-current text-g-8"
+                  viewBox="0 0 1 1"
+                  aria-hidden="true"
+                >
+                  {{ partial "helper/svg.html" "user" }}
+                </svg>
+              </div>
+            </template>
+
+            <div class="flex w-1/2 flex-col justify-end">
+              <h3
+                x-text="candidate.name"
+                class="text-xl font-bold leading-none"
+              ></h3>
+              <p
+                x-text="candidate.title"
+                class="mt-1 text-base leading-tight text-g-8"
+              ></p>
+            </div>
+            <div class="flex h-6 w-full max-w-[248px]">
+              <template x-for="_ in new Array( candidate.points ).fill(null)">
+                <span
+                  class="rounded-xs mr-1 block h-6 w-6 bg-election-green last:mr-0"
+                ></span>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <div
+        class="mx-auto my-8 max-w-2xl px-5 text-lg underline-offset-2 lg:px-0 [&_a]:underline [&_a]:underline-offset-2"
+      >
+        {{ with page.RenderString .flavorText }}
+          {{ . }}
+        {{ else }}
+          <a href="{{ .actionLink }}" class="underline underline-offset-2">
+            {{- .actionText -}}
+          </a>
+          <span>or</span>
+          <button
+            onclick="document.querySelector('button[data-tf-popup]').click()"
+            class="underline underline-offset-2"
+          >
+            {{- .restartText -}}
+          </button>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ with index . "answer-key" }}
+      <div
+        x-data="{ active: 1 }"
+        class="mx-auto max-w-2xl space-y-4 px-5 pb-12 pt-6 lg:px-0"
+      >
+        <h2 class="leading-tight; mb-4 text-3xl font-bold">
+          How the Candidates Stack Up
+        </h2>
+        <p
+          class="mt-2 text-pretty font-sans text-dek sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+        >
+          Here is how each question and answer in the quiz aligns with each
+          candidate.
+        </p>
+        {{ page.RenderString . }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

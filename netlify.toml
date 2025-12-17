@@ -9,11 +9,11 @@ publish = "public"
 
 [build.environment]
 IMGPROXY_URL = "/imgproxy"
-HUGO_VERSION = "0.135.0"
+HUGO_VERSION = "0.152.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 NODE_ENV = "production"
-NODE_VERSION = "20"
+NODE_VERSION = "24"
 GO_IMPORT_PATH = "github.com/spotlightpa/poor-richard"
 GO111MODULE = "on"
 TZ = "America/New_York"

@@ -1,0 +1,62 @@
+{{ with .block }}
+  <div class="mx-auto max-w-2xl px-5 md:px-0">
+    <div
+      x-data="{
+        agree: 0,
+        disagree: 0
+      }"
+      x-init="
+        let params = new URL(window.location).searchParams;
+        agree = +params.get('agree');
+        disagree = +params.get('disagree');
+      "
+    >
+      <div
+        class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
+      >
+        <div class="flex w-1/2 flex-col justify-end">
+          <h3 class="text-xl font-bold leading-none">Agree</h3>
+          <p class="mt-1 text-base leading-tight text-g-8">
+            Your choices agree with the opioid trust on
+            <span
+              x-text="
+              agree === 0 ? 'no questions.' :
+              agree === 1 ? 'one question.' :
+              `${agree} questions.`
+              "
+            ></span>
+          </p>
+        </div>
+        <div class="flex h-6 w-full max-w-[248px]">
+          <template x-for="_ in new Array( agree ).fill(null)">
+            <span
+              class="rounded-xs mr-1 block h-6 w-6 bg-election-green last:mr-0"
+            ></span>
+          </template>
+        </div>
+      </div>
+      <div
+        class="mx-auto flex max-w-2xl flex-wrap items-center justify-stretch gap-3 px-5 pb-3 md:px-0 lg:px-0"
+      >
+        <div class="flex w-1/2 flex-col justify-end">
+          <h3 class="text-xl font-bold leading-none">Disagree</h3>
+          <p class="mt-1 text-base leading-tight text-g-8">
+            Your choices disagree with the opioid trust on
+            <span
+              x-text="
+              disagree === 0 ? 'no questions.' :
+              disagree === 1 ? 'one question.' :
+              `${disagree} questions.`
+              "
+            ></span>
+          </p>
+        </div>
+        <div class="flex h-6 w-full max-w-[248px]">
+          <template x-for="_ in new Array( disagree ).fill(null)">
+            <span class="rounded-xs mr-1 block h-6 w-6 bg-red last:mr-0"></span>
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

@@ -23,7 +23,9 @@ topics = ["Economy"]
 
 <em>This article originally appeared in Good Day, Berks — </em><a href="https://www.spotlightpa.org/"><em>Spotlight PA’s</em></a><em> free daily newsletter for Berks County and your daily dose of Berks County essentials. </em><a href="https://www.spotlightpa.org/newsletters/gooddayberks/"><em>Sign up here</em></a><em>.</em>
 
-<strong><em>Update, Sept. 25: </em></strong>Berks County officials are giving the owners of the former Crowne Plaza hotel more time to apply for permits and rehabilitate the large event space before deciding whether to designate it as blighted.
+<strong><em>Update, Nov. 19:</em> </strong>Berks County Blighted Property Review Committee voted unanimously to remove the blighted designation after hearing about improvements to the property and promises from the owner’s representatives to install HVAC so that the sprinkler system does not freeze. Wyomissing Borough representative had urged the committee to keep the designation.
+
+<strong><em><br/>Update, Sept. 25: </em></strong>Berks County officials are giving the owners of the former Crowne Plaza hotel more time to apply for permits and rehabilitate the large event space before deciding whether to designate it as blighted.
 
 A committee of the Berks County Redevelopment Authority tabled the decision to consider the certification. It will meet again on Nov. 18.
 

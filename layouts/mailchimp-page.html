@@ -1,0 +1,29 @@
+{{ define "body-class" }}font-serif{{ end }}
+
+{{ define "extra-head" }}
+  {{ $styles := resources.Get "css/mailchimp.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ end }}
+
+{{ define "main" }}
+  <h1 class="sr-only">{{ .Title }}</h1>
+  {{ with .Param "blurb" }}<h2 class="sr-only">{{ . }}</h2>{{ end }}
+  <div class="raw-content" data-ga-category="content">
+    {{ .Param "raw-content" | safeHTML }}
+  </div>
+{{ end }}
+
+{{ define "before-footer" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "modal" }}
+  {{ if .Param "modal-exclude" | not }}
+    {{ if .Param "newsletter-active" }}
+      {{ partial "tw/modal-ribbon.html" ( dict
+        "filename" "/2023/02/01hz-hk1z-0qfm-tsg4.jpeg"
+        )
+      }}
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -22,6 +22,8 @@ title-tag = "PA election 2025: A guide to who is on the ballot and how to vote"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2025/10/pensilvania-elecciones-municipal-2025-votar-informacion-espanol/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — On Nov. 4, voters across Pennsylvania will elect candidates to fill various municipal offices and statewide judicial roles.
 
 While the local races on your ballot will vary depending on where you live, voters statewide will consider candidates to fill a vacancy each on <a href="https://www.spotlightpa.org/news/2025/09/pennsylvania-election-2025-commonwealth-superior-court-candidates-elections/">Commonwealth and Superior Courts</a>, and weigh in on whether to retain three justices on the <a href="https://www.spotlightpa.org/news/2025/09/supreme-court-retention-election-2025-pennsylvania-donohue-dougherty-wecht-elections/">state Supreme Court</a>.
@@ -170,7 +172,7 @@ In addition to filling a vacancy, voters will also decide whether <a href="https
 
 <a href="https://www.spotlightpa.org/news/2023/10/pennsylvania-superior-court-judges-rulings-cases-elections-explainer/">Superior Court</a> is made up of 15 judges and handles criminal, civil, and family cases that are appealed from lower courts, like Courts of Common Pleas. Covering cases involving child custody, probation, and parole, it is the appellate court that the average Pennsylvanian is most likely to interact with. In 2019, the court tossed out Philadelphia-born rapper <a href="https://www.inquirer.com/news/meek-mill-conviction-overturned-cleared-larry-krasner-philadelphia-20190724.html">Meek Mill’s decade-old weapon and drug charges</a>.
 
-The court currently has eight judges elected as Democrats and six Republicans. There is one seat open on the court and two candidates running to fill it: Democrat <a href="https://www.judgeneuman.com/about">Brandon P. Neuman</a> and Republican <a href="https://www.battistaforjudge.com/">Maria Battista</a>.
+The court currently has eight judges elected as Democrats and six Republicans. There is one seat open on the court and three candidates running to fill it: Democrat <a href="https://www.judgeneuman.com/about">Brandon P. Neuman</a>, Republican <a href="https://www.battistaforjudge.com/">Maria Battista</a>, and the Liberal Party’s <a href="https://keystone.party/?page_id=308">Daniel Wassmer</a>.
 
 Superior Court judges get their seats in partisan elections and serve an initial 10-year term. After that, they face a nonpartisan retention vote every 10 years. Like Commonwealth Court judges, they almost never lose retention elections.
 

@@ -1,0 +1,209 @@
+{{ define "title" }}
+  <title>{{ .Param "title-tag" | default .LinkTitle }}</title>
+{{ end }}
+{{ define "body-class" }}
+  font-serif
+{{ end }}
+
+{{ define "main" }}
+  {{ $author  := partial "helper/get-author" .Title }}
+  <section class="bg-g-0 px-5 py-14 text-lg font-medium lg:px-0">
+    <div class="mx-auto max-w-screen-md">
+      {{ partial "tw/breadcrumbs.html" . }}
+    </div>
+    {{ if $author.active }}
+      <header
+        id="{{ $author.slug }}"
+        class="mx-auto mb-8 grid max-w-screen-md grid-cols-[repeat(2,114px)_repeat(3,1fr)] grid-rows-[auto_auto_auto] gap-5 rounded-sm bg-white p-5 font-sans shadow-md sm:grid-rows-[auto_3fr] lg:flex-[0_1_calc(50%-1rem)]"
+      >
+        {{ if $author.headshot }}
+          {{ $sizes := (slice
+            (dict "width" 256 "height" 256)
+            (dict "width" 512 "height" 512)
+            )
+          }}
+          {{ $srcset := partial "helper/build-srcset" (dict
+            "sizes" $sizes
+            "filename" $author.headshot
+            "gravity" $author.gravity
+            )
+          }}
+
+          {{ $imgOpt := dict
+            "filename" $author.headshot
+            "width" 256
+            "height" 256
+            "gravity" $author.gravity
+          }}
+          {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+          <div class="col-span-3 row-span-1 mr-4 sm:col-span-2">
+            {{ partial "tag/picture-maybe-link.html" (dict
+              "link" $author.link
+              "wrapperClass" "m-auto flex max-h-full"
+              "pictureClass" "w-full h-full rounded-full overflow-hidden shadow-sm"
+              "imgClass" "w-full h-full object-cover"
+              "sizeHint" "256px"
+              "eager" false
+              "description" (printf "Photo of %s" $author.name)
+              "srcset" $srcset
+              "src" $imgSmallSrc
+              "width" 256
+              "height" 256
+              )
+            }}
+          </div>
+        {{ else }}
+          <a
+            class="col-span-3 row-span-1 mr-4 sm:col-span-2"
+            href="{{ $author.link }}"
+          >
+            <span class="m-auto flex aspect-square max-h-full">
+              <svg
+                class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow-sm"
+                viewBox="0 0 1 1"
+                aria-hidden="true"
+              >
+                {{ partial "helper/svg.html" "user" }}
+              </svg>
+            </span>
+          </a>
+        {{ end }}
+
+
+        <div
+          class="row-2 sm:row-1 col-span-5 row-span-1 mb-2 mt-6 flex h-max max-w-xs flex-col items-start sm:col-span-3"
+        >
+          {{ with $author.beat }}
+            <h3 class="inline-block self-start leading-snug">
+              <span
+                class="border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
+              >
+                {{- . -}}
+              </span>
+            </h3>
+          {{ end }}
+          <h2
+            class="mb-1 flex flex-1 items-end text-2xl font-bold"
+            data-ga-category="author-articles"
+          >
+            {{ if $author.link }}
+              <a class="text-blue" href="{{ $author.link }}"
+                >{{ $author.name }}</a
+              >
+            {{ else }}
+              {{ $author.name }}
+            {{ end }}
+          </h2>
+          <p class="text-sm font-black uppercase">{{ $author.title }}</p>
+          <dl class="mt-3 flex flex-wrap">
+            {{ with $author.email }}
+              <dt class="mr-2 flex items-center">
+                <span class="mr-2 h-4 w-4">
+                  <svg viewBox="0 0 1 1">
+                    {{ partial "helper/svg.html" "email" }}
+                  </svg>
+                </span>
+                Email:
+              </dt>
+              <dd class="flex-[0_1_50%]">
+                <a
+                  class="text-blue"
+                  data-ga-category="author-email"
+                  href="mailto:{{ . }}"
+                  title="Email"
+                >
+                  {{ . }}
+                </a>
+              </dd>
+            {{ end }}
+            {{ with $author.bluesky }}
+              <dt class="mr-2 flex items-center">
+                <span class="mr-2 h-4 w-4">
+                  <svg viewBox="0 0 1 1">
+                    {{ partial "helper/svg.html" "bluesky" }}
+                  </svg>
+                </span>
+                Bluesky:
+              </dt>
+              <dd class="flex-[0_1_50%]">
+                <a
+                  class="text-blue"
+                  data-ga-category="author-bluesky"
+                  href="https://bsky.app/profile/{{ . }}"
+                  title="Bluesky"
+                >
+                  @{{ . }}
+                </a>
+              </dd>
+            {{ end }}
+            {{ with $author.tel }}
+              <dt class="mr-2 flex items-center">
+                <span class="mr-2 h-4 w-4">
+                  <svg viewBox="0 0 1 1" aria-hidden="true">
+                    {{ partial "helper/svg.html" "phone" }}
+                  </svg>
+                </span>
+                Telephone:
+              </dt>
+              <dd class="flex-[0_1_50%]">
+                <a
+                  class="text-blue"
+                  title="Telephone"
+                  href="tel:+1{{ replaceRE `\D` `` . }}"
+                  >{{ . }}</a
+                >
+              </dd>
+            {{ end }}
+            {{ with $author.signal }}
+              <dt class="mr-2 flex items-center">
+                <span class="mr-2 h-4 w-4">
+                  <svg viewBox="0 0 1 1" aria-hidden="true">
+                    {{ partial "helper/svg.html" "chat" }}
+                  </svg>
+                </span>
+                Signal:
+              </dt>
+              <dd class="flex-[0_1_50%]">
+                <a
+                  class="text-blue"
+                  title="Contact via the Signal app"
+                  href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
+                  >{{ . }}</a
+                >
+              </dd>
+            {{ end }}
+          </dl>
+        </div>
+        <div class="article-content col-span-5 row-span-1 mb-5">
+          {{ with $author.focusHed }}
+            <h3 class="my-2">
+              <b class="font-bold">Focus: </b>
+              {{ . }}
+            </h3>
+          {{ end }}
+          {{ $author.content|markdownify }}
+        </div>
+      </header>
+    {{ end }}
+
+
+    <div class="mx-auto max-w-screen-md" data-ga-category="author">
+      <div>
+        <h2
+          class="mb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+        >
+          Stories by
+          {{ .Title }}
+        </h2>
+        <hr class="mb-5 border-b-2" />
+      </div>
+      <div class="mb-8 mt-3 flex flex-col gap-y-8 sm:gap-y-6" x-ref="archives">
+        {{ range $page := (partial "helper/paginator" .).Pages }}
+          {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+        {{ end }}
+      </div>
+
+      {{ partial "tw/paginator-level.html" .Paginator }}
+    </div>
+  </section>
+{{ end }}

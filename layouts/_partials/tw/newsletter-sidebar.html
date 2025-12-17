@@ -1,0 +1,89 @@
+{{ $gaForm := .gaForm }}
+{{ $gaCategory := .gaCategory }}
+{{ $signupField := .signupField | default "newsletter/papost-hidden.html" }}
+{{ $hed := .hed }}
+{{ $cta := .cta }}
+
+{{ $idFname := partial "helper/new-id" . }}
+{{ $idLname := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+
+
+<div
+  class="mx-auto max-w-screen-lg rounded-sm bg-g-3 px-4 py-6"
+  data-ga-category="inline"
+>
+  <div
+    class="sm:col-span-5 sm:col-start-1 sm:grid sm:grid-cols-2 sm:gap-x-4 sm:gap-y-3"
+  >
+    <h2
+      class="text-bold col-span-1 col-start-2 max-w-md self-end text-lg font-black leading-none"
+    >
+      {{ .hed }}
+    </h2>
+    <div
+      class="col-span-1 col-start-2 row-start-2 my-2 max-w-md font-sans text-base"
+    >
+      {{ .dek }}
+    </div>
+    {{ $name := .image }}
+    {{ $credit := .Page.Param "image-credit" }}
+    {{ $imgOpts := dict
+      "filename" $name
+      "credit" $credit
+      "widthRatio" 4
+      "heightRatio" 3
+      "widths" (slice 128 256 384 512 1280)
+      "figClass" "col-start-1 col-span-1 row-start-1 row-span-2 items-center hidden sm:block justify-stretch self-stretch"
+      "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-g-7"
+      "sizeHint" "400px"
+      "rounded-sm" true
+      "gravity" .gravity
+    }}
+    {{ partial "tw/image-block.html" $imgOpts }}
+
+  </div>
+  <form
+    class="font-sans text-black"
+    data-ga-category="{{ $gaCategory }}"
+    x-data="newsletter($el.dataset.baseUrl)"
+    data-base-url="{{ page.Param `newsletters-base-url` }}"
+    @submit.prevent="submit"
+  >
+    {{ partial $signupField . }}
+
+
+    <div class="mb-5 flex flex-wrap justify-start gap-3 align-baseline">
+      <p class="flex-[1_0_100%] sm:flex-auto">
+        <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+          Email Address
+        </label>
+        <input
+          id="{{ $idEmail }}"
+          class="spl-input"
+          type="email"
+          name="EMAIL"
+          placeholder="Email address"
+          required
+        />
+      </p>
+      <button
+        type="submit"
+        class="btn-signup mt-4 self-end"
+        :disabled="isLoading"
+      >
+        {{ $cta }}
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
+      </button>
+    </div>
+    <p class="text-sm text-g-7">{{ .disclaimer }}</p>
+  </form>
+</div>

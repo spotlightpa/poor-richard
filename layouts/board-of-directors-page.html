@@ -1,0 +1,321 @@
+{{ define "body-class" }}
+  font-serif
+{{ end }}
+
+{{ define "main" }}
+  {{ with .Page.RenderString (.Param "takeover") }}
+    {{ . }}
+  {{ else }}
+    <header class="bg-white px-5 pb-4 pt-8 text-black">
+      <div class="mx-auto max-w-screen-lg">
+        {{ partial "tw/breadcrumbs.html" . }}
+      </div>
+      <div class="mx-auto w-full max-w-2xl">
+        <h1
+          class="font-sans text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+        >
+          {{- .Title -}}
+        </h1>
+      </div>
+    </header>
+  {{ end }}
+
+
+  <section class="bg-white font-sans">
+    {{ if or (.Content) (.Page.Params.subhed) }}
+      <div class="mx-auto max-w-2xl px-5 pb-10 text-lg font-medium lg:px-0">
+        {{ with .Page.Params.subhed }}
+          <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
+        {{ end }}
+        {{ with .Content }}
+          <div class="article-content">
+            {{ . }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+    {{ with .Page.RenderString (.Param "newsletter") }}
+      <div class="font-sans">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ .Page.RenderString (.Param "testimonials-group") }}
+
+    {{ with .Page.RenderString (.Param "supplemental") }}
+
+      <article
+        class="article-content mx-auto max-w-screen-xl px-5 py-24 font-sans md:grid md:grid-cols-12 md:grid-rows-[auto_1fr] md:gap-x-5 md:gap-y-3"
+      >
+        {{ . }}
+      </article>
+    {{ end }}
+    {{ range $i, $blocks := .Params.blocks }}
+      {{ $id := urlize .title }}
+      <div
+        id="{{ $id }}"
+        x-data
+        x-intersect.half="$dispatch('intersect:support', $el.id)"
+        data-ga-category="blocks"
+        class="w-full bg-g-0"
+      >
+        {{ partial "blocks/block" (dict
+          "Page" $
+          "block" .
+          )
+        }}
+      </div>
+    {{ end }}
+    {{ with .Page.RenderString (.Param "supporters") }}
+      <div class="py-9">
+        {{ . }}
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
+
+{{ define "extra-main" }}
+  {{ $board := slice }}
+
+  {{ range sort .Site.Data.authors "lastName" }}
+    {{ $author := partial "helper/get-author" .name }}
+    {{ if $author.active }}
+      {{ if $author.board }}
+        {{ $board = $board | append $author }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  <section class="px-2 pb-10 font-sans">
+    <div class="mx-auto my-14 w-full max-w-screen-xl">
+      <ul
+        class="mx-auto my-14 mt-10 flex w-full flex-wrap gap-8"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $board }}
+          {{ template "staff-page-card" . }}
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "staff-page-card" }}
+  {{ $author := . }}
+  <li
+    id="{{ $author.slug }}"
+    class="relative grid auto-rows-min grid-cols-5 grid-rows-subgrid gap-x-4 gap-y-8 rounded-sm bg-white p-6 pb-16 shadow-md sm:flex-[0_0_calc(50%-2rem)]"
+    x-data="{ isOpen: false }"
+    :style="!isOpen && { height: '560px' }"
+    :class="{'overflow-hidden': !isOpen}"
+  >
+    <div
+      class="bg-linear-to-t absolute inset-x-0 bottom-0 from-white via-white via-40% px-4 pb-4 pt-12"
+    >
+      <button
+        x-show="!isOpen"
+        class="group leading-4 text-navy hover:text-yellow"
+        @click="isOpen = true"
+        x-report-click
+        data-ga-category="toggle-bio"
+      >
+        <span aria-hidden="true">
+          <svg class="inline-block h-4 w-4 fill-current">
+            {{ partial "helper/svg.html" "plus" }}
+          </svg>
+        </span>
+        <span class="ml-2 align-bottom uppercase hover:underline">
+          Show more…
+        </span>
+      </button>
+      <button
+        x-show="isOpen"
+        class="group leading-4 text-navy hover:text-yellow"
+        @click="isOpen = false"
+        x-report-click
+        data-ga-category="toggle-bio"
+      >
+        <span aria-hidden="true">
+          <svg class="inline-block h-4 w-4 fill-current">
+            {{ partial "helper/svg.html" "minus" }}
+          </svg>
+        </span>
+        <span class="ml-2 align-bottom uppercase hover:underline">
+          Show less…
+        </span>
+      </button>
+    </div>
+    {{ if $author.headshot }}
+      {{ $sizes := (slice
+        (dict "width" 256 "height" 256)
+        (dict "width" 512 "height" 512)
+        )
+      }}
+      {{ $srcset := partial "helper/build-srcset" (dict
+        "sizes" $sizes
+        "filename" $author.headshot
+        "gravity" $author.gravity
+        )
+      }}
+
+      {{ $imgOpt := dict
+        "filename" $author.headshot
+        "width" 256
+        "height" 256
+        "gravity" $author.gravity
+      }}
+      {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+      <div class="col-span-5 sm:max-md:col-span-2 lg:col-span-2">
+        {{ partial "tag/picture-maybe-link.html" (dict
+          "link" $author.link
+          "wrapperClass" "m-auto flex aspect-square max-h-full max-w-[256px]"
+          "pictureClass" "w-full h-full rounded-full overflow-hidden shadow-sm"
+          "imgClass" "w-full h-full object-cover"
+          "sizeHint" "256px"
+          "eager" false
+          "description" (printf "Photo of %s" $author.name)
+          "srcset" $srcset
+          "src" $imgSmallSrc
+          "width" 256
+          "height" 256
+          )
+        }}
+      </div>
+    {{ else }}
+      <a
+        class="col-span-5 sm:max-md:col-span-2 lg:col-span-2"
+        href="{{ $author.link }}"
+      >
+        <span class="m-auto flex aspect-square max-h-full max-w-[256px]">
+          <svg
+            class="h-full w-full overflow-hidden rounded-full bg-g-4 fill-current p-5 text-g-7 shadow-sm"
+            viewBox="0 0 1 1"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "user" }}
+          </svg>
+        </span>
+      </a>
+    {{ end }}
+
+
+    <header
+      class="col-span-5 flex flex-col justify-end gap-2 sm:max-md:col-span-3 lg:col-span-3"
+    >
+      {{ with $author.beat }}
+        <h3 class="mb-auto leading-snug">
+          <span
+            class="border-2 border-eyebrow-bg bg-eyebrow-bg box-decoration-clone px-2 font-sans text-sm font-semibold uppercase text-eyebrow"
+          >
+            {{- . -}}
+          </span>
+        </h3>
+      {{ end }}
+      <h2
+        class="flex items-end text-2xl font-bold"
+        data-ga-category="author-articles"
+      >
+        {{ if $author.link }}
+          <a class="text-blue" href="{{ $author.link }}">{{ $author.name }}</a>
+        {{ else }}
+          {{ $author.name }}
+        {{ end }}
+      </h2>
+      <p class="text-sm font-black uppercase">{{ $author.title }}</p>
+      <dl>
+        {{ with $author.email }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="flex items-center">
+              <span class="mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1">
+                  {{ partial "helper/svg.html" "email" }}
+                </svg>
+              </span>
+              Email:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                data-ga-category="author-email"
+                href="mailto:{{ . }}"
+                title="Email"
+              >
+                {{ . }}
+              </a>
+            </dd>
+          </div>
+        {{ end }}
+        {{ with $author.twitter }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="inline-flex items-center">
+              <span class="mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1">
+                  {{ partial "helper/svg.html" "twitter" }}
+                </svg>
+              </span>
+              Twitter:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                data-ga-category="author-twitter"
+                href="https://www.twitter.com/{{ . }}"
+                title="Twitter"
+              >
+                @{{ . }}
+              </a>
+            </dd>
+          </div>
+        {{ end }}
+        {{ with $author.tel }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="flex items-center">
+              <span class="mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1" aria-hidden="true">
+                  {{ partial "helper/svg.html" "phone" }}
+                </svg>
+              </span>
+              Telephone:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                title="Telephone"
+                href="tel:+1{{ replaceRE `\D` `` . }}"
+                >{{ . }}</a
+              >
+            </dd>
+          </div>
+        {{ end }}
+        {{ with $author.signal }}
+          <div class="flex basis-0 items-start justify-start gap-2">
+            <dt class="flex items-center">
+              <span class="mr-2 h-4 w-4">
+                <svg viewBox="0 0 1 1" aria-hidden="true">
+                  {{ partial "helper/svg.html" "chat" }}
+                </svg>
+              </span>
+              Signal:
+            </dt>
+            <dd>
+              <a
+                class="break-all text-blue"
+                title="Contact via the Signal app"
+                href="https://signal.me/#p/+1{{ replaceRE `\D` `` . }}"
+                >{{ . }}</a
+              >
+            </dd>
+          </div>
+        {{ end }}
+      </dl>
+    </header>
+    <div class="article-content col-span-5">
+      {{ with $author.focusHed }}
+        <h3 class="my-2">
+          <b class="font-bold">Focus: </b>
+          {{ . }}
+        </h3>
+      {{ end }}
+      {{ $author.content|markdownify }}
+    </div>
+  </li>
+{{ end }}

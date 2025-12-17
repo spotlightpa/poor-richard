@@ -1,0 +1,289 @@
+{{ $css := resources.Get "css/carousel.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+
+<div class="carousel-container relative flex w-full items-center">
+  <div
+    class="carousel-arrow left-arrow absolute left-0 top-1/2 z-30 -translate-y-1/2 cursor-pointer"
+  >
+    <svg
+      class="h-16 w-16 stroke-[4px] text-white drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+    >
+      {{ partial "helper/svg.html" "chevron-left" }}
+    </svg>
+  </div>
+
+  <div class="carousel-content relative flex h-[450px] w-full flex-row">
+    {{ range $index, $item := site.Data.carousel.items }}
+      {{ $w := int $item.width }}
+      {{ $h := int $item.height }}
+      <div
+        class="carousel-item relative flex h-full w-full"
+        data-index="{{ $index }}"
+      >
+        <img
+          class="carousel-photo z-1 absolute left-0 top-0 h-full w-full object-cover"
+          src="{{ partial `helper/imgproxy` (dict `filename` $item.image `width` 1200 `height` 800) }}"
+          alt="{{ $item.alt }}"
+        />
+        <div
+          class="carousel-blurb z-2 flex flex-1 items-center justify-center bg-black/70 p-[25px_25px_25px_70px]"
+        >
+          <div class="carousel-grid">
+            <div class="carousel-title-container">
+              <div
+                class="carousel-title desktop-title mb-6 text-4xl font-bold text-white lg:text-5xl"
+              >
+                Spotlight PA Featured Impact
+              </div>
+              <div
+                class="carousel-title mobile-title mb-0 text-4xl font-bold text-white lg:text-5xl"
+              >
+                Featured Impact
+              </div>
+            </div>
+
+            <div
+              class="carousel-tagline my-2 w-fit bg-white p-2 text-[12px] font-semibold uppercase sm:my-4"
+            >
+              {{ $item.tagline }}
+            </div>
+
+            <div class="carousel-text desktop-text text-white">
+              {{ $item.text }}
+            </div>
+
+            <div class="carousel-text mobile-text text-white">
+              {{ $item.short }}
+            </div>
+
+            <div class="read-the-series">
+              <a
+                class="my-[10px] inline-flex cursor-pointer items-center rounded-[4px] bg-white p-[10px_25px] text-center font-bold no-underline"
+                href="{{ $item.link }}"
+                target="_blank"
+              >
+                {{ $item.linkText }}
+                <svg class="ml-4 h-5 w-5 text-white">
+                  {{ partial "helper/svg.html" "right" }}
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-right-half z-2 relative flex-1 bg-transparent"
+        ></div>
+      </div>
+    {{ end }}
+  </div>
+
+  <div
+    class="carousel-arrow right-arrow absolute right-0 top-1/2 z-30 -translate-y-1/2 cursor-pointer"
+  >
+    <svg
+      class="h-16 w-16 stroke-[4px] text-white drop-shadow-[3px_3px_2px_rgba(0,0,0,0.7)]"
+    >
+      {{ partial "helper/svg.html" "chevron-right" }}
+    </svg>
+  </div>
+</div>
+
+<div class="bottom-bar relative h-[170px] w-full bg-[#424242]">
+  <div
+    class="bottom-bar-gradient-box left-gradient-box z-3 pointer-events-none absolute left-[35px] top-0 h-full w-[75px]"
+  ></div>
+  <div
+    class="bottom-bar-gradient-box right-gradient-box z-3 pointer-events-none absolute right-[35px] top-0 h-full w-[75px]"
+  ></div>
+
+  <div class="bottom-bar-arrows">
+    <div class="bottom-bar-arrow left-bottom-arrow"></div>
+    <div class="bottom-bar-arrow right-bottom-arrow"></div>
+  </div>
+
+  <div
+    class="bottom-bar-boxes-container scrollbar-hide z-2 absolute left-[35px] right-[35px] top-1/2 h-[130px] -translate-y-1/2 overflow-x-auto overflow-y-hidden"
+  >
+    <div class="impact-boxes-wrapper inline-flex gap-[20px]">
+      {{ range $index, $item := site.Data.carousel.items }}
+        <div
+          class="impact-box flex h-[130px] w-[400px] flex-none cursor-pointer"
+          data-index="{{ $index }}"
+        >
+          <div class="impact-box-photo relative h-full w-[400px]">
+            <img
+              src="{{ partial "helper/imgproxy" (dict "filename" $item.image "width" 200 "height" 150) }}"
+              alt="{{ $item.alt }}"
+              class="impact-box-image h-full w-full object-cover"
+            />
+          </div>
+          <div class="impact-box-text-container w-full">
+            <div
+              class="impact-box-tag ml-[10px] w-fit bg-black p-[1px_5px] text-[13px] font-bold uppercase text-white"
+            >
+              {{ $item.tagline }}
+            </div>
+            <div
+              class="impact-box-text whitespace-normal p-[5px_0px_0px_10px] text-[13px] text-white"
+            >
+              {{ $item.short }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script>
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      const later = () => {
+        timeout = null;
+        func.apply(this, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const leftArrow = document.querySelector(".left-arrow");
+    const rightArrow = document.querySelector(".right-arrow");
+    const bottomBarContainer = document.querySelector(
+      ".bottom-bar-boxes-container",
+    );
+    const impactBoxes = document.querySelectorAll(".impact-box");
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      carouselItems.forEach((item, index) => {
+        const photo = item.querySelector(".carousel-photo");
+        const impactBoxImage = document.querySelector(
+          `.impact-box[data-index="${index}"] .impact-box-image`,
+        );
+
+        if (index === currentIndex) {
+          item.style.display = "flex";
+          photo.classList.add("active");
+          if (impactBoxImage) impactBoxImage.classList.add("active");
+        } else {
+          item.style.display = "none";
+          photo.classList.remove("active");
+          if (impactBoxImage) impactBoxImage.classList.remove("active");
+        }
+      });
+
+      scrollToActiveBox();
+      updateCarouselArrowStates();
+
+      document
+        .querySelectorAll(".impact-box-text-container")
+        .forEach((container) => {
+          container.classList.remove("active");
+        });
+
+      const activeImpactBox = document.querySelector(
+        `.impact-box[data-index="${currentIndex}"] .impact-box-text-container`,
+      );
+      if (activeImpactBox) {
+        activeImpactBox.classList.add("active");
+      }
+
+      updateGradients();
+    }
+
+    function updateCarouselArrowStates() {
+      leftArrow.style.opacity = currentIndex === 0 ? "0.5" : "1";
+      leftArrow.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+      rightArrow.style.opacity =
+        currentIndex === carouselItems.length - 1 ? "0.5" : "1";
+      rightArrow.style.pointerEvents =
+        currentIndex === carouselItems.length - 1 ? "none" : "auto";
+    }
+
+    function navigateCarousel(direction) {
+      if (direction === "left" && currentIndex > 0) {
+        currentIndex--;
+      }
+      if (direction === "right" && currentIndex < carouselItems.length - 1) {
+        currentIndex++;
+      }
+      updateCarousel();
+    }
+
+    function scrollToActiveBox() {
+      const activeBox = document.querySelector(
+        `.impact-box[data-index="${currentIndex}"]`,
+      );
+      if (activeBox) {
+        const containerLeft = bottomBarContainer.scrollLeft;
+        const containerRight = containerLeft + bottomBarContainer.clientWidth;
+        const boxLeft = activeBox.offsetLeft;
+        const boxRight = boxLeft + activeBox.offsetWidth;
+
+        if (boxLeft < containerLeft) {
+          bottomBarContainer.scrollBy({
+            left: boxLeft - containerLeft,
+            behavior: "smooth",
+          });
+        } else if (boxRight > containerRight) {
+          bottomBarContainer.scrollBy({
+            left: boxRight - containerRight,
+            behavior: "smooth",
+          });
+        }
+      }
+    }
+
+    function handleBottomBoxClick(event) {
+      const clickedBox = event.target.closest(".impact-box");
+      if (clickedBox) {
+        const index = parseInt(clickedBox.dataset.index, 10);
+        if (!isNaN(index)) {
+          currentIndex = index;
+          updateCarousel();
+        }
+      }
+    }
+
+    leftArrow.addEventListener("click", () => navigateCarousel("left"));
+    rightArrow.addEventListener("click", () => navigateCarousel("right"));
+
+    impactBoxes.forEach((box) => {
+      box.addEventListener("click", handleBottomBoxClick);
+    });
+
+    const leftGradient = document.querySelector(".left-gradient-box");
+    const rightGradient = document.querySelector(".right-gradient-box");
+
+    function updateGradients() {
+      const scrollLeft = bottomBarContainer.scrollLeft;
+      const scrollWidth = bottomBarContainer.scrollWidth;
+      const clientWidth = bottomBarContainer.clientWidth;
+
+      if (scrollLeft > 0) {
+        leftGradient.style.display = "block";
+      } else {
+        leftGradient.style.display = "none";
+      }
+
+      if (scrollLeft + clientWidth < scrollWidth) {
+        rightGradient.style.display = "block";
+      } else {
+        rightGradient.style.display = "none";
+      }
+    }
+
+    const debouncedUpdateGradients = debounce(updateGradients, 20 /* ms */);
+
+    bottomBarContainer.addEventListener("scroll", debouncedUpdateGradients);
+    window.addEventListener("resize", debouncedUpdateGradients);
+
+    updateCarousel();
+    updateGradients();
+  });
+</script>

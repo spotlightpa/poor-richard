@@ -60,7 +60,7 @@ description = "A fresh, positive look at the incredible people, places, and food
 image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
 width = 1200
 height = 1009
-link = "https://www.spotlightpa.org/newsletters/palocal"
+link = "/newsletters/palocal/"
 
 [[explore]]
 newsletter = "The Investigator"
@@ -69,7 +69,7 @@ description = "The best accountability journalism from across PA, plus behind-th
 image = "2022/03/01h2-pt10-vxe0-6r5s.jpeg"
 width = 480
 height = 270
-link = "https://www.spotlightpa.org/newsletters/investigator"
+link = "/newsletters/investigator/"
 
 [[explore]]
 newsletter = "Talk of the Town"

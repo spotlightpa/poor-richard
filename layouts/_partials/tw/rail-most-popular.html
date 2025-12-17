@@ -1,0 +1,44 @@
+<div
+  class=""
+  x-data="mostPopular"
+  x-show="hasLoaded"
+  x-cloak
+  data-ga-category="most-popular"
+  id="most-popular"
+>
+  <link
+    rel="preload"
+    as="fetch"
+    {{ if not hugo.IsServer }}
+      href="/feeds/most-popular-items.json"
+    {{ else }}
+      crossorigin
+      href="https://files.data.spotlightpa.org/feeds/most-popular-items.json"
+    {{ end }}
+    x-ref="mostPopSrc"
+  />
+  <h2
+    class="text-left font-sans text-base font-bold uppercase leading-none tracking-wider text-black"
+  >
+    Most Popular Stories
+  </h2>
+  <nav class="has-text-dark">
+    <template x-for="(story, i) of stories">
+      <a
+        class="ga-component:most-popular group mt-6 flex"
+        :href="story.url_path"
+      >
+        <span
+          class="mr-4 h-9 w-9 shrink-0 rounded-full bg-black pr-[2px] text-right font-serif text-4xl font-bold leading-8 text-white"
+          x-text="i + 1"
+          data-ga-category="ranking"
+        ></span>
+        <span
+          class="font-semibold tracking-tight text-black group-hover:underline"
+          data-ga-category="hed"
+          x-text="story.title"
+        ></span>
+      </a>
+    </template>
+  </nav>
+</div>

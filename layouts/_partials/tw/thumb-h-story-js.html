@@ -1,0 +1,63 @@
+<article class="flex flex-wrap gap-x-4">
+  <div data-ga-category="eyebrow" class="w-full">
+    <a
+      class="inline-block border-2 border-eyebrow-bg bg-eyebrow-bg px-2 font-sans text-xs font-semibold uppercase text-eyebrow md:text-sm"
+      :href="story.url"
+      data-ga-category="eyebrow"
+      x-text="story.kicker"
+    ></a>
+  </div>
+  <div class="w-2/5 sm:w-full md:w-2/5">
+    <figure class="mt-2" data-ga-category="thumb">
+      <a
+        class="relative block h-0 w-full overflow-hidden bg-g-3 pb-16x9 shadow-sm"
+        :href="story.url"
+      >
+        <picture class="absolute inset-0 block">
+          <img
+            class="min-h-full min-w-full object-cover"
+            :alt="story.imageDescription"
+            :title="story.imageDescription"
+            :src="story.imageURL"
+            loading="lazy"
+          />
+        </picture>
+      </a>
+      <figcaption
+        class="mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit"
+        x-text="story.imageCredit"
+      ></figcaption>
+    </figure>
+  </div>
+  <div class="group mt-3 flex-1 md:mb-3 md:mt-0 md:self-end">
+    <h2
+      class="text-base font-semibold leading-tight tracking-tight text-hed sm:text-lg"
+    >
+      <a
+        class="group-hover:underline"
+        :href="story.url"
+        data-ga-category="hed"
+        x-text="story.title"
+      ></a>
+    </h2>
+    <h3
+      class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-blue"
+    >
+      <a
+        class="text-blue group-hover:underline"
+        :href="story.url"
+        data-ga-category="byline"
+        x-show="story.byline"
+        x-template="by ${story.byline}"
+      ></a>
+    </h3>
+    <h4 class="mt-2 font-sans text-sm text-dek sm:text-base">
+      <a
+        :href="story.url"
+        class="group-hover:underline"
+        data-ga-category="dek"
+        x-text="story.blurb"
+      ></a>
+    </h4>
+  </div>
+</article>

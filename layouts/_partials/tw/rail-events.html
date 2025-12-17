@@ -1,0 +1,35 @@
+{{ $events := site.GetPage "/topics/events/_index.md" }}
+{{ $pages := $events.RegularPages }}
+{{ $upcomingEvents := where $pages `Params.event-date` "gt" now }}
+{{ $upcomingEvents = sort $upcomingEvents `Params.event-date` "asc" }}
+
+{{ if $upcomingEvents }}
+  <div
+    class="mt-6 rounded-sm bg-black p-6 text-white shadow-sm"
+    data-ga-category="editors-pick"
+  >
+    <h2
+      class="text-center font-sans text-base font-bold uppercase leading-none tracking-wider text-yellow"
+    >
+      {{ .label }}
+    </h2>
+
+    {{ range $upcomingEvents }}
+      {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+
+      {{ partial "tw/thumb-h-event.html" (dict
+        "link" $params.link
+        "hed" .LinkTitle
+        "showDate" true
+        "dateISO" $params.eventDateISO
+        "hedSize" "text-base"
+        )
+      }}
+    {{ end }}
+
+
+    <a href="/events" class="btn-signup-slim mt-9 flex justify-center font-sans"
+      >More events</a
+    >
+  </div>
+{{ end }}

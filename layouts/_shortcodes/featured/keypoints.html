@@ -1,0 +1,38 @@
+{{ $side := .Get "side" | default "right" }}
+{{ $sideClass := cond (eq $side "right") "float-right lg:-mr-40 sm:pl-10" "float-left lg:-ml-32 sm:pr-8" }}
+<aside
+  x-data="{ isOpen: false }"
+  class="hide-app {{ $sideClass }} lg:float-offset relative mb-4 h-40 w-full py-4 font-sans text-sm sm:mb-0 sm:h-auto sm:max-w-xs"
+  data-ga-category="inline:keypoints"
+  :class="{'h-40': !isOpen}"
+>
+  <div class="absolute inset-x-0 bottom-0 sm:hidden" x-show="!isOpen">
+    <button
+      :aria-expanded="''+isOpen"
+      class="group mb-4 leading-4 text-navy hover:text-yellow"
+      @click="isOpen = true"
+      x-report-click
+      data-ga-category="toggle-sidebar"
+    >
+      <span aria-hidden="true">
+        <svg class="inline-block h-4 w-4 fill-current">
+          {{ partial "helper/svg.html" "plus" }}
+        </svg>
+      </span>
+      <span class="ml-2 align-bottom uppercase hover:underline">
+        Show more…
+      </span>
+    </button>
+  </div>
+  <div
+    class="bg-key content-aside relative h-24 overflow-y-hidden sm:h-auto sm:overflow-y-visible"
+    :class="{'h-24': !isOpen, 'overflow-y-hidden': !isOpen}"
+  >
+    {{ .Inner | markdownify }}
+    <div
+      class="bg-linear-to-t absolute inset-0 from-white sm:hidden"
+      x-show="!isOpen"
+    ></div>
+  </div>
+  <hr hidden />
+</aside>

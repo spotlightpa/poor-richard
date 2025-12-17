@@ -1,0 +1,49 @@
+{{ $percent := .Get "percent" | default 0 }}
+{{ $inner := .Get "body" }}
+{{ $number := .Get "number" }}
+
+
+<figure
+  x-data="{ onScreen: false }"
+  x-intersect.half="onScreen = true"
+  class="mx-auto flex max-w-5xl flex-col justify-center py-6"
+  style="--item-pct: {{ $percent }}%;"
+>
+  <div class="relative my-3 h-9 overflow-hidden rounded-sm bg-yellow-7 md:h-12">
+    <span
+      x-show="onScreen"
+      class="max-w-(--item-pct) bg-size-[auto_48px] block h-9 bg-repeat-x md:h-12"
+      x-transition:enter="transition-all ease-out duration-1000 delay-700"
+      x-transition:enter-start="w-0"
+      x-transition:enter-end="w-(--item-pct)"
+      style="
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiA5OCc+PHBhdGggZD0nTTE2IDEzLjVjNC42IDAgOC4zIDMuNyA4LjMgOC4zcy0zLjcgOC4zLTguMyA4LjMtOC4zLTMuNy04LjMtOC4zIDMuNy04LjMgOC4zLTguM1ptMTQuNCA0My4xYzAgMy44LTMuOSAzLjgtMy45IDMuOHYyMy40YzAgMi42LTIuMSA0LjctNC43IDQuN3MtNC43LTIuMS00LjctNC43VjY1aC0yLjN2MTguOGMwIDIuNi0yLjEgNC43LTQuNyA0LjdzLTQuNy0yLjEtNC43LTQuN1Y2MC40cy0zLjkgMC0zLjktMy44di0xNWMwLTYuOCA3LjMtOS4zIDEyLjMtOS4zaDQuNGM0LjkgMCAxMi4zIDIuNSAxMi4zIDkuM3YxNVonIHN0eWxlPSdmaWxsOiNmZmNiMDM7c3Ryb2tlLXdpZHRoOjAnLz48L3N2Zz4=');
+      "
+    ></span>
+    <p
+      x-show="onScreen"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="absolute bottom-0 left-0 top-0 z-10 flex items-center px-2 font-sans font-bold leading-none text-white md:text-4xl"
+    ></p>
+  </div>
+  <figcaption class="w-full">
+    <p
+      x-show="onScreen"
+      x-transition:enter="transition ease-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="font-sans text-lg text-white"
+    >
+      {{ $inner | safeHTML }}
+    </p>
+  </figcaption>
+  <div hidden class="w-(--item-pct)"></div>
+</figure>

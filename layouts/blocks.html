@@ -1,0 +1,25 @@
+{{ define "html-class" -}}
+  scroll-smooth
+{{- end }}
+
+{{ define "body-class" -}}
+  font-sans
+{{- end }}
+
+{{ define "main" }}
+  <section class="bg-white font-sans">
+    {{ range .Params.blocks }}
+      <div
+        data-ga-category="blocks"
+        class="w-full"
+        {{ with .id }}id="{{ . }}"{{ end }}
+      >
+        {{ partial "blocks/block" (dict
+          "Page" $
+          "block" .
+          )
+        }}
+      </div>
+    {{ end }}
+  </section>
+{{ end }}

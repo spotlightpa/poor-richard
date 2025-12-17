@@ -1,0 +1,3460 @@
+{{ define "main" }}
+  {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+  {{ $bylineLink := "" }}
+  {{ with .Param "authors" }}
+    {{ if len . | eq 1 }}
+      {{ $name := index . 0 }}
+      {{ $author := partial "helper/get-author" $name }}
+      {{ if $author.link }}
+        {{ $bylineLink = $author.link }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ partial "s3-data-loader.html" . }}
+  <script data-sources="{{ .Params.geojson.sources | jsonify }}">
+    let sourcesParam = JSON.parse(document.currentScript.dataset.sources);
+
+    function pollUntil(conditionCallback) {
+      return new Promise((resolve) => {
+        if (conditionCallback()) {
+          resolve();
+        } else {
+          let interval;
+          interval = setInterval(() => {
+            if (conditionCallback()) {
+              clearInterval(interval);
+              resolve();
+            }
+          }, 100);
+        }
+      });
+    }
+
+    function splVoterRegGraphic() {
+      return {
+        apDateLabelFromMDY(mdy) {
+          if (!mdy || typeof mdy !== "string") return null;
+          const parts = mdy.split("/");
+          if (parts.length !== 3) return null;
+          const [mm, dd, yyyy] = parts.map((p) => parseInt(p, 10));
+          if (!mm || !dd || !yyyy) return null;
+          const months = [
+            "Jan.",
+            "Feb.",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Aug.",
+            "Sept.",
+            "Oct.",
+            "Nov.",
+            "Dec.",
+          ];
+          return `${months[mm - 1] || ""} ${dd}, ${yyyy}`;
+        },
+        isoFromMDY(mdy) {
+          if (!mdy || typeof mdy !== "string") return null;
+          const parts = mdy.split("/");
+          if (parts.length !== 3) return null;
+          const [mm, dd, yyyy] = parts.map((p) => parseInt(p, 10));
+          if (!mm || !dd || !yyyy) return null;
+          const mm2 = String(mm).padStart(2, "0");
+          const dd2 = String(dd).padStart(2, "0");
+          return `${yyyy}-${mm2}-${dd2}`;
+        },
+
+        getPartyData() {
+          const datasets = this.datasets || {};
+          const counts =
+            datasets.counts || datasets["Counts"] || datasets["Sheet1"];
+
+          if (Array.isArray(counts) && counts.length > 0) {
+            const row =
+              counts.find(
+                (r) => (r.Area || "").toLowerCase() === "pennsylvania",
+              ) || counts[0];
+
+            const num = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  ) || 0;
+
+            const pct = (v) => {
+              const n = num(v);
+              return n > 0 && n <= 1 ? n * 100 : n;
+            };
+
+            const demTurnout = num(row["Democrats registered"]);
+            const repTurnout = num(row["Republicans registered"]);
+            const otherTurnout = num(row["Other party registered"]);
+            const demPct = pct(row["Democratic turnout percentage"]);
+            const repPct = pct(row["Republican turnout percentage"]);
+            const otherPct = pct(row["Other party turnout percentage"]);
+            const paTotal = num(row["Total registered"]);
+            const paPct = pct(row["Turnout percentage"]);
+            return [
+              {
+                name: "Pennsylvania",
+                party: "PA",
+                value: paTotal,
+                pct: paPct,
+                color: "#1b998b",
+              },
+              {
+                name: "Democrat",
+                party: "Dem.",
+                value: demTurnout,
+                pct: demPct,
+                color: "#009edb",
+              },
+              {
+                name: "Republican",
+                party: "Rep.",
+                value: repTurnout,
+                pct: repPct,
+                color: "#d70000",
+              },
+              {
+                name: "Other",
+                party: "Other",
+                value: otherTurnout,
+                pct: otherPct,
+                color: "#ffcb03",
+              },
+            ];
+
+            return [
+              {
+                name: "Democrat",
+                party: "Dem.",
+                value: demTurnout,
+                pct: demPct,
+                color: "#009edb",
+              },
+              {
+                name: "Republican",
+                party: "Rep.",
+                value: repTurnout,
+                pct: repPct,
+                color: "#d70000",
+              },
+              {
+                name: "Other",
+                party: "Other",
+                value: otherTurnout,
+                pct: otherPct,
+                color: "#1b998b",
+              },
+            ];
+          }
+
+          const totalData = datasets["total"] || [];
+          if (!Array.isArray(totalData) || totalData.length === 0) return [];
+          const rows = totalData.filter((r) => r.Party && r.Party !== "Total");
+          const dem = rows.find((r) => r.Party === "Democrat") || { Total: 0 };
+          const rep = rows.find((r) => r.Party === "Republican") || {
+            Total: 0,
+          };
+          const other = rows.find((r) => r.Party === "Other") || { Total: 0 };
+          return [
+            {
+              name: "Democrat",
+              party: "Dem.",
+              value: typeof dem.Total === "number" ? dem.Total : 0,
+              color: "#009edb",
+            },
+            {
+              name: "Republican",
+              party: "Rep.",
+              value: typeof rep.Total === "number" ? rep.Total : 0,
+              color: "#d70000",
+            },
+            {
+              name: "Other",
+              party: "Other",
+              value: typeof other.Total === "number" ? other.Total : 0,
+              color: "#1b998b",
+            },
+          ];
+        },
+
+        renderBarchart() {
+          const container = this.$refs.barchartContainer;
+          if (!container) return;
+
+          const partyData = this.getPartyData();
+          if (partyData.length === 0) return;
+
+          const sortedData = [...partyData].sort((a, b) => b.value - a.value);
+
+          container.innerHTML = "";
+
+          const wrapper = document.createElement("div");
+          wrapper.style.cssText =
+            "display: flex; flex-direction: column; gap: 0px; width: 100%; padding: 0px 0;";
+
+          sortedData.forEach((d, idx) => {
+            const section = document.createElement("div");
+            section.style.cssText = "display: flex; flex-direction: column;";
+
+            if (idx > 0) {
+              const separator = document.createElement("div");
+              separator.style.cssText =
+                "height: 20px; display: flex; align-items: center; margin-bottom: 8px;";
+              const line = document.createElement("div");
+              line.style.cssText =
+                "width: 100%; height: 0; border-top: 1px dashed #4b5563; opacity: 1;";
+              separator.appendChild(line);
+              section.appendChild(separator);
+            } else {
+              const spacer = document.createElement("div");
+              spacer.style.cssText = "height: 4px;";
+              section.appendChild(spacer);
+            }
+
+            const labelContainer = document.createElement("div");
+            labelContainer.style.cssText = "margin-bottom: 8px; padding: 0;";
+            const label = document.createElement("div");
+            label.style.cssText =
+              "color: #ffffff; font-size: 20px; font-weight: 700; line-height: 1.2;";
+            const labelText =
+              d.name === "Pennsylvania"
+                ? "Pennsylvania"
+                : d.name === "Democrat"
+                  ? "Democratic Party"
+                  : d.name === "Republican"
+                    ? "Republican Party"
+                    : "Other party";
+            label.textContent = labelText;
+            labelContainer.appendChild(label);
+            section.appendChild(labelContainer);
+
+            const barContainer = document.createElement("div");
+            const isMobile = window.innerWidth < 768;
+            const barHeight = isMobile ? 50 : 40;
+            barContainer.style.cssText = `position: relative; width: 100%; height: ${barHeight}px; background: #e5e7eb; margin-bottom: 8px;`;
+            const fill = document.createElement("div");
+            fill.style.cssText = `position: absolute; left: 0; top: 0; height: 100%; width: ${d.pct}%; background: ${d.color}; display: flex; align-items: center; justify-content: ${d.pct >= 25 ? "flex-end" : "flex-start"};`;
+
+            const pctLabel = document.createElement("div");
+            if (d.pct >= 25) {
+              pctLabel.style.cssText = `color: #ffffff; font-size: 20px; font-weight: 700; padding: 0 8px 0 0;`;
+              pctLabel.textContent = `${Math.round(d.pct)}%`;
+              fill.appendChild(pctLabel);
+              barContainer.appendChild(fill);
+            } else {
+              pctLabel.style.cssText = `position: absolute; left: ${d.pct}%; top: 50%; transform: translateY(-50%); margin-left: 8px; color: #111111; font-size: 20px; font-weight: 700; white-space: nowrap;`;
+              pctLabel.textContent = `${Math.round(d.pct)}%`;
+              barContainer.appendChild(fill);
+              barContainer.appendChild(pctLabel);
+            }
+            section.appendChild(barContainer);
+
+            const valueContainer = document.createElement("div");
+            valueContainer.style.cssText =
+              "text-align: right; padding-right: 4px; margin-bottom: 4px;";
+            const value = document.createElement("div");
+            value.style.cssText =
+              "color: #ffffff; font-size: 18px; font-weight: 400;";
+            const valueText =
+              d.name === "Pennsylvania"
+                ? `${d.value.toLocaleString()} registered voters`
+                : d.value.toLocaleString();
+            value.textContent = valueText;
+            valueContainer.appendChild(value);
+            section.appendChild(valueContainer);
+
+            wrapper.appendChild(section);
+          });
+
+          container.appendChild(wrapper);
+        },
+      };
+    }
+    function splPartyChart() {
+      return {
+        selectedParty: "total",
+        isSearching: false,
+        selectedCounty: "Pennsylvania",
+        partyConfig: Object.freeze({
+          total: {
+            colors: Object.freeze([
+              "#d8fbf6",
+              "#aff5ea",
+              "#86efe0",
+              "#5de9d6",
+              "#22cdb8",
+              "#199e8e",
+              "#0f6f63",
+              "#083934",
+            ]),
+            labels: Object.freeze([
+              "10%",
+              "20%",
+              "30%",
+              "40%",
+              "50%",
+              "60%",
+              "70%",
+            ]),
+            borderColor: "#1b998b",
+          },
+          democrat: {
+            colors: Object.freeze([
+              "#d4f1ff",
+              "#8fd6ff",
+              "#4bbcff",
+              "#009eff",
+              "#0079d1",
+              "#005aa3",
+              "#003c75",
+              "#001f47",
+            ]),
+            labels: Object.freeze([
+              "10%",
+              "20%",
+              "30%",
+              "40%",
+              "50%",
+              "60%",
+              "70%",
+            ]),
+            borderColor: "#1abeff",
+          },
+          republican: {
+            colors: Object.freeze([
+              "#ffe0e0",
+              "#ffb3b3",
+              "#ff8080",
+              "#ff4d4d",
+              "#e00000",
+              "#b30000",
+              "#7a0000",
+              "#330000",
+            ]),
+            labels: Object.freeze([
+              "10%",
+              "20%",
+              "30%",
+              "40%",
+              "50%",
+              "60%",
+              "70%",
+            ]),
+            borderColor: "#ff1a1a",
+          },
+          other: {
+            colors: Object.freeze([
+              "#fff6cc",
+              "#ffe999",
+              "#ffdc66",
+              "#ffcf33",
+              "#e0b300",
+              "#b38600",
+              "#7a5c00",
+              "#332600",
+            ]),
+            labels: Object.freeze([
+              "10%",
+              "20%",
+              "30%",
+              "40%",
+              "50%",
+              "60%",
+              "70%",
+            ]),
+            borderColor: "#facc15",
+          },
+        }),
+      };
+    }
+    function splRenderData() {
+      return {
+        datasets: {},
+        svg: null,
+        selectedCounty: "Pennsylvania",
+        init() {
+          const onReady = (e) => {
+            this.datasets = e.detail.datasets || {};
+            this.render();
+          };
+          window.addEventListener("inspections-data-ready", onReady);
+          window.addEventListener("inspections-data-updated", (e) => {
+            this.datasets = (e.detail && e.detail.datasets) || this.datasets;
+            this.render();
+          });
+          window.addEventListener("resize", () => this.render());
+          window.addEventListener("county-changed", (e) => {
+            this.selectedCounty = e.detail;
+            this.render();
+          });
+          this.$nextTick(() => this.render());
+        },
+        parseRows() {
+          let sourceData;
+          if (this.selectedCounty === "Pennsylvania") {
+            sourceData = this.datasets["party-year"] || [];
+          } else {
+            const countyYearData = this.datasets["county-year"] || [];
+            sourceData = countyYearData.filter(
+              (d) => d.County === this.selectedCounty,
+            );
+          }
+          const rows = sourceData
+            .map((d) => ({
+              Year: +d.Year,
+              Democrat: +(d.Democrat || d.Democratic || 0),
+              Republican: +d.Republican,
+              Other: +(d["Other Parties"] ?? d.Other ?? 0),
+            }))
+            .filter((d) => Number.isFinite(d.Year) && d.Year > 0);
+          rows.sort((a, b) => a.Year - b.Year);
+          return rows;
+        },
+        formatNumber(num) {
+          if (num >= 1000000) {
+            const millions = num / 1000000;
+            return millions % 1 === 0
+              ? `${millions}M`
+              : `${millions.toFixed(1)}M`;
+          } else if (num >= 1000) {
+            const thousands = num / 1000;
+            return thousands % 1 === 0
+              ? `${thousands}K`
+              : `${thousands.toFixed(1)}K`;
+          }
+          return num.toLocaleString();
+        },
+        render() {
+          const data = this.parseRows();
+          const wrap = this.$refs.wrap;
+          const svg = d3.select(this.$refs.svg);
+          if (!wrap || data.length === 0) {
+            if (svg) svg.selectAll("*").remove();
+            return;
+          }
+          const W = wrap.clientWidth;
+          const H = 350;
+          const margin = {
+            top: 12,
+            right: window.innerWidth < 450 ? 10 : 50,
+            bottom: 30,
+            left: 40,
+          };
+          const width = Math.max(200, W - margin.left - margin.right);
+          const height = H - margin.top - margin.bottom;
+          svg.selectAll("*").remove();
+          svg.attr("width", W).attr("height", H);
+          const g = svg
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+          const series = [
+            { key: "Democrat", color: "#009edb", label: "Democrat" },
+            { key: "Republican", color: "#d70000", label: "Republican" },
+            { key: "Other", color: "#1b998b", label: "Other parties" },
+          ];
+          const x = d3
+            .scaleLinear()
+            .domain(d3.extent(data, (d) => d.Year))
+            .range([0, width]);
+          const y = d3
+            .scaleLinear()
+            .domain([
+              0,
+              d3.max(data, (d) => Math.max(d.Democrat, d.Republican, d.Other)) *
+                1.05,
+            ])
+            .nice()
+            .range([height, 0]);
+          g.append("g")
+            .attr("class", "y-grid")
+            .attr("opacity", 0.25)
+            .call(
+              d3.axisLeft(y).tickSize(-width).tickFormat("").tickSizeOuter(0),
+            )
+            .call((g) => g.select(".domain").remove())
+            .selectAll("line")
+            .attr("stroke", "#9ca3af");
+          const isMobile = window.innerWidth < 768;
+          const xAxis = d3.axisBottom(x).tickSize(0);
+          if (isMobile) {
+            const allYears = data.map((d) => d.Year);
+            const isVerySmall = window.innerWidth < 580;
+            const filteredYears = allYears.filter((year) => {
+              if (isVerySmall) {
+                return year % 4 === 0;
+              }
+              return year % 2 === 0;
+            });
+            xAxis.tickValues(filteredYears);
+            xAxis.tickFormat((d) =>
+              d === 1998 ? "" : `'${String(d).slice(-2)}`,
+            );
+          } else {
+            xAxis.tickFormat((d) => (d === 1998 ? "" : d3.format("d")(d)));
+          }
+          g.append("g")
+            .attr("class", "x-axis")
+            .attr("transform", `translate(0,${height})`)
+            .call(xAxis)
+            .call((a) =>
+              a
+                .selectAll("text")
+                .attr("font-size", 14)
+                .attr("fill", "#f9f9f9")
+                .attr("dy", "1em"),
+            );
+          g.append("g")
+            .attr("class", "y-axis")
+            .call(
+              d3
+                .axisLeft(y)
+                .ticks(6)
+                .tickFormat((d) =>
+                  d === 0 ? "" : d3.format("~s")(d).replace("G", "B"),
+                )
+                .tickSize(0),
+            )
+            .call((a) =>
+              a
+                .selectAll("text")
+                .attr("font-size", 14)
+                .attr("fill", "#e2e2e2")
+                .attr("dx", "-3"),
+            )
+            .call((a) => a.select(".domain").remove());
+          const line = d3
+            .line()
+            .defined((d) => Number.isFinite(d.value))
+            .x((d) => x(d.Year))
+            .y((d) => y(d.value))
+            .curve(d3.curveMonotoneX);
+          series.forEach((s) => {
+            const values = data.map((d) => ({
+              Year: d.Year,
+              value: d[s.key],
+            }));
+            g.append("path")
+              .datum(values)
+              .attr("fill", "none")
+              .attr("stroke", s.color)
+              .attr("stroke-width", 3)
+              .attr("d", line);
+          });
+          const shortLabel = {
+            Democrat: "Dem.",
+            Republican: "Rep.",
+            Other: "Other",
+          };
+          const isSmallScreen = window.innerWidth < 450;
+          if (!isSmallScreen) {
+            const last = data[data.length - 1];
+            const labelPositions = series
+              .filter((s) => Number.isFinite(last[s.key]))
+              .map((s) => ({ series: s, y: y(last[s.key]) }))
+              .sort((a, b) => a.y - b.y);
+
+            const minGap = 18;
+            for (let i = 1; i < labelPositions.length; i++) {
+              const prev = labelPositions[i - 1];
+              const curr = labelPositions[i];
+              if (curr.y - prev.y < minGap) {
+                curr.y = prev.y + minGap;
+              }
+            }
+
+            labelPositions.forEach(({ series: s, y: adjustedY }) => {
+              g.append("text")
+                .attr("x", x(last.Year) + 6)
+                .attr("y", adjustedY)
+                .attr("dominant-baseline", "middle")
+                .attr("font-weight", 700)
+                .attr("font-size", 14)
+                .attr("fill", s.color)
+                .text(shortLabel[s.key]);
+            });
+          }
+          const bisect = d3.bisector((d) => d.Year).left;
+          const focus = g.append("g").style("display", "none");
+          focus
+            .append("line")
+            .attr("class", "x-guide")
+            .attr("y1", 0)
+            .attr("y2", height)
+            .attr("stroke", "#111")
+            .attr("stroke-dasharray", "3,3")
+            .attr("opacity", 0.4);
+          const dots = {};
+          series.forEach((s) => {
+            dots[s.key] = focus
+              .append("circle")
+              .attr("r", 4.5)
+              .attr("fill", s.color)
+              .attr("stroke", "#fff")
+              .attr("stroke-width", 1.5);
+          });
+          const tooltip = d3.select(this.$refs.tooltip);
+          svg
+            .append("rect")
+            .attr("transform", `translate(${margin.left},${margin.top})`)
+            .attr("width", width)
+            .attr("height", height)
+            .attr("fill", "transparent")
+            .style("cursor", "crosshair")
+            .on("mousemove", (event) => {
+              const [px] = d3.pointer(event);
+              const year = x.invert(px);
+              let idx = bisect(data, year);
+              if (idx > 0 && idx < data.length) {
+                const d0 = data[idx - 1];
+                const d1 = data[idx];
+                idx = year - d0.Year > d1.Year - year ? idx : idx - 1;
+              } else if (idx >= data.length) {
+                idx = data.length - 1;
+              } else {
+                idx = 0;
+              }
+              const d = data[idx];
+              focus.style("display", null);
+              focus
+                .select(".x-guide")
+                .attr("transform", `translate(${x(d.Year)},0)`);
+              series.forEach((s) => {
+                dots[s.key].attr("cx", x(d.Year)).attr("cy", y(d[s.key]));
+              });
+              tooltip.classed("hidden", false).html(`
+       <div style='font-weight:700; margin-bottom:4px'>${d.Year}</div>
+       <div>Democrat: ${d3.format(",")(d.Democrat)}</div>
+       <div>Republican: ${d3.format(",")(d.Republican)}</div>
+       <div>Other: ${d3.format(",")(d.Other)}</div>
+       `);
+              const tW = tooltip.node().offsetWidth || 140;
+              const tH = tooltip.node().offsetHeight || 60;
+              const tx =
+                margin.left + x(d.Year) + 12 + tW > W
+                  ? margin.left + x(d.Year) - 12 - tW
+                  : margin.left + x(d.Year) + 12;
+              const minY = Math.min(y(d.Democrat), y(d.Republican), y(d.Other));
+              const ty = margin.top + minY - tH - 8;
+              tooltip
+                .style("left", `${Math.max(8, tx)}px`)
+                .style("top", `${Math.max(8, ty)}px`);
+            })
+            .on("mouseleave", () => {
+              focus.style("display", "none");
+              tooltip.classed("hidden", true);
+            });
+        },
+      };
+    }
+    function splMapData() {
+      return {
+        selected: "county",
+        selectedParty: "total",
+        map: null,
+        geojsonData: {},
+        countyData: [],
+        popup: null,
+        hoveredId: null,
+        hoveredDistrictId: null,
+        searchPopup: null,
+        isSearching: false,
+        async geocodeAddress(q) {
+          if (!q || typeof q !== "string") return null;
+          const params = new URLSearchParams({ address: q });
+          const res = await fetch(
+            `https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?${params.toString()}`,
+          ).catch(() => null);
+          if (!res || !res.ok) return null;
+          const data = await res.json().catch(() => null);
+          if (
+            !data ||
+            data.status !== "OK" ||
+            !data.results ||
+            !data.results.length
+          )
+            return null;
+          const result = data.results[0];
+          const addressComponents = result.address_components || [];
+          const isJustState =
+            addressComponents.length <= 2 &&
+            result.types.includes("administrative_area_level_1");
+          if (isJustState) return null;
+          const hasPennsylvania = addressComponents.some(
+            (c) =>
+              c.types.includes("administrative_area_level_1") &&
+              (c.short_name === "PA" || c.long_name === "Pennsylvania"),
+          );
+          if (!hasPennsylvania) return null;
+          const hasCounty = addressComponents.some((c) =>
+            c.types.includes("administrative_area_level_2"),
+          );
+          const hasLocality = addressComponents.some((c) =>
+            c.types.includes("locality"),
+          );
+          const hasStreetAddress = addressComponents.some(
+            (c) =>
+              c.types.includes("street_number") || c.types.includes("route"),
+          );
+          if (!hasCounty && !hasLocality && !hasStreetAddress) return null;
+          const location = result.geometry?.location;
+          if (!location) return null;
+          const lon = parseFloat(location.lng);
+          const lat = parseFloat(location.lat);
+          return Number.isFinite(lon) && Number.isFinite(lat)
+            ? { lon, lat }
+            : null;
+        },
+        isPointInRing([x, y], ring) {
+          let inside = false;
+          for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+            const xi = ring[i][0],
+              yi = ring[i][1];
+            const xj = ring[j][0],
+              yj = ring[j][1];
+            const intersect =
+              yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi;
+            if (intersect) inside = !inside;
+          }
+          return inside;
+        },
+        isPointInFeature([x, y], feature) {
+          const g = feature?.geometry;
+          if (!g) return false;
+          if (g.type === "Polygon") {
+            const [outer, ...holes] = g.coordinates;
+            if (!this.isPointInRing([x, y], outer)) return false;
+            return !holes.some((h) => this.isPointInRing([x, y], h));
+          }
+          if (g.type === "MultiPolygon") {
+            return g.coordinates.some((poly) => {
+              const [outer, ...holes] = poly;
+              if (!this.isPointInRing([x, y], outer)) return false;
+              return !holes.some((h) => this.isPointInRing([x, y], h));
+            });
+          }
+          return false;
+        },
+        getFeatureBounds(feature) {
+          const g = feature.geometry;
+          let minX = Infinity,
+            minY = Infinity,
+            maxX = -Infinity,
+            maxY = -Infinity;
+          const walk = (coords) => {
+            if (typeof coords[0] === "number") {
+              const [x, y] = coords;
+              if (x < minX) minX = x;
+              if (y < minY) minY = y;
+              if (x > maxX) maxX = x;
+              if (y > maxY) maxY = y;
+            } else coords.forEach(walk);
+          };
+          walk(g.coordinates);
+          return [
+            [minX, minY],
+            [maxX, maxY],
+          ];
+        },
+        getGeoJSONBounds() {
+          const fc = this.geojsonData?.county;
+          if (!fc?.features?.length)
+            return [
+              [-80.5199, 39.7198],
+              [-74.6895, 42.26986],
+            ];
+          let minX = Infinity,
+            minY = Infinity,
+            maxX = -Infinity,
+            maxY = -Infinity;
+          fc.features.forEach((feature) => {
+            const [[fMinX, fMinY], [fMaxX, fMaxY]] =
+              this.getFeatureBounds(feature);
+            if (fMinX < minX) minX = fMinX;
+            if (fMinY < minY) minY = fMinY;
+            if (fMaxX > maxX) maxX = fMaxX;
+            if (fMaxY > maxY) maxY = fMaxY;
+          });
+          return [
+            [minX, minY],
+            [maxX, maxY],
+          ];
+        },
+        findContainingFeature(lon, lat) {
+          const order = [this.selected, "county"];
+          for (const layer of order) {
+            const fc = this.geojsonData?.[layer];
+            if (!fc?.features) continue;
+            const hit = fc.features.find((f) =>
+              this.isPointInFeature([lon, lat], f),
+            );
+            if (hit) return { layerType: layer, feature: hit };
+          }
+          return null;
+        },
+
+        buildHoverPopupHTML(feature, layerType) {
+          const partyKeyMap = {
+            total: {
+              share: "totalShare",
+              total: "totalRegistered",
+              color: "#1b998b",
+              text: "#ffffff",
+              label: "Total turnout",
+            },
+            democrat: {
+              share: "democratShare",
+              total: "democratTotal",
+              color: "#0079d1",
+              text: "#ffffff",
+              label: "Democrat",
+            },
+            republican: {
+              share: "republicanShare",
+              total: "republicanTotal",
+              color: "#d70000",
+              text: "#ffffff",
+              label: "Republican",
+            },
+            other: {
+              share: "otherShare",
+              total: "otherTotal",
+              color: "#ffcb03",
+              text: "#111111",
+              label: "Other",
+            },
+          };
+
+          const activeParty = this.selectedParty;
+          const active = partyKeyMap[activeParty];
+          const shareVal = feature.properties?.[active.share];
+          const totalVal = feature.properties?.[active.total];
+          const sharePct = Number.isFinite(shareVal)
+            ? Math.max(0, Math.min(100, Math.round(shareVal)))
+            : null;
+
+          {
+            const breaks = this.getBreaksForParty(activeParty);
+            let idx = -1;
+            if (Number.isFinite(sharePct)) {
+              idx = breaks.findIndex((b) => sharePct < b);
+              if (idx === -1) idx = breaks.length - 1;
+            }
+            window.dispatchEvent(
+              new CustomEvent("legend-active-bin", {
+                detail: { party: activeParty, index: idx },
+              }),
+            );
+          }
+          const title =
+            layerType === "county"
+              ? feature.properties?.county_nam
+                ? `${feature.properties.county_nam} County`
+                : "No data available"
+              : layerType.startsWith("precinct-")
+                ? feature.properties?.precinctId
+                  ? layerType === "precinct-philadelphia"
+                    ? `Ward ${feature.properties.precinctId}`
+                    : `Precinct ${feature.properties.precinctId}`
+                  : "No data available"
+                : feature.properties?.districtName ||
+                  (feature.properties?.DISTRICT
+                    ? `District ${feature.properties.DISTRICT}`
+                    : "No data available");
+          const others = Object.entries(partyKeyMap)
+            .filter(([k]) => k !== activeParty)
+            .map(([k, meta]) => ({
+              key: k,
+              label: meta.label,
+              color: meta.color,
+              textColor: meta.text,
+              pct: Number.isFinite(feature.properties?.[meta.share])
+                ? Math.max(
+                    0,
+                    Math.min(100, Math.round(feature.properties?.[meta.share])),
+                  )
+                : 0,
+            }));
+
+          const ordered =
+            activeParty !== "total"
+              ? [
+                  ...others.filter((o) => o.key !== "total"),
+                  ...others.filter((o) => o.key === "total"),
+                ]
+              : others;
+
+          const renderBar = ({ label, pct, color, textColor }) =>
+            [
+              "<div style='margin-top:8px;'>",
+              `<span style='font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;'>${label}:</span>`,
+              "<div style='position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;'>",
+              `<div style='width:${pct || 0}%; background:${color}; height:100%; position:relative;'>`,
+              pct >= 30
+                ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${pct}%</span>`
+                : "",
+              "</div>",
+              pct < 30
+                ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${pct}%</span>`
+                : "",
+              "</div>",
+              "</div>",
+            ].join("");
+          const html = [
+            "<div style='padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;'>",
+            `<strong style='font-size: 1.15rem; display: block; margin-bottom: 6px;'>${title}</strong>`,
+            "<div style='position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;'>",
+            `<div style='width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;'>`,
+            sharePct !== null && sharePct >= 30
+              ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${sharePct}%</span>`
+              : "",
+            "</div>",
+            sharePct !== null && sharePct < 30
+              ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${sharePct}%</span>`
+              : "",
+            "</div>",
+            "<div style='height:6px;'></div>",
+            "<span style='font-size:0.95rem; font-weight:700;'>Total:</span> ",
+            `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
+            "<div style='height:8px;'></div>",
+            "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
+            ordered.map(renderBar).join(""),
+
+            "</div>",
+          ].join("");
+          return html;
+        },
+        async handleAddressSearch(query) {
+          try {
+            if (!query || query.trim() === "") {
+              window.dispatchEvent(new CustomEvent("search-complete"));
+              return;
+            }
+            const hit = await this.geocodeAddress(query);
+            if (!hit) {
+              window.dispatchEvent(new CustomEvent("search-complete"));
+              const input = document.querySelector(
+                "input[placeholder*=&quot;Search&quot;]",
+              );
+              if (input) {
+                input.value = "";
+                input.placeholder = "Not Found";
+                setTimeout(() => {
+                  input.placeholder = "Search location";
+                }, 3000);
+              }
+              return;
+            }
+            const { lon, lat } = hit;
+            const containing = this.findContainingFeature(lon, lat);
+            if (containing) {
+              const { feature, layerType } = containing;
+              if (layerType !== this.selected) {
+                this.selected = layerType;
+                this.updateLayerVisibility?.();
+              }
+              this.map.fitBounds(this.getFeatureBounds(feature), {
+                padding: window.innerWidth < 768 ? 20 : 32,
+                maxZoom: window.innerWidth < 768 ? 8 : 10,
+              });
+              if (!this.popup)
+                this.popup = new maplibregl.Popup({
+                  closeButton: false,
+                  closeOnClick: false,
+                });
+              this.popup
+                .setLngLat([lon, lat])
+                .setHTML(this.buildHoverPopupHTML(feature, layerType))
+                .addTo(this.map);
+            } else {
+              this.map.flyTo({ center: [lon, lat], zoom: 12 });
+              if (this.popup) this.popup.remove();
+            }
+          } finally {
+            window.dispatchEvent(new CustomEvent("search-complete"));
+          }
+        },
+        properCase(str) {
+          return str.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+        },
+        async loadGeoJSON() {
+          try {
+            if (!this.map || !this.map.getContainer() || !this.map.loaded()) {
+              console.warn("Map not ready for GeoJSON loading");
+              setTimeout(() => this.loadGeoJSON(), 200);
+              return;
+            }
+            const sources = sourcesParam;
+            const [
+              counties,
+              house,
+              congress,
+              senate,
+              alleghenyPrecincts,
+              bucksPrecincts,
+              delawarePrecincts,
+              montgomeryPrecincts,
+              philadelphiaPrecincts,
+            ] = await Promise.all(
+              sources.map((url) => fetch(url).then((r) => r.json())),
+            );
+            if (counties && counties.features) {
+              counties.features.forEach((feature) => {
+                if (feature.properties && feature.properties.county_nam) {
+                  feature.properties.county_nam = this.properCase(
+                    feature.properties.county_nam,
+                  );
+                }
+                const name = feature.properties?.county_nam || "";
+                feature.properties.__id = name
+                  .toLowerCase()
+                  .replace(/\s+/g, "_");
+              });
+            }
+            this.geojsonData = {
+              county: counties,
+              house: house,
+              congressional: congress,
+              senate: senate,
+              "precinct-allegheny": alleghenyPrecincts,
+              "precinct-bucks": bucksPrecincts,
+              "precinct-delaware": delawarePrecincts,
+              "precinct-montgomery": montgomeryPrecincts,
+              "precinct-philadelphia": philadelphiaPrecincts,
+            };
+
+            await this.joinCountyData();
+            await this.joinDistrictData();
+            await this.joinPrecinctData();
+            this.setupLayers();
+
+            if (this.isSecondMap) {
+              if (this.map.getLayer("precinct-allegheny-fill")) {
+                this.map.setLayoutProperty(
+                  "precinct-allegheny-fill",
+                  "visibility",
+                  "visible",
+                );
+                this.map.setPaintProperty(
+                  "precinct-allegheny-fill",
+                  "fill-color",
+                  this.buildFillColorExpression(this.selectedParty),
+                );
+              }
+              if (this.map.getLayer("precinct-allegheny-outline")) {
+                this.map.setLayoutProperty(
+                  "precinct-allegheny-outline",
+                  "visibility",
+                  "visible",
+                );
+              }
+
+              const calculateCountyBounds = (countyName) => {
+                const sourceKey = `precinct-${countyName.toLowerCase()}`;
+                const features = this.geojsonData[sourceKey]?.features;
+                if (!features || features.length === 0) return null;
+
+                let minX = Infinity,
+                  minY = Infinity,
+                  maxX = -Infinity,
+                  maxY = -Infinity;
+                features.forEach((feature) => {
+                  const [[fMinX, fMinY], [fMaxX, fMaxY]] =
+                    this.getFeatureBounds(feature);
+                  if (fMinX < minX) minX = fMinX;
+                  if (fMinY < minY) minY = fMinY;
+                  if (fMaxX > maxX) maxX = fMaxX;
+                  if (fMaxY > maxY) maxY = fMaxY;
+                });
+
+                return [
+                  [minX, minY],
+                  [maxX, maxY],
+                ];
+              };
+
+              const alleghenyBounds = calculateCountyBounds("allegheny");
+              if (alleghenyBounds) {
+                this.map.fitBounds(alleghenyBounds, {
+                  padding: window.innerWidth < 768 ? 20 : 40,
+                  duration: 0,
+                });
+              }
+            } else {
+              if (this.map.getLayer("counties-fill")) {
+                this.map.setPaintProperty(
+                  "counties-fill",
+                  "fill-color",
+                  this.buildFillColorExpression(this.selectedParty),
+                );
+              }
+
+              const el = this.map?.getContainer();
+              if (!el) return;
+              if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
+                try {
+                  this.map.fitBounds(this.getGeoJSONBounds(), {
+                    padding: window.innerWidth < 768 ? 20 : 40,
+                    maxZoom: window.innerWidth < 768 ? 6 : 8,
+                    duration: 0,
+                  });
+                } catch (e) {
+                  console.warn("Could not fit bounds, will retry", e);
+                  setTimeout(() => {
+                    if (this.map) {
+                      this.map.fitBounds(this.getGeoJSONBounds(), {
+                        padding: window.innerWidth < 768 ? 20 : 40,
+                        maxZoom: window.innerWidth < 768 ? 6 : 8,
+                        duration: 0,
+                      });
+                    }
+                  }, 200);
+                }
+              }
+            }
+          } catch (error) {
+            console.error("Error loading GeoJSON:", error);
+            setTimeout(() => this.loadGeoJSON(), 500);
+          }
+        },
+
+        async joinCountyData() {
+          await pollUntil(
+            () =>
+              this.datasets &&
+              (this.datasets.counts ||
+                this.datasets.Counts ||
+                this.datasets.Sheet1),
+          );
+
+          this.countyData =
+            this.datasets.counts ||
+            this.datasets.Counts ||
+            this.datasets.Sheet1 ||
+            [];
+
+          if (this.geojsonData.county && this.geojsonData.county.features) {
+            this.geojsonData.county.features.forEach((feature) => {
+              const countyName = feature.properties.county_nam;
+
+              const countyRecord = this.countyData.find((d) => {
+                const value = d.Area || d.County || d.CountyName || d.county;
+                if (!value) return false;
+                return (
+                  value.toLowerCase() === countyName.toLowerCase() ||
+                  value.toLowerCase().replace(" county", "") ===
+                    countyName.toLowerCase()
+                );
+              });
+
+              if (countyRecord) {
+                const toNum = (v) =>
+                  typeof v === "number"
+                    ? v
+                    : Number(
+                        String(v ?? "")
+                          .replace(/,/g, "")
+                          .replace(/%/g, "")
+                          .trim(),
+                      );
+
+                const pct = (v) => {
+                  const n = toNum(v);
+                  return Number.isFinite(n)
+                    ? n > 0 && n <= 1
+                      ? n * 100
+                      : n
+                    : null;
+                };
+
+                feature.properties.democratShare = pct(
+                  countyRecord["Democratic turnout percentage"],
+                );
+                feature.properties.republicanShare = pct(
+                  countyRecord["Republican turnout percentage"],
+                );
+                feature.properties.otherShare = pct(
+                  countyRecord["Other party turnout percentage"],
+                );
+
+                feature.properties.democratTotal =
+                  Number(countyRecord["Democrats registered"]) || 0;
+                feature.properties.republicanTotal =
+                  Number(countyRecord["Republicans registered"]) || 0;
+                feature.properties.otherTotal =
+                  Number(countyRecord["Other party registered"]) || 0;
+
+                feature.properties.totalShare = pct(
+                  countyRecord["Turnout percentage"],
+                );
+                feature.properties.totalRegistered =
+                  Number(countyRecord["Total registered"]) || 0;
+              } else {
+                console.warn(`No data found for county: ${countyName}`);
+              }
+            });
+          }
+        },
+
+        async joinPrecinctData() {
+          await pollUntil(
+            () =>
+              this.datasets &&
+              (this.datasets.counts ||
+                this.datasets.Counts ||
+                this.datasets.Sheet1),
+          );
+
+          const countsTable =
+            this.datasets.counts ||
+            this.datasets.Counts ||
+            this.datasets.Sheet1 ||
+            [];
+
+          const toNum = (v) =>
+            typeof v === "number"
+              ? v
+              : Number(
+                  String(v ?? "")
+                    .replace(/,/g, "")
+                    .replace(/%/g, "")
+                    .trim(),
+                );
+
+          const pct = (v) => {
+            const n = toNum(v);
+            return Number.isFinite(n) ? (n > 0 && n <= 1 ? n * 100 : n) : null;
+          };
+
+          const countyConfig = {
+            allegheny: {
+              idFields: [
+                "MWD_PAD_1",
+                "PRECINCT_ID",
+                "PrecinctID",
+                "precinct_id",
+              ],
+              formatId: (id) => id,
+            },
+            bucks: {
+              idFields: ["precinctid"],
+              formatId: (id) => {
+                const match = String(id).match(/^(\d+)-/);
+                return match ? match[1] : id;
+              },
+            },
+            delaware: {
+              idFields: ["precinctid"],
+              formatId: (id) => {
+                const match = String(id).match(/^(\d+)-/);
+                return match ? match[1] : id;
+              },
+            },
+            montgomery: {
+              idFields: ["Precinct_Number"],
+              formatId: (id) => id,
+            },
+            philadelphia: {
+              idFields: ["ward_num", "WARD_NUM"],
+              formatId: (id) => String(id).padStart(2, "0"),
+            },
+          };
+
+          const precinctCounties = [
+            "allegheny",
+            "bucks",
+            "delaware",
+            "montgomery",
+            "philadelphia",
+          ];
+
+          precinctCounties.forEach((countyName) => {
+            const sourceKey = `precinct-${countyName}`;
+            const geojson = this.geojsonData[sourceKey];
+
+            if (!geojson || !geojson.features) {
+              return;
+            }
+
+            const config = countyConfig[countyName];
+
+            geojson.features.forEach((feature) => {
+              let precinctId = null;
+              for (const field of config.idFields) {
+                if (feature.properties[field]) {
+                  precinctId = feature.properties[field];
+                  break;
+                }
+              }
+
+              if (!precinctId) {
+                return;
+              }
+
+              const formattedId = config.formatId(precinctId);
+              const areaPrefix = countyName.toUpperCase();
+              const areaCode = `${areaPrefix}-${formattedId}`;
+
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || "").toString().trim().toUpperCase();
+                return area === areaCode.toUpperCase();
+              });
+
+              if (!rec) {
+                return;
+              }
+
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
+              );
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
+
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
+
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
+              feature.properties.precinctId = formattedId;
+            });
+          });
+        },
+
+        async joinDistrictData() {
+          await pollUntil(
+            () =>
+              this.datasets &&
+              (this.datasets.counts ||
+                this.datasets.Counts ||
+                this.datasets.Sheet1),
+          );
+
+          if (
+            this.geojsonData.congressional &&
+            this.geojsonData.congressional.features
+          ) {
+            const countsTable =
+              this.datasets.counts ||
+              this.datasets.Counts ||
+              this.datasets.Sheet1 ||
+              [];
+
+            const toNum = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  );
+
+            const pct = (v) => {
+              const n = toNum(v);
+              return Number.isFinite(n)
+                ? n > 0 && n <= 1
+                  ? n * 100
+                  : n
+                : null;
+            };
+
+            this.geojsonData.congressional.features.forEach((feature) => {
+              const districtId = feature.properties.DISTRICT;
+              const pad2 = (n) => String(Number(n)).padStart(2, "0");
+              const areaCode = `USC${pad2(districtId)}`;
+
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || d.District || d.DistrictCode || "")
+                  .toString()
+                  .trim()
+                  .toUpperCase();
+                return (
+                  area === areaCode ||
+                  area === pad2(districtId) ||
+                  area === String(districtId)
+                );
+              });
+
+              if (!rec) return;
+
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
+              );
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
+
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
+
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
+              feature.properties.districtName = `Congressional District ${districtId}`;
+            });
+          }
+
+          if (this.geojsonData.senate && this.geojsonData.senate.features) {
+            const countsTable =
+              this.datasets.counts ||
+              this.datasets.Counts ||
+              this.datasets.Sheet1 ||
+              [];
+
+            const toNum = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  );
+
+            const pct = (v) => {
+              const n = toNum(v);
+              return Number.isFinite(n)
+                ? n > 0 && n <= 1
+                  ? n * 100
+                  : n
+                : null;
+            };
+
+            this.geojsonData.senate.features.forEach((feature) => {
+              const districtId = feature.properties.DISTRICT;
+              const pad2 = (n) => String(Number(n)).padStart(2, "0");
+              const areaCode = `STS${pad2(districtId)}`;
+
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || d.District || d.DistrictCode || "")
+                  .toString()
+                  .trim()
+                  .toUpperCase();
+                return (
+                  area === areaCode ||
+                  area === pad2(districtId) ||
+                  area === String(districtId)
+                );
+              });
+
+              if (!rec) return;
+
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
+              );
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
+
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
+
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
+              feature.properties.districtName = `Senate District ${districtId}`;
+            });
+          }
+          if (this.geojsonData.house && this.geojsonData.house.features) {
+            const countsTable =
+              this.datasets.counts ||
+              this.datasets.Counts ||
+              this.datasets.Sheet1 ||
+              [];
+
+            const toNum = (v) =>
+              typeof v === "number"
+                ? v
+                : Number(
+                    String(v ?? "")
+                      .replace(/,/g, "")
+                      .replace(/%/g, "")
+                      .trim(),
+                  );
+
+            const pct = (v) => {
+              const n = toNum(v);
+              return Number.isFinite(n)
+                ? n > 0 && n <= 1
+                  ? n * 100
+                  : n
+                : null;
+            };
+
+            this.geojsonData.house.features.forEach((feature) => {
+              const districtId = feature.properties.DISTRICT;
+              const pad3 = (n) => String(Number(n)).padStart(3, "0");
+              const areaCode = `STH${pad3(districtId)}`;
+
+              const rec = countsTable.find((d) => {
+                const area = (d.Area || d.District || d.DistrictCode || "")
+                  .toString()
+                  .trim()
+                  .toUpperCase();
+                return (
+                  area === areaCode ||
+                  area === pad3(districtId) ||
+                  area === String(districtId)
+                );
+              });
+
+              if (!rec) return;
+
+              feature.properties.democratShare = pct(
+                rec["Democratic turnout percentage"],
+              );
+              feature.properties.republicanShare = pct(
+                rec["Republican turnout percentage"],
+              );
+              feature.properties.otherShare = pct(
+                rec["Other party turnout percentage"],
+              );
+
+              feature.properties.democratTotal =
+                toNum(rec["Democrats registered"]) || 0;
+              feature.properties.republicanTotal =
+                toNum(rec["Republicans registered"]) || 0;
+              feature.properties.otherTotal =
+                toNum(rec["Other party registered"]) || 0;
+
+              feature.properties.totalShare = pct(rec["Turnout percentage"]);
+              feature.properties.totalRegistered =
+                toNum(rec["Total registered"]) || 0;
+
+              feature.properties.districtName = `House District ${districtId}`;
+            });
+          }
+        },
+        getBreaksForParty(party) {
+          return [10, 20, 30, 40, 50, 60, 70, 999];
+        },
+        handleDistrictHover(e, layerType) {
+          if (e.features.length > 0) {
+            this.map.getCanvas().style.cursor = "crosshair";
+            const feature = e.features[0];
+            if (
+              this.hoveredDistrictId !== undefined &&
+              this.hoveredDistrictId !== feature.id
+            ) {
+              this.map.setFeatureState(
+                { source: layerType, id: this.hoveredDistrictId },
+                { hover: false },
+              );
+            }
+            this.hoveredDistrictId = feature.id;
+            this.map.setFeatureState(
+              { source: layerType, id: this.hoveredDistrictId },
+              { hover: true },
+            );
+            if (!this.popup) {
+              this.popup = new maplibregl.Popup({
+                closeButton: false,
+                closeOnClick: false,
+              });
+            }
+            const partyKeyMap = {
+              total: {
+                share: "totalShare",
+                total: "totalRegistered",
+                color: "#1b998b",
+                text: "#ffffff",
+                label: "Total turnout",
+              },
+              democrat: {
+                share: "democratShare",
+                total: "democratTotal",
+                color: "#0079d1",
+                text: "#ffffff",
+                label: "Democrat",
+              },
+              republican: {
+                share: "republicanShare",
+                total: "republicanTotal",
+                color: "#d70000",
+                text: "#ffffff",
+                label: "Republican",
+              },
+              other: {
+                share: "otherShare",
+                total: "otherTotal",
+                color: "#ffcb03",
+                text: "#111111",
+                label: "Other",
+              },
+            };
+
+            const activeParty = this.selectedParty;
+            const active = partyKeyMap[activeParty];
+            const shareVal = feature.properties[active.share];
+            const totalVal = feature.properties[active.total];
+            const sharePct = Number.isFinite(shareVal)
+              ? Math.max(0, Math.min(100, Math.round(shareVal)))
+              : null;
+
+            {
+              const breaks = this.getBreaksForParty(activeParty);
+              let idx = -1;
+              if (Number.isFinite(sharePct)) {
+                idx = breaks.findIndex((b) => sharePct < b);
+                if (idx === -1) idx = breaks.length - 1;
+              }
+              window.dispatchEvent(
+                new CustomEvent("legend-active-bin", {
+                  detail: { party: activeParty, index: idx },
+                }),
+              );
+            }
+            const others = Object.entries(partyKeyMap)
+              .filter(([k]) => k !== activeParty)
+              .map(([k, meta]) => ({
+                key: k,
+                label: meta.label,
+                color: meta.color,
+                textColor: meta.text,
+                pct: Number.isFinite(feature.properties?.[meta.share])
+                  ? Math.max(
+                      0,
+                      Math.min(
+                        100,
+                        Math.round(feature.properties?.[meta.share]),
+                      ),
+                    )
+                  : 0,
+              }));
+
+            const ordered =
+              activeParty !== "total"
+                ? [
+                    ...others.filter((o) => o.key !== "total"),
+                    ...others.filter((o) => o.key === "total"),
+                  ]
+                : others;
+
+            const districtName = layerType.startsWith("precinct-")
+              ? feature.properties?.precinctId
+                ? layerType === "precinct-philadelphia"
+                  ? `Ward ${feature.properties.precinctId}`
+                  : `Precinct ${feature.properties.precinctId}`
+                : "No data available"
+              : feature.properties.districtName ||
+                (feature.properties?.DISTRICT
+                  ? `District ${feature.properties.DISTRICT}`
+                  : "No data available");
+            const renderBar = ({ label, pct, color, textColor }) =>
+              [
+                "<div style='margin-top:8px;'>",
+                `<span style='font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;'>${label}:</span>`,
+                "<div style='position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;'>",
+                `<div style='width:${pct || 0}%; background:${color}; height:100%; position:relative;'>`,
+                pct >= 30
+                  ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${pct}%</span>`
+                  : "",
+                "</div>",
+                pct < 30
+                  ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${pct || 0}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${pct}%</span>`
+                  : "",
+                "</div>",
+                "</div>",
+              ].join("");
+            const htmlContent = [
+              "<div style='padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;'>",
+              `<strong style='font-size: 1.15rem; display: block; margin-bottom: 6px;'>${districtName}</strong>`,
+              "<div style='position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;'>",
+              `<div style='width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;'>`,
+              sharePct !== null && sharePct >= 30
+                ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${sharePct}%</span>`
+                : "",
+              "</div>",
+              sharePct !== null && sharePct < 30
+                ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${sharePct}%</span>`
+                : "",
+              "</div>",
+              "<div style='height:6px;'></div>",
+              "<span style='font-size:0.95rem; font-weight:700;'>Total:</span> ",
+              `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
+              "<div style='height:8px;'></div>",
+              "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
+              ordered.map(renderBar).join(""),
+
+              "</div>",
+            ].join("");
+            this.popup.setLngLat(e.lngLat).setHTML(htmlContent).addTo(this.map);
+            const popupEl = this.popup.getElement();
+            popupEl.style.zIndex = "9999";
+            const contentEl = popupEl.querySelector(
+              ".maplibregl-popup-content",
+            );
+            if (contentEl) {
+              contentEl.style.padding = "8px";
+              contentEl.style.boxSizing = "border-box";
+            }
+          }
+        },
+        handleDistrictLeave(layerType) {
+          this.map.getCanvas().style.cursor = "";
+          if (this.popup) {
+            this.popup.remove();
+          }
+          window.dispatchEvent(new Event("legend-clear"));
+          if (this.hoveredDistrictId !== undefined) {
+            this.map.setFeatureState(
+              { source: layerType, id: this.hoveredDistrictId },
+              { hover: false },
+            );
+            this.hoveredDistrictId = undefined;
+          }
+        },
+        getPaletteForParty(party) {
+          const cfg = {
+            total: [
+              "#d8fbf6",
+              "#aff5ea",
+              "#86efe0",
+              "#5de9d6",
+              "#22cdb8",
+              "#199e8e",
+              "#0f6f63",
+              "#083934",
+            ],
+            democrat: [
+              "#d4f1ff",
+              "#8fd6ff",
+              "#4bbcff",
+              "#009eff",
+              "#0079d1",
+              "#005aa3",
+              "#003c75",
+              "#001f47",
+            ],
+            republican: [
+              "#ffe0e0",
+              "#ffb3b3",
+              "#ff8080",
+              "#ff4d4d",
+              "#e00000",
+              "#b30000",
+              "#7a0000",
+              "#330000",
+            ],
+            other: [
+              "#fff6cc",
+              "#ffe999",
+              "#ffdc66",
+              "#ffcf33",
+              "#e0b300",
+              "#b38600",
+              "#7a5c00",
+              "#332600",
+            ],
+          };
+
+          return [...cfg[party]];
+        },
+        getSharePropKey(party) {
+          return {
+            total: "totalShare",
+            democrat: "democratShare",
+            republican: "republicanShare",
+            other: "otherShare",
+          }[party];
+        },
+        buildFillColorExpression(party) {
+          const key = this.getSharePropKey(party);
+          const breaks = this.getBreaksForParty(party);
+          const colorMap = {
+            total: [
+              "#d8fbf6",
+              "#aff5ea",
+              "#86efe0",
+              "#5de9d6",
+              "#22cdb8",
+              "#199e8e",
+              "#0f6f63",
+              "#083934",
+            ],
+            democrat: [
+              "#d4f1ff",
+              "#8fd6ff",
+              "#4bbcff",
+              "#009eff",
+              "#0079d1",
+              "#005aa3",
+              "#003c75",
+              "#001f47",
+            ],
+            republican: [
+              "#ffe0e0",
+              "#ffb3b3",
+              "#ff8080",
+              "#ff4d4d",
+              "#e00000",
+              "#b30000",
+              "#7a0000",
+              "#330000",
+            ],
+            other: [
+              "#fff6cc",
+              "#ffe999",
+              "#ffdc66",
+              "#ffcf33",
+              "#e0b300",
+              "#b38600",
+              "#7a5c00",
+              "#332600",
+            ],
+          };
+
+          const colors = [...colorMap[party]];
+          const expr = ["case", ["==", ["get", key], null], "#cccccc"];
+          for (let i = 0; i < breaks.length - 1; i++) {
+            expr.push(["<", ["get", key], breaks[i]], colors[i]);
+          }
+          expr.push(colors[colors.length - 1]);
+          return JSON.parse(JSON.stringify(expr));
+        },
+        setupLayers() {
+          if (!this.map) return;
+          const labelLayerId = this.map
+            .getStyle()
+            .layers.find(
+              (l) => l.type === "symbol" && l.layout && l.layout["text-field"],
+            )?.id;
+          if (!this.isSecondMap && !this.map.getSource("counties")) {
+            this.map.addSource("counties", {
+              type: "geojson",
+              data: this.geojsonData.county,
+              promoteId: "__id",
+            });
+            this.map.addLayer(
+              {
+                id: "counties-fill",
+                type: "fill",
+                source: "counties",
+                paint: {
+                  "fill-color": this.buildFillColorExpression(
+                    this.selectedParty,
+                  ),
+
+                  "fill-opacity": 1.0,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "counties-outline",
+                type: "line",
+                source: "counties",
+                paint: {
+                  "line-color": [
+                    "case",
+                    ["boolean", ["feature-state", "hover"], false],
+                    "#000000",
+                    "#ffffff",
+                  ],
+                  "line-width": [
+                    "case",
+                    ["boolean", ["feature-state", "hover"], false],
+                    3,
+                    1,
+                  ],
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer({
+              id: "counties-outline-hover",
+              type: "line",
+              source: "counties",
+              layout: {
+                "line-join": "round",
+                "line-cap": "round",
+              },
+              paint: {
+                "line-color": "#000000",
+                "line-width": 4,
+                "line-opacity": [
+                  "case",
+                  ["boolean", ["feature-state", "hover"], false],
+                  1,
+                  0,
+                ],
+              },
+            });
+            this.map.on("mousemove", "counties-fill", (e) => {
+              if (e.features.length > 0) {
+                this.map.getCanvas().style.cursor = "crosshair";
+                const feature = e.features[0];
+                if (this.hoveredId !== feature.id) {
+                  if (this.hoveredId) {
+                    this.map.setFeatureState(
+                      { source: "counties", id: this.hoveredId },
+                      { hover: false },
+                    );
+                  }
+                  this.hoveredId = feature.id;
+                  this.map.setFeatureState(
+                    { source: "counties", id: this.hoveredId },
+                    { hover: true },
+                  );
+                }
+                if (!this.popup) {
+                  this.popup = new maplibregl.Popup({
+                    closeButton: false,
+                    closeOnClick: false,
+                  });
+                }
+                const partyKeyMap = {
+                  total: {
+                    share: "totalShare",
+                    total: "totalRegistered",
+                    color: "#1b998b",
+                    text: "#ffffff",
+                    label: "Total turnout",
+                  },
+                  democrat: {
+                    share: "democratShare",
+                    total: "democratTotal",
+                    color: "#0079d1",
+                    text: "#ffffff",
+                    label: "Democrat",
+                  },
+                  republican: {
+                    share: "republicanShare",
+                    total: "republicanTotal",
+                    color: "#d70000",
+                    text: "#ffffff",
+                    label: "Republican",
+                  },
+                  other: {
+                    share: "otherShare",
+                    total: "otherTotal",
+                    color: "#ffcb03",
+                    text: "#111111",
+                    label: "Other",
+                  },
+                };
+
+                const activeParty = this.selectedParty;
+                const active = partyKeyMap[activeParty];
+                const shareVal = feature.properties[active.share];
+                const totalVal = feature.properties[active.total];
+                const sharePct = Number.isFinite(shareVal)
+                  ? Math.max(0, Math.min(100, Math.round(shareVal)))
+                  : null;
+
+                {
+                  const breaks = this.getBreaksForParty(activeParty);
+                  let idx = -1;
+                  if (Number.isFinite(sharePct)) {
+                    idx = breaks.findIndex((b) => sharePct < b);
+                    if (idx === -1) idx = breaks.length - 1;
+                  }
+                  window.dispatchEvent(
+                    new CustomEvent("legend-active-bin", {
+                      detail: { party: activeParty, index: idx },
+                    }),
+                  );
+                }
+                const others = Object.entries(partyKeyMap)
+                  .filter(([k]) => k !== activeParty)
+                  .map(([k, meta]) => ({
+                    key: k,
+                    label: meta.label,
+                    color: meta.color,
+                    textColor: meta.text,
+                    pct: Number.isFinite(feature.properties?.[meta.share])
+                      ? Math.max(
+                          0,
+                          Math.min(
+                            100,
+                            Math.round(feature.properties?.[meta.share]),
+                          ),
+                        )
+                      : 0,
+                  }));
+
+                const ordered =
+                  activeParty !== "total"
+                    ? [
+                        ...others.filter((o) => o.key !== "total"),
+                        ...others.filter((o) => o.key === "total"),
+                      ]
+                    : others;
+
+                const countyName =
+                  feature.properties.county_nam || "No data available";
+                const renderBar = ({ label, pct, color, textColor }) =>
+                  [
+                    "<div style='margin-top:8px;'>",
+                    `<span style='font-size:0.85rem; font-weight:600; display:block; margin-bottom:2px;'>${label}:</span>`,
+                    "<div style='position: relative; width: calc(100% - 14px); height: 22px; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin-left: 0;'>",
+                    `<div style='width:${pct || 0}%; background:${color}; height:100%; position:relative;'>`,
+                    pct >= 30
+                      ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${textColor}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${pct}%</span>`
+                      : "",
+                    "</div>",
+                    pct < 30
+                      ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${
+                          pct || 0
+                        }% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${pct}%</span>`
+                      : "",
+                    "</div>",
+                    "</div>",
+                  ].join("");
+                const htmlContent = [
+                  "<div style='padding: 10px; font-family: sans-serif; color: #111111; border-radius: 4px; position: relative; min-width: 240px; box-sizing: border-box;'>",
+                  `<strong style='font-size: 1.15rem; display: block; margin-bottom: 6px;'>${countyName} County</strong>`,
+                  "<div style='position: relative; width: calc(100% - 14px); height: 22px; border: 2px solid #000; background: #e5e7eb; box-sizing: border-box; overflow: visible; margin: 0;'>",
+                  `<div style='width:${sharePct !== null ? sharePct : 0}%; background:${active.color}; height:100%; position:relative;'>`,
+                  sharePct !== null && sharePct >= 30
+                    ? `<span style='position:absolute; right:6px; top:50%; transform:translateY(-50%); color:${active.text}; font-weight:700; font-size:0.9rem; white-space:nowrap;'>${sharePct}%</span>`
+                    : "",
+                  "</div>",
+                  sharePct !== null && sharePct < 30
+                    ? `<span style='position:absolute; top:50%; transform:translateY(-50%); left:calc(${sharePct}% + 8px); color:#111111; font-weight:700; font-size:0.95rem; white-space:nowrap;'>${sharePct}%</span>`
+                    : "",
+                  "</div>",
+                  "<div style='height:6px;'></div>",
+                  "<span style='font-size:0.95rem; font-weight:700;'>Total:</span> ",
+                  `<span style='font-size:0.95rem;'>${Number.isFinite(totalVal) ? totalVal.toLocaleString() : "—"}</span>`,
+                  "<div style='height:8px;'></div>",
+                  "<div style='height:1px; background:#d1d5db; width:calc(100% - 14px); margin-left:0;'></div>",
+                  ordered.map(renderBar).join(""),
+
+                  "</div>",
+                ].join("");
+                this.popup
+                  .setLngLat(e.lngLat)
+                  .setHTML(htmlContent)
+                  .addTo(this.map);
+                const popupEl = this.popup.getElement();
+                popupEl.style.zIndex = "9999";
+                const contentEl = popupEl.querySelector(
+                  ".maplibregl-popup-content",
+                );
+                if (contentEl) {
+                  contentEl.style.padding = "8px";
+                  contentEl.style.boxSizing = "border-box";
+                }
+              }
+            });
+            this.map.on("mouseleave", "counties-fill", () => {
+              this.map.getCanvas().style.cursor = "";
+              if (this.hoveredId) {
+                this.map.setFeatureState(
+                  { source: "counties", id: this.hoveredId },
+                  { hover: false },
+                );
+                this.hoveredId = null;
+              }
+              if (this.popup) {
+                this.popup.remove();
+              }
+              window.dispatchEvent(new Event("legend-clear"));
+            });
+          }
+          if (
+            !this.isSecondMap &&
+            !this.map.getSource("house") &&
+            this.geojsonData.house
+          ) {
+            this.map.addSource("house", {
+              type: "geojson",
+              data: this.geojsonData.house,
+              promoteId: "DISTRICT",
+            });
+            this.map.addLayer(
+              {
+                id: "house-fill",
+                type: "fill",
+                source: "house",
+                layout: {
+                  visibility: "none",
+                },
+                paint: {
+                  "fill-color": this.buildFillColorExpression(
+                    this.selectedParty,
+                  ),
+                  "fill-opacity": 1.0,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "house-outline",
+                type: "line",
+                source: "house",
+                layout: {
+                  visibility: "none",
+                },
+                paint: {
+                  "line-color": "#ffffff",
+                  "line-width": 1,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "house-outline-hover",
+                type: "line",
+                source: "house",
+                layout: {
+                  visibility: "none",
+                  "line-join": "round",
+                  "line-cap": "round",
+                },
+                paint: {
+                  "line-color": "#000000",
+                  "line-width": 4,
+                  "line-opacity": [
+                    "case",
+                    ["boolean", ["feature-state", "hover"], false],
+                    1,
+                    0,
+                  ],
+                },
+              },
+              labelLayerId,
+            );
+            this.map.on("mousemove", "house-fill", (e) => {
+              if (this.selected === "house") {
+                this.handleDistrictHover(e, "house");
+              }
+            });
+            this.map.on("mouseleave", "house-fill", () => {
+              if (this.selected === "house") {
+                this.handleDistrictLeave("house");
+              }
+            });
+          }
+          if (
+            !this.isSecondMap &&
+            !this.map.getSource("congressional") &&
+            this.geojsonData.congressional
+          ) {
+            this.map.addSource("congressional", {
+              type: "geojson",
+              data: this.geojsonData.congressional,
+              promoteId: "DISTRICT",
+            });
+            this.map.addLayer(
+              {
+                id: "congressional-fill",
+                type: "fill",
+                source: "congressional",
+                layout: {
+                  visibility: "none",
+                },
+                paint: {
+                  "fill-color": this.buildFillColorExpression(
+                    this.selectedParty,
+                  ),
+                  "fill-opacity": 1.0,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "congressional-outline",
+                type: "line",
+                source: "congressional",
+                layout: {
+                  visibility: "none",
+                },
+                paint: {
+                  "line-color": "#ffffff",
+                  "line-width": 1,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "congressional-outline-hover",
+                type: "line",
+                source: "congressional",
+                layout: {
+                  visibility: "none",
+                  "line-join": "round",
+                  "line-cap": "round",
+                },
+                paint: {
+                  "line-color": "#000000",
+                  "line-width": 4,
+                  "line-opacity": [
+                    "case",
+                    ["boolean", ["feature-state", "hover"], false],
+                    1,
+                    0,
+                  ],
+                },
+              },
+              labelLayerId,
+            );
+            this.map.on("mousemove", "congressional-fill", (e) => {
+              if (this.selected === "congressional") {
+                this.handleDistrictHover(e, "congressional");
+              }
+            });
+            this.map.on("mouseleave", "congressional-fill", () => {
+              if (this.selected === "congressional") {
+                this.handleDistrictLeave("congressional");
+              }
+            });
+          }
+          if (
+            !this.isSecondMap &&
+            !this.map.getSource("senate") &&
+            this.geojsonData.senate
+          ) {
+            this.map.addSource("senate", {
+              type: "geojson",
+              data: this.geojsonData.senate,
+              promoteId: "DISTRICT",
+            });
+            this.map.addLayer(
+              {
+                id: "senate-fill",
+                type: "fill",
+                source: "senate",
+                layout: {
+                  visibility: "none",
+                },
+                paint: {
+                  "fill-color": this.buildFillColorExpression(
+                    this.selectedParty,
+                  ),
+                  "fill-opacity": 1.0,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "senate-outline",
+                type: "line",
+                source: "senate",
+                layout: {
+                  visibility: "none",
+                },
+                paint: {
+                  "line-color": "#ffffff",
+                  "line-width": 1,
+                },
+              },
+              labelLayerId,
+            );
+            this.map.addLayer(
+              {
+                id: "senate-outline-hover",
+                type: "line",
+                source: "senate",
+                layout: {
+                  visibility: "none",
+                  "line-join": "round",
+                  "line-cap": "round",
+                },
+                paint: {
+                  "line-color": "#000000",
+                  "line-width": 4,
+                  "line-opacity": [
+                    "case",
+                    ["boolean", ["feature-state", "hover"], false],
+                    1,
+                    0,
+                  ],
+                },
+              },
+              labelLayerId,
+            );
+            this.map.on("mousemove", "senate-fill", (e) => {
+              if (this.selected === "senate") {
+                this.handleDistrictHover(e, "senate");
+              }
+            });
+            this.map.on("mouseleave", "senate-fill", () => {
+              if (this.selected === "senate") {
+                this.handleDistrictLeave("senate");
+              }
+            });
+          }
+
+          const precinctCounties = [
+            "allegheny",
+            "bucks",
+            "delaware",
+            "montgomery",
+            "philadelphia",
+          ];
+
+          precinctCounties.forEach((countyName) => {
+            const sourceKey = `precinct-${countyName}`;
+            if (!this.map.getSource(sourceKey) && this.geojsonData[sourceKey]) {
+              this.map.addSource(sourceKey, {
+                type: "geojson",
+                data: this.geojsonData[sourceKey],
+                promoteId:
+                  countyName === "philadelphia" ? "objectid" : "OBJECTID",
+              });
+              this.map.addLayer(
+                {
+                  id: `${sourceKey}-fill`,
+                  type: "fill",
+                  source: sourceKey,
+                  layout: {
+                    visibility: "none",
+                  },
+                  paint: {
+                    "fill-color": this.buildFillColorExpression(
+                      this.selectedParty,
+                    ),
+                    "fill-opacity": 1.0,
+                  },
+                },
+                labelLayerId,
+              );
+              this.map.addLayer(
+                {
+                  id: `${sourceKey}-outline`,
+                  type: "line",
+                  source: sourceKey,
+                  layout: {
+                    visibility: "none",
+                  },
+                  paint: {
+                    "line-color": "#ffffff",
+                    "line-width": 1,
+                  },
+                },
+                labelLayerId,
+              );
+              this.map.addLayer(
+                {
+                  id: `${sourceKey}-outline-hover`,
+                  type: "line",
+                  source: sourceKey,
+                  layout: {
+                    visibility: "none",
+                    "line-join": "round",
+                    "line-cap": "round",
+                  },
+                  paint: {
+                    "line-color": "#000000",
+                    "line-width": 4,
+                    "line-opacity": [
+                      "case",
+                      ["boolean", ["feature-state", "hover"], false],
+                      1,
+                      0,
+                    ],
+                  },
+                },
+                labelLayerId,
+              );
+
+              this.map.on("mousemove", `${sourceKey}-fill`, (e) => {
+                if (this.selectedCounty.toLowerCase() === countyName) {
+                  this.handleDistrictHover(e, sourceKey);
+                }
+              });
+              this.map.on("mouseleave", `${sourceKey}-fill`, () => {
+                if (this.selectedCounty.toLowerCase() === countyName) {
+                  this.handleDistrictLeave(sourceKey);
+                }
+              });
+            }
+          });
+
+          this.updateLayerVisibility();
+        },
+        updateLayerVisibility() {
+          if (!this.map || this.isSecondMap) return;
+          const layers = {
+            county: [
+              "counties-fill",
+              "counties-outline",
+              "counties-outline-hover",
+            ],
+            congressional: [
+              "congressional-fill",
+              "congressional-outline",
+              "congressional-outline-hover",
+            ],
+            senate: ["senate-fill", "senate-outline", "senate-outline-hover"],
+            house: ["house-fill", "house-outline", "house-outline-hover"],
+          };
+          Object.entries(layers).forEach(([key, layerIds]) => {
+            const visibility = key === this.selected ? "visible" : "none";
+            layerIds.forEach((id) => {
+              if (this.map.getLayer(id)) {
+                this.map.setLayoutProperty(id, "visibility", visibility);
+              }
+            });
+          });
+        },
+        initMap() {
+          const el = this.$refs.mapCanvas;
+          if (!el) {
+            console.warn("Map canvas not ready, retrying...");
+            setTimeout(() => this.initMap(), 100);
+            return;
+          }
+          if (!el || this.map) return;
+          const mapComponent = window.maplibreComponent({
+            id: "pa-map",
+            styleURL: "https://tiles.openfreemap.org/styles/positron",
+            bounds: [
+              [-80.5199, 39.7198],
+              [-74.6895, 42.26986],
+            ],
+            padding: window.innerWidth < 768 ? 20 : 40,
+            minZoom: 3,
+            maxZoom: 18,
+            zoom: 6,
+            controls: [],
+            attributionCompact: true,
+          });
+          mapComponent.init.call({
+            $refs: { canvas: el },
+            map: null,
+            _io: null,
+            _ro: null,
+            _initializing: false,
+            _flyToHandler: null,
+            _mobileViewHandler: null,
+            _markerInstances: [],
+            _baseMarkerInstances: [],
+            ...mapComponent,
+          });
+          setTimeout(() => {
+            if (window.maplibregl && window.maplibregl.Map) {
+              this.map = new maplibregl.Map({
+                container: el,
+                style: "https://tiles.openfreemap.org/styles/positron",
+                center: [-77.5, 40.9],
+                zoom: window.innerWidth < 768 ? 5.5 : 6,
+                minZoom: window.innerWidth < 768 ? 5 : 5.5,
+                maxZoom: 18,
+                maxBounds: [
+                  [-83, 38],
+                  [-72, 43.5],
+                ],
+                attributionControl: false,
+                cooperativeGestures: true,
+              });
+
+              this.map.addControl(
+                new maplibregl.NavigationControl({
+                  showCompass: false,
+                  showZoom: true,
+                  visualizePitch: false,
+                }),
+                "top-right",
+              );
+
+              if (this.isSecondMap) {
+                setTimeout(() => {
+                  const navContainer = this.map
+                    .getContainer()
+                    .querySelector(".maplibregl-ctrl-top-right");
+                  if (navContainer) {
+                    const updatePosition = () => {
+                      navContainer.style.top =
+                        window.innerWidth <= 440 ? "50px" : "10px";
+                    };
+                    updatePosition();
+                    window.addEventListener("resize", updatePosition);
+                  }
+                }, 100);
+              }
+
+              [".maplibregl-ctrl-attrib", ".mapboxgl-ctrl-attrib"].forEach(
+                (sel) => {
+                  document.querySelectorAll(sel).forEach((el) => el.remove());
+                },
+              );
+
+              const attribCtrl = new maplibregl.AttributionControl({
+                compact: true,
+              });
+              this.map.addControl(attribCtrl, "bottom-right");
+
+              this.map.on("load", () => {
+                setTimeout(() => {
+                  if (this.map && el.offsetWidth > 0 && el.offsetHeight > 0) {
+                    this.map.fitBounds(
+                      [
+                        [-80.5199, 39.7198],
+                        [-74.6895, 42.26986],
+                      ],
+                      {
+                        padding: window.innerWidth < 768 ? 20 : 40,
+                        maxZoom: window.innerWidth < 768 ? 6 : 8,
+                      },
+                    );
+                  }
+                }, 100);
+                this.map.getStyle().layers.forEach((layer) => {
+                  if (
+                    layer.type === "symbol" &&
+                    layer.layout &&
+                    layer.layout["text-field"]
+                  ) {
+                    this.map.setPaintProperty(
+                      layer.id,
+                      "text-halo-color",
+                      "#ffffff",
+                    );
+                    this.map.setPaintProperty(layer.id, "text-halo-width", 2.5);
+                    this.map.setPaintProperty(layer.id, "text-halo-blur", 0.5);
+                    this.map.setPaintProperty(
+                      layer.id,
+                      "text-color",
+                      "#111111",
+                    );
+                  }
+                });
+                this.map.getCanvas().addEventListener("mouseleave", () => {
+                  window.dispatchEvent(new Event("legend-clear"));
+                });
+
+                this.loadGeoJSON();
+              });
+            }
+          }, 100);
+        },
+      };
+    }
+  </script>
+  <div
+    class="grid min-h-screen w-screen grid-cols-1 grid-rows-[auto_minmax(300px,auto)_minmax(500px,1fr)_auto_auto] lg:grid-cols-12 lg:grid-rows-[repeat(4,auto)_auto_auto_auto]"
+    x-data="{...s3DataLoader(), ...splVoterRegGraphic() }"
+    x-init="init()"
+  >
+    <div
+      class="order-1 col-span-1 row-span-1 flex flex-col items-start justify-center bg-black px-6 pt-6 text-white lg:col-span-5 lg:row-span-2 lg:px-12 lg:pt-6"
+    >
+      {{ with .Param "kicker" }}
+        <p class="font-sans font-bold uppercase text-yellow">{{ . }}</p>
+      {{ end }}
+      <h1 class="my-4 font-serif text-3xl uppercase leading-hed lg:text-4xl">
+        {{ .Title }}
+      </h1>
+      {{ with .Param "dek" }}
+        <p class="mb-4 text-2xl">{{ . }}</p>
+      {{ else }}
+        {{ with .Description }}
+          <p class="mb-4 text-2xl">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+      {{ with $params.byline }}
+        <p class="text-base font-light">
+          <span>by</span>
+          <span class="font-semibold">
+            {{ if $bylineLink }}
+              <a href="{{ $bylineLink }}">{{ . }}</a>
+            {{ else }}
+              {{ . }}
+            {{ end }}
+          </span>
+          {{ if and (not $params.evergreen) $params.published }}
+            {{ $display := $.Param "display-date" }}
+            {{ $published := $.Param "published" }}
+            {{ if $display }}
+              <span
+                >| <time datetime="{{ $published }}">{{ $display }}</time></span
+              >
+            {{ end }}
+          {{ end }}
+        </p>
+      {{ end }}
+      {{ if not $params.evergreen | and $params.published }}
+        <div class="mt-2 block">
+          <span class="font-semibold">Source:</span> State of Pennsylvania
+        </div>
+      {{ end }}
+    </div>
+    <div
+      class="order-3 col-span-1 row-span-1 flex flex-col overflow-visible bg-black p-4 max-[440px]:pb-4 lg:order-2 lg:col-span-7 lg:row-span-4 lg:px-4 lg:pb-4 lg:pr-12 lg:pt-12"
+      @search-complete.window="isSearching = false"
+      x-data="splPartyChart()"
+    >
+      <div
+        class="mb-4 grid w-full grid-cols-1 items-stretch gap-3 sm:grid-cols-2"
+      >
+        <div class="relative h-full">
+          <select
+            @change="window.dispatchEvent(new CustomEvent('party-changed', { detail: $event.target.value }))"
+            x-model="selectedParty"
+            :style="`border-color: ${partyConfig[selectedParty].borderColor};`"
+            class="focus:outline-hidden h-full w-full cursor-pointer appearance-none rounded-lg border-[3px] bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:ring-0"
+          >
+            <option value="total">Total turnout</option>
+            <option value="democrat">Democratic Party</option>
+            <option value="republican">Republican Party</option>
+            <option value="other">Other party</option>
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+          >
+            <svg
+              class="text-gray-700 h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+        <form
+          @submit.prevent="isSearching = true; window.dispatchEvent(new CustomEvent('search-submitted', { detail: { query: $refs.addressSearch.value } }))"
+          class="relative h-full"
+        >
+          <input
+            x-ref="addressSearch"
+            type="text"
+            placeholder="Search location"
+            class="placeholder-gray-5 focus:outline-hidden h-full w-full rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:ring-0"
+          />
+          <button
+            type="submit"
+            class="focus:outline-hidden absolute inset-y-0 right-0 flex items-center pr-4 text-g-7 hover:opacity-80"
+            title="Search"
+          >
+            <svg
+              x-show="!isSearching"
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+              />
+            </svg>
+            <svg
+              x-show="isSearching"
+              class="h-5 w-5 animate-spin"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="relative mb-10 w-full">
+        <div
+          x-ref="legend"
+          class="rounded-xs flex h-6 w-full gap-px border border-g-1 bg-g-1"
+          x-init="
+            const highlight = (idx) => {
+            const bins = $refs.legend.querySelectorAll('.legend-bin');
+            const clear = idx == null || idx < 0 || Number.isNaN(idx);
+            bins.forEach((b, i) => {
+            const active = !clear && i === idx;
+            b.style.outline = active ? '4px solid #fff' : '';
+            b.style.outlineOffset = '-2px';
+            b.style.opacity = clear ? '1' : (active ? '1' : '0.4');
+            b.style.transition = 'opacity 0.15s ease, outline-solid 0.15s ease';
+            });
+            };
+            window.addEventListener('legend-active-bin', (e) => {
+            if (e.detail.party !== selectedParty) return;
+            highlight(e.detail.index);
+            });
+            window.addEventListener('legend-clear', () => {
+            const bins = $refs.legend.querySelectorAll('.legend-bin');
+            bins.forEach(b => {
+            b.style.outline = '';
+            b.style.opacity = '1';
+            });
+            });
+            "
+        >
+          <template
+            x-for="(color, index) in partyConfig[selectedParty].colors"
+            :key="index"
+          >
+            <div
+              class="legend-bin flex-1"
+              :style="`background-color: ${color}`"
+            ></div>
+          </template>
+        </div>
+        <div
+          class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
+        >
+          <span
+            class="absolute left-[12.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[0]"
+          ></span>
+          <span
+            class="absolute left-[25%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[1]"
+          ></span>
+          <span
+            class="absolute left-[37.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[2]"
+          ></span>
+          <span
+            class="absolute left-[50%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[3]"
+          ></span>
+          <span
+            class="absolute left-[62.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[4]"
+          ></span>
+          <span
+            class="absolute left-[75%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[5]"
+          ></span>
+          <span
+            class="absolute left-[87.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[6]"
+          ></span>
+        </div>
+      </div>
+      <div
+        class="max-[440px] relative h-full w-full"
+        @search-submitted.window="handleAddressSearch((($event.detail?.query || '').trim() ? ($event.detail.query.trim() + ', Pennsylvania') : ''))"
+        x-data="splMapData()"
+        x-init="
+          $nextTick(() => {
+            setTimeout(() => initMap(), 100);
+          });
+         $watch('selected', () => {
+         updateLayerVisibility();
+         window.dispatchEvent(new Event('legend-clear'));
+         });
+         window.addEventListener('party-changed', (e) => {
+         selectedParty = e.detail;
+         if (map) {
+         ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => {
+         if (map.getLayer(layerId)) {
+         map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression(selectedParty));
+         }
+         });
+         window.dispatchEvent(new Event('legend-clear'));
+         }
+         });
+         "
+      >
+        <div
+          x-ref="mapCanvas"
+          class="absolute inset-0 h-full w-full max-[440px]:top-[44px]"
+          style="overflow: visible"
+        ></div>
+        <div
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow-sm max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:h-11 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:shadow-none"
+        >
+          <button
+            :data-checked="selected === 'county'"
+            @click="selected='county'"
+            title="County"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            <span class="max-[440px]:hidden">Counties</span
+            ><span class="hidden max-[440px]:inline">County</span>
+          </button>
+          <button
+            :data-checked="selected === 'congressional'"
+            @click="selected='congressional'"
+            title="Congressional"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            <span class="max-[440px]:hidden">Congressional</span
+            ><span class="hidden max-[440px]:inline">Congress</span>
+          </button>
+          <button
+            :data-checked="selected === 'senate'"
+            @click="selected='senate'"
+            title="Senate"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            Senate
+          </button>
+          <button
+            :data-checked="selected === 'house'"
+            @click="selected='house'"
+            title="House"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            House
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="order-2 col-span-1 row-span-1 bg-black p-4 lg:order-3 lg:col-span-5 lg:row-span-2 lg:pb-2 lg:pl-12 lg:pr-2"
+      x-ref="barchartContainer"
+      x-show="datasets && ((((datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1']) || []).length > 0) || (datasets.total && datasets.total.length > 0))"
+      x-init="
+          window.addEventListener('inspections-data-ready', () => { $nextTick(() => renderBarchart()); });
+          $watch('datasets', () => {
+            const counts = (datasets && (datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1'])) || [];
+            if ((counts.length > 0) || (datasets && datasets.total && datasets.total.length > 0)) {
+              $nextTick(() => renderBarchart());
+            }
+          });
+          window.addEventListener('resize', () => {
+            const counts = (datasets && (datasets.counts || datasets['counts_Sheet1'] || datasets['Counts'] || datasets['Sheet1'])) || [];
+            if ((counts.length > 0) || (datasets && datasets.total && datasets.total.length > 0)) {
+              renderBarchart();
+            }
+          });
+  "
+    ></div>
+
+    <div
+      class="order-4 col-span-1 row-span-1 bg-black px-4 py-12 pb-24 text-white lg:col-span-12 lg:px-12 lg:py-12 lg:pb-16"
+      x-data="{ ...splPartyChart(), selectedCounty: 'Allegheny' }"
+      @search-complete.window="isSearching = false"
+      x-init="
+    window.addEventListener('party-changed-second', (e) => {
+      selectedParty = e.detail;
+    });
+  "
+    >
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+        <p
+          class="text-3xl font-semibold"
+          x-text="selectedCounty === 'Philadelphia' ? 'Ward turnout by county' : 'Precinct turnout by county'"
+        ></p>
+
+        <div class="flex flex-col gap-3 sm:flex-row lg:flex-1">
+          <div class="relative w-full sm:flex-1">
+            <select
+              x-model="selectedCounty"
+              @change="$dispatch('county-changed', selectedCounty)"
+              class="focus:outline-hidden h-full w-full cursor-pointer appearance-none rounded-lg border-2 border-g-5 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black transition-all duration-200 focus:ring-0"
+            >
+              <option value="Allegheny">Allegheny</option>
+              <option value="Bucks">Bucks</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Montgomery">Montgomery</option>
+              <option value="Philadelphia">Philadelphia</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+            >
+              <svg
+                class="h-5 w-5 text-g-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+          <form
+            @submit.prevent="isSearching = true; window.dispatchEvent(new CustomEvent('search-submitted-second', { detail: { query: $refs.addressSearchSecond.value } }))"
+            class="relative w-full sm:flex-1"
+          >
+            <input
+              x-ref="addressSearchSecond"
+              type="text"
+              placeholder="Search location"
+              class="placeholder-gray-5 focus:outline-hidden h-full w-full rounded-lg border-[3px] border-g-4 bg-white px-4 py-3.5 pr-12 text-base font-semibold text-black shadow-lg transition-all duration-200 hover:shadow-xl focus:ring-0"
+            />
+            <button
+              type="submit"
+              class="focus:outline-hidden absolute inset-y-0 right-0 flex items-center pr-4 text-g-7 hover:opacity-80"
+              title="Search"
+            >
+              <svg
+                x-show="!isSearching"
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+                />
+              </svg>
+              <svg
+                x-show="isSearching"
+                class="h-5 w-5 animate-spin"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="relative mt-6 w-full">
+        <div
+          x-ref="legend"
+          class="rounded-xs flex h-6 w-full gap-px border border-g-1 bg-g-1"
+          x-init="
+        const highlight = (idx) => {
+        const bins = $refs.legend.querySelectorAll('.legend-bin');
+        const clear = idx == null || idx < 0 || Number.isNaN(idx);
+        bins.forEach((b, i) => {
+        const active = !clear && i === idx;
+        b.style.outline = active ? '4px solid #fff' : '';
+        b.style.outlineOffset = '-2px';
+        b.style.opacity = clear ? '1' : (active ? '1' : '0.4');
+        b.style.transition = 'opacity 0.15s ease, outline-solid 0.15s ease';
+        });
+        };
+        window.addEventListener('legend-active-bin', (e) => {
+        if (e.detail.party !== selectedParty) return;
+        highlight(e.detail.index);
+        });
+        window.addEventListener('legend-clear', () => {
+        const bins = $refs.legend.querySelectorAll('.legend-bin');
+        bins.forEach(b => {
+        b.style.outline = '';
+        b.style.opacity = '1';
+        });
+        });
+        "
+        >
+          <template
+            x-for="(color, index) in partyConfig[selectedParty].colors"
+            :key="index"
+          >
+            <div
+              class="legend-bin flex-1"
+              :style="`background-color: ${color}`"
+            ></div>
+          </template>
+        </div>
+        <div
+          class="absolute left-0 top-6 w-full text-base font-extrabold text-white"
+        >
+          <span
+            class="absolute left-[12.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[0]"
+          ></span>
+          <span
+            class="absolute left-[25%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[1]"
+          ></span>
+          <span
+            class="absolute left-[37.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[2]"
+          ></span>
+          <span
+            class="absolute left-[50%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[3]"
+          ></span>
+          <span
+            class="absolute left-[62.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[4]"
+          ></span>
+          <span
+            class="absolute left-[75%] hidden -translate-x-1/2 min-[460px]:block"
+            x-text="partyConfig[selectedParty].labels[5]"
+          ></span>
+          <span
+            class="absolute left-[87.5%] -translate-x-1/2"
+            x-text="partyConfig[selectedParty].labels[6]"
+          ></span>
+        </div>
+      </div>
+
+      <div
+        class="relative mt-10 h-[400px] w-full"
+        x-data="{ ...splMapData(), selected: 'precinct', isSecondMap: true }"
+        @search-submitted-second.window="(async (query) => {
+  try {
+    const searchQuery = ($event.detail?.query || '').trim();
+    if (!searchQuery) {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      return;
+    }
+
+    const hit = await geocodeAddress(searchQuery + ', Pennsylvania');
+    if (!hit) {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      const input = $refs.addressSearchSecond;
+      if (input) {
+        input.value = '';
+        input.placeholder = 'Please try again';
+        setTimeout(() => {
+          input.placeholder = 'Search location';
+        }, 3000);
+      }
+      return;
+    }
+
+    const { lon, lat } = hit;
+
+    const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
+    let foundCounty = null;
+
+    for (const countyName of precinctCounties) {
+      const sourceKey = `precinct-${countyName}`;
+      const features = geojsonData[sourceKey]?.features;
+      if (!features) continue;
+
+      const hit = features.find(f => isPointInFeature([lon, lat], f));
+      if (hit) {
+        foundCounty = countyName.charAt(0).toUpperCase() + countyName.slice(1);
+        break;
+      }
+    }
+
+    if (foundCounty) {
+      selectedCounty = foundCounty;
+      window.dispatchEvent(new CustomEvent('county-changed', { detail: foundCounty }));
+
+      map.flyTo({
+        center: [lon, lat],
+        zoom: 12,
+        duration: 2000,
+        essential: true
+      });
+    } else {
+      window.dispatchEvent(new CustomEvent('search-complete'));
+      const input = $refs.addressSearchSecond;
+      if (input) {
+        input.value = '';
+        input.placeholder = 'Please try again';
+        setTimeout(() => {
+          input.placeholder = 'Search location';
+        }, 3000);
+      }
+    }
+  } finally {
+    window.dispatchEvent(new CustomEvent('search-complete'));
+  }
+})()"
+        x-init="
+          initMap();
+
+window.addEventListener('party-changed-second', (e) => {
+            selectedParty = e.detail;
+            if (map) {
+              const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
+              precinctCounties.forEach(countyName => {
+                const sourceKey = `precinct-${countyName.toLowerCase()}`;
+                if (map.getLayer(`${sourceKey}-fill`)) {
+                  map.setPaintProperty(`${sourceKey}-fill`, 'fill-color', buildFillColorExpression(selectedParty));
+                }
+              });
+              window.dispatchEvent(new Event('legend-clear'));
+            }
+          });
+
+ window.addEventListener('county-changed', (e) => {
+  const newCounty = e.detail;
+  if (!map) return;
+
+  const precinctCounties = ['allegheny', 'bucks', 'delaware', 'montgomery', 'philadelphia'];
+  precinctCounties.forEach(countyName => {
+    const sourceKey = `precinct-${countyName.toLowerCase()}`;
+    const visibility = countyName.toLowerCase() === newCounty.toLowerCase() ? 'visible' : 'none';
+    if (map.getLayer(`${sourceKey}-fill`)) {
+      map.setLayoutProperty(`${sourceKey}-fill`, 'visibility', visibility);
+    }
+    if (map.getLayer(`${sourceKey}-outline`)) {
+      map.setLayoutProperty(`${sourceKey}-outline`, 'visibility', visibility);
+    }
+  });
+
+const calculateCountyBounds = (countyName) => {
+  const sourceKey = `precinct-${countyName.toLowerCase()}`;
+  const features = geojsonData[sourceKey]?.features;
+  if (!features || features.length === 0) return null;
+
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  features.forEach(feature => {
+    if (!feature || !feature.geometry || !feature.geometry.coordinates) {
+      console.warn('Skipping feature with null geometry in', countyName);
+      return;
+    }
+
+    const [[fMinX, fMinY], [fMaxX, fMaxY]] = getFeatureBounds(feature);
+    if (fMinX < minX) minX = fMinX;
+    if (fMinY < minY) minY = fMinY;
+    if (fMaxX > maxX) maxX = fMaxX;
+    if (fMaxY > maxY) maxY = fMaxY;
+  });
+
+  return [[minX, minY], [maxX, maxY]];
+};
+
+  const countyBounds = calculateCountyBounds(newCounty);
+  if (countyBounds) {
+    map.fitBounds(countyBounds, {
+      padding: window.innerWidth < 768 ? 20 : 40,
+      duration: 2000,
+      essential: true
+    });
+  }
+});
+
+if (isSecondMap) {
+  const waitForDataAndInit = () => {
+    const checkInterval = setInterval(() => {
+      if (geojsonData['precinct-allegheny']?.features?.length > 0 &&
+          map &&
+          map.loaded() &&
+          map.getLayer('precinct-allegheny-fill')) {
+        clearInterval(checkInterval);
+
+        ['counties-fill', 'counties-outline', 'counties-outline-hover',
+         'congressional-fill', 'congressional-outline', 'congressional-outline-hover',
+         'senate-fill', 'senate-outline', 'senate-outline-hover',
+         'house-fill', 'house-outline', 'house-outline-hover'].forEach(layerId => {
+          if (map.getLayer(layerId)) {
+            map.setLayoutProperty(layerId, 'visibility', 'none');
+          }
+        });
+
+        if (map.getLayer('precinct-allegheny-fill')) {
+          map.setLayoutProperty('precinct-allegheny-fill', 'visibility', 'visible');
+          map.setPaintProperty('precinct-allegheny-fill', 'fill-color', buildFillColorExpression(selectedParty));
+        }
+
+        if (map.getLayer('precinct-allegheny-outline')) {
+          map.setLayoutProperty('precinct-allegheny-outline', 'visibility', 'visible');
+        }
+
+        const calculateCountyBounds = (countyName) => {
+          const sourceKey = `precinct-${countyName.toLowerCase()}`;
+          const features = geojsonData[sourceKey]?.features;
+          if (!features || features.length === 0) return null;
+
+          let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+          features.forEach(feature => {
+            const [[fMinX, fMinY], [fMaxX, fMaxY]] = getFeatureBounds(feature);
+            if (fMinX < minX) minX = fMinX;
+            if (fMinY < minY) minY = fMinY;
+            if (fMaxX > maxX) maxX = fMaxX;
+            if (fMaxY > maxY) maxY = fMaxY;
+          });
+
+          return [[minX, minY], [maxX, maxY]];
+        };
+
+        const alleghenyBounds = calculateCountyBounds('allegheny');
+        if (alleghenyBounds) {
+          requestAnimationFrame(() => {
+            map.fitBounds(alleghenyBounds, {
+              padding: window.innerWidth < 768 ? 20 : 40,
+              duration: 0
+            });
+          });
+        }
+      }
+    }, 200);
+
+    setTimeout(() => {
+      clearInterval(checkInterval);
+    }, 10000);
+  };
+
+  $nextTick(() => {
+    waitForDataAndInit();
+  });
+}
+"
+      >
+        <div
+          x-ref="mapCanvas"
+          class="absolute inset-0 h-full w-full max-[440px]:top-[44px]"
+          style="overflow: visible"
+        ></div>
+        <div
+          x-ref="tooltip"
+          class="pointer-events-none absolute z-50 hidden rounded-md border-2 border-black bg-white p-3 text-sm shadow-xl"
+        ></div>
+        <div
+          class="absolute right-[50px] top-[10px] z-20 flex overflow-hidden rounded-md border border-g-3 bg-white shadow-sm max-[440px]:left-0 max-[440px]:right-0 max-[440px]:top-0 max-[440px]:h-11 max-[440px]:w-full max-[440px]:rounded-b-none max-[440px]:border-b-0 max-[440px]:shadow-none"
+        >
+          <button
+            :data-checked="selectedParty === 'total'"
+            @click="selectedParty='total'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'total' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('total')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Total"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            Total
+          </button>
+          <button
+            :data-checked="selectedParty === 'democrat'"
+            @click="selectedParty='democrat'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'democrat' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('democrat')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Democrat"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            Democrat
+          </button>
+          <button
+            :data-checked="selectedParty === 'republican'"
+            @click="selectedParty='republican'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'republican' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('republican')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Republican"
+            class="focus:outline-hidden border-r border-g-3 px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            Republican
+          </button>
+          <button
+            :data-checked="selectedParty === 'other'"
+            @click="selectedParty='other'; window.dispatchEvent(new CustomEvent('party-changed-second', { detail: 'other' })); if (map) { ['counties-fill', 'congressional-fill', 'senate-fill', 'house-fill'].forEach(layerId => { if (map.getLayer(layerId)) { map.setPaintProperty(layerId, 'fill-color', buildFillColorExpression('other')); } }); window.dispatchEvent(new Event('legend-clear')); }"
+            title="Other"
+            class="focus:outline-hidden px-3 py-2 text-sm font-semibold text-black hover:bg-g-1 focus:ring-2 focus:ring-g-4 active:bg-g-2 data-[checked=true]:bg-g-2 max-[440px]:flex-1"
+          >
+            Other
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="order-5 col-span-1 row-span-1 bg-white px-4 py-8 lg:col-span-12 lg:px-12 lg:py-12"
+    >
+      <div class="mx-auto w-full max-w-7xl">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
+          <div
+            class="article-content font-serif leading-relaxed lg:col-span-2 lg:border-r-2 lg:border-g-4 lg:pr-8"
+          >
+            <h1
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              About the Data
+            </h1>
+            <p class="mb-4">
+              This data was produced by processing voter registration files
+              provided by the state of Pennsylvania. It was received on Nov. 17,
+              2025.
+              <br /><br />
+              The voter registration file contains the name, voting precinct,
+              party affiliation, and date last voted for each voter in the
+              state. The counties included in the precinct map were chosen based
+              on the availability of geographic data, with priority given to the
+              most populous areas.
+              <br /><br />
+              By seeing which voters voted in the most recent election, we built
+              a map of voter turnout for various precincts and affiliations.
+              Code for the analysis can be examined
+              <a
+                href="https://gist.github.com/earthboundkid/ccb3fb4d4440f8c5261833bfd4a6f2fe"
+                >here</a
+              >.
+            </p>
+            <div class="my-8 flex justify-center">
+              <hr
+                class="shadow-xs w-24 rounded-full border-t-4 border-yellow"
+              />
+            </div>
+            <h1
+              class="mx-auto w-0 min-w-full font-sans text-xl font-semibold md:text-2xl md:leading-tight"
+            >
+              Need Help?
+            </h1>
+            <p class="mb-4">
+              If you have any questions or need assistance with voting, you can
+              reach out to the
+              <a href="https://www.pa.gov/agencies/vote">
+                Pennsylvania Department of State</a
+              >
+              for guidance.
+            </p>
+          </div>
+          <div class="lg:col-span-1">
+            <div class="rounded-lg bg-g-1 p-6">
+              <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
+                Election Resources
+              </h3>
+              <div class="space-y-3">
+                <a
+                  href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">🗳️</span>
+                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                    >Register to vote</span
+                  >
+                </a>
+                <a
+                  href="https://www.spotlightpa.org/pennsylvania-voter-registration/"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📊</span>
+                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                    >Track voter registration</span
+                  >
+                </a>
+                <a
+                  href="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📝</span>
+                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                    >Check your registration status</span
+                  >
+                </a>
+                <a
+                  href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📍</span>
+                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                    >Find your polling place</span
+                  >
+                </a>
+                <a
+                  href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineMailInBegin"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">✉️</span>
+                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                    >Request a mail ballot</span
+                  >
+                </a>
+                <a
+                  href="https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
+                  class="flex items-center text-black transition-colors hover:text-blue"
+                >
+                  <span class="mr-2">📱</span>
+                  <span class="font-bold font-semibold text-blue hover:text-g-6"
+                    >Contact your county election office</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            {{ with site.GetPage "topics/elections" }}
+              {{ $stories := (where .RegularPages "Date" ">" (time "2024-12-31")) | first 4 }}
+              <div class="mt-6 rounded-lg bg-g-1 p-6">
+                <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
+                  More Election Coverage
+                </h3>
+                <ul class="space-y-3">
+                  {{ range $stories }}
+                    <li>
+                      <a
+                        href="{{ .RelPermalink }}"
+                        class="flex items-start text-black transition-colors hover:text-blue"
+                      >
+                        <span class="mr-2">📰</span>
+                        <span class="font-semibold">
+                          {{ .Title }}
+                          <span class="block text-sm font-normal text-g-7">
+                            {{ .Date | time.Format "Jan. 2, 2006" }}
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  {{ end }}
+                  <li>
+                    <a
+                      href="/elections/#coverage"
+                      class="flex items-center text-black transition-colors hover:text-blue"
+                    >
+                      <span class="font-bold">See all election stories →</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            {{ end }}
+            <div
+              class="mt-6 rounded-lg bg-g-1 p-6"
+              id="credits"
+              data-ga-category="credits"
+            >
+              <h3 class="mb-2 font-sans text-xl font-bold md:text-2xl">
+                Credits
+              </h3>
+              <div class="mt-4 flex flex-col gap-4">
+                {{ .Params.credits | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+{{ define "extra-head" }}
+  {{ partial "header/maplibre.html" . }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+{{ end }}
+{{ define "extra-footer" }}
+  {{ partial "blocks/maplibre.html" . }}
+{{ end }}

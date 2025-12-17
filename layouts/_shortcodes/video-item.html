@@ -1,0 +1,49 @@
+{{ $hed := .Get "hed" }}
+{{ $inner := .Get "body" }}
+<!-- TODO: Remove hardcoded ID -->
+{{ $playerID := .Get "id" | default "562400724" }}
+
+
+<figure
+  class="mx-auto w-full bg-black text-white md:h-auto"
+  x-data="scrollVimeo"
+>
+  <div class="mx-[calc(-50vw+50%)]">
+    <iframe
+      class="aspect-video w-full"
+      src="https://www.youtube.com/embed/{{ $playerID }}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {{ if $inner }}
+    <figcaption
+      x-data="{ onScreen: false }"
+      x-intersect.half="onScreen = true"
+      class="mx-auto py-40 font-sans md:max-w-content"
+    >
+      <h3
+        class="text-2xl font-bold leading-loose md:text-4xl md:leading-relaxed"
+        x-show="onScreen"
+        x-transition:enter="transition-all ease-out duration-1000 delay-700"
+        x-transition:enter-start=" opacity-0"
+        x-transition:enter-end="opacity-100"
+      >
+        {{ $hed }}
+      </h3>
+      <p
+        class="text-s-8 text-xl leading-loose md:text-2xl md:leading-loose"
+        x-show="onScreen"
+        x-transition:enter="transition-all ease-out duration-700 delay-1000"
+        x-transition:enter-start=" opacity-0"
+        x-transition:enter-end="opacity-100"
+      >
+        {{ $inner | markdownify }}
+      </p>
+    </figcaption>
+  {{ end }}
+
+</figure>

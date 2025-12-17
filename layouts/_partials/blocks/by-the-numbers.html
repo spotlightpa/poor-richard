@@ -1,0 +1,400 @@
+<div id="by-the-numbers-wrapper" class="font-serif">
+  <div id="numbers-bar" class="flex h-[110px] w-full items-center bg-yellow">
+    <div class="numbers-bar-item flex w-1/3 items-center justify-center">
+      <div
+        class="bar-content flex items-center justify-center text-[1.4em] font-bold text-black"
+      >
+        <div
+          class="circle mr-[15px] flex h-[85px] w-[85px] items-center justify-center rounded-full bg-white"
+        >
+          <span class="circle-text text-[64px] font-bold text-black">35</span>
+        </div>
+        Policies Changed
+      </div>
+    </div>
+    <div class="divider mb-auto mt-auto h-[80%] w-[3px] bg-black"></div>
+    <div class="numbers-bar-item flex w-1/3 items-center justify-center">
+      <div
+        class="bar-content flex items-center justify-center text-[1.4em] font-bold text-black"
+      >
+        <div
+          class="circle mr-[15px] flex h-[85px] w-[85px] items-center justify-center rounded-full bg-white"
+        >
+          <span class="circle-text text-[64px] font-bold text-black">14</span>
+        </div>
+        Bills Introduced
+      </div>
+    </div>
+    <div class="divider mb-auto mt-auto h-[80%] w-[3px] bg-black"></div>
+    <div class="numbers-bar-item flex w-1/3 items-center justify-center">
+      <div
+        class="bar-content flex items-center justify-center text-[1.4em] font-bold text-black"
+      >
+        <div
+          class="circle mr-[15px] flex h-[85px] w-[85px] items-center justify-center rounded-full bg-white"
+        >
+          <span class="circle-text text-[64px] font-bold text-black">8</span>
+        </div>
+        Legal Victories
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-center bg-black pb-16">
+    <div class="grid-container grid">
+      <div
+        class="impact-numbers-title relative min-w-[630px] max-w-[640px] px-[50px] pb-[25px] pl-[100px] pt-[50px] text-left text-[56px] font-bold text-white"
+      >
+        <div>Journalism that</div>
+        <div
+          class="spotlight absolute bottom-[25px] left-[90px] h-[60px] max-w-[470px] bg-[#545454]"
+        >
+          <span class="spotlight-text">Gets Results</span>
+        </div>
+      </div>
+      <div
+        class="impact-block relative flex flex-col items-center justify-center p-[20px]"
+      >
+        <div class="impact-row flex w-full items-center justify-center">
+          <div class="impact-symbol">
+            <svg aria-hidden="true" class="h-[75px] w-[75px] text-yellow">
+              {{ partial "helper/svg.html" "envelope" }}
+            </svg>
+          </div>
+        </div>
+        <div
+          class="impact-row symbol-number flex w-full items-center justify-center text-[3.5em] font-bold text-white"
+        >
+          3,000+
+        </div>
+        <div
+          class="impact-row impact-text flex w-full max-w-fit items-center justify-center rounded-[4px] bg-yellow px-[10px] py-[2.5px] text-center text-[1.4em] font-bold text-black"
+        >
+          Reader Tips
+        </div>
+      </div>
+
+      <div
+        class="impact-numbers-graf max-w-[640px] px-[50px] pb-[50px] pl-[100px] pt-[25px] text-[18px] text-white"
+      >
+        Spotlight PA's investigative and public-service journalism changes laws
+        and lives. Our reporting drives government accountability and
+        transparency at all levels, provides an independent check on power and
+        influence, and has saved Pennsylvania taxpayers millions of dollars.
+      </div>
+      <div
+        class="impact-block relative flex flex-col items-center justify-center p-[20px]"
+      >
+        <div class="impact-row flex w-full items-center justify-center">
+          <div class="impact-symbol">
+            <svg aria-hidden="true" class="h-[75px] w-[75px] text-yellow">
+              {{ partial "helper/svg.html" "gavel" }}
+            </svg>
+          </div>
+        </div>
+        <div
+          class="impact-row symbol-number flex w-full items-center justify-center text-[3.5em] font-bold text-white"
+        >
+          1,400+
+        </div>
+        <div
+          class="impact-row impact-text flex w-full max-w-fit items-center justify-center rounded-[4px] bg-yellow px-[10px] py-[2.5px] text-center text-[1.4em] font-bold text-black"
+        >
+          Right to Know Requests
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .spotlight {
+    width: calc(100% - 100px);
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 930px) {
+    #numbers-bar {
+      justify-content: space-between;
+    }
+
+    .numbers-bar-item {
+      max-width: 290px;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .bar-content {
+      padding: 0px 10px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .bar-content {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .circle {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+      min-height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .circle {
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: 905px) {
+    .circle {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .circle-text {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    .bar-content {
+      font-size: 18px;
+    }
+
+    .circle {
+      margin: 0px 5px;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    #numbers-bar {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .numbers-bar-item {
+      width: 100%;
+      max-width: none;
+      border: 2px solid black;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      padding: 0px 40px;
+      justify-content: left;
+    }
+    .numbers-bar-item:first-child {
+      border-top: 2px solid black;
+    }
+
+    .numbers-bar-item:last-child {
+      border-bottom: 2px solid black;
+    }
+
+    .bar-content {
+      white-space: nowrap;
+      padding: 0;
+      margin: 10px 0px;
+      font-size: 22px;
+    }
+
+    .circle {
+      margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .numbers-bar-item {
+      padding: 0px 20px;
+    }
+
+    .circle {
+      margin-right: 15px;
+      margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .impact-numbers-title {
+      font-size: 48px;
+      padding-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .spotlight {
+      max-width: 400px;
+      left: 35px;
+    }
+  }
+
+  .spotlight-text {
+    position: absolute;
+    bottom: 35px;
+  }
+
+  @media screen and (max-width: 990px) {
+    .spotlight-text {
+      bottom: 25px;
+      left: 10px;
+    }
+  }
+
+  .impact-numbers-title span {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 990px) {
+    .impact-numbers-graf {
+      padding-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .impact-symbol svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .symbol-number {
+      font-size: 2.75em;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .impact-text {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .impact-numbers-title {
+      min-width: 450px;
+      padding-right: 0px;
+    }
+
+    .spotlight {
+      bottom: 80px;
+    }
+
+    .impact-numbers-graf {
+      padding-right: 0px;
+    }
+
+    .grid-container {
+      grid-template-rows: 0.8fr 1fr;
+    }
+
+    .spotlight {
+      bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "title title"
+        "graf graf";
+    }
+
+    .impact-numbers-title {
+      grid-area: title;
+      padding: 20px 40px;
+    }
+
+    .impact-numbers-graf {
+      grid-area: graf;
+      padding: 20px 40px 0px 40px;
+    }
+
+    .spotlight {
+      position: relative;
+      left: 0px;
+      width: calc(100% - 250px);
+      height: 50px;
+      bottom: -10px;
+      min-width: 340px;
+    }
+
+    .spotlight-text {
+      bottom: 30px;
+      left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .impact-numbers-title {
+      font-size: 42px;
+    }
+
+    .spotlight-text {
+      bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "title"
+        "graf";
+    }
+
+    .impact-block {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 435px) {
+    .impact-numbers-title {
+      font-size: 36px;
+      min-width: 0px;
+    }
+
+    .impact-numbers-graf {
+      font-size: 17px;
+    }
+
+    .spotlight {
+      min-width: 260px;
+    }
+
+    .spotlight-text {
+      bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 365px) {
+    .impact-numbers-title {
+      font-size: 30px;
+      min-width: 0px;
+    }
+
+    .spotlight {
+      height: 40px;
+      min-width: 230px;
+    }
+
+    .spotlight-text {
+      bottom: 10px;
+    }
+  }
+</style>

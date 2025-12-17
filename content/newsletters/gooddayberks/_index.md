@@ -33,10 +33,10 @@ teamTitle = "Good Day, Berks"
 
 image-size = "inline"
 image-gravity = "ea"
-weight = 5 
+weight = 5
 
 [cascade]
-image = "2025/04/01m1-4kkw-jepk-8rgx.png" 
+image = "2025/04/01m1-4kkw-jepk-8rgx.png"
 
 
 [[staff]]
@@ -52,7 +52,7 @@ description = "Understand what's happening across PA - in less than five minutes
 image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
 width = 3334
 height = 1880
-link = "https://www.spotlightpa.org/newsletters/papost"
+link = "/newsletters/papost/"
 
 [[explore]]
 newsletter = "PA Local"
@@ -61,7 +61,7 @@ description = "A fresh, positive look at the incredible people, places, and food
 image = "2022/02/01h0-cwm9-x8wv-b6tc.jpeg"
 width = 1200
 height = 1009
-link = "https://www.spotlightpa.org/newsletters/palocal"
+link = "/newsletters/palocal/"
 
 [[explore]]
 newsletter = "The Investigator"
@@ -73,4 +73,3 @@ height = 270
 link = "https://www.spotlightpa.org/newsletters/investigator"
 
 +++
-

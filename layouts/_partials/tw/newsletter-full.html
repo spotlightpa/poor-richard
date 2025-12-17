@@ -1,0 +1,107 @@
+{{ $gaForm := .gaForm }}
+{{ $gaCategory := .gaCategory }}
+{{ $hiddenField := .hiddenField }}
+{{ $hed := .hed }}
+{{ $cta := .cta }}
+
+{{ $idFname := partial "helper/new-id" . }}
+{{ $idLname := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+
+
+<section class="bg-g-3 md:px-4" data-ga-category="inline">
+  <div
+    class="mx-auto max-w-screen-lg px-4 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:py-24 lg:px-0"
+  >
+    <div class="md:col-span-5 md:col-start-1">
+      <h2
+        class="max-w-lg text-2xl font-black leading-none text-black md:text-5xl"
+      >
+        {{ .hed }}
+      </h2>
+      <div class="article-content my-2 max-w-md text-base">
+        {{ .dek }}
+      </div>
+
+      <form
+        class="font-sans text-black"
+        data-ga-category="{{ $gaCategory }}"
+        x-data="newsletter($el.dataset.baseUrl)"
+        data-base-url="{{ page.Param `newsletters-base-url` }}"
+        @submit.prevent="submit"
+      >
+        {{ partial $hiddenField . }}
+
+
+        <div class="mb-5 flex flex-wrap justify-start align-baseline">
+          <p class="mr-3 flex-[1_0_45%]">
+            <label class="mt-4 block font-extrabold" for="{{ $idFname }}">
+              First Name
+            </label>
+            <input
+              id="{{ $idFname }}"
+              class="spl-input"
+              type="text"
+              name="FNAME"
+              placeholder="First Name"
+              required
+            />
+          </p>
+
+          <p class="ml-3 flex-[1_0_45%]">
+            <label class="mt-4 block font-extrabold" for="{{ $idLname }}">
+              Last Name
+            </label>
+            <input
+              id="{{ $idLname }}"
+              class="spl-input"
+              type="text"
+              name="LNAME"
+              placeholder="Last Name"
+              required
+            />
+          </p>
+          <p class="mr-6 flex-[1_0_100%]">
+            <label class="mt-4 block font-extrabold" for="{{ $idEmail }}">
+              Email Address
+            </label>
+            <input
+              id="{{ $idEmail }}"
+              class="spl-input"
+              type="email"
+              name="EMAIL"
+              placeholder="Email address"
+              required
+            />
+          </p>
+          <button type="submit" class="btn-signup mt-4" :disabled="isLoading">
+            {{ $cta }}
+            <svg
+              x-cloak
+              x-transition
+              aria-label="Submitting"
+              x-show="isLoading"
+              class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+            >
+              {{ partial "helper/svg.html" "spinner" }}
+            </svg>
+          </button>
+        </div>
+        <p class="text-sm text-g-7">{{ .disclaimer }}</p>
+      </form>
+    </div>
+    {{ $name := .image }}
+    {{ $imgOpts := dict
+      "filename" $name
+      "widthRatio" 4
+      "heightRatio" 3
+      "widths" (slice 128 256 384 512 1280)
+      "figClass" "items-center hidden md:block justify-center self-center md:col-span-5 md:col-start-7"
+      "sizeHint" "400px"
+      "rounded-sm" true
+      "gravity" .gravity
+    }}
+    {{ partial "tw/image-block.html" $imgOpts }}
+
+  </div>
+</section>

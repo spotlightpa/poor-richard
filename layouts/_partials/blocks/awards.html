@@ -1,0 +1,211 @@
+{{ with site.Data.awards }}
+  <span class="hidden text-black"></span>
+
+  <div class="h-auto w-full bg-beige pb-16">
+    <div class="mx-auto flex max-w-4xl items-center px-4 pb-4 pt-16">
+      <svg
+        class="mr-4 h-8 w-9 lg:h-12 lg:w-12"
+        aria-hidden="true"
+        style="fill: #b6b6b6;"
+      >
+        {{ partial "helper/svg.html" "trophy" }}
+      </svg>
+      <h2 class="text-4xl font-bold lg:text-5xl">Awards</h2>
+    </div>
+
+    <div class="mx-auto max-w-4xl px-4">
+      <div style="border-top: 2.5px solid black; width: 100%;"></div>
+
+      <div class="flex w-full">
+        <div
+          class="border-r-[2.5px] border-black p-[15px] font-bold sm:pl-[25px] sm:pr-[20px]"
+        >
+          <ul class="year-list flex flex-col gap-[15px] text-[#b6b6b6]">
+            {{ $years := slice }}
+            {{ range . }}
+              {{ $years = $years | append .year }}
+            {{ end }}
+            {{ $yearsDesc := sort (uniq $years) "value" "desc" }}
+            {{ range $year := $yearsDesc }}
+              <li>
+                <button class="year-link hover:text-black" type="button">
+                  {{ $year }}
+                </button>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+
+        {{ $awards := site.Data.awards }}
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const yearList = document.querySelector(".year-list");
+            const awardsContainer = document.querySelector(".awards-container");
+
+            if (!yearList || !awardsContainer) {
+              console.warn("No year list or awards container found.");
+              return;
+            }
+
+            const yearItems = yearList.querySelectorAll("li");
+
+            yearItems.forEach((item) => {
+              item.addEventListener("click", () => {
+                const activeYear = item.textContent.trim();
+
+                yearItems.forEach((li) => li.classList.remove("text-black"));
+                item.classList.add("text-black");
+
+                const awardSections =
+                  awardsContainer.querySelectorAll(".award-entity");
+                awardSections.forEach((award) => {
+                  const awardYear = award.getAttribute("data-year");
+                  award.style.display =
+                    awardYear === activeYear ? "block" : "none";
+                });
+
+                const sections = [
+                  {
+                    header: ".national-awards-header",
+                    container: ".national-awards",
+                  },
+                  {
+                    header: ".national-finalists-header",
+                    container: ".national-finalists",
+                  },
+                  {
+                    header: ".state-awards-header",
+                    container: ".state-awards",
+                  },
+                  {
+                    header: ".state-finalists-header",
+                    container: ".state-finalists",
+                  },
+                ];
+
+                sections.forEach(({ header, container }) => {
+                  const section = awardsContainer.querySelector(container);
+                  const headerElement = awardsContainer.querySelector(header);
+
+                  const hasVisibleAwards = Array.from(
+                    section.querySelectorAll(".award-entity"),
+                  ).some((award) => award.style.display === "block");
+                  headerElement.style.display = hasVisibleAwards
+                    ? "block"
+                    : "none";
+                });
+              });
+            });
+
+            yearItems[0]?.click();
+          });
+        </script>
+
+        <div
+          class="flex w-full flex-wrap pb-[15px] pl-[15px] pr-0 pt-[15px] sm:pl-[25px] sm:pr-[20px]"
+        >
+          <div
+            class="awards-container"
+            style="flex: 1 1 100%; word-break: break-word;"
+          >
+            <p
+              class="award-national-state national-awards-header pb-[10px] text-[22px] font-bold"
+            >
+              National Awards
+            </p>
+            <div class="national-awards">
+              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Winner" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
+                  <p class="award-story mb-5">
+                    {{ partial "tag/maybe-link.html" (dict
+                      "linkClass" "award-story-link text-navy underline transition-colors duration-500 ease-linear hover:text-yellow"
+                      "link" .link
+                      "text" .story
+                      )
+                    }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+
+            <p
+              class="award-national-state national-finalists-header pb-[10px] text-[22px] font-bold"
+            >
+              National Finalists
+            </p>
+            <div class="national-finalists">
+              {{ range where (where . "national_or_state" "National") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
+                  <p class="award-story mb-5">
+                    {{ partial "tag/maybe-link.html" (dict
+                      "linkClass" "award-story-link text-navy underline transition-colors duration-500 ease-linear hover:text-yellow"
+                      "link" .link
+                      "text" .story
+                      )
+                    }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+
+            <p
+              class="award-national-state state-awards-header pb-[10px] text-[22px] font-bold"
+            >
+              State Awards
+            </p>
+            <div class="state-awards">
+              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Winner" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
+                  <p class="award-story mb-5">
+                    {{ partial "tag/maybe-link.html" (dict
+                      "linkClass" "award-story-link text-navy underline transition-colors duration-500 ease-linear hover:text-yellow"
+                      "link" .link
+                      "text" .story
+                      )
+                    }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+
+            <p
+              class="award-national-state state-finalists-header pb-[10px] text-[22px] font-bold"
+            >
+              State Finalists
+            </p>
+            <div class="state-finalists">
+              {{ range where (where . "national_or_state" "State") "winner_or_finalist_honorable_mention" "Finalist/Honorable Mention" }}
+                <div class="award-entity" data-year="{{ .year }}">
+                  {{ .entity }}:
+                  <span class="award-category font-bold">
+                    {{- .award_category -}}
+                  </span>
+                  <p class="award-story mb-5">
+                    {{ partial "tag/maybe-link.html" (dict
+                      "linkClass" "award-story-link text-navy underline transition-colors duration-500 ease-linear hover:text-yellow"
+                      "link" .link
+                      "text" .story
+                      )
+                    }}
+                  </p>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

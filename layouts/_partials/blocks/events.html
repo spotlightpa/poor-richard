@@ -1,0 +1,93 @@
+{{ with .block }}
+  <section
+    id="{{ .id }}"
+    data-ga-category="{{ .id }}"
+    x-data
+    x-intersect.half="$dispatch('intersect:about', $el.id)"
+    class="bg-black p-5 font-sans sm:py-5 md:py-16 xl:px-0"
+  >
+    <h2
+      class="{{ if .largeTitle }}
+        text-4xl
+      {{ else }}
+        text-base
+      {{ end }} m-auto flex max-w-screen-lg items-baseline gap-3 font-bold uppercase tracking-widest text-white"
+    >
+      {{ .title }}
+    </h2>
+
+    <div
+      class="m-auto mt-4 max-w-screen-lg md:mt-6 md:flex md:items-stretch md:justify-between"
+    >
+      <div class="md:w-5/12">
+        {{ $name := .image }}
+        {{ $credit := .imageCredit }}
+        {{ $description := .imageDescription }}
+        <div class="inline-block">
+          {{ $imgOpts := dict
+            "filename" $name
+            "description" $description
+            "widthRatio" 16
+            "heightRatio" 9
+            "credit" $credit
+            "creditClass" "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-white"
+            "imgClass" "self-center object-cover flex-1 h-full"
+            "widths" (slice 1024 1600 1500 2880)
+            "sizeHint" "400px"
+            "gravity" (.page.Param "image-gravity")
+          }}
+          {{ partial "tw/image-block.html" $imgOpts }}
+
+          {{ with $.block.dek }}
+            <div
+              class="mt-6 font-sans text-lg leading-relaxed text-white lg:text-xl"
+            >
+              {{ $.Page.RenderString . }}
+            </div>
+          {{ end }}
+
+        </div>
+      </div>
+      <span
+        class="hidden min-h-full w-0 border border-g-3 md:inline-flex"
+      ></span>
+      <div
+        class="mt-6 flex flex-col items-start space-y-6 text-white md:mt-0 md:w-1/2"
+      >
+        {{ with .entries }}
+          {{ range . }}
+            {{ $hed := .hed }}
+            <article>
+              <h3 class="font-serif text-lg font-bold">
+                {{ with .link }}
+                  <a href="{{ . }}">{{ $hed }}</a>
+                {{ else }}
+                  <span>{{ $hed }}</span>
+                {{ end }}
+              </h3>
+              {{ if .dateVerbose }}
+                <time
+                  datetime="{{ .date }}"
+                  class="my-2 font-sans text-sm font-bold uppercase tracking-wide"
+                >
+                  {{- .dateVerbose -}}
+                </time>
+              {{ end }}
+              <p class="font-base">{{ .dek }}</p>
+              {{ if .registration }}
+                <p class="my-4 font-sans text-sm tracking-wide">
+                  <a class="btn-signup" href="{{ .registration }}">Register</a>
+                </p>
+              {{ else if .link }}
+                <p class="my-4 font-sans text-sm tracking-wide">
+                  <a class="btn-signup" href="{{ .link }}">Watch</a>
+                </p>
+              {{ end }}
+
+            </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

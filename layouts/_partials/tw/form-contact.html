@@ -1,0 +1,203 @@
+{{ $subjects := slice
+  (slice "Addiction" "Ed Mahon")
+  (slice "Agriculture" "Stephen Kearse")
+  (slice "Child care" "Ed Mahon")
+  (slice "Courts (state or local)" "Danielle Ohl")
+  (slice "COVID-19" "Ed Mahon")
+  (slice "Crime" "Danielle Ohl")
+  (slice "Justice System" "Danielle Ohl")
+  (slice "Economic Development" "Charlotte Keith")
+  (slice "Education" "Ed Mahon")
+  (slice "Elder care" "Ed Mahon")
+  (slice "Elected Officials" "Angela Couloumbis, Katie Meyer, Kate Huangpu")
+  (slice "Elections" "Angela Couloumbis, Katie Meyer, Kate Huangpu")
+  (slice "Environment" "Stephen Kearse")
+  (slice "Event suggestions" "Yaasmeen Piper, Stephen Kearse")
+  (slice "Health" "Ed Mahon")
+  (slice "Housing" "Charlotte Keith")
+  (slice "Human Services" "Ed Mahon")
+  (slice "Labor" "Stephen Kearse")
+  (slice "Law Enforcement" "Danielle Ohl")
+  (slice "Legislature" "Angela Couloumbis, Katie Meyer, Kate Huangpu")
+  (slice "Local Government" "Min Xian")
+  (slice "Newsletter suggestions" "Colin, Stephen Kearse")
+  (slice "Penn State University" "Wyatt Massey")
+  (slice "Politics" "Angela Couloumbis, Katie Meyer, Kate Huangpu")
+  (slice "Rural Issues" "Marley Parish")
+  (slice "Sports" "Stephen Kearse")
+  (slice "State College" "Sarah Rafacz")
+  (slice "State Government" "")
+  (slice "State Prisons" "Danielle Ohl")
+  (slice "Transportation" "")
+  (slice "Unemployment" "")
+  (slice "Voting" "Angela Couloumbis, Katie Meyer, Kate Huangpu")
+  (slice "Other" "")
+}}
+{{ $idURL := partial "helper/new-id" . }}
+{{ $idFrom := partial "helper/new-id" . }}
+{{ $idEmail := partial "helper/new-id" . }}
+{{ $idSubject := partial "helper/new-id" . }}
+{{ $idBody := partial "helper/new-id" . }}
+{{ $idAnonymous := partial "helper/new-id" . }}
+{{ $formID := .formID | default "contact" }}
+{{ $formName := .formName | default "contact-page" }}
+{{ $hed := .hed }}
+{{ $dek := .dek }}
+{{ $recipient := .recipient }}
+{{ $anonymous := .showAnon | default false }}
+{{ $placeholder := .placeholder | default `Explain how we can help you` }}
+{{ $cta := .submit | default "Submit" }}
+<section
+  id="{{ $formID }}"
+  class="relative -mx-4 bg-g-3 font-sans sm:rounded-sm sm:px-5 md:mx-[calc(-50vw+50%)] md:w-screen md:rounded-none md:px-4"
+>
+  <div
+    class="mx-auto max-w-screen-lg px-3 py-6 md:grid md:grid-cols-10 md:gap-x-5 md:gap-y-3 md:px-0 md:py-24"
+  >
+    <header class="md:col-span-4 md:col-start-1">
+      <h2 class="text-2xl font-black leading-none text-black md:text-5xl">
+        {{ $hed }}
+      </h2>
+      <p class="mt-5 text-base">{{ $dek|markdownify }}</p>
+    </header>
+    <div class="text-base md:col-span-5 md:col-start-6">
+      <form
+        name="{{ $formName }}"
+        action="/contact/thanks/"
+        method="post"
+        netlify
+        netlify-honeypot="bot-field"
+        x-data
+        x-form="contact"
+        data-ga-category="inline:contact"
+      >
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
+          <label class="label is-sr-only" for="{{ $idURL }}">Host URL</label>
+          <input
+            id="{{ $idURL }}"
+            class="input"
+            type="text"
+            name="host_page"
+            value="Spotlight PA"
+          />
+        </p>
+        <div class="my-5 flex flex-wrap justify-between align-baseline">
+          <h3 class="flex-[0_0_100%] font-sans font-black">From</h3>
+
+          <p
+            class="relative flex-[0_0_100%] sm:flex-[0_1_calc(50%-10px)] md:flex-[0_0_100%] lg:flex-[0_1_calc(50%-10px)]"
+          >
+            <label class="hidden" for="{{ $idFrom }}">From</label>
+            <input
+              id="{{ $idFrom }}"
+              class="spl-input"
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+            />
+            <span
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+            >
+              <svg class="h-4 w-4 text-g-4" viewBox="0 0 1 1">
+                {{ partial "helper/svg.html" "user" }}
+              </svg>
+            </span>
+          </p>
+          <p
+            class="relative mt-3 flex-[0_0_100%] sm:mt-0 sm:flex-[0_1_calc(50%-10px)] md:mt-3 md:flex-[0_0_100%] lg:mt-0 lg:flex-[0_1_calc(50%-10px)]"
+          >
+            <label class="hidden" for="{{ $idEmail }}">Email Address</label>
+            <input
+              id="{{ $idEmail }}"
+              class="spl-input"
+              type="email"
+              placeholder="Email address"
+              name="email"
+            />
+            <span
+              class="pointer-events-none absolute inset-y-0 right-3 inline-flex items-center text-g-4"
+            >
+              <svg class="h-4 w-4 text-g-4" viewBox="0 0 1 1">
+                {{ partial "helper/svg.html" "email" }}
+              </svg>
+            </span>
+          </p>
+        </div>
+
+        <div class="mb-3">
+          {{ with $recipient }}
+            <input type="hidden" name="CC" value="{{ . }}" />
+          {{ else }}
+            <label class="font-sans font-black" for="{{ $idSubject }}"
+              >Subject</label
+            >
+            <div class="control is-expanded" x-data="{ cc: '' }">
+              <div class="select is-fullwidth relative">
+                <select
+                  id="{{ $idSubject }}"
+                  class="spl-select"
+                  name="subject"
+                  @input="cc = $el.options[$el.selectedIndex].dataset.cc"
+                  required
+                >
+                  <option selected disabled value="">Select a topic</option>
+                  {{ range $subjects }}
+                    {{ $subject := index . 0 }}
+                    {{ $cc := index . 1 }}
+                    <option data-cc="{{ $cc }}">{{ $subject }}</option>
+                  {{ end }}
+                </select>
+                <input type="hidden" name="CC" :value="cc" />
+                <span
+                  class="pointer-events-none absolute inset-y-0 right-3 z-10 inline-flex items-center justify-center leading-none text-g-5"
+                  aria-hidden="true"
+                >
+                  <svg class="h-4 w-4 fill-g-5">
+                    {{ partial "helper/svg.html" "chevron" }}
+                  </svg>
+                </span>
+              </div>
+            </div>
+          {{ end }}
+
+        </div>
+
+        <div class="field mb-3">
+          <label class="font-sans font-black" for="{{ $idBody }}"
+            >Comment</label
+          >
+          <div class="control">
+            <textarea
+              id="{{ $idBody }}"
+              class="input min-h-[128px] w-full rounded-sm border border-g-4 bg-white p-4 font-sans placeholder-g-5 shadow-sm"
+              placeholder="{{ $placeholder }}"
+              name="comment"
+            ></textarea>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          {{ with $anonymous }}
+            <p class="flex flex-1 flex-row-reverse">
+              <label class="grow font-sans font-black" for="{{ $idAnonymous }}"
+                >I would like to remain anonymous</label
+              >
+              <input
+                id="{{ $idAnonymous }}"
+                class="mr-3 h-6 w-6 rounded-sm border border-g-4 p-1 accent-yellow hover:accent-yellow-4"
+                type="checkbox"
+                name="anonymous"
+              />
+            </p>
+          {{ end }}
+          <button type="submit" class="btn-signup">
+            {{ $cta }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

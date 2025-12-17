@@ -1,0 +1,44 @@
+{{ $thumbClass := .thumbClass | default `w-full shrink-0 sm:w-40 md:w-64` }}
+{{ $storyClass := .storyClass | default `w-full grow` }}
+{{ $hedSize := .hedSize | default `text-lg` }}
+{{ $dekSize := .dekSize | default `text-xl` }}
+{{ $hedColor := .hedColor | default `text-white ` }}
+{{ $linkColor := .linkColor | default `text-dek ` }}
+{{ $subitemSize := .subitemSize | default `` }}
+{{ $date := .dateISO }}
+<article class="w-full">
+  <a
+    class="group mt-5 flex items-baseline gap-5 sm:flex-row"
+    href="{{ .link }}"
+  >
+    <div class="flex-1">
+      <h2
+        class="{{ $hedSize }} {{ $hedColor }} font-bold leading-tight tracking-tight group-hover:underline"
+      >
+        {{ .hed }}
+      </h2>
+      <span
+        class="font-sm font-sans font-bold uppercase tracking-wide text-yellow group-hover:underline"
+        >Attend</span
+      >
+    </div>
+    {{ if .showDate }}
+      <h3
+        class="-order-1 font-sans text-base font-extrabold leading-tight tracking-normal text-date text-white"
+        data-ga-category="time"
+      >
+        <time
+          datetime="{{ .dateISO }}"
+          class="flex w-14 flex-auto flex-col items-stretch overflow-hidden rounded-sm text-center"
+        >
+          <span class="bg-yellow uppercase text-yellow-9">
+            {{ $date | time.Format "Jan" }}</span
+          >
+          <span class="bg-white py-2 text-4xl text-black">
+            {{ $date | time.Format "02" }}</span
+          >
+        </time>
+      </h3>
+    {{ end }}
+  </a>
+</article>

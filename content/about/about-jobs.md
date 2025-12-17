@@ -9,8 +9,7 @@ aliases = ["/jobs/"]
 ### Current openings
 
 * [Major Gifts Directors, Eastern & Western Pa., Spotlight PA](#major-gifts-directors-eastern--western-pa-spotlight-pa)
-
-* [Newsletter Writer/Reporter (Guild Position)](#newsletter-writerreporter-guild-position)
+* [Penn State Investigative Reporter, Spotlight PA State College (Guild Position)](#penn-state-investigative-reporter-spotlight-pa-state-college-guild-position)
 
 ## Major Gifts Directors, Eastern & Western Pa., Spotlight PA
 
@@ -40,7 +39,7 @@ aliases = ["/jobs/"]
 
 **Who we're looking for**: We are seeking experienced fundraisers with a proven track record (at least 5-8 years of experience) in raising gifts of $25,000 to $100,000+ from individuals for important causes. Applicants should be able to demonstrate results of cultivating donors from first gifts to becoming major donors. Strong organizational and communication skills to track donor progress and ensure regular, individualized communications and touch points are required. An ability to work in a collaborative environment and as part of a positive and productive team is a must. Applicants should have a passion for building relationships on behalf of the organizations they serve, be goal-oriented and a self-starter, and be able to work independently. You must also be committed to advancing diversity, equity, and inclusion on our team and through your work.
 
-This job is full-time and includes benefits.  The first two years of these positions are funded by a generous grant from the American Journalism Project. The positions are remote; Spotlight PA does not have an office. Applicants should be based in either Western PA (preference for the Pittsburgh area) or Eastern PA (anywhere from the Philadelphia region to the Lehigh Valley to the Scranton area). You should be willing to travel regularly throughout your region for donor meetings and events (your travel expenses will be reimbursed). **This position is budgeted for a salary of $95,000.**
+This job is full-time and includes benefits.  The first two years of these positions are funded by a generous grant from the American Journalism Project. The positions are remote; Spotlight PA does not have an office. Applicants should be based in either Western PA (preference for the Pittsburgh area) or Eastern PA (anywhere from the Philadelphia region to the Lehigh Valley to the Scranton area). You should be willing to travel regularly throughout your region for donor meetings and events (your travel expenses will be reimbursed). **This job is full-time, includes benefits, and offers a competitive salary.**
 
 Applicants should include a resume and a one-page cover letter answering the following prompts: **1) What makes you uniquely able to grow Spotlight PA's major gifts program in your region, and how would you do it?; and 2) Tell us about specific examples where your work resulted in major/transformative gifts to a nonprofit.**
 
@@ -48,41 +47,39 @@ We know not everyone reading this will fit exactly what we've described. We enco
 
 - - -
 
-## Newsletter Writer/Reporter (Guild Position)
+## Penn State Investigative Reporter, Spotlight PA State College (Guild Position)
 
-### [Apply here](https://spotlightpa.applytojob.com/apply/FIsBWvEduM/Newsletter-WriterReporter-Guild-Position)
+### [Apply here](https://spotlightpa.applytojob.com/apply/Yhc2TjpWRW/Penn-State-Investigative-Reporter-Spotlight-PA-State-College-Guild-Position)
 
-**Summary**: We are seeking a passionate, dynamic voice to write and contribute to our growing newsletter portfolio. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories shared across dozens of partner newsrooms, allowing our vital investigative and public-service reporting to reach Pennsylvanians in all corners.
+**Summary**: We are seeking a passionate reporter to provide vital accountability reporting on Penn State University for Spotlight PA, an award-winning, independent, and nonpartisan newsroom focused on urgent statewide issues. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing journalism that gets results and serves the public good. This investigative reporter is an integral part of Spotlight PA’s State College regional bureau.
 
-**What you'll do**: The newsletter writer will report to Spotlight PA's Lead Editor, News Products. Their primary responsibilities will be:
+Penn State has a nearly $10 billion budget, campuses across the commonwealth, and a health system that serves tens of thousands of people. It is the most influential university in Pennsylvania, as well as one of the 10 largest employers in the state.
 
--   Writing PA Post --- Spotlight PA's daily (M-F) newsletter --- at least once a week.
+Spotlight PA State College’s award-winning coverage of Penn State revealed deeply rooted flaws and distrust in the university’s post-Sandusky scandal reforms. It also uncovered that a top surgeon in Penn State Health’s abdominal transplant program had alerted leaders to problems months before he was dismissed and the program closed amid federal scrutiny.
 
--   Writing or significantly contributing to Talk of the Town --- our daily (M-F) newsletter for north-central Pennsylvania --- at least twice a week.
+Penn State holds a special exemption in Pennsylvania’s open records law, which allows it to keep the vast majority of its information secret despite being a public university and receiving hundreds of millions of taxpayer dollars each year. Spotlight PA’s work has resulted in greater transparency from the university, including a recent legal settlement between the Penn State Board of Trustees and the newsroom that requires more public disclosures about trustee business. All voting members of the board completed legal training as part of the agreement.
 
--   Writing or significantly contributing to Good Day, Berks --- our daily (M-F) newsletter for Berks County --- at least twice a week.
+**What you'll do**: This reporter will lead Spotlight PA’s coverage of Penn State. While there may be occasional daily reporting, this position will primarily allow the reporter to take the time to go beneath the surface to scrutinize the inner workings of the institution.
 
--   Reporting original content at least once a month for Talk of the Town or Good Day, Berks (alternating). 
+-   This reporter will also examine how the mammoth institution influences the community around it. 
 
--   Occasionally assisting Spotlight PA's main newsletter team with assignments, like weekly news quiz. 
+-   This is an enterprise beat, and the reporter will be expected to regularly uncover and write stories and investigate issues that are otherwise getting little to no attention.
 
--   Other duties and administrative tasks as assigned.
+-   Spotlight PA partners with more than 120 newsrooms across the state to share stories, and this reporter will frequently collaborate with other journalists in the pursuit of impact-driven reporting.
 
-**The position begins Jan. 5, 2026.** This person will work a 10 a.m. to 6 p.m., Monday through Friday schedule.
+**Who we're looking for**: Ideal candidates will have investigative clips that show an ability to report beyond daily news, build a diverse network of sources, and aggressively fight for and use public records. We want someone who can penetrate guarded and closed-off institutions, persistently pitch stories, and keep several projects of varying lengths cooking at one time. The best candidates will bring big ideas and a sense of urgency to work each day, and be eager to work with Spotlight PA’s team of like-minded reporters.
 
-**Who we're looking for**: We're looking for writers with a consistent, compelling voice, strong time-management skills, and a keen eye for detail, who can provide our readers with unique insights about the state. We view our newsletters as another reporting platform, so this position will involve original reporting and writing to advance our mission of holding the powerful to account and illuminating Pennsylvania for all who live here.
+Some other ideal traits, though not essential:
 
-Ideal candidates will have a writing, reporting, or journalism background, as well as an interest in developing their voice and engaging with readers of local journalism. An obsession with accuracy and the craft of clean, concise writing is a must. Ideal candidates will be self-motivated and looking for an opportunity that gives them room to experiment and innovate.
+-   Knowledge of Pennsylvania and/or sprawling university systems
 
-This job is full-time, includes benefits, and is remote, though a home base in Pennsylvania is strongly preferred. This Guild position is budgeted for a salary from $65,000-$68,000, depending on experience. Applicants should submit a resume and a one-page cover letter that answers the following questions:
+-   A comfort with requesting, scrutinizing, and using data in the reporting process
 
--   What newsletters do you subscribe to? What do you think makes a newsletter a must-read?
+-   Familiarity with public records requests and managing appeals
 
--   What does your daily news diet look like? Which outlets do you read every day, and why? 
+This is a full-time Guild position and includes benefits. While we have the flexibility to find a compensation package that will work for the right candidate, this position is budgeted for a salary from $65,000-$75,000, depending on experience.
 
--   Please link to one news story about Berks County or Centre County written in August or September 2025 and summarize it in 2-3 sentences. 
-
-We know not everyone reading this will fit exactly what we've described. We encourage everyone to apply who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
+This position is based in Centre County. We can provide a moving stipend if the right candidate is moving to the state. Applicants should include a resume, cover letter, and links to journalism they feel best exemplifies what we’re seeking.
 
 - - -
 

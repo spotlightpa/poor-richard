@@ -1,0 +1,106 @@
+{{ $widths := .widths }}
+{{ $imagename := .filename | default "2019/11/banner-white-on-capitol.jpeg" }}
+{{ $widthR := .widthRatio | default 16 }}
+{{ $heightR := .heightRatio | default 9 }}
+{{ $imgClass := .imgClass | default "flex h-full w-full object-cover" }}
+{{ $credit := .credit }}
+{{ $eager := .eager | default false }}
+{{ $gravity := .gravity }}
+{{ $absURL := .absURL }}
+{{ $rounded := cond (.rounded|not|not) "rounded-sm" "" }}
+{{ $shadow := cond (.shadow|not|not) "shadow-sm" "" }}
+{{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
+{{ $containerClass := .containerClass | default "relative w-full overflow-clip bg-g-3" }}
+{{ $wrapperClass := .wrapperClass | default "block" }}
+{{ $pictureClass := .pictureClass | default "flex" }}
+{{ $captionClass := .captionClass | default `mt-6 font-sans leading-tight text-g-8` }}
+{{ $inlineCredit := .inlineCredit }}
+
+{{ $sizes :=  partial "helper/build-sizes" (dict
+  "widths" $widths
+  "widthRatio" $widthR
+  "heightRatio" $heightR
+  )
+}}
+{{ $srcset := partial "helper/build-srcset" (dict
+  "sizes" $sizes
+  "filename" $imagename
+  "gravity" $gravity
+  "absURL" $absURL
+  )
+}}
+
+{{ $width := (index $sizes 0).width }}
+{{ $height := (index $sizes 0).height }}
+{{ $imgOpt := dict
+  "filename" $imagename
+  "width" $width
+  "height" $height
+  "gravity" $gravity
+  "absURL" $absURL
+}}
+{{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+
+
+<figure
+  class="{{ .figClass }}"
+  data-ga-category="thumb"
+  itemscope
+  itemtype="https://schema.org/ImageObject"
+>
+  <div
+    class="{{ $rounded }} {{ $shadow }} {{ $containerClass }}"
+    {{ if .overlay }}
+      x-data="{ showOverlay: true }"
+    {{ end }}
+  >
+    {{ partial "tag/picture-maybe-link.html" (dict
+      "link" .link
+      "wrapperClass" $wrapperClass
+      "pictureClass" $pictureClass
+      "imgClass" $imgClass
+      "sizeHint" .sizeHint
+      "eager" $eager
+      "description" .description
+      "srcset" $srcset
+      "src" $imgSmallSrc
+      "width" $width
+      "height" $height
+      )
+    }}
+    {{ if .overlay }}
+      <figcaption
+        class="{{ if .rounded }}
+          rounded-b overflow-clip
+        {{ end }} backdrop-fallback backdrop-blur-xs absolute inset-x-0 bottom-0 p-4 font-sans text-base text-g-0 backdrop-brightness-50 backdrop-filter"
+        x-show="showOverlay"
+        x-transition.opacity
+        itemprop="caption"
+      >
+        {{- .overlay -}}
+      </figcaption>
+      <div
+        class="absolute inset-0 cursor-pointer"
+        @click="showOverlay = !showOverlay"
+        data-ga-category="toggle-overlay"
+      ></div>
+    {{ end }}
+  </div>
+  {{ if $inlineCredit }}
+    <figcaption class="{{ $creditClass }}">
+      {{ with .caption }}<span itemprop="caption">{{ . }}</span>{{ end }}
+      {{ with $credit }}<span itemprop="creditText">({{ . }})</span>{{ end }}
+    </figcaption>
+  {{ else }}
+    {{ with $credit }}
+      <div class="{{ $creditClass }}" itemprop="creditText">
+        {{ $credit }}
+      </div>
+    {{ end }}
+    {{ with .caption }}
+      <figcaption class="{{ $captionClass }}" itemprop="caption">
+        {{- . -}}
+      </figcaption>
+    {{ end }}
+  {{ end }}
+</figure>

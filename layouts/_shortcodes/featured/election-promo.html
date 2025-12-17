@@ -1,0 +1,39 @@
+{{ $hed := .Get "hed" | default "Visit the election center" }}
+{{ $dek := .Get "dek"  | default "Key dates, candidate guides, how to vote, and more" }}
+{{ $link := .Get "link" | default "/elections/" }}
+{{ $cta := .Get "cta" | default "Let's Go →" }}
+{{ $sizes := slice
+  (dict "width" 300 "height" 900)
+  (dict "width" 600 "height" 1200)
+  (dict "width" 800 "height" 1500)
+  (dict "width" 1200 "height" 500)
+  (dict "width" 2400 "height" 1000)
+}}
+<section
+  class="relative mx-[calc(-50vw+50%)] bg-election-green-darkest px-5 py-16"
+>
+  <div class="relative z-10 mx-auto max-w-lg text-center font-sans text-white">
+    <h2 class="text-3xl font-black uppercase tracking-widest">{{ $hed }}</h2>
+    <p class="mb-6 mt-2 text-xl">{{ $dek }}</p>
+    <a
+      class="btn-signup-slim inline no-underline hover:underline"
+      href="{{ $link }}"
+      >{{ $cta }}</a
+    >
+  </div>
+  {{ $srcset := partial "helper/build-srcset" (dict
+    "filename" "2022/09/01hj-pfkr-0knb-0t41.jpeg"
+    "sizes" $sizes
+    )
+  }}
+  <picture
+    class="absolute inset-0 z-0 block overflow-hidden opacity-10"
+    aria-hidden="true"
+  >
+    <img
+      srcset="{{ $srcset }}"
+      class="h-full w-full object-cover"
+      sizes="100vw"
+    />
+  </picture>
+</section>

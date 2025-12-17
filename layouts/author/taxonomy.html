@@ -1,0 +1,99 @@
+{{ define "extra-main" }}
+  {{ $staff := slice }}
+  {{ $nonstaff := slice }}
+  {{ range page.Pages.ByTitle }}
+    {{ $author := partial "helper/get-author" .Title }}
+    {{ if $author.active }}
+      {{ $staff = $staff | append $author }}
+    {{ else }}
+      {{ $nonstaff = $nonstaff | append $author }}
+    {{ end }}
+  {{ end }}
+
+  {{ $isoFormat := "2006-01-02T15:04:05Z07:00" }}
+  <section class="bg-white px-2 py-4">
+    <div class="mx-auto w-full max-w-prose text-lg">
+      <h3 class="text-2xl font-bold">Current Spotlight PA Staff</h3>
+      <ul
+        class="mx-auto mb-14 mt-6 grid w-full gap-x-4 gap-y-1 md:grid-cols-2"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $author := sort $staff "lastName" }}
+          <li id="{{ $author.slug }}">
+            <a
+              href="{{ $author.link }}"
+              class="group flex w-full items-center justify-start gap-4 rounded-sm p-4 transition-all duration-500 hover:bg-g-2 hover:shadow-sm"
+            >
+              {{ if $author.headshot }}
+                {{ $sizes := (slice
+                  (dict "width" 64 "height" 64)
+                  (dict "width" 128 "height" 128)
+                  )
+                }}
+                {{ $srcset := partial "helper/build-srcset" (dict
+                  "sizes" $sizes
+                  "filename" $author.headshot
+                  "gravity" $author.gravity
+                  )
+                }}
+
+                {{ $imgOpt := dict
+                  "filename" $author.headshot
+                  "width" 64
+                  "height" 64
+                  "gravity" $author.gravity
+                }}
+                {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
+                <div class="col-span-1">
+                  <div class="m-auto flex aspect-square h-16 w-16">
+                    {{ partial "tag/picture.html" (dict
+                      "pictureClass" "w-full h-full rounded-full overflow-hidden grayscale shadow-sm"
+                      "imgClass" "w-full h-full object-cover"
+                      "sizeHint" "64px"
+                      "eager" false
+                      "description" (printf "Photo of %s" $author.name)
+                      "srcset" $srcset
+                      "src" $imgSmallSrc
+                      "width" 64
+                      "height" 64
+                      )
+                    }}
+                  </div>
+                </div>
+              {{ else }}
+                <span
+                  class="col-span-1 flex aspect-square h-16 max-h-full w-16"
+                >
+                </span>
+              {{ end }}
+              <h4
+                class="text-2xl font-bold text-blue group-hover:text-yellow group-hover:underline"
+                data-ga-category="author-articles"
+              >
+                {{ $author.name }}
+              </h4>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+      <h3 class="text-2xl font-bold">Other author pages</h3>
+      <ul
+        class="column-gap-2 mx-auto mb-14 mt-6 block w-full columns-2 md:columns-3"
+        data-ga-category="inline-footer:author"
+      >
+        {{ range $author := $nonstaff }}
+          <li class="mb-4 leading-none" id="{{ $author.slug }}">
+            <h4 class="text-xl font-bold" data-ga-category="author-articles">
+              <a
+                class="text-blue transition-all duration-500 hover:text-yellow hover:underline"
+                href="{{ $author.link }}"
+              >
+                {{- $author.name -}}
+              </a>
+            </h4>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}

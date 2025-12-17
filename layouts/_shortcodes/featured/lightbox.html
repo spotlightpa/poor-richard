@@ -1,0 +1,30 @@
+{{ $alt := .Page.Param "featured-promo-image-description" }}
+{{ $images := .Page.Param "featured-promo-images" }}
+{{ $width := .Page.Param "featured-promo-width" }}
+{{ $height := .Page.Param "featured-promo-height" }}
+{{ $bgColor := .Page.Param "featured-promo-bg-color" | default "#000" }}
+{{ $link := .Page.Param "featured-promo-link" | default "/donate/" }}
+
+{{ if $images }}
+  <aside
+    class="mx-auto my-12 text-center lg:-mx-32 xl:-mx-48"
+    data-ga-category="inline:lightbox"
+  >
+    <a
+      class="flex overflow-hidden rounded-sm shadow-sm"
+      style="background-color: {{ $bgColor }};"
+      href="{{ $link }}"
+    >
+      {{- partial "tw/image-rotator.html" (dict
+        "images" $images
+        "width" $width
+        "height" $height
+        "description" $alt
+        "transparent" 1
+        )
+      -}}
+    </a>
+  </aside>
+{{ else if eq hugo.Environment "development" }}
+  {{ warnf "no images for featured/lightbox.html" }}
+{{ end }}

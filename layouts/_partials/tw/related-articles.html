@@ -1,0 +1,38 @@
+{{ with $related := . }}
+  <nav
+    data-ga-category="related-content"
+    x-data="readmore(true)"
+    x-ref="root"
+    @mouseover.once="load()"
+    @touchstart.passive.once="load()"
+    class="flex flex-wrap gap-6 sm:gap-x-12 md:items-start md:justify-between lg:gap-x-16 lg:odd:flex-row lg:even:flex-row-reverse"
+  >
+    <h2
+      class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:col-span-3 md:text-3xl"
+    >
+      More Stories from Spotlight&nbsp;PA
+    </h2>
+
+    <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
+      {{ range $page := $related }}
+        {{ partialCached "tw/thumb-h-story.html" $page $page.RelPermalink }}
+      {{ end }}
+    </div>
+    {{ partial "tw/related-articles-js.html" dict }}
+    <div class="flex py-8">
+      <div class="mx-auto">
+        <a
+          @click.prevent="click()"
+          @mouseover.once="load()"
+          @touchstart.passive.once="load()"
+          data-ga-category="readmore:load"
+          href="/news/"
+          class="outline-hidden inline-block rounded-lg bg-blue-6 px-4 py-3 font-sans text-base font-bold uppercase leading-none tracking-widest text-white shadow-sm ring-2 ring-transparent hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7"
+          :class="{ 'animate-pulse': hasClicked && isLoading }"
+          :disabled="!canReadMore"
+          >More Stories</a
+        >
+      </div>
+    </div>
+  </nav>
+{{ end }}

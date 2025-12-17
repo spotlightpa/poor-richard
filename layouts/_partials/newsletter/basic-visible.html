@@ -1,0 +1,63 @@
+<div
+  class="col-span-3 col-start-1 mt-8"
+  x-cloak
+  x-show="hasFocused"
+  x-transition:enter="transition ease-in-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition ease-in duration-300"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+>
+  <p class="mt-1 text-left">
+    <label class="flex items-baseline">
+      <input
+        type="checkbox"
+        class="mr-3 h-4 w-4 rounded-sm border border-black p-1 accent-yellow hover:accent-blue-4"
+        name="papost"
+        value="1"
+        checked
+        x-report-click
+        data-ga-category="toggle-newsletter:papost"
+      />
+      <span class="flex-1"
+        ><strong>PA Post (Daily)</strong>: Top news every weekday morning, plus
+        a daily puzzle.</span
+      >
+    </label>
+  </p>
+  <p class="mt-1 text-left">
+    <label class="flex items-baseline">
+      <input
+        type="checkbox"
+        class="mr-3 h-4 w-4 rounded-sm border border-black p-1 accent-yellow hover:accent-blue-4"
+        name="investigator"
+        value="1"
+        checked
+        x-report-click
+        data-ga-category="toggle-newsletter:investigator"
+      />
+      <span class="flex-1"
+        ><strong>The Investigator (Weekly)</strong>: Best accountability
+        journalism every Thursday, plus a weekly riddle.</span
+      >
+    </label>
+  </p>
+  <p class="mt-1 text-left">
+    <label class="flex items-baseline">
+      <input
+        type="checkbox"
+        class="mr-3 h-4 w-4 rounded-sm border border-black p-1 accent-yellow hover:accent-blue-4"
+        name="palocal"
+        value="1"
+        checked
+        x-report-click
+        data-ga-category="toggle-newsletter:palocal"
+      />
+      <span class="flex-1"
+        ><strong>PA Local (Weekly)</strong>: A fresh look at the incredible
+        people, places, and food of Pa. every Friday.</span
+      >
+    </label>
+  </p>
+</div>

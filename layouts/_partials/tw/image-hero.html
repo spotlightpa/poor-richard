@@ -1,0 +1,38 @@
+{{ $imagename := .Param "image" }}
+{{ $credit := .Param "image-credit" }}
+{{ $description := .Param "image-description" }}
+{{ $caption := .Param "image-caption" }}
+{{ $size := .Param "image-size" | default "inline" }}
+
+{{ $imgOpts := dict
+  "filename" $imagename
+  "credit" $credit
+  "description" $description
+  "overlay" $caption
+  "eager" true
+  "gravity" (.Param "image-gravity")
+}}
+{{ if eq $size "inline" }}
+  {{ $imgOpts = dict
+    "widthRatio" 3
+    "heightRatio" 2
+    "sizeHint" "(min-width: 850px) 669px, 90vw"
+    "widths" (slice 669 1024 1338)
+    "rounded-sm" true
+    "figClass" "mt-6" | merge $imgOpts
+  }}
+{{ end }}
+{{ if eq $size "wide" }}
+  {{ $imgOpts = dict
+    "widthRatio" 16
+    "heightRatio" 9
+    "sizeHint" "(min-width: 1080px) 850px, (min-width: 850px) 669px, 90vw"
+    "widths" (slice 669 1024 1338)
+    "rounded-sm" true
+    "figClass" "mt-6" | merge $imgOpts
+  }}
+{{ end }}
+
+{{ if ne $size "hidden" | and $imagename }}
+  {{ $imgOpts | partial "tw/image-block.html" }}
+{{ end }}

@@ -1,0 +1,85 @@
+{{ $gaForm := .Param "gaForm" }}
+{{ $gaCategory := .Param "gaCategory" }}
+{{ $hiddenField := .Param "hiddenField" }}
+{{ $cta := .Param "cta" }}
+{{ $buttonLink := .Param "button-link" }}
+{{ $ctaDescription := .Param "ctaDescription" }}
+{{ $ctaSecondDescription := .Param "ctaSecondDescription" }}
+
+{{ $idEmail := partial "helper/new-id" . }}
+
+{{ if not (.Param "email-false") }}
+  <form
+    class="mt-4 font-sans text-black"
+    x-data="newsletter($el.dataset.baseUrl)"
+    data-base-url="{{ page.Param `newsletters-base-url` }}"
+    @submit.prevent="submit"
+    data-ga-category="{{ $gaCategory }}"
+  >
+    {{ partial $hiddenField . }}
+
+
+    <div
+      class="flex h-[44px] w-full items-center justify-between rounded-md border border-g-4 bg-white px-[20px]"
+    >
+      <input
+        id="{{ $idEmail }}"
+        class="focus:outline-hidden w-full bg-white font-bold text-g-8 placeholder-g-6"
+        type="email"
+        name="EMAIL"
+        placeholder="Email address"
+        required
+      />
+      <svg
+        aria-hidden="true"
+        class="ml-2 h-[20px] w-[20px] fill-current text-g-4"
+      >
+        {{ partial "helper/svg.html" "envelope" }}
+      </svg>
+    </div>
+
+    <button
+      type="submit"
+      class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow text-lg font-bold uppercase text-yellow-9"
+      :disabled="isLoading"
+    >
+      {{ $cta }}
+      <svg
+        x-cloak
+        x-transition
+        aria-label="Submitting"
+        x-show="isLoading"
+        class="-mt-0.5 ml-1 inline-block h-4 w-4 animate-spin fill-current"
+      >
+        {{ partial "helper/svg.html" "spinner" }}
+      </svg>
+    </button>
+  </form>
+{{ else }}
+  {{ with $ctaDescription }}
+    <p
+      class="text-left text-sm text-g-3 [&>a]:font-semibold [&>a]:text-blue [&>a]:underline [&>a]:hover:text-yellow"
+    >
+      {{ . | $.Page.RenderString }}
+    </p>
+  {{ end }}
+
+
+  <a
+    href="{{ or $buttonLink `#` }}"
+    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow font-sans text-lg font-bold uppercase text-yellow-9"
+    data-ga-category="{{ $gaCategory }}"
+    data-ga-form="{{ $gaForm }}"
+    rel="noopener"
+  >
+    {{ $cta }}
+  </a>
+{{ end }}
+
+{{ with $ctaSecondDescription }}
+  <p
+    class="mt-4 text-left text-sm text-g-3 [&>a]:font-semibold [&>a]:text-blue [&>a]:underline [&>a]:hover:text-yellow"
+  >
+    {{ . | $.Page.RenderString }}
+  </p>
+{{ end }}

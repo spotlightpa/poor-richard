@@ -1,0 +1,66 @@
+{{ $idSearch := partial "helper/new-id" . }}
+<section
+  x-data="searchModal"
+  @modal:search:open.window="isOpen = true"
+  class="z-2000 fixed inset-0"
+  x-cloak
+  x-show="isOpen"
+  x-trap.noscroll.inert="isOpen"
+  x-transition:enter="transition-opacity duration-500 ease-out"
+  x-transition:enter-start="opacity-0"
+  x-transition:leave="transition-opacity duration-300 ease-in"
+  x-transition:leave-end="opacity-0"
+  data-ga-category="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="{{ $idSearch }}"
+>
+  <div class="absolute inset-0 bg-g-4 opacity-75"></div>
+  <div class="backdrop-blur-xs absolute inset-0 backdrop-filter"></div>
+  <div class="absolute inset-1 flex overflow-y-auto">
+    <div
+      class="m-auto flex h-3/4 w-full max-w-prose flex-col overflow-hidden rounded-lg text-center font-sans text-g-9 shadow-lg"
+      @click.outside="isOpen = false"
+      @keydown.escape="isOpen = false"
+      tabindex="-1"
+    >
+      <header class="relative flex flex-none bg-black text-white">
+        <h2
+          class="mx-auto px-4 py-2 text-lg font-semibold uppercase leading-none tracking-wider"
+        >
+          <span id="{{ $idSearch }}"> Search </span>
+        </h2>
+        <p class="absolute inset-y-0 right-0 flex items-center p-4">
+          <button
+            class="group flex rounded-full text-g-4 hover:text-yellow"
+            type="button"
+            aria-label="close"
+            x-ref="closer"
+            x-report-click
+            data-ga-category="dismiss"
+            @keydown.escape="isOpen = false"
+            @click="isOpen = false;"
+            :autofocus="isOpen"
+          >
+            <svg
+              class="my-auto h-6 w-6 fill-current p-1"
+              style="margin-right: -2px;"
+            >
+              {{ partial "helper/svg.html" "close" }}
+            </svg>
+          </button>
+        </p>
+      </header>
+      <div class="relative flex-1 bg-white">
+        <div class="absolute inset-4 overflow-y-scroll">
+          {{ partial "tw/search-articles.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="modal-close is-large"
+    aria-label="close"
+    @click="isOpen = false"
+  ></button>
+</section>

@@ -1,0 +1,38 @@
+{{ if .Param "support-active" }}
+  <aside
+    class="mt-6 font-sans md:text-lg"
+    data-ga-category="inline:support"
+    data-fru-campaign="membership-box-below-articles"
+  >
+    <a href="{{ .Param `support-link` }}" class="flex">
+      <div
+        class="mx-auto rounded-sm px-4 py-8 shadow-sm sm:px-8 sm:py-12 print:hidden"
+        style="background-color: {{ .Param `support-bg-color` }}"
+      >
+        <h3
+          class="text-lg font-bold sm:text-xl"
+          style="color: {{ .Param `support-hed-color` }}"
+        >
+          {{ .Page.Param "support-hed" }}
+        </h3>
+        <div
+          class="mt-6 space-y-4 leading-snug"
+          style="color: {{ .Param `support-text-color` }}"
+        >
+          {{ .Page.Param "support-text" | .RenderString (dict "display" "block") }}
+        </div>
+        <div class="mt-8 text-center">
+          <span
+            class="rounded-lg px-2 py-3 text-sm font-bold uppercase tracking-widest shadow-sm hover:shadow-md sm:px-6 md:text-lg"
+            style="
+            color: {{ .Param `support-button-text-color` }};
+            background-color: {{ .Param `support-button-bg-color` }}
+            "
+          >
+            {{ .Page.Param "support-cta" }}
+          </span>
+        </div>
+      </div>
+    </a>
+  </aside>
+{{ end }}

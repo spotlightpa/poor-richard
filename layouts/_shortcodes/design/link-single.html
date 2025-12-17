@@ -1,0 +1,10 @@
+{{ $link := .Get "link" }}
+{{ $text := .Get "text" }}
+<li class="contents">
+  <a
+    class="rounded-xs block flex-1 whitespace-nowrap bg-election-green p-4 text-center font-sans font-semibold text-white shadow-sm hover:bg-election-green-lighter sm:flex-none"
+    href="{{ $link }}"
+  >
+    {{- $text -}}
+  </a>
+</li>

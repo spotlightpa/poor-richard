@@ -1,0 +1,118 @@
+{{ $thumbClass := .thumbClass | default `w-2/5 sm:w-full md:w-2/5` }}
+{{ $wrapperClass := .wrapperClass | default `flex flex-wrap gap-x-4` }}
+{{ $storyClass := .storyClass | default `w-full grow` }}
+{{ $hedSize := .hedSize | default `text-base sm:text-lg font-semibold` }}
+{{ $dekSize := .dekSize | default `text-sm sm:text-base` }}
+{{ $eyebrowClass := .eyebrowClass | default `inline-block px-2 font-sans text-xs font-semibold uppercase border-2 md:text-sm bg-eyebrow-bg text-eyebrow border-eyebrow-bg` }}
+{{ $hedColor := .hedColor | default `text-hed` }}
+{{ $linkColor := .linkColor | default `text-dek ` }}
+{{ $subitemSize := .subitemSize | default `` }}
+{{ $showThumb := .showThumb | default true }}
+
+{{ $showByline := .showByline | default true }}
+
+
+<article class="{{ $wrapperClass }}">
+  <div data-ga-category="eyebrow" class="w-full">
+    {{ if .extendedEyebrow }}
+      <span class="inline-flex text-sm md:pr-8">
+        {{ partial "tag/maybe-link.html" (dict
+          "link" .rubricLink
+          "text" .extendedEyebrow
+          "class" $eyebrowClass
+          )
+        -}}
+        {{- partial "tag/maybe-link.html" (dict
+          "link" .rubricLink
+          "class" `inline-block px-2 font-sans text-xs font-semibold uppercase border-2 md:text-sm bg-white text-black border-black`
+          "text" .eyebrow
+          )
+        }}
+      </span>
+    {{ else if .eyebrow }}
+      {{ partial "tag/maybe-link.html" (dict
+        "link" .rubricLink
+        "class" $eyebrowClass
+        "text" .eyebrow
+        )
+      -}}
+    {{ end }}
+  </div>
+  {{ if $showThumb }}
+    <div class="{{ $thumbClass }}">
+      {{ partial "tw/image-block.html" .imgOpts }}
+    </div>
+  {{ end }}
+  <div class="group mt-2 flex-1 md:mb-4">
+    <h3
+      class="{{ $hedSize }} {{ $hedColor }} text-balance leading-tight tracking-tight"
+    >
+      <a
+        class="group-hover:underline"
+        href="{{ .link }}"
+        data-ga-category="hed"
+      >
+        {{ .hed }}
+      </a>
+    </h3>
+    {{ if ( and ( .byline ) ( $showByline ) ) }}
+      <h4
+        class="mt-2 font-sans text-base font-normal leading-tight tracking-normal text-blue"
+      >
+        <a
+          href="{{ .link }}"
+          class="group-hover:underline"
+          data-ga-category="byline"
+        >
+          {{- printf "by %s" .byline -}}
+        </a>
+      </h4>
+    {{ end }}
+    {{ if .dek }}
+      <h4 class="{{ $dekSize }} {{ $linkColor }} mt-2 text-pretty font-sans">
+        <a
+          href="{{ .link }}"
+          class="group-hover:underline"
+          data-ga-category="dek"
+        >
+          {{- .dek -}}
+        </a>
+      </h4>
+    {{ end }}
+
+    {{- if .showDate }}
+      <h3
+        class="mt-2 font-sans text-base font-light leading-tight tracking-normal text-date"
+        data-ga-category="time"
+      >
+        <a href="{{ .link }}" class="group-hover:underline">
+          <time datetime="{{ .dateISO }}">
+            {{- .date }}
+          </time>
+        </a>
+      </h3>
+    {{- end -}}
+  </div>
+  {{ if .subitems }}
+    <h4
+      class="mt-9 text-left font-sans text-base font-bold uppercase leading-none tracking-wider text-black"
+    >
+      Related Stories
+    </h4>
+    <ul
+      class="list-outside space-y-3 border-b border-black pb-10 pt-2 font-sans font-light sm:border-none"
+    >
+      {{ range .subitems }}
+        <li class="ml-4 list-[square] leading-snug tracking-normal text-g-8">
+          <a
+            href="{{ .link }}"
+            class="{{ $linkColor }} underline-offset-2 hover:underline"
+            data-ga-category="subfeature"
+          >
+            {{ .title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</article>

@@ -1,0 +1,22 @@
+{{ $btn := `inline-block
+  rounded-lg bg-blue-6 py-3 px-4
+  font-sans text-base font-bold
+  uppercase leading-none tracking-widest
+  text-white shadow
+  outline-hidden ring-2 ring-transparent
+  hover:bg-blue-5 focus:ring-blue-4 active:ring-blue-7`
+}}
+{{ if gt .TotalPages 0 }}
+  <nav class="flex justify-around" data-ga-category="paginator">
+    {{ if .HasPrev }}
+      <span>
+        <a class="{{ $btn }}" href="{{ .Prev.URL }}">← Newer</a>
+      </span>
+    {{ end }}
+    {{ if .HasNext }}
+      <span>
+        <a class="{{ $btn }}" href="{{ .Next.URL }}">Older →</a>
+      </span>
+    {{ end }}
+  </nav>
+{{ end }}

@@ -1,8 +1,0 @@
-<link rel="stylesheet" href="{{ partialCached `helper/build-tailwind` . }}" />
-
-{{ $color := "#f4f1ee" }}
-{{ if .Param "banner-active" }}
-  {{ $color = .Param "banner-bg-color" }}
-{{ end }}
-<!-- For Safari header -->
-<meta name="theme-color" content="{{ $color }}" />

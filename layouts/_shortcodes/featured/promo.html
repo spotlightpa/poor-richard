@@ -1,0 +1,44 @@
+{{ $id := .Get "id" | default "promo" }}
+{{ $hed := .Get "hed" }}
+{{ $sub := .Get "subhed" }}
+{{ $dek := .Get "dek" }}
+{{ $cta := .Get "cta" }}
+{{ $link := .Get "link" }}
+{{ $filename := .Get "image" | default "2023/10/01jh-nnsg-6zn1-3c7b.jpeg" }}
+{{ $sizes := slice
+  (dict "width" 296 "height" 110)
+  (dict "width" 1072 "height" 512)
+}}
+
+
+<section id="{{ $id }}" class="bg-g-2 p-5 font-sans md:flex md:py-16 lg:py-24">
+  <div class="mx-auto w-full max-w-screen-lg justify-between md:flex">
+    {{ $srcset := partial "helper/build-srcset" (dict
+      "filename" $filename
+      "sizes" $sizes
+      "gravity" "ce"
+      )
+    }}
+
+
+    <figure class="flex overflow-hidden rounded-sm md:w-5/12">
+      <img srcset="{{ $srcset }}" class="object-cover" sizes="100vh" />
+    </figure>
+    <div class="md:w-1/2">
+      <h2 class="mt-2 text-2xl font-bold md:mt-0 md:text-3xl lg:text-4xl">
+        {{ $hed }}
+      </h2>
+      {{ with $sub }}
+        <h3
+          class="mt-4 max-w-xl text-2xl font-semibold leading-none tracking-wide"
+        >
+          {{ $sub }}
+        </h3>
+      {{ end }}
+      <p class="mt-2 max-w-lg text-lg">{{ $dek }}</p>
+      <a href="{{ $link }}" class="btn-signup mt-10 block max-w-lg"
+        >{{ $cta }}</a
+      >
+    </div>
+  </div>
+</section>

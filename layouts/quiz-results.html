@@ -1,0 +1,116 @@
+{{ define "body-class" }}
+  font-sans
+{{ end }}
+{{ define "html-class" -}}
+  scroll-smooth
+{{- end }}
+
+{{ define "main" }}
+  {{ with .Page.RenderString (.Param "takeover") }}
+    {{ . }}
+  {{ else }}
+    <header class="bg-white px-5 pb-4 pt-8 text-black">
+      <div class="mx-auto max-w-screen-lg">
+        {{ partial "tw/breadcrumbs.html" . }}
+      </div>
+      <div class="mx-auto w-full max-w-2xl">
+        <h1
+          class="font-sans text-3xl font-bold leading-none text-black sm:text-4xl lg:text-5xl"
+        >
+          {{- .Title -}}
+        </h1>
+      </div>
+    </header>
+  {{ end }}
+
+
+  <section class="bg-white font-sans">
+    {{ if or (.Content) (.Page.Params.subhed) }}
+      <div
+        class="mx-auto max-w-2xl px-5 pb-10 text-lg font-medium md:px-0 lg:px-0"
+      >
+        {{ with .Page.Params.subhed }}
+          <h2 class="mb-5 text-5xl font-black uppercase">{{ . }}</h2>
+        {{ end }}
+        {{ with .Content }}
+          <div class="article-content">
+            {{ . }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+    {{ with page.RenderString (.Param "newsletter") }}
+      <div class="font-sans">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ range $i, $blocks := .Params.blocks }}
+      {{ $id := urlize .title }}
+      <div
+        id="{{ $id }}"
+        x-data
+        x-intersect.half="$dispatch('intersect:support', $el.id)"
+        data-ga-category="blocks"
+        class="w-full"
+      >
+        {{ partial "blocks/block" (dict
+          "Page" $
+          "block" .
+          )
+        }}
+      </div>
+    {{ end }}
+
+    {{ partial "tw/donate-slim" (dict
+      "donateHed" "Did this tool help you? Support Spotlight PA's nonprofit, nonpartisan journalism."
+      "donateCta" "Donate"
+      "donateUrl" "/donate" )
+    }}
+
+    {{ with .Page.RenderString (.Param "supporters") }}
+      <div class="py-9">
+        {{ . }}
+      </div>
+    {{ end }}
+  </section>
+  {{ with .Page.RenderString (.Param "credits") }}
+    <section
+      class="bg-white p-6"
+      id="credits"
+      data-ga-category="credits"
+      x-data
+      x-intersect.half="$dispatch('intersect:about', $el.id)"
+    >
+      <div class="mx-auto flex max-w-2xl flex-col flex-wrap py-12 md:flex-row">
+        <h2
+          class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        >
+          Credits
+        </h2>
+        <div class="my-8 flex-1 space-y-12">
+          {{ . }}
+        </div>
+        <div class="my-8 flex-1 space-y-4 font-sans text-sm">
+          <p>
+            Spotlight PA’s government team wrote this quiz based on information
+            from candidate websites, published interviews, debates hosted by ABC
+            27, and a forum hosted by the Philadelphia Citizen, Spotlight PA,
+            6abc and WURD Radio. Send feedback to
+            <a
+              class="text-navy underline transition-colors duration-500 hover:text-yellow"
+              href="mailto:"
+              >Deputy Editor Sarah Anne Hughes</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <div class="mx-auto w-full max-w-prose"></div>
+    </section>
+  {{ end }}
+  {{ with .Page.RenderString (.Param "promo") }}
+    {{ . }}
+  {{ end }}
+
+{{ end }}

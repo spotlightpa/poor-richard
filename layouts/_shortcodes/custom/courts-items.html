@@ -1,0 +1,53 @@
+{{ $title := .Get "issue-title" }}
+{{ $filename := .Get "issue-icon" }}
+{{ $sizes := slice
+  (dict "width" 296 "height" 110)
+  (dict "width" 480 "height" 270)
+}}
+
+
+<section
+  id="issue-{{ $title | urlize }}"
+  x-show="selected === 'issue-{{ $title | urlize }}'"
+  class="mb-10 w-full bg-white px-5 py-10"
+  :class="{'pt-20': selected === 'issue-{{ $title | urlize }}' }"
+>
+  <h2
+    class="mx-auto max-w-screen-lg border-b-4 border-black pb-1 font-sans text-xl font-extrabold uppercase leading-none tracking-wider"
+  >
+    {{ $title }}
+  </h2>
+  <div
+    class="mx-auto max-w-screen-lg items-stretch justify-start md:flex md:flex-wrap md:gap-5"
+  >
+    <aside class="mt-8 md:w-2/6">
+      {{ $srcset := partial "helper/build-srcset" (dict
+        "filename" $filename
+        "sizes" $sizes
+        "gravity" "ce"
+        )
+      }}
+      <picture
+        class="sticky top-8 aspect-auto overflow-hidden"
+        aria-hidden="true"
+      >
+        <img
+          srcset="{{ $srcset }}"
+          class="rounded-sm object-cover"
+          sizes="100vh"
+        />
+      </picture>
+    </aside>
+    <div class="md:w-7/12">
+      {{ .Inner }}
+    </div>
+  </div>
+  <p class="mx-auto max-w-screen-lg text-sm">
+    Think we missed an important case?
+    <a
+      class="text-bold text-blue underline underline-offset-2 hover:no-underline"
+      href="https://www.spotlightpa.org/elections/#contact"
+      >Suggest one here</a
+    >.
+  </p>
+</section>
