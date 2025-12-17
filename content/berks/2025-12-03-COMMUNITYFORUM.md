@@ -33,7 +33,7 @@ The monthly forums will continue to be coordinated by Dave Myers, Berks County C
 
 ## Upcoming events
 
-<strong>Solving Pennsylvania&#39;s Teachers Shortage<br/></strong>January 16, 2026 | 11:30 am | Virtual Event<br/>The first forum will focus on Pennsylvania’s teacher shortage, with particular attention to the challenges in Berks County.
+<strong>Solving Pennsylvania&#39;s Teachers Shortage<br/></strong>January 15, 2026 | 11:30 am | Virtual Event<br/>The first forum will focus on Pennsylvania’s teacher shortage, with particular attention to the challenges in Berks County.
 
 <a href="https://www.eventbrite.com/e/community-forum-solving-pennsylvanias-teachers-shortage-tickets-1974880292116?aff=oddtdtcreator">Register here</a>
 

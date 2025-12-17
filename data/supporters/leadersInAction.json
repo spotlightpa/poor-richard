@@ -372,13 +372,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Ronald Filippelli",
-      "sort": "Filippelli",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Mary and Kenneth France",
       "sort": "France",
       "url": "",
@@ -1044,13 +1037,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Richard Salezze",
-      "sort": "Salezze",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "John Salveson",
       "sort": "Salveson",
       "url": "",
@@ -1240,7 +1226,7 @@
       "categoryRank": "4"
     },
     {
-      "display": "Umbrecht Family Foundation",
+      "display": "Anne and Richard Umbrecht/Umbrecht Family Foundation",
       "sort": "Umbrecht",
       "url": "",
       "category": "$25,000-$49,999",
@@ -1369,8 +1355,8 @@
       "display": "Richard Williams",
       "sort": "Williams",
       "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Allan Willinger and Jo Schlesinger",
