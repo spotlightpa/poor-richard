@@ -1,4 +1,5 @@
 +++
+topics = ["News Quiz"]
 published = 2025-05-08T05:00:00-04:00
 internal-id = "SPLSCASDQUIZ0525"
 extended-kicker = "News Quiz"

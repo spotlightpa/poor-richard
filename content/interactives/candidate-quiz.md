@@ -1,4 +1,5 @@
 +++
+topics = ["News Quiz"]
 internal-id = "CANDIDATEQUIZ"
 extended-kicker = "News Quiz"
 title = "Election 2024: See the best PA row office candidates for you"
