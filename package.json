@@ -33,7 +33,7 @@
     "@tailwindcss/cli": "^4.1.17",
     "alpinejs": "^3.12.3",
     "journalize": "^2.5.1",
-    "stripe": "^20.0.0",
+    "stripe": "^20.1.0",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
