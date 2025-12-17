@@ -44,7 +44,7 @@
       {{ $eighteenMonthsAgo := now.AddDate 0 -18 0 }}
       {{ if .PublishDate.Before $eighteenMonthsAgo }}
         <p
-          class="ml-1 inline-block bg-orange px-3 font-sans text-base font-semibold uppercase text-white"
+          class="ml-1 inline-block border-2 border-orange bg-orange px-2 font-sans text-xs font-semibold uppercase text-white md:text-sm"
         >
           From the archives
           {{ .PublishDate.Format "2006" }}

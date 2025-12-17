@@ -113,13 +113,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "William Benter",
-      "sort": "Benter",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "R Thomas and Paulette Berner",
       "sort": "Berner",
       "url": "",
@@ -374,13 +367,6 @@
     {
       "display": "George Fernandez",
       "sort": "Fernandez",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Ronald Filippelli",
-      "sort": "Filippelli",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -862,22 +848,8 @@
       "categoryRank": "6"
     },
     {
-      "display": "David and Cathy Myers",
-      "sort": "Myers",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "W. Michael Nailor",
       "sort": "Nailor",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Bill Natale and Diane Bright",
-      "sort": "Natale",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1065,13 +1037,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Richard Salezze",
-      "sort": "Salezze",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "John Salveson",
       "sort": "Salveson",
       "url": "",
@@ -1098,13 +1063,6 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
-    },
-    {
-      "display": "Amy Sebastian",
-      "sort": "Sebastian",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "Kai and Peter Seelaus",
@@ -1135,11 +1093,11 @@
       "categoryRank": "6"
     },
     {
-      "display": "Mark Sheppard",
+      "display": "Mark and Diane Sheppard",
       "sort": "Sheppard",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Shoval Foundation/Rebecca Shoval",
@@ -1147,6 +1105,13 @@
       "url": "",
       "category": "$10,000-$24,999",
       "categoryRank": "3"
+    },
+    {
+      "display": "Thomas Simpson",
+      "sort": "Simpson",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Joshua Singer",
@@ -1170,7 +1135,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Edward Spitzer and Yvonne Payne",
+      "display": "Yvonne Payne and Edward Spitzer",
       "sort": "Spitzer",
       "url": "",
       "category": "$1,000-$2,499",
@@ -1261,7 +1226,7 @@
       "categoryRank": "4"
     },
     {
-      "display": "Umbrecht Family Foundation",
+      "display": "Anne and Richard Umbrecht/Umbrecht Family Foundation",
       "sort": "Umbrecht",
       "url": "",
       "category": "$25,000-$49,999",
@@ -1390,8 +1355,8 @@
       "display": "Richard Williams",
       "sort": "Williams",
       "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Allan Willinger and Jo Schlesinger",
