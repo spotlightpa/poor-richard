@@ -1,4 +1,5 @@
 +++
+topics = ["News Quiz"]
 internal-id = "TREASURERQUIZ"
 extended-kicker = "News Quiz"
 kicker = "State Treasurer"

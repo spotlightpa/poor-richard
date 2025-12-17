@@ -1,4 +1,5 @@
 +++
+topics = ["Elections"]
 title = "Voter registration"
 title-tag = "Tracking Pennsylvania voter registration trends"
 description = "Explore the latest voter registration changes in Pennsylvania by party and county with our interactive graphics."
