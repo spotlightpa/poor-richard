@@ -4,7 +4,9 @@ title = "Subscribe to Access Harrisburg Newsletter"
 price = "$199"
 period = "per year"
 description = "Subscribe annually to Access Harrisburg."
-stripe_price_id = "price_1SBg3uPgmnviwloD7OPBdjtz"
+
+stripe_price_id_live = "price_1SBg3uPgmnviwloD7OPBdjtz"
+stripe_price_id_test = "placeholder"
 
 ad-header-desktop-active = false
 ad-header-mobile-active = false
