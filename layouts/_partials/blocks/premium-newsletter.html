@@ -1,9 +1,14 @@
 <section class="@container mb-6 w-full bg-g-9 pt-12">
   {{ $maxWidth := .Param "max-width" }}
-  {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" (print "max-w-[" $maxWidth "]") }}
+  {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" "max-w-[var(--spl-max)]" }}
 
 
-  <div class="{{ $maxWidthClass }} mx-auto px-4 pb-6">
+  <div
+    class="{{ $maxWidthClass }} mx-auto px-4 pb-6"
+    {{ if ne $maxWidth "prose" }}
+      style="--spl-max: {{ $maxWidth | safeCSS }};"
+    {{ end }}
+  >
     <div
       class="@md:flex-row {{ if not (and (.Param "quote") (.Param "quote-source")) }}
         pb-16 @md:pb-0
