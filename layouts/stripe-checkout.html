@@ -1,10 +1,15 @@
 {{ define "main" }}
   <div class="article-content mx-auto mb-8 max-w-2xl px-4 py-12">
-    <h1 class="mb-4 font-serif text-4xl font-bold">{{ .Title }}</h1>
+    <h1 class="mb-4 font-serif text-3xl font-bold sm:text-4xl">
+      {{ .Title }}
+    </h1>
 
     <div class="mb-3 flex items-baseline gap-2">
       <div class="flex items-center gap-2">
-        <span class="text-4xl font-bold text-g-9">{{ .Params.price }}</span>
+        <span class="text-3xl font-bold text-g-9 sm:text-4xl">
+          {{ .Params.price }}
+        </span>
+
         <span
           class="rounded bg-g-2 px-2 py-0.5 text-xs uppercase tracking-wider text-g-7"
           >{{ .Params.period }}</span
