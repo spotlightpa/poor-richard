@@ -1,6 +1,8 @@
 +++
 layout = "stripe-checkout"
-title = "Monthly Subscription to Access Harrisburg"
+title = "Subscribe to Access Harrisburg Newsletter"
+price = "$19.99"
+period = "per month"
 description = "Subscribe monthly to Access Harrisburg."
 stripe_price_id = "price_1SVa5DPgmnviwloD27sirhUo"
 
