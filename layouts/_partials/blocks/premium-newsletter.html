@@ -1,6 +1,6 @@
 <section class="@container mb-6 w-full bg-g-9 pt-12">
   {{ $maxWidth := .Param "max-width" }}
-  {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" "max-w-[var(--spl-max)]" }}
+  {{ $maxWidthClass := cond (eq $maxWidth "prose") "max-w-prose" "max-w-(--spl-max)" }}
 
 
   <div
