@@ -1,4 +1,5 @@
 +++
+topics = ["Elections"]
 title = "Voter turnout"
 title-tag = "Pennsylvania Voter Turnout"
 linktitle = "INTERACTIVE: Explore statewide, county, and precinct turnout for Pa.'s Nov. 4 election"
