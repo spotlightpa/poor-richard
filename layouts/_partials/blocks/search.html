@@ -1,0 +1,207 @@
+<div class="relative w-full" x-data="searchUI()" x-init="init()">
+  {{ if .showLocation }}
+    <button
+      class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-70"
+      aria-label="Use my location"
+      :aria-busy="loadingLocation ? 'true' : 'false'"
+      type="button"
+      @click="locate()"
+      :disabled="loadingLocation"
+    >
+      <svg
+        x-show="!loadingLocation"
+        class="h-7 w-7 fill-yellow-9"
+        aria-hidden="true"
+      >
+        {{ partial "helper/svg.html" "crosshairs" }}
+      </svg>
+      <svg
+        x-show="loadingLocation"
+        class="h-7 w-7 animate-spin text-yellow-9"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+
+      <span
+        class="sr-only"
+        x-text="loadingLocation ? 'Locating…' : 'Use my location'"
+      ></span>
+    </button>
+  {{ end }}
+
+
+  <button
+    id="search-button"
+    class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3"
+    aria-label="Search"
+    type="button"
+    @click="doSearch()"
+  >
+    <svg class="h-7 w-7 fill-yellow-9" viewBox="0 0 24 24" aria-hidden="true">
+      {{ partial "helper/svg.html" "search" }}
+    </svg>
+  </button>
+
+  <div
+    class="{{ if .showLocation }}
+      pl-20
+    {{ else }}
+      pl-4
+    {{ end }} flex w-full rounded border-2 border-yellow-5 bg-white pr-28"
+  >
+    <input
+      id="search-input"
+      x-ref="input"
+      x-model="q"
+      type="text"
+      placeholder="{{ .placeholder }}"
+      class="text-gray-5 placeholder-gray-4 flex-1 px-4 py-3 text-2xl focus:outline-none"
+      aria-label="Search restaurants"
+      @keydown.enter.prevent="doSearch()"
+    />
+  </div>
+</div>
+
+<script>
+  function searchUI() {
+    return {
+      q: "",
+      cards: [],
+      index: new Map(),
+      loadingLocation: false,
+
+      init() {
+        this.cards = Array.from(
+          document.querySelectorAll('[data-card="inspection"]'),
+        );
+        const norm = (s) =>
+          (s || "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+        this.cards.forEach((card) => {
+          this.index.set(card, norm(card.dataset.index || card.textContent));
+        });
+      },
+
+      norm(s) {
+        return (s || "")
+          .toLowerCase()
+          .replace(/[^a-z0-9\s]/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+      },
+
+      doSearch(val) {
+        if (typeof val === "string") this.q = val;
+        const needle = this.norm(this.q);
+        let matches = 0;
+
+        this.cards.forEach((card) => {
+          const hit = !needle || this.index.get(card).includes(needle);
+          card.classList.toggle("hidden", !hit);
+          if (hit) matches++;
+        });
+
+        const noResultsEl = document.getElementById("no-results");
+        if (noResultsEl) noResultsEl.classList.toggle("hidden", matches !== 0);
+      },
+
+      async locate() {
+        if (!("geolocation" in navigator)) {
+          alert("Geolocation isn’t supported in this browser.");
+          return;
+        }
+
+        this.loadingLocation = true;
+        navigator.geolocation.getCurrentPosition(
+          async (pos) => {
+            try {
+              const { latitude: lat, longitude: lon } = pos.coords;
+
+              const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(lat)}&lon=${encodeURIComponent(lon)}&addressdetails=1`;
+
+              const res = await fetch(url, {
+                headers: { Accept: "application/json" },
+              });
+              if (!res.ok) throw new Error("Reverse geocode failed");
+              const data = await res.json();
+
+              const a = data?.address || {};
+              let city =
+                a.city ||
+                a.town ||
+                a.village ||
+                a.hamlet ||
+                a.municipality ||
+                a.suburb ||
+                a.county ||
+                "";
+              const zip = a.postcode || "";
+
+              if (city) {
+                city = city.replace(
+                  /^(City|Town|Village|Borough|Municipality)\s+of\s+/i,
+                  "",
+                );
+                city = city.replace(/\s+County$/i, "");
+              }
+
+              const locationString = [city.trim(), zip.trim()]
+                .filter(Boolean)
+                .join(" ");
+
+              if (locationString) {
+                if (this.q && this.q.trim() !== "") {
+                  this.q = `${this.q}, ${locationString}`;
+                } else {
+                  this.q = locationString;
+                }
+                if (this.$refs?.input) this.$refs.input.value = this.q;
+                this.doSearch(this.q);
+              } else {
+                alert("Couldn’t determine your city/ZIP from location.");
+              }
+            } catch (e) {
+              console.error(e);
+              alert("Sorry, we couldn’t look up your city/ZIP.");
+            } finally {
+              this.loadingLocation = false;
+            }
+          },
+          (err) => {
+            console.warn(err);
+            if (err.code === err.PERMISSION_DENIED) {
+              alert("We need permission to use your location.");
+            } else if (err.code === err.POSITION_UNAVAILABLE) {
+              alert("Location unavailable. Try again.");
+            } else if (err.code === err.TIMEOUT) {
+              alert("Timed out getting your location. Try again.");
+            } else {
+              alert("Couldn’t get your location. Please try again.");
+            }
+            this.loadingLocation = false;
+          },
+          { enableHighAccuracy: false, maximumAge: 60000, timeout: 10000 },
+        );
+      },
+    };
+  }
+</script>
