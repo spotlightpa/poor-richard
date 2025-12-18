@@ -74,7 +74,8 @@
 
   <script src="https://js.stripe.com/v3/"></script>
   <script>
-    const stripe = Stripe('pk_live_51Mmd3kPgmnviwloDdsisjwVxkC83MMcGgttB9kXXJs3gj0MakZRrWPqMtCq3uOSZB7G4prfxYPGvbNnwsvjDNx2E00EdEf2rFP');
+    {{ $stripeKey := cond (eq hugo.Environment "production") "pk_live_51Mmd3kPgmnviwloDdsisjwVxkC83MMcGgttB9kXXJs3gj0MakZRrWPqMtCq3uOSZB7G4prfxYPGvbNnwsvjDNx2E00EdEf2rFP" "pk_test_51Mmd3kPgmnviwloDfy91ugsfYUzlhHqMGRrijHOnOsOd0RGX6lWBbHlxPnMtVRAsJN0aVGg6ijXJHT3aqxZ3AFFe00mUKDcxua" }}
+    const stripe = Stripe('{{ $stripeKey }}');
     let elements;
 
     async function initPaymentElement() {
@@ -83,7 +84,8 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            priceId: '{{ .Params.stripe_price_id }}'
+            {{ $priceId := cond (eq hugo.Environment "production") (.Params.stripe_price_id_live | default .Params.stripe_price_id) (.Params.stripe_price_id_test | default .Params.stripe_price_id) }}
+            priceId: '{{ $priceId }}'
           })
         });
 
