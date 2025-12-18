@@ -8,21 +8,26 @@ exports.handler = async (event) => {
   const { priceId } = JSON.parse(event.body);
 
   try {
-    const session = await stripe.checkout.sessions.create({
-      ui_mode: "embedded",
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
-      mode: "subscription",
-      return_url: `${process.env.URL}/newsletters/accessharrisburg/return?session_id={CHECKOUT_SESSION_ID}`,
+    const price = await stripe.prices.retrieve(priceId);
+
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: price.unit_amount,
+      currency: price.currency,
+      automatic_payment_methods: {
+        enabled: true,
+      },
+      metadata: {
+        priceId: priceId,
+      },
     });
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ clientSecret: session.client_secret }),
+      body: JSON.stringify({
+        clientSecret: paymentIntent.client_secret,
+        amount: price.unit_amount,
+        currency: price.currency,
+      }),
     };
   } catch (error) {
     return {

@@ -1,44 +1,141 @@
 {{ define "main" }}
-  <div class="mx-auto px-4 py-8">
-    <div id="checkout-wrapper">
-      <div id="checkout-loading"></div>
-      <div id="checkout"></div>
+  <div class="article-content mx-auto mb-8 max-w-2xl px-4 py-12">
+    <h1 class="mb-4 font-serif text-4xl font-bold">{{ .Title }}</h1>
+
+    <div class="mb-3 flex items-baseline gap-2">
+      <div class="flex items-center gap-2">
+        <span class="text-4xl font-bold text-g-9">{{ .Params.price }}</span>
+        <span
+          class="rounded bg-g-2 px-2 py-0.5 text-xs uppercase tracking-wider text-g-7"
+          >{{ .Params.period }}</span
+        >
+      </div>
     </div>
+
+    <div class="mb-6 space-y-2 text-base text-g-9">
+      <p>Newsletters sent weekly, except for holidays.</p>
+      <ul class="list-disc pl-5">
+        <li>Email used for purchase will be where newsletters are sent.</li>
+        <li>All purchases are final and non-refundable.</li>
+        <li>This is not a tax-deductible donation.</li>
+      </ul>
+      <p>
+        Interested in a yearly group subscription? Want to change your
+        newsletter email? Have other questions? Email
+        <a href="mailto:membership@spotlightpa.org"
+          >membership@spotlightpa.org</a
+        >.
+      </p>
+    </div>
+
+    <form id="payment-form">
+      <div id="payment-element"></div>
+
+      <button id="submit" class="btn-signup mt-6 w-full">
+        <span id="button-text">Subscribe</span>
+        <span id="spinner" class="hidden">Processing...</span>
+      </button>
+      <p
+        class="mt-2 flex items-center justify-center gap-1 text-center text-xs text-g-7"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-4 w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M16.5 10.5V7.5a4.5 4.5 0 10-9 0v3h9zM6.75 10.5h10.5a1.5 1.5 0 011.5 1.5v6.75a1.5 1.5 0 01-1.5 1.5H6.75a1.5 1.5 0 01-1.5-1.5V12a1.5 1.5 0 011.5-1.5z"
+          />
+        </svg>
+        Payments are processed securely by Stripe.
+      </p>
+
+      <div
+        id="payment-message"
+        class="mt-4 hidden text-red"
+        role="alert"
+        aria-live="polite"
+      ></div>
+    </form>
   </div>
 
   <script src="https://js.stripe.com/v3/"></script>
-<script>
-  const stripe = Stripe('pk_live_51Mmd3kPgmnviwloDdsisjwVxkC83MMcGgttB9kXXJs3gj0MakZRrWPqMtCq3uOSZB7G4prfxYPGvbNnwsvjDNx2E00EdEf2rFP');
+  <script>
+    const stripe = Stripe('pk_live_51Mmd3kPgmnviwloDdsisjwVxkC83MMcGgttB9kXXJs3gj0MakZRrWPqMtCq3uOSZB7G4prfxYPGvbNnwsvjDNx2E00EdEf2rFP');
 
-  fetch('/.netlify/functions/create-checkout-session', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      priceId: '{{ .Params.stripe_price_id }}'
+    let elements;
+
+    fetch('/.netlify/functions/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        priceId: '{{ .Params.stripe_price_id }}'
+      })
     })
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      if (!data.clientSecret) {
-        throw new Error(data.error || 'Missing clientSecret from server');
-      }
+      .then((res) => res.json())
+      .then((data) => {
+        if (!data.clientSecret) {
+          throw new Error(data.error || 'Missing clientSecret from server');
+        }
 
-      return stripe.initEmbeddedCheckout({
-        clientSecret: data.clientSecret,
+        elements = stripe.elements({ clientSecret: data.clientSecret });
+
+        const paymentElement = elements.create('payment');
+        paymentElement.mount('#payment-element');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        showMessage('Error loading payment form. Please try again.');
       });
-    })
-    .then((checkout) => {
-      const loadingEl = document.getElementById('checkout-loading');
-      if (loadingEl) loadingEl.style.display = 'none';
 
-      checkout.mount('#checkout');
-    })
-    .catch((error) => {
-      console.error('Stripe checkout error:', error);
-      const loadingEl = document.getElementById('checkout-loading');
-      if (loadingEl) {
-        loadingEl.innerText = 'Error loading checkout. Please try again.';
+      document.getElementById('payment-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (!elements) {
+          showMessage('Payment form is still loading. Please wait a moment and try again.');
+          return;
+        }
+        setLoading(true);
+
+      const { error } = await stripe.confirmPayment({
+        elements,
+        confirmParams: {
+          return_url: `${window.location.origin}/newsletters/accessharrisburg/return`,
+        },
+      });
+
+      if (error) {
+        showMessage(error.message);
+        setLoading(false);
       }
     });
-</script>
+
+function showMessage(messageText) {
+  const messageContainer = document.getElementById('payment-message');
+  messageContainer.classList.remove('hidden');
+  messageContainer.textContent = messageText;
+  messageContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+
+    function setLoading(isLoading) {
+      const submitButton = document.getElementById('submit');
+      const spinner = document.getElementById('spinner');
+      const buttonText = document.getElementById('button-text');
+
+      if (isLoading) {
+        submitButton.disabled = true;
+        spinner.classList.remove('hidden');
+        buttonText.classList.add('hidden');
+      } else {
+        submitButton.disabled = false;
+        spinner.classList.add('hidden');
+        buttonText.classList.remove('hidden');
+      }
+    }
+  </script>
 {{ end }}
