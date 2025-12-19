@@ -6,7 +6,7 @@ period = "per year"
 description = "Subscribe annually to Access Harrisburg."
 
 stripe_price_id_live = "price_1SBg3uPgmnviwloD7OPBdjtz"
-stripe_price_id_test = "placeholder"
+stripe_price_id_test = "price_1Sg511PgmnviwloD7riBI17L"
 
 ad-header-desktop-active = false
 ad-header-mobile-active = false
