@@ -72,96 +72,106 @@
     </form>
   </div>
 
+  {{ $stripeKey := .Param "stripe_key_test" }}
+  {{ $priceId := .Param "stripe_price_id_test" }}
+  {{ if eq hugo.Environment "production" }}
+    {{ $stripeKey = .Param "stripe_key_live" }}
+    {{ $priceId = .Param "stripe_price_id_live" }}
+  {{ end }}
   <script src="https://js.stripe.com/v3/"></script>
   <script>
-    {{ $stripeKey := cond (eq hugo.Environment "production") "pk_live_51Mmd3kPgmnviwloDdsisjwVxkC83MMcGgttB9kXXJs3gj0MakZRrWPqMtCq3uOSZB7G4prfxYPGvbNnwsvjDNx2E00EdEf2rFP" "pk_test_51Mmd3kPgmnviwloDfy91ugsfYUzlhHqMGRrijHOnOsOd0RGX6lWBbHlxPnMtVRAsJN0aVGg6ijXJHT3aqxZ3AFFe00mUKDcxua" }}
-    const stripe = Stripe('{{ $stripeKey }}');
+    const stripe = Stripe("{{ $stripeKey }}");
     let elements;
 
     async function initPaymentElement() {
       try {
-        const res = await fetch('/.netlify/functions/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+        const res = await fetch("/.netlify/functions/create-checkout-session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            {{ $priceId := cond (eq hugo.Environment "production") (.Params.stripe_price_id_live | default .Params.stripe_price_id) (.Params.stripe_price_id_test | default .Params.stripe_price_id) }}
-            priceId: '{{ $priceId }}'
-          })
+            priceId: "{{ $priceId }}",
+          }),
         });
 
         const data = await res.json();
 
         if (!data.clientSecret) {
-          throw new Error(data.error || 'Missing clientSecret from server');
+          throw new Error(data.error || "Missing clientSecret from server");
         }
 
         elements = stripe.elements({ clientSecret: data.clientSecret });
 
-        const paymentElement = elements.create('payment');
-        paymentElement.mount('#payment-element');
+        const paymentElement = elements.create("payment");
+        paymentElement.mount("#payment-element");
 
-        document.getElementById('payment-placeholder').classList.add('hidden');
-        document.getElementById('payment-element').classList.remove('hidden');
+        document.getElementById("payment-placeholder").classList.add("hidden");
+        document.getElementById("payment-element").classList.remove("hidden");
       } catch (error) {
-        console.error('Error loading payment form:', error);
-        showMessage('Error loading payment form. Please refresh and try again.');
+        console.error("Error loading payment form:", error);
+        showMessage("Error loading payment form. Please refresh and try again.");
 
-        const placeholder = document.getElementById('payment-placeholder');
-        if (placeholder) placeholder.classList.add('hidden');
+        const placeholder = document.getElementById("payment-placeholder");
+        if (placeholder) placeholder.classList.add("hidden");
       }
     }
 
     initPaymentElement();
 
-    document.getElementById('payment-form').addEventListener('submit', async (e) => {
-      e.preventDefault();
+    document
+      .getElementById("payment-form")
+      .addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-      if (!elements) {
-        showMessage('Payment form is still loading. Please wait a moment and try again.');
-        return;
-      }
+        if (!elements) {
+          showMessage(
+            "Payment form is still loading. Please wait a moment and try again.",
+          );
+          return;
+        }
 
-      setLoading(true);
+        setLoading(true);
 
-      try {
-        const { error } = await stripe.confirmPayment({
-          elements,
-          confirmParams: {
-            return_url: `${window.location.origin}/newsletters/accessharrisburg/return`,
-          },
-        });
+        try {
+          const { error } = await stripe.confirmPayment({
+            elements,
+            confirmParams: {
+              return_url: `${window.location.origin}/newsletters/accessharrisburg/return`,
+            },
+          });
 
-        if (error) {
-          showMessage(error.message || 'There was an error processing your payment.');
+          if (error) {
+            showMessage(
+              error.message || "There was an error processing your payment.",
+            );
+            setLoading(false);
+          }
+        } catch (err) {
+          console.error("Unexpected error confirming payment:", err);
+          showMessage("Unexpected error. Please try again.");
           setLoading(false);
         }
-      } catch (err) {
-        console.error('Unexpected error confirming payment:', err);
-        showMessage('Unexpected error. Please try again.');
-        setLoading(false);
-      }
-    });
+      });
 
     function showMessage(messageText) {
-      const messageContainer = document.getElementById('payment-message');
-      messageContainer.classList.remove('hidden');
+      const messageContainer = document.getElementById("payment-message");
+      messageContainer.classList.remove("hidden");
       messageContainer.textContent = messageText;
-      messageContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      messageContainer.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
     function setLoading(isLoading) {
-      const submitButton = document.getElementById('submit');
-      const spinner = document.getElementById('spinner');
-      const buttonText = document.getElementById('button-text');
+      const submitButton = document.getElementById("submit");
+      const spinner = document.getElementById("spinner");
+      const buttonText = document.getElementById("button-text");
 
       if (isLoading) {
         submitButton.disabled = true;
-        spinner.classList.remove('hidden');
-        buttonText.classList.add('hidden');
+        spinner.classList.remove("hidden");
+        buttonText.classList.add("hidden");
       } else {
         submitButton.disabled = false;
-        spinner.classList.add('hidden');
-        buttonText.classList.remove('hidden');
+        spinner.classList.add("hidden");
+        buttonText.classList.remove("hidden");
       }
     }
   </script>
