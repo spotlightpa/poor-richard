@@ -20,6 +20,14 @@ title-tag = "Berks County won’t raise property taxes despite shortfall"
 topics = ["Local Government"]
 +++
 
+<strong>Update, Dec. 18: </strong>Berks County commissioners passed the 2026 budget with a revision that increases capital projects rolling over from 2025 by $15 million, for a total capital budget of $35 million. The full county budget rose to more than $690 million.
+
+Laura Jones, interim chief financial officer, told Spotlight PA the increase, along with smaller raises in personnel and other costs, does not change the county’s overarching financial picture. The expected shortfall presented in November will still be covered through special capital reserve funding, and the county will not have a deficit ending 2025, she said.
+
+The county avoided a property tax increase this year after two consecutive hikes by trimming operational expenses across all departments, Jones said. The previous increases allowed the county to maintain services, not add new ones, as costs rise across the country, she continued.
+
+<strong><em>Original story</em></strong>
+
 READING — Berks County will not levy a <a href="https://www.wfmz.com/news/area/berks/proposed-2026-budget-in-berks-county-holds-the-line-on-taxes/article_6dae80d5-5175-4f25-a9f4-dbfa20a041a0.html?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Berks%20County%20proposes%20%24672%205M%20budget&amp;utm_campaign=Good%20Day%2C%20Berks%20Friday%2011%2014%202025%20final%20%20%28Copy%29">property tax increase</a> for 2026 after two consecutive raises, but the county’s finance chiefs also say upcoming budgets may present more challenges as infrastructure plans and larger projects come to fruition.
 
 The county projects general fund spending costs in 2026 to outpace revenue by about $16 million, the budget team told Berks County commissioners Thursday. However, Berks will cover the shortfall by paying for some infrastructure projects with designated capital reserve and COVID community support funds, interim Chief Financial Officer Laura Jones told Spotlight PA. The <a href="https://www.berkspa.gov/getmedia/e9e1e365-dfde-4bb7-a8fb-24e73b047e7d/2026-Proposed-Budget-Presentation.pdf">total budget</a> will give the county a surplus of around $2.9 million.
