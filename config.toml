@@ -85,6 +85,8 @@ images = ["2019/11/banner-white-on-capitol.jpeg"]
 description = "The mission of Spotlight PA is to hold powerful private and public forces across Pennsylvania — especially government, business and special interests — to account through urgent and compelling investigative journalism that leads to change and the betterment of democracy, the state and all who live here."
 headers = ["X-Frame-Options: DENY"]
 newsletters-base-url = "https://email-alerts.data.spotlightpa.org"
+stripe_key_test = "pk_test_51Mmd3kPgmnviwloDfy91ugsfYUzlhHqMGRrijHOnOsOd0RGX6lWBbHlxPnMtVRAsJN0aVGg6ijXJHT3aqxZ3AFFe00mUKDcxua"
+stripe_key_live = "pk_live_51Mmd3kPgmnviwloDdsisjwVxkC83MMcGgttB9kXXJs3gj0MakZRrWPqMtCq3uOSZB7G4prfxYPGvbNnwsvjDNx2E00EdEf2rFP"
 
 [security.exec]
 allow = [
