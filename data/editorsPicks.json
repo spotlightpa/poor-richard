@@ -6,12 +6,16 @@
     "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
   ],
   "featuredStories": [
-    "content/news/2025-12-26-PMPFORESTHEALTH1225.md"
+    "content/news/2025-12-23-SPLAGINGWRAP1225.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2025-12-09-SPLDOC1225.md",
+    "content/news/2025-12-03-SPLFATALREV1225.md",
+    "content/news/2025-10-16-SPLAGINGDATA1025.md"
+  ],
   "topSlots": [
-    "content/news/2025-12-23-SPLAGINGWRAP1225.md",
+    "content/statecollege/2025-12-23-SPLPSUDOCS1225.md",
     "content/news/2025-12-24-SPLCFFINAL1225.md",
-    "content/statecollege/2025-12-23-SPLPSUDOCS1225.md"
+    "content/news/2025-12-22-SPLBBYEAR1225.md"
   ]
 }
