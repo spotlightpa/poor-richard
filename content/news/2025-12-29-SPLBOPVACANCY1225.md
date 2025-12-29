@@ -16,7 +16,7 @@ pinned = false
 published = 2025-12-29T04:00:00-05:00
 slug = "board-of-pardons-vacancy-shapiro-justice-system"
 suppress-date = false
-title = "Shapiro leaves Board of Pardons seat empty after concerns over member’s ‘inappropriate’ questioning"
+title = "Board of Pardons seat left empty after concerns over member’s ‘inappropriate’ questioning"
 title-tag = "PA Board of Pardons member not reappointed after pushback"
 topics = ["Justice System"]
 +++
