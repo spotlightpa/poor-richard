@@ -9,30 +9,30 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mn/91g9/triple-banner-6-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fm/newsmatch-2025-tracker-banners-4-.gif"
       ]
     }
   ],
-  "ad-header-desktop-active": false,
+  "ad-header-desktop-active": true,
   "ad-header-desktop-height": 175,
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be TRIPLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mn/91g9/triple-rectangle-5-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fm/newsmatch-2025-rectangles-1024-512-px-.gif"
       ]
     }
   ],
-  "ad-header-mobile-active": false,
+  "ad-header-mobile-active": true,
   "ad-header-mobile-height": 512,
   "ad-header-mobile-width": 1024,
   "ad-hp-breaker-desktop": [],
@@ -45,16 +45,16 @@
   "ad-hp-breaker-mobile-width": 0,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be TRIPLED.",
+      "description": "Support Spotlight PA's unmatched reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mm/q27t/newsmatch-2025-tripled-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fn/newsmatch-2025-squares-5-.gif"
       ]
     }
   ],
-  "ad-hp-featured-active": false,
+  "ad-hp-featured-active": true,
   "ad-hp-headwater-desktop": [],
   "ad-hp-headwater-desktop-active": false,
   "ad-hp-headwater-desktop-height": 0,
@@ -85,16 +85,16 @@
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be TRIPLED.",
+      "description": "Support Spotlight PA's unmatched reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mm/q27t/newsmatch-2025-tripled-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fn/newsmatch-2025-squares-5-.gif"
       ]
     }
   ],
-  "ad-rail-top-active": false,
+  "ad-rail-top-active": true,
   "banner": "\u003cstrong\u003eALL GIFTS DOUBLED: Our investigative reporting cannot continue without you »\u003c/strong\u003e",
   "banner-active": false,
   "banner-bg-color": "#ff0000",
@@ -123,7 +123,7 @@
   "support-hed": "Before you go, I have a request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and thousands of readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. Every contribution makes a difference. Please make yours now.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and more than 10,000 readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. Every contribution makes a difference. Please make yours now.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "Our TRIPLE match expires at 11:59 p.m. TONIGHT and we're $5,000 from our goal. Hurry a gift now to support independent, unbiased reporting",
