@@ -42,7 +42,7 @@
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.0.0",
-    "globals": "^16.5.0",
+    "globals": "^17.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-tailwindcss": "^0.7.2"
