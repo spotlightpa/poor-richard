@@ -14,6 +14,7 @@ kicker = "Penn State"
 modal-exclude = false
 pinned = false
 published = 2025-11-21T18:39:54.965-05:00
+series = ["The Institute"]
 slug = "penn-state-cancer-institute-research-raymond-hohl-resign-penn-state"
 suppress-date = false
 title = "Director of Penn State Cancer Institute resigns 1 day after Spotlight PA investigation about chemo errors, ‘toxic’ leadership"

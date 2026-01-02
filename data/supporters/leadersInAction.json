@@ -883,6 +883,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Neubauer Family Foundation",
+      "sort": "Neubauer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Nichols",
       "sort": "Nichols",
       "url": "",
@@ -1126,13 +1133,6 @@
       "url": "",
       "category": "$10,000-$24,999",
       "categoryRank": "3"
-    },
-    {
-      "display": "Thomas Simpson",
-      "sort": "Simpson",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
     },
     {
       "display": "Joshua Singer",
