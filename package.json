@@ -19,7 +19,9 @@
     "build:prod": "hugo --cleanDestinationDir",
     "start:noreload": "hugo server -p 39019 --disableLiveReload",
     "start:full": "hugo server -p 39019 --disableFastRender",
-    "start": "hugo server -p 39019"
+    "start": "hugo server -p 39019",
+    "start:dev": "hugo server -p 39019 --environment development",
+    "dev:local": "netlify dev -c \"yarn start:dev\""
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.14.1",
