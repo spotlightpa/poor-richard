@@ -102,7 +102,7 @@
 
     async function initPaymentElement() {
       try {
-        const res = await fetch("/.netlify/functions/create-checkout-session", {
+        const res = await fetch("/.netlify/functions/create-subscription", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
