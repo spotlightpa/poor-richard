@@ -142,31 +142,59 @@
       }
 
       if (!elements) {
-        await initPaymentElement();
-        if (!elements) {
-          showMessage("Payment form is still loading. Please wait a moment.");
-          return;
-        }
+        showMessage("Payment form is still loading. Please wait a moment.");
+        return;
       }
 
       setLoading(true);
 
       try {
-        const { error } = await stripe.confirmPayment({
+        const { error: submitError } = await elements.submit();
+        if (submitError) {
+          throw new Error(submitError.message);
+        }
+
+        const { setupIntent, error: confirmError } = await stripe.confirmSetup({
           elements,
-          confirmParams: {
-            return_url: `${window.location.origin}/newsletters/accessharrisburg/thanks/`,
-            receipt_email: email,
-          },
+          redirect: "if_required",
         });
 
-        if (error) {
-          showMessage(error.message || "There was an error processing your payment.");
-          setLoading(false);
+        if (confirmError) {
+          throw new Error(confirmError.message);
         }
+
+        console.log("Setup confirmed, payment method:", setupIntent.payment_method);
+
+        const res = await fetch("/.netlify/functions/create-subscription", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            priceId: "{{ $priceId }}",
+            email: email,
+            paymentMethodId: setupIntent.payment_method,
+          }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.error || "Failed to create subscription");
+        }
+
+        console.log("Subscription created:", data);
+
+        if (data.status === "incomplete" && data.clientSecret) {
+          const { error: paymentError } = await stripe.confirmCardPayment(data.clientSecret);
+          if (paymentError) {
+            throw new Error(paymentError.message);
+          }
+        }
+
+        window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
+
       } catch (err) {
         console.error("Unexpected error:", err);
-        showMessage("Unexpected error. Please try again.");
+        showMessage(err.message || "Unexpected error. Please try again.");
         setLoading(false);
       }
     });
