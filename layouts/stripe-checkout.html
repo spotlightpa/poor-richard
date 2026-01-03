@@ -34,6 +34,23 @@
     </div>
 
     <form id="payment-form">
+      <div class="mb-4">
+        <label for="email" class="mb-1 block text-sm font-medium text-g-9"
+          >Email Address</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@email.com"
+          class="w-full rounded border border-g-4 px-3 py-2 text-base"
+        />
+        <p class="mt-1 text-xs text-g-6">
+          Newsletters will be sent to this email.
+        </p>
+      </div>
+
       <div id="payment-placeholder" class="flex justify-center py-6">
         <svg aria-hidden="true" class="h-16 w-16 animate-spin text-g-7">
           {{ partial "helper/svg.html" "spinner" }}
@@ -109,70 +126,65 @@
       } catch (error) {
         console.error("Error loading payment form:", error);
         showMessage("Error loading payment form. Please refresh and try again.");
-
-        const placeholder = document.getElementById("payment-placeholder");
-        if (placeholder) placeholder.classList.add("hidden");
+        document.getElementById("payment-placeholder").classList.add("hidden");
       }
     }
 
     initPaymentElement();
 
-    document
-      .getElementById("payment-form")
-      .addEventListener("submit", async (e) => {
-        e.preventDefault();
+    document.getElementById("payment-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
 
+      const email = document.getElementById("email").value.trim();
+      if (!email) {
+        showMessage("Please enter your email address.");
+        return;
+      }
+
+      if (!elements) {
+        await initPaymentElement();
         if (!elements) {
-          showMessage(
-            "Payment form is still loading. Please wait a moment and try again.",
-          );
+          showMessage("Payment form is still loading. Please wait a moment.");
           return;
         }
+      }
 
-        setLoading(true);
+      setLoading(true);
 
-        try {
-          const { error } = await stripe.confirmPayment({
-            elements,
-            confirmParams: {
-              return_url: `${window.location.origin}/newsletters/accessharrisburg/thanks/`,
-            },
-          });
+      try {
+        const { error } = await stripe.confirmPayment({
+          elements,
+          confirmParams: {
+            return_url: `${window.location.origin}/newsletters/accessharrisburg/thanks/`,
+            receipt_email: email,
+          },
+        });
 
-          if (error) {
-            showMessage(
-              error.message || "There was an error processing your payment.",
-            );
-            setLoading(false);
-          }
-        } catch (err) {
-          console.error("Unexpected error confirming payment:", err);
-          showMessage("Unexpected error. Please try again.");
+        if (error) {
+          showMessage(error.message || "There was an error processing your payment.");
           setLoading(false);
         }
-      });
+      } catch (err) {
+        console.error("Unexpected error:", err);
+        showMessage("Unexpected error. Please try again.");
+        setLoading(false);
+      }
+    });
 
     function showMessage(messageText) {
       const messageContainer = document.getElementById("payment-message");
       messageContainer.classList.remove("hidden");
       messageContainer.textContent = messageText;
-      messageContainer.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
     function setLoading(isLoading) {
       const submitButton = document.getElementById("submit");
       const spinner = document.getElementById("spinner");
       const buttonText = document.getElementById("button-text");
-
-      if (isLoading) {
-        submitButton.disabled = true;
-        spinner.classList.remove("hidden");
-        buttonText.classList.add("hidden");
-      } else {
-        submitButton.disabled = false;
-        spinner.classList.add("hidden");
-        buttonText.classList.remove("hidden");
-      }
+      submitButton.disabled = isLoading;
+      spinner.classList.toggle("hidden", !isLoading);
+      buttonText.classList.toggle("hidden", isLoading);
     }
+
   </script>
 {{ end }}

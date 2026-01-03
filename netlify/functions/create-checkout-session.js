@@ -13,20 +13,14 @@ exports.handler = async (event) => {
     const paymentIntent = await stripe.paymentIntents.create({
       amount: price.unit_amount,
       currency: price.currency,
-      automatic_payment_methods: {
-        enabled: true,
-      },
-      metadata: {
-        priceId: priceId,
-      },
+      payment_method_types: ["card"],
+      metadata: { priceId },
     });
 
     return {
       statusCode: 200,
       body: JSON.stringify({
         clientSecret: paymentIntent.client_secret,
-        amount: price.unit_amount,
-        currency: price.currency,
       }),
     };
   } catch (error) {
