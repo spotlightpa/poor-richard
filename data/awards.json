@@ -1,4 +1,17 @@
 [
+    {
+    "year": 2025,
+    "entity": "Pennsylvania NewsMedia Association",
+    "award_category": "News Media Industry Executive of the Year Award",
+    "winner_or_finalist_honorable_mention": "Winner",
+    "national_or_state": "State",
+    "other_info": "",
+    "story": "Honors a distinguished executive whose leadership, innovation and strategic vision have had a profound and lasting impact on the news media industry.",
+    "Link": "",
+    "category": "",
+    "secondary_category": "",
+    "link": "https://panewsmedia.org/news-media-industry-executive-of-the-year-award/"
+  },
   {
     "year": 2025,
     "entity": "Press Club of Western Pennsylvania, Golden Quill Awards",
@@ -275,7 +288,7 @@
   {
     "year": 2025,
     "entity": "Pennsylvania NewsMedia Association, A-Mark Foundation",
-    "award_category": "A-Mark Prize for Investigative Journalismm in Pennsylvania",
+    "award_category": "A-Mark Prize for Investigative Journalism in Pennsylvania",
     "winner_or_finalist_honorable_mention": "Finalist/Honorable Mention",
     "national_or_state": "State",
     "other_info": "Second place",
