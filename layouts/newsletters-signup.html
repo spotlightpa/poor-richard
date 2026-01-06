@@ -16,7 +16,7 @@
 
 {{ define "main" }}
   {{ $subtitle := .Param "subhed" | default .Description }}
-  {{ $pages := where (where .Pages "Kind" "section") ".Params.hide-from-newsletters" "!=" true }}
+  {{ $pages := where (where .Pages "Kind" "section") ".Params.premium-newsletter" "!=" true }}
   {{ $titleClass := cond (gt (countwords .Title) 2) "is-size-1" "is-size-0" }}
   {{ $subheadClass := cond (gt (countwords $subtitle) 15) "is-size-4" "is-size-3" }}
   <form
@@ -145,7 +145,7 @@
         </nav>
       </div>
       <div
-        class="sticky -mx-4 w-screen animate-become-sticky bg-g-2 shadow-[0_-3px_4px_0_rgba(0,0,0,.1)]"
+        class="sticky -mx-4 w-screen animate-become-sticky bg-g-2 shadow-[0_-2px_6px_0_rgba(0,0,0,.08),0_2px_6px_0_rgba(0,0,0,.05)]"
       >
         <div
           class="mx-auto max-w-screen-lg p-3 md:grid md:grid-cols-10 md:items-baseline md:gap-x-5 md:gap-y-3 md:py-6 lg:px-0"
@@ -175,7 +175,7 @@
               class="my-2 text-lg"
               :class="isOpen ? 'block' : 'hidden md:block'"
             >
-              Enter your email address and click “Subscribe” to start receiving
+              Enter your email address and click “Sign Up” to start receiving
               selected newsletters.
             </p>
           </header>
@@ -227,6 +227,83 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-12 text-lg font-medium">
+      <div class="mx-auto max-w-screen-xl lg:px-0">
+        <div class="article-content mx-auto mb-12 max-w-3xl text-left">
+          {{ with .Param "premium-subtitle" }}
+            <h2>{{ . }}</h2>
+          {{ end }}
+
+          {{ with .Param "premium-description" }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </div>
+
+        <div class="mx-auto max-w-3xl text-lg font-medium lg:px-0">
+          {{ $premiumPages := where (where .Pages "Kind" "section") ".Params.premium-newsletter" true }}
+
+
+          <nav class="items-stretch justify-start">
+            {{ range $premiumPages }}
+              {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
+              {{ $slug := .File.Dir | path.Base }}
+
+
+              <a href="{{ .RelPermalink }}" class="flex md:mx-0 md:w-full">
+                <article
+                  class="w-full cursor-pointer rounded-lg border border-g-2 bg-white p-5 transition-all hover:-translate-y-1 hover:border-g-4 hover:bg-g-2 hover:shadow-sm"
+                >
+                  <div class="grid-cols-5 gap-x-5 sm:grid">
+                    {{ $name := .Page.Param "image" }}
+                    {{ $imgOpts := dict
+                      "filename" $name
+                      "widthRatio" 4
+                      "heightRatio" 3
+                      "widths" (slice 128 256 384 512 1280)
+                      "figClass" "col-span-2 row-start-1 row-span-2 block mb-4"
+                      "sizeHint" "400px"
+                      "rounded-sm" true
+                      "gravity" (.Page.Param "image-gravity")
+                    }}
+                    {{ partial "tw/image-block.html" $imgOpts }}
+
+
+                    <div class="col-span-3 col-start-3 row-start-1 space-y-1">
+                      <div class="flex items-center">
+                        <span
+                          class="rounded bg-yellow px-2 py-1 text-xs font-bold uppercase tracking-wider text-black"
+                        >
+                          Premium
+                        </span>
+                      </div>
+
+                      <h2 class="text-xl font-bold lg:text-2xl">
+                        {{ .Param "teamTitle" }}
+                      </h2>
+
+                      <p class="text-sm font-bold md:text-base">
+                        {{ .Params.occurrence }}
+                      </p>
+
+                      <p class="py-2 text-base font-normal leading-snug">
+                        {{ $params.blurb }}
+                      </p>
+
+                      <p
+                        class="text-sm tracking-widest text-blue underline hover:text-blue-7"
+                      >
+                        Learn more
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            {{ end }}
+          </nav>
         </div>
       </div>
     </section>

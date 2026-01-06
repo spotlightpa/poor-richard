@@ -4,7 +4,7 @@ max-width = "715px"
 
 email-false = true
 button-link = "https://buy.stripe.com/9B66oJ5CHeP888q2BQ4ZG00"
-hide-from-newsletters = true
+premium-newsletter = true
 
 title = "Insider access, delivered weekly"
 subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
@@ -26,8 +26,8 @@ gaCategory = "newsletters:accessharrisburg"
 gaForm = "newsletters:accessharrisburg-full"
 hiddenField = "newsletter/accessharrisburg-hidden.html"
 
-occurrence = "Each Thursday"
-blurb = "Be the first to know what’s happening in Harrisburg"
+occurrence = "Every Thursday"
+blurb = "Be the first to know what’s happening in Harrisburg."
 
 cta = "Subscribe"
 ctaDescription = "$199 for an annual subscription for a single email. For group rates, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
@@ -37,6 +37,7 @@ modal-exclude = true
 
 linktitle = "Access Harrisburg - Insider Access to PA Politics"
 description = "Get weekly scoops, expert analysis, and more from Capitol reporter Stephen Caruso. Be the first to know what’s happening in Pennsylvania state government."
+teamTitle = "Access Harrisburg"
 
 meetTitle = "Meet Stephen Caruso"
 
