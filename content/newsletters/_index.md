@@ -7,8 +7,8 @@ modal-exclude = true
 layout = "newsletters-signup"
 aliases = ["/newsletters/covid/","/newsletters/covid-alerts-manage/"]
 
-premium-subtitle = "Premium Newsletters"
-premium-description = "Get exclusive access to in-depth reporting and expert analysis."
+premium-subtitle = ""
+premium-description = "Looking for more expert analysis on our state government? Check out our new premium newsletter from reporter Stephen Caruso."
 
 [cascade]
 paginate = 60
