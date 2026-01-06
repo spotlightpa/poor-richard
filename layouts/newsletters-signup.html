@@ -175,7 +175,7 @@
               class="my-2 text-lg"
               :class="isOpen ? 'block' : 'hidden md:block'"
             >
-              Enter your email address and click “Subscribe” to start receiving
+              Enter your email address and click “Sign Up” to start receiving
               selected newsletters.
             </p>
           </header>
@@ -240,8 +240,6 @@
             {{ .Param "premium-subtitle" }}
           </h2>
 
-          <div class="mx-auto mt-4 h-1 w-16 rounded bg-yellow"></div>
-
           {{ with .Param "premium-description" }}
             <div
               class="article-content mx-auto mt-4 max-w-prose text-center text-xl font-medium leading-relaxed"
@@ -267,8 +265,6 @@
               <a
                 href="{{ .RelPermalink }}"
                 class="mx-2 flex md:mx-0 md:flex-[0_0_calc(50%-40px)]"
-                data-ga-category="toggle-newsletter:{{ $slug }}"
-                x-report-click
               >
                 <article
                   class="w-full cursor-pointer rounded-lg border border-g-2 bg-white p-5 transition-all hover:-translate-y-1 hover:border-g-4 hover:bg-g-2 hover:shadow-sm"
@@ -312,7 +308,7 @@
                       <p
                         class="text-sm tracking-widest text-blue underline hover:text-blue-7"
                       >
-                        Learn more and subscribe
+                        Learn more
                       </p>
                     </div>
                   </div>
