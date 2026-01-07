@@ -12,7 +12,7 @@ export const handler = async (event) => {
 
     if (!email && !paymentMethodId) {
       console.log("Creating setup intent for price:", priceId);
-      
+
       const setupIntent = await stripe.setupIntents.create({
         payment_method_types: ["card"],
         metadata: { priceId },
@@ -77,7 +77,8 @@ export const handler = async (event) => {
         body: JSON.stringify({
           subscriptionId: subscription.id,
           status: subscription.status,
-          clientSecret: subscription.latest_invoice?.payment_intent?.client_secret,
+          clientSecret:
+            subscription.latest_invoice?.payment_intent?.client_secret,
         }),
       };
     }

@@ -3,10 +3,10 @@ layout = "individual-newsletter"
 max-width = "715px"
 
 email-false = true
-hide-from-newsletters = true
+premium-newsletter = true
 
 title = "Insider access, delivered weekly"
-subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government"
+subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
 
 bullets = [
   "Scoops, expert analysis, and more from Capitol reporter Stephen Caruso",
@@ -17,18 +17,16 @@ bullets = [
 quote = "Stephen Caruso “clearly is paying attention.”"
 quote-source = "— Bryan Cutler, Pennsylvania State Representative"
 
-occurrence = "Each Thursday"
-blurb = "Be the first to know what’s happening in Harrisburg"
+occurrence = "Every Thursday"
+blurb = "Be the first to know what’s happening in Harrisburg."
 
-cta = "Example edition"
-button-link = "https://spotlightpa.bluelena.io/index.php?action=social&chash=f4a4da9aa7eadfd23c7bdb7cf57b3112.1814&s=bad97c655476f96a390a72c05a742011"
-
-premium-newsletter = true
+cta = "Subscribe"
 
 modal-exclude = true
 
 linktitle = "Access Harrisburg - Insider Access to PA Politics"
 description = "Get weekly scoops, expert analysis, and more from Capitol reporter Stephen Caruso. Be the first to know what’s happening in Pennsylvania state government."
+teamTitle = "Access Harrisburg"
 
 meetTitle = "Meet Stephen Caruso"
 
