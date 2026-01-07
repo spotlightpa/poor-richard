@@ -130,7 +130,23 @@
       }
     }
 
-    initPaymentElement();
+    function pollUntil(conditionCallback) {
+          return new Promise((resolve) => {
+            if (conditionCallback()) {
+              resolve();
+            } else {
+              let interval;
+              interval = setInterval(() => {
+                if (conditionCallback()) {
+                  clearInterval(interval);
+                  resolve();
+                }
+              }, 100);
+            }
+          });
+        }
+
+        initPaymentElement();
 
     document.getElementById("payment-form").addEventListener("submit", async (e) => {
       e.preventDefault();
@@ -141,10 +157,7 @@
         return;
       }
 
-      if (!elements) {
-        showMessage("Payment form is still loading. Please wait a moment.");
-        return;
-      }
+      await pollUntil(()=> !! elements);
 
       setLoading(true);
 
