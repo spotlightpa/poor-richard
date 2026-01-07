@@ -40,6 +40,27 @@ export const handler = async (event) => {
       if (customers.data.length > 0) {
         customer = customers.data[0];
         console.log("Found existing customer:", customer.id);
+
+        const existingSubscriptions = await stripe.subscriptions.list({
+          customer: customer.id,
+          price: priceId,
+          status: "active",
+          limit: 1,
+        });
+
+        if (existingSubscriptions.data.length > 0) {
+          console.log(
+            "Customer already has active subscription:",
+            existingSubscriptions.data[0].id,
+          );
+          return {
+            statusCode: 400,
+            body: JSON.stringify({
+              error:
+                "You already have an active subscription. Check your email or contact membership@spotlightpa.org for help with your subscription.",
+            }),
+          };
+        }
       } else {
         customer = await stripe.customers.create({
           email: email,
