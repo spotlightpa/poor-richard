@@ -93,6 +93,24 @@ export const handler = async (event) => {
       console.log("Created subscription:", subscription.id);
       console.log("Subscription status:", subscription.status);
 
+      if (
+        subscription.status === "incomplete" ||
+        subscription.status === "past_due"
+      ) {
+        const paymentIntent = subscription.latest_invoice?.payment_intent;
+        const errorMessage =
+          paymentIntent?.last_payment_error?.message || "Payment failed";
+
+        console.log("Subscription payment failed:", errorMessage);
+
+        return {
+          statusCode: 400,
+          body: JSON.stringify({
+            error: `${errorMessage}. Please try a different payment method.`,
+          }),
+        };
+      }
+
       return {
         statusCode: 200,
         body: JSON.stringify({
