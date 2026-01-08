@@ -195,13 +195,25 @@
           throw new Error(data.error || "Failed to create subscription");
         }
 
-        console.log("Subscription created:", data);
+        if (data.requiresAction && data.clientSecret) {
+          const { paymentIntent, error: paymentError } = await stripe.confirmCardPayment(data.clientSecret);
 
-        if (data.status === "incomplete" && data.clientSecret) {
-          const { error: paymentError } = await stripe.confirmCardPayment(data.clientSecret);
           if (paymentError) {
             throw new Error(paymentError.message);
           }
+          if (paymentIntent.status === "succeeded") {
+            window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
+            return;
+          } else if (paymentIntent.status === "requires_payment_method") {
+            throw new Error("Payment failed after authentication. Please try a different card.");
+          } else {
+            throw new Error("Payment could not be completed. Please try again.");
+          }
+        }
+
+        if (data.status === "active" || !data.requiresAction) {
+          window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
+          return;
         }
 
         window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;

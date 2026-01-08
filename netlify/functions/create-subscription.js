@@ -8,7 +8,8 @@ export const handler = async (event) => {
   }
 
   try {
-    const { priceId, email, paymentMethodId } = JSON.parse(event.body);
+    const requestBody = JSON.parse(event.body);
+    const { priceId, email, paymentMethodId } = requestBody;
 
     if (!email && !paymentMethodId) {
       console.log("Creating setup intent for price:", priceId);
@@ -91,47 +92,141 @@ export const handler = async (event) => {
         customer: customer.id,
         items: [{ price: priceId }],
         default_payment_method: paymentMethodId,
+        payment_behavior: "default_incomplete",
+        payment_settings: {
+          save_default_payment_method: "on_subscription",
+        },
         expand: ["latest_invoice.payment_intent"],
         metadata: {
           newsletter: "Access Harrisburg",
         },
       });
 
-      console.log("Created subscription:", subscription.id);
-      console.log("Subscription status:", subscription.status);
+      let paymentIntent = subscription.latest_invoice?.payment_intent;
 
-      if (
-        subscription.status === "incomplete" ||
-        subscription.status === "past_due"
-      ) {
-        const paymentIntent = subscription.latest_invoice?.payment_intent;
-        const errorMessage =
-          paymentIntent?.last_payment_error?.message || "Payment failed";
+      if (!paymentIntent && subscription.latest_invoice?.id) {
+        try {
+          const paidInvoice = await stripe.invoices.pay(
+            subscription.latest_invoice.id,
+            {
+              payment_method: paymentMethodId,
+              expand: ["payment_intent"],
+            },
+          );
 
-        console.log("Subscription payment failed:", errorMessage);
+          paymentIntent = paidInvoice.payment_intent;
 
+          if (paymentIntent) {
+            console.log("PaymentIntent ID:", paymentIntent.id);
+            console.log("PaymentIntent status:", paymentIntent.status);
+          }
+
+          if (paidInvoice.status === "paid") {
+            return {
+              statusCode: 200,
+              body: JSON.stringify({
+                subscriptionId: subscription.id,
+                status: "active",
+              }),
+            };
+          }
+        } catch (invoiceError) {
+          if (invoiceError.code === "invoice_payment_intent_requires_action") {
+            const updatedInvoice = await stripe.invoices.retrieve(
+              subscription.latest_invoice.id,
+              { expand: ["payment_intent"] },
+            );
+
+            paymentIntent = updatedInvoice.payment_intent;
+          } else {
+            throw invoiceError;
+          }
+        }
+      }
+
+      if (paymentIntent) {
+        if (paymentIntent.status === "requires_action") {
+          return {
+            statusCode: 200,
+            body: JSON.stringify({
+              subscriptionId: subscription.id,
+              status: "incomplete",
+              clientSecret: paymentIntent.client_secret,
+              paymentIntentStatus: paymentIntent.status,
+              requiresAction: true,
+            }),
+          };
+        }
+
+        if (paymentIntent.status === "succeeded") {
+          return {
+            statusCode: 200,
+            body: JSON.stringify({
+              subscriptionId: subscription.id,
+              status: "active",
+            }),
+          };
+        }
+
+        if (paymentIntent.status === "requires_payment_method") {
+          const errorMessage =
+            paymentIntent.last_payment_error?.message ||
+            "Your card was declined";
+
+          return {
+            statusCode: 400,
+            body: JSON.stringify({
+              error: `${errorMessage}. Please try a different payment method.`,
+            }),
+          };
+        }
+
+        if (paymentIntent.status === "processing") {
+          return {
+            statusCode: 200,
+            body: JSON.stringify({
+              subscriptionId: subscription.id,
+              status: "processing",
+            }),
+          };
+        }
+      }
+
+      const updatedSubscription = await stripe.subscriptions.retrieve(
+        subscription.id,
+      );
+
+      if (updatedSubscription.status === "active") {
         return {
-          statusCode: 400,
+          statusCode: 200,
           body: JSON.stringify({
-            error: `${errorMessage}. Please try a different payment method.`,
+            subscriptionId: subscription.id,
+            status: "active",
           }),
         };
       }
 
       return {
-        statusCode: 200,
+        statusCode: 400,
         body: JSON.stringify({
-          subscriptionId: subscription.id,
-          status: subscription.status,
-          clientSecret:
-            subscription.latest_invoice?.payment_intent?.client_secret,
+          error: "Payment could not be processed. Please try again.",
         }),
       };
     }
 
     throw new Error("Invalid request parameters");
   } catch (error) {
-    console.error("Subscription creation error:", error);
+    if (error.type === "StripeCardError") {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({
+          error:
+            error.message ||
+            "Your card was declined. Please try a different payment method.",
+        }),
+      };
+    }
+
     return {
       statusCode: 500,
       body: JSON.stringify({ error: error.message }),
