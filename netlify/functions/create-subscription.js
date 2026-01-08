@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
@@ -13,6 +12,7 @@ export const handler = async (event) => {
     const { priceId, email, paymentMethodId } = requestBody;
 
     if (!email && !paymentMethodId) {
+      // eslint-disable-next-line no-console
       console.log("Creating setup intent for price:", priceId);
 
       const setupIntent = await stripe.setupIntents.create({
@@ -20,6 +20,7 @@ export const handler = async (event) => {
         metadata: { priceId },
       });
 
+      // eslint-disable-next-line no-console
       console.log("Created setup intent:", setupIntent.id);
 
       return {
@@ -31,6 +32,7 @@ export const handler = async (event) => {
     }
 
     if (email && paymentMethodId) {
+      // eslint-disable-next-line no-console
       console.log("Creating subscription for email:", email);
 
       const customers = await stripe.customers.list({
@@ -41,6 +43,7 @@ export const handler = async (event) => {
       let customer;
       if (customers.data.length > 0) {
         customer = customers.data[0];
+        // eslint-disable-next-line no-console
         console.log("Found existing customer:", customer.id);
 
         const currentPrice = await stripe.prices.retrieve(priceId);
@@ -74,6 +77,7 @@ export const handler = async (event) => {
         customer = await stripe.customers.create({
           email: email,
         });
+        // eslint-disable-next-line no-console
         console.log("Created new customer:", customer.id);
       }
 
@@ -87,6 +91,7 @@ export const handler = async (event) => {
         },
       });
 
+      // eslint-disable-next-line no-console
       console.log("Attached payment method:", paymentMethodId);
 
       const subscription = await stripe.subscriptions.create({
@@ -118,7 +123,9 @@ export const handler = async (event) => {
           paymentIntent = paidInvoice.payment_intent;
 
           if (paymentIntent) {
+            // eslint-disable-next-line no-console
             console.log("PaymentIntent ID:", paymentIntent.id);
+            // eslint-disable-next-line no-console
             console.log("PaymentIntent status:", paymentIntent.status);
           }
 
