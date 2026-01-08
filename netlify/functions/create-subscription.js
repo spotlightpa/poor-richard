@@ -41,23 +41,30 @@ export const handler = async (event) => {
         customer = customers.data[0];
         console.log("Found existing customer:", customer.id);
 
-        const existingSubscriptions = await stripe.subscriptions.list({
+        const currentPrice = await stripe.prices.retrieve(priceId);
+
+        const subs = await stripe.subscriptions.list({
           customer: customer.id,
-          price: priceId,
-          status: "active",
-          limit: 1,
+          status: "all",
+          limit: 100,
         });
 
-        if (existingSubscriptions.data.length > 0) {
-          console.log(
-            "Customer already has active subscription:",
-            existingSubscriptions.data[0].id,
+        const blockedStatuses = ["active", "trialing", "past_due", "unpaid"];
+
+        const hasActiveOnSameProduct = subs.data.some((sub) => {
+          if (!blockedStatuses.includes(sub.status)) return false;
+
+          return sub.items.data.some(
+            (item) => item.price.product === currentPrice.product,
           );
+        });
+
+        if (hasActiveOnSameProduct) {
           return {
             statusCode: 400,
             body: JSON.stringify({
               error:
-                "You already have an active subscription. Check your email or contact membership@spotlightpa.org for help with your subscription.",
+                "You already have an active subscription for this newsletter. To switch plans, please contact membership@spotlightpa.org.",
             }),
           };
         }
