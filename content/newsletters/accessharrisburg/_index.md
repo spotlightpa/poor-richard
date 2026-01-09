@@ -1,6 +1,7 @@
 +++
 layout = "individual-newsletter"
 max-width = "715px"
+aliases = ["/access/"]
 
 email-false = true
 premium-newsletter = true
