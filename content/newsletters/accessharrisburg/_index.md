@@ -4,6 +4,7 @@ max-width = "715px"
 
 email-false = true
 premium-newsletter = true
+button-link = "https://spotlightpa.bluelena.io/index.php?action=social&chash=f4a4da9aa7eadfd23c7bdb7cf57b3112.1814&s=bad97c655476f96a390a72c05a742011"
 
 title = "Insider access, delivered weekly"
 subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
