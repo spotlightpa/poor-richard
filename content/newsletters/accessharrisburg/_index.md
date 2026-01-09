@@ -21,7 +21,7 @@ quote-source = "— Bryan Cutler, Pennsylvania State Representative"
 occurrence = "Every Thursday"
 blurb = "Be the first to know what’s happening in Harrisburg."
 
-cta = "Subscribe"
+cta = "Preview"
 
 modal-exclude = true
 
