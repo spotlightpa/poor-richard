@@ -19,7 +19,9 @@
     "build:prod": "hugo --cleanDestinationDir",
     "start:noreload": "hugo server -p 39019 --disableLiveReload",
     "start:full": "hugo server -p 39019 --disableFastRender",
-    "start": "hugo server -p 39019"
+    "start": "hugo server -p 39019",
+    "start:dev": "hugo server -p 39019 --environment development",
+    "dev:local": "netlify dev -c \"yarn start:dev\""
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.14.1",
@@ -33,6 +35,7 @@
     "@tailwindcss/cli": "^4.1.17",
     "alpinejs": "^3.12.3",
     "journalize": "^2.5.1",
+    "stripe": "^20.1.0",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {

@@ -1,0 +1,244 @@
+{{ define "main" }}
+  <div class="article-content mx-auto mb-8 max-w-2xl px-4 py-12">
+    <h1 class="mb-4 font-serif text-3xl font-bold sm:text-4xl">
+      {{ .Title }}
+    </h1>
+
+    <div class="mb-3 flex items-baseline gap-2">
+      <div class="flex items-center gap-2">
+        <span class="text-3xl font-bold text-g-9 sm:text-4xl">
+          {{ .Params.price }}
+        </span>
+
+        <span
+          class="rounded bg-g-2 px-2 py-0.5 text-xs uppercase tracking-wider text-g-7"
+          >{{ .Params.period }}</span
+        >
+      </div>
+    </div>
+
+    <div class="mb-6 space-y-2 text-base text-g-9">
+      <p>Newsletters sent weekly, except for holidays.</p>
+      <ul class="list-disc pl-5">
+        <li>Email used for purchase will be where newsletters are sent.</li>
+        <li>All purchases are final and non-refundable.</li>
+        <li>This is not a tax-deductible donation.</li>
+      </ul>
+      <p>
+        Interested in a yearly group subscription? Want to change your
+        newsletter email, or cancel your subscription? Have other questions?
+        Email
+        <a href="mailto:membership@spotlightpa.org"
+          >membership@spotlightpa.org</a
+        >.
+      </p>
+    </div>
+
+    <form id="payment-form">
+      <div class="mb-4">
+        <label for="email" class="mb-1 block text-sm font-medium text-g-9"
+          >Email Address</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@email.com"
+          class="w-full rounded border border-g-4 px-3 py-2 text-base"
+        />
+        <p class="mt-1 text-xs text-g-6">
+          Newsletters will be sent to this email.
+        </p>
+      </div>
+
+      <div id="payment-placeholder" class="flex justify-center py-6">
+        <svg aria-hidden="true" class="h-16 w-16 animate-spin text-g-7">
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
+      </div>
+
+      <div id="payment-element" class="hidden"></div>
+
+      <button id="submit" class="btn-signup mt-6 w-full">
+        <span id="button-text">Subscribe</span>
+        <span id="spinner" class="hidden">
+          <svg
+            aria-hidden="true"
+            class="inline-block h-4 w-4 animate-spin align-middle"
+          >
+            {{ partial "helper/svg.html" "spinner" }}
+          </svg>
+        </span>
+      </button>
+
+      <p
+        class="mt-3 flex items-center justify-center gap-1 text-center text-xs text-g-7"
+      >
+        <svg aria-hidden="true" class="h-3 w-3">
+          {{ partial "helper/svg.html" "lock" }}
+        </svg>
+        Payments are processed securely by Stripe.
+      </p>
+
+      <div
+        id="payment-message"
+        class="mt-4 hidden text-red"
+        role="alert"
+        aria-live="polite"
+      ></div>
+    </form>
+  </div>
+
+  {{ $stripeKey := .Param "stripe_key_test" }}
+  {{ $priceId := .Param "stripe_price_id_test" }}
+  {{ if eq hugo.Environment "production" }}
+    {{ $stripeKey = .Param "stripe_key_live" }}
+    {{ $priceId = .Param "stripe_price_id_live" }}
+  {{ end }}
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    const stripe = Stripe("{{ $stripeKey }}");
+    let elements;
+
+    async function initPaymentElement() {
+      try {
+        const res = await fetch("/.netlify/functions/create-subscription", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            priceId: "{{ $priceId }}",
+          }),
+        });
+
+        const data = await res.json();
+
+        if (!data.clientSecret) {
+          throw new Error(data.error || "Missing clientSecret from server");
+        }
+
+        elements = stripe.elements({ clientSecret: data.clientSecret });
+
+        const paymentElement = elements.create("payment");
+        paymentElement.mount("#payment-element");
+
+        document.getElementById("payment-placeholder").classList.add("hidden");
+        document.getElementById("payment-element").classList.remove("hidden");
+      } catch (error) {
+        console.error("Error loading payment form:", error);
+        showMessage("Error loading payment form. Please refresh and try again.");
+        document.getElementById("payment-placeholder").classList.add("hidden");
+      }
+    }
+
+    function pollUntil(conditionCallback) {
+          return new Promise((resolve) => {
+            if (conditionCallback()) {
+              resolve();
+            } else {
+              let interval;
+              interval = setInterval(() => {
+                if (conditionCallback()) {
+                  clearInterval(interval);
+                  resolve();
+                }
+              }, 100);
+            }
+          });
+        }
+
+        initPaymentElement();
+
+    document.getElementById("payment-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      if (!email) {
+        showMessage("Please enter your email address.");
+        return;
+      }
+
+      await pollUntil(()=> !! elements);
+
+      setLoading(true);
+
+      try {
+        const { error: submitError } = await elements.submit();
+        if (submitError) {
+          throw new Error(submitError.message);
+        }
+
+        const { setupIntent, error: confirmError } = await stripe.confirmSetup({
+          elements,
+          redirect: "if_required",
+        });
+
+        if (confirmError) {
+          throw new Error(confirmError.message);
+        }
+
+        console.log("Setup confirmed, payment method:", setupIntent.payment_method);
+
+        const res = await fetch("/.netlify/functions/create-subscription", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            priceId: "{{ $priceId }}",
+            email: email,
+            paymentMethodId: setupIntent.payment_method,
+          }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.error || "Failed to create subscription");
+        }
+
+        if (data.requiresAction && data.clientSecret) {
+          const { paymentIntent, error: paymentError } = await stripe.confirmCardPayment(data.clientSecret);
+
+          if (paymentError) {
+            throw new Error(paymentError.message);
+          }
+          if (paymentIntent.status === "succeeded") {
+            window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
+            return;
+          } else if (paymentIntent.status === "requires_payment_method") {
+            throw new Error("Payment failed after authentication. Please try a different card.");
+          } else {
+            throw new Error("Payment could not be completed. Please try again.");
+          }
+        }
+
+        if (data.status === "active" || !data.requiresAction) {
+          window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
+          return;
+        }
+
+        window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
+
+      } catch (err) {
+        console.error("Unexpected error:", err);
+        showMessage(err.message || "Unexpected error. Please try again.");
+        setLoading(false);
+      }
+    });
+
+    function showMessage(messageText) {
+      const messageContainer = document.getElementById("payment-message");
+      messageContainer.classList.remove("hidden");
+      messageContainer.textContent = messageText;
+    }
+
+    function setLoading(isLoading) {
+      const submitButton = document.getElementById("submit");
+      const spinner = document.getElementById("spinner");
+      const buttonText = document.getElementById("button-text");
+      submitButton.disabled = isLoading;
+      spinner.classList.toggle("hidden", !isLoading);
+      buttonText.classList.toggle("hidden", isLoading);
+    }
+
+  </script>
+{{ end }}

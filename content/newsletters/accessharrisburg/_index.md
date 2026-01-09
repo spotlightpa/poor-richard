@@ -3,7 +3,6 @@ layout = "individual-newsletter"
 max-width = "715px"
 
 email-false = true
-button-link = "https://buy.stripe.com/9B66oJ5CHeP888q2BQ4ZG00"
 premium-newsletter = true
 
 title = "Insider access, delivered weekly"
@@ -15,23 +14,13 @@ bullets = [
   "Delivered straight to your inbox weekly for just $4/week"
 ]
 
-device-image = "2025/11/01mh-c6ep-7n8t-z112.png"
-device-image-width = 956
-device-image-height = 1712
-
 quote = "Stephen Caruso “clearly is paying attention.”"
 quote-source = "— Bryan Cutler, Pennsylvania State Representative"
-
-gaCategory = "newsletters:accessharrisburg"
-gaForm = "newsletters:accessharrisburg-full"
-hiddenField = "newsletter/accessharrisburg-hidden.html"
 
 occurrence = "Every Thursday"
 blurb = "Be the first to know what’s happening in Harrisburg."
 
 cta = "Subscribe"
-ctaDescription = "$199 for an annual subscription for a single email. For group rates, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
-ctaSecondDescription = "Link will open in Stripe, a secure payment portal."
 
 modal-exclude = true
 
