@@ -25,5 +25,7 @@ In this week’s news quiz: An ‘ugly’ skill games fight as the budget deadli
 
 {{<typeform id="01JYKPQYPHAKMKNP0ERQ6SMK2Q" >}}
 
+<iframe class="airtable-embed" src="https://airtable.com/embed/appkmvUVtIZMpF8NR/pagdsw0ll2dqpu3o6/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (newsletters@spotlightpa.org) with a heads up. And good luck!<strong><em></em></strong>
 
