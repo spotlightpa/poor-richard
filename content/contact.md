@@ -27,4 +27,4 @@ For more information on supporting Spotlight PA, visit our [Ways to Give](/suppo
 
 ## Become a partner
 
-Spotlight PA was created to provide news organizations across Pennsylvania quality, in-depth investigative reporting on the state government and issues of statewide importance. We're eager to expand our network of distribution partners and provide all of our work **free of charge** to other newsrooms. To become a distribution partner, please contact Skyler Cruz at [skyler@spotlightpa.org](mailto:skyler@spotlightpa.org).
+Spotlight PA was created to provide news organizations across Pennsylvania quality, in-depth investigative reporting on the state government and issues of statewide importance. We're eager to expand our network of distribution partners and provide all of our work **free of charge** to other newsrooms. To become a distribution partner, please contact Stephen Kearse at [skearse@spotlightpa.org](mailto:skearse@spotlightpa.org).
