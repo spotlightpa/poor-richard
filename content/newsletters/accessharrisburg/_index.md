@@ -1,10 +1,11 @@
 +++
 layout = "individual-newsletter"
 max-width = "715px"
+aliases = ["/access/"]
 
 email-false = true
-button-link = "https://buy.stripe.com/9B66oJ5CHeP888q2BQ4ZG00"
-hide-from-newsletters = true
+premium-newsletter = true
+button-link = "https://spotlightpa.bluelena.io/index.php?action=social&chash=f4a4da9aa7eadfd23c7bdb7cf57b3112.1814&s=bad97c655476f96a390a72c05a742011"
 
 title = "Insider access, delivered weekly"
 subhead = "Subscribe to **Access Harrisburg** — a premium newsletter with a unique take on state government."
@@ -15,28 +16,19 @@ bullets = [
   "Delivered straight to your inbox weekly for just $4/week"
 ]
 
-device-image = "2025/11/01mh-c6ep-7n8t-z112.png"
-device-image-width = 956
-device-image-height = 1712
-
 quote = "Stephen Caruso “clearly is paying attention.”"
 quote-source = "— Bryan Cutler, Pennsylvania State Representative"
 
-gaCategory = "newsletters:accessharrisburg"
-gaForm = "newsletters:accessharrisburg-full"
-hiddenField = "newsletter/accessharrisburg-hidden.html"
+occurrence = "Every Thursday"
+blurb = "Be the first to know what’s happening in Harrisburg."
 
-occurrence = "Each Thursday"
-blurb = "Be the first to know what’s happening in Harrisburg"
-
-cta = "Subscribe"
-ctaDescription = "$199 for an annual subscription for a single email. For group rates, email [membership@spotlightpa.org](mailto:membership@spotlightpa.org)."
-ctaSecondDescription = "Link will open in Stripe, a secure payment portal."
+cta = "Preview"
 
 modal-exclude = true
 
 linktitle = "Access Harrisburg - Insider Access to PA Politics"
 description = "Get weekly scoops, expert analysis, and more from Capitol reporter Stephen Caruso. Be the first to know what’s happening in Pennsylvania state government."
+teamTitle = "Access Harrisburg"
 
 meetTitle = "Meet Stephen Caruso"
 

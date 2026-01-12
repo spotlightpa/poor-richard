@@ -9,12 +9,12 @@
   "ad-footer-mobile-width": 0,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mm/3wjq/newsmatch-2025-tracker-banners-22-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fm/newsmatch-2025-tracker-banners-4-.gif"
       ]
     }
   ],
@@ -23,12 +23,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania and for a limited time, all gifts will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mm/3wjr/newsmatch-2025-rectangles-1024-512-px-31-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fm/newsmatch-2025-rectangles-1024-512-px-.gif"
       ]
     }
   ],
@@ -45,12 +45,12 @@
   "ad-hp-breaker-mobile-width": 0,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mk/9nhm/newsmatch-2025-doubled-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fn/newsmatch-2025-squares-5-.gif"
       ]
     }
   ],
@@ -85,12 +85,12 @@
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's unmatched reporting and for a limited time, all gifts will be DOUBLED.",
+      "description": "Support Spotlight PA's unmatched reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mk/9nhm/newsmatch-2025-doubled-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mn/d2fn/newsmatch-2025-squares-5-.gif"
       ]
     }
   ],
@@ -116,18 +116,18 @@
   ],
   "sticky-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=corner_sticky",
   "support-active": true,
-  "support-bg-color": "#fae0a0",
+  "support-bg-color": "#f7d5cf",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
   "support-cta": "DONATE NOW »",
-  "support-hed": "Before you go, I have an urgent request...",
+  "support-hed": "Before you go, I have a request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "Please don't skip this 1-minute read. This fundraiser will soon be over, but we haven't yet hit our goal and our DOUBLE match expires soon. \n\nWe grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and thousands of readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. Every contribution makes a difference.\n\n\u003cstrong\u003eJoin them now and for a very limited time, all gifts will be DOUBLED.\u003c/strong\u003e\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and more than 10,000 readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. Every contribution makes a difference. Please make yours now.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
-  "takeover-dek": "Our TRIPLE match expires at 11:59 p.m. TONIGHT. Hurry a gift now to support truly independent, unbiased reporting \u0026 get 3X. ",
+  "takeover-dek": "Our TRIPLE match expires at 11:59 p.m. TONIGHT and we're $5,000 from our goal. Hurry a gift now to support independent, unbiased reporting",
   "takeover-hed": "MIDNIGHT DEADLINE",
-  "takeover-image": "2025/12/01mj-wnkf-8h1w-40nx.png",
+  "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=takeover"
 }

@@ -1,4 +1,5 @@
 +++
+topics = ["Pen State"]
 title = "Penn State Transparency Tracker"
 description = "An ongoing effort by Spotlight PA to document and share the ways in which Penn State University is — and is not — being transparent with the community."
 title-tag = "Transparency Tracker"
@@ -56,7 +57,7 @@ You can do so by signing up for a free account and using **[Protonmail](https://
 
 You can also connect with me on **[Twitter](https://twitter.com/News4Mass)**, over **[email](mailto:wmassey@spotlightpa.org)**, or on Signal, an encrypted phone messaging app, at 445-236-0562.
 
-It’s important you know that we promise confidentiality if you share documents with us. It can be your only interaction with us, or it can be the first of many. You can provide follow-up contact information, or choose not to. 
+It’s important you know that we promise confidentiality if you share documents with us. It can be your only interaction with us, or it can be the first of many. You can provide follow-up contact information, or choose not to.
 
 The best way to start is with a simple conversation, even if it’s off the record (meaning it’s not for publication). I look forward to hearing from you.
 

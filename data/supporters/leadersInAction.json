@@ -190,6 +190,13 @@
       "categoryRank": "5"
     },
     {
+      "display": "John Bryan and Nancy Winkler",
+      "sort": "Bryan",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Burke Foundations",
       "sort": "Burke",
       "url": "",
@@ -344,6 +351,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Katie Evans",
+      "sort": "Evans",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Mary Clements Evans",
       "sort": "Evans",
       "url": "",
@@ -367,6 +381,13 @@
     {
       "display": "George Fernandez",
       "sort": "Fernandez",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Deborah Flint",
+      "sort": "Flint",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -862,6 +883,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Neubauer Family Foundation",
+      "sort": "Neubauer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Nichols",
       "sort": "Nichols",
       "url": "",
@@ -872,8 +900,8 @@
       "display": "Marty O'Brien and Lisa Gordon",
       "sort": "O'Brien",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Kathleen O'Toole and Gary Gray",
@@ -1107,13 +1135,6 @@
       "categoryRank": "3"
     },
     {
-      "display": "Thomas Simpson",
-      "sort": "Simpson",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
       "display": "Joshua Singer",
       "sort": "Singer",
       "url": "",
@@ -1229,8 +1250,8 @@
       "display": "Anne and Richard Umbrecht/Umbrecht Family Foundation",
       "sort": "Umbrecht",
       "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
+      "category": "$50,000 and above",
+      "categoryRank": "1"
     },
     {
       "display": "Christopher and Lee Van de Velde",
