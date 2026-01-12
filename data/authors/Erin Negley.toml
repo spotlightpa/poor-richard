@@ -1,0 +1,11 @@
+name = "Erin Negley"
+firstName = "Erin"
+lastName = "Negley"
+title = "Newsletter Writer"
+email = "erin@spotlightpa.org"
+headshot = "2026/01/01mp-asek-n6m4-kg25.jpeg"
+beat = "Newsletters"
+focusHed = "Writer / Reporter"
+content = "Erin Negley writes newsletters for Spotlight PA. She grew up in Newville, Cumberland County, and graduated from Ithaca College. She’s worked in newsrooms in Hanover, Reading, and Lancaster, covering breaking, community, and business news as well as features. When she’s not fixing up an old house in Lancaster County with her husband and daughter, she loves to spend time outdoors, in the garden, or at a park."
+role = "reporter"
+active = true
