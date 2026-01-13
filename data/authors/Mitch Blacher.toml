@@ -1,0 +1,11 @@
+name = "Mitch Blacher"
+firstName = "Mitch"
+lastName = "Blacher"
+title = "Head of Spotlight PA Studios"
+email = "mitch@spotlightpa.org"
+content = """Mitch Blacher leads the organization’s multimedia production and business innovation efforts. He works across editorial, product, technology, fundraising, and finance teams to build multimedia production systems, distribution partnerships, and earned revenue models that sustain and protect editorial independence.
+
+A veteran investigative journalist, Blacher reported across the United States for more than two decades. He earned his bachelor’s degree in journalism from Indiana University Bloomington and his executive MBA from Villanova University. His work aims to build durable, modern media models that capture the value independent, unbiased journalism creates, so it can be reinvested into expanded reporting in the communities journalists serve."""
+role = "editorial"
+active = true
+headshot = "2026/01/01mp-d88h-17md-ez93.jpeg"
