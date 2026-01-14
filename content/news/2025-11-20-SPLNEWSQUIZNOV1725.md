@@ -22,7 +22,7 @@ topics = ["News Quiz"]
 
 In this week’s news quiz: Protesters arrested at the state Capitol, influencers target a sports betting tax proposal, and Pennsylvania’s first Michelin stars.
 
-{{<embed/raw srcdoc="&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-top: 75.0000%;&#10; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;&#10; border-radius: 8px; will-change: transform;&#34;&gt;&#10;  &lt;iframe loading=&#34;lazy&#34; style=&#34;position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;&#34;&#10;    src=&#34;https://www.canva.com/design/DAG-VASnrwg/C33gO0-tqVF9qAtVy-KqTg/view?embed&#34; allowfullscreen=&#34;allowfullscreen&#34; allow=&#34;fullscreen&#34;&gt;&#10;  &lt;/iframe&gt;&#10;&lt;/div&gt;">}}
+{{<typeform id="01KAEWHTDHKFVCM0GEA5BRY26G" >}}
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (newsletters@spotlightpa.org) with a heads up. And good luck!<strong><em></em></strong>
 
