@@ -184,15 +184,7 @@
       const firstName = document.getElementById("firstName").value.trim();
       const lastName = document.getElementById("lastName").value.trim();
       const email = document.getElementById("email").value.trim();
-      if (!firstName || !lastName) {
-        showMessage("Please enter your first and last name.");
-        return;
-      }
-      if (!email) {
-        showMessage("Please enter your email address.");
-        return;
-      }
-
+      
       await pollUntil(()=> !! elements);
 
       setLoading(true);
