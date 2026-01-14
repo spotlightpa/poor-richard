@@ -9,7 +9,8 @@ export const handler = async (event) => {
 
   try {
     const requestBody = JSON.parse(event.body);
-    const { priceId, email, paymentMethodId } = requestBody;
+    const { priceId, email, paymentMethodId, firstName, lastName } =
+      requestBody;
 
     if (!email && !paymentMethodId) {
       // eslint-disable-next-line no-console
@@ -76,6 +77,7 @@ export const handler = async (event) => {
       } else {
         customer = await stripe.customers.create({
           email: email,
+          name: `${firstName} ${lastName}`,
         });
         // eslint-disable-next-line no-console
         console.log("Created new customer:", customer.id);

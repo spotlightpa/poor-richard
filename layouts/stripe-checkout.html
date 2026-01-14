@@ -35,6 +35,35 @@
     </div>
 
     <form id="payment-form">
+      <div class="mb-4 grid grid-cols-2 gap-4">
+        <div>
+          <label for="firstName" class="mb-1 block text-sm font-medium text-g-9"
+            >First Name</label
+          >
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="First"
+            class="w-full rounded border border-g-4 px-3 py-2 text-base"
+          />
+        </div>
+        <div>
+          <label for="lastName" class="mb-1 block text-sm font-medium text-g-9"
+            >Last Name</label
+          >
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            placeholder="Last"
+            class="w-full rounded border border-g-4 px-3 py-2 text-base"
+          />
+        </div>
+      </div>
+
       <div class="mb-4">
         <label for="email" class="mb-1 block text-sm font-medium text-g-9"
           >Email Address</label
@@ -152,7 +181,13 @@
     document.getElementById("payment-form").addEventListener("submit", async (e) => {
       e.preventDefault();
 
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
       const email = document.getElementById("email").value.trim();
+      if (!firstName || !lastName) {
+        showMessage("Please enter your first and last name.");
+        return;
+      }
       if (!email) {
         showMessage("Please enter your email address.");
         return;
@@ -186,6 +221,8 @@
             priceId: "{{ $priceId }}",
             email: email,
             paymentMethodId: setupIntent.payment_method,
+            firstName: firstName,
+            lastName: lastName,
           }),
         });
 
