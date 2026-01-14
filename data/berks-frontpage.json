@@ -3,14 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-01-12-SPLFARMERRTK1225.md"
+    "content/berks/2026-01-14-SPLCHARTERVOTE0126.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-07-18-SPLSUNHUNT0725.md"
+    "content/berks/2025-08-26-SPLCHARTEREC0825.md",
+    "content/berks/2025-08-18-SPLCHARTER0825.md"
   ],
   "topSlots": [
+    "content/news/2026-01-12-SPLFARMERRTK1225.md",
     "content/berks/2026-01-05-SPLRATSQA0126.md",
-    "content/berks/2025-12-22-SPLERABIES1225.md",
-    "content/berks/2025-12-17-SPBERKSLERTA1225.md"
+    "content/berks/2025-12-22-SPLERABIES1225.md"
   ]
 }
