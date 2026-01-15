@@ -384,9 +384,9 @@
           <h2 class="mt-6 font-sans text-2xl font-bold text-black md:text-3xl">
             {{ .Param "about-title" }}
           </h2>
-          <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "about-description" }}
-          </p>
+          <div class="pt-4 font-serif leading-relaxed text-black">
+            {{ .Param "about-description" | safeHTML }}
+          </div>
         </div>
 
         <div>
@@ -394,7 +394,7 @@
             {{ .Param "questions-title" }}
           </h2>
           <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "questions-description" }}
+            {{ .Param "questions-description" | markdownify }}
           </p>
         </div>
 
@@ -403,7 +403,7 @@
             {{ .Param "tips-title" }}
           </h2>
           <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "tips-description" }}
+            {{ .Param "tips-description" | markdownify }}
           </p>
         </div>
       </div>
