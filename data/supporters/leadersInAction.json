@@ -176,13 +176,6 @@
       "categoryRank": "5"
     },
     {
-      "display": "Jim and Judy Boscov",
-      "sort": "Boscov",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
       "display": "Merrill and Nancy Brenner",
       "sort": "Brenner",
       "url": "",
@@ -253,20 +246,6 @@
       "categoryRank": "4"
     },
     {
-      "display": "Daniel Cohen",
-      "sort": "Cohen",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Eliza Griswold and Steve Coll",
-      "sort": "Coll",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Brenda Daelhousen",
       "sort": "Daelhousen",
       "url": "",
@@ -316,15 +295,15 @@
       "categoryRank": "6"
     },
     {
-      "display": "Hallie and Joshua Donner",
-      "sort": "Donner",
+      "display": "Alfred Douglass",
+      "sort": "Douglass",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
     },
     {
-      "display": "Alfred Douglass",
-      "sort": "Douglass",
+      "display": "Jane Dunshie",
+      "sort": "Dunshie",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -498,13 +477,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Paul Hallacher",
-      "sort": "Hallacher",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Katie Hannon",
       "sort": "Hannon",
       "url": "",
@@ -543,8 +515,8 @@
       "display": "Robyn and Thomas Holder",
       "sort": "Holder",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Ruth and Bruce Hollender",
@@ -645,13 +617,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Roger and Karen Klotz",
-      "sort": "Klotz",
-      "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
-    },
-    {
       "display": "Howard Kolus",
       "sort": "Kolus",
       "url": "",
@@ -673,25 +638,11 @@
       "categoryRank": "6"
     },
     {
-      "display": "Colin Kreitzer",
-      "sort": "Kreitzer",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Beryl Kuhr and Patrick Bair",
       "sort": "Kuhr",
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
-    },
-    {
-      "display": "Balasios Lahaniatis, in honor of Lucine Sihelnik",
-      "sort": "Lahaniatis",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "David Laigaie",
@@ -1135,6 +1086,13 @@
       "categoryRank": "3"
     },
     {
+      "display": "Thomas Simpson",
+      "sort": "Simpson",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Joshua Singer",
       "sort": "Singer",
       "url": "",
@@ -1144,13 +1102,6 @@
     {
       "display": "Bette Brown Slayton Fund",
       "sort": "Slayton",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Susan and Ron Smith",
-      "sort": "Smith",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1296,13 +1247,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Bruce Waldman",
-      "sort": "Waldman",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
-    },
-    {
       "display": "Jean Wallace and Neil Goldstein",
       "sort": "Wallace",
       "url": "",
@@ -1329,13 +1273,6 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
-    },
-    {
-      "display": "Gabriel Weinberg and Lauren McCann",
-      "sort": "Weinberg",
-      "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
     },
     {
       "display": "Millicent \"Pat\" West",
