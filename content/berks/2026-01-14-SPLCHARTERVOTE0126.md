@@ -21,6 +21,24 @@ title-tag = "Reading, PA charter review commission to vote on city changes"
 topics = ["Local Government"]
 +++
 
+<strong>Update, Jan. 16:</strong> The Reading Charter Review Commission decided to move a small number of its ballot amendment proposals forward. The vote on the most significant idea proposed so far for a city-run health department was postponed.
+
+The commission voted to move five proposals to the May ballot. The commission will continue to meet on Thursdays at City Hall through the end of February to vote on other proposals and accept community ideas.
+
+The ballot amendments confirmed for voters to consider in May are the following:
+
+- Individuals should not be disqualified from appointments to an authority, board or commission because of taxes, fines or other amounts owed to the city, provided that at the time of such appointment, evidence exists of satisfactory arrangements for payment of such amounts.
+
+- To merge the Board of Ethics and Charter Board into one body called the Ethics and Charter Board.
+
+- To codify that the Mayor of Reading will appoint one chief of police.
+
+- To allow that the boundaries of City Council districts will be realigned every 10 years based on the US Census as to provide for proportionate representation.
+
+- To include the following in the Preamble of the Home Rule City Charter: “To ensure equitable and inclusive access to all residents without regard to gender, race, ethnicity, language, sexual preference, religion, or immigration status to the city’s governmental programming and services.”
+
+<strong>Original story</strong>
+
 READING — Reading residents have the rare chance to weigh in this week about possible major changes to local government, including the establishment of a public health department and removal of barriers to volunteer for board positions.
 
 The <a href="https://www.spotlightpa.org/berks/2025/08/reading-pennsylvania-charter-review-commission-delay-government-reform-local-government/">Charter Review Commission</a> is scheduled to vote on multiple proposals to change the city’s main governing document on Thursday. If the votes carry, the changes to the charter (which acts as the municipality’s version of the Constitution) would not be guaranteed. Instead, voters will make the final determination in the May primary election.
