@@ -15,7 +15,7 @@ donate = """
 supporters = """
 {{<supporters
   title="Our Current Leaders"
-  category="Individuals and family foundations (2024/25)"
+  category="Individuals and family foundations (2025/26)"
   dataSrc="leadersInAction"
   categorize="true"
 >}}
