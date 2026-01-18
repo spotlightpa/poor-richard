@@ -63,11 +63,6 @@
         </div>
       {{ end }}
 
-
-      <div class="mx-auto w-full md:w-7/12">
-        {{ partial "tw/horizontal-social-buttons.html" . }}
-      </div>
-
       {{ with .Param "deck" }}
         <div class="mx-auto mt-4 w-full md:w-7/12">
           <p class="font-serif text-xl text-white md:text-2xl md:leading-tight">
@@ -379,32 +374,42 @@
 
   <section class="bg-white" data-ga-category="about">
     <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
-      <div class="mx-auto w-full space-y-8 md:w-7/12">
-        <div>
-          <h2 class="mt-6 font-sans text-2xl font-bold text-black md:text-3xl">
-            {{ .Param "about-title" }}
-          </h2>
-          <div class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "about-description" | safeHTML }}
+      <div class="mx-auto flex w-full gap-6 md:w-8/12">
+        <div class="hidden shrink-0 sm:block [&>nav]:static [&>nav]:top-auto">
+          {{ partial "tw/social-buttons.html" . }}
+        </div>
+        <div class="w-full space-y-8">
+          <div>
+            <h2
+              class="mt-6 font-sans text-2xl font-bold text-black md:text-3xl"
+            >
+              {{ .Param "about-title" }}
+            </h2>
+            <div class="pb-4 sm:hidden [&>nav]:static [&>nav]:top-auto">
+              {{ partial "tw/social-buttons.html" . }}
+            </div>
+            <div class="pt-4 font-serif leading-relaxed text-black">
+              {{ .Param "about-description" | safeHTML }}
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
-            {{ .Param "questions-title" }}
-          </h2>
-          <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "questions-description" | markdownify }}
-          </p>
-        </div>
+          <div>
+            <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
+              {{ .Param "questions-title" }}
+            </h2>
+            <p class="pt-4 font-serif leading-relaxed text-black">
+              {{ .Param "questions-description" | markdownify }}
+            </p>
+          </div>
 
-        <div>
-          <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
-            {{ .Param "tips-title" }}
-          </h2>
-          <p class="pt-4 font-serif leading-relaxed text-black">
-            {{ .Param "tips-description" | markdownify }}
-          </p>
+          <div>
+            <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
+              {{ .Param "tips-title" }}
+            </h2>
+            <p class="pt-4 font-serif leading-relaxed text-black">
+              {{ .Param "tips-description" | markdownify }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -419,7 +424,7 @@
       x-intersect.half="$dispatch('intersect:about', $el.id)"
     >
       <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
-        <div class="mx-auto w-full md:w-7/12">
+        <div class="mx-auto w-full sm:pl-[4.5rem] md:w-8/12 xl:pl-[6.5rem]">
           <h2
             class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
           >
