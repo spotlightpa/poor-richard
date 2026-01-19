@@ -339,7 +339,9 @@
             <div class="pt-4 sm:hidden [&>nav]:static [&>nav]:top-auto">
               {{ partial "tw/social-buttons.html" . }}
             </div>
-            <div class="pt-4 font-serif leading-relaxed text-black">
+            <div
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
               {{ .Param "about-description" | safeHTML }}
             </div>
           </div>
@@ -348,7 +350,9 @@
             <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
               {{ .Param "questions-title" }}
             </h2>
-            <p class="pt-4 font-serif leading-relaxed text-black">
+            <p
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
               {{ .Param "questions-description" | markdownify }}
             </p>
           </div>
@@ -357,7 +361,9 @@
             <h2 class="font-sans text-2xl font-bold text-black md:text-3xl">
               {{ .Param "tips-title" }}
             </h2>
-            <p class="pt-4 font-serif leading-relaxed text-black">
+            <p
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
               {{ .Param "tips-description" | markdownify }}
             </p>
           </div>
