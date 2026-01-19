@@ -336,7 +336,7 @@
             >
               {{ .Param "about-title" }}
             </h2>
-            <div class="pt-4 sm:hidden [&>nav]:static [&>nav]:top-auto">
+            <div class="pb-2 sm:hidden [&>nav]:static [&>nav]:top-auto">
               {{ partial "tw/social-buttons.html" . }}
             </div>
             <div
@@ -381,14 +381,21 @@
       x-intersect.half="$dispatch('intersect:about', $el.id)"
     >
       <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
-        <div class="mx-auto w-full md:w-7/12">
-          <h2
-            class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        <div class="mx-auto flex w-full gap-6 md:w-8/12">
+          <div
+            class="hidden shrink-0 opacity-0 sm:block [&>nav]:static [&>nav]:top-auto"
           >
-            Credits
-          </h2>
-          <div class="space-y-8 py-6">
-            {{ . }}
+            {{ partial "tw/social-buttons.html" $ }}
+          </div>
+          <div class="w-full">
+            <h2
+              class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              Credits
+            </h2>
+            <div class="space-y-8 py-6">
+              {{ . }}
+            </div>
           </div>
         </div>
       </div>
