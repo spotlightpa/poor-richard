@@ -88,7 +88,7 @@
         x-init="init()"
       >
         {{ partial "blocks/search.html" (dict
-          "placeholder" (default "Search restaurants" (.Param "search-placeholder"))
+          "placeholder" (default "Search" (.Param "search-desktop-placeholder"))
           "showLocation" (.Param "search-location")
           "context" .
           )

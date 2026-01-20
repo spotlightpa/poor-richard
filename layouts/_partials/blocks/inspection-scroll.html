@@ -140,8 +140,8 @@
 
     <div class="mx-4 mt-3 md:hidden">
       {{ partial "blocks/search.html" (dict
-        "placeholder" "Enter facility name, city, zip"
-        "showLocation" true
+        "placeholder" (default "Search" (.Param "search-placeholder"))
+        "showLocation" (.Param "search-location")
         "context" .
         )
       }}

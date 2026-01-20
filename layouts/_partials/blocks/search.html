@@ -1,7 +1,7 @@
 <div class="relative w-full" x-data="searchUI()" x-init="init()">
   {{ if .showLocation }}
     <button
-      class="absolute bottom-0 left-0 top-0 z-10 flex w-20 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-70"
+      class="absolute bottom-0 left-0 top-0 z-10 flex w-12 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-70 sm:w-14 md:w-20"
       aria-label="Use my location"
       :aria-busy="loadingLocation ? 'true' : 'false'"
       type="button"
@@ -10,7 +10,7 @@
     >
       <svg
         x-show="!loadingLocation"
-        class="h-7 w-7 fill-current text-yellow-9"
+        class="h-6 w-6 fill-current text-yellow-9 sm:h-7 sm:w-7"
         aria-hidden="true"
       >
         {{ partial "helper/svg.html" "crosshairs" }}
@@ -48,13 +48,13 @@
 
   <button
     id="search-button"
-    class="absolute bottom-0 right-0 top-0 z-10 flex w-28 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3"
+    class="absolute bottom-0 right-0 top-0 z-10 flex w-16 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3 sm:w-20 md:w-28"
     aria-label="Search"
     type="button"
     @click="doSearch()"
   >
     <svg
-      class="h-7 w-7 fill-current text-yellow-9"
+      class="h-5 w-5 fill-current text-yellow-9 sm:h-7 sm:w-7"
       viewBox="0 0 24 24"
       aria-hidden="true"
     >
@@ -64,10 +64,10 @@
 
   <div
     class="{{ if .showLocation }}
-      pl-20
+      pl-12 sm:pl-14 md:pl-20
     {{ else }}
       pl-4
-    {{ end }} flex w-full rounded border-2 border-yellow-5 bg-white pr-28"
+    {{ end }} flex w-full rounded border-2 border-yellow-5 bg-white pr-16 sm:pr-20 md:pr-28"
   >
     <input
       id="search-input"
@@ -75,7 +75,7 @@
       x-model="q"
       type="text"
       placeholder="{{ .placeholder }}"
-      class="text-gray-5 placeholder-gray-4 flex-1 px-4 py-3 text-2xl focus:outline-none"
+      class="text-gray-5 placeholder-gray-4 flex-1 px-2 py-3 text-sm focus:outline-none sm:px-4 sm:text-base md:text-lg lg:text-2xl"
       aria-label="Search"
       @keydown.enter.prevent="doSearch()"
     />
