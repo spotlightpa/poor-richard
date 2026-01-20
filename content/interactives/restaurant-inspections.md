@@ -35,7 +35,7 @@ We will continue to update this resource and report on the restaurant inspection
 questions-title = "Questions?"
 questions-description = "Email us at [operations@spotlightpa.org](mailto:operations@spotlightpa.org)"
 
-tips-title = "Send us a tip."
+tips-title = "Send us a tip"
 tips-description = "Fill out a form [here](https://www.spotlightpa.org/tips)."
 
 credits = """
