@@ -152,7 +152,7 @@
                 id="cuisine-filter"
                 class="w-full cursor-pointer appearance-none rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-3 pr-10 font-sans text-base font-semibold text-yellow-9 focus:border-yellow-5 focus:outline-none focus:ring-1 focus:ring-yellow-5"
               >
-                <option value="">All Cuisines TK</option>
+                <option value="">Cuisines TK</option>
                 <option value="american">American</option>
                 <option value="italian">Italian</option>
                 <option value="chinese">Chinese</option>
@@ -922,13 +922,14 @@
         </div>
 
         <div class="mt-3 flex flex-wrap items-center gap-2">
+{{ if .Param "show-alerts-button" }}
           <button class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8">
             <span>Get alerts</span>
             <svg class="h-5 w-5 fill-current md:h-7 md:w-7" aria-hidden="true">
               {{ partial "helper/svg.html" "bell" }}
             </svg>
           </button>
-
+          {{ end }}
         <div class="flex items-center gap-2">
           <button class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share via Email">
             <svg class="h-5 w-5 fill-white" aria-hidden="true">
