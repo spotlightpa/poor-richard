@@ -6,15 +6,16 @@
     "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
   ],
   "featuredStories": [
-    "content/statecollege/2026-01-16-SPLSCBORO0126.md"
+    "content/news/2026-01-20-SPLBBPLAN0126.md"
   ],
   "subfeatures": [
-    "content/statecollege/2025-12-18-SPLSCPOLICE1225.md",
-    "content/statecollege/2026-01-06-SPL3POLICE0126.md"
+    "content/news/2025-09-16-SPLBBAWARDS0925.md",
+    "content/news/2025-06-18-SPLBBCHANGES0625.md",
+    "content/news/2025-06-04-SPLBBGRANTS06025.md"
   ],
   "topSlots": [
+    "content/statecollege/2026-01-16-SPLSCBORO0126.md",
     "content/news/2026-01-16-SPLBOPVAC0126.md",
-    "content/news/2026-01-15-SPLLOCALDATA0225.md",
-    "content/news/2026-01-16-SPLMILKSHAKES0126.md"
+    "content/news/2026-01-15-SPLLOCALDATA0225.md"
   ]
 }
