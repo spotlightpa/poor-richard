@@ -10,7 +10,7 @@
     >
       <svg
         x-show="!loadingLocation"
-        class="h-7 w-7 fill-yellow-9"
+        class="h-7 w-7 fill-current text-yellow-9"
         aria-hidden="true"
       >
         {{ partial "helper/svg.html" "crosshairs" }}
@@ -53,7 +53,11 @@
     type="button"
     @click="doSearch()"
   >
-    <svg class="h-7 w-7 fill-yellow-9" viewBox="0 0 24 24" aria-hidden="true">
+    <svg
+      class="h-7 w-7 fill-current text-yellow-9"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
       {{ partial "helper/svg.html" "search" }}
     </svg>
   </button>

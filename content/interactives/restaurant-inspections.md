@@ -8,8 +8,8 @@ deck = "Free, real-time updates about health inspections at restaurants near you
 
 sign-up-button = "Sign up for alerts"
 search-instructions = "Search by restaurant name, city, or zip across 61 counties"
-search-placeholder = "Search facilities"
-search-desktop-placeholder = "Search facilities"
+search-placeholder = "Enter facility name, city, zip"
+search-desktop-placeholder = "Enter facility name, city, zip"
 search-location = true
 
 [data]

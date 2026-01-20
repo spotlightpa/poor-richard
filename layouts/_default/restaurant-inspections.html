@@ -83,7 +83,7 @@
 
 
       <div
-        class="mx-auto mt-6 w-full md:hidden"
+        class="mx-auto mt-6 hidden w-full md:block md:w-7/12"
         x-data="inspectionsUI()"
         x-init="init()"
       >
@@ -160,7 +160,7 @@
                 <option value="other">Other</option>
               </select>
               <svg
-                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-yellow-9"
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-current text-yellow-9"
               >
                 {{ partial "helper/svg.html" "chevron" }}
               </svg>
@@ -231,7 +231,7 @@
                 <option value="Other">Other</option>
               </select>
               <svg
-                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-yellow-9"
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-current text-yellow-9"
               >
                 {{ partial "helper/svg.html" "chevron" }}
               </svg>
@@ -254,15 +254,6 @@
         <div aria-hidden="true" class="h-full w-3 bg-g-3"></div>
 
         <div class="flex min-h-0 flex-col">
-          <div class="md:bg-white md:p-4 md:shadow">
-            {{ partial "blocks/search.html" (dict
-              "placeholder" (default "Search" (or (.Param "search-desktop-placeholder") (.Param "search-placeholder")))
-              "showLocation" (.Param "search-location")
-              "context" .
-              )
-            }}
-          </div>
-
           <div
             class="relative min-h-0 grow overflow-hidden rounded-t-[40px] bg-g-3 md:rounded-none"
             x-data="customScroll()"

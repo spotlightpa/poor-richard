@@ -138,6 +138,15 @@
       </div>
     </div>
 
+    <div class="mx-4 mt-3 md:hidden">
+      {{ partial "blocks/search.html" (dict
+        "placeholder" "Enter facility name, city, zip"
+        "showLocation" true
+        "context" .
+        )
+      }}
+    </div>
+
     <div class="mt-3 space-y-3 bg-g-3 pb-3">
       {{ partial "inspections-data-loader.html" . }}
 
