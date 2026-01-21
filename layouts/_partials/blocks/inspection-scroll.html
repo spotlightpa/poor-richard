@@ -59,10 +59,10 @@
             @click="open = !open"
             :aria-expanded="open"
             aria-haspopup="menu"
-            class="flex w-full items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+            class="flex w-full items-center gap-2 rounded-lg border border-g-9 bg-g-3 px-6 py-2 font-sans text-xl font-semibold text-g-9 transition hover:bg-g-4"
           >
             <span x-text="label()"></span>
-            <svg class="ml-auto h-5 w-5 fill-yellow-9">
+            <svg class="ml-auto h-5 w-5 fill-g-9">
               {{ partial "helper/svg.html" "filter" }}
             </svg>
           </button>
@@ -71,13 +71,13 @@
             x-show="open"
             x-transition
             @click.outside="open = false"
-            class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-lg border-2 border-yellow-5 bg-white shadow"
+            class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-lg border border-g-9 bg-white shadow"
             role="menu"
           >
             <template x-for="opt in options" :key="opt.value + '::' + opt.text">
               <button
-                class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
-                :class="selectedText === opt.text ? 'font-semibold text-yellow-9' : 'text-black'"
+                class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
+                :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
                 @click="choose(opt.value, opt.text)"
                 role="menuitem"
                 x-text="opt.text"
@@ -104,10 +104,10 @@
           <button
             @click="open = !open"
             :aria-expanded="open"
-            class="flex w-full items-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 px-6 py-2 font-sans text-xl font-semibold text-yellow-9 transition hover:bg-yellow-3"
+            class="flex w-full items-center gap-2 rounded-lg border border-g-9 bg-g-3 px-6 py-2 font-sans text-xl font-semibold text-g-9 transition hover:bg-g-4"
           >
             <span x-text="label"></span>
-            <svg class="ml-auto h-5 w-5 fill-yellow-9">
+            <svg class="ml-auto h-5 w-5 fill-g-9">
               {{ partial "helper/svg.html" "chevron" }}
             </svg>
           </button>
@@ -116,25 +116,24 @@
             x-show="open"
             x-transition
             @click.outside="open = false"
-            class="absolute right-0 z-20 mt-2 w-full rounded-lg border-2 border-yellow-5 bg-white shadow"
+            class="absolute right-0 z-20 mt-2 w-full rounded-lg border border-g-9 bg-white shadow"
           >
             <button
-              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
-              :class="selected==='date' ? 'font-semibold text-yellow-9' : 'text-black'"
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
+              :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
               @click="choose('date')"
             >
               Most Recent
             </button>
             <button
-              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
-              :class="selected==='high-risk' ? 'font-semibold text-yellow-9' : 'text-black'"
-              @click="choose('high-risk')"
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
+              :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
             >
               Highest Risk TK
             </button>
             <button
-              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-yellow-4"
-              :class="selected==='alphabetical' ? 'font-semibold text-yellow-9' : 'text-black'"
+              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
+              :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
               @click="choose('alphabetical')"
             >
               Alphabetical
