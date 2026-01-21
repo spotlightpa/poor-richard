@@ -10,7 +10,7 @@ aliases = ["/jobs/"]
 
 * [Major Gifts Directors, Eastern & Western Pa., Spotlight PA](#major-gifts-directors-eastern--western-pa-spotlight-pa)
 * [Penn State Investigative Reporter, Spotlight PA State College (Guild Position)](#penn-state-investigative-reporter-spotlight-pa-state-college-guild-position)
-* [Local Accountability Reporter, Spotlight PA State College (Guild Position)](#local-accountability-reporter-spotlight-pa-state-college-guild-positiom)
+* [Local Accountability Reporter, Spotlight PA State College (Guild Position)](#local-accountability-reporter-spotlight-pa-state-college-guild-position)
 
 ## Major Gifts Directors, Eastern & Western Pa., Spotlight PA
 
