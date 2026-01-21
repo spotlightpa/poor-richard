@@ -104,43 +104,54 @@
         <div class="flex flex-col px-4 py-3">
           <h3 class="font-sans text-xl font-bold">Sort By</h3>
 
-          <div class="mt-4 hidden space-y-3 md:block">
-            <label
-              class="border-1 flex cursor-pointer items-center gap-3 rounded-lg border-g-9 bg-g-3 px-6 py-3 font-sans text-base font-semibold text-g-9"
-            >
-              <input
-                type="radio"
-                name="sort"
-                value="date"
-                class="h-5 w-5 shrink-0 accent-g-9"
-                checked
-              />
-              <span>Most Recent</span>
-            </label>
+          <div class="mt-4 hidden flex-col gap-3 md:flex">
+            <div class="relative">
+              <select
+                id="date-sort"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+              >
+                <option value="" disabled selected>Inspection Date</option>
+                <option value="date-desc">Newest to Oldest</option>
+                <option value="date-asc">Oldest to Newest</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-current text-g-9"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
 
-            <label
-              class="border-1 flex cursor-pointer items-center gap-3 rounded-lg border-g-9 bg-g-3 px-6 py-3 font-sans text-base font-semibold text-g-9"
-            >
-              <input
-                type="radio"
-                name="sort"
-                value="high-risk"
-                class="h-5 w-5 shrink-0 accent-g-9"
-              />
-              <span>Highest Risk TK</span>
-            </label>
+            <div class="relative">
+              <select
+                id="risk-sort"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+              >
+                <option value="" disabled selected>Violation Risk</option>
+                <option value="risk-desc">Highest to Lowest</option>
+                <option value="risk-asc">Lowest to Highest</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-current text-g-9"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
 
-            <label
-              class="border-1 flex cursor-pointer items-center gap-3 rounded-lg border-g-9 bg-g-3 px-6 py-3 font-sans text-base font-semibold text-g-9"
-            >
-              <input
-                type="radio"
-                name="sort"
-                value="alphabetical"
-                class="h-5 w-5 shrink-0 accent-g-9"
-              />
-              <span>Alphabetical</span>
-            </label>
+            <div class="relative">
+              <select
+                id="name-sort"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+              >
+                <option value="" disabled selected>Facility Name</option>
+                <option value="alpha-asc">A to Z</option>
+                <option value="alpha-desc">Z to A</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 fill-current text-g-9"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
           </div>
 
           <div class="my-6 border-t-2 border-g-2"></div>
@@ -150,9 +161,9 @@
             <div class="relative">
               <select
                 id="cuisine-filter"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-6 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
               >
-                <option value="">Cuisines TK</option>
+                <option value="">Cuisine</option>
                 <option value="american">American</option>
                 <option value="italian">Italian</option>
                 <option value="chinese">Chinese</option>
@@ -169,9 +180,9 @@
             <div class="relative">
               <select
                 id="city-filter"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-6 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
               >
-                <option value="">All Cities</option>
+                <option value="">City</option>
                 <option value="Aliquippa">Aliquippa</option>
                 <option value="Allentown">Allentown</option>
                 <option value="Altoona">Altoona</option>
@@ -240,12 +251,12 @@
 
           <button
             @click="
-          document.getElementById('cuisine-filter').value = '';
-          document.getElementById('city-filter').value = '';
-          currentCity = '';
-          applyFilters();
-        "
-            class="mt-5 w-full rounded border-2 border-g-9 bg-white px-4 py-2 font-sans text-base font-semibold text-g-9 transition-colors duration-200 hover:bg-g-1"
+                    document.getElementById('cuisine-filter').value = '';
+                    document.getElementById('city-filter').value = '';
+                    currentCity = '';
+                    applyFilters();
+                  "
+            class="border-1 mt-5 w-full rounded border-g-9 bg-white px-4 py-2 font-sans text-base font-semibold text-g-9 transition-colors duration-200 hover:bg-g-1"
           >
             Clear
           </button>
@@ -893,8 +904,8 @@
   <div>
     <button
       type="button"
-class="inline-flex items-center font-sans font-bold text-navy hover:text-blue"
-data-action="back-to-results"
+      class="inline-flex items-center font-sans font-bold text-navy hover:text-blue"
+      data-action="back-to-results"
       aria-label="Back to results"
     >
       <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true">

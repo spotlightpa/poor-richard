@@ -91,7 +91,7 @@
           x-data="{
             open: false,
             selected: localStorage.getItem('inspections-sort') || 'date',
-            labelMap: { 'date': 'Most Recent', 'high-risk': 'Highest Risk TK', 'alphabetical': 'Alphabetical' },
+            labelMap: { 'date': 'Inspection Date - Newest to Oldest', 'high-risk': 'Violation Risk - High to Low', 'alphabetical': 'Facility Name - A to Z' },
             get label(){ return 'Sort: ' + (this.labelMap[this.selected] || 'Most Recent'); },
             choose(v){
               this.selected = v;
@@ -123,20 +123,20 @@
               :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
               @click="choose('date')"
             >
-              Most Recent
+              Inspection Date - Newest to Oldest
             </button>
             <button
               class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
               :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
             >
-              Highest Risk TK
+              Violation Risk - Highest to Lowest
             </button>
             <button
               class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
               :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
               @click="choose('alphabetical')"
             >
-              Alphabetical
+              Facility Name - A to Z
             </button>
           </div>
         </div>
