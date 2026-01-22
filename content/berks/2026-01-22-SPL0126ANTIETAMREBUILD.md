@@ -59,11 +59,9 @@ But water doesn’t adhere to lines on a map, experts warned, and floodplains ca
 
 “I think one of the important things to keep in mind is that floodplains are not static. They&#39;re constantly changing, and they change for a variety of reasons, including changes in the topography of the area, changes in the environmental conditions,” said Mathew Sanders, senior officer with the Pew Charitable Trusts&#39; U.S. conservation project, which helps prepare states for disasters.
 
-## Researchers anticipate high-risk flood areas in “riverine and coastal communities will expand by 45% and 55%, respectively, by the end of the century,” the 2017 Pew analysis said.
+Researchers anticipate high-risk flood areas in “riverine and coastal communities will expand by 45% and 55%, respectively, by the end of the century,” the 2017 Pew analysis said.
 
-## 
-
-## Those variables and risks are why best practices call for placing critical facilities and infrastructure outside of both 100-year and 500-year flood zones, Sanders said.
+Those variables and risks are why best practices call for placing critical facilities and infrastructure outside of both 100-year and 500-year flood zones, Sanders said.
 
 In Chester County, the Water Resources Authority recommends floodproofing and other flood mitigation efforts within 500-year flood zones, said Seung Ah Byun, its executive director.
 
