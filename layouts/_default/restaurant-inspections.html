@@ -276,7 +276,7 @@
                     applyFilters();
                     sortCards();
                   "
-            class="mt-8 w-full rounded-md border border-g-3 bg-g-1 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-7 transition-all hover:bg-white hover:text-g-9 hover:shadow-sm"
+            class="mt-8 w-full rounded-md border-2 border-g-3 bg-g-1 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-7 transition-all hover:bg-white hover:text-g-9 hover:shadow-sm"
           >
             Clear all
           </button>
@@ -854,7 +854,9 @@
         },
 
   openDetails(card) {
-
+    document
+      .querySelectorAll(".pagination-controls")
+      .forEach((el) => el.classList.add("hidden"));
 
     const scroller =
     card.closest('[aria-label="Inspection results list"]') || null;
@@ -986,7 +988,17 @@
           </div>
         </div>`;
 
-  listContent?.classList.add("hidden");
+ listContent?.classList.add("hidden");
+
+const mount = card.closest(".inspections-mount");
+if (mount) {
+  mount.classList.add("h-full", "flex", "flex-col");
+  mount.classList.remove("space-y-3");
+}
+
+card.classList.add("h-full", "flex", "flex-col", "flex-1");
+detail.classList.add("flex", "flex-col", "flex-1");
+
 
   detail
     .querySelector('[data-action="back-to-results"]')
@@ -1004,7 +1016,11 @@
   document.getElementById("no-results")?.classList.add("hidden");
 },
 
-    backToResults() {
+backToResults() {
+  document
+    .querySelectorAll(".pagination-controls")
+    .forEach((el) => el.classList.remove("hidden"));
+
       if (!this.activeCard) return;
       const card = this.activeCard;
 
@@ -1032,7 +1048,15 @@
         window.scrollBy(0, delta);
       }
 
-      this.lastReadMoreButton?.focus({ preventScroll: true });
+const mount = card.closest(".inspections-mount");
+if (mount) {
+  mount.classList.remove("h-full", "flex", "flex-col");
+  mount.classList.add("space-y-3");
+}
+card.classList.remove("h-full", "flex", "flex-col", "flex-1");
+
+this.lastReadMoreButton?.focus({ preventScroll: true });
+
       this.activeCard = null;
     },
 
