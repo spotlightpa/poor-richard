@@ -9,7 +9,7 @@
 {{ define "main" }}
   <section class="mt-6 bg-black pb-6">
     <div
-      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-16 md:gap-x-6 md:px-0 lg:gap-x-12"
+      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-8 md:gap-x-6 md:px-0 lg:gap-x-12"
     >
       {{ with .Param "eyebrow" }}
         <div class="mx-auto w-full md:w-7/12">
@@ -100,15 +100,15 @@
   <section class="hidden md:block" x-data="inspectionsUI()" x-init="init()">
     <div class="bg-black pb-8 md:pb-8"></div>
     <div class="w-full bg-white px-4 md:px-0">
-      <div class="grid h-[600px] grid-cols-[1fr_auto_2fr_2fr]">
-        <div class="flex flex-col px-4 py-3">
-          <h3 class="font-sans text-xl font-bold">Sort By</h3>
+      <div class="grid h-[calc(100dvh-120px)] min-h-[500px] grid-cols-[240px_auto_1fr_1fr]">
+        <div class="flex flex-col bg-white px-5 py-6">
+          <h3 class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6">Sort By</h3>
 
           <div class="mt-4 hidden flex-col gap-3 md:flex">
             <div class="relative">
               <select
                 id="date-sort"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-4 bg-white px-4 py-2.5 pr-10 font-sans text-sm text-g-8 shadow-sm transition-all hover:border-g-5 focus:border-g-6 focus:outline-none focus:ring-2 focus:ring-g-2"
               >
                 <option value="" disabled selected hidden>
                   Inspection Date
@@ -126,7 +126,7 @@
             <div class="relative">
               <select
                 id="risk-sort"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-4 bg-white px-4 py-2.5 pr-10 font-sans text-sm text-g-8 shadow-sm transition-all hover:border-g-5 focus:border-g-6 focus:outline-none focus:ring-2 focus:ring-g-2"
               >
                 <option value="" disabled selected hidden>
                   Violation Risk
@@ -144,7 +144,7 @@
             <div class="relative">
               <select
                 id="name-sort"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-4 bg-white px-4 py-2.5 pr-10 font-sans text-sm text-g-8 shadow-sm transition-all hover:border-g-5 focus:border-g-6 focus:outline-none focus:ring-2 focus:ring-g-2"
               >
                 <option value="" disabled selected hidden>Facility Name</option>
                 <option value="alpha-asc">A to Z</option>
@@ -159,13 +159,13 @@
           </div>
 
           <div class="my-6 border-t-2 border-g-2"></div>
-          <h3 class="font-sans text-xl font-bold">Filter</h3>
+          <h3 class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6">Filter</h3>
 
           <div class="mt-4 hidden flex-col gap-3 md:flex">
             <div class="relative">
               <select
                 id="cuisine-filter"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-4 bg-white px-4 py-2.5 pr-10 font-sans text-sm text-g-8 shadow-sm transition-all hover:border-g-5 focus:border-g-6 focus:outline-none focus:ring-2 focus:ring-g-2"
               >
                 <option value="">Cuisine</option>
                 <option value="american">American</option>
@@ -184,7 +184,7 @@
             <div class="relative">
               <select
                 id="city-filter"
-                class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
+                class="w-full cursor-pointer appearance-none rounded-lg border border-g-4 bg-white px-4 py-2.5 pr-10 font-sans text-sm text-g-8 shadow-sm transition-all hover:border-g-5 focus:border-g-6 focus:outline-none focus:ring-2 focus:ring-g-2"
               >
                 <option value="">City</option>
                 <option value="Aliquippa">Aliquippa</option>
@@ -266,48 +266,30 @@
                     applyFilters();
                     sortCards();
                   "
-            class="border-1 mt-5 w-full rounded border-g-9 bg-white px-4 py-2 font-sans text-base font-semibold text-g-9 transition-colors duration-200 hover:bg-g-1"
+            class="mt-6 w-full rounded-lg border border-g-4 bg-white px-4 py-2 font-sans text-sm font-medium text-g-6 transition-all hover:border-g-5 hover:bg-g-1 hover:text-g-8"
           >
-            Clear
+            Clear all
           </button>
         </div>
 
-        <div aria-hidden="true" class="h-full w-3 bg-g-3"></div>
+        <div aria-hidden="true" class="h-full w-px bg-g-4"></div>
 
         <div class="flex min-h-0 flex-col">
           <div
-            class="relative min-h-0 grow overflow-hidden rounded-t-[40px] bg-g-3 md:rounded-none"
+            class="relative min-h-0 grow rounded-t-[40px] bg-g-3 md:rounded-none"
             x-data="customScroll()"
             x-init="init()"
-            @resize.window="update()"
           >
             <div
               x-ref="viewport"
-              class="sb-hide h-full overflow-y-auto bg-white pr-[12px]"
-              @scroll="onScroll()"
+              class="h-full overflow-y-auto bg-white [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
               tabindex="0"
               aria-label="Inspection results list"
             >
               {{ partial "blocks/inspection-scroll.html" . }}
             </div>
 
-            <div
-              class="pointer-events-none absolute inset-y-0 right-0 flex w-[12px] items-stretch"
-              aria-hidden="true"
-            >
-              <div
-                x-ref="track"
-                class="pointer-events-auto relative h-full w-full rounded-none bg-g-4 [box-shadow:inset_0_0_0_1px_rgba(0,0,0,0.06)]"
-                @mousedown.prevent="startDrag($event)"
-                @click.stop="trackJump($event)"
-              >
-                <div
-                  x-ref="thumb"
-                  class="absolute left-0 right-0 w-full rounded-none bg-g-7"
-                  :style="thumbStyle"
-                ></div>
-              </div>
-            </div>
+            
           </div>
         </div>
 
@@ -1134,124 +1116,28 @@
 
     function customScroll() {
       return {
-        thumbTop: 0,
-        thumbH: 32,
-        thumbStyle: "height:32px; transform:translateY(0);",
-        dragging: false,
-        dragStartY: 0,
-        dragStartTop: 0,
-        ro: null,
-        mo: null,
-
         init() {
-          this.update();
-          this.onScroll();
+          const vp = this.$refs.viewport;
+          if (!vp) return;
 
-          this.ro = new ResizeObserver(() => this.update());
-          this.ro.observe(this.$refs.viewport);
+          const gridContainer = vp.closest('.grid');
+          if (!gridContainer) return;
 
-          this.mo = new MutationObserver(() => {
-            requestAnimationFrame(() => this.update());
-          });
+          gridContainer.addEventListener('wheel', (e) => {
+            if (vp.contains(e.target)) return;
 
-          this.mo.observe(this.$refs.viewport, {
-            childList: true,
-            subtree: true,
-            characterData: true,
-          });
+            const scrollable = vp.scrollHeight > vp.clientHeight;
+            if (!scrollable) return;
 
-          window.addEventListener("inspections-data-ready", () => {
-            setTimeout(() => this.update(), 100);
-          });
+            const atTop = vp.scrollTop <= 0;
+            const atBottom = vp.scrollTop + vp.clientHeight >= vp.scrollHeight - 1;
 
-          document.addEventListener("click", (e) => {
-            const isReadMore = e.target.closest(
-              '[aria-label="Read more about this inspection"]',
-            );
-            const isBack = e.target.closest('[data-action="back-to-results"]');
-            if (isReadMore || isBack) {
-              setTimeout(() => this.update(), 50);
+            if ((e.deltaY > 0 && !atBottom) || (e.deltaY < 0 && !atTop)) {
+              e.preventDefault();
+              vp.scrollTop += e.deltaY;
             }
-          });
-        },
-
-        update() {
-          const vp = this.$refs.viewport;
-          const track = this.$refs.track;
-          if (!vp || !track) return;
-
-          const trackH = track.clientHeight;
-          const vh = vp.clientHeight;
-          const sh = vp.scrollHeight;
-
-          if (sh <= vh) {
-            this.thumbH = 0;
-            this.thumbStyle = "height:0; transform:translateY(0);";
-            return;
-          }
-
-          const minThumb = 24;
-          const ratio = vh / sh;
-          this.thumbH = Math.max(minThumb, Math.round(trackH * ratio));
-          this.onScroll();
-        },
-
-        onScroll() {
-          const vp = this.$refs.viewport;
-          const track = this.$refs.track;
-          if (!vp || !track) return;
-
-          const trackH = track.clientHeight;
-          const maxThumbTop = Math.max(0, trackH - this.thumbH);
-          const denom = Math.max(1, vp.scrollHeight - vp.clientHeight);
-          const pct = vp.scrollTop / denom;
-          this.thumbTop = Math.round(maxThumbTop * pct);
-          this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
-        },
-
-        startDrag(e) {
-          if (!e.target || e.target !== this.$refs.thumb) return;
-          this.dragging = true;
-          this.dragStartY = e.clientY;
-          this.dragStartTop = this.thumbTop;
-          const move = (ev) => this.onDrag(ev);
-          const up = () => this.stopDrag(move, up);
-          document.addEventListener("mousemove", move);
-          document.addEventListener("mouseup", up, { once: true });
-        },
-
-        onDrag(ev) {
-          if (!this.dragging) return;
-          const track = this.$refs.track;
-          const trackH = track.clientHeight;
-          const delta = ev.clientY - this.dragStartY;
-          const nextTop = Math.min(
-            Math.max(0, this.dragStartTop + delta),
-            trackH - this.thumbH,
-          );
-          this.thumbTop = nextTop;
-          const vp = this.$refs.viewport;
-          const ratio = nextTop / Math.max(1, trackH - this.thumbH);
-          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
-          this.thumbStyle = `height:${this.thumbH}px; transform:translateY(${this.thumbTop}px);`;
-        },
-
-        stopDrag(move, up) {
-          this.dragging = false;
-          document.removeEventListener("mousemove", move);
-          document.removeEventListener("mouseup", up);
-        },
-
-        trackJump(e) {
-          const track = this.$refs.track;
-          const rect = track.getBoundingClientRect();
-          const y = e.clientY - rect.top - this.thumbH / 2;
-          const trackH = track.clientHeight;
-          const top = Math.min(Math.max(0, y), trackH - this.thumbH);
-          const ratio = top / Math.max(1, trackH - this.thumbH);
-          const vp = this.$refs.viewport;
-          vp.scrollTop = ratio * Math.max(0, vp.scrollHeight - vp.clientHeight);
-        },
+          }, { passive: false });
+        }
       };
     }
   </script>
