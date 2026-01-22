@@ -110,7 +110,9 @@
                 id="date-sort"
                 class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
               >
-                <option value="" disabled selected>Inspection Date</option>
+                <option value="" disabled selected hidden>
+                  Inspection Date
+                </option>
                 <option value="date-desc">Newest to Oldest</option>
                 <option value="date-asc">Oldest to Newest</option>
               </select>
@@ -126,7 +128,9 @@
                 id="risk-sort"
                 class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
               >
-                <option value="" disabled selected>Violation Risk</option>
+                <option value="" disabled selected hidden>
+                  Violation Risk
+                </option>
                 <option value="risk-desc">Highest to Lowest</option>
                 <option value="risk-asc">Lowest to Highest</option>
               </select>
@@ -142,7 +146,7 @@
                 id="name-sort"
                 class="w-full cursor-pointer appearance-none rounded-lg border border-g-9 bg-g-3 px-4 py-3 pr-10 font-sans text-base font-semibold text-g-9 focus:border-g-9 focus:outline-none focus:ring-1 focus:ring-g-9"
               >
-                <option value="" disabled selected>Facility Name</option>
+                <option value="" disabled selected hidden>Facility Name</option>
                 <option value="alpha-asc">A to Z</option>
                 <option value="alpha-desc">Z to A</option>
               </select>
@@ -253,8 +257,14 @@
             @click="
                     document.getElementById('cuisine-filter').value = '';
                     document.getElementById('city-filter').value = '';
+                    document.getElementById('date-sort').selectedIndex = 0;
+                    document.getElementById('risk-sort').selectedIndex = 0;
+                    document.getElementById('name-sort').selectedIndex = 0;
                     currentCity = '';
+                    currentSort = 'date-desc';
+                    localStorage.removeItem('inspections-sort');
                     applyFilters();
+                    sortCards();
                   "
             class="border-1 mt-5 w-full rounded border-g-9 bg-white px-4 py-2 font-sans text-base font-semibold text-g-9 transition-colors duration-200 hover:bg-g-1"
           >
