@@ -59,10 +59,10 @@
             @click="open = !open"
             :aria-expanded="open"
             aria-haspopup="menu"
-            class="flex w-full items-center gap-2 rounded-lg border border-g-9 bg-g-3 px-6 py-2 font-sans text-xl font-semibold text-g-9 transition hover:bg-g-4"
+            class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
           >
             <span x-text="label()"></span>
-            <svg class="ml-auto h-5 w-5 fill-g-9">
+            <svg class="ml-auto h-4 w-4 fill-g-2">
               {{ partial "helper/svg.html" "filter" }}
             </svg>
           </button>
@@ -71,12 +71,12 @@
             x-show="open"
             x-transition
             @click.outside="open = false"
-            class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-lg border border-g-9 bg-white shadow"
+            class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-md border border-g-3 bg-white shadow"
             role="menu"
           >
             <template x-for="opt in options" :key="opt.value + '::' + opt.text">
               <button
-                class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
+                class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
                 :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
                 @click="choose(opt.value, opt.text)"
                 role="menuitem"
@@ -91,8 +91,9 @@
           x-data="{
             open: false,
             selected: localStorage.getItem('inspections-sort') || 'date',
-            labelMap: { 'date': 'Inspection Date - Newest to Oldest', 'high-risk': 'Violation Risk - High to Low', 'alphabetical': 'Facility Name - A to Z' },
-            get label(){ return 'Sort: ' + (this.labelMap[this.selected] || 'Most Recent'); },
+labelMap: { 'date': 'Date', 'high-risk': 'Risk', 'alphabetical': 'Name' },
+get label(){ return 'Sort: ' + (this.labelMap[this.selected] || 'Date'); },
+
             choose(v){
               this.selected = v;
               localStorage.setItem('inspections-sort', v);
@@ -104,10 +105,11 @@
           <button
             @click="open = !open"
             :aria-expanded="open"
-            class="flex w-full items-center gap-2 rounded-lg border border-g-9 bg-g-3 px-6 py-2 font-sans text-xl font-semibold text-g-9 transition hover:bg-g-4"
+            class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
           >
-            <span x-text="label"></span>
-            <svg class="ml-auto h-5 w-5 fill-g-9">
+            <span class="truncate" x-text="label"></span>
+
+            <svg class="ml-auto h-4 w-4 fill-g-7">
               {{ partial "helper/svg.html" "chevron" }}
             </svg>
           </button>
@@ -116,24 +118,26 @@
             x-show="open"
             x-transition
             @click.outside="open = false"
-            class="absolute right-0 z-20 mt-2 w-full rounded-lg border border-g-9 bg-white shadow"
+            class="absolute right-0 z-20 mt-2 w-full rounded-md border border-g-3 bg-white shadow"
           >
             <button
-              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
+              class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
               :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
               @click="choose('date')"
             >
               Inspection Date - Newest to Oldest
             </button>
             <button
-              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
-              :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
+              class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+              :class="selected==='high-risk' ? 'font-semibold text-g-9' : 'text-black'"
+              @click="choose('high-risk')"
             >
               Violation Risk - Highest to Lowest
             </button>
+
             <button
-              class="block w-full px-4 py-3 text-left font-sans text-base hover:bg-g-4"
-              :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
+              class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+              :class="selected==='alphabetical' ? 'font-semibold text-g-9' : 'text-black'"
               @click="choose('alphabetical')"
             >
               Facility Name - A to Z
