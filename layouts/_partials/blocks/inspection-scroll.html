@@ -399,9 +399,9 @@
           numbersContainer.appendChild(ellipsis);
         } else {
           var btn = document.createElement('button');
-          btn.className = pageNum === currentPage
-            ? 'flex h-10 min-w-10 items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 font-sans text-sm font-bold text-yellow-9 transition-all duration-200'
-            : 'flex h-10 min-w-10 items-center justify-center rounded-md border-2 border-transparent px-4 font-sans text-sm font-medium text-g-7 transition-all duration-200 hover:border-g-4 hover:bg-g-2';
+            btn.className = pageNum === currentPage
+            ? 'flex h-10 min-w-10 items-center justify-center rounded-full bg-g-9 px-4 font-sans text-sm font-bold text-white transition-all duration-200'
+            : 'flex h-10 min-w-10 items-center justify-center rounded-full px-4 font-sans text-sm font-medium text-g-7 transition-all duration-200 hover:bg-g-2';
           btn.textContent = pageNum.toLocaleString();
           btn.setAttribute('aria-label', 'Page ' + pageNum.toLocaleString());
           if (pageNum === currentPage) {
