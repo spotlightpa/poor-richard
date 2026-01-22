@@ -143,7 +143,7 @@
       </div>
     </div>
 
-    <div class="mt-3 space-y-3 bg-g-3 pb-3">
+    <div class="bg-g-3">
       {{ partial "inspections-data-loader.html" . }}
 
 <script>
@@ -359,7 +359,7 @@
       if (filteredData.length === 0) return;
 
       var controls = document.createElement('div');
-      controls.className = 'pagination-controls flex items-center justify-center gap-2 bg-white px-4 py-6 shadow';
+      controls.className = 'pagination-controls flex items-center justify-center gap-2 bg-white px-4 py-6 shadow mt-3';
 
      var startItem = (currentPage - 1) * ITEMS_PER_PAGE + 1;
       var endItem = Math.min(currentPage * ITEMS_PER_PAGE, filteredData.length);
@@ -369,17 +369,17 @@
       }
 
       controls.innerHTML = `
-        <button 
+        <button
           class="pagination-btn pagination-prev flex h-10 w-10 items-center justify-center rounded-full border-2 border-g-4 bg-white text-g-7 transition-all duration-200 hover:border-g-6 hover:bg-g-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-g-4 disabled:hover:bg-white"
           ${currentPage === 1 ? 'disabled' : ''}
           aria-label="Previous page"
         >
           <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
         </button>
-        
+
         <div class="pagination-numbers flex items-center gap-1"></div>
-        
-        <button 
+
+        <button
           class="pagination-btn pagination-next flex h-10 w-10 items-center justify-center rounded-full border-2 border-g-4 bg-white text-g-7 transition-all duration-200 hover:border-g-6 hover:bg-g-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-g-4 disabled:hover:bg-white"
           ${currentPage === totalPages ? 'disabled' : ''}
           aria-label="Next page"
@@ -390,7 +390,7 @@
 
       var numbersContainer = controls.querySelector('.pagination-numbers');
       var pageNumbers = getPageNumbers(currentPage, totalPages);
-      
+
       pageNumbers.forEach(function(pageNum) {
         if (pageNum === '...') {
           var ellipsis = document.createElement('span');
@@ -399,7 +399,7 @@
           numbersContainer.appendChild(ellipsis);
         } else {
           var btn = document.createElement('button');
-          btn.className = pageNum === currentPage 
+          btn.className = pageNum === currentPage
             ? 'flex h-10 min-w-10 items-center justify-center rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 font-sans text-sm font-bold text-yellow-9 transition-all duration-200'
             : 'flex h-10 min-w-10 items-center justify-center rounded-md border-2 border-transparent px-4 font-sans text-sm font-medium text-g-7 transition-all duration-200 hover:border-g-4 hover:bg-g-2';
           btn.textContent = pageNum.toLocaleString();
@@ -449,10 +449,10 @@
       } else {
         pages.push(1);
         if (current > 3) pages.push('...');
-        
+
         var start = Math.max(2, current - 1);
         var end = Math.min(total - 1, current + 1);
-        
+
         if (current <= 3) {
           start = 2;
           end = 4;
@@ -461,9 +461,9 @@
           start = total - 3;
           end = total - 1;
         }
-        
+
         for (var j = start; j <= end; j++) pages.push(j);
-        
+
         if (current < total - 2) pages.push('...');
         pages.push(total);
       }
@@ -544,7 +544,7 @@ function rowsToMarkers(rows, startIndex) {
       );
     }
 
-    
+
 
     function showLoadingSpinner() {
       if (document.getElementById('loading-spinner') || isSearching) {
