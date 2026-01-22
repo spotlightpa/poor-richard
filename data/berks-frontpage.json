@@ -3,15 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/berks/2026-01-14-SPLCHARTERVOTE0126.md"
+    "content/berks/2026-01-22-SPL0126ANTIETAMREBUILD.md"
   ],
   "subfeatures": [
-    "content/berks/2025-08-26-SPLCHARTEREC0825.md",
-    "content/berks/2025-08-18-SPLCHARTER0825.md"
+    "content/berks/2025-09-22-SPLMOLD0925.md",
+    "content/berks/2024-11-22-SPLAntietam1124.md",
+    "content/berks/2025-07-14-SPLSCHOOL BUDGETS0725.md"
   ],
   "topSlots": [
+    "content/berks/2026-01-14-SPLCHARTERVOTE0126.md",
     "content/news/2026-01-12-SPLFARMERRTK1225.md",
-    "content/berks/2026-01-05-SPLRATSQA0126.md",
     "content/berks/2025-12-22-SPLERABIES1225.md"
   ]
 }
