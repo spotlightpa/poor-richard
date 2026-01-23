@@ -526,13 +526,15 @@ function rowsToMarkers(rows, startIndex) {
         color: color,
         inspectionId: id,
         popupHTML: `
-          <div class="p-2">
-            <h3 class="font-bold text-sm mb-1">${facilityName}</h3>
-            ${
-              addressLine
-                ? `<p class="text-xs text-g-6">${escapeHTML(addressLine)}</p>`
-                : ""
-            }
+          <div class="min-w-[200px] max-w-[280px] p-3">
+            <div class="mb-2.5">
+              <h3 class="pb-1 font-bold text-base leading-tight text-g-9 mb-1.5">${facilityName}</h3>
+              ${addressLine ? `<p class="pb-1 text-xs text-g-6">${escapeHTML(addressLine)}</p>` : ""}
+            </div>
+              <span class="mt-1 inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${hasViolation ? '#c0392b' : '#1b998b'};">
+                ${hasViolation ? 'Violation Reported' : 'No Violations'}
+              </span>
+            </div>
           </div>
         `,
       };
