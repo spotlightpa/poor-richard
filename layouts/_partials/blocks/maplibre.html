@@ -262,8 +262,21 @@
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
 
+          let popup = null;
           if (m.popupHTML) {
-            marker.setPopup(new maplibregl.Popup().setHTML(m.popupHTML));
+            popup = new maplibregl.Popup({
+              closeButton: false,
+              closeOnClick: false,
+              offset: 25,
+            }).setHTML(m.popupHTML);
+
+            markerEl.addEventListener("mouseenter", () => {
+              popup.setLngLat([m.lon, m.lat]).addTo(this.map);
+            });
+
+            markerEl.addEventListener("mouseleave", () => {
+              popup.remove();
+            });
           }
 
           if (m.inspectionId) {
@@ -298,14 +311,21 @@
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
 
+          let popup = null;
           if (m.popupHTML) {
-            marker.setPopup(
-              new maplibregl.Popup({
-                offset: 25,
-                closeButton: true,
-                closeOnClick: true,
-              }).setHTML(m.popupHTML),
-            );
+            popup = new maplibregl.Popup({
+              closeButton: false,
+              closeOnClick: false,
+              offset: 25,
+            }).setHTML(m.popupHTML);
+
+            markerEl.addEventListener("mouseenter", () => {
+              popup.setLngLat([m.lon, m.lat]).addTo(this.map);
+            });
+
+            markerEl.addEventListener("mouseleave", () => {
+              popup.remove();
+            });
           }
 
           if (m.inspectionId) {
