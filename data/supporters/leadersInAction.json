@@ -29,6 +29,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Thomas Austin",
+      "sort": "Austin",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Dorothy \"Dee\" Aylward",
       "sort": "Aylward",
       "url": "",
@@ -99,6 +106,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Tom and Beth Beckett",
+      "sort": "Beckett",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Diana and Thomas Beausang",
       "sort": "Beausang",
       "url": "",
@@ -113,6 +127,11 @@
       "categoryRank": "6"
     },
     {
+      "display": "Frances Bentkowski",
+      "sort": "Bentkowski",
+      "url": ""
+    },
+    {
       "display": "Paulette Berner, in honor of R Thomas Berner",
       "sort": "Berner",
       "url": "",
@@ -123,8 +142,8 @@
       "display": "R Thomas and Paulette Berner",
       "sort": "Berner",
       "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Georgia Berner",
@@ -172,8 +191,8 @@
       "display": "David Boardman",
       "sort": "Boardman",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Ross and Wendy Born",
@@ -200,8 +219,8 @@
       "display": "Burke Foundations",
       "sort": "Burke",
       "url": "",
-      "category": "$25,000-$49,999",
-      "categoryRank": "2"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Lee Butz",
@@ -251,6 +270,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Jane and David Conley",
+      "sort": "Conley",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Brenda Daelhousen",
@@ -379,6 +405,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Pamela Forsythe",
+      "sort": "Forsythe",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Mary and Kenneth France",
       "sort": "France",
       "url": "",
@@ -398,6 +431,13 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
+    },
+    {
+      "display": "Linda and Blake Gall",
+      "sort": "Gall",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Tom and Valerie Gemmill",
@@ -431,8 +471,8 @@
       "display": "Amanda Branson Gill and Ben Weinberg",
       "sort": "Gill",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Norbert Goldfield",
@@ -501,8 +541,8 @@
       "display": "Karen Harvey",
       "sort": "Harvey",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Ardith Hilliard",
@@ -542,6 +582,20 @@
     {
       "display": "Jun Huangpu and Xi Li",
       "sort": "Huangpu",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Nicholas Hughes",
+      "sort": "Hughes",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Patricia Humphreys",
+      "sort": "Humphreys",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -610,6 +664,20 @@
       "categoryRank": "6"
     },
     {
+      "display": "Harry Keeney",
+      "sort": "Keeney",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Susan and Steven Kelly",
+      "sort": "Kelly",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Laura and Peter Kemper",
       "sort": "Kemper",
       "url": "",
@@ -673,15 +741,8 @@
       "categoryRank": "3"
     },
     {
-      "display": "Adam Leibovich",
-      "sort": "Leibovich",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Dr. Robert Locke",
-      "sort": "Locke",
+      "display": "Kathy Lindman",
+      "sort": "Lindman",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -692,6 +753,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Loviscky/Ohana Foundation",
+      "sort": "Loviscky",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Annie McCain Madonia",
@@ -750,11 +818,18 @@
       "categoryRank": "6"
     },
     {
+      "display": "The Key Foundation/Martin Margolis",
+      "sort": "Margolis",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Richard and Susan Master",
       "sort": "Master",
       "url": "",
-      "category": "$50,000 and above",
-      "categoryRank": "1"
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Sarah McCain",
