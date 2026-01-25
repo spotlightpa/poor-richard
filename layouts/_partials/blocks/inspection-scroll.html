@@ -152,6 +152,7 @@
 <script>
   (function () {
     var ITEMS_PER_PAGE = 10;
+    var groupedFacilities = {};
     var allData = [];
     var filteredData = [];
     var currentPage = 1;
@@ -162,9 +163,10 @@
     window.__inspectionsMarkers = window.__inspectionsMarkers || [];
 
     window.addEventListener("inspections-data-ready", function (event) {
-      allData = event.detail && event.detail.data ? event.detail.data : [];
-      filteredData = allData;
-      currentPage = 1;
+        allData = event.detail && event.detail.data ? event.detail.data : [];
+        groupedFacilities = groupByFacility(allData);
+        filteredData = Object.keys(groupedFacilities);
+        currentPage = 1;
       rendering = false;
       window.__inspectionsMarkers = [];
       clearMounts();
@@ -186,9 +188,18 @@
       performSearch(query, city);
     });
 
+    function groupByFacility(rows) {
+        var grouped = {};
+        rows.forEach(function(row) {
+            var id = row.id || (row.facility + ' — ' + row.address);
+            if (!grouped[id]) grouped[id] = [];
+            grouped[id].push(row);
+        });
+        return grouped;
+    }
+
 function performSearch(query, city) {
       isSearching = true;
-
       clearMounts();
       document.querySelectorAll('.pagination-controls').forEach(function (el) { el.remove(); });
 
@@ -201,7 +212,7 @@ function performSearch(query, city) {
       setTimeout(function() {
         var normalizedQuery = normalizeString(query);
 
-        filteredData = allData.filter(function(row) {
+        var matchingRows = allData.filter(function(row) {
           var searchMatch = true;
           if (normalizedQuery) {
             var searchText = [
@@ -224,9 +235,10 @@ function performSearch(query, city) {
           }
 
           return searchMatch && cityMatch;
-        });
-
-        currentPage = 1;
+          });
+          groupedFacilities = groupByFacility(matchingRows);
+          filteredData = Object.keys(groupedFacilities);
+          currentPage = 1;
         window.__inspectionsMarkers = [];
         clearMounts();
         updateTotalPages();
@@ -328,18 +340,18 @@ function performSearch(query, city) {
     }
 
     function renderPage(page) {
-      if (document.querySelector('.detail-content')) return;
-      if (rendering) return;
-      rendering = true;
-
-      var start = (page - 1) * ITEMS_PER_PAGE;
-      var end = Math.min(start + ITEMS_PER_PAGE, filteredData.length);
-      var slice = filteredData.slice(start, end);
+        if (document.querySelector('.detail-content')) return;
+        if (rendering) return;
+        rendering = true;
+        var start = (page - 1) * ITEMS_PER_PAGE;
+        var end = Math.min(start + ITEMS_PER_PAGE, filteredData.length);
+        var facilityIds = filteredData.slice(start, end);
+        var slice = facilityIds.map(function(id) { return groupedFacilities[id]; });
 
       clearMounts();
       appendCards(slice, start);
-
-      window.__inspectionsMarkers = rowsToMarkers(slice, start);
+      var flatRows = slice.map(function(inspections) { return inspections[0]; });
+      window.__inspectionsMarkers = rowsToMarkers(flatRows, start);
       syncMarkers();
 
       rendering = false;
@@ -481,23 +493,13 @@ function performSearch(query, city) {
       return pages;
     }
 
-function appendCards(rows, startIndex) {
-      var mounts = getMountPoints();
-      if (mounts.length === 0) return;
+    function appendCards(groupedInspections, startIndex) {
+        var mounts = getMountPoints();
+        if (mounts.length === 0) return;
 
-      var groupedByID = {};
-      rows.forEach(function(row) {
-        var id = row.id || (row.facility + ' — ' + row.address);
-        if (!groupedByID[id]) {
-          groupedByID[id] = [];
-        }
-        groupedByID[id].push(row);
-      });
-
-      var cardIndex = 0;
-      mounts.forEach(function (mount) {
-        Object.keys(groupedByID).forEach(function(id) {
-          var inspections = groupedByID[id];
+          var cardIndex = 0;
+          mounts.forEach(function (mount) {
+          groupedInspections.forEach(function(inspections) {
 
           inspections.sort(function(a, b) {
             return new Date(b.inspection_date) - new Date(a.inspection_date);
