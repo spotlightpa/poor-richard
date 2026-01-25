@@ -481,12 +481,31 @@ function performSearch(query, city) {
       return pages;
     }
 
-    function appendCards(rows, startIndex) {
+function appendCards(rows, startIndex) {
       var mounts = getMountPoints();
       if (mounts.length === 0) return;
+
+      var groupedByID = {};
+      rows.forEach(function(row) {
+        var id = row.id || (row.facility + ' — ' + row.address);
+        if (!groupedByID[id]) {
+          groupedByID[id] = [];
+        }
+        groupedByID[id].push(row);
+      });
+
+      var cardIndex = 0;
       mounts.forEach(function (mount) {
-        rows.forEach(function (row, i) {
-          mount.appendChild(createInspectionCard(row, startIndex + i));
+        Object.keys(groupedByID).forEach(function(id) {
+          var inspections = groupedByID[id];
+
+          inspections.sort(function(a, b) {
+            return new Date(b.inspection_date) - new Date(a.inspection_date);
+          });
+          var latestInspection = inspections[0];
+          var card = createInspectionCard(latestInspection, startIndex + cardIndex, inspections);
+          mount.appendChild(card);
+          cardIndex++;
         });
       });
     }
@@ -611,12 +630,14 @@ function rowsToMarkers(rows, startIndex) {
       }
     }
 
-    function createInspectionCard(data, index) {
+function createInspectionCard(data, index, allInspections) {
       var facilityName = data.facility || "Facility";
       var address = data.address || "";
       var city = data.city || "";
       var inspectionDate = data.inspection_date || "";
       var uniqueId = "inspection-" + index;
+
+      allInspections = allInspections || [data];
 
     function simplifyAddress(fullAddress) {
       try {
@@ -651,8 +672,9 @@ function rowsToMarkers(rows, startIndex) {
       card.setAttribute("data-date", inspectionDate);
       card.setAttribute("data-city", city);
       card.setAttribute("data-inspection-id", uniqueId);
-      card.setAttribute("data-violation-description", data.violation_description || "");
+card.setAttribute("data-violation-description", data.violation_description || "");
       card.setAttribute("data-violation-comment", data.comment || "");
+      card.setAttribute("data-all-inspections", JSON.stringify(allInspections));
 
       card.setAttribute("id", uniqueId);
 
