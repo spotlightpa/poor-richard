@@ -69,7 +69,7 @@ The events could not be political, include fundraising, or benefit a councilor d
 
 District 2 Councilor Jaime Baez, Jr., former District 4 Councilor Wes Butler, and District 1 Councilor Vanessa Campos were the top spenders in 2024. Almost all council members spent the full allotted amounts in 2025.
 
-{{<flourish src="visualisation/22084668" >}}
+{{<flourish src="visualisation/27129216" >}}
 
 In 2025, Baez spent the bulk of his portion on his annual Party at the Park event, with private sponsors donating backpacks for students returning to school. Butler donated $2,500 to the Camel Project, an anti-bullying group, for its ChalkPalooza event and the remaining $1,000 for his district’s College Manor Pool party. Campos’ spending was mixed: She donated to various nonprofits’ events, while also spending on food, invitations, and entertainment for district programming.
 
