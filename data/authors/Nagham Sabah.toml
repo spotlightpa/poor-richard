@@ -4,6 +4,9 @@ lastName = "Sabah"
 title = "Finance Director"
 email = "nagham@spotlightpa.org"
 headshot = ""
-content = ""
+content = """Nagham Sabah is the Finance Director at Spotlight PA, where she leads the organization’s financial strategy to support sustainable growth and mission-driven impact. In this role, Nagham oversees accounting, Bookkeeping, financial reporting, compliance, and internal controls to ensure the nonprofit newsroom operates with financial integrity and stewardship that aligns with its commitment to independent public-service journalism.
+
+With more than two decades of nonprofit finance and management experience, Nagham brings deep expertise in guiding organizations through financial planning, systems development, and strategic resource allocation. She has worked in diverse roles including controller, financial manager, and audit manager across mission-driven organizations and has a proven track record of strengthening financial systems to enhance organizational sustainability and effectiveness.
+ """
 active = true
 role = "admin"
