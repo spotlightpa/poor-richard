@@ -282,11 +282,19 @@
     var totalPages = 1;
     var rendering = false;
     var isSearching = false;
+    var hashHandled = false;
 
     window.__inspectionsMarkers = window.__inspectionsMarkers || [];
 
     window.addEventListener("inspections-data-ready", function (event) {
-        allData = event.detail && event.detail.data ? event.detail.data : [];
+
+          if (hashHandled) {
+            return;
+          }
+
+          hashHandled = true;
+
+      allData = event.detail && event.detail.data ? event.detail.data : [];
         groupedFacilities = groupByFacility(allData);
         filteredData = Object.keys(groupedFacilities);
         (function () {
@@ -356,14 +364,57 @@
           window.dispatchEvent(new CustomEvent("inspections-cities-ready", { detail: { cities: list } }));
         })();
 
-        currentPage = 1;
+      currentPage = 1;
       rendering = false;
       window.__inspectionsMarkers = [];
       clearMounts();
       updateTotalPages();
+
+      var hash = window.location.hash.slice(1);
+
+      if (hash) {
+        var foundPage = findPageForHash(hash);
+        if (foundPage > 0) {
+          currentPage = foundPage;
+        }
+      }
+
       renderPage(currentPage);
       renderPaginationControls();
 
+      if (hash) {
+
+        setTimeout(function() {
+          var mobileMounts = Array.from(document.querySelectorAll('.inspections-mount')).filter(function(m) {
+            return m.classList.contains('space-y-3');
+          });
+
+          if (mobileMounts.length === 0) {
+            console.log('[MOBILE HASH] No mobile mount found!');
+            return;
+          }
+
+          var cards = mobileMounts[0].querySelectorAll('[data-card="inspection"]');
+
+          var matchFound = false;
+          for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            var cardId = generateCardIdFromCard(card);
+            if (cardId === hash) {
+              matchFound = true;
+              openMobileCardDetails(card);
+
+              setTimeout(function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }, 200);
+              break;
+            }
+          }
+
+          if (!matchFound) {
+          }
+        }, 500);
+      }
       window.addEventListener("mobile-view-changed", function (e) {
         var view = e.detail && e.detail.view;
         if (view === "map") {
@@ -1014,6 +1065,253 @@ card.setAttribute("data-violation-description", data.violation_description || ""
         readMoreBtn.click();
       }
     });
+  function findPageForHash(hash) {
+
+      for (var i = 0; i < filteredData.length; i++) {
+        var facilityId = filteredData[i];
+        var inspections = groupedFacilities[facilityId];
+        if (inspections && inspections[0]) {
+          var title = (inspections[0].facility || "").trim();
+          var cardId = title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+
+          if (i < 5) {
+            console.log('[MOBILE HASH] Facility', i, '- Title:', title, '- ID:', cardId);
+          }
+
+          if (cardId === hash) {
+            var page = Math.floor(i / ITEMS_PER_PAGE) + 1;
+            console.log('[MOBILE HASH] MATCH! Facility at index', i, 'is on page', page);
+            return page;
+          }
+        }
+      }
+      return -1;
+    }
+
+function generateCardIdFromCard(card) {
+      var title = (card.querySelector("h2")?.textContent || "").trim();
+      var cardId = title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+      return cardId;
+    }
+
+    function openMobileCardDetails(card) {
+
+      document.querySelectorAll('.pagination-controls').forEach(function(el) {
+        el.classList.add('hidden');
+      });
+
+      var allCards = document.querySelectorAll('[data-card="inspection"]');
+      allCards.forEach(function(c) {
+        if (c !== card) {
+          c.style.display = 'none';
+        }
+      });
+
+      var title = (card.querySelector("h2")?.textContent || "").trim();
+      var allInspectionsJSON = card.getAttribute("data-all-inspections");
+      var allInspections = allInspectionsJSON ? JSON.parse(allInspectionsJSON) : [];
+
+      var addressEl = card.querySelector('[data-card="inspection"] .text-g-6 span');
+      var location = addressEl ? addressEl.textContent.trim() : '';
+
+      var violationDesc = card.getAttribute("data-violation-description") || "";
+      var violationComment = card.getAttribute("data-violation-comment") || "";
+
+      var latestViolations = [];
+      if (violationDesc.trim() || violationComment.trim()) {
+        latestViolations.push({ title: violationDesc.trim(), comment: violationComment.trim() });
+      }
+
+      var latestItems = latestViolations.length > 0
+        ? latestViolations.map(function(v) {
+            return `
+              <li class="space-y-2">
+                <div class="flex items-start pt-2 gap-2">
+                  <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
+                    {{ partial "helper/svg.html" "triangle-exclamation" }}
+                  </svg>
+                  <h4 class="font-sans text-lg font-bold text-black break-words">
+                    ${escapeHTML(v.title)}
+                  </h4>
+                </div>
+                ${v.comment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
+                  ${escapeHTML(v.comment)}
+                </p>` : ''}
+              </li>`;
+          }).join('')
+        : `
+          <li class="space-y-2">
+            <div class="flex items-start pt-3 gap-2">
+              <svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;">
+                {{ partial "helper/svg.html" "circle-check" }}
+              </svg>
+              <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
+                No violations reported.
+              </h4>
+            </div>
+          </li>`;
+
+      var olderInspectionsHTML = allInspections.length > 1 ? `
+        <div class="mt-8 pt-6 border-t-2 border-g-3">
+          <h3 class="text-xl font-bold text-g-7 mb-4">Other Inspections</h3>
+          <div class="space-y-6">
+            ${allInspections.slice(1).map(function(inspection) {
+              var hasViolation = (inspection.violation_description || "").trim();
+              return `
+                <div class="bg-g-1 rounded-lg p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                      <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+                        {{ partial "helper/svg.html" "calendar-day" }}
+                      </svg>
+                      <span class="font-sans text-sm font-semibold text-g-7">${escapeHTML(inspection.inspection_date || '')}</span>
+                    </div>
+                    ${hasViolation ? `
+                      <span class="inline-flex items-center gap-1 text-sm font-semibold text-red-7">
+                        <svg class="h-4 w-4 fill-current">
+                          {{ partial "helper/svg.html" "triangle-exclamation" }}
+                        </svg>
+                        Violation
+                      </span>
+                    ` : `
+                      <span class="inline-flex items-center gap-1 text-sm font-semibold" style="color: #1b998b;">
+                        <svg class="h-4 w-4 fill-current">
+                          {{ partial "helper/svg.html" "circle-check" }}
+                        </svg>
+                        No violations
+                      </span>
+                    `}
+                  </div>
+                  ${hasViolation ? `
+                    <div class="space-y-2">
+                      <h4 class="font-sans text-base font-bold text-g-9">${escapeHTML(inspection.violation_description)}</h4>
+                      ${inspection.comment ? `
+                        <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
+                          ${escapeHTML(inspection.comment)}
+                        </p>
+                      ` : ''}
+                    </div>
+                  ` : ''}
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      ` : '';
+
+
+      var detailHTML = `
+        <div class="mobile-detail-view w-full bg-white p-8 shadow">
+          <button
+            type="button"
+            class="inline-flex items-center font-sans font-bold text-navy hover:text-blue mb-4"
+            onclick="closeMobileCardDetails()"
+          >
+            <svg class="h-5 w-5 flex-shrink-0 fill-current">
+              {{ partial "helper/svg.html" "chevron-left" }}
+            </svg>
+            <span class="ml-1.5">Back</span>
+          </button>
+
+          <div class="py-4">
+            <h2 class="text-3xl font-bold text-black break-words">${escapeHTML(title)}</h2>
+            ${location ? `
+              <div class="mt-2 space-y-1 text-g-6">
+                <div class="flex items-center gap-1">
+                  <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+                    {{ partial "helper/svg.html" "map-pin" }}
+                  </svg>
+                  <span>${escapeHTML(location)}</span>
+                </div>
+              </div>
+            ` : ''}
+
+            <div class="mt-4 flex flex-wrap items-center gap-2">
+              <div class="flex items-center gap-2">
+                <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(window.location.href)}'" class="rounded-full p-2 bg-g-9 text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "envelope" }}
+                  </svg>
+                </button>
+                <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="rounded-full p-2 bg-g-9 text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "fb" }}
+                  </svg>
+                </button>
+                <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('${escapeHTML(title)}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "twitter" }}
+                  </svg>
+                </button>
+                <button onclick="navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!') })" class="rounded-full p-2 bg-orange text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "share" }}
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <section class="space-y-3 mt-6">
+            <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
+            <ul class="space-y-3">${latestItems}</ul>
+          </section>
+
+          ${olderInspectionsHTML}
+
+          <div class="pt-5">
+            <a href="https://www.pafoodsafety.pa.gov/web/inspection/publicinspectionsearch.aspx"
+              class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+              <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue">
+                {{ partial "helper/svg.html" "link" }}
+              </svg>
+              <span>Read the full report</span>
+            </a>
+          </div>
+        </div>
+      `;
+
+      var mount = card.closest('.inspections-mount');
+
+      if (mount) {
+        var existingDetail = mount.querySelector('.mobile-detail-view');
+        if (existingDetail) {
+          existingDetail.remove();
+        }
+
+        var detailDiv = document.createElement('div');
+        detailDiv.innerHTML = detailHTML;
+        var detailElement = detailDiv.firstElementChild;
+
+
+        if (detailElement) {
+          mount.insertBefore(detailElement, mount.firstChild);
+        } else {
+          console.log('[MOBILE DETAILS] ERROR: detailElement is null!');
+        }
+      } else {
+        console.log('[MOBILE DETAILS] ERROR: Mount element not found!');
+      }
+
+      console.log('[MOBILE DETAILS] Detail view created');
+    }
+
+  window.closeMobileCardDetails = function() {
+
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+
+      renderPage(currentPage);
+      renderPaginationControls();
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    };
     })();
 </script>
 
