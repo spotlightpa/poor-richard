@@ -156,6 +156,7 @@
     var allData = [];
     var filteredData = [];
     var currentPage = 1;
+    var currentSort = localStorage.getItem("inspections-sort") || "date-desc";
     var totalPages = 1;
     var rendering = false;
     var isSearching = false;
@@ -180,6 +181,14 @@
           syncMarkers();
         }
       });
+    });
+
+    window.addEventListener("set-sort", function(e){
+      currentSort = (e && e.detail && e.detail.value) ? e.detail.value : "date-desc";
+      localStorage.setItem("inspections-sort", currentSort);
+      currentPage = 1;
+      renderPage(currentPage);
+      renderPaginationControls();
     });
 
     window.addEventListener("inspections-search", function(event) {
@@ -343,6 +352,16 @@ function performSearch(query, city) {
         if (document.querySelector('.detail-content')) return;
         if (rendering) return;
         rendering = true;
+        filteredData.sort(function(a, b) {
+        var A = groupedFacilities[a] || [];
+        var B = groupedFacilities[b] || [];
+        var aLatest = A[0] ? new Date(A[0].inspection_date) : new Date(0);
+        var bLatest = B[0] ? new Date(B[0].inspection_date) : new Date(0);
+
+        if (currentSort === "date-asc") return aLatest - bLatest;
+        return bLatest - aLatest;
+      });
+
         var start = (page - 1) * ITEMS_PER_PAGE;
         var end = Math.min(start + ITEMS_PER_PAGE, filteredData.length);
         var facilityIds = filteredData.slice(start, end);
