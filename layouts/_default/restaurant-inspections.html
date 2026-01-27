@@ -145,75 +145,203 @@
               </svg>
             </div>
 
-            <div class="relative">
-              <select
-                id="city-filter"
-                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
-              >
-                <option value="">City</option>
-                <option value="Aliquippa">Aliquippa</option>
-                <option value="Allentown">Allentown</option>
-                <option value="Altoona">Altoona</option>
-                <option value="Arnold">Arnold</option>
-                <option value="Beaver Falls">Beaver Falls</option>
-                <option value="Bethlehem">Bethlehem</option>
-                <option value="Bradford">Bradford</option>
-                <option value="Butler">Butler</option>
-                <option value="Carbondale">Carbondale</option>
-                <option value="Chester">Chester</option>
-                <option value="Clairton">Clairton</option>
-                <option value="Coatesville">Coatesville</option>
-                <option value="Connellsville">Connellsville</option>
-                <option value="Corry">Corry</option>
-                <option value="DuBois">DuBois</option>
-                <option value="Duquesne">Duquesne</option>
-                <option value="Easton">Easton</option>
-                <option value="Erie">Erie</option>
-                <option value="Farrell">Farrell</option>
-                <option value="Franklin">Franklin</option>
-                <option value="Greensburg">Greensburg</option>
-                <option value="Harrisburg">Harrisburg</option>
-                <option value="Hazleton">Hazleton</option>
-                <option value="Hermitage">Hermitage</option>
-                <option value="Jeannette">Jeannette</option>
-                <option value="Johnstown">Johnstown</option>
-                <option value="Lancaster">Lancaster</option>
-                <option value="Lebanon">Lebanon</option>
-                <option value="Lock Haven">Lock Haven</option>
-                <option value="Lower Burrell">Lower Burrell</option>
-                <option value="McKeesport">McKeesport</option>
-                <option value="Meadville">Meadville</option>
-                <option value="Monessen">Monessen</option>
-                <option value="Monongahela">Monongahela</option>
-                <option value="Nanticoke">Nanticoke</option>
-                <option value="New Castle">New Castle</option>
-                <option value="New Kensington">New Kensington</option>
-                <option value="Oil City">Oil City</option>
-                <option value="Parker">Parker</option>
-                <option value="Philadelphia">Philadelphia</option>
-                <option value="Pittsburgh">Pittsburgh</option>
-                <option value="Pittston">Pittston</option>
-                <option value="Pottsville">Pottsville</option>
-                <option value="Reading">Reading</option>
-                <option value="Scranton">Scranton</option>
-                <option value="Shamokin">Shamokin</option>
-                <option value="Sharon">Sharon</option>
-                <option value="St. Marys">St. Marys</option>
-                <option value="Sunbury">Sunbury</option>
-                <option value="Titusville">Titusville</option>
-                <option value="Uniontown">Uniontown</option>
-                <option value="Warren">Warren</option>
-                <option value="Washington">Washington</option>
-                <option value="Wilkes-Barre">Wilkes-Barre</option>
-                <option value="Williamsport">Williamsport</option>
-                <option value="York">York</option>
-                <option value="Other">Other</option>
+            <div
+              class="relative"
+              x-data="{
+                open: false,
+                selectedText: '',
+                query: '',
+                optionsAll: [],
+                optionsTop: [],
+                optionsShown: [],
+                label() { return this.selectedText || 'All Cities'; },
+                normalize(s) {
+                  return String(s || '')
+                    .toLowerCase()
+                    .replace(/[^a-z0-9\s]/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+                },
+                dist(a, b) {
+                  a = this.normalize(a); b = this.normalize(b);
+                  if (!a && !b) return 0;
+                  if (!a) return b.length;
+                  if (!b) return a.length;
+                  var m = a.length, n = b.length;
+                  var dp = new Array(n + 1);
+                  for (var j = 0; j <= n; j++) dp[j] = j;
+                  for (var i = 1; i <= m; i++) {
+                    var prev = dp[0];
+                    dp[0] = i;
+                    for (var j2 = 1; j2 <= n; j2++) {
+                      var tmp = dp[j2];
+                      var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
+                      dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + cost);
+                      prev = tmp;
+                    }
+                  }
+                  return dp[n];
+                },
+                syncShown() {
+                  var q = this.normalize(this.query);
+                  if (!q) {
+                    this.optionsShown = this.optionsTop.slice(0, 20);
+                    return;
+                  }
+                  var hits = [];
+                  var exactMatches = [];
+                  var partialMatches = [];
+                  
+                  for (var i = 0; i < this.optionsAll.length; i++) {
+                    var opt = this.optionsAll[i];
+                    var normalized = this.normalize(opt.text);
+                    
+                    if (normalized === q) {
+                      exactMatches.push(opt);
+                    } else if (normalized.includes(q)) {
+                      partialMatches.push(opt);
+                    }
+                  }
+                  
+                  hits = exactMatches.concat(partialMatches);
+                  
+                  if (hits.length === 0) {
+                    for (var k = 0; k < this.optionsAll.length; k++) {
+                      var opt2 = this.optionsAll[k];
+                      var a = this.normalize(opt2.text);
+                      if (!a) continue;
+                      if (a.charAt(0) !== q.charAt(0)) continue;
+                      if (Math.abs(a.length - q.length) > 4) continue;
+                      if (this.dist(a, q) <= 3) {
+                        hits.push(opt2);
+                      }
+                    }
+                  }
+                  
+                  this.optionsShown = hits.slice(0, 20);
+                },
+                init() {
+                  const sel = document.getElementById('city-filter');
+                  const baseOptions = Array.from(sel?.options || []).map(o => ({ value: o.value, text: o.text }));
+                  this.optionsAll = baseOptions;
+                  this.optionsTop = baseOptions.slice(0, 20);
+                  if (sel) this.selectedText = sel.options[sel.selectedIndex]?.text || '';
+
+                  this.syncShown();
+
+                  window.addEventListener('inspections-cities-ready', (e) => {
+                    const list = (e.detail && e.detail.cities) ? e.detail.cities : [];
+                    this.optionsAll = list.map(x => ({ value: x.value, text: x.text }));
+                    this.optionsTop = this.optionsAll.slice(0, 20);
+                    this.query = '';
+                    this.syncShown();
+                  });
+
+                  window.addEventListener('inspections-search', (e) => {
+                    const city = e.detail?.city || '';
+                    if (!city) {
+                      this.selectedText = '';
+                      return;
+                    }
+                    const match = this.optionsAll.find(o =>
+                      this.normalize(o.value) === this.normalize(city) ||
+                      this.normalize(o.text) === this.normalize(city)
+                    );
+                    this.selectedText = match ? match.text : city;
+                  });
+
+                  sel?.addEventListener('change', () => {
+                    this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : '';
+                  });
+                },
+                choose(value, text) {
+                  const sel = document.getElementById('city-filter');
+                  const v = (value || '').trim();
+                  const t = (text || value || '').trim();
+
+                  if (sel) {
+                    const exists = Array.from(sel.options || []).some(o =>
+                      String(o.value || '').toLowerCase() === String(v).toLowerCase()
+                    );
+
+                    if (!exists && v) {
+                      const opt = document.createElement('option');
+                      opt.value = v;
+                      opt.text = t || v;
+                      sel.appendChild(opt);
+                    }
+
+                    sel.value = v;
+                    sel.dispatchEvent(new Event('change', { bubbles: true }));
+                  }
+
+                  this.selectedText = t;
+                  this.open = false;
+                  this.query = '';
+                  this.syncShown();
+                }
+              }"
+            >
+              <select id="city-filter" class="hidden">
+                <option value="">All Cities</option>
               </select>
+
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                aria-haspopup="menu"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <span x-text="label()"></span>
+              </button>
               <svg
                 class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
               >
                 {{ partial "helper/svg.html" "chevron" }}
               </svg>
+
+              <div
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute left-0 z-20 mt-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
+                role="menu"
+              >
+                <div class="border-b border-g-2 p-3">
+                  <div class="font-sans text-xs font-semibold text-g-6">
+                    Showing top 20. Type to search all cities.
+                  </div>
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
+                    placeholder="Search city…"
+                    x-model="query"
+                    @input="syncShown()"
+                  />
+                </div>
+
+                <div class="max-h-72 overflow-auto">
+                  <template
+                    x-for="opt in optionsShown"
+                    :key="opt.value + '::' + opt.text"
+                  >
+                    <button
+                      class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                      :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
+                      @click="choose(opt.value, opt.text)"
+                      role="menuitem"
+                      x-text="opt.text"
+                    ></button>
+                  </template>
+
+                  <div
+                    x-show="optionsShown.length === 0"
+                    class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
+                  >
+                    No matches. Try a different spelling.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -375,64 +503,6 @@
         dataLoaded: false,
         currentSort: "date",
         currentCity: "",
-        paCities: [
-          "Aliquippa",
-          "Allentown",
-          "Altoona",
-          "Arnold",
-          "Beaver Falls",
-          "Bethlehem",
-          "Bradford",
-          "Butler",
-          "Carbondale",
-          "Chester",
-          "Clairton",
-          "Coatesville",
-          "Connellsville",
-          "Corry",
-          "DuBois",
-          "Duquesne",
-          "Easton",
-          "Erie",
-          "Farrell",
-          "Franklin",
-          "Greensburg",
-          "Harrisburg",
-          "Hazleton",
-          "Hermitage",
-          "Jeannette",
-          "Johnstown",
-          "Lancaster",
-          "Lebanon",
-          "Lock Haven",
-          "Lower Burrell",
-          "McKeesport",
-          "Meadville",
-          "Monessen",
-          "Monongahela",
-          "Nanticoke",
-          "New Castle",
-          "New Kensington",
-          "Oil City",
-          "Parker",
-          "Philadelphia",
-          "Pittsburgh",
-          "Pittston",
-          "Pottsville",
-          "Reading",
-          "Scranton",
-          "Shamokin",
-          "Sharon",
-          "St. Marys",
-          "Sunbury",
-          "Titusville",
-          "Uniontown",
-          "Warren",
-          "Washington",
-          "Wilkes-Barre",
-          "Williamsport",
-          "York",
-        ],
 
     init() {
       const noResultsEl = document.getElementById("no-results");
@@ -477,6 +547,8 @@
         this.refreshCards();
         this.applyFilters();
       });
+
+
 
       if (!this.initializedDelegates) {
         document.addEventListener("click", (e) => {
@@ -718,7 +790,7 @@ initSortListeners() {
               .trim();
           this.cards.forEach((card) => {
             this.index.set(card, norm(card.dataset.index || card.textContent));
-            const city = this.extractCity(card);
+            const city = card.dataset.city || "";
             this.cityMap.set(card, city);
           });
           if (this.dataLoaded) {
@@ -727,35 +799,7 @@ initSortListeners() {
           }
         },
 
-        extractCity(card) {
-          if (card.dataset.city) return card.dataset.city.trim();
-          const spans = card.querySelectorAll(".list-content span");
-          for (const span of spans) {
-            const text = span.textContent;
-            if (text && text.includes(",")) {
-              const parts = text.split(",");
-              if (parts.length >= 2) {
-                const potentialCity = parts[parts.length - 1].trim();
-                const match = this.paCities.find((city) =>
-                  potentialCity.toLowerCase().includes(city.toLowerCase()),
-                );
-                if (match) return match;
-              }
-            }
-          }
-          return "";
-        },
 
-        getCityCategory(city) {
-          if (!city) return "Other";
-          const normalizedCity = city.trim();
-          const match = this.paCities.find(
-            (paCity) =>
-              normalizedCity.toLowerCase() === paCity.toLowerCase() ||
-              normalizedCity.toLowerCase().includes(paCity.toLowerCase()),
-          );
-          return match || "Other";
-        },
 
         sortCards() {
           if (this.cards.length === 0) return;
@@ -832,6 +876,26 @@ initSortListeners() {
             .trim();
         },
 
+        levenshtein(a, b) {
+          if (!a && !b) return 0;
+          if (!a) return b.length;
+          if (!b) return a.length;
+          const m = a.length, n = b.length;
+          const dp = new Array(n + 1);
+          for (let j = 0; j <= n; j++) dp[j] = j;
+          for (let i = 1; i <= m; i++) {
+            let prev = dp[0];
+            dp[0] = i;
+            for (let j = 1; j <= n; j++) {
+              const tmp = dp[j];
+              const cost = a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1;
+              dp[j] = Math.min(dp[j] + 1, dp[j - 1] + 1, prev + cost);
+              prev = tmp;
+            }
+          }
+          return dp[n];
+        },
+
         syncHidden(card) {
           const hide =
             card.classList.contains("hidden-by-search") ||
@@ -879,11 +943,20 @@ initSortListeners() {
             let cityHit = true;
             if (this.currentCity) {
               const cardCity = this.cityMap.get(card) || "";
-              const cardCityCategory = this.getCityCategory(cardCity);
-              if (this.currentCity === "Other") {
-                cityHit = cardCityCategory === "Other";
+              const nCity = this.norm(this.currentCity);
+              const nCardCity = this.norm(cardCity);
+
+              if (nCity === nCardCity) {
+                cityHit = true;
               } else {
-                cityHit = cardCityCategory === this.currentCity;
+                if (nCity.charAt(0) !== nCardCity.charAt(0)) {
+                  cityHit = false;
+                } else if (Math.abs(nCity.length - nCardCity.length) > 4) {
+                  cityHit = false;
+                } else {
+                  const dist = this.levenshtein(nCity, nCardCity);
+                  cityHit = dist <= 3;
+                }
               }
             }
             card.classList.toggle("hidden-by-city", !cityHit);
