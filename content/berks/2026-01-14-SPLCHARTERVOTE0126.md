@@ -21,6 +21,14 @@ title-tag = "Reading, PA charter review commission to vote on city changes"
 topics = ["Local Government"]
 +++
 
+<strong>Update, Jan. 23: </strong>City of Reading voters will decide this year on the future of a city public health department following a vote from the Charter Review Commission.
+
+The commission moved the ballot proposal forward after much debate. If voters approve, the proposal will require the city to establish a Department of Public Health in the following two years. The commission also approved ballot questions that could increase the term of the city clerk to five years and disallow the clerk from serving in political party leadership; and disallow any City Council member from acting as a voting member of a city board, authority, or commission.
+
+The commission surveyed an unknown number of residents over the past five months to collect ideas for ballot amendments, but it has not yet submitted the survey results to the selected Alvernia University professor for analysis. Chair Evelyn Morrison said she planned to meet with the professor this week.
+
+The commission has until Feb. 17 to submit any remaining ballot proposals for the May ballot. The commission can also vote to hold some ballot questions for the general election, and it has discussed deferring the question of the health department until November.
+
 <strong>Update, Jan. 16:</strong> The Reading Charter Review Commission decided to move a small number of its ballot amendment proposals forward. The vote on the most significant idea proposed so far for a city-run health department was postponed.
 
 The commission voted to move five proposals to the May ballot. The commission will continue to meet on Thursdays at City Hall through the end of February to vote on other proposals and accept community ideas.
