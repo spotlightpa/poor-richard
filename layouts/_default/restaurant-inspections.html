@@ -514,35 +514,110 @@
           });
         },
 
-        initSortListeners() {
-          const sortRadios = document.querySelectorAll('input[name="sort"]');
+initSortListeners() {
+  const dateSel = document.getElementById("date-sort");
+  const riskSel = document.getElementById("risk-sort");
+  const nameSel = document.getElementById("name-sort");
 
-          const savedSort = localStorage.getItem("inspections-sort") || this.currentSort || "date";
-          sortRadios.forEach((r) => {
-            r.checked = r.value === savedSort;
-          });
-          this.currentSort = savedSort;
+  const clearOtherSelects = (keep) => {
+    if (keep !== "date" && dateSel) dateSel.selectedIndex = 0;
+    if (keep !== "risk" && riskSel) riskSel.selectedIndex = 0;
+    if (keep !== "name" && nameSel) nameSel.selectedIndex = 0;
+  };
 
-          sortRadios.forEach((radio) => {
-            radio.addEventListener("change", (e) => {
-              if (e.target.checked) {
-                this.currentSort = e.target.value;
-                localStorage.setItem("inspections-sort", this.currentSort);
-                this.sortCards();
-                window.dispatchEvent(
-                  new CustomEvent("set-sort", { detail: { value: this.currentSort } })
-                );
-              }
-            });
-          });
-        },
+  const applySortValue = (v) => {
+    if (!v) return;
+    this.currentSort = v;
+    localStorage.setItem("inspections-sort", v);
+    this.sortCards();
+    window.dispatchEvent(new CustomEvent("set-sort", { detail: { value: v } }));
+    this.syncDesktopSortUI(v);
+  };
 
-        syncDesktopSortUI(value) {
-          const sortRadios = document.querySelectorAll('input[name="sort"]');
-          sortRadios.forEach((r) => {
-            r.checked = r.value === value;
-          });
-        },
+  if (dateSel) {
+    dateSel.addEventListener("change", (e) => {
+      clearOtherSelects("date");
+      applySortValue(e.target.value);
+    });
+  }
+
+  if (riskSel) {
+    riskSel.addEventListener("change", (e) => {
+      clearOtherSelects("risk");
+      applySortValue(e.target.value);
+    });
+  }
+
+  if (nameSel) {
+    nameSel.addEventListener("change", (e) => {
+      clearOtherSelects("name");
+      applySortValue(e.target.value);
+    });
+  }
+
+  const sortRadios = document.querySelectorAll('input[name="sort"]');
+  const savedSort =
+    localStorage.getItem("inspections-sort") || this.currentSort || "date-desc";
+
+  sortRadios.forEach((r) => {
+    const v = r.value;
+    r.checked =
+      v === savedSort ||
+      (savedSort === "date-desc" && v === "date") ||
+      (savedSort === "alpha-asc" && v === "alphabetical") ||
+      (savedSort === "risk-desc" && v === "high-risk");
+  });
+
+  this.currentSort = savedSort;
+  this.syncDesktopSortUI(savedSort);
+
+  sortRadios.forEach((radio) => {
+    radio.addEventListener("change", (e) => {
+      if (!e.target.checked) return;
+
+      const mapped =
+        e.target.value === "date"
+          ? "date-desc"
+          : e.target.value === "alphabetical"
+            ? "alpha-asc"
+            : e.target.value === "high-risk"
+              ? "risk-desc"
+              : e.target.value;
+
+      applySortValue(mapped);
+    });
+  });
+},
+
+    syncDesktopSortUI(value) {
+
+      const sortRadios = document.querySelectorAll('input[name="sort"]');
+      sortRadios.forEach((r) => {
+        r.checked =
+          r.value === value ||
+          (value === "date-desc" && r.value === "date") ||
+          (value === "alpha-asc" && r.value === "alphabetical") ||
+          (value === "risk-desc" && r.value === "high-risk");
+      });
+
+      const dateSel = document.getElementById("date-sort");
+      const riskSel = document.getElementById("risk-sort");
+      const nameSel = document.getElementById("name-sort");
+
+      if (dateSel && (value === "date-desc" || value === "date-asc")) {
+        dateSel.value = value;
+        if (riskSel) riskSel.selectedIndex = 0;
+        if (nameSel) nameSel.selectedIndex = 0;
+      } else if (riskSel && (value === "risk-desc" || value === "risk-asc")) {
+        riskSel.value = value;
+        if (dateSel) dateSel.selectedIndex = 0;
+        if (nameSel) nameSel.selectedIndex = 0;
+      } else if (nameSel && (value === "alpha-asc" || value === "alpha-desc")) {
+        nameSel.value = value;
+        if (dateSel) dateSel.selectedIndex = 0;
+        if (riskSel) riskSel.selectedIndex = 0;
+      }
+    },
 
 
         initFilterListeners() {
@@ -696,19 +771,34 @@
             const sorted = [...cards];
             switch (this.currentSort) {
               case "date":
-                sorted.sort(
-                  (a, b) =>
-                    this.getInspectionDate(b) - this.getInspectionDate(a),
-                );
+              case "date-desc":
+                sorted.sort((a, b) => this.getInspectionDate(b) - this.getInspectionDate(a));
                 break;
+
+              case "date-asc":
+                sorted.sort((a, b) => this.getInspectionDate(a) - this.getInspectionDate(b));
+                break;
+
               case "alphabetical":
+              case "alpha-asc":
                 sorted.sort((a, b) => {
                   const nameA = this.getFacilityName(a).toLowerCase();
                   const nameB = this.getFacilityName(b).toLowerCase();
                   return nameA.localeCompare(nameB);
                 });
                 break;
+
+              case "alpha-desc":
+                sorted.sort((a, b) => {
+                  const nameA = this.getFacilityName(a).toLowerCase();
+                  const nameB = this.getFacilityName(b).toLowerCase();
+                  return nameB.localeCompare(nameA);
+                });
+                break;
+
               case "high-risk":
+              case "risk-desc":
+              case "risk-asc":
                 break;
             }
             sorted.forEach((card) => container.appendChild(card));
