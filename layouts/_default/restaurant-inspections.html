@@ -1119,7 +1119,8 @@ initSortListeners() {
         </div>
 
         <p class="mt-2 w-full text-sm font-sans text-g-6">
-          Receive an email when new reports are available for this facility.
+          {{ if .Param "show-alerts-button" }}Receive an email when new reports are available for this facility.{{ end }}
+
         </p>
       </div>
             </div>
