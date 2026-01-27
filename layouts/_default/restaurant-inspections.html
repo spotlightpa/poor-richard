@@ -520,6 +520,7 @@
           noResultsEl.classList.add("hidden");
         }
         this.sortCards();
+        this.checkHashAndOpenCard();
       });
 
       if (
@@ -534,6 +535,8 @@
       this.initFilterListeners();
       this.initCityTypeahead();
       this.initMapMarkers();
+
+      setTimeout(() => this.checkHashAndOpenCard(), 100);
 
       window.addEventListener("set-sort", (e) => {
         const v = (e && e.detail && e.detail.value) || "date";
@@ -968,6 +971,24 @@ initSortListeners() {
           const noResultsEl = document.getElementById("no-results");
           if (noResultsEl)
             noResultsEl.classList.toggle("hidden", visible !== 0);
+},
+
+        generateCardId(card) {
+          const title = (card.querySelector("h2")?.textContent || "").trim();
+          return title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+        },
+
+        checkHashAndOpenCard() {
+          const hash = window.location.hash.slice(1);
+          if (!hash) return;
+
+          const card = this.cards.find(c => this.generateCardId(c) === hash);
+          if (card) {
+            setTimeout(() => this.openDetails(card), 200);
+          }
         },
 
   openDetails(card) {
@@ -1073,22 +1094,22 @@ initSortListeners() {
           </button>
           {{ end }}
         <div class="flex items-center gap-2">
-          <button class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share via Email">
+          <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(window.location.href)}'" class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share via Email">
             <svg class="h-5 w-5 fill-white" aria-hidden="true">
               {{ partial "helper/svg.html" "envelope" }}
             </svg>
           </button>
-          <button class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share on Facebook">
+          <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share on Facebook">
             <svg class="h-5 w-5 fill-white" aria-hidden="true">
               {{ partial "helper/svg.html" "fb" }}
             </svg>
           </button>
-          <button class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share on X">
+          <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('${this.escapeHTML(title)}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share on X">
             <svg class="h-5 w-5 fill-white" aria-hidden="true">
               {{ partial "helper/svg.html" "twitter" }}
             </svg>
           </button>
-          <button class="rounded-full p-2 bg-orange text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Copy link">
+          <button onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))" class="rounded-full p-2 bg-orange text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Copy link">
             <svg class="h-5 w-5 fill-white" aria-hidden="true">
               {{ partial "helper/svg.html" "share" }}
             </svg>
@@ -1144,10 +1165,10 @@ detail.classList.add("flex", "flex-col", "flex-1");
     window.scrollBy(0, delta);
   }
 
-  this.activeCard = card;
+this.activeCard = card;
+  window.location.hash = this.generateCardId(card);
   document.getElementById("no-results")?.classList.add("hidden");
 },
-
 backToResults() {
   document
     .querySelectorAll(".pagination-controls")
@@ -1190,8 +1211,8 @@ card.classList.remove("h-full", "flex", "flex-col", "flex-1");
 this.lastReadMoreButton?.focus({ preventScroll: true });
 
       this.activeCard = null;
+      history.replaceState(null, '', window.location.pathname + window.location.search);
     },
-
 renderOlderInspection(inspection) {
         const hasViolation = (inspection.violation_description || "").trim();
         return `
