@@ -22,6 +22,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "David Atkinson",
+      "sort": "Atkinson",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Jonathan Auerbach and Karoline Adler",
       "sort": "Auerbach",
       "url": "",
@@ -129,7 +136,9 @@
     {
       "display": "Frances Bentkowski",
       "sort": "Bentkowski",
-      "url": ""
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Paulette Berner, in honor of R Thomas Berner",
@@ -323,6 +332,13 @@
     {
       "display": "Mark Dodel",
       "sort": "Dodel",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Halle and Josh Donner",
+      "sort": "Donner",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -769,6 +785,13 @@
       "categoryRank": "5"
     },
     {
+      "display": "Lassie MacDonald",
+      "sort": "MacDonald",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Annie McCain Madonia",
       "sort": "Madonia",
       "url": "",
@@ -1063,13 +1086,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Mary Prunty",
-      "sort": "Prunty",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Rosalind Remer and James Green",
       "sort": "Remer",
       "url": "",
@@ -1124,13 +1140,6 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
-    },
-    {
-      "display": "Gail Scott and Stephen Hohenwarter",
-      "sort": "Scott",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
     },
     {
       "display": "Kai and Peter Seelaus",
@@ -1411,13 +1420,6 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
-    },
-    {
-      "display": "Zell Family Foundation",
-      "sort": "Zell",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "Cliff Zukin and Debbie Walsh",
