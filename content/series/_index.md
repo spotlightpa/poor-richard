@@ -8,4 +8,6 @@ sort-by = ""
 
 [cascade]
 sort-by = "newest"
+ad-header-desktop-active = false
+ad-header-mobile-active = false
 +++
