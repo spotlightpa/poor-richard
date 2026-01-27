@@ -185,6 +185,7 @@
 
     window.addEventListener("set-sort", function(e){
       currentSort = (e && e.detail && e.detail.value) ? e.detail.value : "date-desc";
+      if (currentSort === "alphabetical") currentSort = "alpha-asc";
       localStorage.setItem("inspections-sort", currentSort);
       currentPage = 1;
       renderPage(currentPage);
@@ -353,14 +354,31 @@ function performSearch(query, city) {
         if (rendering) return;
         rendering = true;
         filteredData.sort(function(a, b) {
-        var A = groupedFacilities[a] || [];
-        var B = groupedFacilities[b] || [];
-        var aLatest = A[0] ? new Date(A[0].inspection_date) : new Date(0);
-        var bLatest = B[0] ? new Date(B[0].inspection_date) : new Date(0);
+          var A = groupedFacilities[a] || [];
+          var B = groupedFacilities[b] || [];
 
-        if (currentSort === "date-asc") return aLatest - bLatest;
-        return bLatest - aLatest;
-      });
+          var aLatest = A[0] ? new Date(A[0].inspection_date) : new Date(0);
+          var bLatest = B[0] ? new Date(B[0].inspection_date) : new Date(0);
+
+          var aName = (A[0] && A[0].facility ? String(A[0].facility).toLowerCase() : "");
+          var bName = (B[0] && B[0].facility ? String(B[0].facility).toLowerCase() : "");
+
+          if (currentSort === "alpha-asc" || currentSort === "alphabetical") {
+            if (aName < bName) return -1;
+            if (aName > bName) return 1;
+            return 0;
+          }
+
+          if (currentSort === "alpha-desc") {
+            if (aName > bName) return -1;
+            if (aName < bName) return 1;
+            return 0;
+          }
+
+          if (currentSort === "date-asc") return aLatest - bLatest;
+          return bLatest - aLatest;
+        });
+
 
         var start = (page - 1) * ITEMS_PER_PAGE;
         var end = Math.min(start + ITEMS_PER_PAGE, filteredData.length);
