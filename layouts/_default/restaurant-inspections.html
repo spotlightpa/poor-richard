@@ -540,6 +540,18 @@
 
       setTimeout(() => this.checkHashAndOpenCard(), 100);
 
+      let lastWidth = window.innerWidth;
+      window.addEventListener("resize", () => {
+        const currentWidth = window.innerWidth;
+        const wasMobile = lastWidth < 768;
+        const isDesktop = currentWidth >= 768;
+        
+        if (wasMobile && isDesktop && window.location.hash) {
+          setTimeout(() => this.checkHashAndOpenCard(), 100);
+        }
+        lastWidth = currentWidth;
+      });
+
       window.addEventListener("set-sort", (e) => {
         const v = (e && e.detail && e.detail.value) || "date";
         this.currentSort = v;
