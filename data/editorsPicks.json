@@ -9,12 +9,13 @@
     "content/news/2026-01-28-SPLCLERGY0126.md"
   ],
   "subfeatures": [
-    "content/berks/2025-12-22-SPLERABIES1225.md",
-    "content/news/2026-01-26-SPLVAPELAW0126.md"
-  ],
-  "topSlots": [
     "content/news/2025-02-26-SPLSTATLIM0225.md",
     "content/news/2025-06-10-APABUSEHOUSE0625.md",
     "content/news/2021-03-17-SPLCLERGY18.md"
+  ],
+  "topSlots": [
+    "content/news/2026-01-26-SPLSHAPIROBOOK0126.md",
+    "content/news/2026-01-26-SPLVAPELAW0126.md",
+    "content/news/2026-01-23-SPL24LOOP0126.md"
   ]
 }
