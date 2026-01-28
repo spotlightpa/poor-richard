@@ -22,8 +22,12 @@
       _initializing: false,
       _flyToHandler: null,
       _mobileViewHandler: null,
+      _zoomToMarkerHandler: null,
+      _restoreMapHandler: null,
       _markerInstances: [],
       _baseMarkerInstances: [],
+      _savedMapState: null,
+      _allMarkers: [],
 
       init() {
         const el = this.$refs.canvas;
@@ -69,6 +73,86 @@
           }
         };
         window.addEventListener("inspections:flyTo", this._flyToHandler);
+
+        this._zoomToMarkerHandler = (e) => {
+          const { lat, lon } = e.detail || {};
+          if (typeof lat === "number" && typeof lon === "number" && this.map) {
+            this._savedMapState = {
+              center: this.map.getCenter().toArray(),
+              zoom: this.map.getZoom(),
+              bearing: this.map.getBearing(),
+              pitch: this.map.getPitch(),
+            };
+
+            this._allMarkers = [...this._markerInstances];
+
+            this._markerInstances.forEach((m) => m.remove());
+            this._markerInstances = [];
+
+            const matchingMarker = window.__inspectionsMarkers?.find(
+              (m) =>
+                Math.abs(m.lat - lat) < 0.0001 &&
+                Math.abs(m.lon - lon) < 0.0001,
+            );
+
+            if (matchingMarker) {
+              const markerEl = this._createMarkerElement(matchingMarker);
+              const marker = new maplibregl.Marker({
+                element: markerEl,
+                anchor: "bottom",
+              }).setLngLat([lon, lat]);
+
+              if (matchingMarker.popupHTML) {
+                const popup = new maplibregl.Popup({
+                  closeButton: false,
+                  closeOnClick: false,
+                  offset: 25,
+                }).setHTML(matchingMarker.popupHTML);
+
+                markerEl.addEventListener("mouseenter", () => {
+                  popup.setLngLat([lon, lat]).addTo(this.map);
+                });
+
+                markerEl.addEventListener("mouseleave", () => {
+                  popup.remove();
+                });
+              }
+
+              marker.addTo(this.map);
+              this._markerInstances.push(marker);
+            }
+
+            this.map.flyTo({
+              center: [lon, lat],
+              zoom: 14,
+              speed: 0.8,
+              curve: 1.42,
+            });
+          }
+        };
+        window.addEventListener("map:zoomToMarker", this._zoomToMarkerHandler);
+
+        this._restoreMapHandler = () => {
+          if (!this.map || !this._savedMapState) return;
+
+          this.map.flyTo({
+            center: this._savedMapState.center,
+            zoom: this._savedMapState.zoom,
+            bearing: this._savedMapState.bearing,
+            pitch: this._savedMapState.pitch,
+            speed: 0.8,
+            curve: 1.42,
+          });
+
+          setTimeout(() => {
+            const latest = window.__inspectionsMarkers;
+            if (Array.isArray(latest) && latest.length) {
+              this.updateMarkers(latest);
+            }
+            this._savedMapState = null;
+          }, 500);
+        };
+        window.addEventListener("map:restoreView", this._restoreMapHandler);
 
         window.addEventListener("update-map-markers", (e) => {
           const markers = e.detail?.markers;
@@ -371,6 +455,18 @@
           window.removeEventListener(
             "mobile-view-changed",
             this._mobileViewHandler,
+          );
+        }
+        if (this._zoomToMarkerHandler) {
+          window.removeEventListener(
+            "map:zoomToMarker",
+            this._zoomToMarkerHandler,
+          );
+        }
+        if (this._restoreMapHandler) {
+          window.removeEventListener(
+            "map:restoreView",
+            this._restoreMapHandler,
           );
         }
         if (this._markerInstances) {

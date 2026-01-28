@@ -993,10 +993,21 @@ initSortListeners() {
           }
         },
 
-  openDetails(card) {
+openDetails(card) {
     document
       .querySelectorAll(".pagination-controls")
       .forEach((el) => el.classList.add("hidden"));
+
+    const lat = parseFloat(card.getAttribute("data-lat"));
+    const lon = parseFloat(card.getAttribute("data-lon"));
+
+    if (!isNaN(lat) && !isNaN(lon)) {
+      window.dispatchEvent(
+        new CustomEvent("map:zoomToMarker", {
+          detail: { lat, lon }
+        })
+      );
+    }
 
     const scroller =
     card.closest('[aria-label="Inspection results list"]') || null;
@@ -1173,6 +1184,8 @@ this.activeCard = card;
   document.getElementById("no-results")?.classList.add("hidden");
 },
 backToResults() {
+  window.dispatchEvent(new CustomEvent("map:restoreView"));
+
   document
     .querySelectorAll(".pagination-controls")
     .forEach((el) => el.classList.remove("hidden"));
