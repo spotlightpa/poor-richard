@@ -20,9 +20,9 @@ title-tag = "Shapiro plans to unveil housing plan amid rising costs"
 topics = ["Housing"]
 +++
 
-HARRISBURG — Rents are soaring, homelessness is rising, and homeownership is out of reach for many families in Pennsylvania. As the state continues to grapple with a serious housing shortage, Gov. Josh Shapiro is preparing to release a long-awaited plan to tackle the crisis.
+HARRISBURG — Rents are soaring, homelessness is rising, and homeownership is out of reach for many families in Pennsylvania. As the state grapples with a serious housing shortage and affordability dominates the national political conversation, Gov. Josh Shapiro is preparing to release a long-awaited plan to tackle the crisis.
 
-The plan, first announced in late 2024, will draw on months of outreach to advocates, developers, and local officials. Supporters hope it will offer a clear path forward and build momentum around proposals that can win support in Pennsylvania’s politically divided legislature.
+The plan, first announced in late 2024, will draw on months of outreach to advocates, developers, and local officials. Supporters hope it will offer a clear path forward and build momentum around proposals that can win support in Pennsylvania’s politically divided legislature. But significant obstacles stand in the way.
 
 “The housing crisis has risen to the level such that none of the four caucuses can ignore it,” said Deanna Dyer, director of policy at Regional Housing Legal Services, a nonprofit law firm.
 
@@ -40,7 +40,7 @@ Similar efforts in Harrisburg haven’t yet gained traction, although more lawma
 
 Underlying Pennsylvania’s housing crunch is the law of supply and demand.
 
-Between 2017 and 2023, Pennsylvania’s population grew by 5%, according to a <a href="https://www.pew.org/en/research-and-analysis/issue-briefs/2025/03/pennsylvanias-lack-of-building-has-contributed-to-housing-shortage-hurt-affordability">recent report</a> from Pew Charitable Trusts, a think tank. Over the same period, local governments issued only enough building permits to increase the state’s housing stock by 3.4%.
+Between 2017 and 2023, the number of households in Pennsylvania grew by 5%, according to a <a href="https://www.pew.org/en/research-and-analysis/issue-briefs/2025/03/pennsylvanias-lack-of-building-has-contributed-to-housing-shortage-hurt-affordability">recent report</a> from Pew Charitable Trusts, a think tank. Over the same period, local governments issued only enough building permits to increase the state’s housing stock by 3.4%.
 
 That left Pennsylvania ranked 44th out of 50 states on the rate of housing built.
 
