@@ -75,6 +75,11 @@ name = "Send a Tip"
 url = "/tips/"
 weight = 11
 
+[[about]]
+name = "Advertise With Us"
+url = "/advertising/"
+weight = 12
+
 [[news]]
 name = "Justice System"
 url = "/topics/justice-system/"
