@@ -1213,7 +1213,16 @@ openDetails(card) {
           </div>
         </div>`;
 
- listContent?.classList.add("hidden");
+  if (!listContent) {
+    const wrap = document.createElement("div");
+    wrap.className = "list-content hidden";
+    while (card.firstChild && card.firstChild !== detail) {
+      wrap.appendChild(card.firstChild);
+    }
+    card.insertBefore(wrap, detail);
+  } else {
+    listContent.classList.add("hidden");
+  }
 
 const mount = card.closest(".inspections-mount");
 if (mount) {
