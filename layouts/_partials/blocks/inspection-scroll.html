@@ -992,6 +992,8 @@ card.setAttribute("data-violation-description", data.violation_description || ""
         `
         : "";
 
+      var hasViolation = (data.violation_description || "").trim();
+
       card.innerHTML = `
         <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
         <div class="mt-2 space-y-1 text-g-6">
@@ -1000,7 +1002,7 @@ card.setAttribute("data-violation-description", data.violation_description || ""
         </div>
        <ul class="mt-2 space-y-2 text-lg font-semibold">
   ${
-    (data.violation_description || "").trim()
+    hasViolation
       ? `
         <li class="mt-4 flex items-start">
           <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
@@ -1020,6 +1022,7 @@ card.setAttribute("data-violation-description", data.violation_description || ""
   }
 </ul>
 
+        ${hasViolation ? `
         <div class="pt-2">
           <button
             class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
@@ -1032,6 +1035,7 @@ card.setAttribute("data-violation-description", data.violation_description || ""
             </svg>
           </button>
         </div>
+        ` : ''}
       `;
 
       return card;

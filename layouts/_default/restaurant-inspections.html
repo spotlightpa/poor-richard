@@ -542,7 +542,7 @@
 
       let resizeTimer;
       let lastWidth = window.innerWidth;
-      
+
       window.addEventListener("resize", () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
@@ -551,31 +551,31 @@
           const wasDesktop = lastWidth >= 768;
           const isDesktop = currentWidth >= 768;
           const isMobile = currentWidth < 768;
-          
+
           if ((wasMobile && isDesktop) || (wasDesktop && isMobile)) {
             const hash = window.location.hash.slice(1);
-            
+
             document.querySelectorAll('.mobile-detail-view').forEach(el => el.remove());
             document.querySelectorAll('.detail-content').forEach(el => el.remove());
             document.querySelectorAll('.pagination-controls').forEach(el => el.classList.remove('hidden'));
-            
+
             document.querySelectorAll('[data-card="inspection"]').forEach(card => {
               card.style.display = '';
               card.classList.remove('hidden-by-detail', 'h-full', 'flex', 'flex-col', 'flex-1');
               card.classList.add('space-y-3');
               const listContent = card.querySelector('.list-content');
               if (listContent) listContent.classList.remove('hidden');
-              
+
               const mount = card.closest('.inspections-mount');
               if (mount) {
                 mount.classList.remove('h-full', 'flex', 'flex-col');
                 mount.classList.add('space-y-3');
               }
             });
-            
+
             this.activeCard = null;
             this.applyFilters();
-            
+
             if (hash) {
               setTimeout(() => {
                 const cards = document.querySelectorAll('[data-card="inspection"]');
@@ -594,7 +594,7 @@
               }, 100);
             }
           }
-          
+
           lastWidth = currentWidth;
         }, 250);
       });
