@@ -52,7 +52,7 @@ High demand for existing units, combined with a lack of new supply, gives landlo
 
 The problem isn’t spread evenly across the state. Costs have risen the most in areas with growing populations that haven’t added enough housing, including the Philadelphia suburbs, Northeastern Pennsylvania, and cities like Harrisburg, York, and Lancaster.
 
-To keep up with the demand, state officials estimate, Pennsylvania needs to build 450,000 units by 2023 —&nbsp;a 70% increase in new construction.
+To keep up with the demand, state officials estimate, Pennsylvania needs to build 450,000 units by 2035 —&nbsp;a 70% increase in new construction.
 
 In September 2024, Shapiro signed an executive order directing the Department of Community and Economic Development to <a href="https://dced.pa.gov/newsroom/governor-shapiro-signs-executive-order-creating-pennsylvanias-first-housing-action-plan-to-increase-affordable-housing-address-homelessness-and-make-commonwealth-more-competitive/">create a statewide plan</a> to increase the supply of housing, and to review the effectiveness of existing programs. The executive order also requires the Department of Human Services to conduct a separate review of policies to address homelessness.
 
