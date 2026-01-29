@@ -17,7 +17,7 @@ slug = "pennsylvania-shapiro-housing-crisis-plan-housing"
 suppress-date = false
 title = "The cost of housing in Pa. is too damn high. Here's what Shapiro will need to overcome to fix it."
 title-tag = "Shapiro plans to unveil housing plan amid rising costs"
-topics = ["Housing"]
+topics = ["Housing", "Corrections"]
 +++
 
 HARRISBURG — Rents are soaring, homelessness is rising, and homeownership is out of reach for many families in Pennsylvania. As the state grapples with a serious housing shortage and affordability dominates the national political conversation, Gov. Josh Shapiro is preparing to release a long-awaited plan to tackle the crisis.
@@ -125,4 +125,6 @@ Picozzi and other Republican senators also want to <a href="https://www.palegis.
 This year represents a real opportunity to make progress on the housing shortage, said state Rep. Jared Solomon, a Democrat representing Northeast Philadelphia who has sponsored several pieces of legislation aimed at adding more housing.
 
 “We’re all seeing the same thing in our neighborhoods — we all know we have to be proactive about it,” Solomon said.
+
+<em>Correction: This story has been updated to correct a description of household growth and the projected year for Pennsylvania housing construction to keep up with demand.</em>
 
