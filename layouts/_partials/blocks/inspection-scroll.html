@@ -669,8 +669,7 @@ function performSearch(query, city) {
       if (filteredData.length === 0) return;
 
       var controls = document.createElement('div');
-      controls.className = 'pagination-controls flex items-center justify-center gap-2 bg-white px-4 py-6 shadow mt-3';
-
+      controls.className = 'pagination-controls flex items-center justify-between bg-white px-3 sm:px-4 md:px-6 py-4 sm:py-5 md:py-6 shadow mt-3';
      var startItem = (currentPage - 1) * ITEMS_PER_PAGE + 1;
       var endItem = Math.min(currentPage * ITEMS_PER_PAGE, filteredData.length);
 
@@ -687,7 +686,7 @@ function performSearch(query, city) {
           <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
         </button>
 
-        <div class="pagination-numbers flex items-center gap-1"></div>
+    <div class="pagination-numbers flex flex-1 items-center justify-evenly gap-2 md:gap-3 lg:gap-4 px-2 md:px-6 lg:px-8"></div>
 
         <button
           class="pagination-btn pagination-next flex h-10 w-10 items-center justify-center rounded-full border-2 border-g-4 bg-white text-g-7 transition-all duration-200 hover:border-g-6 hover:bg-g-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-g-4 disabled:hover:bg-white"
@@ -704,14 +703,14 @@ function performSearch(query, city) {
       pageNumbers.forEach(function(pageNum) {
         if (pageNum === '...') {
           var ellipsis = document.createElement('span');
-          ellipsis.className = 'px-2 text-g-5';
+          ellipsis.className = 'px-1 sm:px-1.5 md:px-2 text-xs sm:text-sm text-g-5 flex-shrink-0';
           ellipsis.textContent = '...';
           numbersContainer.appendChild(ellipsis);
         } else {
-          var btn = document.createElement('button');
+var btn = document.createElement('button');
             btn.className = pageNum === currentPage
-            ? 'flex h-10 min-w-10 items-center justify-center rounded-full bg-g-9 px-4 font-sans text-sm font-bold text-white transition-all duration-200'
-            : 'flex h-10 min-w-10 items-center justify-center rounded-full px-4 font-sans text-sm font-medium text-g-7 transition-all duration-200 hover:bg-g-2';
+            ? 'flex h-10 w-10 items-center justify-center rounded-full bg-g-9 font-sans text-sm font-bold text-white transition-all duration-200 flex-shrink-0'
+            : 'flex h-10 w-10 items-center justify-center rounded-full font-sans text-sm font-medium text-g-7 transition-all duration-200 hover:bg-g-2 flex-shrink-0';
           btn.textContent = pageNum.toLocaleString();
           btn.setAttribute('aria-label', 'Page ' + pageNum.toLocaleString());
           if (pageNum === currentPage) {
