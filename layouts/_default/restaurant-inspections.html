@@ -1115,8 +1115,8 @@ openDetails(card) {
         </li>`;
 
   const olderInspectionsHTML = allInspections.length > 1 ? `
-    <div class="mt-8 pt-6 border-t-2 border-g-3">
-      <h3 class="text-xl font-bold text-g-7 mb-4">Other Inspections</h3>
+    <div class="mt-8 pt-8 border-t-2 border-g-3">
+      <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${allInspections.length - 1})</h3>
       <div class="space-y-6">
         ${allInspections.slice(1).map((inspection) => this.renderOlderInspection(inspection)).join('')}
       </div>
@@ -1296,44 +1296,62 @@ this.lastReadMoreButton?.focus({ preventScroll: true });
       this.activeCard = null;
       history.replaceState(null, '', window.location.pathname + window.location.search);
     },
-renderOlderInspection(inspection) {
+renderOlderInspection(inspection, idx) {
         const hasViolation = (inspection.violation_description || "").trim();
+        const descriptions = hasViolation ? inspection.violation_description.split(' | ').map(s => s.trim()).filter(Boolean) : [];
+        const comments = inspection.comment ? inspection.comment.split(' | ').map(s => s.trim()) : [];
+        const violationCount = descriptions.length;
+        
         return `
-          <div class="bg-g-1 rounded-lg p-6">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-2">
-                <svg class="h-4 w-4 flex-shrink-0 fill-g-5" aria-hidden="true">
+          <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
+            <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-g-1 transition-colors">
+              <div class="flex items-center gap-3 min-w-0 flex-1">
+                <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
                   {{ partial "helper/svg.html" "calendar-day" }}
                 </svg>
-                <span class="font-sans text-sm font-semibold text-g-7">${this.escapeHTML(inspection.inspection_date || '')}</span>
+                <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(inspection.inspection_date || '')}</span>
               </div>
-              ${hasViolation ? `
-                <span class="inline-flex items-center gap-1 text-sm font-semibold text-red-7">
-                  <svg class="h-4 w-4 fill-current" aria-hidden="true">
-                    {{ partial "helper/svg.html" "triangle-exclamation" }}
-                  </svg>
-                  Violation
-                </span>
-              ` : `
-                <span class="inline-flex items-center gap-1 text-sm font-semibold" style="color: #1b998b;">
-                  <svg class="h-4 w-4 fill-current" aria-hidden="true">
-                    {{ partial "helper/svg.html" "circle-check" }}
-                  </svg>
-                  No violations
-                </span>
-              `}
-            </div>
+              <div class="flex items-center gap-3 flex-shrink-0">
+                ${hasViolation ? `
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7">
+                    <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                      {{ partial "helper/svg.html" "triangle-exclamation" }}
+                    </svg>
+                    ${violationCount} violation${violationCount !== 1 ? 's' : ''}
+                  </span>
+                ` : `
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                    <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                      {{ partial "helper/svg.html" "circle-check" }}
+                    </svg>
+                    No violations
+                  </span>
+                `}
+                <svg class="h-5 w-5 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true">
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </div>
+            </summary>
             ${hasViolation ? `
-              <div class="space-y-2">
-                <h4 class="font-sans text-base font-bold text-g-9">${this.escapeHTML(inspection.violation_description)}</h4>
-                ${inspection.comment ? `
-                  <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
-                    ${this.escapeHTML(inspection.comment)}
-                  </p>
-                ` : ''}
+              <div class="border-t border-g-3 p-4 bg-g-1">
+                <ul class="space-y-4">
+                  ${descriptions.map((desc, i) => {
+                    const comment = comments[i] || '';
+                    return `
+                      <li class="pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+                        <h4 class="font-sans text-base font-bold text-g-9 mb-2">${this.escapeHTML(desc)}</h4>
+                        ${comment ? `
+                          <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
+                            ${this.escapeHTML(comment)}
+                          </p>
+                        ` : ''}
+                      </li>
+                    `;
+                  }).join('')}
+                </ul>
               </div>
             ` : ''}
-          </div>
+          </details>
         `;
       },
 
