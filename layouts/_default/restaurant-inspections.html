@@ -1341,9 +1341,9 @@ renderOlderInspection(inspection) {
         const title = (v.title || "").trim();
         const comment = v.comment || "";
         return `
-          <li class="space-y-2">
+          <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
             <div class="flex items-start pt-2 gap-2">
-              <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current" aria-hidden="true">
+              <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current flex-shrink-0" aria-hidden="true">
                 {{ partial "helper/svg.html" "triangle-exclamation" }}
               </svg>
               <h4 class="font-sans text-lg font-bold text-black break-words">
@@ -1352,7 +1352,7 @@ renderOlderInspection(inspection) {
             </div>
             ${
               comment
-                ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
+                ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
                     ${this.escapeHTML(comment)}
                   </p>`
                 : ""
@@ -1360,14 +1360,27 @@ renderOlderInspection(inspection) {
           </li>`;
       },
 
-        readViolations(card) {
-          const title = (card.getAttribute("data-violation-description") || "").trim();
-          const comment = (card.getAttribute("data-violation-comment") || "").trim();
-          if (title || comment) {
-            return [{ title, comment }];
-          }
-          return [];
-        },
+      readViolations(card) {
+                const violationDesc = (card.getAttribute("data-violation-description") || "").trim();
+                const violationComment = (card.getAttribute("data-violation-comment") || "").trim();
+
+                if (!violationDesc && !violationComment) {
+                  return [];
+                }
+
+                const descriptions = violationDesc.split(' | ').map(s => s.trim()).filter(Boolean);
+                const comments = violationComment.split(' | ').map(s => s.trim());
+
+                const violations = [];
+                for (let i = 0; i < Math.max(descriptions.length, comments.length); i++) {
+                  violations.push({
+                    title: descriptions[i] || '',
+                    comment: comments[i] || ''
+                  });
+                }
+
+                return violations;
+              },
 
         parseViolationsCSV(csvText) {
           const rows = [];

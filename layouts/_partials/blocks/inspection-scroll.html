@@ -1127,26 +1127,34 @@ function generateCardIdFromCard(card) {
       var location = addressEl ? addressEl.textContent.trim() : '';
 
       var violationDesc = card.getAttribute("data-violation-description") || "";
-      var violationComment = card.getAttribute("data-violation-comment") || "";
+            var violationComment = card.getAttribute("data-violation-comment") || "";
 
-      var latestViolations = [];
-      if (violationDesc.trim() || violationComment.trim()) {
-        latestViolations.push({ title: violationDesc.trim(), comment: violationComment.trim() });
-      }
+            var latestViolations = [];
+            if (violationDesc.trim() || violationComment.trim()) {
+              var descriptions = violationDesc.split(' | ').map(function(s) { return s.trim(); }).filter(Boolean);
+              var comments = violationComment.split(' | ').map(function(s) { return s.trim(); });
 
-      var latestItems = latestViolations.length > 0
+              for (var i = 0; i < Math.max(descriptions.length, comments.length); i++) {
+                latestViolations.push({
+                  title: descriptions[i] || '',
+                  comment: comments[i] || ''
+                });
+              }
+            }
+
+  var latestItems = latestViolations.length > 0
         ? latestViolations.map(function(v) {
             return `
-              <li class="space-y-2">
+              <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
                 <div class="flex items-start pt-2 gap-2">
-                  <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
+                  <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current flex-shrink-0">
                     {{ partial "helper/svg.html" "triangle-exclamation" }}
                   </svg>
                   <h4 class="font-sans text-lg font-bold text-black break-words">
                     ${escapeHTML(v.title)}
                   </h4>
                 </div>
-                ${v.comment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4">
+                ${v.comment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
                   ${escapeHTML(v.comment)}
                 </p>` : ''}
               </li>`;
