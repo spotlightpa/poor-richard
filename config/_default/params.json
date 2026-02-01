@@ -131,12 +131,12 @@
   "ad-hp-river-mobile-width": 1024,
   "ad-rail-sticky": [
     {
-      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2d/2025alibaba-300x250-pennsylvania-spotlightpa.final-1.jpg"
       ]
     }
   ],
