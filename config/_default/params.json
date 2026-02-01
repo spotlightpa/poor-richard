@@ -1,27 +1,40 @@
 {
-  "ad-footer-desktop": [],
-  "ad-footer-desktop-active": false,
-  "ad-footer-desktop-height": 0,
-  "ad-footer-desktop-width": 0,
-  "ad-footer-mobile": [],
-  "ad-footer-mobile-active": false,
-  "ad-footer-mobile-height": 0,
-  "ad-footer-mobile-width": 0,
+  "ad-footer-desktop": [
+    {
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2d/2025alibaba-728x90-pennsylvania-spotlightpa.final-1.jpg"
+      ]
+    }
+  ],
+  "ad-footer-desktop-active": true,
+  "ad-footer-desktop-height": 90,
+  "ad-footer-desktop-width": 728,
+  "ad-footer-mobile": [
+    {
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2c/2025alibaba-1024x512-pennsylvania-final.jpg"
+      ]
+    }
+  ],
+  "ad-footer-mobile-active": true,
+  "ad-footer-mobile-height": 512,
+  "ad-footer-mobile-width": 1024,
   "ad-header-desktop": [
     {
-      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/access",
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxg/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxg/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxf/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxe/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxe/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxd/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxd/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxb/1.png"
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2c/2025alibaba-1350x175-pennsylvania-spotlightpa.final-1.jpg"
       ]
     }
   ],
@@ -30,21 +43,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/access",
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kexj/10.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexj/9.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexh/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexg/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexf/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexf/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexe/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexd/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexc/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexb/1.png"
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2c/2025alibaba-1024x512-pennsylvania-final.jpg"
       ]
     }
   ],
@@ -61,41 +65,68 @@
   "ad-hp-breaker-mobile-width": 0,
   "ad-hp-featured": [
     {
-      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/access",
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/10.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/9.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyb/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy8/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy7/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy6/1.png"
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2d/2025alibaba-300x250-pennsylvania-spotlightpa.final-1.jpg"
       ]
     }
   ],
   "ad-hp-featured-active": true,
-  "ad-hp-headwater-desktop": [],
-  "ad-hp-headwater-desktop-active": false,
-  "ad-hp-headwater-desktop-height": 0,
-  "ad-hp-headwater-desktop-width": 0,
-  "ad-hp-headwater-mobile": [],
-  "ad-hp-headwater-mobile-active": false,
-  "ad-hp-headwater-mobile-height": 0,
-  "ad-hp-headwater-mobile-width": 0,
-  "ad-hp-river-desktop": [],
-  "ad-hp-river-desktop-active": false,
-  "ad-hp-river-desktop-height": 0,
-  "ad-hp-river-desktop-width": 0,
-  "ad-hp-river-mobile": [],
-  "ad-hp-river-mobile-active": false,
-  "ad-hp-river-mobile-height": 0,
-  "ad-hp-river-mobile-width": 0,
+  "ad-hp-headwater-desktop": [
+    {
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2d/2025alibaba-728x90-pennsylvania-spotlightpa.final-1.jpg"
+      ]
+    }
+  ],
+  "ad-hp-headwater-desktop-active": true,
+  "ad-hp-headwater-desktop-height": 90,
+  "ad-hp-headwater-desktop-width": 728,
+  "ad-hp-headwater-mobile": [
+    {
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
+      "sources": []
+    }
+  ],
+  "ad-hp-headwater-mobile-active": true,
+  "ad-hp-headwater-mobile-height": 512,
+  "ad-hp-headwater-mobile-width": 1024,
+  "ad-hp-river-desktop": [
+    {
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2d/2025alibaba-728x90-pennsylvania-spotlightpa.final-1.jpg"
+      ]
+    }
+  ],
+  "ad-hp-river-desktop-active": true,
+  "ad-hp-river-desktop-height": 90,
+  "ad-hp-river-desktop-width": 728,
+  "ad-hp-river-mobile": [
+    {
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
+      "sources": []
+    }
+  ],
+  "ad-hp-river-mobile-active": true,
+  "ad-hp-river-mobile-height": 512,
+  "ad-hp-river-mobile-width": 1024,
   "ad-rail-sticky": [
     {
       "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
@@ -110,21 +141,12 @@
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/access",
+      "description": "Thank you to our generous sponsor, Alibaba. Learn more here.",
+      "label": "Thank you to our sponsors. Become one.",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://www.alibabapowersbusinesses.com/us-impact/#PA",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/10.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/9.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyb/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy8/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy7/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy6/1.png"
+        "https://files.data.spotlightpa.org/uploads/01mq/rb2d/2025alibaba-300x250-pennsylvania-spotlightpa.final-1.jpg"
       ]
     }
   ],
