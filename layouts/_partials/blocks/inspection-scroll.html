@@ -1178,21 +1178,21 @@ var olderInspectionsHTML = allInspections.length > 1 ? (function() {
           if (!byDate[date]) byDate[date] = [];
           byDate[date].push(inspection);
         });
-        
+
         var dates = Object.keys(byDate).sort(function(a, b) {
           return new Date(b) - new Date(a);
         });
-        
+
         return `
         <div class="mt-8 pt-8 border-t-2 border-g-3">
           <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${dates.length})</h3>
           <div class="space-y-4">
             ${dates.map(function(date, idx) {
               var inspections = byDate[date];
-              
+
               var allDescriptions = [];
               var allComments = [];
-              
+
               inspections.forEach(function(insp) {
                 var desc = (insp.violation_description || "").trim();
                 var comm = (insp.comment || "").trim();
@@ -1205,10 +1205,10 @@ var olderInspectionsHTML = allInspections.length > 1 ? (function() {
                   });
                 }
               });
-              
+
               var hasViolation = allDescriptions.length > 0;
               var violationCount = allDescriptions.length;
-              
+
 if (!hasViolation) {
                 return `
                   <div class="bg-white border-2 border-g-3 rounded-lg p-4">
@@ -1229,7 +1229,7 @@ if (!hasViolation) {
                   </div>
                 `;
               }
-              
+
               return `
                 <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
                   <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-g-1 transition-colors">
@@ -1286,7 +1286,7 @@ if (!hasViolation) {
         </div>
         `;
       })() : '';
-              
+
 
 
       var detailHTML = `
