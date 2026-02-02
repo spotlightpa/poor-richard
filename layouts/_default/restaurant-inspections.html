@@ -1114,14 +1114,119 @@ openDetails(card) {
           </div>
         </li>`;
 
-  const olderInspectionsHTML = allInspections.length > 1 ? `
+const olderInspectionsHTML = allInspections.length > 1 ? (() => {
+    const byDate = {};
+    allInspections.slice(1).forEach(inspection => {
+      const date = inspection.inspection_date || '';
+      if (!byDate[date]) byDate[date] = [];
+      byDate[date].push(inspection);
+    });
+    
+    const dates = Object.keys(byDate).sort((a, b) => new Date(b) - new Date(a));
+    
+    return `
     <div class="mt-8 pt-8 border-t-2 border-g-3">
-      <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${allInspections.length - 1})</h3>
-      <div class="space-y-6">
-        ${allInspections.slice(1).map((inspection) => this.renderOlderInspection(inspection)).join('')}
+      <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${dates.length})</h3>
+      <div class="space-y-4">
+        ${dates.map((date, idx) => {
+          const inspections = byDate[date];
+          
+          const allDescriptions = [];
+          const allComments = [];
+          
+          inspections.forEach(insp => {
+            const desc = (insp.violation_description || "").trim();
+            const comm = (insp.comment || "").trim();
+            if (desc) {
+              desc.split(' | ').forEach(d => {
+                if (d.trim()) allDescriptions.push(d.trim());
+              });
+              comm.split(' | ').forEach(c => {
+                allComments.push(c.trim());
+              });
+            }
+          });
+          
+          const hasViolation = allDescriptions.length > 0;
+          const violationCount = allDescriptions.length;
+          
+if (!hasViolation) {
+            return `
+              <div class="bg-white border-2 border-g-3 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3 min-w-0 flex-1">
+                    <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
+                      {{ partial "helper/svg.html" "calendar-day" }}
+                    </svg>
+                    <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                    <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                      {{ partial "helper/svg.html" "circle-check" }}
+                    </svg>
+                    No violations
+                  </span>
+                </div>
+              </div>
+            `;
+          }
+          
+          return `
+            <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
+              <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-g-1 transition-colors">
+                <div class="flex items-center gap-3 min-w-0 flex-1">
+                  <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
+                    {{ partial "helper/svg.html" "calendar-day" }}
+                  </svg>
+                  <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+                </div>
+                <div class="flex items-center gap-3 flex-shrink-0">
+                  ${hasViolation ? `
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7">
+                      <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                        {{ partial "helper/svg.html" "triangle-exclamation" }}
+                      </svg>
+                      ${violationCount} violation${violationCount !== 1 ? 's' : ''}
+                    </span>
+                  ` : `
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                      <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                        {{ partial "helper/svg.html" "circle-check" }}
+                      </svg>
+                      No violations
+                    </span>
+                  `}
+                  <svg class="h-5 w-5 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true">
+                    {{ partial "helper/svg.html" "chevron" }}
+                  </svg>
+                </div>
+              </summary>
+              ${hasViolation ? `
+                <div class="border-t border-g-3 p-4 bg-g-1">
+                  <ul class="space-y-4">
+                    ${allDescriptions.map((desc, i) => {
+                      const comment = allComments[i] || '';
+                      return `
+                        <li class="pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+                          <h4 class="font-sans text-base font-bold text-g-9 mb-2">${this.escapeHTML(desc)}</h4>
+                          ${comment ? `
+                            <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
+                              ${this.escapeHTML(comment)}
+                            </p>
+                          ` : ''}
+                        </li>
+                      `;
+                    }).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </details>
+          `;
+        }).join('')}
       </div>
     </div>
-  ` : '';
+    `;
+  })() : '';
 
   detail.innerHTML = `
   <div>

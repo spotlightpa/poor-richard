@@ -1171,15 +1171,64 @@ function generateCardIdFromCard(card) {
             </div>
           </li>`;
 
-      var olderInspectionsHTML = allInspections.length > 1 ? `
+var olderInspectionsHTML = allInspections.length > 1 ? (function() {
+        var byDate = {};
+        allInspections.slice(1).forEach(function(inspection) {
+          var date = inspection.inspection_date || '';
+          if (!byDate[date]) byDate[date] = [];
+          byDate[date].push(inspection);
+        });
+        
+        var dates = Object.keys(byDate).sort(function(a, b) {
+          return new Date(b) - new Date(a);
+        });
+        
+        return `
         <div class="mt-8 pt-8 border-t-2 border-g-3">
-          <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${allInspections.length - 1})</h3>
+          <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${dates.length})</h3>
           <div class="space-y-4">
-        ${allInspections.slice(1).map(function(inspection, idx) {
-              var hasViolation = (inspection.violation_description || "").trim();
-              var descriptions = hasViolation ? inspection.violation_description.split(' | ').map(function(s) { return s.trim(); }).filter(Boolean) : [];
-              var comments = inspection.comment ? inspection.comment.split(' | ').map(function(s) { return s.trim(); }) : [];
-              var violationCount = descriptions.length;
+            ${dates.map(function(date, idx) {
+              var inspections = byDate[date];
+              
+              var allDescriptions = [];
+              var allComments = [];
+              
+              inspections.forEach(function(insp) {
+                var desc = (insp.violation_description || "").trim();
+                var comm = (insp.comment || "").trim();
+                if (desc) {
+                  desc.split(' | ').forEach(function(d) {
+                    if (d.trim()) allDescriptions.push(d.trim());
+                  });
+                  comm.split(' | ').forEach(function(c) {
+                    allComments.push(c.trim());
+                  });
+                }
+              });
+              
+              var hasViolation = allDescriptions.length > 0;
+              var violationCount = allDescriptions.length;
+              
+if (!hasViolation) {
+                return `
+                  <div class="bg-white border-2 border-g-3 rounded-lg p-4">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-3 min-w-0 flex-1">
+                        <svg class="h-5 w-5 flex-shrink-0 fill-g-6">
+                          {{ partial "helper/svg.html" "calendar-day" }}
+                        </svg>
+                        <span class="font-sans text-base font-bold text-g-9">${escapeHTML(date)}</span>
+                      </div>
+                      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                        <svg class="h-4 w-4 fill-current">
+                          {{ partial "helper/svg.html" "circle-check" }}
+                        </svg>
+                        No violations
+                      </span>
+                    </div>
+                  </div>
+                `;
+              }
               
               return `
                 <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
@@ -1188,7 +1237,7 @@ function generateCardIdFromCard(card) {
                       <svg class="h-5 w-5 flex-shrink-0 fill-g-6">
                         {{ partial "helper/svg.html" "calendar-day" }}
                       </svg>
-                      <span class="font-sans text-base font-bold text-g-9">${escapeHTML(inspection.inspection_date || '')}</span>
+                      <span class="font-sans text-base font-bold text-g-9">${escapeHTML(date)}</span>
                     </div>
                     <div class="flex items-center gap-3 flex-shrink-0">
                       ${hasViolation ? `
@@ -1214,8 +1263,8 @@ function generateCardIdFromCard(card) {
                   ${hasViolation ? `
                     <div class="border-t border-g-3 p-4 bg-g-1">
                       <ul class="space-y-4">
-                        ${descriptions.map(function(desc, i) {
-                          var comment = comments[i] || '';
+                        ${allDescriptions.map(function(desc, i) {
+                          var comment = allComments[i] || '';
                           return `
                             <li class="pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
                               <h4 class="font-sans text-base font-bold text-g-9 mb-2">${escapeHTML(desc)}</h4>
@@ -1235,7 +1284,9 @@ function generateCardIdFromCard(card) {
             }).join('')}
           </div>
         </div>
-      ` : '';
+        `;
+      })() : '';
+              
 
 
       var detailHTML = `
