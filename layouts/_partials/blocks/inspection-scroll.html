@@ -958,7 +958,7 @@ function createInspectionCard(data, index, allInspections) {
       card.setAttribute("data-date", inspectionDate);
       card.setAttribute("data-city", city);
       card.setAttribute("data-inspection-id", uniqueId);
-card.setAttribute("data-violation-description", data.violation_description || "");
+      card.setAttribute("data-risk-level", data.risk_level || "");
       card.setAttribute("data-violation-comment", data.comment || "");
       card.setAttribute("data-all-inspections", JSON.stringify(allInspections));
 
@@ -994,7 +994,60 @@ card.setAttribute("data-violation-description", data.violation_description || ""
         `
         : "";
 
-      var hasViolation = (data.violation_description || "").trim();
+      var riskLevels = (data.risk_level || "").trim();
+      var riskCounts = { high: 0, moderate: 0, low: 0 };
+
+      if (riskLevels) {
+        var risks = riskLevels.split(' | ').map(function(s) { return s.trim().toLowerCase(); });
+        risks.forEach(function(risk) {
+          if (risk === 'high risk') riskCounts.high++;
+          else if (risk === 'moderate risk') riskCounts.moderate++;
+          else if (risk === 'low risk') riskCounts.low++;
+        });
+      }
+
+      var totalViolations = riskCounts.high + riskCounts.moderate + riskCounts.low;
+      var violationBadges = '';
+
+      if (totalViolations === 0) {
+        violationBadges = `
+          <li class="flex items-center gap-2">
+            <svg class="h-6 w-6 fill-current" style="color: #1b998b;">
+              {{ partial "helper/svg.html" "circle-check" }}
+            </svg>
+            <span class="text-base font-semibold">0 violations</span>
+          </li>`;
+      } else {
+        if (riskCounts.high > 0) {
+          violationBadges += `
+            <li class="flex items-center gap-2">
+              <svg class="h-5 w-5 fill-current" style="color: #D70000;">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <span class="text-base font-semibold">${riskCounts.high} high risk violation${riskCounts.high !== 1 ? 's' : ''}</span>
+            </li>`;
+        }
+        if (riskCounts.moderate > 0) {
+          violationBadges += `
+            <li class="flex items-center gap-2">
+              <svg class="h-5 w-5 fill-current" style="color: #FFCB03;">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <span class="text-base font-semibold">${riskCounts.moderate} moderate risk violation${riskCounts.moderate !== 1 ? 's' : ''}</span>
+            </li>`;
+        }
+        if (riskCounts.low > 0) {
+          violationBadges += `
+            <li class="flex items-center gap-2">
+              <svg class="h-5 w-5 fill-current" style="color: #009EDB;">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <span class="text-base font-semibold">${riskCounts.low} low risk violation${riskCounts.low !== 1 ? 's' : ''}</span>
+            </li>`;
+        }
+      }
+
+      var hasViolation = totalViolations > 0;
 
       card.innerHTML = `
         <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
@@ -1002,27 +1055,9 @@ card.setAttribute("data-violation-description", data.violation_description || ""
           ${addressRow}
           ${dateRow}
         </div>
-       <ul class="mt-2 space-y-2 text-lg font-semibold">
-  ${
-    hasViolation
-      ? `
-        <li class="mt-4 flex items-start">
-          <svg class="mr-2 mt-1 h-5 w-5 text-red-7 fill-current stroke-current">
-            {{ partial "helper/svg.html" "triangle-exclamation" }}
-          </svg>
-          <span>Violation reported</span>
-        </li>
-      `
-      : `
-        <li class="mt-4 flex items-start">
-      <svg class="mr-2 mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;">
-            {{ partial "helper/svg.html" "circle-check" }}
-          </svg>
-          <span>No violations reported.</span>
-        </li>
-      `
-  }
-</ul>
+        <ul class="mt-4 space-y-2">
+          ${violationBadges}
+        </ul>
 
         ${hasViolation ? `
         <div class="pt-2">
