@@ -960,6 +960,8 @@ function createInspectionCard(data, index, allInspections) {
       card.setAttribute("data-inspection-id", uniqueId);
       card.setAttribute("data-risk-level", data.risk_level || "");
       card.setAttribute("data-violation-comment", data.comment || "");
+      card.setAttribute("data-spotlight-pa", data.spotlight_pa || "");
+      card.setAttribute("data-violation-description", data.violation_description || "");
       card.setAttribute("data-all-inspections", JSON.stringify(allInspections));
 
       card.setAttribute("id", uniqueId);
@@ -1162,16 +1164,28 @@ function generateCardIdFromCard(card) {
       var location = addressEl ? addressEl.textContent.trim() : '';
 
       var violationDesc = card.getAttribute("data-violation-description") || "";
-            var violationComment = card.getAttribute("data-violation-comment") || "";
+              var spotlightPa = card.getAttribute("data-spotlight-pa") || "";
+              var violationComment = card.getAttribute("data-violation-comment") || "";
 
             var latestViolations = [];
-            if (violationDesc.trim() || violationComment.trim()) {
+            if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
               var descriptions = violationDesc.split(' | ').map(function(s) { return s.trim(); }).filter(Boolean);
+              var spotlights = spotlightPa.split(' | ').map(function(s) { return s.trim(); });
               var comments = violationComment.split(' | ').map(function(s) { return s.trim(); });
 
-              for (var i = 0; i < Math.max(descriptions.length, comments.length); i++) {
+              for (var i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
+                var title = '';
+
+                if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
+                  title = spotlights[i];
+                } else if (descriptions[i]) {
+                  title = descriptions[i];
+                } else {
+                  title = 'Violation reported';
+                }
+
                 latestViolations.push({
-                  title: descriptions[i] || '',
+                  title: title,
                   comment: comments[i] || ''
                 });
               }

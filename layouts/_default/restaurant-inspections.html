@@ -1485,25 +1485,38 @@ renderOlderInspection(inspection, idx) {
 
       readViolations(card) {
                 const violationDesc = (card.getAttribute("data-violation-description") || "").trim();
+                const spotlightPa = (card.getAttribute("data-spotlight-pa") || "").trim();
                 const violationComment = (card.getAttribute("data-violation-comment") || "").trim();
 
-                if (!violationDesc && !violationComment) {
+                if (!violationDesc && !spotlightPa && !violationComment) {
                   return [];
                 }
 
                 const descriptions = violationDesc.split(' | ').map(s => s.trim()).filter(Boolean);
+                const spotlights = spotlightPa.split(' | ').map(s => s.trim());
                 const comments = violationComment.split(' | ').map(s => s.trim());
 
                 const violations = [];
-                for (let i = 0; i < Math.max(descriptions.length, comments.length); i++) {
+                for (let i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
+                  let title = '';
+
+                  if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
+                    title = spotlights[i];
+                  } else if (descriptions[i]) {
+                    title = descriptions[i];
+                  } else {
+                    title = 'Violation reported';
+                  }
+
                   violations.push({
-                    title: descriptions[i] || '',
+                    title: title,
                     comment: comments[i] || ''
                   });
                 }
 
                 return violations;
               },
+
 
         parseViolationsCSV(csvText) {
           const rows = [];
