@@ -21,6 +21,8 @@ title-tag = "What to expect from Gov. Shapiro’s pitch for the PA budget"
 topics = ["The Capitol"]
 +++
 
+<strong><em>Update, Feb. 3: </em></strong><a href="https://www.spotlightpa.org/news/2026/02/josh-shapiro-budget-address-school-marijuana-minimum-wage-capitol/"><strong><em>Shapiro calls for more investment in Pa.’s poorest schools, public transit agencies as part of $53.2B budget pitch</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — As he faces reelection, Gov. Josh Shapiro is expected to address rising housing costs, increased energy demand, and unfinished business from prior years when he unveils his budget pitch to state lawmakers on Tuesday.
 
 A number of challenges loom for the Democrat: a divided state legislature that has passed <a href="https://www.spotlightpa.org/news/2025/12/pennsylvania-legislature-laws-passed-partisan-divided-government-capitol/">relatively few laws</a>, a looming structural deficit, and pressure to address a range of issues — from education and transportation funding to recreational cannabis legalization to regulating slot-like skill games.
