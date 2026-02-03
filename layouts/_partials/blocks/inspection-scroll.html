@@ -962,6 +962,7 @@ function createInspectionCard(data, index, allInspections) {
       card.setAttribute("data-violation-comment", data.comment || "");
       card.setAttribute("data-spotlight-pa", data.spotlight_pa || "");
       card.setAttribute("data-violation-description", data.violation_description || "");
+      card.setAttribute("data-ai-summary", data.ai_summary || "");
       card.setAttribute("data-all-inspections", JSON.stringify(allInspections));
 
       card.setAttribute("id", uniqueId);
@@ -1164,9 +1165,10 @@ function generateCardIdFromCard(card) {
       var location = addressEl ? addressEl.textContent.trim() : '';
 
     var violationDesc = card.getAttribute("data-violation-description") || "";
-var spotlightPa = card.getAttribute("data-spotlight-pa") || "";
-var violationComment = card.getAttribute("data-violation-comment") || "";
-var riskLevel = card.getAttribute("data-risk-level") || "";
+    var spotlightPa = card.getAttribute("data-spotlight-pa") || "";
+    var violationComment = card.getAttribute("data-violation-comment") || "";
+    var riskLevel = card.getAttribute("data-risk-level") || "";
+    var aiSummary = card.getAttribute("data-ai-summary") || "";
 
 var latestViolations = [];
 if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
@@ -1174,6 +1176,7 @@ if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
   var spotlights = spotlightPa.split(' | ').map(function(s) { return s.trim(); });
   var comments = violationComment.split(' | ').map(function(s) { return s.trim(); });
   var riskLevels = riskLevel.split(' | ').map(function(s) { return s.trim(); });
+  var aiSummaries = aiSummary.split(' | ').map(function(s) { return s.trim(); });
 
   for (var i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
     var title = '';
@@ -1189,6 +1192,7 @@ if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
     latestViolations.push({
       title: title,
       comment: comments[i] || '',
+      aiSummary: aiSummaries[i] || '',
       riskLevel: riskLevels[i] || '',
       originalIndex: i
     });
@@ -1223,6 +1227,7 @@ var latestItems = latestViolations.length > 0
               color = '#FFCB03';
             }
 
+       var displayComment = v.aiSummary || v.comment || '';
             return `
               <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
                 <div class="flex items-start pt-2 gap-2">
@@ -1233,8 +1238,8 @@ var latestItems = latestViolations.length > 0
                     ${escapeHTML(v.title)}
                   </h4>
                 </div>
-                ${v.comment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
-                  ${escapeHTML(v.comment)}
+                ${displayComment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
+                  ${escapeHTML(displayComment)}
                 </p>` : ''}
               </li>`;
           }).join('')

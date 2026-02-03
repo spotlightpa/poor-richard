@@ -1462,7 +1462,9 @@ renderOlderInspection(inspection, idx) {
 
       renderViolationItem(v) {
         const title = (v.title || "").trim();
+        const aiSummary = (v.aiSummary || "").trim();
         const comment = v.comment || "";
+        const displayComment = aiSummary || comment;
         const riskLevel = (v.riskLevel || "").toLowerCase();
 
         let color = '#D70000';
@@ -1483,9 +1485,9 @@ renderOlderInspection(inspection, idx) {
               </h4>
             </div>
             ${
-              comment
+              displayComment
                 ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
-                    ${this.escapeHTML(comment)}
+                    ${this.escapeHTML(displayComment)}
                   </p>`
                 : ""
             }
@@ -1496,6 +1498,7 @@ readViolations(card) {
   const violationDesc = (card.getAttribute("data-violation-description") || "").trim();
   const spotlightPa = (card.getAttribute("data-spotlight-pa") || "").trim();
   const violationComment = (card.getAttribute("data-violation-comment") || "").trim();
+  const aiSummary = (card.getAttribute("data-ai-summary") || "").trim();
   const riskLevel = (card.getAttribute("data-risk-level") || "").trim();
 
   if (!violationDesc && !spotlightPa && !violationComment) {
@@ -1505,6 +1508,7 @@ readViolations(card) {
   const descriptions = violationDesc.split(' | ').map(s => s.trim()).filter(Boolean);
   const spotlights = spotlightPa.split(' | ').map(s => s.trim());
   const comments = violationComment.split(' | ').map(s => s.trim());
+  const aiSummaries = aiSummary.split(' | ').map(s => s.trim());
   const riskLevels = riskLevel.split(' | ').map(s => s.trim());
 
   const violations = [];
@@ -1522,6 +1526,7 @@ readViolations(card) {
     violations.push({
       title: title,
       comment: comments[i] || '',
+      aiSummary: aiSummaries[i] || '',
       riskLevel: riskLevels[i] || '',
       originalIndex: i
     });
