@@ -1463,10 +1463,19 @@ renderOlderInspection(inspection, idx) {
       renderViolationItem(v) {
         const title = (v.title || "").trim();
         const comment = v.comment || "";
+        const riskLevel = (v.riskLevel || "").toLowerCase();
+
+        let color = '#D70000';
+        if (riskLevel.includes('low risk')) {
+          color = '#009EDB';
+        } else if (riskLevel.includes('moderate risk')) {
+          color = '#FFCB03';
+        }
+
         return `
           <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
             <div class="flex items-start pt-2 gap-2">
-              <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current flex-shrink-0" aria-hidden="true">
+              <svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0" style="color: ${color};" aria-hidden="true">
                 {{ partial "helper/svg.html" "triangle-exclamation" }}
               </svg>
               <h4 class="font-sans text-lg font-bold text-black break-words">
@@ -1483,40 +1492,62 @@ renderOlderInspection(inspection, idx) {
           </li>`;
       },
 
-      readViolations(card) {
-                const violationDesc = (card.getAttribute("data-violation-description") || "").trim();
-                const spotlightPa = (card.getAttribute("data-spotlight-pa") || "").trim();
-                const violationComment = (card.getAttribute("data-violation-comment") || "").trim();
+readViolations(card) {
+  const violationDesc = (card.getAttribute("data-violation-description") || "").trim();
+  const spotlightPa = (card.getAttribute("data-spotlight-pa") || "").trim();
+  const violationComment = (card.getAttribute("data-violation-comment") || "").trim();
+  const riskLevel = (card.getAttribute("data-risk-level") || "").trim();
 
-                if (!violationDesc && !spotlightPa && !violationComment) {
-                  return [];
-                }
+  if (!violationDesc && !spotlightPa && !violationComment) {
+    return [];
+  }
 
-                const descriptions = violationDesc.split(' | ').map(s => s.trim()).filter(Boolean);
-                const spotlights = spotlightPa.split(' | ').map(s => s.trim());
-                const comments = violationComment.split(' | ').map(s => s.trim());
+  const descriptions = violationDesc.split(' | ').map(s => s.trim()).filter(Boolean);
+  const spotlights = spotlightPa.split(' | ').map(s => s.trim());
+  const comments = violationComment.split(' | ').map(s => s.trim());
+  const riskLevels = riskLevel.split(' | ').map(s => s.trim());
 
-                const violations = [];
-                for (let i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
-                  let title = '';
+  const violations = [];
+  for (let i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
+    let title = '';
 
-                  if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
-                    title = spotlights[i];
-                  } else if (descriptions[i]) {
-                    title = descriptions[i];
-                  } else {
-                    title = 'Violation reported';
-                  }
+    if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
+      title = spotlights[i];
+    } else if (descriptions[i]) {
+      title = descriptions[i];
+    } else {
+      title = 'Violation reported';
+    }
 
-                  violations.push({
-                    title: title,
-                    comment: comments[i] || ''
-                  });
-                }
+    violations.push({
+      title: title,
+      comment: comments[i] || '',
+      riskLevel: riskLevels[i] || '',
+      originalIndex: i
+    });
+  }
 
-                return violations;
-              },
+  violations.sort((a, b) => {
+    const getRiskPriority = (risk) => {
+      const riskLower = (risk || '').toLowerCase();
+      if (riskLower.includes('high risk')) return 1;
+      if (riskLower.includes('moderate risk')) return 2;
+      if (riskLower.includes('low risk')) return 3;
+      return 4;
+    };
 
+    const aPriority = getRiskPriority(a.riskLevel);
+    const bPriority = getRiskPriority(b.riskLevel);
+
+    if (aPriority !== bPriority) {
+      return aPriority - bPriority;
+    }
+
+    return a.originalIndex - b.originalIndex;
+  });
+
+  return violations;
+},
 
         parseViolationsCSV(csvText) {
           const rows = [];

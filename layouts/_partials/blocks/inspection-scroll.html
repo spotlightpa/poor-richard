@@ -1163,40 +1163,70 @@ function generateCardIdFromCard(card) {
       var addressEl = card.querySelector('[data-card="inspection"] .text-g-6 span');
       var location = addressEl ? addressEl.textContent.trim() : '';
 
-      var violationDesc = card.getAttribute("data-violation-description") || "";
-              var spotlightPa = card.getAttribute("data-spotlight-pa") || "";
-              var violationComment = card.getAttribute("data-violation-comment") || "";
+    var violationDesc = card.getAttribute("data-violation-description") || "";
+var spotlightPa = card.getAttribute("data-spotlight-pa") || "";
+var violationComment = card.getAttribute("data-violation-comment") || "";
+var riskLevel = card.getAttribute("data-risk-level") || "";
 
-            var latestViolations = [];
-            if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
-              var descriptions = violationDesc.split(' | ').map(function(s) { return s.trim(); }).filter(Boolean);
-              var spotlights = spotlightPa.split(' | ').map(function(s) { return s.trim(); });
-              var comments = violationComment.split(' | ').map(function(s) { return s.trim(); });
+var latestViolations = [];
+if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
+  var descriptions = violationDesc.split(' | ').map(function(s) { return s.trim(); }).filter(Boolean);
+  var spotlights = spotlightPa.split(' | ').map(function(s) { return s.trim(); });
+  var comments = violationComment.split(' | ').map(function(s) { return s.trim(); });
+  var riskLevels = riskLevel.split(' | ').map(function(s) { return s.trim(); });
 
-              for (var i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
-                var title = '';
+  for (var i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
+    var title = '';
 
-                if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
-                  title = spotlights[i];
-                } else if (descriptions[i]) {
-                  title = descriptions[i];
-                } else {
-                  title = 'Violation reported';
-                }
+    if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
+      title = spotlights[i];
+    } else if (descriptions[i]) {
+      title = descriptions[i];
+    } else {
+      title = 'Violation reported';
+    }
 
-                latestViolations.push({
-                  title: title,
-                  comment: comments[i] || ''
-                });
-              }
+    latestViolations.push({
+      title: title,
+      comment: comments[i] || '',
+      riskLevel: riskLevels[i] || '',
+      originalIndex: i
+    });
+  }
+
+  latestViolations.sort(function(a, b) {
+    function getRiskPriority(risk) {
+      var riskLower = (risk || '').toLowerCase();
+      if (riskLower.includes('high risk')) return 1;
+      if (riskLower.includes('moderate risk')) return 2;
+      if (riskLower.includes('low risk')) return 3;
+      return 4;
+    }
+
+    var aPriority = getRiskPriority(a.riskLevel);
+    var bPriority = getRiskPriority(b.riskLevel);
+
+    if (aPriority !== bPriority) {
+      return aPriority - bPriority;
+    }
+
+    return a.originalIndex - b.originalIndex;
+  });
+}
+var latestItems = latestViolations.length > 0
+        ? latestViolations.map(function(v) {
+            var riskLevel = (v.riskLevel || '').toLowerCase();
+            var color = '#D70000';
+            if (riskLevel.includes('low risk')) {
+              color = '#009EDB';
+            } else if (riskLevel.includes('moderate risk')) {
+              color = '#FFCB03';
             }
 
-  var latestItems = latestViolations.length > 0
-        ? latestViolations.map(function(v) {
             return `
               <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
                 <div class="flex items-start pt-2 gap-2">
-                  <svg class="mt-1 h-5 w-5 text-red-7 fill-current stroke-current flex-shrink-0">
+                  <svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0" style="color: ${color};">
                     {{ partial "helper/svg.html" "triangle-exclamation" }}
                   </svg>
                   <h4 class="font-sans text-lg font-bold text-black break-words">
