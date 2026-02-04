@@ -77,64 +77,90 @@
 
         this._zoomToMarkerHandler = (e) => {
           const { lat, lon } = e.detail || {};
-          if (typeof lat === "number" && typeof lon === "number" && this.map) {
-            this._savedMapState = {
-              center: this.map.getCenter().toArray(),
-              zoom: this.map.getZoom(),
-              bearing: this.map.getBearing(),
-              pitch: this.map.getPitch(),
-            };
+          if (typeof lat !== "number" || typeof lon !== "number" || !this.map) return;
 
-            this._allMarkers = [...this._markerInstances];
+          try {
+            this.map
+              .getContainer()
+              .querySelectorAll(".maplibregl-popup")
+              .forEach((el) => el.remove());
+          } catch {}
 
-            this._markerInstances.forEach((m) => m.remove());
-            this._markerInstances = [];
+          this._savedMapState = {
+            center: this.map.getCenter().toArray(),
+            zoom: this.map.getZoom(),
+            bearing: this.map.getBearing(),
+            pitch: this.map.getPitch(),
+          };
 
-            const matchingMarker = window.__inspectionsMarkers?.find(
-              (m) =>
-                Math.abs(m.lat - lat) < 0.0001 &&
-                Math.abs(m.lon - lon) < 0.0001,
-            );
+          this._allMarkers = [...this._markerInstances];
 
-            if (matchingMarker) {
-              const markerEl = this._createMarkerElement(matchingMarker);
-              const marker = new maplibregl.Marker({
-                element: markerEl,
-                anchor: "bottom",
-              }).setLngLat([lon, lat]);
+          this._markerInstances.forEach((m) => m.remove());
+          this._markerInstances = [];
 
-              if (matchingMarker.popupHTML) {
-                const popup = new maplibregl.Popup({
-                  closeButton: false,
-                  closeOnClick: false,
-                  offset: 25,
-                }).setHTML(matchingMarker.popupHTML);
+          const matchingMarker = window.__inspectionsMarkers?.find(
+            (m) =>
+              Math.abs(m.lat - lat) < 0.0001 &&
+              Math.abs(m.lon - lon) < 0.0001,
+          );
 
-                markerEl.addEventListener("mouseenter", () => {
-                  popup.setLngLat([lon, lat]).addTo(this.map);
-                });
+          if (matchingMarker) {
+            const markerEl = this._createMarkerElement(matchingMarker);
+            const marker = new maplibregl.Marker({
+              element: markerEl,
+              anchor: "bottom",
+            }).setLngLat([lon, lat]);
 
-                markerEl.addEventListener("mouseleave", () => {
-                  popup.remove();
-                });
-              }
+            if (matchingMarker.popupHTML) {
+              const popup = new maplibregl.Popup({
+                closeButton: false,
+                closeOnClick: false,
+                offset: 25,
+              }).setHTML(matchingMarker.popupHTML);
 
-              marker.addTo(this.map);
-              this._markerInstances.push(marker);
+              markerEl.addEventListener("mouseenter", () => {
+                try {
+                  this.map
+                    .getContainer()
+                    .querySelectorAll(".maplibregl-popup")
+                    .forEach((el) => el.remove());
+                } catch {}
+                popup.setLngLat([lon, lat]).addTo(this.map);
+              });
+
+              markerEl.addEventListener("mouseleave", () => {
+                popup.remove();
+                try {
+                  this.map
+                    .getContainer()
+                    .querySelectorAll(".maplibregl-popup")
+                    .forEach((el) => el.remove());
+                } catch {}
+              });
             }
 
-            this.map.flyTo({
-              center: [lon, lat],
-              zoom: 14,
-              speed: 0.8,
-              curve: 1.42,
-            });
+            marker.addTo(this.map);
+            this._markerInstances.push(marker);
           }
+
+          this.map.flyTo({
+            center: [lon, lat],
+            zoom: 14,
+            speed: 0.8,
+            curve: 1.42,
+          });
         };
         window.addEventListener("map:zoomToMarker", this._zoomToMarkerHandler);
 
         this._restoreMapHandler = () => {
           if (!this.map || !this._savedMapState) return;
+
+          try {
+            this.map
+              .getContainer()
+              .querySelectorAll(".maplibregl-popup")
+              .forEach((el) => el.remove());
+          } catch {}
 
           this.map.flyTo({
             center: this._savedMapState.center,
@@ -146,6 +172,13 @@
           });
 
           setTimeout(() => {
+            try {
+              this.map
+                .getContainer()
+                .querySelectorAll(".maplibregl-popup")
+                .forEach((el) => el.remove());
+            } catch {}
+
             const latest = window.__inspectionsMarkers;
             if (Array.isArray(latest) && latest.length) {
               this.updateMarkers(latest);
