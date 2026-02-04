@@ -817,9 +817,27 @@ function rowsToMarkers(rows, startIndex) {
       var lon = parseFloat(row.Longitude);
       if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
 
-      var hasViolation =
-        !!(row.violation_description && String(row.violation_description).trim());
-      var color = hasViolation ? "#c0392b" : "#1b998b";
+      var riskLevels = (row.risk_level || "").trim();
+      var color = "#1b998b";
+      var badgeText = "No Violations";
+      
+      if (riskLevels) {
+        var risks = riskLevels.split(' | ').map(function(s) { return s.trim().toLowerCase(); });
+        var hasHighRisk = risks.some(function(r) { return r === 'high risk'; });
+        var hasModerateRisk = risks.some(function(r) { return r === 'moderate risk'; });
+        var hasLowRisk = risks.some(function(r) { return r === 'low risk'; });
+        
+        if (hasHighRisk) {
+          color = "#D70000";
+          badgeText = "High Risk Violation";
+        } else if (hasModerateRisk) {
+          color = "#FFCB03";
+          badgeText = "Moderate Risk Violation";
+        } else if (hasLowRisk) {
+          color = "#009EDB";
+          badgeText = "Low Risk Violation";
+        }
+      }
 
       var facilityName = escapeHTML(row.facility || "Facility");
       var simplifiedAddress = simplifyAddress(row.address || "");
@@ -843,8 +861,8 @@ function rowsToMarkers(rows, startIndex) {
               <h3 class="pb-1 font-bold text-base leading-tight text-g-9 mb-1.5">${facilityName}</h3>
               ${addressLine ? `<p class="pb-1 text-xs text-g-6">${escapeHTML(addressLine)}</p>` : ""}
             </div>
-              <span class="mt-1 inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${hasViolation ? '#c0392b' : '#1b998b'};">
-                ${hasViolation ? 'Violation Reported' : 'No Violations'}
+              <span class="mt-1 inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${color};">
+                ${badgeText}
               </span>
             </div>
           </div>
