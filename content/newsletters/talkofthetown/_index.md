@@ -47,6 +47,12 @@ title = "State College Editor"
 description = "Sarah Rafacz is the editor of Spotlight PA’s State College bureau. Before joining Spotlight PA to help launch its first regional bureau, she was the editor of State College Magazine. Prior to that, Rafacz was a reporter at the Centre Daily Times, covering Penn State, local government and development."
 headshot = "2022/12/01hs-ja54-d44m-7mff.webp"
 
+[[staff]]
+name = "Erin Negley"
+title = "Newsletter Writer"
+description = "Erin Negley writes newsletters for Spotlight PA. She grew up in Newville, Cumberland County, and graduated from Ithaca College. She’s worked in newsrooms in Hanover, Reading, and Lancaster, covering breaking, community, and business news as well as features. When she’s not fixing up an old house in Lancaster County with her husband and daughter, she loves to spend time outdoors, in the garden, or at a park."
+headshot = "2026/01/01mp-asek-n6m4-kg25.jpeg"
+
 [[explore]]
 newsletter = "PA Post"
 schedule = "Each weekday"
