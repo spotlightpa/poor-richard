@@ -191,32 +191,70 @@
       _createMarkerElement(m = {}) {
         const color = m.color || "#c0392b";
         const size = Number.isFinite(m.size) ? m.size : 40; // px
+        const isNoViolation = color === "#1b998b";
+        
         const markerEl = document.createElement("div");
         markerEl.className = "cursor-pointer";
         markerEl.style.width = `${size}px`;
         markerEl.style.height = `${size}px`;
         markerEl.style.transform = "translateY(-2px)";
-        markerEl.innerHTML = `
-          <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
-            <defs>
-              <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
-                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
-              </filter>
-            </defs>
-            <g filter="url(#markerShadow)">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z
-                   M12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                fill="${color}"
-                stroke="#ffffff"
-                stroke-width="1"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              />
-              <circle cx="12" cy="9.5" r="2.5" fill="#ffffff"/>
-            </g>
-          </svg>
-        `;
+        
+        if (isNoViolation) {
+          markerEl.innerHTML = `
+            <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+                </filter>
+              </defs>
+              <g filter="url(#markerShadow)">
+                <circle cx="12" cy="12" r="10" fill="${color}" stroke="#ffffff" stroke-width="2"/>
+                <path
+                  d="M9 12l2 2 4-4"
+                  stroke="#ffffff"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </g>
+            </svg>
+          `;
+        } else {
+          markerEl.innerHTML = `
+            <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+                </filter>
+              </defs>
+              <g filter="url(#markerShadow)">
+                <path
+                  d="M12 2L2 20h20L12 2z"
+                  fill="${color}"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                />
+                <line
+                  x1="12"
+                  y1="9"
+                  x2="12"
+                  y2="14"
+                  stroke="#ffffff"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="12"
+                  cy="17"
+                  r="1.25"
+                  fill="#ffffff"
+                />
+              </g>
+            </svg>
+          `;
+        }
+        
         return markerEl;
       },
 
