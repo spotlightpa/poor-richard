@@ -31,4 +31,41 @@
   class="{{ $cfg.class }}"
 >
   <div x-ref="canvas" class="h-full w-full"></div>
+  
+  <div class="absolute bottom-6 left-4 bg-white rounded-lg shadow-lg p-4 text-sm font-sans z-10 max-w-[200px]">
+    <h3 class="font-bold text-g-9 mb-3 text-xs uppercase tracking-wide">Violation Risk</h3>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0">
+          <path d="M12 2L2 20h20L12 2z" fill="#D70000" stroke="#ffffff" stroke-width="2"/>
+          <line x1="12" y1="9" x2="12" y2="14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="12" cy="17" r="1.25" fill="#ffffff"/>
+        </svg>
+        <span class="text-g-7">High</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0">
+          <path d="M12 2L2 20h20L12 2z" fill="#FFCB03" stroke="#ffffff" stroke-width="2"/>
+          <line x1="12" y1="9" x2="12" y2="14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="12" cy="17" r="1.25" fill="#ffffff"/>
+        </svg>
+        <span class="text-g-7">Moderate</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0">
+          <path d="M12 2L2 20h20L12 2z" fill="#009EDB" stroke="#ffffff" stroke-width="2"/>
+          <line x1="12" y1="9" x2="12" y2="14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="12" cy="17" r="1.25" fill="#ffffff"/>
+        </svg>
+        <span class="text-g-7">Low</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0">
+          <circle cx="12" cy="12" r="10" fill="#1b998b" stroke="#ffffff" stroke-width="2"/>
+          <path d="M9 12l2 2 4-4" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="text-g-7">None</span>
+      </div>
+    </div>
+  </div>
 </div>
