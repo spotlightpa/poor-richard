@@ -13,6 +13,7 @@
       bearing: Number.isFinite(opts?.bearing) ? opts.bearing : 0,
       pitch: Number.isFinite(opts?.pitch) ? opts.pitch : 0,
       controls: Array.isArray(opts?.controls) ? opts.controls : ["navigation"],
+      navigationPosition: typeof opts?.navigationPosition === "string" ? opts.navigationPosition : "top-left",
       attributionCompact: opts?.attributionCompact ?? true,
       markers: Array.isArray(opts?.markers) ? opts.markers : [],
 
@@ -282,7 +283,7 @@
               showZoom: true,
               visualizePitch: false,
             });
-            this.map.addControl(nav, "top-right");
+            this.map.addControl(nav, this.navigationPosition);
           }
           if (this.controls.includes("fullscreen")) {
             this.map.addControl(

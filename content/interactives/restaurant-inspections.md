@@ -60,6 +60,7 @@ credits = """
 
 [map]
 controls = ["navigation"]
+navigationPosition = "top-left"
 bounds = [[-80.5199, 39.7198], [-74.6895, 42.26986]]
 padding = 24
 minZoom = 3
