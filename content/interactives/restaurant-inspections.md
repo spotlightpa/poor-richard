@@ -59,7 +59,7 @@ credits = """
 """
 
 [map]
-controls = ["navigation", "fullscreen"]
+controls = ["navigation"]
 bounds = [[-80.5199, 39.7198], [-74.6895, 42.26986]]
 padding = 24
 minZoom = 3
