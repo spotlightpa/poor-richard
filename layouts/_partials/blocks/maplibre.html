@@ -2,7 +2,8 @@
   window.maplibreComponent = function (opts) {
     return {
       id: opts?.id || "map-" + Math.random().toString(36).slice(2),
-      styleURL: opts?.styleURL || "https://demotiles.maplibre.org/style.json",
+      styleURL:
+        opts?.styleURL || "https://tiles.openfreemap.org/styles/positron",
       center: Array.isArray(opts?.center) ? opts.center : [-77.5, 40.9],
       zoom: Number.isFinite(opts?.zoom) ? opts.zoom : 6,
       bounds: Array.isArray(opts?.bounds) ? opts.bounds : null,
