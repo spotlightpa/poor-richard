@@ -38,3 +38,5 @@ Register and submit your questions for the reporters <a href="https://zoom.us/we
 
 <strong>March 26:</strong> <em>Shut up and Read</em> with author Jeannine Cook
 
+<strong>April 30:</strong> <em>Sidle Creek</em> with author Jolene McIlwain
+
