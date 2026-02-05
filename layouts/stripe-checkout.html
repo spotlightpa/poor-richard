@@ -81,6 +81,19 @@
         </p>
       </div>
 
+      <div class="mb-4">
+        <label for="promoCode" class="mb-1 block text-sm font-medium text-g-9"
+          >Promotion Code <span class="text-g-6">(optional)</span></label
+        >
+        <input
+          type="text"
+          id="promoCode"
+          name="promoCode"
+          placeholder="Enter Code"
+          class="w-full rounded border border-g-4 px-3 py-2 text-base"
+        />
+      </div>
+
       <div id="payment-placeholder" class="flex justify-center py-6">
         <svg aria-hidden="true" class="h-16 w-16 animate-spin text-g-7">
           {{ partial "helper/svg.html" "spinner" }}
@@ -184,6 +197,7 @@
       const firstName = document.getElementById("firstName").value.trim();
       const lastName = document.getElementById("lastName").value.trim();
       const email = document.getElementById("email").value.trim();
+      const promoCode = document.getElementById("promoCode").value.trim();
 
       await pollUntil(()=> !! elements);
 
@@ -215,9 +229,9 @@
             paymentMethodId: setupIntent.payment_method,
             firstName: firstName,
             lastName: lastName,
+            promoCode: promoCode || undefined,
           }),
         });
-
         const data = await res.json();
 
         if (!res.ok) {
