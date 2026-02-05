@@ -3,6 +3,8 @@ layout = "restaurant-inspections"
 url = "/restaurant-inspections/"
 suppress-footer-newsletter = true
 
+suppress-expanded-header = true
+
 ad-header-desktop-active = false
 ad-header-mobile-active = false
 

@@ -4,8 +4,12 @@
 
 <div
   class="top-0 border-b border-black bg-beige font-sans transition-all sm:h-[145px] md:h-[165px] print:hidden"
-  x-data="{ isOpen: false }"
-  :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': !atTop, 'sm:h-[145px] md:h-[165px] transition-all': atTop }"
+  x-data="{ isOpen: false, forceCollapsed: {{ if .Param "suppress-expanded-header" }}
+    true
+  {{ else }}
+    false
+  {{ end }} }"
+  :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': forceCollapsed || !atTop, 'sm:h-[145px] md:h-[165px] transition-all': !forceCollapsed && atTop }"
   data-ga-category="top-banner"
   data-fru-campaign="navbar"
   aria-labelledby="top"
@@ -20,7 +24,7 @@
       <a id="top" class="flex justify-start" href="/" data-ga-category="logo">
         <svg
           class="-sm:mr-1 h-8 w-32 pb-[2px] sm:h-12 sm:w-52 md:mr-0 md:h-12 md:w-48 lg:h-14 lg:w-60"
-          x-show="atTop"
+          x-show="!forceCollapsed && atTop"
           x-transition:enter="transition ease-out duration-150"
           x-transition:enter-start="opacity-0 scale-10"
           x-transition:enter-end="opacity-100 scale-100"
@@ -218,7 +222,7 @@
 
     <p
       class="order-1 -mx-3 -mb-3 mt-2 w-screen border-b border-t border-black bg-white py-3 text-center text-xs font-extrabold tracking-wide sm:m-0 sm:flex sm:justify-center sm:border-0 sm:bg-transparent md:text-base xl:text-base print:hidden"
-      x-show="atTop"
+      x-show="!forceCollapsed && atTop"
       x-transition:enter="transition ease-out duration-150"
       x-transition:enter-start="opacity-0 scale-10"
       x-transition:enter-end="opacity-100 scale-100"
@@ -232,7 +236,7 @@
 
   <nav
     class="hidden h-11 border-t bg-white font-sans sm:block print:hidden"
-    x-show="atTop"
+    x-show="!forceCollapsed && atTop"
     x-transition:enter="transition ease-out duration-150"
     x-transition:enter-start="opacity-0 scale-10"
     x-transition:enter-end="opacity-100 scale-100"
