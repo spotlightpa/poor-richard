@@ -7,36 +7,45 @@
 {{ end }}
 
 {{ define "main" }}
-  <section class="bg-black pb-6">
+  <section
+    class="sticky top-0 z-50 bg-black transition-all duration-300"
+    x-data="stickyHeader()"
+    x-init="init()"
+  >
     <div
-      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pt-4 md:px-0"
+      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 transition-all duration-300 md:px-0"
+      :class="scrolled ? 'pt-3 pb-3' : 'pt-4 pb-6'"
     >
-      <h1
-        class="mx-auto w-full pb-2 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl md:w-7/12 lg:text-4xl"
+      <div
+        class="overflow-hidden transition-all duration-300"
+        :style="scrolled ? 'max-height: 0; opacity: 0; margin-bottom: 0;' : 'max-height: 500px; opacity: 1; margin-bottom: 12px;'"
       >
-        {{ .Title }}
-      </h1>
+        <h1
+          class="mx-auto w-full pb-2 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl md:w-7/12 lg:text-4xl"
+        >
+          {{ .Title }}
+        </h1>
 
-      {{ with .Param "deck" }}
-        <div class="mx-auto w-full md:w-7/12">
-          <p
-            class="font-serif text-base text-white md:text-lg md:leading-tight lg:text-xl"
-          >
-            {{ . }}
-          </p>
-        </div>
-      {{ end }}
+        {{ with .Param "deck" }}
+          <div class="mx-auto w-full md:w-7/12">
+            <p
+              class="font-serif text-base text-white md:text-lg md:leading-tight lg:text-xl"
+            >
+              {{ . }}
+            </p>
+          </div>
+        {{ end }}
 
-      {{ with .Param "search-instructions" }}
-        <div class="mx-auto mt-8 w-full md:w-7/12">
-          <p
-            class="font-serif text-base italic text-white md:text-lg md:leading-tight"
-          >
-            {{ . }}
-          </p>
-        </div>
-      {{ end }}
-
+        {{ with .Param "search-instructions" }}
+          <div class="mx-auto mt-8 w-full md:w-7/12">
+            <p
+              class="font-serif text-base italic text-white md:text-lg md:leading-tight"
+            >
+              {{ . }}
+            </p>
+          </div>
+        {{ end }}
+      </div>
 
       <div
         class="mx-auto mt-3 hidden w-full md:block md:w-7/12"
@@ -54,12 +63,11 @@
   </section>
 
   <section class="hidden md:block" x-data="inspectionsUI()" x-init="init()">
-    <div class="bg-black"></div>
     <div class="w-full bg-white px-4 md:px-0">
-      <div
-        class="grid h-[calc(100dvh-120px)] min-h-[500px] grid-cols-[240px_auto_1fr_1fr]"
-      >
-        <div class="flex flex-col bg-white px-5 py-6">
+      <div class="grid grid-cols-[240px_auto_1fr_1fr]">
+        <div
+          class="sticky top-[120px] flex h-[calc(100vh-140px)] flex-col overflow-y-auto bg-white px-5 py-6"
+        >
           <h3
             class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
           >
@@ -368,24 +376,11 @@
 
         <div aria-hidden="true" class="h-full w-px bg-g-4"></div>
 
-        <div class="flex min-h-0 flex-col border-r border-g-4">
-          <div
-            class="relative min-h-0 grow rounded-t-[40px] bg-g-3 md:rounded-none"
-            x-data="customScroll()"
-            x-init="init()"
-          >
-            <div
-              x-ref="viewport"
-              class="h-full overflow-y-auto bg-white [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-              tabindex="0"
-              aria-label="Inspection results list"
-            >
-              {{ partial "blocks/inspection-scroll.html" . }}
-            </div>
-          </div>
+        <div class="border-r border-g-4 bg-white py-6">
+          {{ partial "blocks/inspection-scroll.html" . }}
         </div>
 
-        <div class="flex h-full flex-col">
+        <div class="sticky top-[120px] h-[calc(100vh-140px)]">
           {{ partial "blocks/maplibre-assets.html" (dict
             "ctx" .
             "id" "inspections-map"
@@ -493,6 +488,25 @@
   {{ end }}
 
   <script>
+    function stickyHeader() {
+      return {
+        scrolled: false,
+        init() {
+          let ticking = false;
+
+          window.addEventListener('scroll', () => {
+            if (!ticking) {
+              window.requestAnimationFrame(() => {
+                this.scrolled = window.scrollY > 100;
+                ticking = false;
+              });
+              ticking = true;
+            }
+          });
+        }
+      };
+    }
+
     function inspectionsUI() {
       return {
         q: "",
@@ -1067,13 +1081,7 @@ openDetails(card) {
       );
     }
 
-    const scroller =
-    card.closest('[aria-label="Inspection results list"]') || null;
-
-  const baseTop = scroller
-    ? scroller.getBoundingClientRect().top
-    : 0;
-  const prevTop = card.getBoundingClientRect().top - baseTop;
+    const prevTop = card.getBoundingClientRect().top;
 
   this.cards.forEach((c) => {
     if (c !== card) c.classList.add("hidden-by-detail");
@@ -1343,13 +1351,9 @@ detail.classList.add("flex", "flex-col", "flex-1");
     .querySelector('[data-action="back-to-results"]')
     ?.focus({ preventScroll: true });
 
-  const nextTop = card.getBoundingClientRect().top - baseTop;
+  const nextTop = card.getBoundingClientRect().top;
   const delta = nextTop - prevTop;
-  if (scroller) {
-    scroller.scrollTop += delta;
-  } else {
-    window.scrollBy(0, delta);
-  }
+  window.scrollBy(0, delta);
 
 this.activeCard = card;
   window.location.hash = this.generateCardId(card);
@@ -1365,13 +1369,7 @@ backToResults() {
       if (!this.activeCard) return;
       const card = this.activeCard;
 
-      const scroller =
-        card.closest('[aria-label="Inspection results list"]') || null;
-
-      const baseTop = scroller
-        ? scroller.getBoundingClientRect().top
-        : 0;
-      const prevTop = card.getBoundingClientRect().top - baseTop;
+      const prevTop = card.getBoundingClientRect().top;
 
       card.querySelector(".detail-content")?.remove();
       card.querySelector(".list-content")?.classList.remove("hidden");
@@ -1381,13 +1379,9 @@ backToResults() {
       });
       this.applyFilters();
 
-      const nextTop = card.getBoundingClientRect().top - baseTop;
+      const nextTop = card.getBoundingClientRect().top;
       const delta = nextTop - prevTop;
-      if (scroller) {
-        scroller.scrollTop += delta;
-      } else {
-        window.scrollBy(0, delta);
-      }
+      window.scrollBy(0, delta);
 
 const mount = card.closest(".inspections-mount");
 if (mount) {
@@ -1608,31 +1602,5 @@ readViolations(card) {
       };
     }
 
-    function customScroll() {
-      return {
-        init() {
-          const vp = this.$refs.viewport;
-          if (!vp) return;
-
-          const gridContainer = vp.closest('.grid');
-          if (!gridContainer) return;
-
-          gridContainer.addEventListener('wheel', (e) => {
-            if (vp.contains(e.target)) return;
-
-            const scrollable = vp.scrollHeight > vp.clientHeight;
-            if (!scrollable) return;
-
-            const atTop = vp.scrollTop <= 0;
-            const atBottom = vp.scrollTop + vp.clientHeight >= vp.scrollHeight - 1;
-
-            if ((e.deltaY > 0 && !atBottom) || (e.deltaY < 0 && !atTop)) {
-              e.preventDefault();
-              vp.scrollTop += e.deltaY;
-            }
-          }, { passive: false });
-        }
-      };
-    }
   </script>
 {{ end }}

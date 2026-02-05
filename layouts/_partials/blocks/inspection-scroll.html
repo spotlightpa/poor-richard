@@ -644,15 +644,7 @@ function performSearch(query, city) {
       syncMarkers();
 
       rendering = false;
-      var vp = document.querySelector('[aria-label="Inspection results list"]');
-      if (vp) {
-        vp.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        var mount = document.querySelector('.inspections-mount');
-        if (mount) {
-          mount.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function goToPage(page) {
