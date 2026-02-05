@@ -9,7 +9,7 @@
   {{ else }}
     false
   {{ end }} }"
-  :class="{ 'shadow-lg sm:mb-[81px] sm:h-16 md:mb-[93px] md:h-[73px]': forceCollapsed || !atTop, 'sm:h-[145px] md:h-[165px] transition-all': !forceCollapsed && atTop }"
+  :class="{ 'shadow-lg sm:h-16 md:h-[73px]': forceCollapsed || !atTop, 'sm:mb-[81px] md:mb-[93px]': !forceCollapsed && !atTop, 'sm:h-[145px] md:h-[165px] transition-all': !forceCollapsed && atTop }"
   data-ga-category="top-banner"
   data-fru-campaign="navbar"
   aria-labelledby="top"
