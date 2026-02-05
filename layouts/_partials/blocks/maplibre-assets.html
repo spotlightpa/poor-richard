@@ -31,45 +31,99 @@
   class="{{ $cfg.class }}"
 >
   <div x-ref="canvas" class="h-full w-full"></div>
-  
-  <div class="absolute top-2.5 right-2.5 bg-white rounded-md shadow-lg overflow-hidden text-xs font-sans z-10">
-    <div class="bg-g-9 px-3 py-1.5 flex items-center gap-1.5">
-      <svg width="12" height="12" viewBox="0 0 24 24" class="flex-shrink-0">
-        <path d="M12 2L2 20h20L12 2z" fill="#ffffff" stroke="none"/>
-      </svg>
-      <div class="text-[10px] font-bold text-white uppercase tracking-wider">Risk</div>
+
+  <div
+    class="absolute right-2.5 top-2.5 z-10 overflow-hidden rounded-lg bg-white/95 font-sans text-xs shadow-md backdrop-blur-sm"
+  >
+    <div class="border-b border-g-3 px-2 py-1">
+      <div class="text-[9px] font-bold uppercase tracking-wide text-g-7">
+        Risk Level
+      </div>
     </div>
-    <div class="p-2 space-y-1.5">
+    <div class="space-y-1 p-1.5">
       <div class="flex items-center gap-1.5">
         <svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0">
-          <path d="M12 2L2 20h20L12 2z" fill="#D70000" stroke="#ffffff" stroke-width="2"/>
-          <line x1="12" y1="9" x2="12" y2="14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="12" cy="17" r="1.25" fill="#ffffff"/>
+          <path
+            d="M12 2L2 20h20L12 2z"
+            fill="#D70000"
+            stroke="#ffffff"
+            stroke-width="2"
+          />
+          <line
+            x1="12"
+            y1="9"
+            x2="12"
+            y2="14"
+            stroke="#ffffff"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="17" r="1.25" fill="#ffffff" />
         </svg>
-        <span class="text-g-8 text-[11px] font-medium">High</span>
+        <span class="text-[11px] font-medium text-g-8">High</span>
       </div>
       <div class="flex items-center gap-1.5">
         <svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0">
-          <path d="M12 2L2 20h20L12 2z" fill="#FFCB03" stroke="#ffffff" stroke-width="2"/>
-          <line x1="12" y1="9" x2="12" y2="14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="12" cy="17" r="1.25" fill="#ffffff"/>
+          <path
+            d="M12 2L2 20h20L12 2z"
+            fill="#FFCB03"
+            stroke="#ffffff"
+            stroke-width="2"
+          />
+          <line
+            x1="12"
+            y1="9"
+            x2="12"
+            y2="14"
+            stroke="#ffffff"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="17" r="1.25" fill="#ffffff" />
         </svg>
-        <span class="text-g-8 text-[11px] font-medium">Mod</span>
+        <span class="text-[11px] font-medium text-g-8">Mod</span>
       </div>
       <div class="flex items-center gap-1.5">
         <svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0">
-          <path d="M12 2L2 20h20L12 2z" fill="#009EDB" stroke="#ffffff" stroke-width="2"/>
-          <line x1="12" y1="9" x2="12" y2="14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="12" cy="17" r="1.25" fill="#ffffff"/>
+          <path
+            d="M12 2L2 20h20L12 2z"
+            fill="#009EDB"
+            stroke="#ffffff"
+            stroke-width="2"
+          />
+          <line
+            x1="12"
+            y1="9"
+            x2="12"
+            y2="14"
+            stroke="#ffffff"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="17" r="1.25" fill="#ffffff" />
         </svg>
-        <span class="text-g-8 text-[11px] font-medium">Low</span>
+        <span class="text-[11px] font-medium text-g-8">Low</span>
       </div>
       <div class="flex items-center gap-1.5">
         <svg width="16" height="16" viewBox="0 0 24 24" class="flex-shrink-0">
-          <circle cx="12" cy="12" r="10" fill="#1b998b" stroke="#ffffff" stroke-width="2"/>
-          <path d="M9 12l2 2 4-4" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            fill="#1b998b"
+            stroke="#ffffff"
+            stroke-width="2"
+          />
+          <path
+            d="M9 12l2 2 4-4"
+            stroke="#ffffff"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+          />
         </svg>
-        <span class="text-g-8 text-[11px] font-medium">None</span>
+        <span class="text-[11px] font-medium text-g-8">None</span>
       </div>
     </div>
   </div>

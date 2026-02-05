@@ -13,7 +13,10 @@
       bearing: Number.isFinite(opts?.bearing) ? opts.bearing : 0,
       pitch: Number.isFinite(opts?.pitch) ? opts.pitch : 0,
       controls: Array.isArray(opts?.controls) ? opts.controls : ["navigation"],
-      navigationPosition: typeof opts?.navigationPosition === "string" ? opts.navigationPosition : "top-left",
+      navigationPosition:
+        typeof opts?.navigationPosition === "string"
+          ? opts.navigationPosition
+          : "top-left",
       attributionCompact: opts?.attributionCompact ?? true,
       markers: Array.isArray(opts?.markers) ? opts.markers : [],
 
@@ -77,7 +80,8 @@
 
         this._zoomToMarkerHandler = (e) => {
           const { lat, lon } = e.detail || {};
-          if (typeof lat !== "number" || typeof lon !== "number" || !this.map) return;
+          if (typeof lat !== "number" || typeof lon !== "number" || !this.map)
+            return;
 
           try {
             this.map
@@ -100,8 +104,7 @@
 
           const matchingMarker = window.__inspectionsMarkers?.find(
             (m) =>
-              Math.abs(m.lat - lat) < 0.0001 &&
-              Math.abs(m.lon - lon) < 0.0001,
+              Math.abs(m.lat - lat) < 0.0001 && Math.abs(m.lon - lon) < 0.0001,
           );
 
           if (matchingMarker) {
@@ -226,13 +229,13 @@
         const color = m.color || "#c0392b";
         const size = Number.isFinite(m.size) ? m.size : 40; // px
         const isNoViolation = color === "#1b998b";
-        
+
         const markerEl = document.createElement("div");
         markerEl.className = "cursor-pointer";
         markerEl.style.width = `${size}px`;
         markerEl.style.height = `${size}px`;
         markerEl.style.transform = "translateY(-2px)";
-        
+
         if (isNoViolation) {
           markerEl.innerHTML = `
             <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
@@ -288,7 +291,7 @@
             </svg>
           `;
         }
-        
+
         return markerEl;
       },
 

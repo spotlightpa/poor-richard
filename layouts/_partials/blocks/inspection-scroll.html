@@ -820,13 +820,13 @@ function rowsToMarkers(rows, startIndex) {
       var riskLevels = (row.risk_level || "").trim();
       var color = "#1b998b";
       var badgeText = "No Violations";
-      
+
       if (riskLevels) {
         var risks = riskLevels.split(' | ').map(function(s) { return s.trim().toLowerCase(); });
         var hasHighRisk = risks.some(function(r) { return r === 'high risk'; });
         var hasModerateRisk = risks.some(function(r) { return r === 'moderate risk'; });
         var hasLowRisk = risks.some(function(r) { return r === 'low risk'; });
-        
+
         if (hasHighRisk) {
           color = "#D70000";
           badgeText = "High Risk Violation";
