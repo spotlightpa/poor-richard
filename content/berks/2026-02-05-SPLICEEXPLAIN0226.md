@@ -33,7 +33,7 @@ Here’s what we know so far:
 
 The warehouse at 3501 Mountain Road has never been used, but it was initially designed and constructed as a commercial facility. The property is located in an area of Upper Bern Township that is <a href="https://upperberntownship.org/wp-content/uploads/Zoning-Map-2019.pdf">zoned for industrial development.</a>
 
-Transwestern Development Company completed construction in 2021 and later <a href="https://www.jll.com/en-us/newsroom/jll-closes-sale-of-hamburg-logistics-center">sold</a> the warehouse to PCCP, a national commercial real estate equity firm, for $57.5 million. Since it was built and placed on the market, the property has remained vacant while generating about $199,693 annually in county property taxes, $31,229 in township taxes, and $597,110 for the Hamburg Area School District.
+Transwestern Development Company completed construction in 2021 and later <a href="https://www.jll.com/en-us/newsroom/jll-closes-sale-of-hamburg-logistics-center">sold</a> the warehouse to PCCP, a national commercial real estate equity firm, for $57.5 million. Since it was built and placed on the market, the property has remained vacant while generating about $199,620 annually in county property taxes, $31,229 in township taxes, and $597,110 for the Hamburg Area School District.
 
 <a href="https://www.hamburglogisticscenter.com/uploads/1/3/4/0/134073657/3501-mountain-rd_hamburg-pa_brochure-v4.pdf">A marketing brochure for the Hamburg Logistics Center</a> describes the warehouse as a “state-of-the-art logistics center” designed for large-scale distribution operations.
 
