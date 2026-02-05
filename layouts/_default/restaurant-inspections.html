@@ -7,19 +7,11 @@
 {{ end }}
 
 {{ define "main" }}
-  <section
-    class="sticky top-0 z-50 bg-black transition-all duration-300"
-    x-data="stickyHeader()"
-    x-init="init()"
-  >
+  <section class="bg-black">
     <div
-      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 transition-all duration-300 md:px-0"
-      :class="scrolled ? 'pt-3 pb-3' : 'pt-4 pb-6'"
+      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pb-6 pt-4 md:px-0"
     >
-      <div
-        class="overflow-hidden transition-all duration-300"
-        :style="scrolled ? 'max-height: 0; opacity: 0; margin-bottom: 0;' : 'max-height: 500px; opacity: 1; margin-bottom: 12px;'"
-      >
+      <div class="mb-3">
         <h1
           class="mx-auto w-full pb-2 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl md:w-7/12 lg:text-4xl"
         >
@@ -66,7 +58,7 @@
     <div class="w-full bg-white px-4 md:px-0">
       <div class="grid grid-cols-[240px_auto_1fr_1fr]">
         <div
-          class="sticky top-[120px] flex h-[calc(100vh-140px)] flex-col overflow-y-auto bg-white px-5 py-6"
+          class="sticky top-[73px] flex h-[calc(100vh-73px)] flex-col overflow-y-auto bg-white px-5 py-6"
         >
           <h3
             class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
@@ -380,7 +372,7 @@
           {{ partial "blocks/inspection-scroll.html" . }}
         </div>
 
-        <div class="sticky top-[120px] h-[calc(100vh-140px)]">
+        <div class="sticky top-[73px] h-[calc(100vh-73px)]">
           {{ partial "blocks/maplibre-assets.html" (dict
             "ctx" .
             "id" "inspections-map"
@@ -488,25 +480,6 @@
   {{ end }}
 
   <script>
-    function stickyHeader() {
-      return {
-        scrolled: false,
-        init() {
-          let ticking = false;
-
-          window.addEventListener('scroll', () => {
-            if (!ticking) {
-              window.requestAnimationFrame(() => {
-                this.scrolled = window.scrollY > 100;
-                ticking = false;
-              });
-              ticking = true;
-            }
-          });
-        }
-      };
-    }
-
     function inspectionsUI() {
       return {
         q: "",
