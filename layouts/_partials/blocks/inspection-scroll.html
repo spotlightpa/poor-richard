@@ -996,7 +996,7 @@ function createInspectionCard(data, index, allInspections) {
       var addressRow = addressLine
         ? `
           <div class="flex items-center gap-1">
-            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+            <svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7">
               {{ partial "helper/svg.html" "location" }}
             </svg>
             <span>${escapeHTML(addressLine)}</span>
@@ -1007,7 +1007,7 @@ function createInspectionCard(data, index, allInspections) {
       var dateRow = inspectionDate
         ? `
           <div class="flex items-center gap-1">
-            <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+            <svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7">
               {{ partial "helper/svg.html" "calendar-day" }}
             </svg>
             <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
@@ -1409,7 +1409,7 @@ if (!hasViolation) {
             ${location ? `
               <div class="mt-2 space-y-1 text-g-6">
                 <div class="flex items-center gap-1">
-                  <svg class="h-4 w-4 flex-shrink-0 fill-g-5">
+                  <svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7">
                     {{ partial "helper/svg.html" "map-pin" }}
                   </svg>
                   <span>${escapeHTML(location)}</span>
