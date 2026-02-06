@@ -9,7 +9,7 @@ export const handler = async (event) => {
 
   try {
     const requestBody = JSON.parse(event.body);
-    const { priceId, email, paymentMethodId, firstName, lastName } =
+    const { priceId, email, paymentMethodId, firstName, lastName, promoCode } =
       requestBody;
 
     if (!email && !paymentMethodId) {
