@@ -85,13 +85,69 @@
         <label for="promoCode" class="mb-1 block text-sm font-medium text-g-9"
           >Promotion Code <span class="text-g-6">(optional)</span></label
         >
-        <input
-          type="text"
-          id="promoCode"
-          name="promoCode"
-          placeholder="Enter Code"
-          class="w-full rounded border border-g-4 px-3 py-2 text-base"
-        />
+        <div class="relative">
+          <input
+            type="text"
+            id="promoCode"
+            name="promoCode"
+            placeholder="Enter Code"
+            class="w-full rounded border border-g-4 px-3 py-2 pr-10 text-base"
+          />
+          <div
+            id="promo-status"
+            class="absolute right-3 top-1/2 hidden -translate-y-1/2"
+          ></div>
+        </div>
+
+        <div
+          id="discount-preview"
+          class="mt-3 hidden overflow-hidden rounded-lg border-2 p-4 transition-all"
+          style="border-color: #00D924; background-color: #E6F9ED;"
+        >
+          <div class="flex items-start gap-3">
+            <div
+              class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white"
+              style="background-color: #00D924;"
+            >
+              <svg class="h-3 w-3" aria-hidden="true">
+                {{ partial "helper/svg.html" "check" }}
+              </svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm font-semibold" style="color: #00A82D;">
+                Promotion code applied!
+              </p>
+              <div class="mt-2 space-y-1 text-sm text-g-9">
+                <div class="flex justify-between">
+                  <span>Original price:</span>
+                  <span class="line-through" id="original-price"></span>
+                </div>
+                <div
+                  class="flex justify-between font-semibold"
+                  style="color: #00A82D;"
+                >
+                  <span>Discount:</span>
+                  <span id="discount-amount"></span>
+                </div>
+                <div
+                  class="flex justify-between border-t pt-2 text-base font-bold"
+                  style="border-color: #C6E8D5; color: #00A82D;"
+                >
+                  <span>New price:</span>
+                  <span id="new-price"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="promo-error"
+          class="mt-2 hidden text-sm"
+          style="color: #DF1B41;"
+        >
+          <span id="promo-error-text"></span>
+        </div>
       </div>
 
       <div id="payment-placeholder" class="flex justify-center py-6">
@@ -125,7 +181,8 @@
 
       <div
         id="payment-message"
-        class="mt-4 hidden text-red"
+        class="mt-4 hidden"
+        style="color: #DF1B41;"
         role="alert"
         aria-live="polite"
       ></div>
@@ -167,6 +224,7 @@
         document.getElementById("payment-placeholder").classList.add("hidden");
         document.getElementById("payment-element").classList.remove("hidden");
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.error("Error loading payment form:", error);
         showMessage("Error loading payment form. Please refresh and try again.");
         document.getElementById("payment-placeholder").classList.add("hidden");
@@ -218,10 +276,10 @@
           throw new Error(confirmError.message);
         }
 
+       // eslint-disable-next-line no-console
         console.log("Setup confirmed, payment method:", setupIntent.payment_method);
 
         const res = await fetch("/.netlify/functions/create-subscription", {
-          method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             priceId: "{{ $priceId }}",
@@ -262,6 +320,7 @@
         window.location.href = `${window.location.origin}/newsletters/accessharrisburg/thanks/`;
 
       } catch (err) {
+        // eslint-disable-next-line no-console
         console.error("Unexpected error:", err);
         showMessage(err.message || "Unexpected error. Please try again.");
         setLoading(false);
@@ -282,6 +341,115 @@
       spinner.classList.toggle("hidden", !isLoading);
       buttonText.classList.toggle("hidden", isLoading);
     }
+
+    let promoValidationTimeout;
+    const promoInput = document.getElementById("promoCode");
+    const promoStatus = document.getElementById("promo-status");
+    const discountPreview = document.getElementById("discount-preview");
+    const promoError = document.getElementById("promo-error");
+    const promoErrorText = document.getElementById("promo-error-text");
+
+    async function validatePromoCode(code) {
+      if (!code || code.length < 3) {
+        hidePromoFeedback();
+        return;
+      }
+
+      promoStatus.classList.remove("hidden");
+      promoStatus.innerHTML = `
+              <svg class="animate-spin" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            `;
+
+      try {
+        const res = await fetch("/.netlify/functions/validate-promo", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            promoCode: code,
+            priceId: "{{ $priceId }}",
+          }),
+        });
+
+        const data = await res.json();
+
+        if (data.valid) {
+          showPromoSuccess(data);
+        } else {
+          showPromoError(data.error);
+        }
+        } catch (error) {
+                // eslint-disable-next-line no-console
+                console.error("Promo validation error:", error);
+                showPromoError("Could not validate code.");
+              }
+            }
+
+      function showPromoSuccess(data) {
+            promoStatus.innerHTML = `
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#00D924">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+              </svg>
+            `;
+
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+      });
+
+      document.getElementById("original-price").textContent = formatter.format(data.originalAmount);
+      document.getElementById("discount-amount").textContent = `-${formatter.format(data.discountAmount)}`;
+      document.getElementById("new-price").textContent = formatter.format(data.newAmount);
+
+      discountPreview.classList.remove("hidden");
+            promoError.classList.add("hidden");
+            promoInput.classList.remove("border-red");
+            promoInput.style.borderColor = "#00D924";
+          }
+
+      function showPromoError(message) {
+            promoStatus.innerHTML = `
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#DF1B41">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd"/>
+              </svg>
+            `;
+
+        promoErrorText.textContent = message;
+        promoError.classList.remove("hidden");
+        discountPreview.classList.add("hidden");
+        promoInput.style.borderColor = "#DF1B41";
+      }
+
+      function hidePromoFeedback() {
+            promoStatus.classList.add("hidden");
+            discountPreview.classList.add("hidden");
+            promoError.classList.add("hidden");
+            promoInput.style.borderColor = "";
+          }
+
+      promoInput.addEventListener("input", (e) => {
+        clearTimeout(promoValidationTimeout);
+        const code = e.target.value.trim();
+
+        if (code.length === 0) {
+          hidePromoFeedback();
+          return;
+        }
+
+        promoValidationTimeout = setTimeout(() => {
+          validatePromoCode(code);
+        }, 500);
+      });
+
+      promoInput.addEventListener("blur", () => {
+        const code = promoInput.value.trim();
+        if (code) {
+          clearTimeout(promoValidationTimeout);
+          validatePromoCode(code);
+        }
+      });
 
   </script>
 {{ end }}
