@@ -1,0 +1,302 @@
+{{ define "body-class" }}
+  font-serif
+{{ end }}
+
+{{ define "main" }}
+
+  {{ $title := .Title }}
+  {{ $calloutTitle := .Page.Param "callout-title" }}
+  {{ $blurb := .Page.Params.blurb }}
+  {{ $p := partial "helper/paginator" . }}
+  {{ $pages := $p.Pages }}
+
+  {{ $pinnedPages := where $pages "Params.pinned" true }}
+  {{ $featuredPages := union $pinnedPages $pages | first 5 }}
+
+  {{ if eq .Paginator.PageNumber 1 }}
+    <section
+      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
+    >
+      <header
+        class="flex w-full flex-wrap items-baseline justify-between border-b border-black md:flex-nowrap"
+      >
+        <h2
+          class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        >
+          {{ with $calloutTitle }}
+            {{ . }}
+          {{ else }}
+            {{ $title }}
+          {{ end }}
+        </h2>
+        <div class="-order-1 w-full sm:order-1 sm:w-auto">
+          {{ partial "tw/breadcrumbs.html" . }}
+        </div>
+      </header>
+      {{ with .Content }}
+        <div
+          class="flex w-full items-baseline justify-between rounded-lg bg-beige p-6 font-sans leading-relaxed"
+        >
+          <div
+            class="mx-auto my-6 max-w-prose"
+            data-ga-category="content"
+            id="content"
+          >
+            <div
+              class="article-content w-full overflow-hidden leading-relaxed"
+              data-fru-campaign="in-story-link"
+            >
+              {{ . }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
+
+      <div
+        class="mt-7 flex flex-auto self-stretch sm:max-w-[280px] md:space-y-12 lg:max-w-[300px]"
+      >
+        <div
+          class="article-content rounded-sm bg-black p-6 font-sans text-white"
+        >
+          <div
+            class="spl-links-yellow text-xl leading-relaxed [&_h3]:text-2xl [&_h3]:font-extrabold"
+          >
+            {{ $blurb | markdownify }}
+          </div>
+        </div>
+      </div>
+
+      {{ range $featuredPages | first 1 }}
+        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+        {{ $imgOpts := dict
+          "filename" (.Param "image")
+          "credit" (.Param "image-credit")
+          "description" (.Param "image-description")
+          "link" $params.link
+          "widthRatio" 3
+          "heightRatio" 2
+          "widths" (slice 128 256 384 512 1280)
+          "figClass" "mt-2"
+          "sizeHint" "(min-width: 850px) 328px, 90vw"
+          "gravity" (.Param "image-gravity")
+        }}
+        <div
+          class="max-w-full sm:w-1/2 sm:flex-1 md:w-7/12 md:flex-auto xl:w-8/12"
+          data-ga-category="story-1"
+        >
+          {{ $eyebrow := $params.published }}
+          {{ $rubricLink := $params.link }}
+          {{ $thumbClass := $params.thumbClass }}
+          {{ partial "tw/thumb-item.html" (dict
+            "wrapperClass" "flex flex-wrap gap-x-9"
+            "thumbClass" "w-full lg:max-w-md xl:max-w-lg"
+            "hedSize" `text-xl md:text-xl lg:text-2xl font-semibold`
+            "dekSize" "sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+            "imgOpts" $imgOpts
+            "rubricLink" $rubricLink
+            "eyebrow" $eyebrow
+            "link" $params.link
+            "hed" .LinkTitle
+            "byline" $params.byline
+            "showDate" false
+            "dek" $params.blurb
+            )
+          }}
+        </div>
+      {{ end }}
+
+      {{ $pages := $featuredPages | after 1 | first 4 }}
+      {{ range $i, $page := $pages }}
+        {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+        {{ $imgOpts := dict
+          "filename" (.Param "image")
+          "credit" (.Param "image-credit")
+          "description" (.Param "image-description")
+          "link" $params.link
+          "widthRatio" 16
+          "heightRatio" 9
+          "widths" (slice 128 256 384 512 1280)
+          "figClass" "mt-2"
+          "sizeHint" "(min-width: 850px) 328px, 90vw"
+          "gravity" (.Param "image-gravity")
+        }}
+        <div
+          class="flex max-w-full md:w-2/12 md:max-w-[272px] md:flex-1 lg:w-1/6 xl:w-72"
+          data-ga-category="story-{{ add 2 $i }}"
+        >
+          {{ $eyebrow := $params.published }}
+          {{ $rubricLink := $params.link }}
+          {{ $thumbClass := $params.thumbClass }}
+          {{ partial "tw/thumb-item.html" (dict
+            "wrapperClass" "flex flex-wrap gap-x-4"
+            "thumbClass" "w-2/5 md:w-full"
+            "imgOpts" $imgOpts
+            "rubricLink" $rubricLink
+            "eyebrow" $eyebrow
+            "link" $params.link
+            "hed" .LinkTitle
+            "byline" $params.byline
+            "showDate" false
+            )
+          }}
+        </div>
+      {{ end }}
+
+    </section>
+
+    <div
+      class="relative mx-4 mt-6 max-w-5xl md:mx-auto md:mt-16"
+      x-data="funnelStatus"
+    >
+      <div x-show="!isSubscriber">
+        {{ partial "tw/newsletter-box-lg.html" (dict
+          "newsletterHed" (page.Param "newsletter-hed")
+          "newsletterDek" (page.Param "newsletter-dek")
+          "newsletterWrapper" "bg-g-1 border border-g-4 rounded-sm shadow-md p-4 sm:py-8 text-black"
+          "newsletterField" "newsletter/basic-visible.html"
+          )
+        }}
+      </div>
+      <div
+        data-ga-category="donate"
+        x-cloak
+        x-show="isSubscriber"
+        class="md:relative md:overflow-hidden md:rounded-sm"
+      >
+        {{ partial "tw/donate-prefill-lg.html" (dict
+          "donateHed" (page.Param "donate-hed")
+          "donateDek" (page.Param "donate-text")
+          "donateCta" (page.Param "donate-cta")
+          "donateGaCategory" (page.Param "donate-ga-category")
+          "donateCampaign" (page.Param "donate-ga-campaign")
+          "donateTheme" (page.Param "donate-theme")
+          "donateAmounts" (page.Param "donate-amounts")
+          )
+        }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
+
+{{ define "extra-main" }}
+  {{ $p := partial "helper/paginator" . }}
+  {{ $pages := $p.Pages }}
+  {{ $pinnedPages := where $pages "Params.pinned" true }}
+  {{ $featuredPages := union $pinnedPages $pages | first 5 }}
+  {{ $river := complement $featuredPages $pages }}
+
+  {{ $title := .Title }}
+
+  {{ if $river }}
+    <div
+      class="mx-4 mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:mx-auto lg:gap-x-8 lg:px-20"
+    >
+      <h2
+        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+      >
+        {{ if eq .Paginator.PageNumber 1 }}
+          More stories about
+        {{ end }}
+        {{ $title }}
+      </h2>
+
+      <div
+        class="flex-1 justify-between py-6 sm:w-2/3"
+        x-ref="archives"
+        data-ga-category="river"
+        data-fru-campaign="river"
+      >
+        <nav>
+          <div class="flex flex-col space-y-6 md:space-y-5" x-ref="archives">
+            {{ range $i, $page := $river }}
+              {{ $params := partialCached "helper/page-params" . .RelPermalink }}
+              {{ $imgOpts := dict
+                "filename" (.Param "image")
+                "credit" (.Param "image-credit")
+                "description" (.Param "image-description")
+                "link" $params.link
+                "widthRatio" 5
+                "heightRatio" 3
+                "widths" (slice 128 256 384 512 1280)
+                "figClass" "mt-2"
+                "sizeHint" "(min-width: 850px) 328px, 90vw"
+                "gravity" (.Param "image-gravity")
+              }}
+              <div data-ga-category="story-{{ add 1 $i }}">
+                {{ $eyebrow := $params.published }}
+                {{ $rubricLink := $params.link }}
+                {{ $thumbClass := $params.thumbClass }}
+                {{ partial "tw/thumb-item.html" (dict
+                  "wrapperClass" "flex flex-wrap gap-x-4"
+                  "thumbClass" "w-2/5 sm:w-full md:w-2/5"
+                  "imgOpts" $imgOpts
+                  "rubricLink" $rubricLink
+                  "eyebrow" $eyebrow
+                  "link" $params.link
+                  "hed" .LinkTitle
+                  "byline" $params.byline
+                  "showDate" false
+                  "showByline" $params.showByline
+                  "dek" $params.blurb
+                  )
+                }}
+              </div>
+            {{ end }}
+          </div>
+
+          <div class="flex py-8">
+            <div class="mx-auto w-full max-w-screen-lg">
+              {{ partial "tw/paginator-level.html" .Paginator }}
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div
+        id="frontpage-sidebar"
+        x-data="funnelStatus"
+        class="flex flex-1 flex-col items-center justify-start gap-2 py-8 sm:w-1/3 sm:max-w-xs lg:self-stretch"
+      >
+        <div data-ga-category="rail" data-fru-campaign="sidebar">
+          {{ if page.Param "ad-rail-active" }}
+            {{ partial "tw/promo-single.html" (dict
+              "class" "mx-auto flex items-center justify-center"
+              "images" (page.Param "ad-rail-images")
+              "width" 300
+              "height" 600
+              "link" (page.Param "ad-rail-link")
+              "description" (page.Param "ad-rail-description")
+              )
+            }}
+          {{ end }}
+        </div>
+
+        <div class="w-full sm:max-w-xs">
+          {{ partial "tw/rail-events.html" (dict
+            "label" "Upcoming Events"
+            )
+          }}
+        </div>
+
+        {{ if page.Param "ad-rail-sticky-active" }}
+          <div
+            class="sticky top-14 mx-auto self-start md:top-16"
+            data-ga-category="sticky"
+            data-fru-campaign="sidebar-sticky"
+            x-intersect="$dispatch('close-sticky')"
+          >
+            {{ partial "tw/promo-multi.html" (dict
+              "class" "pt-5 min-w-full no-js:hidden"
+              "promos" (page.Param "ad-rail-sticky")
+              "width" 640
+              "height" 535
+              )
+            }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ else }}
+    <div class="py-8"></div>
+  {{ end }}
+{{ end }}
