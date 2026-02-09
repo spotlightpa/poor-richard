@@ -25,7 +25,7 @@ UPPER BERN — The Trump administration this week finalized the $87.4 million pu
 
 Here’s what we know so far:
 
-<em>This story will be regularly updated. It was last published at 2 p.m. on Feb. 5.</em>
+<em>This story will be regularly updated. It was last published at 3:30 p.m. on Feb. 9.</em>
 
 {{<embed/tips tip_text="Do you have a tip about &lt;b&gt;ICE&#39;s plans for detention centers in Pennsylvania&lt;/b&gt;? Do you have a question you want us to answer? Get in touch below.">}}
 
@@ -72,6 +72,12 @@ Leinbach, who chairs the body, expressed concern about a “total lack of transp
 State Rep. Johanny Cepeda-Freytiz, a Democrat who represents part of Berks County and chairs the Legislative Latino Caucus, said the purchase “risks provoking fear, disrupting families, and endangering the well-being of our neighbors.”
 
 “Berks County has faced an ICE detention facility before, and after years of sustained community advocacy, that center ultimately closed. That history matters,” said Cepeda-Freytiz, whose district is 40% Hispanic. “While many questions remain about the scope and operations of this proposed facility, I will continue to use every tool available to demand transparency, protect due process, and stand with our most vulnerable neighbors.”
+
+U.S. Sen. John Fetterman (D., Pa.) raised concerns about the warehouses in Berks and Schuylkill Counties <a href="https://www.fetterman.senate.gov/fetterman-criticizes-proposed-pennsylvania-ice-warehouses-in-letter-to-dhs-secretary-noem/">in a letter to DHS Secretary Kristi Noem on Saturday</a>.
+
+“While I have been clear in my support for the enforcement of federal immigration law, this decision will do significant damage to these local tax bases, set back decades-long efforts to boost economic development, and place undue burdens on limited existing infrastructure in these communities,” Fetterman wrote.
+
+Fetterman requested that DHS and ICE provide a briefing to his office on why the agencies decided to purchase the properties, as well as an “impact assessment” addressing infrastructure, safety, loss of property taxes, among other concerns
 
 {{<embed/newsletter button="Sign me up!" cta="Good Day, Berks is your daily dose of Berks County essentials. Be the first to know about important news, events, and more." preselect="berks">}}
 
