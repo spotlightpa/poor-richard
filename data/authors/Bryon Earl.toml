@@ -1,15 +1,13 @@
-name = "Earl Byron"
-firstName = "Earl"
-lastName = "Byron"
+name = "Bryon Earl"
+firstName = "Bryon"
+lastName = "Earl"
 title = "Major Gifts Director for Eastern Pennsylvania"
 email = "bearl@spotlightpa.org"
 headshot = "2026/02/01mr-9c8a-4ye3-ejqw.jpeg"
 content = """
 Bryon Earl joined Spotlight PA in 2026 as the Major Gifts Director for Eastern Pennsylvania. He is a nonprofit leader with deep experience in philanthropic relationship-building, major and planned giving, and mission-driven fundraising. He has led development initiatives for some of the largest healthcare organizations in the U.S., collaborating across teams on communications, branding, and events. His guiding principle is service to the mission and building healthier, more connected communities.
 
-Before Bryon’s most recent post with The END Fund as Director of Investor Relations, he held senior development roles at the American Cancer Society, American Diabetes Association, Shriners Children’s, and Bethany Christian Services. He has helped donors make meaningful current gifts and plan lasting legacies, while also drawing on his background in wealth management as a former trust officer.
-
-Outside of work, he loves cycling, hiking, and exploring nature.
+Before Bryon’s most recent post with The END Fund as Director of Investor Relations, he held senior development roles at the American Cancer Society, American Diabetes Association, Shriners Children’s, and Bethany Christian Services. He has helped donors make meaningful current gifts and plan lasting legacies, while also drawing on his background in wealth management as a former trust officer. Outside of work, he loves cycling, hiking, and exploring nature.
 """
 active = true
 role = "admin"
