@@ -102,6 +102,15 @@
             </li>
           {{ end }}
         </ul>
+        {{ if eq (page.Param "gaCategory") "newsletters:papost" }}
+          <div class="mt-8 flex justify-start">
+            <img
+              src="{{ (resources.Get "img/logos/circle-and-domain.svg").RelPermalink }}"
+              alt="PA Post"
+              class="h-32 w-32 md:h-40 md:w-40"
+            />
+          </div>
+        {{ end }}
       </div>
     {{ end }}
 
