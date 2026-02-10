@@ -25,7 +25,7 @@ UPPER BERN — The Trump administration this week finalized the $87.4 million pu
 
 Here’s what we know so far:
 
-<em>This story will be regularly updated. It was last published at 3:30 p.m. on Feb. 9.</em>
+<em>This story will be regularly updated. It was last published at 4 p.m. on Feb. 10.</em>
 
 {{<embed/tips tip_text="Do you have a tip about &lt;b&gt;ICE&#39;s plans for detention centers in Pennsylvania&lt;/b&gt;? Do you have a question you want us to answer? Get in touch below.">}}
 
@@ -77,15 +77,19 @@ U.S. Sen. John Fetterman (D., Pa.) raised concerns about the warehouses in Berks
 
 “While I have been clear in my support for the enforcement of federal immigration law, this decision will do significant damage to these local tax bases, set back decades-long efforts to boost economic development, and place undue burdens on limited existing infrastructure in these communities,” Fetterman wrote.
 
-Fetterman requested that DHS and ICE provide a briefing to his office on why the agencies decided to purchase the properties, as well as an “impact assessment” addressing infrastructure, safety, loss of property taxes, among other concerns
+Fetterman requested that DHS and ICE provide a briefing to his office on why the agencies decided to purchase the properties, as well as an “impact assessment” addressing infrastructure, safety, loss of property taxes, among other concerns.
 
 {{<embed/newsletter button="Sign me up!" cta="Good Day, Berks is your daily dose of Berks County essentials. Be the first to know about important news, events, and more." preselect="berks">}}
 
 ## Can local or state governments stop the detention center?
 
-A spokesperson for Democratic Gov. Josh Shapiro said the administration opposes the Department of Homeland Security establishing new detention facilities in Pennsylvania.
+A spokesperson for Democratic Gov. Josh Shapiro said in early February that the administration opposes the Department of Homeland Security establishing new detention facilities in Pennsylvania.
 
 “While the state does not get advance notice of or approve these types of sales, our Administration is actively evaluating our options,” the spokesperson said.
+
+On Feb. 6, Shapiro said during a news conference that he “strongly opposes” the purchase of the warehouse and that his administration is “exploring legal options to stop it.” However, he said that options are “fairly slim” because the federal government is the purchaser.
+
+“Hopefully, the local government, who will likely have some permitting power here, hopefully they don&#39;t approve these permits, they don&#39;t allow the federal government to build this facility, and we&#39;re going to be working closely with our local partners on that front to see if it can be stopped,” Shapiro said.
 
 Berks County officials said they do not know at this point if the county has the power to stop the development of the ICE facility.
 
