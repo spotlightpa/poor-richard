@@ -9,7 +9,7 @@ export const handler = async (event) => {
 
   try {
     const requestBody = JSON.parse(event.body);
-    const { priceId, email, paymentMethodId, firstName, lastName } =
+    const { priceId, email, paymentMethodId, firstName, lastName, promoCode } =
       requestBody;
 
     if (!email && !paymentMethodId) {
@@ -96,6 +96,67 @@ export const handler = async (event) => {
       // eslint-disable-next-line no-console
       console.log("Attached payment method:", paymentMethodId);
 
+      let discounts = [];
+      if (promoCode) {
+        try {
+          const promoCodes = await stripe.promotionCodes.list({
+            code: promoCode,
+            active: true,
+            limit: 1,
+          });
+
+          if (promoCodes.data.length === 0) {
+            return {
+              statusCode: 400,
+              body: JSON.stringify({
+                error:
+                  "Invalid promotion code. Please check the code and try again.",
+              }),
+            };
+          }
+
+          const promoCodeObj = promoCodes.data[0];
+
+          if (
+            promoCodeObj.expires_at &&
+            promoCodeObj.expires_at < Math.floor(Date.now() / 1000)
+          ) {
+            return {
+              statusCode: 400,
+              body: JSON.stringify({
+                error: "This promotion code has expired.",
+              }),
+            };
+          }
+
+          if (
+            promoCodeObj.max_redemptions &&
+            promoCodeObj.times_redeemed >= promoCodeObj.max_redemptions
+          ) {
+            return {
+              statusCode: 400,
+              body: JSON.stringify({
+                error:
+                  "This promotion code has reached its maximum number of redemptions.",
+              }),
+            };
+          }
+
+          discounts = [{ promotion_code: promoCodeObj.id }];
+          // eslint-disable-next-line no-console
+          console.log("Applied promotion code:", promoCodeObj.code);
+        } catch (promoError) {
+          // eslint-disable-next-line no-console
+          console.error("Promotion code error:", promoError);
+          return {
+            statusCode: 400,
+            body: JSON.stringify({
+              error: "Error validating promotion code. Please try again.",
+            }),
+          };
+        }
+      }
+
       const subscription = await stripe.subscriptions.create({
         customer: customer.id,
         items: [{ price: priceId }],
@@ -108,6 +169,7 @@ export const handler = async (event) => {
         metadata: {
           newsletter: "Access Harrisburg",
         },
+        ...(discounts.length > 0 && { discounts }),
       });
 
       let paymentIntent = subscription.latest_invoice?.payment_intent;
