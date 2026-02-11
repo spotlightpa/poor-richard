@@ -21,6 +21,8 @@ title-tag = "ICE’s detention center in Berks County, PA: What you need to know
 topics = ["Justice System"]
 +++
 
+<a href="https://www.spotlightpa.org/berks/2026/02/almacen-de-ice-inmigracion-condado-de-berks-hamburgo-planes-espanol/"><em>Leer en español</em></a><em></em>
+
 UPPER BERN — The Trump administration this week finalized the $87.4 million purchase of a warehouse in Berks County that a member of Congress says will be used as an ICE processing and detention facility.
 
 Here’s what we know so far:
@@ -87,7 +89,7 @@ A spokesperson for Democratic Gov. Josh Shapiro said in early February that the 
 
 “While the state does not get advance notice of or approve these types of sales, our Administration is actively evaluating our options,” the spokesperson said.
 
-On Feb. 6, Shapiro said during a news conference that he “strongly opposes” the purchase of the warehouse and that his administration is “exploring legal options to stop it.” However, he said that options are “fairly slim” because the federal government is the purchaser.
+On Feb. 6, Shapiro said during a news conference that he is “strongly opposed” the purchase of the warehouse and that his administration is “exploring legal options to stop it.” However, he said that options are “fairly slim” because the federal government is the purchaser.
 
 “Hopefully, the local government, who will likely have some permitting power here, hopefully they don&#39;t approve these permits, they don&#39;t allow the federal government to build this facility, and we&#39;re going to be working closely with our local partners on that front to see if it can be stopped,” Shapiro said.
 
