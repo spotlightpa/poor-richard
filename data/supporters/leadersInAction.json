@@ -1240,13 +1240,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Phil Straus and Margaret Harris",
-      "sort": "Straus",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Strausstown Rod and Gun Club",
       "sort": "Strausstown",
       "url": "",
@@ -1348,8 +1341,8 @@
       "display": "Jean Wallace and Neil Goldstein",
       "sort": "Wallace",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Robert Warner",
