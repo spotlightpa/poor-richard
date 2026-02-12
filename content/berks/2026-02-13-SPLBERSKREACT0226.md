@@ -13,7 +13,7 @@ internal-id = "SPLBERSKREACT0226"
 kicker = "Federal Government"
 modal-exclude = false
 pinned = false
-published = 2026-02-13T05:00:00.951-05:00
+published = 2026-02-12T05:00:00.951-05:00
 slug = "trump-ice-detention-center-pennsylvania-berks-county-reactions-federal-government"
 suppress-date = false
 title = "Neighbors of planned ICE detention center in Berks County say opposition crosses political lines"
@@ -84,4 +84,3 @@ While the lack of information persists, Rightmyer said she still feels like she 
 “We’re still a democracy. There’s still free speech,” Rightmyer said. “And it’s up to me as a concerned citizen to take advantage of what’s available — township meetings, town halls, anywhere. That’s my responsibility.”
 
 <em>Spotlight PA’s Hanna Holthaus contributed reporting.</em>
-
