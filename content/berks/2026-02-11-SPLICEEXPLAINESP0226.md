@@ -13,6 +13,7 @@ image-description = "Un almacén en Upper Bern Township, condado de Berks, Pensi
 image-gravity = "ce"
 internal-id = "SPLICEEXPLAINESP0226"
 kicker = "Español"
+language-code = "es"
 modal-exclude = false
 pinned = false
 published = 2026-02-11T16:35:20.791-05:00
