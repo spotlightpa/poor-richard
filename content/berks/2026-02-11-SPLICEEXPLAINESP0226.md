@@ -38,9 +38,9 @@ Esto es lo que sabemos hasta ahora:
 
 El almacén situado en el 3501 de Mountain Road nunca se ha utilizado, pero inicialmente se diseñó y construyó como instalación comercial. La propiedad se encuentra en una zona del municipio de Upper Bern <a href="https://upperberntownship.org/wp-content/uploads/Zoning-Map-2019.pdf">destinada al desarrollo industrial.</a>
 
-Transwestern Development Company terminó la construcción en 2021 y posteriormente <a href="https://www.jll.com/en-us/newsroom/jll-closes-sale-of-hamburg-logistics-center">vendió</a> el almacén a PCCP, una empresa nacional de capital inmobiliario comercial, por $57.5 millones de dólares. Desde que se construyó y se puso a la venta, la propiedad ha permanecido vacía, generando unos $199,620 dólares en concepto de impuestos sobre la propiedad del condado, $31,229 dólares en concepto de impuestos municipales y $597,110 dólares para el distrito escolar de la zona de Hamburgo.
+Transwestern Development Company terminó la construcción en 2021 y posteriormente <a href="https://www.jll.com/en-us/newsroom/jll-closes-sale-of-hamburg-logistics-center">vendió</a> el almacén a PCCP, una empresa nacional de capital inmobiliario comercial, por $57.5 millones de dólares. Desde que se construyó y se puso a la venta, la propiedad ha permanecido vacía, generando unos $199,620 dólares en concepto de impuestos sobre la propiedad del condado, $31,229 dólares en concepto de impuestos municipales y $597,110 dólares para el distrito escolar de la zona de Hamburg.
 
-<a href="https://www.hamburglogisticscenter.com/uploads/1/3/4/0/134073657/3501-mountain-rd_hamburg-pa_brochure-v4.pdf">Un folleto promocional del Centro Logístico de Hamburgo</a> describe el almacén como un «centro logístico de última generación» diseñado para operaciones de distribución a gran escala.
+<a href="https://www.hamburglogisticscenter.com/uploads/1/3/4/0/134073657/3501-mountain-rd_hamburg-pa_brochure-v4.pdf">Un folleto promocional del Centro Logístico de Hamburg</a> describe el almacén como un «centro logístico de última generación» diseñado para operaciones de distribución a gran escala.
 
 ## ¿Por qué ICE compró el almacén?
 
