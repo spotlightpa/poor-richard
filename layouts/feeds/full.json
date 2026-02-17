@@ -2,7 +2,9 @@
 {{- $news := site.GetPage "/news/_index.md" -}}
 {{- $sc := site.GetPage "/statecollege/_index.md" -}}
 {{- $bc := site.GetPage "/berks/_index.md" -}}
+{{- $spanish := site.GetPage "/topics/español/_index.md" -}}
 {{- $stories := union $news.RegularPages (union $sc.RegularPages $bc.RegularPages) -}}
+{{- $stories = $stories | complement $spanish.RegularPages -}}
 {{- $stories = sort $stories ".PublishDate" "desc" -}}
 {{- $stories = where $stories `Params.feed-exclude` "ne" true -}}
 {{- range first 15 $stories -}}
@@ -19,6 +21,7 @@
     "category" $params.kicker
     "language" (.Param "language-code" | default site.LanguageCode)
     "blurb" $params.blurb
+    "topics" (.Param "topics")
   -}}
   {{- $imgName := .Param "app-image" -}}
   {{- $gravity := .Param "app-image-gravity" -}}

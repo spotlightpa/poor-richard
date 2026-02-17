@@ -1149,13 +1149,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Nicholas and Jean Selch",
-      "sort": "Selch",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Matthew Seyler",
       "sort": "Seyler",
       "url": "",
@@ -1205,6 +1198,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Tom and Sara Songer",
+      "sort": "Songer",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Yvonne Payne and Edward Spitzer",
       "sort": "Spitzer",
       "url": "",
@@ -1235,13 +1235,6 @@
     {
       "display": "E. Marvin Stouffer",
       "sort": "Stouffer",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Phil Straus and Margaret Harris",
-      "sort": "Straus",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1348,8 +1341,8 @@
       "display": "Jean Wallace and Neil Goldstein",
       "sort": "Wallace",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Robert Warner",
