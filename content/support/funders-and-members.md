@@ -17,7 +17,7 @@ supporters = """
 >}}
 {{<supporters
   category="Current Leaders in Action"
-  content="For a list of our Leaders in Action, individuals and family foundation supporters 2024–5, [see here](/support/leaders-in-action/#our-current-leaders)."
+  content="For a list of our Leaders in Action, individuals and family foundation supporters 2025–6, [see here](/support/leaders-in-action/#our-current-leaders)."
 >}}
 {{<supporters
   id="all-donors"
