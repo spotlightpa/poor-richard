@@ -1,8 +1,8 @@
 +++
 authors = ["Yaasmeen Piper"]
-blurb = "As part of Spotlight PA’s book club, read Gov. Shapiro’s new book and discuss with top government journalists on Feb. 17."
+blurb = "Join Spotlight PA’s new book club, read a hit novel, connect with readers across the state, and join a live discussion."
 byline = "Yaasmeen Piper of Spotlight PA"
-description = "Join Capitol reporters from Spotlight PA and The Philadelphia Inquirer on Feb. 17 for a discussion of Governor Josh Shapiro’s new book."
+description = "Capitol reporters from Spotlight PA and The Philadelphia Inquirer discussed what’s in Gov. Josh Shapiro’s new book — and what was left out."
 draft = false
 event-date = 2026-02-17T18:00:00-05:00
 event-title = "Where We Keep the Light"
@@ -17,8 +17,8 @@ pinned = false
 published = 2026-01-26T12:00:00-05:00
 slug = "josh-shapiro-book-club-where-we-keep-the-light-events"
 suppress-date = false
-title = "Booklight PA: Read Gov. Josh Shapiro’s memoir with Pa.’s top political journalists"
-title-tag = "A discussion of Josh Shapiro’s memoir “Where We Keep the Light”"
+title = "WATCH: Political journalists discuss Gov. Josh Shapiro’s new memoir"
+title-tag = "Watch a discussion of Gov. Josh Shapiro’s new memoir"
 topics = ["Events"]
 +++
 
