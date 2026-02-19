@@ -8,7 +8,7 @@ subhead = "Sign up for **Talk of the Town** for essential news from Spotlight PA
 deck = "The news that matters to your community — from the PA Wilds to Happy Valley"
 
 bullets = [
-  "Delivered straight to your inbox every weekday",
+  "Delivered straight to your inbox on Mondays, Tuesdays, and Fridays",
   "Curated local stories and unique events",
   "Explore the people, places, and food that make our region amazing"
 ]
@@ -34,7 +34,7 @@ teamTitle = "Talk of the Town"
 weight = 6
 image-gravity = "ce"
 image-size = "inline"
-occurrence = "Each weekday"
+occurrence = "Every Monday, Tuesday, and Friday"
 blurb = "The news that matters to your community — from the PA Wilds to Happy Valley."
 
 [cascade]
