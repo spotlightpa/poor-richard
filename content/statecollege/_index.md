@@ -1,6 +1,6 @@
 +++
 title = "Spotlight PA State College"
-link-title = "State College"
+linktitle = "State College"
 title-tag = "Spotlight PA State College: North-Central Pennsylvania news and investigations"
 description = "The latest State College and North-Central Pennsylvania news and investigations. Join our historic effort to invigorate local news."
 image = "2022/02/01gz-k3bb-nz72-spe2.jpeg"

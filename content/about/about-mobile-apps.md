@@ -1,6 +1,6 @@
 +++
 title = "Download Spotlight PA’s mobile app"
-link-title = "Mobile Apps"
+linktitle = "Mobile Apps"
 description = "Spotlight PA mobile app: Now available to download for free in the Apple App Store and Google Play."
 image = "2024/09/01kd-ejk1-ccrq-g8gw.png"
 image-gravity = "ce"

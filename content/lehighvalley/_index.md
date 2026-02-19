@@ -1,6 +1,6 @@
 +++
 title = "Spotlight PA Lehigh Valley"
-link-title = "Lehigh Valley"
+linktitle = "Lehigh Valley"
 description = ""
 image = "2025/09/01mc-0vxp-zm49-ebq4.jpeg"
 image-description = "Lehigh Valley"
