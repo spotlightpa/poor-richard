@@ -46,7 +46,15 @@ The recommendation also reaffirms the PUC’s stance that it can only order a sa
 
 State law leaves “no ambiguity” on that issue, Coogan wrote.
 
-A representative from the State College authority told Spotlight PA they’d provide a comment on the matter after having time to review the judge’s recommendation.
+Officials at the State College water authority were disappointed but not surprised by the recommendation, Executive Director Brian Heiser told Spotlight PA in an email.
+
+He said the authority recognizes Pennsylvania American’s ability to operate Rock Spring but questions the “practical value” of Coogan’s decision, arguing that it makes “little sense” given that the water authority is also capable and attorneys had proposed a pathway for a public sale.
+
+Heiser also thanked officials in Ferguson Township for their support of a local acquisition.
+
+As for Rock Spring, Heiser said the company had “multiple opportunities to act in the best interests of its customers by selling the system to the water authority, but failed to enter into a good-faith agreement.”
+
+“As a result, customers endured a substandard system for far too long,” he wrote. “The water authority sincerely wishes our neighbors well as PAWC undertakes the good work of rebuilding a system customers can ultimately trust and rely upon.”
 
 Gary Lobaugh, Pennsylvania American’s director of government and external affairs, said the utility is reviewing Coogan’s proposal.
 
@@ -81,6 +89,4 @@ If Pennsylvania American and Rock Spring can’t reach an agreement, the investo
 Additionally, Coogan’s recommended order says “all reasonable and necessary” costs related to Pennsylvania American’s receivership shall be paid for by sale proceeds. If an acquisition doesn’t cover expenses, the investor-owned utility may make a claim in a future base rate case.
 
 Participants in the case <a href="https://www.puc.pa.gov/pcdocs/1914510.pdf">have until March 10</a> to file any disagreements with the recommendation.
-
-<em>This story may be updated.</em>
 
