@@ -46,7 +46,11 @@ The recommendation also reaffirms the PUC’s stance that it can only order a sa
 
 State law leaves “no ambiguity” on that issue, Coogan wrote.
 
-Representatives for Pennsylvania American and the State College authority told Spotlight PA they’d provide comments on the matter after having time to review the judge’s recommendation.
+A representative from the State College authority told Spotlight PA they’d provide a comment on the matter after having time to review the judge’s recommendation.
+
+Gary Lobaugh, Pennsylvania American’s director of government and external affairs, said the utility is reviewing Coogan’s proposal.
+
+“In the meantime, the company continues to serve as the receiver of the Rock Spring Water Company and provides dependable water and service,” he told Spotlight PA in an email.
 
 Rock Spring and its lawyer did not respond to a request for comment at the time of publication.
 
