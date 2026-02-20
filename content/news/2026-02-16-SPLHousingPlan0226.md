@@ -42,6 +42,8 @@ Between July 2024 and June 2025, <a href="https://www.mercatus.org/research/poli
 
 Pennsylvania wasn’t one of them, although state lawmakers in both chambers have <a href="https://www.spotlightpa.org/news/2026/01/pennsylvania-shapiro-housing-crisis-plan-housing/">already proposed</a> or introduced bills to advance several of the ideas outlined in Shapiro’s plan, particularly changing local zoning laws that often thwart new construction. Existing proposals include legalizing accessory dwelling units, spurring more development near public transit stops, and prohibiting minimum parking requirements for new buildings.
 
+{{<embed/raw srcdoc="&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://youtube.com/embed/rhOAFlhXrzY?si=Iqpa_EQ71WHudzio&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;">}}
+
 In his budget address, Shapiro also pitched lawmakers on a debt-funded, $1 billion investment in infrastructure that would span housing, energy generation, and school buildings. Shapiro said on Thursday that while details will be subject to negotiations, he hoped “the lion’s share” of the money goes toward housing.
 
 Still, sweeping new investments could be a hard sell for Republican lawmakers determined to <a href="https://www.spotlightpa.org/news/2026/02/josh-shapiro-budget-address-school-marijuana-minimum-wage-capitol/">curb spending</a> as Pennsylvania faces a structural budget deficit. And changes that would reduce local control over zoning decisions will likely face fierce opposition from municipal governments.
