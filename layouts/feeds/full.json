@@ -9,6 +9,18 @@
 {{- $stories = where $stories `Params.feed-exclude` "ne" true -}}
 {{- range first 15 $stories -}}
   {{- $params := partialCached "helper/page-params" . .RelPermalink -}}
+  {{- /* Map topics for Apple News */ -}}
+  {{- $topics := slice -}}
+  {{- if $params.series -}}
+    {{- $topics = $topics | append "Investigations" -}}
+  {{- end -}}
+  {{- range .GetTerms "topics" -}}
+    {{- $topics = $topics | append .Title -}}
+    {{- with .Param "related-topic" -}}
+      {{- $topics = $topics | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $topics = $topics | append $params.section -}}
   {{- $item := dict
     "id" .File.UniqueID
     "url" .Permalink
@@ -21,7 +33,7 @@
     "category" $params.kicker
     "language" (.Param "language-code" | default site.LanguageCode)
     "blurb" $params.blurb
-    "topics" (.Param "topics")
+    "topics" $topics
   -}}
   {{- $imgName := .Param "app-image" -}}
   {{- $gravity := .Param "app-image-gravity" -}}

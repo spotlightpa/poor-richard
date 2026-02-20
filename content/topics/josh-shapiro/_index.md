@@ -9,4 +9,5 @@ title = "Josh Shapiro"
 title-tag = "Spotlight PA coverage of Pennsylvania Gov. Josh Shapiro."
 linktitle = "The latest Spotlight PA coverage of Pennsylvania Gov. Josh Shapiro."
 description = "The latest coverage of current Pennsylvania Governor Josh Shapiro."
+related-topic = "The Capitol"
 +++
