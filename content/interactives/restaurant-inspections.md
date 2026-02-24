@@ -17,7 +17,7 @@ search-placeholder = "Facility name, city, zip"
 search-desktop-placeholder = "Enter facility name, city, zip"
 search-location = true
 
-show-alerts-button = false
+show-alerts-button = true
 
 [data]
 source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
