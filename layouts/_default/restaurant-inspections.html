@@ -356,7 +356,12 @@
                     document.getElementById('name-sort').selectedIndex = 0;
                     currentCity = '';
                     currentSort = 'date-desc';
+                    q = '';
                     localStorage.removeItem('inspections-sort');
+                    var si = document.getElementById('search-input');
+                    if (si) si.value = '';
+                    window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: 'date-desc' } }));
+                    window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: '', city: '' } }));
                     applyFilters();
                     sortCards();
                   "
@@ -635,45 +640,43 @@
             );
           });
         },
-
 initSortListeners() {
   const dateSel = document.getElementById("date-sort");
   const riskSel = document.getElementById("risk-sort");
   const nameSel = document.getElementById("name-sort");
 
-  const clearOtherSelects = (keep) => {
-    if (keep !== "date" && dateSel) dateSel.selectedIndex = 0;
-    if (keep !== "risk" && riskSel) riskSel.selectedIndex = 0;
-    if (keep !== "name" && nameSel) nameSel.selectedIndex = 0;
+  const resetSelect = (sel) => {
+    if (!sel) return;
+    sel.selectedIndex = 0;
+    sel.value = '';
   };
 
-  const applySortValue = (v) => {
+  const applySortValue = (v, keep) => {
     if (!v) return;
+    if (keep !== "date") resetSelect(dateSel);
+    if (keep !== "risk") resetSelect(riskSel);
+    if (keep !== "name") resetSelect(nameSel);
     this.currentSort = v;
     localStorage.setItem("inspections-sort", v);
     this.sortCards();
     window.dispatchEvent(new CustomEvent("set-sort", { detail: { value: v } }));
-    this.syncDesktopSortUI(v);
   };
 
   if (dateSel) {
     dateSel.addEventListener("change", (e) => {
-      clearOtherSelects("date");
-      applySortValue(e.target.value);
+      applySortValue(e.target.value, "date");
     });
   }
 
   if (riskSel) {
     riskSel.addEventListener("change", (e) => {
-      clearOtherSelects("risk");
-      applySortValue(e.target.value);
+      applySortValue(e.target.value, "risk");
     });
   }
 
   if (nameSel) {
     nameSel.addEventListener("change", (e) => {
-      clearOtherSelects("name");
-      applySortValue(e.target.value);
+      applySortValue(e.target.value, "name");
     });
   }
 
@@ -711,7 +714,7 @@ initSortListeners() {
   });
 },
 
-    syncDesktopSortUI(value) {
+  syncDesktopSortUI(value) {
 
       const sortRadios = document.querySelectorAll('input[name="sort"]');
       sortRadios.forEach((r) => {
@@ -726,18 +729,18 @@ initSortListeners() {
       const riskSel = document.getElementById("risk-sort");
       const nameSel = document.getElementById("name-sort");
 
-      if (dateSel && (value === "date-desc" || value === "date-asc")) {
-        dateSel.value = value;
-        if (riskSel) riskSel.selectedIndex = 0;
-        if (nameSel) nameSel.selectedIndex = 0;
-      } else if (riskSel && (value === "risk-desc" || value === "risk-asc")) {
-        riskSel.value = value;
-        if (dateSel) dateSel.selectedIndex = 0;
-        if (nameSel) nameSel.selectedIndex = 0;
-      } else if (nameSel && (value === "alpha-asc" || value === "alpha-desc")) {
-        nameSel.value = value;
-        if (dateSel) dateSel.selectedIndex = 0;
-        if (riskSel) riskSel.selectedIndex = 0;
+      const resetSel = (sel) => { if (sel) { sel.selectedIndex = 0; sel.value = ''; } };
+
+      resetSel(dateSel);
+      resetSel(riskSel);
+      resetSel(nameSel);
+
+      if (value === "date-desc" || value === "date-asc") {
+        if (dateSel) dateSel.value = value;
+      } else if (value === "risk-desc" || value === "risk-asc") {
+        if (riskSel) riskSel.value = value;
+      } else if (value === "alpha-asc" || value === "alpha-desc") {
+        if (nameSel) nameSel.value = value;
       }
     },
 
