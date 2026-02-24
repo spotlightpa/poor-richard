@@ -445,6 +445,11 @@
             if (!grouped[id]) grouped[id] = [];
             grouped[id].push(row);
         });
+        Object.keys(grouped).forEach(function(id) {
+            grouped[id].sort(function(a, b) {
+                return new Date(b.inspection_date) - new Date(a.inspection_date);
+            });
+        });
         return grouped;
     }
 
