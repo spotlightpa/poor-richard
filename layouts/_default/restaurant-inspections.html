@@ -899,20 +899,33 @@ initSortListeners() {
           });
         },
 
+        parseInspDate(str) {
+          if (!str) return new Date(0);
+          var s = String(str)
+            .replace(/Jan\./g, 'January')
+            .replace(/Feb\./g, 'February')
+            .replace(/Aug\./g, 'August')
+            .replace(/Sept\./g, 'September')
+            .replace(/Oct\./g, 'October')
+            .replace(/Nov\./g, 'November')
+            .replace(/Dec\./g, 'December');
+          var d = new Date(s);
+          return isNaN(d.getTime()) ? new Date(0) : d;
+        },
+
         getInspectionDate(card) {
           const attr = card.getAttribute("data-date");
-          if (attr) return new Date(attr);
+          if (attr) return this.parseInspDate(attr);
           const spans = card.querySelectorAll(".list-content span");
           for (const span of spans) {
             const text = span.textContent || "";
             if (text.includes("Last inspection:")) {
               const m = text.match(/Last inspection:\s*(.+)/i);
-              if (m && m[1]) return new Date(m[1].trim());
+              if (m && m[1]) return this.parseInspDate(m[1].trim());
             }
           }
           return new Date(0);
         },
-
         getFacilityName(card) {
           const h2 = card.querySelector("h2");
           return h2 ? h2.textContent.trim() : "";
@@ -1103,7 +1116,7 @@ const olderInspectionsHTML = allInspections.length > 1 ? (() => {
       byDate[date].push(inspection);
     });
 
-    const dates = Object.keys(byDate).sort((a, b) => new Date(b) - new Date(a));
+    const dates = Object.keys(byDate).sort((a, b) => this.parseInspDate(b) - this.parseInspDate(a));
 
     return `
     <div class="mt-8 pt-8 border-t-2 border-g-3">
