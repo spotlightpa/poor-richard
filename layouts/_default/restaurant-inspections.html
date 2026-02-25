@@ -1320,6 +1320,7 @@ initSortListeners() {
         },
 
 openDetails(card) {
+    this.refreshCards();
     document
       .querySelectorAll(".pagination-controls")
       .forEach((el) => el.classList.add("hidden"));
