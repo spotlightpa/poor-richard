@@ -128,6 +128,7 @@
           </h3>
 
           <div class="mt-4 hidden flex-col gap-3 md:flex">
+            {{ if .Param "cuisine-type" }}
             <div class="relative">
               <select
                 id="cuisine-filter"
@@ -146,6 +147,7 @@
                 {{ partial "helper/svg.html" "chevron" }}
               </svg>
             </div>
+            {{ end }}
 
             <div
               class="relative"
@@ -349,7 +351,7 @@
 
           <button
             @click="
-                    document.getElementById('cuisine-filter').value = '';
+                    var cf = document.getElementById('cuisine-filter'); if (cf) cf.value = '';
                     document.getElementById('city-filter').value = '';
                     document.getElementById('date-sort').selectedIndex = 0;
                     document.getElementById('risk-sort').selectedIndex = 0;
