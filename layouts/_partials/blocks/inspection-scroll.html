@@ -676,7 +676,7 @@ clearMounts();
       var existingControls = document.querySelectorAll('.pagination-controls');
       existingControls.forEach(function(el) { el.remove(); });
 
-      if (filteredData.length === 0) return;
+      if (filteredData.length === 0 || totalPages <= 1) return;
 
       var controls = document.createElement('div');
       controls.className = 'pagination-controls flex items-center justify-center gap-2 bg-white px-4 py-6 shadow mt-3';
