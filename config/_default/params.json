@@ -1,12 +1,32 @@
 {
-  "ad-footer-desktop": [],
-  "ad-footer-desktop-active": false,
-  "ad-footer-desktop-height": 0,
-  "ad-footer-desktop-width": 0,
-  "ad-footer-mobile": [],
-  "ad-footer-mobile-active": false,
-  "ad-footer-mobile-height": 0,
-  "ad-footer-mobile-width": 0,
+  "ad-footer-desktop": [
+    {
+      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/access/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01ms/yd58/access-harrisburg-1350-x-175-px-.png"
+      ]
+    }
+  ],
+  "ad-footer-desktop-active": true,
+  "ad-footer-desktop-height": 175,
+  "ad-footer-desktop-width": 1350,
+  "ad-footer-mobile": [
+    {
+      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/access/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01ms/yd59/access-harrisburg-1024-x-512-px-3-.png"
+      ]
+    }
+  ],
+  "ad-footer-mobile-active": true,
+  "ad-footer-mobile-height": 512,
+  "ad-footer-mobile-width": 1024,
   "ad-header-desktop": [
     {
       "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
@@ -14,14 +34,7 @@
       "labelLink": "",
       "link": "https://www.spotlightpa.org/access",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxg/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxg/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxf/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxe/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxe/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxd/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxd/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdxb/1.png"
+        "https://files.data.spotlightpa.org/uploads/01ms/yd58/access-harrisburg-1350-x-175-px-.png"
       ]
     }
   ],
@@ -35,30 +48,41 @@
       "labelLink": "",
       "link": "https://www.spotlightpa.org/access",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kexj/10.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexj/9.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexh/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexg/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexf/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexf/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexe/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexd/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexc/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kexb/1.png"
+        "https://files.data.spotlightpa.org/uploads/01ms/yd59/access-harrisburg-1024-x-512-px-3-.png"
       ]
     }
   ],
   "ad-header-mobile-active": true,
   "ad-header-mobile-height": 512,
   "ad-header-mobile-width": 1024,
-  "ad-hp-breaker-desktop": [],
-  "ad-hp-breaker-desktop-active": false,
-  "ad-hp-breaker-desktop-height": 0,
-  "ad-hp-breaker-desktop-width": 0,
-  "ad-hp-breaker-mobile": [],
-  "ad-hp-breaker-mobile-active": false,
-  "ad-hp-breaker-mobile-height": 0,
-  "ad-hp-breaker-mobile-width": 0,
+  "ad-hp-breaker-desktop": [
+    {
+      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/access/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01ms/yd58/access-harrisburg-1350-x-175-px-.png"
+      ]
+    }
+  ],
+  "ad-hp-breaker-desktop-active": true,
+  "ad-hp-breaker-desktop-height": 175,
+  "ad-hp-breaker-desktop-width": 1350,
+  "ad-hp-breaker-mobile": [
+    {
+      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/access/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01ms/yd59/access-harrisburg-1024-x-512-px-3-.png"
+      ]
+    }
+  ],
+  "ad-hp-breaker-mobile-active": true,
+  "ad-hp-breaker-mobile-height": 512,
+  "ad-hp-breaker-mobile-width": 1024,
   "ad-hp-featured": [
     {
       "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
@@ -66,28 +90,39 @@
       "labelLink": "",
       "link": "https://www.spotlightpa.org/access",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/10.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/9.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyb/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy8/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy7/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy6/1.png"
+        "https://files.data.spotlightpa.org/uploads/01ms/yd57/access-harrisburg-square.png"
       ]
     }
   ],
   "ad-hp-featured-active": true,
-  "ad-hp-headwater-desktop": [],
-  "ad-hp-headwater-desktop-active": false,
-  "ad-hp-headwater-desktop-height": 0,
-  "ad-hp-headwater-desktop-width": 0,
-  "ad-hp-headwater-mobile": [],
-  "ad-hp-headwater-mobile-active": false,
-  "ad-hp-headwater-mobile-height": 0,
-  "ad-hp-headwater-mobile-width": 0,
+  "ad-hp-headwater-desktop": [
+    {
+      "description": "Subscribe now for exclusive insights from the PA Capitol with Spotlight PA's Stephen Caruso.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/access/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01ms/yd58/access-harrisburg-1350-x-175-px-.png"
+      ]
+    }
+  ],
+  "ad-hp-headwater-desktop-active": true,
+  "ad-hp-headwater-desktop-height": 175,
+  "ad-hp-headwater-desktop-width": 1350,
+  "ad-hp-headwater-mobile": [
+    {
+      "description": "",
+      "label": "",
+      "labelLink": "",
+      "link": "https://www.spotlightpa.org/access/",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01ms/yd59/access-harrisburg-1024-x-512-px-3-.png"
+      ]
+    }
+  ],
+  "ad-hp-headwater-mobile-active": true,
+  "ad-hp-headwater-mobile-height": 512,
+  "ad-hp-headwater-mobile-width": 1024,
   "ad-hp-river-desktop": [],
   "ad-hp-river-desktop-active": false,
   "ad-hp-river-desktop-height": 0,
@@ -115,24 +150,15 @@
       "labelLink": "",
       "link": "https://www.spotlightpa.org/access",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/10.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyc/9.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdyb/8.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/7.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdya/6.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/5.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy9/4.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy8/3.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy7/2.png",
-        "https://files.data.spotlightpa.org/uploads/01mp/kdy6/1.png"
+        "https://files.data.spotlightpa.org/uploads/01ms/yd57/access-harrisburg-square.png"
       ]
     }
   ],
   "ad-rail-top-active": true,
-  "banner": "\u003cstrong\u003eALL GIFTS DOUBLED: Our investigative reporting cannot continue without you »\u003c/strong\u003e",
-  "banner-active": false,
-  "banner-bg-color": "#ff0000",
-  "banner-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=banner",
+  "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit? Learn more about our work »\u003c/strong\u003e",
+  "banner-active": true,
+  "banner-bg-color": "#009edb",
+  "banner-link": "/about",
   "banner-text-color": "#ffffff",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
