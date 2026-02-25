@@ -18,6 +18,7 @@ search-desktop-placeholder = "Enter facility name, city, zip"
 search-location = true
 
 show-alerts-button = true
+cuisine-type = false
 
 [data]
 source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
