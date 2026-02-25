@@ -129,6 +129,7 @@
                     .forEach((el) => el.remove());
                 } catch {}
                 popup.setLngLat([lon, lat]).addTo(this.map);
+                if (popup.getElement()) popup.getElement().style.zIndex = "20";
               });
 
               markerEl.addEventListener("mouseleave", () => {
@@ -431,6 +432,7 @@
 
             markerEl.addEventListener("mouseenter", () => {
               popup.setLngLat([m.lon, m.lat]).addTo(this.map);
+              if (popup.getElement()) popup.getElement().style.zIndex = "20";
             });
 
             markerEl.addEventListener("mouseleave", () => {
@@ -480,8 +482,8 @@
 
             markerEl.addEventListener("mouseenter", () => {
               popup.setLngLat([m.lon, m.lat]).addTo(this.map);
+              if (popup.getElement()) popup.getElement().style.zIndex = "20";
             });
-
             markerEl.addEventListener("mouseleave", () => {
               popup.remove();
             });
