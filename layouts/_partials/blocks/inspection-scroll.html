@@ -476,6 +476,8 @@ function performSearch(query, city) {
       var noResultsEl = document.getElementById("no-results");
       if (noResultsEl) noResultsEl.classList.add("hidden");
 
+clearMounts();
+      document.querySelectorAll('.pagination-controls').forEach(function(el) { el.remove(); });
       showSearchSpinner();
 
       setTimeout(function() {

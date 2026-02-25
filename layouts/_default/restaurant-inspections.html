@@ -438,12 +438,11 @@
     x-show="open"
     x-cloak
     @keydown.escape.window="closeModal()"
-    class="fixed left-0 right-0 bottom-0 z-50 flex items-center justify-center px-6 pb-6"
+    class="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center px-6 pb-6"
     :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100vh - var(--modalTop));'"
     style="display: none;"
     :style="'--modalTop: calc(73px + 1.5rem)'"
   >
- 
     <div
       @click="closeModal()"
       class="fixed inset-0 bg-black/70 backdrop-blur-md backdrop-saturate-150"
@@ -472,9 +471,9 @@
         class="absolute right-4 top-4 text-g-6 transition-colors hover:text-g-9"
         aria-label="Close modal"
       >
-      <svg class="h-6 w-6 fill-current" aria-hidden="true">
-        {{ partial "helper/svg.html" "times" }}
-      </svg>
+        <svg class="h-6 w-6 fill-current" aria-hidden="true">
+          {{ partial "helper/svg.html" "times" }}
+        </svg>
       </button>
 
       <div x-show="step === 'form'" class="p-4 sm:p-5">
@@ -482,15 +481,14 @@
           <div
             class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4"
           >
-          <svg
-            class="h-5 w-52 fill-current text-yellow-9"
-            aria-hidden="true"
-          >
-            {{ partial "helper/svg.html" "bell" }}
-          </svg>
+            <svg class="h-5 w-52 fill-current text-yellow-9" aria-hidden="true">
+              {{ partial "helper/svg.html" "bell" }}
+            </svg>
           </div>
           <div>
-            <h2 class="text-xl sm:text-2xl font-bold text-g-9">Get Inspection Alerts</h2>
+            <h2 class="text-xl font-bold text-g-9 sm:text-2xl">
+              Get Inspection Alerts
+            </h2>
           </div>
         </div>
 
@@ -575,7 +573,7 @@
             </div>
           </div>
 
-          <div class="rounded-lg border border-g-3 border-b-2 bg-b-5 p-4">
+          <div class="bg-b-5 rounded-lg border border-b-2 border-g-3 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               We'll only use your contact information to send inspection alerts.
               You can unsubscribe anytime. We never share your data with third
@@ -614,10 +612,10 @@
 
       <div x-show="step === 'success'" class="p-6 text-center sm:p-8">
         <div
-          class="bg-g-1 mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full"
+          class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-g-1"
         >
           <svg
-            class="text-g-6 h-8 w-8"
+            class="h-8 w-8 text-g-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
