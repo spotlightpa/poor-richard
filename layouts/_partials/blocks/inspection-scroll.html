@@ -873,65 +873,81 @@ function rowsToMarkers(rows, startIndex) {
     }
   }
 
-  return rows
-    .map(function (row, i) {
+    function getRiskPriority(riskLevels) {
+      var risks = (riskLevels || "").split(' | ').map(function(s) { return s.trim().toLowerCase(); });
+      if (risks.some(function(r) { return r === 'high risk'; })) return 3;
+      if (risks.some(function(r) { return r === 'moderate risk'; })) return 2;
+      if (risks.some(function(r) { return r === 'low risk'; })) return 1;
+      return 0;
+    }
+
+    function riskToColorAndBadge(priority) {
+      if (priority === 3) return { color: "#D70000", badgeText: "High Risk Violation" };
+      if (priority === 2) return { color: "#FFCB03", badgeText: "Moderate Risk Violation" };
+      if (priority === 1) return { color: "#009EDB", badgeText: "Low Risk Violation" };
+      return { color: "#1b998b", badgeText: "No Violations" };
+    }
+
+    var groups = {};
+    var groupOrder = [];
+    rows.forEach(function(row, i) {
       var lat = parseFloat(row.Latitude);
       var lon = parseFloat(row.Longitude);
-      if (!lat || !lon || isNaN(lat) || isNaN(lon)) return null;
-
-      var riskLevels = (row.risk_level || "").trim();
-      var color = "#1b998b";
-      var badgeText = "No Violations";
-
-      if (riskLevels) {
-        var risks = riskLevels.split(' | ').map(function(s) { return s.trim().toLowerCase(); });
-        var hasHighRisk = risks.some(function(r) { return r === 'high risk'; });
-        var hasModerateRisk = risks.some(function(r) { return r === 'moderate risk'; });
-        var hasLowRisk = risks.some(function(r) { return r === 'low risk'; });
-
-        if (hasHighRisk) {
-          color = "#D70000";
-          badgeText = "High Risk Violation";
-        } else if (hasModerateRisk) {
-          color = "#FFCB03";
-          badgeText = "Moderate Risk Violation";
-        } else if (hasLowRisk) {
-          color = "#009EDB";
-          badgeText = "Low Risk Violation";
-        }
+      if (!lat || !lon || isNaN(lat) || isNaN(lon)) return;
+      var key = lat.toFixed(6) + "," + lon.toFixed(6);
+      if (!groups[key]) {
+        groups[key] = { lat: lat, lon: lon, rows: [], firstIndex: startIndex + i };
+        groupOrder.push(key);
       }
+      groups[key].rows.push({ row: row, index: startIndex + i });
+    });
 
+    return groupOrder.map(function(key) {
+      var group = groups[key];
+      var lat = group.lat;
+      var lon = group.lon;
+
+      var maxPriority = 0;
+      group.rows.forEach(function(entry) {
+        var p = getRiskPriority(entry.row.risk_level || "");
+        if (p > maxPriority) maxPriority = p;
+      });
+
+      var style = riskToColorAndBadge(maxPriority);
+      var color = style.color;
+
+      var id = "inspection-" + group.firstIndex;
+
+      var facilitiesHTML = group.rows.map(function(entry) {
+      var row = entry.row;
       var facilityName = escapeHTML(row.facility || "Facility");
       var simplifiedAddress = simplifyAddress(row.address || "");
-      var addressLine = "";
-      if (simplifiedAddress) {
-        addressLine = simplifiedAddress;
-      } else if (row.city) {
-        addressLine = row.city;
-      }
+      var addressLine = simplifiedAddress || row.city || "";
+      var p = getRiskPriority(row.risk_level || "");
+      var s = riskToColorAndBadge(p);
 
-      var id = "inspection-" + (startIndex + i);
+      return `
+        <div class="pt-2.5 pb-2.5 mb-2.5 border-b border-g-2 first:pt-0 last:border-b-0 last:pb-0 last:mb-0">
+          <h3 class="font-bold text-base leading-tight text-g-9 mb-1">${facilityName}</h3>
+          ${addressLine ? `<p class="text-xs text-g-6 mb-1.5">${escapeHTML(addressLine)}</p>` : ""}
+          <span class="inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${s.color};">
+            ${s.badgeText}
+          </span>
+        </div>`;
+    }).join("");
 
-      return {
-        lon: lon,
-        lat: lat,
-        color: color,
-        inspectionId: id,
-        popupHTML: `
-          <div class="min-w-[200px] max-w-[280px] p-3">
-            <div class="mb-2.5">
-              <h3 class="pb-1 font-bold text-base leading-tight text-g-9 mb-1.5">${facilityName}</h3>
-              ${addressLine ? `<p class="pb-1 text-xs text-g-6">${escapeHTML(addressLine)}</p>` : ""}
-            </div>
-              <span class="mt-1 inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${color};">
-                ${badgeText}
-              </span>
-            </div>
-          </div>
-        `,
-      };
-    })
-    .filter(Boolean);
+    return {
+      lon: lon,
+      lat: lat,
+      color: color,
+      inspectionId: id,
+      popupHTML: `
+        <div class="min-w-[200px] max-w-[280px] p-3">
+          ${facilitiesHTML}
+        </div>
+      `,
+    };
+  });
 }
 
     function syncMarkers() {
