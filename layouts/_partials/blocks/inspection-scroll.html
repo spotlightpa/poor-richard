@@ -287,6 +287,18 @@
       var d = new Date(s);
       return isNaN(d.getTime()) ? new Date(0) : d;
     }
+   function getRiskScore(row) {
+      if (!row || !row.risk_level) return 0;
+      var score = 0;
+      var parts = row.risk_level.split(/[\|,]/).map(function(s) { return s.trim().toLowerCase(); });
+      parts.forEach(function(r) {
+        if (r === 'high risk') score += 25;
+        else if (r === 'moderate risk') score += 10;
+        else if (r === 'low risk') score += 3;
+      });
+      return score;
+    }
+
     var ITEMS_PER_PAGE = 10;
     var groupedFacilities = {};
     var allData = [];
@@ -648,6 +660,14 @@ clearMounts();
           }
 
           if (currentSort === "date-asc") return aLatest - bLatest;
+
+          if (currentSort === "risk-desc" || currentSort === "high-risk") {
+            return getRiskScore(B[0]) - getRiskScore(A[0]);
+          }
+          if (currentSort === "risk-asc") {
+            return getRiskScore(A[0]) - getRiskScore(B[0]);
+          }
+
           return bLatest - aLatest;
         });
 

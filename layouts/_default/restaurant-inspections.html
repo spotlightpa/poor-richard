@@ -1151,7 +1151,10 @@ initSortListeners() {
 
               case "high-risk":
               case "risk-desc":
+                sorted.sort((a, b) => this.getCardRiskScore(b) - this.getCardRiskScore(a));
+                break;
               case "risk-asc":
+                sorted.sort((a, b) => this.getCardRiskScore(a) - this.getCardRiskScore(b));
                 break;
             }
             sorted.forEach((card) => container.appendChild(card));
@@ -1188,6 +1191,19 @@ initSortListeners() {
         getFacilityName(card) {
           const h2 = card.querySelector("h2");
           return h2 ? h2.textContent.trim() : "";
+        },
+
+        getCardRiskScore(card) {
+          const riskLevel = card.getAttribute("data-risk-level") || "";
+          if (!riskLevel) return 0;
+          let score = 0;
+          riskLevel.split(/[\|,]/).forEach(part => {
+            const r = part.trim().toLowerCase();
+            if (r === 'high risk') score += 25;
+            else if (r === 'moderate risk') score += 10;
+            else if (r === 'low risk') score += 3;
+          });
+          return score;
         },
 
         norm(s) {
