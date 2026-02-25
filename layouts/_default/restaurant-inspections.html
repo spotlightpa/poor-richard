@@ -129,25 +129,26 @@
 
           <div class="mt-4 hidden flex-col gap-3 md:flex">
             {{ if .Param "cuisine-type" }}
-            <div class="relative">
-              <select
-                id="cuisine-filter"
-                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
-              >
-                <option value="">Cuisine</option>
-                <option value="american">American</option>
-                <option value="italian">Italian</option>
-                <option value="chinese">Chinese</option>
-                <option value="mexican">Mexican</option>
-                <option value="other">Other</option>
-              </select>
-              <svg
-                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
-              >
-                {{ partial "helper/svg.html" "chevron" }}
-              </svg>
-            </div>
+              <div class="relative">
+                <select
+                  id="cuisine-filter"
+                  class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+                >
+                  <option value="">Cuisine</option>
+                  <option value="american">American</option>
+                  <option value="italian">Italian</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="mexican">Mexican</option>
+                  <option value="other">Other</option>
+                </select>
+                <svg
+                  class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+                >
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </div>
             {{ end }}
+
 
             <div
               class="relative"
