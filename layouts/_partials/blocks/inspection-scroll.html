@@ -219,6 +219,12 @@
               localStorage.setItem('inspections-sort', v);
               window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: v }}));
               this.open = false;
+            },
+            init() {
+              window.addEventListener('set-sort', (e) => {
+                const v = e.detail?.value;
+                if (v) this.selected = v;
+              });
             }
           }"
         >
@@ -264,6 +270,30 @@
             </button>
           </div>
         </div>
+      </div>
+
+      <div
+        x-data
+        x-show="
+          $store?.inspSort?.selected !== 'date' ||
+          document.getElementById('city-filter')?.value !== ''
+        "
+        class="mt-2"
+      >
+        <button
+          @click="
+            const cityFilter = document.getElementById('city-filter');
+            if (cityFilter) {
+              cityFilter.value = '';
+              cityFilter.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+            window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: 'date' } }));
+            window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: document.getElementById('search-input')?.value || '', city: '' } }));
+          "
+          class="w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-3 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white hover:shadow-sm"
+        >
+          Clear
+        </button>
       </div>
     </div>
 
