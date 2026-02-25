@@ -1268,7 +1268,9 @@ initSortListeners() {
           let visible = 0;
 
           this.cards.forEach((card) => {
-            const searchHit = !needle || this.index.get(card).includes(needle);
+            const tokens = needle ? needle.split(/\s+/).filter(Boolean) : [];
+            const cardIndex = this.index.get(card) || '';
+            const searchHit = tokens.length === 0 || tokens.every(t => cardIndex.includes(t));
             card.classList.toggle("hidden-by-search", !searchHit);
 
             let cityHit = true;

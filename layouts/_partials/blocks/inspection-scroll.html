@@ -493,7 +493,9 @@ clearMounts();
               row.city || "",
               row.inspection_date || ""
             ].join(" ");
-            searchMatch = normalizeString(searchText).includes(normalizedQuery);
+            var tokens = normalizedQuery.split(/\s+/).filter(Boolean);
+            var normalizedSearchText = normalizeString(searchText);
+            searchMatch = tokens.every(function(token) { return normalizedSearchText.includes(token); });
           }
 
         var cityMatch = true;
