@@ -54,7 +54,7 @@ In the two September 2024 elections, Bluestein said the $1.5 million the state p
 
 Special elections are not the only way states fill legislative vacancies. According to the <a href="https://www.ncsl.org/elections-and-campaigns/filling-legislative-vacancies?utm_source=chatgpt.com">National Conference of State Legislatures</a>, about half of states appoint, not elect, new legislators to fill the term until the next election. These appointments are usually made by the governor or the political party of the legislator who left the seat vacant.
 
-Even states that do use special elections can have different laws governing their timing. Pennsylvania requires a special election to be called within 10 days of a seat becoming vacant, and the special election must take place within 60 days of the call. If a regularly scheduled election falls in that 60-day window, that’s when the election is held — that’s often not the case, though, forcing elections to be held on more random dates.
+Even states that do use special elections can have different laws governing their timing. Pennsylvania requires a special election to be called within 10 days of a seat becoming vacant, and the special election must take place at least 60 days after the call. If a regularly scheduled election is close enough on the horizon, the special election will be consolidated with it — that’s often not the case, though, forcing elections to be held on more random dates.
 
 But Louisiana, for example, only calls a special election if six months or more remain in the term; otherwise, the vacancy is filled at the next general election. If that were the law in Pennsylvania, the two special elections in Philadelphia would not have taken place, as those offices were also on the November ballot.
 
@@ -77,6 +77,8 @@ State Sen. Lisa Baker reintroduced DiSanto’s proposal this session as <a href=
 Bluestein said there are several considerations when it comes to special elections that need to be balanced: the need for representation, saving taxpayers money, and the stress on election workers.
 
 “But right now,” he said, “I think that balance is tilted in the wrong direction.”
+
+<strong><em>Correction, Feb. 26, 2026 10:45 a.m.:</em></strong><em> A previous version of this story misstated the timeline for when special elections must be held in Pennsylvania.</em>
 
 <em>Nathaniel Rakich contributed reporting.</em>
 
