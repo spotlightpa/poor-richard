@@ -352,7 +352,7 @@
 
           <button
             @click="
-                    var cf = document.getElementById('cuisine-filter'); if (cf) cf.value = '';
+                    const cf = document.getElementById('cuisine-filter'); if (cf) cf.value = '';
                     document.getElementById('city-filter').value = '';
                     document.getElementById('date-sort').selectedIndex = 0;
                     document.getElementById('risk-sort').selectedIndex = 0;
@@ -361,7 +361,7 @@
                     currentSort = 'date-desc';
                     q = '';
                     localStorage.removeItem('inspections-sort');
-                    var si = document.getElementById('search-input');
+                    const si = document.getElementById('search-input');
                     if (si) si.value = '';
                     window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: 'date-desc' } }));
                     window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: '', city: '' } }));
@@ -423,20 +423,34 @@
         this.open = false;
         document.body.style.overflow = '';
       },
-      submitSignup() {
-        this.submitting = true;
-        setTimeout(() => {
-          console.log('Alert signup:', {
-            facility: this.facilityName,
-            facilityId: this.facilityId,
-            email: this.email,
-            phone: this.phone,
-            method: this.method
-          });
-          this.submitting = false;
-          this.step = 'success';
-        }, 1500);
-      }
+async submitSignup() {
+  this.submitting = true;
+  try {
+    const res = await fetch('/.netlify/functions/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: this.email,
+        phone: this.phone,
+        method: this.method,
+        facilityId: this.facilityId,
+        facilityName: this.facilityName,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error || 'Something went wrong. Please try again.');
+    }
+
+    this.step = 'success';
+  } catch (err) {
+    alert(err.message);
+  } finally {
+    this.submitting = false;
+  }
+},
     }"
     x-show="open"
     x-cloak
@@ -538,6 +552,16 @@
               type="tel"
               x-model="phone"
               placeholder="(555) 123-4567"
+              maxlength="14"
+              @input="
+                      const digits = $event.target.value.replace(/\D/g, '').slice(0, 10);
+                      let formatted = '';
+                      if (digits.length <= 3) formatted = digits;
+                      else if (digits.length <= 6) formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
+                      else formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+                      phone = formatted;
+                      $nextTick(() => { $event.target.value = formatted; });
+                    "
               class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
           </div>
