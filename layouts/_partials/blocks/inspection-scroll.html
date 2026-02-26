@@ -446,7 +446,6 @@
           });
 
           if (mobileMounts.length === 0) {
-            console.log('[MOBILE HASH] No mobile mount found!');
             return;
           }
 
@@ -467,8 +466,7 @@
             }
           }
 
-          if (!matchFound) {
-          }
+
         }, 500);
       }
       window.addEventListener("mobile-view-changed", function (e) {
@@ -1217,13 +1215,9 @@ function createInspectionCard(data, index, allInspections) {
             .replace(/[^a-z0-9]+/g, '-')
             .replace(/^-+|-+$/g, '');
 
-          if (i < 5) {
-            console.log('[MOBILE HASH] Facility', i, '- Title:', title, '- ID:', cardId);
-          }
 
           if (cardId === hash) {
             var page = Math.floor(i / ITEMS_PER_PAGE) + 1;
-            console.log('[MOBILE HASH] MATCH! Facility at index', i, 'is on page', page);
             return page;
           }
         }
@@ -1555,14 +1549,8 @@ if (!hasViolation) {
 
         if (detailElement) {
           mount.insertBefore(detailElement, mount.firstChild);
-        } else {
-          console.log('[MOBILE DETAILS] ERROR: detailElement is null!');
         }
-      } else {
-        console.log('[MOBILE DETAILS] ERROR: Mount element not found!');
       }
-
-      console.log('[MOBILE DETAILS] Detail view created');
     }
 
   window.closeMobileCardDetails = function() {
