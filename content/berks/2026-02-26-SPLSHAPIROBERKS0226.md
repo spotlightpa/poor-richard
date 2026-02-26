@@ -2,13 +2,13 @@
 authors = ["Hanna Holthaus", "Gabriela Martínez"]
 blurb = "Gov. Josh Shapiro affirmed his opposition to detention facilities in a press conference following a private bipartisan meeting with state representatives and commissioners of Berks and Schuylkill counties."
 byline = "Hanna Holthaus and Gabriela Martínez of Spotlight PA"
-description = "Gov. Josh Shapiro vowed to block immigrant detention facilities in Berks and Schuylkill counties during a press conference after a private bipartisan meeting with local state representatives and commissioners."
+description = "Shapiro vowed to block immigrant detention facilities in Berks and Schuylkill Counties during a news conference after a private bipartisan meeting of local officials. "
 draft = false
 feed-exclude = false
 image = "2026/02/01mt-1ajj-p7yr-d993.jpeg"
 image-caption = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026."
 image-credit = "Gabriela Martínez for Spotlight PA"
-image-description = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026. From left, he is with Department of Environmental Protection Deputy Secretary Jill Whitcomb;  Labor & Industry Secretary Nancy Walker, and Department of Health\nSecretary Dr. Debra Bogen."
+image-description = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on Feb. 26, 2026. "
 image-gravity = "ce"
 internal-id = "SPLSHAPIROBERKS0226"
 kicker = "Federal Government"
@@ -19,6 +19,7 @@ slug = "josh-shapiro-ice-detention-center-warehouse-legal-regulatory-options-fed
 suppress-date = false
 title = "Shapiro vows to block ICE detention centers, warns of devastating impact on local Pa. communities"
 title-tag = "Shapiro: I’ll use ‘every tool’ to block ICE detention centers in PA"
+topics = ["Federal Government"]
 +++
 
 READING — Gov. Josh Shapiro says he will use “every tool at his disposal” to stop planned ICE detention centers in <a href="https://www.spotlightpa.org/berks/2026/02/ice-warehouse-immigration-berks-county-hamburg-plans-federal-government/">Berks and Schuylkill Counties</a>, though he stopped short of discussing what levers his administration may pull.
