@@ -1,14 +1,14 @@
 +++
 authors = ["Hanna Holthaus", "Gabriela Martínez"]
-blurb = "Gov. Josh Shapiro affirmed his opposition to detention facilities in a press conference following a private bipartisan meeting with state representatives and commissioners of Berks and Schuylkill counties."
+blurb = "Shapiro stopped short of discussing what his admin might do following a private meeting with local officials from Berks and Schuylkill Counties."
 byline = "Hanna Holthaus and Gabriela Martínez of Spotlight PA"
 description = "Gov. Shapiro vowed to block immigrant detention facilities in Berks and Schuylkill Counties after a bipartisan meeting with local officials."
 draft = false
 feed-exclude = false
 image = "2026/02/01mt-1ajj-p7yr-d993.jpeg"
-image-caption = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026."
-image-credit = "Gabriela Martínez for Spotlight PA"
-image-description = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026. From left, he is with Department of Environmental Protection Deputy Secretary Jill Whitcomb;  Labor & Industry Secretary Nancy Walker, and Department of Health\nSecretary Dr. Debra Bogen."
+image-caption = "Gov. Josh Shapiro speaks at a news conference at Berks County Agricultural Center in Bern Township on Feb. 26, 2026."
+image-credit = "Gabriela Martínez / Spotlight PA"
+image-description = "Gov. Josh Shapiro speaks at a news conference at Berks County Agricultural Center in Bern Township on Feb. 26, 2026."
 image-gravity = "ce"
 internal-id = "SPLSHAPIROBERKS0226"
 kicker = "Federal Government"
@@ -29,6 +29,8 @@ Following a bipartisan meeting of local officials on Thursday, Shapiro reaffirme
 “I&#39;ve taken this president to court 19 times \[as governor\], not lost a single case,” Shapiro said in a news conference after the meeting. “Part of the reason why we&#39;re so successful is we don&#39;t forecast all of it ahead of time. We dot our i&#39;s, we cross our t&#39;s.”
 
 Shapiro hosted the meeting at the Berks County Agricultural Center in Bern Township to privately speak with local commissioners and state representatives about the proposed facilities. He did not present any new information about the facilities during the news conference, but he said the common theme among the gathered elected officials was concern about the impact on local communities.
+
+{{<embed/newsletter button="Sign me up!" cta="Good Day, Berks is your daily dose of Berks County essentials. Be the first to know about important news, events, and more." preselect="berks">}}
 
 Tremont Township in Schuylkill County, where ICE has planned a 7,500-bed <a href="https://www.spotlightpa.org/berks/2026/02/ice-warehouse-immigration-berks-county-hamburg-plans-federal-government/">detention center</a>, for example, would run out of water within 24 hours of the facility opening and would need to triple its water capacity, Shapiro said.
 
@@ -65,6 +67,8 @@ Commissioner Dante Santoni, the lone Democrat of the group, vocally opposed the 
 Leinbach and Santoni attended a virtual meeting on Monday with DHS officials organized by U.S. Rep. Dan Meuser (R., Pa.). Leinbach told Spotlight PA that few of their questions were answered, but he expected another meeting in the near future.
 
 “Schuylkill County and Berks County did not throw any softballs,” Leinbach said.
+
+{{<embed/donate>}}
 
 They did learn that DHS expects to use an onsite sewer tank system, Leinbach said. In that case, it would be separate from the local sewer system, which residents have worried will be overused by the facility. He did not know if the system — which would be routinely pumped, with waste taken to a treatment plant — would require a permit from the Department of Environmental Protection.
 
