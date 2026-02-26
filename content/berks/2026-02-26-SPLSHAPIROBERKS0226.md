@@ -9,6 +9,7 @@ image = "2026/02/01mt-1ajj-p7yr-d993.jpeg"
 image-caption = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026."
 image-credit = "Gabriela Martínez for Spotlight PA"
 image-description = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026. From left, he is with Department of Environmental Protection Deputy Secretary Jill Whitcomb;  Labor & Industry Secretary Nancy Walker, and Department of Health\nSecretary Dr. Debra Bogen."
+image-gravity = "ce"
 internal-id = "SPLSHAPIROBERKS0226"
 kicker = "Federal Government"
 modal-exclude = false
