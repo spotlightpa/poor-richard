@@ -2,13 +2,13 @@
 authors = ["Hanna Holthaus", "Gabriela Martínez"]
 blurb = "Gov. Josh Shapiro affirmed his opposition to detention facilities in a press conference following a private bipartisan meeting with state representatives and commissioners of Berks and Schuylkill counties."
 byline = "Hanna Holthaus and Gabriela Martínez of Spotlight PA"
-description = "Shapiro vowed to block immigrant detention facilities in Berks and Schuylkill Counties during a news conference after a private bipartisan meeting of local officials. "
+description = "Gov. Shapiro vowed to block immigrant detention facilities in Berks and Schuylkill Counties after a bipartisan meeting with local officials."
 draft = false
 feed-exclude = false
 image = "2026/02/01mt-1ajj-p7yr-d993.jpeg"
 image-caption = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026."
 image-credit = "Gabriela Martínez for Spotlight PA"
-image-description = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on Feb. 26, 2026. "
+image-description = "Gov. Josh Shapiro speaks at a press conference at Berks County Agricultural Center in Bern Township on February 26, 2026. From left, he is with Department of Environmental Protection Deputy Secretary Jill Whitcomb;  Labor & Industry Secretary Nancy Walker, and Department of Health\nSecretary Dr. Debra Bogen."
 image-gravity = "ce"
 internal-id = "SPLSHAPIROBERKS0226"
 kicker = "Federal Government"
@@ -18,7 +18,7 @@ published = 2026-02-26T15:34:20.627-05:00
 slug = "josh-shapiro-ice-detention-center-warehouse-legal-regulatory-options-federal-government"
 suppress-date = false
 title = "Shapiro vows to block ICE detention centers, warns of devastating impact on local Pa. communities"
-title-tag = "Shapiro: I’ll use ‘every tool’ to block ICE detention centers in PA"
+title-tag = "Shapiro vows to block ICE detention centers in PA"
 topics = ["Federal Government"]
 +++
 
