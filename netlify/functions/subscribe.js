@@ -6,7 +6,7 @@ import {
 } from "@aws-sdk/lib-dynamodb";
 
 const client = new DynamoDBClient({
-  region: process.env.AWS_REGION,
+  region: process.env.INSPECTIONS_AWS_REGION,
   credentials: {
     accessKeyId: process.env.INSPECTIONS_AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
