@@ -9,7 +9,7 @@ ad-header-desktop-active = false
 ad-header-mobile-active = false
 
 title = "Pennsylvania Restaurant Safety Tracker"
-deck = "Free, real-time updates about health inspections at restaurants near you."
+deck = "Real-time updates about health inspections at restaurants near you."
 
 sign-up-button = "Sign up for alerts"
 search-instructions = "Search by restaurant name, city, or zip across 61 counties"
@@ -29,9 +29,9 @@ delimiter = ","
 numericFields = ["Latitude", "Longitude"]
 
 [params]
-about-title = "*About This Tool"
+about-title = "About This Tool"
 about-description = """
-Spotlight PA’s Pennsylvania Restaurant Safety Tracker is an interactive database developed to help Pennsylvanians better understand public inspection data for retail food facilities. The database utilizes information from the <a href="https://www.pa.gov/agencies/pda/food/food-safety/retail-food-inspection-reports">Pennsylvania Department of Agriculture</a>, which produces retail food inspection reports for 61 of Pennsylvania’s 67 counties. Allegheny, Bucks, Delaware, Erie, Montgomery, and Philadelphia county health departments conduct their own inspections.
+Spotlight PA’s Pennsylvania Restaurant Safety Tracker is an interactive database developed to help Pennsylvanians better understand public inspection data for retail food facilities. The database utilizes information from the <a href="https://www.pa.gov/agencies/pda/food/food-safety/retail-food-inspection-reports">Pennsylvania Department of Agriculture</a>, which produces retail food inspection reports for 61 of Pennsylvania’s 67 counties. Allegheny, Bucks, Delaware, Erie, Montgomery, and Philadelphia county health departments conduct their own inspections. We are working on adding the additional six counties to the tool.
 <br><br>
 As noted by the Department of Agriculture, inspections are a “snapshot” of a particular day. Many violations are relatively minor and are fixed at the time of inspection. Our goal is to provide a trustworthy and easy-to-use resource that helps consumers better understand the severity and nature of violations and find the information most relevant to them. To do this, we’ve highlighted the violations most likely to lead to foodborne illness and used generative AI to categorize violations and summarize inspector comments in plain language so users can better contextualize violations. We worked closely with an expert in restaurant inspections to validate this process.
 <br><br>
