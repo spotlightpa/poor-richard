@@ -89,7 +89,9 @@
                     {{ $author.name }}
                   {{ end }}
                 </h2>
-                <p class="text-sm font-black uppercase">{{ $author.title }}</p>
+                {{ with $author.teamTitle | default $author.title }}
+                  <p class="text-sm font-black uppercase">{{ . }}</p>
+                {{ end }}
               </header>
               <div class="article-content col-span-5">
                 {{ $author.content|markdownify }}
