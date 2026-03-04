@@ -2,12 +2,12 @@
 {{ $eyebrow := .Get "eyebrow" | htmlUnescape | default `Stay informed` }}
 {{ $button := .Get "button" | htmlUnescape | default `Sign Up` }}
 {{ $preselect := .Get "preselect" | htmlUnescape | default `papost` }}
-
+{{ $class := .Get "container-class" | htmlUnescape | default `clear-all my-6 sm:float-right sm:ml-3 sm:w-1/2 md:-mr-12 md:max-w-[439px] lg:mr-0 lg:w-full lg:max-w-96 xl:-mr-20 xl:max-w-[475px]` }}
 {{ $idEmail := partial "helper/new-id" . }}
 
 
 <form
-  class="spl-newsletter clear-all my-6 rounded-lg border border-g-5 bg-g-2 p-7 font-sans leading-tight md:p-10 xl:px-12 xl:py-7 print:hidden"
+  class="spl-newsletter {{ $class }}"
   data-ga-category="embed:newsletter"
   x-data="newsletter($el.dataset.baseUrl)"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
@@ -23,7 +23,7 @@
   <h2 class="border-b border-black font-serif text-2xl italic leading-tight">
     {{- $eyebrow -}}
   </h2>
-  <h2 class="mt-2 font-sans text-lg">
+  <h2 class="mt-2 font-sans text-lg leading-tight">
     {{- $cta | safeHTML -}}
   </h2>
   <div class="mx-auto mt-6 max-w-xl">
