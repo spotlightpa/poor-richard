@@ -14,7 +14,6 @@ ad-header-desktop-active = false
 ad-header-mobile-active = false
 layout = "page-landing"
 +++
-<!--# Spotlight PA Ideas Festival-->
 
 {{<picture src="2026/03/01mt-f5ed-v7ft-h02a.png" width-ratio="400" height-ratio="153" description="Spotlight PA Ideas Festival" gravity="ce" figure-class="-my-12">}}
 
@@ -29,7 +28,7 @@ GoggleWorks Center for the Arts
 
 Spotlight PA’s Ideas Festival will bring together community leaders, innovators, and organizations from across Pennsylvania to share practical, proven solutions to local challenges, exchange ideas, and inspire new approaches rooted in creativity and civic engagement. 
 
-## Sign up
+## Learn more
 
 {{<embed/newsletter preselect="ideasfestival" eyebrow="Spotlight PA Ideas Festival" cta="Sign up to get all of the news & details about the Festival delivered straight to your inbox." button="Sign Up" container-class="float-none mx-0 mb-12 max-w-full">}}
 
