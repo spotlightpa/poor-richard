@@ -57,6 +57,12 @@ If submitted, the sender would receive a $50 Amazon gift card “as a thank-you 
 
 All told, 23 citizen emails opposing Venkat’s bill were included in a committee testimony packet viewed by Spotlight PA. They include stories of individuals using equity investments to pay for home repairs, college tuition, property taxes, and credit card debt; 10 directly quote Point’s prompts.
 
+State Rep. John Lawrence (R., Chester), an eight term legislator who serves as the committee’s ranking Republican, added that he wasn’t aware of anyone paying for testimony to support their cause before a committee.
+
+On the underlying issue, he thought that the bill needed more work, including input from regulators in the state’s banking department and attorney general’s office.
+
+But on the gift cards, he quipped: “I wouldn&#39;t have wanted to sit on the other side of the table to try to explain that away.”
+
 ## Costs are unknown by design
 
 On the company’s website, Point says its products allow homeowners to “unlock your home equity with no monthly payments, no income requirements, and no need for perfect credit.”
