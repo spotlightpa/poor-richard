@@ -9,6 +9,7 @@ image = "2024/07/01k9-wv2n-hx1n-hnkv.jpeg"
 image-caption = "Pennsylvania's new license plate design."
 image-credit = "Pennsylvania Department of Transportation"
 image-description = "Pennsylvania's new license plate design."
+image-gravity = "ce"
 internal-id = "SPLNEWSQUIZMAR0226"
 kicker = "Week of March 2, 2026"
 modal-exclude = false
