@@ -75,7 +75,7 @@ Combined with fees baked into the contract, the homeowner’s closing payment ca
 
 Point and the trade organization representing similar lenders argue they provide flexibility to homeowners who want to access their home equity for cash without adding additional monthly payments.
 
-“I&#39;m sure they sound like new concepts to you,” said Lee Kaplan, general counsel of Unlock Technologies, another lender. But “there&#39;s nothing inherently wrong with those things. Those are simply … how we generate return. That&#39;s how we price the contract, in the same way that there&#39;s nothing wrong with the interest rate on the loan.”
+“I&#39;m sure they sound like new concepts to you,” said Jim Riccitelli, CEO of Unlock Technologies, another lender. But “there&#39;s nothing inherently wrong with those things. Those are simply … how we generate return. That&#39;s how we price the contract, in the same way that there&#39;s nothing wrong with the interest rate on a loan.”
 
 {{<embed/donate>}}
 
@@ -92,4 +92,6 @@ Industry members told lawmakers such regulations would effectively ban their pro
 As for working with the industry to develop state rules more to its liking, Venkat said its tactics haven’t won any favors.
 
 “Their efforts on this legislation makes me very skeptical of their motivations in terms of coming to an agreement that would be to the benefit of Pennsylvanians,” he said.
+
+<em>Correction: An earlier version of this story misattributed a quote from a testifier in the Pa. House hearing on home equity-backed loans. It was said by Jim Riccitelli, CEO of the lender Unlock Technologies.</em>
 
