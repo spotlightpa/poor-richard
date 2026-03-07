@@ -156,7 +156,7 @@
   ],
   "ad-rail-top-active": true,
   "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit? Learn more about our work »\u003c/strong\u003e",
-  "banner-active": true,
+  "banner-active": false,
   "banner-bg-color": "#009edb",
   "banner-link": "/about",
   "banner-text-color": "#ffffff",
