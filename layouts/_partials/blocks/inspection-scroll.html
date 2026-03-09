@@ -1164,7 +1164,6 @@ function createInspectionCard(data, index, allInspections) {
           ${violationBadges}
         </ul>
 
-        ${hasViolation ? `
         <div class="pt-2">
           <button
             class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
@@ -1177,7 +1176,6 @@ function createInspectionCard(data, index, allInspections) {
             </svg>
           </button>
         </div>
-        ` : ''}
       `;
 
       return card;
