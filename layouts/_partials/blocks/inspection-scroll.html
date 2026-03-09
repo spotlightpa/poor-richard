@@ -429,6 +429,13 @@
       var hash = window.location.hash.slice(1);
 
       if (hash) {
+        filteredData.sort(function(a, b) {
+          var A = groupedFacilities[a] || [];
+          var B = groupedFacilities[b] || [];
+          var aLatest = A[0] ? parseInspectionDate(A[0].inspection_date) : new Date(0);
+          var bLatest = B[0] ? parseInspectionDate(B[0].inspection_date) : new Date(0);
+          return bLatest - aLatest;
+        });
         var foundPage = findPageForHash(hash);
         if (foundPage > 0) {
           currentPage = foundPage;
@@ -457,11 +464,12 @@
             var cardId = generateCardIdFromCard(card);
             if (cardId === hash) {
               matchFound = true;
-              openMobileCardDetails(card);
-
-              setTimeout(function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }, 200);
+              if (window.innerWidth < 768) {
+                openMobileCardDetails(card);
+                setTimeout(function() {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 200);
+              }
               break;
             }
           }
