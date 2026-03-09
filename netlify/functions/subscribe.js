@@ -4,8 +4,17 @@ import {
   PutCommand,
   GetCommand,
 } from "@aws-sdk/lib-dynamodb";
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 const client = new DynamoDBClient({
+  region: process.env.INSPECTIONS_AWS_REGION,
+  credentials: {
+    accessKeyId: process.env.INSPECTIONS_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
+  },
+});
+
+const ses = new SESClient({
   region: process.env.INSPECTIONS_AWS_REGION,
   credentials: {
     accessKeyId: process.env.INSPECTIONS_AWS_ACCESS_KEY_ID,
@@ -72,6 +81,31 @@ export const handler = async (event) => {
           facilityName,
           createdAt: new Date().toISOString(),
           active: true,
+        },
+      }),
+    );
+
+    await ses.send(
+      new SendEmailCommand({
+        Source: process.env.INSPECTIONS_FROM_EMAIL,
+        Destination: { ToAddresses: [email] },
+        Message: {
+          Subject: {
+            Data: `You're subscribed to alerts for ${facilityName}`,
+          },
+          Body: {
+            Text: {
+              Data: `Hi,\n\nYou're now subscribed to inspection alerts for ${facilityName}.\n\nWhenever a new inspection report is filed, we'll send you an email.\n\nSpotlight PA Restaurant Safety Tracker\nhttps://www.spotlightpa.org/restaurants`,
+            },
+            Html: {
+              Data: `
+                <p>Hi,</p>
+                <p>You're now subscribed to inspection alerts for <strong>${facilityName}</strong>.</p>
+                <p>Whenever a new inspection report is filed, we'll send you an email.</p>
+                <p><a href="https://www.spotlightpa.org/restaurants">Spotlight PA Restaurant Safety Tracker</a></p>
+              `,
+            },
+          },
         },
       }),
     );
