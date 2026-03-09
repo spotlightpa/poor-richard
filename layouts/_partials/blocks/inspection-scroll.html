@@ -720,7 +720,13 @@ clearMounts();
       syncMarkers();
 
       rendering = false;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      var mountEl = document.querySelector('.inspections-mount');
+      if (mountEl) {
+        var mountTop = mountEl.getBoundingClientRect().top + window.pageYOffset - 73;
+        window.scrollTo({ top: mountTop, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
 
     function goToPage(page) {
