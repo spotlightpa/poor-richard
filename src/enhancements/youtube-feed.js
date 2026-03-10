@@ -17,7 +17,7 @@ export default function youtubeFeed() {
           this.hasLoaded = true;
           this.error = null;
           let videos = data.videos ?? [];
-          this.videos = videos.slice(0, 6);
+          this.videos = videos.slice(0, 4);
         })
         .catch((err) => {
           this.isLoading = false;
