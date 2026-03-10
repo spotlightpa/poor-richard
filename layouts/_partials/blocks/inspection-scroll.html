@@ -17,7 +17,9 @@
           @click="filtersOpen = true"
           class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-g-4 bg-white px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-g-1"
         >
-          <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">{{ partial "helper/svg.html" "filter" }}</svg>
+          <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+            {{ partial "helper/svg.html" "filter" }}
+          </svg>
           Filter &amp; Sort
         </button>
         <button
@@ -25,7 +27,9 @@
           @click="window.dispatchEvent(new CustomEvent('open-city-alerts-modal'))"
           class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-blue bg-blue px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:brightness-95"
         >
-          <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">{{ partial "helper/svg.html" "bell" }}</svg>
+          <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+            {{ partial "helper/svg.html" "bell" }}
+          </svg>
           City Alerts
         </button>
 
@@ -53,16 +57,25 @@
           style="display:none;"
         >
           <div class="mb-4 flex items-center justify-between">
-            <h3 class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6">Filter &amp; Sort</h3>
-            <button @click="filtersOpen = false" class="text-g-5 hover:text-g-9">
-              <svg class="h-5 w-5 fill-current" aria-hidden="true">{{ partial "helper/svg.html" "times" }}</svg>
+            <h3
+              class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+            >
+              Filter &amp; Sort
+            </h3>
+            <button
+              @click="filtersOpen = false"
+              class="text-g-5 hover:text-g-9"
+            >
+              <svg class="h-5 w-5 fill-current" aria-hidden="true">
+                {{ partial "helper/svg.html" "times" }}
+              </svg>
             </button>
           </div>
 
           <div class="space-y-3">
-        <div
-          class="relative w-full md:w-1/2"
-          x-data="{
+            <div
+              class="relative w-full md:w-1/2"
+              x-data="{
               open: false,
               selectedText: '',
               query: '',
@@ -198,66 +211,66 @@
           }
 
             }"
-        >
-          <button
-            @click="open = !open"
-            :aria-expanded="open"
-            aria-haspopup="menu"
-            class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
-          >
-            <span x-text="label()"></span>
-            <svg class="ml-auto h-4 w-4 fill-g-2">
-              {{ partial "helper/svg.html" "filter" }}
-            </svg>
-          </button>
-
-          <div
-            x-show="open"
-            x-transition
-            @click.outside="open = false"
-            class="absolute left-0 z-20 bottom-full mb-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
-            role="menu"
-          >
-            <div class="border-b border-g-2 p-3">
-              <div class="font-sans text-xs font-semibold text-g-6">
-                Type to search all cities (Top 20)
-              </div>
-              <input
-                type="text"
-                class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
-                placeholder="Search"
-                x-model="query"
-                @input="syncShown()"
-              />
-            </div>
-
-            <div class="max-h-72 overflow-auto">
-              <template
-                x-for="opt in optionsShown"
-                :key="opt.value + '::' + opt.text"
+            >
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                aria-haspopup="menu"
+                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
               >
-                <button
-                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
-                  :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
-                  @click="choose(opt.value, opt.text)"
-                  role="menuitem"
-                  x-text="opt.text"
-                ></button>
-              </template>
+                <span x-text="label()"></span>
+                <svg class="ml-auto h-4 w-4 fill-g-2">
+                  {{ partial "helper/svg.html" "filter" }}
+                </svg>
+              </button>
 
               <div
-                x-show="optionsShown.length === 0"
-                class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute bottom-full left-0 z-20 mb-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
+                role="menu"
               >
-                No matches. Try a different spelling.
+                <div class="border-b border-g-2 p-3">
+                  <div class="font-sans text-xs font-semibold text-g-6">
+                    Type to search all cities (Top 20)
+                  </div>
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
+                    placeholder="Search"
+                    x-model="query"
+                    @input="syncShown()"
+                  />
+                </div>
+
+                <div class="max-h-72 overflow-auto">
+                  <template
+                    x-for="opt in optionsShown"
+                    :key="opt.value + '::' + opt.text"
+                  >
+                    <button
+                      class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                      :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
+                      @click="choose(opt.value, opt.text)"
+                      role="menuitem"
+                      x-text="opt.text"
+                    ></button>
+                  </template>
+
+                  <div
+                    x-show="optionsShown.length === 0"
+                    class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
+                  >
+                    No matches. Try a different spelling.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div
-          class="relative w-full md:w-1/2"
-          x-data="{
+            <div
+              class="relative w-full md:w-1/2"
+              x-data="{
             open: false,
             selected: localStorage.getItem('inspections-sort') || 'date',
             labelMap: { 'date': 'Date', 'high-risk': 'Risk', 'alphabetical': 'Name' },
@@ -275,53 +288,50 @@
               });
             }
           }"
-        >
-          <button
-            @click="open = !open"
-            :aria-expanded="open"
-            class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
-          >
-            <span class="truncate" x-text="label"></span>
-
-            <svg class="ml-auto h-4 w-4 fill-g-7">
-              {{ partial "helper/svg.html" "chevron" }}
-            </svg>
-          </button>
-
-          <div
-            x-show="open"
-            x-transition
-            @click.outside="open = false"
-            class="absolute right-0 z-20 bottom-full mb-2 w-full rounded-md border border-g-3 bg-white shadow"
-          >
-            <button
-              class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
-              :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
-              @click="choose('date')"
             >
-              Inspection Date - Newest to Oldest
-            </button>
-            <button
-              class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
-              :class="selected==='high-risk' ? 'font-semibold text-g-9' : 'text-black'"
-              @click="choose('high-risk')"
-            >
-              Violation Risk - Highest to Lowest
-            </button>
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <span class="truncate" x-text="label"></span>
 
-            <button
-              class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
-              :class="selected==='alphabetical' ? 'font-semibold text-g-9' : 'text-black'"
-              @click="choose('alphabetical')"
-            >
-              Facility Name - A to Z
-            </button>
-          </div>
-        </div>
-</div>
+                <svg class="ml-auto h-4 w-4 fill-g-7">
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </button>
 
-            <button
-              @click="
+              <div
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute bottom-full right-0 z-20 mb-2 w-full rounded-md border border-g-3 bg-white shadow"
+              >
+                <button
+                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                  :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
+                  @click="choose('date')"
+                >
+                  Inspection Date - Newest to Oldest
+                </button>
+                <button
+                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                  :class="selected==='high-risk' ? 'font-semibold text-g-9' : 'text-black'"
+                  @click="choose('high-risk')"
+                >
+                  Violation Risk - Highest to Lowest
+                </button>
+
+                <button
+                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                  :class="selected==='alphabetical' ? 'font-semibold text-g-9' : 'text-black'"
+                  @click="choose('alphabetical')"
+                >
+                  Facility Name - A to Z
+                </button>
+              </div>
+              <button
+                @click="
                 const cityFilter = document.getElementById('city-filter');
                 if (cityFilter) {
                   cityFilter.value = '';
@@ -331,17 +341,17 @@
                 window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: document.getElementById('search-input')?.value || '', city: '' } }));
                 filtersOpen = false;
               "
-              class="mt-4 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white"
-            >
-              Clear all
-            </button>
+                class="mt-4 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white"
+              >
+                Clear all
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="bg-g-3">
-      {{ partial "inspections-data-loader.html" . }}
+      <div class="bg-g-3">
+        {{ partial "inspections-data-loader.html" . }}
 
 <script>
   (function () {
@@ -1627,103 +1637,104 @@ if (!hasViolation) {
     })();
 </script>
 
-      <script>
-        (function () {
-          function triggerSearch() {
-            var input = document.getElementById("search-input");
-            var cityFilter = document.getElementById("city-filter");
-
-            var query = input ? input.value : "";
-            var city = cityFilter ? cityFilter.value : "";
-
-            window.dispatchEvent(
-              new CustomEvent("inspections-search", {
-                detail: { query: query, city: city },
-              }),
-            );
-          }
-
-          var button = document.getElementById("search-button");
-          if (button) {
-            button.addEventListener("click", triggerSearch);
-          }
-
-          var input = document.getElementById("search-input");
-          if (input) {
-            input.addEventListener("keydown", function (e) {
-              if (e.key === "Enter") {
-                e.preventDefault();
-                triggerSearch();
-              }
-            });
-          }
-
-          var cityFilter = document.getElementById("city-filter");
-          if (cityFilter) {
-            cityFilter.addEventListener("change", triggerSearch);
-          }
-        })();
-      </script>
-
-      <script>
-        if (typeof window.searchUI_original === "undefined") {
-          window.searchUI_original = window.searchUI || function () {};
-
-          window.searchUI = function () {
-            var instance = window.searchUI_original();
-
-            var originalDoSearch = instance.doSearch;
-            instance.doSearch = function (val) {
-              if (typeof val === "string") this.q = val;
-
+        <script>
+          (function () {
+            function triggerSearch() {
+              var input = document.getElementById("search-input");
               var cityFilter = document.getElementById("city-filter");
+
+              var query = input ? input.value : "";
+              var city = cityFilter ? cityFilter.value : "";
+
               window.dispatchEvent(
                 new CustomEvent("inspections-search", {
-                  detail: {
-                    query: this.q,
-                    city: cityFilter ? cityFilter.value : "",
-                  },
+                  detail: { query: query, city: city },
                 }),
               );
+            }
+
+            var button = document.getElementById("search-button");
+            if (button) {
+              button.addEventListener("click", triggerSearch);
+            }
+
+            var input = document.getElementById("search-input");
+            if (input) {
+              input.addEventListener("keydown", function (e) {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  triggerSearch();
+                }
+              });
+            }
+
+            var cityFilter = document.getElementById("city-filter");
+            if (cityFilter) {
+              cityFilter.addEventListener("change", triggerSearch);
+            }
+          })();
+        </script>
+
+        <script>
+          if (typeof window.searchUI_original === "undefined") {
+            window.searchUI_original = window.searchUI || function () {};
+
+            window.searchUI = function () {
+              var instance = window.searchUI_original();
+
+              var originalDoSearch = instance.doSearch;
+              instance.doSearch = function (val) {
+                if (typeof val === "string") this.q = val;
+
+                var cityFilter = document.getElementById("city-filter");
+                window.dispatchEvent(
+                  new CustomEvent("inspections-search", {
+                    detail: {
+                      query: this.q,
+                      city: cityFilter ? cityFilter.value : "",
+                    },
+                  }),
+                );
+              };
+
+              return instance;
             };
+          }
+        </script>
 
-            return instance;
-          };
-        }
-      </script>
+        <script>
+          window.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+              document.addEventListener("click", function (e) {
+                var clearButton = e.target.closest("button");
+                if (
+                  clearButton &&
+                  clearButton.textContent.toLowerCase().includes("clear")
+                ) {
+                  setTimeout(function () {
+                    window.dispatchEvent(
+                      new CustomEvent("inspections-search", {
+                        detail: { query: "", city: "" },
+                      }),
+                    );
+                  }, 50);
+                }
+              });
+            }, 500);
+          });
+        </script>
 
-      <script>
-        window.addEventListener("DOMContentLoaded", function () {
-          setTimeout(function () {
-            document.addEventListener("click", function (e) {
-              var clearButton = e.target.closest("button");
-              if (
-                clearButton &&
-                clearButton.textContent.toLowerCase().includes("clear")
-              ) {
-                setTimeout(function () {
-                  window.dispatchEvent(
-                    new CustomEvent("inspections-search", {
-                      detail: { query: "", city: "" },
-                    }),
-                  );
-                }, 50);
-              }
-            });
-          }, 500);
-        });
-      </script>
+        <div class="inspections-mount space-y-3"></div>
 
-      <div class="inspections-mount space-y-3"></div>
-
-      <div
-        id="no-results"
-        class="hidden w-full bg-white p-8 shadow md:p-10"
-        aria-live="polite"
-      >
-        <p class="font-sans text-xl font-semibold text-g-7">
-          No results found. Please try a different search.
-        </p>
+        <div
+          id="no-results"
+          class="hidden w-full bg-white p-8 shadow md:p-10"
+          aria-live="polite"
+        >
+          <p class="font-sans text-xl font-semibold text-g-7">
+            No results found. Please try a different search.
+          </p>
+        </div>
       </div>
     </div>
   </div>
