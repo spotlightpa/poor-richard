@@ -169,6 +169,9 @@
 
 
   <div class="mt-16 flex flex-col gap-y-8 sm:gap-y-12">
+    {{ if .youtubeShorts }}
+      {{ partial "tw/youtube-shorts.html" dict }}
+    {{ end }}
     {{ if .editorPicksCallout }}
       {{ $pages := .editorPicksCallout }}
       {{ partial "tw/list-callout-story.html" (dict
@@ -248,7 +251,7 @@
 
   {{ $desktopHeaderwater := page.Param "ad-hp-headwater-desktop-active" }}
   {{ $mobileHeaderwater := page.Param "ad-hp-headwater-mobile-active" }}
-  {{ if or $desktopHeaderwater $mobileHeaderwater }}
+  {{ if .showHeadwater | and ($mobileHeaderwater | or $desktopHeaderwater) }}
     <div
       class="mt-16 flex w-full items-center justify-center border-t py-12 md:mt-24 md:gap-y-12 md:border-none md:py-0"
       data-ga-category="headwater"

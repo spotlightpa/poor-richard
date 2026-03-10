@@ -76,6 +76,11 @@ to = "https://files.data.spotlightpa.org/feeds/most-popular-items.json"
 code = 200
 
 [[redirects]]
+from = "/feeds/youtube-shorts.json"
+to = "https://files.data.spotlightpa.org/feeds/youtube-shorts.json"
+code = 200
+
+[[redirects]]
 from = "/centredocumenters/*"
 to = "https://centredocumenters.org"
 

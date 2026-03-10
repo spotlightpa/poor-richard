@@ -34,9 +34,11 @@
 {{ partial "tw/frontpage" (dict
   "featuredStories" $featuredStories
   "pinnedStories" $pinnedStories
+  "youtubeShorts" true
   "editorPicksCallout" $editorPicksCallout
   "edInvestigations" $edInvestigations
   "edImpact" $edImpact
+  "showHeadwater" true
 
   "showNewsletterCallout" true
   "newsletterCalloutRiver" (site.GetPage "topics/PA Local/_index.md")
