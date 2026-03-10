@@ -337,6 +337,7 @@
     var currentSort = localStorage.getItem("inspections-sort") || "date-desc";
     var totalPages = 1;
     var rendering = false;
+    var initialRender = true;
     var isSearching = false;
     var hashHandled = false;
 
@@ -720,13 +721,16 @@ clearMounts();
       syncMarkers();
 
       rendering = false;
-      var mountEl = document.querySelector('.inspections-mount');
-      if (mountEl) {
-        var mountTop = mountEl.getBoundingClientRect().top + window.pageYOffset - 73;
-        window.scrollTo({ top: mountTop, behavior: 'smooth' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+     if (!initialRender) {
+        var mountEl = document.querySelector('.inspections-mount');
+        if (mountEl) {
+          var mountTop = mountEl.getBoundingClientRect().top + window.pageYOffset - 73;
+          window.scrollTo({ top: mountTop, behavior: 'smooth' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       }
+      initialRender = false;
     }
 
     function goToPage(page) {
