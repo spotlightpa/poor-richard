@@ -69,7 +69,9 @@
           <div class="mt-4">
             <button
               type="button"
-              class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-blue px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-blue active:ring-blue hover:opacity-90">
+              @click="window.dispatchEvent(new CustomEvent('open-city-alerts-modal'))"
+              class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-blue px-4 py-2 font-sans font-semibold text-white outline-none ring-2 ring-transparent transition-shadow hover:opacity-90 focus:ring-blue active:ring-blue"
+            >
               Get City Alerts
             </button>
           </div>
@@ -416,6 +418,7 @@
   <div
     x-data="{
       open: false,
+      mode: 'facility',
       facilityName: '',
       facilityId: '',
       step: 'form',
@@ -423,9 +426,27 @@
       phone: '',
       method: 'email',
       submitting: false,
+      userCity: '',
+      cityFacilities: [],
+      selectedFacilities: {},
+      facilitiesOpen: false,
+      detectingCity: false,
+      cityNotFound: false,
+      citySearchQuery: '',
+      cityDropdownOpen: false,
+      get selectedCount() {
+        return Object.values(this.selectedFacilities).filter(Boolean).length;
+      },
+      get filteredCities() {
+        const q = (this.citySearchQuery || '').toLowerCase().trim();
+        const all = window.__inspectionsCities || [];
+        if (!q) return all.slice(0, 30);
+        return all.filter(c => (c.text || '').toLowerCase().includes(q)).slice(0, 30);
+      },
       init() {
         window.addEventListener('open-alerts-modal', (e) => {
           this.open = true;
+          this.mode = 'facility';
           this.facilityName = e.detail.facilityName;
           this.facilityId = e.detail.facilityId;
           this.step = 'form';
@@ -434,32 +455,122 @@
           this.submitting = false;
           document.body.style.overflow = 'hidden';
         });
+        window.addEventListener('open-city-alerts-modal', () => {
+          this.open = true;
+          this.mode = 'city';
+          this.step = 'form';
+          this.email = '';
+          this.phone = '';
+          this.submitting = false;
+          this.userCity = '';
+          this.cityFacilities = [];
+          this.selectedFacilities = {};
+          this.facilitiesOpen = false;
+          this.detectingCity = true;
+          this.cityNotFound = false;
+          this.citySearchQuery = '';
+          this.cityDropdownOpen = false;
+          document.body.style.overflow = 'hidden';
+          this.$nextTick(() => this.detectCity());
+        });
       },
       closeModal() {
         this.open = false;
         document.body.style.overflow = '';
       },
+      async detectCity() {
+        try {
+          const pos = await new Promise((resolve, reject) =>
+            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 8000 })
+          );
+          const { latitude, longitude } = pos.coords;
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
+            { headers: { 'Accept-Language': 'en' } }
+          );
+          const data = await res.json();
+          const detected = data.address?.city || data.address?.town || data.address?.village || data.address?.municipality || '';
+          const match = this.matchCity(detected);
+          if (match) {
+            this.userCity = match;
+            this.cityNotFound = false;
+            this.loadCityFacilities(match);
+          } else {
+            this.cityNotFound = true;
+          }
+        } catch (e) {
+          this.cityNotFound = true;
+        } finally {
+          this.detectingCity = false;
+        }
+      },
+      matchCity(detected) {
+        const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+        const nd = norm(detected);
+        const cities = window.__inspectionsCities || [];
+        const exact = cities.find(c => norm(c.value) === nd || norm(c.text) === nd);
+        if (exact) return exact.text;
+        const partial = cities.find(c => norm(c.text).includes(nd) || nd.includes(norm(c.text)));
+        if (partial) return partial.text;
+        return null;
+      },
+      selectCity(cityText) {
+        this.userCity = cityText;
+        this.cityNotFound = false;
+        this.cityDropdownOpen = false;
+        this.citySearchQuery = '';
+        this.loadCityFacilities(cityText);
+      },
+      loadCityFacilities(city) {
+        const allData = window.__inspectionsAllData || [];
+        const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+        const nc = norm(city);
+        const grouped = {};
+        allData.forEach(row => {
+          if (norm(row.city || '') !== nc) return;
+          const id = row.id || (row.facility + '—' + row.address);
+          if (!grouped[id]) grouped[id] = { id, name: row.facility || 'Unknown facility' };
+        });
+        this.cityFacilities = Object.values(grouped).sort((a, b) => a.name.localeCompare(b.name));
+        const sel = {};
+        this.cityFacilities.forEach(f => { sel[f.id] = true; });
+        this.selectedFacilities = sel;
+      },
+      toggleFacility(id) {
+        this.selectedFacilities[id] = !this.selectedFacilities[id];
+      },
+      toggleAllFacilities(checked) {
+        const updated = {};
+        this.cityFacilities.forEach(f => { updated[f.id] = checked; });
+        this.selectedFacilities = updated;
+      },
 async submitSignup() {
   this.submitting = true;
   try {
+    const payload = this.mode === 'city'
+      ? {
+          email: this.email,
+          phone: this.phone,
+          method: this.method,
+          city: this.userCity,
+          facilityIds: Object.entries(this.selectedFacilities).filter(([, v]) => v).map(([k]) => k),
+        }
+      : {
+          email: this.email,
+          phone: this.phone,
+          method: this.method,
+          facilityId: this.facilityId,
+          facilityName: this.facilityName,
+        };
     const res = await fetch('/.netlify/functions/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        email: this.email,
-        phone: this.phone,
-        method: this.method,
-        facilityId: this.facilityId,
-        facilityName: this.facilityName,
-      }),
+      body: JSON.stringify(payload),
     });
-
     const data = await res.json();
-
     if (!res.ok) {
       throw new Error(data.error || 'Something went wrong. Please try again.');
     }
-
     this.step = 'success';
   } catch (err) {
     alert(err.message);
@@ -489,7 +600,7 @@ async submitSignup() {
     ></div>
 
     <div
-      class="relative w-full max-w-md rounded-lg border border-g-3 bg-white shadow-2xl"
+      class="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-lg border border-g-3 bg-white shadow-2xl"
       x-show="open"
       x-transition:enter="transition ease-out duration-300"
       x-transition:enter-start="opacity-0 scale-90"
@@ -509,7 +620,7 @@ async submitSignup() {
         </svg>
       </button>
 
-      <div x-show="step === 'form'" class="p-4 sm:p-5">
+      <div x-show="step === 'form' && mode === 'facility'" class="p-4 sm:p-5">
         <div class="mb-4 flex items-center gap-3">
           <div
             class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4"
@@ -652,6 +763,267 @@ async submitSignup() {
         </form>
       </div>
 
+      <div x-show="step === 'form' && mode === 'city'" class="p-4 sm:p-5">
+        <div class="mb-4 flex items-center gap-3">
+          <div
+            class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue/20"
+          >
+            <svg class="h-5 w-5 fill-current text-blue" aria-hidden="true">
+              {{ partial "helper/svg.html" "bell" }}
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-g-9 sm:text-2xl">
+            Get City Alerts
+          </h2>
+        </div>
+
+        <div class="mb-4 min-h-[64px] rounded-lg border border-g-3 bg-g-1 p-3">
+          <div x-show="detectingCity" class="flex items-center gap-2 py-1">
+            <svg
+              class="h-4 w-4 animate-spin text-g-5"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              ></path>
+            </svg>
+            <p class="text-sm font-semibold text-g-6">
+              Detecting your city&hellip;
+            </p>
+          </div>
+
+          <div x-show="!detectingCity && !cityNotFound">
+            <p
+              class="mb-1 text-xs font-semibold uppercase tracking-wide text-g-5"
+            >
+              Your city
+            </p>
+            <p class="text-base font-bold text-g-9" x-text="userCity"></p>
+            <button
+              type="button"
+              @click="cityNotFound = true; userCity = ''; cityFacilities = []; selectedFacilities = {};"
+              class="mt-1 text-xs font-semibold text-blue hover:underline"
+            >
+              Not your city? Change it
+            </button>
+          </div>
+
+          <div x-show="!detectingCity && cityNotFound" class="relative">
+            <p
+              class="mb-2 text-xs font-semibold uppercase tracking-wide text-g-5"
+            >
+              Select your city
+            </p>
+            <div class="relative">
+              <input
+                type="text"
+                x-model="citySearchQuery"
+                @focus="cityDropdownOpen = true"
+                @input="cityDropdownOpen = true"
+                @click.outside="cityDropdownOpen = false"
+                placeholder="Type to search cities&hellip;"
+                class="w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-blue"
+              />
+              <div
+                x-show="cityDropdownOpen && filteredCities.length > 0"
+                class="absolute left-0 right-0 z-30 mt-1 max-h-48 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
+              >
+                <template x-for="c in filteredCities" :key="c.value">
+                  <button
+                    type="button"
+                    @click="selectCity(c.text)"
+                    class="block w-full px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-1"
+                    x-text="c.text"
+                  ></button>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          x-show="cityFacilities.length > 0"
+          class="mb-4 overflow-hidden rounded-lg border border-g-3"
+        >
+          <button
+            type="button"
+            @click="facilitiesOpen = !facilitiesOpen"
+            class="flex w-full items-center justify-between bg-g-1 px-3 py-2.5 transition-colors hover:bg-g-2"
+          >
+            <span class="text-sm font-semibold text-g-7">
+              Subscribing to
+              <span class="text-g-9" x-text="selectedCount"></span> of
+              <span x-text="cityFacilities.length"></span> facilities
+            </span>
+            <svg
+              class="h-4 w-4 fill-current text-g-6 transition-transform"
+              :class="facilitiesOpen ? 'rotate-180' : ''"
+            >
+              {{ partial "helper/svg.html" "chevron" }}
+            </svg>
+          </button>
+          <div x-show="facilitiesOpen" class="border-t border-g-3">
+            <div class="flex items-center gap-2 border-b border-g-2 px-3 py-2">
+              <button
+                type="button"
+                @click="toggleAllFacilities(true)"
+                class="text-xs font-semibold text-blue hover:underline"
+              >
+                Select all
+              </button>
+              <span class="text-g-4">·</span>
+              <button
+                type="button"
+                @click="toggleAllFacilities(false)"
+                class="text-xs font-semibold text-blue hover:underline"
+              >
+                Deselect all
+              </button>
+            </div>
+            <div class="max-h-48 divide-y divide-g-2 overflow-y-auto">
+              <template x-for="f in cityFacilities" :key="f.id">
+                <label
+                  class="flex cursor-pointer items-center gap-3 px-3 py-2.5 hover:bg-g-1"
+                >
+                  <input
+                    type="checkbox"
+                    :checked="selectedFacilities[f.id]"
+                    @change="toggleFacility(f.id)"
+                    class="h-4 w-4 rounded border-g-3 text-blue focus:ring-blue"
+                  />
+                  <span
+                    class="font-sans text-sm font-semibold text-g-9"
+                    x-text="f.name"
+                  ></span>
+                </label>
+              </template>
+            </div>
+          </div>
+        </div>
+
+        <form @submit.prevent="submitSignup()" class="space-y-3">
+          <div>
+            <label
+              for="city-alert-email"
+              class="mb-2 block text-sm font-semibold text-g-9"
+              >Email Address</label
+            >
+            <input
+              id="city-alert-email"
+              type="email"
+              x-model="email"
+              required
+              placeholder="you@example.com"
+              class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+            />
+          </div>
+          <div>
+            <label
+              for="city-alert-phone"
+              class="mb-2 block text-sm font-semibold text-g-9"
+            >
+              Phone Number
+              <span class="font-normal text-g-6"
+                >(optional, for SMS alerts)</span
+              >
+            </label>
+            <input
+              id="city-alert-phone"
+              type="tel"
+              x-model="phone"
+              placeholder="(555) 123-4567"
+              maxlength="14"
+              @input="
+                const digits = $event.target.value.replace(/\D/g, '').slice(0, 10);
+                let formatted = '';
+                if (digits.length <= 3) formatted = digits;
+                else if (digits.length <= 6) formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
+                else formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+                phone = formatted;
+                $nextTick(() => { $event.target.value = formatted; });
+              "
+              class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+            />
+          </div>
+          <div>
+            <p class="mb-3 block text-sm font-semibold text-g-9">
+              Notification Method
+            </p>
+            <div class="space-y-2">
+              <label
+                class="flex cursor-pointer items-center rounded-lg border border-g-3 p-3 transition-colors hover:bg-g-1"
+              >
+                <input
+                  type="radio"
+                  x-model="method"
+                  value="email"
+                  class="h-4 w-4 text-yellow focus:ring-yellow"
+                />
+                <span class="ml-3 text-sm font-semibold text-g-9"
+                  >Email only</span
+                >
+              </label>
+              <label
+                class="flex cursor-pointer items-center rounded-lg border border-g-3 p-3 transition-colors hover:bg-g-1"
+              >
+                <input
+                  type="radio"
+                  x-model="method"
+                  value="both"
+                  class="h-4 w-4 text-yellow focus:ring-yellow"
+                />
+                <span class="ml-3 text-sm font-semibold text-g-9"
+                  >Email + SMS</span
+                >
+              </label>
+            </div>
+          </div>
+          <div class="rounded-lg border border-g-3 p-4">
+            <p class="text-xs leading-relaxed text-g-7">
+              You can unsubscribe anytime. We never share your data with third
+              parties.
+            </p>
+          </div>
+          <button
+            type="submit"
+            :disabled="submitting || selectedCount === 0 || !userCity"
+            class="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 py-3 font-bold text-yellow-9 transition-colors hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <span class="uppercase" x-show="!submitting">Subscribe</span>
+            <span x-show="submitting" class="flex items-center gap-2">
+              <svg class="h-5 w-5 animate-spin" viewBox="0 0 24 24">
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  fill="none"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+              Subscribing...
+            </span>
+          </button>
+        </form>
+      </div>
+
       <div x-show="step === 'success'" class="p-6 text-center sm:p-8">
         <div
           class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-g-1"
@@ -673,9 +1045,21 @@ async submitSignup() {
 
         <h2 class="mb-3 text-2xl font-bold text-g-9">You're all set!</h2>
         <p class="mb-6 text-base text-g-7">
-          We'll send you an email alert whenever there's a new inspection report
-          for
-          <span class="font-semibold text-g-9" x-text="facilityName"></span>.
+          <template x-if="mode === 'facility'">
+            <span
+              >We'll send you an email alert whenever there's a new inspection
+              report for
+              <span class="font-semibold text-g-9" x-text="facilityName"></span
+              >.</span
+            >
+          </template>
+          <template x-if="mode === 'city'">
+            <span
+              >We'll send you alerts for new inspections across
+              <span class="font-semibold text-g-9" x-text="userCity"></span
+              >.</span
+            >
+          </template>
         </p>
 
         <button

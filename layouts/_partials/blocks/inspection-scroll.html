@@ -352,6 +352,7 @@
           hashHandled = true;
 
       allData = event.detail && event.detail.data ? event.detail.data : [];
+      window.__inspectionsAllData = allData;
         groupedFacilities = groupByFacility(allData);
         filteredData = Object.keys(groupedFacilities);
         (function () {
@@ -418,6 +419,7 @@
             .sort(function (a, b) { return (b.count || 0) - (a.count || 0); })
             .map(function (x) { return { value: x.value, text: x.text, count: x.count }; });
 
+          window.__inspectionsCities = list;
           window.dispatchEvent(new CustomEvent("inspections-cities-ready", { detail: { cities: list } }));
         })();
 
