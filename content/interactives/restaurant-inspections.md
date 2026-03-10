@@ -56,7 +56,7 @@ credits = """
 {{<featured/credit
     eyebrow="Project Management"
     name="Christina Bruno"
-    role="Digital Growth Strategist"
+    role="Director of Growth & Product Strategy"
     email="cbruno@spotlightpa.org"
 >}}
 """
