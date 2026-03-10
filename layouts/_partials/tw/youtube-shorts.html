@@ -31,11 +31,12 @@
       <article class="flex gap-4 sm:flex-col">
         <div class="w-1/4 sm:w-full">
           <a
+            data-ga-category="thumb"
             class="group relative block flex items-center justify-center overflow-hidden rounded bg-g-3 shadow-sm sm:w-full"
             :href="video.url"
           >
             <img
-              class="aspect-square min-h-full min-w-full object-cover"
+              class="aspect-square min-h-full min-w-full object-cover lg:aspect-[12/16]"
               :alt="video.title"
               :title="video.title"
               :src="video.thumbnail.replace(/hqdefault/, 'maxresdefault')"
