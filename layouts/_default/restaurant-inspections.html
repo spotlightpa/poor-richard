@@ -1621,6 +1621,7 @@ if (!hasViolation) {
         <p class="mt-2 w-full text-sm font-sans text-g-6">
           {{ if .Param "show-alerts-button" }}Receive an email or text message when new reports are available for this facility.{{ end }}
 
+
         </p>
       </div>
             </div>
@@ -1628,7 +1629,9 @@ if (!hasViolation) {
 
 <section aria-labelledby="violations-title" class="space-y-3">
             <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
+            <p class="mb-3 text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.&nbsp;<svg class="inline h-5 w-5 fill-current text-g-4 relative -top-0.5 -ml-0.5" aria-hidden="true">{{ partial "helper/svg.html" "robot" }}</svg></p>
             <ul class="space-y-3">${latestItems}</ul>
+            <p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details. Visit our FAQ to learn more.</p>
           </section>
 
           ${olderInspectionsHTML}
