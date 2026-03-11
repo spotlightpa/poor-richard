@@ -349,9 +349,10 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="bg-g-3">
-        {{ partial "inspections-data-loader.html" . }}
+    <div class="bg-g-3">
+      {{ partial "inspections-data-loader.html" . }}
 
 <script>
   (function () {
@@ -1637,104 +1638,103 @@ if (!hasViolation) {
     })();
 </script>
 
-        <script>
-          (function () {
-            function triggerSearch() {
-              var input = document.getElementById("search-input");
+      <script>
+        (function () {
+          function triggerSearch() {
+            var input = document.getElementById("search-input");
+            var cityFilter = document.getElementById("city-filter");
+
+            var query = input ? input.value : "";
+            var city = cityFilter ? cityFilter.value : "";
+
+            window.dispatchEvent(
+              new CustomEvent("inspections-search", {
+                detail: { query: query, city: city },
+              }),
+            );
+          }
+
+          var button = document.getElementById("search-button");
+          if (button) {
+            button.addEventListener("click", triggerSearch);
+          }
+
+          var input = document.getElementById("search-input");
+          if (input) {
+            input.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                triggerSearch();
+              }
+            });
+          }
+
+          var cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.addEventListener("change", triggerSearch);
+          }
+        })();
+      </script>
+
+      <script>
+        if (typeof window.searchUI_original === "undefined") {
+          window.searchUI_original = window.searchUI || function () {};
+
+          window.searchUI = function () {
+            var instance = window.searchUI_original();
+
+            var originalDoSearch = instance.doSearch;
+            instance.doSearch = function (val) {
+              if (typeof val === "string") this.q = val;
+
               var cityFilter = document.getElementById("city-filter");
-
-              var query = input ? input.value : "";
-              var city = cityFilter ? cityFilter.value : "";
-
               window.dispatchEvent(
                 new CustomEvent("inspections-search", {
-                  detail: { query: query, city: city },
+                  detail: {
+                    query: this.q,
+                    city: cityFilter ? cityFilter.value : "",
+                  },
                 }),
               );
-            }
-
-            var button = document.getElementById("search-button");
-            if (button) {
-              button.addEventListener("click", triggerSearch);
-            }
-
-            var input = document.getElementById("search-input");
-            if (input) {
-              input.addEventListener("keydown", function (e) {
-                if (e.key === "Enter") {
-                  e.preventDefault();
-                  triggerSearch();
-                }
-              });
-            }
-
-            var cityFilter = document.getElementById("city-filter");
-            if (cityFilter) {
-              cityFilter.addEventListener("change", triggerSearch);
-            }
-          })();
-        </script>
-
-        <script>
-          if (typeof window.searchUI_original === "undefined") {
-            window.searchUI_original = window.searchUI || function () {};
-
-            window.searchUI = function () {
-              var instance = window.searchUI_original();
-
-              var originalDoSearch = instance.doSearch;
-              instance.doSearch = function (val) {
-                if (typeof val === "string") this.q = val;
-
-                var cityFilter = document.getElementById("city-filter");
-                window.dispatchEvent(
-                  new CustomEvent("inspections-search", {
-                    detail: {
-                      query: this.q,
-                      city: cityFilter ? cityFilter.value : "",
-                    },
-                  }),
-                );
-              };
-
-              return instance;
             };
-          }
-        </script>
 
-        <script>
-          window.addEventListener("DOMContentLoaded", function () {
-            setTimeout(function () {
-              document.addEventListener("click", function (e) {
-                var clearButton = e.target.closest("button");
-                if (
-                  clearButton &&
-                  clearButton.textContent.toLowerCase().includes("clear")
-                ) {
-                  setTimeout(function () {
-                    window.dispatchEvent(
-                      new CustomEvent("inspections-search", {
-                        detail: { query: "", city: "" },
-                      }),
-                    );
-                  }, 50);
-                }
-              });
-            }, 500);
-          });
-        </script>
+            return instance;
+          };
+        }
+      </script>
 
-        <div class="inspections-mount space-y-3"></div>
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            document.addEventListener("click", function (e) {
+              var clearButton = e.target.closest("button");
+              if (
+                clearButton &&
+                clearButton.textContent.toLowerCase().includes("clear")
+              ) {
+                setTimeout(function () {
+                  window.dispatchEvent(
+                    new CustomEvent("inspections-search", {
+                      detail: { query: "", city: "" },
+                    }),
+                  );
+                }, 50);
+              }
+            });
+          }, 500);
+        });
+      </script>
 
-        <div
-          id="no-results"
-          class="hidden w-full bg-white p-8 shadow md:p-10"
-          aria-live="polite"
-        >
-          <p class="font-sans text-xl font-semibold text-g-7">
-            No results found. Please try a different search.
-          </p>
-        </div>
+      <div class="inspections-mount space-y-3"></div>
+
+      <div
+        id="no-results"
+        class="hidden w-full bg-white p-8 shadow md:p-10"
+        aria-live="polite"
+      >
+        <p class="font-sans text-xl font-semibold text-g-7">
+          No results found. Please try a different search.
+        </p>
       </div>
     </div>
   </div>
