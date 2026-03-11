@@ -2055,9 +2055,12 @@ detail.classList.add("flex", "flex-col", "flex-1");
     .querySelector('[data-action="back-to-results"]')
     ?.focus({ preventScroll: true });
 
-  const nextTop = card.getBoundingClientRect().top;
-  const delta = nextTop - prevTop;
-  window.scrollBy(0, delta);
+  var container = mount ? mount.closest('.border-r') : null;
+  if (!container) container = mount ? mount.parentElement : null;
+  if (container) {
+    var top = container.getBoundingClientRect().top + window.pageYOffset - 73;
+    window.scrollTo({ top: top, behavior: 'instant' });
+  }
 
 this.activeCard = card;
   window.location.hash = this.generateCardId(card);
