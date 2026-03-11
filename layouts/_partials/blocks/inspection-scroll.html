@@ -647,13 +647,7 @@ clearMounts();
           currentPage = 1;
         window.__inspectionsMarkers = [];
         updateTotalPages();
-        renderPage(currentPage);
-        renderPaginationControls();
-
-        hideSearchSpinner();
-        isSearching = false;
-
-        var banner = document.getElementById("search-results-banner");
+         var banner = document.getElementById("search-results-banner");
         var bannerText = document.getElementById("search-results-text");
         if (banner && bannerText) {
           var hasActiveSearch = query.trim() || city.trim();
@@ -667,6 +661,12 @@ clearMounts();
             banner.classList.add("hidden");
           }
         }
+
+        renderPage(currentPage);
+        renderPaginationControls();
+
+        hideSearchSpinner();
+        isSearching = false;
 
         var noResultsEl = document.getElementById("no-results");
         if (noResultsEl) {
@@ -793,10 +793,11 @@ clearMounts();
 
       rendering = false;
      if (!initialRender) {
-        var mountEl = document.querySelector('.inspections-mount');
-        if (mountEl) {
-          var mountTop = mountEl.getBoundingClientRect().top + window.pageYOffset - 73;
-          window.scrollTo({ top: mountTop, behavior: 'smooth' });
+        var banner = document.getElementById('search-results-banner');
+        var scrollTarget = (banner && !banner.classList.contains('hidden')) ? banner : document.querySelector('.inspections-mount');
+        if (scrollTarget) {
+          var scrollTop = scrollTarget.getBoundingClientRect().top + window.pageYOffset - 73;
+          window.scrollTo({ top: scrollTop, behavior: 'smooth' });
         } else {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
