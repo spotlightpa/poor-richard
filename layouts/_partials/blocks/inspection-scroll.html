@@ -653,6 +653,21 @@ clearMounts();
         hideSearchSpinner();
         isSearching = false;
 
+        var banner = document.getElementById("search-results-banner");
+        var bannerText = document.getElementById("search-results-text");
+        if (banner && bannerText) {
+          var hasActiveSearch = query.trim() || city.trim();
+          if (hasActiveSearch && filteredData.length > 0) {
+            var parts = [];
+            if (query.trim()) parts.push('"' + query.trim() + '"');
+            if (city.trim()) parts.push(city.trim());
+            bannerText.textContent = "Showing " + filteredData.length.toLocaleString() + " result" + (filteredData.length !== 1 ? "s" : "") + " for " + parts.join(" in ");
+            banner.classList.remove("hidden");
+          } else {
+            banner.classList.add("hidden");
+          }
+        }
+
         var noResultsEl = document.getElementById("no-results");
         if (noResultsEl) {
           noResultsEl.classList.toggle("hidden", filteredData.length > 0);
@@ -1713,6 +1728,27 @@ if (!hasViolation) {
 
       <script>
         window.addEventListener("DOMContentLoaded", function () {
+          var clearBtn = document.getElementById("search-results-clear");
+          if (clearBtn) {
+            clearBtn.addEventListener("click", function () {
+              var si = document.getElementById("search-input");
+              if (si) si.value = "";
+              var cf = document.getElementById("city-filter");
+              if (cf) {
+                cf.value = "";
+                cf.dispatchEvent(new Event("change", { bubbles: true }));
+              }
+              document
+                .getElementById("search-results-banner")
+                ?.classList.add("hidden");
+              window.dispatchEvent(
+                new CustomEvent("inspections-search", {
+                  detail: { query: "", city: "" },
+                }),
+              );
+            });
+          }
+
           setTimeout(function () {
             document.addEventListener("click", function (e) {
               var clearButton = e.target.closest("button");
@@ -1733,6 +1769,36 @@ if (!hasViolation) {
         });
       </script>
 
+      <div
+        id="search-results-banner"
+        class="flex hidden w-full items-center justify-between gap-4 border-b border-g-3 bg-white px-8 py-3"
+      >
+        <p
+          id="search-results-text"
+          class="font-sans text-sm font-semibold text-g-7"
+        ></p>
+        <button
+          id="search-results-clear"
+          class="whitespace-nowrap font-sans text-sm font-semibold text-blue hover:underline"
+        >
+          Clear search
+        </button>
+      </div>
+      <div
+        id="search-results-banner"
+        class="flex hidden w-full items-center justify-between gap-4 border-b border-g-3 bg-white px-8 py-3"
+      >
+        <p
+          id="search-results-text"
+          class="font-sans text-sm font-semibold text-g-7"
+        ></p>
+        <button
+          id="search-results-clear"
+          class="whitespace-nowrap font-sans text-sm font-semibold text-blue hover:underline"
+        >
+          Clear search
+        </button>
+      </div>
       <div class="inspections-mount space-y-3"></div>
 
       <div
