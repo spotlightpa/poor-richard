@@ -9,7 +9,7 @@ donate = """
     title="Become a Leader in Action"
     cta="Join"
     theme="leaders"
-    donateUrl="https://spotlightpa.fundjournalism.org/leaders/"
+    donateUrl="https://spotlightpa.donorsupport.co/page/LIA?utm_campaign=leaders-in-action-on-support-page"
 >}}
 """
 supporters = """
