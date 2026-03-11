@@ -1273,6 +1273,14 @@ function createInspectionCard(data, index, allInspections) {
       var readMoreBtn = card.querySelector("[data-read-more]");
       if (readMoreBtn) {
         readMoreBtn.click();
+        setTimeout(function() {
+          var mount = card.closest('.inspections-mount');
+          var target = mount ? mount.parentElement : null;
+          if (target) {
+            var top = target.getBoundingClientRect().top + window.pageYOffset - 73;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          }
+        }, 50);
       }
     });
   function findPageForHash(hash) {
