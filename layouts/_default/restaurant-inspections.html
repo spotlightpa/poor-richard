@@ -1769,6 +1769,8 @@ openDetails(card) {
       .querySelectorAll(".pagination-controls")
       .forEach((el) => el.classList.add("hidden"));
 
+    document.getElementById("search-results-banner")?.classList.add("hidden");
+
     const lat = parseFloat(card.getAttribute("data-lat"));
     const lon = parseFloat(card.getAttribute("data-lon"));
 
@@ -2072,6 +2074,11 @@ backToResults() {
   document
     .querySelectorAll(".pagination-controls")
     .forEach((el) => el.classList.remove("hidden"));
+
+  const si = document.getElementById("search-input");
+  if (si && si.value.trim()) {
+    document.getElementById("search-results-banner")?.classList.remove("hidden");
+  }
 
       if (!this.activeCard) return;
       const card = this.activeCard;
