@@ -5,14 +5,16 @@ title = "Rural Affairs Reporter"
 email = "mparish@spotlightpa.org"
 twitter = "marley_parish"
 active = true
-content = """Marley Parish is the rural affairs reporter of Spotlight PA’s State College regional bureau.
+content = """
+Marley Parish covers how government spending and state-level policies affect rural communities in north-central Pennsylvania, with a particular focus on the health of the people who live there and the economies that sustain them. She also holds state officials and lawmakers accountable for the promises they make, the policies they champion, or don’t, and the money they spend on programs that impact people in rural parts of the state.
 
 Before joining Spotlight PA, she covered the state Senate for the Pennsylvania Capital-Star, reporting on education, health, and elections. Previously, Marley was a community reporter for the Centre Daily Times, covering education, local government, and community issues.
 
-She has received statewide recognition for her coverage of the 2020 post-election review conducted by Senate Republicans and how the U.S. Supreme Court's decision to overturn Roe v. Wade could affect statewide access to reproductive care."""
+She has received statewide recognition for her coverage of the 2020 post-election review conducted by Senate Republicans and how the U.S. Supreme Court’s decision to overturn Roe v. Wade could affect statewide access to reproductive care.
+"""
 headshot = "2025/01/01kr-3x4d-vh16-mzkr.heic"
 role = "reporter"
 beat = "Rural Affairs"
-focusHed = "Agriculture, environment, community development, how state agencies and policies affect rural communities"
+focusHed = "Rural communities"
 tel = "(814) 482-8356"
 signal = "(814) 482-8356"

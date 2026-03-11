@@ -1,6 +1,6 @@
 {{ $idEmail := partial "helper/new-id" . }}
 <form
-  class="rounded-lg border border-g-5 bg-g-2 p-7 md:p-10 xl:px-12 xl:py-7"
+  class="spl-newsletter"
   data-base-url="{{ page.Param `newsletters-base-url` }}"
   @submit.prevent="submit"
   data-ga-category="newsletter"
@@ -26,7 +26,10 @@
   >
     Stay informed
   </h2>
-  <h2 class="mt-2 font-sans text-lg" x-rich-text="_('cta', $el.innerText)">
+  <h2
+    class="mt-2 font-sans text-lg leading-tight"
+    x-rich-text="_('cta', $el.innerText)"
+  >
     Discover overlooked stories, unique investigations, and daily joy from
     across PA with Spotlight PA’s free daily newsletter.
   </h2>

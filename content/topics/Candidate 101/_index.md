@@ -9,4 +9,5 @@ title-tag = "Spotlight PA profiles of Pennsylvania election candidates"
 linktitle = "Spotlight PA profiles of Pennsylvania election candidates"
 description = "Spotlight PA profiles of Pennsylvania election candidates"
 aliases = ["/series/vetting-candidates/"]
+related-topic = "Elections"
 +++

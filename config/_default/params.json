@@ -1,20 +1,40 @@
 {
-  "ad-footer-desktop": [],
-  "ad-footer-desktop-active": false,
-  "ad-footer-desktop-height": 0,
-  "ad-footer-desktop-width": 0,
-  "ad-footer-mobile": [],
-  "ad-footer-mobile-active": false,
-  "ad-footer-mobile-height": 0,
-  "ad-footer-mobile-width": 0,
-  "ad-header-desktop": [
+  "ad-footer-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mn/d2fm/newsmatch-2025-tracker-banners-4-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x9/newsmatch-2025-tracker-banners-5-.gif"
+      ]
+    }
+  ],
+  "ad-footer-desktop-active": true,
+  "ad-footer-desktop-height": 175,
+  "ad-footer-desktop-width": 1350,
+  "ad-footer-mobile": [
+    {
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mt/vkct/sunshine-week-1-.png"
+      ]
+    }
+  ],
+  "ad-footer-mobile-active": true,
+  "ad-footer-mobile-height": 512,
+  "ad-footer-mobile-width": 1024,
+  "ad-header-desktop": [
+    {
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mv/101r/tracker-banners-1350-x-175-1-.gif"
       ]
     }
   ],
@@ -23,46 +43,86 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's unmatched reporting for Pennsylvania.",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=topper",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mn/d2fm/newsmatch-2025-rectangles-1024-512-px-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mv/101r/sunshine-week-2-.png"
       ]
     }
   ],
   "ad-header-mobile-active": true,
   "ad-header-mobile-height": 512,
   "ad-header-mobile-width": 1024,
-  "ad-hp-breaker-desktop": [],
-  "ad-hp-breaker-desktop-active": false,
-  "ad-hp-breaker-desktop-height": 0,
-  "ad-hp-breaker-desktop-width": 0,
-  "ad-hp-breaker-mobile": [],
-  "ad-hp-breaker-mobile-active": false,
-  "ad-hp-breaker-mobile-height": 0,
-  "ad-hp-breaker-mobile-width": 0,
-  "ad-hp-featured": [
+  "ad-hp-breaker-desktop": [
     {
-      "description": "Support Spotlight PA's unmatched reporting.",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-rail",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mn/d2fn/newsmatch-2025-squares-5-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x9/newsmatch-2025-tracker-banners-5-.gif"
+      ]
+    }
+  ],
+  "ad-hp-breaker-desktop-active": true,
+  "ad-hp-breaker-desktop-height": 175,
+  "ad-hp-breaker-desktop-width": 1350,
+  "ad-hp-breaker-mobile": [
+    {
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker-mobile",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mt/vkct/sunshine-week-1-.png"
+      ]
+    }
+  ],
+  "ad-hp-breaker-mobile-active": true,
+  "ad-hp-breaker-mobile-height": 512,
+  "ad-hp-breaker-mobile-width": 1024,
+  "ad-hp-featured": [
+    {
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/newsmatch-2025-squares-6-.gif"
       ]
     }
   ],
   "ad-hp-featured-active": true,
-  "ad-hp-headwater-desktop": [],
-  "ad-hp-headwater-desktop-active": false,
-  "ad-hp-headwater-desktop-height": 0,
-  "ad-hp-headwater-desktop-width": 0,
-  "ad-hp-headwater-mobile": [],
-  "ad-hp-headwater-mobile-active": false,
-  "ad-hp-headwater-mobile-height": 0,
-  "ad-hp-headwater-mobile-width": 0,
+  "ad-hp-headwater-desktop": [
+    {
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x9/newsmatch-2025-tracker-banners-5-.gif"
+      ]
+    }
+  ],
+  "ad-hp-headwater-desktop-active": true,
+  "ad-hp-headwater-desktop-height": 175,
+  "ad-hp-headwater-desktop-width": 1350,
+  "ad-hp-headwater-mobile": [
+    {
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-mobile",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mt/vkct/sunshine-week-1-.png"
+      ]
+    }
+  ],
+  "ad-hp-headwater-mobile-active": true,
+  "ad-hp-headwater-mobile-height": 512,
+  "ad-hp-headwater-mobile-width": 1024,
   "ad-hp-river-desktop": [],
   "ad-hp-river-desktop-active": false,
   "ad-hp-river-desktop-height": 0,
@@ -73,32 +133,32 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Sign up for Spotlight PA’s free daily newsletter for Berks County.",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/newsletters/gooddayberks/",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01m1/4saz/good-day-berks-promos-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/all-gifts-doubled.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's unmatched reporting.",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mn/d2fn/newsmatch-2025-squares-5-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/newsmatch-2025-squares-6-.gif"
       ]
     }
   ],
   "ad-rail-top-active": true,
-  "banner": "\u003cstrong\u003eALL GIFTS DOUBLED: Our investigative reporting cannot continue without you »\u003c/strong\u003e",
+  "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit? Learn more about our work »\u003c/strong\u003e",
   "banner-active": false,
-  "banner-bg-color": "#ff0000",
-  "banner-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=banner",
+  "banner-bg-color": "#009edb",
+  "banner-link": "/about",
   "banner-text-color": "#ffffff",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
@@ -119,11 +179,11 @@
   "support-bg-color": "#f7d5cf",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "DONATE NOW »",
+  "support-cta": "DONATE \u0026 GET 2X »",
   "support-hed": "Before you go, I have a request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and why we need you now.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and more than 10,000 readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. Every contribution makes a difference. Please make yours now.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and \u003cstrong\u003etoday, your support will be DOUBLED.\u003c/strong\u003e\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and more than 11,000 readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. And right now, \u003cstrong\u003eall contributions will be MATCHED 2X by the Benter Foundation in Pittsburgh\u003c/strong\u003e. Every contribution makes a difference. Please make yours now.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "Our TRIPLE match expires at 11:59 p.m. TONIGHT and we're $5,000 from our goal. Hurry a gift now to support independent, unbiased reporting",

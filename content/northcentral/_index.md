@@ -1,6 +1,6 @@
 +++
 title = "Spotlight PA’s North-Central PA Listening Tour"
-link-title = "North-Central Listening Tour"
+linktitle = "North-Central Listening Tour"
 title-tag = "North-Central Listening Tour"
 layout = "page-landing"
 hide-topper = true

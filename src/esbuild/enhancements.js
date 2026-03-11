@@ -23,6 +23,7 @@ import searchModal from "../enhancements/search-modal.js";
 import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 import takeover from "../enhancements/takeover.js";
+import youtubeFeed from "../enhancements/youtube-feed.js";
 
 for (let [name, comp] of [
   ["carousel", carousel],
@@ -38,6 +39,7 @@ for (let [name, comp] of [
   ["slider", slider],
   ["sticky", sticky],
   ["takeover", takeover],
+  ["youtubeFeed", youtubeFeed],
 ]) {
   Alpine.data(name, comp);
 }

@@ -1,0 +1,68 @@
+<div
+  class=""
+  x-data="youtubeFeed"
+  x-cloak
+  data-ga-category="youtube-shorts"
+  id="youtube-shorts"
+>
+  <link
+    rel="preload"
+    as="fetch"
+    {{ if not hugo.IsServer }}
+      href="/feeds/youtube-shorts.json"
+    {{ else }}
+      crossorigin
+      href="https://files.data.spotlightpa.org/feeds/youtube-shorts.json"
+    {{ end }}
+    x-ref="youtubeFeedSrc"
+  />
+  <h2
+    class="w-full border-b border-black font-sans text-2xl font-extrabold leading-tight tracking-wide md:col-span-3 md:text-3xl"
+  >
+    <a href="https://youtube.com/@spotlightpa" class="hover:text-blue">
+      Recent Videos
+    </a>
+  </h2>
+
+  <nav
+    class="mt-6 grid grid-flow-row-dense gap-x-16 gap-y-12 sm:grid-cols-2 md:grid-cols-4"
+  >
+    <template x-for="video of videos">
+      <article class="flex flex-col gap-4">
+        <div class="w-full">
+          <a
+            data-ga-category="thumb"
+            class="group relative block flex items-center justify-center overflow-hidden rounded bg-g-3 shadow-sm sm:w-full"
+            :href="video.url"
+          >
+            <img
+              class="aspect-square min-h-full min-w-full object-cover lg:aspect-[12/16]"
+              :alt="video.title"
+              :title="video.title"
+              :src="video.thumbnail.replace(/hqdefault/, 'maxresdefault')"
+              loading="lazy"
+            />
+            <svg
+              aria-hidden="true"
+              class="absolute h-[75px] w-[75px] text-g-5 opacity-75 group-hover:text-g-8"
+            >
+              {{ partial "helper/svg.html" "play" }}
+            </svg>
+          </a>
+        </div>
+        <div class="group flex w-full items-center justify-start">
+          <h2
+            class="text-lg font-semibold leading-tight tracking-tight text-hed"
+          >
+            <a
+              class="group-hover:underline"
+              :href="video.url"
+              data-ga-category="hed"
+              x-text="video.title"
+            ></a>
+          </h2>
+        </div>
+      </article>
+    </template>
+  </nav>
+</div>

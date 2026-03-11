@@ -11,5 +11,5 @@ beat = "Accountability"
 focusHed = "Local government accountability"
 content = "Pennsylvania’s more than 2,500 municipalities are the level of government that most directly affect people’s daily lives. They’re also often the most stretched for funding and staffing to provide critical services. Xian covers how local governments work, how tax dollars are spent, and what happens when oversight falls short."
 role = "reporter"
-active = true
+active = false
 image-gravity = "fp:.47:.5"

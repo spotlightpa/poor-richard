@@ -9,13 +9,13 @@ donate = """
     title="Become a Leader in Action"
     cta="Join"
     theme="leaders"
-    donateUrl="https://spotlightpa.fundjournalism.org/leaders/"
+    donateUrl="https://spotlightpa.donorsupport.co/page/LIA?utm_campaign=leaders-in-action-on-support-page"
 >}}
 """
 supporters = """
 {{<supporters
   title="Our Current Leaders"
-  category="Individuals and family foundations (2024/25)"
+  category="Individuals and family foundations (2025/26)"
   dataSrc="leadersInAction"
   categorize="true"
 >}}

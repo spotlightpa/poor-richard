@@ -20,6 +20,8 @@ title-tag = "How Pa.’s mental health system failed those who needed it most"
 topics = ["Health"]
 +++
 
+<em>This series was supported by the Pulitzer Center.</em>
+
 An ongoing two-year Spotlight PA investigation challenges some of the most common misconceptions about mental health treatment in Pennsylvania — most significantly that when people can’t or don’t get help, it’s their fault.
 
 The investigation’s findings show that despite Pennsylvania’s public promises, the state has failed to build a viable community mental health system to help those with the most severe needs.

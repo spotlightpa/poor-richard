@@ -10,4 +10,5 @@ subhed = "Complete coverage of Pennsylvania's medical marijuana program from Spo
 title-tag = "Latest news about PA's medical marijuana program"
 linktitle = "News and updates about Pennsylvania's medical marijuana program from Spotlight PA"
 description = "Complete coverage of medical marijuana in Pennsylvania, including how and where to get a card, problems with the program, and more from Spotlight PA."
+related-topic = "Health"
 +++

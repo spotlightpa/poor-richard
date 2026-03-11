@@ -53,6 +53,12 @@ title = "Newsletter Writer"
 description = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania’s state government for The PLS Reporter."
 headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
 
+[[staff]]
+name = "Erin Negley"
+title = "Newsletter Writer"
+description = "Erin Negley writes newsletters for Spotlight PA. She grew up in Newville, Cumberland County, and graduated from Ithaca College. She’s worked in newsrooms in Hanover, Reading, and Lancaster, covering breaking, community, and business news as well as features. When she’s not fixing up an old house in Lancaster County with her husband and daughter, she loves to spend time outdoors, in the garden, or at a park."
+headshot = "2026/01/01mp-asek-n6m4-kg25.jpeg"
+
 [[explore]]
 newsletter = "PA Local"
 schedule = "Every Friday"

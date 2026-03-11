@@ -45,6 +45,12 @@ title = "Berks County Managing Editor"
 description = "Lisa Scheid is the managing editor of Spotlight PA’s Berks County Bureau. Born and raised in southeastern Pennsylvania, she has more than three decades of journalism experience, including various reporting, editing, and coordinating roles at the Reading Eagle."
 headshot = "2025/03/01kw-evah-6ena-m0ts.jpeg"
 
+[[staff]]
+name = "Erin Negley"
+title = "Newsletter Writer"
+description = "Erin Negley writes newsletters for Spotlight PA. She grew up in Newville, Cumberland County, and graduated from Ithaca College. She’s worked in newsrooms in Hanover, Reading, and Lancaster, covering breaking, community, and business news as well as features. When she’s not fixing up an old house in Lancaster County with her husband and daughter, she loves to spend time outdoors, in the garden, or at a park."
+headshot = "2026/01/01mp-asek-n6m4-kg25.jpeg"
+
 [[explore]]
 newsletter = "PA Post"
 schedule = "Each weekday"

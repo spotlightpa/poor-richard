@@ -34,7 +34,7 @@
   {{ $river = $river | complement $featuredStory $pinnedStories }}
 
   {{ $edPicks := partial "helper/get-items" "sidebar" }}
-  {{ $riverTitle :=  index .Page.Params "link-title" }}
+  {{ $riverTitle :=  index .Page.Params "linktitle" }}
 
   {{ $missingFeatured :=  eq (len $featuredStory) 0 }}
   {{ $marginClass := cond $missingFeatured "mt-4" "" }}
