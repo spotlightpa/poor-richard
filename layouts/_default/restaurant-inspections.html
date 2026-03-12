@@ -545,8 +545,13 @@
         this.selectedFacilities = updated;
       },
 async submitSignup() {
+  if (!this.email && !this.phone) {
+    alert('Please provide an email address or phone number.');
+    return;
+  }
   this.submitting = true;
   try {
+    const method = this.phone ? 'both' : 'email';
     const payload = this.mode === 'city'
       ? {
           email: this.email,
@@ -647,6 +652,13 @@ async submitSignup() {
         </div>
 
         <form @submit.prevent="submitSignup()" class="space-y-3">
+          <p class="text-sm font-semibold text-g-9">
+            How would you like to be notified?<br /><span
+              class="font-normal text-g-6"
+              >Enter at least one.</span
+            >
+          </p>
+
           <div>
             <label
               for="alert-email"
@@ -658,7 +670,6 @@ async submitSignup() {
               id="alert-email"
               type="email"
               x-model="email"
-              required
               placeholder="you@example.com"
               class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
@@ -693,44 +704,12 @@ async submitSignup() {
             />
           </div>
 
-          <div>
-            <p class="mb-3 block text-sm font-semibold text-g-9">
-              Notification Method
-            </p>
-            <div class="space-y-2">
-              <label
-                class="flex cursor-pointer items-center rounded-lg border border-g-3 p-3 transition-colors hover:bg-g-1"
-              >
-                <input
-                  type="radio"
-                  x-model="method"
-                  value="email"
-                  class="h-4 w-4 text-yellow focus:ring-yellow"
-                />
-                <span class="ml-3 text-sm font-semibold text-g-9"
-                  >Email only</span
-                >
-              </label>
-              <label
-                class="flex cursor-pointer items-center rounded-lg border border-g-3 p-3 transition-colors hover:bg-g-1"
-              >
-                <input
-                  type="radio"
-                  x-model="method"
-                  value="both"
-                  class="h-4 w-4 text-yellow focus:ring-yellow"
-                />
-                <span class="ml-3 text-sm font-semibold text-g-9"
-                  >Email + SMS</span
-                >
-              </label>
-            </div>
-          </div>
-
-          <div class="bg-b-5 rounded-lg border border-b-2 border-g-3 p-4">
+          <div class="rounded-lg border border-g-3 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               You can unsubscribe anytime. We never share your data with third
-              parties.
+              parties. By providing your phone number you consent to receive SMS
+              inspection alerts from Spotlight PA. Message and data rates may
+              apply. Reply STOP at any time to unsubscribe.
             </p>
           </div>
 
@@ -914,6 +893,11 @@ async submitSignup() {
 
         <form @submit.prevent="submitSignup()" class="space-y-3">
           <div>
+            <p class="text-sm font-semibold text-g-9">
+              How would you like to be notified?
+              <span class="font-normal text-g-6">Enter at least one.</span>
+            </p>
+
             <label
               for="city-alert-email"
               class="mb-2 block text-sm font-semibold text-g-9"
@@ -923,7 +907,6 @@ async submitSignup() {
               id="city-alert-email"
               type="email"
               x-model="email"
-              required
               placeholder="you@example.com"
               class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
@@ -956,48 +939,17 @@ async submitSignup() {
               class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
           </div>
-          <div>
-            <p class="mb-3 block text-sm font-semibold text-g-9">
-              Notification Method
-            </p>
-            <div class="space-y-2">
-              <label
-                class="flex cursor-pointer items-center rounded-lg border border-g-3 p-3 transition-colors hover:bg-g-1"
-              >
-                <input
-                  type="radio"
-                  x-model="method"
-                  value="email"
-                  class="h-4 w-4 text-yellow focus:ring-yellow"
-                />
-                <span class="ml-3 text-sm font-semibold text-g-9"
-                  >Email only</span
-                >
-              </label>
-              <label
-                class="flex cursor-pointer items-center rounded-lg border border-g-3 p-3 transition-colors hover:bg-g-1"
-              >
-                <input
-                  type="radio"
-                  x-model="method"
-                  value="both"
-                  class="h-4 w-4 text-yellow focus:ring-yellow"
-                />
-                <span class="ml-3 text-sm font-semibold text-g-9"
-                  >Email + SMS</span
-                >
-              </label>
-            </div>
-          </div>
           <div class="rounded-lg border border-g-3 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               You can unsubscribe anytime. We never share your data with third
-              parties.
+              parties. By providing your phone number you consent to receive SMS
+              inspection alerts from Spotlight PA. Message and data rates may
+              apply. Reply STOP at any time to unsubscribe.
             </p>
           </div>
           <button
             type="submit"
-            :disabled="submitting || selectedCount === 0 || !userCity"
+            :disabled="submitting || selectedCount === 0 || !userCity || (!email && !phone)"
             class="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 py-3 font-bold text-yellow-9 transition-colors hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-50"
           >
             <span class="uppercase" x-show="!submitting">Subscribe</span>
