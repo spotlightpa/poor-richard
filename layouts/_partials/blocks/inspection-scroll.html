@@ -623,6 +623,7 @@ function performSearch(query, city) {
         filteredData = facilityIndex.map(function(e) { return e.id; });
         currentPage = 1;
         updateTotalPages();
+        resortFilteredData();
         var banner = document.getElementById("search-results-banner");
         if (banner) banner.classList.add("hidden");
         renderPage(currentPage);
@@ -693,10 +694,14 @@ function performSearch(query, city) {
         hideSearchSpinner();
         isSearching = false;
 
-        var noResultsEl = document.getElementById("no-results");
-        if (noResultsEl) {
-          noResultsEl.classList.toggle("hidden", filteredData.length > 0);
-        }
+        (function(len) {
+          setTimeout(function() {
+            var noResultsEl = document.getElementById("no-results");
+            if (noResultsEl) {
+              noResultsEl.classList.toggle("hidden", len > 0);
+            }
+          }, 0);
+        })(filteredData.length);
       })();
     }
 
