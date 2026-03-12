@@ -387,6 +387,7 @@
     var groupedFacilities = {};
     var allData = [];
     var filteredData = [];
+    var facilityIndex = [];
     var currentPage = 1;
     var currentSort = localStorage.getItem("inspections-sort") || "date-desc";
     var totalPages = 1;
@@ -409,6 +410,16 @@
       window.__inspectionsAllData = allData;
         groupedFacilities = groupByFacility(allData);
         filteredData = Object.keys(groupedFacilities);
+
+        facilityIndex = filteredData.map(function(id) {
+          var row = groupedFacilities[id][0];
+          return {
+            id: id,
+            searchText: normalizeString([row.facility || '', row.address || '', row.city || '', row.inspection_date || ''].join(' ')),
+            city: normalizeString(row.city || '')
+          };
+        });
+
         (function () {
           function normalize(s) {
             return String(s || "")
@@ -581,69 +592,55 @@ function performSearch(query, city) {
       var noResultsEl = document.getElementById("no-results");
       if (noResultsEl) noResultsEl.classList.add("hidden");
 
-clearMounts();
-      document.querySelectorAll('.pagination-controls').forEach(function(el) { el.remove(); });
-      showSearchSpinner();
+      if (!query.trim() && !city.trim()) {
+        filteredData = facilityIndex.map(function(e) { return e.id; });
+        currentPage = 1;
+        updateTotalPages();
+        var banner = document.getElementById("search-results-banner");
+        if (banner) banner.classList.add("hidden");
+        renderPage(currentPage);
+        renderPaginationControls();
+        isSearching = false;
+        return;
+      }
 
-      setTimeout(function() {
+      clearMounts();
+      document.querySelectorAll('.pagination-controls').forEach(function(el) { el.remove(); });
+
+      (function() {
         document.querySelectorAll('.pagination-controls').forEach(function (el) { el.remove(); });
         var normalizedQuery = normalizeString(query);
 
-        var matchingRows = allData.filter(function(row) {
-          var searchMatch = true;
-          if (normalizedQuery) {
-            var searchText = [
-              row.facility || "",
-              row.address || "",
-              row.city || "",
-              row.inspection_date || ""
-            ].join(" ");
-            var tokens = normalizedQuery.split(/\s+/).filter(Boolean);
-            var normalizedSearchText = normalizeString(searchText);
-            searchMatch = tokens.every(function(token) { return normalizedSearchText.includes(token); });
-          }
+        var tokens = normalizedQuery ? normalizedQuery.split(/\s+/).filter(Boolean) : [];
+        var nCity = normalizeString(city);
 
-        var cityMatch = true;
-        if (city) {
-          var rowCity = row.city || "";
-          var nCity = normalizeString(city);
-          var nRowCity = normalizeString(rowCity);
-          if (nCity === nRowCity) {
-            cityMatch = true;
-          } else {
-            if (nCity.charAt(0) !== nRowCity.charAt(0)) {
-              cityMatch = false;
-            } else if (Math.abs(nCity.length - nRowCity.length) > 4) {
-              cityMatch = false;
-            } else {
-              var dist = (function(a, b) {
-                if (!a && !b) return 0;
-                if (!a) return b.length;
-                if (!b) return a.length;
-                var m = a.length, n = b.length;
-                var dp = new Array(n + 1);
-                for (var j = 0; j <= n; j++) dp[j] = j;
-                for (var i = 1; i <= m; i++) {
-                  var prev = dp[0];
-                  dp[0] = i;
-                  for (var j2 = 1; j2 <= n; j2++) {
-                    var tmp = dp[j2];
-                    var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
-                    dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + cost);
-                    prev = tmp;
-                  }
-                }
-                return dp[n];
-              })(nCity, nRowCity);
-              cityMatch = dist <= 3;
+        var matchingIds = facilityIndex.filter(function(entry) {
+          var searchMatch = tokens.length === 0 || tokens.every(function(token) {
+            return entry.searchText.includes(token);
+          });
+          if (!searchMatch) return false;
+
+          if (!nCity) return true;
+          var ec = entry.city;
+          if (ec === nCity) return true;
+          if (!ec || ec.charAt(0) !== nCity.charAt(0)) return false;
+          if (Math.abs(ec.length - nCity.length) > 4) return false;
+          var a = ec, b = nCity;
+          var m = a.length, n = b.length;
+          var dp = new Array(n + 1);
+          for (var j = 0; j <= n; j++) dp[j] = j;
+          for (var i = 1; i <= m; i++) {
+            var prev = dp[0]; dp[0] = i;
+            for (var j2 = 1; j2 <= n; j2++) {
+              var tmp = dp[j2];
+              dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + (a.charAt(i-1) === b.charAt(j2-1) ? 0 : 1));
+              prev = tmp;
             }
           }
-        }
+          return dp[n] <= 3;
+        });
 
-          return searchMatch && cityMatch;
-          });
-          groupedFacilities = groupByFacility(matchingRows);
-          filteredData = Object.keys(groupedFacilities);
+        filteredData = matchingIds.map(function(e) { return e.id; });
           currentPage = 1;
         window.__inspectionsMarkers = [];
         updateTotalPages();
@@ -672,7 +669,7 @@ clearMounts();
         if (noResultsEl) {
           noResultsEl.classList.toggle("hidden", filteredData.length > 0);
         }
-      }, 100);
+      })();
     }
 
     function normalizeString(str) {
@@ -684,6 +681,7 @@ clearMounts();
     }
 
     function showSearchSpinner() {
+      if (allData.length > 0) return;
       hideSearchSpinner();
 
       var spinner = document.createElement('div');
