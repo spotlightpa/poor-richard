@@ -72,6 +72,9 @@
               @click="window.dispatchEvent(new CustomEvent('open-city-alerts-modal'))"
               class="inline-flex w-full items-center justify-center gap-2 rounded-md border-2 border-blue bg-blue px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-blue/30"
             >
+              <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                {{ partial "helper/svg.html" "bell" }}
+              </svg>
               Get City Alerts
             </button>
           </div>
@@ -652,17 +655,17 @@ async submitSignup() {
         </div>
 
         <form @submit.prevent="submitSignup()" class="space-y-3">
-          <p class="mb-3 text-sm font-semibold text-g-9">
-            How would you like to be notified?<br /><span
-              class="font-normal text-g-6"
-              >Enter at least one.</span
-            >
-          </p>
+          <div class="mb-3">
+            <p class="text-xs font-semibold uppercase tracking-wide text-g-6">
+              How would you like to be notified?
+            </p>
+            <p class="mt-0.5 text-xs text-g-5">Enter at least one.</p>
+          </div>
 
           <div>
             <label
               for="alert-email"
-              class="mb-2 block text-sm font-semibold text-g-9"
+              class="mb-2 flex items-center gap-1.5 text-sm font-semibold text-g-9"
             >
               Email Address
             </label>
@@ -678,7 +681,7 @@ async submitSignup() {
           <div>
             <label
               for="alert-phone"
-              class="mb-2 block text-sm font-semibold text-g-9"
+              class="mb-2 flex items-center gap-1.5 text-sm font-semibold text-g-9"
             >
               Phone Number
               <span class="font-normal text-g-6"
@@ -707,9 +710,9 @@ async submitSignup() {
           <div class="rounded-lg border border-g-3 bg-g-1 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               You can unsubscribe anytime. We never share your data with third
-              parties. By providing your phone number you consent to receive SMS
-              inspection alerts from Spotlight PA. Message and data rates may
-              apply. Reply STOP at any time to unsubscribe.
+              parties. By providing your phone number, you consent to receive
+              SMS inspection alerts from Spotlight PA. Message and data rates
+              may apply. Reply STOP at any time to unsubscribe.
             </p>
           </div>
 
@@ -893,13 +896,12 @@ async submitSignup() {
 
         <form @submit.prevent="submitSignup()" class="space-y-3">
           <div>
-            <p class="mb-3 text-sm font-semibold text-g-9">
-              How would you like to be notified?<br /><span
-                class="font-normal text-g-6"
-                >Enter at least one.</span
-              >
-            </p>
-
+            <div class="mb-3">
+              <p class="text-xs font-semibold uppercase tracking-wide text-g-6">
+                How would you like to be notified?
+              </p>
+              <p class="mt-0.5 text-xs text-g-5">Enter at least one.</p>
+            </div>
             <label
               for="city-alert-email"
               class="mb-2 block text-sm font-semibold text-g-9"
@@ -944,9 +946,9 @@ async submitSignup() {
           <div class="rounded-lg border border-g-3 bg-g-1 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               You can unsubscribe anytime. We never share your data with third
-              parties. By providing your phone number you consent to receive SMS
-              inspection alerts from Spotlight PA. Message and data rates may
-              apply. Reply STOP at any time to unsubscribe.
+              parties. By providing your phone number, you consent to receive
+              SMS inspection alerts from Spotlight PA. Message and data rates
+              may apply. Reply STOP at any time to unsubscribe.
             </p>
           </div>
           <button
@@ -980,20 +982,13 @@ async submitSignup() {
 
       <div x-show="step === 'success'" class="p-6 text-center sm:p-8">
         <div
-          class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-g-1"
+          class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-election-green"
         >
           <svg
-            class="h-8 w-8 text-g-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+            class="h-9 w-9 fill-current text-election-green"
+            aria-hidden="true"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            ></path>
+            {{ partial "helper/svg.html" "circle-check" }}
           </svg>
         </div>
 
