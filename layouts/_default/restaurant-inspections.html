@@ -652,7 +652,7 @@ async submitSignup() {
         </div>
 
         <form @submit.prevent="submitSignup()" class="space-y-3">
-          <p class="text-sm font-semibold text-g-9">
+          <p class="mb-3 text-sm font-semibold text-g-9">
             How would you like to be notified?<br /><span
               class="font-normal text-g-6"
               >Enter at least one.</span
@@ -671,7 +671,7 @@ async submitSignup() {
               type="email"
               x-model="email"
               placeholder="you@example.com"
-              class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
           </div>
 
@@ -700,11 +700,11 @@ async submitSignup() {
                       phone = formatted;
                       $nextTick(() => { $event.target.value = formatted; });
                     "
-              class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
           </div>
 
-          <div class="rounded-lg border border-g-3 p-4">
+          <div class="rounded-lg border border-g-3 bg-g-1 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               You can unsubscribe anytime. We never share your data with third
               parties. By providing your phone number you consent to receive SMS
@@ -893,9 +893,11 @@ async submitSignup() {
 
         <form @submit.prevent="submitSignup()" class="space-y-3">
           <div>
-            <p class="text-sm font-semibold text-g-9">
-              How would you like to be notified?
-              <span class="font-normal text-g-6">Enter at least one.</span>
+            <p class="mb-3 text-sm font-semibold text-g-9">
+              How would you like to be notified?<br /><span
+                class="font-normal text-g-6"
+                >Enter at least one.</span
+              >
             </p>
 
             <label
@@ -908,7 +910,7 @@ async submitSignup() {
               type="email"
               x-model="email"
               placeholder="you@example.com"
-              class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
           </div>
           <div>
@@ -936,10 +938,10 @@ async submitSignup() {
                 phone = formatted;
                 $nextTick(() => { $event.target.value = formatted; });
               "
-              class="w-full rounded-lg border border-g-3 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
             />
           </div>
-          <div class="rounded-lg border border-g-3 p-4">
+          <div class="rounded-lg border border-g-3 bg-g-1 p-4">
             <p class="text-xs leading-relaxed text-g-7">
               You can unsubscribe anytime. We never share your data with third
               parties. By providing your phone number you consent to receive SMS
