@@ -388,6 +388,8 @@
     var allData = [];
     var filteredData = [];
     var facilityIndex = [];
+    var facilityIndexMap = {};
+    var sortedFilteredData = [];
     var currentPage = 1;
     var currentSort = localStorage.getItem("inspections-sort") || "date-desc";
     var totalPages = 1;
@@ -416,9 +418,14 @@
           return {
             id: id,
             searchText: normalizeString([row.facility || '', row.address || '', row.city || '', row.inspection_date || ''].join(' ')),
-            city: normalizeString(row.city || '')
+            city: normalizeString(row.city || ''),
+            dateMs: parseInspectionDate(row.inspection_date).getTime(),
+            riskScore: getRiskScore(row),
+            nameKey: (row.facility || '').toLowerCase()
           };
         });
+        facilityIndexMap = {};
+        facilityIndex.forEach(function(e) { facilityIndexMap[e.id] = e; });
 
         (function () {
           function normalize(s) {
@@ -493,6 +500,7 @@
       window.__inspectionsMarkers = [];
       clearMounts();
       updateTotalPages();
+      resortFilteredData();
 
       var hash = window.location.hash.slice(1);
 
@@ -558,6 +566,7 @@
       if (currentSort === "alphabetical") currentSort = "alpha-asc";
       localStorage.setItem("inspections-sort", currentSort);
       currentPage = 1;
+      resortFilteredData();
       renderPage(currentPage);
       renderPaginationControls();
     });
@@ -581,6 +590,24 @@
             });
         });
         return grouped;
+    }
+
+function resortFilteredData() {
+      sortedFilteredData = filteredData.slice();
+      sortedFilteredData.sort(function(a, b) {
+        var A = facilityIndexMap[a] || {};
+        var B = facilityIndexMap[b] || {};
+        if (currentSort === "alpha-asc" || currentSort === "alphabetical") {
+          return (A.nameKey || '') < (B.nameKey || '') ? -1 : (A.nameKey || '') > (B.nameKey || '') ? 1 : 0;
+        }
+        if (currentSort === "alpha-desc") {
+          return (A.nameKey || '') > (B.nameKey || '') ? -1 : (A.nameKey || '') < (B.nameKey || '') ? 1 : 0;
+        }
+        if (currentSort === "date-asc") return (A.dateMs || 0) - (B.dateMs || 0);
+        if (currentSort === "risk-desc" || currentSort === "high-risk") return (B.riskScore || 0) - (A.riskScore || 0);
+        if (currentSort === "risk-asc") return (A.riskScore || 0) - (B.riskScore || 0);
+        return (B.dateMs || 0) - (A.dateMs || 0);
+      });
     }
 
 function performSearch(query, city) {
@@ -641,9 +668,10 @@ function performSearch(query, city) {
         });
 
         filteredData = matchingIds.map(function(e) { return e.id; });
-          currentPage = 1;
+        currentPage = 1;
         window.__inspectionsMarkers = [];
         updateTotalPages();
+        resortFilteredData();
          var banner = document.getElementById("search-results-banner");
         var bannerText = document.getElementById("search-results-text");
         if (banner && bannerText) {
@@ -743,44 +771,9 @@ function performSearch(query, city) {
           return;
         }
         rendering = true;
-        filteredData.sort(function(a, b) {
-          var A = groupedFacilities[a] || [];
-          var B = groupedFacilities[b] || [];
-
-          var aLatest = A[0] ? parseInspectionDate(A[0].inspection_date) : new Date(0);
-          var bLatest = B[0] ? parseInspectionDate(B[0].inspection_date) : new Date(0);
-
-          var aName = (A[0] && A[0].facility ? String(A[0].facility).toLowerCase() : "");
-          var bName = (B[0] && B[0].facility ? String(B[0].facility).toLowerCase() : "");
-
-          if (currentSort === "alpha-asc" || currentSort === "alphabetical") {
-            if (aName < bName) return -1;
-            if (aName > bName) return 1;
-            return 0;
-          }
-
-          if (currentSort === "alpha-desc") {
-            if (aName > bName) return -1;
-            if (aName < bName) return 1;
-            return 0;
-          }
-
-          if (currentSort === "date-asc") return aLatest - bLatest;
-
-          if (currentSort === "risk-desc" || currentSort === "high-risk") {
-            return getRiskScore(B[0]) - getRiskScore(A[0]);
-          }
-          if (currentSort === "risk-asc") {
-            return getRiskScore(A[0]) - getRiskScore(B[0]);
-          }
-
-          return bLatest - aLatest;
-        });
-
-
         var start = (page - 1) * ITEMS_PER_PAGE;
-        var end = Math.min(start + ITEMS_PER_PAGE, filteredData.length);
-        var facilityIds = filteredData.slice(start, end);
+        var end = Math.min(start + ITEMS_PER_PAGE, sortedFilteredData.length);
+        var facilityIds = sortedFilteredData.slice(start, end);
         var slice = facilityIds.map(function(id) { return groupedFacilities[id]; });
 
       clearMounts();
