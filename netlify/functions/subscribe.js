@@ -119,6 +119,14 @@ export const handler = async (event) => {
                   <p>We hope this information helps. If you'd like to change what data and facilities you're monitoring, you can <a href="${manageAllUrl}" style="color:#009EDB;">manage your alert settings here anytime</a>.</p>
                   <p>If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;">donating to Spotlight PA</a> so we can continue making this data free and accessible. Did you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, <a href="https://www.spotlightpa.org/newsletters" style="color:#009EDB;">check out our newsletters</a>.</p>
                   <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
+                  <div style="text-align:center;margin:24px 0;">
+                    <img
+                      src="https://images.data.spotlightpa.org/insecure/rt:fill/w:600/g:sm/el:1/q:75/MjAyNi8wMy8wMW12LThrbjMtNnE3MC1zYW01LnBuZw%3D%3D.jpg"
+                      alt="Spotlight PA"
+                      width="600"
+                      style="max-width:100%;height:auto;display:block;margin:0 auto;"
+                    />
+                  </div>
                   <p style="font-size:12px;color:#6b7280;">
                     Spotlight PA<br />
                     PO Box 11728<br />
