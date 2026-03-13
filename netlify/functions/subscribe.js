@@ -1,3 +1,4 @@
+import { createHmac } from "crypto";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
@@ -23,6 +24,14 @@ const ses = new SESClient({
 });
 
 const db = DynamoDBDocumentClient.from(client);
+
+function generateToken(email) {
+  const encoded = Buffer.from(email).toString("base64url");
+  const sig = createHmac("sha256", process.env.UNSUBSCRIBE_SECRET)
+    .update(encoded)
+    .digest("base64url");
+  return `${encoded}.${sig}`;
+}
 
 export const handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -85,6 +94,11 @@ export const handler = async (event) => {
       }),
     );
 
+    const token = generateToken(email);
+    const baseUrl = process.env.URL || "https://www.spotlightpa.org";
+    const unsubOneFacilityUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}&facilityId=${encodeURIComponent(facilityId)}`;
+    const manageAllUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}`;
+
     await ses.send(
       new SendEmailCommand({
         Source: process.env.INSPECTIONS_FROM_EMAIL,
@@ -95,14 +109,28 @@ export const handler = async (event) => {
           },
           Body: {
             Text: {
-              Data: `Hi,\n\nYou're now subscribed to inspection alerts for ${facilityName}.\n\nWhenever a new inspection report is filed, we'll send you an email.\n\nSpotlight PA Restaurant Safety Tracker\nhttps://www.spotlightpa.org/restaurants`,
+              Data: `Hi,\n\nYou're now subscribed to inspection alerts for ${facilityName}. Whenever a new inspection report is filed, we'll send you an email.\n\nWe hope this information helps. If you'd like to change what data and facilities you're monitoring, you can manage your alert settings anytime:\n${manageAllUrl}\n\nIf you're finding the Restaurant Safety Tracker useful, please consider donating to Spotlight PA so we can continue making this data free and accessible:\nhttps://www.spotlightpa.org/donate\n\nDid you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, check out our newsletters:\nhttps://www.spotlightpa.org/newsletters\n\n---\nSpotlight PA\nPO Box 11728\nHarrisburg, PA 17108\nUnited States\n\nYou're receiving this because you requested alerts from Spotlight PA's Restaurant Safety Tracker.\nUnsubscribe from ${facilityName}: ${unsubOneFacilityUrl}\nManage all your subscriptions: ${manageAllUrl}`,
             },
             Html: {
               Data: `
-                <p>Hi,</p>
-                <p>You're now subscribed to inspection alerts for <strong>${facilityName}</strong>.</p>
-                <p>Whenever a new inspection report is filed, we'll send you an email.</p>
-                <p><a href="https://www.spotlightpa.org/restaurants">Spotlight PA Restaurant Safety Tracker</a></p>
+                <div style="font-family:Georgia,serif;max-width:600px;margin:0 auto;color:#111;">
+                  <p>Hi,</p>
+                  <p>You're now subscribed to inspection alerts for <strong>${facilityName}</strong>. Whenever a new inspection report is filed, we'll send you an email.</p>
+                  <p>We hope this information helps. If you'd like to change what data and facilities you're monitoring, you can <a href="${manageAllUrl}" style="color:#009EDB;">manage your alert settings here anytime</a>.</p>
+                  <p>If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;">donating to Spotlight PA</a> so we can continue making this data free and accessible. Did you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, <a href="https://www.spotlightpa.org/newsletters" style="color:#009EDB;">check out our newsletters</a>.</p>
+                  <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
+                  <p style="font-size:12px;color:#6b7280;">
+                    Spotlight PA<br />
+                    PO Box 11728<br />
+                    Harrisburg, PA 17108<br />
+                    United States
+                  </p>
+                  <p style="font-size:12px;color:#6b7280;">
+                    You're receiving this because you requested alerts from Spotlight PA's Restaurant Safety Tracker.
+                    <a href="${unsubOneFacilityUrl}" style="color:#009EDB;">Unsubscribe from ${facilityName}</a> &middot;
+                    <a href="${manageAllUrl}" style="color:#009EDB;">Manage all your subscriptions</a>
+                  </p>
+                </div>
               `,
             },
           },
