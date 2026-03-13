@@ -1609,6 +1609,7 @@ initSortListeners() {
         },
 
         checkHashAndOpenCard() {
+          if (window.innerWidth < 768) return;
           const hash = window.location.hash.slice(1);
           if (!hash) return;
 

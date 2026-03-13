@@ -531,7 +531,7 @@
 
         setTimeout(function() {
           var mobileMounts = Array.from(document.querySelectorAll('.inspections-mount')).filter(function(m) {
-            return m.classList.contains('space-y-3');
+            return m.classList.contains('space-y-3') && m.offsetParent !== null;
           });
 
           if (mobileMounts.length === 0) {
@@ -1654,6 +1654,12 @@ if (!hasViolation) {
   window.closeMobileCardDetails = function() {
 
       history.replaceState(null, '', window.location.pathname + window.location.search);
+
+      document.querySelectorAll('.detail-content').forEach(function(el) { el.remove(); });
+      document.querySelectorAll('.inspections-mount').forEach(function(m) {
+        m.classList.remove('h-full', 'flex', 'flex-col');
+        m.classList.add('space-y-3');
+      });
 
       renderPage(currentPage);
       renderPaginationControls();
