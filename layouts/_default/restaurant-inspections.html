@@ -1735,12 +1735,14 @@ if (!hasViolation) {
 
           return `
             <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
-              <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-g-1 transition-colors">
-                <div class="flex flex-wrap items-center gap-2 min-w-0 flex-1 mr-3">
-                  <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
-                    {{ partial "helper/svg.html" "calendar-day" }}
-                  </svg>
-                  <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+              <summary class="relative flex items-start p-4 pr-10 cursor-pointer hover:bg-g-1 transition-colors">
+                <div class="flex flex-1 flex-wrap items-center justify-between gap-x-3 gap-y-2 min-w-0">
+                  <div class="flex items-center gap-2 min-w-0">
+                    <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
+                      {{ partial "helper/svg.html" "calendar-day" }}
+                    </svg>
+                    <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+                  </div>
                   ${hasViolation ? `
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7">
                       <svg class="h-4 w-4 fill-current" aria-hidden="true">
@@ -1757,7 +1759,7 @@ if (!hasViolation) {
                     </span>
                   `}
                 </div>
-                <svg class="h-5 w-5 flex-shrink-0 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true">
+                <svg class="absolute right-4 top-4 h-5 w-5 flex-shrink-0 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true">
                   {{ partial "helper/svg.html" "chevron" }}
                 </svg>
               </summary>
