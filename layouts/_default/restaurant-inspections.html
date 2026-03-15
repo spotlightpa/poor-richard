@@ -1,0 +1,2177 @@
+{{ define "extra-head" }}
+  {{ partial "header/maplibre.html" . }}
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ partial "blocks/maplibre.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <section class="bg-black">
+    <div
+      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pb-6 pt-4 md:px-0"
+    >
+      <div class="mb-3">
+        <h1
+          class="mx-auto w-full pb-2 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl md:w-7/12 lg:text-4xl"
+        >
+          {{ .Title }}
+        </h1>
+
+        {{ with .Param "deck" }}
+          <div class="mx-auto w-full md:w-7/12">
+            <p
+              class="font-serif text-base text-white md:text-lg md:leading-tight lg:text-xl"
+            >
+              {{ . }}
+            </p>
+          </div>
+        {{ end }}
+
+        {{ with .Param "search-instructions" }}
+          <div class="mx-auto mt-8 w-full md:w-7/12">
+            <p
+              class="font-serif text-base italic text-white md:text-lg md:leading-tight"
+            >
+              {{ . }}
+            </p>
+          </div>
+        {{ end }}
+      </div>
+
+      <div
+        class="mx-auto mt-3 hidden w-full md:block md:w-7/12"
+        x-data="inspectionsUI()"
+        x-init="init()"
+      >
+        {{ partial "blocks/search.html" (dict
+          "placeholder" (default "Search" (.Param "search-desktop-placeholder"))
+          "showLocation" (.Param "search-location")
+          "context" .
+          )
+        }}
+      </div>
+    </div>
+  </section>
+
+  <section class="hidden md:block" x-data="inspectionsUI()" x-init="init()">
+    <div class="w-full bg-white px-4 md:px-0">
+      <div class="grid grid-cols-[240px_auto_1fr_1fr]">
+        <div
+          class="sticky top-[73px] flex h-[calc(100vh-73px)] flex-col overflow-y-auto bg-white px-5 py-6"
+        >
+          <h3
+            class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+          >
+            Track my City
+          </h3>
+
+          <div class="mt-4">
+            <button
+              type="button"
+              @click="window.dispatchEvent(new CustomEvent('open-city-alerts-modal'))"
+              class="inline-flex w-full items-center justify-center gap-2 rounded-md border-2 border-blue bg-blue px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-blue/30"
+            >
+              <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                {{ partial "helper/svg.html" "bell" }}
+              </svg>
+              Get City Alerts
+            </button>
+          </div>
+
+          <div class="my-8 border-t-2 border-g-2"></div>
+
+          <h3
+            class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+          >
+            Sort By
+          </h3>
+
+          <div class="mt-4 hidden flex-col gap-3 md:flex">
+            <div class="relative">
+              <select
+                id="date-sort"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <option value="" disabled selected hidden>
+                  Inspection Date
+                </option>
+                <option value="date-desc">Newest to Oldest</option>
+                <option value="date-asc">Oldest to Newest</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
+
+            <div class="relative">
+              <select
+                id="risk-sort"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <option value="" disabled selected hidden>
+                  Violation Risk
+                </option>
+                <option value="risk-desc">Highest to Lowest</option>
+                <option value="risk-asc">Lowest to Highest</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
+
+            <div class="relative">
+              <select
+                id="name-sort"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <option value="" disabled selected hidden>Facility Name</option>
+                <option value="alpha-asc">A to Z</option>
+                <option value="alpha-desc">Z to A</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+            </div>
+          </div>
+
+          <div class="my-8 border-t-2 border-g-2"></div>
+          <h3
+            class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+          >
+            Filter
+          </h3>
+
+          <div class="mt-4 hidden flex-col gap-3 md:flex">
+            {{ if .Param "cuisine-type" }}
+              <div class="relative">
+                <select
+                  id="cuisine-filter"
+                  class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+                >
+                  <option value="">Cuisine</option>
+                  <option value="american">American</option>
+                  <option value="italian">Italian</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="mexican">Mexican</option>
+                  <option value="other">Other</option>
+                </select>
+                <svg
+                  class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+                >
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </div>
+            {{ end }}
+
+
+            <div
+              class="relative"
+              x-data="{
+                open: false,
+                selectedText: '',
+                query: '',
+                optionsAll: [],
+                optionsTop: [],
+                optionsShown: [],
+                label() { return this.selectedText || 'All Cities'; },
+                normalize(s) {
+                  return String(s || '')
+                    .toLowerCase()
+                    .replace(/[^a-z0-9\s]/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+                },
+                dist(a, b) {
+                  a = this.normalize(a); b = this.normalize(b);
+                  if (!a && !b) return 0;
+                  if (!a) return b.length;
+                  if (!b) return a.length;
+                  var m = a.length, n = b.length;
+                  var dp = new Array(n + 1);
+                  for (var j = 0; j <= n; j++) dp[j] = j;
+                  for (var i = 1; i <= m; i++) {
+                    var prev = dp[0];
+                    dp[0] = i;
+                    for (var j2 = 1; j2 <= n; j2++) {
+                      var tmp = dp[j2];
+                      var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
+                      dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + cost);
+                      prev = tmp;
+                    }
+                  }
+                  return dp[n];
+                },
+                syncShown() {
+                  var q = this.normalize(this.query);
+                  if (!q) {
+                    this.optionsShown = this.optionsTop.slice(0, 20);
+                    return;
+                  }
+                  var hits = [];
+                  var exactMatches = [];
+                  var partialMatches = [];
+                  
+                  for (var i = 0; i < this.optionsAll.length; i++) {
+                    var opt = this.optionsAll[i];
+                    var normalized = this.normalize(opt.text);
+                    
+                    if (normalized === q) {
+                      exactMatches.push(opt);
+                    } else if (normalized.includes(q)) {
+                      partialMatches.push(opt);
+                    }
+                  }
+                  
+                  hits = exactMatches.concat(partialMatches);
+                  
+                  if (hits.length === 0) {
+                    for (var k = 0; k < this.optionsAll.length; k++) {
+                      var opt2 = this.optionsAll[k];
+                      var a = this.normalize(opt2.text);
+                      if (!a) continue;
+                      if (a.charAt(0) !== q.charAt(0)) continue;
+                      if (Math.abs(a.length - q.length) > 4) continue;
+                      if (this.dist(a, q) <= 3) {
+                        hits.push(opt2);
+                      }
+                    }
+                  }
+                  
+                  this.optionsShown = hits.slice(0, 20);
+                },
+                init() {
+                  const sel = document.getElementById('city-filter');
+                  const baseOptions = Array.from(sel?.options || []).map(o => ({ value: o.value, text: o.text }));
+                  this.optionsAll = baseOptions;
+                  this.optionsTop = baseOptions.slice(0, 20);
+                  if (sel) this.selectedText = sel.options[sel.selectedIndex]?.text || '';
+
+                  this.syncShown();
+
+                  window.addEventListener('inspections-cities-ready', (e) => {
+                    const list = (e.detail && e.detail.cities) ? e.detail.cities : [];
+                    this.optionsAll = list.map(x => ({ value: x.value, text: x.text }));
+                    this.optionsTop = this.optionsAll.slice(0, 20);
+                    this.query = '';
+                    this.syncShown();
+                  });
+
+                  window.addEventListener('inspections-search', (e) => {
+                    const city = e.detail?.city || '';
+                    if (!city) {
+                      this.selectedText = '';
+                      return;
+                    }
+                    const match = this.optionsAll.find(o =>
+                      this.normalize(o.value) === this.normalize(city) ||
+                      this.normalize(o.text) === this.normalize(city)
+                    );
+                    this.selectedText = match ? match.text : city;
+                  });
+
+                  sel?.addEventListener('change', () => {
+                    this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : '';
+                  });
+                },
+                choose(value, text) {
+                  const sel = document.getElementById('city-filter');
+                  const v = (value || '').trim();
+                  const t = (text || value || '').trim();
+
+                  if (sel) {
+                    const exists = Array.from(sel.options || []).some(o =>
+                      String(o.value || '').toLowerCase() === String(v).toLowerCase()
+                    );
+
+                    if (!exists && v) {
+                      const opt = document.createElement('option');
+                      opt.value = v;
+                      opt.text = t || v;
+                      sel.appendChild(opt);
+                    }
+
+                    sel.value = v;
+                    sel.dispatchEvent(new Event('change', { bubbles: true }));
+                  }
+
+                  this.selectedText = t;
+                  this.open = false;
+                  this.query = '';
+                  this.syncShown();
+                }
+              }"
+            >
+              <select id="city-filter" class="hidden">
+                <option value="">All Cities</option>
+              </select>
+
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                aria-haspopup="menu"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <span x-text="label()"></span>
+              </button>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                {{ partial "helper/svg.html" "chevron" }}
+              </svg>
+
+              <div
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute left-0 z-20 mt-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
+                role="menu"
+              >
+                <div class="border-b border-g-2 p-3">
+                  <div class="font-sans text-xs font-semibold text-g-6">
+                    Type to search all cities
+                  </div>
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
+                    placeholder="Search"
+                    x-model="query"
+                    @input="syncShown()"
+                  />
+                </div>
+
+                <div class="max-h-72 overflow-auto">
+                  <template
+                    x-for="opt in optionsShown"
+                    :key="opt.value + '::' + opt.text"
+                  >
+                    <button
+                      class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                      :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
+                      @click="choose(opt.value, opt.text)"
+                      role="menuitem"
+                      x-text="opt.text"
+                    ></button>
+                  </template>
+
+                  <div
+                    x-show="optionsShown.length === 0"
+                    class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
+                  >
+                    No matches. Try a different spelling.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            @click="
+                    const cf = document.getElementById('cuisine-filter'); if (cf) cf.value = '';
+                    document.getElementById('city-filter').value = '';
+                    document.getElementById('date-sort').selectedIndex = 0;
+                    document.getElementById('risk-sort').selectedIndex = 0;
+                    document.getElementById('name-sort').selectedIndex = 0;
+                    currentCity = '';
+                    currentSort = 'date-desc';
+                    q = '';
+                    localStorage.removeItem('inspections-sort');
+                    const si = document.getElementById('search-input');
+                    if (si) si.value = '';
+                    window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: 'date-desc' } }));
+                    window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: '', city: '' } }));
+                    applyFilters();
+                    sortCards();
+                  "
+            class="mt-8 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white hover:text-g-9 hover:shadow-sm"
+          >
+            Clear all
+          </button>
+        </div>
+
+        <div aria-hidden="true" class="h-full w-px bg-g-4"></div>
+
+        <div class="border-r border-g-4 bg-white">
+          {{ partial "blocks/inspection-scroll.html" . }}
+        </div>
+
+        <div class="sticky top-[73px] h-[calc(100vh-73px)]">
+          {{ partial "blocks/maplibre-assets.html" (dict
+            "ctx" .
+            "id" "inspections-map"
+            "ariaLabel" "Pennsylvania inspections map"
+            "class" "relative h-full w-full"
+            )
+          }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="md:hidden">
+    {{ partial "blocks/inspection-scroll.html" . }}
+  </div>
+
+  <div
+    x-data="{
+      open: false,
+      mode: 'facility',
+      facilityName: '',
+      facilityId: '',
+      step: 'form',
+      email: '',
+      phone: '',
+      method: 'email',
+      submitting: false,
+      userCity: '',
+      cityFacilities: [],
+      selectedFacilities: {},
+      facilitiesOpen: false,
+      detectingCity: false,
+      cityNotFound: false,
+      citySearchQuery: '',
+      cityDropdownOpen: false,
+      get selectedCount() {
+        return Object.values(this.selectedFacilities).filter(Boolean).length;
+      },
+      get filteredCities() {
+        const q = (this.citySearchQuery || '').toLowerCase().trim();
+        const all = window.__inspectionsCities || [];
+        if (!q) return all.slice(0, 30);
+        return all.filter(c => (c.text || '').toLowerCase().includes(q)).slice(0, 30);
+      },
+      init() {
+        window.addEventListener('open-alerts-modal', (e) => {
+          this.open = true;
+          this.mode = 'facility';
+          this.facilityName = e.detail.facilityName;
+          this.facilityId = e.detail.facilityId;
+          this.step = 'form';
+          this.email = '';
+          this.phone = '';
+          this.submitting = false;
+          document.body.style.overflow = 'hidden';
+        });
+        window.addEventListener('open-city-alerts-modal', () => {
+          this.open = true;
+          this.mode = 'city';
+          this.step = 'form';
+          this.email = '';
+          this.phone = '';
+          this.submitting = false;
+          this.userCity = '';
+          this.cityFacilities = [];
+          this.selectedFacilities = {};
+          this.facilitiesOpen = false;
+          this.detectingCity = true;
+          this.cityNotFound = false;
+          this.citySearchQuery = '';
+          this.cityDropdownOpen = false;
+          document.body.style.overflow = 'hidden';
+          this.$nextTick(() => this.detectCity());
+        });
+      },
+      closeModal() {
+        this.open = false;
+        document.body.style.overflow = '';
+      },
+      async detectCity() {
+        try {
+          const pos = await new Promise((resolve, reject) =>
+            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 8000 })
+          );
+          const { latitude, longitude } = pos.coords;
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
+            { headers: { 'Accept-Language': 'en' } }
+          );
+          const data = await res.json();
+          const detected = data.address?.city || data.address?.town || data.address?.village || data.address?.municipality || '';
+          const match = this.matchCity(detected);
+          if (match) {
+            this.userCity = match;
+            this.cityNotFound = false;
+            this.loadCityFacilities(match);
+          } else {
+            this.cityNotFound = true;
+          }
+        } catch (e) {
+          this.cityNotFound = true;
+        } finally {
+          this.detectingCity = false;
+        }
+      },
+      matchCity(detected) {
+        const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+        const nd = norm(detected);
+        const cities = window.__inspectionsCities || [];
+        const exact = cities.find(c => norm(c.value) === nd || norm(c.text) === nd);
+        if (exact) return exact.text;
+        const partial = cities.find(c => norm(c.text).includes(nd) || nd.includes(norm(c.text)));
+        if (partial) return partial.text;
+        return null;
+      },
+      selectCity(cityText) {
+        this.userCity = cityText;
+        this.cityNotFound = false;
+        this.cityDropdownOpen = false;
+        this.citySearchQuery = '';
+        this.loadCityFacilities(cityText);
+      },
+      loadCityFacilities(city) {
+        const allData = window.__inspectionsAllData || [];
+        const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+        const nc = norm(city);
+        const grouped = {};
+        allData.forEach(row => {
+          if (norm(row.city || '') !== nc) return;
+          const id = row.id || (row.facility + '—' + row.address);
+          if (!grouped[id]) grouped[id] = { id, name: row.facility || 'Unknown facility' };
+        });
+        this.cityFacilities = Object.values(grouped).sort((a, b) => a.name.localeCompare(b.name));
+        const sel = {};
+        this.cityFacilities.forEach(f => { sel[f.id] = true; });
+        this.selectedFacilities = sel;
+      },
+      toggleFacility(id) {
+        this.selectedFacilities[id] = !this.selectedFacilities[id];
+      },
+      toggleAllFacilities(checked) {
+        const updated = {};
+        this.cityFacilities.forEach(f => { updated[f.id] = checked; });
+        this.selectedFacilities = updated;
+      },
+async submitSignup() {
+  if (!this.email && !this.phone) {
+    alert('Please provide an email address or phone number.');
+    return;
+  }
+  this.submitting = true;
+  try {
+    const method = this.phone ? 'both' : 'email';
+    const payload = this.mode === 'city'
+      ? {
+          email: this.email,
+          phone: this.phone,
+          method: this.method,
+          city: this.userCity,
+          facilityIds: Object.entries(this.selectedFacilities).filter(([, v]) => v).map(([k]) => k),
+        }
+      : {
+          email: this.email,
+          phone: this.phone,
+          method: this.method,
+          facilityId: this.facilityId,
+          facilityName: this.facilityName,
+        };
+    const res = await fetch('/.netlify/functions/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      throw new Error(data.error || 'Something went wrong. Please try again.');
+    }
+    this.step = 'success';
+  } catch (err) {
+    alert(err.message);
+  } finally {
+    this.submitting = false;
+  }
+},
+    }"
+    x-show="open"
+    x-cloak
+    @keydown.escape.window="closeModal()"
+    class="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center px-6 pb-6"
+    :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100vh - var(--modalTop));'"
+    style="display: none;"
+    :style="'--modalTop: calc(73px + 1.5rem)'"
+  >
+    <div
+      @click="closeModal()"
+      class="fixed inset-0 bg-black/70 backdrop-blur-md backdrop-saturate-150"
+      x-show="open"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+    ></div>
+
+    <div
+      class="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-lg border border-g-3 bg-white shadow-2xl"
+      x-show="open"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 scale-90"
+      x-transition:enter-end="opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-90"
+      @click.stop
+    >
+      <button
+        @click="closeModal()"
+        class="absolute right-4 top-4 text-g-6 transition-colors hover:text-g-9"
+        aria-label="Close modal"
+      >
+        <svg class="h-6 w-6 fill-current" aria-hidden="true">
+          {{ partial "helper/svg.html" "times" }}
+        </svg>
+      </button>
+
+      <div x-show="step === 'form'" class="p-4 sm:p-5">
+        <div class="mb-4 flex items-center gap-3">
+          <div
+            class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4"
+          >
+            <svg class="h-5 w-52 fill-current text-yellow-9" aria-hidden="true">
+              {{ partial "helper/svg.html" "bell" }}
+            </svg>
+          </div>
+          <div>
+            <h2
+              class="text-xl font-bold text-g-9 sm:text-2xl"
+              x-text="mode === 'facility' ? 'Get Inspection Alerts' : 'Get City Alerts'"
+            ></h2>
+          </div>
+        </div>
+
+        <div
+          x-show="mode === 'facility'"
+          class="mb-4 rounded-lg border border-g-3 bg-g-1 p-3"
+        >
+          <p class="text-sm font-semibold text-g-7">
+            You'll receive alerts for:
+          </p>
+          <p
+            class="mt-1 text-base font-bold text-g-9"
+            x-text="facilityName"
+          ></p>
+        </div>
+
+        <div
+          x-show="mode === 'city'"
+          class="mb-4 min-h-[64px] rounded-lg border border-g-3 bg-g-1 p-3"
+        >
+          <div x-show="detectingCity" class="flex items-center gap-2 py-1">
+            <svg
+              class="h-4 w-4 animate-spin text-g-5"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              ></path>
+            </svg>
+            <p class="text-sm font-semibold text-g-6">
+              Detecting your city&hellip;
+            </p>
+          </div>
+
+          <div x-show="!detectingCity && !cityNotFound">
+            <p
+              class="mb-1 text-xs font-semibold uppercase tracking-wide text-g-5"
+            >
+              Your city
+            </p>
+            <p class="text-base font-bold text-g-9" x-text="userCity"></p>
+            <button
+              type="button"
+              @click="cityNotFound = true; userCity = ''; cityFacilities = []; selectedFacilities = {};"
+              class="mt-1 text-xs font-semibold text-blue hover:underline"
+            >
+              Not your city? Change it
+            </button>
+          </div>
+
+          <div x-show="!detectingCity && cityNotFound" class="relative">
+            <p
+              class="mb-2 text-xs font-semibold uppercase tracking-wide text-g-5"
+            >
+              Select your city
+            </p>
+            <div class="relative">
+              <input
+                type="text"
+                x-model="citySearchQuery"
+                @focus="cityDropdownOpen = true"
+                @input="cityDropdownOpen = true"
+                @click.outside="cityDropdownOpen = false"
+                placeholder="Type to search cities&hellip;"
+                class="w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-blue"
+              />
+              <div
+                x-show="cityDropdownOpen && filteredCities.length > 0"
+                class="absolute left-0 right-0 z-30 mt-1 max-h-48 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
+              >
+                <template x-for="c in filteredCities" :key="c.value">
+                  <button
+                    type="button"
+                    @click="selectCity(c.text)"
+                    class="block w-full px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-1"
+                    x-text="c.text"
+                  ></button>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          x-show="mode === 'city' && cityFacilities.length > 0"
+          class="mb-4 overflow-hidden rounded-lg border border-g-3"
+        >
+          <button
+            type="button"
+            @click="facilitiesOpen = !facilitiesOpen"
+            class="flex w-full items-center justify-between bg-g-1 px-3 py-2.5 transition-colors hover:bg-g-2"
+          >
+            <span class="text-sm font-semibold text-g-7">
+              Subscribing to
+              <span class="text-g-9" x-text="selectedCount"></span> of
+              <span x-text="cityFacilities.length"></span> facilities
+            </span>
+            <svg
+              class="h-4 w-4 fill-current text-g-6 transition-transform"
+              :class="facilitiesOpen ? 'rotate-180' : ''"
+            >
+              {{ partial "helper/svg.html" "chevron" }}
+            </svg>
+          </button>
+          <div x-show="facilitiesOpen" class="border-t border-g-3">
+            <div class="flex items-center gap-2 border-b border-g-2 px-3 py-2">
+              <button
+                type="button"
+                @click="toggleAllFacilities(true)"
+                class="text-xs font-semibold text-blue hover:underline"
+              >
+                Select all
+              </button>
+              <span class="text-g-4">·</span>
+              <button
+                type="button"
+                @click="toggleAllFacilities(false)"
+                class="text-xs font-semibold text-blue hover:underline"
+              >
+                Deselect all
+              </button>
+            </div>
+            <div class="max-h-48 divide-y divide-g-2 overflow-y-auto">
+              <template x-for="f in cityFacilities" :key="f.id">
+                <label
+                  class="flex cursor-pointer items-center gap-3 px-3 py-2.5 hover:bg-g-1"
+                >
+                  <input
+                    type="checkbox"
+                    :checked="selectedFacilities[f.id]"
+                    @change="toggleFacility(f.id)"
+                    class="h-4 w-4 rounded border-g-3 text-blue focus:ring-blue"
+                  />
+                  <span
+                    class="font-sans text-sm font-semibold text-g-9"
+                    x-text="f.name"
+                  ></span>
+                </label>
+              </template>
+            </div>
+          </div>
+        </div>
+
+        <form @submit.prevent="submitSignup()" class="space-y-3">
+          <div class="mb-3">
+            <p class="text-xs font-semibold uppercase tracking-wide text-g-6">
+              How would you like to be notified?
+            </p>
+            <p class="mt-0.5 text-xs text-g-5">Enter at least one.</p>
+          </div>
+
+          <div>
+            <label
+              for="alert-email"
+              class="mb-2 flex items-center gap-1.5 text-sm font-semibold text-g-9"
+            >
+              Email Address
+            </label>
+            <input
+              id="alert-email"
+              type="email"
+              x-model="email"
+              placeholder="you@example.com"
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+            />
+          </div>
+
+          <div>
+            <label
+              for="alert-phone"
+              class="mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-sm font-semibold text-g-9"
+            >
+              Phone Number
+              <span class="font-normal text-g-6"
+                >(optional, for SMS alerts)</span
+              >
+            </label>
+            <input
+              id="alert-phone"
+              type="tel"
+              x-model="phone"
+              placeholder="(555) 123-4567"
+              maxlength="14"
+              @input="
+                const digits = $event.target.value.replace(/\D/g, '').slice(0, 10);
+                let formatted = '';
+                if (digits.length <= 3) formatted = digits;
+                else if (digits.length <= 6) formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
+                else formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+                phone = formatted;
+                $nextTick(() => { $event.target.value = formatted; });
+              "
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+            />
+          </div>
+
+          <div class="rounded-lg border border-g-3 bg-g-1 p-4">
+            <p class="text-xs leading-relaxed text-g-7">
+              You can unsubscribe anytime. We never share your data with third
+              parties. By providing your phone number, you consent to receive
+              SMS inspection alerts from Spotlight PA. Message and data rates
+              may apply. Reply STOP at any time to unsubscribe.
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            :disabled="submitting || (mode === 'city' && (selectedCount === 0 || !userCity)) || (!email && !phone)"
+            class="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 py-3 font-bold text-yellow-9 transition-colors hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <span class="uppercase" x-show="!submitting">Subscribe</span>
+            <span x-show="submitting" class="flex items-center gap-2">
+              <svg class="h-5 w-5 animate-spin" viewBox="0 0 24 24">
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  fill="none"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+              Subscribing...
+            </span>
+          </button>
+        </form>
+      </div>
+      <div x-show="step === 'success'" class="p-6 text-center sm:p-8">
+        <div class="mx-auto mb-6 flex justify-center">
+          <svg
+            class="h-16 w-16 fill-current text-election-green"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "circle-check" }}
+          </svg>
+        </div>
+        <h2 class="mb-3 text-2xl font-bold text-g-9">You're all set!</h2>
+        <p class="mb-6 text-base text-g-7">
+          <template x-if="mode === 'facility'">
+            <span
+              >We'll send you an email alert whenever there's a new inspection
+              report for
+              <span class="font-semibold text-g-9" x-text="facilityName"></span
+              >.</span
+            >
+          </template>
+          <template x-if="mode === 'city'">
+            <span
+              >We'll send you alerts for new inspections across
+              <span class="font-semibold text-g-9" x-text="userCity"></span
+              >.</span
+            >
+          </template>
+        </p>
+
+        <button
+          @click="closeModal()"
+          class="w-full rounded-lg bg-g-9 py-3 font-semibold text-white transition-colors hover:bg-g-8"
+        >
+          Done
+        </button>
+
+        <p class="mt-4 text-xs text-g-6">
+          Check your email for a confirmation link
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "tw/newsletter-box-lg.html" (dict
+    "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
+    "newsletterField" "newsletter/papost-hidden.html"
+    )
+  }}
+
+
+  <section class="bg-white" data-ga-category="about">
+    <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
+      <div class="mx-auto flex w-full gap-6 md:w-8/12">
+        <div class="hidden shrink-0 sm:block [&>nav]:static [&>nav]:top-auto">
+          {{ partial "tw/social-buttons.html" . }}
+        </div>
+        <div class="w-full space-y-8">
+          <div>
+            <h2
+              class="w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              {{ .Param "about-title" }}
+            </h2>
+            <div class="pb-2 sm:hidden [&>nav]:static [&>nav]:top-auto">
+              {{ partial "tw/social-buttons.html" . }}
+            </div>
+            <div
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
+              {{ .Param "about-description" | safeHTML }}
+            </div>
+          </div>
+
+          <div>
+            <h2
+              class="w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              {{ .Param "questions-title" }}
+            </h2>
+            <p
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
+              {{ .Param "questions-description" | markdownify }}
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              {{ .Param "tips-title" }}
+            </h2>
+            <p
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
+              {{ .Param "tips-description" | markdownify }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Page.RenderString (.Param "credits") }}
+    <section
+      class="bg-white"
+      id="credits"
+      data-ga-category="credits"
+      x-data
+      x-intersect.half="$dispatch('intersect:about', $el.id)"
+    >
+      <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
+        <div class="mx-auto flex w-full gap-6 md:w-8/12">
+          <div
+            class="hidden shrink-0 opacity-0 sm:block [&>nav]:static [&>nav]:top-auto"
+          >
+            {{ partial "tw/social-buttons.html" $ }}
+          </div>
+          <div class="w-full">
+            <h2
+              class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              Credits
+            </h2>
+            <div class="space-y-8 py-6">
+              {{ . }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <script>
+    function inspectionsUI() {
+      return {
+        q: "",
+        cards: [],
+        index: new Map(),
+        cityMap: new Map(),
+        activeCard: null,
+        lastReadMoreButton: null,
+        initializedDelegates: false,
+        dataLoaded: false,
+        currentSort: "date",
+        currentCity: "",
+
+    init() {
+      const noResultsEl = document.getElementById("no-results");
+      if (noResultsEl) {
+        noResultsEl.classList.add("hidden");
+      }
+
+      const savedSort = localStorage.getItem("inspections-sort");
+      if (savedSort) this.currentSort = savedSort;
+
+      window.addEventListener("inspections-data-ready", () => {
+        this.dataLoaded = true;
+        this.refreshCards();
+        if (noResultsEl) {
+          noResultsEl.classList.add("hidden");
+        }
+        this.sortCards();
+        this.checkHashAndOpenCard();
+      });
+
+      if (
+        typeof window.inspectionsDataLoaded === "function" &&
+        window.inspectionsDataLoaded()
+      ) {
+        this.dataLoaded = true;
+      }
+
+      this.refreshCards();
+      this.initSortListeners();
+      this.initFilterListeners();
+      this.initCityTypeahead();
+      this.initMapMarkers();
+
+   setTimeout(() => this.checkHashAndOpenCard(), 100);
+
+      let resizeTimer;
+      let lastWidth = window.innerWidth;
+
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          const currentWidth = window.innerWidth;
+          const wasMobile = lastWidth < 768;
+          const wasDesktop = lastWidth >= 768;
+          const isDesktop = currentWidth >= 768;
+          const isMobile = currentWidth < 768;
+
+          if ((wasMobile && isDesktop) || (wasDesktop && isMobile)) {
+            const hash = window.location.hash.slice(1);
+
+            document.querySelectorAll('.mobile-detail-view').forEach(el => el.remove());
+            document.querySelectorAll('.detail-content').forEach(el => el.remove());
+            document.querySelectorAll('.pagination-controls').forEach(el => el.classList.remove('hidden'));
+
+            document.querySelectorAll('[data-card="inspection"]').forEach(card => {
+              card.style.display = '';
+              card.classList.remove('hidden-by-detail', 'h-full', 'flex', 'flex-col', 'flex-1');
+              card.classList.add('space-y-3');
+              const listContent = card.querySelector('.list-content');
+              if (listContent) listContent.classList.remove('hidden');
+
+              const mount = card.closest('.inspections-mount');
+              if (mount) {
+                mount.classList.remove('h-full', 'flex', 'flex-col');
+                mount.classList.add('space-y-3');
+              }
+            });
+
+            this.activeCard = null;
+            this.applyFilters();
+
+            if (hash) {
+              setTimeout(() => {
+                const cards = document.querySelectorAll('[data-card="inspection"]');
+                for (let i = 0; i < cards.length; i++) {
+                  const card = cards[i];
+                  const cardId = this.generateCardId(card);
+                  if (cardId === hash) {
+                    if (isDesktop) {
+                      this.openDetails(card);
+                    } else {
+                      openMobileCardDetails(card);
+                    }
+                    break;
+                  }
+                }
+              }, 100);
+            }
+          }
+
+          lastWidth = currentWidth;
+        }, 250);
+      });
+      window.addEventListener("set-sort", (e) => {
+        const v = (e && e.detail && e.detail.value) || "date";
+        this.currentSort = v;
+        localStorage.setItem("inspections-sort", v);
+        this.sortCards();
+        this.syncDesktopSortUI(v);
+      });
+
+      window.addEventListener("inspections-cards-changed", () => {
+        this.refreshCards();
+        this.applyFilters();
+      });
+
+
+
+      if (!this.initializedDelegates) {
+        document.addEventListener("click", (e) => {
+          const readMoreBtn = e.target.closest(
+            'button[aria-label="Read more about this inspection"]',
+          );
+          if (readMoreBtn) {
+            e.preventDefault();
+            const card = readMoreBtn.closest('[data-card="inspection"]');
+            if (card) {
+              this.lastReadMoreButton = readMoreBtn;
+              this.openDetails(card);
+            }
+            return;
+          }
+          const backBtn = e.target.closest(
+            '[data-action="back-to-results"]',
+          );
+          if (backBtn) {
+            e.preventDefault();
+            this.backToResults();
+            return;
+          }
+        });
+        this.initializedDelegates = true;
+      }
+    },
+
+        initMapMarkers() {
+          window.addEventListener("inspections-markers-ready", (event) => {
+            const markers = event.detail?.markers || [];
+            window.dispatchEvent(
+              new CustomEvent("update-map-markers", { detail: { markers } }),
+            );
+          });
+        },
+initSortListeners() {
+  const dateSel = document.getElementById("date-sort");
+  const riskSel = document.getElementById("risk-sort");
+  const nameSel = document.getElementById("name-sort");
+
+  const resetSelect = (sel) => {
+    if (!sel) return;
+    sel.selectedIndex = 0;
+    sel.value = '';
+  };
+
+  const applySortValue = (v, keep) => {
+    if (!v) return;
+    if (keep !== "date") resetSelect(dateSel);
+    if (keep !== "risk") resetSelect(riskSel);
+    if (keep !== "name") resetSelect(nameSel);
+    this.currentSort = v;
+    localStorage.setItem("inspections-sort", v);
+    this.sortCards();
+    window.dispatchEvent(new CustomEvent("set-sort", { detail: { value: v } }));
+  };
+
+  if (dateSel) {
+    dateSel.addEventListener("change", (e) => {
+      applySortValue(e.target.value, "date");
+    });
+  }
+
+  if (riskSel) {
+    riskSel.addEventListener("change", (e) => {
+      applySortValue(e.target.value, "risk");
+    });
+  }
+
+  if (nameSel) {
+    nameSel.addEventListener("change", (e) => {
+      applySortValue(e.target.value, "name");
+    });
+  }
+
+  const sortRadios = document.querySelectorAll('input[name="sort"]');
+  const savedSort =
+    localStorage.getItem("inspections-sort") || this.currentSort || "date-desc";
+
+  sortRadios.forEach((r) => {
+    const v = r.value;
+    r.checked =
+      v === savedSort ||
+      (savedSort === "date-desc" && v === "date") ||
+      (savedSort === "alpha-asc" && v === "alphabetical") ||
+      (savedSort === "risk-desc" && v === "high-risk");
+  });
+
+  this.currentSort = savedSort;
+  this.syncDesktopSortUI(savedSort);
+
+  sortRadios.forEach((radio) => {
+    radio.addEventListener("change", (e) => {
+      if (!e.target.checked) return;
+
+      const mapped =
+        e.target.value === "date"
+          ? "date-desc"
+          : e.target.value === "alphabetical"
+            ? "alpha-asc"
+            : e.target.value === "high-risk"
+              ? "risk-desc"
+              : e.target.value;
+
+      applySortValue(mapped);
+    });
+  });
+},
+
+  syncDesktopSortUI(value) {
+
+      const sortRadios = document.querySelectorAll('input[name="sort"]');
+      sortRadios.forEach((r) => {
+        r.checked =
+          r.value === value ||
+          (value === "date-desc" && r.value === "date") ||
+          (value === "alpha-asc" && r.value === "alphabetical") ||
+          (value === "risk-desc" && r.value === "high-risk");
+      });
+
+      const dateSel = document.getElementById("date-sort");
+      const riskSel = document.getElementById("risk-sort");
+      const nameSel = document.getElementById("name-sort");
+
+      const resetSel = (sel) => { if (sel) { sel.selectedIndex = 0; sel.value = ''; } };
+
+      resetSel(dateSel);
+      resetSel(riskSel);
+      resetSel(nameSel);
+
+      if (value === "date-desc" || value === "date-asc") {
+        if (dateSel) dateSel.value = value;
+      } else if (value === "risk-desc" || value === "risk-asc") {
+        if (riskSel) riskSel.value = value;
+      } else if (value === "alpha-asc" || value === "alpha-desc") {
+        if (nameSel) nameSel.value = value;
+      }
+    },
+
+
+        initFilterListeners() {
+          const cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.addEventListener("change", (e) => {
+              this.currentCity = e.target.value;
+              this.applyFilters();
+            });
+          }
+
+          const clearButtons = document.querySelectorAll('[class*="Clear"]');
+          clearButtons.forEach((btn) => {
+            if (btn.textContent.trim().toLowerCase().includes("clear")) {
+              btn.addEventListener("click", () => {
+                this.clearFilters();
+              });
+            }
+          });
+        },
+
+        initCityTypeahead() {
+          const cityFilter = document.getElementById("city-filter");
+          if (!cityFilter) return;
+
+          let typeaheadBuffer = "";
+          let typeaheadTimeout = null;
+
+          cityFilter.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+              typeaheadBuffer = "";
+              return;
+            }
+            if (e.key.length > 1 && e.key !== "Backspace") return;
+
+            if (e.key === "Backspace") {
+              typeaheadBuffer = typeaheadBuffer.slice(0, -1);
+            } else if (e.key.length === 1) {
+              typeaheadBuffer += e.key.toLowerCase();
+            }
+
+            clearTimeout(typeaheadTimeout);
+            typeaheadTimeout = setTimeout(() => {
+              typeaheadBuffer = "";
+            }, 1000);
+
+            if (typeaheadBuffer) {
+              const options = Array.from(cityFilter.options);
+              const match = options.find((opt) =>
+                opt.text.toLowerCase().startsWith(typeaheadBuffer),
+              );
+              if (match) {
+                cityFilter.value = match.value;
+                cityFilter.dispatchEvent(new Event("input", { bubbles: true }));
+              }
+            }
+          });
+
+          cityFilter.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              cityFilter.dispatchEvent(new Event("change", { bubbles: true }));
+              typeaheadBuffer = "";
+            }
+          });
+        },
+
+        clearFilters() {
+          const cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.value = "";
+            this.currentCity = "";
+          }
+          const cuisineFilter = document.getElementById("cuisine-filter");
+          if (cuisineFilter) {
+            cuisineFilter.value = "";
+          }
+          this.applyFilters();
+        },
+
+        refreshCards() {
+          this.cards = Array.from(
+            document.querySelectorAll('[data-card="inspection"]'),
+          );
+          this.cards.forEach((card) => {
+            if (!card.querySelector(".list-content")) {
+              const wrap = document.createElement("div");
+              wrap.className = "list-content";
+              while (card.firstChild) wrap.appendChild(card.firstChild);
+              card.appendChild(wrap);
+            }
+          });
+          const norm = (s) =>
+            (s || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, "")
+              .replace(/\s+/g, " ")
+              .trim();
+          this.cards.forEach((card) => {
+            this.index.set(card, norm(card.dataset.index || card.textContent));
+            const city = card.dataset.city || "";
+            this.cityMap.set(card, city);
+          });
+          if (this.dataLoaded) {
+            this.sortCards();
+            this.applyFilters();
+          }
+        },
+
+
+
+        sortCards() {
+          if (this.cards.length === 0) return;
+          const groups = new Map();
+          this.cards.forEach((card) => {
+            const parent = card.parentElement;
+            if (!parent) return;
+            if (!groups.has(parent)) groups.set(parent, []);
+            groups.get(parent).push(card);
+          });
+
+          groups.forEach((cards, container) => {
+            const sorted = [...cards];
+            switch (this.currentSort) {
+              case "date":
+              case "date-desc":
+                sorted.sort((a, b) => this.getInspectionDate(b) - this.getInspectionDate(a));
+                break;
+
+              case "date-asc":
+                sorted.sort((a, b) => this.getInspectionDate(a) - this.getInspectionDate(b));
+                break;
+
+              case "alphabetical":
+              case "alpha-asc":
+                sorted.sort((a, b) => {
+                  const nameA = this.getFacilityName(a).toLowerCase();
+                  const nameB = this.getFacilityName(b).toLowerCase();
+                  return nameA.localeCompare(nameB);
+                });
+                break;
+
+              case "alpha-desc":
+                sorted.sort((a, b) => {
+                  const nameA = this.getFacilityName(a).toLowerCase();
+                  const nameB = this.getFacilityName(b).toLowerCase();
+                  return nameB.localeCompare(nameA);
+                });
+                break;
+
+              case "high-risk":
+              case "risk-desc":
+                sorted.sort((a, b) => this.getCardRiskScore(b) - this.getCardRiskScore(a));
+                break;
+              case "risk-asc":
+                sorted.sort((a, b) => this.getCardRiskScore(a) - this.getCardRiskScore(b));
+                break;
+            }
+            sorted.forEach((card) => container.appendChild(card));
+          });
+        },
+
+        parseInspDate(str) {
+          if (!str) return new Date(0);
+          var s = String(str)
+            .replace(/Jan\./g, 'January')
+            .replace(/Feb\./g, 'February')
+            .replace(/Aug\./g, 'August')
+            .replace(/Sept\./g, 'September')
+            .replace(/Oct\./g, 'October')
+            .replace(/Nov\./g, 'November')
+            .replace(/Dec\./g, 'December');
+          var d = new Date(s);
+          return isNaN(d.getTime()) ? new Date(0) : d;
+        },
+
+        getInspectionDate(card) {
+          const attr = card.getAttribute("data-date");
+          if (attr) return this.parseInspDate(attr);
+          const spans = card.querySelectorAll(".list-content span");
+          for (const span of spans) {
+            const text = span.textContent || "";
+            if (text.includes("Last inspection:")) {
+              const m = text.match(/Last inspection:\s*(.+)/i);
+              if (m && m[1]) return this.parseInspDate(m[1].trim());
+            }
+          }
+          return new Date(0);
+        },
+        getFacilityName(card) {
+          const h2 = card.querySelector("h2");
+          return h2 ? h2.textContent.trim() : "";
+        },
+
+        getCardRiskScore(card) {
+          const riskLevel = card.getAttribute("data-risk-level") || "";
+          if (!riskLevel) return 0;
+          let score = 0;
+          riskLevel.split(/[\|,]/).forEach(part => {
+            const r = part.trim().toLowerCase();
+            if (r === 'high risk') score += 25;
+            else if (r === 'moderate risk') score += 10;
+            else if (r === 'low risk') score += 3;
+          });
+          return score;
+        },
+
+        norm(s) {
+          return (s || "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+        },
+
+        levenshtein(a, b) {
+          if (!a && !b) return 0;
+          if (!a) return b.length;
+          if (!b) return a.length;
+          const m = a.length, n = b.length;
+          const dp = new Array(n + 1);
+          for (let j = 0; j <= n; j++) dp[j] = j;
+          for (let i = 1; i <= m; i++) {
+            let prev = dp[0];
+            dp[0] = i;
+            for (let j = 1; j <= n; j++) {
+              const tmp = dp[j];
+              const cost = a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1;
+              dp[j] = Math.min(dp[j] + 1, dp[j - 1] + 1, prev + cost);
+              prev = tmp;
+            }
+          }
+          return dp[n];
+        },
+
+        syncHidden(card) {
+          const hide =
+            card.classList.contains("hidden-by-search") ||
+            card.classList.contains("hidden-by-city") ||
+            card.classList.contains("hidden-by-detail");
+          card.classList.toggle("hidden", hide);
+        },
+
+        escapeHTML(s) {
+          return String(s).replace(
+            /[&<>"']/g,
+            (m) =>
+              ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              })[m],
+          );
+        },
+
+        jsString(s) {
+          return JSON.stringify(String(s ?? ""));
+        },
+
+
+        jsStringAttr(s) {
+          return JSON.stringify(String(s ?? "")).replace(/"/g, "&quot;");
+        },
+
+        doSearch(val) {
+          if (typeof val === "string") this.q = val;
+          this.applyFilters();
+        },
+
+        applySearch() {
+          this.applyFilters();
+        },
+
+        applyFilters() {
+          if (!this.dataLoaded || this.cards.length === 0) {
+            const noResultsEl = document.getElementById("no-results");
+            if (noResultsEl) noResultsEl.classList.add("hidden");
+            return;
+          }
+          const needle = this.norm(this.q);
+          let visible = 0;
+
+          this.cards.forEach((card) => {
+            const tokens = needle ? needle.split(/\s+/).filter(Boolean) : [];
+            const cardIndex = this.index.get(card) || '';
+            const searchHit = tokens.length === 0 || tokens.every(t => cardIndex.includes(t));
+            card.classList.toggle("hidden-by-search", !searchHit);
+
+            let cityHit = true;
+            if (this.currentCity) {
+              const cardCity = this.cityMap.get(card) || "";
+              const nCity = this.norm(this.currentCity);
+              const nCardCity = this.norm(cardCity);
+
+              if (nCity === nCardCity) {
+                cityHit = true;
+              } else {
+                if (nCity.charAt(0) !== nCardCity.charAt(0)) {
+                  cityHit = false;
+                } else if (Math.abs(nCity.length - nCardCity.length) > 4) {
+                  cityHit = false;
+                } else {
+                  const dist = this.levenshtein(nCity, nCardCity);
+                  cityHit = dist <= 3;
+                }
+              }
+            }
+            card.classList.toggle("hidden-by-city", !cityHit);
+
+            this.syncHidden(card);
+            if (!card.classList.contains("hidden")) visible++;
+          });
+
+          const noResultsEl = document.getElementById("no-results");
+          if (noResultsEl)
+            noResultsEl.classList.toggle("hidden", visible !== 0);
+},
+
+        generateCardId(card) {
+          const title = (card.querySelector("h2")?.textContent || "").trim();
+          return title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+        },
+
+        checkHashAndOpenCard() {
+          if (window.innerWidth < 768) return;
+          const hash = window.location.hash.slice(1);
+          if (!hash) return;
+
+          const card = this.cards.find(c => this.generateCardId(c) === hash);
+          if (card) {
+            setTimeout(() => this.openDetails(card), 200);
+          }
+        },
+
+openDetails(card) {
+    this.refreshCards();
+    document
+      .querySelectorAll(".pagination-controls")
+      .forEach((el) => el.classList.add("hidden"));
+
+    document.getElementById("search-results-banner")?.classList.add("hidden");
+
+    const lat = parseFloat(card.getAttribute("data-lat"));
+    const lon = parseFloat(card.getAttribute("data-lon"));
+
+    if (!isNaN(lat) && !isNaN(lon)) {
+      window.dispatchEvent(
+        new CustomEvent("map:zoomToMarker", {
+          detail: { lat, lon }
+        })
+      );
+    }
+
+    const prevTop = card.getBoundingClientRect().top;
+
+  this.cards.forEach((c) => {
+    if (c !== card) c.classList.add("hidden-by-detail");
+    else c.classList.remove("hidden-by-detail");
+    this.syncHidden(c);
+  });
+
+  const body = card;
+  const listContent = body.querySelector(".list-content");
+  let detail = body.querySelector(".detail-content");
+  if (!detail) {
+    detail = document.createElement("div");
+    detail.className = "detail-content";
+    body.appendChild(detail);
+  }
+
+  const title = (card.querySelector("h2")?.textContent || "").trim();
+  const infoLines = Array.from(
+    card.querySelectorAll(".list-content span"),
+  ).map((n) => n.textContent.trim());
+  const location =
+    infoLines.find((t) => !/Last inspection:/i.test(t)) || "";
+  const allInspectionsJSON = card.getAttribute("data-all-inspections");
+    const allInspections = allInspectionsJSON ? JSON.parse(allInspectionsJSON) : [];
+
+  const latestViolations = this.readViolations(card);
+  const latestItems =
+    latestViolations.map((v) => this.renderViolationItem(v)).join("") ||
+    `
+        <li class="space-y-2">
+          <div class="flex items-start pt-3 gap-2">
+            <svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;" aria-hidden="true">
+                {{ partial "helper/svg.html" "circle-check" }}
+            </svg>
+            <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
+              No violations reported.
+            </h4>
+          </div>
+        </li>`;
+
+const olderInspectionsHTML = allInspections.length > 1 ? (() => {
+    const byDate = {};
+    allInspections.slice(1).forEach(inspection => {
+      const date = inspection.inspection_date || '';
+      if (!byDate[date]) byDate[date] = [];
+      byDate[date].push(inspection);
+    });
+
+    const dates = Object.keys(byDate).sort((a, b) => this.parseInspDate(b) - this.parseInspDate(a));
+
+    return `
+    <div class="mt-8 pt-8 border-t-2 border-g-3">
+      <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${dates.length})</h3>
+      <div class="space-y-4">
+        ${dates.map((date, idx) => {
+          const inspections = byDate[date];
+
+          const allDescriptions = [];
+          const allComments = [];
+
+          inspections.forEach(insp => {
+            const desc = (insp.violation_description || "").trim();
+            const comm = (insp.comment || "").trim();
+            if (desc) {
+              desc.split(' | ').forEach(d => {
+                if (d.trim()) allDescriptions.push(d.trim());
+              });
+              comm.split(' | ').forEach(c => {
+                allComments.push(c.trim());
+              });
+            }
+          });
+
+          const hasViolation = allDescriptions.length > 0;
+          const violationCount = allDescriptions.length;
+
+if (!hasViolation) {
+            return `
+              <div class="bg-white border-2 border-g-3 rounded-lg p-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
+                      {{ partial "helper/svg.html" "calendar-day" }}
+                    </svg>
+                    <span class="font-sans text-base font-bold text-g-9 whitespace-nowrap">${this.escapeHTML(date)}</span>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                    <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                      {{ partial "helper/svg.html" "circle-check" }}
+                    </svg>
+                    No violations
+                  </span>
+                </div>
+              </div>
+            `;
+          }
+
+          return `
+            <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
+              <summary class="relative flex items-start p-4 pr-10 cursor-pointer hover:bg-g-1 transition-colors">
+                <div class="flex flex-1 flex-wrap items-center justify-between gap-x-3 gap-y-2 min-w-0">
+                  <div class="flex items-center gap-2 min-w-0">
+                    <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
+                      {{ partial "helper/svg.html" "calendar-day" }}
+                    </svg>
+                    <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+                  </div>
+                  ${hasViolation ? `
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7">
+                      <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                        {{ partial "helper/svg.html" "triangle-exclamation" }}
+                      </svg>
+                      ${violationCount} violation${violationCount !== 1 ? 's' : ''}
+                    </span>
+                  ` : `
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                      <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                        {{ partial "helper/svg.html" "circle-check" }}
+                      </svg>
+                      No violations
+                    </span>
+                  `}
+                </div>
+                <svg class="absolute right-4 top-4 h-5 w-5 flex-shrink-0 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true">
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </summary>
+              ${hasViolation ? `
+                <div class="border-t border-g-3 p-4 bg-g-1">
+                  <ul class="space-y-4">
+                    ${allDescriptions.map((desc, i) => {
+                      const comment = allComments[i] || '';
+                      return `
+                        <li class="pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+                          <h4 class="font-sans text-base font-bold text-g-9 mb-2">${this.escapeHTML(desc)}</h4>
+                          ${comment ? `
+                            <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
+                              ${this.escapeHTML(comment)}
+                            </p>
+                          ` : ''}
+                        </li>
+                      `;
+                    }).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </details>
+          `;
+        }).join('')}
+      </div>
+    </div>
+    `;
+  })() : '';
+
+  detail.innerHTML = `
+  <div>
+    <button
+      type="button"
+      class="inline-flex items-center font-sans font-bold text-navy hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-g-4 rounded"
+      data-action="back-to-results"
+      aria-label="Back to results"
+    >
+      <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true">
+          {{ partial "helper/svg.html" "chevron-left" }}
+      </svg>
+      <span class="ml-1.5">Back</span>
+    </button>
+
+    <div class="flex items-start justify-between gap-6 py-4 pr-4 sm:pr-6">
+      <div class="min-w-0">
+        <h2 class="text-3xl font-bold text-black break-words">${this.escapeHTML(title)}</h2>
+        <div class="mt-2 space-y-1 text-g-6">
+          ${
+            location
+              ? `
+            <div class="flex items-center gap-1">
+              <svg class="h-4 w-4 flex-shrink-0 fill-g-7" aria-hidden="true">
+                {{ partial "helper/svg.html" "map-pin" }}
+              </svg>
+              <span>${this.escapeHTML(location)}</span>
+            </div>
+          `
+              : ""
+          }
+        </div>
+
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+        {{ if .Param "show-alerts-button" }}
+        <button
+          onclick="window.dispatchEvent(new CustomEvent('open-alerts-modal', { detail: { facilityName: ${this.jsStringAttr(title)}, facilityId: ${this.jsStringAttr(this.generateCardId(card))} } }))"
+          class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8 hover:bg-g-8">
+            <span>Get alerts</span>
+            <svg class="h-4 w-4 fill-current" aria-hidden="true">
+              {{ partial "helper/svg.html" "bell" }}
+            </svg>
+          </button>
+          {{ end }}
+        <div class="flex items-center gap-2">
+          <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(window.location.href)}'" class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share via Email">
+            <svg class="h-5 w-5 fill-white" aria-hidden="true">
+              {{ partial "helper/svg.html" "envelope" }}
+            </svg>
+          </button>
+          <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share on Facebook">
+            <svg class="h-5 w-5 fill-white" aria-hidden="true">
+              {{ partial "helper/svg.html" "fb" }}
+            </svg>
+          </button>
+          <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(${this.jsStringAttr(title)}), '_blank')" class="rounded-full p-2 bg-g-9 text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Share on X">
+            <svg class="h-5 w-5 fill-white" aria-hidden="true">
+              {{ partial "helper/svg.html" "twitter" }}
+            </svg>
+          </button>
+          <button onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))" class="rounded-full p-2 bg-orange text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8" aria-label="Copy link">
+            <svg class="h-5 w-5 fill-white" aria-hidden="true">
+              {{ partial "helper/svg.html" "share" }}
+            </svg>
+          </button>
+        </div>
+
+        <p class="mt-2 w-full text-sm font-sans text-g-6">
+          {{ if .Param "show-alerts-button" }}Receive an email or text message when new reports are available for this facility.{{ end }}
+
+
+        </p>
+      </div>
+            </div>
+          </div>
+
+<section aria-labelledby="violations-title" class="space-y-3">
+            <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
+            ${latestViolations.length > 0 ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true">{{ partial "helper/svg.html" "robot" }}</svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ''}
+            <ul class="space-y-3">${latestItems}</ul>
+            ${latestViolations.length > 0 ? `<p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details. Visit our FAQ to learn more.</p>` : ''}
+          </section>
+
+          ${olderInspectionsHTML}
+
+          <div class="pt-5">
+            <a href="https://www.pafoodsafety.pa.gov/web/inspection/publicinspectionsearch.aspx"
+              class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+              <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true">
+                {{ partial "helper/svg.html" "link" }}
+              </svg>
+              <span>Read the full report</span>
+            </a>
+          </div>
+        </div>`;
+
+  if (!listContent) {
+    const wrap = document.createElement("div");
+    wrap.className = "list-content hidden";
+    while (card.firstChild && card.firstChild !== detail) {
+      wrap.appendChild(card.firstChild);
+    }
+    card.insertBefore(wrap, detail);
+  } else {
+    listContent.classList.add("hidden");
+  }
+
+const mount = card.closest(".inspections-mount");
+if (mount) {
+  mount.classList.add("h-full", "flex", "flex-col");
+  mount.classList.remove("space-y-3");
+}
+
+card.classList.add("h-full", "flex", "flex-col", "flex-1");
+detail.classList.add("flex", "flex-col", "flex-1");
+
+
+  detail
+    .querySelector('[data-action="back-to-results"]')
+    ?.focus({ preventScroll: true });
+
+  var container = mount ? mount.closest('.border-r') : null;
+  if (!container) container = mount ? mount.parentElement : null;
+  if (container) {
+    var top = container.getBoundingClientRect().top + window.pageYOffset - 73;
+    window.scrollTo({ top: top, behavior: 'instant' });
+  }
+
+this.activeCard = card;
+  window.location.hash = this.generateCardId(card);
+  document.getElementById("no-results")?.classList.add("hidden");
+},
+backToResults() {
+  window.dispatchEvent(new CustomEvent("map:restoreView"));
+
+  document
+    .querySelectorAll(".pagination-controls")
+    .forEach((el) => el.classList.remove("hidden"));
+
+  const si = document.getElementById("search-input");
+  if (si && si.value.trim()) {
+    document.getElementById("search-results-banner")?.classList.remove("hidden");
+  }
+
+      if (!this.activeCard) return;
+      const card = this.activeCard;
+
+      const prevTop = card.getBoundingClientRect().top;
+
+      card.querySelector(".detail-content")?.remove();
+      card.querySelector(".list-content")?.classList.remove("hidden");
+      this.cards.forEach((c) => {
+        c.classList.remove("hidden-by-detail");
+        this.syncHidden(c);
+      });
+      this.applyFilters();
+
+      const mount = card.closest(".inspections-mount");
+if (mount) {
+  mount.classList.remove("h-full", "flex", "flex-col");
+  mount.classList.add("space-y-3");
+}
+card.classList.remove("h-full", "flex", "flex-col", "flex-1");
+
+this.lastReadMoreButton?.focus({ preventScroll: true });
+
+      this.activeCard = null;
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+
+      var container = mount ? mount.closest('.border-r') : null;
+      if (!container) container = mount ? mount.parentElement : null;
+      if (container) {
+        var top = container.getBoundingClientRect().top + window.pageYOffset - 73;
+        window.scrollTo({ top: top, behavior: 'instant' });
+      }
+    },
+renderOlderInspection(inspection, idx) {
+        const hasViolation = (inspection.violation_description || "").trim();
+        const descriptions = hasViolation ? inspection.violation_description.split(' | ').map(s => s.trim()).filter(Boolean) : [];
+        const comments = inspection.comment ? inspection.comment.split(' | ').map(s => s.trim()) : [];
+        const violationCount = descriptions.length;
+
+        return `
+          <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
+            <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-g-1 transition-colors">
+              <div class="flex items-center gap-3 min-w-0 flex-1">
+                <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
+                  {{ partial "helper/svg.html" "calendar-day" }}
+                </svg>
+                <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(inspection.inspection_date || '')}</span>
+              </div>
+              <div class="flex items-center gap-3 flex-shrink-0">
+                ${hasViolation ? `
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7">
+                    <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                      {{ partial "helper/svg.html" "triangle-exclamation" }}
+                    </svg>
+                    ${violationCount} violation${violationCount !== 1 ? 's' : ''}
+                  </span>
+                ` : `
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                    <svg class="h-4 w-4 fill-current" aria-hidden="true">
+                      {{ partial "helper/svg.html" "circle-check" }}
+                    </svg>
+                    No violations
+                  </span>
+                `}
+                <svg class="h-5 w-5 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true">
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </div>
+            </summary>
+            ${hasViolation ? `
+              <div class="border-t border-g-3 p-4 bg-g-1">
+                <ul class="space-y-4">
+                  ${descriptions.map((desc, i) => {
+                    const comment = comments[i] || '';
+                    return `
+                      <li class="pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+                        <h4 class="font-sans text-base font-bold text-g-9 mb-2">${this.escapeHTML(desc)}</h4>
+                        ${comment ? `
+                          <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
+                            ${this.escapeHTML(comment)}
+                          </p>
+                        ` : ''}
+                      </li>
+                    `;
+                  }).join('')}
+                </ul>
+              </div>
+            ` : ''}
+          </details>
+        `;
+      },
+
+      renderViolationItem(v) {
+        const title = (v.title || "").trim();
+        const aiSummary = (v.aiSummary || "").trim();
+        const comment = v.comment || "";
+        const displayComment = aiSummary || comment;
+        const riskLevel = (v.riskLevel || "").toLowerCase();
+
+        let color = '#D70000';
+        if (riskLevel.includes('low risk')) {
+          color = '#009EDB';
+        } else if (riskLevel.includes('moderate risk')) {
+          color = '#FFCB03';
+        }
+
+        return `
+          <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+            <div class="flex items-start pt-2 gap-2">
+              <svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0" style="color: ${color};" aria-hidden="true">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <h4 class="font-sans text-lg font-bold text-black break-words">
+                ${this.escapeHTML(title)}
+              </h4>
+            </div>
+            ${
+              displayComment
+                ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
+                    ${this.escapeHTML(displayComment)}
+                  </p>`
+                : ""
+            }
+          </li>`;
+      },
+
+readViolations(card) {
+  const violationDesc = (card.getAttribute("data-violation-description") || "").trim();
+  const spotlightPa = (card.getAttribute("data-spotlight-pa") || "").trim();
+  const violationComment = (card.getAttribute("data-violation-comment") || "").trim();
+  const aiSummary = (card.getAttribute("data-ai-summary") || "").trim();
+  const riskLevel = (card.getAttribute("data-risk-level") || "").trim();
+
+  if (!violationDesc && !spotlightPa && !violationComment) {
+    return [];
+  }
+
+  const descriptions = violationDesc.split(' | ').map(s => s.trim()).filter(Boolean);
+  const spotlights = spotlightPa.split(' | ').map(s => s.trim());
+  const comments = violationComment.split(' | ').map(s => s.trim());
+  const aiSummaries = aiSummary.split(' | ').map(s => s.trim());
+  const riskLevels = riskLevel.split(' | ').map(s => s.trim());
+
+  const violations = [];
+  for (let i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
+    let title = '';
+
+    if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
+      title = spotlights[i];
+    } else if (descriptions[i]) {
+      title = descriptions[i];
+    } else {
+      title = 'Violation reported';
+    }
+
+    violations.push({
+      title: title,
+      comment: comments[i] || '',
+      aiSummary: aiSummaries[i] || '',
+      riskLevel: riskLevels[i] || '',
+      originalIndex: i
+    });
+  }
+
+  violations.sort((a, b) => {
+    const getRiskPriority = (risk) => {
+      const riskLower = (risk || '').toLowerCase();
+      if (riskLower.includes('high risk')) return 1;
+      if (riskLower.includes('moderate risk')) return 2;
+      if (riskLower.includes('low risk')) return 3;
+      return 4;
+    };
+
+    const aPriority = getRiskPriority(a.riskLevel);
+    const bPriority = getRiskPriority(b.riskLevel);
+
+    if (aPriority !== bPriority) {
+      return aPriority - bPriority;
+    }
+
+    return a.originalIndex - b.originalIndex;
+  });
+
+  return violations;
+},
+
+
+        parseViolationsCSV(csvText) {
+          const rows = [];
+          let i = 0,
+            s = csvText;
+          const nextField = () => {
+            if (s[i] === '"') {
+              i++;
+              let out = "";
+              while (i < s.length) {
+                if (s[i] === '"' && s[i + 1] === '"') {
+                  out += '"';
+                  i += 2;
+                  continue;
+                }
+                if (
+                  s[i] === '"' &&
+                  (s[i + 1] === "," || s[i + 1] === "\n" || i + 1 === s.length)
+                ) {
+                  i++;
+                  return out;
+                }
+                out += s[i++];
+              }
+              return out;
+            } else {
+              const start = i;
+              while (i < s.length && s[i] !== "," && s[i] !== "\n") i++;
+              return s.slice(start, i);
+            }
+          };
+          const consume = (ch) => {
+            if (s[i] === ch) i++;
+          };
+          const peek = s.slice(0, 48).toLowerCase();
+          const hasHeader = peek.includes("level") && peek.includes("title");
+          if (hasHeader) {
+            while (i < s.length && s[i] !== "\n") i++;
+            if (s[i] === "\n") i++;
+          }
+          while (i < s.length) {
+            const level = nextField();
+            consume(",");
+            const title = nextField();
+            consume(",");
+            const comment = nextField();
+            while (i < s.length && s[i] !== "\n") i++;
+            if (s[i] === "\n") i++;
+            if (title || comment) rows.push({ level, title, comment });
+          }
+          return rows;
+        },
+      };
+    }
+
+  </script>
+{{ end }}

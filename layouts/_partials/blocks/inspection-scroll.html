@@ -1,0 +1,1809 @@
+<div class="bg-black font-serif">
+  <div class="overflow-hidden rounded-t-[40px] bg-g-3 md:rounded-none">
+    <div
+      class="w-full rounded-t-[40px] bg-white px-4 pb-4 pt-6 shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)] md:hidden md:rounded-none"
+    >
+      {{ partial "blocks/search.html" (dict
+        "placeholder" (default "Search" (.Param "search-placeholder"))
+        "showLocation" (.Param "search-location")
+        "context" .
+        )
+      }}
+
+
+      <div class="mt-4 grid grid-cols-2 gap-2" x-data="{ filtersOpen: false }">
+        <button
+          type="button"
+          @click="filtersOpen = true"
+          class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-g-4 bg-g-2 px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-g-4"
+        >
+          <svg
+            class="h-3.5 w-3.5 fill-current max-[325px]:hidden"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "filter" }}
+          </svg>
+          Filter &amp; Sort
+        </button>
+        <button
+          type="button"
+          @click="window.dispatchEvent(new CustomEvent('open-city-alerts-modal'))"
+          class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-blue bg-blue-1 px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-blue transition-all hover:bg-blue hover:text-white"
+        >
+          <svg
+            class="h-3.5 w-3.5 fill-current max-[325px]:hidden"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "bell" }}
+          </svg>
+          City Alerts
+        </button>
+
+        <div
+          x-show="filtersOpen"
+          x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="transition ease-in duration-150"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+          class="fixed inset-0 z-40 bg-black/50"
+          @click="filtersOpen = false"
+          style="display:none;"
+        ></div>
+        <div
+          x-show="filtersOpen"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="translate-y-full"
+          x-transition:enter-end="translate-y-0"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="translate-y-0"
+          x-transition:leave-end="translate-y-full"
+          class="fixed bottom-0 left-0 right-0 z-50 rounded-t-2xl bg-white px-4 pb-8 pt-4 shadow-2xl"
+          style="display:none;"
+        >
+          <div class="mb-4 flex items-center justify-between">
+            <h3
+              class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+            >
+              Filter &amp; Sort
+            </h3>
+            <button
+              @click="filtersOpen = false"
+              class="text-g-5 hover:text-g-9"
+            >
+              <svg class="h-5 w-5 fill-current" aria-hidden="true">
+                {{ partial "helper/svg.html" "times" }}
+              </svg>
+            </button>
+          </div>
+
+          <div class="space-y-3">
+            <div
+              class="relative w-full md:w-1/2"
+              x-data="{
+              open: false,
+              selectedText: '',
+              query: '',
+              optionsAll: [],
+              optionsTop: [],
+              optionsShown: [],
+              label() { return 'Filter: ' + (this.selectedText || 'All Cities'); },
+              normalize(s) {
+                return String(s || '')
+                  .toLowerCase()
+                  .replace(/[^a-z0-9\s]/g, '')
+                  .replace(/\s+/g, ' ')
+                  .trim();
+              },
+              dist(a, b) {
+                a = this.normalize(a); b = this.normalize(b);
+                if (!a && !b) return 0;
+                if (!a) return b.length;
+                if (!b) return a.length;
+                var m = a.length, n = b.length;
+                var dp = new Array(n + 1);
+                for (var j = 0; j <= n; j++) dp[j] = j;
+                for (var i = 1; i <= m; i++) {
+                  var prev = dp[0];
+                  dp[0] = i;
+                  for (var j2 = 1; j2 <= n; j2++) {
+                    var tmp = dp[j2];
+                    var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
+                    dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + cost);
+                    prev = tmp;
+                  }
+                }
+                return dp[n];
+              },
+              syncShown() {
+                var q = this.normalize(this.query);
+                if (!q) {
+                  this.optionsShown = this.optionsTop.slice(0, 20);
+                  return;
+                }
+                var hits = [];
+                var exactMatches = [];
+                var partialMatches = [];
+                
+                for (var i = 0; i < this.optionsAll.length; i++) {
+                  var opt = this.optionsAll[i];
+                  var normalized = this.normalize(opt.text);
+                  
+                  if (normalized === q) {
+                    exactMatches.push(opt);
+                  } else if (normalized.includes(q)) {
+                    partialMatches.push(opt);
+                  }
+                }
+                
+                hits = exactMatches.concat(partialMatches);
+                
+                if (hits.length === 0) {
+                  for (var k = 0; k < this.optionsAll.length; k++) {
+                    var opt2 = this.optionsAll[k];
+                    var a = this.normalize(opt2.text);
+                    if (!a) continue;
+                    if (a.charAt(0) !== q.charAt(0)) continue;
+                    if (Math.abs(a.length - q.length) > 4) continue;
+                    if (this.dist(a, q) <= 3) {
+                      hits.push(opt2);
+                    }
+                  }
+                }
+                
+                this.optionsShown = hits.slice(0, 20);
+              },
+              init() {
+                const sel = document.getElementById('city-filter');
+
+                const baseOptions = Array.from(sel?.options || []).map(o => ({ value: o.value, text: o.text }));
+                this.optionsAll = baseOptions;
+                this.optionsTop = baseOptions.slice(0, 20);
+                if (sel) this.selectedText = sel.options[sel.selectedIndex]?.text || '';
+
+                this.syncShown();
+
+                window.addEventListener('inspections-cities-ready', (e) => {
+                  const list = (e.detail && e.detail.cities) ? e.detail.cities : [];
+                  this.optionsAll = list.map(x => ({ value: x.value, text: x.text }));
+                  this.optionsTop = this.optionsAll.slice(0, 20);
+                  this.query = '';
+                  this.syncShown();
+                });
+
+                window.addEventListener('inspections-search', (e) => {
+                  const city = e.detail?.city || '';
+                  if (!city) {
+                    this.selectedText = sel?.options?.[0]?.text || '';
+                    return;
+                  }
+                  const match = this.optionsAll.find(o =>
+                    this.normalize(o.value) === this.normalize(city) ||
+                    this.normalize(o.text) === this.normalize(city)
+                  );
+                  this.selectedText = match ? match.text : city;
+                });
+
+                sel?.addEventListener('change', () => {
+                  this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : (sel.options?.[0]?.text || '');
+                });
+              },
+            choose(value, text) {
+            const sel = document.getElementById('city-filter');
+            const v = (value || '').trim();
+            const t = (text || value || '').trim();
+
+            if (sel) {
+              const exists = Array.from(sel.options || []).some(o =>
+                String(o.value || '').toLowerCase() === String(v).toLowerCase()
+              );
+
+              if (!exists && v) {
+                const opt = document.createElement('option');
+                opt.value = v;
+                opt.text = t || v;
+                sel.appendChild(opt);
+              }
+
+              sel.value = v;
+              sel.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+
+            this.selectedText = t || (sel?.options?.[0]?.text || '');
+            this.open = false;
+            this.query = '';
+            this.syncShown();
+          }
+
+            }"
+            >
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                aria-haspopup="menu"
+                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <span x-text="label()"></span>
+                <svg class="ml-auto h-4 w-4 fill-g-2">
+                  {{ partial "helper/svg.html" "filter" }}
+                </svg>
+              </button>
+
+              <div
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute bottom-full left-0 z-20 mb-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
+                role="menu"
+              >
+                <div class="border-b border-g-2 p-3">
+                  <div class="font-sans text-xs font-semibold text-g-6">
+                    Type to search all cities (Top 20)
+                  </div>
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
+                    placeholder="Search"
+                    x-model="query"
+                    @input="syncShown()"
+                  />
+                </div>
+
+                <div class="max-h-72 overflow-auto">
+                  <template
+                    x-for="opt in optionsShown"
+                    :key="opt.value + '::' + opt.text"
+                  >
+                    <button
+                      class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                      :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
+                      @click="choose(opt.value, opt.text)"
+                      role="menuitem"
+                      x-text="opt.text"
+                    ></button>
+                  </template>
+
+                  <div
+                    x-show="optionsShown.length === 0"
+                    class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
+                  >
+                    No matches. Try a different spelling.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative w-full md:w-1/2"
+              x-data="{
+            open: false,
+            selected: localStorage.getItem('inspections-sort') || 'date',
+            labelMap: { 'date': 'Date', 'high-risk': 'Risk', 'alphabetical': 'Name' },
+            get label(){ return 'Sort: ' + (this.labelMap[this.selected] || 'Date'); },
+            choose(v){
+              this.selected = v;
+              localStorage.setItem('inspections-sort', v);
+              window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: v }}));
+              this.open = false;
+            },
+            init() {
+              window.addEventListener('set-sort', (e) => {
+                const v = e.detail?.value;
+                if (v) this.selected = v;
+              });
+            }
+          }"
+            >
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <span class="truncate" x-text="label"></span>
+
+                <svg class="ml-auto h-4 w-4 fill-g-7">
+                  {{ partial "helper/svg.html" "chevron" }}
+                </svg>
+              </button>
+
+              <div
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute bottom-full right-0 z-20 mb-2 w-full rounded-md border border-g-3 bg-white shadow"
+              >
+                <button
+                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                  :class="selected==='date' ? 'font-semibold text-g-9' : 'text-black'"
+                  @click="choose('date')"
+                >
+                  Inspection Date - Newest to Oldest
+                </button>
+                <button
+                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                  :class="selected==='high-risk' ? 'font-semibold text-g-9' : 'text-black'"
+                  @click="choose('high-risk')"
+                >
+                  Violation Risk - Highest to Lowest
+                </button>
+
+                <button
+                  class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                  :class="selected==='alphabetical' ? 'font-semibold text-g-9' : 'text-black'"
+                  @click="choose('alphabetical')"
+                >
+                  Facility Name - A to Z
+                </button>
+              </div>
+              <button
+                @click="
+                const cityFilter = document.getElementById('city-filter');
+                if (cityFilter) {
+                  cityFilter.value = '';
+                  cityFilter.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+                window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: 'date' } }));
+                window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: document.getElementById('search-input')?.value || '', city: '' } }));
+                filtersOpen = false;
+              "
+                class="mt-4 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white"
+              >
+                Clear all
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-g-3">
+      {{ partial "inspections-data-loader.html" . }}
+
+<script>
+  (function () {
+    window.__inspectionsScriptLoaded = true;
+
+    function parseInspectionDate(str) {
+      if (!str) return new Date(0);
+      var s = String(str)
+        .replace(/Jan\./g, 'January')
+        .replace(/Feb\./g, 'February')
+        .replace(/Aug\./g, 'August')
+        .replace(/Sept\./g, 'September')
+        .replace(/Oct\./g, 'October')
+        .replace(/Nov\./g, 'November')
+        .replace(/Dec\./g, 'December');
+      var d = new Date(s);
+      return isNaN(d.getTime()) ? new Date(0) : d;
+    }
+   function getRiskScore(row) {
+      if (!row || !row.risk_level) return 0;
+      var score = 0;
+      var parts = row.risk_level.split(/[\|,]/).map(function(s) { return s.trim().toLowerCase(); });
+      parts.forEach(function(r) {
+        if (r === 'high risk') score += 25;
+        else if (r === 'moderate risk') score += 10;
+        else if (r === 'low risk') score += 3;
+      });
+      return score;
+    }
+
+    var ITEMS_PER_PAGE = 10;
+    var groupedFacilities = {};
+    var allData = [];
+    var filteredData = [];
+    var facilityIndex = [];
+    var facilityIndexMap = {};
+    var sortedFilteredData = [];
+    var currentPage = 1;
+    var currentSort = localStorage.getItem("inspections-sort") || "date-desc";
+    var totalPages = 1;
+    var rendering = false;
+    var initialRender = true;
+    var isSearching = false;
+    var hashHandled = false;
+
+    window.__inspectionsMarkers = window.__inspectionsMarkers || [];
+
+    window.addEventListener("inspections-data-ready", function (event) {
+
+          if (hashHandled) {
+            return;
+          }
+
+          hashHandled = true;
+
+      allData = event.detail && event.detail.data ? event.detail.data : [];
+      window.__inspectionsAllData = allData;
+        groupedFacilities = groupByFacility(allData);
+        filteredData = Object.keys(groupedFacilities);
+
+        facilityIndex = filteredData.map(function(id) {
+          var row = groupedFacilities[id][0];
+          return {
+            id: id,
+            searchText: normalizeString([row.facility || '', row.address || '', row.city || '', row.inspection_date || ''].join(' ')),
+            city: normalizeString(row.city || ''),
+            dateMs: parseInspectionDate(row.inspection_date).getTime(),
+            riskScore: getRiskScore(row),
+            nameKey: (row.facility || '').toLowerCase()
+          };
+        });
+        facilityIndexMap = {};
+        facilityIndex.forEach(function(e) { facilityIndexMap[e.id] = e; });
+
+        (function () {
+          function normalize(s) {
+            return String(s || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, "")
+              .replace(/\s+/g, " ")
+              .trim();
+          }
+
+          function dist(a, b) {
+            a = normalize(a); b = normalize(b);
+            if (!a && !b) return 0;
+            if (!a) return b.length;
+            if (!b) return a.length;
+            var m = a.length, n = b.length;
+            var dp = new Array(n + 1);
+            for (var j = 0; j <= n; j++) dp[j] = j;
+            for (var i = 1; i <= m; i++) {
+              var prev = dp[0];
+              dp[0] = i;
+              for (var j2 = 1; j2 <= n; j2++) {
+                var tmp = dp[j2];
+                var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
+                dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + cost);
+                prev = tmp;
+              }
+            }
+            return dp[n];
+          }
+
+          var counts = {};
+          var labelByKey = {};
+          var keys = [];
+
+          for (var i = 0; i < allData.length; i++) {
+            var raw = allData[i] && allData[i].city ? String(allData[i].city) : "";
+            var nrm = normalize(raw);
+            if (!nrm) continue;
+
+            var key = nrm;
+            if (!counts[key]) {
+              var found = null;
+              for (var k = 0; k < keys.length; k++) {
+                var existing = keys[k];
+                if (existing.charAt(0) !== key.charAt(0)) continue;
+                if (Math.abs(existing.length - key.length) > 4) continue;
+                if (dist(existing, key) <= 3) { found = existing; break; }
+              }
+              if (found) key = found;
+            }
+
+            if (!counts[key]) {
+              counts[key] = 0;
+              labelByKey[key] = raw;
+              keys.push(key);
+            }
+            counts[key] += 1;
+          }
+
+          var list = keys
+            .map(function (k) { return { key: k, count: counts[k] || 0, text: labelByKey[k] || k, value: labelByKey[k] || k }; })
+            .sort(function (a, b) { return (b.count || 0) - (a.count || 0); })
+            .map(function (x) { return { value: x.value, text: x.text, count: x.count }; });
+
+          window.__inspectionsCities = list;
+          window.dispatchEvent(new CustomEvent("inspections-cities-ready", { detail: { cities: list } }));
+        })();
+
+      currentPage = 1;
+      rendering = false;
+      window.__inspectionsMarkers = [];
+      clearMounts();
+      updateTotalPages();
+      resortFilteredData();
+
+      var hash = window.location.hash.slice(1);
+
+      if (hash) {
+        filteredData.sort(function(a, b) {
+          var A = groupedFacilities[a] || [];
+          var B = groupedFacilities[b] || [];
+          var aLatest = A[0] ? parseInspectionDate(A[0].inspection_date) : new Date(0);
+          var bLatest = B[0] ? parseInspectionDate(B[0].inspection_date) : new Date(0);
+          return bLatest - aLatest;
+        });
+        var foundPage = findPageForHash(hash);
+        if (foundPage > 0) {
+          currentPage = foundPage;
+        }
+      }
+
+      renderPage(currentPage);
+      renderPaginationControls();
+
+      if (hash) {
+
+        setTimeout(function() {
+          var mobileMounts = Array.from(document.querySelectorAll('.inspections-mount')).filter(function(m) {
+            return m.classList.contains('space-y-3') && m.offsetParent !== null;
+          });
+
+          if (mobileMounts.length === 0) {
+            return;
+          }
+
+          var cards = mobileMounts[0].querySelectorAll('[data-card="inspection"]');
+
+          var matchFound = false;
+          for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            var cardId = generateCardIdFromCard(card);
+            if (cardId === hash) {
+              matchFound = true;
+              if (window.innerWidth < 768) {
+                openMobileCardDetails(card);
+                setTimeout(function() {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 200);
+              }
+              break;
+            }
+          }
+
+
+        }, 500);
+      }
+      window.addEventListener("mobile-view-changed", function (e) {
+        var view = e.detail && e.detail.view;
+        if (view === "map") {
+          syncMarkers();
+        }
+      });
+    });
+
+    window.addEventListener("set-sort", function(e){
+      currentSort = (e && e.detail && e.detail.value) ? e.detail.value : "date-desc";
+      if (currentSort === "alphabetical") currentSort = "alpha-asc";
+      localStorage.setItem("inspections-sort", currentSort);
+      currentPage = 1;
+      resortFilteredData();
+      renderPage(currentPage);
+      renderPaginationControls();
+    });
+
+    window.addEventListener("inspections-search", function(event) {
+      var query = event.detail.query || "";
+      var city = event.detail.city || "";
+      performSearch(query, city);
+    });
+
+    function groupByFacility(rows) {
+        var grouped = {};
+        rows.forEach(function(row) {
+            var id = row.id || (row.facility + ' — ' + row.address);
+            if (!grouped[id]) grouped[id] = [];
+            grouped[id].push(row);
+        });
+        Object.keys(grouped).forEach(function(id) {
+            grouped[id].sort(function(a, b) {
+                return parseInspectionDate(b.inspection_date) - parseInspectionDate(a.inspection_date);
+            });
+        });
+        return grouped;
+    }
+
+function resortFilteredData() {
+      sortedFilteredData = filteredData.slice();
+      sortedFilteredData.sort(function(a, b) {
+        var A = facilityIndexMap[a] || {};
+        var B = facilityIndexMap[b] || {};
+        if (currentSort === "alpha-asc" || currentSort === "alphabetical") {
+          return (A.nameKey || '') < (B.nameKey || '') ? -1 : (A.nameKey || '') > (B.nameKey || '') ? 1 : 0;
+        }
+        if (currentSort === "alpha-desc") {
+          return (A.nameKey || '') > (B.nameKey || '') ? -1 : (A.nameKey || '') < (B.nameKey || '') ? 1 : 0;
+        }
+        if (currentSort === "date-asc") return (A.dateMs || 0) - (B.dateMs || 0);
+        if (currentSort === "risk-desc" || currentSort === "high-risk") return (B.riskScore || 0) - (A.riskScore || 0);
+        if (currentSort === "risk-asc") return (A.riskScore || 0) - (B.riskScore || 0);
+        return (B.dateMs || 0) - (A.dateMs || 0);
+      });
+    }
+
+function performSearch(query, city) {
+      if (isSearching) {
+        return;
+      }
+      isSearching = true;
+
+      var noResultsEl = document.getElementById("no-results");
+      if (noResultsEl) noResultsEl.classList.add("hidden");
+
+      if (!query.trim() && !city.trim()) {
+        filteredData = facilityIndex.map(function(e) { return e.id; });
+        currentPage = 1;
+        updateTotalPages();
+        resortFilteredData();
+        var banner = document.getElementById("search-results-banner");
+        if (banner) banner.classList.add("hidden");
+        renderPage(currentPage);
+        renderPaginationControls();
+        isSearching = false;
+        return;
+      }
+
+      clearMounts();
+      document.querySelectorAll('.pagination-controls').forEach(function(el) { el.remove(); });
+
+      (function() {
+        document.querySelectorAll('.pagination-controls').forEach(function (el) { el.remove(); });
+        var normalizedQuery = normalizeString(query);
+
+        var tokens = normalizedQuery ? normalizedQuery.split(/\s+/).filter(Boolean) : [];
+        var nCity = normalizeString(city);
+
+        var matchingIds = facilityIndex.filter(function(entry) {
+          var searchMatch = tokens.length === 0 || tokens.every(function(token) {
+            return entry.searchText.includes(token);
+          });
+          if (!searchMatch) return false;
+
+          if (!nCity) return true;
+          var ec = entry.city;
+          if (ec === nCity) return true;
+          if (!ec || ec.charAt(0) !== nCity.charAt(0)) return false;
+          if (Math.abs(ec.length - nCity.length) > 4) return false;
+          var a = ec, b = nCity;
+          var m = a.length, n = b.length;
+          var dp = new Array(n + 1);
+          for (var j = 0; j <= n; j++) dp[j] = j;
+          for (var i = 1; i <= m; i++) {
+            var prev = dp[0]; dp[0] = i;
+            for (var j2 = 1; j2 <= n; j2++) {
+              var tmp = dp[j2];
+              dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + (a.charAt(i-1) === b.charAt(j2-1) ? 0 : 1));
+              prev = tmp;
+            }
+          }
+          return dp[n] <= 3;
+        });
+
+        filteredData = matchingIds.map(function(e) { return e.id; });
+        currentPage = 1;
+        window.__inspectionsMarkers = [];
+        updateTotalPages();
+        resortFilteredData();
+         var banner = document.getElementById("search-results-banner");
+        var bannerText = document.getElementById("search-results-text");
+        if (banner && bannerText) {
+          var hasActiveSearch = query.trim() || city.trim();
+          if (hasActiveSearch && filteredData.length > 0) {
+            var parts = [];
+            if (query.trim()) parts.push('"' + query.trim() + '"');
+            if (city.trim()) parts.push(city.trim());
+            bannerText.textContent = "Showing " + filteredData.length.toLocaleString() + " result" + (filteredData.length !== 1 ? "s" : "") + " for " + parts.join(" in ");
+            banner.classList.remove("hidden");
+          } else {
+            banner.classList.add("hidden");
+          }
+        }
+
+        renderPage(currentPage);
+        renderPaginationControls();
+
+        hideSearchSpinner();
+        isSearching = false;
+
+        (function(len) {
+          setTimeout(function() {
+            var noResultsEl = document.getElementById("no-results");
+            if (noResultsEl) {
+              noResultsEl.classList.toggle("hidden", len > 0);
+            }
+          }, 0);
+        })(filteredData.length);
+      })();
+    }
+
+    function normalizeString(str) {
+      return (str || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function showSearchSpinner() {
+      if (allData.length > 0) return;
+      hideSearchSpinner();
+
+      var spinner = document.createElement('div');
+      spinner.id = 'search-loading-spinner';
+      spinner.className = 'w-full bg-white p-8 shadow md:p-10';
+      spinner.style.cssText = 'display:flex; align-items:flex-start; justify-content:center; min-height:calc(100dvh - 120px); padding-top:48px;';
+      spinner.innerHTML = `
+        <div style="text-align: center;">
+          <div style="
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #fbbf24;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+          "></div>
+        </div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
+      `;
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      if (mounts[0]) {
+        mounts[0].insertBefore(spinner, mounts[0].firstChild);
+      }
+    }
+
+    function hideSearchSpinner() {
+      var spinner = document.getElementById('search-loading-spinner');
+      if (spinner) {
+        spinner.remove();
+      }
+    }
+
+    function getMountPoints() {
+      return Array.from(document.querySelectorAll(".inspections-mount"));
+    }
+
+    function clearMounts() {
+      getMountPoints().forEach(function (m) {
+        m.innerHTML = "";
+      });
+    }
+
+    function updateTotalPages() {
+      totalPages = Math.max(1, Math.ceil(filteredData.length / ITEMS_PER_PAGE));
+    }
+
+    function renderPage(page) {
+        if (document.querySelector('.detail-content')) {
+          return;
+        }
+        if (rendering) {
+          return;
+        }
+        rendering = true;
+        var start = (page - 1) * ITEMS_PER_PAGE;
+        var end = Math.min(start + ITEMS_PER_PAGE, sortedFilteredData.length);
+        var facilityIds = sortedFilteredData.slice(start, end);
+        var slice = facilityIds.map(function(id) { return groupedFacilities[id]; });
+
+      clearMounts();
+      appendCards(slice, start);
+      var flatRows = slice.map(function(inspections) { return inspections[0]; });
+      window.__inspectionsMarkers = rowsToMarkers(flatRows, start);
+      syncMarkers();
+
+      rendering = false;
+     if (!initialRender) {
+        var banner = document.getElementById('search-results-banner');
+        var scrollTarget = (banner && !banner.classList.contains('hidden')) ? banner : document.querySelector('.inspections-mount');
+        if (scrollTarget) {
+          var scrollTop = scrollTarget.getBoundingClientRect().top + window.pageYOffset - 73;
+          window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+      initialRender = false;
+    }
+
+    function goToPage(page) {
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderPage(currentPage);
+      renderPaginationControls();
+    }
+
+    function renderPaginationControls() {
+      var existingControls = document.querySelectorAll('.pagination-controls');
+      existingControls.forEach(function(el) { el.remove(); });
+
+      if (filteredData.length === 0 || totalPages <= 1) return;
+
+      var controls = document.createElement('div');
+      controls.className = 'pagination-controls flex items-center justify-center gap-2 bg-white px-4 py-6 shadow mt-3';
+     var startItem = (currentPage - 1) * ITEMS_PER_PAGE + 1;
+      var endItem = Math.min(currentPage * ITEMS_PER_PAGE, filteredData.length);
+
+      function formatNumber(num) {
+        return num.toLocaleString();
+      }
+
+      controls.innerHTML = `
+        <button
+          class="pagination-btn pagination-prev flex h-12 w-12 sm:h-10 sm:w-10 items-center justify-center rounded-full border-2 border-g-4 bg-white text-g-7 transition-all duration-200 hover:border-g-6 hover:bg-g-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-g-4 disabled:hover:bg-white flex-shrink-0"
+          ${currentPage === 1 ? 'disabled' : ''}
+          aria-label="Previous page"
+        >
+          <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+    <div class="pagination-numbers hidden sm:flex flex-1 items-center justify-evenly gap-2 md:gap-3 lg:gap-4 px-2 md:px-6 lg:px-8"></div>
+
+      <div class="flex sm:hidden flex-1 items-center justify-center gap-2 text-sm font-sans font-semibold text-g-7">
+          <span>Page ${currentPage.toLocaleString()} of ${totalPages.toLocaleString()}</span>
+        </div>
+        <button
+          class="pagination-btn pagination-next flex h-12 w-12 sm:h-10 sm:w-10 items-center justify-center rounded-full border-2 border-g-4 bg-white text-g-7 transition-all duration-200 hover:border-g-6 hover:bg-g-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-g-4 disabled:hover:bg-white flex-shrink-0"
+          ${currentPage === totalPages ? 'disabled' : ''}
+          aria-label="Next page"
+        >
+          <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+        </button>
+      `;
+
+      var numbersContainer = controls.querySelector('.pagination-numbers');
+      var pageNumbers = getPageNumbers(currentPage, totalPages);
+
+      pageNumbers.forEach(function(pageNum) {
+        if (pageNum === '...') {
+          var ellipsis = document.createElement('span');
+                    ellipsis.className = 'px-2 text-g-5';
+          ellipsis.textContent = '...';
+          numbersContainer.appendChild(ellipsis);
+        } else {
+var btn = document.createElement('button');
+            btn.className = pageNum === currentPage
+            ? 'flex h-10 min-w-10 items-center justify-center rounded-full bg-g-9 px-4 font-sans text-sm font-bold text-white transition-all duration-200'
+            : 'flex h-10 min-w-10 items-center justify-center rounded-full px-4 font-sans text-sm font-medium text-g-7 transition-all duration-200 hover:bg-g-2';
+          btn.textContent = pageNum.toLocaleString();
+          btn.setAttribute('aria-label', 'Page ' + pageNum.toLocaleString());
+          if (pageNum === currentPage) {
+            btn.setAttribute('aria-current', 'page');
+          }
+          btn.addEventListener('click', function() {
+            goToPage(pageNum);
+          });
+          numbersContainer.appendChild(btn);
+        }
+      });
+
+      controls.querySelector('.pagination-prev').addEventListener('click', function() {
+        goToPage(currentPage - 1);
+      });
+      controls.querySelector('.pagination-next').addEventListener('click', function() {
+        goToPage(currentPage + 1);
+      });
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      mounts.forEach(function(mount) {
+        var clone = controls.cloneNode(true);
+        clone.querySelector('.pagination-prev').addEventListener('click', function() {
+          goToPage(currentPage - 1);
+        });
+        clone.querySelector('.pagination-next').addEventListener('click', function() {
+          goToPage(currentPage + 1);
+        });
+        clone.querySelectorAll('.pagination-numbers button').forEach(function(btn, idx) {
+          var pageNum = pageNumbers.filter(function(p) { return p !== '...'; })[idx];
+          if (pageNum) {
+            btn.addEventListener('click', function() {
+              goToPage(pageNum);
+            });
+          }
+        });
+        mount.parentNode.insertBefore(clone, mount.nextSibling);
+      });
+    }
+
+    function getPageNumbers(current, total) {
+      var pages = [];
+      if (total <= 7) {
+        for (var i = 1; i <= total; i++) pages.push(i);
+      } else {
+        pages.push(1);
+        if (current > 3) pages.push('...');
+
+        var start = Math.max(2, current - 1);
+        var end = Math.min(total - 1, current + 1);
+
+        if (current <= 3) {
+          start = 2;
+          end = 4;
+        }
+        if (current >= total - 2) {
+          start = total - 3;
+          end = total - 1;
+        }
+
+        for (var j = start; j <= end; j++) pages.push(j);
+
+        if (current < total - 2) pages.push('...');
+        pages.push(total);
+      }
+      return pages;
+    }
+
+    function appendCards(groupedInspections, startIndex) {
+        var mounts = getMountPoints();
+        mounts.forEach(function (mount) {
+          groupedInspections.forEach(function(inspections, cardIndex) {
+            inspections.sort(function(a, b) {
+              return parseInspectionDate(b.inspection_date) - parseInspectionDate(a.inspection_date);
+            });
+            var latestInspection = inspections[0];
+            var card = createInspectionCard(latestInspection, startIndex + cardIndex, inspections);
+            mount.appendChild(card);
+          });
+        });
+    }
+
+function rowsToMarkers(rows, startIndex) {
+  function simplifyAddress(fullAddress) {
+    try {
+      const parts = String(fullAddress || "").split(",");
+      if (parts.length >= 3) {
+        return parts.slice(0, 2).join(",").trim();
+      } else if (parts.length === 2) {
+        return parts[0].trim();
+      }
+      return String(fullAddress || "").trim();
+    } catch (err) {
+      return String(fullAddress || "").trim();
+    }
+  }
+
+    function getRiskPriority(riskLevels) {
+      var risks = (riskLevels || "").split(' | ').map(function(s) { return s.trim().toLowerCase(); });
+      if (risks.some(function(r) { return r === 'high risk'; })) return 3;
+      if (risks.some(function(r) { return r === 'moderate risk'; })) return 2;
+      if (risks.some(function(r) { return r === 'low risk'; })) return 1;
+      return 0;
+    }
+
+    function riskToColorAndBadge(priority) {
+      if (priority === 3) return { color: "#D70000", badgeText: "High Risk Violation" };
+      if (priority === 2) return { color: "#FFCB03", badgeText: "Moderate Risk Violation" };
+      if (priority === 1) return { color: "#009EDB", badgeText: "Low Risk Violation" };
+      return { color: "#1b998b", badgeText: "No Violations" };
+    }
+
+    var groups = {};
+    var groupOrder = [];
+    rows.forEach(function(row, i) {
+      var lat = parseFloat(row.Latitude);
+      var lon = parseFloat(row.Longitude);
+      if (!lat || !lon || isNaN(lat) || isNaN(lon)) return;
+      var key = lat.toFixed(6) + "," + lon.toFixed(6);
+      if (!groups[key]) {
+        groups[key] = { lat: lat, lon: lon, rows: [], firstIndex: startIndex + i };
+        groupOrder.push(key);
+      }
+      groups[key].rows.push({ row: row, index: startIndex + i });
+    });
+
+    return groupOrder.map(function(key) {
+      var group = groups[key];
+      var lat = group.lat;
+      var lon = group.lon;
+
+      var maxPriority = 0;
+      group.rows.forEach(function(entry) {
+        var p = getRiskPriority(entry.row.risk_level || "");
+        if (p > maxPriority) maxPriority = p;
+      });
+
+      var style = riskToColorAndBadge(maxPriority);
+      var color = style.color;
+
+      var id = "inspection-" + group.firstIndex;
+
+      var facilitiesHTML = group.rows.map(function(entry) {
+      var row = entry.row;
+      var facilityName = escapeHTML(row.facility || "Facility");
+      var simplifiedAddress = simplifyAddress(row.address || "");
+      var addressLine = simplifiedAddress || row.city || "";
+      var p = getRiskPriority(row.risk_level || "");
+      var s = riskToColorAndBadge(p);
+
+      return `
+        <div class="pt-2.5 pb-2.5 mb-2.5 border-b border-g-2 first:pt-0 last:border-b-0 last:pb-0 last:mb-0">
+          <h3 class="font-bold text-base leading-tight text-g-9 mb-1">${facilityName}</h3>
+          ${addressLine ? `<p class="text-xs text-g-6 mb-1.5">${escapeHTML(addressLine)}</p>` : ""}
+          <span class="inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${s.color};">
+            ${s.badgeText}
+          </span>
+        </div>`;
+    }).join("");
+
+    return {
+      lon: lon,
+      lat: lat,
+      color: color,
+      inspectionId: id,
+      popupHTML: `
+        <div class="min-w-[200px] max-w-[280px] p-3">
+          ${facilitiesHTML}
+        </div>
+      `,
+    };
+  });
+}
+
+    function syncMarkers() {
+      window.dispatchEvent(
+        new CustomEvent("update-map-markers", {
+          detail: { markers: window.__inspectionsMarkers },
+        }),
+      );
+    }
+
+
+
+    function showLoadingSpinner() {
+      if (document.getElementById('loading-spinner') || isSearching) {
+        return;
+      }
+
+      var spinner = document.createElement('div');
+      spinner.id = 'loading-spinner';
+      spinner.className = 'w-full bg-white p-8 shadow md:p-10';
+      spinner.style.display = 'flex';
+      spinner.style.alignItems = 'center';
+      spinner.style.justifyContent = 'center';
+      spinner.style.minHeight = '100px';
+      spinner.innerHTML = `
+        <div style="
+          width: 48px;
+          height: 48px;
+          border: 4px solid #f3f4f6;
+          border-top: 4px solid #fbbf24;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+        "></div>
+        <style>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
+      `;
+
+      var mounts = document.querySelectorAll('.inspections-mount');
+      var visibleMount = null;
+      for (var i = 0; i < mounts.length; i++) {
+        var m = mounts[i];
+        var rect = m.getBoundingClientRect();
+        var isVis = rect.width > 0 && rect.height > 0;
+        if (isVis && !visibleMount) {
+          visibleMount = m;
+        }
+      }
+
+      if (visibleMount) {
+        visibleMount.appendChild(spinner);
+      }
+    }
+
+    function hideLoadingSpinner() {
+      var spinner = document.getElementById('loading-spinner');
+      if (spinner) {
+        spinner.remove();
+      }
+    }
+
+function createInspectionCard(data, index, allInspections) {
+      var facilityName = data.facility || "Facility";
+      var address = data.address || "";
+      var city = data.city || "";
+      var inspectionDate = data.inspection_date || "";
+      var uniqueId = "inspection-" + index;
+
+      allInspections = allInspections || [data];
+
+    function simplifyAddress(fullAddress) {
+      try {
+        const parts = fullAddress.split(",");
+        if (parts.length >= 3) {
+          return parts.slice(0, 2).join(",").trim();
+        } else if (parts.length === 2) {
+          return parts[0].trim();
+        }
+        return fullAddress.trim();
+      } catch (err) {
+        return fullAddress;
+      }
+    }
+
+    var addressLine = "";
+    var simplifiedAddress = simplifyAddress(address || "");
+
+    if (simplifiedAddress)
+      addressLine = simplifiedAddress;
+    else if (city)
+      addressLine = city;
+
+
+      var searchIndex = [facilityName, address, city, inspectionDate]
+        .join(" ")
+        .toLowerCase();
+
+      var card = document.createElement("div");
+      card.setAttribute("data-card", "inspection");
+      card.setAttribute("data-index", searchIndex);
+      card.setAttribute("data-date", inspectionDate);
+      card.setAttribute("data-city", city);
+      card.setAttribute("data-inspection-id", uniqueId);
+      card.setAttribute("data-risk-level", data.risk_level || "");
+      card.setAttribute("data-violation-comment", data.comment || "");
+      card.setAttribute("data-spotlight-pa", data.spotlight_pa || "");
+      card.setAttribute("data-violation-description", data.violation_description || "");
+      card.setAttribute("data-ai-summary", data.ai_summary || "");
+      card.setAttribute("data-all-inspections", JSON.stringify(allInspections));
+
+      card.setAttribute("id", uniqueId);
+
+      if (data.Latitude && data.Longitude) {
+        card.setAttribute("data-lat", data.Latitude);
+        card.setAttribute("data-lon", data.Longitude);
+      }
+
+      card.className = "w-full h-full flex flex-col space-y-3 bg-white p-8 shadow md:p-10";
+
+
+      var addressRow = addressLine
+        ? `
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7">
+              {{ partial "helper/svg.html" "location" }}
+            </svg>
+            <span>${escapeHTML(addressLine)}</span>
+          </div>
+        `
+        : "";
+
+      var dateRow = inspectionDate
+        ? `
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7">
+              {{ partial "helper/svg.html" "calendar-day" }}
+            </svg>
+            <span>Last inspection: ${escapeHTML(inspectionDate)}</span>
+          </div>
+        `
+        : "";
+
+      var riskLevels = (data.risk_level || "").trim();
+      var riskCounts = { high: 0, moderate: 0, low: 0 };
+
+      if (riskLevels) {
+        var risks = riskLevels.split(' | ').map(function(s) { return s.trim().toLowerCase(); });
+        risks.forEach(function(risk) {
+          if (risk === 'high risk') riskCounts.high++;
+          else if (risk === 'moderate risk') riskCounts.moderate++;
+          else if (risk === 'low risk') riskCounts.low++;
+        });
+      }
+
+      var totalViolations = riskCounts.high + riskCounts.moderate + riskCounts.low;
+      var violationBadges = '';
+
+      if (totalViolations === 0) {
+        violationBadges = `
+          <li class="flex items-center gap-2">
+            <svg class="h-6 w-6 fill-current" style="color: #1b998b;">
+              {{ partial "helper/svg.html" "circle-check" }}
+            </svg>
+            <span class="text-base font-semibold">0 violations</span>
+          </li>`;
+      } else {
+        if (riskCounts.high > 0) {
+          violationBadges += `
+            <li class="flex items-center gap-2">
+              <svg class="h-5 w-5 fill-current" style="color: #D70000;">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <span class="text-base font-semibold">${riskCounts.high} high risk violation${riskCounts.high !== 1 ? 's' : ''}</span>
+            </li>`;
+        }
+        if (riskCounts.moderate > 0) {
+          violationBadges += `
+            <li class="flex items-center gap-2">
+              <svg class="h-5 w-5 fill-current" style="color: #FFCB03;">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <span class="text-base font-semibold">${riskCounts.moderate} moderate risk violation${riskCounts.moderate !== 1 ? 's' : ''}</span>
+            </li>`;
+        }
+        if (riskCounts.low > 0) {
+          violationBadges += `
+            <li class="flex items-center gap-2">
+              <svg class="h-5 w-5 fill-current" style="color: #009EDB;">
+                {{ partial "helper/svg.html" "triangle-exclamation" }}
+              </svg>
+              <span class="text-base font-semibold">${riskCounts.low} low risk violation${riskCounts.low !== 1 ? 's' : ''}</span>
+            </li>`;
+        }
+      }
+
+      var hasViolation = totalViolations > 0;
+
+      card.innerHTML = `
+        <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
+        <div class="mt-2 space-y-1 text-g-6">
+          ${addressRow}
+          ${dateRow}
+        </div>
+        <ul class="mt-4 space-y-2">
+          ${violationBadges}
+        </ul>
+
+        <div class="pt-2">
+          <button
+            class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+            aria-label="Read more about this inspection"
+            data-read-more="${uniqueId}"
+          >
+            <span class="mx-auto">Read more</span>
+            <svg class="h-5 w-5 fill-yellow-9">
+              {{ partial "helper/svg.html" "chevron-right" }}
+            </svg>
+          </button>
+        </div>
+      `;
+
+      return card;
+    }
+
+    function escapeHTML(str) {
+      if (!str) return "";
+      var div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    window.addEventListener("marker-click", function (event) {
+      var inspectionId = event.detail && event.detail.id;
+      if (!inspectionId) return;
+
+      var nodes = Array.from(document.querySelectorAll("#" + CSS.escape(inspectionId)));
+      var card = null;
+      for (var i = 0; i < nodes.length; i++) {
+        var el = nodes[i];
+        if (el && el.offsetParent !== null) {
+          card = el;
+          break;
+        }
+      }
+      if (!card && nodes.length) card = nodes[0];
+      if (!card) return;
+
+      var readMoreBtn = card.querySelector("[data-read-more]");
+      if (readMoreBtn) {
+        readMoreBtn.click();
+        setTimeout(function() {
+          var mount = card.closest('.inspections-mount');
+          var target = mount ? mount.parentElement : null;
+          if (target) {
+            var top = target.getBoundingClientRect().top + window.pageYOffset - 73;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          }
+        }, 50);
+      }
+    });
+  function findPageForHash(hash) {
+
+      for (var i = 0; i < filteredData.length; i++) {
+        var facilityId = filteredData[i];
+        var inspections = groupedFacilities[facilityId];
+        if (inspections && inspections[0]) {
+          var title = (inspections[0].facility || "").trim();
+          var cardId = title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+
+
+          if (cardId === hash) {
+            var page = Math.floor(i / ITEMS_PER_PAGE) + 1;
+            return page;
+          }
+        }
+      }
+      return -1;
+    }
+
+function generateCardIdFromCard(card) {
+      var title = (card.querySelector("h2")?.textContent || "").trim();
+      var cardId = title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+      return cardId;
+    }
+
+    function openMobileCardDetails(card) {
+
+      document.querySelectorAll('.pagination-controls').forEach(function(el) {
+        el.classList.add('hidden');
+      });
+
+      var allCards = document.querySelectorAll('[data-card="inspection"]');
+      allCards.forEach(function(c) {
+        if (c !== card) {
+          c.style.display = 'none';
+        }
+      });
+
+      var title = (card.querySelector("h2")?.textContent || "").trim();
+      var allInspectionsJSON = card.getAttribute("data-all-inspections");
+      var allInspections = allInspectionsJSON ? JSON.parse(allInspectionsJSON) : [];
+
+      var addressEl = card.querySelector('[data-card="inspection"] .text-g-6 span');
+      var location = addressEl ? addressEl.textContent.trim() : '';
+
+    var violationDesc = card.getAttribute("data-violation-description") || "";
+    var spotlightPa = card.getAttribute("data-spotlight-pa") || "";
+    var violationComment = card.getAttribute("data-violation-comment") || "";
+    var riskLevel = card.getAttribute("data-risk-level") || "";
+    var aiSummary = card.getAttribute("data-ai-summary") || "";
+
+var latestViolations = [];
+if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
+  var descriptions = violationDesc.split(' | ').map(function(s) { return s.trim(); }).filter(Boolean);
+  var spotlights = spotlightPa.split(' | ').map(function(s) { return s.trim(); });
+  var comments = violationComment.split(' | ').map(function(s) { return s.trim(); });
+  var riskLevels = riskLevel.split(' | ').map(function(s) { return s.trim(); });
+  var aiSummaries = aiSummary.split(' | ').map(function(s) { return s.trim(); });
+
+  for (var i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
+    var title = '';
+
+    if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
+      title = spotlights[i];
+    } else if (descriptions[i]) {
+      title = descriptions[i];
+    } else {
+      title = 'Violation reported';
+    }
+
+    latestViolations.push({
+      title: title,
+      comment: comments[i] || '',
+      aiSummary: aiSummaries[i] || '',
+      riskLevel: riskLevels[i] || '',
+      originalIndex: i
+    });
+  }
+
+  latestViolations.sort(function(a, b) {
+    function getRiskPriority(risk) {
+      var riskLower = (risk || '').toLowerCase();
+      if (riskLower.includes('high risk')) return 1;
+      if (riskLower.includes('moderate risk')) return 2;
+      if (riskLower.includes('low risk')) return 3;
+      return 4;
+    }
+
+    var aPriority = getRiskPriority(a.riskLevel);
+    var bPriority = getRiskPriority(b.riskLevel);
+
+    if (aPriority !== bPriority) {
+      return aPriority - bPriority;
+    }
+
+    return a.originalIndex - b.originalIndex;
+  });
+}
+var latestItems = latestViolations.length > 0
+        ? latestViolations.map(function(v) {
+            var riskLevel = (v.riskLevel || '').toLowerCase();
+            var color = '#D70000';
+            if (riskLevel.includes('low risk')) {
+              color = '#009EDB';
+            } else if (riskLevel.includes('moderate risk')) {
+              color = '#FFCB03';
+            }
+
+       var displayComment = v.aiSummary || v.comment || '';
+            return `
+              <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+                <div class="flex items-start pt-2 gap-2">
+                  <svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0" style="color: ${color};">
+                    {{ partial "helper/svg.html" "triangle-exclamation" }}
+                  </svg>
+                  <h4 class="font-sans text-lg font-bold text-black break-words">
+                    ${escapeHTML(v.title)}
+                  </h4>
+                </div>
+                ${displayComment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">
+                  ${escapeHTML(displayComment)}
+                </p>` : ''}
+              </li>`;
+          }).join('')
+        : `
+          <li class="space-y-2">
+            <div class="flex items-start pt-3 gap-2">
+              <svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;">
+                {{ partial "helper/svg.html" "circle-check" }}
+              </svg>
+              <h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">
+                No violations reported.
+              </h4>
+            </div>
+          </li>`;
+
+var olderInspectionsHTML = allInspections.length > 1 ? (function() {
+        var byDate = {};
+        allInspections.slice(1).forEach(function(inspection) {
+          var date = inspection.inspection_date || '';
+          if (!byDate[date]) byDate[date] = [];
+          byDate[date].push(inspection);
+        });
+
+        var dates = Object.keys(byDate).sort(function(a, b) {
+          return parseInspectionDate(b) - parseInspectionDate(a);
+        });
+
+        return `
+        <div class="mt-8 pt-8 border-t-2 border-g-3">
+          <h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${dates.length})</h3>
+          <div class="space-y-4">
+            ${dates.map(function(date, idx) {
+              var inspections = byDate[date];
+
+              var allDescriptions = [];
+              var allComments = [];
+
+              inspections.forEach(function(insp) {
+                var desc = (insp.violation_description || "").trim();
+                var comm = (insp.comment || "").trim();
+                if (desc) {
+                  desc.split(' | ').forEach(function(d) {
+                    if (d.trim()) allDescriptions.push(d.trim());
+                  });
+                  comm.split(' | ').forEach(function(c) {
+                    allComments.push(c.trim());
+                  });
+                }
+              });
+
+              var hasViolation = allDescriptions.length > 0;
+              var violationCount = allDescriptions.length;
+
+if (!hasViolation) {
+                return `
+                  <div class="bg-white border-2 border-g-3 rounded-lg p-4">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-3 min-w-0 flex-1">
+                        <svg class="h-5 w-5 flex-shrink-0 fill-g-6">
+                          {{ partial "helper/svg.html" "calendar-day" }}
+                        </svg>
+                        <span class="font-sans text-base font-bold text-g-9">${escapeHTML(date)}</span>
+                      </div>
+                      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                        <svg class="h-4 w-4 fill-current">
+                          {{ partial "helper/svg.html" "circle-check" }}
+                        </svg>
+                        No violations
+                      </span>
+                    </div>
+                  </div>
+                `;
+              }
+
+              return `
+                <details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden">
+                  <summary class="relative flex items-start p-4 pr-10 cursor-pointer hover:bg-g-1 transition-colors">
+                    <div class="flex flex-1 flex-wrap items-center justify-between gap-x-3 gap-y-2 min-w-0">
+                      <div class="flex items-center gap-2 min-w-0">
+                        <svg class="h-5 w-5 flex-shrink-0 fill-g-6">
+                          {{ partial "helper/svg.html" "calendar-day" }}
+                        </svg>
+                        <span class="font-sans text-base font-bold text-g-9">${escapeHTML(date)}</span>
+                      </div>
+                      ${hasViolation ? `
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7">
+                          <svg class="h-4 w-4 fill-current">
+                            {{ partial "helper/svg.html" "triangle-exclamation" }}
+                          </svg>
+                          ${violationCount} violation${violationCount !== 1 ? 's' : ''}
+                        </span>
+                      ` : `
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
+                          <svg class="h-4 w-4 fill-current">
+                            {{ partial "helper/svg.html" "circle-check" }}
+                          </svg>
+                          No violations
+                        </span>
+                      `}
+                    </div>
+                    <svg class="absolute right-4 top-4 h-5 w-5 flex-shrink-0 fill-g-6 transition-transform group-open:rotate-180">
+                      {{ partial "helper/svg.html" "chevron" }}
+                    </svg>
+                  </summary>
+                  ${hasViolation ? `
+                    <div class="border-t border-g-3 p-4 bg-g-1">
+                      <ul class="space-y-4">
+                        ${allDescriptions.map(function(desc, i) {
+                          var comment = allComments[i] || '';
+                          return `
+                            <li class="pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
+                              <h4 class="font-sans text-base font-bold text-g-9 mb-2">${escapeHTML(desc)}</h4>
+                              ${comment ? `
+                                <p class="font-serif text-sm leading-relaxed text-g-7 border-l-2 border-g-4 pl-3">
+                                  ${escapeHTML(comment)}
+                                </p>
+                              ` : ''}
+                            </li>
+                          `;
+                        }).join('')}
+                      </ul>
+                    </div>
+                  ` : ''}
+                </details>
+              `;
+            }).join('')}
+          </div>
+        </div>
+        `;
+      })() : '';
+
+
+
+      var detailHTML = `
+        <div class="mobile-detail-view w-full bg-white p-8 shadow">
+          <button
+            type="button"
+            class="inline-flex items-center font-sans font-bold text-navy hover:text-blue mb-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-g-4 rounded"
+            onclick="closeMobileCardDetails()"
+          >
+            <svg class="h-5 w-5 flex-shrink-0 fill-current">
+              {{ partial "helper/svg.html" "chevron-left" }}
+            </svg>
+            <span class="ml-1.5">Back</span>
+          </button>
+
+          <div class="py-4">
+            <h2 class="text-3xl font-bold text-black break-words">${escapeHTML(title)}</h2>
+            ${location ? `
+              <div class="mt-2 space-y-1 text-g-6">
+                <div class="flex items-center gap-1">
+                  <svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7">
+                    {{ partial "helper/svg.html" "map-pin" }}
+                  </svg>
+                  <span>${escapeHTML(location)}</span>
+                </div>
+              </div>
+            ` : ''}
+
+            <div class="mt-4 flex flex-wrap items-center gap-2">
+              <div class="flex items-center gap-2">
+                <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(window.location.href)}'" class="rounded-full p-2 bg-g-9 text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "envelope" }}
+                  </svg>
+                </button>
+                <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="rounded-full p-2 bg-g-9 text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "fb" }}
+                  </svg>
+                </button>
+                <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('${escapeHTML(title)}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "twitter" }}
+                  </svg>
+                </button>
+                <button onclick="navigator.clipboard.writeText(window.location.href).then(function() { alert('Link copied!') })" class="rounded-full p-2 bg-orange text-white">
+                  <svg class="h-5 w-5 fill-white">
+                    {{ partial "helper/svg.html" "share" }}
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <section class="space-y-3 mt-6">
+            <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
+            <ul class="space-y-3">${latestItems}</ul>
+          </section>
+
+          ${olderInspectionsHTML}
+
+          <div class="pt-5">
+            <a href="https://www.pafoodsafety.pa.gov/web/inspection/publicinspectionsearch.aspx"
+              class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+              <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue">
+                {{ partial "helper/svg.html" "link" }}
+              </svg>
+              <span>Read the full report</span>
+            </a>
+          </div>
+        </div>
+      `;
+
+      var mount = card.closest('.inspections-mount');
+
+      if (mount) {
+        var existingDetail = mount.querySelector('.mobile-detail-view');
+        if (existingDetail) {
+          existingDetail.remove();
+        }
+
+        var detailDiv = document.createElement('div');
+        detailDiv.innerHTML = detailHTML;
+        var detailElement = detailDiv.firstElementChild;
+
+
+        if (detailElement) {
+          mount.insertBefore(detailElement, mount.firstChild);
+        }
+      }
+    }
+
+  window.closeMobileCardDetails = function() {
+
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+
+      document.querySelectorAll('.detail-content').forEach(function(el) { el.remove(); });
+      document.querySelectorAll('.inspections-mount').forEach(function(m) {
+        m.classList.remove('h-full', 'flex', 'flex-col');
+        m.classList.add('space-y-3');
+      });
+
+      renderPage(currentPage);
+      renderPaginationControls();
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    };
+    })();
+</script>
+
+      <script>
+        (function () {
+          function triggerSearch() {
+            var input = document.getElementById("search-input");
+            var cityFilter = document.getElementById("city-filter");
+
+            var query = input ? input.value : "";
+            var city = cityFilter ? cityFilter.value : "";
+
+            window.dispatchEvent(
+              new CustomEvent("inspections-search", {
+                detail: { query: query, city: city },
+              }),
+            );
+          }
+
+          var button = document.getElementById("search-button");
+          if (button) {
+            button.addEventListener("click", triggerSearch);
+          }
+
+          var input = document.getElementById("search-input");
+          if (input) {
+            input.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                triggerSearch();
+              }
+            });
+          }
+
+          var cityFilter = document.getElementById("city-filter");
+          if (cityFilter) {
+            cityFilter.addEventListener("change", triggerSearch);
+          }
+        })();
+      </script>
+
+      <script>
+        if (typeof window.searchUI_original === "undefined") {
+          window.searchUI_original = window.searchUI || function () {};
+
+          window.searchUI = function () {
+            var instance = window.searchUI_original();
+
+            var originalDoSearch = instance.doSearch;
+            instance.doSearch = function (val) {
+              if (typeof val === "string") this.q = val;
+
+              var cityFilter = document.getElementById("city-filter");
+              window.dispatchEvent(
+                new CustomEvent("inspections-search", {
+                  detail: {
+                    query: this.q,
+                    city: cityFilter ? cityFilter.value : "",
+                  },
+                }),
+              );
+            };
+
+            return instance;
+          };
+        }
+      </script>
+
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          var clearBtn = document.getElementById("search-results-clear");
+          if (clearBtn) {
+            clearBtn.addEventListener("click", function () {
+              var si = document.getElementById("search-input");
+              if (si) si.value = "";
+              var cf = document.getElementById("city-filter");
+              if (cf) {
+                cf.value = "";
+                cf.dispatchEvent(new Event("change", { bubbles: true }));
+              }
+              document
+                .getElementById("search-results-banner")
+                ?.classList.add("hidden");
+              window.dispatchEvent(
+                new CustomEvent("inspections-search", {
+                  detail: { query: "", city: "" },
+                }),
+              );
+            });
+          }
+
+          setTimeout(function () {
+            document.addEventListener("click", function (e) {
+              var clearButton = e.target.closest("button");
+              if (
+                clearButton &&
+                clearButton.textContent.toLowerCase().includes("clear")
+              ) {
+                setTimeout(function () {
+                  window.dispatchEvent(
+                    new CustomEvent("inspections-search", {
+                      detail: { query: "", city: "" },
+                    }),
+                  );
+                }, 50);
+              }
+            });
+          }, 500);
+        });
+      </script>
+
+      <div
+        id="search-results-banner"
+        class="flex hidden w-full items-center justify-between gap-4 border-b border-g-3 bg-white px-8 py-4"
+      >
+        <p
+          id="search-results-text"
+          class="font-sans text-sm font-semibold text-g-7"
+        ></p>
+        <button
+          id="search-results-clear"
+          class="whitespace-nowrap font-sans text-sm font-semibold text-blue hover:underline"
+        >
+          Clear search
+        </button>
+      </div>
+      <div class="inspections-mount space-y-3"></div>
+
+      <div
+        id="no-results"
+        class="hidden w-full bg-white p-8 shadow md:p-10"
+        aria-live="polite"
+      >
+        <p class="font-sans text-xl font-semibold text-g-7">
+          No results found. Please try a different search.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
