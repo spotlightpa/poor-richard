@@ -1865,7 +1865,7 @@ if (!hasViolation) {
 
 <section aria-labelledby="violations-title" class="space-y-3">
             <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
-            ${latestViolations.length > 0 ? `<p class="mb-3 text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.&nbsp;<svg class="inline h-5 w-5 fill-current text-g-4 relative -top-0.5 -ml-0.5" aria-hidden="true">{{ partial "helper/svg.html" "robot" }}</svg></p>` : ''}
+            ${latestViolations.length > 0 ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true">{{ partial "helper/svg.html" "robot" }}</svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ''}
             <ul class="space-y-3">${latestItems}</ul>
             ${latestViolations.length > 0 ? `<p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details. Visit our FAQ to learn more.</p>` : ''}
           </section>
