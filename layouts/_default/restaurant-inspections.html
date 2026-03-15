@@ -887,14 +887,14 @@ async submitSignup() {
         </form>
       </div>
       <div x-show="step === 'success'" class="p-6 text-center sm:p-8">
-        <div
-          class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-election-green"
-        >
-          <svg class="h-9 w-9 fill-current text-white" aria-hidden="true">
+        <div class="mx-auto mb-6 flex justify-center">
+          <svg
+            class="h-16 w-16 fill-current text-election-green"
+            aria-hidden="true"
+          >
             {{ partial "helper/svg.html" "circle-check" }}
           </svg>
         </div>
-
         <h2 class="mb-3 text-2xl font-bold text-g-9">You're all set!</h2>
         <p class="mb-6 text-base text-g-7">
           <template x-if="mode === 'facility'">
@@ -1715,12 +1715,12 @@ const olderInspectionsHTML = allInspections.length > 1 ? (() => {
 if (!hasViolation) {
             return `
               <div class="bg-white border-2 border-g-3 rounded-lg p-4">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3 min-w-0 flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div class="flex items-center gap-3 min-w-0">
                     <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
                       {{ partial "helper/svg.html" "calendar-day" }}
                     </svg>
-                    <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+                    <span class="font-sans text-base font-bold text-g-9 whitespace-nowrap">${this.escapeHTML(date)}</span>
                   </div>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;">
                     <svg class="h-4 w-4 fill-current" aria-hidden="true">
@@ -1740,7 +1740,7 @@ if (!hasViolation) {
                   <svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true">
                     {{ partial "helper/svg.html" "calendar-day" }}
                   </svg>
-                  <span class="font-sans text-base font-bold text-g-9">${this.escapeHTML(date)}</span>
+                  <span class="font-sans text-base font-bold text-g-9 whitespace-nowrap">${this.escapeHTML(date)}</span>
                 </div>
                 <div class="flex items-center gap-3 flex-shrink-0">
                   ${hasViolation ? `
