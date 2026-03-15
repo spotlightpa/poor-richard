@@ -113,31 +113,48 @@ export const handler = async (event) => {
             },
             Html: {
               Data: `
-                <div style="font-family:Georgia,serif;max-width:600px;margin:0 auto;color:#111;">
-                  <p>Hi,</p>
-                  <p>You're now subscribed to inspection alerts for <strong>${facilityName}</strong>. Whenever a new inspection report is filed, we'll send you an email.</p>
-                  <p>We hope this information helps. If you'd like to change what data and facilities you're monitoring, you can <a href="${manageAllUrl}" style="color:#009EDB;">manage your alert settings here anytime</a>.</p>
-                  <p>If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;">donating to Spotlight PA</a> so we can continue making this data free and accessible. Did you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, <a href="https://www.spotlightpa.org/newsletters" style="color:#009EDB;">check out our newsletters</a>.</p>
-                  <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;" />
-                  <div style="text-align:center;margin:24px 0;">
-                    <img
-                      src="https://images.data.spotlightpa.org/insecure/rt:fill/w:600/g:sm/el:1/q:75/MjAyNi8wMy8wMW12LThrbjMtNnE3MC1zYW01LnBuZw%3D%3D.jpg"
-                      alt="Spotlight PA"
-                      width="600"
-                      style="max-width:100%;height:auto;display:block;margin:0 auto;"
-                    />
+                <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+                  <div style="max-width:600px;margin:0 auto;">
+
+                    <div style="background-color:#111;padding:16px 32px;border-radius:6px 6px 0 0;">
+                      <p style="margin:0;font-family:sans-serif;font-size:18px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#fff;">Spotlight PA · Restaurant Safety Tracker</p>
+                    </div>
+
+                    <div style="background-color:#ffffff;padding:36px 32px;border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;">
+                      <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">Hi,</p>
+                      <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">You're now subscribed to inspection alerts for <strong>${facilityName}</strong>. Whenever a new inspection report is filed, we'll send you an email.</p>
+                      <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">We hope this information helps. If you'd like to change what data and facilities you're monitoring, you can <a href="${manageAllUrl}" style="color:#009EDB;text-decoration:underline;">manage your alert settings here anytime</a>.</p>
+
+                      <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
+
+                      <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;text-decoration:underline;">donating to Spotlight PA</a> so we can continue making this data free and accessible.</p>
+                      <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">Did you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, <a href="https://www.spotlightpa.org/newsletters" style="color:#009EDB;text-decoration:underline;">check out our newsletters</a>.</p>
+                    </div>
+
+                    <div style="background-color:#ffffff;border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;">
+                      <img
+                        src="https://images.data.spotlightpa.org/insecure/rt:fill/w:600/g:sm/el:1/q:75/MjAyNi8wMy8wMW12LThrbjMtNnE3MC1zYW01LnBuZw%3D%3D.jpg"
+                        alt="Spotlight PA"
+                        width="600"
+                        style="max-width:100%;height:auto;display:block;"
+                      />
+                    </div>
+
+                    <div style="background-color:#f9fafb;padding:24px 32px;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 6px 6px;">
+                      <p style="margin:0 0 8px;font-family:sans-serif;font-size:13px;font-weight:700;color:#111;">Spotlight PA</p>
+                      <p style="margin:0 0 16px;font-family:sans-serif;font-size:13px;color:#6b7280;line-height:1.6;">
+                        PO Box 11728<br />
+                        Harrisburg, PA 17108<br />
+                        United States
+                      </p>
+                      <p style="margin:0;font-family:sans-serif;font-size:13px;color:#6b7280;line-height:1.6;">
+                        You're receiving this because you requested alerts from Spotlight PA's Restaurant Safety Tracker.
+                        <a href="${unsubOneFacilityUrl}" style="color:#009EDB;text-decoration:underline;">Unsubscribe from ${facilityName}</a> &middot;
+                        <a href="${manageAllUrl}" style="color:#009EDB;text-decoration:underline;">Manage all your subscriptions</a>
+                      </p>
+                    </div>
+
                   </div>
-                  <p style="font-size:12px;color:#6b7280;">
-                    Spotlight PA<br />
-                    PO Box 11728<br />
-                    Harrisburg, PA 17108<br />
-                    United States
-                  </p>
-                  <p style="font-size:12px;color:#6b7280;">
-                    You're receiving this because you requested alerts from Spotlight PA's Restaurant Safety Tracker.
-                    <a href="${unsubOneFacilityUrl}" style="color:#009EDB;">Unsubscribe from ${facilityName}</a> &middot;
-                    <a href="${manageAllUrl}" style="color:#009EDB;">Manage all your subscriptions</a>
-                  </p>
                 </div>
               `,
             },
