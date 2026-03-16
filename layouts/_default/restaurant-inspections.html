@@ -494,8 +494,10 @@
           const results = (data.status === 'OK' && data.results) ? data.results : [];
           const components = (results[0] && results[0].address_components) ? results[0].address_components : [];
           let detected = '';
+          let detectedState = '';
           for (const c of components) {
-            if (c.types.includes('locality')) { detected = c.long_name; break; }
+            if (c.types.includes('administrative_area_level_1')) { detectedState = c.short_name; }
+            if (c.types.includes('locality')) { detected = c.long_name; }
           }
           if (!detected) {
             for (const c of components) {
@@ -504,6 +506,11 @@
                 break;
               }
             }
+          }
+          if (detectedState !== 'PA') {
+            this.cityNotFound = true;
+            this.detectingCity = false;
+            return;
           }
           const match = this.matchCity(detected);
           if (match) {

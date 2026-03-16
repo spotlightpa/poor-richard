@@ -151,9 +151,12 @@
               const components = data.results[0].address_components || [];
               let city = "";
               let zip = "";
+              let state = "";
               for (const c of components) {
                 if (!city && c.types.includes("locality")) city = c.long_name;
                 if (!zip && c.types.includes("postal_code")) zip = c.short_name;
+                if (!state && c.types.includes("administrative_area_level_1"))
+                  state = c.short_name;
               }
               if (!city) {
                 for (const c of components) {
@@ -165,6 +168,14 @@
                     break;
                   }
                 }
+              }
+
+              if (state !== "PA") {
+                alert(
+                  "This tool covers Pennsylvania only. Your location appears to be outside PA.",
+                );
+                this.loadingLocation = false;
+                return;
               }
 
               const locationString = [city.trim(), zip.trim()]
