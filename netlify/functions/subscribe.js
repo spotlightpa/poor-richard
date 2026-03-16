@@ -131,14 +131,56 @@ export const handler = async (event) => {
                       <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">Did you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, <a href="https://www.spotlightpa.org/newsletters" style="color:#009EDB;text-decoration:underline;">check out our newsletters</a>.</p>
                     </div>
 
-                    <div style="background-color:#ffffff;border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;">
-                      <img
-                        src="https://images.data.spotlightpa.org/insecure/rt:fill/w:600/g:sm/el:1/q:75/MjAyNi8wMy8wMW12LThrbjMtNnE3MC1zYW01LnBuZw%3D%3D.jpg"
-                        alt="Spotlight PA"
-                        width="600"
-                        style="max-width:100%;height:auto;display:block;"
-                      />
-                    </div>
+                <table
+                role="presentation"
+                width="100%"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                style="background-color:#ffffff;border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;"
+                >
+                <tr>
+                    <td style="padding:16px 32px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                        <td valign="middle">
+                        <a href="https://www.spotlightpa.org/" style="text-decoration:none;border:0;">
+                        <img
+                            src="https://content.app-us1.com/cdn-cgi/image/format=auto,onerror=redirect,width=400,dpr=2,fit=scale-down/Jlmyy/2024/09/04/06621245-c7e2-43ac-9b0f-36587bd44d0a.png"
+                            alt="Spotlight PA"
+                            width="300"
+                            border="0"
+                            style="height:auto;display:block;max-width:100%;border:0;"
+                        />
+                        </a>
+                        </td>
+                        <td valign="middle" align="right" style="padding-left:24px;white-space:nowrap;">
+                <a
+                href="https://www.spotlightpa.org/donate"
+                style="
+                    display:inline-block;
+                    background-color:#cc0000;
+                    background-image:linear-gradient(to right,#e11d48,#cc0000);
+                    color:#ffffff;
+                    font-family:Arial,sans-serif;
+                    font-size:12px;
+                    font-weight:700;
+                    text-transform:uppercase;
+                    letter-spacing:0.06em;
+                    text-decoration:none;
+                    padding:10px 18px;
+                    border-radius:6px;
+                    white-space:nowrap;
+                "
+                >
+                Donate
+                </a>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+                </table>
 
                     <div style="background-color:#f9fafb;padding:24px 32px;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 6px 6px;">
                       <p style="margin:0 0 8px;font-family:sans-serif;font-size:13px;font-weight:700;color:#111;">Spotlight PA</p>

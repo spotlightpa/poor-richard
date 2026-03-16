@@ -141,12 +141,13 @@
               const { latitude: lat, longitude: lon } = pos.coords;
 
               const res = await fetch(
-                `https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?latlng=${encodeURIComponent(lat)},${encodeURIComponent(lon)}`
+                `https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?latlng=${encodeURIComponent(lat)},${encodeURIComponent(lon)}`,
               );
               if (!res.ok) throw new Error("Reverse geocode failed");
               const data = await res.json();
 
-              if (data.status !== "OK" || !data.results?.length) throw new Error("No results");
+              if (data.status !== "OK" || !data.results?.length)
+                throw new Error("No results");
               const components = data.results[0].address_components || [];
               let city = "";
               let zip = "";
@@ -156,7 +157,10 @@
               }
               if (!city) {
                 for (const c of components) {
-                  if (c.types.includes("sublocality") || c.types.includes("administrative_area_level_3")) {
+                  if (
+                    c.types.includes("sublocality") ||
+                    c.types.includes("administrative_area_level_3")
+                  ) {
                     city = c.long_name;
                     break;
                   }
