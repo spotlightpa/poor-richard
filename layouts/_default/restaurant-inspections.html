@@ -488,11 +488,23 @@
           );
           const { latitude, longitude } = pos.coords;
           const res = await fetch(
-            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
-            { headers: { 'Accept-Language': 'en' } }
+            `https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?latlng=${encodeURIComponent(latitude)},${encodeURIComponent(longitude)}`
           );
           const data = await res.json();
-          const detected = data.address?.city || data.address?.town || data.address?.village || data.address?.municipality || '';
+          const results = (data.status === 'OK' && data.results) ? data.results : [];
+          const components = (results[0] && results[0].address_components) ? results[0].address_components : [];
+          let detected = '';
+          for (const c of components) {
+            if (c.types.includes('locality')) { detected = c.long_name; break; }
+          }
+          if (!detected) {
+            for (const c of components) {
+              if (c.types.includes('sublocality') || c.types.includes('administrative_area_level_3')) {
+                detected = c.long_name;
+                break;
+              }
+            }
+          }
           const match = this.matchCity(detected);
           if (match) {
             this.userCity = match;

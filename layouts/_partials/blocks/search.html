@@ -140,32 +140,27 @@
             try {
               const { latitude: lat, longitude: lon } = pos.coords;
 
-              const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(lat)}&lon=${encodeURIComponent(lon)}&addressdetails=1`;
-
-              const res = await fetch(url, {
-                headers: { Accept: "application/json" },
-              });
+              const res = await fetch(
+                `https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?latlng=${encodeURIComponent(lat)},${encodeURIComponent(lon)}`
+              );
               if (!res.ok) throw new Error("Reverse geocode failed");
               const data = await res.json();
 
-              const a = data?.address || {};
-              let city =
-                a.city ||
-                a.town ||
-                a.village ||
-                a.hamlet ||
-                a.municipality ||
-                a.suburb ||
-                a.county ||
-                "";
-              const zip = a.postcode || "";
-
-              if (city) {
-                city = city.replace(
-                  /^(City|Town|Village|Borough|Municipality)\s+of\s+/i,
-                  "",
-                );
-                city = city.replace(/\s+County$/i, "");
+              if (data.status !== "OK" || !data.results?.length) throw new Error("No results");
+              const components = data.results[0].address_components || [];
+              let city = "";
+              let zip = "";
+              for (const c of components) {
+                if (!city && c.types.includes("locality")) city = c.long_name;
+                if (!zip && c.types.includes("postal_code")) zip = c.short_name;
+              }
+              if (!city) {
+                for (const c of components) {
+                  if (c.types.includes("sublocality") || c.types.includes("administrative_area_level_3")) {
+                    city = c.long_name;
+                    break;
+                  }
+                }
               }
 
               const locationString = [city.trim(), zip.trim()]
