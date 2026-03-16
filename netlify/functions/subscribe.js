@@ -137,7 +137,7 @@ export const handler = async (event) => {
 
                     <div style="background-color:#ffffff;padding:36px 32px;border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;">
                       <h1 style="margin:0 0 8px;font-family:Georgia,serif;font-size:32px;font-weight:700;color:#2E2E2E;line-height:1.2;">Restaurant Safety Tracker</h1>
-                      <p style="margin:0 0 28px;font-family:sans-serif;font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.05em;text-transform:uppercase;">${new Date().toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric",year:"numeric"}).toUpperCase()}</p>
+                      <p style="margin:0 0 28px;font-family:sans-serif;font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.05em;text-transform:uppercase;">${new Date().toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" }).toUpperCase()}</p>
                       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">Hi from Spotlight PA,</p>
                       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">You're now subscribed to inspection alerts for <strong>${facilityName}</strong>. Whenever a new inspection report is filed, we'll send you an email.</p>
                       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">We hope this information helps. If you'd like to change what data and facilities you're monitoring, you can <a href="${manageAllUrl}" style="color:#009EDB;text-decoration:underline;">manage your alert settings here anytime</a>.</p>

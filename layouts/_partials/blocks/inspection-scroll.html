@@ -1415,7 +1415,9 @@ var latestItems = latestViolations.length > 0
               color = '#FFCB03';
             }
 
-       var displayComment = v.aiSummary || v.comment || '';
+       var aiSum = (v.aiSummary || '').trim().replace(/^[\s|]+$/, '');
+       var rawComment = (v.comment || '').trim().replace(/^[\s|]+$/, '');
+       var displayComment = aiSum || rawComment;
             return `
               <li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0">
                 <div class="flex items-start pt-2 gap-2">
@@ -1561,7 +1563,7 @@ if (!hasViolation) {
 
 
 
-      var hasAiSummary = latestViolations.some(function(v) { return !!v.aiSummary; });
+      var hasAiSummary = latestViolations.some(function(v) { return !!(v.aiSummary || '').trim().replace(/^[\s|]+$/, ''); });
 
       var detailHTML = `
         <div class="mobile-detail-view w-full bg-white p-8 shadow">

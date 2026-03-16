@@ -1879,9 +1879,9 @@ if (!hasViolation) {
 
 <section aria-labelledby="violations-title" class="space-y-3">
             <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
-            ${latestViolations.some(v => v.aiSummary) ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true">{{ partial "helper/svg.html" "robot" }}</svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ''}
+            ${latestViolations.some(v => (v.aiSummary || "").trim().replace(/^[\s|]+$/, "")) ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true">{{ partial "helper/svg.html" "robot" }}</svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ''}
             <ul class="space-y-3">${latestItems}</ul>
-            ${latestViolations.some(v => v.aiSummary) ? `<p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details. Visit our FAQ to learn more.</p>` : ''}
+            ${latestViolations.some(v => (v.aiSummary || "").trim().replace(/^[\s|]+$/, "")) ? `<p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details. Visit our FAQ to learn more.</p>` : ''}
           </section>
 
           ${olderInspectionsHTML}
@@ -2038,8 +2038,8 @@ renderOlderInspection(inspection, idx) {
 
       renderViolationItem(v) {
         const title = (v.title || "").trim();
-        const aiSummary = (v.aiSummary || "").trim();
-        const comment = v.comment || "";
+        const aiSummary = (v.aiSummary || "").trim().replace(/^[\s|]+$/, "");
+        const comment = (v.comment || "").trim().replace(/^[\s|]+$/, "");
         const displayComment = aiSummary || comment;
         const riskLevel = (v.riskLevel || "").toLowerCase();
 
