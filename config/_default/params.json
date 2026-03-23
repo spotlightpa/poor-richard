@@ -1,12 +1,12 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/p9x9/newsmatch-2025-tracker-banners-5-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
       ]
     }
   ],
@@ -15,12 +15,12 @@
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/vkct/sunshine-week-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
       ]
     }
   ],
@@ -34,7 +34,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mv/y85f/sunshine-week-2026-2-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/121v/sunshine-week-2026-4-.png"
       ]
     }
   ],
@@ -48,7 +48,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mv/y85f/sunshine-week-13-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/121w/sunshine-week-14-.png"
       ]
     }
   ],
@@ -57,12 +57,12 @@
   "ad-header-mobile-width": 1024,
   "ad-hp-breaker-desktop": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/p9x9/newsmatch-2025-tracker-banners-5-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
       ]
     }
   ],
@@ -71,12 +71,12 @@
   "ad-hp-breaker-desktop-width": 1350,
   "ad-hp-breaker-mobile": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker-mobile",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/vkct/sunshine-week-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
       ]
     }
   ],
@@ -85,24 +85,24 @@
   "ad-hp-breaker-mobile-width": 1024,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/all-gifts-doubled.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
       ]
     }
   ],
   "ad-hp-featured-active": true,
   "ad-hp-headwater-desktop": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/p9x9/newsmatch-2025-tracker-banners-5-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
       ]
     }
   ],
@@ -111,46 +111,66 @@
   "ad-hp-headwater-desktop-width": 1350,
   "ad-hp-headwater-mobile": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-mobile",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/vkct/sunshine-week-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
       ]
     }
   ],
   "ad-hp-headwater-mobile-active": true,
   "ad-hp-headwater-mobile-height": 512,
   "ad-hp-headwater-mobile-width": 1024,
-  "ad-hp-river-desktop": [],
-  "ad-hp-river-desktop-active": false,
-  "ad-hp-river-desktop-height": 0,
-  "ad-hp-river-desktop-width": 0,
-  "ad-hp-river-mobile": [],
-  "ad-hp-river-mobile-active": false,
-  "ad-hp-river-mobile-height": 0,
-  "ad-hp-river-mobile-width": 0,
+  "ad-hp-river-desktop": [
+    {
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
+      "labelLink": "",
+      "link": "https://www.poweringpennsylvania.com",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-728x90.jpg"
+      ]
+    }
+  ],
+  "ad-hp-river-desktop-active": true,
+  "ad-hp-river-desktop-height": 90,
+  "ad-hp-river-desktop-width": 728,
+  "ad-hp-river-mobile": [
+    {
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
+      "labelLink": "",
+      "link": "https://www.poweringpennsylvania.com",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
+      ]
+    }
+  ],
+  "ad-hp-river-mobile-active": true,
+  "ad-hp-river-mobile-height": 250,
+  "ad-hp-river-mobile-width": 300,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/all-gifts-doubled.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
-      "label": "",
+      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
+      "link": "https://www.poweringpennsylvania.com/",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/newsmatch-2025-squares-6-.gif"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
       ]
     }
   ],
