@@ -1,0 +1,19 @@
+name = "Jaxon White"
+firstName = "Jaxon"
+lastName = "White"
+email = "jwhite@spotlightpa.org"
+active = true
+content = """
+Jaxon White joined Spotlight PA to report on the state Capitol and the high-stakes dynamics of the 2026 election.
+
+He began his professional career at LNP | LancasterOnline as a politics reporter, focusing on how decisions by elected officials affect the daily lives of Lancaster County residents. In 2025, he became the state Capitol reporter for WITF, covering state government and Pennsylvania's broader political landscape for public broadcast stations across the state.
+
+White grew up in Beaver County and graduated in 2023 from Bucknell University, where he led the independent student newspaper.
+"""
+headshot = "2026/03/01mw-34e7-t92q-qdks.jpeg"
+role = "reporter"
+beat = "The Capitol"
+title = "Capitol Reporter"
+focusHed = "Governor's office, legislature, elections"
+tel = ""
+signal = "JaxonWhite.02"
