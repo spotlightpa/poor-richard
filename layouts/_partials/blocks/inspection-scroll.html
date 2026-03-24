@@ -1474,8 +1474,11 @@ var olderInspectionsHTML = allInspections.length > 1 ? (function() {
                   desc.split(' | ').forEach(function(d) {
                     if (d.trim()) allDescriptions.push(d.trim());
                   });
-                  comm.split(' | ').forEach(function(c) {
-                    allComments.push(c.trim());
+                  const aiSums = (insp.ai_summary || "").trim();
+                  const commSplit = comm.split(' | ');
+                  const aiSplit = aiSums ? aiSums.split(' | ') : [];
+                  commSplit.forEach(function(c, ci) {
+                    allComments.push((aiSplit[ci] || '').trim() || c.trim());
                   });
                 }
               });

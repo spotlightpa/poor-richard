@@ -494,10 +494,8 @@
           const results = (data.status === 'OK' && data.results) ? data.results : [];
           const components = (results[0] && results[0].address_components) ? results[0].address_components : [];
           let detected = '';
-          let detectedState = '';
           for (const c of components) {
-            if (c.types.includes('administrative_area_level_1')) { detectedState = c.short_name; }
-            if (c.types.includes('locality')) { detected = c.long_name; }
+            if (c.types.includes('locality')) { detected = c.long_name; break; }
           }
           if (!detected) {
             for (const c of components) {
@@ -506,11 +504,6 @@
                 break;
               }
             }
-          }
-          if (detectedState !== 'PA') {
-            this.cityNotFound = true;
-            this.detectingCity = false;
-            return;
           }
           const match = this.matchCity(detected);
           if (match) {
@@ -1718,12 +1711,16 @@ const olderInspectionsHTML = allInspections.length > 1 ? (() => {
           inspections.forEach(insp => {
             const desc = (insp.violation_description || "").trim();
             const comm = (insp.comment || "").trim();
+            const ai = (insp.ai_summary || "").trim();
             if (desc) {
               desc.split(' | ').forEach(d => {
                 if (d.trim()) allDescriptions.push(d.trim());
               });
-              comm.split(' | ').forEach(c => {
-                allComments.push(c.trim());
+              const commParts = comm.split(' | ');
+              const aiParts = ai.split(' | ');
+              commParts.forEach((c, i) => {
+                const aiPart = (aiParts[i] || '').trim();
+                allComments.push(aiPart || c.trim());
               });
             }
           });
