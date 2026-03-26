@@ -1,12 +1,12 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn1/sunshine-week-2026-7-.png"
       ]
     }
   ],
@@ -15,18 +15,18 @@
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn2/newsmatch-2025-squares-56-.png"
       ]
     }
   ],
   "ad-footer-mobile-active": true,
-  "ad-footer-mobile-height": 512,
-  "ad-footer-mobile-width": 1024,
+  "ad-footer-mobile-height": 250,
+  "ad-footer-mobile-width": 300,
   "ad-header-desktop": [
     {
       "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
@@ -34,7 +34,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/5ysn/sunshine-week-2026-6-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn1/sunshine-week-2026-7-.png"
       ]
     }
   ],
@@ -48,7 +48,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/5ysp/sunshine-week-16-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn2/sunshine-week-19-.png"
       ]
     }
   ],
@@ -57,12 +57,12 @@
   "ad-header-mobile-width": 1024,
   "ad-hp-breaker-desktop": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn1/sunshine-week-2026-7-.png"
       ]
     }
   ],
@@ -71,38 +71,38 @@
   "ad-hp-breaker-desktop-width": 1350,
   "ad-hp-breaker-mobile": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn2/newsmatch-2025-squares-56-.png"
       ]
     }
   ],
   "ad-hp-breaker-mobile-active": true,
-  "ad-hp-breaker-mobile-height": 512,
-  "ad-hp-breaker-mobile-width": 1024,
+  "ad-hp-breaker-mobile-height": 250,
+  "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/all-gifts-doubled.png"
       ]
     }
   ],
   "ad-hp-featured-active": true,
   "ad-hp-headwater-desktop": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn1/sunshine-week-2026-7-.png"
       ]
     }
   ],
@@ -111,66 +111,46 @@
   "ad-hp-headwater-desktop-width": 1350,
   "ad-hp-headwater-mobile": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn2/newsmatch-2025-squares-56-.png"
       ]
     }
   ],
   "ad-hp-headwater-mobile-active": true,
-  "ad-hp-headwater-mobile-height": 512,
-  "ad-hp-headwater-mobile-width": 1024,
-  "ad-hp-river-desktop": [
-    {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
-      "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-728x90.jpg"
-      ]
-    }
-  ],
-  "ad-hp-river-desktop-active": true,
-  "ad-hp-river-desktop-height": 90,
-  "ad-hp-river-desktop-width": 728,
-  "ad-hp-river-mobile": [
-    {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
-      "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
-      ]
-    }
-  ],
-  "ad-hp-river-mobile-active": true,
-  "ad-hp-river-mobile-height": 250,
-  "ad-hp-river-mobile-width": 300,
+  "ad-hp-headwater-mobile-height": 250,
+  "ad-hp-headwater-mobile-width": 300,
+  "ad-hp-river-desktop": [],
+  "ad-hp-river-desktop-active": false,
+  "ad-hp-river-desktop-height": 0,
+  "ad-hp-river-desktop-width": 0,
+  "ad-hp-river-mobile": [],
+  "ad-hp-river-mobile-active": false,
+  "ad-hp-river-mobile-height": 0,
+  "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mt/p9x8/all-gifts-doubled.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Sponsorship message from Solar Landscape advocating for warehouse rooftop solar.",
-      "label": "Sponsored by Solar Landscape",
+      "description": "Support Spotlight PA \u0026 today, your gift will be DOUBLED thanks to a 2X donor match.",
+      "label": "",
       "labelLink": "",
-      "link": "https://www.poweringpennsylvania.com/",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
+        "https://files.data.spotlightpa.org/uploads/01mw/8nn2/newsmatch-2025-squares-56-.png"
       ]
     }
   ],
@@ -203,11 +183,11 @@
   "support-hed": "Before you go, I have a request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and \u003cstrong\u003etoday, your support will be DOUBLED.\u003c/strong\u003e\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and more than 11,000 readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. And right now, \u003cstrong\u003eall contributions will be MATCHED 2X by The Lenfest Institute for Journalism\u003c/strong\u003e. Every contribution makes a difference. Please make yours now.\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. That's why Spotlight PA's trustworthy, unbiased local news is more important than ever, and \u003cstrong\u003etoday, your support will be DOUBLED.\u003c/strong\u003e\n\nBut hurry! This special opportunity to get your support matched expires at 11:59 p.m. Saturday.\n\nWe're independent, and we don't answer to shareholders or a big corporation. We're neutral in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, allowing us to prioritize fact-based investigative and public-service reporting for our community.\n\nUncertain times call for decisive action, and more than 11,000 readers just like you — friends and neighbors who still give a damn about truth, accountability, and transparency — are getting behind Spotlight PA. And right now, \u003cstrong\u003eall contributions will be MATCHED 2X by The Lenfest Institute for Journalism\u003c/strong\u003e — but this offer ends soon. We need your help right now.\n\nThank you!\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS: If you prefer to mail a check, you can send it to:\u003c/strong\u003e\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": false,
-  "takeover-dek": "Our TRIPLE match expires at 11:59 p.m. TONIGHT and we're $5,000 from our goal. Hurry a gift now to support independent, unbiased reporting",
-  "takeover-hed": "MIDNIGHT DEADLINE",
+  "takeover-active": true,
+  "takeover-dek": "Our DOUBLE match expires at 11:59 p.m. Saturday and we're $5,600 from our goal. Hurry a gift now to support independent, unbiased reporting.",
+  "takeover-hed": "72 HOURS LEFT!",
   "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
   "takeover-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=takeover"
 }
