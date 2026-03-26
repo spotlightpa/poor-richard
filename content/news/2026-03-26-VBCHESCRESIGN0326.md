@@ -1,6 +1,6 @@
 +++
 authors = ["Carter Walker"]
-blurb = "Karen Barsoum had faced criticism in recent months for her management of the department and a printing error that affected thousands of voters in the 2025 election."
+blurb = "Barsoum faced criticism in recent months for her management of the department and a printing error that affected thousands of voters in the 2025 election."
 byline = "Carter Walker of Votebeat"
 description = "Barsoum had faced criticism after a pollbook printing error in 2025 and accusations of a hostile work environment."
 draft = false
