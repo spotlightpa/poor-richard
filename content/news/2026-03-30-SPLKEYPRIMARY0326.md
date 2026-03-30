@@ -133,7 +133,7 @@ Below are some of the key primaries where the winning candidates will face a com
 
 ### State House
 
-- <strong><em>Democratic: </em></strong>45th District (Allegheny) — Allegheny County Council President Patrick Catena vs. tech worker Fred Coleman vs. attorney Brittany Bloam vs. paralegal Cameron Grosh
+- <strong><em>Democratic: </em></strong>45th District (Allegheny) — Allegheny County Council President Patrick Catena vs. tech worker Fred Coleman vs. attorney Brittany Bloam
 
 - <strong><em>Republican: </em></strong>88th District (Cumberland) — former lobbyist Savannah Martin vs. retired law enforcement officer Jeff Clark
 
@@ -170,3 +170,5 @@ Below are some of the key primaries (all in the state House) in which the winner
 - <strong><em>Democratic: </em></strong>200th District (Philadelphia) — School District of Philadelphia staffer Christopher Johnson vs. business owner Qasim Rashad vs. pastor and mental health counselor Deshawnda Williams
 
 <strong><em>Correction: </em></strong><em>This story originally misstated 88th House District candidate Jeff Clark’s professional background. He is a retired law enforcement officer.  </em>
+
+
