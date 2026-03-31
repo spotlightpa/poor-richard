@@ -1,7 +1,8 @@
 +++
 authors = ["Associated Press"]
+blurb = "The NTSB cited two fatal crashes, including one in Philadelphia, and took issue with claims by some car companies."
 byline = "Associated Press"
-description = "The NTSB cited two fatal crashes, including one in Philadelphia, involding Ford’s Blue Cruise system."
+description = "The NTSB cited two fatal crashes, including one in Philadelphia, involving Ford’s Blue Cruise system."
 draft = false
 feed-exclude = false
 image = "2026/03/01mw-r9sb-a2y9-vbrg.jpeg"
