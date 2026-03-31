@@ -43,27 +43,35 @@ export const handler = async (event) => {
       event.body,
     );
 
-    if (!email || !facilityId) {
+    if ((!email && !phone) || !facilityId) {
       return {
         statusCode: 400,
-        body: JSON.stringify({ error: "Email and facility are required." }),
+        body: JSON.stringify({
+          error: "Please provide an email or phone number.",
+        }),
       };
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: "Please enter a valid email address." }),
-      };
+    if (email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        return {
+          statusCode: 400,
+          body: JSON.stringify({
+            error: "Please enter a valid email address.",
+          }),
+        };
+      }
     }
+
+    const subscriberId = email || `PHONE#${phone.replace(/\D/g, "")}`;
 
     const existing = await db.send(
       new GetCommand({
         TableName: process.env.SUBSCRIPTIONS_TABLE,
         Key: {
           pk: `FACILITY#${facilityId}`,
-          sk: `EMAIL#${email}`,
+          sk: `SUB#${subscriberId}`,
         },
       }),
     );
@@ -82,8 +90,8 @@ export const handler = async (event) => {
         TableName: process.env.SUBSCRIPTIONS_TABLE,
         Item: {
           pk: `FACILITY#${facilityId}`,
-          sk: `EMAIL#${email}`,
-          email,
+          sk: `SUB#${subscriberId}`,
+          email: email || null,
           phone: phone || null,
           method: method || "email",
           facilityId,
@@ -94,25 +102,26 @@ export const handler = async (event) => {
       }),
     );
 
-    const token = generateToken(email);
     const baseUrl = process.env.URL || "https://www.spotlightpa.org";
-    const unsubOneFacilityUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}&facilityId=${encodeURIComponent(facilityId)}`;
-    const manageAllUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}`;
 
-    await ses.send(
-      new SendEmailCommand({
-        Source: process.env.INSPECTIONS_FROM_EMAIL,
-        Destination: { ToAddresses: [email] },
-        Message: {
-          Subject: {
-            Data: `You're subscribed to alerts for ${facilityName}`,
-          },
-          Body: {
-            Text: {
-              Data: `Hi from Spotlight PA,\n\nYou're now subscribed to inspection alerts for ${facilityName}. Whenever a new inspection report is filed, we'll send you an email.\n\nWe hope this information helps. If you'd like to change what data and facilities you're monitoring, you can manage your alert settings anytime:\n${manageAllUrl}\n\nIf you're finding the Restaurant Safety Tracker useful, please consider donating to Spotlight PA so we can continue making this data free and accessible:\nhttps://www.spotlightpa.org/donate\n\nDid you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, check out our newsletters:\nhttps://www.spotlightpa.org/newsletters\n\n---\nSpotlight PA\nPO Box 11728\nHarrisburg, PA 17108\nUnited States\n\nYou're receiving this because you requested alerts from Spotlight PA's Restaurant Safety Tracker.\nUnsubscribe from ${facilityName}: ${unsubOneFacilityUrl}\nManage all your subscriptions: ${manageAllUrl}`,
+    if (email) {
+      const token = generateToken(email);
+      const unsubOneFacilityUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}&facilityId=${encodeURIComponent(facilityId)}`;
+      const manageAllUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}`;
+      await ses.send(
+        new SendEmailCommand({
+          Source: process.env.INSPECTIONS_FROM_EMAIL,
+          Destination: { ToAddresses: [email] },
+          Message: {
+            Subject: {
+              Data: `You're subscribed to alerts for ${facilityName}`,
             },
-            Html: {
-              Data: `
+            Body: {
+              Text: {
+                Data: `Hi from Spotlight PA,\n\nYou're now subscribed to inspection alerts for ${facilityName}. Whenever a new inspection report is filed, we'll send you an email.\n\nWe hope this information helps. If you'd like to change what data and facilities you're monitoring, you can manage your alert settings anytime:\n${manageAllUrl}\n\nIf you're finding the Restaurant Safety Tracker useful, please consider donating to Spotlight PA so we can continue making this data free and accessible:\nhttps://www.spotlightpa.org/donate\n\nDid you know Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues? If you want more from our newsroom, check out our newsletters:\nhttps://www.spotlightpa.org/newsletters\n\n---\nSpotlight PA\nPO Box 11728\nHarrisburg, PA 17108\nUnited States\n\nYou're receiving this because you requested alerts from Spotlight PA's Restaurant Safety Tracker.\nUnsubscribe from ${facilityName}: ${unsubOneFacilityUrl}\nManage all your subscriptions: ${manageAllUrl}`,
+              },
+              Html: {
+                Data: `
                 <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
                   <div style="max-width:600px;margin:0 auto;">
 
@@ -209,17 +218,19 @@ export const handler = async (event) => {
                   </div>
                 </div>
               `,
+              },
             },
           },
-        },
-      }),
-    );
+        }),
+      );
+    }
 
     if (phone) {
       const digits = phone.replace(/\D/g, "");
       const e164 = digits.length === 10 ? `+1${digits}` : `+${digits}`;
       try {
-        const { SNSClient, PublishCommand } = await import("@aws-sdk/client-sns");
+        const { SNSClient, PublishCommand } =
+          await import("@aws-sdk/client-sns");
         const sns = new SNSClient({
           region: process.env.INSPECTIONS_AWS_REGION,
           credentials: {
@@ -227,16 +238,18 @@ export const handler = async (event) => {
             secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
           },
         });
-        await sns.send(new PublishCommand({
-          PhoneNumber: e164,
-          Message: `Spotlight PA: You're subscribed to inspection alerts for ${facilityName}. Reply STOP to unsubscribe.`,
-          MessageAttributes: {
-            "AWS.SNS.SMS.SMSType": {
-              DataType: "String",
-              StringValue: "Transactional",
+        await sns.send(
+          new PublishCommand({
+            PhoneNumber: e164,
+            Message: `Spotlight PA: You're subscribed to inspection alerts for ${facilityName}. Reply STOP to unsubscribe.`,
+            MessageAttributes: {
+              "AWS.SNS.SMS.SMSType": {
+                DataType: "String",
+                StringValue: "Transactional",
+              },
             },
-          },
-        }));
+          }),
+        );
       } catch (smsErr) {
         console.error("SMS send error:", smsErr);
       }
