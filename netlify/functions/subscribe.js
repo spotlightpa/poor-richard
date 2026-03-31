@@ -215,6 +215,33 @@ export const handler = async (event) => {
       }),
     );
 
+    if (phone) {
+      const digits = phone.replace(/\D/g, "");
+      const e164 = digits.length === 10 ? `+1${digits}` : `+${digits}`;
+      try {
+        const { SNSClient, PublishCommand } = await import("@aws-sdk/client-sns");
+        const sns = new SNSClient({
+          region: process.env.INSPECTIONS_AWS_REGION,
+          credentials: {
+            accessKeyId: process.env.INSPECTIONS_AWS_ACCESS_KEY_ID,
+            secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
+          },
+        });
+        await sns.send(new PublishCommand({
+          PhoneNumber: e164,
+          Message: `Spotlight PA: You're subscribed to inspection alerts for ${facilityName}. Reply STOP to unsubscribe.`,
+          MessageAttributes: {
+            "AWS.SNS.SMS.SMSType": {
+              DataType: "String",
+              StringValue: "Transactional",
+            },
+          },
+        }));
+      } catch (smsErr) {
+        console.error("SMS send error:", smsErr);
+      }
+    }
+
     return {
       statusCode: 200,
       body: JSON.stringify({ success: true }),
