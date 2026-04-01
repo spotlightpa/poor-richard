@@ -1,5 +1,5 @@
 +++
-internal-id = "ELEXCENTER2025"
+internal-id = "ELEXCENTER2026"
 ad-header-desktop-active = false
 ad-header-mobile-active = false
 image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
@@ -9,7 +9,7 @@ kicker = "Elections"
 title = "Pennsylvania Primary Election 2025"
 title-tag = "Official Pennsylvania Election Center 2025"
 description = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
-dek = "2025 is a municipal election year, and ballots will vary with local races depending on where you live."
+dek = "In 2026, voters will elect a governor and determine party control of the Pennsylvania House and Senate."
 extended-kicker = "Pa. Election Center 2025"
 linktitle = "Everything you need to prepare for Pa.’s 2025 election"
 blurb = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
@@ -25,8 +25,8 @@ type = "elections"
 guide = "series/voting-guides-2025/_index.md"
 takeover = """
 {{<featured/main-takeover
-  title = "Pennsylvania Municipal Election 2025"
-  dek = "Pennsylvanians will vote in municipal and statewide judicial races on Nov. 4."
+  title = "Pennsylvania Primary Election 2026"
+  dek = "Democrats and Republicans will vote for their parties’ candidates in the primary election on May 19."
   image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 >}}
 
