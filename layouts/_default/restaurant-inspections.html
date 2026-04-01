@@ -956,7 +956,7 @@ async submitSignup() {
         <div class="w-full space-y-8">
           <div>
             <h2
-              class="w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+              class="w-full font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:text-4xl"
             >
               {{ .Param "about-title" }}
             </h2>
@@ -976,11 +976,11 @@ async submitSignup() {
             >
               {{ .Param "questions-title" }}
             </h2>
-            <p
-              class="article-content pt-4 font-serif leading-relaxed text-black"
+            <div
+              class="article-content pt-4 font-serif leading-relaxed text-black [&_h2]:mb-2 [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:italic [&_h2]:text-[#2e2e2e]"
             >
               {{ .Param "questions-description" | markdownify }}
-            </p>
+            </div>
           </div>
 
           <div>
