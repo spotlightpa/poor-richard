@@ -241,11 +241,12 @@ collectionReadMore = "Read More PA Election 2025 Stories"
 
 +++
 
-
 Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you. Our goal is that the resources on this page will give you the critical information you need to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 
-This November, voters across Pennsylvania will cast their ballots in municipal races. Depending on where you live, your ballot could include races for mayor, school board, city council, various judicial offices, district attorney, and more. Statewide, every voter will also consider judicial races, as well as retention questions for Pennsylvania Supreme, Superior, and Commonwealth Courts on their ballot.
+This May, Democrats and Republicans across Pennsylvania will vote for their parties’ candidates in the races for governor and lieutenant governor. 
 
-While we’re not able to cover the thousands of municipal races on the ballot this year, we’ll have voter guides, including one to help you vet candidates, along with some coverage on select local races in Berks County and the State College area.
+These voters will also weigh in on the Pennsylvania General Assembly. This year, all 203 state House districts will be on the ballot, while half of the 50 state Senate seats — those in even-numbered districts — are up for election. All of Pennsylvania’s congressional districts are also on the ballot.
 
-We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about [how we’re covering the 2025 Pennsylvania election](https://www.spotlightpa.org/news/2025/09/pennsylvania-2025-municipal-election-coverage-municipal-elections/).
+Our team will focus on the gubernatorial race, along with select competitive legislative races across the commonwealth. We’ll have candidate and voter guides, along with other resources, leading up to the primary.
+
+We invite suggestions for new features for this page and encourage you to check back regularly for all your 2026 election needs. Read more about how we’re covering Pennsylvania’s 2026 primary election.
