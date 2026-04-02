@@ -165,6 +165,10 @@ title = "More Coverage"
 link = "coverage"
 
 [[blocks.link]]
+title = "Voter Registration"
+link = "voter-registration"
+
+[[blocks.link]]
 title = "Credits"
 link = "credits"
 
@@ -189,6 +193,15 @@ layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "topics/elections/_index.md"
 collectionReadMore = "Read More PA Election 2026 Stories"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "voter-registration"
+image = "2026/04/01mw-x9y9-vqg4-2r9x.png"
+hed = "Track Pennsylvania's changing voter registration stats"
+dek = "Explore the latest voter registration changes in Pennsylvania by party and county with our interactive graphics."
+cta = "EXPLORE VOTER REG STATS →"
+link = "/pennsylvania-voter-registration/"
 
 +++
 
