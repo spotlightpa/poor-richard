@@ -14,6 +14,7 @@ kicker = "Elections"
 modal-exclude = false
 pinned = false
 published = 2026-03-30T04:00:00-04:00
+series = ["Voting Guides 2026"]
 slug = "key-2026-primary-elections-pennsylvana-state-house-senate-competitive"
 suppress-date = false
 title = "The 2026 primaries likely to shape the Pennsylvania House and Senate"
