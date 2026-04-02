@@ -218,4 +218,4 @@ These voters will also weigh in on the Pennsylvania General Assembly. This year,
 
 Our team will focus on the gubernatorial race, along with select competitive legislative races across the commonwealth. We’ll have candidate and voter guides, along with other resources, leading up to the primary.
 
-We invite suggestions for new features for this page and encourage you to check back regularly for all your 2026 election needs. Read more about how we’re covering Pennsylvania’s 2026 primary election.
+We invite suggestions for new features for this page and encourage you to check back regularly for all your 2026 election needs. Read more about [how we’re covering Pennsylvania’s 2026 primary election](https://www.spotlightpa.org/news/2026/04/pennsylvania-2026-primary-election-coverage-elections/).
