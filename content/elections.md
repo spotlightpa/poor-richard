@@ -6,12 +6,12 @@ image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
 kicker = "Elections"
-title = "Pennsylvania Primary Election 2025"
-title-tag = "Official Pennsylvania Election Center 2025"
+title = "Pennsylvania Primary Election 2026"
+title-tag = "Official Pennsylvania Election Center 2026"
 description = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
 dek = "In 2026, voters will elect a governor and determine party control of the Pennsylvania House and Senate."
-extended-kicker = "Pa. Election Center 2025"
-linktitle = "Everything you need to prepare for Pa.’s 2025 election"
+extended-kicker = "Pa. Election Center 2026"
+linktitle = "Everything you need to prepare for Pa.’s 2026 election"
 blurb = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
 url = "/elections/"
 aliases = [
@@ -22,7 +22,7 @@ aliases = [
 ]
 layout = "page-landing"
 type = "elections"
-guide = "series/voting-guides-2025/_index.md"
+guide = "series/voting-guides-2026/_index.md"
 takeover = """
 {{<featured/main-takeover
   title = "Pennsylvania Primary Election 2026"
@@ -81,7 +81,7 @@ form ="""
   formName="elections"
   hed="Ask Us Your Questions"
   recipient="Angela Couloumbis, Katie Meyer, Kate Huangpu"
-  dek="Spotlight PA is covering Pennsylvania’s 2025 primary elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
+  dek="Spotlight PA is covering Pennsylvania’s 2026 primary elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
   submit="Send Inquiry"
 >}}
 """
@@ -127,19 +127,19 @@ sidebar = """
   {{<sidebar-links hed="Key Dates" event="true">}}
     {{<sidebar-link
     title="Last day to register to vote"
-    date="2025-10-20"
+    date="2026-05-04"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
     title="Last day to apply for mail ballot"
-    date="2025-10-28"
+    date="2026-05-12"
     link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
     >}}
 
     {{<sidebar-link
     title="Election Day"
-    date="2025-11-04"
+    date="2026-05-19"
     link="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
     >}}
@@ -161,22 +161,6 @@ title = "Voter Guides"
 link = "guides"
 
 [[blocks.link]]
-title = "Court Quiz"
-link = "court-quiz"
-
-[[blocks.link]]
-title = "Municipal Elections 101"
-link = "municipal-elections-101"
-
-[[blocks.link]]
-title = "PA Courts 101"
-link = "pa-courts-101"
-
-[[blocks.link]]
-title = "Election Assistant"
-link = "election-assistant"
-
-[[blocks.link]]
 title = "More Coverage"
 link = "coverage"
 
@@ -185,59 +169,26 @@ title = "Credits"
 link = "credits"
 
 [[blocks]]
-title = "PA Election 2025: Voter Guides"
+title = "PA Election 2026: Voter Guides"
 slug = "guides"
 layout = "story-collection"
-timeFilter = "2025-09-01"
-collection = "series/voting-guides-2025/_index.md"
+timeFilter = "2026-04-06"
+collection = "series/voting-guides-2026/_index.md"
 collectionReadMore = "Read More Voter Guides"
-
-[[blocks]]
-layout = "ballyhoo"
-id = "court-quiz"
-image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
-hed = "Court Quiz"
-dek = "Find out what Pennsylvania's Commonwealth, Superior, and Supreme Courts do and how they make decisions that affect your daily life."
-cta = "Take Our Quiz →"
-link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commonwealth-court-quiz"
-
-[[blocks]]
-title = "Municipal Elections 101"
-slug = "municipal-elections-101"
-layout = "story-collection"
-timeFilter = "2024-12-31"
-collection = "series/municipal-elections-101/"
-collectionReadMore = "Read More"
-
-[[blocks]]
-title = "PA Courts 101"
-slug = "pa-courts-101"
-layout = "story-collection"
-timeFilter = "2024-12-31"
-collection = "series/pa-courts-101/"
-
-[[blocks]]
-layout = "ballyhoo"
-id = "election-assistant"
-image = "2023/11/01jn-4rb9-2sg8-pwpc.jpeg"
-hed = "Ask Spotlight PA’s 2025 election assistant your questions"
-dek = "Have questions about the 2025 election in Pennsylvania? Ask our new AI-powered assistant and get a trusted answer based on our reporting."
-cta = "Try Our Election Assistant →"
-link = "/elections/assistant/"
 
 [[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
-dek = "Be the first to read our 2025 voting guides and other election stories by signing up for our free daily newsletter."
+dek = "Be the first to read our 2026 voting guides and other election stories by signing up for our free daily newsletter."
 cta = "Sign Up"
 
 [[blocks]]
-title = "PA Election 2025: More Coverage"
+title = "PA Election 2026: More Coverage"
 slug = "coverage"
 layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "topics/elections/_index.md"
-collectionReadMore = "Read More PA Election 2025 Stories"
+collectionReadMore = "Read More PA Election 2026 Stories"
 
 +++
 
