@@ -1,6 +1,6 @@
 +++
 published = 2026-04-01T16:00:00Z
-image = "2024/11/01kj-n77d-kesv-eavq.jpeg"
+image = "2024/11/01kj-n76r-3tep-ac6c.jpeg"
 image-credit = "Matt Smith / For Spotlight PA"
 kicker = "Voting Guides 2026"
 title = "Voting Guides 2026"
