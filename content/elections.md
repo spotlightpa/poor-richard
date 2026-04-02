@@ -60,6 +60,11 @@ credits = """
     email="eestrada@spotlightpa.org"
 >}}
 {{<featured/credit
+    name="Sarah Anne Hughes"
+    role="Deputy Editor"
+    email="shughes@spotlightpa.org"
+>}}
+{{<featured/credit
     eyebrow="Illustration"
     name="Leise Hook"
     role="For Spotlight PA"
