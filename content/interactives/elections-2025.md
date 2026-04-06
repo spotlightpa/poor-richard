@@ -1,32 +1,30 @@
 +++
-internal-id = "ELEXCENTER2026"
+internal-id = "ELEXCENTER2025"
 ad-header-desktop-active = false
 ad-header-mobile-active = false
 image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 image-description = "Pennsylvania’s capitol building in Harrisburg on the morning of Election Day. November 3, 2020."
 image-credit = "Illustration by Leise Hook / For Spotlight PA"
 kicker = "Elections"
-title = "Pennsylvania Primary Election 2026"
-title-tag = "Official Pennsylvania Election Center 2026"
+title = "Pennsylvania Primary Election 2025"
+title-tag = "Official Pennsylvania Election Center 2025"
 description = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
-dek = "In 2026, voters will elect a governor and determine party control of the Pennsylvania House and Senate."
-extended-kicker = "Pa. Election Center 2026"
-linktitle = "Everything you need to prepare for Pa.’s 2026 election"
+dek = "2025 is a municipal election year, and ballots will vary with local races depending on where you live."
+extended-kicker = "Pa. Election Center 2025"
+linktitle = "Everything you need to prepare for Pa.’s 2025 election"
 blurb = "Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you."
-url = "/elections/"
+url = "/elections-2025/"
 aliases = [
-    "/election/",
-    "/elections-2023/",
-    "/elections-2025/",
-    "/elections/contest/",
+  "/pa-election-2025/",
+  "/elections/2025/",
 ]
 layout = "page-landing"
 type = "elections"
-guide = "series/voting-guides-2026/_index.md"
+guide = "series/voting-guides-2025/_index.md"
 takeover = """
 {{<featured/main-takeover
-  title = "Pennsylvania Primary Election 2026"
-  dek = "Democrats and Republicans will vote for their parties’ candidates in the primary election on May 19."
+  title = "Pennsylvania Municipal Election 2025"
+  dek = "Pennsylvanians will vote in municipal and statewide judicial races on Nov. 4."
   image = "2024/04/01k1-fvsv-86f6-4s99.jpeg"
 >}}
 
@@ -60,11 +58,6 @@ credits = """
     email="eestrada@spotlightpa.org"
 >}}
 {{<featured/credit
-    name="Sarah Anne Hughes"
-    role="Deputy Editor"
-    email="shughes@spotlightpa.org"
->}}
-{{<featured/credit
     eyebrow="Illustration"
     name="Leise Hook"
     role="For Spotlight PA"
@@ -86,7 +79,7 @@ form ="""
   formName="elections"
   hed="Ask Us Your Questions"
   recipient="Angela Couloumbis, Katie Meyer, Kate Huangpu"
-  dek="Spotlight PA is covering Pennsylvania’s 2026 primary elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
+  dek="Spotlight PA is covering Pennsylvania’s 2025 primary elections — and we want you to help shape our stories. Tell us what you want to know about those races, and send us any questions you have about the voting system. Use the form to reach our election team."
   submit="Send Inquiry"
 >}}
 """
@@ -132,19 +125,19 @@ sidebar = """
   {{<sidebar-links hed="Key Dates" event="true">}}
     {{<sidebar-link
     title="Last day to register to vote"
-    date="2026-05-04"
+    date="2025-10-20"
     link="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx"
     >}}
 
     {{<sidebar-link
     title="Last day to apply for mail ballot"
-    date="2026-05-12"
+    date="2025-10-28"
     link="https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx"
     >}}
 
     {{<sidebar-link
     title="Election Day"
-    date="2026-05-19"
+    date="2025-11-04"
     link="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx"
 
     >}}
@@ -166,56 +159,91 @@ title = "Voter Guides"
 link = "guides"
 
 [[blocks.link]]
-title = "More Coverage"
-link = "coverage"
+title = "Court Quiz"
+link = "court-quiz"
 
 [[blocks.link]]
-title = "Voter Registration"
-link = "voter-registration"
+title = "Municipal Elections 101"
+link = "municipal-elections-101"
+
+[[blocks.link]]
+title = "PA Courts 101"
+link = "pa-courts-101"
+
+[[blocks.link]]
+title = "Election Assistant"
+link = "election-assistant"
+
+[[blocks.link]]
+title = "More Coverage"
+link = "coverage"
 
 [[blocks.link]]
 title = "Credits"
 link = "credits"
 
 [[blocks]]
-title = "PA Election 2026: Voter Guides"
+title = "PA Election 2025: Voter Guides"
 slug = "guides"
 layout = "story-collection"
-timeFilter = "2026-04-06"
-collection = "series/voting-guides-2026/_index.md"
+timeFilter = "2025-09-01"
+collection = "series/voting-guides-2025/_index.md"
 collectionReadMore = "Read More Voter Guides"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "court-quiz"
+image = "2023/10/01jj-atwp-wm6d-3ywv.jpeg"
+hed = "Court Quiz"
+dek = "Find out what Pennsylvania's Commonwealth, Superior, and Supreme Courts do and how they make decisions that affect your daily life."
+cta = "Take Our Quiz →"
+link = "/news/2025/09/pennsylvania-election-retention-2025-supreme-superior-commonwealth-court-quiz"
+
+[[blocks]]
+title = "Municipal Elections 101"
+slug = "municipal-elections-101"
+layout = "story-collection"
+timeFilter = "2024-12-31"
+collection = "series/municipal-elections-101/"
+collectionReadMore = "Read More"
+
+[[blocks]]
+title = "PA Courts 101"
+slug = "pa-courts-101"
+layout = "story-collection"
+timeFilter = "2024-12-31"
+collection = "series/pa-courts-101/"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "election-assistant"
+image = "2023/11/01jn-4rb9-2sg8-pwpc.jpeg"
+hed = "Ask Spotlight PA’s 2025 election assistant your questions"
+dek = "Have questions about the 2025 election in Pennsylvania? Ask our new AI-powered assistant and get a trusted answer based on our reporting."
+cta = "Try Our Election Assistant →"
+link = "/elections/assistant/"
 
 [[blocks]]
 layout = "signup-inline"
 hed = "Confidently cast your vote"
-dek = "Be the first to read our 2026 voting guides and other election stories by signing up for our free daily newsletter."
+dek = "Be the first to read our 2025 voting guides and other election stories by signing up for our free daily newsletter."
 cta = "Sign Up"
 
 [[blocks]]
-title = "PA Election 2026: More Coverage"
+title = "PA Election 2025: More Coverage"
 slug = "coverage"
 layout = "story-collection"
 timeFilter = "2024-12-31"
 collection = "topics/elections/_index.md"
-collectionReadMore = "Read More PA Election 2026 Stories"
-
-[[blocks]]
-layout = "ballyhoo"
-id = "voter-registration"
-image = "2026/04/01mw-x9y9-vqg4-2r9x.png"
-hed = "Track Pennsylvania's changing voter registration stats"
-dek = "Explore the latest voter registration changes in Pennsylvania by party and county with our interactive graphics."
-cta = "EXPLORE VOTER REG STATS →"
-link = "/pennsylvania-voter-registration/"
+collectionReadMore = "Read More PA Election 2025 Stories"
 
 +++
 
+
 Spotlight PA is here to help you navigate the Pennsylvania election process — from important voting deadlines to the different ways to cast a ballot to explainers on relevant legal rulings and how they affect you. Our goal is that the resources on this page will give you the critical information you need to confidently cast your vote, and answer some questions you didn’t know you had in the process.
 
-This May, Democrats and Republicans across Pennsylvania will vote for their parties’ candidates in the races for governor and lieutenant governor. 
+This November, voters across Pennsylvania will cast their ballots in municipal races. Depending on where you live, your ballot could include races for mayor, school board, city council, various judicial offices, district attorney, and more. Statewide, every voter will also consider judicial races, as well as retention questions for Pennsylvania Supreme, Superior, and Commonwealth Courts on their ballot.
 
-These voters will also weigh in on the Pennsylvania General Assembly. This year, all 203 state House districts will be on the ballot, while half of the 50 state Senate seats — those in even-numbered districts — are up for election. All of Pennsylvania’s congressional districts are also on the ballot.
+While we’re not able to cover the thousands of municipal races on the ballot this year, we’ll have voter guides, including one to help you vet candidates, along with some coverage on select local races in Berks County and the State College area.
 
-Our team will focus on the gubernatorial race, along with select competitive legislative races across the commonwealth. We’ll have candidate and voter guides, along with other resources, leading up to the primary.
-
-We invite suggestions for new features for this page and encourage you to check back regularly for all your 2026 election needs. Read more about [how we’re covering Pennsylvania’s 2026 primary election](https://www.spotlightpa.org/news/2026/04/pennsylvania-2026-primary-election-coverage-elections/).
+We invite suggestions for new features for this page and encourage you to check back regularly for all your 2025 election needs. Read more about [how we’re covering the 2025 Pennsylvania election](https://www.spotlightpa.org/news/2025/09/pennsylvania-2025-municipal-election-coverage-municipal-elections/).
