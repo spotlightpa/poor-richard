@@ -14,6 +14,10 @@
 
 <div class="mt-8 grid grid-cols-1 gap-6" id="colorGrid"></div>
 
+<h1 class="mb-4 mt-12 font-bold text-black">Election Colors</h1>
+
+<div class="mt-8 grid grid-cols-1 gap-6" id="electionColorGrid"></div>
+
 <h2 class="font-bold text-black">Color Guidelines</h2>
 
 <div class="font-serif">
@@ -306,6 +310,13 @@
     { hex: "#ff6c36", rgb: "rgb(255, 108, 54)" },
   ];
 
+  const electionColors = [
+    { hex: "#009edb", rgb: "rgb(0, 158, 219)", label: "Democratic Party" },
+    { hex: "#d70000", rgb: "rgb(215, 0, 0)", label: "Republican Party" },
+    { hex: "#ffcb03", rgb: "rgb(255, 203, 3)", label: "No Party" },
+    { hex: "#1b998b", rgb: "rgb(27, 153, 139)", label: "Other Party" },
+  ];
+
   function hexToHSL(hex) {
     const r = parseInt(hex.slice(1, 3), 16) / 255;
     const g = parseInt(hex.slice(3, 5), 16) / 255;
@@ -384,7 +395,7 @@
       const display = useHex ? hex : rgb;
       const contrast = getAccessibleTextColor(hex);
 
-      label.textContent = display;
+      label.textContent = cell.dataset.label || display;
       label.style.color = contrast;
       overlay.style.color = "white";
       cell.dataset.color = display;
@@ -409,7 +420,7 @@
     });
   }
 
-  function renderColorBlocks() {
+  function renderColorBlocks(gridId = "colorGrid", colorList = colors) {
     const clipboardTemplate = document.getElementById("clipboard-template");
     const checkTemplate = document.getElementById("check-template");
 
@@ -421,10 +432,10 @@
       return checkTemplate.content.firstElementChild.cloneNode(true);
     }
 
-    const grid = document.getElementById("colorGrid");
+    const grid = document.getElementById(gridId);
     grid.innerHTML = "";
 
-    colors.forEach((color) => {
+    colorList.forEach((color) => {
       const wrapper = document.createElement("div");
 
       const main = document.createElement("div");
@@ -434,13 +445,14 @@
       main.dataset.hex = color.hex;
       main.dataset.rgb = color.rgb;
       main.dataset.color = color.hex;
+      if (color.label) main.dataset.label = color.label;
       main.onclick = () => copyColor(main);
 
       const label = document.createElement("span");
       label.className =
         "color-label text-white text-lg font-bold tracking-wide transition-opacity group-hover:opacity-0";
 
-      label.textContent = color.hex;
+      label.textContent = color.label || color.hex;
 
       const overlay = document.createElement("span");
       overlay.className =
@@ -510,6 +522,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     renderColorBlocks();
+    renderColorBlocks("electionColorGrid", electionColors);
     updateColorMode();
     document
       .getElementById("colorToggle")
