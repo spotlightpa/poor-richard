@@ -181,7 +181,6 @@ link = "credits"
 title = "PA Election 2026: Voter Guides"
 slug = "guides"
 layout = "story-collection"
-timeFilter = "2026-04-06"
 collection = "series/voting-guides-2026/_index.md"
 collectionReadMore = "Read More Voter Guides"
 
