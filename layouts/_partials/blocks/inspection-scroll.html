@@ -1367,18 +1367,18 @@ if (violationDesc.trim() || spotlightPa.trim() || violationComment.trim()) {
   var aiSummaries = aiSummary.split(' | ').map(function(s) { return s.trim(); });
 
   for (var i = 0; i < Math.max(descriptions.length, spotlights.length, comments.length); i++) {
-    var title = '';
+    var violationTitle = '';
 
     if (spotlights[i] && spotlights[i] !== 'NA' && spotlights[i] !== '') {
-      title = spotlights[i];
+      violationTitle = spotlights[i];
     } else if (descriptions[i]) {
-      title = descriptions[i];
+      violationTitle = descriptions[i];
     } else {
-      title = 'Violation reported';
+      violationTitle = 'Violation reported';
     }
 
     latestViolations.push({
-      title: title,
+      title: violationTitle,
       comment: comments[i] || '',
       aiSummary: aiSummaries[i] || '',
       riskLevel: riskLevels[i] || '',
