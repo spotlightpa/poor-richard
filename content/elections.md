@@ -17,7 +17,6 @@ url = "/elections/"
 aliases = [
     "/election/",
     "/elections-2023/",
-    "/elections-2025/",
     "/elections/contest/",
 ]
 layout = "page-landing"
