@@ -33,7 +33,15 @@
         </svg>
         <svg class="h-8 w-8 py-[2px] sm:h-12 sm:w-12 lg:h-14 lg:w-14">
           <title>Spotlight PA Home</title>
-          {{ partial "helper/svg.html" "pa" }}
+          {{ if eq (page.Param "gaCategory") "newsletters:papost" }}
+            <image
+              href="{{ (resources.Get "img/logos/circle-and-domain.svg").RelPermalink }}"
+              width="100%"
+              height="100%"
+            />
+          {{ else }}
+            {{ partial "helper/svg.html" "pa" }}
+          {{ end }}
         </svg>
       </a>
     </div>
