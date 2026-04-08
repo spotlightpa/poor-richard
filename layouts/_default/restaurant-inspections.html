@@ -456,6 +456,7 @@
           this.email = '';
           this.phone = '';
           this.submitting = false;
+          this.errorMessage = '';
           document.body.style.overflow = 'hidden';
         });
         window.addEventListener('open-city-alerts-modal', () => {
@@ -465,6 +466,7 @@
           this.email = '';
           this.phone = '';
           this.submitting = false;
+          this.errorMessage = '';
           this.userCity = '';
           this.cityFacilities = [];
           this.selectedFacilities = {};
@@ -587,23 +589,39 @@ async submitSignup() {
       let newCount = 0;
       let alreadyCount = 0;
       let errorCount = 0;
+      let newFacilityName = '';
       await Promise.all(ids.map(async (id) => {
         try {
           const r = await fetch('/.netlify/functions/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...payload, facilityIds: undefined, facilityId: id }),
+            body: JSON.stringify({ ...payload, facilityIds: undefined, facilityId: id, skipSms: true }),
           });
           const d = await r.json();
           if (r.status === 409 && d.alreadySubscribed) alreadyCount++;
-          else if (r.ok) newCount++;
+          else if (r.ok) {
+            newCount++;
+            if (!newFacilityName) {
+              const match = this.cityFacilities.find(f => f.id === id);
+              if (match) newFacilityName = match.name;
+            }
+          }
           else errorCount++;
         } catch { errorCount++; }
       }));
       if (errorCount > 0 && newCount === 0 && alreadyCount === 0) {
         throw new Error('Something went wrong. Please try again.');
       }
-      this.citySubscribeSummary = { newCount, alreadyCount };
+      this.citySubscribeSummary = { newCount, alreadyCount, newFacilityName };
+      if (this.phone && newCount > 0) {
+        try {
+          await fetch('/.netlify/functions/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ phone: this.phone, city: this.userCity, newCount, newFacilityName, summarySms: true }),
+          });
+        } catch { /* non-fatal */ }
+      }
       this.step = 'success';
     } else {
       const res = await fetch('/.netlify/functions/subscribe', {
@@ -612,6 +630,9 @@ async submitSignup() {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
+      if (res.status === 409 && data.alreadySubscribed) {
+        throw new Error(`You're already subscribed to alerts for ${this.facilityName}.`);
+      }
       if (!res.ok) {
         throw new Error(data.error || 'Something went wrong. Please try again.');
       }
@@ -959,16 +980,26 @@ async submitSignup() {
               <template x-if="citySubscribeSummary">
                 <span>
                   <span x-show="citySubscribeSummary.newCount > 0">
-                    Subscribed to
-                    <span
-                      class="font-semibold text-g-9"
-                      x-text="citySubscribeSummary.newCount"
-                    ></span>
-                    new
-                    <span
-                      x-text="citySubscribeSummary.newCount === 1 ? 'facility' : 'facilities'"
-                    ></span
-                    >.
+                    <template x-if="citySubscribeSummary.newCount === 1">
+                      <span
+                        >Subscribed to
+                        <span
+                          class="font-semibold text-g-9"
+                          x-text="citySubscribeSummary.newFacilityName"
+                        ></span
+                        >.</span
+                      >
+                    </template>
+                    <template x-if="citySubscribeSummary.newCount > 1">
+                      <span
+                        >Subscribed to
+                        <span
+                          class="font-semibold text-g-9"
+                          x-text="citySubscribeSummary.newCount"
+                        ></span>
+                        new facilities.</span
+                      >
+                    </template>
                   </span>
                   <span x-show="citySubscribeSummary.alreadyCount > 0">
                     You were already subscribed to
@@ -996,13 +1027,13 @@ async submitSignup() {
 
         <p class="mt-4 text-xs text-g-6">
           <span x-show="email && phone"
-            >Check your email and phone for confirmation.</span
+            >Check your email and texts for confirmation.</span
           >
           <span x-show="email && !phone"
             >Check your email for confirmation.</span
           >
           <span x-show="phone && !email"
-            >Check your phone for confirmation.</span
+            >Check your texts for confirmation.</span
           >
         </p>
       </div>

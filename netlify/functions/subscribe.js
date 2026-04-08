@@ -47,7 +47,42 @@ export const handler = async (event) => {
       facilityName,
       facilityIds,
       city,
+      skipSms,
+      summarySms,
+      newCount,
+      newFacilityName,
     } = JSON.parse(event.body);
+
+    if (summarySms) {
+      if (!phone)
+        return {
+          statusCode: 400,
+          body: JSON.stringify({ error: "No phone." }),
+        };
+      const digits = phone.replace(/\D/g, "");
+      const e164 = digits.length === 10 ? `+1${digits}` : `+${digits}`;
+      const { SNSClient, PublishCommand } = await import("@aws-sdk/client-sns");
+      const sns = new SNSClient({
+        region: process.env.INSPECTIONS_AWS_REGION,
+        credentials: {
+          accessKeyId: process.env.INSPECTIONS_AWS_ACCESS_KEY_ID,
+          secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
+        },
+      });
+      await sns.send(
+        new PublishCommand({
+          PhoneNumber: e164,
+          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount} facilities`} in ${city}. Reply STOP to unsubscribe.`,
+          MessageAttributes: {
+            "AWS.SNS.SMS.SMSType": {
+              DataType: "String",
+              StringValue: "Transactional",
+            },
+          },
+        }),
+      );
+      return { statusCode: 200, body: JSON.stringify({ success: true }) };
+    }
 
     if ((!email && !phone) || (!facilityId && !facilityIds)) {
       return {
@@ -229,7 +264,7 @@ export const handler = async (event) => {
       );
     }
 
-    if (phone) {
+    if (phone && !skipSms) {
       const digits = phone.replace(/\D/g, "");
       const e164 = digits.length === 10 ? `+1${digits}` : `+${digits}`;
       try {
