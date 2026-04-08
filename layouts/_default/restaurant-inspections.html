@@ -582,18 +582,43 @@ async submitSignup() {
           facilityId: this.facilityId,
           facilityName: this.facilityName,
         };
-    const res = await fetch('/.netlify/functions/subscribe', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(data.error || 'Something went wrong. Please try again.');
+    if (this.mode === 'city') {
+      const ids = Object.entries(this.selectedFacilities).filter(([, v]) => v).map(([k]) => k);
+      let newCount = 0;
+      let alreadyCount = 0;
+      let errorCount = 0;
+      await Promise.all(ids.map(async (id) => {
+        try {
+          const r = await fetch('/.netlify/functions/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...payload, facilityIds: undefined, facilityId: id }),
+          });
+          const d = await r.json();
+          if (r.status === 409 && d.alreadySubscribed) alreadyCount++;
+          else if (r.ok) newCount++;
+          else errorCount++;
+        } catch { errorCount++; }
+      }));
+      if (errorCount > 0 && newCount === 0 && alreadyCount === 0) {
+        throw new Error('Something went wrong. Please try again.');
+      }
+      this.citySubscribeSummary = { newCount, alreadyCount };
+      this.step = 'success';
+    } else {
+      const res = await fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Something went wrong. Please try again.');
+      }
+      this.step = 'success';
     }
-    this.step = 'success';
   } catch (err) {
-    alert(err.message);
+    this.errorMessage = err.message;
   } finally {
     this.submitting = false;
   }
@@ -870,6 +895,16 @@ async submitSignup() {
             </p>
           </div>
 
+          <div
+            x-show="errorMessage"
+            class="rounded-lg border border-red-3 bg-red-1 p-3"
+          >
+            <p
+              class="font-sans text-sm font-semibold text-red-7"
+              x-text="errorMessage"
+            ></p>
+          </div>
+
           <button
             type="submit"
             :disabled="submitting || (mode === 'city' && (selectedCount === 0 || !userCity)) || (!email && !phone)"
@@ -918,11 +953,37 @@ async submitSignup() {
             >
           </template>
           <template x-if="mode === 'city'">
-            <span
-              >We'll send you alerts for new inspections across
-              <span class="font-semibold text-g-9" x-text="userCity"></span
-              >.</span
-            >
+            <span>
+              We'll send you alerts for new inspections across
+              <span class="font-semibold text-g-9" x-text="userCity"></span>.
+              <template x-if="citySubscribeSummary">
+                <span>
+                  <span x-show="citySubscribeSummary.newCount > 0">
+                    Subscribed to
+                    <span
+                      class="font-semibold text-g-9"
+                      x-text="citySubscribeSummary.newCount"
+                    ></span>
+                    new
+                    <span
+                      x-text="citySubscribeSummary.newCount === 1 ? 'facility' : 'facilities'"
+                    ></span
+                    >.
+                  </span>
+                  <span x-show="citySubscribeSummary.alreadyCount > 0">
+                    You were already subscribed to
+                    <span
+                      class="font-semibold text-g-9"
+                      x-text="citySubscribeSummary.alreadyCount"
+                    ></span>
+                    <span
+                      x-text="citySubscribeSummary.alreadyCount === 1 ? 'facility' : 'facilities'"
+                    ></span
+                    >.
+                  </span>
+                </span>
+              </template>
+            </span>
           </template>
         </p>
 
@@ -934,7 +995,15 @@ async submitSignup() {
         </button>
 
         <p class="mt-4 text-xs text-g-6">
-          Check your email for a confirmation link
+          <span x-show="email && phone"
+            >Check your email and phone for confirmation.</span
+          >
+          <span x-show="email && !phone"
+            >Check your email for confirmation.</span
+          >
+          <span x-show="phone && !email"
+            >Check your phone for confirmation.</span
+          >
         </p>
       </div>
     </div>

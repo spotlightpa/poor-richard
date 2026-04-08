@@ -85,9 +85,7 @@ export const handler = async (event) => {
     if (existing.Item) {
       return {
         statusCode: 409,
-        body: JSON.stringify({
-          error: "You're already subscribed to alerts for this facility.",
-        }),
+        body: JSON.stringify({ alreadySubscribed: true }),
       };
     }
 
