@@ -39,11 +39,17 @@ export const handler = async (event) => {
   }
 
   try {
-    const { email, phone, method, facilityId, facilityName } = JSON.parse(
-      event.body,
-    );
+    const {
+      email,
+      phone,
+      method,
+      facilityId,
+      facilityName,
+      facilityIds,
+      city,
+    } = JSON.parse(event.body);
 
-    if ((!email && !phone) || !facilityId) {
+    if ((!email && !phone) || (!facilityId && !facilityIds)) {
       return {
         statusCode: 400,
         body: JSON.stringify({
