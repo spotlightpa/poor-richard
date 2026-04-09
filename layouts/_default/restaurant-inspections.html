@@ -428,6 +428,7 @@
       email: '',
       phone: '',
       method: 'email',
+      rememberMe: false,
       submitting: false,
       userCity: '',
       cityFacilities: [],
@@ -453,8 +454,9 @@
           this.facilityName = e.detail.facilityName;
           this.facilityId = e.detail.facilityId;
           this.step = 'form';
-          this.email = '';
-          this.phone = '';
+          this.email = localStorage.getItem('alerts-remembered-email') || '';
+          this.phone = localStorage.getItem('alerts-remembered-phone') || '';
+          this.rememberMe = !!(this.email || this.phone);
           this.submitting = false;
           this.errorMessage = '';
           document.body.style.overflow = 'hidden';
@@ -463,8 +465,9 @@
           this.open = true;
           this.mode = 'city';
           this.step = 'form';
-          this.email = '';
-          this.phone = '';
+          this.email = localStorage.getItem('alerts-remembered-email') || '';
+          this.phone = localStorage.getItem('alerts-remembered-phone') || '';
+          this.rememberMe = !!(this.email || this.phone);
           this.submitting = false;
           this.errorMessage = '';
           this.userCity = '';
@@ -567,6 +570,15 @@ async submitSignup() {
     return;
   }
   this.submitting = true;
+  if (this.rememberMe) {
+    if (this.email) localStorage.setItem('alerts-remembered-email', this.email);
+    else localStorage.removeItem('alerts-remembered-email');
+    if (this.phone) localStorage.setItem('alerts-remembered-phone', this.phone);
+    else localStorage.removeItem('alerts-remembered-phone');
+  } else {
+    localStorage.removeItem('alerts-remembered-email');
+    localStorage.removeItem('alerts-remembered-phone');
+  }
   try {
     const method = this.phone ? 'both' : 'email';
     const payload = this.mode === 'city'
@@ -915,6 +927,37 @@ async submitSignup() {
               may apply. Reply STOP at any time to unsubscribe.
             </p>
           </div>
+
+          <label
+            class="ml-px flex cursor-pointer select-none items-center gap-2"
+          >
+            <div class="relative flex-shrink-0">
+              <input
+                type="checkbox"
+                x-model="rememberMe"
+                class="peer sr-only"
+              />
+              <div
+                class="h-5 w-5 rounded border-2 border-g-4 bg-white transition-colors peer-checked:border-blue peer-checked:bg-blue"
+              ></div>
+              <svg
+                class="pointer-events-none absolute inset-0 m-auto h-3 w-3 fill-white opacity-0 transition-opacity peer-checked:opacity-100"
+                viewBox="0 0 12 12"
+              >
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <span class="font-sans text-sm font-semibold text-g-7"
+              >Remember my contact info</span
+            >
+          </label>
 
           <div
             x-show="errorMessage"
