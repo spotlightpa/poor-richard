@@ -595,7 +595,7 @@ async submitSignup() {
           const r = await fetch('/.netlify/functions/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...payload, facilityIds: undefined, facilityId: id, skipSms: true }),
+            body: JSON.stringify({ ...payload, facilityIds: undefined, facilityId: id, skipSms: true, skipEmail: true }),
           });
           const d = await r.json();
           if (r.status === 409 && d.alreadySubscribed) alreadyCount++;
@@ -613,12 +613,12 @@ async submitSignup() {
         throw new Error('Something went wrong. Please try again.');
       }
       this.citySubscribeSummary = { newCount, alreadyCount, newFacilityName };
-      if (this.phone && newCount > 0) {
+      if (newCount > 0) {
         try {
           await fetch('/.netlify/functions/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ phone: this.phone, city: this.userCity, newCount, newFacilityName, summarySms: true }),
+            body: JSON.stringify({ email: this.email, phone: this.phone, city: this.userCity, newCount, newFacilityName, summarySms: true }),
           });
         } catch { /* non-fatal */ }
       }
