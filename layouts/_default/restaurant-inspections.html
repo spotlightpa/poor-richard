@@ -896,9 +896,6 @@ async submitSignup() {
               class="mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-sm font-semibold text-g-9"
             >
               Phone Number
-              <span class="font-normal text-g-6"
-                >(optional, for SMS alerts)</span
-              >
             </label>
             <input
               id="alert-phone"
@@ -931,7 +928,20 @@ async submitSignup() {
           <label
             class="ml-px flex cursor-pointer select-none items-center gap-2"
           >
-            <div class="relative flex-shrink-0">
+            <div
+              class="relative flex-shrink-0"
+              x-effect="
+              if (!rememberMe) {
+                localStorage.removeItem('alerts-remembered-email');
+                localStorage.removeItem('alerts-remembered-phone');
+              } else {
+                if (email) localStorage.setItem('alerts-remembered-email', email);
+                else localStorage.removeItem('alerts-remembered-email');
+                if (phone) localStorage.setItem('alerts-remembered-phone', phone);
+                else localStorage.removeItem('alerts-remembered-phone');
+              }
+            "
+            >
               <input
                 type="checkbox"
                 x-model="rememberMe"
