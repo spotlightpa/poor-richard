@@ -176,14 +176,14 @@ export const handler = async (event) => {
       }
     }
 
-    const subscriberId = email || `PHONE#${phone.replace(/\D/g, "")}`;
+    const subscriberId = `SUB#${email || `PHONE#${phone.replace(/\D/g, "")}`}`;
 
     const existing = await db.send(
       new GetCommand({
         TableName: process.env.SUBSCRIPTIONS_TABLE,
         Key: {
           pk: `FACILITY#${facilityId}`,
-          sk: `SUB#${subscriberId}`,
+          sk: subscriberId,
         },
       }),
     );
@@ -200,7 +200,7 @@ export const handler = async (event) => {
         TableName: process.env.SUBSCRIPTIONS_TABLE,
         Item: {
           pk: `FACILITY#${facilityId}`,
-          sk: `SUB#${subscriberId}`,
+          sk: subscriberId,
           email: email || null,
           phone: phone || null,
           method: method || "email",

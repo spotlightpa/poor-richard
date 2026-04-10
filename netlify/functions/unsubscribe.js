@@ -163,15 +163,20 @@ export const handler = async (event) => {
 
   if (event.httpMethod === "GET" && facilityId) {
     try {
-      await db.send(
-        new DeleteCommand({
-          TableName: process.env.SUBSCRIPTIONS_TABLE,
-          Key: {
-            pk: `FACILITY#${facilityId}`,
-            sk: `EMAIL#${email}`,
-          },
-        }),
-      );
+      await Promise.allSettled([
+        db.send(
+          new DeleteCommand({
+            TableName: process.env.SUBSCRIPTIONS_TABLE,
+            Key: { pk: `FACILITY#${facilityId}`, sk: `EMAIL#${email}` },
+          }),
+        ),
+        db.send(
+          new DeleteCommand({
+            TableName: process.env.SUBSCRIPTIONS_TABLE,
+            Key: { pk: `FACILITY#${facilityId}`, sk: `SUB#${email}` },
+          }),
+        ),
+      ]);
       return {
         statusCode: 200,
         headers: { "Content-Type": "text/html" },
@@ -233,17 +238,20 @@ export const handler = async (event) => {
       );
 
       await Promise.all(
-        toDelete.map((sub) =>
+        toDelete.flatMap((sub) => [
           db.send(
             new DeleteCommand({
               TableName: process.env.SUBSCRIPTIONS_TABLE,
-              Key: {
-                pk: `FACILITY#${sub.facilityId}`,
-                sk: `EMAIL#${email}`,
-              },
+              Key: { pk: `FACILITY#${sub.facilityId}`, sk: `EMAIL#${email}` },
             }),
           ),
-        ),
+          db.send(
+            new DeleteCommand({
+              TableName: process.env.SUBSCRIPTIONS_TABLE,
+              Key: { pk: `FACILITY#${sub.facilityId}`, sk: `SUB#${email}` },
+            }),
+          ),
+        ]),
       );
 
       const removedCount = toDelete.length;
