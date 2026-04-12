@@ -1,12 +1,12 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania.",
-      "label": "",
+      "description": "A sponsored message from Solar Landscape promoting solar installations on warehouse rooftops.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/r873/tracker-banners-1350-x-175-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
       ]
     }
   ],
@@ -15,12 +15,12 @@
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania.",
-      "label": "",
+      "description": "A sponsored message from Solar Landscape promoting solar installations on warehouse rooftops.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/r873/spring-2023-campaign-squares-13-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
       ]
     }
   ],
@@ -29,12 +29,12 @@
   "ad-footer-mobile-width": 300,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania.",
-      "label": "",
+      "description": "A sponsored message from Solar Landscape promoting solar installations on warehouse rooftops.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/r873/tracker-banners-1350-x-175-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sj/solarlandscape-pastaticads-concept2-1350x175.jpg"
       ]
     }
   ],
@@ -43,12 +43,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania.",
-      "label": "",
+      "description": "A sponsored message from Solar Landscape promoting solar installations on warehouse rooftops.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-mobile",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/r873/newsmatch-2025-rectangles-1024-512-px-43-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-512x250.jpg"
       ]
     }
   ],
@@ -133,24 +133,24 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania.",
-      "label": "",
+      "description": "A sponsored message from Solar Landscape promoting solar installations on warehouse rooftops.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/r873/spring-2023-campaign-squares-13-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting for Pennsylvania.",
-      "label": "",
+      "description": "A sponsored message from Solar Landscape promoting solar installations on warehouse rooftops.",
+      "label": "Sponsored by Solar Landscape",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
+      "link": "https://www.poweringpennsylvania.com",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01mw/r873/spring-2023-campaign-squares-13-.png"
+        "https://files.data.spotlightpa.org/uploads/01mw/11sk/solarlandscape-pastaticads-concept2-300x250.jpg"
       ]
     }
   ],
