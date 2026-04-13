@@ -201,8 +201,8 @@ export const handler = async (event) => {
         Item: {
           pk: `FACILITY#${facilityId}`,
           sk: subscriberId,
-          email: email || null,
-          phone: phone || null,
+          ...(email ? { email } : {}),
+          ...(phone ? { phone } : {}),
           method: method || "email",
           facilityId,
           facilityName,
