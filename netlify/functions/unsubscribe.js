@@ -50,7 +50,7 @@ function successPage(message) {
   <title>Unsubscribed — Spotlight PA</title>
   <style>
     body { font-family: Georgia, serif; background: #f9fafb; margin: 0; padding: 40px 16px; color: #111; }
-    .card { background: white; max-width: 520px; margin: 0 auto; border-radius: 8px; padding: 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .card { background: white; max-width: 520px; margin: 0 auto; border-radius: 8px; padding: 48px 40px 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); border-top: 4px solid #009EDB; }
     h1 { font-size: 24px; margin: 0 0 12px; }
     p { font-size: 16px; line-height: 1.6; color: #374151; margin: 0 0 16px; }
     a { color: #009EDB; }
@@ -63,7 +63,7 @@ function successPage(message) {
     <h1>${escapeHTML(message)}</h1>
     <p>Your subscription preferences have been updated.</p>
     <p>
-      <a href="https://www.spotlightpa.org/restaurant-inspections">Back to the Restaurant Safety Tracker</a>
+      <a href="https://www.spotlightpa.org/restaurant-inspections" style="display:inline-block;background-color:#009EDB;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:12px 24px;border-radius:6px;">← Back to Restaurant Safety Tracker</a>
     </p>
     <p style="font-size:13px;color:#9ca3af;">
       Questions? Contact <a href="mailto:info@spotlightpa.org">info@spotlightpa.org</a>
@@ -81,10 +81,10 @@ function managePage(token, subs) {
     ? subs
         .map(
           (sub) => `
-      <label style="display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #e5e7eb;cursor:pointer;">
+      <label style="display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid #e5e7eb;cursor:pointer;">
         <input type="checkbox" name="facilityIds" value="${escapeHTML(sub.facilityId)}" checked
           style="width:16px;height:16px;flex-shrink:0;cursor:pointer;" />
-        <span style="font-size:15px;color:#111;">${escapeHTML(sub.facilityName || sub.facilityId)}</span>
+        <span style="font-size:15px;color:#111;line-height:1.4;">${escapeHTML((sub.facilityName || sub.facilityId).split(" — ")[0])}<br/><span style="font-size:13px;color:#6b7280;">${escapeHTML((sub.facilityName || sub.facilityId).split(" — ")[1] || "")}</span></span>
       </label>`,
         )
         .join("")
@@ -99,49 +99,43 @@ function managePage(token, subs) {
   <style>
     body { font-family: Georgia, serif; background: #f9fafb; margin: 0; padding: 40px 16px; color: #111; }
     .card { background: white; max-width: 520px; margin: 0 auto; border-radius: 8px; padding: 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
-    h1 { font-size: 24px; margin: 0 0 8px; }
-    .sub { font-size: 14px; color: #6b7280; margin: 0 0 24px; }
+    h1 { font-size: 28px; margin: 0 0 8px; font-family: Georgia, serif; }
+    .sub { font-size: 15px; color: #6b7280; margin: 0 0 28px; line-height: 1.5; }
     .facility-list { margin: 0 0 24px; }
     .actions { display: flex; gap: 12px; flex-wrap: wrap; }
     button[type="submit"] {
-      background: #111; color: white; border: none; border-radius: 6px;
-      padding: 12px 24px; font-size: 15px; font-family: inherit; cursor: pointer;
+      background: #cc0000; background-image: linear-gradient(to right,#e11d48,#cc0000);
+      color: white; border: none; border-radius: 6px;
+      padding: 12px 28px; font-size: 15px; font-family: inherit; cursor: pointer;
+      font-weight: 700; letter-spacing: 0.03em;
     }
-    button[type="submit"]:hover { background: #374151; }
+    button[type="submit"]:hover { background: #b91c1c; background-image: none; }
     .select-links { font-size: 13px; margin-bottom: 16px; }
     .select-links a { color: #009EDB; cursor: pointer; text-decoration: underline; margin-right: 12px; }
-    a.back { font-size: 14px; color: #009EDB; }
   </style>
 </head>
 <body>
   <div class="card">
+    <a href="https://www.spotlightpa.org/restaurant-inspections" style="display:inline-flex;align-items:center;gap:6px;color:#6b7280;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-decoration:none;margin:0 0 28px;letter-spacing:0.05em;text-transform:uppercase;">← Back to Restaurant Safety Tracker</a>
     <h1>Manage your alerts</h1>
     <p class="sub">Uncheck any facilities you no longer want to receive alerts for, then click Save.</p>
 
-    ${
-      subs.length
-        ? `<div class="select-links">
-        <a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true)">Select all</a>
-        <a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false)">Deselect all</a>
-      </div>`
-        : ""
-    }
-
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 4px;padding-bottom:12px;border-bottom:2px solid #111;">
+      <span style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#111;">${subs.length} Facilities</span>
+      ${subs.length ? `<span style="font-family:Arial,sans-serif;font-size:12px;"><a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true)" style="color:#009EDB;cursor:pointer;text-decoration:underline;">Select all</a> &nbsp;·&nbsp; <a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false)" style="color:#009EDB;cursor:pointer;text-decoration:underline;">Deselect all</a></span>` : ""}
+    </div>
     <form method="POST" action="${escapeHTML(action)}">
       <input type="hidden" name="token" value="${escapeHTML(token)}" />
       <div class="facility-list">${rows}</div>
       ${
         subs.length
           ? `<div class="actions">
-          <button type="submit">Save preferences</button>
+          <button type="submit">Save</button>
         </div>`
           : ""
       }
     </form>
 
-    <p style="margin-top:24px;">
-      <a class="back" href="https://www.spotlightpa.org/restaurant-inspections">Back to the Restaurant Safety Tracker</a>
-    </p>
   </div>
 </body>
 </html>`;
