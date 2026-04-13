@@ -683,7 +683,7 @@ function performSearch(query, city) {
         var bannerText = document.getElementById("search-results-text");
         if (banner && bannerText) {
           var hasActiveSearch = query.trim() || city.trim();
-          if (hasActiveSearch && filteredData.length > 0) {
+          if (hasActiveSearch) {
             var parts = [];
             if (query.trim()) parts.push('"' + query.trim() + '"');
             if (city.trim()) parts.push(city.trim());
