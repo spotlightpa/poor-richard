@@ -63,7 +63,7 @@ function successPage(message) {
     <h1>${escapeHTML(message)}</h1>
     <p>Your subscription preferences have been updated.</p>
     <p>
-      <a href="https://www.spotlightpa.org/restaurants">Back to the Restaurant Safety Tracker</a>
+      <a href="https://www.spotlightpa.org/restaurant-inspections">Back to the Restaurant Safety Tracker</a>
     </p>
     <p style="font-size:13px;color:#9ca3af;">
       Questions? Contact <a href="mailto:info@spotlightpa.org">info@spotlightpa.org</a>
@@ -140,7 +140,7 @@ function managePage(token, subs) {
     </form>
 
     <p style="margin-top:24px;">
-      <a class="back" href="https://www.spotlightpa.org/restaurants">Back to the Restaurant Safety Tracker</a>
+      <a class="back" href="https://www.spotlightpa.org/restaurant-inspections">Back to the Restaurant Safety Tracker</a>
     </p>
   </div>
 </body>
