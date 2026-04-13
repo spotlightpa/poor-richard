@@ -69,7 +69,7 @@ export const handler = async (event) => {
               Destination: { ToAddresses: [email] },
               Message: {
                 Subject: {
-                  Data: `You're subscribed to inspection alerts in ${city}`,
+                  Data: `You're now subscribed to inspection alerts in ${city}`,
                 },
                 Body: {
                   Text: {
@@ -224,7 +224,7 @@ export const handler = async (event) => {
           Destination: { ToAddresses: [email] },
           Message: {
             Subject: {
-              Data: `You're subscribed to alerts for ${facilityName}`,
+              Data: `You're now subscribed to alerts for ${facilityName}`,
             },
             Body: {
               Text: {
@@ -351,7 +351,7 @@ export const handler = async (event) => {
         await sns.send(
           new PublishCommand({
             PhoneNumber: e164,
-            Message: `Spotlight PA: You're subscribed to inspection alerts for ${facilityName}. Reply STOP to unsubscribe.`,
+            Message: `Spotlight PA: You're now subscribed to inspection alerts for ${facilityName}. Reply STOP to unsubscribe.`,
             MessageAttributes: {
               "AWS.SNS.SMS.SMSType": {
                 DataType: "String",
