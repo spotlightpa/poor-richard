@@ -1020,8 +1020,8 @@ async submitSignup() {
         <p class="mb-6 text-base text-g-7">
           <template x-if="mode === 'facility'">
             <span
-              >We'll send you an email alert whenever there's a new inspection
-              report for
+              >We'll send you an alert whenever there's a new inspection report
+              for
               <span class="font-semibold text-g-9" x-text="facilityName"></span
               >.</span
             >
@@ -1085,7 +1085,7 @@ async submitSignup() {
           <span x-show="email && !phone"
             >Check your email for confirmation.</span
           >
-          <span x-show="phone && !email"
+          <span x-show="!email && phone"
             >Check your texts for confirmation.</span
           >
         </p>

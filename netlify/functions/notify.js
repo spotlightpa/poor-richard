@@ -225,7 +225,7 @@ export const handler = async (event) => {
       statusCode: 200,
       body: JSON.stringify({ success: true, count: inspections.length }),
     };
-  } catch (err) {
+  } catch {
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Something went wrong." }),
