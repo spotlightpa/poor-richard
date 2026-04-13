@@ -78,7 +78,15 @@ function managePage(token, subs) {
   const action = `${baseUrl}/.netlify/functions/unsubscribe`;
 
   const rows = subs.length
-    ? subs
+    ? [...subs]
+        .sort((a, b) => {
+          const nameA = (a.facilityName || a.facilityId).split(" — ")[0].trim();
+          const nameB = (b.facilityName || b.facilityId).split(" — ")[0].trim();
+          const startsWithNum = (s) => /^[0-9]/.test(s);
+          if (startsWithNum(nameA) && !startsWithNum(nameB)) return 1;
+          if (!startsWithNum(nameA) && startsWithNum(nameB)) return -1;
+          return nameA.localeCompare(nameB);
+        })
         .map(
           (sub) => `
       <label style="display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid #e5e7eb;cursor:pointer;">
