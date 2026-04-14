@@ -106,7 +106,7 @@ function buildEmailHtml({
       <h1 style="margin:0 0 8px;font-family:Georgia,serif;font-size:32px;font-weight:700;color:#2E2E2E;line-height:1.2;">Restaurant Safety Tracker</h1>
       <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.05em;text-transform:uppercase;">${dateStr}</p>
       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">Hi from Spotlight PA,</p>
-      <p style="margin:0 0 28px;font-size:18px;line-height:1.6;color:#111;">A new inspection report has been filed for a restaurant you're tracking.</p>
+      <p style="margin:0 0 28px;font-size:18px;line-height:1.6;color:#111;">A new inspection report has been filed for a facility you're tracking.</p>
       <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:20px 24px;margin:0 0 28px;">
         <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6b7280;">Facility</p>
         <p style="margin:0 0 4px;font-size:20px;font-weight:700;color:#111;font-family:Georgia,serif;">${facilityName}</p>
