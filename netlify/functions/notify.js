@@ -70,18 +70,8 @@ function buildEmailHtml({
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")}`;
 
-  const violationsHtml = violations.length
-    ? violations
-        .map(
-          (v) => `
-        <div style="padding:16px 0;border-bottom:1px solid #e5e7eb;">
-          <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:${getRiskColor(v.risk)};">${v.risk || "Violation"}</p>
-          <p style="margin:0 0 8px;font-size:17px;font-weight:700;color:#111;font-family:Georgia,serif;">${v.title}</p>
-          ${v.comment ? `<p style="margin:0;font-size:15px;line-height:1.6;color:#374151;border-left:3px solid #d1d5db;padding-left:12px;font-family:Georgia,serif;">${v.comment}</p>` : ""}
-        </div>`,
-        )
-        .join("")
-    : `<p style="color:#6b7280;font-size:16px;font-family:Georgia,serif;">No violations reported.</p>`;
+  const violationCount = violations.length;
+  const violationsHtml = "";
 
   return `
 <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
@@ -108,13 +98,14 @@ function buildEmailHtml({
       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">Hi from Spotlight PA,</p>
       <p style="margin:0 0 28px;font-size:18px;line-height:1.6;color:#111;">A new inspection report has been filed for a facility you're tracking.</p>
       <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:20px 24px;margin:0 0 28px;">
-        <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6b7280;">Facility</p>
+        <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#9ca3af;">${inspectionDate}</p>
         <p style="margin:0 0 4px;font-size:20px;font-weight:700;color:#111;font-family:Georgia,serif;">${facilityName}</p>
-        <p style="margin:0;font-family:Arial,sans-serif;font-size:13px;color:#6b7280;">Inspection date: ${inspectionDate}</p>
+        <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:13px;color:#374151;font-style:italic;">${facilityId.split(" — ")[1] || ""}</p>
+        
+        ${violationCount ? `<span style="display:inline-block;margin-top:4px;background-color:#fef2f2;color:#b91c1c;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #fecaca;">${violationCount} violation${violationCount !== 1 ? "s" : ""}</span>` : `<span style="display:inline-block;margin-top:4px;background-color:#f0fdf4;color:#15803d;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #bbf7d0;">No violations</span>`}
       </div>
-      <h2 style="margin:0 0 4px;font-size:20px;font-weight:700;color:#111;font-family:Georgia,serif;">Violations</h2>
-      <div style="margin:0 0 28px;">${violationsHtml}</div>
-      <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 28px;border-radius:6px;">View Full Report →</a>
+      <div style="margin:0 0 24px;">${violationsHtml}</div>
+      <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 28px;border-radius:6px;">${violationCount ? "View the violations →" : "View the tracker →"}</a>
       <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
       <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;text-decoration:underline;">donating to Spotlight PA</a> so we can continue making this data free and accessible.</p>
     </div>
