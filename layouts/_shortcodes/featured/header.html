@@ -66,27 +66,40 @@
         </h1>
         <h2 class="mt-4 lg:text-xl lg:leading-relaxed">{{ $dek }}</h2>
       </div>
-      <time
-        class="font-sans font-bold uppercase"
-        datetime="{{ $params.publishedISO }}"
-      >
-        {{- $date -}}
-      </time>
-      <div class="mt-8 leading-none lg:text-lg">
-        {{ $creditType }}
-        <span class="font-sans font-bold uppercase">{{ $byline }}</span>
-      </div>
-      <div class="mt-3 font-sans text-sm font-bold uppercase">
-        {{ $outlet }}
-      </div>
-      {{ if $imageCredit }}
+      {{ if ne $date "NA" }}
+        <time
+          class="font-sans font-bold uppercase"
+          datetime="{{ $params.publishedISO }}"
+        >
+          {{- $date -}}
+        </time>
+      {{ end }}
+      {{ if ne $byline "NA" }}
+        <div class="mt-8 leading-none lg:text-lg">
+          {{ if ne $creditType "NA" }}{{ $creditType }}{{ end }}
+          <span class="font-sans font-bold uppercase">{{ $byline }}</span>
+        </div>
+      {{ end }}
+      {{ if ne $outlet "NA" }}
+        <div class="mt-3 font-sans text-sm font-bold uppercase">
+          {{ $outlet }}
+        </div>
+      {{ end }}
+      {{ if and $imageCredit (ne $imageCredit "NA") }}
         <div class="mt-4 text-sm lg:mt-8">
-          {{ $artType }} by
-          <span class="font-sans font-bold uppercase">
-            {{- $imageCredit -}}
-          </span>
-          {{ $preposition }}
-          <span class="font-sans uppercase">{{ $imageSource }}</span>
+          {{ if ne $artType "NA" }}{{ $artType }}{{ else }}Photo{{ end }}
+          {{ if ne $imageCredit "NA" }}
+            by
+            <span class="font-sans font-bold uppercase">
+              {{- $imageCredit -}}
+            </span>
+          {{ end }}
+          {{ if and $preposition (ne $preposition "NA") }}
+            {{ $preposition }}
+          {{ end }}
+          {{ if and $imageSource (ne $imageSource "NA") }}
+            <span class="font-sans uppercase">{{ $imageSource }}</span>
+          {{ end }}
         </div>
       {{ end }}
       {{ if $secondCredit }}
