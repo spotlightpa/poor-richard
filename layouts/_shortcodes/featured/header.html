@@ -50,10 +50,16 @@
 
 
 <header
-  class="flex flex-col md:min-h-screen md:flex-row"
+  class="{{ if not (.Get `stack-layout`) }}
+    md:min-h-screen md:flex-row
+  {{ end }} flex flex-col"
   data-ga-category="inline-header"
 >
-  <div class="bg-black text-white md:w-2/5 md:min-w-min">
+  <div
+    class="{{ if not (.Get `stack-layout`) }}
+      md:w-2/5 md:min-w-min
+    {{ end }} bg-black text-white"
+  >
     <div class="px-8 pb-10 sm:px-12">
       <div
         class="mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
@@ -138,7 +144,17 @@
     </div>
   </div>
 
-  <div class="md:order-0 relative order-first pb-16x9 md:w-3/5">
+  <div
+    class="{{ if not (.Get `stack-layout`) }}
+      md:order-0 order-first md:w-3/5
+    {{ else }}
+      {{ if eq (.Get `image-order`) `bottom` }}
+        order-last
+      {{ else }}
+        order-first
+      {{ end }}
+    {{ end }} relative pb-16x9"
+  >
     <picture class="absolute inset-0 bg-g-3">
       {{ if $videoSrc }}
         <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />
