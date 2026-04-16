@@ -165,6 +165,10 @@ title = "Voter Guides"
 link = "guides"
 
 [[blocks.link]]
+title = "Campaign Finance"
+link = "campaign-finance"
+
+[[blocks.link]]
 title = "More Coverage"
 link = "coverage"
 
@@ -188,6 +192,15 @@ layout = "signup-inline"
 hed = "Confidently cast your vote"
 dek = "Be the first to read our 2026 voting guides and other election stories by signing up for our free daily newsletter."
 cta = "Sign Up"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "campaign-finance"
+image = "2026/04/01mx-zgrk-8tmk-c28x.jpeg"
+hed = "The money race"
+dek = "Explore how much money Democrat Josh Shapiro and Republican Stacy Garrity have raised in their campaigns for Pa. governor."
+cta = "EXPLORE CAMPAIGN FINANCE →"
+link = "/news/2026/04/pennsylvania-election-governor-josh-shapiro-stacy-garrity-campaign-finance-visualized-elections/"
 
 [[blocks]]
 title = "PA Election 2026: More Coverage"
