@@ -13,6 +13,7 @@
 {{ $imageSource := .Get "image-source" }}
 {{ $imageDesc := .Get "image-description" }}
 {{ $focus := .Get "image-focus" }}
+{{ $layout := .Get "layout" }}
 {{ $gravity := .Get "image-gravity" }}
 {{ $artType := .Get "art-type" | default "Photo" }}
 {{ $secondCredit := .Get "second-credit" }}
@@ -50,13 +51,13 @@
 
 
 <header
-  class="{{ if not (.Get `stack-layout`) }}
+  class="{{ if ne $layout "stack" }}
     md:min-h-screen md:flex-row
   {{ end }} flex flex-col"
   data-ga-category="inline-header"
 >
   <div
-    class="{{ if not (.Get `stack-layout`) }}
+    class="{{ if ne $layout "stack" }}
       md:w-2/5 md:min-w-min
     {{ end }} bg-black text-white"
   >
@@ -145,7 +146,7 @@
   </div>
 
   <div
-    class="{{ if not (.Get `stack-layout`) }}
+    class="{{ if ne $layout "stack" }}
       md:order-0 order-first md:w-3/5
     {{ else }}
       {{ if eq (.Get `image-order`) `bottom` }}
