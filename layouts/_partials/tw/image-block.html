@@ -11,7 +11,7 @@
 {{ $shadow := cond (.shadow|not|not) "shadow-sm" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
 {{ $containerClass := .containerClass | default "relative w-full overflow-clip group flex items-center justify-center bg-g-3" }}
-{{ $wrapperClass := .wrapperClass | default "block" }}
+{{ $wrapperClass := .wrapperClass | default "block w-full" }}
 {{ $pictureClass := .pictureClass | default "flex" }}
 {{ $captionClass := .captionClass | default `mt-6 font-sans leading-tight text-g-8` }}
 {{ $inlineCredit := .inlineCredit }}
