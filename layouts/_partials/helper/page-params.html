@@ -69,6 +69,12 @@
 {{ with .Param "link" }}
   {{ $link = . }}
 {{ end }}
+
+{{ $showPlayButton := false }}
+{{ if .Param "video-type" | not | not }}
+  {{ $showPlayButton = true }}
+{{ end }}
+
 {{ $params := dict
   "byline" $byline
   "kicker" $kicker
@@ -87,6 +93,7 @@
   "evergreen" $evergreen
   "section" .CurrentSection.LinkTitle
   "seoTitle" (.Param "title-tag" | default .LinkTitle)
+  "showPlayButton" $showPlayButton
 }}
 
 {{ return $params }}
