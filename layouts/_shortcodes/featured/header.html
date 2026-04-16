@@ -21,6 +21,7 @@
 {{ $secondDesc := .Get "second-description" }}
 {{ $secondType := .Get "second-type" | default "Photo" }}
 {{ $supplementalCredit := .Get "supplemental-credit" }}
+{{ $imageOrder := .Get "image-order" }}
 
 {{ $preposition := .Get "credit-relation" | default "of" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-4xl lg:text-6xl` }}
@@ -49,18 +50,23 @@
 }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
+{{ $headerClass := "flex flex-col md:min-h-screen md:flex-row" }}
+{{ $textOverlayClass := "md:w-2/5 md:min-w-min bg-black text-white" }}
 
-<header
-  class="{{ if ne $layout "stack" }}
-    md:min-h-screen md:flex-row
-  {{ end }} flex flex-col"
-  data-ga-category="inline-header"
->
-  <div
-    class="{{ if ne $layout "stack" }}
-      md:w-2/5 md:min-w-min
-    {{ end }} bg-black text-white"
-  >
+{{ $imageWrapClass := "md:order-0 order-first md:w-3/5 relative pb-16x9" }}
+{{ if eq $layout `stack` }}
+  {{ $headerClass = "flex flex-col" }}
+  {{ $textOverlayClass = "bg-black text-white" }}
+  {{ if eq $imageOrder `bottom` }}
+    {{ $imageWrapClass = "order-last relative pb-16x9" }}
+  {{ else }}
+    {{ $imageWrapClass = "order-first relative pb-16x9" }}
+  {{ end }}
+{{ end }}
+
+
+<header class="{{ $headerClass }}" data-ga-category="inline-header">
+  <div class="{{ $textOverlayClass }}">
     <div class="px-8 pb-10 sm:px-12">
       <div
         class="mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
@@ -145,17 +151,7 @@
     </div>
   </div>
 
-  <div
-    class="{{ if ne $layout "stack" }}
-      md:order-0 order-first md:w-3/5
-    {{ else }}
-      {{ if eq (.Get `image-order`) `bottom` }}
-        order-last
-      {{ else }}
-        order-first
-      {{ end }}
-    {{ end }} relative pb-16x9"
-  >
+  <div class="{{ $imageWrapClass }}">
     <picture class="absolute inset-0 bg-g-3">
       {{ if $videoSrc }}
         <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />
