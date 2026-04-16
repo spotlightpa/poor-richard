@@ -10,11 +10,12 @@
 {{ $rounded := cond (.rounded|not|not) "rounded-sm" "" }}
 {{ $shadow := cond (.shadow|not|not) "shadow-sm" "" }}
 {{ $creditClass := .creditClass | default "mt-1 w-full px-1 text-right font-sans text-xs uppercase leading-tight text-credit" }}
-{{ $containerClass := .containerClass | default "relative w-full overflow-clip bg-g-3" }}
+{{ $containerClass := .containerClass | default "relative w-full overflow-clip group flex items-center justify-center bg-g-3" }}
 {{ $wrapperClass := .wrapperClass | default "block" }}
 {{ $pictureClass := .pictureClass | default "flex" }}
 {{ $captionClass := .captionClass | default `mt-6 font-sans leading-tight text-g-8` }}
 {{ $inlineCredit := .inlineCredit }}
+{{ $showPlayButton := .showPlayButton }}
 
 {{ $sizes :=  partial "helper/build-sizes" (dict
   "widths" $widths
@@ -84,6 +85,14 @@
         @click="showOverlay = !showOverlay"
         data-ga-category="toggle-overlay"
       ></div>
+    {{ end }}
+    {{ if $showPlayButton }}
+      <svg
+        aria-hidden="true"
+        class="pointer-events-none absolute h-[75px] w-[75px] text-g-5 opacity-75 group-hover:text-g-8"
+      >
+        {{ partial "helper/svg.html" "play" }}
+      </svg>
     {{ end }}
   </div>
   {{ if $inlineCredit }}

@@ -16,19 +16,20 @@
   "credit" ($featured.Param "image-credit")
   "description" ($featured.Param "image-description")
   "gravity" ($featured.Param "image-gravity")
-  "link" $featured.RelPermalink
+  "link" $featuredParams.link
   "widthRatio" 16
   "heightRatio" 9
   "widths" (slice 528 1056 1280)
   "sizeHint" "(min-width: 1080px) 528px, (min-width: 850px) 40vw, 90vw"
   "eager" true
+  "showPlayButton" $featuredParams.showPlayButton
 }}
 {{ partial "tw/thumb-item.html" (dict
   "imgOpts" $imgOpts
   "rubricLink" $featuredParams.rubric.RelPermalink
   "extendedEyebrow" $featuredParams.extendedKicker
   "eyebrow" $featuredParams.kicker
-  "link" $featured.RelPermalink
+  "link" $featuredParams.link
   "hed" $featured.LinkTitle
   "dek" $featuredParams.blurb
   "byline" $featuredParams.byline
