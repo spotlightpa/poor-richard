@@ -1,7 +1,15 @@
 <!-- wrapper for content-area -->
-{{ $short := .Get "short" }}
+{{ $kind := .Get "kind" | default "yellow" }}
 
-{{ if eq $short "true" }}
+{{ if eq $kind "dots" }}
+  <div class="my-16 flex items-center gap-3">
+    <hr class="h-px flex-1 border-none bg-g-4" />
+    <span class="h-1.5 w-1.5 rounded-full bg-g-4"></span>
+    <span class="h-1.5 w-1.5 rounded-full bg-g-4"></span>
+    <span class="h-1.5 w-1.5 rounded-full bg-g-4"></span>
+    <hr class="h-px flex-1 border-none bg-g-4" />
+  </div>
+{{ else if eq $kind "short" }}
   <div class="my-16 flex justify-center">
     <hr class="h-1 w-1/4 border-none bg-yellow" />
   </div>
