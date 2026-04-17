@@ -7,7 +7,7 @@
 {{ end }}
 
 {{ define "header" }}
-  {{ if not (index .Page.Params "image-order") }}
+  {{ if not (index .Page.Params "hide-logo") }}
     <nav
       class="z-10 flex bg-black sm:absolute sm:bg-transparent"
       data-ga-category="header"
