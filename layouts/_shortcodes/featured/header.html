@@ -68,8 +68,22 @@
 <header class="{{ $headerClass }}" data-ga-category="inline-header">
   <div class="{{ $textOverlayClass }}">
     <div class="px-8 pb-10 sm:px-12">
+      {{ if and (eq $layout `stack`) (eq $imageOrder `top`) }}
+        <div class="mt-8 lg:mt-12">
+          <a class="block" href="/">
+            <svg
+              class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
+              role="img"
+              aria-label="Spotlight PA banner"
+              viewBox="0 0 1024 190"
+            >
+              {{ partial "helper/svg.html" "banner" }}
+            </svg>
+          </a>
+        </div>
+      {{ end }}
       <div
-        class="mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
+        class="mb-4 mt-8 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-10 lg:pb-10"
       >
         <div class="font-sans font-bold uppercase text-yellow">
           {{ $eyebrow }}
