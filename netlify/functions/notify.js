@@ -30,22 +30,12 @@ const sns = new SNSClient({
   },
 });
 
-const riskColor = {
-  "high risk": "#D70000",
-  "moderate risk": "#FFCB03",
-  "low risk": "#009EDB",
-};
-
 function generateToken(email) {
   const encoded = Buffer.from(email).toString("base64url");
   const sig = createHmac("sha256", process.env.UNSUBSCRIBE_SECRET)
     .update(encoded)
     .digest("base64url");
   return `${encoded}.${sig}`;
-}
-
-function getRiskColor(risk) {
-  return riskColor[(risk || "").toLowerCase()] || "#6b7280";
 }
 
 function buildEmailHtml({
@@ -71,7 +61,6 @@ function buildEmailHtml({
     .replace(/^-+|-+$/g, "")}`;
 
   const violationCount = violations.length;
-  const violationsHtml = "";
 
   return `
 <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
@@ -104,7 +93,6 @@ function buildEmailHtml({
         
         ${violationCount ? `<span style="display:inline-block;margin-top:4px;background-color:#fef2f2;color:#b91c1c;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #fecaca;">${violationCount} violation${violationCount !== 1 ? "s" : ""}</span>` : `<span style="display:inline-block;margin-top:4px;background-color:#f0fdf4;color:#15803d;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #bbf7d0;">No violations</span>`}
       </div>
-      <div style="margin:0 0 24px;">${violationsHtml}</div>
       <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 28px;border-radius:6px;">${violationCount ? "View the violations →" : "View the tracker →"}</a>
       <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
       <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;text-decoration:underline;">donating to Spotlight PA</a> so we can continue making this data free and accessible.</p>
