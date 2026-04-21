@@ -21,7 +21,7 @@ show-alerts-button = true
 cuisine-type = false
 
 [data]
-source = "https://s3.us-east-2.amazonaws.com/interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
+source = "https://interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
 popup = false
 cacheVersion = 1
 maxCacheAge = 24
