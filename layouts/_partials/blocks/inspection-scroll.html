@@ -27,7 +27,7 @@
         </button>
         <button
           type="button"
-          @click="window.dispatchEvent(new CustomEvent('open-city-alerts-modal'))"
+          @click="$dispatch('open-city-alerts-modal')"
           class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-blue bg-blue-1 px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-blue transition-all hover:bg-blue hover:text-white"
         >
           <svg
