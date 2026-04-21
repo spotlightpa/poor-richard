@@ -185,6 +185,7 @@ export const handler = async (event) => {
         body: successPage("You've been unsubscribed."),
       };
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Unsubscribe error:", err);
       return {
         statusCode: 500,
@@ -211,6 +212,7 @@ export const handler = async (event) => {
         body: managePage(token, subs),
       };
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Manage page error:", err);
       return {
         statusCode: 500,
@@ -268,6 +270,7 @@ export const handler = async (event) => {
         body: successPage(message),
       };
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Save preferences error:", err);
       return {
         statusCode: 500,

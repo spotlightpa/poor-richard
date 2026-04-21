@@ -125,6 +125,7 @@ export const handler = async (event) => {
             }),
           );
         } catch (emailErr) {
+          // eslint-disable-next-line no-console
           console.error("Summary email error:", emailErr);
         }
       }
@@ -361,6 +362,7 @@ export const handler = async (event) => {
           }),
         );
       } catch (smsErr) {
+        // eslint-disable-next-line no-console
         console.error("SMS send error:", smsErr);
       }
     }
