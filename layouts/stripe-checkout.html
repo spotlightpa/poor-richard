@@ -444,6 +444,13 @@
         }, 500);
       });
 
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlPromo = urlParams.get("promo");
+      if (urlPromo) {
+        promoInput.value = urlPromo;
+        validatePromoCode(urlPromo);
+      }
+
       promoInput.addEventListener("blur", () => {
         const code = promoInput.value.trim();
         if (code) {
