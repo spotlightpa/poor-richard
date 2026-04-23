@@ -33,7 +33,7 @@ Treasurer Stacy Garrity — a Republican who will likely be Shapiro’s opponent
 
 Garrity said that while the attack on Shapiro was “shocking and deeply troubling” — and that &#34;everyone deserves to feel protected” — the administration’s ask for public dollars to cover the upgrades was unprecedented, and does not adhere to the state’s “fiscal and purchasing requirements that are in place to protect taxpayers.”
 
-<br/>Garrity’s decision involves an emotionally charged issue: the safety of the governor and his family in times of rising anti-semitism and political violence. Shapiro is Jewish, and the man who attacked the residence last year had expressed anger at the governor over the ongoing war in Gaza. (As a governor, Shapiro has no decision-making power involving overseas wars.)
+Garrity’s decision involves an emotionally charged issue: the safety of the governor and his family in times of rising anti-semitism and political violence. Shapiro is Jewish, and the man who attacked the residence last year had expressed anger at the governor over the ongoing war in Gaza. (As a governor, Shapiro has no decision-making power involving overseas wars.)
 
 And it comes at an uncomfortable moment politically, as Garrity is running for governor. She hopes to snag the GOP nomination in next month’s primary election and then challenge Shapiro in November.
 
