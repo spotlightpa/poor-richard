@@ -24,6 +24,7 @@ import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 import takeover from "../enhancements/takeover.js";
 import youtubeFeed from "../enhancements/youtube-feed.js";
+import inspections, { searchUI } from "../enhancements/inspections.js";
 
 for (let [name, comp] of [
   ["carousel", carousel],
@@ -40,6 +41,8 @@ for (let [name, comp] of [
   ["sticky", sticky],
   ["takeover", takeover],
   ["youtubeFeed", youtubeFeed],
+  ["inspectionsUI", inspections],
+  ["searchUI", searchUI],
 ]) {
   Alpine.data(name, comp);
 }
