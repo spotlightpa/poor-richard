@@ -18,6 +18,7 @@ suppress-ads = false
 suppress-date = false
 title = "PA treasurer says agency can’t pay for $1 million security upgrades at Gov. Shapiro’s private home"
 title-tag = "Shapiro security home upgrades prompt dispute"
+topics = ["Josh Shapiro"]
 +++
 
 HARRISBURG — The head of Pennsylvania’s Treasury Department said her agency does not have the legal authority to pay the more than $1 million in recent security upgrades at Gov. Josh Shapiro’s privately-owned family home in Montgomery County, saying state rules bar her from using taxpayer dollars to pay those bills.
@@ -30,7 +31,13 @@ Treasurer Stacy Garrity told reporters Thursday that state procurement rules do 
 
 Garrity said that while the attack on Shapiro was “shocking and deeply troubling” — and that &#34;everyone deserves to feel protected” — the administration’s “unprecedented” ask for public dollars to cover the upgrades does not adhere to the state’s “fiscal and purchasing requirements that are in place to protect taxpayers.”
 
-The governor’s office did not immediately respond to Treasury’s decision, but a spokesperson said the office intended to issue a statement later in the day.
+In a statement Shapiro spokesperson Rosie Lapowsky called Garrity’s decision “a completely unprecedented and shameful political action without legal basis.”
+
+“The Treasurer should put partisanship aside, follow the law, and show some humanity for a family that has experienced real trauma, the state troopers who protect them every day, and the vendors and workers who the treasurer has now refused to pay,” Lapowsky wrote.
+
+Earlier, when asked whether she was concerned her office’s decision would be viewed as politically motivated, given her gubernatorial ambitions, Garrity responded: “I don’t play these kind of political games. We call balls and strikes here at Treasury. I always have done this.”
+
+“This has absolutely nothing to do about the person in the house.” she added. “It’s about the title on the deed — the law just does not provide a mechanism for the state to pay for construction \[at\] the governor’s private property using taxpayer dollars.”
 
 The administration does have options to resolve the matter. It can seek an out-of-court settlement for payment of the outstanding bills through the state Attorney General’s office. Additionally, state lawmakers could authorize the spending as part of their annual budget approval process.
 
