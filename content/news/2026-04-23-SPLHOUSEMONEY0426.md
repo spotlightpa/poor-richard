@@ -1,8 +1,8 @@
 +++
 authors = ["Angela Couloumbis"]
-blurb = "PA’s treasurer says her agency lacks legal authority to pay for the private property upgrades, despite safety concerns following an arson attack and attempted murder at the governor's mansion."
+blurb = "The treasurer, Republican Stacy Garrity — Democratic Gov. Josh Shapiro's likely opponent in the fall gubernatorial election — said her agency lacks legal authority to pay for the upgrades."
 byline = "Angela Couloumbis of Spotlight PA"
-description = "A Pennsylvania State Police spokesperson has said the upgrades were necessary to keep the governor and his family safe."
+description = "The treasurer, Republican Stacy Garrity — Democratic Gov. Josh Shapiro's likely opponent in the fall election — said her agency lacks legal authority to pay."
 draft = false
 feed-exclude = false
 image = "2025/09/01md-62rg-wv3m-bq56.jpeg"
@@ -17,7 +17,7 @@ slug = "pennsylvania-governor-security-upgrades-treasury-josh-shapiro"
 suppress-ads = false
 suppress-date = false
 title = "PA treasurer says agency can’t pay for $1 million security upgrades at Gov. Shapiro’s private home"
-title-tag = "Shapiro security home upgrades prompt dispute"
+title-tag = "Treasurer denies $1M in PA gov's home security upgrades"
 topics = ["Josh Shapiro"]
 +++
 
