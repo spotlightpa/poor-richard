@@ -37,7 +37,7 @@ In a statement Shapiro spokesperson Rosie Lapowsky called Garrity’s decision �
 
 Earlier, when asked whether she was concerned her office’s decision would be viewed as politically motivated, given her gubernatorial ambitions, Garrity responded: “I don’t play these kind of political games. We call balls and strikes here at Treasury. I always have done this.”
 
-“This has absolutely nothing to do about the person in the house.” she added. “It’s about the title on the deed — the law just does not provide a mechanism for the state to pay for construction \[at\] the governor’s private property using taxpayer dollars.”
+“This has absolutely nothing to do about the person in the house,” she added. “It’s about the title on the deed — the law just does not provide a mechanism for the state to pay for construction \[at\] the governor’s private property using taxpayer dollars.”
 
 The administration does have options to resolve the matter. It can seek an out-of-court settlement for payment of the outstanding bills through the state Attorney General’s office. Additionally, state lawmakers could authorize the spending as part of their annual budget approval process.
 
