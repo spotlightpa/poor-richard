@@ -1,8 +1,8 @@
 +++
 authors = ["Angela Couloumbis"]
-blurb = "The treasurer, Republican Stacy Garrity — Democratic Gov. Josh Shapiro's likely opponent in the fall gubernatorial election — said her agency lacks legal authority to pay for the upgrades."
+blurb = "The treasurer, Republican Stacy Garrity — Shapiro's likely opponent in the fall gubernatorial election — says her agency lacks legal authority to pay for the upgrades."
 byline = "Angela Couloumbis of Spotlight PA"
-description = "The treasurer, Republican Stacy Garrity — Democratic Gov. Josh Shapiro's likely opponent in the fall election — said her agency lacks legal authority to pay."
+description = "The treasurer, Republican Stacy Garrity — Shapiro's likely opponent in the fall gubernatorial election — says her agency lacks legal authority to pay."
 draft = false
 feed-exclude = false
 image = "2025/09/01md-62rg-wv3m-bq56.jpeg"
