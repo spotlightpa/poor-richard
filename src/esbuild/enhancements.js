@@ -23,7 +23,6 @@ import searchModal from "../enhancements/search-modal.js";
 import slider from "../enhancements/slider.js";
 import sticky from "../enhancements/sticky.js";
 import takeover from "../enhancements/takeover.js";
-import youtubeFeed from "../enhancements/youtube-feed.js";
 import inspections, { searchUI } from "../enhancements/inspections.js";
 import inspectionsData from "../enhancements/inspections-data.js";
 import inspectionsModal from "../enhancements/inspections-modal.js";
@@ -47,7 +46,6 @@ for (let [name, comp] of [
   ["slider", slider],
   ["sticky", sticky],
   ["takeover", takeover],
-  ["youtubeFeed", youtubeFeed],
   ["inspectionsUI", inspections],
   ["searchUI", searchUI],
   ["inspectionsData", inspectionsData],
