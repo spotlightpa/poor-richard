@@ -257,7 +257,7 @@ function createInspectionCard(data, index, allInspections) {
     if (riskCounts.low > 0)
       violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #009EDB;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.low} low risk violation${riskCounts.low !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.other > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #6b7280;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold" style="color: #6b7280;">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #6b7280;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
   }
 
   card.innerHTML = `<div class="list-content">
