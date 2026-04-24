@@ -54,11 +54,10 @@
 {{ $textOverlayClass := "md:w-2/5 md:min-w-min bg-black text-white" }}
 
 {{ $imageWrapClass := "md:order-0 order-first md:w-3/5 relative pb-16x9" }}
-{{ $headlineSpacing := "mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10" }}
-
-{{ if index .Page.Params "hide-logo" }}
-  {{ $headlineSpacing = "mb-4 mt-8 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-10 lg:pb-10" }}
-{{ end }}
+{{ $headlineSpacing := cond (index .Page.Params "hide-logo")
+  "mb-4 mt-8 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-10 lg:pb-10"
+  "mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
+}}
 
 {{ if eq $layout `stack` }}
   {{ $headerClass = "flex flex-col" }}
