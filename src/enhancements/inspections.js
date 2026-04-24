@@ -531,9 +531,10 @@ export default function inspectionsUI() {
       const comment = (v.comment || "").trim().replace(/^[\s|]+$/, "");
       const displayComment = aiSummary || comment;
       const riskLevel = (v.riskLevel || "").toLowerCase();
-      let color = "#D70000";
-      if (riskLevel.includes("low risk")) color = "#009EDB";
+      let color = "#6b7280";
+      if (riskLevel.includes("high risk")) color = "#D70000";
       else if (riskLevel.includes("moderate risk")) color = "#FFCB03";
+      else if (riskLevel.includes("low risk")) color = "#009EDB";
       return `<li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0"><div class="flex items-start pt-2 gap-2"><svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0" style="color: ${color};" aria-hidden="true"><use href="#triangle-exclamation-svg" /></svg><h4 class="font-sans text-lg font-bold text-black break-words">${escapeHTML(title)}</h4></div>${displayComment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">${escapeHTML(displayComment)}</p>` : ""}</li>`;
     },
 

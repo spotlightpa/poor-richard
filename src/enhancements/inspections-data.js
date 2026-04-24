@@ -233,18 +233,19 @@ function createInspectionCard(data, index, allInspections) {
     ? `<div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7"><use href="#calendar-day-svg" /></svg><span>Last inspection: ${escapeHTML(inspectionDate)}</span></div>`
     : "";
 
-  const riskCounts = { high: 0, moderate: 0, low: 0 };
+  const riskCounts = { high: 0, moderate: 0, low: 0, other: 0 };
   if (data.risk_level) {
     data.risk_level.split(" | ").forEach((r) => {
       r = r.trim().toLowerCase();
       if (r === "high risk") riskCounts.high++;
       else if (r === "moderate risk") riskCounts.moderate++;
       else if (r === "low risk") riskCounts.low++;
+      else if (r === "na" || r === "") riskCounts.other++;
     });
   }
 
   const totalViolations =
-    riskCounts.high + riskCounts.moderate + riskCounts.low;
+    riskCounts.high + riskCounts.moderate + riskCounts.low + riskCounts.other;
   let violationBadges = "";
   if (totalViolations === 0) {
     violationBadges = `<li class="flex items-center gap-2"><svg class="h-6 w-6 fill-current" style="color: #1b998b;"><use href="#circle-check-svg" /></svg><span class="text-base font-semibold">0 violations</span></li>`;
@@ -255,6 +256,8 @@ function createInspectionCard(data, index, allInspections) {
       violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #FFCB03;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.moderate} moderate risk violation${riskCounts.moderate !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.low > 0)
       violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #009EDB;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.low} low risk violation${riskCounts.low !== 1 ? "s" : ""}</span></li>`;
+    if (riskCounts.other > 0)
+      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #6b7280;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold" style="color: #6b7280;">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
   }
 
   card.innerHTML = `<div class="list-content">
