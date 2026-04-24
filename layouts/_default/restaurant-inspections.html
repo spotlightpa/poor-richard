@@ -58,8 +58,7 @@
 
       <div
         class="mx-auto mt-3 hidden w-full md:block md:w-7/12"
-        x-data="inspectionsUI()"
-        x-init="init()"
+        x-ref="searchWrapper"
       >
         {{ partial "blocks/search.html" (dict
           "placeholder" (default "Search" (.Param "search-desktop-placeholder"))
@@ -107,12 +106,10 @@
           <div class="mt-4 hidden flex-col gap-3 md:flex">
             <div class="relative">
               <select
-                id="date-sort"
+                x-model="$store.inspections.currentSort"
                 class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
               >
-                <option value="" disabled selected hidden>
-                  Inspection Date
-                </option>
+                <option value="" disabled hidden>Inspection Date</option>
                 <option value="date-desc">Newest to Oldest</option>
                 <option value="date-asc">Oldest to Newest</option>
               </select>
@@ -125,12 +122,10 @@
 
             <div class="relative">
               <select
-                id="risk-sort"
+                x-model="$store.inspections.currentSort"
                 class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
               >
-                <option value="" disabled selected hidden>
-                  Violation Risk
-                </option>
+                <option value="" disabled hidden>Violation Risk</option>
                 <option value="risk-desc">Highest to Lowest</option>
                 <option value="risk-asc">Lowest to Highest</option>
               </select>
@@ -143,10 +138,10 @@
 
             <div class="relative">
               <select
-                id="name-sort"
+                x-model="$store.inspections.currentSort"
                 class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
               >
-                <option value="" disabled selected hidden>Facility Name</option>
+                <option value="" disabled hidden>Facility Name</option>
                 <option value="alpha-asc">A to Z</option>
                 <option value="alpha-desc">Z to A</option>
               </select>
@@ -297,31 +292,14 @@
                     this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : '';
                   });
                 },
-                choose(value, text) {
-                  const sel = document.getElementById('city-filter');
+choose(value, text) {
                   const v = (value || '').trim();
                   const t = (text || value || '').trim();
-
-                  if (sel) {
-                    const exists = Array.from(sel.options || []).some(o =>
-                      String(o.value || '').toLowerCase() === String(v).toLowerCase()
-                    );
-
-                    if (!exists && v) {
-                      const opt = document.createElement('option');
-                      opt.value = v;
-                      opt.text = t || v;
-                      sel.appendChild(opt);
-                    }
-
-                    sel.value = v;
-                    sel.dispatchEvent(new Event('change', { bubbles: true }));
-                  }
-
                   this.selectedText = t;
                   this.open = false;
                   this.query = '';
                   this.syncShown();
+                  this.$store.inspections.currentCity = v;
                 }
               }"
             >
@@ -389,23 +367,7 @@
           </div>
 
           <button
-            @click="
-                    const cf = document.getElementById('cuisine-filter'); if (cf) cf.value = '';
-                    document.getElementById('city-filter').value = '';
-                    document.getElementById('date-sort').selectedIndex = 0;
-                    document.getElementById('risk-sort').selectedIndex = 0;
-                    document.getElementById('name-sort').selectedIndex = 0;
-                    currentCity = '';
-                    currentSort = 'date-desc';
-                    q = '';
-                    localStorage.removeItem('inspections-sort');
-                    const si = document.getElementById('search-input');
-                    if (si) si.value = '';
-                    window.dispatchEvent(new CustomEvent('set-sort', { detail: { value: 'date-desc' } }));
-                    window.dispatchEvent(new CustomEvent('inspections-search', { detail: { query: '', city: '' } }));
-                    applyFilters();
-                    sortCards();
-                  "
+            @click="clearAll()"
             class="mt-8 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white hover:text-g-9 hover:shadow-sm"
           >
             Clear all
@@ -436,252 +398,14 @@
   </div>
 
   <div
-    x-data="{
-      open: false,
-      mode: 'facility',
-      facilityName: '',
-      facilityId: '',
-      step: 'form',
-      email: '',
-      phone: '',
-      method: 'email',
-      rememberMe: false,
-      submitting: false,
-      errorMessage: '',
-      userCity: '',
-      cityFacilities: [],
-      selectedFacilities: {},
-      facilitiesOpen: false,
-      detectingCity: false,
-      cityNotFound: false,
-      citySearchQuery: '',
-      cityDropdownOpen: false,
-      get selectedCount() {
-        return Object.values(this.selectedFacilities).filter(Boolean).length;
-      },
-      get filteredCities() {
-        const q = (this.citySearchQuery || '').toLowerCase().trim();
-        const all = window.__inspectionsCities || [];
-        if (!q) return all.slice(0, 30);
-        return all.filter(c => (c.text || '').toLowerCase().includes(q)).slice(0, 30);
-      },
-      init() {
-        window.addEventListener('open-alerts-modal', (e) => {
-          this.open = true;
-          this.mode = 'facility';
-          this.facilityName = e.detail.facilityName;
-          this.facilityId = e.detail.facilityId;
-          this.step = 'form';
-          this.email = localStorage.getItem('alerts-remembered-email') || '';
-          this.phone = localStorage.getItem('alerts-remembered-phone') || '';
-          this.rememberMe = !!(this.email || this.phone);
-          this.submitting = false;
-          this.errorMessage = '';
-          document.body.style.overflow = 'hidden';
-        });
-        window.addEventListener('open-city-alerts-modal', () => {
-          this.open = true;
-          this.mode = 'city';
-          this.step = 'form';
-          this.email = localStorage.getItem('alerts-remembered-email') || '';
-          this.phone = localStorage.getItem('alerts-remembered-phone') || '';
-          this.rememberMe = !!(this.email || this.phone);
-          this.submitting = false;
-          this.errorMessage = '';
-          this.userCity = '';
-          this.cityFacilities = [];
-          this.selectedFacilities = {};
-          this.facilitiesOpen = false;
-          this.detectingCity = true;
-          this.cityNotFound = false;
-          this.citySearchQuery = '';
-          this.cityDropdownOpen = false;
-          document.body.style.overflow = 'hidden';
-          this.$nextTick(() => this.detectCity());
-        });
-      },
-      closeModal() {
-        this.open = false;
-        document.body.style.overflow = '';
-      },
-      async detectCity() {
-        try {
-          const pos = await new Promise((resolve, reject) =>
-            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 8000 })
-          );
-          const { latitude, longitude } = pos.coords;
-          const res = await fetch(
-            `https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?latlng=${encodeURIComponent(latitude)},${encodeURIComponent(longitude)}`
-          );
-          const data = await res.json();
-          const results = (data.status === 'OK' && data.results) ? data.results : [];
-          const components = (results[0] && results[0].address_components) ? results[0].address_components : [];
-          let detected = '';
-          for (const c of components) {
-            if (c.types.includes('locality')) { detected = c.long_name; break; }
-          }
-          if (!detected) {
-            for (const c of components) {
-              if (c.types.includes('sublocality') || c.types.includes('administrative_area_level_3')) {
-                detected = c.long_name;
-                break;
-              }
-            }
-          }
-          const match = this.matchCity(detected);
-          if (match) {
-            this.userCity = match;
-            this.cityNotFound = false;
-            this.loadCityFacilities(match);
-          } else {
-            this.cityNotFound = true;
-          }
-        } catch (e) {
-          this.cityNotFound = true;
-        } finally {
-          this.detectingCity = false;
-        }
-      },
-      matchCity(detected) {
-        const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-        const nd = norm(detected);
-        const cities = window.__inspectionsCities || [];
-        const exact = cities.find(c => norm(c.value) === nd || norm(c.text) === nd);
-        if (exact) return exact.text;
-        const partial = cities.find(c => norm(c.text).includes(nd) || nd.includes(norm(c.text)));
-        if (partial) return partial.text;
-        return null;
-      },
-      selectCity(cityText) {
-        this.userCity = cityText;
-        this.cityNotFound = false;
-        this.cityDropdownOpen = false;
-        this.citySearchQuery = '';
-        this.loadCityFacilities(cityText);
-      },
-      loadCityFacilities(city) {
-        const allData = window.__inspectionsAllData || [];
-        const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-        const nc = norm(city);
-        const grouped = {};
-        allData.forEach(row => {
-          if (norm(row.city || '') !== nc) return;
-          const id = row.id || (row.facility + '—' + row.address);
-          if (!grouped[id]) grouped[id] = { id, name: row.facility || 'Unknown facility' };
-        });
-        this.cityFacilities = Object.values(grouped).sort((a, b) => a.name.localeCompare(b.name));
-        const sel = {};
-        this.cityFacilities.forEach(f => { sel[f.id] = true; });
-        this.selectedFacilities = sel;
-      },
-      toggleFacility(id) {
-        this.selectedFacilities[id] = !this.selectedFacilities[id];
-      },
-      toggleAllFacilities(checked) {
-        const updated = {};
-        this.cityFacilities.forEach(f => { updated[f.id] = checked; });
-        this.selectedFacilities = updated;
-      },
-async submitSignup() {
-  if (!this.email && !this.phone) {
-    alert('Please provide an email address or phone number.');
-    return;
-  }
-  this.submitting = true;
-  if (this.rememberMe) {
-    if (this.email) localStorage.setItem('alerts-remembered-email', this.email);
-    else localStorage.removeItem('alerts-remembered-email');
-    if (this.phone) localStorage.setItem('alerts-remembered-phone', this.phone);
-    else localStorage.removeItem('alerts-remembered-phone');
-  } else {
-    localStorage.removeItem('alerts-remembered-email');
-    localStorage.removeItem('alerts-remembered-phone');
-  }
-  try {
-    const method = this.phone ? 'both' : 'email';
-    const payload = this.mode === 'city'
-      ? {
-          email: this.email,
-          phone: this.phone,
-          method: this.method,
-          city: this.userCity,
-          facilityIds: Object.entries(this.selectedFacilities).filter(([, v]) => v).map(([k]) => k),
-        }
-      : {
-          email: this.email,
-          phone: this.phone,
-          method: this.method,
-          facilityId: this.facilityId,
-          facilityName: this.facilityName,
-        };
-    if (this.mode === 'city') {
-      const ids = Object.entries(this.selectedFacilities).filter(([, v]) => v).map(([k]) => k);
-      let newCount = 0;
-      let alreadyCount = 0;
-      let errorCount = 0;
-      let newFacilityName = '';
-      await Promise.all(ids.map(async (id) => {
-        try {
-          const r = await fetch('/.netlify/functions/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...payload, facilityIds: undefined, facilityId: id, skipSms: true, skipEmail: true }),
-          });
-          const d = await r.json();
-          if (r.status === 409 && d.alreadySubscribed) alreadyCount++;
-          else if (r.ok) {
-            newCount++;
-            if (!newFacilityName) {
-              const match = this.cityFacilities.find(f => f.id === id);
-              if (match) newFacilityName = match.name;
-            }
-          }
-          else errorCount++;
-        } catch { errorCount++; }
-      }));
-      if (errorCount > 0 && newCount === 0 && alreadyCount === 0) {
-        throw new Error('Something went wrong. Please try again.');
-      }
-      this.citySubscribeSummary = { newCount, alreadyCount, newFacilityName };
-      if (newCount > 0) {
-        try {
-          await fetch('/.netlify/functions/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: this.email, phone: this.phone, city: this.userCity, newCount, newFacilityName, summarySms: true }),
-          });
-        } catch { /* non-fatal */ }
-      }
-      this.step = 'success';
-    } else {
-      const res = await fetch('/.netlify/functions/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json();
-      if (res.status === 409 && data.alreadySubscribed) {
-        throw new Error(`You're already subscribed to alerts for ${this.facilityName}.`);
-      }
-      if (!res.ok) {
-        throw new Error(data.error || 'Something went wrong. Please try again.');
-      }
-      this.step = 'success';
-    }
-  } catch (err) {
-    this.errorMessage = err.message;
-  } finally {
-    this.submitting = false;
-  }
-},
-    }"
+    x-data="inspectionsModal()"
+    x-init="init()"
     x-show="open"
     x-cloak
     @keydown.escape.window="closeModal()"
     class="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center px-6 pb-6"
     :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100vh - var(--modalTop));'"
     style="display: none;"
-    :style="'--modalTop: calc(73px + 1.5rem)'"
   >
     <div
       @click="closeModal()"

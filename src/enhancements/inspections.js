@@ -1,41 +1,21 @@
-import {
-  escapeHTML,
-  normalizeString,
-  levenshtein,
-  parseInspectionDate,
-  getRiskScore,
-} from "../utils/inspections.js";
+import Alpine from "alpinejs/src/index.js";
+import { escapeHTML, parseInspectionDate } from "../utils/inspections.js";
 
 export function searchUI() {
   return {
-    q: "",
-    cards: [],
-    index: new Map(),
     loadingLocation: false,
 
-    init() {
-      this.cards = Array.from(
-        document.querySelectorAll('[data-card="inspection"]'),
-      );
-      this.cards.forEach((card) => {
-        this.index.set(
-          card,
-          normalizeString(card.dataset.index || card.textContent),
-        );
-      });
+    get q() {
+      return Alpine.store("inspections").searchQuery;
     },
+    set q(val) {
+      Alpine.store("inspections").searchQuery = val;
+    },
+
+    init() {},
 
     doSearch(val) {
       if (typeof val === "string") this.q = val;
-      const needle = normalizeString(this.q);
-      let matches = 0;
-      this.cards.forEach((card) => {
-        const hit = !needle || this.index.get(card).includes(needle);
-        card.classList.toggle("hidden", !hit);
-        if (hit) matches++;
-      });
-      const noResultsEl = document.getElementById("no-results");
-      if (noResultsEl) noResultsEl.classList.toggle("hidden", matches !== 0);
     },
 
     async locate() {
@@ -87,13 +67,8 @@ export function searchUI() {
               .filter(Boolean)
               .join(" ");
             if (locationString) {
-              if (this.q && this.q.trim() !== "") {
-                this.q = `${this.q}, ${locationString}`;
-              } else {
-                this.q = locationString;
-              }
-              if (this.$refs?.input) this.$refs.input.value = this.q;
-              this.doSearch(this.q);
+              Alpine.store("inspections").searchQuery = locationString;
+              if (this.$refs?.input) this.$refs.input.value = locationString;
             } else {
               alert("Couldn't determine your city/ZIP from location.");
             }
@@ -125,131 +100,51 @@ export function searchUI() {
   };
 }
 
+let inspectionsUIDelegatesInitialized = false;
+let inspectionsUIResizeInitialized = false;
+let inspectionsUIDataReadyInitialized = false;
+
 export default function inspectionsUI() {
   return {
-    q: "",
-    cards: [],
-    index: new Map(),
-    cityMap: new Map(),
     activeCard: null,
     lastReadMoreButton: null,
     initializedDelegates: false,
-    dataLoaded: false,
-    currentSort: "date",
-    currentCity: "",
+
+    get store() {
+      return Alpine.store("inspections");
+    },
+
+    get currentSort() {
+      return this.store.currentSort;
+    },
+    set currentSort(val) {
+      this.store.currentSort = val;
+    },
+
+    get currentCity() {
+      return this.store.currentCity;
+    },
+    set currentCity(val) {
+      this.store.currentCity = val;
+    },
+
+    get searchQuery() {
+      return this.store.searchQuery;
+    },
+    set searchQuery(val) {
+      this.store.searchQuery = val;
+    },
+
+    get totalResults() {
+      return this.store.filteredData.length;
+    },
+
+    get hasResults() {
+      return this.store.filteredData.length > 0;
+    },
 
     init() {
-      const noResultsEl = document.getElementById("no-results");
-      if (noResultsEl) noResultsEl.classList.add("hidden");
-
-      const savedSort = localStorage.getItem("inspections-sort");
-      if (savedSort) this.currentSort = savedSort;
-
-      window.addEventListener("inspections-data-ready", () => {
-        this.dataLoaded = true;
-        this.refreshCards();
-        if (noResultsEl) noResultsEl.classList.add("hidden");
-        this.sortCards();
-        this.checkHashAndOpenCard();
-      });
-
-      if (
-        typeof window.inspectionsDataLoaded === "function" &&
-        window.inspectionsDataLoaded()
-      ) {
-        this.dataLoaded = true;
-      }
-
-      this.refreshCards();
-      this.initSortListeners();
-      this.initFilterListeners();
-      this.initCityTypeahead();
-      this.initMapMarkers();
-
-      setTimeout(() => this.checkHashAndOpenCard(), 100);
-
-      let resizeTimer;
-      let lastWidth = window.innerWidth;
-      window.addEventListener("resize", () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          const currentWidth = window.innerWidth;
-          const wasMobile = lastWidth < 768;
-          const wasDesktop = lastWidth >= 768;
-          const isDesktop = currentWidth >= 768;
-          const isMobile = currentWidth < 768;
-          if ((wasMobile && isDesktop) || (wasDesktop && isMobile)) {
-            const hash = window.location.hash.slice(1);
-            document
-              .querySelectorAll(".mobile-detail-view")
-              .forEach((el) => el.remove());
-            document
-              .querySelectorAll(".detail-content")
-              .forEach((el) => el.remove());
-            document
-              .querySelectorAll(".pagination-controls")
-              .forEach((el) => el.classList.remove("hidden"));
-            document
-              .querySelectorAll('[data-card="inspection"]')
-              .forEach((card) => {
-                card.style.display = "";
-                card.classList.remove(
-                  "hidden-by-detail",
-                  "h-full",
-                  "flex",
-                  "flex-col",
-                  "flex-1",
-                );
-                card.classList.add("space-y-3");
-                const listContent = card.querySelector(".list-content");
-                if (listContent) listContent.classList.remove("hidden");
-                const mount = card.closest(".inspections-mount");
-                if (mount) {
-                  mount.classList.remove("h-full", "flex", "flex-col");
-                  mount.classList.add("space-y-3");
-                }
-              });
-            this.activeCard = null;
-            this.applyFilters();
-            if (hash) {
-              setTimeout(() => {
-                const cards = document.querySelectorAll(
-                  '[data-card="inspection"]',
-                );
-                for (let i = 0; i < cards.length; i++) {
-                  const card = cards[i];
-                  const cardId = this.generateCardId(card);
-                  if (cardId === hash) {
-                    if (isDesktop) {
-                      this.openDetails(card);
-                    } else {
-                      // eslint-disable-next-line no-undef
-                      openMobileCardDetails(card);
-                    }
-                    break;
-                  }
-                }
-              }, 100);
-            }
-          }
-          lastWidth = currentWidth;
-        }, 250);
-      });
-
-      window.addEventListener("set-sort", (e) => {
-        const v = (e && e.detail && e.detail.value) || "date";
-        this.currentSort = v;
-        localStorage.setItem("inspections-sort", v);
-        this.sortCards();
-        this.syncDesktopSortUI(v);
-      });
-
-      window.addEventListener("inspections-cards-changed", () => {
-        this.refreshCards();
-        this.applyFilters();
-      });
-
-      if (!this.initializedDelegates) {
+      if (!inspectionsUIDelegatesInitialized) {
         document.addEventListener("click", (e) => {
           const readMoreBtn = e.target.closest(
             'button[aria-label="Read more about this inspection"]',
@@ -270,326 +165,89 @@ export default function inspectionsUI() {
             return;
           }
         });
-        this.initializedDelegates = true;
+        inspectionsUIDelegatesInitialized = true;
       }
-    },
 
-    initMapMarkers() {
-      window.addEventListener("inspections-markers-ready", (event) => {
-        const markers = event.detail?.markers || [];
-        window.dispatchEvent(
-          new CustomEvent("update-map-markers", { detail: { markers } }),
-        );
-      });
-    },
+      if (!inspectionsUIResizeInitialized) {
+        inspectionsUIResizeInitialized = true;
 
-    initSortListeners() {
-      const dateSel = document.getElementById("date-sort");
-      const riskSel = document.getElementById("risk-sort");
-      const nameSel = document.getElementById("name-sort");
-
-      const resetSelect = (sel) => {
-        if (!sel) return;
-        sel.selectedIndex = 0;
-        sel.value = "";
-      };
-
-      const applySortValue = (v, keep) => {
-        if (!v) return;
-        if (keep !== "date") resetSelect(dateSel);
-        if (keep !== "risk") resetSelect(riskSel);
-        if (keep !== "name") resetSelect(nameSel);
-        this.currentSort = v;
-        localStorage.setItem("inspections-sort", v);
-        this.sortCards();
-        window.dispatchEvent(
-          new CustomEvent("set-sort", { detail: { value: v } }),
-        );
-      };
-
-      if (dateSel)
-        dateSel.addEventListener("change", (e) =>
-          applySortValue(e.target.value, "date"),
-        );
-      if (riskSel)
-        riskSel.addEventListener("change", (e) =>
-          applySortValue(e.target.value, "risk"),
-        );
-      if (nameSel)
-        nameSel.addEventListener("change", (e) =>
-          applySortValue(e.target.value, "name"),
-        );
-
-      const sortRadios = document.querySelectorAll('input[name="sort"]');
-      const savedSort =
-        localStorage.getItem("inspections-sort") ||
-        this.currentSort ||
-        "date-desc";
-
-      sortRadios.forEach((r) => {
-        r.checked =
-          r.value === savedSort ||
-          (savedSort === "date-desc" && r.value === "date") ||
-          (savedSort === "alpha-asc" && r.value === "alphabetical") ||
-          (savedSort === "risk-desc" && r.value === "high-risk");
-      });
-
-      this.currentSort = savedSort;
-      this.syncDesktopSortUI(savedSort);
-
-      sortRadios.forEach((radio) => {
-        radio.addEventListener("change", (e) => {
-          if (!e.target.checked) return;
-          const mapped =
-            e.target.value === "date"
-              ? "date-desc"
-              : e.target.value === "alphabetical"
-                ? "alpha-asc"
-                : e.target.value === "high-risk"
-                  ? "risk-desc"
-                  : e.target.value;
-          applySortValue(mapped);
+        let resizeTimer;
+        let lastWidth = window.innerWidth;
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(() => {
+            const currentWidth = window.innerWidth;
+            const wasMobile = lastWidth < 768;
+            const wasDesktop = lastWidth >= 768;
+            const isDesktop = currentWidth >= 768;
+            if ((wasMobile && isDesktop) || (wasDesktop && !isDesktop)) {
+              const hash = window.location.hash.slice(1);
+              document
+                .querySelectorAll(".mobile-detail-view")
+                .forEach((el) => el.remove());
+              document
+                .querySelectorAll(".detail-content")
+                .forEach((el) => el.remove());
+              document
+                .querySelectorAll(".pagination-controls")
+                .forEach((el) => el.classList.remove("hidden"));
+              document
+                .querySelectorAll('[data-card="inspection"]')
+                .forEach((card) => {
+                  card.style.display = "";
+                  card.classList.remove(
+                    "hidden-by-detail",
+                    "h-full",
+                    "flex",
+                    "flex-col",
+                    "flex-1",
+                  );
+                  card.classList.add("space-y-3");
+                  card
+                    .querySelector(".list-content")
+                    ?.classList.remove("hidden");
+                  const mount = card.closest(".inspections-mount");
+                  if (mount) {
+                    mount.classList.remove("h-full", "flex", "flex-col");
+                    mount.classList.add("space-y-3");
+                  }
+                });
+              this.activeCard = null;
+              if (hash) {
+                setTimeout(() => {
+                  const cards = document.querySelectorAll(
+                    '[data-card="inspection"]',
+                  );
+                  for (const card of cards) {
+                    if (this.generateCardId(card) === hash) {
+                      if (isDesktop) this.openDetails(card);
+                      // eslint-disable-next-line no-undef
+                      else openMobileCardDetails(card);
+                      break;
+                    }
+                  }
+                }, 100);
+              }
+            }
+            lastWidth = currentWidth;
+          }, 250);
         });
-      });
-    },
-
-    syncDesktopSortUI(value) {
-      const sortRadios = document.querySelectorAll('input[name="sort"]');
-      sortRadios.forEach((r) => {
-        r.checked =
-          r.value === value ||
-          (value === "date-desc" && r.value === "date") ||
-          (value === "alpha-asc" && r.value === "alphabetical") ||
-          (value === "risk-desc" && r.value === "high-risk");
-      });
-      const dateSel = document.getElementById("date-sort");
-      const riskSel = document.getElementById("risk-sort");
-      const nameSel = document.getElementById("name-sort");
-      const resetSel = (sel) => {
-        if (sel) {
-          sel.selectedIndex = 0;
-          sel.value = "";
-        }
-      };
-      resetSel(dateSel);
-      resetSel(riskSel);
-      resetSel(nameSel);
-      if (value === "date-desc" || value === "date-asc") {
-        if (dateSel) dateSel.value = value;
-      } else if (value === "risk-desc" || value === "risk-asc") {
-        if (riskSel) riskSel.value = value;
-      } else if (value === "alpha-asc" || value === "alpha-desc") {
-        if (nameSel) nameSel.value = value;
       }
-    },
 
-    initFilterListeners() {
-      const cityFilter = document.getElementById("city-filter");
-      if (cityFilter) {
-        cityFilter.addEventListener("change", (e) => {
-          this.currentCity = e.target.value;
-          this.applyFilters();
+      if (!inspectionsUIDataReadyInitialized) {
+        inspectionsUIDataReadyInitialized = true;
+        window.addEventListener("inspections-data-ready", () => {
+          setTimeout(() => this.checkHashAndOpenCard(), 200);
         });
       }
     },
 
-    initCityTypeahead() {
-      const cityFilter = document.getElementById("city-filter");
-      if (!cityFilter) return;
-      let typeaheadBuffer = "";
-      let typeaheadTimeout = null;
-      cityFilter.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          typeaheadBuffer = "";
-          return;
-        }
-        if (e.key.length > 1 && e.key !== "Backspace") return;
-        if (e.key === "Backspace") {
-          typeaheadBuffer = typeaheadBuffer.slice(0, -1);
-        } else if (e.key.length === 1) {
-          typeaheadBuffer += e.key.toLowerCase();
-        }
-        clearTimeout(typeaheadTimeout);
-        typeaheadTimeout = setTimeout(() => {
-          typeaheadBuffer = "";
-        }, 1000);
-        if (typeaheadBuffer) {
-          const options = Array.from(cityFilter.options);
-          const match = options.find((opt) =>
-            opt.text.toLowerCase().startsWith(typeaheadBuffer),
-          );
-          if (match) {
-            cityFilter.value = match.value;
-            cityFilter.dispatchEvent(new Event("input", { bubbles: true }));
-          }
-        }
-      });
-      cityFilter.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          cityFilter.dispatchEvent(new Event("change", { bubbles: true }));
-          typeaheadBuffer = "";
-        }
-      });
-    },
-
-    clearFilters() {
-      const cityFilter = document.getElementById("city-filter");
-      if (cityFilter) {
-        cityFilter.value = "";
-        this.currentCity = "";
-      }
-      const cuisineFilter = document.getElementById("cuisine-filter");
-      if (cuisineFilter) cuisineFilter.value = "";
-      this.applyFilters();
-    },
-
-    refreshCards() {
-      this.cards = Array.from(
-        document.querySelectorAll('[data-card="inspection"]'),
-      );
-      this.cards.forEach((card) => {
-        if (!card.querySelector(".list-content")) {
-          const wrap = document.createElement("div");
-          wrap.className = "list-content";
-          while (card.firstChild) wrap.appendChild(card.firstChild);
-          card.appendChild(wrap);
-        }
-      });
-      this.cards.forEach((card) => {
-        this.index.set(
-          card,
-          normalizeString(card.dataset.index || card.textContent),
-        );
-        this.cityMap.set(card, card.dataset.city || "");
-      });
-      if (this.dataLoaded) {
-        this.sortCards();
-        this.applyFilters();
-      }
-    },
-
-    sortCards() {
-      if (this.cards.length === 0) return;
-      const groups = new Map();
-      this.cards.forEach((card) => {
-        const parent = card.parentElement;
-        if (!parent) return;
-        if (!groups.has(parent)) groups.set(parent, []);
-        groups.get(parent).push(card);
-      });
-      groups.forEach((cards, container) => {
-        const sorted = [...cards];
-        switch (this.currentSort) {
-          case "date":
-          case "date-desc":
-            sorted.sort(
-              (a, b) =>
-                parseInspectionDate(b.getAttribute("data-date")) -
-                parseInspectionDate(a.getAttribute("data-date")),
-            );
-            break;
-          case "date-asc":
-            sorted.sort(
-              (a, b) =>
-                parseInspectionDate(a.getAttribute("data-date")) -
-                parseInspectionDate(b.getAttribute("data-date")),
-            );
-            break;
-          case "alphabetical":
-          case "alpha-asc":
-            sorted.sort((a, b) =>
-              this.getFacilityName(a)
-                .toLowerCase()
-                .localeCompare(this.getFacilityName(b).toLowerCase()),
-            );
-            break;
-          case "alpha-desc":
-            sorted.sort((a, b) =>
-              this.getFacilityName(b)
-                .toLowerCase()
-                .localeCompare(this.getFacilityName(a).toLowerCase()),
-            );
-            break;
-          case "high-risk":
-          case "risk-desc":
-            sorted.sort(
-              (a, b) =>
-                getRiskScore(b.getAttribute("data-risk-level")) -
-                getRiskScore(a.getAttribute("data-risk-level")),
-            );
-            break;
-          case "risk-asc":
-            sorted.sort(
-              (a, b) =>
-                getRiskScore(a.getAttribute("data-risk-level")) -
-                getRiskScore(b.getAttribute("data-risk-level")),
-            );
-            break;
-        }
-        sorted.forEach((card) => container.appendChild(card));
-      });
-    },
-
-    getFacilityName(card) {
-      const h2 = card.querySelector("h2");
-      return h2 ? h2.textContent.trim() : "";
-    },
-
-    syncHidden(card) {
-      const hide =
-        card.classList.contains("hidden-by-search") ||
-        card.classList.contains("hidden-by-city") ||
-        card.classList.contains("hidden-by-detail");
-      card.classList.toggle("hidden", hide);
-    },
-
-    jsStringAttr(s) {
-      return JSON.stringify(String(s ?? "")).replace(/"/g, "&quot;");
-    },
-
-    doSearch(val) {
-      if (typeof val === "string") this.q = val;
-      this.applyFilters();
-    },
-
-    applyFilters() {
-      if (!this.dataLoaded || this.cards.length === 0) {
-        const noResultsEl = document.getElementById("no-results");
-        if (noResultsEl) noResultsEl.classList.add("hidden");
-        return;
-      }
-      const needle = normalizeString(this.q);
-      let visible = 0;
-      this.cards.forEach((card) => {
-        const tokens = needle ? needle.split(/\s+/).filter(Boolean) : [];
-        const cardIndex = this.index.get(card) || "";
-        const searchHit =
-          tokens.length === 0 || tokens.every((t) => cardIndex.includes(t));
-        card.classList.toggle("hidden-by-search", !searchHit);
-
-        let cityHit = true;
-        if (this.currentCity) {
-          const cardCity = this.cityMap.get(card) || "";
-          const nCity = normalizeString(this.currentCity);
-          const nCardCity = normalizeString(cardCity);
-          if (nCity === nCardCity) {
-            cityHit = true;
-          } else if (
-            nCity.charAt(0) !== nCardCity.charAt(0) ||
-            Math.abs(nCity.length - nCardCity.length) > 4
-          ) {
-            cityHit = false;
-          } else {
-            cityHit = levenshtein(nCity, nCardCity) <= 3;
-          }
-        }
-        card.classList.toggle("hidden-by-city", !cityHit);
-        this.syncHidden(card);
-        if (!card.classList.contains("hidden")) visible++;
-      });
-      const noResultsEl = document.getElementById("no-results");
-      if (noResultsEl) noResultsEl.classList.toggle("hidden", visible !== 0);
+    clearAll() {
+      this.store.searchQuery = "";
+      this.store.currentCity = "";
+      this.store.currentSort = "date-desc";
+      localStorage.removeItem("inspections-sort");
+      if (this.$refs?.searchInput) this.$refs.searchInput.value = "";
     },
 
     generateCardId(card) {
@@ -604,12 +262,18 @@ export default function inspectionsUI() {
       if (window.innerWidth < 768) return;
       const hash = window.location.hash.slice(1);
       if (!hash) return;
-      const card = this.cards.find((c) => this.generateCardId(c) === hash);
+      const cards = Array.from(
+        document.querySelectorAll('[data-card="inspection"]'),
+      );
+      const card = cards.find((c) => this.generateCardId(c) === hash);
       if (card) setTimeout(() => this.openDetails(card), 200);
     },
 
+    jsStringAttr(s) {
+      return JSON.stringify(String(s ?? "")).replace(/"/g, "&quot;");
+    },
+
     openDetails(card) {
-      this.refreshCards();
       document
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.classList.add("hidden"));
@@ -623,7 +287,10 @@ export default function inspectionsUI() {
         );
       }
 
-      this.cards.forEach((c) => {
+      const allCards = Array.from(
+        document.querySelectorAll('[data-card="inspection"]'),
+      );
+      allCards.forEach((c) => {
         if (c !== card) c.classList.add("hidden-by-detail");
         else c.classList.remove("hidden-by-detail");
         this.syncHidden(c);
@@ -651,15 +318,13 @@ export default function inspectionsUI() {
         latestViolations.map((v) => this.renderViolationItem(v)).join("") ||
         `<li class="space-y-2"><div class="flex items-start pt-3 gap-2"><svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;" aria-hidden="true"><use href="#circle-check-svg" /></svg><h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">No violations reported.</h4></div></li>`;
 
-      const olderInspectionsHTML = this.renderOlderInspections(allInspections);
-
       detail.innerHTML = this.buildDetailHTML({
         title,
         location,
         card,
         latestViolations,
         latestItems,
-        olderInspectionsHTML,
+        olderInspectionsHTML: this.renderOlderInspections(allInspections),
       });
 
       if (listContent) listContent.classList.add("hidden");
@@ -692,11 +357,16 @@ export default function inspectionsUI() {
 
     backToResults() {
       window.dispatchEvent(new CustomEvent("map:restoreView"));
+      window.dispatchEvent(
+        new CustomEvent("update-map-markers", {
+          detail: { markers: Alpine.store("inspections").markers },
+        }),
+      );
       document
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.classList.remove("hidden"));
 
-      const si = document.getElementById("search-input");
+      const si = this.$refs?.searchInput;
       if (si && si.value.trim()) {
         document
           .getElementById("search-results-banner")
@@ -707,11 +377,14 @@ export default function inspectionsUI() {
       const card = this.activeCard;
       card.querySelector(".detail-content")?.remove();
       card.querySelector(".list-content")?.classList.remove("hidden");
-      this.cards.forEach((c) => {
+
+      const allCards = Array.from(
+        document.querySelectorAll('[data-card="inspection"]'),
+      );
+      allCards.forEach((c) => {
         c.classList.remove("hidden-by-detail");
         this.syncHidden(c);
       });
-      this.applyFilters();
 
       const mount = card.closest(".inspections-mount");
       if (mount) {
@@ -736,6 +409,14 @@ export default function inspectionsUI() {
           container.getBoundingClientRect().top + window.pageYOffset - 73;
         window.scrollTo({ top, behavior: "instant" });
       }
+    },
+
+    syncHidden(card) {
+      const hide =
+        card.classList.contains("hidden-by-search") ||
+        card.classList.contains("hidden-by-city") ||
+        card.classList.contains("hidden-by-detail");
+      card.classList.toggle("hidden", hide);
     },
 
     renderOlderInspections(allInspections) {
@@ -807,7 +488,10 @@ export default function inspectionsUI() {
             <h2 class="text-3xl font-bold text-black break-words">${escapeHTML(title)}</h2>
             ${location ? `<div class="mt-2 space-y-1 text-g-6"><div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-g-7" aria-hidden="true"><use href="#map-pin-svg" /></svg><span>${escapeHTML(location)}</span></div></div>` : ""}
             <div class="mt-3 flex flex-wrap items-center gap-2">
-              <button onclick="window.dispatchEvent(new CustomEvent('open-alerts-modal', { detail: { facilityName: ${this.jsStringAttr(title)}, facilityId: ${this.jsStringAttr(cardId)} } }))" class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8 hover:bg-g-8"><span>Get alerts</span><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#bell-svg" /></svg></button>
+              <button onclick="window.dispatchEvent(new CustomEvent('open-alerts-modal', { detail: { facilityName: ${this.jsStringAttr(title)}, facilityId: ${this.jsStringAttr(cardId)} } }))" class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8 hover:bg-g-8">
+                <span>Get alerts</span>
+                <svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#bell-svg" /></svg>
+              </button>
               <div class="flex items-center gap-2">
                 <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(window.location.href)}'" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share via Email"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#envelope-svg" /></svg></button>
                 <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#fb-svg" /></svg></button>
@@ -817,14 +501,19 @@ export default function inspectionsUI() {
             </div>
           </div>
         </div>
-        <section aria-labelledby="violations-title" class="space-y-3">
+        <section class="space-y-3">
           <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
           ${hasAi ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true"><use href="#robot-svg" /></svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ""}
           <ul class="space-y-3">${latestItems}</ul>
           ${hasAi ? `<p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details.</p>` : ""}
         </section>
         ${olderInspectionsHTML}
-        <div class="pt-5"><a href="https://www.pafoodsafety.pa.gov/web/inspection/publicinspectionsearch.aspx" class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue"><svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true"><use href="#link-svg" /></svg><span>Read the full report</span></a></div>
+        <div class="pt-5">
+          <a href="https://www.pafoodsafety.pa.gov/web/inspection/publicinspectionsearch.aspx" class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
+            <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true"><use href="#link-svg" /></svg>
+            <span>Read the full report</span>
+          </a>
+        </div>
       </div>`;
     },
 
@@ -869,7 +558,7 @@ export default function inspectionsUI() {
         i < Math.max(descriptions.length, spotlights.length, comments.length);
         i++
       ) {
-        let title =
+        const title =
           spotlights[i] && spotlights[i] !== "NA" && spotlights[i] !== ""
             ? spotlights[i]
             : descriptions[i] || "Violation reported";

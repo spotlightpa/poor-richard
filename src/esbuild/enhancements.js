@@ -25,6 +25,8 @@ import sticky from "../enhancements/sticky.js";
 import takeover from "../enhancements/takeover.js";
 import youtubeFeed from "../enhancements/youtube-feed.js";
 import inspections, { searchUI } from "../enhancements/inspections.js";
+import inspectionsData from "../enhancements/inspections-data.js";
+import inspectionsModal from "../enhancements/inspections-modal.js";
 
 for (let [name, comp] of [
   ["carousel", carousel],
@@ -43,6 +45,8 @@ for (let [name, comp] of [
   ["youtubeFeed", youtubeFeed],
   ["inspectionsUI", inspections],
   ["searchUI", searchUI],
+  ["inspectionsData", inspectionsData],
+  ["inspectionsModal", inspectionsModal],
 ]) {
   Alpine.data(name, comp);
 }
@@ -80,6 +84,20 @@ Alpine.directive(
   },
 );
 
+Alpine.store("inspections", {
+  allData: [],
+  groupedFacilities: {},
+  filteredData: [],
+  sortedFilteredData: [],
+  currentPage: 1,
+  totalPages: 1,
+  currentSort: localStorage.getItem("inspections-sort") || "date-desc",
+  searchQuery: "",
+  currentCity: "",
+  markers: [],
+  cities: [],
+});
+
 import intersect from "@alpinejs/intersect";
 
 Alpine.plugin(intersect);
@@ -92,4 +110,5 @@ import collapse from "@alpinejs/collapse";
 
 Alpine.plugin(collapse);
 
+window.Alpine = Alpine;
 Alpine.start();
