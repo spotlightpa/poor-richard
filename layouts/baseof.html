@@ -82,7 +82,9 @@
       </header>
 
       {{ block "promo" . }}
-        {{ partial "tw/promo-header.html" (dict) }}
+        {{ if .Param "suppress-ads" | not }}
+          {{ partial "tw/promo-header.html" (dict) }}
+        {{ end }}
       {{ end }}
 
     {{ end }}
@@ -99,9 +101,11 @@
     </main>
     <footer id="footer" data-ga-category="footer">
       {{ block "before-footer" . }}
-        {{ partial "tw/promo-footer.html" (dict
-          "wrapperClass" "bg-white pt-2 pb-14 px-6 no-js:hidden")
-        }}
+        {{ if .Param "suppress-ads" | not }}
+          {{ partial "tw/promo-footer.html" (dict
+            "wrapperClass" "bg-white pt-2 pb-14 px-6 no-js:hidden")
+          }}
+        {{ end }}
       {{ end }}
       {{ block "footer" . }}{{ partial "tw/footer.html" . }}{{ end }}
       {{ block "extra-footer" . }}{{ end }}

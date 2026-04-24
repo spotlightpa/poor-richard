@@ -13,6 +13,7 @@
 {{ $imageSource := .Get "image-source" }}
 {{ $imageDesc := .Get "image-description" }}
 {{ $focus := .Get "image-focus" }}
+{{ $layout := .Get "layout" }}
 {{ $gravity := .Get "image-gravity" }}
 {{ $artType := .Get "art-type" | default "Photo" }}
 {{ $secondCredit := .Get "second-credit" }}
@@ -20,6 +21,7 @@
 {{ $secondDesc := .Get "second-description" }}
 {{ $secondType := .Get "second-type" | default "Photo" }}
 {{ $supplementalCredit := .Get "supplemental-credit" }}
+{{ $imageOrder := .Get "image-order" }}
 
 {{ $preposition := .Get "credit-relation" | default "of" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-4xl lg:text-6xl` }}
@@ -48,16 +50,44 @@
 }}
 {{ $imgSmallSrc := partial "helper/imgproxy" $imgOpt }}
 
+{{ $headerClass := "flex flex-col md:min-h-screen md:flex-row" }}
+{{ $textOverlayClass := "md:w-2/5 md:min-w-min bg-black text-white" }}
 
-<header
-  class="flex flex-col md:min-h-screen md:flex-row"
-  data-ga-category="inline-header"
->
-  <div class="bg-black text-white md:w-2/5 md:min-w-min">
+{{ $imageWrapClass := "md:order-0 order-first md:w-3/5 relative pb-16x9" }}
+{{ $headlineSpacing := cond (index .Page.Params "hide-logo")
+  "mb-4 mt-8 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-10 lg:pb-10"
+  "mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
+}}
+
+{{ if eq $layout `stack` }}
+  {{ $headerClass = "flex flex-col" }}
+  {{ $textOverlayClass = "bg-black text-white" }}
+  {{ if eq $imageOrder `bottom` }}
+    {{ $imageWrapClass = "order-last relative pb-16x9" }}
+  {{ else }}
+    {{ $imageWrapClass = "order-first relative pb-16x9" }}
+  {{ end }}
+{{ end }}
+
+
+<header class="{{ $headerClass }}" data-ga-category="inline-header">
+  <div class="{{ $textOverlayClass }}">
     <div class="px-8 pb-10 sm:px-12">
-      <div
-        class="mb-4 mt-16 border-b border-t border-white pb-4 pt-8 lg:mb-12 lg:mt-20 lg:pb-10"
-      >
+      {{ if and (eq $layout `stack`) (eq $imageOrder `top`) }}
+        <div class="mt-8 lg:mt-12">
+          <a class="block" href="/">
+            <svg
+              class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
+              role="img"
+              aria-label="Spotlight PA banner"
+              viewBox="0 0 1024 190"
+            >
+              {{ partial "helper/svg.html" "banner" }}
+            </svg>
+          </a>
+        </div>
+      {{ end }}
+      <div class="{{ $headlineSpacing }}">
         <div class="font-sans font-bold uppercase text-yellow">
           {{ $eyebrow }}
         </div>
@@ -66,27 +96,40 @@
         </h1>
         <h2 class="mt-4 lg:text-xl lg:leading-relaxed">{{ $dek }}</h2>
       </div>
-      <time
-        class="font-sans font-bold uppercase"
-        datetime="{{ $params.publishedISO }}"
-      >
-        {{- $date -}}
-      </time>
-      <div class="mt-8 leading-none lg:text-lg">
-        {{ $creditType }}
-        <span class="font-sans font-bold uppercase">{{ $byline }}</span>
-      </div>
-      <div class="mt-3 font-sans text-sm font-bold uppercase">
-        {{ $outlet }}
-      </div>
-      {{ if $imageCredit }}
+      {{ if ne $date "NA" }}
+        <time
+          class="font-sans font-bold uppercase"
+          datetime="{{ $params.publishedISO }}"
+        >
+          {{- $date -}}
+        </time>
+      {{ end }}
+      {{ if ne $byline "NA" }}
+        <div class="mt-8 leading-none lg:text-lg">
+          {{ if ne $creditType "NA" }}{{ $creditType }}{{ end }}
+          <span class="font-sans font-bold uppercase">{{ $byline }}</span>
+        </div>
+      {{ end }}
+      {{ if ne $outlet "NA" }}
+        <div class="mt-3 font-sans text-sm font-bold uppercase">
+          {{ $outlet }}
+        </div>
+      {{ end }}
+      {{ if and $imageCredit (ne $imageCredit "NA") }}
         <div class="mt-4 text-sm lg:mt-8">
-          {{ $artType }} by
-          <span class="font-sans font-bold uppercase">
-            {{- $imageCredit -}}
-          </span>
-          {{ $preposition }}
-          <span class="font-sans uppercase">{{ $imageSource }}</span>
+          {{ if ne $artType "NA" }}{{ $artType }}{{ else }}Photo{{ end }}
+          {{ if ne $imageCredit "NA" }}
+            by
+            <span class="font-sans font-bold uppercase">
+              {{- $imageCredit -}}
+            </span>
+          {{ end }}
+          {{ if and $preposition (ne $preposition "NA") }}
+            {{ $preposition }}
+          {{ end }}
+          {{ if and $imageSource (ne $imageSource "NA") }}
+            <span class="font-sans uppercase">{{ $imageSource }}</span>
+          {{ end }}
         </div>
       {{ end }}
       {{ if $secondCredit }}
@@ -125,7 +168,7 @@
     </div>
   </div>
 
-  <div class="md:order-0 relative order-first pb-16x9 md:w-3/5">
+  <div class="{{ $imageWrapClass }}">
     <picture class="absolute inset-0 bg-g-3">
       {{ if $videoSrc }}
         <source type="{{ $videoType }}" srcset="{{ $videoSrc }}" />

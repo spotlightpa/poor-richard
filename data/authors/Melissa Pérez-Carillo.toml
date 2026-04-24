@@ -1,0 +1,19 @@
+name = "Melissa Pérez-Carillo"
+firstName = "Melissa"
+lastName = "Pérez-Carillo"
+title = "Local Accountability Reporter"
+email = "mperezcarrillo@spotlightpa.org"
+content = """
+Melissa covers local government in north-central Pennsylvania, examining public safety issues and how agencies work with the federal government on immigration enforcement.
+
+Before joining Spotlight PA, Melissa worked at the Sarasota Herald-Tribune, where she covered breaking news and public safety. She has reported on law enforcement officers accused of using excessive force, misusing Florida’s driver database, and committing domestic violence.
+
+A Miami native, Melissa has a bachelor’s degree in interdisciplinary studies from the University of Central Florida, where she studied computational sciences, communication, and women’s and gender studies.
+"""
+active = true
+headshot = "2026/04/01my-cm9r-290r-vzr8.jpeg"
+role = "reporter"
+beat = "Local Government"
+focusHed = "Local government, public safety, immigration enforcement"
+tel = "(267) 618-6677"
+signal = "(267) 618-6677"

@@ -15,6 +15,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Teresa Amott",
+      "sort": "Amott",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Kip Armstrong",
       "sort": "Armstrong",
       "url": "",
@@ -221,8 +228,8 @@
       "display": "Merrill and Nancy Brenner",
       "sort": "Brenner",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "John Bryan and Nancy Winkler",
@@ -568,6 +575,13 @@
       "categoryRank": "5"
     },
     {
+      "display": "Margaret Harris and Phil Straus",
+      "sort": "Harris",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
+    },
+    {
       "display": "Karen Harvey",
       "sort": "Harvey",
       "url": "",
@@ -606,8 +620,8 @@
       "display": "Ray and Donna Holton",
       "sort": "Holton",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Jun Huangpu and Xi Li",
@@ -1019,8 +1033,8 @@
       "display": "Sheldon Parker",
       "sort": "Parker",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Ginny Parry",
@@ -1088,6 +1102,13 @@
     {
       "display": "Gloria and Tom Power",
       "sort": "Power",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Catherine Raphael",
+      "sort": "Raphael",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1240,18 +1261,11 @@
       "categoryRank": "6"
     },
     {
-      "display": "E. Marvin Stouffer",
+      "display": "E. Marvin and Linda Stouffer",
       "sort": "Stouffer",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Strausstown Rod and Gun Club",
-      "sort": "Strausstown",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Stephanie Szakal",
@@ -1259,13 +1273,6 @@
       "url": "",
       "category": "$10,000-$24,999",
       "categoryRank": "3"
-    },
-    {
-      "display": "Richard S. Tabas/Harriette Steelman \u0026 Charles L. Tabas Foundation",
-      "sort": "Tabas",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "Anthony Tarantino",
@@ -1289,7 +1296,7 @@
       "categoryRank": "6"
     },
     {
-      "display": "Lew Tyler",
+      "display": "Bernadine Tyler",
       "sort": "Tyler",
       "url": "",
       "category": "$5,000-$9,999",
@@ -1411,8 +1418,8 @@
       "display": "Richard Williams",
       "sort": "Williams",
       "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Allan Willinger and Jo Schlesinger",

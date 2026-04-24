@@ -7,21 +7,23 @@
 {{ end }}
 
 {{ define "header" }}
-  <nav
-    class="z-10 flex bg-black sm:absolute sm:bg-transparent"
-    data-ga-category="header"
-  >
-    <a class="mx-auto block px-12 py-5 sm:w-full" href="/">
-      <svg
-        class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
-        role="img"
-        aria-label="Spotlight PA banner"
-        viewBox="0 0 1024 190"
-      >
-        {{ partial "helper/svg.html" "banner" }}
-      </svg>
-    </a>
-  </nav>
+  {{ if not (index .Page.Params "hide-logo") }}
+    <nav
+      class="z-10 flex bg-black sm:absolute sm:bg-transparent"
+      data-ga-category="header"
+    >
+      <a class="mx-auto block px-12 py-5 sm:w-full" href="/">
+        <svg
+          class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
+          role="img"
+          aria-label="Spotlight PA banner"
+          viewBox="0 0 1024 190"
+        >
+          {{ partial "helper/svg.html" "banner" }}
+        </svg>
+      </a>
+    </nav>
+  {{ end }}
 {{ end }}
 
 {{ define "main" }}
