@@ -27,6 +27,11 @@ import youtubeFeed from "../enhancements/youtube-feed.js";
 import inspections, { searchUI } from "../enhancements/inspections.js";
 import inspectionsData from "../enhancements/inspections-data.js";
 import inspectionsModal from "../enhancements/inspections-modal.js";
+import {
+  inspectionCityFilter,
+  inspectionSortMenu,
+  inspectionMobileFilters,
+} from "../enhancements/inspection-filters.js";
 
 for (let [name, comp] of [
   ["carousel", carousel],
@@ -47,6 +52,9 @@ for (let [name, comp] of [
   ["searchUI", searchUI],
   ["inspectionsData", inspectionsData],
   ["inspectionsModal", inspectionsModal],
+  ["inspectionCityFilter", inspectionCityFilter],
+  ["inspectionSortMenu", inspectionSortMenu],
+  ["inspectionMobileFilters", inspectionMobileFilters],
 ]) {
   Alpine.data(name, comp);
 }

@@ -185,135 +185,16 @@
 
             <div
               class="relative"
-              x-data="{
-                open: false,
-                selectedText: '',
-                query: '',
-                optionsAll: [],
-                optionsTop: [],
-                optionsShown: [],
-                label() { return this.selectedText || 'All Cities'; },
-                normalize(s) {
-                  return String(s || '')
-                    .toLowerCase()
-                    .replace(/[^a-z0-9\s]/g, '')
-                    .replace(/\s+/g, ' ')
-                    .trim();
-                },
-                dist(a, b) {
-                  a = this.normalize(a); b = this.normalize(b);
-                  if (!a && !b) return 0;
-                  if (!a) return b.length;
-                  if (!b) return a.length;
-                  var m = a.length, n = b.length;
-                  var dp = new Array(n + 1);
-                  for (var j = 0; j <= n; j++) dp[j] = j;
-                  for (var i = 1; i <= m; i++) {
-                    var prev = dp[0];
-                    dp[0] = i;
-                    for (var j2 = 1; j2 <= n; j2++) {
-                      var tmp = dp[j2];
-                      var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
-                      dp[j2] = Math.min(dp[j2] + 1, dp[j2 - 1] + 1, prev + cost);
-                      prev = tmp;
-                    }
-                  }
-                  return dp[n];
-                },
-                syncShown() {
-                  var q = this.normalize(this.query);
-                  if (!q) {
-                    this.optionsShown = this.optionsTop.slice(0, 20);
-                    return;
-                  }
-                  var hits = [];
-                  var exactMatches = [];
-                  var partialMatches = [];
-                  
-                  for (var i = 0; i < this.optionsAll.length; i++) {
-                    var opt = this.optionsAll[i];
-                    var normalized = this.normalize(opt.text);
-                    
-                    if (normalized === q) {
-                      exactMatches.push(opt);
-                    } else if (normalized.includes(q)) {
-                      partialMatches.push(opt);
-                    }
-                  }
-                  
-                  hits = exactMatches.concat(partialMatches);
-                  
-                  if (hits.length === 0) {
-                    for (var k = 0; k < this.optionsAll.length; k++) {
-                      var opt2 = this.optionsAll[k];
-                      var a = this.normalize(opt2.text);
-                      if (!a) continue;
-                      if (a.charAt(0) !== q.charAt(0)) continue;
-                      if (Math.abs(a.length - q.length) > 4) continue;
-                      if (this.dist(a, q) <= 3) {
-                        hits.push(opt2);
-                      }
-                    }
-                  }
-                  
-                  this.optionsShown = hits.slice(0, 20);
-                },
-                init() {
-                  const sel = document.getElementById('city-filter');
-                  const baseOptions = Array.from(sel?.options || []).map(o => ({ value: o.value, text: o.text }));
-                  this.optionsAll = baseOptions;
-                  this.optionsTop = baseOptions.slice(0, 20);
-                  if (sel) this.selectedText = sel.options[sel.selectedIndex]?.text || '';
-
-                  this.syncShown();
-
-                  window.addEventListener('inspections-cities-ready', (e) => {
-                    const list = (e.detail && e.detail.cities) ? e.detail.cities : [];
-                    this.optionsAll = list.map(x => ({ value: x.value, text: x.text }));
-                    this.optionsTop = this.optionsAll.slice(0, 20);
-                    this.query = '';
-                    this.syncShown();
-                  });
-
-                  window.addEventListener('inspections-search', (e) => {
-                    const city = e.detail?.city || '';
-                    if (!city) {
-                      this.selectedText = '';
-                      return;
-                    }
-                    const match = this.optionsAll.find(o =>
-                      this.normalize(o.value) === this.normalize(city) ||
-                      this.normalize(o.text) === this.normalize(city)
-                    );
-                    this.selectedText = match ? match.text : city;
-                  });
-
-                  sel?.addEventListener('change', () => {
-                    this.selectedText = sel.value ? sel.options[sel.selectedIndex]?.text : '';
-                  });
-                },
-choose(value, text) {
-                  const v = (value || '').trim();
-                  const t = (text || value || '').trim();
-                  this.selectedText = t;
-                  this.open = false;
-                  this.query = '';
-                  this.syncShown();
-                  this.$store.inspections.currentCity = v;
-                }
-              }"
+              x-data="inspectionCityFilter()"
+              x-init="init()"
             >
-              <select id="city-filter" class="hidden">
-                <option value="">All Cities</option>
-              </select>
-
               <button
                 @click="open = !open"
                 :aria-expanded="open"
                 aria-haspopup="menu"
                 class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
               >
-                <span x-text="label()"></span>
+                <span x-text="label"></span>
               </button>
               <svg
                 class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
@@ -349,7 +230,7 @@ choose(value, text) {
                     <button
                       class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
                       :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
-                      @click="choose(opt.value, opt.text)"
+                      @click="choose(opt.value)"
                       role="menuitem"
                       x-text="opt.text"
                     ></button>

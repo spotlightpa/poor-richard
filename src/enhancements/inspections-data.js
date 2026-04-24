@@ -5,6 +5,10 @@ import {
   parseInspectionDate,
   getRiskScore,
   escapeHTML,
+  simplifyAddress,
+  getRiskPriority,
+  riskToColorAndBadge,
+  generateInspectionCardId,
 } from "../utils/inspections.js";
 
 const ITEMS_PER_PAGE = 10;
@@ -134,37 +138,6 @@ function filterFacilities(facilityIndex, searchQuery, currentCity) {
     if (Math.abs(ec.length - nCity.length) > 4) return false;
     return levenshtein(ec, nCity) <= 3;
   });
-}
-
-function simplifyAddress(fullAddress) {
-  try {
-    const parts = String(fullAddress || "").split(",");
-    if (parts.length >= 3) return parts.slice(0, 2).join(",").trim();
-    if (parts.length === 2) return parts[0].trim();
-    return String(fullAddress || "").trim();
-  } catch {
-    return String(fullAddress || "").trim();
-  }
-}
-
-function getRiskPriority(riskLevels) {
-  const risks = (riskLevels || "")
-    .split(" | ")
-    .map((s) => s.trim().toLowerCase());
-  if (risks.some((r) => r === "high risk")) return 3;
-  if (risks.some((r) => r === "moderate risk")) return 2;
-  if (risks.some((r) => r === "low risk")) return 1;
-  return 0;
-}
-
-function riskToColorAndBadge(priority) {
-  if (priority === 3)
-    return { color: "#D70000", badgeText: "High Risk Violation" };
-  if (priority === 2)
-    return { color: "#FFCB03", badgeText: "Moderate Risk Violation" };
-  if (priority === 1)
-    return { color: "#009EDB", badgeText: "Low Risk Violation" };
-  return { color: "#1b998b", badgeText: "No Violations" };
 }
 
 function rowsToMarkers(rows, startIndex) {
@@ -303,13 +276,6 @@ function createInspectionCard(data, index, allInspections) {
   return card;
 }
 
-function generateCardId(title) {
-  return title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
 export default function inspectionsData() {
   return {
     rendering: false,
@@ -417,6 +383,25 @@ export default function inspectionsData() {
       );
     },
 
+    updateSearchUI() {
+      const banner = document.getElementById("search-results-banner");
+      const noResults = document.getElementById("no-results");
+
+      const hasAppliedSearch =
+        !!(this.store.searchQuery && this.store.searchQuery.trim()) ||
+        !!(this.store.currentCity && this.store.currentCity.trim());
+
+      const hasResults = this.store.filteredData.length > 0;
+
+      if (banner) {
+        banner.classList.toggle("hidden", !hasAppliedSearch);
+      }
+
+      if (noResults) {
+        noResults.classList.toggle("hidden", !hasAppliedSearch || hasResults);
+      }
+    },
+
     resortAndRender() {
       this.store.sortedFilteredData = sortFacilities(
         this.store.filteredData,
@@ -425,6 +410,7 @@ export default function inspectionsData() {
       );
       this.renderPage();
       this.renderPaginationControls();
+      this.updateSearchUI();
     },
 
     performSearch() {
@@ -470,6 +456,15 @@ export default function inspectionsData() {
       const pageGroups = pageIds.map((id) => this.store.groupedFacilities[id]);
 
       this.clearMounts();
+
+      if (pageGroups.length === 0) {
+        this.store.markers = [];
+        this.syncMarkers();
+        this.rendering = false;
+        this.updateSearchUI();
+        return;
+      }
+
       this.appendCards(pageGroups, start);
 
       const flatRows = pageGroups.map((g) => g[0]);
@@ -643,7 +638,9 @@ export default function inspectionsData() {
       for (let i = 0; i < store.filteredData.length; i++) {
         const inspections = store.groupedFacilities[store.filteredData[i]];
         if (inspections?.[0]) {
-          const cardId = generateCardId((inspections[0].facility || "").trim());
+          const cardId = generateInspectionCardId(
+            (inspections[0].facility || "").trim(),
+          );
           if (cardId === hash) return Math.floor(i / ITEMS_PER_PAGE) + 1;
         }
       }
@@ -664,7 +661,7 @@ export default function inspectionsData() {
       );
       for (const card of cards) {
         const title = (card.querySelector("h2")?.textContent || "").trim();
-        if (generateCardId(title) === hash) {
+        if (generateInspectionCardId(title) === hash) {
           window.openMobileCardDetails?.(card);
           setTimeout(
             () => window.scrollTo({ top: 0, behavior: "smooth" }),

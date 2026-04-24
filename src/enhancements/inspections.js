@@ -4,18 +4,26 @@ import { escapeHTML, parseInspectionDate } from "../utils/inspections.js";
 export function searchUI() {
   return {
     loadingLocation: false,
+    q: "",
 
-    get q() {
-      return Alpine.store("inspections").searchQuery;
-    },
-    set q(val) {
-      Alpine.store("inspections").searchQuery = val;
-    },
+    init() {
+      this.q = Alpine.store("inspections").searchQuery || "";
 
-    init() {},
+      window.addEventListener("inspections-clear-search", () => {
+        this.q = "";
+      });
+
+      window.addEventListener("inspections-apply-search", (event) => {
+        this.q = event.detail?.value || "";
+      });
+    },
 
     doSearch(val) {
-      if (typeof val === "string") this.q = val;
+      if (typeof val === "string") {
+        this.q = val;
+      }
+
+      Alpine.store("inspections").searchQuery = this.q.trim();
     },
 
     async locate() {
@@ -67,8 +75,8 @@ export function searchUI() {
               .filter(Boolean)
               .join(" ");
             if (locationString) {
-              Alpine.store("inspections").searchQuery = locationString;
-              if (this.$refs?.input) this.$refs.input.value = locationString;
+              this.q = locationString;
+              this.doSearch();
             } else {
               alert("Couldn't determine your city/ZIP from location.");
             }
@@ -247,7 +255,7 @@ export default function inspectionsUI() {
       this.store.currentCity = "";
       this.store.currentSort = "date-desc";
       localStorage.removeItem("inspections-sort");
-      if (this.$refs?.searchInput) this.$refs.searchInput.value = "";
+      window.dispatchEvent(new CustomEvent("inspections-clear-search"));
     },
 
     generateCardId(card) {
