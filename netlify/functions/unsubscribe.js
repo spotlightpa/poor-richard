@@ -129,7 +129,7 @@ function managePage(token, subs) {
     <p class="sub">Uncheck any facilities you no longer want to receive alerts for, then click Save.</p>
 
     <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 4px;padding-bottom:12px;border-bottom:2px solid #111;">
-      <span style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#111;">${subs.length} Facilities</span>
+      <span style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#111;">${subs.length} ${subs.length === 1 ? "Facility" : "Facilities"}</span>
       ${subs.length ? `<span style="font-family:Arial,sans-serif;font-size:12px;"><a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true)" style="color:#009EDB;cursor:pointer;text-decoration:underline;">Select all</a> &nbsp;·&nbsp; <a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false)" style="color:#009EDB;cursor:pointer;text-decoration:underline;">Deselect all</a></span>` : ""}
     </div>
     <form method="POST" action="${escapeHTML(action)}">
