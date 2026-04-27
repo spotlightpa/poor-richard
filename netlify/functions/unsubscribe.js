@@ -151,8 +151,12 @@ function managePage(token, subs) {
 
 export const handler = async (event) => {
   const params = event.queryStringParameters || {};
-  const token = params.token || "";
   const facilityId = params.facilityId || "";
+
+  const bodyParams =
+    event.httpMethod === "POST" ? new URLSearchParams(event.body || "") : null;
+  const token =
+    (bodyParams ? bodyParams.get("token") : null) || params.token || "";
 
   const email = verifyToken(token);
   if (!email) {
