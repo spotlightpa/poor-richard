@@ -1,0 +1,808 @@
+{{ define "extra-head" }}
+  {{ partial "header/maplibre.html" . }}
+{{ end }}
+
+{{ define "extra-footer" }}
+  {{ partial "blocks/maplibre.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <span class="hidden">
+    {{ partial "helper/svg.html" "chevron" }}
+    {{ partial "helper/svg.html" "chevron-left" }}
+    {{ partial "helper/svg.html" "chevron-right" }}
+    {{ partial "helper/svg.html" "circle-check" }}
+    {{ partial "helper/svg.html" "triangle-exclamation" }}
+    {{ partial "helper/svg.html" "calendar-day" }}
+    {{ partial "helper/svg.html" "location" }}
+    {{ partial "helper/svg.html" "map-pin" }}
+    {{ partial "helper/svg.html" "bell" }}
+    {{ partial "helper/svg.html" "envelope" }}
+    {{ partial "helper/svg.html" "fb" }}
+    {{ partial "helper/svg.html" "twitter" }}
+    {{ partial "helper/svg.html" "share" }}
+    {{ partial "helper/svg.html" "link" }}
+    {{ partial "helper/svg.html" "robot" }}
+  </span>
+  <section class="bg-black">
+    <div
+      class="mx-auto w-full max-w-screen-xl flex-wrap gap-4 px-4 pb-6 pt-4 md:px-0"
+    >
+      <div class="mb-3">
+        <h1
+          class="mx-auto w-full pb-2 font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl md:w-7/12 lg:text-4xl"
+        >
+          {{ .Title }}
+        </h1>
+
+        {{ with .Param "deck" }}
+          <div class="mx-auto w-full md:w-7/12">
+            <p
+              class="font-serif text-base text-white md:text-lg md:leading-tight lg:text-xl"
+            >
+              {{ . }}
+            </p>
+          </div>
+        {{ end }}
+
+        {{ with .Param "search-instructions" }}
+          <div class="mx-auto mt-8 w-full md:w-7/12">
+            <p
+              class="font-serif text-base italic text-white md:text-lg md:leading-tight"
+            >
+              {{ . }}
+            </p>
+          </div>
+        {{ end }}
+      </div>
+
+      <div
+        class="mx-auto mt-3 hidden w-full md:block md:w-7/12"
+        x-ref="searchWrapper"
+      >
+        {{ partial "blocks/search.html" (dict
+          "placeholder" (default "Search" (.Param "search-desktop-placeholder"))
+          "showLocation" (.Param "search-location")
+          "context" .
+          )
+        }}
+      </div>
+    </div>
+  </section>
+
+  <section class="hidden md:block" x-data="inspectionsUI()" x-init="init()">
+    <div class="w-full bg-white px-4 md:px-0">
+      <div class="grid grid-cols-[240px_auto_1fr_1fr]">
+        <div
+          class="sticky top-[73px] flex h-[calc(100vh-73px)] flex-col overflow-y-auto bg-white px-5 py-6"
+        >
+          <h3
+            class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+          >
+            Track my City
+          </h3>
+
+          <div class="mt-4">
+            <button
+              type="button"
+              @click="$dispatch('open-city-alerts-modal')"
+              class="inline-flex w-full items-center justify-center gap-2 rounded-md border-2 border-blue bg-blue px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-blue/30"
+            >
+              <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                <use href="#bell-svg" />
+              </svg>
+              Get City Alerts
+            </button>
+          </div>
+
+          <div class="my-8 border-t-2 border-g-2"></div>
+
+          <h3
+            class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+          >
+            Sort By
+          </h3>
+
+          <div class="mt-4 hidden flex-col gap-3 md:flex">
+            <div class="relative">
+              <select
+                x-model="$store.inspections.currentSort"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <option value="" disabled hidden>Inspection Date</option>
+                <option value="date-desc">Newest to Oldest</option>
+                <option value="date-asc">Oldest to Newest</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                <use href="#chevron-svg" />
+              </svg>
+            </div>
+
+            <div class="relative">
+              <select
+                x-model="$store.inspections.currentSort"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <option value="" disabled hidden>Violation Risk</option>
+                <option value="risk-desc">Highest to Lowest</option>
+                <option value="risk-asc">Lowest to Highest</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                <use href="#chevron-svg" />
+              </svg>
+            </div>
+
+            <div class="relative">
+              <select
+                x-model="$store.inspections.currentSort"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <option value="" disabled hidden>Facility Name</option>
+                <option value="alpha-asc">A to Z</option>
+                <option value="alpha-desc">Z to A</option>
+              </select>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                <use href="#chevron-svg" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="my-8 border-t-2 border-g-2"></div>
+          <h3
+            class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+          >
+            Filter
+          </h3>
+
+          <div class="mt-4 hidden flex-col gap-3 md:flex">
+            {{ if .Param "cuisine-type" }}
+              <div class="relative">
+                <select
+                  id="cuisine-filter"
+                  class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+                >
+                  <option value="">Cuisine</option>
+                  <option value="american">American</option>
+                  <option value="italian">Italian</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="mexican">Mexican</option>
+                  <option value="other">Other</option>
+                </select>
+                <svg
+                  class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+                >
+                  <use href="#chevron-svg" />
+                </svg>
+              </div>
+            {{ end }}
+
+
+            <div
+              class="relative"
+              x-data="inspectionCityFilter()"
+              x-init="init()"
+            >
+              <button
+                @click="open = !open"
+                :aria-expanded="open"
+                aria-haspopup="menu"
+                class="w-full cursor-pointer appearance-none rounded-md border border-g-3 bg-white px-4 py-2.5 pr-10 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+              >
+                <span x-text="label"></span>
+              </button>
+              <svg
+                class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 fill-current text-g-6"
+              >
+                <use href="#chevron-svg" />
+              </svg>
+
+              <div
+                x-show="open"
+                x-transition
+                @click.outside="open = false"
+                class="absolute left-0 z-20 mt-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
+                role="menu"
+              >
+                <div class="border-b border-g-2 p-3">
+                  <div class="font-sans text-xs font-semibold text-g-6">
+                    Type to search all cities
+                  </div>
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
+                    placeholder="Search"
+                    x-model="query"
+                    @input="syncShown()"
+                  />
+                </div>
+
+                <div class="max-h-72 overflow-auto">
+                  <template
+                    x-for="opt in optionsShown"
+                    :key="opt.value + '::' + opt.text"
+                  >
+                    <button
+                      class="block w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
+                      :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
+                      @click="choose(opt.value)"
+                      role="menuitem"
+                      x-text="opt.text"
+                    ></button>
+                  </template>
+
+                  <div
+                    x-show="optionsShown.length === 0"
+                    class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
+                  >
+                    No matches. Try a different spelling.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            @click="clearAll()"
+            class="mt-8 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white hover:text-g-9 hover:shadow-sm"
+          >
+            Clear all
+          </button>
+        </div>
+
+        <div aria-hidden="true" class="h-full w-px bg-g-4"></div>
+
+        <div class="border-r border-g-4 bg-white">
+          {{ partial "blocks/inspection-scroll.html" . }}
+        </div>
+
+        <div class="sticky top-[73px] h-[calc(100vh-73px)]">
+          {{ partial "blocks/maplibre-assets.html" (dict
+            "ctx" .
+            "id" "inspections-map"
+            "ariaLabel" "Pennsylvania inspections map"
+            "class" "relative h-full w-full"
+            )
+          }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="md:hidden">
+    {{ partial "blocks/inspection-scroll.html" . }}
+  </div>
+
+  <div
+    x-data="inspectionsModal()"
+    x-init="init()"
+    x-show="open"
+    x-cloak
+    @keydown.escape.window="closeModal()"
+    class="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center px-6 pb-6"
+    :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100vh - var(--modalTop));'"
+    style="display: none;"
+  >
+    <div
+      @click="closeModal()"
+      class="fixed inset-0 bg-black/70 backdrop-blur-md backdrop-saturate-150"
+      x-show="open"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+    ></div>
+
+    <div
+      class="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-lg border border-g-3 bg-white shadow-2xl"
+      x-show="open"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 scale-90"
+      x-transition:enter-end="opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-200"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-90"
+      @click.stop
+    >
+      <button
+        @click="closeModal()"
+        class="absolute right-4 top-4 text-g-6 transition-colors hover:text-g-9"
+        aria-label="Close modal"
+      >
+        <svg class="h-6 w-6 fill-current" aria-hidden="true">
+          {{ partial "helper/svg.html" "times" }}
+        </svg>
+      </button>
+
+      <div x-show="step === 'form'" class="p-4 sm:p-5">
+        <div class="mb-4 flex items-center gap-3">
+          <div
+            class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4"
+          >
+            <svg class="h-5 w-52 fill-current text-yellow-9" aria-hidden="true">
+              <use href="#bell-svg" />
+            </svg>
+          </div>
+          <div>
+            <h2
+              class="text-xl font-bold text-g-9 sm:text-2xl"
+              x-text="mode === 'facility' ? 'Get Inspection Alerts' : 'Get City Alerts'"
+            ></h2>
+          </div>
+        </div>
+
+        <div
+          x-show="mode === 'facility'"
+          class="mb-4 rounded-lg border border-g-3 bg-g-1 p-3"
+        >
+          <p class="text-sm font-semibold text-g-7">
+            You'll receive alerts for:
+          </p>
+          <p
+            class="mt-1 text-base font-bold text-g-9"
+            x-text="facilityName"
+          ></p>
+        </div>
+
+        <div
+          x-show="mode === 'city'"
+          class="mb-4 min-h-[64px] rounded-lg border border-g-3 bg-g-1 p-3"
+        >
+          <div x-show="detectingCity" class="flex items-center gap-2 py-1">
+            <svg
+              class="h-4 w-4 animate-spin text-g-5"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              ></path>
+            </svg>
+            <p class="text-sm font-semibold text-g-6">
+              Detecting your city&hellip;
+            </p>
+          </div>
+
+          <div x-show="!detectingCity && !cityNotFound">
+            <p
+              class="mb-1 text-xs font-semibold uppercase tracking-wide text-g-5"
+            >
+              Your city
+            </p>
+            <p class="text-base font-bold text-g-9" x-text="userCity"></p>
+            <button
+              type="button"
+              @click="cityNotFound = true; userCity = ''; cityFacilities = []; selectedFacilities = {};"
+              class="mt-1 text-xs font-semibold text-blue hover:underline"
+            >
+              Not your city? Change it
+            </button>
+          </div>
+
+          <div x-show="!detectingCity && cityNotFound" class="relative">
+            <p
+              class="mb-2 text-xs font-semibold uppercase tracking-wide text-g-5"
+            >
+              Select your city
+            </p>
+            <div class="relative">
+              <input
+                type="text"
+                x-model="citySearchQuery"
+                @focus="cityDropdownOpen = true"
+                @input="cityDropdownOpen = true"
+                @click.outside="cityDropdownOpen = false"
+                placeholder="Type to search cities&hellip;"
+                class="w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-blue"
+              />
+              <div
+                x-show="cityDropdownOpen && filteredCities.length > 0"
+                class="absolute left-0 right-0 z-30 mt-1 max-h-48 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
+              >
+                <template x-for="c in filteredCities" :key="c.value">
+                  <button
+                    type="button"
+                    @click="selectCity(c.text)"
+                    class="block w-full px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-1"
+                    x-text="c.text"
+                  ></button>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          x-show="mode === 'city' && cityFacilities.length > 0"
+          class="mb-4 overflow-hidden rounded-lg border border-g-3"
+        >
+          <button
+            type="button"
+            @click="facilitiesOpen = !facilitiesOpen"
+            class="flex w-full items-center justify-between bg-g-1 px-3 py-2.5 transition-colors hover:bg-g-2"
+          >
+            <span class="text-sm font-semibold text-g-7">
+              Subscribing to
+              <span class="text-g-9" x-text="selectedCount"></span> of
+              <span x-text="cityFacilities.length"></span> facilities
+            </span>
+            <svg
+              class="h-4 w-4 fill-current text-g-6 transition-transform"
+              :class="facilitiesOpen ? 'rotate-180' : ''"
+            >
+              <use href="#chevron-svg" />
+            </svg>
+          </button>
+          <div x-show="facilitiesOpen" class="border-t border-g-3">
+            <div class="flex items-center gap-2 border-b border-g-2 px-3 py-2">
+              <button
+                type="button"
+                @click="toggleAllFacilities(true)"
+                class="text-xs font-semibold text-blue hover:underline"
+              >
+                Select all
+              </button>
+              <span class="text-g-4">·</span>
+              <button
+                type="button"
+                @click="toggleAllFacilities(false)"
+                class="text-xs font-semibold text-blue hover:underline"
+              >
+                Deselect all
+              </button>
+            </div>
+            <div class="max-h-48 divide-y divide-g-2 overflow-y-auto">
+              <template x-for="f in cityFacilities" :key="f.id">
+                <label
+                  class="flex cursor-pointer items-center gap-3 px-3 py-2.5 hover:bg-g-1"
+                >
+                  <input
+                    type="checkbox"
+                    :checked="selectedFacilities[f.id]"
+                    @change="toggleFacility(f.id)"
+                    class="h-4 w-4 rounded border-g-3 text-blue focus:ring-blue"
+                  />
+                  <span
+                    class="font-sans text-sm font-semibold text-g-9"
+                    x-text="f.name"
+                  ></span>
+                </label>
+              </template>
+            </div>
+          </div>
+        </div>
+
+        <form @submit.prevent="submitSignup()" class="space-y-3">
+          <div class="mb-3">
+            <p class="text-xs font-semibold uppercase tracking-wide text-g-6">
+              How would you like to be notified?
+            </p>
+            <p class="mt-0.5 text-xs text-g-5">Enter at least one.</p>
+          </div>
+
+          <div>
+            <label
+              for="alert-email"
+              class="mb-2 flex items-center gap-1.5 text-sm font-semibold text-g-9"
+            >
+              Email Address
+            </label>
+            <input
+              id="alert-email"
+              type="email"
+              x-model="email"
+              placeholder="you@example.com"
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+            />
+          </div>
+
+          <div>
+            <label
+              for="alert-phone"
+              class="mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-sm font-semibold text-g-9"
+            >
+              Phone Number
+            </label>
+            <input
+              id="alert-phone"
+              type="tel"
+              x-model="phone"
+              placeholder="(555) 123-4567"
+              maxlength="14"
+              @input="
+                const digits = $event.target.value.replace(/\D/g, '').slice(0, 10);
+                let formatted = '';
+                if (digits.length <= 3) formatted = digits;
+                else if (digits.length <= 6) formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
+                else formatted = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+                phone = formatted;
+                $nextTick(() => { $event.target.value = formatted; });
+              "
+              class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow"
+            />
+          </div>
+
+          <div class="rounded-lg border border-g-3 bg-g-1 p-4">
+            <p class="text-xs leading-relaxed text-g-7">
+              You can unsubscribe anytime. We never share your data with third
+              parties. By providing your phone number, you consent to receive
+              SMS inspection alerts from Spotlight PA. Message and data rates
+              may apply. Reply STOP at any time to unsubscribe.
+            </p>
+          </div>
+
+          <label
+            class="ml-px flex cursor-pointer select-none items-center gap-2"
+          >
+            <div
+              class="relative flex-shrink-0"
+              x-effect="
+              if (!rememberMe) {
+                localStorage.removeItem('alerts-remembered-email');
+                localStorage.removeItem('alerts-remembered-phone');
+              } else {
+                if (email) localStorage.setItem('alerts-remembered-email', email);
+                else localStorage.removeItem('alerts-remembered-email');
+                if (phone) localStorage.setItem('alerts-remembered-phone', phone);
+                else localStorage.removeItem('alerts-remembered-phone');
+              }
+            "
+            >
+              <input
+                type="checkbox"
+                x-model="rememberMe"
+                class="peer sr-only"
+              />
+              <div
+                class="h-5 w-5 rounded border-2 border-g-4 bg-white transition-colors peer-checked:border-blue peer-checked:bg-blue"
+              ></div>
+              <svg
+                class="pointer-events-none absolute inset-0 m-auto h-3 w-3 fill-white opacity-0 transition-opacity peer-checked:opacity-100"
+                viewBox="0 0 12 12"
+              >
+                <path
+                  d="M2 6l3 3 5-5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <span class="font-sans text-sm font-semibold text-g-7"
+              >Remember my contact info</span
+            >
+          </label>
+
+          <div
+            x-show="errorMessage"
+            class="rounded-lg border border-red-3 bg-red-1 p-3"
+          >
+            <p
+              class="font-sans text-sm font-semibold text-red-7"
+              x-text="errorMessage"
+            ></p>
+          </div>
+
+          <button
+            type="submit"
+            :disabled="submitting || (mode === 'city' && (selectedCount === 0 || !userCity)) || (!email && !phone)"
+            class="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-yellow-5 bg-yellow-4 py-3 font-bold text-yellow-9 transition-colors hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <span class="uppercase" x-show="!submitting">Subscribe</span>
+            <span x-show="submitting" class="flex items-center gap-2">
+              <svg class="h-5 w-5 animate-spin" viewBox="0 0 24 24">
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  fill="none"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+              Subscribing...
+            </span>
+          </button>
+        </form>
+      </div>
+      <div x-show="step === 'success'" class="p-6 text-center sm:p-8">
+        <div class="mx-auto mb-6 flex justify-center">
+          <svg
+            class="h-16 w-16 fill-current text-election-green"
+            aria-hidden="true"
+          >
+            <use href="#circle-check-svg" />
+          </svg>
+        </div>
+        <h2 class="mb-3 text-2xl font-bold text-g-9">You're all set!</h2>
+        <p class="mb-6 text-base text-g-7">
+          <template x-if="mode === 'facility'">
+            <span
+              >We'll send you an alert whenever there's a new inspection report
+              for
+              <span class="font-semibold text-g-9" x-text="facilityName"></span
+              >.</span
+            >
+          </template>
+          <template x-if="mode === 'city'">
+            <span>
+              We'll send you alerts for new inspections across
+              <span class="font-semibold text-g-9" x-text="userCity"></span>.
+              <template x-if="citySubscribeSummary">
+                <span>
+                  <span x-show="citySubscribeSummary.newCount > 0">
+                    <template x-if="citySubscribeSummary.newCount === 1">
+                      <span
+                        >Subscribed to
+                        <span
+                          class="font-semibold text-g-9"
+                          x-text="citySubscribeSummary.newFacilityName"
+                        ></span
+                        >.</span
+                      >
+                    </template>
+                    <template x-if="citySubscribeSummary.newCount > 1">
+                      <span
+                        >Subscribed to
+                        <span
+                          class="font-semibold text-g-9"
+                          x-text="citySubscribeSummary.newCount"
+                        ></span>
+                        new facilities.</span
+                      >
+                    </template>
+                  </span>
+                  <span x-show="citySubscribeSummary.alreadyCount > 0">
+                    You were already subscribed to
+                    <span
+                      class="font-semibold text-g-9"
+                      x-text="citySubscribeSummary.alreadyCount"
+                    ></span>
+                    <span
+                      x-text="citySubscribeSummary.alreadyCount === 1 ? 'facility' : 'facilities'"
+                    ></span
+                    >.
+                  </span>
+                </span>
+              </template>
+            </span>
+          </template>
+        </p>
+
+        <button
+          @click="closeModal()"
+          class="w-full rounded-lg bg-g-9 py-3 font-semibold text-white transition-colors hover:bg-g-8"
+        >
+          Done
+        </button>
+
+        <p class="mt-4 text-xs text-g-6">
+          <span x-show="email && phone"
+            >Check your email and texts for confirmation.</span
+          >
+          <span x-show="email && !phone"
+            >Check your email for confirmation.</span
+          >
+          <span x-show="!email && phone"
+            >Check your texts for confirmation.</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "tw/newsletter-box-lg.html" (dict
+    "newsletterDek" "Sign up for PA Post to understand what's happening across PA - in less than five minutes a day."
+    "newsletterField" "newsletter/papost-hidden.html"
+    )
+  }}
+
+
+  <section class="bg-white" data-ga-category="about">
+    <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
+      <div class="mx-auto flex w-full gap-6 md:w-8/12">
+        <div class="hidden shrink-0 sm:block [&>nav]:static [&>nav]:top-auto">
+          {{ partial "tw/social-buttons.html" . }}
+        </div>
+        <div class="w-full space-y-8">
+          <div>
+            <h2
+              class="w-full font-sans text-3xl font-extrabold capitalize leading-tight tracking-wide md:text-4xl"
+            >
+              {{ .Param "about-title" }}
+            </h2>
+            <div class="pb-2 sm:hidden [&>nav]:static [&>nav]:top-auto">
+              {{ partial "tw/social-buttons.html" . }}
+            </div>
+            <div
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
+              {{ .Param "about-description" | safeHTML }}
+            </div>
+          </div>
+
+          <div>
+            <h2
+              class="w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              {{ .Param "questions-title" }}
+            </h2>
+            <div
+              class="article-content pt-4 font-serif leading-relaxed text-black [&_h2]:mb-2 [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:italic [&_h2]:text-[#2e2e2e]"
+            >
+              {{ .Param "questions-description" | markdownify }}
+            </div>
+          </div>
+
+          <div>
+            <h2
+              class="w-full font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              {{ .Param "tips-title" }}
+            </h2>
+            <p
+              class="article-content pt-4 font-serif leading-relaxed text-black"
+            >
+              {{ .Param "tips-description" | markdownify }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Page.RenderString (.Param "credits") }}
+    <section
+      class="bg-white"
+      id="credits"
+      data-ga-category="credits"
+      x-data
+      x-intersect.half="$dispatch('intersect:about', $el.id)"
+    >
+      <div class="mx-auto w-full max-w-screen-xl px-4 py-6 md:px-0">
+        <div class="mx-auto flex w-full gap-6 md:w-8/12">
+          <div
+            class="hidden shrink-0 opacity-0 sm:block [&>nav]:static [&>nav]:top-auto"
+          >
+            {{ partial "tw/social-buttons.html" $ }}
+          </div>
+          <div class="w-full">
+            <h2
+              class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+            >
+              Credits
+            </h2>
+            <div class="space-y-8 py-6">
+              {{ . }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
