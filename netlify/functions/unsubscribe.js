@@ -155,8 +155,7 @@ export const handler = async (event) => {
 
   const bodyParams =
     event.httpMethod === "POST" ? new URLSearchParams(event.body || "") : null;
-  const token =
-    (bodyParams ? bodyParams.get("token") : null) || params.token || "";
+  const token = bodyParams?.get("token") || params.token || "";
 
   const email = verifyToken(token);
   if (!email) {
