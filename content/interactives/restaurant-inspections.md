@@ -20,8 +20,8 @@ search-location = true
 show-alerts-button = true
 cuisine-type = false
 
-blurb = "Search real-time health inspection data for restaurants across 61 Pennsylvania counties, updated automatically as new reports are posted."
-description = "Search real-time health inspection data for restaurants across 61 Pennsylvania counties, updated automatically as new reports are posted."
+blurb = "A free, searchable database and alert system that makes Pennsylvania's public inspection data for retail food facilities easy to understand and explore."
+description = "A free, searchable database and alert system that makes Pennsylvania's public inspection data for retail food facilities easy to understand and explore."
 image = "2026/04/01mx-z5t1-v225-x54g.jpeg"
 image-description = "Pennsylvania Restaurant Safety Tracker image showing pots hanging in a kitchen"
 og-title = "Pennsylvania Restaurant Safety Tracker"
