@@ -55,7 +55,7 @@ function buildEmailHtml({
     })
     .toUpperCase();
 
-  const trackerUrl = `https://www.spotlightpa.org/restaurant-inspections/#${facilityId
+  const trackerUrl = `https://www.spotlightpa.org/restaurant-inspections/#${facilityName
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")}`;
