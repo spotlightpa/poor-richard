@@ -406,11 +406,7 @@ export default function inspectionsUI() {
       this.lastReadMoreButton?.focus({ preventScroll: true });
 
       this.activeCard = null;
-      history.replaceState(
-        null,
-        "",
-        window.location.pathname,
-      );
+      history.replaceState(null, "", window.location.pathname);
 
       const container = mount
         ? mount.closest(".border-r") || mount.parentElement
