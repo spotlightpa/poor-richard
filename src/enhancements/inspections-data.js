@@ -364,10 +364,13 @@ export default function inspectionsData() {
       this.resortAndRender();
 
       const hash = window.location.hash.slice(1);
-      if (hash) {
-        const foundPage = this.findPageForHash(hash);
+      const qParam =
+        new URLSearchParams(window.location.search).get("facility") || "";
+      const target = hash || qParam;
+      if (target) {
+        const foundPage = this.findPageForHash(target);
         if (foundPage > 0) this.store.currentPage = foundPage;
-        setTimeout(() => this.handleHashOnMobile(hash), 500);
+        setTimeout(() => this.handleHashOnMobile(target), 500);
       }
 
       window.addEventListener("mobile-view-changed", (e) => {
