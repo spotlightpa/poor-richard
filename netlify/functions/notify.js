@@ -55,10 +55,11 @@ function buildEmailHtml({
     })
     .toUpperCase();
 
-  const trackerUrl = `https://www.spotlightpa.org/restaurant-inspections/#${facilityName
+  const facilitySlug = facilityName
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")}`;
+    .replace(/^-+|-+$/g, "");
+  const trackerUrl = `https://www.spotlightpa.org/restaurant-inspections/?facility=${facilitySlug}`;
 
   const violationCount = violations.length;
 
@@ -169,7 +170,10 @@ async function notifySubscribers({
         await sns.send(
           new PublishCommand({
             PhoneNumber: e164,
-            Message: `Spotlight PA: New inspection for ${facilityName} on ${inspectionDate}. ${violationSummary} View: https://www.spotlightpa.org/restaurant-inspections Reply STOP to unsubscribe.`,
+            Message: `Spotlight PA: New inspection for ${facilityName} on ${inspectionDate}. ${violationSummary} View: https://www.spotlightpa.org/restaurant-inspections/?facility=${facilityName
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-+|-+$/g, "")} Reply STOP to unsubscribe.`,
             MessageAttributes: {
               "AWS.SNS.SMS.SMSType": {
                 DataType: "String",

@@ -269,11 +269,14 @@ export default function inspectionsUI() {
     checkHashAndOpenCard() {
       if (window.innerWidth < 768) return;
       const hash = window.location.hash.slice(1);
-      if (!hash) return;
+      const qParam =
+        new URLSearchParams(window.location.search).get("facility") || "";
+      const target = hash || qParam;
+      if (!target) return;
       const cards = Array.from(
         document.querySelectorAll('[data-card="inspection"]'),
       );
-      const card = cards.find((c) => this.generateCardId(c) === hash);
+      const card = cards.find((c) => this.generateCardId(c) === target);
       if (card) setTimeout(() => this.openDetails(card), 200);
     },
 
@@ -406,7 +409,7 @@ export default function inspectionsUI() {
       history.replaceState(
         null,
         "",
-        window.location.pathname + window.location.search,
+        window.location.pathname,
       );
 
       const container = mount
