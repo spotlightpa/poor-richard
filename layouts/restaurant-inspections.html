@@ -285,7 +285,7 @@
     x-cloak
     @keydown.escape.window="closeModal()"
     class="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center px-6 pb-6"
-    :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100vh - var(--modalTop));'"
+    :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100dvh - var(--modalTop));'"
     style="display: none;"
   >
     <div
@@ -301,7 +301,7 @@
     ></div>
 
     <div
-      class="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-lg border border-g-3 bg-white shadow-2xl"
+      class="relative max-h-[85dvh] w-full max-w-md overflow-y-auto rounded-lg border border-g-3 bg-white shadow-2xl"
       x-show="open"
       x-transition:enter="transition ease-out duration-300"
       x-transition:enter-start="opacity-0 scale-90"
