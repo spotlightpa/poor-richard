@@ -361,7 +361,6 @@ export default function inspectionsData() {
       this.store.markers = [];
 
       this.updateTotalPages();
-      this.resortAndRender();
 
       const hash = window.location.hash.slice(1);
       const qParam =
@@ -370,8 +369,14 @@ export default function inspectionsData() {
       if (target) {
         const foundPage = this.findPageForHash(target);
         if (foundPage > 0) this.store.currentPage = foundPage;
-        setTimeout(() => this.handleHashOnMobile(target), 500);
+        const onRendered = () => {
+          window.removeEventListener("inspections-page-rendered", onRendered);
+          this.handleHashOnMobile(target);
+        };
+        window.addEventListener("inspections-page-rendered", onRendered);
       }
+
+      this.resortAndRender();
 
       window.addEventListener("mobile-view-changed", (e) => {
         if (e.detail?.view === "map") this.syncMarkers();
@@ -472,6 +477,7 @@ export default function inspectionsData() {
       }
 
       this.appendCards(pageGroups, start);
+      window.dispatchEvent(new CustomEvent("inspections-page-rendered"));
 
       const flatRows = pageGroups.map((g) => g[0]);
       this.store.markers = rowsToMarkers(flatRows, start);
@@ -668,7 +674,7 @@ export default function inspectionsData() {
       for (const card of cards) {
         const title = (card.querySelector("h2")?.textContent || "").trim();
         if (generateInspectionCardId(title) === hash) {
-          window.openMobileCardDetails?.(card);
+          card.querySelector("[data-read-more]")?.click();
           setTimeout(
             () => window.scrollTo({ top: 0, behavior: "smooth" }),
             200,
