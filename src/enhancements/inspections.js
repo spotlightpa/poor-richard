@@ -496,7 +496,7 @@ export default function inspectionsUI() {
             <h2 class="text-3xl font-bold text-black break-words">${escapeHTML(title)}</h2>
             ${location ? `<div class="mt-2 space-y-1 text-g-6"><div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-g-7" aria-hidden="true"><use href="#map-pin-svg" /></svg><span>${escapeHTML(location)}</span></div></div>` : ""}
             <div class="mt-3 flex flex-wrap items-center gap-2">
-              <button onclick="window.dispatchEvent(new CustomEvent('open-alerts-modal', { detail: { facilityName: ${this.jsStringAttr(title)}, facilityId: ${this.jsStringAttr(cardId)} } }))" class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8 hover:bg-g-8">
+              <button onclick="window.dispatchEvent(new CustomEvent('open-alerts-modal', { detail: { facilityName: ${this.jsStringAttr(title + (location ? " — " + location : ""))}, facilityId: ${this.jsStringAttr(cardId)} } }))" class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8 hover:bg-g-8">
                 <span>Get alerts</span>
                 <svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#bell-svg" /></svg>
               </button>
