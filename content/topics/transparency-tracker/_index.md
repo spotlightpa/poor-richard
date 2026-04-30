@@ -29,7 +29,7 @@ form ="""
 >}}
 """
 
-author = "Wyatt Massey"
+authors = ["Wyatt Massey"]
 +++
 
 The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.
