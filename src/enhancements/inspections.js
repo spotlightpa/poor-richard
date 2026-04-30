@@ -229,8 +229,7 @@ export default function inspectionsUI() {
                   for (const card of cards) {
                     if (this.generateCardId(card) === hash) {
                       if (isDesktop) this.openDetails(card);
-                      // eslint-disable-next-line no-undef
-                      else openMobileCardDetails(card);
+                      else card.querySelector("[data-read-more]")?.click();
                       break;
                     }
                   }
@@ -362,7 +361,12 @@ export default function inspectionsUI() {
       }
 
       this.activeCard = card;
-      window.location.hash = this.generateCardId(card);
+      const hasQParam = new URLSearchParams(window.location.search).get(
+        "facility",
+      );
+      if (!hasQParam) {
+        window.location.hash = this.generateCardId(card);
+      }
       document.getElementById("no-results")?.classList.add("hidden");
     },
 
