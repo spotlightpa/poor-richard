@@ -232,6 +232,13 @@
       "categoryRank": "3"
     },
     {
+      "display": "Peggy Brown",
+      "sort": "Brown",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Bryan and Nancy Winkler",
       "sort": "Bryan",
       "url": "",
@@ -661,13 +668,6 @@
     {
       "display": "Sharon and Jeff Hyde",
       "sort": "Hyde",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Evelyn Ishmael",
-      "sort": "Ishmael",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
