@@ -94,7 +94,7 @@ function buildEmailHtml({
         
         ${violationCount ? `<span style="display:inline-block;margin-top:4px;background-color:#fef2f2;color:#b91c1c;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #fecaca;">${violationCount} violation${violationCount !== 1 ? "s" : ""}</span>` : `<span style="display:inline-block;margin-top:4px;background-color:#f0fdf4;color:#15803d;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #bbf7d0;">No violations</span>`}
       </div>
-      <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 28px;border-radius:6px;">${violationCount ? "View the violations →" : "View the tracker →"}</a>
+      <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 20px;border-radius:6px;">${violationCount ? "View violations →" : "View tracker →"}</a>
       <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
       <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;text-decoration:underline;">donating to Spotlight PA</a> so we can continue making this data free and accessible.</p>
     </div>
