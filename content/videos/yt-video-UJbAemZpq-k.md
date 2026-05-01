@@ -2,7 +2,7 @@
   "blurb": "",
   "byline": "",
   "draft": false,
-  "image": "external/dm293n5y4fjby5rc8y6mypt1w8.jpeg",
+  "image": "2026/05/01mz-93rd-47zn-pfve.png",
   "image-description": "Short: In this blue Montco district, the primary is the race that matters",
   "internal-id": "Short: In this bl…",
   "kicker": "",
