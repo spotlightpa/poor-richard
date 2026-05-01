@@ -389,8 +389,8 @@ export default function inspectionsUI() {
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.classList.remove("hidden"));
 
-      const si = this.$refs?.searchInput;
-      if (si && si.value.trim()) {
+      const store = Alpine.store("inspections");
+      if (store.searchQuery?.trim() || store.currentCity?.trim()) {
         document
           .getElementById("search-results-banner")
           ?.classList.remove("hidden");
