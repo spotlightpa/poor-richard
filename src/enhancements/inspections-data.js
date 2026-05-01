@@ -385,6 +385,10 @@ export default function inspectionsData() {
       window.addEventListener("map:ready", () => {
         this.syncMarkers();
       });
+
+      window.addEventListener("inspections-render-pagination", () => {
+        this.renderPaginationControls();
+      });
     },
 
     updateTotalPages() {
@@ -533,6 +537,8 @@ export default function inspectionsData() {
       document
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.remove());
+
+      if (document.querySelector(".detail-content")) return;
 
       if (this.store.filteredData.length === 0 || this.store.totalPages <= 1)
         return;

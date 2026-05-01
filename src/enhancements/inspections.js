@@ -420,6 +420,9 @@ export default function inspectionsUI() {
           container.getBoundingClientRect().top + window.pageYOffset - 73;
         window.scrollTo({ top, behavior: "instant" });
       }
+
+      Alpine.store("inspections").currentPage;
+      window.dispatchEvent(new CustomEvent("inspections-render-pagination"));
     },
 
     syncHidden(card) {
