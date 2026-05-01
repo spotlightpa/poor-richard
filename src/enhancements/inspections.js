@@ -492,6 +492,11 @@ export default function inspectionsUI() {
         (v.aiSummary || "").trim().replace(/^[\s|]+$/, ""),
       );
       const cardId = this.generateCardId(card);
+      const facilityUrl =
+        window.location.origin +
+        window.location.pathname +
+        "?facility=" +
+        cardId;
       return `<div>
         <button type="button" class="inline-flex items-center font-sans font-bold text-navy hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-g-4 rounded" data-action="back-to-results" aria-label="Back to results">
           <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true"><use href="#chevron-left-svg" /></svg>
@@ -507,10 +512,10 @@ export default function inspectionsUI() {
                 <svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#bell-svg" /></svg>
               </button>
               <div class="flex items-center gap-2">
-                <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(window.location.href)}'" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share via Email"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#envelope-svg" /></svg></button>
-                <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#fb-svg" /></svg></button>
-                <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(${this.jsStringAttr(title)}), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on X"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#twitter-svg" /></svg></button>
-                <button onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))" class="rounded-full p-2 bg-orange text-white" aria-label="Copy link"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#share-svg" /></svg></button>
+             <button onclick="window.location.href='mailto:?subject=${encodeURIComponent("Inspection report: " + title)}&body=${encodeURIComponent(facilityUrl)}'"class="rounded-full p-2 bg-g-9 text-white" aria-label="Share via Email"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#envelope-svg" /></svg></button>
+                <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('${facilityUrl}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#fb-svg" /></svg></button>
+                <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent('${facilityUrl}') + '&text=' + encodeURIComponent('Inspection report: ${title.replace(/'/g, "\\'")}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on X"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#twitter-svg" /></svg></button>
+               <button onclick="navigator.clipboard.writeText('${facilityUrl}').then(() => alert('Link copied!'))" class="rounded-full p-2 bg-orange text-white" aria-label="Copy link"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#share-svg" /></svg></button>
               </div>
             </div>
           </div>
