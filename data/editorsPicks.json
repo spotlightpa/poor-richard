@@ -6,16 +6,18 @@
     "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
   ],
   "featuredStories": [
-    "content/statecollege/2026-04-30-SPLGOVRURAL0426.md"
+    "content/news/2026-05-01-SPLFARMERWINS0426.md",
+    "content/statecollege/2026-04-08-SPLPSUSUPREME0426.md"
   ],
   "subfeatures": [
-    "content/news/2026-04-28-SPLMAY1926GUIDE.md",
-    "content/news/2026-04-09-SPLGARPRIM0426.md",
-    "content/news/2026-04-08-SPLSHAPPRIM0426.md"
+    "content/statecollege/2025-10-21-SPLPSUCOURT102.md",
+    "content/statecollege/2026-04-08-SPLPSUSUPREME0426.md",
+    "content/news/2025-07-08-SPLOPIOIDRTK0725.md",
+    "content/statecollege/2023-03-23-SPLHOWLOCAL.md"
   ],
   "topSlots": [
+    "content/statecollege/2026-04-30-SPLGOVRURAL0426.md",
     "content/news/2026-04-30-VBVRARULING0426.md",
-    "content/news/2026-04-27-SLPHOUSEBILL0427.md",
-    "content/news/2026-04-29-APVOTEDATA0426.md"
+    "content/news/2026-04-30-SPLBELL0426.md"
   ]
 }
