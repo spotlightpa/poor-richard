@@ -23,6 +23,10 @@ export function searchUI() {
         this.q = val;
       }
 
+      if (document.querySelector(".detail-content")) {
+        window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
+      }
+
       Alpine.store("inspections").searchQuery = this.q.trim();
     },
 
@@ -152,6 +156,10 @@ export default function inspectionsUI() {
     },
 
     init() {
+      window.addEventListener("inspections-back-to-results", () => {
+        this.backToResults();
+      });
+
       if (!inspectionsUIDelegatesInitialized) {
         document.addEventListener("click", (e) => {
           const readMoreBtn = e.target.closest(
