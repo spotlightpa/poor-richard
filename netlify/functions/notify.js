@@ -55,7 +55,7 @@ function buildEmailHtml({
     })
     .toUpperCase();
 
-  const facilitySlug = facilityName
+  const facilitySlug = facilityId
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
@@ -170,7 +170,7 @@ async function notifySubscribers({
         await sns.send(
           new PublishCommand({
             PhoneNumber: e164,
-            Message: `Spotlight PA: New inspection for ${facilityName} on ${inspectionDate}. ${violationSummary} View: https://www.spotlightpa.org/restaurant-inspections/?facility=${facilityName
+            Message: `Spotlight PA: New inspection for ${facilityName} on ${inspectionDate}. ${violationSummary} View: https://www.spotlightpa.org/restaurant-inspections/?facility=${facilityId
               .toLowerCase()
               .replace(/[^a-z0-9]+/g, "-")
               .replace(/^-+|-+$/g, "")} Reply STOP to unsubscribe.`,
