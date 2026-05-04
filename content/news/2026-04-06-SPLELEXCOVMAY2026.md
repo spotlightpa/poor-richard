@@ -16,6 +16,7 @@ modal-exclude = false
 pinned = false
 published = 2026-04-06T04:00:00-04:00
 slug = "pennsylvania-2026-primary-election-coverage-elections"
+suppress-ads = false
 suppress-date = false
 title = "How Spotlight PA will cover Pennsylvania’s 2026 primary election"
 title-tag = "How Spotlight PA will cover Pennsylvania’s 2026 primary election"
@@ -34,7 +35,7 @@ Unaffiliated and third-party voters <a href="https://www.spotlightpa.org/news/20
 
 Spotlight PA’s nonpartisan election coverage will focus on connecting the stakes of select races to the lives of Pennsylvanians, and monitoring and explaining the systems that underpin Pennsylvania elections and their administration.
 
-We will provide essential election information on the candidates in key statewide races, share how to participate in the electoral process, and explain how election systems are supposed to work. All of this coverage can be found on the <a href="https://www.spotlightpa.org/elections-2025/">Spotlight PA Election Center website</a>.
+We will provide essential election information on the candidates in key statewide races, share how to participate in the electoral process, and explain how election systems are supposed to work. All of this coverage can be found on the <a href="https://www.spotlightpa.org/elections">Spotlight PA Election Center website</a>.
 
 We will create interactive tools and resources to help voters track the money bankrolling campaigns, and to choose the candidates who best reflect their needs and values. We will continue to publish our election content in Spanish. We aim to reach, educate, and empower voters in new ways.
 
@@ -174,7 +175,7 @@ Spotlight PA also wants to hear your questions about the races. We won’t be ab
 
 <h2 id="spl-heading-13">Where you can find our coverage</h2>
 
-All of Spotlight PA’s election coverage will be available on our site and through more than 125 newsroom partners across the state. All election-related content, from stories to voter guides and interactive tools, will also be available in our <a href="http://spotlightpa.org/elections-2025">Election Center</a>.
+All of Spotlight PA’s election coverage will be available on our site and through more than 125 newsroom partners across the state. All election-related content, from stories to voter guides and interactive tools, will also be available in our <a href="http://spotlightpa.org/elections">Election Center</a>.
 
 If you subscribe to one of our newsletters, you’ll also get periodic Voter Alerts letting you know about our latest coverage, key developments, and important upcoming dates. Sign up at <a href="http://spotlightpa.org/newsletters">spotlightpa.org/newsletters</a>.<strong><em></em></strong>
 
