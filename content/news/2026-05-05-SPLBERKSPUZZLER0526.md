@@ -4,6 +4,7 @@ byline = "Spotlight PA"
 draft = false
 feed-exclude = true
 internal-id = "SPLBERKSPUZZLER0526"
+kicker = "Good Day, Berks"
 modal-exclude = true
 no-index = true
 pinned = false
@@ -12,6 +13,7 @@ slug = "berks-puzzler-submission"
 suppress-ads = true
 suppress-date = true
 title = "Submit your answer to today’s Puzzler"
+topics = ["Good Day, Berks"]
 url = "/berks-puzzler-submission/"
 +++
 
