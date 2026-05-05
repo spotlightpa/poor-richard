@@ -25,7 +25,7 @@ topics = ["Events"]
 
 For writer and culture critic Tre Johnson, the brilliance of Black culture exists all around him: The 90’s-style airbrushed tees, his auntie’s packed weekend trips, and sharp-tongued comedian Dick Gregory – are these not all examples of genius?
 
-In his essay collection <em>Black Genius: Essays on American Legacy</em>, Johnson asked readers to ponder this question. The Philly native interweaves his own stories with pop culture and American history to make the case of what qualifies as genius.
+In his essay collection <em>Black Genius: Essays on American Legacy</em>, Johnson asked readers to ponder this question. The Philadelphia resident interweaves his own stories with pop culture and American history to make the case of what qualifies as genius.
 
 Read the book with us, then discuss with Johnson on <strong>Thursday, May 28 at 6 p.m. via Zoom and YouTube Live</strong>.
 
