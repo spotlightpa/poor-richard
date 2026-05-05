@@ -15,7 +15,7 @@ title = "Submit your answer to today’s Puzzler"
 url = "/berks-puzzler-submission/"
 +++
 
-{{<embed/raw srcdoc="&lt;iframe class=&#34;airtable-embed&#34; src=&#34;https://airtable.com/embed/appkmvUVtIZMpF8NR/pagOS0fkEdzlzefLX/form&#34; frameborder=&#34;0&#34; onmousewheel=&#34;&#34; width=&#34;100%&#34; height=&#34;700&#34; style=&#34;background: transparent; border: 1px solid #ccc;&#34;&gt;&lt;/iframe&gt;">}}
+{{<embed/raw srcdoc="&lt;iframe class=&#34;airtable-embed&#34; src=&#34;https://airtable.com/embed/appkmvUVtIZMpF8NR/pagOS0fkEdzlzefLX/form&#34; frameborder=&#34;0&#34; width=&#34;100%&#34; height=&#34;700&#34; scrolling=&#34;no&#34; style=&#34;background: transparent; border: 1px solid #ccc; overflow: hidden; display: block;&#34;&gt;&lt;/iframe&gt;">}}
 
 An anagram is a word, phrase, or name formed by rearranging the letters of another. For example, “spotlight” also forms “stoplight.” Decode today’s anagram and submit your answer in the form above. Only answers submitted by 4 p.m. on issue date will be counted. One winner each week will win Spotlight PA swag.
 
