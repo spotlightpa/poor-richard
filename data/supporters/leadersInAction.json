@@ -232,6 +232,13 @@
       "categoryRank": "3"
     },
     {
+      "display": "Peggy Brown",
+      "sort": "Brown",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "John Bryan and Nancy Winkler",
       "sort": "Bryan",
       "url": "",
@@ -666,13 +673,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Evelyn Ishmael",
-      "sort": "Ishmael",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Christine Jacobs",
       "sort": "Jacobs",
       "url": "",
@@ -881,13 +881,6 @@
       "url": "",
       "category": "$25,000-$49,999",
       "categoryRank": "2"
-    },
-    {
-      "display": "Sarah McCain",
-      "sort": "McCain",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
     },
     {
       "display": "Brian McMonagle",

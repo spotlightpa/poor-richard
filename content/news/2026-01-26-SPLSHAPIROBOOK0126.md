@@ -16,6 +16,7 @@ modal-exclude = false
 pinned = false
 published = 2026-01-26T12:00:00-05:00
 slug = "josh-shapiro-book-club-where-we-keep-the-light-events"
+suppress-ads = false
 suppress-date = false
 title = "WATCH: Political journalists discuss Gov. Josh Shapiro’s new memoir"
 title-tag = "Watch a discussion of Gov. Josh Shapiro’s new memoir"
@@ -29,10 +30,3 @@ As a part of Spotlight PA’s book club, Booklight PA, investigative reporters A
 {{<youtube id="51lJ5LvkoIs" loading="lazy">}}
 
 <em>This event is in partnership with A Novel Idea, a community-minded bookstore and event space in East Passyunk, Philadelphia, run by Alexander Schneider and Christina Rosso-Schneider. Read more about A Novel Idea and </em><a href="https://anovelideaphilly.com/"><em>purchase your books here</em></a><strong><em>.</em></strong>
-
-<strong>Upcoming Booklight PA events:</strong>
-
-<strong>March 26:</strong> <a href="https://zoom.us/webinar/register/WN_B8NFE11DQvyOTPLV_J10Vw#/registration"><em>Shut up and Read</em> with author Jeannine Cook</a>
-
-<strong>April 30:</strong> <em>Sidle Creek</em> with author Jolene McIlwain
-
