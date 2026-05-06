@@ -66,8 +66,6 @@ From November 2025 to January of this year, approximately 50% of eligible owners
 
 Instead of using the address listed by the city for its analysis by default, Spotlight PA instead looked at the county’s parcel and tax records. Winnie Branton, a Philadelphia attorney who worked with Reading on its 2019 blight strategy, suggested doing so because owners are most likely to list an address where they actually receive mail, as opposed to addresses they may have on general property registrations.
 
-{{<embed/donate>}}
-
 “It&#39;s very hard to track these folks down,” Branton said. Staffing can greatly limit a municipality’s efforts, which is why some communities have found <a href="https://www.memphis.edu/law/experiential-learning/neighborhood-preservation-clinic.php">community partners</a> like local universities to focus on contacting owners.
 
 Spotlight PA found that at least 10% of owners had more than one blighted property, though that number is likely higher with investors registering under different LLC names.
@@ -81,6 +79,8 @@ In Reading, roughly 70 of the about 250 listed blighted property owners are some
 Jiro Yoshida, a real estate professor at Penn State, said it’s common for investors to set up individual LLCs per project to protect their personal finances and portfolios. Some then create layers of LLCs to keep the initial investors nearly anonymous, he said.
 
 This can allow the people behind LLCs to work around the protections the City of Reading has in place. If a property is declared blighted under one owner, they are not allowed to purchase more until the original problems are fixed. However, if an owner buys an already-blighted property without improving it, they can purchase others. In other words, the same individuals can be behind differing LLCs without the city being able to confirm their identities, effectively working around the intent of the rule.
+
+{{<embed/donate>}}
 
 “The government doesn&#39;t really know whether a single person is behind those different transactions, or each LLC is really different, so no one knows that for sure,” Yoshida said. “So that means that regulation doesn&#39;t really apply for those individuals.”
 
