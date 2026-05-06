@@ -8,6 +8,7 @@ feed-exclude = false
 image = "2026/04/01mz-1s0g-3sj5-4k3j.jpeg"
 image-credit = "Hanna Holthaus / Spotlight PA"
 image-description = "An emergency crew works to dismantle a Poplar Street home in Reading, following a partial building collapse."
+image-gravity = "ce"
 internal-id = "SPL_READBLIGHT 0426"
 kicker = "Local Government"
 modal-exclude = false
