@@ -42,7 +42,6 @@ export const handler = async (event) => {
     const {
       email,
       phone,
-      method,
       facilityId,
       facilityName,
       facilityIds,
@@ -204,7 +203,6 @@ export const handler = async (event) => {
           sk: subscriberId,
           ...(email ? { email } : {}),
           ...(phone ? { phone } : {}),
-          method: method || "email",
           facilityId,
           facilityName,
           createdAt: new Date().toISOString(),
