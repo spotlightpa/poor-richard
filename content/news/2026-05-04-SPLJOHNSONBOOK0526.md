@@ -29,7 +29,7 @@ In his essay collection <em>Black Genius: Essays on an American Legacy</em>, Joh
 
 Read the book with us, then discuss with Johnson on <strong>Thursday, May 28 at 6 p.m. via Zoom and YouTube Live</strong>.
 
-Register and submit your questions for the reporters<strong> </strong><a href="https://zoom.us/webinar/register/WN_dRNCwZOXQB6bTanknCxtow"><strong>here</strong></a>. Stay up to date with all our book club info by joining our <a href="https://fable.co/club/booklight-pa-with-spotlight-pa-165117408198?referralID=ZuDHBaWpNg"><strong>Fable</strong></a> and <a href="https://discord.gg/Srnev4Fa8K"><strong>Discord.</strong></a>
+Register and submit your questions for Johnson <a href="https://zoom.us/webinar/register/WN_dRNCwZOXQB6bTanknCxtow"><strong>here</strong></a>. Stay up to date with all our book club info by joining our <a href="https://fable.co/club/booklight-pa-with-spotlight-pa-165117408198?referralID=ZuDHBaWpNg"><strong>Fable</strong></a> and <a href="https://discord.gg/Srnev4Fa8K"><strong>Discord.</strong></a>
 
 <em>This event is in partnership with A Novel Idea, a community-minded bookstore and event space in East Passyunk, Philadelphia, run by Alexander Schneider and Christina Rosso-Schneider. Read more about A Novel Idea and </em><a href="https://anovelideaphilly.com/book-list/"><strong><em>purchase your books here</em></strong></a><strong><em>.</em></strong>
 
