@@ -15,6 +15,7 @@ kicker = "Elections"
 modal-exclude = false
 pinned = false
 published = 2026-05-04T04:00:00-04:00
+series = ["Voting Guides 2026"]
 slug = "pennsylvania-primary-election-day-2026-voter-rights-elections"
 suppress-ads = false
 suppress-date = false
