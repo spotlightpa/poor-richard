@@ -340,8 +340,8 @@
       "display": "John and Janet Dillon",
       "sort": "Dillon",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Dayna and Guy DiRienzo",
@@ -605,6 +605,13 @@
     {
       "display": "Mark Hirschman",
       "sort": "Hirschman",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Susan Hochreiter",
+      "sort": "Hochreiter",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -1151,6 +1158,13 @@
     {
       "display": "Jim and Kathi Schaedler",
       "sort": "Schaedler",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Gary Schell",
+      "sort": "Schell",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
