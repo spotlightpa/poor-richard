@@ -22,9 +22,9 @@ cuisine-type = false
 
 blurb = "A free, searchable database and alert system that makes Pennsylvania's public inspection data for retail food facilities easy to understand and explore."
 description = "A free, searchable database and alert system that makes Pennsylvania's public inspection data for retail food facilities easy to understand and explore."
-image = "2026/04/01mx-z5t1-v225-x54g.jpeg"
-image-credit = "Delpixart / iStock"
-image-description = "Pennsylvania Restaurant Safety Tracker image showing pots hanging in a kitchen"
+image = "2026/05/01mz-qntx-qvq5-m3qb.png"
+image-credit = ""
+image-description = "PA Restaurant Safety Tracker. Search by name, city, or ZIP. Understand risk & inspector comments. Get real-time alerts for your city or favorite spots."
 og-title = "Pennsylvania Restaurant Safety Tracker"
 title-tag = "Pennsylvania Restaurant Safety Tracker"
 twitter-title = "Pennsylvania Restaurant Safety Tracker"
