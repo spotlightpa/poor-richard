@@ -392,7 +392,7 @@
               @click="cityNotFound = true; userCity = ''; cityFacilities = []; selectedFacilities = {};"
               class="mt-1 text-xs font-semibold text-blue hover:underline"
             >
-              Not your city? Change it
+              Not your city? Click to change it.
             </button>
           </div>
 
@@ -451,22 +451,28 @@
             </svg>
           </button>
           <div x-show="facilitiesOpen" class="border-t border-g-3">
-            <div class="flex items-center gap-2 border-b border-g-2 px-3 py-2">
-              <button
-                type="button"
-                @click="toggleAllFacilities(true)"
-                class="text-xs font-semibold text-blue hover:underline"
-              >
-                Select all
-              </button>
-              <span class="text-g-4">·</span>
-              <button
-                type="button"
-                @click="toggleAllFacilities(false)"
-                class="text-xs font-semibold text-blue hover:underline"
-              >
-                Deselect all
-              </button>
+            <div class="border-b border-g-2 px-3 py-2">
+              <div class="flex items-center gap-2">
+                <button
+                  type="button"
+                  @click="toggleAllFacilities(true)"
+                  class="text-xs font-semibold text-blue hover:underline"
+                >
+                  Select all
+                </button>
+                <span class="text-g-4">·</span>
+                <button
+                  type="button"
+                  @click="toggleAllFacilities(false)"
+                  class="text-xs font-semibold text-blue hover:underline"
+                >
+                  Deselect all
+                </button>
+              </div>
+              <p class="text-xs text-g-6">
+                Don't see a facility? Not all facilities are inspected by the
+                Dept. of Agriculture. Visit our FAQ for more.
+              </p>
             </div>
             <div class="max-h-48 divide-y divide-g-2 overflow-y-auto">
               <template x-for="f in cityFacilities" :key="f.id">

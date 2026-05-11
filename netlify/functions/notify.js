@@ -94,7 +94,7 @@ function buildEmailHtml({
         
         ${violationCount ? `<span style="display:inline-block;margin-top:4px;background-color:#fef2f2;color:#b91c1c;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #fecaca;">${violationCount} violation${violationCount !== 1 ? "s" : ""}</span>` : `<span style="display:inline-block;margin-top:4px;background-color:#f0fdf4;color:#15803d;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #bbf7d0;">No violations</span>`}
       </div>
-      <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 20px;border-radius:6px;">${violationCount ? "View violations →" : "View tracker →"}</a>
+      <a href="${trackerUrl}" style="display:inline-block;background-color:#111;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:14px 20px;border-radius:6px;">${violationCount === 1 ? "View violation →" : violationCount ? "View violations →" : "View tracker →"}</a>
       <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
       <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;text-decoration:underline;">donating to Spotlight PA</a> so we can continue making this data free and accessible.</p>
     </div>
@@ -132,7 +132,7 @@ async function notifySubscribers({
       if (sub.email) {
         const token = generateToken(sub.email);
         const unsubUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}&facilityId=${encodeURIComponent(facilityId)}`;
-        const manageUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}`;
+        const manageUrl = `${baseUrl}/manage-alerts?token=${encodeURIComponent(token)}`;
 
         await ses.send(
           new SendEmailCommand({
@@ -169,13 +169,18 @@ async function notifySubscribers({
           ? `${violations.length} violation${violations.length !== 1 ? "s" : ""} reported.`
           : "No violations reported.";
 
+        const phoneToken = generateToken(sub.phone);
+        const managePhoneUrl = `${baseUrl}/manage-alerts?token=${encodeURIComponent(phoneToken)}`;
         await sns.send(
           new PublishCommand({
             PhoneNumber: e164,
             Message: `Spotlight PA: New inspection for ${facilityName} on ${inspectionDate}. ${violationSummary} View: https://www.spotlightpa.org/restaurant-inspections/?facility=${facilityId
               .toLowerCase()
               .replace(/[^a-z0-9]+/g, "-")
-              .replace(/^-+|-+$/g, "")} Reply STOP to unsubscribe.`,
+              .replace(
+                /^-+|-+$/g,
+                "",
+              )}\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
             MessageAttributes: {
               "AWS.SNS.SMS.SMSType": {
                 DataType: "String",
