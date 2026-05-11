@@ -17,7 +17,7 @@ published = 2026-04-29T05:00:00.972-04:00
 slug = "sewer-washington-township-local-government"
 suppress-ads = false
 suppress-date = false
-title = "When a public pipe bursts on private land, who fixes it? One PA farmer wants answers"
+title = "When a public pipe bursts on private land, who fixes it? One Pa. farmer wants answers."
 title-tag = "Berks County sewer line break exposes township's missing records"
 topics = ["Local Government"]
 +++
@@ -54,7 +54,7 @@ Located about an hour and a half outside Philadelphia in a small town of about 4
 
 When contractors hit the pipe, municipal officials told Fangyuan a 1994 sewer easement for adjacent vacant land applied to his property, he said. These agreements give public utilities the right to access parts of private properties, and can prevent owners from building fences or planting trees on that land.
 
-That meant Fangyuan was trespassing, he said officials told him. <strong>T</strong>he municipality did not comment when Spotlight PA asked if it made this accusation.
+That meant Fangyuan was trespassing, he said officials told him. The municipality did not comment when Spotlight PA asked if it made this accusation.
 
 He searched titles and found no such easement record. It wasn’t until Fangyuan hired an attorney that municipal leaders backed off their claims, he said.
 
