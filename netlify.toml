@@ -30,6 +30,11 @@ command = "yarn build:stage"
 [context.branch-deploy.processing]
 skip_processing = true
 
+[[redirects]]
+  from = "/manage-alerts"
+  to = "/.netlify/functions/unsubscribe"
+  status = 200
+
 [[headers]]
 for = "/*"
 [headers.values]
