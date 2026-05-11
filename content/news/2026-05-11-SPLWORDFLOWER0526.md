@@ -6,6 +6,7 @@ description = "Word Flower is a challenging puzzle in which players form words u
 draft = false
 feed-exclude = true
 image = "2026/05/01n0-3v8n-xjah-2mt8.png"
+image-size = "hidden"
 internal-id = "SPLWORDFLOWER0526"
 kicker = "Games"
 modal-exclude = false
