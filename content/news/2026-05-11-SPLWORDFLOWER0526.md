@@ -1,7 +1,5 @@
 +++
-authors = ["Colin Deppen"]
 blurb = "Word Flower is a challenging puzzle in which players form words using a central letter and surrounding “petals.”"
-byline = "Colin Deppen of Spotlight PA"
 description = "Word Flower is a challenging puzzle in which players form words using a central letter and surrounding “petals.”"
 draft = false
 feed-exclude = true
