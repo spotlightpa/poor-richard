@@ -132,7 +132,7 @@ async function notifySubscribers({
       if (sub.email) {
         const token = generateToken(sub.email);
         const unsubUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}&facilityId=${encodeURIComponent(facilityId)}`;
-        const manageUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(token)}`;
+        const manageUrl = `${baseUrl}/manage-alerts?token=${encodeURIComponent(token)}`;
 
         await ses.send(
           new SendEmailCommand({
@@ -169,13 +169,18 @@ async function notifySubscribers({
           ? `${violations.length} violation${violations.length !== 1 ? "s" : ""} reported.`
           : "No violations reported.";
 
+        const phoneToken = generateToken(sub.phone);
+        const managePhoneUrl = `${baseUrl}/manage-alerts?token=${encodeURIComponent(phoneToken)}`;
         await sns.send(
           new PublishCommand({
             PhoneNumber: e164,
             Message: `Spotlight PA: New inspection for ${facilityName} on ${inspectionDate}. ${violationSummary} View: https://www.spotlightpa.org/restaurant-inspections/?facility=${facilityId
               .toLowerCase()
               .replace(/[^a-z0-9]+/g, "-")
-              .replace(/^-+|-+$/g, "")} Reply STOP to unsubscribe.`,
+              .replace(
+                /^-+|-+$/g,
+                "",
+              )}\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
             MessageAttributes: {
               "AWS.SNS.SMS.SMSType": {
                 DataType: "String",
