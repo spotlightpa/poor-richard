@@ -140,10 +140,12 @@ export const handler = async (event) => {
           secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
         },
       });
+      const phoneToken = generateToken(phone);
+      const managePhoneUrl = `${process.env.URL || "https://www.spotlightpa.org"}/.netlify/functions/unsubscribe?token=${encodeURIComponent(phoneToken)}`;
       await sns.send(
         new PublishCommand({
           PhoneNumber: e164,
-          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount} facilities`} in ${city}. Reply STOP to unsubscribe.`,
+          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount} facilities`} in ${city}. Manage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
           MessageAttributes: {
             "AWS.SNS.SMS.SMSType": {
               DataType: "String",
@@ -347,10 +349,12 @@ export const handler = async (event) => {
             secretAccessKey: process.env.INSPECTIONS_AWS_SECRET_ACCESS_KEY,
           },
         });
+        const phoneToken = generateToken(phone);
+        const managePhoneUrl = `${baseUrl}/.netlify/functions/unsubscribe?token=${encodeURIComponent(phoneToken)}`;
         await sns.send(
           new PublishCommand({
             PhoneNumber: e164,
-            Message: `Spotlight PA: You're now subscribed to inspection alerts for ${facilityName}. Reply STOP to unsubscribe.`,
+            Message: `Spotlight PA: You're now subscribed to inspection alerts for ${facilityName}. Manage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
             MessageAttributes: {
               "AWS.SNS.SMS.SMSType": {
                 DataType: "String",

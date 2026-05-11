@@ -26,7 +26,11 @@ function verifyToken(token) {
     .digest("base64url");
   if (sig !== expected) return null;
   try {
-    return Buffer.from(encoded, "base64url").toString("utf8");
+    const value = Buffer.from(encoded, "base64url").toString("utf8");
+    const isPhone =
+      /^\+?[0-9]{10,15}$/.test(value.replace(/\D/g, "")) &&
+      !value.includes("@");
+    return { value, isPhone };
   } catch {
     return null;
   }
@@ -135,15 +139,8 @@ function managePage(token, subs) {
     <form method="POST" action="${escapeHTML(action)}">
       <input type="hidden" name="token" value="${escapeHTML(token)}" />
       <div class="facility-list">${rows}</div>
-      ${
-        subs.length
-          ? `<div class="actions">
-          <button type="submit">Save</button>
-        </div>`
-          : ""
-      }
+      ${subs.length ? `<div class="actions"><button type="submit">Save</button></div>` : ""}
     </form>
-
   </div>
 </body>
 </html>`;
@@ -157,14 +154,21 @@ export const handler = async (event) => {
     event.httpMethod === "POST" ? new URLSearchParams(event.body || "") : null;
   const token = bodyParams?.get("token") || params.token || "";
 
-  const email = verifyToken(token);
-  if (!email) {
+  const verified = verifyToken(token);
+  if (!verified) {
     return {
       statusCode: 400,
       headers: { "Content-Type": "text/html" },
-      body: `<p style="font-family:sans-serif;padding:40px;">This unsubscribe link is invalid or has expired. Please use the link from your original confirmation email.</p>`,
+      body: `<p style="font-family:sans-serif;padding:40px;">This unsubscribe link is invalid or has expired. Please use the link from your original confirmation email or text message.</p>`,
     };
   }
+
+  const { value: identifier, isPhone } = verified;
+  const indexName = isPhone ? "phone-index" : "email-index";
+  const indexKey = isPhone ? "phone" : "email";
+  const skPrefix = isPhone
+    ? `SUB#PHONE#${identifier.replace(/\D/g, "")}`
+    : `SUB#${identifier}`;
 
   if (event.httpMethod === "GET" && facilityId) {
     try {
@@ -172,15 +176,22 @@ export const handler = async (event) => {
         db.send(
           new DeleteCommand({
             TableName: process.env.SUBSCRIPTIONS_TABLE,
-            Key: { pk: `FACILITY#${facilityId}`, sk: `EMAIL#${email}` },
+            Key: { pk: `FACILITY#${facilityId}`, sk: skPrefix },
           }),
         ),
-        db.send(
-          new DeleteCommand({
-            TableName: process.env.SUBSCRIPTIONS_TABLE,
-            Key: { pk: `FACILITY#${facilityId}`, sk: `SUB#${email}` },
-          }),
-        ),
+        ...(!isPhone
+          ? [
+              db.send(
+                new DeleteCommand({
+                  TableName: process.env.SUBSCRIPTIONS_TABLE,
+                  Key: {
+                    pk: `FACILITY#${facilityId}`,
+                    sk: `EMAIL#${identifier}`,
+                  },
+                }),
+              ),
+            ]
+          : []),
       ]);
       return {
         statusCode: 200,
@@ -203,9 +214,9 @@ export const handler = async (event) => {
       const result = await db.send(
         new QueryCommand({
           TableName: process.env.SUBSCRIPTIONS_TABLE,
-          IndexName: "email-index",
-          KeyConditionExpression: "email = :email",
-          ExpressionAttributeValues: { ":email": email },
+          IndexName: indexName,
+          KeyConditionExpression: `${indexKey} = :val`,
+          ExpressionAttributeValues: { ":val": identifier },
         }),
       );
       const subs = result.Items || [];
@@ -233,13 +244,12 @@ export const handler = async (event) => {
       const result = await db.send(
         new QueryCommand({
           TableName: process.env.SUBSCRIPTIONS_TABLE,
-          IndexName: "email-index",
-          KeyConditionExpression: "email = :email",
-          ExpressionAttributeValues: { ":email": email },
+          IndexName: indexName,
+          KeyConditionExpression: `${indexKey} = :val`,
+          ExpressionAttributeValues: { ":val": identifier },
         }),
       );
       const allSubs = result.Items || [];
-
       const toDelete = allSubs.filter(
         (sub) => !selectedIds.includes(sub.facilityId),
       );
@@ -249,15 +259,22 @@ export const handler = async (event) => {
           db.send(
             new DeleteCommand({
               TableName: process.env.SUBSCRIPTIONS_TABLE,
-              Key: { pk: `FACILITY#${sub.facilityId}`, sk: `EMAIL#${email}` },
+              Key: { pk: `FACILITY#${sub.facilityId}`, sk: skPrefix },
             }),
           ),
-          db.send(
-            new DeleteCommand({
-              TableName: process.env.SUBSCRIPTIONS_TABLE,
-              Key: { pk: `FACILITY#${sub.facilityId}`, sk: `SUB#${email}` },
-            }),
-          ),
+          ...(!isPhone
+            ? [
+                db.send(
+                  new DeleteCommand({
+                    TableName: process.env.SUBSCRIPTIONS_TABLE,
+                    Key: {
+                      pk: `FACILITY#${sub.facilityId}`,
+                      sk: `EMAIL#${identifier}`,
+                    },
+                  }),
+                ),
+              ]
+            : []),
         ]),
       );
 
