@@ -17,7 +17,7 @@ published = 2026-05-04T06:00:00-04:00
 slug = "pennsylvania-shapiro-utility-rate-hikes-capitol"
 suppress-ads = false
 suppress-date = false
-title = "Shapiro demands a stop to “excessive” utility rate increases, but has little authority to force change"
+title = "Shapiro demands a stop to ‘excessive’ utility rate increases, but has little authority to force change"
 title-tag = "Shapiro urges utilities to drop high rate increases"
 topics = ["The Capitol"]
 +++
