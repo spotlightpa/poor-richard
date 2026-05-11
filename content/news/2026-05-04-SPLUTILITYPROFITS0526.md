@@ -17,14 +17,14 @@ published = 2026-05-04T06:00:00-04:00
 slug = "pennsylvania-shapiro-utility-rate-hikes-capitol"
 suppress-ads = false
 suppress-date = false
-title = "Shapiro demands a stop to “excessive” utility rate increases, but has little authority to force change"
+title = "Shapiro demands a stop to ‘excessive’ utility rate increases, but has little authority to force change"
 title-tag = "Shapiro urges utilities to drop high rate increases"
 topics = ["The Capitol"]
 +++
 
 HARRISBURG — As Pennsylvanians struggle with rising energy prices, Gov. Josh Shapiro wants the commonwealth’s utility companies to control costs and stop seeking “unacceptably high” rate increases.
 
-Otherwise, the Democratic governor warned in a recent letter to utility leaders, he will “vocally and forcefully” oppose their requests for rate hikes.
+Otherwise, the Democratic governor warned in a <a href="https://www.documentcloud.org/documents/28104878-shapiro-utilities/">recent letter to utility leaders</a>, he will “vocally and forcefully” oppose their requests for rate hikes.
 
 “We have reached a tipping point,” Shapiro wrote in the letter, which was obtained by Spotlight PA. “This is a moment to put your customers first and change the behaviors causing rate increases.”
 
