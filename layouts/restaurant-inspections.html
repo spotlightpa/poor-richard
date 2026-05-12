@@ -706,6 +706,14 @@
         >
           Done
         </button>
+        <template x-if="mode === 'city'">
+          <button
+            @click="step = 'form'; userCity = ''; cityFacilities = []; selectedFacilities = {}; cityNotFound = true; citySearchQuery = '';"
+            class="mt-3 w-full rounded-lg border-2 border-g-4 bg-white py-3 font-semibold text-g-9 transition-colors hover:bg-g-2"
+          >
+            Add another city
+          </button>
+        </template>
 
         <p class="mt-4 text-xs text-g-6">
           <span x-show="email && phone"
