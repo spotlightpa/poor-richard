@@ -64,7 +64,7 @@ export const handler = async (event) => {
           const manageAllUrl = `${process.env.URL || "https://www.spotlightpa.org"}/manage-alerts?token=${encodeURIComponent(token)}`;
           await ses.send(
             new SendEmailCommand({
-              Source: process.env.INSPECTIONS_FROM_EMAIL,
+              Source: `Spotlight PA Alerts <${process.env.INSPECTIONS_FROM_EMAIL}>`,
               Destination: { ToAddresses: [email] },
               Message: {
                 Subject: {
@@ -221,7 +221,7 @@ export const handler = async (event) => {
       const manageAllUrl = `${baseUrl}/manage-alerts?token=${encodeURIComponent(token)}`;
       await ses.send(
         new SendEmailCommand({
-          Source: process.env.INSPECTIONS_FROM_EMAIL,
+          Source: `Spotlight PA Alerts <${process.env.INSPECTIONS_FROM_EMAIL}>`,
           Destination: { ToAddresses: [email] },
           Message: {
             Subject: {

@@ -136,7 +136,7 @@ async function notifySubscribers({
 
         await ses.send(
           new SendEmailCommand({
-            Source: process.env.INSPECTIONS_FROM_EMAIL,
+            Source: `Spotlight PA Alerts <${process.env.INSPECTIONS_FROM_EMAIL}>`,
             Destination: { ToAddresses: [sub.email] },
             Message: {
               Subject: {
