@@ -19,7 +19,7 @@ suppress-ads = false
 suppress-date = false
 title = "PA Local Heroes: The champion athlete advocating for people with disabilities"
 title-tag = "This Special Olympian has been competing for over 50 years"
-topics = ["PA Local Heroes"]
+topics = ["PA Local Heroes", "PA Local"]
 +++
 
 <em>PA Local Heroes is a monthly feature sponsored by </em><a href="https://www.ballardspahr.com/?utm_source=ActiveCampaign&amp;utm_medium=email&amp;utm_content=Farm%20animals%20%20second-chance%20sanctuary&amp;utm_campaign=PA%20Local%2011%2008%2024"><em>Ballard Spahr</em></a><em>. Installments appear first in PA Local, Spotlight PA’s weekly newsletter that takes a fresh, positive look at the incredible people, beautiful places, and delicious food of Pennsylvania. </em><a href="https://www.spotlightpa.org/newsletters/"><em>Sign up for free here</em></a><em>.</em><strong></strong>
