@@ -5,9 +5,10 @@ byline = "Angela Couloumbis and Jaxon White of Spotlight PA"
 description = "Police became aware last month of a Lebanon County man making alleged threats. Lawmakers only found out this week."
 draft = false
 feed-exclude = false
-image = "2023/08/01jd-ah7j-b889-00e9.jpeg"
-image-credit = "Amanda Berg / For Spotlight PA"
-image-description = "The exterior of the Pennsylvania Capitol in Harrisburg."
+image = "cas/3qjy-g9bp-q3c0-vm6h.png"
+image-credit = "Jaxon White / Spotlight PA"
+image-description = "42-year-old Adam G. Berryhill walks into the Lebanon County Courthouse on Thursday morning."
+image-gravity = "ea"
 internal-id = "SPLTHREATFOLO"
 kicker = "The Capitol"
 modal-exclude = false
@@ -27,7 +28,7 @@ In a letter Wednesday to top lawmakers, Acting Commissioner George Bivens said t
 
 Several of those legislators have told Spotlight PA they did not learn that they were targets until nearly a week after 42-year-old Adam G. Berryhill was arrested and charged on May 6 with making terroristic threats that included posting a “hit list” with lawmaker names, making statements about “shooting,” and referencing a Memorial Day “operation.”
 
-Berryhill was scheduled to appear Thursday morning for a preliminary hearing in Lebanon County. In an interview, state Sen. Katie Muth (D., Montgomery) said senators were informed by staff that he waived the hearing.
+Berryhill waived his preliminary hearing, according to documents from the Lebanon County public defender’s office, after appearing before Judge Aurelis Figueroa Thursday morning in a red jumpsuit and handcuffs. His arraignment hearing is scheduled for June 11 at the Lebanon County courthouse.
 
 In his letter, Bivens spelled out a new process for communicating threats that includes swiftly alerting the Capitol Police — the primary law enforcement agency for the state Capitol complex — and the legislature’s sergeants-at-arms, who maintain order during voting sessions. He said State Police also plan to designate a point person for follow-up questions or concerns.
 
@@ -49,7 +50,7 @@ The sergeant-at-arms for the House and Senate would not answer questions Wednesd
 
 Gov. Josh Shapiro, leaders on both sides of the aisle in the state House, as well as state Senate Democrats, issued statements Wednesday afternoon condemning political violence.
 
-“The threats are a symptom of a greater sickness in our democracy,” Democratic and Republican House leaders and Senate Democrats, wrote in a joint statement. “The escalation of political violence has reached an astounding level, impacting elected officials from school boards to the president of the United States.”
+“The threats are a symptom of a greater sickness in our democracy,” Democratic and Republican House leaders and Senate Democrats wrote in a joint statement. “The escalation of political violence has reached an astounding level, impacting elected officials from school boards to the president of the United States.”
 
 Senate GOP leaders issued their own, separate statement Wednesday evening, calling people to “set aside the extremism of a mindset of violence against those who serve the rule of law.”
 
