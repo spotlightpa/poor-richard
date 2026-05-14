@@ -123,8 +123,6 @@ We aim to support readers in their search for facts.
 
 If you are concerned about confusing or false information being disseminated about this election or the voting process, please contact us using the form below. Your observations on the ground may help shape our reporting on the election.
 
-{{<embed/tips flag_text="ELECTION 2024" form_name="elections-embed" tip_text="Spotlight PA is covering Pennsylvania&#39;s 2024 election — and we want you to help shape our stories. Tell us what you want to know about the races on your ballot, and send us any questions you have about the voting system. Use the form below to reach our election team.">}}
-
 <h2 id="spl-heading-7">How we will cover election results</h2>
 
 News organizations have traditionally collected voting results in hopes of reporting on a winner or projected winner in a race on the night of the election. For many reasons, this approach is no longer viable in Pennsylvania during some high-turnout elections, and can contribute to confusion and mistrust.
