@@ -58,12 +58,16 @@ function successPage(message) {
     h1 { font-size: 24px; margin: 0 0 12px; }
     p { font-size: 16px; line-height: 1.6; color: #374151; margin: 0 0 16px; }
     a { color: #009EDB; }
-    .check { font-size: 48px; margin-bottom: 16px; text-align: center; }
+    .check { display: flex; justify-content: center; margin-bottom: 16px; }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="check">✓</div>
+    <div class="check">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#1b998b">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5l-4-4 1.41-1.41L10 13.67l6.59-6.59L18 8.5l-8 8z"/>
+      </svg>
+    </div>
     <h1>${escapeHTML(message)}</h1>
     <p>Your subscription preferences have been updated.</p>
     <p>
