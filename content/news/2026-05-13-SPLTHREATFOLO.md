@@ -45,7 +45,9 @@ Leaders on both sides of the aisle in the state House, as well as state Senate D
 
 “The threats are a symptom of a greater sickness in our democracy,” they wrote. “The escalation of political violence has reached an astounding level, impacting elected officials from school boards to the president of the United States.”
 
-A spokesperson for state Senate President Pro Tempore Kim Ward’s office said the Republican caucus plans to make its own, separate statement.
+Senate GOP leaders issued their own, separate statement Wednesday evening, calling people to “set aside the extremism of a mindset of violence against those who serve the rule of law.”
+
+They said that the “communication processes” between Pennsylvania State Police and the sergeant-at-arms is “currently under review and being updated to ensure legislators are immediately contacted and made aware of any threat as we would have expected to have occurred.”
 
 ## “I don’t understand what happened”
 
