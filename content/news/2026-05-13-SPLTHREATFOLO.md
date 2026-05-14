@@ -28,7 +28,7 @@ In a letter Wednesday to top lawmakers, Acting Commissioner George Bivens said t
 
 Several of those legislators have told Spotlight PA they did not learn that they were targets until nearly a week after 42-year-old Adam G. Berryhill was arrested and charged on May 6 with making terroristic threats that included posting a “hit list” with lawmaker names, making statements about “shooting,” and referencing a Memorial Day “operation.”
 
-Berryhill waived his preliminary hearing, according to documents from the Lebanon County public defender’s office, after appearing before Judge Aurelis Figueroa Thursday morning in a red jumpsuit and handcuffs. His arraignment hearing is scheduled for June 11 at the Lebanon County courthouse.
+Berryhill waived his preliminary hearing, according to documents from the Lebanon County public defender’s office, after appearing before Judge Aurelis Figueroa Thursday morning in a red jumpsuit and handcuffs. His arraignment hearing is scheduled for June 11 at the Lebanon County Courthouse.
 
 In his letter, Bivens spelled out a new process for communicating threats that includes swiftly alerting the Capitol Police — the primary law enforcement agency for the state Capitol complex — and the legislature’s sergeants-at-arms, who maintain order during voting sessions. He said State Police also plan to designate a point person for follow-up questions or concerns.
 
