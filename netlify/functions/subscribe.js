@@ -57,7 +57,7 @@ export const handler = async (event) => {
       const facilityLabel =
         newCount === 1 && newFacilityName
           ? newFacilityName
-          : `${newCount} facilities`;
+          : `${newCount.toLocaleString()} facilities`;
       if (email) {
         try {
           const token = generateToken(email);
@@ -145,7 +145,7 @@ export const handler = async (event) => {
       await sns.send(
         new PublishCommand({
           PhoneNumber: e164,
-          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount} facilities`} in ${city}.\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
+          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`} in ${city}.\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
           MessageAttributes: {
             "AWS.SNS.SMS.SMSType": {
               DataType: "String",

@@ -440,8 +440,13 @@
           >
             <span class="text-sm font-semibold text-g-7">
               Subscribing to
-              <span class="text-g-9" x-text="selectedCount"></span> of
-              <span x-text="cityFacilities.length"></span> facilities
+              <span
+                class="text-g-9"
+                x-text="selectedCount.toLocaleString()"
+              ></span>
+              of
+              <span x-text="cityFacilities.length.toLocaleString()"></span>
+              facilities
             </span>
             <svg
               class="h-4 w-4 fill-current text-g-6 transition-transform"
@@ -677,7 +682,7 @@
                         >Subscribed to
                         <span
                           class="font-semibold text-g-9"
-                          x-text="citySubscribeSummary.newCount"
+                          x-text="citySubscribeSummary.newCount.toLocaleString()"
                         ></span>
                         new facilities.</span
                       >
