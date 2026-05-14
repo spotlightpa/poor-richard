@@ -65,6 +65,7 @@ function buildEmailHtml({
 
   return `
 <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">New inspection report for ${facilityName.split(" — ")[0]}. ${violationCount ? `${violationCount} violation${violationCount !== 1 ? "s" : ""} reported.` : "No violations reported."}</div>
   <div style="max-width:600px;margin:0 auto;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e5e7eb;border-bottom:none;border-radius:6px 6px 0 0;">
       <tr><td style="padding:16px 32px;">

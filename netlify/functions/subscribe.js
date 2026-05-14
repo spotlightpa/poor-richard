@@ -48,10 +48,11 @@ export const handler = async (event) => {
       city,
       skipSms,
       summarySms,
-      newCount,
+      newCount: newCountRaw,
       newFacilityName,
       skipEmail,
     } = JSON.parse(event.body);
+    const newCount = Number(newCountRaw);
 
     if (summarySms) {
       const facilityLabel =
@@ -76,7 +77,8 @@ export const handler = async (event) => {
                   },
                   Html: {
                     Data: `
-                <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+               <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+                  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Now tracking ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`} in ${city}. We'll email you whenever a new inspection report is filed.</div>
                   <div style="max-width:600px;margin:0 auto;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e5e7eb;border-bottom:none;border-radius:6px 6px 0 0;">
                       <tr>
@@ -234,6 +236,7 @@ export const handler = async (event) => {
               Html: {
                 Data: `
                 <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+                  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Alert set up for ${facilityName.split(" — ")[0]}. We'll notify you whenever a new inspection report is filed.</div>
                   <div style="max-width:600px;margin:0 auto;">
 
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e5e7eb;border-bottom:none;border-radius:6px 6px 0 0;">
