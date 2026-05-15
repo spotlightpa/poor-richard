@@ -121,7 +121,7 @@
 
       <!-- no JS fallback link to footer -->
       <a
-        class="no-js:flex sm-w-1/2 group relative z-40 mx-0 hidden flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
+        class="noscript:flex sm-w-1/2 group relative z-40 mx-0 hidden flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
         href="#footer"
       >
         {{ template "nav-hamburger-button" . }}
@@ -129,7 +129,7 @@
 
       <button
         id="hamburger-button"
-        class="no-js:hidden sm-w-1/2 group relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
+        class="noscript:hidden sm-w-1/2 group relative z-40 mx-0 flex flex-row items-center gap-1 self-stretch px-4 py-2 sm:px-0"
         :class="isOpen ? 'sm:translate-x-8' : ''"
         type="button"
         @click="isOpen = ! isOpen"
