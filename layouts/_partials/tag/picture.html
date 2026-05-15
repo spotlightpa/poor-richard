@@ -2,7 +2,11 @@
   <source
     type="image/webp"
     srcset="{{ .srcset }}"
-    {{ with .sizeHint }}sizes="{{ . }}"{{ end }}
+    {{ with .sizeHint }}
+      sizes="auto, {{ . }}"
+    {{ else }}
+      sizes="auto"
+    {{ end }}
   />
   <img
     itemprop="contentUrl"

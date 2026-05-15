@@ -16,10 +16,11 @@ og-title = "PA Local Heroes: Welcoming Pennsylvania's newest arrivals"
 pinned = false
 published = 2025-11-21T08:00:00-05:00
 slug = "pittsburgh-refugee-bhutan-nepal-immigration-pennsylvania-local"
+suppress-ads = false
 suppress-date = false
 title = "PA Local Heroes: The former refugee welcoming Pennsylvania's newest arrivals"
 title-tag = "PA Local Heroes: Welcoming Pennsylvania's new arrivals"
-topics = ["PA Local Heroes"]
+topics = ["PA Local Heroes", "PA Local"]
 twitter-title = "PA Local Heroes: Welcoming Pennsylvania's newest arrivals"
 +++
 

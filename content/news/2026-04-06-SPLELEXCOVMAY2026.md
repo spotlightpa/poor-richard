@@ -59,19 +59,19 @@ As always, all of Spotlight PA’s public-service election coverage will be free
 
 - <a href="#spl-heading-6">How we will cover voting, the electoral system, and misinformation</a>
 
-- <a href="#spl-heading-7">How we will cover election results</a>
+- <a href="#spl-heading-8">How we will cover election results</a>
 
-- <a href="#spl-heading-8">How we connect our coverage to voters</a>
+- <a href="#spl-heading-9">How we connect our coverage to voters</a>
 
-  - <a href="#spl-heading-9">Spanish-language resources and outreach</a>
+  - <a href="#spl-heading-10">Spanish-language resources and outreach</a>
 
-  - <a href="#spl-heading-10">Interactive tools</a>
+  - <a href="#spl-heading-11">Interactive tools</a>
 
-  - <a href="#spl-heading-11">Social videos</a>
+  - <a href="#spl-heading-12">Social videos</a>
 
-- <a href="#spl-heading-12">How you can help guide our coverage</a>
+- <a href="#spl-heading-13">How you can help guide our coverage</a>
 
-- <a href="#spl-heading-13">Where you can find our coverage</a>
+- <a href="#spl-heading-14">Where you can find our coverage</a>
 
 {{</toc>}}
 
@@ -115,6 +115,10 @@ Spotlight PA will also publish a series of <a href="https://www.spotlightpa.org/
 
 Building from our coverage on Pennsylvania&#39;s electoral system, we will continue to report on election lawsuits in real time and use our statewide contacts on the ground to bring the latest updates to voters.
 
+{{<embed/tips flag_text="ELECTION 2026" form_name="elections-embed" tip_text="Spotlight PA is covering Pennsylvania&#39;s 2026 election — and we want you to help shape our stories. Tell us what you want to know about the races on your ballot, and send us any questions you have about the voting system. Use the form below to reach our election team.">}}
+
+<h2 id="spl-heading-7"></h2>
+
 After the 2020 presidential election and in the years since, Pennsylvania’s voting process — in particular, its mail voting law — has come under intense scrutiny and attack by Republicans, some of whom have advanced false or misleading claims put forth by President Donald Trump. Our coverage will help readers parse the noise from the facts.
 
 This approach, called “prebunking,” is an alternative to traditional fact-checking by news organizations. Instead of chasing down every false claim, we educate and empower voters to better recognize these efforts and guard against them. In doing so, we monitor for areas of voter confusion and explain how processes and government work. Confusion is often the precursor to mis- and disinformation taking hold.
@@ -123,9 +127,7 @@ We aim to support readers in their search for facts.
 
 If you are concerned about confusing or false information being disseminated about this election or the voting process, please contact us using the form below. Your observations on the ground may help shape our reporting on the election.
 
-{{<embed/tips flag_text="ELECTION 2024" form_name="elections-embed" tip_text="Spotlight PA is covering Pennsylvania&#39;s 2024 election — and we want you to help shape our stories. Tell us what you want to know about the races on your ballot, and send us any questions you have about the voting system. Use the form below to reach our election team.">}}
-
-<h2 id="spl-heading-7">How we will cover election results</h2>
+<h2 id="spl-heading-8">How we will cover election results</h2>
 
 News organizations have traditionally collected voting results in hopes of reporting on a winner or projected winner in a race on the night of the election. For many reasons, this approach is no longer viable in Pennsylvania during some high-turnout elections, and can contribute to confusion and mistrust.
 
@@ -135,15 +137,15 @@ For those reasons and more, we will not publish results stories until the vast m
 
 For voters interested in seeing rolling tallies, Spotlight PA will publish and make available for free a tool that displays Associated Press results. Learn more about how the AP calls races <a href="https://www.ap.org/about/our-role-in-elections/how-we-call-races">here</a>.
 
-<h2 id="spl-heading-8">How we connect our coverage to voters</h2>
+<h2 id="spl-heading-9">How we connect our coverage to voters</h2>
 
 In 2026, Spotlight PA will continue past efforts and launch a set of new projects designed to engage voters — especially younger ones who primarily get their information from social media — and connect them with crucial election information.
 
-<h3 id="spl-heading-9">Spanish-language resources and outreach</h3>
+<h3 id="spl-heading-10">Spanish-language resources and outreach</h3>
 
 Spotlight PA will continue to offer some of our election content, voter resources, and guides in Spanish to reach the growing Latino voting bloc that resides in the state. Part of this endeavor includes growing our Spanish-language partners across the state to distribute this content to, as well as partnering with community organizations to host in-person and virtual events.
 
-<h3 id="spl-heading-10">Interactive tools</h3>
+<h3 id="spl-heading-11">Interactive tools</h3>
 
 Spotlight PA will publish interactive tools to help voters better understand the races on their ballot. That includes a new tool that visualizes campaign finance data from the gubernatorial candidates, making it easy to understand who is funding them.
 
@@ -151,7 +153,7 @@ Spotlight PA is also regularly updating a tool that <a href="https://www.spotlig
 
 In the coming months, look out for quizzes focused on the governor’s race, <a href="https://www.spotlightpa.org/elections-2024/candidate-quiz/">modeled after our popular row office quiz.</a>
 
-<h3 id="spl-heading-11">Social videos</h3>
+<h3 id="spl-heading-12">Social videos</h3>
 
 During the past several election cycles, Spotlight PA has produced social media videos focused on important election information. Our team has produced explainers on Pennsylvania’s <a href="https://www.instagram.com/reel/DJmYL9wN0Zu/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">closed primary system</a> and <a href="https://www.instagram.com/reel/DJZxwQwvTgh/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">how to vote by mail</a>, as well as detailed candidate guides and more.
 
@@ -159,7 +161,7 @@ For the May primary election, we will greatly expand our presence on social medi
 
 Follow our accounts on <a href="https://www.instagram.com/spotlightpennsylvania/">Instagram</a>, <a href="https://www.tiktok.com/@spotlightpa">TikTok</a>, and <a href="https://www.youtube.com/@SpotlightPA">YouTube</a> to see our work as it is published.
 
-<h2 id="spl-heading-12">How you can help guide our coverage</h2>
+<h2 id="spl-heading-13">How you can help guide our coverage</h2>
 
 Spotlight PA’s coverage aims to put voters first.
 
@@ -171,9 +173,9 @@ If you have ideas for the Democracy Initiative and how Spotlight PA can better s
 
 Spotlight PA also wants to hear your questions about the races. We won’t be able to answer all of them, but our team of reporters will get to as many as possible. Send a message using the form below (if you can’t see the form, click <a href="https://www.spotlightpa.org/contact">here</a>):
 
-{{<embed/tips flag_text="ELECTION 2024" form_name="elections-embed" tip_text="Spotlight PA is covering Pennsylvania&#39;s 2024 election — and we want you to help shape our stories. Tell us what you want to know about the races on your ballot, and send us any questions you have about the voting system. Use the form below to reach our election team.">}}
+{{<embed/tips flag_text="ELECTION 2026" form_name="elections-embed" tip_text="Spotlight PA is covering Pennsylvania&#39;s 2026 election — and we want you to help shape our stories. Tell us what you want to know about the races on your ballot, and send us any questions you have about the voting system. Use the form below to reach our election team.">}}
 
-<h2 id="spl-heading-13">Where you can find our coverage</h2>
+<h2 id="spl-heading-14">Where you can find our coverage</h2>
 
 All of Spotlight PA’s election coverage will be available on our site and through more than 125 newsroom partners across the state. All election-related content, from stories to voter guides and interactive tools, will also be available in our <a href="http://spotlightpa.org/elections">Election Center</a>.
 
