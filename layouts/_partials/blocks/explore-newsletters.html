@@ -24,7 +24,7 @@
                 <div class="flex h-auto w-full flex-col sm:flex-row">
                   {{ with .Param "image" }}
                     <div
-                      class="mb-4 flex w-full items-center justify-center sm:mb-0 sm:mr-2.5 sm:w-5/12"
+                      class="mb-4 flex w-full items-center justify-center sm:mr-2.5 sm:mb-0 sm:w-5/12"
                     >
                       <div
                         class="mx-auto flex min-h-[200px] w-full max-w-[300px] items-center justify-center"
@@ -53,11 +53,11 @@
                       <p class="text-sm font-bold md:text-base">{{ . }}</p>
                     {{ end }}
                     {{ with .Param "deck" }}
-                      <p class="py-2 text-base font-normal leading-snug">
+                      <p class="py-2 text-base leading-snug font-normal">
                         {{ . }}
                       </p>
                     {{ else }}
-                      <p class="py-2 text-base font-normal leading-snug">
+                      <p class="py-2 text-base leading-snug font-normal">
                         {{ .Summary | truncate 120 }}
                       </p>
                     {{ end }}
@@ -83,7 +83,7 @@
               >
                 <div class="flex h-auto w-full flex-col sm:flex-row">
                   <div
-                    class="mb-4 flex w-full items-center justify-center sm:mb-0 sm:mr-2.5 sm:w-5/12"
+                    class="mb-4 flex w-full items-center justify-center sm:mr-2.5 sm:mb-0 sm:w-5/12"
                   >
                     <div
                       class="mx-auto flex min-h-[200px] w-full max-w-[300px] items-center justify-center"
@@ -108,7 +108,7 @@
                     <p class="text-sm font-bold md:text-base">
                       {{ .schedule }}
                     </p>
-                    <p class="py-2 text-base font-normal leading-snug">
+                    <p class="py-2 text-base leading-snug font-normal">
                       {{ .description }}
                     </p>
                   </div>

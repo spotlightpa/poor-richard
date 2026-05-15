@@ -1,7 +1,7 @@
 <div class="bg-black font-serif">
   <div class="overflow-hidden rounded-t-[40px] bg-g-3 md:rounded-none">
     <div
-      class="w-full rounded-t-[40px] bg-white px-4 pb-4 pt-6 shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)] md:hidden md:rounded-none"
+      class="w-full rounded-t-[40px] bg-white px-4 pt-6 pb-4 shadow-[inset_0_-2px_0_rgba(0,0,0,0.3)] md:hidden md:rounded-none"
     >
       {{ partial "blocks/search.html" (dict
         "placeholder" (default "Search" (.Param "search-placeholder"))
@@ -18,7 +18,7 @@
         <button
           type="button"
           @click="openFilters()"
-          class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-g-4 bg-g-2 px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-g-4"
+          class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-g-4 bg-g-2 px-3 py-2.5 font-sans text-xs font-semibold tracking-wide text-g-9 uppercase transition-all hover:bg-g-4"
         >
           <svg
             class="h-3.5 w-3.5 fill-current max-[325px]:hidden"
@@ -31,7 +31,7 @@
         <button
           type="button"
           @click="$dispatch('open-city-alerts-modal')"
-          class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-blue bg-blue-1 px-3 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-blue transition-all hover:bg-blue hover:text-white"
+          class="inline-flex items-center justify-center gap-1.5 rounded-md border-2 border-blue bg-blue-1 px-3 py-2.5 font-sans text-xs font-semibold tracking-wide text-blue uppercase transition-all hover:bg-blue hover:text-white"
         >
           <svg
             class="h-3.5 w-3.5 fill-current max-[325px]:hidden"
@@ -62,12 +62,12 @@
           x-transition:leave="transition ease-in duration-200"
           x-transition:leave-start="translate-y-0"
           x-transition:leave-end="translate-y-full"
-          class="fixed bottom-0 left-0 right-0 z-50 rounded-t-2xl bg-white px-4 pb-8 pt-4 shadow-2xl"
+          class="fixed right-0 bottom-0 left-0 z-50 rounded-t-2xl bg-white px-4 pt-4 pb-8 shadow-2xl"
           style="display:none;"
         >
           <div class="mb-4 flex items-center justify-between">
             <h3
-              class="font-sans text-sm font-semibold uppercase tracking-wide text-g-6"
+              class="font-sans text-sm font-semibold tracking-wide text-g-6 uppercase"
             >
               Filter &amp; Sort
             </h3>
@@ -91,7 +91,7 @@
                 @click="open = !open"
                 :aria-expanded="open"
                 aria-haspopup="menu"
-                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:ring-2 focus:ring-g-4 focus:outline-none"
               >
                 <span x-text="label"></span>
                 <svg class="ml-auto h-4 w-4 fill-g-2">
@@ -112,7 +112,7 @@
                   </div>
                   <input
                     type="text"
-                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:outline-none focus:ring-2 focus:ring-g-4"
+                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:ring-2 focus:ring-g-4 focus:outline-none"
                     placeholder="Search"
                     x-model="query"
                     @input="syncShown()"
@@ -151,7 +151,7 @@
               <button
                 @click="open = !open"
                 :aria-expanded="open"
-                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-g-4"
+                class="flex w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-g-3 bg-white px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 shadow transition-all hover:border-g-4 hover:shadow-md focus:ring-2 focus:ring-g-4 focus:outline-none"
               >
                 <span class="truncate" x-text="label"></span>
 
@@ -164,7 +164,7 @@
                 x-show="open"
                 x-transition
                 @click.outside="open = false"
-                class="absolute bottom-full right-0 z-20 mb-2 w-full rounded-md border border-g-3 bg-white shadow"
+                class="absolute right-0 bottom-full z-20 mb-2 w-full rounded-md border border-g-3 bg-white shadow"
               >
                 <template x-for="opt in options" :key="opt.value">
                   <button
@@ -177,7 +177,7 @@
               </div>
               <button
                 @click="clearAll()"
-                class="mt-4 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-g-9 transition-all hover:bg-white"
+                class="mt-4 w-full rounded-md border-2 border-g-4 bg-g-2 px-4 py-2.5 font-sans text-xs font-semibold tracking-wide text-g-9 uppercase transition-all hover:bg-white"
               >
                 Clear all
               </button>
@@ -213,7 +213,7 @@
           ></p>
           <button
             @click="$el.closest('#search-results-banner').classList.add('hidden'); $store.inspections.searchQuery = ''; $store.inspections.currentCity = ''; window.dispatchEvent(new CustomEvent('inspections-clear-search'));"
-            class="whitespace-nowrap font-sans text-sm font-semibold text-blue hover:underline"
+            class="font-sans text-sm font-semibold whitespace-nowrap text-blue hover:underline"
           >
             Clear search
           </button>

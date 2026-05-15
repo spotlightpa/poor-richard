@@ -40,13 +40,13 @@
   {{ end }}
   {{ with $header }}
     <div class="flex w-full flex-1 flex-col justify-end">
-      <h3 class="text-lg font-bold leading-none">{{ . }}</h3>
+      <h3 class="text-lg leading-none font-bold">{{ . }}</h3>
     </div>
   {{ end }}
   {{ if or $name $party }}
     <div class="flex w-full flex-1 flex-col justify-end">
       {{ with $name }}
-        <h3 class="text-lg font-bold leading-none">{{ . }}</h3>
+        <h3 class="text-lg leading-none font-bold">{{ . }}</h3>
       {{ end }}
       {{ with $party }}
         <p class="mt-1 text-base leading-none text-g-8">{{ . }}</p>
@@ -56,20 +56,20 @@
   {{ with $answer }}
     {{ if ( eq $answer "Yes") }}
       <div
-        class="flex w-20 justify-center rounded-sm border-2 border-election-green-darker bg-election-green px-5 py-1 text-base font-bold uppercase text-g-1"
+        class="flex w-20 justify-center rounded-sm border-2 border-election-green-darker bg-election-green px-5 py-1 text-base font-bold text-g-1 uppercase"
       >
         {{- . -}}
       </div>
     {{ else }}
       <div
-        class="flex w-20 justify-center rounded-sm border-2 border-yellow-5 bg-yellow px-5 py-1 text-base font-bold uppercase text-yellow-9"
+        class="flex w-20 justify-center rounded-sm border-2 border-yellow-5 bg-yellow px-5 py-1 text-base font-bold text-yellow-9 uppercase"
       >
         {{- . -}}
       </div>
     {{ end }}
   {{ end }}
   {{ with .Inner }}
-    <p class="w-full border-t-2 border-g-3 pt-1 text-lg italic text-g-8">
+    <p class="w-full border-t-2 border-g-3 pt-1 text-lg text-g-8 italic">
       {{ . }}
     </p>
   {{ end }}

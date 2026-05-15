@@ -10,9 +10,9 @@
     {{ end }}
   >
     <div
-      class="@md:flex-row {{ if not (and (.Param "quote") (.Param "quote-source")) }}
+      class="{{ if not (and (.Param "quote") (.Param "quote-source")) }}
         pb-16 @md:pb-0
-      {{ end }} flex flex-col"
+      {{ end }} flex flex-col @md:flex-row"
     >
       <div class="w-full">
         <h1 class="my-4 text-4xl font-semibold text-white">
@@ -36,9 +36,9 @@
         </ul>
 
         <div
-          class="@md:flex-row @md:gap-4 @lg:gap-8 mb-8 flex max-w-full flex-col items-stretch gap-8"
+          class="mb-8 flex max-w-full flex-col items-stretch gap-8 @md:flex-row @md:gap-4 @lg:gap-8"
         >
-          <div class="@md:order-1 relative order-2 flex flex-1 flex-col">
+          <div class="relative order-2 flex flex-1 flex-col @md:order-1">
             <div
               class="font-xl w-full rounded-t-lg bg-g-7 py-2 text-center font-sans font-bold tracking-wide text-white"
             >
@@ -49,19 +49,19 @@
             >
               <div class="text-lg font-bold">Monthly</div>
               <div class="mt-2 font-sans text-4xl font-extrabold">$19.99</div>
-              <div class="@md:mb-0 @md:mt-2 mb-4 mt-2 text-g-7">per month</div>
+              <div class="mt-2 mb-4 text-g-7 @md:mt-2 @md:mb-0">per month</div>
               <a
                 href="/newsletters/accessharrisburg/monthly"
-                class="mt-auto w-full rounded-full border-[2px] border-g-7 bg-white px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-g-9 transition hover:bg-g-7 hover:text-white"
+                class="mt-auto w-full rounded-full border-[2px] border-g-7 bg-white px-6 py-3 text-center font-sans font-bold tracking-wide text-g-9 uppercase transition hover:bg-g-7 hover:text-white"
               >
                 Subscribe
               </a>
             </div>
           </div>
 
-          <div class="@md:order-2 relative order-1 flex flex-1 flex-col">
+          <div class="relative order-1 flex flex-1 flex-col @md:order-2">
             <div
-              class="font-xl w-full rounded-t-lg bg-yellow py-2 text-center font-sans font-bold uppercase tracking-wide text-yellow-9"
+              class="font-xl w-full rounded-t-lg bg-yellow py-2 text-center font-sans font-bold tracking-wide text-yellow-9 uppercase"
             >
               Save 17%
             </div>
@@ -73,7 +73,7 @@
               <div class="mt-2 text-g-7">per year</div>
               <a
                 href="/newsletters/accessharrisburg/annual"
-                class="mt-auto w-full rounded-full border-[3px] border-yellow-5 bg-yellow px-6 py-3 text-center font-sans font-bold uppercase tracking-wide text-yellow-9 transition hover:bg-yellow-3"
+                class="mt-auto w-full rounded-full border-[3px] border-yellow-5 bg-yellow px-6 py-3 text-center font-sans font-bold tracking-wide text-yellow-9 uppercase transition hover:bg-yellow-3"
               >
                 Subscribe
               </a>
@@ -115,11 +115,11 @@
 
     {{ if and (.Param "quote") (.Param "quote-source") }}
       <p
-        class="mb-2 mt-8 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
+        class="mt-8 mb-2 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
       >
         {{ .Param "quote" }}
       </p>
-      <p class="mb-5 text-right italic text-white">
+      <p class="mb-5 text-right text-white italic">
         {{ .Param "quote-source" }}
       </p>
     {{ end }}
