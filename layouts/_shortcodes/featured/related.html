@@ -14,12 +14,12 @@
 {{ $related = $related | first 3 }}
 {{ if $related }}
   <aside
-    class="{{ $sideClass }} sm:float-offset mb-4 w-full font-sans sm:mb-0 sm:w-auto"
+    class="{{ $sideClass }} mb-4 w-full font-sans sm:mb-0 sm:w-auto sm:float-offset"
     data-ga-category="inline:related"
   >
     <nav class="py-4">
       <h2 class="font-bold uppercase sm:text-2xl">
-        <span class="whitespace-nowrap border-b-2 border-black tracking-wide">
+        <span class="border-b-2 border-black tracking-wide whitespace-nowrap">
           More From Spotlight PA
         </span>
       </h2>

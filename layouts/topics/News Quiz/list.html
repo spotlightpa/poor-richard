@@ -14,13 +14,13 @@
 
   {{ if eq .Paginator.PageNumber 1 }}
     <section
-      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pb-2 pt-12 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
+      class="mx-4 mb-5 flex max-w-screen-xl flex-wrap gap-6 space-y-6 px-4 pt-12 pb-2 sm:gap-x-10 md:items-start md:justify-start lg:flex-row lg:gap-x-16 xl:mx-auto"
     >
       <header
         class="flex w-full flex-wrap items-baseline justify-between border-b border-black md:flex-nowrap"
       >
         <h2
-          class="flex-auto font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+          class="flex-auto font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
         >
           {{ with $calloutTitle }}
             {{ . }}
@@ -106,7 +106,7 @@
           "gravity" (.Param "image-gravity")
         }}
         <div
-          class="flex min-w-[200px] max-w-full md:w-2/12 md:max-w-[272px] md:flex-1 lg:w-1/6 xl:w-72"
+          class="flex max-w-full min-w-[200px] md:w-2/12 md:max-w-[272px] md:flex-1 lg:w-1/6 xl:w-72"
           data-ga-category="story-{{ add 2 $i }}"
         >
           {{ $eyebrow := $params.published }}
@@ -177,7 +177,7 @@
       class="mx-4 mt-10 max-w-screen-xl items-stretch sm:flex sm:flex-wrap sm:gap-x-6 md:mt-16 lg:mx-auto lg:gap-x-8 lg:px-20"
     >
       <h2
-        class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+        class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
       >
         {{ if eq .Paginator.PageNumber 1 }}
           More stories about
