@@ -16,13 +16,13 @@
 {{ $pages := $series.Pages.ByPublishDate }}
 {{ if gt $pages.Len 1 }}
   <aside
-    class="{{ $sideClass }} sm:float-offset mb-4 w-full font-sans sm:mb-0 sm:w-auto"
+    class="{{ $sideClass }} mb-4 w-full font-sans sm:mb-0 sm:w-auto sm:float-offset"
     data-ga-category="inline:related"
   >
     <nav class="py-4">
       <h2 class="font-bold uppercase sm:text-xl">
         <a
-          class="whitespace-nowrap border-b-2 border-black tracking-wide"
+          class="border-b-2 border-black tracking-wide whitespace-nowrap"
           href="{{ $series.RelPermalink }}"
         >
           More From

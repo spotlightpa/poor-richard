@@ -1,7 +1,7 @@
 <div class="relative w-full" x-data="searchUI()" x-init="init()">
   {{ if .showLocation }}
     <button
-      class="absolute bottom-0 left-0 top-0 z-10 flex w-12 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-70 sm:w-14 md:w-20"
+      class="absolute top-0 bottom-0 left-0 z-10 flex w-12 items-center justify-center rounded-l border-2 border-r-0 border-yellow-5 bg-yellow hover:bg-yellow-3 disabled:cursor-not-allowed disabled:opacity-70 sm:w-14 md:w-20"
       aria-label="Use my location"
       :aria-busy="loadingLocation ? 'true' : 'false'"
       type="button"
@@ -48,7 +48,7 @@
 
   <button
     id="search-button"
-    class="absolute bottom-0 right-0 top-0 z-10 flex w-16 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3 sm:w-20 md:w-28"
+    class="absolute top-0 right-0 bottom-0 z-10 flex w-16 items-center justify-center rounded-r border-2 border-l-0 border-yellow-5 bg-yellow hover:bg-yellow-3 sm:w-20 md:w-28"
     aria-label="Search"
     type="button"
     @click="doSearch()"

@@ -24,7 +24,7 @@
     >
       <input
         id="{{ $idEmail }}"
-        class="focus:outline-hidden w-full bg-white font-bold text-g-8 placeholder-g-6"
+        class="w-full bg-white font-bold text-g-8 placeholder-g-6 focus:outline-hidden"
         type="email"
         name="EMAIL"
         placeholder="Email address"
@@ -40,7 +40,7 @@
 
     <button
       type="submit"
-      class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow text-lg font-bold uppercase text-yellow-9"
+      class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow text-lg font-bold text-yellow-9 uppercase"
       :disabled="isLoading"
     >
       {{ $cta }}
@@ -67,7 +67,7 @@
 
   <a
     href="{{ or $buttonLink `#` }}"
-    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow font-sans text-lg font-bold uppercase text-yellow-9"
+    class="btn-signup mt-4 flex h-[44px] w-full items-center justify-center rounded-md border-[3px] border-yellow-5 bg-yellow font-sans text-lg font-bold text-yellow-9 uppercase"
     data-ga-category="{{ $gaCategory }}"
     data-ga-form="{{ $gaForm }}"
     rel="noopener"

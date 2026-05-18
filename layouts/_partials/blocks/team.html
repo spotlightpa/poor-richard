@@ -2,7 +2,7 @@
   <section class="bg-g-2 px-2 py-10">
     <div class="mx-auto my-14 w-full max-w-screen-xl">
       <h2
-        class="mb-10 text-4xl font-black uppercase leading-none text-g-6 md:text-6xl"
+        class="mb-10 text-4xl leading-none font-black text-g-6 uppercase md:text-6xl"
       >
         {{ .title }}
       </h2>
@@ -104,7 +104,7 @@
       {{ with .cta }}
         <div class="mt-12 flex justify-center" data-ga-category="cta">
           <a
-            class="border border-black px-4 py-2 text-center text-xl font-bold leading-tight duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
+            class="border border-black px-4 py-2 text-center text-xl leading-tight font-bold duration-300 hover:border-red-7 hover:text-red-7 lg:text-2xl"
             href="{{ .url }}"
           >
             {{- .copy -}}

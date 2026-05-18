@@ -9,10 +9,10 @@
   {{ with .Page.RenderString (.Param "takeover") }}
     {{ . }}
   {{ else }}
-    <header class="bg-white px-5 pb-4 pt-8 text-black">
+    <header class="bg-white px-5 pt-8 pb-4 text-black">
       <div class="mx-auto w-full max-w-2xl">
         <h1
-          class="font-sans text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
+          class="font-sans text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
         >
           {{- .Title -}}
         </h1>
@@ -84,7 +84,7 @@
     >
       <div class="mx-auto w-full max-w-prose">
         <h2
-          class="w-full border-b border-black font-sans text-2xl font-extrabold capitalize leading-tight tracking-wide md:text-3xl"
+          class="w-full border-b border-black font-sans text-2xl leading-tight font-extrabold tracking-wide capitalize md:text-3xl"
         >
           Credits
         </h2>

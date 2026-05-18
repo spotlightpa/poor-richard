@@ -1,6 +1,154 @@
 @import "tailwindcss";
-@config "./tailwind.config.js";
 @source "hugo_stats.json";
+@theme {
+  /* Fonts */
+  --font-serif: Merriweather, serif;
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+
+  /* Colors — base */
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Colors — grays */
+  --color-g-0: #fcfcfc;
+  --color-g-1: #f9f9f9;
+  --color-g-2: #f1f1f1;
+  --color-g-3: #e2e2e2;
+  --color-g-4: #cfcfcf;
+  --color-g-5: #b6b6b6;
+  --color-g-6: #999999;
+  --color-g-7: #787878;
+  --color-g-8: #545454;
+  --color-g-9: #2e2e2e;
+
+  /* Colors — red */
+  --color-red-0: #ffe4da;
+  --color-red-1: #ffc8b5;
+  --color-red-2: #ffac92;
+  --color-red-3: #ff8f6f;
+  --color-red-4: #ff6f4e;
+  --color-red-5: #ff4a2b;
+  --color-red: #ff0000;
+  --color-red-6: #ff0000;
+  --color-red-7: #d70000;
+  --color-red-8: #b10303;
+  --color-red-9: #920a0a;
+
+  /* Colors — named singles */
+  --color-beige: #f4f1ee;
+  --color-tw-blue: #99d9f1;
+  --color-fb-blue: #009edb;
+  --color-bluesky-blue: #1185fe;
+  --color-orange: #ff6c36;
+  --color-green: #78bc20;
+
+  /* Colors — yellow */
+  --color-yellow-0: #fefce8;
+  --color-yellow-1: #fffac2;
+  --color-yellow-2: #fff187;
+  --color-yellow-3: #ffe243;
+  --color-yellow: #ffcb03;
+  --color-yellow-4: #ffcb03;
+  --color-yellow-5: #efb403;
+  --color-yellow-6: #ce8b00;
+  --color-yellow-7: #a46204;
+  --color-yellow-8: #884c0b;
+  --color-yellow-9: #733e10;
+
+  /* Colors — blue */
+  --color-blue-0: #f0faff;
+  --color-blue-1: #e0f4fe;
+  --color-blue-2: #b9eafe;
+  --color-blue-3: #7cdbfd;
+  --color-blue-4: #36cafa;
+  --color-blue-5: #0cb4eb;
+  --color-blue: #009edb;
+  --color-blue-6: #009edb;
+  --color-blue-7: #0173a3;
+  --color-blue-8: #066186;
+  --color-blue-9: #0b506f;
+
+  /* Colors — navy */
+  --color-navy-0: #f3f6fc;
+  --color-navy-1: #e6edf8;
+  --color-navy-2: #c8d9ef;
+  --color-navy-3: #97b8e2;
+  --color-navy-4: #6093d0;
+  --color-navy-5: #3b75bc;
+  --color-navy-6: #2b5b9e;
+  --color-navy-7: #244980;
+  --color-navy: #22416e;
+  --color-navy-8: #22416e;
+  --color-navy-9: #20375a;
+
+  /* Colors — election-green */
+  --color-election-green-lightest: #daece9;
+  --color-election-green-lighter: #aad4cc;
+  --color-election-green: #1b998b;
+  --color-election-green-darker: #1e877b;
+  --color-election-green-darkest: #1d534c;
+
+  /* Colors — semantic (CSS custom property references) */
+  --color-eyebrow: var(--eyebrow-color);
+  --color-eyebrow-bg: var(--eyebrow-bg);
+  --color-hed: var(--hed-color);
+  --color-dek: var(--dek-color);
+  --color-byline: var(--byline-color);
+  --color-date: var(--date-color);
+  --color-credit: var(--credit-color);
+
+  /* Animations */
+  --animate-become-sticky: becomeSticky 1s cubic-bezier(0.79, 0.1, 0.44, 0.83)
+    forwards 0.25s;
+
+  /* Box shadows */
+  --shadow-beige: 0 0 0 3px #f4f1ee80;
+
+  /* Drop shadows */
+  --drop-shadow-outline: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+  /* Grid */
+  --grid-template-columns-14: repeat(14, 1fr);
+  --grid-column-start-13: 13;
+  --grid-column-start-14: 14;
+  --grid-column-start-15: 15;
+  --grid-column-end-13: 13;
+  --grid-column-end-14: 14;
+  --grid-column-end-15: 15;
+  --grid-column-span-14: 1 / span 14;
+
+  /* Line heights */
+  --leading-normal: 1.6;
+  --leading-hed: 1.15;
+
+  /* Spacing */
+  --spacing-16x9: 56.25%;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 850px;
+  --breakpoint-lg: 1080px;
+  --breakpoint-xl: 1280px;
+
+  /* Max widths */
+  --max-width-content: 730px;
+}
+
+/* Keyframes */
+@keyframes becomeSticky {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
 @layer base {
   @import "./font-merri.css";
 }
@@ -87,28 +235,28 @@
   }
 
   .featured-content > h2 {
-    @apply mb-2 mt-8 font-sans text-4xl font-semibold leading-tight;
+    @apply mt-8 mb-2 font-sans text-4xl leading-tight font-semibold;
   }
 
   .featured-content > h3 {
-    @apply mb-8 font-sans text-3xl italic leading-none;
+    @apply mb-8 font-sans text-3xl leading-none italic;
   }
 
   .featured-content > h3:before {
     content: "";
-    @apply mb-4 mt-16 block h-1 w-12 bg-yellow;
+    @apply mt-16 mb-4 block h-1 w-12 bg-yellow;
   }
 
   .featured-content > h4 {
-    @apply mb-4 mt-8 font-sans text-lg font-semibold leading-tight;
+    @apply mt-8 mb-4 font-sans text-lg leading-tight font-semibold;
   }
 
   .featured-content > h5 {
-    @apply mb-2 mt-6 text-base font-semibold leading-tight;
+    @apply mt-6 mb-2 text-base leading-tight font-semibold;
   }
 
   .featured-content > h6 {
-    @apply mb-1 mt-4 text-base italic leading-tight;
+    @apply mt-4 mb-1 text-base leading-tight italic;
   }
 
   .featured-content > ul {
@@ -120,7 +268,7 @@
   }
 
   .article-content > :where(p, aside, figure, ol, ul, hr) {
-    @apply mb-4 mt-4;
+    @apply mt-4 mb-4;
   }
 
   .article-content > :where(iframe) {
@@ -142,27 +290,27 @@
   }
 
   .article-content > h1 {
-    @apply mb-4 font-sans text-3xl font-semibold leading-tight;
+    @apply mb-4 font-sans text-3xl leading-tight font-semibold;
   }
 
   .article-content > h2 {
-    @apply mb-4 text-2xl font-semibold leading-tight;
+    @apply mb-4 text-2xl leading-tight font-semibold;
   }
 
   .article-content > h3 {
-    @apply mb-4 text-xl font-semibold leading-tight;
+    @apply mb-4 text-xl leading-tight font-semibold;
   }
 
   .article-content > h4 {
-    @apply mb-4 text-lg font-semibold leading-tight;
+    @apply mb-4 text-lg leading-tight font-semibold;
   }
 
   .article-content > h5 {
-    @apply mb-4 text-base font-semibold leading-tight;
+    @apply mb-4 text-base leading-tight font-semibold;
   }
 
   .article-content > h6 {
-    @apply mb-4 text-base italic leading-tight;
+    @apply mb-4 text-base leading-tight italic;
   }
 
   .article-content > ul {
@@ -182,7 +330,7 @@
   }
 
   .article-content .toc h3 {
-    @apply mb-2 text-xl font-semibold leading-tight;
+    @apply mb-2 text-xl leading-tight font-semibold;
   }
   .article-content .toc ul {
     @apply list-disc pl-5;
@@ -201,7 +349,7 @@
   }
 
   .article-content :where(code) {
-    @apply rounded-xs -my-[2px] mx-1 bg-g-2 px-1 py-[2px] text-red-8;
+    @apply mx-1 -my-[2px] rounded-xs bg-g-2 px-1 py-[2px] text-red-8;
   }
 
   .article-content :where(a) {
@@ -252,7 +400,7 @@
   .content-aside > h2,
   .content-aside > h3,
   .content-aside > h4 {
-    @apply text-lg font-bold uppercase leading-none;
+    @apply text-lg leading-none font-bold uppercase;
   }
 
   .content-aside > * + h1,
@@ -269,11 +417,11 @@
   }
 
   .spl-input {
-    @apply outline-hidden w-full rounded-sm border border-g-4 bg-white py-2 pl-4 pr-7 font-sans leading-normal text-g-9 placeholder-g-5 ring-2 ring-transparent focus:ring-yellow;
+    @apply w-full rounded-sm border border-g-4 bg-white py-2 pr-7 pl-4 font-sans leading-normal text-g-9 placeholder-g-5 ring-2 ring-transparent outline-hidden focus:ring-yellow;
   }
 
   .spl-select {
-    @apply outline-hidden block w-full appearance-none rounded-sm border border-g-4 bg-white py-2 pl-4 pr-7 font-sans text-g-5 ring-2 ring-transparent focus:ring-yellow active:ring-yellow-6;
+    @apply block w-full appearance-none rounded-sm border border-g-4 bg-white py-2 pr-7 pl-4 font-sans text-g-5 ring-2 ring-transparent outline-hidden focus:ring-yellow active:ring-yellow-6;
   }
 
   a.spl-links-navy,
@@ -287,30 +435,30 @@
   }
 
   .btn-signup {
-    @apply outline-hidden rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center font-bold uppercase leading-normal tracking-widest text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
+    @apply rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 text-center leading-normal font-bold tracking-widest text-yellow-9 uppercase ring-yellow-6 outline-hidden hover:bg-yellow-3 focus:ring-2;
   }
 
   .btn-signup-slim {
-    @apply outline-hidden w-full rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 font-bold uppercase leading-tight tracking-widest text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2;
+    @apply w-full rounded-sm border-2 border-yellow-5 bg-yellow-4 px-8 py-2 leading-tight font-bold tracking-widest text-yellow-9 uppercase ring-yellow-6 outline-hidden hover:bg-yellow-3 focus:ring-2;
   }
 
   .btn-signup-lg {
-    @apply outline-hidden inline-block rounded-sm bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 ring-yellow-6 hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
+    @apply inline-block rounded-sm bg-yellow-4 px-8 py-5 font-sans text-lg font-bold tracking-wide text-yellow-9 ring-yellow-6 outline-hidden hover:bg-yellow-3 focus:ring-2 lg:text-xl lg:tracking-widest;
   }
 
   .btn-donate {
-    @apply outline-hidden inline-block rounded-sm border-2 border-red bg-red px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline ring-red-7 hover:bg-red-5 focus:ring-2 focus:ring-red-7 active:ring-red-9;
+    @apply inline-block rounded-sm border-2 border-red bg-red px-6 py-2 text-center font-sans font-semibold tracking-widest text-white uppercase no-underline ring-red-7 outline-hidden hover:bg-red-5 focus:ring-2 focus:ring-red-7 active:ring-red-9;
   }
 
   .btn-donate-slim {
-    @apply outline-hidden w-full rounded-sm bg-red px-6 py-2 font-sans font-semibold uppercase tracking-widest text-white no-underline ring-2 ring-transparent hover:bg-red-7 focus:ring-red-7 active:ring-red-5;
+    @apply w-full rounded-sm bg-red px-6 py-2 font-sans font-semibold tracking-widest text-white uppercase no-underline ring-2 ring-transparent outline-hidden hover:bg-red-7 focus:ring-red-7 active:ring-red-5;
   }
 
   .btn-donate-lg {
-    @apply ring-3 outline-hidden inline-flex min-w-[145px] items-center justify-center rounded-sm bg-red px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline ring-transparent hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px] md:py-5;
+    @apply inline-flex min-w-[145px] items-center justify-center rounded-sm bg-red px-3 py-3 font-sans text-lg font-black tracking-widest text-white no-underline ring-3 ring-transparent outline-hidden hover:bg-red-5 focus:ring-red-7 active:ring-red-9 md:min-w-[218px] md:py-5;
   }
   .btn-select {
-    @apply outline-hidden inline-block rounded-sm border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold uppercase tracking-widest text-white no-underline ring-blue hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
+    @apply inline-block rounded-sm border-2 border-blue bg-blue px-6 py-2 text-center font-sans font-semibold tracking-widest text-white uppercase no-underline ring-blue outline-hidden hover:bg-blue-7 focus:ring-2 focus:ring-blue active:ring-blue;
   }
 
   .spl-newsletter {
