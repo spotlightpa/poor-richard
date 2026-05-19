@@ -81,7 +81,7 @@ Olweiler said he, too, was fed up with the negativity in the campaign. He summed
 
 “Beam me up, Scotty,” Olweiler said. “There&#39;s no intelligent life on this planet.”
 
-## Incumbents facing challengers
+## Decided during the primary
 
 In the 22nd state House District, which covers part of blue Allentown and its surrounding suburbs, progressive City Councilor Ce-Ce Gerlach is challenging party-endorsed incumbent Ana Tiburcio, <a href="https://www.spotlightpa.org/news/2026/05/lehigh-valley-legislative-races-democratic-party-insider-outsider-elections/">running on a platform of</a> “bold, unapologetic change.”
 
@@ -120,4 +120,26 @@ The precinct’s largely Democratic voters told Spotlight PA they were looking f
 Herb Engelsberg, 76, told Spotlight PA that he ended up choosing Megan Griffin Shelley, the party-endorsed candidate. The decision was a “toss-up,” he said, but he listened to his next-door neighbor, who was involved in the local party.
 
 “All things being equal, it’s good to have someone with some experience,” Engelsberg said. “Just in terms of knowing how things work. I’m assuming they all kinda have the same principles.”
+
+## Legacy in Lancaster County
+
+The legacy of outgoing state Rep. Bryan Cutler, who served for 20 years and rose to become the speaker of the House, is looming over the Republican primary to replace him.
+
+Voters in southern Lancaster County told Spotlight PA that one candidate’s criticisms two years ago against Cutler weighed heavily on them in this year’s election.
+
+Landscaping company owner Dave Nissley unsuccessfully challenged Cutler in the 2024 GOP primary, criticizing the incumbent for his initial support of Pennsylvania’s no-excuse mail ballot system and his failed attempt in 2023 to<a href="https://www.spotlightpa.org/news/2023/01/pa-house-speaker-mark-rozzi-behind-the-scenes/"> maintain a favorable House speaker</a> when Democrats flipped control of the chamber. Nissley lost that race by less than 700 votes.
+
+After Cutler announced he would not seek reelection this year, Nissley jumped into the race to replace him.
+
+Joyce Mankin was among several voters who said she didn’t like the way Nissley spoke about Cutler in the 2024 campaign, though she couldn’t recall specific jabs. She voted for former State Police trooper Kelly Osborne.
+
+“Just attacking somebody?” Mankin said. “You don&#39;t do that to try and win.”
+
+Elizabeth Henry felt similarly. In addition to the old attack ads against Cutler, Henry recalled watching Cutler and Nissley debate each other two years ago. She did not like the way Nissley referred to Cutler by just his last name without any titles, like mister or representative.
+
+“I wish that we could all just be respectful in elections and stuff, especially politicians,” Henry said.
+
+Cutler has also thrown his support behind Osborne — plus nearly $50,000 on May 6, according to 24-hour disclosures required by state law leading up to the primary.
+
+No Democrat sought the nomination to oppose whoever wins the Republican primary.
 
