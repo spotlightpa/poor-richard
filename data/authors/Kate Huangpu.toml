@@ -11,5 +11,3 @@ active = true
 role = "reporter"
 beat = "State Government"
 focusHed = "Governor’s office, legislature"
-tel = "(267) 995-2177"
-signal = "(215) 490-2630"
