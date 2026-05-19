@@ -1,7 +1,7 @@
 +++
 app-image-gravity = "ce"
 authors = ["Elizabeth Estrada"]
-blurb = "Pennsylvanians will head to the polls on May 19 to vote in races including governor, U.S. Senate, and more. Here’s what to know."
+blurb = "Pennsylvanians will head to the polls on May 19 to vote in races including governor, U.S. House, and more. Here’s what to know."
 byline = "Elizabeth Estrada of Spotlight PA"
 description = "All the information Pennsylvanians need to know to vote in the 2026 primary election, including polling place hours and locations, ID rules, and more."
 draft = false
