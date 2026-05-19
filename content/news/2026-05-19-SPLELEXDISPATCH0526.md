@@ -121,6 +121,12 @@ Herb Engelsberg, 76, told Spotlight PA that he ended up choosing Megan Griffin S
 
 “All things being equal, it’s good to have someone with some experience,” Engelsberg said. “Just in terms of knowing how things work. I’m assuming they all kinda have the same principles.”
 
+Laurel Yarros, 29, came to her polling place at Bala Gymnastics without knowing who would be on the ballot. Yarros told Spotlight PA she was out of the country for a year, but now that she’s back, she wanted to make sure she was using her right to vote.
+
+She talked to a volunteer for Jason Landau Goodman outside of the polling place and read an article on the candidates before going in to vote.
+
+Yarros said that experience mattered most to her when choosing a candidate: “Experience matters no matter what office.”
+
 ## Legacy in Lancaster County
 
 The legacy of outgoing state Rep. Bryan Cutler, who served for 20 years and rose to become the speaker of the House, is looming over the Republican primary to replace him.
