@@ -1,7 +1,7 @@
 +++
-authors = ["Kate Huangpu", "Jaxon White"]
+authors = ["Stephen Caruso", "Kate Huangpu", "Jaxon White"]
 blurb = "With control of the legislature in play, primary voters are choosing the House and Senate candidates they want to send to the general."
-byline = "Kate Huangpu and Jaxon White of Spotlight PA"
+byline = "Stephen Caruso, Kate Huangpu, and Jaxon White of Spotlight PA"
 description = "With control of the PA legislature in play, primary voters are choosing the House and Senate candidates they want to send to the general."
 draft = false
 feed-exclude = false
@@ -79,5 +79,45 @@ Despite the ads causing him to question Crane’s background, Olweiler said he w
 
 Olweiler said he, too, was fed up with the negativity in the campaign. He summed up his desire for the 48th District race to end by paraphrasing a <em>Star Trek</em> quote.
 
-“Beam me up, Scotty,” Olweiler said. “There&#39;s no intelligent life on this planet.”<strong></strong>
+“Beam me up, Scotty,” Olweiler said. “There&#39;s no intelligent life on this planet.”
+
+## Incumbents facing challengers
+
+In the 22nd state House District, which covers part of blue Allentown and its surrounding suburbs, progressive City Councilor Ce-Ce Gerlach is challenging party-endorsed incumbent Ana Tiburcio, <a href="https://www.spotlightpa.org/news/2026/05/lehigh-valley-legislative-races-democratic-party-insider-outsider-elections/">running on a platform of</a> “bold, unapologetic change.”
+
+The 22nd is a majority-Latino district where most voters make under $75,000 a year, and it is heavily Democratic. While a Republican is running in November, whoever wins this competitive Democratic primary will almost certainly take the seat.
+
+On Tuesday afternoon in Allentown’s east end, young and older voters who spoke to Spotlight PA were behind Gerlach.
+
+&#34;She seems like she’s willing to fight,&#34; said Jo Rojas, a 24-year-old barista, &#34;and I trust she will.&#34;
+
+Rojas said she particularly liked Gerlach for standing up for transgender people and the homeless, and expected Gerlach to do the same in Harrisburg.
+
+Jade Wilson and Sapphire Kinard, two 18-year-olds, showed up to the polls together. They split their vote in the 7th congressional primary — Wilson for Ryan Crosswell, Kinard for Bob Brooks. But they both voted for Gerlach.
+
+&#34;She&#39;s been really interactive with the community,&#34; said Wilson. She said she wants elected officials who&#39;ll tax billionaires while tackling affordability by lowering the cost of housing and gas. Despite their youth, they were already worried about ever being able to afford a house of their own.
+
+Richard Solga, a 72-year-old nurse practitioner who works in mental health, felt those same fears for the younger generation. He voted for Gerlach, too.
+
+&#34;You are supposed to represent the people,&#34; he said.
+
+Tiburcio may be the incumbent, but she’s a relatively new face in Harrisburg. She won the seat during a February special election after being selected to run by local Democratic party leaders.
+
+Gerlach also sought the Democratic nomination for that special election, but was passed over.
+
+The Democratic primary will also be the definitive race for Pennsylvania’s 148th state House District in Montgomery County, just outside of Philadelphia. Four candidates are competing for an open seat to replace retiring Democratic Rep. Mary Jo Daley. No Republican will be on the ballot in November.
+
+The candidates are environmental attorney and community organizer Jason Landau Goodman, former Narberth Mayor Andrea Deutsch, former English teacher and legislative staffer Megan Griffin-Shelley, and community organizer Leo Solga.
+
+At the Cynwyd Club in Bala Cynwyd on the Main Line, staffers for two of the candidates were out stumping in the 90-degree heat.
+
+“Convince me,” one voter said to the staffers as they approached the polling place.
+
+Liam Riley, the communications director for Solga’s campaign, talked about the candidate’s public school background and his separation from the state Democratic Party apparatus. Brendan Mattox, the field director for Landau Goodman, told the voter about his candidate’s positions on the environment, anti-semitism, and LGBTQ rights.
+
+The precinct’s largely Democratic voters told Spotlight PA they were looking for a candidate who had experience, was willing to work across the aisle, supported women’s rights, and didn’t support “aggressive protesting.”
+
+Herb Engelsberg, 76, told Spotlight PA that he ended up choosing Megan Griffin Shelley, the party-endorsed candidate. The decision was a “toss-up,” he said, but he listened to his next-door neighbor, who was involved in the local party.
+
+“All things being equal, it’s good to have someone with some experience,” Engelsberg said. “Just in terms of knowing how things work. I’m assuming they all kinda have the same principles.”
 
