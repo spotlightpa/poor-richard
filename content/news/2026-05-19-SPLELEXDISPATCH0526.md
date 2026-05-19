@@ -16,7 +16,7 @@ published = 2026-05-19T13:34:54.147-04:00
 slug = "primary-election-day-legislature-incumbents-chris-gebhard-clovis-crane-elections"
 suppress-ads = false
 suppress-date = false
-title = "Voters talk affordability, decry ad spending as they head to the polls for Pa.’s 2026 primary election"
+title = "Voters talk affordability, decry ad spending as they cast ballots in key Pa. House, Senate races"
 title-tag = "Election 2026: PA voters explain House, Senate choices"
 topics = ["Elections"]
 +++
