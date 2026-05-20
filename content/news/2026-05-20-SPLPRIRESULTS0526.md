@@ -66,7 +66,7 @@ Lehigh County Controller Mark Pinsley is one of the candidates who just cleared 
 
 He declared victory over social studies teacher and school board member Bradley Merkl-Gump in the 16th state Senate District, which sprawls across Lehigh County and into neighboring Bucks County. He’ll face incumbent Republican Jarrett Coleman in November.
 
-The AP had not called the race as of early Wednesday morning. However, Merkl-Gump <a href="https://www.facebook.com/BMGforStateSenate/posts/pfbid02dkEtn8SyCgb5B3sgLXeTSULKTcLNnjsf32AD42Sp5uggcU476oQySAdK1o6wMjkBl">conceded</a> late Tuesday.
+Merkl-Gump <a href="https://www.facebook.com/BMGforStateSenate/posts/pfbid02dkEtn8SyCgb5B3sgLXeTSULKTcLNnjsf32AD42Sp5uggcU476oQySAdK1o6wMjkBl">conceded</a> late Tuesday, and the AP called the race Wednesday morning.
 
 The 16th District race was one of several state Senate primaries that <a href="https://www.spotlightpa.org/news/2026/05/gambling-skill-games-sports-betting-pennsylvania-senate-races-funding-attack-incumbents-elections/">saw heavy spending by skill games and sports betting interests</a>, which have a big stake in these elections as lawmakers debate how to tax and regulate their industries.
 
