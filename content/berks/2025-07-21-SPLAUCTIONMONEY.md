@@ -10,7 +10,7 @@ image-caption = "Painting by Christopher High Shearer, a founder of the Reading 
 image-credit = "Reading Public Museum"
 image-description = "Painting of a landscape with cows by Christopher High Shearer."
 internal-id = "SPLAUCTIONMONEY"
-kicker = "Higher education"
+kicker = "Higher Education"
 modal-exclude = false
 pinned = false
 published = 2025-07-21T07:55:00-04:00
@@ -18,7 +18,7 @@ slug = "higher-education-albright-nets-unexpected-1m-in-art-auction"
 suppress-date = false
 title = "Albright College in Berks County nets unexpected $1M in art auction"
 title-tag = "Albright College art earns $1M at auction"
-topics = ["Higher education", "Berks County"]
+topics = ["Higher Education", "Berks County"]
 +++
 
 READING — The public auction of Albright College’s Freedman Gallery collection garnered nearly $1 million for the private liberal arts school in Reading as it tries to get on solid financial footing after years of deficits.
