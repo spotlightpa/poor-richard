@@ -1,6 +1,6 @@
 +++
 authors = ["Charlotte Keith"]
-blurb = "Pa. now has four years to make the faster internet services available to residents"
+blurb = "Pennsylvania can now move forward expanding high-speed internet in rural areas after federal officials backed down from a wage dispute with the state."
 byline = "Charlotte Keith of Spotlight PA"
 description = "Pennsylvania can now move forward expanding high-speed internet in rural areas after federal officials backed down from a wage dispute with the state."
 draft = false
