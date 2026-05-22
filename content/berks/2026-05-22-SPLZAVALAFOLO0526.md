@@ -1,6 +1,6 @@
 +++
 authors = ["Gabriela Martínez"]
-blurb = "A Berks County grandfather who helped investigate his daughter’s murder received a key legal finding Friday that supports his release from ICE detention, but the Trump administration’s rollback of protections for U visa applicants keeps him locked up."
+blurb = "A new finding by a federal immigration agency that Erasmo Zavala should be at least temporarily protected from deportation strengthens the case for his release, his attorneys say."
 byline = "Gabriela Martínez of Spotlight PA"
 description = "A Berks County grandfather is still in ICE detention even after a federal agency found his U visa application meets core eligibility requirements."
 draft = false
