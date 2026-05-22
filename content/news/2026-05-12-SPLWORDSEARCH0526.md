@@ -15,6 +15,7 @@ suppress-ads = false
 suppress-date = false
 title = "Play Word Search"
 title-tag = "Play Word Search, a daily word game"
+topics = ["Games"]
 url = "/word-search-games/"
 +++
 
