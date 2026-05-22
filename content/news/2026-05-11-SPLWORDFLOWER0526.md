@@ -15,6 +15,7 @@ suppress-ads = false
 suppress-date = false
 title = "Play Word Flower"
 title-tag = "Play Word Flower, a daily spelling bee game"
+topics = ["Games"]
 url = "/word-flower-games/"
 +++
 
