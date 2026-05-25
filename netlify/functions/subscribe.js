@@ -1,4 +1,5 @@
 import { createHmac } from "crypto";
+import { upsertContact, addToList } from "./ac-helpers.js";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
@@ -369,6 +370,16 @@ export const handler = async (event) => {
       } catch (smsErr) {
         // eslint-disable-next-line no-console
         console.error("SMS send error:", smsErr);
+      }
+    }
+
+    if (email) {
+      try {
+        const contactId = await upsertContact(email, phone || null);
+        if (contactId) await addToList(contactId);
+      } catch (acErr) {
+        // eslint-disable-next-line no-console
+        console.error("AC sync error on subscribe:", acErr);
       }
     }
 

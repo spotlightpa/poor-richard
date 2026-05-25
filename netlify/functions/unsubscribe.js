@@ -1,4 +1,5 @@
 import { createHmac } from "crypto";
+import { getContactIdByEmail, removeFromList } from "./ac-helpers.js";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
@@ -197,6 +198,26 @@ export const handler = async (event) => {
             ]
           : []),
       ]);
+      if (!isPhone) {
+        try {
+          const remaining = await db.send(
+            new QueryCommand({
+              TableName: process.env.SUBSCRIPTIONS_TABLE,
+              IndexName: "email-index",
+              KeyConditionExpression: "email = :val",
+              ExpressionAttributeValues: { ":val": identifier },
+            }),
+          );
+          if ((remaining.Items || []).length === 0) {
+            const contactId = await getContactIdByEmail(identifier);
+            if (contactId) await removeFromList(contactId);
+          }
+        } catch (acErr) {
+          // eslint-disable-next-line no-console
+          console.error("AC sync error on single unsubscribe:", acErr);
+        }
+      }
+
       return {
         statusCode: 200,
         headers: { "Content-Type": "text/html" },
@@ -283,6 +304,17 @@ export const handler = async (event) => {
       );
 
       const removedCount = toDelete.length;
+
+      if (!isPhone && removedCount > 0 && selectedIds.length === 0) {
+        try {
+          const contactId = await getContactIdByEmail(identifier);
+          if (contactId) await removeFromList(contactId);
+        } catch (acErr) {
+          // eslint-disable-next-line no-console
+          console.error("AC sync error on unsubscribe:", acErr);
+        }
+      }
+
       const message =
         removedCount > 0
           ? `Done — ${removedCount.toLocaleString()} subscription${removedCount !== 1 ? "s" : ""} removed.`
