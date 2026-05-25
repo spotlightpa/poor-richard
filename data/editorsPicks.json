@@ -3,15 +3,12 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/statecollege/2026-05-14-SPLPSUSTERILE0526.md"
+    "content/news/2026-05-22-SPLKNOEBELS0526.md"
   ],
-  "subfeatures": [
-    "content/statecollege/2025-11-20-SPLPSUCANCER1125.md",
-    "content/statecollege/2025-11-21-SPLPSUCENTER1125.md"
-  ],
+  "subfeatures": [],
   "topSlots": [
-    "content/news/2026-05-22-SPLKNOEBELS0526.md",
+    "content/news/2026-05-22-SPLGOVFOLO0526.md",
     "content/news/2026-05-21-SPLBBAPPROVAL0526.md",
-    "content/news/2026-05-22-SPLGOVFOLO0526.md"
+    "content/news/2026-05-20-SPLPRIRESULTS0526.md"
   ]
 }
