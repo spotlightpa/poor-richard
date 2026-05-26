@@ -3,12 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-05-22-SPLKNOEBELS0526.md"
+    "content/news/2026-05-26-SPLGARRITYMILITARY0526.md"
   ],
-  "subfeatures": [],
-  "topSlots": [
+  "subfeatures": [
     "content/news/2026-05-22-SPLGOVFOLO0526.md",
-    "content/news/2026-05-21-SPLBBAPPROVAL0526.md",
-    "content/news/2026-05-20-SPLPRIRESULTS0526.md"
+    "content/news/2026-05-19-SPLGOVGEN0526.md"
+  ],
+  "topSlots": [
+    "content/berks/2026-05-22-SPLZAVALAFOLO0526.md",
+    "content/news/2026-05-22-SPLKNOEBELS0526.md",
+    "content/news/2026-05-21-SPLBBAPPROVAL0526.md"
   ]
 }
