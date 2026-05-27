@@ -28,7 +28,7 @@ actionText = "Other Ways to Give"
 [[blocks]]
 layout = "impact"
 title = "Journalism that Gets Results"
-series = ["Mariner East pipeline", "The PSERS Scandal"]
+series = ["Mariner East Pipeline", "The PSERS Scandal"]
 image = "2024/01/01jv-4sqp-ts1v-9498.jpeg"
 url = "/investigations"
 actionText = "Read our investigations"

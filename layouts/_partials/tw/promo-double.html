@@ -1,5 +1,5 @@
 {{ $link := .link }}
-{{ $wrapperClass := .class | default "flex justify-center no-js:hidden" }}
+{{ $wrapperClass := .class | default "flex justify-center noscript:hidden" }}
 {{ $picture:= partial "tw/picture-rotator.html" (dict
   "mobileImages" .mobileImages
   "mobileWidth" .mobileWidth

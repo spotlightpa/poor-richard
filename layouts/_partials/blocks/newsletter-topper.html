@@ -77,11 +77,11 @@
 
     {{ if and (.Param "quote") (.Param "quote-source") }}
       <p
-        class="mb-2 mt-8 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
+        class="mt-8 mb-2 border-l-4 border-yellow py-3 pl-2 text-2xl font-bold text-white"
       >
         {{ .Param "quote" }}
       </p>
-      <p class="mb-5 text-right italic text-white">
+      <p class="mb-5 text-right text-white italic">
         {{ .Param "quote-source" }}
       </p>
     {{ end }}

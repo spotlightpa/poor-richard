@@ -15,7 +15,7 @@
     <div class="mx-auto w-full max-w-prose text-lg">
       <h3 class="text-2xl font-bold">Current Spotlight PA Staff</h3>
       <ul
-        class="mx-auto mb-14 mt-6 grid w-full gap-x-4 gap-y-1 md:grid-cols-2"
+        class="mx-auto mt-6 mb-14 grid w-full gap-x-4 gap-y-1 md:grid-cols-2"
         data-ga-category="inline-footer:author"
       >
         {{ range $author := sort $staff "lastName" }}
@@ -78,7 +78,7 @@
       </ul>
       <h3 class="text-2xl font-bold">Other author pages</h3>
       <ul
-        class="column-gap-2 mx-auto mb-14 mt-6 block w-full columns-2 md:columns-3"
+        class="column-gap-2 mx-auto mt-6 mb-14 block w-full columns-2 md:columns-3"
         data-ga-category="inline-footer:author"
       >
         {{ range $author := $nonstaff }}

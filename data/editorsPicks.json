@@ -1,22 +1,16 @@
 {
   "edCallout": [],
   "edImpact": [],
-  "edInvestigations": [
-    "content/statecollege/2025-12-18-SPLSCPOLICE1225.md",
-    "content/statecollege/2025-11-20-SPLPSUCANCER1125.md"
-  ],
+  "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-05-15-SPLCFBET0526.md"
+    "content/news/2026-05-27-SPLWECHTETHICS0526.md"
   ],
   "subfeatures": [
-    "content/news/2026-05-14-SPLLEHIGH0526.md",
-    "content/news/2026-05-14-NTSWINGVOTE0526.md",
-    "content/news/2026-03-30-SPLKEYPRIMARY0326.md",
-    "content/news/2026-05-07-SPLMAY19LASTMINGUIDE.md"
+    "content/news/2026-05-12-NTWECHTQUITS0526.md"
   ],
   "topSlots": [
-    "content/news/2026-05-13-SPLTHREATFOLO.md",
-    "content/statecollege/2026-05-14-SPLPSUSTERILE0526.md",
-    "content/news/2026-05-13-SPLMAY19INTIMID.md"
+    "content/news/2026-05-26-SPLGARRITYMILITARY0526.md",
+    "content/berks/2026-05-22-SPLZAVALAFOLO0526.md",
+    "content/news/2026-05-21-SPLBBAPPROVAL0526.md"
   ]
 }

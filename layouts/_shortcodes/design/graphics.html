@@ -6,7 +6,7 @@
     <input type="checkbox" id="colorToggle" class="peer sr-only" />
     <div class="h-6 w-11 rounded-full bg-blue"></div>
     <div
-      class="absolute left-1 top-1 h-4 w-4 rounded-full bg-white transition-transform peer-checked:translate-x-5"
+      class="absolute top-1 left-1 h-4 w-4 rounded-full bg-white transition-transform peer-checked:translate-x-5"
     ></div>
   </label>
   <span class="text-2xl font-bold">RGB</span>
@@ -14,7 +14,7 @@
 
 <div class="mt-8 grid grid-cols-1 gap-6" id="colorGrid"></div>
 
-<h1 class="mb-4 mt-12 font-bold text-black">Election Colors</h1>
+<h1 class="mt-12 mb-4 font-bold text-black">Election Colors</h1>
 
 <div class="mt-8 grid grid-cols-1 gap-6" id="electionColorGrid"></div>
 
@@ -47,7 +47,7 @@
 
 <hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
 
-<h1 class="mb-4 mt-12 font-bold text-black">Datawrapper</h1>
+<h1 class="mt-12 mb-4 font-bold text-black">Datawrapper</h1>
 
 <div style="min-height:449px" id="datawrapper-vis-1Dg8P">
   <script
@@ -89,7 +89,7 @@
         href="https://academy.datawrapper.de/"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-blue-600 hover:text-blue-800 underline"
+        class="text-blue-600 underline hover:text-blue-800"
       >
         Datawrapper Academy</a
       >
@@ -100,7 +100,7 @@
 
 <hr class="mx-auto my-16 h-1 w-full border-none bg-g-3" />
 
-<h1 class="mb-4 mt-12 font-bold text-black">Flourish</h1>
+<h1 class="mt-12 mb-4 font-bold text-black">Flourish</h1>
 
 <div class="flourish-embed flourish-map" data-src="visualisation/24021522">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -151,7 +151,7 @@
     <input
       type="text"
       value="Source Sans Pro"
-      class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded-sm border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
+      class="pointer-events-none w-full overflow-x-auto rounded-sm border-2 border-yellow bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
       readonly
     />
     <div class="hidden sm:block">
@@ -208,7 +208,7 @@
         <input
           type="text"
           value="{{ .value }}"
-          class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded-sm border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
+          class="pointer-events-none w-full overflow-x-auto rounded-sm border-2 border-yellow bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
           readonly
         />
         <div class="hidden sm:block">
@@ -252,7 +252,7 @@
         <input
           type="text"
           value="{{ .value }}"
-          class="pointer-events-none w-full overflow-x-auto whitespace-nowrap rounded-sm border-2 border-yellow bg-white px-2 py-1 font-bold leading-tight text-black sm:flex-1"
+          class="pointer-events-none w-full overflow-x-auto rounded-sm border-2 border-yellow bg-white px-2 py-1 leading-tight font-bold whitespace-nowrap text-black sm:flex-1"
           readonly
         />
         <div class="hidden sm:block">
@@ -287,7 +287,7 @@
       {{ partial "helper/svg.html" "check" }}
     </svg>
   </template>
-  <div class="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+  <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
   <div
     class="rounded-t-md bg-black/60 opacity-0 transition-opacity group-hover:opacity-100"
   ></div>
