@@ -2,7 +2,7 @@
 blurb = "Test your attention to detail by finding hidden words in various directions within a jumble of letters."
 description = "Test your attention to detail by finding hidden words in various directions within a jumble of letters."
 draft = false
-feed-exclude = true
+feed-exclude = false
 image = "2026/05/01n0-731t-mp03-x733.png"
 image-size = "hidden"
 internal-id = "SPLWORDSEARCH0526"
