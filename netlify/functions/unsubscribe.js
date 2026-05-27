@@ -1,4 +1,5 @@
 import { createHmac } from "crypto";
+import { getContactIdByEmail, removeFromList } from "./ac-helpers.js";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
@@ -58,19 +59,23 @@ function successPage(message) {
     h1 { font-size: 24px; margin: 0 0 12px; }
     p { font-size: 16px; line-height: 1.6; color: #374151; margin: 0 0 16px; }
     a { color: #009EDB; }
-    .check { font-size: 48px; margin-bottom: 16px; }
+    .check { display: flex; justify-content: center; margin-bottom: 16px; }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="check">✓</div>
+    <div class="check">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#1b998b">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5l-4-4 1.41-1.41L10 13.67l6.59-6.59L18 8.5l-8 8z"/>
+      </svg>
+    </div>
     <h1>${escapeHTML(message)}</h1>
     <p>Your subscription preferences have been updated.</p>
     <p>
       <a href="https://www.spotlightpa.org/restaurant-inspections" style="display:inline-block;background-color:#009EDB;color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-decoration:none;padding:12px 24px;border-radius:6px;">← Back to Restaurant Safety Tracker</a>
     </p>
-    <p style="font-size:13px;color:#9ca3af;">
-      Questions? Contact <a href="mailto:info@spotlightpa.org">info@spotlightpa.org</a>
+    <p style="font-size:14px;color:#9ca3af;">
+      Questions? Contact <a href="mailto:info@spotlightpa.org">info@spotlightpa.org</a>.
     </p>
   </div>
 </body>
@@ -133,7 +138,7 @@ function managePage(token, subs) {
     <p class="sub">Uncheck any facilities you no longer want to receive alerts for, then click Save.</p>
 
     <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 4px;padding-bottom:12px;border-bottom:2px solid #111;">
-      <span style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#111;">${subs.length} ${subs.length === 1 ? "Facility" : "Facilities"}</span>
+      <span style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#111;">${subs.length.toLocaleString()} ${subs.length === 1 ? "Facility" : "Facilities"}</span>
       ${subs.length ? `<span style="font-family:Arial,sans-serif;font-size:12px;"><a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=true)" style="color:#009EDB;cursor:pointer;text-decoration:underline;">Select all</a> &nbsp;·&nbsp; <a onclick="document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false)" style="color:#009EDB;cursor:pointer;text-decoration:underline;">Deselect all</a></span>` : ""}
     </div>
     <form method="POST" action="${escapeHTML(action)}">
@@ -193,6 +198,26 @@ export const handler = async (event) => {
             ]
           : []),
       ]);
+      if (!isPhone) {
+        try {
+          const remaining = await db.send(
+            new QueryCommand({
+              TableName: process.env.SUBSCRIPTIONS_TABLE,
+              IndexName: "email-index",
+              KeyConditionExpression: "email = :val",
+              ExpressionAttributeValues: { ":val": identifier },
+            }),
+          );
+          if ((remaining.Items || []).length === 0) {
+            const contactId = await getContactIdByEmail(identifier);
+            if (contactId) await removeFromList(contactId);
+          }
+        } catch (acErr) {
+          // eslint-disable-next-line no-console
+          console.error("AC sync error on single unsubscribe:", acErr);
+        }
+      }
+
       return {
         statusCode: 200,
         headers: { "Content-Type": "text/html" },
@@ -279,9 +304,20 @@ export const handler = async (event) => {
       );
 
       const removedCount = toDelete.length;
+
+      if (!isPhone && removedCount > 0 && selectedIds.length === 0) {
+        try {
+          const contactId = await getContactIdByEmail(identifier);
+          if (contactId) await removeFromList(contactId);
+        } catch (acErr) {
+          // eslint-disable-next-line no-console
+          console.error("AC sync error on unsubscribe:", acErr);
+        }
+      }
+
       const message =
         removedCount > 0
-          ? `Done — ${removedCount} subscription${removedCount !== 1 ? "s" : ""} removed.`
+          ? `Done — ${removedCount.toLocaleString()} subscription${removedCount !== 1 ? "s" : ""} removed.`
           : "Your preferences are saved.";
 
       return {

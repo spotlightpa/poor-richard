@@ -440,8 +440,13 @@
           >
             <span class="text-sm font-semibold text-g-7">
               Subscribing to
-              <span class="text-g-9" x-text="selectedCount"></span> of
-              <span x-text="cityFacilities.length"></span> facilities
+              <span
+                class="text-g-9"
+                x-text="selectedCount.toLocaleString()"
+              ></span>
+              of
+              <span x-text="cityFacilities.length.toLocaleString()"></span>
+              facilities
             </span>
             <svg
               class="h-4 w-4 fill-current text-g-6 transition-transform"
@@ -677,7 +682,7 @@
                         >Subscribed to
                         <span
                           class="font-semibold text-g-9"
-                          x-text="citySubscribeSummary.newCount"
+                          x-text="citySubscribeSummary.newCount.toLocaleString()"
                         ></span>
                         new facilities.</span
                       >
@@ -706,6 +711,14 @@
         >
           Done
         </button>
+        <template x-if="mode === 'city'">
+          <button
+            @click="step = 'form'; userCity = ''; cityFacilities = []; selectedFacilities = {}; cityNotFound = true; citySearchQuery = '';"
+            class="mt-3 w-full rounded-lg border-2 border-g-4 bg-white py-3 font-semibold text-g-9 transition-colors hover:bg-g-2"
+          >
+            Add another city
+          </button>
+        </template>
 
         <p class="mt-4 text-xs text-g-6">
           <span x-show="email && phone"

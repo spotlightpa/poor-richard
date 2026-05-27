@@ -1,4 +1,5 @@
 import { createHmac } from "crypto";
+import { upsertContact, addToList } from "./ac-helpers.js";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
@@ -48,23 +49,24 @@ export const handler = async (event) => {
       city,
       skipSms,
       summarySms,
-      newCount,
+      newCount: newCountRaw,
       newFacilityName,
       skipEmail,
     } = JSON.parse(event.body);
+    const newCount = Number(newCountRaw);
 
     if (summarySms) {
       const facilityLabel =
         newCount === 1 && newFacilityName
           ? newFacilityName
-          : `${newCount} facilities`;
+          : `${newCount.toLocaleString()} facilities`;
       if (email) {
         try {
           const token = generateToken(email);
           const manageAllUrl = `${process.env.URL || "https://www.spotlightpa.org"}/manage-alerts?token=${encodeURIComponent(token)}`;
           await ses.send(
             new SendEmailCommand({
-              Source: process.env.INSPECTIONS_FROM_EMAIL,
+              Source: `Spotlight PA Alerts <${process.env.INSPECTIONS_FROM_EMAIL}>`,
               Destination: { ToAddresses: [email] },
               Message: {
                 Subject: {
@@ -76,7 +78,8 @@ export const handler = async (event) => {
                   },
                   Html: {
                     Data: `
-                <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+               <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+                  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Now tracking ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`} in ${city}. We'll email you whenever a new inspection report is filed.</div>
                   <div style="max-width:600px;margin:0 auto;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e5e7eb;border-bottom:none;border-radius:6px 6px 0 0;">
                       <tr>
@@ -145,7 +148,7 @@ export const handler = async (event) => {
       await sns.send(
         new PublishCommand({
           PhoneNumber: e164,
-          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount} facilities`} in ${city}.\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
+          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`} in ${city}.\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
           MessageAttributes: {
             "AWS.SNS.SMS.SMSType": {
               DataType: "String",
@@ -221,7 +224,7 @@ export const handler = async (event) => {
       const manageAllUrl = `${baseUrl}/manage-alerts?token=${encodeURIComponent(token)}`;
       await ses.send(
         new SendEmailCommand({
-          Source: process.env.INSPECTIONS_FROM_EMAIL,
+          Source: `Spotlight PA Alerts <${process.env.INSPECTIONS_FROM_EMAIL}>`,
           Destination: { ToAddresses: [email] },
           Message: {
             Subject: {
@@ -234,6 +237,7 @@ export const handler = async (event) => {
               Html: {
                 Data: `
                 <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
+                  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Alert set up for ${facilityName.split(" — ")[0]}. We'll notify you whenever a new inspection report is filed.</div>
                   <div style="max-width:600px;margin:0 auto;">
 
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e5e7eb;border-bottom:none;border-radius:6px 6px 0 0;">
@@ -366,6 +370,16 @@ export const handler = async (event) => {
       } catch (smsErr) {
         // eslint-disable-next-line no-console
         console.error("SMS send error:", smsErr);
+      }
+    }
+
+    if (email) {
+      try {
+        const contactId = await upsertContact(email, phone || null);
+        if (contactId) await addToList(contactId);
+      } catch (acErr) {
+        // eslint-disable-next-line no-console
+        console.error("AC sync error on subscribe:", acErr);
       }
     }
 
