@@ -3,14 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-05-27-SPLWECHTETHICS0526.md"
+    "content/statecollege/2026-05-28-SPLPSU1A0526.md"
   ],
   "subfeatures": [
-    "content/news/2026-05-12-NTWECHTQUITS0526.md"
+    "content/statecollege/2026-04-08-SPLPSUSUPREME0426.md",
+    "content/statecollege/2025-10-21-SPLPSUCOURT102.md",
+    "content/statecollege/2025-06-09-SPLPSUSETTLE0625.md"
   ],
   "topSlots": [
+    "content/news/2026-05-27-SPLWECHTETHICS0526.md",
     "content/news/2026-05-26-SPLGARRITYMILITARY0526.md",
-    "content/berks/2026-05-22-SPLZAVALAFOLO0526.md",
-    "content/news/2026-05-21-SPLBBAPPROVAL0526.md"
+    "content/berks/2026-05-22-SPLZAVALAFOLO0526.md"
   ]
 }
