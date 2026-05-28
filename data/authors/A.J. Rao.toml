@@ -1,0 +1,19 @@
+name = "A.J. Rao"
+firstName = "A.J."
+lastName = "Rao"
+title = "Penn State Investigative Reporter"
+email = "arao@spotlightpa.org"
+content = """
+Penn State University drives decision-making that impacts tens of thousands of students, faculty, and taxpayers. Rao looks past official narratives to ensure the university is transparent and answerable to the public.
+
+A Warren County native, Rao joined Spotlight PA after serving as the county government reporter for the Erie Times-News. He previously covered local government and hurricane recovery efforts for the Virgin Islands Daily News and began his journalism career as a cops and courts reporter in Jamestown, New York.
+
+Before picking up a reporter’s notebook, Rao spent four years serving as an officer in the U.S. Army. He is a graduate of the University of Pittsburgh and studied literature at Bangor University in the United Kingdom.
+"""
+active = true
+headshot = "2026/05/01n1-gt54-h8vf-7trc.jpeg"
+role = "reporter"
+beat = "Penn State University"
+focusHed = "Penn State University"
+tel = "(814) 320-1333"
+signal = "(814) 320-1333"
