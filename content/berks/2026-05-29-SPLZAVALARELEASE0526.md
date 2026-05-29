@@ -37,7 +37,7 @@ Zavala applied after helping Berks County law enforcement investigate the murder
 
 Haines on Friday granted Zavala’s request for a preliminary injunction, noting that he was able to show a “likelihood of success” on the merits of claims and that he will “continue to suffer irreparable harm” if he is not released. Haines also wrote that “public interest favors” relief for Zavala because Congress intended U visa protections to encourage victims and witnesses of violent crimes to come forward and assist law enforcement.
 
-“This Court finds the public interest in this effort is weightier than the deportation of an illegal immigrant who \[has\] committed no violent crime but has assisted in the investigation of violent ones,” Haines wrote.
+“This Court finds the public interest in this effort is weightier than the deportation of an illegal immigrant who \[has\] committed no violent crime but has assisted in the investigation of one,” Haines wrote.
 
 Earlier this month, U.S. Citizenship and Immigration Services found Zavala’s U visa petition to be “bona fide,” meaning it meets core eligibility requirements and has enough evidence to merit temporary protection while the agency continues to review his case. That makes him eligible for temporary deportation protection and a work authorization.
 
