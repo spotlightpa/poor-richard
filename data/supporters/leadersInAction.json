@@ -1247,6 +1247,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Lawrence Smith",
+      "sort": "Smith",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Tom and Sara Songer",
       "sort": "Songer",
       "url": "",
@@ -1362,8 +1369,8 @@
       "display": "Greg and Angela Vennemann",
       "sort": "Vennemann",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Elizabeth and Frank Verterano",
