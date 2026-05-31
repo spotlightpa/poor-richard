@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "ad-footer-desktop-active": true,
+  "ad-footer-desktop-active": false,
   "ad-footer-desktop-height": 175,
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "ad-footer-mobile-active": true,
+  "ad-footer-mobile-active": false,
   "ad-footer-mobile-height": 250,
   "ad-footer-mobile-width": 300,
   "ad-header-desktop": [
@@ -66,7 +66,7 @@
       ]
     }
   ],
-  "ad-hp-breaker-desktop-active": true,
+  "ad-hp-breaker-desktop-active": false,
   "ad-hp-breaker-desktop-height": 175,
   "ad-hp-breaker-desktop-width": 1350,
   "ad-hp-breaker-mobile": [
@@ -80,7 +80,7 @@
       ]
     }
   ],
-  "ad-hp-breaker-mobile-active": true,
+  "ad-hp-breaker-mobile-active": false,
   "ad-hp-breaker-mobile-height": 250,
   "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
@@ -90,7 +90,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0v9/newsmatch-2025-squares-32-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
@@ -106,7 +106,7 @@
       ]
     }
   ],
-  "ad-hp-headwater-desktop-active": true,
+  "ad-hp-headwater-desktop-active": false,
   "ad-hp-headwater-desktop-height": 175,
   "ad-hp-headwater-desktop-width": 1350,
   "ad-hp-headwater-mobile": [
@@ -120,7 +120,7 @@
       ]
     }
   ],
-  "ad-hp-headwater-mobile-active": true,
+  "ad-hp-headwater-mobile-active": false,
   "ad-hp-headwater-mobile-height": 250,
   "ad-hp-headwater-mobile-width": 300,
   "ad-hp-river-desktop": [],
@@ -133,24 +133,24 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
+      "description": "Support Spotlight PA's independent, unbiased reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0v9/newsmatch-2025-squares-32-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
+      "description": "Support Spotlight PA's independent, unbiased reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0v9/newsmatch-2025-squares-32-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
@@ -179,13 +179,13 @@
   "support-bg-color": "#f7d5cf",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "GIVE \u0026 GET 2X »",
-  "support-hed": "Please help before midnight TONIGHT...",
+  "support-cta": "DONATE NOW »",
+  "support-hed": "Before you go, a quick request...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. But that's impossible if \"We the People\" don't have information about what decisions they're making and how they spend our money.\n\nThat's why Spotlight PA exists, but we can't keep digging without your support — \u003cstrong\u003eand you have until midnight tonight to give and get it DOUBLED by a generous donor.\u003c/strong\u003e\n\nWe're independent, we live here, and we don't answer to shareholders or a big corporation. We're unbiased in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, which means we prioritize in-depth investigative and public-service reporting that puts you first.\n\nUncertain times call for decisive action. More than 11,000 readers just like you — friends and neighbors in your community who still give a damn about truth, accountability, and transparency — are standing behind the free and fearless reporting Spotlight PA provides. \u003cstrong\u003eToday, your gift of any amount will be DOUBLED by a generous donor as part of our Spring Member Drive.\u003c/strong\u003e\n\nBut hurry — this special offer expires at 11:59p TONIGHT!\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS:\u003c/strong\u003e If you prefer to mail a check, you can send it to:\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. But that's impossible if \"We the People\" don't have information about what decisions they're making and how they spend our money.\n\nThat's why Spotlight PA exists, but we can't keep digging without your support.\n\nWe're independent, we live here, and we don't answer to shareholders or a big corporation. We're unbiased in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, which means we prioritize in-depth investigative and public-service reporting that puts you first.\n\nUncertain times call for decisive action. More than 11,000 readers just like you — friends and neighbors in your community who still give a damn about truth, accountability, and transparency — are standing behind the free and fearless reporting Spotlight PA provides. \u003cstrong\u003eJoin them now by making a gift that ensures this vital work can continue.\u003c/strong\u003e\n\nThank you!\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS:\u003c/strong\u003e If you prefer to mail a check, you can send it to:\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
-  "takeover-active": true,
+  "takeover-active": false,
   "takeover-dek": "We're just $13,000 from our Spring Member Drive goal. Time is running out. Give now \u0026 get it DOUBLED before time expires »",
   "takeover-hed": "MIDNIGHT DEADLINE",
   "takeover-image": "2024/06/01k7-3t3f-nksr-ztag.jpeg",
