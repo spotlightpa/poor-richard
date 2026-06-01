@@ -1,7 +1,7 @@
 <!doctype html>
 <html
   class="{{ block `html-class` . }}{{ end }}"
-  lang="{{ .Param `language-code` | default site.LanguageCode }}"
+  lang="{{ .Param `language-code` | default site.Language.Locale }}"
 >
   <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="utf-8" />

@@ -1,5 +1,5 @@
 {{ $stories := slice }}
-{{ $src := index site.Data .src }}
+{{ $src := index hugo.Data .src }}
 {{ range index $src .name }}
   {{ with site.GetPage (strings.TrimPrefix "content/" .) }}
     {{ $stories = $stories | append . }}

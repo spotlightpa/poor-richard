@@ -13,7 +13,7 @@
   </div>
 
   <div class="carousel-content relative flex h-[450px] w-full flex-row">
-    {{ range $index, $item := site.Data.carousel.items }}
+    {{ range $index, $item := hugo.Data.carousel.items }}
       {{ $w := int $item.width }}
       {{ $h := int $item.height }}
       <div
@@ -105,7 +105,7 @@
     class="bottom-bar-boxes-container scrollbar-hide absolute top-1/2 right-[35px] left-[35px] z-2 h-[130px] -translate-y-1/2 overflow-x-auto overflow-y-hidden"
   >
     <div class="impact-boxes-wrapper inline-flex gap-[20px]">
-      {{ range $index, $item := site.Data.carousel.items }}
+      {{ range $index, $item := hugo.Data.carousel.items }}
         <div
           class="impact-box flex h-[130px] w-[400px] flex-none cursor-pointer"
           data-index="{{ $index }}"
