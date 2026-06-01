@@ -80,7 +80,7 @@
   {{ $admin := slice }}
   {{ $special := slice }}
 
-  {{ range sort .Site.Data.authors "lastName" }}
+  {{ range sort hugo.Data.authors "lastName" }}
     {{ $author := partial "helper/get-author" .name }}
     {{ if $author.active }}
       {{ if eq $author.role "reporter" }}

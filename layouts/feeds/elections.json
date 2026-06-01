@@ -15,7 +15,7 @@
     "authors" (.Param "authors")
     "content_html" .Content
     "category" $params.kicker
-    "language" (.Param "language-code" | default site.LanguageCode)
+    "language" (.Param "language-code" | default site.Language.Locale)
   -}}
   {{- $imgName := .Param "app-image" -}}
   {{- $gravity := .Param "app-image-gravity" -}}

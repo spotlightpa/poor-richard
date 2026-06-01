@@ -31,7 +31,7 @@
     "authors" (.Param "authors")
     "content_html" .Content
     "category" $params.kicker
-    "language" (.Param "language-code" | default site.LanguageCode)
+    "language" (.Param "language-code" | default site.Language.Locale)
     "blurb" $params.blurb
     "topics" $topics
   -}}

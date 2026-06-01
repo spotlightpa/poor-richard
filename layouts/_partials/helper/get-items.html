@@ -1,5 +1,5 @@
 {{ $items := slice }}
-{{ $src := index (index site.Data .) "items" }}
+{{ $src := index (index hugo.Data .) "items" }}
 {{ range $src }}
   {{ $item := dict
     "label" .label

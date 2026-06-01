@@ -1,7 +1,7 @@
 {{ with .block }}
   {{ $id := "id" }}
   {{ $category := "category" }}
-  {{ $data := site.Data.partners.list }}
+  {{ $data := hugo.Data.partners.list }}
 
   {{ $partnerCounties := slice }}
   {{ $hasPartner := dict }}
@@ -40,7 +40,7 @@
           aria-label="Map of Pennsylvania"
           viewBox="0 0 902 521"
         >
-          {{ range site.Data.counties }}
+          {{ range hugo.Data.counties }}
             <use
               xlink:href="#{{ .name }}"
               class="{{ if index $hasPartner .name }}

@@ -7,7 +7,7 @@
 {{- end }}
 
 ## Redirects
-{{ range .Site.Data.redirects.redirects -}}
+{{ range hugo.Data.redirects.redirects -}}
     {{- $code := .code | default 301 -}}
     {{- printf "%-35s   %s  %d!\n" .from .to $code -}}
 {{- end }}

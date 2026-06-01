@@ -1,4 +1,4 @@
-{{ with site.Data.awards }}
+{{ with hugo.Data.awards }}
   <span class="hidden text-black"></span>
 
   <div class="h-auto w-full bg-beige pb-16">
@@ -36,7 +36,7 @@
           </ul>
         </div>
 
-        {{ $awards := site.Data.awards }}
+        {{ $awards := hugo.Data.awards }}
         <script>
           document.addEventListener("DOMContentLoaded", () => {
             const yearList = document.querySelector(".year-list");

@@ -17,7 +17,7 @@
     <link>{{ (.page.OutputFormats.Get "html").Permalink }}</link>
     <description>{{ .page.Description }}</description>
     <generator>Hugo {{ hugo.Version }} -- gohugo.io</generator>
-    {{ with site.LanguageCode }}<language>{{.}}</language>{{end}}
+    {{ with site.Language.Locale }}<language>{{.}}</language>{{end}}
     <managingEditor>newsroom@spotlightpa.org (Spotlight PA)</managingEditor>
     <webMaster>webmaster@spotlightpa.org (Spotlight PA Webmaster)</webMaster>
     <copyright>{{ now.Format "2006"}}</copyright>
