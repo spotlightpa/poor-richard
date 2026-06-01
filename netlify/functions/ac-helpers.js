@@ -54,8 +54,6 @@ export async function removeFromList(contactId) {
 }
 
 export async function getContactIdByEmail(email) {
-  const lookup = await acFetch(
-    `/contacts?email=${encodeURIComponent(email)}`,
-  );
+  const lookup = await acFetch(`/contacts?email=${encodeURIComponent(email)}`);
   return lookup.contacts?.[0]?.id || null;
 }
