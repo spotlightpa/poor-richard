@@ -1,4 +1,7 @@
-import { normalizeString } from "../utils/inspections.js";
+import {
+  normalizeString,
+  generateInspectionCardId,
+} from "../utils/inspections.js";
 
 export default function inspectionsModal() {
   return {
@@ -160,9 +163,17 @@ export default function inspectionsModal() {
       const grouped = {};
       allData.forEach((row) => {
         if (normalizeString(row.city || "") !== nc) return;
-        const id = row.id || `${row.facility}—${row.address}`;
+        const id = generateInspectionCardId(row.facility || "");
+        if (!id) return;
+        const facilityName = row.address
+          ? `${row.facility} — ${row.address}`
+          : row.facility || "Unknown facility";
         if (!grouped[id])
-          grouped[id] = { id, name: row.facility || "Unknown facility" };
+          grouped[id] = {
+            id,
+            name: row.facility || "Unknown facility",
+            facilityName,
+          };
       });
       this.cityFacilities = Object.values(grouped).sort((a, b) =>
         a.name.localeCompare(b.name),
@@ -234,6 +245,12 @@ export default function inspectionsModal() {
 
           await Promise.all(
             ids.map(async (id) => {
+              const facilityMatch = this.cityFacilities.find(
+                (f) => f.id === id,
+              );
+              const facilityName = facilityMatch
+                ? facilityMatch.facilityName
+                : id;
               try {
                 const r = await fetch("/.netlify/functions/subscribe", {
                   method: "POST",
@@ -241,6 +258,7 @@ export default function inspectionsModal() {
                   body: JSON.stringify({
                     ...payload,
                     facilityId: id,
+                    facilityName,
                     skipSms: true,
                     skipEmail: true,
                   }),
