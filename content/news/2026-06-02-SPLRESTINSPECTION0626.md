@@ -18,7 +18,7 @@ suppress-ads = false
 suppress-date = false
 title = "SEARCH: Explore restaurant inspections in your area with Spotlight PA's new tool"
 title-tag = "Search PA restaurant inspections with Spotlight PA’s new tool"
-topics = ["Berks Inspections,", "Centre Inspections"]
+topics = ["Centre Inspections", "Berks Inspections"]
 +++
 
 Restaurant inspectors regularly visit eateries across Pennsylvania to make sure food is handled safely so that people can dine out without getting sick.
