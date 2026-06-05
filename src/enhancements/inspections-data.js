@@ -367,13 +367,17 @@ export default function inspectionsData() {
         new URLSearchParams(window.location.search).get("facility") || "";
       const target = hash || qParam;
       if (target) {
-        const foundPage = this.findPageForHash(target);
-        if (foundPage > 0) this.store.currentPage = foundPage;
-        const onRendered = () => {
-          window.removeEventListener("inspections-page-rendered", onRendered);
-          this.handleHashOnMobile(target);
-        };
-        window.addEventListener("inspections-page-rendered", onRendered);
+        queueMicrotask(() => {
+          const foundPage = this.findPageForHash(target);
+          if (foundPage > 0) this.store.currentPage = foundPage;
+          const onRendered = () => {
+            window.removeEventListener("inspections-page-rendered", onRendered);
+            this.handleHashOnMobile(target);
+          };
+          window.addEventListener("inspections-page-rendered", onRendered);
+          this.resortAndRender();
+        });
+        return;
       }
 
       this.resortAndRender();
@@ -681,8 +685,7 @@ export default function inspectionsData() {
         '[data-card="inspection"]',
       );
       for (const card of cards) {
-        const title = (card.querySelector("h2")?.textContent || "").trim();
-        if (generateInspectionCardId(title) === hash) {
+        if (this.generateCardId(card) === hash) {
           card.querySelector("[data-read-more]")?.click();
           setTimeout(
             () => window.scrollTo({ top: 0, behavior: "smooth" }),
