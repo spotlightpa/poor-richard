@@ -1,6 +1,7 @@
 import {
   normalizeString,
   generateInspectionCardId,
+  generateFacilitySlug,
 } from "../utils/inspections.js";
 
 export default function inspectionsModal() {
@@ -8,6 +9,7 @@ export default function inspectionsModal() {
     open: false,
     mode: "facility",
     facilityName: "",
+    facilityAddress: "",
     facilityId: "",
     step: "form",
     email: "",
@@ -44,6 +46,7 @@ export default function inspectionsModal() {
         this.open = true;
         this.mode = "facility";
         this.facilityName = e.detail.facilityName;
+        this.facilityAddress = e.detail.facilityAddress || "";
         this.facilityId = e.detail.facilityId;
         this.step = "form";
         this.email = localStorage.getItem("alerts-remembered-email") || "";
@@ -163,16 +166,14 @@ export default function inspectionsModal() {
       const grouped = {};
       allData.forEach((row) => {
         if (normalizeString(row.city || "") !== nc) return;
-        const id = generateInspectionCardId(row.facility || "");
+        const id = generateFacilitySlug(row.facility || "", row.address || "");
         if (!id) return;
-        const facilityName = row.address
-          ? `${row.facility} — ${row.address}`
-          : row.facility || "Unknown facility";
         if (!grouped[id])
           grouped[id] = {
             id,
             name: row.facility || "Unknown facility",
-            facilityName,
+            facilityName: row.facility || "Unknown facility",
+            facilityAddress: row.address || "",
           };
       });
       this.cityFacilities = Object.values(grouped).sort((a, b) =>
@@ -231,6 +232,7 @@ export default function inspectionsModal() {
                 method: this.method,
                 facilityId: this.facilityId,
                 facilityName: this.facilityName,
+                facilityAddress: this.facilityAddress,
               };
 
         if (this.mode === "city") {
@@ -259,6 +261,7 @@ export default function inspectionsModal() {
                     ...payload,
                     facilityId: id,
                     facilityName,
+                    facilityAddress: facilityMatch?.facilityAddress || "",
                     skipSms: true,
                     skipEmail: true,
                   }),

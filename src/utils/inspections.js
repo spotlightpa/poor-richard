@@ -120,6 +120,11 @@ export function generateInspectionCardId(title) {
     .replace(/^-+|-+$/g, "");
 }
 
+export function generateFacilitySlug(facility, address) {
+  const combined = [facility, address].filter(Boolean).join(" ");
+  return generateInspectionCardId(combined);
+}
+
 export function cityOptionsFromList(list = []) {
   return list
     .map((item) => {
