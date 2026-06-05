@@ -488,24 +488,14 @@ export default function inspectionsData() {
       this.syncMarkers();
 
       if (!this.initialRender) {
-        if (window.innerWidth < 768) {
-          const mounts = document.querySelectorAll(".inspections-mount");
-          const scrollTarget = Array.from(mounts).find(
-            (m) => m.offsetParent !== null,
-          );
-          if (scrollTarget) {
-            scrollTarget.style.scrollMarginTop = "57px";
-            scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        } else {
-          const scrollTarget = document.querySelector(".inspections-mount");
-          if (scrollTarget) {
-            const top =
-              scrollTarget.getBoundingClientRect().top +
-              window.pageYOffset -
-              73;
-            window.scrollTo({ top, behavior: "smooth" });
-          }
+        const mounts = document.querySelectorAll(".inspections-mount");
+        const scrollTarget =
+          Array.from(mounts).find((m) => m.offsetParent !== null) ||
+          document.querySelector(".inspections-mount");
+        if (scrollTarget) {
+          scrollTarget.style.scrollMarginTop =
+            window.innerWidth < 768 ? "57px" : "73px";
+          scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }
       this.initialRender = false;
