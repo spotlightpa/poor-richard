@@ -367,7 +367,7 @@ export default function inspectionsData() {
         new URLSearchParams(window.location.search).get("facility") || "";
       const target = hash || qParam;
       if (target) {
-        setTimeout(() => {
+        queueMicrotask(() => {
           const foundPage = this.findPageForHash(target);
           if (foundPage > 0) this.store.currentPage = foundPage;
           const onRendered = () => {
@@ -376,7 +376,7 @@ export default function inspectionsData() {
           };
           window.addEventListener("inspections-page-rendered", onRendered);
           this.resortAndRender();
-        }, 0);
+        });
         return;
       }
 
