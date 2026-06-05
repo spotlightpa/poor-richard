@@ -670,7 +670,7 @@ export default function inspectionsData() {
         const inspections = store.groupedFacilities[store.filteredData[i]];
         if (inspections?.[0]) {
           const cardId = generateInspectionCardId(
-            (inspections[0].facility || "").trim(),
+            (inspections[0].id || "").trim(),
           );
           if (cardId === hash) return Math.floor(i / ITEMS_PER_PAGE) + 1;
         }
