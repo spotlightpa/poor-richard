@@ -685,8 +685,7 @@ export default function inspectionsData() {
         '[data-card="inspection"]',
       );
       for (const card of cards) {
-        const title = (card.querySelector("h2")?.textContent || "").trim();
-        if (generateInspectionCardId(title) === hash) {
+        if (this.generateCardId(card) === hash) {
           card.querySelector("[data-read-more]")?.click();
           setTimeout(
             () => window.scrollTo({ top: 0, behavior: "smooth" }),
