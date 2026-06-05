@@ -40,6 +40,7 @@ function generateToken(email) {
 
 function buildEmailHtml({
   facilityName,
+  facilityAddress,
   facilityId,
   inspectionDate,
   violations,
@@ -91,8 +92,8 @@ function buildEmailHtml({
       <p style="margin:0 0 28px;font-size:18px;line-height:1.6;color:#111;">A new inspection report has been filed for a facility you're tracking.</p>
       <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:6px;padding:20px 24px;margin:0 0 28px;">
         <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#9ca3af;">${inspectionDate}</p>
-        <p style="margin:0 0 4px;font-size:20px;font-weight:700;color:#111;font-family:Georgia,serif;">${facilityName.split(" — ")[0]}</p>
-        <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:13px;color:#6b7280;">${facilityName.split(" — ")[1] || ""}</p>
+        <p style="margin:0 0 4px;font-size:20px;font-weight:700;color:#111;font-family:Georgia,serif;">${facilityName}</p>
+        <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:13px;color:#6b7280;">${facilityAddress || ""}</p>
         
         ${violationCount ? `<span style="display:inline-block;margin-top:4px;background-color:#fef2f2;color:#b91c1c;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #fecaca;">${violationCount} violation${violationCount !== 1 ? "s" : ""}</span>` : `<span style="display:inline-block;margin-top:4px;background-color:#f0fdf4;color:#15803d;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:4px 12px;border-radius:9999px;border:1px solid #bbf7d0;">No violations</span>`}
       </div>
@@ -151,6 +152,7 @@ async function notifySubscribers({
                 Html: {
                   Data: buildEmailHtml({
                     facilityName,
+                    facilityAddress: sub.facilityAddress || "",
                     facilityId,
                     inspectionDate,
                     violations,

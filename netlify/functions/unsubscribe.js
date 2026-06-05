@@ -101,7 +101,7 @@ function managePage(token, subs) {
       <label style="display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid #e5e7eb;cursor:pointer;">
         <input type="checkbox" name="facilityIds" value="${escapeHTML(sub.facilityId)}" checked
           style="width:16px;height:16px;flex-shrink:0;cursor:pointer;" />
-        <span style="font-size:15px;color:#111;line-height:1.4;">${escapeHTML((sub.facilityName || sub.facilityId).split(" — ")[0])}<br/><span style="font-size:13px;color:#6b7280;">${escapeHTML((sub.facilityName || sub.facilityId).split(" — ")[1] || "")}</span></span>
+        <span style="font-size:15px;color:#111;line-height:1.4;">${escapeHTML(sub.facilityName || sub.facilityId)}<br/><span style="font-size:13px;color:#6b7280;">${escapeHTML(sub.facilityAddress || "")}</span></span>
       </label>`,
         )
         .join("")

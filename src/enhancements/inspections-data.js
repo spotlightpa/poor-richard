@@ -488,11 +488,14 @@ export default function inspectionsData() {
       this.syncMarkers();
 
       if (!this.initialRender) {
-        const scrollTarget = document.querySelector(".inspections-mount");
+        const mounts = document.querySelectorAll(".inspections-mount");
+        const scrollTarget =
+          Array.from(mounts).find((m) => m.offsetParent !== null) ||
+          document.querySelector(".inspections-mount");
         if (scrollTarget) {
-          const top =
-            scrollTarget.getBoundingClientRect().top + window.pageYOffset - 73;
-          window.scrollTo({ top, behavior: "smooth" });
+          scrollTarget.style.scrollMarginTop =
+            window.innerWidth < 768 ? "57px" : "73px";
+          scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }
       this.initialRender = false;
@@ -657,7 +660,7 @@ export default function inspectionsData() {
         const inspections = store.groupedFacilities[store.filteredData[i]];
         if (inspections?.[0]) {
           const cardId = generateInspectionCardId(
-            (inspections[0].facility || "").trim(),
+            (inspections[0].id || "").trim(),
           );
           if (cardId === hash) return Math.floor(i / ITEMS_PER_PAGE) + 1;
         }
