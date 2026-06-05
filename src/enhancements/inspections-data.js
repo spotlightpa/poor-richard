@@ -367,13 +367,17 @@ export default function inspectionsData() {
         new URLSearchParams(window.location.search).get("facility") || "";
       const target = hash || qParam;
       if (target) {
-        const foundPage = this.findPageForHash(target);
-        if (foundPage > 0) this.store.currentPage = foundPage;
-        const onRendered = () => {
-          window.removeEventListener("inspections-page-rendered", onRendered);
-          this.handleHashOnMobile(target);
-        };
-        window.addEventListener("inspections-page-rendered", onRendered);
+        setTimeout(() => {
+          const foundPage = this.findPageForHash(target);
+          if (foundPage > 0) this.store.currentPage = foundPage;
+          const onRendered = () => {
+            window.removeEventListener("inspections-page-rendered", onRendered);
+            this.handleHashOnMobile(target);
+          };
+          window.addEventListener("inspections-page-rendered", onRendered);
+          this.resortAndRender();
+        }, 0);
+        return;
       }
 
       this.resortAndRender();
