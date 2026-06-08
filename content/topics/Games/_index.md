@@ -1,10 +1,11 @@
 +++
-description = "Word Flower is a challenging puzzle in which players form words using a central letter and surrounding “petals.”"
-image = "2026/05/01n0-6zvp-7fvr-vvmw.png"
+image = "2026/06/01n2-ej66-k9f8-bvaa.png"
 kicker = "Games"
-linktitle = "Word Flower is a challenging puzzle in which players form words using a central letter and surrounding “petals.”"
+linktitle = "Play challenging games and puzzles from Spotlight PA"
+modal-exclude = false
 published = 2026-05-11T12:00:00-04:00
 slug = "games"
+suppress-ads = false
 title = "Games"
 +++
 
