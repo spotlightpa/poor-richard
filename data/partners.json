@@ -1353,20 +1353,11 @@
     {
       "City": "York",
       "County": "York",
-      "Name": "York Daily Record",
+      "Name": "York Daily Record and York Dispatch",
       "lat": "",
       "logo-url": "https://files.data.spotlightpa.org/uploads/01gd/mb21/ydr.png",
       "long": "",
       "url": "https://www.ydr.com"
-    },
-    {
-      "City": "York",
-      "County": "York",
-      "Name": "York Dispatch",
-      "lat": "",
-      "logo-url": "https://files.data.spotlightpa.org/uploads/01g8/nx72/york-dispatch.jpeg",
-      "long": "",
-      "url": "https://www.yorkdispatch.com"
     },
     {
       "City": "West Chester",
@@ -1376,6 +1367,33 @@
       "logo-url": "",
       "long": "",
       "url": "https://hellowestchesterpa.com"
+    },
+    {
+      "City": "State College",
+      "County": "Centre",
+      "Name": "Centre County Gazette",
+      "lat": "",
+      "logo-url": "",
+      "long": "",
+      "url": "https://www.statecollege.com/centre-county-gazette/"
+    },
+    {
+      "City": "",
+      "County": "Delaware",
+      "Name": "Spirit News",
+      "lat": "",
+      "logo-url": "",
+      "long": "",
+      "url": "https://myspiritnews.com/"
+    },
+    {
+      "City": "Doylestown",
+      "County": "Bucks",
+      "Name": "DelVal Full360 Student Media",
+      "lat": "",
+      "logo-url": "",
+      "long": "",
+      "url": "https://full360delval.blog"
     }
   ]
 }
