@@ -4,6 +4,7 @@ description = "Test your attention to detail by finding hidden words in various 
 draft = false
 feed-exclude = false
 image = "2026/05/01n0-731t-mp03-x733.png"
+image-gravity = "we"
 image-size = "hidden"
 internal-id = "SPLWORDSEARCH0526"
 kicker = "Games"
