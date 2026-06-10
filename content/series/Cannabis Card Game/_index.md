@@ -8,7 +8,6 @@ image-credit = "Leise Hook / For Spotlight PA"
 image-size = "hidden"
 kicker = "Cannabis Card Game"
 title = "Cannabis Card Game"
-dek = "An investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
 linktitle = "An investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
 description = "An investigation into Pennsylvania’s medical marijuana card program, including questionable health claims, weak oversight, and unfair rules."
 aliases = [

@@ -6,7 +6,6 @@ image-description = "Photo illustration of the PA Capitol building, checks and b
 image-gravity = "we"
 kicker = "Access Harrisburg"
 title = "Access Harrisburg"
-dek = "Powerful interests poured $18M into top Pa. lawmakers’ campaign coffers"
 linktitle = "Powerful interests poured $18M into top Pa. lawmakers’ campaign coffers"
 description = "Powerful interests poured $18M into top Pa. lawmakers’ campaign coffers"
 +++
