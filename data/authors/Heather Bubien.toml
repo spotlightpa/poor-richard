@@ -1,0 +1,11 @@
+name = "Heather Bubien"
+firstName = "Heather"
+lastName = "Bubien"
+title = "Director of Donor Relations, Western Pa."
+email = "hbubien@spotlightpa.org"
+headshot = ""
+content = """
+"""
+tel = ""
+active = true
+role = "admin"
