@@ -91,6 +91,9 @@
           data-ga-category="story-1"
         >
           {{ $eyebrow := $params.published }}
+          {{ if $params.evergreen }}
+            {{ $eyebrow = $params.kicker }}
+          {{ end }}
           {{ $rubricLink := $params.link }}
           {{ $thumbClass := $params.thumbClass }}
           {{ partial "tw/thumb-item.html" (dict
@@ -131,6 +134,9 @@
           data-ga-category="story-{{ add 2 $i }}"
         >
           {{ $eyebrow := $params.published }}
+          {{ if $params.evergreen }}
+            {{ $eyebrow = $params.kicker }}
+          {{ end }}
           {{ $rubricLink := $params.link }}
           {{ $thumbClass := $params.thumbClass }}
           {{ partial "tw/thumb-item.html" (dict
