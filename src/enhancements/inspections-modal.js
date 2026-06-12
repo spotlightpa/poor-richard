@@ -1,8 +1,4 @@
-import {
-  normalizeString,
-  generateInspectionCardId,
-  generateFacilitySlug,
-} from "../utils/inspections.js";
+import { normalizeString, generateFacilitySlug } from "../utils/inspections.js";
 
 export default function inspectionsModal() {
   return {
