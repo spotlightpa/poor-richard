@@ -8,6 +8,7 @@ published = 2026-05-11T12:00:00-04:00
 slug = "games"
 suppress-ads = false
 title = "Games"
+hide-description = false
+description-hed = "Try Our Games"
+description-dek = "Play challenging games and puzzles from Spotlight PA"
 +++
-
-
