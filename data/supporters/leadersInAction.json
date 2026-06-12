@@ -799,6 +799,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Beth Litvin",
+      "sort": "Litvan",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Tristan Loper",
       "sort": "Loper",
       "url": "",
@@ -1047,8 +1054,8 @@
       "display": "Rishin and Amita Patel",
       "sort": "Patel",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Kathleen Pavelko",
