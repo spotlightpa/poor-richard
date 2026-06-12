@@ -1,13 +1,18 @@
 +++
-description = "This November, Pennsylvania voters will choose between candidates for governor who have radically different positions on abortion."
-image = "2024/01/01jv-5ghd-22rh-1m7b.jpeg"
+description = "Learn more about the differences between Pennsylvania's candidates for governor: Democrat Josh Shapiro and Republican Stacy Garrity."
+hide-description = false
+image = "cas/gd13-2bkv-24p5-62g4.png"
 image-credit = "Commonwealth Media Services"
-image-description = "Public officials and members of Planned Parenthood at a 2022 press conference about the overturning of Roe v. Wade."
-kicker = "One Vote, Two PAs 2026"
-linktitle = "Democrat Josh Shapiro and Republican Stacy Garrity have radically different positions on abortion access."
+image-description = "Stacy Garrity (left) and Josh Shapiro"
+image-gravity = "ce"
+kicker = "One Vote, Two PAs"
+linktitle = "This series clearly articulates through policy proposals and issue-based reporting the vastly different visions the candidates for governor have for the future of Pennsylvania."
+modal-exclude = false
 published = 2026-06-12T04:00:00-04:00
 slug = "one-vote-two-pas-2026"
-title = "One Vote, Two PAs 2026"
+suppress-ads = false
+title = "One Vote, Two Pennsylvanias 2026"
+title-tag = "How are Josh Shapiro and Stacy Garrity different?"
 +++
 
 
