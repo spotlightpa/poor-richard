@@ -6,16 +6,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-06-15-SPLHOUSINGBILLS0626.md"
+    "content/news/2026-06-15-SPLSKILLRULING0626.md"
   ],
   "subfeatures": [
-    "content/news/2026-02-16-SPLHousingPlan0226.md",
-    "content/news/2026-01-29-SPLHOUSINGPLAN0126.md",
-    "content/berks/2025-10-06-SPLHOUSINGFIRST1025.md"
+    "content/news/2026-05-29-SPLSKILLSCOPA0526.md",
+    "content/news/2026-05-15-SPLCFBET0526.md",
+    "content/news/2025-12-01-SPLSKILLFUTURE1225.md"
   ],
   "topSlots": [
+    "content/news/2026-06-15-SPLHOUSINGBILLS0626.md",
     "content/news/2026-06-15-SPLBILLSETT0626.md",
-    "content/news/2026-06-12-SPLGOVABORTION0626.md",
-    "content/news/2026-06-11-SPLBUDGETUPDATE0626.md"
+    "content/news/2026-06-12-SPLGOVABORTION0626.md"
   ]
 }
