@@ -63,7 +63,7 @@ A spokesperson for the state House Democrats said Monday they are reviewing the 
 
 State lawmakers’ greatest hurdle in regulating skill games has been their inability to reach a consensus on the proper rate to tax their gross revenue.
 
-Shapiro’s proposed budget this year would set the rate at 52% to more closely align with the state’s existing 55% tax on electronic games and casino slot machines, a rate his office estimates would net the state $400 million annually in the first year, then grow to over $2 billion annually.
+Shapiro’s proposed budget this year would set the rate at 52% to more closely align with the state’s existing 55% tax on electronic games and casino slot machines.
 
 State Senate Republican leaders previously introduced a proposal for <a href="https://www.palegis.us/legislation/bills/2025/sb756">a 35% rate</a> and reiterated their support for that approach in their statement Monday. Other Republicans argue that rate is too high and <a href="https://www.palegis.us/legislation/bills/2025/sb626">proposed a 16% tax</a>.
 
