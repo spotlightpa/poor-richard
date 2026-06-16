@@ -26,4 +26,4 @@ Word Flower is a challenging daily puzzle in which players form words using a ce
 
 Email <a href="mailto:newsletters@spotlightpa.org">newsletters@spotlightpa.org</a> about any technical issues. And thanks for playing! <strong><em></em></strong>
 
-<strong>Get the best news from across Pa. and more puzzles </strong> delivered straight to your inbox. <a href="https://www.spotlightpa.org/newsletters/">Sign up for our newsletters here.</a>
+<strong>Get the best news from across Pennsylvania and more puzzles </strong> delivered straight to your inbox. <a href="https://www.spotlightpa.org/newsletters/">Sign up for our newsletters here.</a>
