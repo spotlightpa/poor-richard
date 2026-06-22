@@ -7,5 +7,5 @@ headshot = ""
 content = """
 """
 tel = ""
-active = true
+active = false
 role = "admin"
