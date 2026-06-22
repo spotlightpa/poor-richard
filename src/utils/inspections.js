@@ -102,13 +102,13 @@ export function getRiskPriority(riskLevels) {
 
 export function riskToColorAndBadge(priority) {
   if (priority === 3) {
-    return { color: "#D70000", badgeText: "High Risk Violation" };
+    return { color: "#D70000", badgeText: "High Priority Violation" };
   }
   if (priority === 2) {
-    return { color: "#FFCB03", badgeText: "Moderate Risk Violation" };
+    return { color: "#FFCB03", badgeText: "Moderate Priority Violation" };
   }
   if (priority === 1) {
-    return { color: "#009EDB", badgeText: "Low Risk Violation" };
+    return { color: "#009EDB", badgeText: "Low Priority Violation" };
   }
   return { color: "#1b998b", badgeText: "No Violations" };
 }

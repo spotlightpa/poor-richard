@@ -63,19 +63,19 @@ The database utilizes information from the [Pennsylvania Department of Agricultu
 
 Inspections are conducted regularly throughout the state, and results are posted as inspections are conducted. The database updates automatically as new inspection reports are posted.
 
-## What is the difference between high, moderate, and low risk food safety violations?
+## What is the difference between high, moderate, and low priority food safety violations?
 
 These categories align directly with priority levels identified in the FDA Food Code: Priority, Priority foundation, and Core.
 
-Priority items contribute directly to the elimination, prevention, or reduction to an acceptable level of hazards associated with foodborne illness or injury, such as handwashing, food handling, and temperature control, or other direct food contamination threats, such as rodents or pests. We noted violations of priority items as high risk in the database.
+Priority items contribute directly to the elimination, prevention, or reduction to an acceptable level of hazards associated with foodborne illness or injury, such as handwashing, food handling, and temperature control, or other direct food contamination threats, such as rodents or pests. We noted violations of priority items as high priority in the database.
 
-Priority foundation items support, facilitate, or enable control of risk factors that contribute to foodborne illness or injury, such as personnel training, labeling, and record-keeping. We noted violations of priority foundation items as moderate risk in the database.
+Priority foundation items support, facilitate, or enable control of risk factors that contribute to foodborne illness or injury, such as personnel training, labeling, and record-keeping. We noted violations of priority foundation items as moderate priority in the database.
 
-Core items usually relate to standard operating procedures, facility structures, equipment design, or general maintenance. We noted violations of core items as low risk in the database.
+Core items usually relate to standard operating procedures, facility structures, equipment design, or general maintenance. We noted violations of core items as low priority in the database.
 
 ## How is this different from the restaurant inspection reports found on the Pennsylvania Department of Agriculture website?
 
-We added high-, moderate-, and low-risk indicators to help readers understand the violations most likely to lead to foodborne illness. These indicators align directly with priority levels outlined in the FDA Food Code. We also modified some of the violation categories to make them easier for you to identify. Finally, we used generative AI to summarize inspector comments in plain language so you can better contextualize violations. We worked closely with an expert in restaurant inspections to validate this entire process and ensure we weren’t over-simplifying or misinterpreting Food Code violations.
+We added high-, moderate-, and low-priority indicators to help readers understand the violations most likely to lead to foodborne illness. These indicators align directly with priority levels outlined in the FDA Food Code. We also modified some of the violation categories to make them easier for you to identify. Finally, we used generative AI to summarize inspector comments in plain language so you can better contextualize violations. We worked closely with an expert in restaurant inspections to validate this entire process and ensure we weren’t over-simplifying or misinterpreting Food Code violations.
 
 ## How is AI involved in this tool?
 
