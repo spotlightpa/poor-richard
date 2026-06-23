@@ -6,16 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-06-22-SPLOSIGAG0626.md"
+    "content/news/2026-06-23-SPLDEBATE0626.md"
   ],
   "subfeatures": [
-    "content/news/2026-06-01-SPLNONEEDS0626.md",
-    "content/news/2026-03-11-SPLKAVULICH0326.md",
-    "content/news/2025-12-23-SPLAGINGWRAP1225.md"
+    "content/news/2026-06-12-SPLGOVABORTION0626.md",
+    "content/statecollege/2026-04-30-SPLGOVRURAL0426.md",
+    "content/news/2026-04-16-SPLGUVCF2026.md",
+    "content/news/2026-06-15-SPLBILLSETT0626.md"
   ],
   "topSlots": [
+    "content/news/2026-06-22-SPLOSIGAG0626.md",
     "content/news/2026-06-18-VBELAB0626.md",
-    "content/news/2026-06-17-SPLSKILLREAX0626.md",
-    "content/statecollege/2026-06-17-SPLSUNUP0626.md"
+    "content/news/2026-06-17-SPLSKILLREAX0626.md"
   ]
 }
