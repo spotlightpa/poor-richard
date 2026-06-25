@@ -1394,6 +1394,15 @@
       "logo-url": "",
       "long": "",
       "url": "https://full360delval.blog"
+    },
+    {
+      "City": "Pittsburgh",
+      "County": "Allegheny",
+      "Name": "Pittsburgh Post-Gazette",
+      "lat": "",
+      "logo-url": "",
+      "long": "",
+      "url": "https://www.post-gazette.com"
     }
   ]
 }
