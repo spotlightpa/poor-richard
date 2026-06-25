@@ -120,8 +120,8 @@ export function inspectionSortMenu({
     },
     {
       value: "risk-desc",
-      shortLabel: "Risk",
-      longLabel: "Violation Risk - Highest to Lowest",
+      shortLabel: "Priority",
+      longLabel: "Violation Priority - Highest to Lowest",
     },
     {
       value: "alpha-asc",
