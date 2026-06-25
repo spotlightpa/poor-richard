@@ -1,4 +1,5 @@
 +++
+aliases = ["/1vote2pas"]
 description = "Learn more about the differences between Pennsylvania's candidates for governor: Democrat Josh Shapiro and Republican Stacy Garrity."
 hide-description = false
 image = "cas/gd13-2bkv-24p5-62g4.png"
