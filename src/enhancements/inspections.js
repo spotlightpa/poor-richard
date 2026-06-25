@@ -543,6 +543,7 @@ export default function inspectionsUI() {
         </div>
         <section class="space-y-3">
           <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
+          <p class="text-sm font-sans italic text-g-5 mb-3">As noted by the Department of Agriculture, inspections are a &ldquo;snapshot&rdquo; of a particular day. Many violations are relatively minor and are fixed at the time of inspection.</p>
           ${hasAi ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true"><use href="#robot-svg" /></svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ""}
           <ul class="space-y-3">${latestItems}</ul>
           ${hasAi ? `<p class="mt-4 text-sm font-sans italic text-g-5">While we strive for accuracy, AI may occasionally misinterpret technical language. Always refer to the full inspection report (linked below) for complete details.</p>` : ""}
