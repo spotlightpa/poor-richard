@@ -551,7 +551,7 @@ export default function inspectionsUI() {
         <div class="pt-5">
           <a href="https://www.pafoodsafety.pa.gov/web/inspection/publicinspectionsearch.aspx" class="group inline-flex items-center gap-2 font-sans font-semibold text-navy hover:text-blue">
             <svg class="h-5 w-5 flex-shrink-0 fill-current group-hover:text-blue" aria-hidden="true"><use href="#link-svg" /></svg>
-            <span>Read the full report</span>
+            <span>Search facility name here to see the full report</span>
           </a>
         </div>
       </div>`;
