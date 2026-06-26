@@ -1,6 +1,6 @@
 +++
 authors = ["Daniel Perrin"]
-blurb = "The president’s “one big beautiful bill accelerated the phaseout of federal investment tax credits for renewable energy that had been expanded under the Biden administration."
+blurb = "The president’s “one big beautiful bill\" accelerated the phaseout of federal investment tax credits for renewable energy that had been expanded under the Biden administration."
 byline = "Daniel Perrin of Inside Climate News"
 description = "A law signed by the president in 2025 accelerated the phaseout of federal investment tax credits for renewable energy that had been expanded under Biden."
 draft = false
