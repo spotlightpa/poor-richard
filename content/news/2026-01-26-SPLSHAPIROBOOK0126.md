@@ -30,3 +30,20 @@ As a part of Spotlight PA’s book club, Booklight PA, investigative reporters A
 {{<youtube id="51lJ5LvkoIs" loading="lazy">}}
 
 <em>This event is in partnership with A Novel Idea, a community-minded bookstore and event space in East Passyunk, Philadelphia, run by Alexander Schneider and Christina Rosso-Schneider. Read more about A Novel Idea and </em><a href="https://anovelideaphilly.com/"><em>purchase your books here</em></a><strong><em>.</em></strong>
+
+<strong>OTHER BOOKLIGHT PA EVENTS:</strong>
+
+
+<i>Mother Tongue</i>, Sara Novic. <a href="https://www.spotlightpa.org/news/2026/06/sara-novic-deaf-community-book-club-philadelphia-pennsylvania-events/">Watch here</a>. 
+
+<i>Black Genius</i>, Tre Johnson. <a href="https://www.spotlightpa.org/news/2026/05/tre-johnson-black-genius-culture-book-pennsylvania-events/">Watch here</a>. 
+
+<i>Sidle Creek</i>, Jolene McIlwain. <a href="https://www.spotlightpa.org/news/2026/03/jolene-mcilwain-sidle-creek-book-club-appalachian-pennsylvania-events/">Watch here</a>. 
+
+<i>Shut Up and Read</i>, Jeannine Cook. <a href="https://www.spotlightpa.org/news/2026/02/jeannine-cook-shut-up-and-read-book-club-philadelphia-pennsylvania-events/">Watch here</a>.
+
+<i>If Sons, Then Heirs</i>, Lorene Cary. <a href="https://www.spotlightpa.org/news/2025/10/lorene-cary-book-club-if-sons-then-heirs-philadelphia-pennsylvania-events/">Watch here</a>.
+
+<i>Saturnalia</i>, Stephanie Feldman. <a href="https://www.spotlightpa.org/news/2025/09/stephanie-feldman-book-club-saturnalia-philadelphia-pennsylvania-events/">Watch here</a>.
+
+<i>The School for Good Mothers</i>, Jessamine Chan. <a href="https://www.spotlightpa.org/news/2025/08/jessamine-chan-book-club-school-for-good-mothers-events/">Watch here</a>.
