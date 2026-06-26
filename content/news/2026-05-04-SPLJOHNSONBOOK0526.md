@@ -32,8 +32,3 @@ Johnson joined us to discuss the book in the latest installment of our Booklight
 {{<youtube id="CSewzGE-cOo" loading="lazy">}}
 
 <em>This event is in partnership with A Novel Idea, a community-minded bookstore and event space in East Passyunk, Philadelphia, run by Alexander Schneider and Christina Rosso-Schneider. Read more about A Novel Idea and </em><a href="https://anovelideaphilly.com/book-list/"><em>purchase your books here</em></a><em>.</em>
-
-Upcoming Booklight PA events:
-
-June 25: Mother Tongue with author Sara Novic
-
