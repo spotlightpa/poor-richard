@@ -6,17 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-06-26-SPLTITLEX0626.md"
+    "content/news/2026-06-29-SPLDDRD0626.md"
   ],
   "subfeatures": [
-    "content/news/2026-06-10-SPLVICTIM0626.md",
-    "content/news/2026-06-22-NTHHSFUNDS0626.md",
-    "content/news/2026-06-18-NTUNEMPLOY0626.md",
-    "content/news/2026-06-23-APTRUMPMACK0626.md"
+    "content/news/2026-06-29-SPLDDRDHWD0626.md",
+    "content/interactives/opioid-quiz.md",
+    "content/news/2023-10-18-SPL_LOCAL_PENSIONS.md",
+    "content/news/2025-09-04-SPLLISTENING0825.md"
   ],
   "topSlots": [
+    "content/news/2026-06-26-SPLTITLEX0626.md",
     "content/berks/2026-06-26-SPLSALEREAX0626.md",
-    "content/news/2026-06-25-SPLDATABILL0626.md",
-    "content/news/2026-06-24-SPLRAINYDAY0626.md"
+    "content/news/2026-06-25-SPLDATABILL0626.md"
   ]
 }
