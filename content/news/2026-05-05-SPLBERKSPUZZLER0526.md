@@ -24,3 +24,5 @@ url = "/berks-puzzler-submission/"
 An anagram is a word, phrase, or name formed by rearranging the letters of another. For example, “spotlight” also forms “stoplight.” Decode today’s anagram and submit your answer in the form above. Only answers submitted by 4 p.m. on issue date will be counted. One winner each week will win Spotlight PA swag.
 
 Email <a href="mailto:newsletters@spotlightpa.org">newsletters@spotlightpa.org</a> about any technical issues. And thanks for playing! <strong><em></em></strong>
+
+{{<embed/raw srcdoc="&lt;div class=&#34;_form_14&#34;&gt;&lt;/div&gt;&lt;script src=&#34;https://spotlightpa.bluelena.io/f/embed.php?id=14&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;">}}
