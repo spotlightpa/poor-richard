@@ -6,15 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-06-30-SPLEDU0626.md"
+    "content/news/2026-06-30-SPLMINWAGE0626.md"
   ],
   "subfeatures": [
-    "content/news/2026-06-25-SPLDATABILL0626.md",
-    "content/news/2026-06-24-SPLRAINYDAY0626.md"
+    "content/news/2026-02-03-SPLBUDADD0226.md",
+    "content/news/2025-06-11-SPLMINWAGE0625.md",
+    "content/news/2023-06-13-SPLMINCHAN.md",
+    "content/news/2021-03-11-SPLWAGE12.md"
   ],
   "topSlots": [
+    "content/news/2026-06-30-SPLEDU0626.md",
     "content/news/2026-06-29-SPLDDRD0626.md",
-    "content/news/2026-06-26-SPLTITLEX0626.md",
-    "content/berks/2026-06-26-SPLSALEREAX0626.md"
+    "content/news/2026-06-26-SPLTITLEX0626.md"
   ]
 }
