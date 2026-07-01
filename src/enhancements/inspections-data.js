@@ -251,13 +251,13 @@ function createInspectionCard(data, index, allInspections) {
     violationBadges = `<li class="flex items-center gap-2"><svg class="h-6 w-6 fill-current" style="color: #1b998b;"><use href="#circle-check-svg" /></svg><span class="text-base font-semibold">0 violations</span></li>`;
   } else {
     if (riskCounts.high > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #D70000;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.high} high priority violation${riskCounts.high !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #D70000;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.high} high priority violation${riskCounts.high !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.moderate > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #FFCB03;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.moderate} moderate priority violation${riskCounts.moderate !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #FFCB03;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.moderate} moderate priority violation${riskCounts.moderate !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.low > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #009EDB;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.low} low priority violation${riskCounts.low !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #009EDB;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.low} low priority violation${riskCounts.low !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.other > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #6b7280;"><use href="#triangle-exclamation-svg" /></svg><span class="text-base font-semibold">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #6b7280;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
   }
 
   card.innerHTML = `<div class="list-content">
