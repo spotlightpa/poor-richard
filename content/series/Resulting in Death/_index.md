@@ -1,12 +1,15 @@
 +++
-description = "PA is known as a national leader for these types of prosecutions. Spotlight PA set out to understand the complicated on-the-ground reality of them."
-image = "2026/06/01n3-nz51-6ffb-5wr1.jpeg"
+description = "Supplying drugs in fatal overdoses has led to 100s of Pa. prison sentences. Grieving families are divided."
+hide-description = false
+image = "2026/06/01n3-k6j2-3sgc-q1zq.jpeg"
 image-credit = "Ed Mahon / Spotlight PA"
-image-description = "The Tioga County Courthouse is seen in Wellsboro."
+image-description = "After her son's overdose death, Cyndi Compton became known as a relentless advocate in Tioga County."
 kicker = "Resulting in Death"
-linktitle = "Pa. is known as a national leader for these types of prosecutions. Spotlight PA set out to understand the complicated on-the-ground reality of them."
+linktitle = "Supplying drugs in fatal overdoses has led to 100s of Pa. prison sentences. Grieving families are divided."
+modal-exclude = false
 published = 2026-06-29T04:00:00-04:00
 slug = "resulting-in-death"
+suppress-ads = false
 title = "Resulting in Death"
 +++
 
