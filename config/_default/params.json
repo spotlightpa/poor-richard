@@ -1,58 +1,58 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting.",
+      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bk/end-june-strong-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/m0va/tracker-banners-1350-x-175-39-.gif"
       ]
     }
   ],
-  "ad-footer-desktop-active": true,
+  "ad-footer-desktop-active": false,
   "ad-footer-desktop-height": 175,
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting.",
+      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bk/newsmatch-2025-squares-59-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/m0v9/newsmatch-2025-squares-32-.gif"
       ]
     }
   ],
-  "ad-footer-mobile-active": true,
+  "ad-footer-mobile-active": false,
   "ad-footer-mobile-height": 250,
   "ad-footer-mobile-width": 300,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting by making a gift now.",
+      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bk/end-june-strong-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/m0va/tracker-banners-1350-x-175-39-.gif"
       ]
     }
   ],
-  "ad-header-desktop-active": true,
+  "ad-header-desktop-active": false,
   "ad-header-desktop-height": 175,
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting by making a gift now.",
+      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bm/sunshine-week-27-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/m0v8/newsmatch-2025-rectangles-1024-512-px-28-.gif"
       ]
     }
   ],
-  "ad-header-mobile-active": true,
+  "ad-header-mobile-active": false,
   "ad-header-mobile-height": 512,
   "ad-header-mobile-width": 1024,
   "ad-hp-breaker-desktop": [
@@ -85,12 +85,12 @@
   "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting.",
+      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bk/newsmatch-2025-squares-59-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
@@ -138,7 +138,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bk/newsmatch-2025-squares-59-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
@@ -150,7 +150,7 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n4/67bk/newsmatch-2025-squares-59-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
