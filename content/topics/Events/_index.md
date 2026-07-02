@@ -9,4 +9,5 @@ title = "Upcoming Events"
 linktitle = "Virtual seminars conducted by the Spotlight PA team"
 layout = "events"
 description = "Join Spotlight PA and partners for in-person and virtual events covering statewide issues in Pennsylvania."
+aliases = ["/events/"]
 +++

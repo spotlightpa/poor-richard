@@ -11,11 +11,6 @@ status = 301
 force = true
 
 [[redirects]]
-from = "/events/"
-to = "/topics/events/"
-code = 301
-
-[[redirects]]
 from = "/agevent"
 to = "https://www.eventbrite.com/e/1030093546527"
 code = 302
