@@ -6,7 +6,6 @@ title-tag = "Thank You For Subscribing • Spotlight PA"
 suppress-title = true
 no-index = true
 layout = "thanks-page"
-modal-exclude = true
 url = "/newsletters/thanks/"
 +++
 
