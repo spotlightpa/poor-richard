@@ -7,7 +7,7 @@ draft = false
 feed-exclude = false
 image = "2025/04/01m0-t8sg-qd9a-zpg0.jpeg"
 image-credit = "Gene J. Puskar / AP"
-image-description = "The smokestacks of the former coal-fired Homer City Generating Station crumble in a planned demolition to make way for a new natural gas-fired power plant in Homer City, Pa."
+image-description = "The smokestacks of the former coal-fired Homer City Generating Station crumble in a planned demolition to make way for a new natural gas-fired power plant."
 image-gravity = "we"
 internal-id = "ICNDATACLIMATE0726"
 kicker = "Environment"
@@ -18,7 +18,7 @@ slug = "pennsylvania-data-centers-emissions-gas-plants-climate-environment"
 suppress-ads = false
 suppress-date = false
 title = "New power plants for data centers would significantly increase Pennsylvania’s climate pollution"
-title-tag = "PA data centers would be fueled by natural gas-fired power plants"
+title-tag = "New power plants for data centers would worsen pollution"
 topics = ["Environment"]
 +++
 
