@@ -1,16 +1,12 @@
 {
-  "edCallout": [
-    "content/news/2026-06-29-SPLDDRD0626.md",
-    "content/news/2026-06-01-SPLNONEEDS0626.md"
-  ],
+  "edCallout": [],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-07-02-ICNDATACLIMATE0726.md"
+    "content/news/2026-06-29-SPLDDRD0626.md"
   ],
   "subfeatures": [
-    "content/news/2026-07-02-CBCUMBWARE0726.md",
-    "content/news/2026-06-22-GRBIDATA0626.md"
+    "content/news/2026-06-29-SPLDDRDHWD0626.md"
   ],
   "topSlots": [
     "content/news/2026-07-01-SPLUTLPROFITS0626.md",
