@@ -11,6 +11,18 @@ status = 301
 force = true
 
 [[redirects]]
+from = "/newsletters/accessharrisburg/monthly"
+to = "https://accessharrisburg.spotlightpa.org/subscribe"
+status = 301
+force = true
+
+[[redirects]]
+from = "/newsletters/accessharrisburg/annual"
+to = "https://accessharrisburg.spotlightpa.org/subscribe"
+status = 301
+force = true
+
+[[redirects]]
 from = "/agevent"
 to = "https://www.eventbrite.com/e/1030093546527"
 code = 302
