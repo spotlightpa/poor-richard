@@ -1,7 +1,7 @@
 +++
-authors = ["‍Hannah Frances Johansson"]
+authors = ["Hannah Frances Johansson"]
 blurb = "The shortfall is driven by a slow replacement of retiring power plants and rising demand from electrification and data centers, PJM officials have said."
-byline = "‍Hannah Frances Johansson of Pittsburgh Media Partnership Newsroom"
+byline = "Hannah Frances Johansson of Pittsburgh Media Partnership Newsroom"
 description = "The shortfall is driven by a slow replacement of retiring power plants and rising demand from electrification and data centers, PJM officials have said."
 draft = false
 feed-exclude = false
