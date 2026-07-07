@@ -14,6 +14,7 @@ modal-exclude = false
 pinned = false
 published = 2026-01-28T10:34:22.956-05:00
 slug = "pjm-grid-short-fall-power-plants-data-centers-environment"
+suppress-ads = false
 suppress-date = false
 title = "Major power grid operator for Pa., East Coast predicts energy shortfall by mid-2027"
 title-tag = "PJM predicts energy shortfall by summer 2027"
