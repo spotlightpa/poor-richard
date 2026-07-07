@@ -1,6 +1,5 @@
 +++
-authors = ["Spotlight PA"]
-byline = "Spotlight PA"
+byline = "Spotlight PA Staff"
 draft = false
 feed-exclude = true
 internal-id = "SPLBERKSPUZZLER0526"

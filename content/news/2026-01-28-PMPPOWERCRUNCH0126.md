@@ -1,7 +1,7 @@
 +++
-authors = ["‍Hannah Frances Johansson"]
+authors = ["Hannah Frances Johansson"]
 blurb = "The shortfall is driven by a slow replacement of retiring power plants and rising demand from electrification and data centers, PJM officials have said."
-byline = "‍Hannah Frances Johansson of Pittsburgh Media Partnership Newsroom"
+byline = "Hannah Frances Johansson of Pittsburgh Media Partnership Newsroom"
 description = "The shortfall is driven by a slow replacement of retiring power plants and rising demand from electrification and data centers, PJM officials have said."
 draft = false
 feed-exclude = false
@@ -14,6 +14,7 @@ modal-exclude = false
 pinned = false
 published = 2026-01-28T10:34:22.956-05:00
 slug = "pjm-grid-short-fall-power-plants-data-centers-environment"
+suppress-ads = false
 suppress-date = false
 title = "Major power grid operator for Pa., East Coast predicts energy shortfall by mid-2027"
 title-tag = "PJM predicts energy shortfall by summer 2027"
