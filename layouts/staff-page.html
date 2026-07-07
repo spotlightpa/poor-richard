@@ -75,92 +75,69 @@
 {{ end }}
 
 {{ define "extra-main" }}
-  {{ $reporters := slice }}
+  {{ $government := slice }}
+  {{ $investigations := slice }}
+  {{ $berks := slice }}
+  {{ $statecollege := slice }}
+  {{ $engagement := slice }}
   {{ $editorial := slice }}
-  {{ $admin := slice }}
-  {{ $special := slice }}
+  {{ $business := slice }}
 
   {{ range sort hugo.Data.authors "lastName" }}
     {{ $author := partial "helper/get-author" .name }}
     {{ if $author.active }}
-      {{ if eq $author.role "reporter" }}
-        {{ $reporters = $reporters | append $author }}
+      {{ if eq $author.role "government" }}
+        {{ $government = $government | append $author }}
+      {{ end }}
+      {{ if eq $author.role "investigations" }}
+        {{ $investigations = $investigations | append $author }}
+      {{ end }}
+      {{ if eq $author.role "berks" }}
+        {{ $berks = $berks | append $author }}
+      {{ end }}
+      {{ if eq $author.role "statecollege" }}
+        {{ $statecollege = $statecollege | append $author }}
+      {{ end }}
+      {{ if eq $author.role "engagement" }}
+        {{ $engagement = $engagement | append $author }}
       {{ end }}
       {{ if eq $author.role "editorial" }}
         {{ $editorial = $editorial | append $author }}
       {{ end }}
-      {{ if eq $author.role "admin" }}
-        {{ $admin = $admin | append $author }}
-      {{ end }}
-      {{ if eq $author.role "specialprojects" }}
-        {{ $special = $special | append $author }}
+      {{ if eq $author.role "business" }}
+        {{ $business = $business | append $author }}
       {{ end }}
     {{ end }}
   {{ end }}
   <section class="px-2 pb-10 font-sans">
-    <div class="mx-auto my-14 w-full max-w-screen-xl">
-      <h2
-        class="text-4xl leading-none font-black text-g-6 uppercase md:text-6xl"
-      >
-        Reporters
-      </h2>
-      <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
-        data-ga-category="inline-footer:author"
-      >
-        {{ range $reporters }}
-          {{ template "staff-page-card" . }}
-        {{ end }}
-      </ul>
-
-      <h2
-        class="mt-10 text-4xl leading-none font-black text-g-6 uppercase md:text-6xl"
-      >
-        Editorial &amp; Production
-      </h2>
-
-      <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
-        data-ga-category="inline-footer:author"
-      >
-        {{ range $editorial }}
-          {{ template "staff-page-card" . }}
-        {{ end }}
-      </ul>
-
-      <h2
-        class="mt-10 text-4xl leading-none font-black text-g-6 uppercase md:text-6xl"
-      >
-        Business &amp; Operations
-      </h2>
-
-      <ul
-        class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
-        data-ga-category="inline-footer:author"
-      >
-        {{ range $admin }}
-          {{ template "staff-page-card" . }}
-        {{ end }}
-      </ul>
-
-      {{ if $special }}
-        <h2
-          class="mt-10 text-4xl leading-none font-black text-g-6 uppercase md:text-6xl"
-        >
-          Special Projects
-        </h2>
-
-        <ul
-          class="mx-auto my-14 mt-10 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
-          data-ga-category="inline-footer:author"
-        >
-          {{ range $special }}
-            {{ template "staff-page-card" . }}
-          {{ end }}
-        </ul>
-      {{ end }}
+    <div class="mx-auto my-14 flex max-w-screen-xl flex-col gap-5">
+      {{ template "staff-page-section" (dict "authors" $government "title" "Government Team" ) }}
+      {{ template "staff-page-section" (dict "authors" $investigations "title" "Investigations Team" ) }}
+      {{ template "staff-page-section" (dict "authors" $berks "title" "Berks County" ) }}
+      {{ template "staff-page-section" (dict "authors" $statecollege "title" "State College" ) }}
+      {{ template "staff-page-section" (dict "authors" $engagement "title" "Engagement & Newsletters" ) }}
+      {{ template "staff-page-section" (dict "authors" $editorial "title" "Editorial & Production" ) }}
+      {{ template "staff-page-section" (dict "authors" $business "title" "Statewide Business & Operations" ) }}
     </div>
   </section>
+{{ end }}
+
+{{ define "staff-page-section" }}
+  {{ if .authors }}
+    <h2 class="text-4xl leading-none font-black text-g-6 uppercase md:text-6xl">
+      {{ .title }}
+    </h2>
+
+    <ul
+      class="mx-auto mt-5 mb-14 grid w-full grid-flow-dense gap-8 md:grid-cols-2"
+      data-ga-category="inline-footer:author"
+    >
+      {{ range .authors }}
+        {{ template "staff-page-card" . }}
+      {{ end }}
+    </ul>
+  {{ end }}
+
 {{ end }}
 
 {{ define "staff-page-card" }}
@@ -226,15 +203,6 @@
     <header
       class="col-span-5 flex flex-col justify-end gap-2 sm:max-md:col-span-3 lg:col-span-3"
     >
-      {{ with $author.beat }}
-        <h3 class="mb-auto leading-snug">
-          <span
-            class="border-2 border-eyebrow-bg bg-eyebrow-bg box-decoration-clone px-2 font-sans text-sm font-semibold text-eyebrow uppercase"
-          >
-            {{- . -}}
-          </span>
-        </h3>
-      {{ end }}
       <h2
         class="flex items-end text-2xl font-bold"
         data-ga-category="author-articles"
@@ -334,12 +302,6 @@
       </dl>
     </header>
     <div class="article-content col-span-5">
-      {{ with $author.focusHed }}
-        <h3 class="my-2">
-          <b class="font-bold">Focus: </b>
-          {{ . }}
-        </h3>
-      {{ end }}
       {{ $author.content|markdownify }}
     </div>
   </li>
