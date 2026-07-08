@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-07-07-SPLDATAGUV0726.md"
+    "content/news/2026-07-08-VBTRIFECTA0726.md"
   ],
   "subfeatures": [
-    "content/statecollege/2026-04-30-SPLGOVRURAL0426.md",
-    "content/news/2026-06-12-SPLGOVABORTION0626.md",
-    "content/news/2026-06-23-SPLDEBATE0626.md"
+    "content/news/2026-06-05-SPLSTUPOLL0626.md",
+    "content/news/2026-06-18-VBELAB0626.md",
+    "content/news/2026-06-03-VBCURESTUDY0626.md"
   ],
   "topSlots": [
+    "content/news/2026-07-07-SPLDATAGUV0726.md",
     "content/news/2026-07-06-spl_ddrd_0726.md",
-    "content/news/2026-07-01-SPLUTLPROFITS0626.md",
-    "content/news/2026-07-01-SPLLATEBUDG0630.md"
+    "content/news/2026-07-01-SPLUTLPROFITS0626.md"
   ]
 }
