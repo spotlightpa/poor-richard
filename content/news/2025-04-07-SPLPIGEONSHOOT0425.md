@@ -145,4 +145,4 @@ But, he added, the state House has certain responsibilities.
 
 “I would hope,” he said, “that here in the House, we do the right thing and run the bill.”
 
-<strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.
+<em><strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.</em>
