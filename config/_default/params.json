@@ -34,13 +34,13 @@
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0va/tracker-banners-1350-x-175-39-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n5/acf7/6.png"
       ]
     }
   ],
-  "ad-header-desktop-active": false,
-  "ad-header-desktop-height": 175,
-  "ad-header-desktop-width": 1350,
+  "ad-header-desktop-active": true,
+  "ad-header-desktop-height": 90,
+  "ad-header-desktop-width": 728,
   "ad-header-mobile": [
     {
       "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
