@@ -34,7 +34,7 @@ Word Search is a relaxing daily word game. Simply find thematic words hidden in 
 
 <strong>WordroW:</strong> Test your deduction skills with this daily Wordle-style puzzle. Guess a hidden word in six attempts with feedback after each round. <a href="https://www.spotlightpa.org/wordrow-games/">Play here.</a>
 
-<strong>Word Search:</strong> A daily puzzle that tests your attention to detail by finding hidden words in various directions within a jumble of letters. Each puzzle has a theme. <a href="https://www.spotlightpa.org/word-search-games/">Play here.</a>
+<strong>Word Search:</strong> A daily puzzle that tests your attention to detail by finding hidden words within a jumble of letters. Each puzzle has a theme. <a href="https://www.spotlightpa.org/word-search-games/">Play here.</a>
 
 {{<embed/raw srcdoc="&lt;div class=&#34;_form_14&#34;&gt;&lt;/div&gt;&lt;script src=&#34;https://spotlightpa.bluelena.io/f/embed.php?id=14&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;">}}
 
