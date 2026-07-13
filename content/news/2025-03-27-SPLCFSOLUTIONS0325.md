@@ -3,6 +3,7 @@ authors = ["Stephen Caruso"]
 blurb = "How can lawmakers restore public trust and provide additional transparency? Other states have limited campaign donations and more."
 byline = "Stephen Caruso of Spotlight PA"
 description = "In Pennsylvania, powerful interests can pour unlimited dollars into politicians' campaign accounts with few restrictions. Here are four ways to fix that."
+draft = false
 feed-exclude = false
 image = "2020/12/01fwzscex0v8h1p2.jpeg"
 image-credit = "Kent M. Wilhelm / Spotlight PA"
@@ -14,6 +15,7 @@ pinned = false
 published = 2025-03-27T04:00:00-04:00
 series = ["Access Harrisburg"]
 slug = "campaign-finance-laws-lax-pennsylvania-money-politics-reform-solutions"
+suppress-ads = false
 suppress-date = false
 title = "Four ways Pa. could fix its campaign finance laws to reduce the power of money in politics"
 title-tag = "Four fixes for Pennsylvania’s lax campaign laws"
@@ -150,3 +152,4 @@ Erica Clayton Wright, a spokesperson for state Senate President Pro Tempore Kim 
 
 But when contacted by Spotlight PA, no legislative leader — whether Democrat or Republican — backed limiting how much money billionaires or PACs for special interests can deposit in their campaign coffers.
 
+<em><strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.</em>
