@@ -3,6 +3,7 @@ authors = ["Stephen Caruso"]
 blurb = "The proposed pigeon shooting ban passed through a Pennsylvania House committee with bipartisan support. Then it stalled, and the lawmaker in charge won’t say why."
 byline = "Stephen Caruso of Spotlight PA"
 description = "The proposed pigeon shooting ban stalled in the PA House after passing out of committee. The lawmaker in charge won’t say why."
+draft = false
 feed-exclude = false
 image = "2025/04/01ky-zyeq-hgm7-eex5.jpeg"
 image-credit = "Daniel Fishel / For Spotlight PA"
@@ -16,6 +17,7 @@ pinned = false
 published = 2025-04-07T04:00:00-04:00
 series = ["Access Harrisburg"]
 slug = "pigeon-shooting-bill-animal-rights-lobbying-campaign-donation-money-pennsylvania"
+suppress-ads = false
 suppress-date = false
 title = "Campaign cash flowed to key Pa. lawmakers as hunters launched an offensive to save pigeon shoots"
 title-tag = "Pigeon shooters spent big to keep sport legal"
@@ -143,3 +145,4 @@ But, he added, the state House has certain responsibilities.
 
 “I would hope,” he said, “that here in the House, we do the right thing and run the bill.”
 
+<strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.
