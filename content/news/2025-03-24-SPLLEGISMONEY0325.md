@@ -3,6 +3,7 @@ authors = ["Stephen Caruso"]
 blurb = "Lobbyists say such donations can lead to access, but the state's weak transparency laws make it nearly impossible to trace influence."
 byline = "Stephen Caruso of Spotlight PA"
 description = "Lobbyists say political donations can lead to access, but PA’s weak transparency laws make it nearly impossible to trace influence."
+draft = false
 feed-exclude = false
 image = "2025/03/01kx-rw91-tyzp-0mvj.jpeg"
 image-credit = "Emily Scherer / For Spotlight PA"
@@ -17,6 +18,7 @@ pinned = false
 published = 2025-03-24T04:00:00-04:00
 series = ["Access Harrisburg"]
 slug = "pennsylvania-campaign-finance-special-interest-donations"
+suppress-ads = false
 suppress-date = false
 title = "Powerful interests poured $18M into top Pa. lawmakers’ campaign coffers"
 title-tag = "These powerful interests donated $18M to PA’s top lawmakers"
@@ -261,3 +263,4 @@ But a lack of campaign finance restrictions, she argued, leads to endless fundra
 >}}
 {{</featured/footer>}}
 
+<em><strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.</em>
