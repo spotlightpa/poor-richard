@@ -6,6 +6,6 @@ image-description = "Photo illustration of the PA Capitol building, checks and b
 image-gravity = "we"
 kicker = "Access Harrisburg"
 title = "Access Harrisburg"
-linktitle = "Powerful interests poured $18M into top Pa. lawmakers’ campaign coffers"
-description = "Powerful interests poured $18M into top Pa. lawmakers’ campaign coffers"
+linktitle = "Sign up for the Access Harrisburg newsletter and get must-read state government insights for just $4/week. [Subscribe here](https://www.spotlightpa.org/newsletters/accessharrisburg/)."
+description = "Sign up for the Access Harrisburg newsletter and get must-read state government insights for just $4/week. [Subscribe here](https://www.spotlightpa.org/newsletters/accessharrisburg/)."
 +++
