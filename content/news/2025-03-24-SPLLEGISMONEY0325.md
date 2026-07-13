@@ -240,6 +240,8 @@ But a lack of campaign finance restrictions, she argued, leads to endless fundra
 
 “You want people who are passionate about issues and representing their community, not people who are really good at fundraising,” Cristella said. “Those are two different skill sets.”
 
+<em><strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.</em>
+
 {{<featured/support>}}
 
 {{<featured/footer>}}
@@ -262,5 +264,3 @@ But a lack of campaign finance restrictions, she argued, leads to endless fundra
 	email="aharris@spotlightpa.org"
 >}}
 {{</featured/footer>}}
-
-<em><strong>EXCLUSIVE INSIGHTS…</strong> If you liked this reporting from Stephen Caruso, subscribe to <a href="https://www.spotlightpa.org/newsletters/accessharrisburg/">Access Harrisburg</a>, a premium newsletter with his unique insider view on how state government works.</em>
