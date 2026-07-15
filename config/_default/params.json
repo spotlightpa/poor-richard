@@ -46,15 +46,15 @@
       "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper-mobile",
+      "link": "",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0v8/newsmatch-2025-rectangles-1024-512-px-28-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n5/febk/visa-2026-fraud-bannerads-r5-1.1-512x250.jpg"
       ]
     }
   ],
-  "ad-header-mobile-active": false,
-  "ad-header-mobile-height": 512,
-  "ad-header-mobile-width": 1024,
+  "ad-header-mobile-active": true,
+  "ad-header-mobile-height": 250,
+  "ad-header-mobile-width": 512,
   "ad-hp-breaker-desktop": [
     {
       "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
