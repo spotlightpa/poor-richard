@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "ad-header-mobile-active": true,
+  "ad-header-mobile-active": false,
   "ad-header-mobile-height": 250,
   "ad-header-mobile-width": 512,
   "ad-hp-breaker-desktop": [
