@@ -214,11 +214,13 @@
         data-ga-category="guides"
       >
         {{ $guide := site.GetPage $params.rubric.RelPermalink }}
+        {{ $isGamePage := and $params.topic (eq $params.topic.Title "Games") }}
         {{ partial "tw/list-3-col-story.html" (dict
           "hed" "Related Stories"
           "pages" $guide.RegularPages
           "rows" 1
           "showByline" false
+          "eyebrow" (cond $isGamePage "none" "")
           )
         }}
       </div>
