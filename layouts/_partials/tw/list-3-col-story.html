@@ -45,6 +45,8 @@
           {{ $eyebrow = $params.kicker }}
         {{ else if eq $.eyebrow "eventDate" }}
           {{ $eyebrow = $params.eventDate | default $params.published }}
+        {{ else if eq $.eyebrow "none" }}
+          {{ $eyebrow = "" }}
         {{ end }}
         {{ if eq $.rubricLink "rubric" }}
           {{ $rubricLink = $params.rubric.RelPermalink }}
