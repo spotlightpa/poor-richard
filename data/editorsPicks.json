@@ -1,18 +1,20 @@
 {
-  "edCallout": [],
+  "edCallout": [
+    "content/news/2026-06-29-SPLDDRD0626.md",
+    "content/news/2026-07-06-spl_ddrd_0726.md"
+  ],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-07-15-SPLTRICKS0726.md"
+    "content/news/2026-07-16-SPLSUNDABORT0726.md"
   ],
   "subfeatures": [
-    "content/news/2026-07-11-SPL26BUDGET0726.md",
-    "content/news/2026-07-10-SPLBUDGSETUP0726.md",
-    "content/news/2026-07-14-SPLFELONY0726.md"
+    "content/news/2026-04-20-SPLCCABORT0426.md",
+    "content/news/2026-06-12-SPLGOVABORTION0626.md"
   ],
   "topSlots": [
-    "content/news/2026-07-14-SPLFELONY0726.md",
+    "content/news/2026-07-15-SPLTRICKS0726.md",
     "content/statecollege/2026-07-14-SPLBLAIR0726.md",
-    "content/news/2026-07-11-SPL26BUDGET0726.md"
+    "content/news/2026-07-14-SPLFELONY0726.md"
   ]
 }
