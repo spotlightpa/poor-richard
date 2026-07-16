@@ -26,7 +26,7 @@ In this quiz: What the $50.8 billion state budget deal skipped, a rare bipartisa
 
 {{<typeform id="01KXK3GW87GVP95WY1YYTAMXZV" >}}
 
-If a blue “Take the News Quiz” button doesn’t appear above for you, <a href="https://hsqxo6lncmz.typeform.com/to/SAVQWage">click here instead</a>.
+If a blue “Take the News Quiz” button doesn’t appear above for you, <a href="https://www.spotlightpa.org/news/2026/07/pennsylvania-news-quiz-week-of-july-13-2026/">click here instead</a>.
 
 As always, let us know if you encounter any technical issues. Just email Newsletter Editor Colin Deppen (newsletters@spotlightpa.org) with a heads up. And good luck!<strong><em></em></strong>
 
