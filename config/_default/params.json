@@ -1,58 +1,58 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0va/tracker-banners-1350-x-175-39-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n5/febm/visa-2026-fraud-bannerads-r5-1.1-1350x175.jpg"
       ]
     }
   ],
-  "ad-footer-desktop-active": false,
+  "ad-footer-desktop-active": true,
   "ad-footer-desktop-height": 175,
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/m0v9/newsmatch-2025-squares-32-.gif"
+        "https://files.data.spotlightpa.org/uploads/01n5/febz/visa-2026-fraud-bannerads-allsizes-1.1-300x250.png"
       ]
     }
   ],
-  "ad-footer-mobile-active": false,
+  "ad-footer-mobile-active": true,
   "ad-footer-mobile-height": 250,
   "ad-footer-mobile-width": 300,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=site-topper",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n5/acf7/6.png"
+        "https://files.data.spotlightpa.org/uploads/01n5/febm/visa-2026-fraud-bannerads-r5-1.1-1350x175.jpg"
       ]
     }
   ],
-  "ad-header-desktop-active": false,
-  "ad-header-desktop-height": 90,
-  "ad-header-desktop-width": 728,
+  "ad-header-desktop-active": true,
+  "ad-header-desktop-height": 175,
+  "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
-      "label": "",
-      "labelLink": "",
-      "link": "",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
         "https://files.data.spotlightpa.org/uploads/01n5/febk/visa-2026-fraud-bannerads-r5-1.1-512x250.jpg"
       ]
     }
   ],
-  "ad-header-mobile-active": false,
+  "ad-header-mobile-active": true,
   "ad-header-mobile-height": 250,
   "ad-header-mobile-width": 512,
   "ad-hp-breaker-desktop": [
@@ -85,12 +85,12 @@
   "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
+        "https://files.data.spotlightpa.org/uploads/01n5/febz/visa-2026-fraud-bannerads-allsizes-1.1-300x250.png"
       ]
     }
   ],
@@ -133,24 +133,24 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
+        "https://files.data.spotlightpa.org/uploads/01n5/febz/visa-2026-fraud-bannerads-allsizes-1.1-300x250.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA's independent, unbiased reporting.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
+      "description": "Last year, Visa blocked $22 billion in suspected fraud in the U.S., helping to protect Pennsylvania consumers.",
+      "label": "Sponsored by Visa",
+      "labelLink": "https://www.spotlightpa.org/advertising",
+      "link": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust.html",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
+        "https://files.data.spotlightpa.org/uploads/01n5/febz/visa-2026-fraud-bannerads-allsizes-1.1-300x250.png"
       ]
     }
   ],
