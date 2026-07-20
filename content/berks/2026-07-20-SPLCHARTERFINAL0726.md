@@ -96,7 +96,7 @@ When they returned for the voting meeting, City Council removed the proposals fr
 
 Gombar later told Spotlight PA he could not speak about the council&#39;s decision because of the city’s policy not to comment on issues involved in active lawsuits.
 
-City Council President Donna Reed told Spotlight PA before the lawsuit was filed that the decision showed the council’s concern over the number of questions, whether those questions actually related to the charter, the timing of the report, and other aspects of the process.
+City Council President Donna Reed told Spotlight PA, before the lawsuit was filed, that the decision showed the council’s concern over the number of questions, whether those questions actually related to the charter, the timing of the report, and other aspects of the process.
 
 “I think between the passion of the council people and \[Gombar’s\] concerns, that if you combine those things really showed that this was just unacceptable for us to, in good conscience, move forward to the electorate,” Reed said.
 
@@ -106,9 +106,15 @@ City Council President Donna Reed told Spotlight PA before the lawsuit was filed
 
 The civil suit Morrison filed in July asks the court to move the proposals forward to voters anyway — the county would need to receive the questions by Aug. 4 to make the November election.
 
-Morrison argues that any objections should be on a case-by-case basis, and that any proposals without legal issues should head to the ballot. She put out a public call to residents to join her at the first hearing on July 20.
+Morrison argues that any objections should be on a case-by-case basis, and that any proposals without legal issues should head to the ballot.
 
 “This case is not about personal politics,” Morrison said in a news release. “It is about whether the Charter Review Commission process means something or whether it can be made meaningless by procedural removal after the public work has already been done.”
+
+It’s unclear how quickly the case will be resolved. During the first hearing on July 20, Berks County Judge Benjamin Nevius said the charter specifically states that any amendments would be before voters during the next municipal election — which he said would be in November 2027.
+
+Nevius did not make any decisions on the merits of the case. He gave Morrison 20 days to ensure all defendants were properly served. The city and county will then have the next 20 days to file their initial responses to her claims. <strong></strong>
+
+## ‘Is this the most effective process’?
 
 The council decision, while controversial, was not a surprise to everyone.
 
@@ -129,4 +135,6 @@ Jack Gombach, the city’s managing director, said the mayor’s administration 
 “We really need to ask ourselves, is this the most effective process to ensure that residents have the ability to weigh in on the charter?” Gombach said.
 
 <strong><em>Editor’s note:</em></strong><em> Dave Myers, a senior fellow at Berks County Community Foundation, hosts monthly Community Forums for Spotlight PA.</em>
+
+<em>This story was updated with additional information following a July 20 hearing.</em>
 
