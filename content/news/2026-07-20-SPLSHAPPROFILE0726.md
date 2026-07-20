@@ -73,11 +73,7 @@ None of these items have become law. Most have passed the House, in some form or
 
 For Shapiro’s supporters, there’s an easy justification for these false starts. “Harrisburg didn’t say no. Republicans in Harrisburg said no,” said Mark Segal, a Philadelphia journalist and gay-rights activist who’s advised Shapiro for nearly two decades.
 
-Still, the governor has the power to focus the attention of the public and the legislature. And it’s
-
-undeniable that Harrisburg has had an unproductive few years. In fact, during Shapiro’s tenure,
-
-the state legislature has passed record-low numbers of laws.
+Still, the governor has the power to focus the attention of the public and the legislature. And it’s undeniable that Harrisburg has had an unproductive few years. In fact, during Shapiro’s tenure, the state legislature has passed record-low numbers of laws.
 
 Moreover, some of Shapiro’s policy accomplishments simply built off Wolf’s work. Shapiro’s reelection campaign, for example, trumpets his approval of universal free breakfast in public schools, which he advocated for and included in his first budget. But it was Wolf who <a href="https://fox56.com/news/local/gov-wolf-announces-universal-free-breakfast-program-for-17-million-pa-school-children">first implemented the program</a> in his final year in office. Shapiro has just continued it.
 
