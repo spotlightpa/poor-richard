@@ -7,26 +7,31 @@ suppress-title = true
 no-index = true
 layout = "thanks-page"
 url = "/newsletters/thanks/"
+
+hero = true
+emoji = "❤️"
+subhed = "You made a great choice."
+signup = false
+
+[[cards]]
+eyebrow = "Get the Latest"
+heading = "Sign up for another one of our free newsletters"
+url = "https://www.spotlightpa.org/newsletters/"
+image = "2021/06/01gc-4k5b-cx91-fppc.jpeg"
+
+[[cards]]
+eyebrow = "Refer a Friend"
+heading = "Tell someone to check us out"
+url = "https://spotlightpa.bluelena.io/f/4"
+image = "2026/07/01n5-wmab-gr7y-98kv.jpeg"
+
+[[cards]]
+eyebrow = "10% Off"
+heading = "Shop and claim your member discount"
+url = "https://shop.spotlightpa.org/discount/MEMBER10"
+image = "2026/07/01n5-wmbg-c50m-xs9v.png"
 +++
 
-You should see a welcome message in your inbox soon.
-To ensure you receive it, please add **newsletters@spotlightpa.org** to your contacts, or check your spam folder and mark it as "not spam."
+You should see a welcome message in your inbox soon. To ensure you receive it, please add **[newsletters@spotlightpa.org](mailto:newsletters@spotlightpa.org)** to your contacts, or check your spam folder and mark it as "not spam."
 
-<div class="mt-3">
-Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues. To learn more about our work, click on one of the links below.
-</div>
-
-<div class="mt-6">
-  <strong>About Us</strong><br>
-  <a href="https://www.spotlightpa.org/about/">Learn more about Spotlight PA</a>
-</div>
-
-<div class="mt-6">
-  <strong>Ways to Support</strong><br>
-  <a href="https://www.spotlightpa.org/support/">See how you can support our journalism</a>
-</div>
-
-<div class="mt-6">
-  <strong>Recent Investigations</strong><br>
-  <a href="https://www.spotlightpa.org/investigations/">Read our latest investigations</a>
-</div>
+Spotlight PA is an independent, nonpartisan, and nonprofit newsroom dedicated to high-quality investigative and public-service journalism about the Pennsylvania state government and urgent statewide issues.
