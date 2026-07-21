@@ -68,9 +68,7 @@ Melendez said future commissions would benefit from a dedicated city staff perso
 
 “We spent so much wasted time just arguing over what was within our purview or not,” she said.
 
-Months after the commission last met, some questions remain unanswered, like how much taxpayer money went toward the group’s legal fees.
-
-City Council approved an allowance of up to $7,000 for the commission, but the group never passed its own budget or asked its treasurer to approve any expenses. The city hired a solicitor for the group before it convened, but it&#39;s unclear how much was spent on that purpose. The city&#39;s chief finance officer did not respond to Spotlight PA questions.
+City Council approved an allowance of up to $7,000 for the commission in 2025 and another $7,000 in 2026. However, the group never passed its own budget or asked its treasurer to approve any expenses. Instead, the city’s legal department hired a solicitor for the group before it convened and has spent more than $15,500 on the group’s legal fees between 2025 and 2026.
 
 {{<embed/newsletter button="Sign me up!" cta="Good Day, Berks is your daily dose of Berks County essentials. Be the first to know about important news, events, and more." preselect="berks">}}
 
