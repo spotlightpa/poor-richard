@@ -55,10 +55,6 @@ Sessions will feature speakers promoting innovative ideas about urban gardening,
 
 Be on the lookout for updates on the full event details, session schedule, and speakers.
 
-## Don't miss out
-
-[Tickets for Spotlight PA's Ideas Festival are available for free now!](https://www.eventbrite.com/e/spotlight-pas-community-festival-ideas-that-move-berks-forward-tickets-1992490915966)
-
 ## Want to help us with the event?
 
 <div class="text-center my-12">
