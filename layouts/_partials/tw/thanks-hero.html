@@ -1,0 +1,77 @@
+{{ $cards := .cards | default slice }}
+
+
+<div class="mx-auto max-w-4xl px-5 pt-8 pb-10 lg:px-0">
+  <h1
+    class="font-serif text-4xl leading-tight font-bold tracking-tight text-g-9 sm:text-5xl"
+  >
+    {{ with .emoji }}
+      <span aria-hidden="true">{{ . }}</span>{{ " " }}
+    {{ end -}}
+    {{ .title }}
+  </h1>
+  {{ with .subhed }}
+    <h2
+      class="mt-5 font-serif text-3xl leading-tight font-bold tracking-tight text-g-9 sm:text-4xl"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+
+
+  <div class="article-content mt-8 font-serif text-lg leading-relaxed text-g-8">
+    {{ .content }}
+  </div>
+
+  {{ with $cards }}
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{ range . }}
+        {{ $gravity := .gravity | default "ce" }}
+        <a
+          href="{{ .url }}"
+          class="group flex flex-col border-2 border-g-9 bg-white no-underline shadow-sm transition-all duration-300 hover:border-red hover:shadow-md"
+        >
+          <div class="p-6">
+            <div
+              class="mb-3 font-sans text-sm font-bold tracking-widest text-red uppercase"
+            >
+              {{ .eyebrow }}
+            </div>
+            <h3
+              class="font-serif text-2xl leading-snug font-bold tracking-tight text-g-9 transition-colors duration-300 group-hover:text-red"
+            >
+              {{ .heading }}
+            </h3>
+          </div>
+          {{ with .image }}
+            {{ partial "tw/image-block.html" (dict
+              "filename" .
+              "widthRatio" 8
+              "heightRatio" 5
+              "widths" (slice 260 384 512)
+              "sizeHint" "400px"
+              "figClass" "mt-auto"
+              "imgClass" "flex h-full w-full object-cover"
+              "containerClass" "relative w-full overflow-clip group flex items-center justify-center bg-g-3 border-t-2 border-g-9"
+              "gravity" $gravity
+              )
+            }}
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+{{ if .signup }}
+  <div class="mt-12 w-full bg-black">
+    <div
+      class="mx-auto flex max-w-2xl flex-col items-center px-6 py-14 text-center"
+    >
+      <p class="mb-7 font-sans text-2xl leading-snug font-bold text-white">
+        {{ .signupHed | default "Sign up for one of our free newsletters to stay in the loop." }}
+      </p>
+      <a href="/newsletters/" class="btn-signup-lg"> Sign Up </a>
+    </div>
+  </div>
+{{ end }}
