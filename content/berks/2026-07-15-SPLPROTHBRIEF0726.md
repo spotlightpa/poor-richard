@@ -1,8 +1,8 @@
 +++
 authors = ["Hanna Holthaus"]
-blurb = "Officials say they don’t know why the system crashed, but say it will relaunch under a new vendor on Aug. 3."
+blurb = "Officials say they don’t know why the system crashed, but say it will relaunch under a new vendor in mid-September."
 byline = "Hanna Holthaus of Spotlight PA"
-description = "Officials say they don’t know why the system crashed, but say it will relaunch under a new vendor on Aug. 3."
+description = "Officials say they don’t know why the system crashed, but say it will relaunch under a new vendor in mid-September."
 draft = false
 feed-exclude = false
 image = "2026/07/01n5-cp7h-gsfs-dbww.jpeg"
@@ -21,6 +21,14 @@ title = "Public unable to access online civil court records in Berks County due 
 title-tag = "Berks County online civil court records unavailable for weeks"
 topics = ["Local Government"]
 +++
+
+<strong>Update, July 22: </strong>The launch of the new online civil court records system has been pushed back to mid-September, said Prothonotary Jonathan Del Collo.
+
+“There have been logistical issues that are delaying roll out, including sufficient training for all new users (Prothonotary Office, Courts, Judges, Attorneys, Public) as well as ongoing data conversion and migration and a few items on the vendor’s end that it is working to complete before we can test full functionality,” Del Collo said in an email to Spotlight PA.
+
+Additional updates as they approach the new rollout will be posted to the website, he added.
+
+<strong><em>Original story below</em></strong>
 
 READING — Berks County’s online civil court records system has been broken for more than a month, meaning the public can’t remotely access documents related to divorces, liens, and more.
 
