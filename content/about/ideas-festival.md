@@ -15,16 +15,15 @@ ad-header-mobile-active = false
 layout = "page-landing"
 +++
 
-{{<picture src="2026/03/01mt-f5ed-v7ft-h02a.png" width-ratio="400" height-ratio="153" description="Spotlight PA Ideas Festival" gravity="ce" figure-class="-my-12">}}
-
-### Registration is now open for a day-long event celebrating the ideas that move Berks forward.
+{{<picture src="2026/03/01mt-f5ed-v7ft-h02a.png" width-ratio="400" height-ratio="153" description="Spotlight PA Ideas Festival" gravity="ce" figure-class="max-w-[480px] mx-auto -mt-12">}}
 
 <div class="text-center">
 {{<landing-large>}}
-**October 3, 2026**<br>
-GoggleWorks Center for the Arts
+**October 3, 2026** • GoggleWorks Center for the Arts
 {{</landing-large>}}
 </div>
+
+## Registration is now open for a day-long event celebrating the ideas that move Berks forward.
 
 {{<picture src="2026/07/01n6-044r-epqg-wjq8.jpeg" width-ratio="16" height-ratio="9" description="GoggleWorks Center for the Arts">}}
 
