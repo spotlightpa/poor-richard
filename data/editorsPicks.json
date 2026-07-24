@@ -6,16 +6,14 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/statecollege/2026-07-23-SPLSUPLIZIO0726.md"
+    "content/news/2026-07-24-SPLCDR0726.md"
   ],
   "subfeatures": [
-    "content/statecollege/2024-07-11-SPLDUBOIS0724.md",
-    "content/statecollege/2023-11-16-SPLSUPFED.md",
-    "content/statecollege/2023-11-09-SPLSUPLIZIO.md"
+    "content/news/2026-06-03-SPLCHILDMORTALITY0626.md"
   ],
   "topSlots": [
+    "content/statecollege/2026-07-23-SPLSUPLIZIO0726.md",
     "content/berks/2026-07-23-SPLICEIMPACT0726.md",
-    "content/news/2026-07-23-SPLEDLEAD0726.md",
-    "content/news/2026-07-22-SPLFELFOLO0726.md"
+    "content/news/2026-07-23-SPLEDLEAD0726.md"
   ]
 }
