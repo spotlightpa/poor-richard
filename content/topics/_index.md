@@ -1,7 +1,7 @@
 +++
 title = "Topics"
 description = "Areas of ongoing coverage by Spotlight PA"
-sort-by = "title"
+sort-by = "kicker"
 
 [cascade]
 ad-header-desktop-active = false
