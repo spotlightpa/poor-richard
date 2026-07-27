@@ -16,7 +16,7 @@ published = 2026-07-27T04:00:00-04:00
 slug = "rape-crisis-centers-pennsylvania-budget-funding-doubled-lifeline-shapiro-capitol"
 suppress-ads = false
 suppress-date = false
-title = "Gov. Josh Shapiro initially planned to flat fund rape crisis centers. They convinced him to double their line item"
+title = "Shapiro planned to flat fund rape crisis centers. They convinced him to double their line item."
 title-tag = "Rape crisis centers got a lifeline in 2026 PA budget"
 topics = ["The Capitol"]
 +++
