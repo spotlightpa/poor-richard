@@ -6,14 +6,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-07-24-SPLCDR0726.md"
+    "content/news/2026-07-27-SPLDEADLINE0726.md"
   ],
   "subfeatures": [
-    "content/news/2026-06-03-SPLCHILDMORTALITY0626.md"
+    "content/news/2026-03-26-SPLFELMURD0326.md",
+    "content/news/2026-07-14-SPLFELONY0726.md",
+    "content/news/2026-07-22-SPLFELFOLO0726.md"
   ],
   "topSlots": [
+    "content/news/2026-07-27-SPLCRISISBUDG0723.md",
     "content/berks/2026-07-24-SPLABBOND0726.md",
-    "content/statecollege/2026-07-23-SPLSUPLIZIO0726.md",
-    "content/news/2026-07-23-SPLEDLEAD0726.md"
+    "content/news/2026-07-24-SPLCDR0726.md"
   ]
 }
