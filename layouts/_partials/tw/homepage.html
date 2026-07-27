@@ -22,7 +22,17 @@
 {{ $berksBureau := site.GetPage "/berks/" }}
 {{ $river := sort $news.RegularPages ".PublishDate" "desc" }}
 {{ $noIndex := where site.RegularPages ".Params.no-index" true }}
-{{ $river = $river | complement $featuredStory $pinnedStories $topperStory $noIndex }}
+{{ $riverExclude := where site.RegularPages "Params.river-exclude" true }}
+{{ $berksInspections := site.GetPage "/topics/berks-inspections/" }}
+{{ $centerInspections := site.GetPage "/topics/centre-inspections/" }}
+{{ $games := site.GetPage "/topics/games/" }}
+{{ $inspections := site.GetPage "/topics/inspections/" }}
+{{ $river = $river | complement
+  $featuredStory $pinnedStories $topperStory
+  $noIndex
+  $riverExclude
+  $berksInspections.Pages $centerInspections.Pages $inspections.Pages $games.Pages
+}}
 
 {{ $missingFeatured :=  eq (len $featuredStory) 0 }}
 {{ $marginClass := cond $missingFeatured "mt-4" "" }}
