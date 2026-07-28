@@ -1455,6 +1455,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Nicholas and Sarah Weirick",
+      "sort": "Weirick",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Millicent \"Pat\" West",
       "sort": "West",
       "url": "",
@@ -1502,6 +1509,13 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
+    },
+    {
+      "display": "Ted and Pam Yeager",
+      "sort": "Yeager",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Cliff Zukin and Debbie Walsh",
