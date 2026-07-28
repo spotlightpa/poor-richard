@@ -18,6 +18,7 @@ form ="""
   dek="Help support the Penn State Transparency Tracker by submitting tips or questions to reporter Wyatt Massey — via the submission form, email at wmassey@spotlightpa.org, or one of the methods described below."
 >}}
 """
+aliases = ["/topics/transparency-tracker"]
 +++
 
 The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.

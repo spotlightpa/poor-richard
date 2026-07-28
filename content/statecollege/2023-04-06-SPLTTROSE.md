@@ -12,11 +12,12 @@ internal-id = "SPLTTROSE"
 kicker = "Penn State"
 modal-exclude = false
 published = 2023-04-06T12:00:00-04:00
+series = ["Transparency Tracker"]
 slug = "penn-state-bendapudi-private-jet-rose-bowl-transparency"
 suppress-date = false
 title = "A private jet flew Penn State’s president to the Rose Bowl. Who paid for it?"
 title-tag = "PSU Athletics paid for Bendapudi’s Rose Bowl travel"
-topics = ["Penn State", "Transparency Tracker"]
+topics = ["Penn State"]
 +++
 
 <i>The </i><a href="https://www.spotlightpa.org/statecollege/transparency-tracker"><i>Penn State Transparency Tracker</i></a><i> is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.</i>
