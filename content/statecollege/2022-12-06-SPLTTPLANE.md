@@ -13,11 +13,12 @@ kicker = "Penn State"
 modal-exclude = false
 no-index = false
 published = 2022-12-06T05:00:00-05:00
+series = ["Transparency Tracker"]
 slug = "penn-state-psu-james-franklin-private-plane-transparency"
 suppress-date = false
 title = "How often are Penn State’s private planes flying during a budget crunch?"
 title-tag = "Tracking Penn State’s private jet in a budget crisis"
-topics = ["Penn State", "Transparency Tracker"]
+topics = ["Penn State"]
 +++
 
 <i>The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.</i>

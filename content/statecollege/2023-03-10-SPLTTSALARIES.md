@@ -12,11 +12,12 @@ internal-id = "SPLTTSALARIES"
 kicker = "Penn State"
 modal-exclude = false
 published = 2023-03-10T05:00:00-05:00
+series = ["Transparency Tracker"]
 slug = "penn-state-salaries-student-health-insurance"
 suppress-date = false
 title = "Can the public know if outside groups are paying Penn State salaries?"
 title-tag = "How many Penn State employees are paid by third parties"
-topics = ["Penn State", "Transparency Tracker"]
+topics = ["Penn State"]
 +++
 
 <i>The </i><a href="https://www.spotlightpa.org/statecollege/transparency-tracker"><i>Penn State Transparency Tracker</i></a><i> is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.</i>

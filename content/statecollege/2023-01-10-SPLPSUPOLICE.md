@@ -13,11 +13,12 @@ internal-id = "SPLPSUPOLICE"
 kicker = "Transparency Tracker"
 modal-exclude = false
 published = 2023-01-10T05:00:00-05:00
+series = ["Transparency Tracker"]
 slug = "penn-state-transparency-tracker-police-arrest-use-of-force-data"
 suppress-date = false
 title = "What happened to the arrest, use of force data Penn State police promised to release?"
 title-tag = "Where is Penn State’s promised campus police data?"
-topics = ["Transparency Tracker", "Penn State"]
+topics = ["Penn State"]
 +++
 
 <i>The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.</i>
