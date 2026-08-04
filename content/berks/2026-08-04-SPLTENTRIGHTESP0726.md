@@ -78,6 +78,8 @@ La Ley de Propietarios e Inquilinos exime a los dueños y huéspedes de hoteles 
 
 <a href="https://www.palawhelp.org/resource/tenants-rights-in-boarding-houses-hotels-and-motels">Según MidPenn Legal Services</a>, un inquilino que vive a largo plazo en una habitación de motel o que alquila una habitación individual aún puede tener derecho a que su desalojo se realice únicamente a través de un proceso judicial.
 
+{{<embed/tips flag_text="¿Eres inquilino en el condado de Berks?" tip_text="Spotlight PA continúa investigando la asequibilidad de vivienda en el condado de Berks. Comparta aquí experiencias que ha tenido como inquilino en Reading o en otras partes del condado de Berks. Por ejemplo, cuéntenos si ha notado cambios en los precios de los alquileres, si tiene observaciones sobre las condiciones de vivienda, si tiene inquietudes relacionadas con su contrato de arrendamiento o si ha enfrentado una situación de desalojo. También déjenos saber cuál es la mejor manera de comunicarnos con usted.">}}
+
 ## El derecho a la asistencia legal
 
 Según la Ley de Propietarios e Inquilinos de Pensilvania, los contratos de arrendamiento no pueden incluir cláusulas que despojen a un ocupante de sus derechos legales. Tanto los inquilinos como los propietarios tienen derecho a buscar representación en procedimientos legales.
