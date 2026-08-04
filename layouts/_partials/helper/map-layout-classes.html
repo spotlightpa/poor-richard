@@ -1,0 +1,48 @@
+{{- $desktop := .desktop | default "right" -}}
+{{- $mobile := .mobile | default "top" -}}
+
+{{- $orientations := dict
+  "row" (dict
+  "flexDir" "md:flex-row"
+  "asideMaxW" "md:max-w-sm lg:max-w-md"
+  "asideHeightMd" "md:h-full"
+  "mapHeightMd" "md:h-full md:flex-1"
+  "containerHeightMd" "md:h-dvh"
+  )
+  "col" (dict
+  "flexDir" "md:flex-col"
+  "asideMaxW" ""
+  "asideHeightMd" "md:h-auto"
+  "mapHeightMd" "md:h-[70vh]"
+  "containerHeightMd" "md:h-auto"
+  )
+  -}}
+
+{{- $desktopOrder := dict
+  "right" (dict "orientation" "row" "asideOrderMd" "md:order-first" "mapOrderMd" "md:order-last")
+  "left" (dict "orientation" "row" "asideOrderMd" "md:order-last" "mapOrderMd" "md:order-first")
+  "top" (dict "orientation" "col" "asideOrderMd" "md:order-first" "mapOrderMd" "md:order-last")
+  "bottom" (dict "orientation" "col" "asideOrderMd" "md:order-last" "mapOrderMd" "md:order-first")
+-}}
+
+{{- $mobileOrder := dict
+  "top" (dict "asideOrderMobile" "order-last" "mapOrderMobile" "order-first")
+  "bottom" (dict "asideOrderMobile" "order-first" "mapOrderMobile" "order-last")
+-}}
+
+{{- $order := index $desktopOrder $desktop | default (index $desktopOrder "right") -}}
+{{- $size := index $orientations $order.orientation -}}
+{{- $m := index $mobileOrder $mobile | default (index $mobileOrder "top") -}}
+
+{{- $result := dict
+  "flexDir" $size.flexDir
+  "asideOrderMd" $order.asideOrderMd
+  "mapOrderMd" $order.mapOrderMd
+  "asideMaxW" $size.asideMaxW
+  "asideHeightMd" $size.asideHeightMd
+  "mapHeightMd" $size.mapHeightMd
+  "containerHeightMd" $size.containerHeightMd
+  "asideOrderMobile" $m.asideOrderMobile
+  "mapOrderMobile" $m.mapOrderMobile
+-}}
+{{- return $result -}}
