@@ -14,6 +14,7 @@ kicker = "Housing"
 modal-exclude = false
 pinned = false
 published = 2026-07-17T05:00:00.007-04:00
+river-exclude = false
 slug = "renters-rights-reading-what-to-know-housing"
 suppress-ads = false
 suppress-date = false
@@ -21,6 +22,8 @@ title = "What protections Pa. renters have beyond local laws"
 title-tag = "Can your landlord do that? PA tenant rights, explained"
 topics = ["Housing"]
 +++
+
+<a href="https://www.spotlightpa.org/berks/2026/08/derechos-de-los-inquilinos-en-reading-lo-que-debes-saber-espanol/"><em>Leer en español</em></a><em></em>
 
 READING — A group of activists wants Reading City Council to adopt a wide-ranging proposal aimed at protecting renters from being priced out of their homes or retaliated against for organizing.
 
