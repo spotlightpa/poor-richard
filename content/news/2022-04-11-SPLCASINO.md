@@ -5,7 +5,9 @@ authors = ["Angela Couloumbis"]
 blurb = "Representatives of Parx Casino and state Sen. Tommy Tomlinson have worked in lockstep to ban unregulated, slot-like skill games that pose a threat to traditional gaming."
 byline = "Angela Couloumbis of Spotlight PA"
 description = "Representatives of Parx Casino and state Sen. Tommy Tomlinson have worked in lockstep to ban unregulated, slot-like skill games that pose a threat to traditional gaming."
+draft = false
 extended-kicker = "Special Investigation"
+feed-exclude = false
 image = "external/1zzsbx5q1j9q23f5ybehcjhkbc.jpeg"
 image-credit = "KIM WEIMER / BUCKS COUNTY COURIER TIMES"
 image-description = "State Sen. Tommy Tomlinson (R., Bucks) is shown here holding a sports betting ticket at Parx Casino. Tomlinson’s office asked lobbyists for the casino to write language for a bill to ban skill games."
@@ -15,12 +17,15 @@ kicker = "The Capitol"
 layout = "featured"
 modal-exclude = false
 no-index = false
+pinned = false
 published = 2022-04-11T05:00:00-04:00
+river-exclude = false
 series = ["Ghost Writers"]
 slug = "parx-casino-tommy-tomlinson-lobbyist-emails"
+suppress-ads = false
 suppress-date = false
 title = "Draft bills and late-night emails reveal cozy ties between Pa. state lawmaker, casino lobbyists"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Featured"]
 +++
 
 
