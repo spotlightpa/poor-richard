@@ -32,7 +32,7 @@ See the full list of allocations below.
 
 {{<flourish src="visualisation/29851628">}}
 
-<a href="https://paschoolswork.org/2026-adequacy-report-findings/">A report</a> this year from the Education Law Center — a Philadelphia-based advocacy group that was involved in the initial lawsuit that led to this funding — found that schools often put the money toward hiring staff, reducing class sizes, offering full-day kindergarten, improving curricula, and expanding career and technical education.
+<a href="https://paschoolswork.org/2026-adequacy-report-findings/">A report</a> this year from PA Schools Work — a coalition of education advocacy organizations that include the plaintiffs in the school funding lawsuit — found that schools often put the money toward hiring staff, reducing class sizes, offering full-day kindergarten, improving curricula, and expanding career and technical education.
 
 Overall education spending accounts for $23.5 billion of Pennsylvania’s total $50.8 billion budget this year — though that number <a href="https://www.spotlightpa.org/news/2026/07/state-budget-pennsylvania-deficit-accounting-tricks-medicaid-managed-care-capitol/">uses various accounting maneuvers</a> to suppress the total spend. The issue is consistently among the most contentious during annual budget talks.
 
@@ -52,7 +52,7 @@ Despite agreeing to a final budget deal that included Democratic Gov. Josh Shapi
 
 “We think there needs to be more accountability in the world of adequacy funding,” Pittman said. “And quite frankly, this adequacy funding formula has created another world of haves and have-nots among the 500 school districts.”
 
-Hillary Linardopoulos, policy director at the Education Law Center, told Spotlight PA that schools must report to the state Department of Education their plan for the funds and how they are ultimately used.
+Hillary Linardopoulos, policy director at the Education Law Center, a plaintiff in the school funding case, told Spotlight PA that schools must report to the state Department of Education their plan for the funds and how they are ultimately used.
 
 “It absolutely has been a success in that districts are using it for foundational supports that make schools what they should be: places of learning where students can access robust curriculum,“ Linardopoulos said, emphasizing that it’s important for schools to offer smaller class sizes, after-school programs, STEM education, and full-day kindergarten.
 
