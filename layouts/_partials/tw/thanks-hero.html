@@ -27,6 +27,9 @@
     <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {{ range . }}
         {{ $gravity := .gravity | default "ce" }}
+        {{ $fit := .fit | default "cover" }}
+        {{ $bg := .bg | default "bg-g-3" }}
+        {{ $resize := .resize | default "fill" }}
         <a
           href="{{ .url }}"
           class="group flex flex-col border-2 border-g-9 bg-white no-underline shadow-sm transition-all duration-300 hover:border-red hover:shadow-md"
@@ -44,18 +47,37 @@
             </h3>
           </div>
           {{ with .image }}
-            {{ partial "tw/image-block.html" (dict
-              "filename" .
-              "widthRatio" 8
-              "heightRatio" 5
-              "widths" (slice 260 384 512)
-              "sizeHint" "400px"
-              "figClass" "mt-auto"
-              "imgClass" "flex h-full w-full object-cover"
-              "containerClass" "relative w-full overflow-clip group flex items-center justify-center bg-g-3 border-t-2 border-g-9"
-              "gravity" $gravity
-              )
-            }}
+            {{ if eq $resize "fit" }}
+              <figure class="mt-auto" data-ga-category="thumb">
+                <div
+                  class="{{ printf "relative w-full overflow-clip flex items-center justify-center %s border-t-2 border-g-9" $bg }}"
+                  style="aspect-ratio: 8 / 5"
+                >
+                  <img
+                    src="{{ partial "helper/imgproxy" (dict "filename" . "width" 512 "height" 320 "gravity" $gravity "resize" "fit" "ext" "png") }}"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width="512"
+                    height="320"
+                    class="{{ printf "flex h-full w-full object-%s" $fit }}"
+                  />
+                </div>
+              </figure>
+            {{ else }}
+              {{ partial "tw/image-block.html" (dict
+                "filename" .
+                "widthRatio" 8
+                "heightRatio" 5
+                "widths" (slice 260 384 512)
+                "sizeHint" "400px"
+                "figClass" "mt-auto"
+                "imgClass" (printf "flex h-full w-full object-%s" $fit)
+                "containerClass" (printf "relative w-full overflow-clip group flex items-center justify-center %s border-t-2 border-g-9" $bg)
+                "gravity" $gravity
+                )
+              }}
+            {{ end }}
           {{ end }}
         </a>
       {{ end }}
