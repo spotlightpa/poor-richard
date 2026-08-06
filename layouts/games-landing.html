@@ -207,7 +207,7 @@
               data-ga-category="all-games"
             >
               <div
-                class="{{ .hoverBorder }} flex aspect-[3/2] items-center justify-center border-4 border-transparent bg-g-1 group-hover:border-4"
+                class="{{ .hoverBorder }} flex aspect-[3/2] max-h-35 items-center justify-center border-4 border-transparent bg-g-1 group-hover:border-4 sm:max-h-none"
               >
                 {{ partial (printf "games-landing/icons/%s.html" .iconKey) (dict "class" .iconClass) }}
               </div>
@@ -223,9 +223,9 @@
                   {{ .meta }}
                 </div>
                 <span
-                  class="mt-2 inline-flex items-center gap-1.5 rounded-sm bg-blue-2 px-3 py-1.5 font-sans text-xs font-bold tracking-widest text-g-9 uppercase"
+                  class="mt-2 flex w-full items-center justify-center gap-2 rounded-sm bg-blue-2 px-6 py-3 font-sans text-sm font-bold tracking-widest text-g-9 uppercase sm:inline-flex sm:w-fit sm:gap-1.5 sm:px-3 sm:py-1.5 sm:text-xs"
                 >
-                  Play <span class="text-sm">→</span>
+                  Play <span class="text-base sm:text-sm">→</span>
                 </span>
               </div>
             </a>
