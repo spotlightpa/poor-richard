@@ -1,12 +1,17 @@
-<svg viewBox="0 0 100 100" class="{{ .class }}">
-  <g fill="#fff" stroke="#000" stroke-width="3">
-    <rect x="8" y="10" width="18" height="20" />
-    <rect x="30" y="10" width="18" height="20" />
-    <rect x="52" y="10" width="18" height="20" />
-    <rect x="74" y="10" width="18" height="20" />
-    <rect x="52" y="40" width="18" height="20" />
-    <rect x="74" y="40" width="18" height="20" />
-  </g>
-  <rect x="8" y="40" width="40" height="20" fill="#009edb" />
-  <rect x="8" y="70" width="84" height="20" rx="2" fill="#000" />
-</svg>
+{{ $src := partial "helper/imgproxy.html" (dict
+  "filename" "2026/08/01n7-75xe-yaby-tz5h.png"
+  "width" 192
+  "height" 192
+  "gravity" "ce"
+  "ext" "png"
+  "quality" 90
+  )
+}}
+<img
+  src="{{ $src }}"
+  width="192"
+  height="192"
+  alt="WordroW icon"
+  class="{{ .class }}"
+  loading="lazy"
+/>

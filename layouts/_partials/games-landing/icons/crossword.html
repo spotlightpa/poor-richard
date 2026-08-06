@@ -1,22 +1,17 @@
-<svg viewBox="0 0 100 100" class="{{ .class }}">
-  <rect x="6" y="6" width="88" height="88" fill="#fff" />
-  <rect x="72" y="6" width="22" height="22" fill="#000" />
-  <rect x="28" y="28" width="22" height="22" fill="#000" />
-  <rect x="6" y="72" width="22" height="22" fill="#000" />
-  <rect x="50" y="50" width="22" height="22" fill="#ffcb03" />
-  <path
-    d="M28 6V94M50 6V94M72 6V94M6 28H94M6 50H94M6 72H94"
-    stroke="#000"
-    stroke-width="4"
-  />
-  <rect
-    x="6"
-    y="6"
-    width="88"
-    height="88"
-    rx="3"
-    fill="none"
-    stroke="#000"
-    stroke-width="6"
-  />
-</svg>
+{{ $src := partial "helper/imgproxy.html" (dict
+  "filename" "2026/08/01n7-75wr-9xv9-7ata.png"
+  "width" 192
+  "height" 192
+  "gravity" "ce"
+  "ext" "png"
+  "quality" 90
+  )
+}}
+<img
+  src="{{ $src }}"
+  width="192"
+  height="192"
+  alt="Crossword icon"
+  class="{{ .class }}"
+  loading="lazy"
+/>

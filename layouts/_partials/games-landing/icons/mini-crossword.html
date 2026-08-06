@@ -1,20 +1,17 @@
-<svg viewBox="0 0 100 100" class="{{ .class }}">
-  <rect x="6" y="6" width="88" height="88" fill="#fff" />
-  <rect x="64.7" y="6" width="29.3" height="29.3" fill="#009edb" />
-  <rect x="6" y="64.7" width="29.3" height="29.3" fill="#000" />
-  <path
-    d="M35.3 6V94M64.7 6V94M6 35.3H94M6 64.7H94"
-    stroke="#000"
-    stroke-width="3"
-  />
-  <rect
-    x="6"
-    y="6"
-    width="88"
-    height="88"
-    rx="2"
-    fill="none"
-    stroke="#000"
-    stroke-width="4"
-  />
-</svg>
+{{ $src := partial "helper/imgproxy.html" (dict
+  "filename" "2026/08/01n7-75ww-vb34-mxx9.png"
+  "width" 192
+  "height" 192
+  "gravity" "ce"
+  "ext" "png"
+  "quality" 90
+  )
+}}
+<img
+  src="{{ $src }}"
+  width="192"
+  height="192"
+  alt="Mini Crossword icon"
+  class="{{ .class }}"
+  loading="lazy"
+/>
