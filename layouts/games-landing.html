@@ -50,12 +50,36 @@
 
   {{ $allGames := slice
     (dict
+    "title" "Crossword"
+    "href" "https://www.spotlightpa.org/crossword-games"
+    "iconKey" "crossword"
+    "meta" "Weekly · 15 min"
+    "hoverBorder" "hover:border-yellow-2"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
     "title" "Mini Crossword"
     "href" "https://www.spotlightpa.org/mini-crossword-games/"
     "iconKey" "mini-crossword"
     "meta" "Daily · 3 min"
     "hoverBorder" "hover:border-blue-2"
     "iconClass" "h-20 w-20"
+    )
+    (dict
+    "title" "News Quiz"
+    "href" "https://www.spotlightpa.org/topics/news-quiz"
+    "iconKey" "news-quiz"
+    "meta" "Weekly · 7 Qs"
+    "hoverBorder" "hover:border-blue-2"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "Slide"
+    "href" "https://www.spotlightpa.org/slide-games"
+    "iconKey" "slide"
+    "meta" "Daily · 3 min"
+    "hoverBorder" "hover:border-election-green-lighter"
+    "iconClass" "h-[88px] w-[88px]"
     )
     (dict
     "title" "Sudoku"
@@ -86,30 +110,6 @@
     "href" "https://www.spotlightpa.org/wordrow-games/"
     "iconKey" "wordrow"
     "meta" "Daily · 6 tries"
-    "hoverBorder" "hover:border-election-green-lighter"
-    "iconClass" "h-[88px] w-[88px]"
-    )
-    (dict
-    "title" "News Quiz"
-    "href" "https://www.spotlightpa.org/topics/news-quiz"
-    "iconKey" "news-quiz"
-    "meta" "Weekly · 7 Qs"
-    "hoverBorder" "hover:border-blue-2"
-    "iconClass" "h-[88px] w-[88px]"
-    )
-    (dict
-    "title" "Crossword"
-    "href" "https://www.spotlightpa.org/crossword-games"
-    "iconKey" "crossword"
-    "meta" "Weekly · 15 min"
-    "hoverBorder" "hover:border-yellow-2"
-    "iconClass" "h-[88px] w-[88px]"
-    )
-    (dict
-    "title" "Slide"
-    "href" "https://www.spotlightpa.org/slide-games"
-    "iconKey" "slide"
-    "meta" "Daily · 3 min"
     "hoverBorder" "hover:border-election-green-lighter"
     "iconClass" "h-[88px] w-[88px]"
     )
