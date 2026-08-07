@@ -207,9 +207,11 @@
               data-ga-category="all-games"
             >
               <div
-                class="{{ .hoverBorder }} flex aspect-[3/2] max-h-35 items-center justify-center border-4 border-transparent bg-g-1 group-hover:border-4 sm:max-h-none"
+                class="{{ .hoverBorder }} relative aspect-3/2 border-4 border-transparent bg-g-1 group-hover:border-4"
               >
-                {{ partial (printf "games-landing/icons/%s.html" .iconKey) (dict "class" .iconClass) }}
+                <div class="absolute inset-0 flex items-center justify-center">
+                  {{ partial (printf "games-landing/icons/%s.html" .iconKey) (dict "class" .iconClass) }}
+                </div>
               </div>
               <div class="flex flex-col items-start p-3 pb-4">
                 <div
