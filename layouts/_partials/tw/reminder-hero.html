@@ -1,0 +1,100 @@
+{{ $cards := .cards | default slice }}
+
+
+<div class="mx-auto max-w-4xl px-5 pt-8 pb-10 lg:px-0">
+  <h1
+    class="font-serif text-4xl leading-tight font-bold tracking-tight text-g-9 sm:text-5xl"
+  >
+    {{ with .emoji }}
+      <span aria-hidden="true">{{ . }}</span>{{ " " }}
+    {{ end -}}
+    {{ .title }}
+  </h1>
+  {{ with .subhed }}
+    <h2
+      class="mt-5 font-serif text-3xl leading-tight font-bold tracking-tight text-g-9 sm:text-4xl"
+    >
+      {{ . }}
+    </h2>
+  {{ end }}
+
+
+  <div class="article-content mt-8 font-serif text-lg leading-relaxed text-g-8">
+    {{ .content }}
+  </div>
+
+  {{ with $cards }}
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{ range . }}
+        {{ $gravity := .gravity | default "ce" }}
+        {{ $fit := .fit | default "cover" }}
+        {{ $bg := .bg | default "bg-g-3" }}
+        {{ $resize := .resize | default "fill" }}
+        {{ $alt := .alt | default "" }}
+        <a
+          href="{{ .url }}"
+          class="group flex flex-col border-2 border-g-9 bg-white no-underline shadow-sm transition-all duration-300 hover:border-red hover:shadow-md"
+        >
+          <div class="p-6">
+            <div
+              class="mb-3 font-sans text-sm font-bold tracking-widest text-red uppercase"
+            >
+              {{ .eyebrow }}
+            </div>
+            <h3
+              class="font-serif text-xl leading-snug font-bold tracking-tight text-g-9 transition-colors duration-300 group-hover:text-red"
+            >
+              {{ .heading }}
+            </h3>
+          </div>
+          {{ with .image }}
+            {{ if eq $resize "fit" }}
+              <figure class="mt-auto" data-ga-category="thumb">
+                <div
+                  class="relative flex aspect-[3/2] w-full items-center justify-center overflow-clip border-t-2 border-g-9"
+                >
+                  <img
+                    src="{{ partial "helper/imgproxy" (dict "filename" . "width" 480 "height" 320 "gravity" $gravity "resize" "fit" "ext" "png") }}"
+                    alt="{{ $alt }}"
+                    loading="lazy"
+                    decoding="async"
+                    width="480"
+                    height="320"
+                    class="{{ printf "flex h-full w-full box-border %s object-%s p-4" $bg $fit }}"
+                  />
+                </div>
+              </figure>
+            {{ else }}
+              {{ partial "tw/image-block.html" (dict
+                "filename" .
+                "description" $alt
+                "widthRatio" 3
+                "heightRatio" 2
+                "widths" (slice 260 384 512)
+                "sizeHint" "400px"
+                "figClass" "mt-auto"
+                "imgClass" (printf "flex h-full w-full object-%s" $fit)
+                "containerClass" (printf "relative w-full overflow-clip group flex items-center justify-center %s border-t-2 border-g-9" $bg)
+                "gravity" $gravity
+                )
+              }}
+            {{ end }}
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+{{ if .signup }}
+  <div class="mt-12 w-full bg-black">
+    <div
+      class="mx-auto flex max-w-2xl flex-col items-center px-6 py-14 text-center"
+    >
+      <p class="mb-7 font-sans text-2xl leading-snug font-bold text-white">
+        {{ .signupHed | default "Sign up for one of our free newsletters to stay in the loop." }}
+      </p>
+      <a href="/newsletters/" class="btn-signup-lg"> Sign Up </a>
+    </div>
+  </div>
+{{ end }}
