@@ -10,24 +10,24 @@ url = "/newsletters/thanks/"
 
 hero = true
 emoji = "❤️"
-subhed = "You’re about to get the best journalism from across PA."
+subhed = "You’re about to get the best journalism from across Pennsylvania."
 signup = false
 
 [[cards]]
 eyebrow = "Learn more"
-heading = "Explore our mission, team, and impact"
+heading = "Learn about our mission, team, and impact"
 url = "https://www.spotlightpa.org/about"
 image = "2026/08/01n7-9dzb-kx0m-37a3.jpeg"
 
 [[cards]]
 eyebrow = "Support our work"
-heading = "Discover ways to help speak truth to power"
+heading = "Discover ways you can help speak truth to power"
 url = "https://www.spotlightpa.org/support/"
 image = "2026/08/01n7-9dyv-gpjj-8x1k.jpeg"
 
 [[cards]]
 eyebrow = "Follow us"
-heading = "Follow us on social or download our app"
+heading = "Follow us on social media or download our app"
 url = "https://www.spotlightpa.org/about/mobile-apps/"
 image = "2026/08/01n7-9ned-brx0-9e8y.png"
 fit = "contain"
