@@ -1,0 +1,20 @@
+{{ define "promo" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "topper" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "main" }}
+  {{ $dict := dict
+    "emoji" (.Param "emoji")
+    "title" .Title
+    "subhed" (.Param "subhed")
+    "content" .Content
+    "cards" (.Param "cards")
+    "signup" (.Param "signup")
+    "signupHed" (.Param "signup-hed")
+  }}
+  {{ partial "tw/reminder-hero.html" $dict }}
+{{ end }}
