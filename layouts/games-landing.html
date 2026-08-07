@@ -141,7 +141,7 @@
           href="{{ .href }}"
           target="_blank"
           rel="noopener"
-          class="{{ .bg }} {{ .text }} flex min-h-75 flex-col p-6 no-underline transition-[filter] hover:brightness-95"
+          class="{{ .bg }} {{ .text }} flex min-h-75 flex-col p-6 no-underline transition-all hover:-translate-y-1 hover:shadow-lg hover:brightness-95"
           data-ga-category="featured-game"
         >
           <div class="mb-5 flex items-center justify-center bg-white p-4">
@@ -203,11 +203,11 @@
               href="{{ .href }}"
               target="_blank"
               rel="noopener"
-              class="group flex flex-col border border-g-3 bg-white no-underline hover:border-g-9"
+              class="group flex flex-col border border-g-3 bg-white no-underline transition-all hover:-translate-y-1 hover:border-g-9 hover:shadow-lg"
               data-ga-category="all-games"
             >
               <div
-                class="{{ .hoverBorder }} relative aspect-3/2 border-4 border-transparent bg-g-1 group-hover:border-4"
+                class="{{ .hoverBorder }} relative aspect-3/2 border-4 border-transparent bg-g-1 group-hover:border-8"
               >
                 <div class="absolute inset-0 flex items-center justify-center">
                   {{ partial (printf "games-landing/icons/%s.html" .iconKey) (dict "class" .iconClass) }}
