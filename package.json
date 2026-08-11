@@ -24,33 +24,33 @@
     "dev:local": "netlify dev -c \"yarn start:dev\""
   },
   "dependencies": {
-    "@alpinejs/collapse": "^3.15.12",
-    "@alpinejs/focus": "^3.15.12",
-    "@alpinejs/intersect": "^3.15.12",
+    "@alpinejs/collapse": "^3.16.1",
+    "@alpinejs/focus": "^3.16.1",
+    "@alpinejs/intersect": "^3.16.1",
     "@aws-sdk/client-dynamodb": "^3.998.0",
     "@aws-sdk/client-ses": "^3.1000.0",
     "@aws-sdk/client-sns": "^3.1058.0",
     "@aws-sdk/lib-dynamodb": "^3.998.0",
-    "@fortawesome/fontawesome-free": "^7.3.0",
-    "@fortawesome/fontawesome-svg-core": "^7.3.0",
-    "@fortawesome/free-regular-svg-icons": "^7.3.0",
-    "@fortawesome/free-solid-svg-icons": "^7.3.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-regular-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
     "@newswire/frames": "^1.0.0",
-    "@tailwindcss/cli": "^4.3.2",
-    "alpinejs": "^3.15.12",
+    "@tailwindcss/cli": "^4.3.3",
+    "alpinejs": "^3.16.1",
     "journalize": "^2.5.1",
-    "tailwindcss": "^4.3.2"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.0",
-    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/eslintrc": "^3.3.6",
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.6.0",
+    "eslint": "^10.8.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
-    "globals": "^17.7.0",
-    "prettier": "^3.9.4",
+    "globals": "^17.9.0",
+    "prettier": "^3.9.6",
     "prettier-plugin-go-template": "^0.0.15",
-    "prettier-plugin-tailwindcss": "^0.8.0"
+    "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
