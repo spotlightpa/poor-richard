@@ -50,7 +50,7 @@ Not all neighborhoods endure heat the same way. Some are <a href="https://www.ph
 
 Historical segregation in the U.S. correlates with <a href="https://www.mdpi.com/2075-4698/16/8/243">environmental risk</a>. Neighborhoods that faced redlin<a href="https://dsl.richmond.edu/panorama/redlining/">ing</a> correspond with places most in need of trees. According to a <a href="https://www.nature.com/articles/s42949-021-00022-0">2021 study</a>, the government-imposed barriers to home ownership and generational wealth made it more difficult for residents to invest in local tree cover.
 
-{{<picture caption="" credit="Inside Climate News" description="Map and chart showing Philadelphia’s tree canopy and historically redlined neighborhoods" height-ratio="2134" src="2026/08/01n7-wb6a-jam2-8dyf.png" width-ratio="75">}}
+{{<picture caption="" credit="Inside Climate News" description="Map and chart showing Philadelphia’s tree canopy and historically redlined neighborhoods" height-ratio="1000" src="2026/08/01n7-wb6a-jam2-8dyf.png" width-ratio="75">}}
 
 In a newsletter, The Environmental Collaboratory at Drexel University said the increasingly life-threatening hotter temperatures in formerly redlined neighborhoods “is not a coincidence. It is the direct and traceable consequence of policy decisions in zoning, lending, and infrastructure investment that concentrates environmental risk in communities … least equipped to absorb it.”
 
