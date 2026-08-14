@@ -1,0 +1,17 @@
+{{ $src := partial "helper/imgproxy.html" (dict
+  "filename" "2026/08/01n7-75xe-yaby-tz5h.png"
+  "width" 192
+  "height" 192
+  "gravity" "ce"
+  "ext" "png"
+  "quality" 90
+  )
+}}
+<img
+  src="{{ $src }}"
+  width="192"
+  height="192"
+  alt="WordroW icon"
+  class="{{ .class }}"
+  loading="lazy"
+/>

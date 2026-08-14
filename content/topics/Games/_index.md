@@ -11,4 +11,8 @@ title = "Games"
 hide-description = false
 description-hed = "Try Our Games"
 description-dek = "Play challenging games and puzzles from Spotlight PA"
+
+[build]
+list = false
+render = false
 +++
