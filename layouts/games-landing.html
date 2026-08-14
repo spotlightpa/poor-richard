@@ -1,0 +1,289 @@
+{{ define "body-class" }}
+  font-sans
+{{ end }}
+
+{{ define "main" }}
+  {{ $heroHed := .Param "hero-hed" | default "Spotlight PA Games" }}
+  {{ $heroDek := .Param "hero-dek" | default "Play, share, and check back daily." }}
+
+  {{ $featuredGames := slice
+    (dict
+    "title" "Mini Crossword"
+    "href" "https://www.spotlightpa.org/mini-crossword-games/"
+    "iconKey" "mini-crossword"
+    "meta" "Daily · 3 min"
+    "body" "A bite-sized crossword you can solve in a few minutes — fresh every day."
+    "bg" "bg-blue"
+    "text" "text-white"
+    "bodyText" "text-white/90"
+    "metaText" "text-white/85"
+    "ctaBg" "bg-blue-2"
+    "ctaText" "text-g-9"
+    )
+    (dict
+    "title" "Word Flower"
+    "href" "https://www.spotlightpa.org/word-flower-games/"
+    "iconKey" "word-flower"
+    "meta" "Daily · 10 min"
+    "body" "Spell as many words as you can from seven letters around a central petal."
+    "bg" "bg-yellow"
+    "text" "text-g-9"
+    "bodyText" "text-g-9"
+    "metaText" "text-g-9/85"
+    "ctaBg" "bg-yellow-6"
+    "ctaText" "text-g-9"
+    )
+    (dict
+    "title" "News Quiz"
+    "href" "https://www.spotlightpa.org/topics/news-quiz/"
+    "iconKey" "news-quiz"
+    "meta" "Weekly · 7 questions"
+    "body" "Test how closely you followed the week in Pennsylvania news."
+    "bg" "bg-election-green"
+    "text" "text-white"
+    "bodyText" "text-white/90"
+    "metaText" "text-white/85"
+    "ctaBg" "bg-election-green-lighter"
+    "ctaText" "text-g-9"
+    )
+    }}
+
+  {{ $allGames := slice
+    (dict
+    "title" "Crossword"
+    "href" "https://www.spotlightpa.org/crossword-games"
+    "iconKey" "crossword"
+    "meta" "Weekly · 15 min"
+    "hoverBorder" "hover:border-yellow-2"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "Mini Crossword"
+    "href" "https://www.spotlightpa.org/mini-crossword-games/"
+    "iconKey" "mini-crossword"
+    "meta" "Daily · 3 min"
+    "hoverBorder" "hover:border-blue-2"
+    "iconClass" "h-20 w-20"
+    )
+    (dict
+    "title" "News Quiz"
+    "href" "https://www.spotlightpa.org/topics/news-quiz"
+    "iconKey" "news-quiz"
+    "meta" "Weekly · 7 Qs"
+    "hoverBorder" "hover:border-blue-2"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "Slide"
+    "href" "https://www.spotlightpa.org/slide-games"
+    "iconKey" "slide"
+    "meta" "Daily · 3 min"
+    "hoverBorder" "hover:border-election-green-lighter"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "Sudoku"
+    "href" "https://www.spotlightpa.org/sudoku-games/"
+    "iconKey" "sudoku"
+    "meta" "Daily · 5 min"
+    "hoverBorder" "hover:border-blue-2"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "Word Flower"
+    "href" "https://www.spotlightpa.org/word-flower-games/"
+    "iconKey" "word-flower"
+    "meta" "Daily · 10 min"
+    "hoverBorder" "hover:border-yellow-2"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "Word Search"
+    "href" "https://www.spotlightpa.org/word-search-games/"
+    "iconKey" "word-search"
+    "meta" "Daily · 4 min"
+    "hoverBorder" "hover:border-election-green-lighter"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    (dict
+    "title" "WordroW"
+    "href" "https://www.spotlightpa.org/wordrow-games/"
+    "iconKey" "wordrow"
+    "meta" "Daily · 6 tries"
+    "hoverBorder" "hover:border-election-green-lighter"
+    "iconClass" "h-[88px] w-[88px]"
+    )
+    }}
+
+
+  <div class="mx-auto w-full max-w-screen-xl px-4 py-12 md:px-6 md:py-16">
+    <div class="mx-auto max-w-2xl pb-2 text-center">
+      <h1
+        class="font-serif text-4xl leading-tight font-semibold tracking-tight text-g-9 md:text-5xl"
+      >
+        {{ $heroHed }}
+      </h1>
+      <p class="mt-4 font-serif text-xl leading-snug text-g-8 md:text-2xl">
+        {{ $heroDek }}
+      </p>
+    </div>
+
+    <div
+      class="mt-12 mb-6 flex items-baseline justify-between border-b-2 border-g-9 pb-3"
+    >
+      <h2 class="font-serif text-2xl font-bold tracking-tight text-g-9">
+        Featured Games
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
+      {{ range $featuredGames }}
+        <a
+          href="{{ .href }}"
+          target="_blank"
+          rel="noopener"
+          class="{{ .bg }} {{ .text }} flex min-h-75 flex-col p-6 no-underline transition-all hover:-translate-y-1 hover:shadow-lg hover:brightness-95"
+          data-ga-category="featured-game"
+        >
+          <div class="mb-5 flex items-center justify-center bg-white p-4">
+            {{ partial (printf "games-landing/icons/%s.html" .iconKey) (dict "class" "h-24 w-24") }}
+          </div>
+          <div
+            class="{{ .metaText }} font-sans text-xs font-bold tracking-widest uppercase"
+          >
+            {{ .meta }}
+          </div>
+          <h3 class="my-2 font-serif text-2xl leading-tight font-bold">
+            {{ .title }}
+          </h3>
+          <p
+            class="{{ .bodyText }} flex-1 font-serif text-base leading-snug font-bold"
+          >
+            {{ .body }}
+          </p>
+          <span
+            class="{{ .ctaBg }} {{ .ctaText }} mt-4 inline-flex w-fit items-center gap-2 rounded-sm px-4 py-3 font-sans text-xs font-bold tracking-widest uppercase"
+          >
+            Start playing <span class="text-sm">→</span>
+          </span>
+        </a>
+      {{ end }}
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 gap-11 md:grid-cols-[1fr_320px]">
+      <div>
+        <div
+          class="mb-6 flex items-baseline justify-between border-b-2 border-g-9 pb-3"
+        >
+          <h2 class="font-serif text-2xl font-bold tracking-tight text-g-9">
+            All Games
+          </h2>
+        </div>
+        <p class="mb-6 font-serif text-base leading-snug text-g-8">
+          Play Spotlight PA games here or on our mobile app — available for free
+          in the
+          <a
+            href="https://apps.apple.com/us/app/spotlight-pa/id6498866659"
+            target="_blank"
+            rel="noopener"
+            class="font-bold text-blue-8 no-underline hover:text-red"
+            >Apple App Store</a
+          >
+          and
+          <a
+            href="https://play.google.com/store/apps/details?id=com.spotlightpa.digestapp&pli=1"
+            target="_blank"
+            rel="noopener"
+            class="font-bold text-blue-8 no-underline hover:text-red"
+            >Google Play Store</a
+          >.
+        </p>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          {{ range $allGames }}
+            <a
+              href="{{ .href }}"
+              target="_blank"
+              rel="noopener"
+              class="group flex flex-col border border-g-3 bg-white no-underline transition-all hover:-translate-y-1 hover:border-g-9 hover:shadow-lg"
+              data-ga-category="all-games"
+            >
+              <div
+                class="{{ .hoverBorder }} relative aspect-3/2 border-4 border-transparent bg-g-1 group-hover:border-8"
+              >
+                <div class="absolute inset-0 flex items-center justify-center">
+                  {{ partial (printf "games-landing/icons/%s.html" .iconKey) (dict "class" .iconClass) }}
+                </div>
+              </div>
+              <div class="flex flex-col items-start p-3 pb-4">
+                <div
+                  class="font-serif text-base leading-tight font-bold text-g-9"
+                >
+                  {{ .title }}
+                </div>
+                <div
+                  class="mt-1 font-sans text-xs font-bold tracking-widest text-g-7 uppercase"
+                >
+                  {{ .meta }}
+                </div>
+                <span
+                  class="mt-2 flex w-full items-center justify-center gap-2 rounded-sm bg-blue-2 px-6 py-3 font-sans text-sm font-bold tracking-widest text-g-9 uppercase sm:inline-flex sm:w-fit sm:gap-1.5 sm:px-3 sm:py-1.5 sm:text-xs"
+                >
+                  Play <span class="text-base sm:text-sm">→</span>
+                </span>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <aside class="mt-9 flex flex-col items-end gap-7">
+        {{ partial "games-landing/newsletter-box.html" . }}
+
+        {{ if page.Param "ad-rail-active" }}
+          {{ partial "tw/promo-single.html" (dict
+            "class" "mx-auto flex items-center justify-center"
+            "images" (page.Param "ad-rail-images")
+            "width" 300
+            "height" 250
+            "link" (page.Param "ad-rail-link")
+            "description" (page.Param "ad-rail-description")
+            )
+          }}
+        {{ end }}
+
+
+        <div
+          class="w-full rounded-sm border border-g-3 bg-beige p-6 shadow-md md:max-w-75"
+        >
+          <div
+            class="mb-1 border-b-2 border-g-9 pb-2 font-serif text-xl font-bold tracking-tight text-g-9 italic"
+          >
+            Learn More
+          </div>
+          <a
+            href="https://www.spotlightpa.org/about/"
+            target="_blank"
+            rel="noopener"
+            class="block border-b border-g-3 py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
+            >About us</a
+          >
+          <a
+            href="https://www.spotlightpa.org/investigations/"
+            target="_blank"
+            rel="noopener"
+            class="block border-b border-g-3 py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
+            >Latest investigations</a
+          >
+          <a
+            href="https://www.spotlightpa.org/about/mobile-apps"
+            target="_blank"
+            rel="noopener"
+            class="block py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
+            >Download our app</a
+          >
+        </div>
+      </aside>
+    </div>
+
+    {{ partial "games-landing/latest-news.html" . }}
+  </div>
+{{ end }}

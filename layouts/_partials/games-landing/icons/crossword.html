@@ -1,0 +1,17 @@
+{{ $src := partial "helper/imgproxy.html" (dict
+  "filename" "2026/08/01n7-75wr-9xv9-7ata.png"
+  "width" 192
+  "height" 192
+  "gravity" "ce"
+  "ext" "png"
+  "quality" 90
+  )
+}}
+<img
+  src="{{ $src }}"
+  width="192"
+  height="192"
+  alt="Crossword icon"
+  class="{{ .class }}"
+  loading="lazy"
+/>

@@ -1,0 +1,47 @@
+{{ $newsSection := site.GetPage "/news/_index.md" }}
+{{ $latestNews := first 3 (sort $newsSection.RegularPages ".PublishDate" "desc") }}
+
+
+<div
+  class="mt-14 mb-6 flex items-baseline justify-between border-b-2 border-g-9 pb-3"
+>
+  <h2 class="font-sans text-2xl font-bold tracking-tight text-g-9 md:text-3xl">
+    Latest News
+  </h2>
+  <a
+    href="{{ $newsSection.RelPermalink }}"
+    class="font-sans text-xs font-bold tracking-widest text-g-7 uppercase no-underline hover:text-red"
+    >All news →</a
+  >
+</div>
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+  {{ range $latestNews }}
+    {{ $imgOpts := dict
+      "filename" (.Param "image")
+      "credit" (.Param "image-credit")
+      "description" (.Param "image-description")
+      "widthRatio" 16
+      "heightRatio" 9
+      "widths" (slice 128 256 384 512 1280)
+      "sizeHint" "(min-width: 850px) 33vw, 90vw"
+      "gravity" (.Param "image-gravity")
+    }}
+    <a
+      href="{{ .RelPermalink }}"
+      class="flex flex-col no-underline hover:opacity-80"
+      data-ga-category="latest-news"
+    >
+      <span
+        class="mb-2 w-fit bg-g-9 px-3 py-1.5 font-sans text-sm font-bold tracking-wide text-white uppercase"
+      >
+        {{ .PublishDate.Format "January 2, 2006" | upper }}
+      </span>
+      {{ partial "tw/image-block.html" $imgOpts }}
+      <h3
+        class="mt-2 font-serif text-xl leading-snug font-bold tracking-tight text-pretty text-g-9"
+      >
+        {{ .LinkTitle }}
+      </h3>
+    </a>
+  {{ end }}
+</div>
