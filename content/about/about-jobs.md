@@ -10,7 +10,7 @@ aliases = ["/jobs/"]
 ### Current openings
 
 - [Director of Donor Relations, Pittsburgh, Spotlight PA](#director-of-donor-relations-pittsburgh-spotlight-pa)
-- [Pennsylvania climate reporter, Guild position](#pennsylvania-climate-reporter)
+- [Pennsylvania climate reporter, Guild position](#pennsylvania-climate-reporter-guild-position)
 
 ## Director of Donor Relations, Pittsburgh, Spotlight PA
 
