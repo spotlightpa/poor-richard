@@ -133,28 +133,28 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "Support Spotlight PA's unmatched, unbiased investigative reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n7/zjhv/spring-2023-campaign-squares-33-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
-  "ad-rail-sticky-active": false,
+  "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "Support Spotlight PA's unmatched, unbiased investigative reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n7/zjhv/spring-2023-campaign-squares-33-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
-  "ad-rail-top-active": false,
+  "ad-rail-top-active": true,
   "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit? Learn more about our work »\u003c/strong\u003e",
   "banner-active": false,
   "banner-bg-color": "#009edb",
