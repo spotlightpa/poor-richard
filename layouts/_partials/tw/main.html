@@ -1,6 +1,7 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
 {{ $isWide := .Param "image-size" | eq "wide" }}
+{{ $isGamePage := and $params.topic (eq $params.topic.Title "Games") }}
 
 {{ $bylineLink := "" }}
 {{ with .Param "authors" }}
@@ -205,7 +206,9 @@
           {{ end }}
         </footer>
       {{ end }}
-      {{ partial "tw/support.html" . }}
+      {{ if $isGamePage | not }}
+        {{ partial "tw/support.html" . }}
+      {{ end }}
     </div>
     {{ if .Param "suppress-related" | not }}
       <div
@@ -215,7 +218,6 @@
       >
         {{ $guide := $params.rubric }}
         {{ $relatedPages := where $guide.RegularPages "RelPermalink" "!=" .RelPermalink }}
-        {{ $isGamePage := and $params.topic (eq $params.topic.Title "Games") }}
         {{ partial "tw/list-3-col-story.html" (dict
           "hed" (cond $isGamePage "More Games" "Related Stories")
           "pages" $relatedPages
