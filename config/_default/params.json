@@ -85,16 +85,16 @@
   "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "Support Spotlight PA's unmatched, unbiased investigative reporting.",
       "label": "",
       "labelLink": "",
       "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-feature",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n7/zjhv/spring-2023-campaign-squares-33-.png"
+        "https://files.data.spotlightpa.org/uploads/01n1/rc8b/spring-2023-campaign-squares-19-.png"
       ]
     }
   ],
-  "ad-hp-featured-active": false,
+  "ad-hp-featured-active": true,
   "ad-hp-headwater-desktop": [
     {
       "description": "Support Spotlight PA's independent, unbiased reporting and for a limited time, your gift will be DOUBLED.",
