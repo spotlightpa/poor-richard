@@ -213,7 +213,7 @@
         id="related-stories"
         data-ga-category="guides"
       >
-        {{ $guide := site.GetPage $params.rubric.RelPermalink }}
+        {{ $guide := $params.rubric }}
         {{ $relatedPages := where $guide.RegularPages "RelPermalink" "!=" .RelPermalink }}
         {{ $isGamePage := and $params.topic (eq $params.topic.Title "Games") }}
         {{ partial "tw/list-3-col-story.html" (dict
