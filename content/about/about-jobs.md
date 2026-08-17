@@ -10,7 +10,7 @@ aliases = ["/jobs/"]
 ### Current openings
 
 - [Director of Donor Relations, Pittsburgh, Spotlight PA](#director-of-donor-relations-pittsburgh-spotlight-pa)
-- [Pennsylvania climate reporter, Guild position](#pennsylvania-climate-reporter-guild-position)
+- [Environment reporter, Guild position](#environment-reporter-guild-position)
 
 ## Director of Donor Relations, Pittsburgh, Spotlight PA
 
@@ -44,9 +44,9 @@ Applicants should include a resume and a one-page cover letter answering the fol
 
 We know not everyone reading this will fit exactly what we've described. We encourage everyone to apply who shares our passion for informed communities and our drive to create a sustainable business model to support vital news and investigations. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
-## Pennsylvania climate reporter (Guild position)
+## Environment reporter (Guild position)
 
-### [Apply here](https://spotlightpa.applytojob.com/apply/6TmK0yONX8/Pennsylvania-Climate-Reporter-Guild-Position)
+### [Apply here](https://spotlightpa.applytojob.com/apply/6TmK0yONX8/Environment-Reporter-Guild-Position)
 
 **Summary:** Spotlight PA and Grist are seeking an environment reporter to cover the impacts of climate change in Pennsylvania. The ideal candidate will be interested in exploring the intersectionality of a warming planet with, well, everything — from land use, business, energy, water, and policy decisions to environmental justice and health — as well as solutions to the climate crisis. 
 
