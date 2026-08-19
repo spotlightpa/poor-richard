@@ -29,7 +29,11 @@ READING — A group of activists wants Reading City Council to adopt a wide-rang
 
 Members of the Mayor Eddie Morán’s administration and City Council said they are open to the ideas in a proposed housing bill of rights, though they cautioned that some of them are beyond Reading’s control.
 
-Even without any new ordinances, renters in Pennsylvania have rights they can assert regardless of the tenant protections in the municipality where they reside. Here’s what renters should know:
+Even without any new ordinances, renters in Pennsylvania have rights they can assert regardless of the tenant protections in the municipality where they reside.<br/>
+
+{{<datawrapper src="https://datawrapper.dwcdn.net/6ZVAW/26/" height="779">}}
+
+<br/>Here’s what renters should know:
 
 ## Basic rights in a lease
 
