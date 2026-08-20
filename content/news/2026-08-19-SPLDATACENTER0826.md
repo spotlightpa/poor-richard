@@ -155,3 +155,7 @@ Still, he cautioned against lawmakers signing NDA agreements. Lawmakers who brea
 
 “You basically put yourself in a corner where you can get sued on either side,” High said.
 
+<em>Following the publication of this story, DCED provided the following statement to Spotlight PA:</em>
+
+<em>&#34;Recognizing the unique challenges posed by speculative data center development projects, Governor Shapiro issued an </em><a href="https://www.pa.gov/content/dam/copapwp-pagov/en/governor/documents/eo2026_05_protecting%20pennsylvania%20consumers%20from%20data%20center%20impacts_final_executed.pdf"><em>Executive Order</em></a><em> requiring data center projects to comply with his GRID (Governor&#39;s Responsible Infrastructure Development) principles. That Executive Order prohibits the use of NDAs for data center projects moving forward.&#34;</em>
+
