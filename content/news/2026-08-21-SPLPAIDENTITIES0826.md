@@ -92,13 +92,13 @@ Not quite. There are tons of ways to slice up the state, and no single approach 
 
 I could go on, or you could just draw your own map. (No, seriously. Draw one and <a href="mailto:aprihar@spotlightpa.org">email it to me</a> — I’d love to see it.)
 
-{{<typeform id="01KZY2FA77WPV82GGCCW7Q0340">}}
-
 When PA Local <a href="https://www.youtube.com/shorts/1xfTGA4AafM">went to the people</a> to learn what they say when asked where in Pennsylvania they’re from, some of the hundreds of answers leaned into cultural or economic histories, deferring to names like the Slate Belt or the Capitol Region. Others relied on geography, namechecking the Central Susquehanna Valley or the Poconos. Some people kept things straightforward by naming their hometown, county, or a nearby city.
 
 Directional terms, like northwestern, central, or southeastern, were common, but boundaries lacked consensus — though some people seemed ready to pick a fight to defend their definition.
 
 “People … have very strong ideas about what their region is, what their identity is, and what is a part of it, and what isn’t,” said Schnell, the Kutztown professor. “It’s interesting in part because it’s a purely cultural kind of a definition. It’s not like there’s an objective truth to it.”
+
+{{<typeform id="01KZY2FA77WPV82GGCCW7Q0340">}}
 
 Many of the terms people use amount to what geographers call “vernacular regions,” which are “perceptual” areas that exist “in people’s heads,” Schnell explained.
 
