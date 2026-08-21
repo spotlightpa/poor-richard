@@ -22,6 +22,10 @@ title-tag = "Democrats declare flip in PA House special election"
 topics = ["Elections"]
 +++
 
+<strong><em>Update, Aug. 21:</em></strong><em> The Associated Press has called the race for Democrat Brandon Dukes.</em>
+
+<strong><em>Original story</em></strong>
+
 HARRISBURG — Democrats are declaring victory in a special election for an exurban Pittsburgh state House district that President Donald Trump won by almost 20 percentage points in 2024.
 
 The Associated Press has not yet called the race. But as of 10 a.m. Wednesday, unofficial results show that Democrat Brandon Dukes, a TD Bank loan officer, is 88 votes ahead of Republican Scott Timko, a private aviation pilot and Air Force veteran.
