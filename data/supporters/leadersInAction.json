@@ -78,6 +78,13 @@
       "categoryRank": "5"
     },
     {
+      "display": "Victoria Baldwin",
+      "sort": "Baldwin",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "Paul and Melissa Barbehenn",
       "sort": "Barbehenn",
       "url": "",
@@ -225,6 +232,13 @@
       "categoryRank": "5"
     },
     {
+      "display": "Jim and Judy Boscov",
+      "sort": "Boscov",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
       "display": "John Brady",
       "sort": "Brady",
       "url": "",
@@ -283,6 +297,13 @@
     {
       "display": "Richard Carroll",
       "sort": "Carroll",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Barbara Carter",
+      "sort": "Carter",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -384,6 +405,13 @@
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
+    },
+    {
+      "display": "Lynne Eitel",
+      "sort": "Eitel",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Melissa Egbertson",
@@ -1075,8 +1103,8 @@
       "display": "Ginny Parry",
       "sort": "Parry",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Rishin and Amita Patel",
@@ -1158,13 +1186,6 @@
     {
       "display": "Gwen Ritter",
       "sort": "Ritter",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Richard Robey",
-      "sort": "Robey",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
