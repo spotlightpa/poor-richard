@@ -73,6 +73,8 @@ Like High, Padora was asked to sign the document before meeting with the company
 
 He described the meeting as “a general introduction” intended to provide basic information about the project planned in Kline Township. The only confidential information he learned at the meeting, he said, was the planned end user for the data center — Amazon.
 
+Padora wasn’t the only county commissioner to sign the NDA. Both Barron Hetherington and Gary Hess, the county’s other two commissioners, also signed the NDA. Neither responded to press inquiries from Spotlight PA.
+
 Padora defended his decision to sign the NDA, saying the confidentiality didn&#39;t affect his interactions with constituents. He spoke regularly about the proposal, he said.
 
 “It didn’t change \[my behavior\] at all. We were talking about \[the project,\]” Pandora said. “Once they purchased the property and the deed was recorded, everybody knew it was Amazon anyway.”
