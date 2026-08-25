@@ -1,0 +1,55 @@
+{{ $url := .url }}
+{{ $title := .title }}
+{{ $shareText := printf "%s from Spotlight PA" $title }}
+{{ $bskyText := printf "%s %s" $shareText $url }}
+{{ $pill := "border-2 border-black px-3.5 py-1.5 font-sans text-sm font-bold text-black no-underline transition-colors hover:bg-black hover:text-white" }}
+<div
+  class="mt-4 flex flex-wrap items-center gap-3 border-t-2 border-black pt-3.5"
+  data-ga-category="game-share"
+>
+  <span class="font-sans text-xs font-bold tracking-widest text-g-7 uppercase">
+    Share this puzzle
+  </span>
+  <div class="flex flex-wrap gap-2">
+    <a
+      class="{{ $pill }}"
+      target="_blank"
+      rel="noopener"
+      data-ga-category="facebook"
+      href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}"
+      >Facebook</a
+    >
+    <a
+      class="{{ $pill }}"
+      target="_blank"
+      rel="noopener"
+      data-ga-category="twitter"
+      href="https://twitter.com/intent/tweet?url={{ $url }}&text={{ $shareText }}"
+      >X</a
+    >
+    <a
+      class="{{ $pill }}"
+      target="_blank"
+      rel="noopener"
+      data-ga-category="bluesky"
+      href="https://bsky.app/intent/compose?text={{ $bskyText }}"
+      >Bluesky</a
+    >
+    <a
+      class="{{ $pill }}"
+      data-ga-category="email"
+      href="mailto:?subject={{ $shareText }}&body={{ $url }}"
+      >Email</a
+    >
+    <button
+      type="button"
+      class="{{ $pill }} cursor-pointer bg-transparent"
+      data-ga-category="copy-link"
+      data-url="{{ $url }}"
+      x-data="{ copied: false }"
+      @click="navigator.clipboard.writeText($el.dataset.url).then(() => { copied = true; setTimeout(() => copied = false, 2000) })"
+    >
+      <span x-text="copied ? 'Link copied' : 'Copy link'">Copy link</span>
+    </button>
+  </div>
+</div>
