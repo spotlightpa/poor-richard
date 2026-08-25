@@ -1,0 +1,91 @@
+{{ define "body-class" }}
+  font-sans
+{{ end }}
+
+{{ define "main" }}
+  <div class="mx-auto w-full max-w-screen-xl px-4 py-10 md:px-6 md:py-14">
+    {{ if .Param "ad-leaderboard-top-active" }}
+      <div class="mb-10 flex justify-center">
+        {{ partial "tw/promo-single.html" (dict
+          "images" (.Param "ad-leaderboard-top-images")
+          "width" 1350
+          "height" 175
+          "link" (.Param "ad-leaderboard-top-link")
+          "description" (.Param "ad-leaderboard-top-description")
+          )
+        }}
+      </div>
+    {{ end }}
+
+
+    <div class="mb-8 border-b-2 border-g-9 pb-2.5">
+      <h1
+        class="text-center font-serif text-3xl font-bold tracking-tight text-g-9 md:text-left md:text-4xl"
+      >
+        {{ .Title }}
+      </h1>
+    </div>
+
+    <div class="grid grid-cols-1 items-start gap-9 md:grid-cols-[1fr_320px]">
+      <div>
+        {{ with .Content }}
+          <div data-ga-category="content" id="content">
+            {{ partial "tag/content-well-start" . }}
+            {{ . }}
+            {{ partial "tag/content-well-end" . }}
+          </div>
+        {{ end }}
+        {{ partial "game-embed/share-row.html" (dict
+          "url" .Permalink
+          "title" .LinkTitle
+          )
+        }}
+      </div>
+
+      <aside class="flex flex-col items-stretch gap-7 md:items-end">
+        {{ with .Param "leaderboard-kicker" }}
+          {{ partial "game-embed/leaderboard.html" (dict
+            "kicker" .
+            "heading" ($.Param "leaderboard-heading")
+            )
+          }}
+        {{ end }}
+
+        {{ if .Param "ad-rail-active" }}
+          {{ partial "tw/promo-single.html" (dict
+            "class" "mx-auto flex items-center justify-center"
+            "images" (.Param "ad-rail-images")
+            "width" 300
+            "height" 250
+            "link" (.Param "ad-rail-link")
+            "description" (.Param "ad-rail-description")
+            )
+          }}
+        {{ end }}
+
+        {{ partial "game-embed/newsletter-box.html" . }}
+      </aside>
+    </div>
+
+    {{ partial "game-embed/more-games.html" (dict
+      "current" (.Param "game-key")
+      "keys" (.Param "more-games")
+      )
+    }}
+
+    {{ partial "games-landing/latest-news.html" . }}
+
+    {{ if .Param "ad-leaderboard-bottom-active" }}
+      <div class="mt-12 flex justify-center">
+        {{ partial "tw/promo-single.html" (dict
+          "images" (.Param "ad-leaderboard-bottom-images")
+          "width" 1350
+          "height" 175
+          "link" (.Param "ad-leaderboard-bottom-link")
+          "description" (.Param "ad-leaderboard-bottom-description")
+          )
+        }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
