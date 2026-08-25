@@ -1,0 +1,54 @@
+{{ $idEmail := partial "helper/new-id" . | printf "game-embed-newsletter-%s" }}
+
+
+<div
+  class="w-full rounded-sm border border-g-3 bg-beige p-6 shadow-md md:max-w-75"
+  x-data="inlineNewsletter($el.dataset.baseUrl)"
+  data-base-url="{{ page.Param `newsletters-base-url` }}"
+>
+  <div
+    class="mb-2 font-sans text-xs font-bold tracking-widest text-g-7 uppercase"
+  >
+    Games in your inbox
+  </div>
+  <h3 class="mb-2 font-serif text-xl font-bold italic">Ready. Set. Play.</h3>
+
+  <div x-show="!done">
+    <p class="mb-4 font-serif text-sm leading-snug text-g-8">
+      Sign up for Spotlight PA's free games email for daily puzzles and brain
+      teasers.
+    </p>
+    <form
+      class="flex flex-col gap-2"
+      data-ga-category="game-embed-newsletter"
+      @submit.prevent="submit"
+    >
+      {{ partial "newsletter/games-hidden.html" . }}
+      <label class="sr-only" for="{{ $idEmail }}">Email address</label>
+      <input
+        id="{{ $idEmail }}"
+        class="spl-input"
+        type="email"
+        name="EMAIL"
+        placeholder="Email address"
+        required
+      />
+      <button class="btn-signup" type="submit" :disabled="isLoading">
+        Sign up
+        <svg
+          x-cloak
+          x-transition
+          aria-label="Submitting"
+          x-show="isLoading"
+          class="-mt-1 inline-block h-4 w-4 animate-spin fill-current"
+        >
+          {{ partial "helper/svg.html" "spinner" }}
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <p x-show="done" x-cloak class="mb-4 font-serif text-sm leading-snug text-g-8">
+    Thank you for subscribing! You should see a message in your inbox soon.
+  </p>
+</div>
