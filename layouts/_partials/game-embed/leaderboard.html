@@ -1,0 +1,29 @@
+{{ $rows := slice
+  (dict "rank" 1 "name" "M. Alvarez" "score" 42)
+  (dict "rank" 2 "name" "J. Pham" "score" 38)
+  (dict "rank" 3 "name" "R. Delgado" "score" 35)
+  (dict "rank" 4 "name" "S. Coyle" "score" 31)
+  (dict "rank" 5 "name" "You" "score" 27)
+}}
+<div class="w-full rounded-sm border border-g-7 bg-beige p-5 md:max-w-75">
+  <h3 class="mb-0.5 pb-2 font-serif text-xl font-bold tracking-tight italic">
+    {{ .heading | default "Today's Top Scorers" }}
+  </h3>
+  {{ with .kicker }}
+    <div
+      class="mt-3 mb-2 font-sans text-xs font-bold tracking-widest text-g-7 uppercase"
+    >
+      {{ . }}
+    </div>
+  {{ end }}
+  <div class="divide-y divide-g-3">
+    {{ range $rows }}
+      <div class="flex items-baseline gap-2.5 py-1.5 font-sans text-sm">
+        <span class="w-4 font-bold text-g-7">{{ .rank }}</span>
+        <span class="flex-1 font-bold text-g-9">{{ .name }}</span>
+        <span class="text-g-9 tabular-nums">{{ .score }}</span>
+      </div>
+    {{ end }}
+  </div>
+  <div class="mt-3 font-sans text-xs text-g-7">Resets daily at midnight.</div>
+</div>
