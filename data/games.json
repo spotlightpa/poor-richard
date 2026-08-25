@@ -1,0 +1,50 @@
+{
+  "crossword": {
+    "title": "Crossword",
+    "href": "https://www.spotlightpa.org/crossword-games",
+    "iconKey": "crossword",
+    "meta": "Weekly · 15 min"
+  },
+  "mini-crossword": {
+    "title": "Mini Crossword",
+    "href": "https://www.spotlightpa.org/mini-crossword-games/",
+    "iconKey": "mini-crossword",
+    "meta": "Daily · 3 min"
+  },
+  "news-quiz": {
+    "title": "News Quiz",
+    "href": "https://www.spotlightpa.org/topics/news-quiz",
+    "iconKey": "news-quiz",
+    "meta": "Weekly · 7 Qs"
+  },
+  "slide": {
+    "title": "Slide",
+    "href": "https://www.spotlightpa.org/slide-games",
+    "iconKey": "slide",
+    "meta": "Daily · 3 min"
+  },
+  "sudoku": {
+    "title": "Sudoku",
+    "href": "https://www.spotlightpa.org/sudoku-games/",
+    "iconKey": "sudoku",
+    "meta": "Daily · 5 min"
+  },
+  "word-flower": {
+    "title": "Word Flower",
+    "href": "https://www.spotlightpa.org/word-flower-games/",
+    "iconKey": "word-flower",
+    "meta": "Daily · 10 min"
+  },
+  "word-search": {
+    "title": "Word Search",
+    "href": "https://www.spotlightpa.org/word-search-games/",
+    "iconKey": "word-search",
+    "meta": "Daily · 4 min"
+  },
+  "wordrow": {
+    "title": "WordroW",
+    "href": "https://www.spotlightpa.org/wordrow-games/",
+    "iconKey": "wordrow",
+    "meta": "Daily · 6 tries"
+  }
+}
