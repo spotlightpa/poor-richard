@@ -43,15 +43,6 @@
       </div>
 
       <aside class="flex flex-col items-stretch gap-7 md:items-end">
-        {{ with .Param "leaderboard-kicker" }}
-          {{ partial "game-embed/leaderboard.html" (dict
-            "kicker" .
-            "heading" ($.Param "leaderboard-heading")
-            "series" ($.Param "amuselabs-series")
-            )
-          }}
-        {{ end }}
-
         {{ if .Param "ad-rail-active" }}
           {{ partial "tw/promo-single.html" (dict
             "class" "mx-auto flex items-center justify-center"
