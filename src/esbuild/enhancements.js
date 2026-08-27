@@ -12,6 +12,7 @@ Alpine.plugin(newsletterPlugin);
 import carousel from "../enhancements/carousel.js";
 import embedList from "../enhancements/embed-list.js";
 import funnelStatus from "../enhancements/funnel-status.js";
+import gameLeaderboard from "../enhancements/game-leaderboard.js";
 import imageRotator from "../enhancements/image-rotator.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
@@ -36,6 +37,7 @@ for (let [name, comp] of [
   ["carousel", carousel],
   ["embedList", embedList],
   ["funnelStatus", funnelStatus],
+  ["gameLeaderboard", gameLeaderboard],
   ["imageRotator", imageRotator],
   ["modal", modal],
   ["mostPopular", mostPopular],

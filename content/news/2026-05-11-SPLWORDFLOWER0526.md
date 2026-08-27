@@ -1,4 +1,5 @@
 +++
+amuselabs-series = "spotlightpa-puzzlefeed-wordflower"
 blurb = "Word Flower is a challenging puzzle in which players form words using a central letter and surrounding “petals.”"
 description = "Word Flower is a challenging puzzle in which players form words using a central letter and surrounding “petals.”"
 draft = false

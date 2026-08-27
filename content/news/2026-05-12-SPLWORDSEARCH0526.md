@@ -1,4 +1,5 @@
 +++
+amuselabs-series = "spotlightpa-puzzlefeed-wordsearch"
 blurb = "Test your attention to detail by finding hidden words in various directions within a jumble of letters."
 description = "Test your attention to detail by finding hidden words in various directions within a jumble of letters."
 draft = false
