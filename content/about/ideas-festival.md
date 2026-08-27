@@ -100,4 +100,28 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   figure-class="max-w-[250px]"
   link="https://goggleworks.org"
 >}}
+{{<image 
+  description="Best Friends Animal Society"
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:220/g:sm/el:1/MjAyNi8wOC8wMW45LTBkbnotdjl0cS1oZzhrLnBuZw==.webp"
+  width="500"
+  height="220"
+  figure-class="max-w-[250px]"
+  link="https://bestfriends.org"
+>}}
+{{<image 
+  description="Service Access &amp; Manangement, Inc."
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:286/g:sm/el:1/MjAyNi8wOC8wMW45LTBkcDQtcDZ0ZC02NXY4LmpwZWc=.webp"
+  width="500"
+  height="286"
+  figure-class="max-w-[250px]"
+  link="https://www.sam-inc.org"
+>}}
+{{<image 
+  description="The Standard Group"
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:291/g:sm/el:1/MjAyNi8wOC8wMW45LTBkdzEtNHkwMy1zZ3hkLnBuZw==.webp"
+  width="500"
+  height="94"
+  figure-class="max-w-[250px]"
+  link="https://standardgroup.com"
+>}}
 </div>
