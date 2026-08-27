@@ -6,15 +6,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-08-26-SPLHOUSINGDB0826.md"
+    "content/news/2026-08-27-spl_boycott0826.md"
   ],
   "subfeatures": [
-    "content/news/2026-06-15-SPLHOUSINGBILLS0626.md",
-    "content/news/2026-07-20-NTTRUMPHOUSE0726.md"
+    "content/news/2025-09-04-SPLLISTENING0825.md",
+    "content/news/2025-07-08-SPLOPIOIDRTK0725.md",
+    "content/videos/yt-video-7AUwoQ5Ejck.md"
   ],
   "topSlots": [
+    "content/news/2026-08-26-SPLHOUSINGDB0826.md",
     "content/news/2026-08-25-SPLSHAPADV0826.md",
-    "content/news/2026-08-25-SPLDATAFAQ0826.md",
-    "content/berks/2026-08-21-SPLSENCIT0826.md"
+    "content/news/2026-08-25-SPLDATAFAQ0826.md"
   ]
 }
