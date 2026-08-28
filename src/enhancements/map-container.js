@@ -41,13 +41,25 @@ export default function mapContainer(config) {
         attributionControl: true,
         cooperativeGestures: true,
       });
+      this.navControl = new maplibregl.NavigationControl({
+        showCompass: false,
+      });
+      this.navIsMd = window.matchMedia("(min-width: 768px)").matches;
       this.map.addControl(
-        new maplibregl.NavigationControl({ showCompass: false }),
-        "top-right",
+        this.navControl,
+        this.navIsMd ? "top-right" : "bottom-right",
       );
+      window.addEventListener("resize", () => this.updateNavPosition());
       const ro = new ResizeObserver(() => this.map && this.map.resize());
       ro.observe(this.$refs.canvas);
       this.map.on("load", () => this.loadGeoJSON());
+    },
+    updateNavPosition() {
+      const isMd = window.matchMedia("(min-width: 768px)").matches;
+      if (isMd === this.navIsMd || !this.map) return;
+      this.navIsMd = isMd;
+      this.map.removeControl(this.navControl);
+      this.map.addControl(this.navControl, isMd ? "top-right" : "bottom-right");
     },
     async loadGeoJSON() {
       if (!this.geojsonUrl || this.map.getSource("shapes")) return;
