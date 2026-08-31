@@ -218,4 +218,12 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   figure-class="max-w-[250px]"
   link="https://standardgroup.com"
 >}}
+{{<image 
+  description="Capitol Blue Cross"
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:184/g:sm/el:1/MjAyNi8wOC8wMW45LWM0NmstZjF2Ni1lcjQ2LmpwZWc=.webp"
+  width="500"
+  height="94"
+  figure-class="max-w-[250px]"
+  link="https://www.capbluecross.com"
+>}}
 </div>
