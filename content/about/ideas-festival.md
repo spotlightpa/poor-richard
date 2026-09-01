@@ -15,11 +15,11 @@ ad-header-mobile-active = false
 event-url = "https://www.eventbrite.com/e/spotlight-pas-community-festival-ideas-that-move-berks-forward-tickets-1992490915966"
 description = "On Saturday, October 3, 2026, Spotlight PA Berks is hosting a community-centered, daylong Ideas Festival at the GoggleWorks Center for the Arts."
 +++
-{{<picture src="2026/03/01mt-f5ed-v7ft-h02a.png" width-ratio="400" height-ratio="153" description="Spotlight PA Ideas Festival" gravity="ce" figure-class="max-w-\[480px] mx-auto -mt-12">}}
+{{<picture src="2026/03/01mt-f5ed-v7ft-h02a.png" width-ratio="400" height-ratio="153" description="Spotlight PA Ideas Festival" gravity="ce" figure-class="max-w-[480px] mx-auto -mt-12">}}
 
 <div class="text-center">
 {{<landing-large>}}
-\*\*October 3, 2026\*\* • GoggleWorks Center for the Arts
+**October 3, 2026** • GoggleWorks Center for the Arts
 {{</landing-large>}}
 </div>
 
@@ -146,7 +146,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:357/g:we/el:1/MjAyNi8wNy8wMW42LTFodmgtdzRqMi12cTVjLnBuZw==.webp"
   width="500"
   height="357"
-  figure-class="max-w-\[200px]"
+  figure-class="max-w-[200px]"
   link="https://www.lenfestinstitute.org"
 >}}
 {{<image 
@@ -154,7 +154,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:150/g:ce/el:1/MjAyNi8wNy8wMW42LTFqdDktZHBkcy1lNTZ6LnBuZw==.webp"
   width="500"
   height="150"
-  figure-class="max-w-\[250px]"
+  figure-class="max-w-[250px]"
   link="https://www.visionsfcu.org"
 >}}
 {{<image 
@@ -162,7 +162,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:400/h:400/g:ce/el:1/MjAyNi8wNy8wMW42LTFodngtdmRtcy0ydHJzLnBuZw==.webp"
   width="500"
   height="500"
-  figure-class="max-w-\[200px]"
+  figure-class="max-w-[200px]"
   link="https://www.experienceberks.com"
 >}}
 {{<image 
@@ -170,7 +170,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:94/g:ce/el:1/MjAyNi8wNy8wMW42LTFodnAtOTJtZy0wajRnLnBuZw==.webp"
   width="500"
   height="94"
-  figure-class="max-w-\[250px]"
+  figure-class="max-w-[250px]"
   link="https://goggleworks.org"
 >}}
 {{<image 
@@ -178,7 +178,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:220/g:sm/el:1/MjAyNi8wOC8wMW45LTBkbnotdjl0cS1oZzhrLnBuZw==.webp"
   width="500"
   height="220"
-  figure-class="max-w-\[250px]"
+  figure-class="max-w-[250px]"
   link="https://bestfriends.org"
 >}}
 {{<image 
@@ -186,7 +186,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:286/g:sm/el:1/MjAyNi8wOC8wMW45LTBkcDQtcDZ0ZC02NXY4LmpwZWc=.webp"
   width="500"
   height="286"
-  figure-class="max-w-\[250px]"
+  figure-class="max-w-[250px]"
   link="https://www.sam-inc.org"
 >}}
 {{<image 
@@ -194,7 +194,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:291/g:sm/el:1/MjAyNi8wOC8wMW45LTBkdzEtNHkwMy1zZ3hkLnBuZw==.webp"
   width="500"
   height="94"
-  figure-class="max-w-\[250px]"
+  figure-class="max-w-[250px]"
   link="https://standardgroup.com"
 >}}
 {{<image 
@@ -202,7 +202,7 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:184/g:sm/el:1/MjAyNi8wOC8wMW45LWM0NmstZjF2Ni1lcjQ2LmpwZWc=.webp"
   width="500"
   height="94"
-  figure-class="max-w-\[250px]"
+  figure-class="max-w-[250px]"
   link="https://www.capbluecross.com"
 >}}
 </div>
