@@ -206,6 +206,11 @@ name = "Spotlight PA Store"
 url = "https://shop.spotlightpa.org"
 weight = 5
 
+[[support]]
+name = "Agentic Giving"
+url = "https://spotlightpa.donorsupport.co/agentic-giving.md"
+weight = 6
+
 [[social]]
 name = "iOS App"
 url = "https://apps.apple.com/us/app/spotlight-pa/id6498866659"
