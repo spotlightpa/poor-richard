@@ -1,0 +1,267 @@
+{{ $params := partial "helper/page-params" .Page }}
+{{ $eyebrow := .Get "eyebrow" }}
+{{ $hed := .Get "hed" }}
+{{ $dek := .Get "dek" }}
+{{ $date := .Get "display-date" }}
+{{ $creditType := .Get "credit-type" | default "by" }}
+{{ $byline := .Get "byline" }}
+{{ $outlet := .Get "outlet" | default "Spotlight PA" }}
+{{ $hedSizes := .Get "hed-sizes" | default `text-2xl lg:text-4xl` }}
+{{ $geojson := .Get "geojson" }}
+{{ $colorInput := .Get "color" | default "Blue" }}
+{{ $brandColors := dict
+  "black" "#2e2e2e"
+  "blue" "#009edb"
+  "green" "#78bc20"
+  "red" "#d70000"
+  "navy" "#22416e"
+  "teal" "#1b998b"
+  "orange" "#ff6c36"
+  "yellow" "#ffcb03"
+}}
+{{ $mapColor := index $brandColors (lower $colorInput) | default $colorInput }}
+{{ $colorOpacity := .Get "color-opacity" | default "0.2" }}
+{{ $searchEnabled := eq (.Get "search") "true" }}
+{{ $searchText := .Get "search-text" | default "Search" }}
+{{ $searchUseLocation := eq (.Get "search-use-location") "true" }}
+{{ $readMoreEnabled := eq (.Get "read-more") "true" }}
+{{ $tooltipsEnabled := eq (.Get "tooltips") "true" }}
+{{ $tooltipValue := .Get "tooltip-value" }}
+{{ $customCodeURL := .Get "custom-code" }}
+{{ if $customCodeURL }}
+  {{ $pathOnly := index (split $customCodeURL "?") 0 }}
+  {{ $filename := path.Base $pathOnly }}
+  {{ $_ := partial "helper/get-esbuild-file.html" $filename }}
+{{ end }}
+{{ $layout := .Get "layout" | default "right" | lower }}
+{{ $mobileLayout := .Get "mobile-layout" | default "top" | lower }}
+{{ $lc := partial "helper/map-layout-classes.html" (dict "desktop" $layout "mobile" $mobileLayout) }}
+
+
+<template id="map-tooltip-tmpl">
+  <div id="map-tooltip">
+    <div
+      class="relative flex flex-col gap-1 rounded-xl bg-white px-4 pt-3 pr-10 pb-3 shadow-xl outline outline-1 outline-black/[0.07]"
+    >
+      <div data-rows class="flex flex-col gap-1"></div>
+      <button
+        aria-label="Close"
+        onclick="this.closest('#map-tooltip').remove()"
+        class="absolute top-2 right-2 flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-0 bg-transparent p-0 text-g-4 hover:bg-g-1 hover:text-g-7"
+      >
+        <svg class="h-3 w-3 fill-current" aria-hidden="true">
+          {{ partial "helper/svg.html" "times" }}
+        </svg>
+      </button>
+    </div>
+    <div
+      class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white drop-shadow-sm"
+    ></div>
+  </div>
+</template>
+
+<div
+  class="{{ $lc.flexDir }} {{ $lc.containerHeightMd }} flex h-auto min-h-dvh w-full flex-col"
+  data-ga-category="searchable-map"
+>
+  <aside
+    class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col overflow-y-auto bg-black text-white"
+  >
+    <div class="px-8 py-10 sm:px-10">
+      <a class="block" href="/">
+        <svg
+          class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
+          role="img"
+          aria-label="Spotlight PA banner"
+          viewBox="0 0 1024 190"
+        >
+          {{ partial "helper/svg.html" "banner" }}
+        </svg>
+      </a>
+
+      {{ with $eyebrow }}
+        <div class="mt-8 font-sans text-sm font-bold text-yellow uppercase">
+          {{ . }}
+        </div>
+      {{ end }}
+
+
+      <div class="mt-6 mb-4 border-t border-b border-white pt-4 pb-4">
+        <h1 class="{{ $hedSizes }} leading-hed uppercase">{{ $hed }}</h1>
+        {{ with $dek }}
+          <h2 class="mt-4 text-base leading-relaxed lg:text-lg">{{ . }}</h2>
+        {{ end }}
+      </div>
+
+      {{ if and $byline (ne $byline "NA") }}
+        <div class="mt-4 text-sm leading-none">
+          {{ if and $creditType (ne $creditType "NA") }}
+            {{ $creditType }}
+          {{ end }}
+          <span class="font-sans font-bold uppercase">{{ $byline }}</span>
+        </div>
+      {{ end }}
+      {{ if and $outlet (ne $outlet "NA") }}
+        <div class="mt-2 font-sans text-xs font-bold text-g-4 uppercase">
+          {{ $outlet }}
+        </div>
+      {{ end }}
+      {{ if and $date (ne $date "NA") }}
+        <time
+          class="mt-1 block font-sans text-xs text-g-4 uppercase"
+          datetime="{{ $params.publishedISO }}"
+        >
+          {{ $date }}
+        </time>
+      {{ end }}
+
+      {{ with .Inner }}
+        <div class="mt-6 text-sm leading-relaxed">
+          {{ . | $.Page.RenderString (dict "display" "block") }}
+        </div>
+      {{ end }}
+
+
+      <div class="mt-8 font-sans">
+        <a
+          class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold text-white uppercase"
+          href="/donate/"
+          data-ga-category="donate"
+        >
+          <svg
+            class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+          >
+            {{ partial "helper/svg.html" "heart" }}
+          </svg>
+          Support This Work
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div
+    id="map-container"
+    class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative h-[60vw] min-h-[320px] w-full flex-shrink-0"
+    x-data="mapContainer({{ dict "geojson" $geojson "mapColor" $mapColor "colorOpacity" $colorOpacity "tooltipsEnabled" $tooltipsEnabled "tooltipTemplate" $tooltipValue "customCodeUrl" $customCodeURL "searchUseLocation" $searchUseLocation | jsonify }})"
+    x-init="init()"
+  >
+    <div x-ref="canvas" class="h-full w-full"></div>
+
+    {{ if $searchEnabled }}
+      <div
+        class="absolute top-4 left-1/2 z-10 w-full max-w-md -translate-x-1/2 px-4"
+      >
+        <div
+          class="flex items-center gap-2 rounded-sm bg-white shadow-lg ring-2 ring-black/30"
+        >
+          <button
+            type="button"
+            x-show="searchUseLocation"
+            @click="locate()"
+            :disabled="isSearching || isLocating"
+            aria-label="Use my location"
+            class="ml-2 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-g-5 transition hover:bg-g-1 hover:text-g-9 disabled:opacity-40"
+          >
+            <svg class="h-4 w-4 fill-current" aria-hidden="true">
+              {{ partial "helper/svg.html" "crosshairs" }}
+            </svg>
+          </button>
+          <input
+            type="text"
+            x-model="searchQuery"
+            @keydown.enter.prevent="search()"
+            @input="errorState = false"
+            :placeholder="errorState ? 'Not found, try again' : '{{ $searchText }}'"
+            :disabled="isSearching || isLocating"
+            :class="searchUseLocation ? '' : 'pl-4'"
+            class="w-full bg-transparent py-3 font-sans text-sm text-g-9 placeholder-g-5 focus:outline-none disabled:opacity-60"
+          />
+          <svg
+            class="mr-3 h-4 w-4 flex-shrink-0 animate-spin fill-current text-g-5"
+            aria-hidden="true"
+            x-show="isSearching || isLocating"
+            x-cloak
+          >
+            {{ partial "helper/svg.html" "spinner" }}
+          </svg>
+          <button
+            type="button"
+            @click="clearAll()"
+            x-show="searchQuery || marker"
+            aria-label="Clear search"
+            class="mr-1 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-g-5 transition hover:bg-g-1 hover:text-g-9"
+            x-cloak
+          >
+            <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+              {{ partial "helper/svg.html" "times" }}
+            </svg>
+          </button>
+          <button
+            type="button"
+            @click="search()"
+            :disabled="isSearching || isLocating"
+            aria-label="Search"
+            x-show="!isSearching && !isLocating"
+            class="mr-3 flex flex-shrink-0 items-center justify-center text-g-5 transition hover:text-g-9 disabled:opacity-40"
+          >
+            <svg class="h-4 w-4 fill-current" aria-hidden="true">
+              {{ partial "helper/svg.html" "search" }}
+            </svg>
+          </button>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ if $readMoreEnabled }}
+  <div
+    x-data="{
+    show: false,
+    check() {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const isMd = window.matchMedia('(min-width: 768px)').matches;
+      this.show = isMd && scrollable > 40 && window.scrollY < 40;
+    },
+    down() {
+      const target = document.querySelector('.featured-content') || document.querySelector('[data-ga-category=article]');
+      if (target) {
+        const y = target.getBoundingClientRect().top + window.scrollY - 48;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        window.scrollBy({ top: Math.round(window.innerHeight * 0.9), behavior: 'smooth' });
+      }
+    }
+  }"
+    x-init="check();
+    window.addEventListener('scroll', () => check(), { passive: true });
+    window.addEventListener('resize', () => check());
+    window.addEventListener('load', () => check());"
+    x-show="show"
+    x-transition.opacity.duration.400ms
+    x-cloak
+    @click="down()"
+    @keydown.enter="down()"
+    @keydown.space.prevent="down()"
+    role="button"
+    tabindex="0"
+    aria-label="Scroll down to read more"
+    class="fixed bottom-6 left-1/2 z-30 flex -translate-x-1/2 cursor-pointer items-center gap-2 rounded-full bg-white px-5 py-2.5 shadow-2xl ring-1 ring-black/15 transition hover:bg-white"
+  >
+    <span class="font-sans text-xs font-bold tracking-wide text-g-9 uppercase"
+      >Read more</span
+    >
+    <svg
+      class="relative top-[2px] h-4 w-4 animate-bounce fill-current text-g-9 motion-reduce:animate-none"
+      aria-hidden="true"
+    >
+      {{ partial "helper/svg.html" "chevron" }}
+    </svg>
+  </div>
+{{ end }}
+
+{{ if strings.Contains .Page.RawContent "featured/footer" }}
+  {{ partial "featured/content-area-start" . }}
+{{ end }}
