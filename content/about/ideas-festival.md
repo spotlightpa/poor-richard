@@ -117,6 +117,7 @@ Youth sports can help kids build confidence, form friendships, stay healthy, and
 
   * Linda Flanagan, journalist, author, and former cross-country and track coach
   * Armen Keteyian, journalist and author
+  * Rashida Suber, Head Coach of Girls Basketball, Reading High School
 
 ### 2:30–3:30pm | From Scroll to Follow: How to Build an Audience on Social Media
 
