@@ -6,16 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/statecollege/2026-09-08-SPLICEFLIGHTS0926.md"
+    "content/news/2026-09-08-SPLDDRDSUPREME0926.md"
   ],
   "subfeatures": [
-    "content/statecollege/2026-08-10-SPLICERFI0826.md",
-    "content/statecollege/2026-06-24-SPLMOSHFOLO0626.md",
-    "content/statecollege/2026-06-04-SPLMOSHANNON0626.md"
+    "content/series/Resulting in Death/_index.md",
+    "content/news/2026-06-29-SPLDDRD0626.md",
+    "content/news/2026-07-06-spl_ddrd_0726.md",
+    "content/news/2024-10-28-SPLOPIOIDSAG.md"
   ],
   "topSlots": [
+    "content/statecollege/2026-09-08-SPLICEFLIGHTS0926.md",
     "content/news/2026-09-03-VBMODELFRAUD0926.md",
-    "content/news/2026-09-03-SPLNEWSQUIZAUG3126.md",
-    "content/news/2026-09-03-SPLPREDMARK0926.md"
+    "content/news/2026-09-03-SPLNEWSQUIZAUG3126.md"
   ]
 }
