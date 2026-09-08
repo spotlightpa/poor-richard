@@ -41,7 +41,7 @@ The event is a "melting pot of ideas," where Berks County is not only a place of
 ## Event Details
 
 **Date:** Saturday, October 3, 2026 <br>
-**Time:**  9:00 AM – 3:00 PM <br>
+**Time:**  9:00 AM – 3:30 PM <br>
 **Location:** GoggleWorks Center for the Arts, Reading, PA
 
 ## Agenda
