@@ -47,7 +47,9 @@
       "label": "",
       "labelLink": "",
       "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
-      "sources": []
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01na/0nsq/access-harrisburg-1-promotion-512-x-250-px-.png"
+      ]
     }
   ],
   "ad-header-mobile-active": true,
