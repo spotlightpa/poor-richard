@@ -25,17 +25,18 @@ description = "On Saturday, October 3, 2026, Spotlight PA Berks is hosting a com
 
 ## Registration is now open for a day-long event celebrating the ideas that move Berks forward.
 
-{{<picture src="2026/07/01n6-044r-epqg-wjq8.jpeg" width-ratio="16" height-ratio="9" description="GoggleWorks Center for the Arts">}}
-
-Every change starts with an idea! Spotlight PA's Ideas Festival is designed to bring together community leaders, innovators, and organizations from across Pennsylvania to create a collaborative space where communities can share practical, proven solutions to local challenges, exchange ideas, and inspire new approaches rooted in creativity and civic engagement.
-
-The event is a "melting pot of ideas," where Berks County is not only a place of learning, but also a contributor.
+&nbsp;
 
 <div class="text-center">
 <a href="https://www.eventbrite.com/e/spotlight-pas-community-festival-ideas-that-move-berks-forward-tickets-1992490915966" class="btn-signup no-underline">Claim your free ticket now</a>
 </div>
 
-&nbsp;
+
+{{<picture src="2026/07/01n6-044r-epqg-wjq8.jpeg" width-ratio="16" height-ratio="9" description="GoggleWorks Center for the Arts">}}
+
+Every change starts with an idea! Spotlight PA's Ideas Festival is designed to bring together community leaders, innovators, and organizations from across Pennsylvania to create a collaborative space where communities can share practical, proven solutions to local challenges, exchange ideas, and inspire new approaches rooted in creativity and civic engagement.
+
+The event is a "melting pot of ideas," where Berks County is not only a place of learning, but also a contributor.
 
 ## Event Details
 
