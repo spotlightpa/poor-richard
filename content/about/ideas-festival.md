@@ -82,6 +82,7 @@ Latinos make up a significant and growing share of the population in Berks Count
 
   * Joel Cintrón Arbasetti, Reporter, Centro de Periodismo Investigativo
   * Nancy Jiménez-Zapata, Field Coordinator, Make the Road Pennsylvania
+  * Anthony Orozco, Director of Operations & Communication, Barrio Alegría
   * A. K. Sandoval-Strausz, Director of Latina/o Studies and Professor of History, Penn State University
 
 ### 12:15–1:15pm | Community Cats: Who's Responsible --- and What Actually Works
