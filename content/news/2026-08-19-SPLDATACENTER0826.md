@@ -20,7 +20,7 @@ suppress-ads = false
 suppress-date = false
 title = "Data center developers are pushing Pa. government officials to sign secrecy agreements. At least some are saying yes."
 title-tag = "Why PA data centers want public officials to sign NDAs"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Environment"]
 +++
 
 HARRISBURG —&nbsp;When Talen Energy reached out to Anthony Township Supervisor Craig High about rezoning, he was surprised.
