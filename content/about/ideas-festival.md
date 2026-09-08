@@ -25,22 +25,23 @@ description = "On Saturday, October 3, 2026, Spotlight PA Berks is hosting a com
 
 ## Registration is now open for a day-long event celebrating the ideas that move Berks forward.
 
+&nbsp;
+
+<div class="text-center">
+<a href="https://www.eventbrite.com/e/spotlight-pas-community-festival-ideas-that-move-berks-forward-tickets-1992490915966" class="btn-signup no-underline">Claim your free ticket now</a>
+</div>
+
+
 {{<picture src="2026/07/01n6-044r-epqg-wjq8.jpeg" width-ratio="16" height-ratio="9" description="GoggleWorks Center for the Arts">}}
 
 Every change starts with an idea! Spotlight PA's Ideas Festival is designed to bring together community leaders, innovators, and organizations from across Pennsylvania to create a collaborative space where communities can share practical, proven solutions to local challenges, exchange ideas, and inspire new approaches rooted in creativity and civic engagement.
 
 The event is a "melting pot of ideas," where Berks County is not only a place of learning, but also a contributor.
 
-<div class="text-center">
-<a href="https://www.eventbrite.com/e/spotlight-pas-community-festival-ideas-that-move-berks-forward-tickets-1992490915966" class="btn-signup no-underline">Claim your free ticket now</a>
-</div>
-
-&nbsp;
-
 ## Event Details
 
 **Date:** Saturday, October 3, 2026 <br>
-**Time:**  9:00 AM – 3:00 PM <br>
+**Time:**  9:00 AM – 3:30 PM <br>
 **Location:** GoggleWorks Center for the Arts, Reading, PA
 
 ## Agenda
@@ -81,6 +82,7 @@ Latinos make up a significant and growing share of the population in Berks Count
 
   * Joel Cintrón Arbasetti, Reporter, Centro de Periodismo Investigativo
   * Nancy Jiménez-Zapata, Field Coordinator, Make the Road Pennsylvania
+  * Anthony Orozco, Director of Operations & Communication, Barrio Alegría
   * A. K. Sandoval-Strausz, Director of Latina/o Studies and Professor of History, Penn State University
 
 ### 12:15–1:15pm | Community Cats: Who's Responsible --- and What Actually Works
@@ -115,6 +117,7 @@ Youth sports can help kids build confidence, form friendships, stay healthy, and
 
   * Linda Flanagan, journalist, author, and former cross-country and track coach
   * Armen Keteyian, journalist and author
+  * Rashida Suber, Head Coach of Girls Basketball, Reading High School
 
 ### 2:30–3:30pm | From Scroll to Follow: How to Build an Audience on Social Media
 
