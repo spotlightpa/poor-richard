@@ -1,12 +1,12 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "For a limited time, get Spotlight PA's premium newsletter Access Harrisburg for $1 per month for your first six months.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer",
+      "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n8/7e9x/sunshine-week-2026-31-.png"
+        "https://files.data.spotlightpa.org/uploads/01na/0nca/access-harrisburg-1-promotion-600-x-250-px-1350-x-175-px-.png"
       ]
     }
   ],
@@ -15,12 +15,12 @@
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "For a limited time, get Spotlight PA's premium newsletter Access Harrisburg for $1 per month for your first six months.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
+      "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n8/7e9y/all-gifts-doubled-4-.png"
+        "https://files.data.spotlightpa.org/uploads/01na/0ncs/access-harrisburg-1-promotion-300-x-250-px-2-.png"
       ]
     }
   ],
@@ -29,12 +29,12 @@
   "ad-footer-mobile-width": 300,
   "ad-header-desktop": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "For a limited time, get Spotlight PA's premium newsletter Access Harrisburg for $1 per month for your first six months.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=header",
+      "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n8/7e9x/sunshine-week-2026-31-.png"
+        "https://files.data.spotlightpa.org/uploads/01na/0nca/access-harrisburg-1-promotion-600-x-250-px-1350-x-175-px-.png"
       ]
     }
   ],
@@ -43,12 +43,12 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Support Spotlight PA during our Week of Giving 2026 and your gift will be DOUBLED!",
+      "description": "For a limited time, get Spotlight PA's premium newsletter Access Harrisburg for $1 per month for your first six months.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=mobile-header",
+      "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n8/7e9y/spring-member-drive-500x250-main-1-.png"
+        "https://files.data.spotlightpa.org/uploads/01na/0nsq/access-harrisburg-1-promotion-512-x-250-px-.png"
       ]
     }
   ],
@@ -85,12 +85,12 @@
   "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
     {
-      "description": "Support Spotlight PA's unmatched, unbiased investigative reporting.",
+      "description": "For a limited time, get Spotlight PA's premium newsletter Access Harrisburg for $1 per month for your first six months.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-feature",
+      "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n8/7e9y/all-gifts-doubled-4-.png"
+        "https://files.data.spotlightpa.org/uploads/01na/0ncs/access-harrisburg-1-promotion-300-x-250-px-2-.png"
       ]
     }
   ],
@@ -133,12 +133,12 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Support Spotlight PA's unmatched, unbiased investigative reporting.",
+      "description": "For a limited time, get Spotlight PA's premium newsletter Access Harrisburg for $1 per month for your first six months.",
       "label": "",
       "labelLink": "",
-      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
+      "link": "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01n8/7e9y/all-gifts-doubled-4-.png"
+        "https://files.data.spotlightpa.org/uploads/01na/0ncs/access-harrisburg-1-promotion-300-x-250-px-2-.png"
       ]
     }
   ],
