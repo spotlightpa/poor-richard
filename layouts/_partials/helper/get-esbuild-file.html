@@ -1,0 +1,9 @@
+{{ $filename := . }}
+{{ $minify := not hugo.IsServer }}
+{{ $jsOpts := dict
+  "minify" $minify
+  "targetPath" (printf "/js/%s" $filename)
+  "target" "es2019"
+}}
+{{ $js := resources.Get (printf "js/esbuild/%s" $filename) | js.Build $jsOpts }}
+{{ return $js.RelPermalink }}

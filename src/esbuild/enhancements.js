@@ -53,10 +53,12 @@ for (let [name, comp] of [
   ["inspectionCityFilter", inspectionCityFilter],
   ["inspectionSortMenu", inspectionSortMenu],
   ["inspectionMobileFilters", inspectionMobileFilters],
+  ["mapContainer", mapContainer],
 ]) {
   Alpine.data(name, comp);
 }
 
+import mapContainer from "../enhancements/map-container.js";
 import shareButton from "../enhancements/share-button.js";
 
 Alpine.bind("shareButton", shareButton);
