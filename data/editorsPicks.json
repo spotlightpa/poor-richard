@@ -1,19 +1,20 @@
 {
   "edCallout": [
-    "content/news/2026-07-06-spl_ddrd_0726.md",
+    "content/news/2026-08-13-SPLGARRITYPROFILE0826.md",
     "content/news/2026-07-20-SPLSHAPPROFILE0726.md"
   ],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-09-08-VBFULTON0926.md"
+    "content/news/2026-09-09-SPLFLOCK0926.md"
   ],
   "subfeatures": [
-    "content/news/2025-10-15-SPLVBFULTON1025.md"
+    "content/news/2026-09-03-SPLPREDMARK0926.md",
+    "content/news/2026-09-01-SPLREVDOOR0926.md"
   ],
   "topSlots": [
     "content/news/2026-09-08-SPLDDRDSUPREME0926.md",
     "content/statecollege/2026-09-08-SPLICEFLIGHTS0926.md",
-    "content/news/2026-09-03-VBMODELFRAUD0926.md"
+    "content/news/2026-09-04-SPLBELLFTRIP0926.md"
   ]
 }
