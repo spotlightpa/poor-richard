@@ -65,7 +65,6 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
   * Dave Myers, Community Forum Coordinator, Spotlight PA
 * **Panelists:**
 
-  * Zachary Adams, Executive Director, Center for Rural Pennsylvania
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
 
@@ -75,7 +74,7 @@ Community painting and children’s activities with the GoggleWorks Center for t
 
 ### 12pm – 2pm | Meet K-Pop's Rumi & Derpy the Wildcat
 
-A special chance for fans of K-Pop Demon Hunters to meet everyone's favorite K-Pop star, Rumi, and her fun friend, Derpy the Wildcat. Hang out, take photos, and who knows, there might even be a dance party. (edited) 
+A special chance for fans of K-Pop Demon Hunters to meet everyone's favorite K-Pop star, Rumi, and her fun friend, Derpy the Wildcat. Hang out, take photos, and who knows, there might even be a dance party.
 
 ### 12–1pm | Latino Berks: Voice, Participation & Representation
 
