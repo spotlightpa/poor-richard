@@ -1,0 +1,59 @@
+{{ $games := hugo.Data.games }}
+{{ $defaultOrder := slice "mini-crossword" "sudoku" "word-flower" "news-quiz" "slide" "crossword" "word-search" "wordrow" }}
+{{ $keys := .keys | default $defaultOrder }}
+
+{{ $scratch := newScratch }}
+{{ range $keys }}
+  {{ if ne . $.current }}
+    {{ $scratch.Add "keys" (slice .) }}
+  {{ end }}
+{{ end }}
+{{ $filtered := $scratch.Get "keys" | default (slice) }}
+{{ $count := .count | default 3 }}
+{{ $keys := first $count $filtered }}
+
+
+<div
+  class="mt-14 mb-6 flex items-baseline justify-between border-b-2 border-g-9 pb-3"
+>
+  <h2 class="font-sans text-2xl font-bold tracking-tight text-g-9 md:text-3xl">
+    {{ .title | default "More Games" }}
+  </h2>
+</div>
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+  {{ range $keys }}
+    {{ $game := index $games . }}
+    {{ if $game }}
+      <a
+        href="{{ $game.href }}"
+        target="_blank"
+        rel="noopener"
+        class="group flex flex-col border border-g-3 bg-white no-underline transition-all hover:-translate-y-1 hover:border-g-9 hover:shadow-lg"
+        data-ga-category="more-games"
+      >
+        <div
+          class="relative aspect-3/2 border-4 border-transparent bg-g-1 group-hover:border-8 group-hover:border-blue-2"
+        >
+          <div class="absolute inset-0 flex items-center justify-center">
+            {{ partial (printf "games-landing/icons/%s.html" $game.iconKey) (dict "class" "h-20 w-20") }}
+          </div>
+        </div>
+        <div class="flex flex-col items-start p-3 pb-4">
+          <div class="font-serif text-base leading-tight font-bold text-g-9">
+            {{ $game.title }}
+          </div>
+          <div
+            class="mt-1 font-sans text-xs font-bold tracking-widest text-g-7 uppercase"
+          >
+            {{ $game.meta }}
+          </div>
+          <span
+            class="mt-2 inline-flex w-fit items-center gap-1.5 rounded-sm bg-blue-2 px-3 py-1.5 font-sans text-xs font-bold tracking-widest text-g-9 uppercase"
+          >
+            Play <span class="text-sm">→</span>
+          </span>
+        </div>
+      </a>
+    {{ end }}
+  {{ end }}
+</div>
