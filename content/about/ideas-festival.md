@@ -69,9 +69,13 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
 
-### 10am – 3pm | Family Art Activities and Children's Entertainment
+### 10am – 11:30am | Family Art Activities
 
-Community painting and children's activities with the GoggleWorks Center for the Arts. Face painting and character experiences, including a Princess, Superhero, and a trio inspired by K-Pop Demon Hunters, hosted by Myth and Magic Events & Entertainment.
+Community painting and children’s activities with the GoggleWorks Center for the Arts. Face painting and more!
+
+### 12pm – 2pm | Meet K-Pop's Rumi & Derpy the Wildcat
+
+A special chance for fans of K-Pop Demon Hunters to meet everyone's favorite K-Pop star, Rumi, and her fun friend, Derpy the Wildcat. Hang out, take photos, and who knows, there might even be a dance party. (edited) 
 
 ### 12–1pm | Latino Berks: Voice, Participation & Representation
 
