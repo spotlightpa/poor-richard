@@ -70,7 +70,7 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
 
 ### 10am – 11:30am | Family Art Activities
 
-Community painting and children’s activities with the GoggleWorks Center for the Arts. Face painting and more!
+Community painting and children’s activities with the GoggleWorks Center for the Arts.
 
 ### 12pm – 2pm | Meet K-Pop's Rumi & Derpy the Wildcat
 
