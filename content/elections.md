@@ -184,7 +184,7 @@ link = "credits"
 title = "One Vote, Two Pennsylvanias"
 slug = "one-vote-two-pennsylvanias"
 layout = "story-collection"
-collection = "series/One Vote, Two Pennsylvanias/_index.md"
+collection = "series/One Vote, Two PAs 2026/_index.md"
 collectionReadMore = "Read More From One Vote, Two Pennsylvanias"
 
 [[blocks]]
