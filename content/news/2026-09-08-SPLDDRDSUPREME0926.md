@@ -39,7 +39,7 @@ Pennsylvania is known as a <a href="https://www.healthinjustice.org/drug-induced
 
 {{<embed/newsletter>}}
 
-The two cases before the Supreme Court focus on the question of what happens when people <a href="https://www.pacourts.us/assets/opinions/SUPREME/out/534MAL2024%20-%20106339360307580564.pdf">“jointly and constructively acquire and use drugs,”</a> Justices are considering whether that should be a defense for drug delivery resulting in death charges and similar offenses — and if so, whether that’s sufficient for an acquittal or entitles the defense to a jury instruction that addresses the issue of joint possession.
+The two cases before the Supreme Court focus on the question of what happens when people <a href="https://www.pacourts.us/assets/opinions/SUPREME/out/534MAL2024%20-%20106339360307580564.pdf">“jointly and constructively acquire and use drugs.”</a> Justices are considering whether that should be a defense for drug delivery resulting in death charges and similar offenses — and if so, whether that’s sufficient for an acquittal or entitles the defense to a jury instruction that addresses the issue of joint possession.
 
 The court’s rulings could affect how these cases are prosecuted and defended across the state. The decisions were still pending as of early September.
 
