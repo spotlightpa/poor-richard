@@ -211,4 +211,28 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   figure-class="max-w-[250px]"
   link="https://www.capbluecross.com"
 >}}
+{{<image 
+  description="Reading Coffee Co."
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:200/h:200/g:sm/el:1/MjAyNi8wOS8wMW5hLW5zNHEtNXJoNC1iMDI3LmpwZWc=.webp"
+  width="200"
+  height="200"
+  figure-class="max-w-[200px]"
+  link="https://www.readingcoffee.com"
+>}}
+{{<image 
+  description="Make Voters the Donors"
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:250/h:187/g:ce/el:1/MjAyNi8wOS8wMW5hLW54ZGItNDF3ci1zNnBrLmpwZWc=.webp"
+  width="250"
+  height="187"
+  figure-class="max-w-[250px]"
+  link="https://makevotersthedonors.org"
+>}}
+{{<image 
+  description="Stevens &amp; Lee"
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:250/h:33/g:ce/el:1/MjAyNi8wOS8wMW5hLW54ZDUtZ3pnMS1zamQ1LnBuZw==.webp"
+  width="250"
+  height="187"
+  figure-class="max-w-[250px]"
+  link="https://www.stevenslee.com"
+>}}
 </div>
