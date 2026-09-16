@@ -12,6 +12,7 @@ feed-exclude = false
 image = "cas/3qaw-a9q6-nnvf-h50c.png"
 image-credit = "Courtesy of the campaigns"
 image-description = "The 10th Congressional District candidates: Democrat Janelle Stelson (left) and Republican Scott Perry"
+image-gravity = "ce"
 internal-id = "SPLTENTHISSUES0926"
 kicker = "Elections"
 modal-exclude = false
