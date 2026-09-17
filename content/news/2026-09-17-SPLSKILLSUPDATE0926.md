@@ -96,7 +96,10 @@ Leadership can add session days at will and have tools to advance legislation qu
 
 There is another option — punting the decision until next year.
 
-“With a very limited number of scheduled voting session days between now and \[the deadline\] and no consensus yet, more time is likely needed to get it done,” state Rep. Brad Roae (R., Crawford) wrote <a href="https://www.palegis.us/house/co-sponsorship/memo?memoID=49226">in a co-sponsorship memo</a> this week seeking support for a bill that would give legislators another eight months to cut a deal.
+“With a very limited number of scheduled voting session days between now and \[the deadline\] and no consensus yet, more time is likely needed to get it done,” state Rep. Brad Roae (R., Crawford) wrote <a href="https://www.palegis.us/house/co-sponsorship/memo?memoID=49226">in a co-sponsorship memo</a> this week seeking support for a bill that would give legislators another six months to cut a deal.
+
+<em>Correction: This story originally misstated the number of months by which Roae is seeking to extend lawmakers’ ability to make a skill games deal. </em>
+
 
 <strong><em>BEFORE YOU GO…</em></strong><em> If you learned something from this article, pay it forward and contribute to Spotlight PA at spotlightpa.org/donate. This story was funded in part thanks to the support of the Lancaster County Local Journalism Fund. </em><a href="https://www.spotlightpa.org/support"><em>Learn more about how we are supported here.</em></a><em></em>
 
