@@ -1,7 +1,7 @@
 +++
 authors = ["Ed Mahon"]
 blurb = "Four Pennsylvanians with intellectual and developmental disabilities filed a class action lawsuit challenging the new relative caregiver and travel rules."
-byline = "Ed Mahon / Spotlight PA"
+byline = "Ed Mahon of Spotlight PA"
 description = "Revised family caregiving and travel policies from the Shapiro administration face a new legal challenge and widespread opposition in PA."
 draft = false
 feed-exclude = false
@@ -79,7 +79,7 @@ The Shapiro administration declined to comment on the lawsuit but has defended i
 
 In a statement to Spotlight PA earlier this month, before the new lawsuit was filed, a Department of Human Services spokesperson told Spotlight PA “these policies are not entirely new and not unique to Pennsylvania.” The agency “is required to both protect the financial stability of the Medicaid program and to abide by federal and state laws and regulations governing wages and overtime, Medicaid claiming requirements, and ensuring health and safety,” the spokesperson, Brandon Cwalina, said.
 
-<a href="https://home.myodp.org/aiovg_videos/session-for-individuals-and-families-the-office-of-developmental-programs-odp-limitations-on-overtime-paid-relative-caregiving-and-travel/page/3">In a July video</a>, a Shapiro administration official described the external pressure states are facing. Kristin Ahrens, deputy secretary for the state Office of Developmental Programs, said there has been a coordinated response from federal agencies and Congress in recent months focused on “fraud, waste, and abuse,” and she said “increased federal scrutiny of relative caregiving is inevitable.” <strong></strong>
+<a href="https://home.myodp.org/aiovg_videos/session-for-individuals-and-families-the-office-of-developmental-programs-odp-limitations-on-overtime-paid-relative-caregiving-and-travel/page/3">In a July video</a>, a Shapiro administration official described the external pressure states are facing. Kristin Ahrens, deputy secretary for the state Office of Developmental Programs, said there has been a coordinated response from federal agencies and Congress in recent months focused on “fraud, waste, and abuse,” and she said “increased federal scrutiny of relative caregiving is inevitable.”<strong></strong>
 
 She added that while <a href="https://www.spotlightpa.org/news/2026/08/pennsylvania-governor-race-elections-medicaid-health-shapiro-garrity/">federal Medicaid cuts that passed last year</a> don’t specifically target programs for people with disabilities, “Pennsylvania legislators are likely to have some really tough decisions to make about funding Medicaid services in general.”
 
