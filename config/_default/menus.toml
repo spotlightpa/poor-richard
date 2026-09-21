@@ -20,7 +20,7 @@ weight = 4
 
 [[main]]
 name = "elections"
-url = "/topics/elections/"
+url = "/elections/"
 weight = 5
 
 [[about]]
