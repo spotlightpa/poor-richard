@@ -82,7 +82,7 @@ Utilities say they conduct extensive outreach and marketing to educate customers
 
 A 2024 evaluation of the program offered by UGI, one of the largest utility companies in Pennsylvania, <a href="https://www.puc.pa.gov/pcdocs/1823103.pdf">found that</a> after UGI ramped up its outreach efforts, enrollment increased.
 
-{{<embed/tips tip_text="Have you had trouble paying your utility+ills? We want to hear from you.">}}
+{{<embed/tips tip_text="Have you had trouble paying your utility bills? We want to hear from you.">}}
 
 Still, in a survey of customers who qualified for the program but were not signed up, only 27% said they knew it existed, according to the evaluation. “There is not sufficient awareness of the program among potential customers, and sometimes even UGI staff,” the report noted.
 
