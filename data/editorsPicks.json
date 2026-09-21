@@ -6,16 +6,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-09-18-splMedicaidWaiver0926.md"
+    "content/news/2026-09-21-SPL36THSD0926.md"
   ],
   "subfeatures": [
-    "content/news/2026-08-31-SPLHEALTHGUV0826.md",
-    "content/statecollege/2026-08-31-SPLGUTHRIE0826.md",
-    "content/news/2026-06-30-NTMEDSUIT0626.md"
+    "content/news/2025-03-25-SPLSPECIALELEX0325.md",
+    "content/news/2025-04-09-SPLLANCSEN0425.md",
+    "content/news/2026-01-05-SPL2026LEGRACEPREVIEW.md"
   ],
   "topSlots": [
+    "content/news/2026-09-18-splMedicaidWaiver0926.md",
     "content/statecollege/2026-09-18-SPLMOSHVOTE0926.md",
-    "content/news/2026-09-17-SPLSKILLSUPDATE0926.md",
-    "content/news/2026-09-16-SPLTENTHISSUES0926.md"
+    "content/news/2026-09-17-SPLSKILLSUPDATE0926.md"
   ]
 }
