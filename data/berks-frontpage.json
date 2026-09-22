@@ -3,15 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/berks/2026-08-21-SPLSENCIT0826.md"
+    "content/berks/2026-09-22-SPLURC0926.md"
   ],
   "subfeatures": [
-    "content/berks/2026-07-10-SPLREADHOUSE0726.md",
-    "content/berks/2026-07-17-SPLTENTRIGHTS0726.md"
+    "content/berks/2026-07-23-SPLICEIMPACT0726.md",
+    "content/news/2026-07-17-SPLLIBFUNDS0726.md",
+    "content/berks/2026-07-24-SPLABBOND0726.md"
   ],
   "topSlots": [
+    "content/berks/2026-08-21-SPLSENCIT0826.md",
     "content/berks/2026-07-30-SPL600UPDATE0726.md",
-    "content/berks/2026-07-15-SPLPROTHBRIEF0726.md",
-    "content/berks/2026-07-24-SPLABBOND0726.md"
+    "content/berks/2026-07-15-SPLPROTHBRIEF0726.md"
   ]
 }
