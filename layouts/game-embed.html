@@ -29,7 +29,7 @@
     <div class="grid grid-cols-1 items-start gap-9 md:grid-cols-[1fr_320px]">
       <div>
         {{ with .Content }}
-          <div data-ga-category="content" id="content">
+          <div data-ga-category="content" id="content" class="font-serif">
             {{ partial "tag/content-well-start" . }}
             {{ . }}
             {{ partial "tag/content-well-end" . }}
@@ -56,6 +56,8 @@
         {{ end }}
 
         {{ partial "game-embed/newsletter-box.html" . }}
+
+        {{ partial "game-embed/learn-more-box.html" . }}
       </aside>
     </div>
 
