@@ -235,4 +235,12 @@ When you sponsor a Spotlight PA event, you're doing more than promoting your org
   figure-class="max-w-[250px]"
   link="https://www.stevenslee.com"
 >}}
+{{<image 
+  description="Weis Markets"
+  src="https://images.data.spotlightpa.org/insecure/rt:fill/w:500/h:236/g:sm/el:1/MjAyNi8wOS8wMW5iLTNoYXktaG16di1kaGU0LmpwZWc=.webp"
+  width="250"
+  height="118"
+  figure-class="max-w-[250px]"
+  link="https://www.weismarkets.com"
+>}}
 </div>
