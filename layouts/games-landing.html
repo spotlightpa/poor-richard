@@ -250,37 +250,7 @@
           }}
         {{ end }}
 
-
-        <div
-          class="w-full rounded-sm border border-g-3 bg-beige p-6 shadow-md md:max-w-75"
-        >
-          <div
-            class="mb-1 border-b-2 border-g-9 pb-2 font-serif text-xl font-bold tracking-tight text-g-9 italic"
-          >
-            Learn More
-          </div>
-          <a
-            href="https://www.spotlightpa.org/about/"
-            target="_blank"
-            rel="noopener"
-            class="block border-b border-g-3 py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
-            >About us</a
-          >
-          <a
-            href="https://www.spotlightpa.org/investigations/"
-            target="_blank"
-            rel="noopener"
-            class="block border-b border-g-3 py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
-            >Latest investigations</a
-          >
-          <a
-            href="https://www.spotlightpa.org/about/mobile-apps"
-            target="_blank"
-            rel="noopener"
-            class="block py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
-            >Download our app</a
-          >
-        </div>
+        {{ partial "games-landing/learn-more-box.html" . }}
       </aside>
     </div>
 
