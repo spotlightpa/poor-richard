@@ -13,6 +13,7 @@ kicker = "Elections"
 modal-exclude = false
 pinned = false
 published = 2026-06-12T04:00:00-04:00
+river-exclude = false
 series = ["One Vote, Two PAs 2026"]
 slug = "josh-shapiro-stacy-garrity-abortion-access-medicaid-guide-governor-race-elections"
 suppress-ads = false
@@ -79,6 +80,8 @@ Neither the Garrity nor Shapiro campaign responded to Spotlight PA&#39;s questio
 The state legislature would need to get on board with any change to the law in Pennsylvania.
 
 Democrats, who currently control the state House, are broadly against restrictions. Republicans, who control the state Senate, haven’t tried to pass any restrictions in years. However, when their party controlled the entire legislature, they did frequently — including <a href="https://whyy.org/articles/pennsylvania-house-senate-constitutional-amendment-abortion-gop/">an attempted 2022 amendment</a> that would have added language to the state constitution saying abortion isn’t a protected right.
+
+{{<embed/raw srcdoc="&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://youtube.com/embed/DIlITqYyZI4?si=cjVdBbvjUiwrxLVl&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;">}}
 
 ## Medicaid-funded abortion
 

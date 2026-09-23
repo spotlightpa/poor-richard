@@ -20,7 +20,7 @@ suppress-ads = false
 suppress-date = false
 title = "Data center developers are pushing Pa. government officials to sign secrecy agreements. At least some are saying yes."
 title-tag = "Why PA data centers want public officials to sign NDAs"
-topics = ["The Capitol"]
+topics = ["The Capitol", "Environment"]
 +++
 
 HARRISBURG —&nbsp;When Talen Energy reached out to Anthony Township Supervisor Craig High about rezoning, he was surprised.
@@ -72,6 +72,8 @@ Like High, Padora was asked to sign the document before meeting with the company
 “Our solicitor advised them that the NDAs are subject to Right-to-Know requests. So, like, it&#39;s pointless for having us sign it,” Padora said.
 
 He described the meeting as “a general introduction” intended to provide basic information about the project planned in Kline Township. The only confidential information he learned at the meeting, he said, was the planned end user for the data center — Amazon.
+
+Padora wasn’t the only county commissioner to sign the NDA. Both Barron Hetherington and Gary Hess, the county’s other two commissioners, also signed the NDA. Neither responded to press inquiries from Spotlight PA.
 
 Padora defended his decision to sign the NDA, saying the confidentiality didn&#39;t affect his interactions with constituents. He spoke regularly about the proposal, he said.
 

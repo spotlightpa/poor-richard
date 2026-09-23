@@ -1,21 +1,21 @@
 {
   "edCallout": [
-    "content/news/2026-07-06-spl_ddrd_0726.md",
+    "content/news/2026-08-13-SPLGARRITYPROFILE0826.md",
     "content/news/2026-07-20-SPLSHAPPROFILE0726.md"
   ],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-08-21-SPLDATAELEX0826.md"
+    "content/news/2026-09-23-SPLAGAUDIT0926.md"
   ],
   "subfeatures": [
-    "content/news/2026-08-19-SPLDATACENTER0826.md",
-    "content/news/2026-08-05-ICNPOCODATA0826.md",
-    "content/news/2026-08-06-NTTRUMPDATA0826.md"
+    "content/news/2026-08-03-SPLPOTTER0826.md",
+    "content/news/2026-06-22-SPLOSIGAG0626.md",
+    "content/news/2026-06-01-SPLNONEEDS0626.md"
   ],
   "topSlots": [
-    "content/news/2026-08-21-SPLPAIDENTITIES0826.md",
-    "content/news/2026-08-20-VB1V2PAELEX0826.md",
-    "content/statecollege/2026-08-18-SPLPSU1A0826.md"
+    "content/news/2026-09-23-SPL8THECON0926.md",
+    "content/news/2026-09-22-SPL2026RACES0926.md",
+    "content/news/2026-09-21-SPLAUTOENROLL0926.md"
   ]
 }

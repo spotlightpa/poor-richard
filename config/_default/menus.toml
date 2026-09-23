@@ -20,7 +20,7 @@ weight = 4
 
 [[main]]
 name = "elections"
-url = "/topics/elections/"
+url = "/elections/"
 weight = 5
 
 [[about]]
@@ -205,6 +205,11 @@ weight = 4
 name = "Spotlight PA Store"
 url = "https://shop.spotlightpa.org"
 weight = 5
+
+[[support]]
+name = "Agentic Giving"
+url = "https://spotlightpa.donorsupport.co/agentic-giving.md"
+weight = 6
 
 [[social]]
 name = "iOS App"
