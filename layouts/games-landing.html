@@ -55,7 +55,7 @@
     "iconKey" "crossword"
     "meta" "Weekly · 15 min"
     "hoverBorder" "hover:border-yellow-2"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     (dict
     "title" "Mini Crossword"
@@ -63,7 +63,7 @@
     "iconKey" "mini-crossword"
     "meta" "Daily · 3 min"
     "hoverBorder" "hover:border-blue-2"
-    "iconClass" "h-20 w-20"
+    "iconClass" "h-32 w-32 sm:h-20 sm:w-20"
     )
     (dict
     "title" "News Quiz"
@@ -71,7 +71,7 @@
     "iconKey" "news-quiz"
     "meta" "Weekly · 7 Qs"
     "hoverBorder" "hover:border-blue-2"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     (dict
     "title" "Slide"
@@ -79,7 +79,7 @@
     "iconKey" "slide"
     "meta" "Daily · 3 min"
     "hoverBorder" "hover:border-election-green-lighter"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     (dict
     "title" "Sudoku"
@@ -87,7 +87,7 @@
     "iconKey" "sudoku"
     "meta" "Daily · 5 min"
     "hoverBorder" "hover:border-blue-2"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     (dict
     "title" "Word Flower"
@@ -95,7 +95,7 @@
     "iconKey" "word-flower"
     "meta" "Daily · 10 min"
     "hoverBorder" "hover:border-yellow-2"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     (dict
     "title" "Word Search"
@@ -103,7 +103,7 @@
     "iconKey" "word-search"
     "meta" "Daily · 4 min"
     "hoverBorder" "hover:border-election-green-lighter"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     (dict
     "title" "WordroW"
@@ -111,7 +111,7 @@
     "iconKey" "wordrow"
     "meta" "Daily · 6 tries"
     "hoverBorder" "hover:border-election-green-lighter"
-    "iconClass" "h-[88px] w-[88px]"
+    "iconClass" "h-48 w-48 sm:h-[88px] sm:w-[88px]"
     )
     }}
 
@@ -250,37 +250,7 @@
           }}
         {{ end }}
 
-
-        <div
-          class="w-full rounded-sm border border-g-3 bg-beige p-6 shadow-md md:max-w-75"
-        >
-          <div
-            class="mb-1 border-b-2 border-g-9 pb-2 font-serif text-xl font-bold tracking-tight text-g-9 italic"
-          >
-            Learn More
-          </div>
-          <a
-            href="https://www.spotlightpa.org/about/"
-            target="_blank"
-            rel="noopener"
-            class="block border-b border-g-3 py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
-            >About us</a
-          >
-          <a
-            href="https://www.spotlightpa.org/investigations/"
-            target="_blank"
-            rel="noopener"
-            class="block border-b border-g-3 py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
-            >Latest investigations</a
-          >
-          <a
-            href="https://www.spotlightpa.org/about/mobile-apps"
-            target="_blank"
-            rel="noopener"
-            class="block py-3 font-serif text-base font-extrabold text-blue-8 no-underline hover:text-red"
-            >Download our app</a
-          >
-        </div>
+        {{ partial "games-landing/learn-more-box.html" . }}
       </aside>
     </div>
 

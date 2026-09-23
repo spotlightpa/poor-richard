@@ -68,9 +68,6 @@ async function submitNewsletter(baseURL, el) {
       body: JSON.stringify(msg),
     });
   }
-
-  // Redirect to thanks page on successful submission
-  window.top.location.href = "/newsletters/thanks/";
 }
 
 function newsletter(baseURL) {
@@ -80,6 +77,32 @@ function newsletter(baseURL) {
     submit() {
       this.isLoading = true;
       submitNewsletter(baseURL, this.$el)
+        .then(() => {
+          // Redirect to thanks page on successful submission
+          window.top.location.href = "/newsletters/thanks/";
+        })
+        .catch((e) => {
+          // eslint-disable-next-line no-console
+          console.warn(e);
+        })
+        .finally(() => {
+          this.isLoading = false;
+        });
+    },
+  };
+}
+
+function inlineNewsletter(baseURL) {
+  return {
+    isLoading: false,
+    hasFocused: false,
+    done: false,
+    submit() {
+      this.isLoading = true;
+      submitNewsletter(baseURL, this.$el)
+        .then(() => {
+          this.done = true;
+        })
         .catch((e) => {
           // eslint-disable-next-line no-console
           console.warn(e);
@@ -93,4 +116,5 @@ function newsletter(baseURL) {
 
 export default function newsletterPlugin(Alpine) {
   Alpine.data("newsletter", newsletter);
+  Alpine.data("inlineNewsletter", inlineNewsletter);
 }
