@@ -50,7 +50,7 @@ In a statement, a PUC spokesperson said DeFrank wants to ensure that “efforts 
 
 Pennsylvania should make it as straightforward as possible for vulnerable residents to get help they urgently need, said Elizabeth Marx, executive director of the Pennsylvania Utility Law Project, which advocates for low-income customers and has argued in favor of auto-enrollment to the commission.
 
-Rejecting that approach, Marx said, is like “trudging up a hill when there’s a shortcut,” she said.
+Rejecting that approach is like “trudging up a hill when there’s a shortcut,” she said.
 
 ## ‘Cumbersome processes’
 
