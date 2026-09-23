@@ -46,16 +46,16 @@ The event is a "melting pot of ideas," where Berks County is not only a place of
 
 ## Agenda
 
-### 9–10:30am | Community Spotlight Breakfast (Ticketed)
+### 9–10:30am | Community Spotlight Breakfast (Studio 238, Ticketed) - SOLD OUT
 
-Over the past year, Spotlight PA published a [*Community Spotlight* series](https://www.spotlightpa.org/topics/community-profile/), which celebrated neighbors making Berks County a better place to live, work, and do business. Now, we're bringing together our Community Spotlight honorees, community leaders, and supporters for a special breakfast celebration. **This is the only ticketed event of the festival. Buy tickets [here](https://www.zeffy.com/en-US/ticketing/united-way-community-spotlight-breakfast).**
+Over the past year, Spotlight PA published a [*Community Spotlight* series](https://www.spotlightpa.org/topics/community-profile/), which celebrated neighbors making Berks County a better place to live, work, and do business. Now, we're bringing together our Community Spotlight honorees, community leaders, and supporters for a special breakfast celebration. **This is the only ticketed event of the festival and it is now SOLD OUT. No tickets will be sold at the door. **
 
 * **Speakers:**
 
   * Monica Reyes, Vice President for Programs and Initiatives, Berks County Community Foundation
   * Tammy White, President, United Way of Berks County
 
-### 10:30am–12pm | Data Centers: What's Coming, What's at Stake
+### 10:30am–12pm | Data Centers: What's Coming, What's at Stake (Boscov Theater)
 
 Pennsylvania, like the rest of the United States, is experiencing a surge in proposed data center development, including a project in Cumru Township in Berks County. What does that mean for local energy and water use, land, jobs, and quality of life for the communities that could host these centers? Join experts for a live edition of Spotlight PA's popular "Community Forum" series where we'll discuss the data center boom, its potential benefits and consequences, and the role residents and local governments can play in determining what happens next.
 
@@ -68,15 +68,15 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
 
-### 10am – 11:30am | Family Art Activities
+### 10am – 11:30am | Family Art Activities (Studio 420)
 
 Community painting and children’s activities with the GoggleWorks Center for the Arts.
 
-### 12pm – 2pm | Meet K-Pop's Rumi & Derpy the Wildcat
+### 12pm – 2pm | Meet K-Pop's Rumi & Derpy the Wildcat (Studio 420)
 
 A special chance for fans of K-Pop Demon Hunters to meet everyone's favorite K-Pop star, Rumi, and her fun friend, Derpy the Wildcat. Hang out, take photos, and who knows, there might even be a dance party.
 
-### 12–1pm | Latino Berks: Voice, Participation & Representation
+### 12–1pm | Latino Berks: Voice, Participation & Representation (Studio 238)
 
 Latinos make up a significant and growing share of the population in Berks County and Pennsylvania. This panel will explore how Latino residents are engaging in elections, local government, schools, and other institutions that shape life in Berks County and Pennsylvania. We'll discuss barriers to participation and pathways to greater civic engagement. The conversation will also examine what Berks residents can do to ensure the Latino community has a meaningful voice in decisions that affect its future.
 
@@ -88,7 +88,7 @@ Latinos make up a significant and growing share of the population in Berks Count
   * Anthony Orozco, Director of Operations & Communication, Barrio Alegría
   * A. K. Sandoval-Strausz, Director of Latina/o Studies and Professor of History, Penn State University
 
-### 12:15–1:15pm | Community Cats: Who's Responsible --- and What Actually Works
+### 12:15–1:15pm | Community Cats: Who's Responsible --- and What Actually Works (Boscov Theater)
 
 Communities across Pennsylvania, including in Berks County, are grappling with growing populations of stray cats. This expert panel will explore approaches to managing community cat populations, from adoption and trap-neuter-vaccinate-release programs to rabies prevention and other public health measures. We'll discuss the role of local governments and animal welfare organizations, challenges and potential solutions, and how residents can take action. ***This panel is sponsored by Best Friends Animal Society.***
 
@@ -99,7 +99,7 @@ Communities across Pennsylvania, including in Berks County, are grappling with g
   * Gabriela Martínez, Quality of Life Reporter, Spotlight PA Berks
   * Steven Martinez, Executive Director, York County SPCA
 
-### 1:15–2:15pm | Green Space for All: Lessons from Pennsylvania Communities
+### 1:15–2:15pm | Green Space for All: Lessons from Pennsylvania Communities (Studio 238)
 
 Urban gardens and other green spaces can make Pennsylvania's cities healthier, cooler, and more resilient---while improving access to fresh food and strengthening communities. But creating and sustaining these spaces can raise difficult questions about land use, housing, equity, funding, and public policy. This expert panel will bring together leaders from Reading, Pittsburgh, and Philadelphia to explore what's working, what stands in the way, and how residents can help expand access to green space and gardens. ***This panel is sponsored by Capital Blue Cross.***
 
@@ -111,7 +111,7 @@ Urban gardens and other green spaces can make Pennsylvania's cities healthier, c
   * Courtney Shober, Ag Project Coordinator, B.A.R.N. (Berks Agricultural Resource Network)
   * James Wright, Project Manager for Strategy and Operations, Deeply Rooted, Center for Health Justice, Penn Medicine 
 
-### 1:30–2:30pm | The Future of Youth Sports in Pennsylvania and Beyond
+### 1:30–2:30pm | The Future of Youth Sports in Pennsylvania and Beyond (Boscov Theater)
 
 Youth sports can help kids build confidence, form friendships, stay healthy, and learn lessons that last far beyond the playing field. But the experience of playing sports is changing---in Berks County and across the country. This expert panel will explore how factors such as rising costs, increased competition, injuries, and mental health are shaping youth sports today, and what parents, coaches, schools, and communities can do to help kids participate, succeed, and thrive.
 
@@ -122,7 +122,7 @@ Youth sports can help kids build confidence, form friendships, stay healthy, and
   * Armen Keteyian, journalist and author
   * Rashida Suber, Head Coach of Girls Basketball, Reading High School
 
-### 2:30–3:30pm | From Scroll to Follow: How to Build an Audience on Social Media
+### 2:30–3:30pm | From Scroll to Follow: How to Build an Audience on Social Media (Studio 238)
 
 How do you cut through the noise and build an audience on social media? Local content creators share how they got started, what they've learned along the way, and what actually works when it comes to reaching and engaging more people. We'll cover the dos and don'ts of content creation, how to measure success, common mistakes to avoid, and practical lessons for individuals and local businesses looking to grow their reach and make an impact in Berks County and beyond. Bring your questions---this will be an interactive conversation with plenty of time for Q&A.
 
