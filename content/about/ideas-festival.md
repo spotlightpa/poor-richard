@@ -482,15 +482,16 @@ Jai Smith is the founder and editor of Lehigh Daily, a digital news outlet cover
   image="2026/09/01nb-8e3m-6jp5-8ge8.jpeg"
 >}}
 
-Rashida Suber is a Hall of Fame basketball player turned coach, mentor, and nonprofit leader dedicated to empowering young women through sports, discipline, and leadership. Known for elite competitive performance as a player and for building accountability-driven team culture as a coach, she is a passionate advocate for women’s representation in sports and for helping athletes develop identity, confidence, and purpose beyond the game. As the Head Coach of Girls Basketball at Reading High School, she led the team to a Berks County Championship—the program’s first in 15 years. She is also the co-founder of the Queens of the Castle Girls Basketball Camp and HerStory Foundation, a nonprofit focused on empowering girls and women through sports, mentorship, and leadership development. She also works for the City of Reading as a property maintenance/blight inspector. Her basketball career highlights include:				
-MEAC Basketball Hall of Fame Inductee (Class of 2025) — first women’s basketball player from Coppin State University to receive the honor
-Reading High School Athletic Hall of Fame Inductee
-2007 MEAC Player of the Year				
-Three-time First Team All-MEAC; MEAC All-Rookie Team
-All-time leading scorer at Coppin State University (1,865 career points)
-Led Coppin State to three NCAA Tournament appearances and a WNIT victory (2007)
-Played professionally overseas and attended WNBA training camp
-Scored 2,111 career points at Reading High School, ranking among the top scorers in Berks County history
+Rashida Suber is a Hall of Fame basketball player turned coach, mentor, and nonprofit leader dedicated to empowering young women through sports, discipline, and leadership. Known for elite competitive performance as a player and for building accountability-driven team culture as a coach, she is a passionate advocate for women’s representation in sports and for helping athletes develop identity, confidence, and purpose beyond the game. As the Head Coach of Girls Basketball at Reading High School, she led the team to a Berks County Championship—the program’s first in 15 years. She is also the co-founder of the Queens of the Castle Girls Basketball Camp and HerStory Foundation, a nonprofit focused on empowering girls and women through sports, mentorship, and leadership development. She also works for the City of Reading as a property maintenance/blight inspector. Her basketball career highlights include:
+
+- MEAC Basketball Hall of Fame Inductee (Class of 2025) — first women’s basketball player from Coppin State University to receive the honor
+- Reading High School Athletic Hall of Fame Inductee
+- 2007 MEAC Player of the Year				
+- Three-time First Team All-MEAC; MEAC All-Rookie Team
+- All-time leading scorer at Coppin State University (1,865 career points)
+- Led Coppin State to three NCAA Tournament appearances and a WNIT victory (2007)
+- Played professionally overseas and attended WNBA training camp
+- Scored 2,111 career points at Reading High School, ranking among the top scorers in Berks County history
 
 - - - -
 
