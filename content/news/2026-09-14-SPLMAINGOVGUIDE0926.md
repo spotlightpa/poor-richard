@@ -11,6 +11,7 @@ feed-exclude = false
 image = "cas/gjn1-xgjg-a94m-wh1k.png"
 image-credit = "Commonwealth Media Services"
 image-description = "Gov. Josh Shapiro and Pennsylvania Treasurer Stacy Garrity"
+image-gravity = "ce"
 internal-id = "SPLMAINGOVGUIDE0926"
 kicker = "Elections"
 modal-exclude = false
