@@ -37,8 +37,6 @@
 {{ $missingFeatured :=  eq (len $featuredStory) 0 }}
 {{ $marginClass := cond $missingFeatured "mt-4" "" }}
 
-{{ $edPicks := partial "helper/get-items" "sidebar" }}
-
 
 <h1 class="sr-only">{{ .Title }}</h1>
 {{ partial "tw/frontpage" (dict
@@ -56,7 +54,6 @@
   "scBureau" $scBureau
   "berksBureau" $berksBureau
   "river" $river
-  "edPicks" $edPicks
   "marginClass" $marginClass
   "featuredTopics" $featuredTopics
   "moreLink" "/news/"

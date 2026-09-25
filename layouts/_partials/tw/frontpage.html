@@ -389,14 +389,7 @@
             )
           }}
         </div>
-        {{ range .edPicks }}
 
-          {{ if .page }}
-            <div class="w-full sm:max-w-xs">
-              {{ partial "tw/rail-picks.html" . }}
-            </div>
-          {{ end }}
-        {{ end }}
         {{ if page.Param "ad-rail-sticky-active" }}
           <div
             class="sticky top-14 mx-auto self-start md:top-16"
