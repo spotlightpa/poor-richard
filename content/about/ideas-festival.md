@@ -65,6 +65,7 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
   * Dave Myers, Community Forum Coordinator, Spotlight PA
 * **Panelists:**
 
+  * Wayne Jonas Bealer, Chairman of the City of Reading Planning Commission
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
 
