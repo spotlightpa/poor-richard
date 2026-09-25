@@ -158,6 +158,20 @@ Christopher Baxter is president, CEO, and founding editor-in-chief of Spotlight 
 - - - -
 
 {{<featured/credit
+  name="Wayne Jonas Bealer"
+  role="Chairman of the City of Reading Planning Commission"
+  image="2026/09/01nb-d1rb-rsdw-de2j.jpeg"
+>}}
+
+Wayne Jonas Bealer is the Chairman of the City of Reading Planning Commission. He was appointed to the Commission by Mayor Thomas McMahon in 2004.
+
+Wayne developed an interest in serving on the Planning Commission during his ten year tenure as a “stringer” for the Reading Eagle covering township planning commissions. Since he learned how to read plans while working for his father who was a general contractor, he felt it was a good way to serve his community.
+
+Wayne was raised in North Coventry Township in Chester County, and graduated from Owen J. Roberts High School in 1984. While a senior in high school, he started his long college career at Albright College. He graduated from Franklin and Marshall College in 1994 with an AB in Music. Wayne and his wife of 37 years moved into their home in Centre Park on Halloween of 1993. They have two daughters who graduated from Reading High School in 2018 and 2024.
+
+- - - -
+
+{{<featured/credit
   name="Joel Cintrón Arbasetti"
   role="Reporter, Centro de Periodismo Investigativo"
   image="2026/09/01nb-8drn-yfjv-mc8q.jpeg"
