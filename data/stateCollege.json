@@ -3,16 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/statecollege/2026-09-22-SPLMOSHEXT0926.md"
+    "content/statecollege/2026-09-28-SPLHOMEBILL0926.md"
   ],
   "subfeatures": [
-    "content/statecollege/2026-09-18-SPLMOSHVOTE0926.md",
-    "content/statecollege/2026-09-08-SPLICEFLIGHTS0926.md",
-    "content/statecollege/2026-08-10-SPLICERFI0826.md"
+    "content/news/2026-08-26-SPLHOUSINGDB0826.md",
+    "content/news/2026-06-15-SPLHOUSINGBILLS0626.md",
+    "content/news/2026-02-16-SPLHousingPlan0226.md",
+    "content/news/2026-01-29-SPLHOUSINGPLAN0126.md"
   ],
   "topSlots": [
+    "content/statecollege/2026-09-22-SPLMOSHEXT0926.md",
     "content/statecollege/2026-09-18-SPLPSUVOTE0926.md",
-    "content/statecollege/2026-09-17-SPLROCKCOOP0926.md",
     "content/statecollege/2026-09-15-SPLCENTINSPECT0907-0913.md"
   ]
 }
