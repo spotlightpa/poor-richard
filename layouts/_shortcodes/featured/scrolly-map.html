@@ -23,6 +23,31 @@
 {{ $baseColor := .Get "base-color" | default "#d9dde1" }}
 {{ $shadeProperty := .Get "shade-property" | default "shaded" }}
 {{ $layout := .Get "layout" | default "left" | lower }}
+{{ $outline := ne (.Get "outline" | default "true" | lower) "false" }}
+{{ $outlineInput := .Get "outline-color" | default "#2e2e2e" }}
+{{ $outlineColor := index $brandColors (lower $outlineInput) | default $outlineInput }}
+{{ $topperImage := .Get "topper-image" | htmlUnescape }}
+{{ $topperDescription := .Get "topper-image-description" | htmlUnescape }}
+{{ $topperFit := .Get "topper-image-fit" | default "cover" | lower }}
+{{ $topperBg := .Get "topper-image-bg" | default "black" | lower }}
+{{ $topperLayout := .Get "topper-layout" | default "right" | lower }}
+{{ $topperMobileLayout := .Get "topper-mobile-layout" | default "top" | lower }}
+{{ $lc := partial "helper/map-layout-classes.html" (dict "desktop" $topperLayout "mobile" $topperMobileLayout) }}
+{{ $isRow := eq $lc.flexDir "md:flex-row" }}
+{{ if and $topperImage $isRow (not (.Get "hed-sizes")) }}
+  {{ $hedSizes = `text-2xl lg:text-4xl` }}
+{{ end }}
+{{ $heroText := dict
+  "eyebrow" $eyebrow
+  "hed" $hed
+  "dek" $dek
+  "date" $date
+  "creditType" $creditType
+  "byline" $byline
+  "outlet" $outlet
+  "hedSizes" $hedSizes
+  "publishedISO" $params.publishedISO
+}}
 {{ $fallbackImage := .Get "fallback-image" | default (.Page.Param "image") }}
 {{ $fallbackDescription := .Get "fallback-image-description" | default (.Page.Param "image-description") | default "Map of Pennsylvania" }}
 {{ $config := dict
@@ -31,77 +56,42 @@
   "baseColor" $baseColor
   "shadeProperty" $shadeProperty
   "layout" $layout
+  "outline" $outline
+  "outlineColor" $outlineColor
 }}
 
-
-<header class="bg-black px-8 py-10 text-white sm:px-10 md:py-16">
-  <div class="mx-auto max-w-content">
-    <a class="block" href="/">
-      <svg
-        class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
-        role="img"
-        aria-label="Spotlight PA banner"
-        viewBox="0 0 1024 190"
-      >
-        {{ partial "helper/svg.html" "banner" }}
-      </svg>
-    </a>
-
-    {{ with $eyebrow }}
-      <div class="mt-10 font-sans text-sm font-bold text-yellow uppercase">
-        {{ . }}
+{{ if $topperImage }}
+  <div
+    class="{{ $lc.flexDir }} {{ $lc.containerHeightMd }} flex w-full flex-col bg-black"
+    data-ga-category="scrolly-map:topper"
+  >
+    <header
+      class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col justify-center overflow-y-auto bg-black px-8 py-10 text-white sm:px-10"
+    >
+      <div class="mx-auto w-full max-w-content">
+        {{ partial "scrolly-map/hero-text.html" $heroText }}
       </div>
-    {{ end }}
-
-
-    <div class="mt-4 mb-4 border-t border-b border-white pt-4 pb-4">
-      <h1 class="{{ $hedSizes }} leading-hed uppercase">{{ $hed }}</h1>
-      {{ with $dek }}
-        <h2 class="mt-4 text-base leading-relaxed lg:text-xl">{{ . }}</h2>
-      {{ end }}
-    </div>
-
-    {{ if and $byline (ne $byline "NA") }}
-      <div class="mt-4 text-sm leading-none">
-        {{ if and $creditType (ne $creditType "NA") }}
-          {{ $creditType }}
-        {{ end }}
-        <span class="font-sans font-bold uppercase">{{ $byline }}</span>
-      </div>
-    {{ end }}
-    {{ if and $outlet (ne $outlet "NA") }}
-      <div class="mt-2 font-sans text-xs font-bold text-g-4 uppercase">
-        {{ $outlet }}
-      </div>
-    {{ end }}
-    {{ if and $date (ne $date "NA") }}
-      <time
-        class="mt-1 block font-sans text-xs text-g-4 uppercase"
-        datetime="{{ $params.publishedISO }}"
-      >
-        {{ $date }}
-      </time>
-    {{ end }}
-
-
-    <div class="mt-8 font-sans">
-      <a
-        class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold text-white uppercase"
-        href="/donate/"
-        data-ga-category="donate"
-      >
-        <svg
-          class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
-          viewBox="0 0 20 20"
-          aria-hidden="true"
-        >
-          {{ partial "helper/svg.html" "heart" }}
-        </svg>
-        Support This Work
-      </a>
-    </div>
+    </header>
+    <figure
+      class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} {{ cond (eq $topperBg "white") "bg-white" "bg-black" }} relative aspect-[4/3] w-full overflow-hidden md:aspect-auto"
+    >
+      {{ partial "scrolly-map/topper-image.html" (dict
+        "src" $topperImage
+        "description" $topperDescription
+        "fit" $topperFit
+        "sizes" (cond $isRow "(min-width: 1024px) calc(100vw - 28rem), (min-width: 768px) calc(100vw - 24rem), 100vw" "100vw")
+        )
+      }}
+    </figure>
   </div>
-</header>
+{{ else }}
+  <header class="bg-black px-8 py-10 text-white sm:px-10 md:py-16">
+    <div class="mx-auto max-w-content">
+      {{ partial "scrolly-map/hero-text.html" $heroText }}
+    </div>
+  </header>
+{{ end }}
+
 
 <section
   class="relative"
