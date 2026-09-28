@@ -1,0 +1,20 @@
+{{ $src := .src }}
+{{ if not (hasPrefix $src "http") }}
+  {{ $src = printf "https://datawrapper.dwcdn.net/%s/" $src }}
+{{ end }}
+{{ $id := .id }}
+
+
+<div data-ga-category="scrolly-map:datawrapper" class="w-full">
+  <div class="min-h-[{{ .height }}px]" id="{{ $id }}">
+    <script
+      defer
+      src="{{ urls.JoinPath $src `embed.js` }}"
+      charset="utf-8"
+      data-target="#{{ $id }}"
+    ></script>
+    <noscript>
+      <img src="{{ urls.JoinPath $src `full.png` }}" alt="" />
+    </noscript>
+  </div>
+</div>

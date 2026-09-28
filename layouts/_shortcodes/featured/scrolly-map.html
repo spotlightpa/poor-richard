@@ -1,0 +1,141 @@
+{{ $params := partial "helper/page-params" .Page }}
+{{ $eyebrow := .Get "eyebrow" }}
+{{ $hed := .Get "hed" }}
+{{ $dek := .Get "dek" }}
+{{ $date := .Get "display-date" }}
+{{ $creditType := .Get "credit-type" | default "by" }}
+{{ $byline := .Get "byline" }}
+{{ $outlet := .Get "outlet" | default "Spotlight PA" }}
+{{ $hedSizes := .Get "hed-sizes" | default `text-3xl lg:text-5xl` }}
+{{ $colorInput := .Get "color" | default "Blue" }}
+{{ $brandColors := dict
+  "black" "#2e2e2e"
+  "blue" "#009edb"
+  "green" "#78bc20"
+  "red" "#d70000"
+  "navy" "#22416e"
+  "teal" "#1b998b"
+  "orange" "#ff6c36"
+  "yellow" "#ffcb03"
+}}
+{{ $mapColor := index $brandColors (lower $colorInput) | default $colorInput }}
+{{ $colorOpacity := .Get "color-opacity" | default "0.75" }}
+{{ $baseColor := .Get "base-color" | default "#d9dde1" }}
+{{ $shadeProperty := .Get "shade-property" | default "shaded" }}
+{{ $layout := .Get "layout" | default "left" | lower }}
+{{ $fallbackImage := .Get "fallback-image" | default (.Page.Param "image") }}
+{{ $fallbackDescription := .Get "fallback-image-description" | default (.Page.Param "image-description") | default "Map of Pennsylvania" }}
+{{ $config := dict
+  "mapColor" $mapColor
+  "colorOpacity" $colorOpacity
+  "baseColor" $baseColor
+  "shadeProperty" $shadeProperty
+  "layout" $layout
+}}
+
+
+<header class="bg-black px-8 py-10 text-white sm:px-10 md:py-16">
+  <div class="mx-auto max-w-content">
+    <a class="block" href="/">
+      <svg
+        class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
+        role="img"
+        aria-label="Spotlight PA banner"
+        viewBox="0 0 1024 190"
+      >
+        {{ partial "helper/svg.html" "banner" }}
+      </svg>
+    </a>
+
+    {{ with $eyebrow }}
+      <div class="mt-10 font-sans text-sm font-bold text-yellow uppercase">
+        {{ . }}
+      </div>
+    {{ end }}
+
+
+    <div class="mt-4 mb-4 border-t border-b border-white pt-4 pb-4">
+      <h1 class="{{ $hedSizes }} leading-hed uppercase">{{ $hed }}</h1>
+      {{ with $dek }}
+        <h2 class="mt-4 text-base leading-relaxed lg:text-xl">{{ . }}</h2>
+      {{ end }}
+    </div>
+
+    {{ if and $byline (ne $byline "NA") }}
+      <div class="mt-4 text-sm leading-none">
+        {{ if and $creditType (ne $creditType "NA") }}
+          {{ $creditType }}
+        {{ end }}
+        <span class="font-sans font-bold uppercase">{{ $byline }}</span>
+      </div>
+    {{ end }}
+    {{ if and $outlet (ne $outlet "NA") }}
+      <div class="mt-2 font-sans text-xs font-bold text-g-4 uppercase">
+        {{ $outlet }}
+      </div>
+    {{ end }}
+    {{ if and $date (ne $date "NA") }}
+      <time
+        class="mt-1 block font-sans text-xs text-g-4 uppercase"
+        datetime="{{ $params.publishedISO }}"
+      >
+        {{ $date }}
+      </time>
+    {{ end }}
+
+
+    <div class="mt-8 font-sans">
+      <a
+        class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold text-white uppercase"
+        href="/donate/"
+        data-ga-category="donate"
+      >
+        <svg
+          class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
+          viewBox="0 0 20 20"
+          aria-hidden="true"
+        >
+          {{ partial "helper/svg.html" "heart" }}
+        </svg>
+        Support This Work
+      </a>
+    </div>
+  </div>
+</header>
+
+<section
+  class="relative"
+  data-ga-category="scrolly-map"
+  x-data="scrollyMap({{ $config | jsonify }})"
+>
+  <div class="sticky top-0 h-dvh w-full overflow-hidden bg-g-2">
+    <div x-ref="canvas" class="h-full w-full"></div>
+    {{ with $fallbackImage }}
+      {{ $src := . }}
+      {{ if not (or (hasPrefix . "http://") (hasPrefix . "https://")) }}
+        {{ $src = partial "helper/imgproxy" (dict
+          "filename" .
+          "width" 1600
+          "height" 1200
+          "resize" "fit"
+          "ext" "jpeg"
+          )
+        }}
+      {{ end }}
+      <noscript>
+        <img
+          class="absolute inset-0 h-full w-full object-contain"
+          src="{{ $src }}"
+          alt="{{ $fallbackDescription }}"
+        />
+      </noscript>
+    {{ end }}
+  </div>
+  <div class="pointer-events-none relative z-10 -mt-[100dvh] pb-[50dvh]">
+    {{ .Inner }}
+  </div>
+</section>
+
+{{ if strings.Contains .Page.RawContent "featured/footer" }}
+  {{ partial "featured/content-area-start" . }}
+{{ end }}

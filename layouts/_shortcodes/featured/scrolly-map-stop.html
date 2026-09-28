@@ -1,0 +1,95 @@
+{{ $geojson := .Get "geojson" }}
+{{ $label := .Get "label" }}
+{{ $fit := .Get "fit" | default "all" | lower }}
+{{ $colorInput := .Get "color" }}
+{{ $image := .Get "image" | htmlUnescape }}
+{{ $imageDescription := .Get "image-description" | htmlUnescape }}
+{{ $imageCaption := .Get "image-caption" | htmlUnescape }}
+{{ $imageCredit := .Get "image-credit" | htmlUnescape }}
+{{ $imageRatio := .Get "image-ratio" | default "3:2" }}
+{{ $datawrapper := .Get "datawrapper" | htmlUnescape }}
+{{ $datawrapperHeight := .Get "datawrapper-height" | default "400" }}
+{{ $flourish := .Get "flourish" | htmlUnescape }}
+{{ $mediaPosition := .Get "media-position" | default "top" | lower }}
+{{ $layout := "left" }}
+{{ with .Parent }}
+  {{ $colorInput = $colorInput | default (.Get "color") }}
+  {{ $layout = .Get "layout" | default "left" | lower }}
+{{ end }}
+{{ $colorInput = $colorInput | default "Blue" }}
+{{ $brandColors := dict
+  "black" "#2e2e2e"
+  "blue" "#009edb"
+  "green" "#78bc20"
+  "red" "#d70000"
+  "navy" "#22416e"
+  "teal" "#1b998b"
+  "orange" "#ff6c36"
+  "yellow" "#ffcb03"
+}}
+{{ $color := index $brandColors (lower $colorInput) | default $colorInput }}
+{{ $justify := index (dict
+  "left" "md:justify-start"
+  "right" "md:justify-end"
+  "center" "md:justify-center"
+  ) $layout | default "md:justify-start"
+}}
+{{ $hasEmbed := or $datawrapper $flourish }}
+{{ $cardWidth := cond $hasEmbed "md:max-w-xl" "md:max-w-sm" }}
+
+{{ $media := "" }}
+{{ if $image }}
+  {{ $media = partial "scrolly-map/stop-image.html" (dict
+    "src" $image
+    "description" $imageDescription
+    "caption" $imageCaption
+    "credit" $imageCredit
+    "ratio" $imageRatio
+    )
+  }}
+{{ else if $datawrapper }}
+  {{ $media = partial "scrolly-map/stop-datawrapper.html" (dict
+    "src" $datawrapper
+    "height" $datawrapperHeight
+    "id" (partial "helper/new-id" .)
+    )
+  }}
+{{ else if $flourish }}
+  {{ $media = partial "scrolly-map/stop-flourish.html" $flourish }}
+{{ end }}
+
+
+<div
+  data-scrolly-stop
+  data-geojson="{{ $geojson }}"
+  data-color="{{ $color }}"
+  data-fit="{{ $fit }}"
+  class="{{ $justify }} flex min-h-dvh items-end justify-center px-4 pb-8 md:items-center md:px-12 md:pb-0"
+>
+  <div
+    data-scrolly-card
+    class="{{ $cardWidth }} pointer-events-auto w-full max-w-full rounded-sm bg-white p-5 text-g-9 shadow-xl ring-1 ring-black/10 md:p-6"
+  >
+    {{ with $label }}
+      <div
+        class="mb-3 flex items-center gap-2 font-sans text-xs font-bold tracking-wide text-g-7 uppercase"
+      >
+        <span
+          class="inline-block h-3 w-3 flex-shrink-0 rounded-full bg-[{{ $color }}]"
+        ></span>
+        {{ . }}
+      </div>
+    {{ end }}
+    {{ if and $media (ne $mediaPosition "bottom") }}
+      <div class="mb-4">{{ $media }}</div>
+    {{ end }}
+    {{ with .Inner }}
+      <div class="text-base leading-relaxed [&_p+p]:mt-4">
+        {{ . | $.Page.RenderString (dict "display" "block") }}
+      </div>
+    {{ end }}
+    {{ if and $media (eq $mediaPosition "bottom") }}
+      <div class="mt-4">{{ $media }}</div>
+    {{ end }}
+  </div>
+</div>
