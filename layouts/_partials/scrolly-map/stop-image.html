@@ -11,7 +11,7 @@
 
 <figure data-ga-category="scrolly-map:image">
   <div
-    class="aspect-[{{ $widthRatio }}/{{ $heightRatio }}] relative w-full overflow-hidden rounded-sm bg-g-3"
+    class="relative aspect-[{{ $widthRatio }}/{{ $heightRatio }}] w-full overflow-hidden rounded-sm bg-g-3"
   >
     {{ if $isRemote }}
       <img
@@ -55,9 +55,9 @@
     {{ end }}
   </div>
   {{ if or .caption .credit }}
-    <figcaption class="mt-2 font-sans text-xs leading-snug text-g-7">
-      {{ with .caption }}<span>{{ . }}</span>{{ end }}
-      {{ with .credit }}<span class="text-g-6">({{ . }})</span>{{ end }}
+    <figcaption class="mt-2 text-sm leading-snug text-g-8">
+      {{ with .caption }}<span itemprop="caption">{{ . }}</span>{{ end }}
+      {{ with .credit }}<span itemprop="creditText">({{ . }})</span>{{ end }}
     </figcaption>
   {{ end }}
 </figure>

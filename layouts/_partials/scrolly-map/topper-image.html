@@ -1,0 +1,41 @@
+{{ $src := .src }}
+{{ $isRemote := or (hasPrefix $src "http://") (hasPrefix $src "https://") }}
+{{ $fitClass := cond (eq .fit "contain") "object-contain" "object-cover" }}
+{{ $fallback := $src }}
+{{ $srcset := "" }}
+{{ if not $isRemote }}
+  {{ $sources := slice }}
+  {{ range slice 600 900 1200 1600 2000 2400 }}
+    {{ $url := partial "helper/imgproxy" (dict
+      "filename" $src
+      "width" .
+      "height" (mul . 2)
+      "resize" "fit"
+      "ext" "webp"
+      )
+    }}
+    {{ $sources = $sources | append (printf "%s %dw" $url .) }}
+  {{ end }}
+  {{ $srcset = delimit $sources ", " }}
+  {{ $fallback = partial "helper/imgproxy" (dict
+    "filename" $src
+    "width" 1600
+    "height" 3200
+    "resize" "fit"
+    "ext" "jpeg"
+    )
+  }}
+{{ end }}
+
+
+<picture>
+  {{ with $srcset }}
+    <source type="image/webp" srcset="{{ . }}" sizes="{{ $.sizes }}" />
+  {{ end }}
+  <img
+    class="{{ $fitClass }} absolute inset-0 h-full w-full"
+    src="{{ $fallback }}"
+    alt="{{ .description }}"
+    fetchpriority="high"
+  />
+</picture>

@@ -1,0 +1,64 @@
+<a class="block" href="/">
+  <svg
+    class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
+    role="img"
+    aria-label="Spotlight PA banner"
+    viewBox="0 0 1024 190"
+  >
+    {{ partial "helper/svg.html" "banner" }}
+  </svg>
+</a>
+
+{{ with .eyebrow }}
+  <div class="mt-10 font-sans text-sm font-bold text-yellow uppercase">
+    {{ . }}
+  </div>
+{{ end }}
+
+
+<div class="mt-4 mb-4 border-t border-b border-white pt-4 pb-4">
+  <h1 class="{{ .hedSizes }} leading-hed uppercase">{{ .hed }}</h1>
+  {{ with .dek }}
+    <h2 class="mt-4 text-base leading-relaxed lg:text-xl">{{ . }}</h2>
+  {{ end }}
+</div>
+
+{{ if and .byline (ne .byline "NA") }}
+  <div class="mt-4 text-sm leading-none">
+    {{ if and .creditType (ne .creditType "NA") }}
+      {{ .creditType }}
+    {{ end }}
+    <span class="font-sans font-bold uppercase">{{ .byline }}</span>
+  </div>
+{{ end }}
+{{ if and .outlet (ne .outlet "NA") }}
+  <div class="mt-2 font-sans text-xs font-bold text-g-4 uppercase">
+    {{ .outlet }}
+  </div>
+{{ end }}
+{{ if and .date (ne .date "NA") }}
+  <time
+    class="mt-1 block font-sans text-xs text-g-4 uppercase"
+    datetime="{{ .publishedISO }}"
+  >
+    {{ .date }}
+  </time>
+{{ end }}
+
+
+<div class="mt-8 font-sans">
+  <a
+    class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold text-white uppercase"
+    href="/donate/"
+    data-ga-category="donate"
+  >
+    <svg
+      class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
+      viewBox="0 0 20 20"
+      aria-hidden="true"
+    >
+      {{ partial "helper/svg.html" "heart" }}
+    </svg>
+    Support This Work
+  </a>
+</div>

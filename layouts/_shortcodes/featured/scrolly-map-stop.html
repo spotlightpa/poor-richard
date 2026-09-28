@@ -64,6 +64,8 @@
   data-geojson="{{ $geojson }}"
   data-color="{{ $color }}"
   data-fit="{{ $fit }}"
+  data-dots="{{ .Get `dots` }}"
+  data-shade="{{ .Get `shade` | default `true` | lower }}"
   class="{{ $justify }} flex min-h-dvh items-end justify-center px-4 pb-8 md:items-center md:px-12 md:pb-0"
 >
   <div
