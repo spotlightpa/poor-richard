@@ -1,4 +1,14 @@
 {
-  "ad-rail-sticky": [],
-  "ad-rail-sticky-active": false
+  "ad-rail-sticky": [
+    {
+      "description": "For a limited time, a donor will DOUBLE all gifts in support of Spotlight PA's independent, unbiased reporting.",
+      "label": "",
+      "labelLink": "",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-sticky",
+      "sources": [
+        "https://files.data.spotlightpa.org/uploads/01nb/rn0r/september-300x250-squares-62-.png"
+      ]
+    }
+  ],
+  "ad-rail-sticky-active": true
 }
