@@ -30,5 +30,6 @@ signup-field = "newsletter/talkofthetown-hidden.html"
 [cascade]
 extended-kicker = "State College Region"
 sidebar-newsletter = "tw/rail-talkofthetown.html"
+rail-source = "statecollege-sidebar"
 +++
 To combat the continuing loss of local news in Pennsylvania, Spotlight PA launched its first pilot regional bureau based in State College and covering north-central Pennsylvania. We report on everything from the challenges facing rural communities to Penn State to local accountability issues like how our tax dollars are spent and how our towns are run.
