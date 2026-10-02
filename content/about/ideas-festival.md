@@ -66,6 +66,7 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
 * **Panelists:**
 
   * Wayne Jonas Bealer, Chairman of the City of Reading Planning Commission
+  * Joseph V. D'Ascenzo Jr., Executive Chairman, Titus Clean Industries, LLC
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
 
