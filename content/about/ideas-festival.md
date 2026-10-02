@@ -62,10 +62,11 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
 * **Moderators:**
 
   * Amanda Fries, Regional Accountability Reporter, Spotlight PA Berks
-  * Dave Myers, Community Forum Coordinator, Spotlight PA
+  * Dave Myers, Advisor, Spotlight PA
 * **Panelists:**
 
   * Wayne Jonas Bealer, Chairman of the City of Reading Planning Commission
+  * Joseph V. D'Ascenzo Jr., Executive Chairman, Titus Clean Industries, LLC
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
 
@@ -193,6 +194,16 @@ A non-profit professional with more than 19 years of experience, Dan Cody has se
 In this role, Dan leads a team of 125 people and oversees one of Pennsylvania’s largest and most comprehensive animal welfare organizations—including two domestic shelters and a wildlife rehabilitation center. Dan’s leadership is guided by his passion for collaboration and his deep belief in advancing animal welfare alongside the wellbeing of people—both those within the community and across the organization. In service of these values, Dan has positively shaped workplace culture at HARP through the development of a Staff Advisory Council and a Staff Innovation Fund. He was also instrumental in creating a donor-funded program for large-breed dogs in need of additional behavioral support and the launch of a corporate partnership to subsidize access to critical veterinary care.
 
 Beyond HARP, Dan lends his skillset to the broader animal welfare and nonprofit communities. He currently serves as a Founding Planning Committee member for the Animal Welfare Philanthropy Council and a board member of the Allegheny Abused Animal Relief Fund.
+
+- - - -
+
+{{<featured/credit
+  name="Joseph V. D’Ascenzo Jr."
+  role="Executive Chairman, Titus Clean Industries, LLC"
+  image="2026/10/01nb-z8wt-kyrn-a9zd.png"
+>}}
+
+Joseph V. D’Ascenzo Jr. brings more than 35 years of experience owning and operating an industrial and commercial construction firm. His background combines extensive business and management expertise with a strong foundation in chemistry and biology. He has significant experience managing complex, multi-phase projects, with particular emphasis on environmental considerations, technical collaboration, and team building. He has developed technical partnerships with Penn State University and the University of Illinois. Joseph holds a Master of Science in Molecular Biology from Drexel University and a Bachelor of Science in Biology from Ursinus College. 
 
 - - - -
 
