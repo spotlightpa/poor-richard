@@ -9,6 +9,7 @@ export default function mapContainer(config) {
     tooltipsEnabled: config.tooltipsEnabled,
     tooltipTemplate: config.tooltipTemplate,
     customCodeUrl: config.customCodeUrl,
+    customCodeProperty: config.customCodeProperty,
     searchUseLocation: !!config.searchUseLocation,
     districtsData: null,
     searchQuery: "",
@@ -156,17 +157,15 @@ export default function mapContainer(config) {
     },
     loadCustomCode() {
       if (!this.customCodeUrl) return;
-      const url = new URL(this.customCodeUrl, window.location.href);
-      const property = url.searchParams.get("property");
       const script = document.createElement("script");
-      script.src = url.pathname;
+      script.src = this.customCodeUrl;
       script.onload = () => {
         if (typeof window.SPLMapCustomCode === "function") {
           window.SPLMapCustomCode(this.map, {
             sourceId: "shapes",
             mapColor: this.mapColor,
             data: this.districtsData,
-            property: property,
+            property: this.customCodeProperty,
           });
         }
       };

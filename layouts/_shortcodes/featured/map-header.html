@@ -27,11 +27,12 @@
 {{ $readMoreEnabled := eq (.Get "read-more") "true" }}
 {{ $tooltipsEnabled := eq (.Get "tooltips") "true" }}
 {{ $tooltipValue := .Get "tooltip-value" }}
-{{ $customCodeURL := .Get "custom-code" }}
-{{ if $customCodeURL }}
-  {{ $pathOnly := index (split $customCodeURL "?") 0 }}
-  {{ $filename := path.Base $pathOnly }}
-  {{ $_ := partial "helper/get-esbuild-file.html" $filename }}
+{{ $customCodeURL := "" }}
+{{ $customCodeProperty := .Get "custom-code-property" }}
+{{ with .Get "custom-code" }}
+  {{ $parsed := urls.Parse . }}
+  {{ $customCodeURL = partial "helper/get-esbuild-file.html" (path.Base $parsed.Path) }}
+  {{ $customCodeProperty = $customCodeProperty | default ($parsed.Query.Get "property") }}
 {{ end }}
 {{ $layout := .Get "layout" | default "right" | lower }}
 {{ $mobileLayout := .Get "mobile-layout" | default "top" | lower }}
@@ -144,7 +145,7 @@
   <div
     id="map-container"
     class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative h-[60vw] min-h-[320px] w-full flex-shrink-0"
-    x-data="mapContainer({{ dict "geojson" $geojson "mapColor" $mapColor "colorOpacity" $colorOpacity "tooltipsEnabled" $tooltipsEnabled "tooltipTemplate" $tooltipValue "customCodeUrl" $customCodeURL "searchUseLocation" $searchUseLocation | jsonify }})"
+    x-data="mapContainer({{ dict "geojson" $geojson "mapColor" $mapColor "colorOpacity" $colorOpacity "tooltipsEnabled" $tooltipsEnabled "tooltipTemplate" $tooltipValue "customCodeUrl" $customCodeURL "customCodeProperty" $customCodeProperty "searchUseLocation" $searchUseLocation | jsonify }})"
     x-init="init()"
   >
     <div x-ref="canvas" class="h-full w-full"></div>
