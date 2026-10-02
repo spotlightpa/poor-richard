@@ -46,7 +46,7 @@ Garrity, de 62 años, también cuenta con un currículum que incluye años de li
 
 <h2 id="spl-heading-1">Los candidatos a gobernador de Pensilvania</h2>
 
-{{<picture caption="El gobernador Josh Shapir." credit="Commonwealth Media Services" description="El gobernador Josh Shapiro." src="cas/1c2a-bn&#10;b1-2xsj-2h6v.jpeg">}}
+{{<picture caption="El gobernador Josh Shapir." credit="Commonwealth Media Services" description="El gobernador Josh Shapiro." src="cas/1c2a-bnb1-2xsj-2h6v.jpeg">}}
 
 <h3 id="spl-heading-2">El demócrata Josh Shapiro</h3>
 
