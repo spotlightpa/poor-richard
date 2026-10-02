@@ -5,6 +5,7 @@ byline = "Angela Couloumbis y Katie Meyer de Spotlight PA"
 description = "El actual gobernador demócrata, Josh Shapiro, se enfrentará a la republicana Stacy Garrity en las elecciones del 3 de noviembre. Aprenda más sobre ellos con esta guía."
 draft = false
 feed-exclude = false
+image = "cas/gjn1-xgjg-a94m-wh1k.png"
 image-credit = "Commonwealth Media Services"
 image-description = "El gobernador Josh Shapiro y la tesorera de Pensilvania, Stacy Garrity"
 internal-id = "SPLESPGOBGUIA2026"
