@@ -11,6 +11,8 @@
 {{ $datawrapperHeight := .Get "datawrapper-height" | default "400" }}
 {{ $flourish := .Get "flourish" | htmlUnescape }}
 {{ $mediaPosition := .Get "media-position" | default "top" | lower }}
+{{ $cardClass := .Get "card-class" }}
+{{ $textClass := .Get "text-class" }}
 {{ $layout := "left" }}
 {{ with .Parent }}
   {{ $colorInput = $colorInput | default (.Get "color") }}
@@ -28,6 +30,12 @@
   "yellow" "#ffcb03"
 }}
 {{ $color := index $brandColors (lower $colorInput) | default $colorInput }}
+{{ with .Get "align" }}
+  {{ $layout = lower . }}
+{{ end }}
+{{ if not (in (slice "left" "right" "center") $layout) }}
+  {{ $layout = "left" }}
+{{ end }}
 {{ $justify := index (dict
   "left" "md:justify-start"
   "right" "md:justify-end"
@@ -64,13 +72,14 @@
   data-geojson="{{ $geojson }}"
   data-color="{{ $color }}"
   data-fit="{{ $fit }}"
+  data-align="{{ $layout }}"
   data-dots="{{ .Get `dots` }}"
   data-shade="{{ .Get `shade` | default `true` | lower }}"
   class="{{ $justify }} flex min-h-dvh items-end justify-center px-4 pb-8 md:items-center md:px-12 md:pb-0"
 >
   <div
     data-scrolly-card
-    class="{{ $cardWidth }} pointer-events-auto w-full max-w-full rounded-sm bg-white p-5 text-g-9 shadow-xl ring-1 ring-black/10 md:p-6"
+    class="{{ $cardWidth }} {{ $cardClass }} pointer-events-auto w-full max-w-full rounded-sm bg-white p-5 text-g-9 shadow-xl ring-1 ring-black/10 md:p-6"
   >
     {{ with $label }}
       <div
@@ -86,7 +95,7 @@
       <div class="mb-4">{{ $media }}</div>
     {{ end }}
     {{ with .Inner }}
-      <div class="text-base leading-relaxed [&_p+p]:mt-4">
+      <div class="{{ $textClass }} article-content text-base leading-relaxed">
         {{ . | $.Page.RenderString (dict "display" "block") }}
       </div>
     {{ end }}
