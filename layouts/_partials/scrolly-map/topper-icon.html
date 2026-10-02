@@ -1,7 +1,6 @@
 {{ $src := .src }}
-{{ $fitClass := cond (eq .fit "contain") "object-contain" "object-cover" }}
 {{ $sizes := dict
-  "widths" (slice 600 900 1200 1600 2000 2400)
+  "widths" (slice 400 600 800 1000 1200)
   "widthRatio" 1
   "heightRatio" 2
   | partial "helper/build-sizes"
@@ -14,18 +13,22 @@
 }}
 {{ $fallback := partial "helper/imgproxy" (dict
   "filename" $src
-  "width" 1600
-  "height" 3200
+  "width" 800
+  "height" 1600
   "resize" "fit"
-  "ext" "jpeg"
+  "ext" "png"
   )
 }}
 
 
 <picture>
-  <source type="image/webp" srcset="{{ $srcset }}" sizes="{{ .sizes }}" />
+  <source
+    type="image/webp"
+    srcset="{{ $srcset }}"
+    sizes="(min-width: 768px) 32rem, 80vw"
+  />
   <img
-    class="{{ $fitClass }} absolute inset-0 h-full w-full"
+    class="{{ cond (eq .align `left`) `max-w-[18rem] sm:max-w-[22rem] md:max-w-[26rem]` `mx-auto max-w-[20rem] sm:max-w-[26rem] md:max-w-[32rem]` }} h-auto w-full"
     src="{{ $fallback }}"
     alt="{{ .description }}"
     fetchpriority="high"
