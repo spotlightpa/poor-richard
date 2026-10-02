@@ -27,6 +27,8 @@ title-tag = "PA governor race: Your guide to the candidates"
 topics = ["Elections"]
 +++
 
+<a href="https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pensilvania-gobernador-elecciones-guia-espanol/"><em>Leer en español</em></a><em></em>
+
 HARRISBURG — The 2026 election for Pennsylvania governor is fast approaching.
 
 Voters will decide whether <a href="https://www.spotlightpa.org/topics/josh-shapiro/">Democratic Gov. Josh Shapiro</a> should spend another four years as the state’s chief executive or grant his Republican competitor, state Treasurer Stacy Garrity, a turn at overseeing a vast state bureaucracy that implements programs and policies ranging from elections to environmental policy.
