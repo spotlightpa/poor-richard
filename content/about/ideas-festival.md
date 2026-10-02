@@ -69,6 +69,9 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
   * Joseph V. D'Ascenzo Jr., Executive Chairman, Titus Clean Industries, LLC
   * State Sen. Katie Muth (D., Montgomery)
   * Ashley Showers, Executive Director, Berks County Planning Commission
+* **Resources:**
+
+  * [Handout](https://files.data.spotlightpa.org/uploads/01nb/zq48/october-3rd-spotlight-pa-ideas-fest-handout.pdf)
 
 ### 10am – 11:30am | Family Art Activities (Studio 420)
 
