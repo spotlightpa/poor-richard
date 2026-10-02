@@ -1,13 +1,13 @@
 {{ $params := partial "helper/page-params" .Page }}
-{{ $eyebrow := .Get "eyebrow" }}
-{{ $hed := .Get "hed" }}
-{{ $dek := .Get "dek" }}
-{{ $date := .Get "display-date" }}
+{{ $eyebrow := .Get "eyebrow" | htmlUnescape }}
+{{ $hed := .Get "hed" | htmlUnescape }}
+{{ $dek := .Get "dek" | htmlUnescape }}
+{{ $date := .Get "display-date" | htmlUnescape }}
 {{ $creditType := .Get "credit-type" | default "by" }}
-{{ $byline := .Get "byline" }}
-{{ $outlet := .Get "outlet" | default "Spotlight PA" }}
+{{ $byline := .Get "byline" | htmlUnescape }}
+{{ $outlet := .Get "outlet" | htmlUnescape | default "Spotlight PA" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-2xl lg:text-4xl` }}
-{{ $geojson := .Get "geojson" }}
+{{ $geojson := .Get "geojson" | htmlUnescape }}
 {{ $colorInput := .Get "color" | default "Blue" }}
 {{ $brandColors := dict
   "black" "#2e2e2e"
@@ -22,11 +22,11 @@
 {{ $mapColor := index $brandColors (lower $colorInput) | default $colorInput }}
 {{ $colorOpacity := .Get "color-opacity" | default "0.2" }}
 {{ $searchEnabled := eq (.Get "search") "true" }}
-{{ $searchText := .Get "search-text" | default "Search" }}
+{{ $searchText := .Get "search-text" | htmlUnescape | default "Search" }}
 {{ $searchUseLocation := eq (.Get "search-use-location") "true" }}
 {{ $readMoreEnabled := eq (.Get "read-more") "true" }}
 {{ $tooltipsEnabled := eq (.Get "tooltips") "true" }}
-{{ $tooltipValue := .Get "tooltip-value" }}
+{{ $tooltipValue := .Get "tooltip-value" | htmlUnescape }}
 {{ $customCodeURL := "" }}
 {{ $customCodeProperty := .Get "custom-code-property" }}
 {{ with .Get "custom-code" }}

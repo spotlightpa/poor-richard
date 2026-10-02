@@ -1,5 +1,5 @@
-{{ $geojson := .Get "geojson" }}
-{{ $label := .Get "label" }}
+{{ $geojson := .Get "geojson" | htmlUnescape }}
+{{ $label := .Get "label" | htmlUnescape }}
 {{ $fit := .Get "fit" | default "all" | lower }}
 {{ $colorInput := .Get "color" }}
 {{ $image := .Get "image" | htmlUnescape }}
@@ -73,7 +73,7 @@
   data-color="{{ $color }}"
   data-fit="{{ $fit }}"
   data-align="{{ $layout }}"
-  data-dots="{{ .Get `dots` }}"
+  data-dots="{{ .Get `dots` | htmlUnescape }}"
   data-shade="{{ .Get `shade` | default `true` | lower }}"
   class="{{ $justify }} flex min-h-dvh items-end justify-center px-4 pb-8 md:items-center md:px-12 md:pb-0"
 >

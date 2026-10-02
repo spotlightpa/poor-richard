@@ -1,11 +1,11 @@
 {{ $params := partial "helper/page-params" .Page }}
-{{ $eyebrow := .Get "eyebrow" }}
-{{ $hed := .Get "hed" }}
-{{ $dek := .Get "dek" }}
-{{ $date := .Get "display-date" }}
+{{ $eyebrow := .Get "eyebrow" | htmlUnescape }}
+{{ $hed := .Get "hed" | htmlUnescape }}
+{{ $dek := .Get "dek" | htmlUnescape }}
+{{ $date := .Get "display-date" | htmlUnescape }}
 {{ $creditType := .Get "credit-type" | default "by" }}
-{{ $byline := .Get "byline" }}
-{{ $outlet := .Get "outlet" | default "Spotlight PA" }}
+{{ $byline := .Get "byline" | htmlUnescape }}
+{{ $outlet := .Get "outlet" | htmlUnescape | default "Spotlight PA" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-3xl lg:text-5xl` }}
 {{ $colorInput := .Get "color" | default "Blue" }}
 {{ $brandColors := dict
