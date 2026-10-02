@@ -1,7 +1,4 @@
 {{ $src := .src }}
-{{ if not (hasPrefix $src "http") }}
-  {{ $src = printf "https://datawrapper.dwcdn.net/%s/" $src }}
-{{ end }}
 {{ $id := .id }}
 
 
