@@ -62,7 +62,7 @@ Pennsylvania, like the rest of the United States, is experiencing a surge in pro
 * **Moderators:**
 
   * Amanda Fries, Regional Accountability Reporter, Spotlight PA Berks
-  * Dave Myers, Community Forum Coordinator, Spotlight PA
+  * Dave Myers, Advisor, Spotlight PA
 * **Panelists:**
 
   * Wayne Jonas Bealer, Chairman of the City of Reading Planning Commission
