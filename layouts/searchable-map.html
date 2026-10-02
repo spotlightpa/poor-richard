@@ -1,0 +1,13 @@
+{{ define "body-class" }}font-serif{{ end }}
+
+{{ define "header" }}<header hidden></header>{{ end }}
+{{ define "footer" }}{{ end }}
+{{ define "promo" }}{{ end }}
+
+{{ define "extra-head" }}
+  {{ partial "header/maplibre.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ .Content }}
+{{ end }}
