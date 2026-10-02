@@ -6,16 +6,17 @@ export default function scrollyMap(config) {
   return {
     active: -1,
     mapColor: config.mapColor,
-    colorOpacity: Number(config.colorOpacity),
+    colorOpacity: config.colorOpacity,
     baseColor: config.baseColor,
     shadeProperty: config.shadeProperty || "shaded",
-    layout: config.layout || "left",
+    basemap: config.basemap !== false,
+    background: config.background || "#ffffff",
     outline: config.outline !== false,
     outlineColor: config.outlineColor || "#2e2e2e",
     border: {
-      edge: 1,
-      edgeColor: "#bdbdbd",
-      mat: 3,
+      edge: 1.5,
+      edgeColor: "#6b6b6b",
+      mat: 4,
       matColor: "#ffffff",
       shadows: [
         [1, 0.12],
@@ -24,6 +25,7 @@ export default function scrollyMap(config) {
     },
     reduceMotion: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     init() {
+      this.applyTheme();
       stops = Array.from(
         this.$root.querySelectorAll("[data-scrolly-stop]"),
       ).map((el, index) => ({
@@ -34,6 +36,7 @@ export default function scrollyMap(config) {
         geojson: el.dataset.geojson,
         color: el.dataset.color || this.mapColor,
         fit: el.dataset.fit || "all",
+        align: el.dataset.align || config.layout || "left",
         dots: this.parseDots(el.dataset.dots),
         shade: el.dataset.shade !== "false",
         hasDots: false,
@@ -66,7 +69,7 @@ export default function scrollyMap(config) {
         position: "fixed",
         inset: "0",
         zIndex: "9999",
-        background: "#ffffff",
+        background: this.basemap ? "#ffffff" : this.background,
       });
       Object.assign(this.$refs.canvas.parentElement.style, {
         position: "absolute",
@@ -77,11 +80,56 @@ export default function scrollyMap(config) {
         "hidden";
       document.documentElement.style.overflow = "hidden";
     },
+    applyTheme() {
+      const opacity = parseFloat(this.colorOpacity);
+      this.colorOpacity = Number.isFinite(opacity) ? opacity : 0.75;
+      this.baseColor = this.baseColor || "#d9dde1";
+    },
+    rgb(color) {
+      let hex = String(color || "").replace("#", "");
+      if (hex.length === 3) {
+        hex = hex
+          .split("")
+          .map((c) => c + c)
+          .join("");
+      }
+      if (!/^[0-9a-f]{6}$/i.test(hex)) return null;
+      const n = parseInt(hex, 16);
+      return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+    },
+    darken(color, amount) {
+      const rgb = this.rgb(color);
+      if (!rgb) return this.outlineColor;
+      return (
+        "#" +
+        rgb
+          .map((c) =>
+            Math.round(c * (1 - amount))
+              .toString(16)
+              .padStart(2, "0"),
+          )
+          .join("")
+      );
+    },
     initMap() {
       if (map) return;
       map = new window.maplibregl.Map({
         container: this.$refs.canvas,
-        style: "https://tiles.openfreemap.org/styles/positron",
+        style: this.basemap
+          ? "https://tiles.openfreemap.org/styles/positron"
+          : {
+              version: 8,
+              glyphs:
+                "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+              sources: {},
+              layers: [
+                {
+                  id: "background",
+                  type: "background",
+                  paint: { "background-color": this.background },
+                },
+              ],
+            },
         center: [-77.6, 40.9],
         zoom: 6,
         interactive: false,
@@ -99,6 +147,7 @@ export default function scrollyMap(config) {
       });
     },
     addAnchors() {
+      this.hideStateLabels();
       const firstSymbol = map
         .getStyle()
         .layers.find((layer) => layer.type === "symbol");
@@ -113,6 +162,13 @@ export default function scrollyMap(config) {
         "scrolly-anchor-fill",
       ].forEach((id) => {
         map.addLayer({ id, type: "line", source: "scrolly-anchor" }, beforeId);
+      });
+    },
+    hideStateLabels() {
+      map.getStyle().layers.forEach((layer) => {
+        if (layer.type === "symbol" && /state/i.test(layer.id)) {
+          map.setLayoutProperty(layer.id, "visibility", "none");
+        }
       });
     },
     isMobile() {
@@ -170,7 +226,7 @@ export default function scrollyMap(config) {
       const allFeatures = Array.isArray(data.features) ? data.features : [];
       const points = [...allFeatures.filter(isPoint), ...stop.dots];
       const features = allFeatures.filter((f) => !isPoint(f));
-      data = { ...data, features: [...features, ...points] };
+      data = { ...data, features };
       stop.hasDots = points.length > 0;
       const prop = this.shadeProperty;
       const hasShade =
@@ -275,8 +331,29 @@ export default function scrollyMap(config) {
         },
         "scrolly-anchor-fill",
       );
+      if (shaded.length) {
+        map.addSource(stop.id + "-region", {
+          type: "geojson",
+          data: this.boundaryFor(shaded),
+        });
+        map.addLayer(
+          {
+            id: stop.id + "-region",
+            type: "line",
+            source: stop.id + "-region",
+            layout: { "line-join": "round", "line-cap": "round" },
+            paint: {
+              "line-color": this.darken(stop.color, 0.35),
+              "line-width": 1.75,
+              "line-opacity": 0,
+              "line-opacity-transition": { duration: 600, delay: 0 },
+            },
+          },
+          "scrolly-anchor-fill",
+        );
+      }
 
-      if (stop.hasDots) this.addDots(stop);
+      if (stop.hasDots) this.addDots(stop, points);
 
       let fitTo = features.length ? features : points;
       if (stop.fit === "shaded" && shaded.length) fitTo = shaded;
@@ -286,7 +363,11 @@ export default function scrollyMap(config) {
       this.applyVisibility(stop);
       if (stop.index === this.active) this.fitActive(false);
     },
-    addDots(stop) {
+    addDots(stop, points) {
+      map.addSource(stop.id + "-points", {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: points },
+      });
       const pointFilter = [
         "match",
         ["geometry-type"],
@@ -298,7 +379,7 @@ export default function scrollyMap(config) {
       map.addLayer({
         id: stop.id + "-dot-halo",
         type: "circle",
-        source: stop.id,
+        source: stop.id + "-points",
         filter: pointFilter,
         paint: {
           "circle-radius": 12,
@@ -310,7 +391,7 @@ export default function scrollyMap(config) {
       map.addLayer({
         id: stop.id + "-dot",
         type: "circle",
-        source: stop.id,
+        source: stop.id + "-points",
         filter: pointFilter,
         paint: {
           "circle-radius": 6,
@@ -324,10 +405,14 @@ export default function scrollyMap(config) {
         },
       });
       if (!map.getStyle().glyphs) return;
+      map.addSource(stop.id + "-labels", {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: points },
+      });
       map.addLayer({
         id: stop.id + "-dot-label",
         type: "symbol",
-        source: stop.id,
+        source: stop.id + "-labels",
         filter: pointFilter,
         layout: {
           "text-field": ["coalesce", ["get", "name"], ""],
@@ -349,10 +434,7 @@ export default function scrollyMap(config) {
     setActive(index, animate = true) {
       if (index === this.active) return;
       this.active = index;
-      stops.forEach((stop) => {
-        stop.el.toggleAttribute("data-active", stop.index === index);
-        this.applyVisibility(stop);
-      });
+      stops.forEach((stop) => this.applyVisibility(stop));
       this.fitActive(animate);
     },
     applyVisibility(stop) {
@@ -364,6 +446,9 @@ export default function scrollyMap(config) {
         on ? this.colorOpacity : 0,
       );
       map.setPaintProperty(stop.id + "-line", "line-opacity", on ? 1 : 0);
+      if (map.getLayer(stop.id + "-region")) {
+        map.setPaintProperty(stop.id + "-region", "line-opacity", on ? 1 : 0);
+      }
       if (stop.hasDots) {
         [
           [stop.id + "-dot-halo", "circle-opacity", 0.18],
@@ -400,7 +485,7 @@ export default function scrollyMap(config) {
       });
     },
     padding() {
-      const pad = { top: 48, bottom: 48, left: 48, right: 48 };
+      const pad = { top: 40, bottom: 40, left: 48, right: 48 };
       const width = this.$refs.canvas.clientWidth;
       const height = this.$refs.canvas.clientHeight;
       if (this.snapshot !== null) return pad;
@@ -411,13 +496,11 @@ export default function scrollyMap(config) {
         pad.bottom = Math.round(height * 0.4);
         return pad;
       }
-      if (this.layout === "center") return pad;
       const stop = stops[this.active];
-      const card = stop ? stop.card : null;
-      if (!card) return pad;
-      const side = card.getBoundingClientRect().width + 80;
+      if (!stop || stop.align === "center") return pad;
+      const side = stop.card.getBoundingClientRect().width + 100;
       if (width - side < 320) return pad;
-      if (this.layout === "right") pad.right = side;
+      if (stop.align === "right") pad.right = side;
       else pad.left = side;
       return pad;
     },
