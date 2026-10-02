@@ -4,19 +4,18 @@
 {{ $fallback := $src }}
 {{ $srcset := "" }}
 {{ if not $isRemote }}
-  {{ $sources := slice }}
-  {{ range slice 600 900 1200 1600 2000 2400 }}
-    {{ $url := partial "helper/imgproxy" (dict
-      "filename" $src
-      "width" .
-      "height" (mul . 2)
-      "resize" "fit"
-      "ext" "webp"
-      )
-    }}
-    {{ $sources = $sources | append (printf "%s %dw" $url .) }}
-  {{ end }}
-  {{ $srcset = delimit $sources ", " }}
+  {{ $sizes := dict
+    "widths" (slice 600 900 1200 1600 2000 2400)
+    "widthRatio" 1
+    "heightRatio" 2
+    | partial "helper/build-sizes"
+  }}
+  {{ $srcset = dict
+    "filename" $src
+    "sizes" $sizes
+    "resize" "fit"
+    | partial "helper/build-srcset"
+  }}
   {{ $fallback = partial "helper/imgproxy" (dict
     "filename" $src
     "width" 1600
