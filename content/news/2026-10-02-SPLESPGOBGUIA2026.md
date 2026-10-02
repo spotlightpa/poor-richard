@@ -1,7 +1,7 @@
 +++
-authors = ["Angela Couloumbis", "Katie Meyer deSpotlight PA"]
+authors = ["Angela Couloumbis", "Katie Meyer"]
 blurb = "El actual gobernador demócrata, Josh Shapiro, se enfrentará a la republicana Stacy Garrity en las elecciones del 3 de noviembre. Aprenda más sobre ellos con esta guía."
-byline = "Angela Couloumbis y Katie Meyer deSpotlight PA"
+byline = "Angela Couloumbis y Katie Meyer de Spotlight PA"
 description = "El actual gobernador demócrata, Josh Shapiro, se enfrentará a la republicana Stacy Garrity en las elecciones del 3 de noviembre. Aprenda más sobre ellos con esta guía."
 draft = false
 feed-exclude = false
