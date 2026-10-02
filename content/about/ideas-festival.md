@@ -198,6 +198,16 @@ Beyond HARP, Dan lends his skillset to the broader animal welfare and nonprofit 
 - - - -
 
 {{<featured/credit
+  name="Joseph V. D’Ascenzo Jr."
+  role="Executive Chairman, Titus Clean Industries, LLC"
+  image="2026/10/01nb-z8wt-kyrn-a9zd.png"
+>}}
+
+Joseph V. D’Ascenzo Jr. brings more than 35 years of experience owning and operating an industrial and commercial construction firm. His background combines extensive business and management expertise with a strong foundation in chemistry and biology. He has significant experience managing complex, multi-phase projects, with particular emphasis on environmental considerations, technical collaboration, and team building. He has developed technical partnerships with Penn State University and the University of Illinois. Joseph holds a Master of Science in Molecular Biology from Drexel University and a Bachelor of Science in Biology from Ursinus College. 
+
+- - - -
+
+{{<featured/credit
   name="Linda Flanagan"
   role="Journalist, author, and former cross-country and track coach"
   image="2026/09/01nb-8e3a-z2nw-ycbp.jpeg"
