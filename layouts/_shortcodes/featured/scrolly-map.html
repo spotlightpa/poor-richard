@@ -137,17 +137,14 @@
   >
     <div x-ref="canvas" class="h-full w-full"></div>
     {{ with $fallbackImage }}
-      {{ $src := . }}
-      {{ if not (or (hasPrefix . "http://") (hasPrefix . "https://")) }}
-        {{ $src = partial "helper/imgproxy" (dict
-          "filename" .
-          "width" 1600
-          "height" 1200
-          "resize" "fit"
-          "ext" "jpeg"
-          )
-        }}
-      {{ end }}
+      {{ $src := partial "helper/imgproxy" (dict
+        "filename" .
+        "width" 1600
+        "height" 1200
+        "resize" "fit"
+        "ext" "jpeg"
+        )
+      }}
       <noscript>
         <img
           class="absolute inset-0 h-full w-full object-contain"
