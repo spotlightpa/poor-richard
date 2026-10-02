@@ -1,22 +1,33 @@
-<a class="block" href="/">
-  <svg
-    class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
-    role="img"
-    aria-label="Spotlight PA banner"
-    viewBox="0 0 1024 190"
-  >
-    {{ partial "helper/svg.html" "banner" }}
-  </svg>
-</a>
+{{ $light := eq .theme "light" }}
+{{ if not .hideBanner }}
+  <a class="inline-block" href="/">
+    <svg
+      class="{{ cond $light `text-black hover:text-blue-7` `text-white drop-shadow-outline filter hover:text-yellow` }} h-8 fill-current lg:h-10"
+      role="img"
+      aria-label="Spotlight PA banner"
+      viewBox="0 0 1024 190"
+    >
+      {{ partial "helper/svg.html" "banner" }}
+    </svg>
+  </a>
+{{ end }}
+
+{{ with .icon }}
+  <div class="{{ cond $.hideBanner `` `mt-8` }}">{{ . }}</div>
+{{ end }}
 
 {{ with .eyebrow }}
-  <div class="mt-10 font-sans text-sm font-bold text-yellow uppercase">
+  <div
+    class="{{ cond $light `mt-8 text-blue-7` `mt-10 text-yellow` }} font-sans text-sm font-bold uppercase"
+  >
     {{ . }}
   </div>
 {{ end }}
 
 
-<div class="mt-4 mb-4 border-t border-b border-white pt-4 pb-4">
+<div
+  class="{{ cond $light `border-g-9` `border-white` }} mt-4 mb-4 border-t border-b pt-4 pb-4"
+>
   <h1 class="{{ .hedSizes }} leading-hed uppercase">{{ .hed }}</h1>
   {{ with .dek }}
     <h2 class="mt-4 text-base leading-relaxed lg:text-xl">{{ . }}</h2>
@@ -32,13 +43,15 @@
   </div>
 {{ end }}
 {{ if and .outlet (ne .outlet "NA") }}
-  <div class="mt-2 font-sans text-xs font-bold text-g-4 uppercase">
+  <div
+    class="{{ cond $light `text-g-8` `text-g-4` }} mt-2 font-sans text-xs font-bold uppercase"
+  >
     {{ .outlet }}
   </div>
 {{ end }}
 {{ if and .date (ne .date "NA") }}
   <time
-    class="mt-1 block font-sans text-xs text-g-4 uppercase"
+    class="{{ cond $light `text-g-8` `text-g-4` }} mt-1 block font-sans text-xs uppercase"
     datetime="{{ .publishedISO }}"
   >
     {{ .date }}
