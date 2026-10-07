@@ -3,9 +3,13 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/berks/2026-09-22-SPLURC0926.md"
+    "content/berks/2026-10-07-SPLUVISA1026.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2026-10-06-SPLCAMBRIA0926.md",
+    "content/berks/2026-07-23-SPLICEIMPACT0726.md",
+    "content/berks/2026-06-10-SPLERASMO0626.md"
+  ],
   "topSlots": [
     "content/berks/2026-09-22-SPLURC0926.md",
     "content/berks/2026-08-21-SPLSENCIT0826.md",
