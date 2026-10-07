@@ -6,16 +6,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-10-06-SPLCAMBRIA0926.md"
+    "content/news/2026-10-07-SPLWELLS1026.md"
   ],
   "subfeatures": [
-    "content/news/2026-04-06-SPLICEDETENTION0426.md",
-    "content/statecollege/2026-08-10-SPLICERFI0826.md",
-    "content/berks/2026-07-22-SPLDETLET0726.md"
+    "content/news/2025-03-20-SPLWELLFUNDING0325.md",
+    "content/news/2024-02-26-SPLWELLUPD.md",
+    "content/news/2023-05-24-SPLWELCAP.md"
   ],
   "topSlots": [
+    "content/news/2026-10-06-SPLCAMBRIA0926.md",
     "content/news/2026-10-06-VBICEELEX1026.md",
-    "content/news/2026-10-05-SPLMETASETT1026.md",
-    "content/news/2026-10-02-SPLEDUVOTE1026.md"
+    "content/news/2026-10-05-SPLMETASETT1026.md"
   ]
 }
