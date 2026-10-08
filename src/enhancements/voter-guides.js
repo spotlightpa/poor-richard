@@ -1,4 +1,4 @@
-import { submitNewsletter } from "./newsletter.js";
+import { NewsletterError, submitNewsletter } from "./newsletter.js";
 
 const STORAGE_KEY = "spl-voter-guides-email";
 
@@ -44,13 +44,17 @@ export default function voterGuides(baseURL) {
       }
       this.error = "";
       this.isLoading = true;
-      submitNewsletter(baseURL, form)
+      submitNewsletter(baseURL, form, { redirect: false })
         .then(() => {
           writeStorage(this.email.trim());
           this.unlocked = true;
         })
-        .catch(() => {
-          this.error = "Something went wrong. Please try again.";
+        .catch((e) => {
+          this.error =
+            e instanceof NewsletterError && e.code && e.message
+              ? e.message
+              : "Something went wrong. Please try again.";
+          this.$nextTick(() => this.$refs.email?.focus());
         })
         .finally(() => {
           this.isLoading = false;

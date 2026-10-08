@@ -1,7 +1,16 @@
 import { after } from "../utils/timers.js";
 import { allClosest } from "../utils/dom-utils.js";
 
-async function fetchOrRedirect(url, opts) {
+export class NewsletterError extends Error {
+  constructor(data) {
+    super(data.error);
+    this.name = "NewsletterError";
+    this.code = data.statuscode;
+    this.details = data.details;
+  }
+}
+
+async function fetchOrRedirect(url, opts, { redirect = true } = {}) {
   let data = await fetch(url, opts)
     .then((rsp) => rsp.json())
     .catch((err) => {
@@ -17,6 +26,9 @@ async function fetchOrRedirect(url, opts) {
       });
   }
   if (data.error) {
+    if (!redirect) {
+      throw new NewsletterError(data);
+    }
     let msg = encodeURIComponent(data.error);
     let code = data.statuscode ? encodeURIComponent(data.statuscode) : "";
     let errors = data.details
@@ -28,9 +40,11 @@ async function fetchOrRedirect(url, opts) {
   return data;
 }
 
-export async function submitNewsletter(baseURL, el) {
+export async function submitNewsletter(baseURL, el, { redirect = true } = {}) {
   // Fetch token from the API
-  let tokenData = await fetchOrRedirect(`${baseURL}/api/token`);
+  let tokenData = await fetchOrRedirect(`${baseURL}/api/token`, undefined, {
+    redirect,
+  });
   let token = tokenData.data;
 
   // Submit form as JSON with token
@@ -51,22 +65,30 @@ export async function submitNewsletter(baseURL, el) {
   obj.utm_medium = params.get("utm_medium");
   obj.utm_campaign = params.get("utm_campaign");
 
-  let resp = await fetchOrRedirect(`${baseURL}/api/verify-subscribe`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(obj),
-  });
-
-  for (let msg of resp.data || []) {
-    await fetchOrRedirect(`${baseURL}/api/list-add`, {
+  let resp = await fetchOrRedirect(
+    `${baseURL}/api/verify-subscribe`,
+    {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(msg),
-    });
+      body: JSON.stringify(obj),
+    },
+    { redirect },
+  );
+
+  for (let msg of resp.data || []) {
+    await fetchOrRedirect(
+      `${baseURL}/api/list-add`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(msg),
+      },
+      { redirect },
+    );
   }
 }
 
