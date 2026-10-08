@@ -1,5 +1,6 @@
 import { after } from "../utils/timers.js";
 import { allClosest } from "../utils/dom-utils.js";
+import { recordNewsletterSignup } from "../utils/metrics.js";
 
 export class NewsletterError extends Error {
   constructor(data) {
@@ -123,6 +124,7 @@ function inlineNewsletter(baseURL) {
       this.isLoading = true;
       submitNewsletter(baseURL, this.$el)
         .then(() => {
+          recordNewsletterSignup();
           this.done = true;
         })
         .catch((e) => {
