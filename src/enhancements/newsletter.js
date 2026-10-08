@@ -28,7 +28,7 @@ async function fetchOrRedirect(url, opts) {
   return data;
 }
 
-async function submitNewsletter(baseURL, el) {
+export async function submitNewsletter(baseURL, el) {
   // Fetch token from the API
   let tokenData = await fetchOrRedirect(`${baseURL}/api/token`);
   let token = tokenData.data;
