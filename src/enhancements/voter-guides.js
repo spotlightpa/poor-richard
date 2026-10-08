@@ -1,41 +1,16 @@
 import { NewsletterError, submitNewsletter } from "./newsletter.js";
-
-const STORAGE_KEY = "spl-voter-guides-email";
-
-function readStorage() {
-  try {
-    return window.localStorage.getItem(STORAGE_KEY);
-  } catch {
-    return null;
-  }
-}
-
-function writeStorage(value) {
-  try {
-    if (value) {
-      window.localStorage.setItem(STORAGE_KEY, value);
-    } else {
-      window.localStorage.removeItem(STORAGE_KEY);
-    }
-  } catch {
-    return;
-  }
-}
+import {
+  funnelStatus,
+  statusSubscriber,
+  recordNewsletterSignup,
+} from "../utils/metrics.js";
 
 export default function voterGuides(baseURL) {
   return {
     email: "",
     error: "",
-    unlocked: false,
+    unlocked: funnelStatus >= statusSubscriber,
     isLoading: false,
-
-    init() {
-      let saved = readStorage();
-      if (saved) {
-        this.email = saved;
-        this.unlocked = true;
-      }
-    },
 
     submit(form) {
       if (!form.checkValidity()) {
@@ -46,7 +21,7 @@ export default function voterGuides(baseURL) {
       this.isLoading = true;
       submitNewsletter(baseURL, form, { redirect: false })
         .then(() => {
-          writeStorage(this.email.trim());
+          recordNewsletterSignup();
           this.unlocked = true;
         })
         .catch((e) => {
@@ -62,7 +37,6 @@ export default function voterGuides(baseURL) {
     },
 
     reset() {
-      writeStorage(null);
       this.email = "";
       this.unlocked = false;
       this.$nextTick(() => this.$refs.email?.focus());
