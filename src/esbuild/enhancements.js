@@ -31,6 +31,7 @@ import {
   inspectionSortMenu,
   inspectionMobileFilters,
 } from "../enhancements/inspection-filters.js";
+import voterGuides from "../enhancements/voter-guides.js";
 
 for (let [name, comp] of [
   ["carousel", carousel],
@@ -53,6 +54,7 @@ for (let [name, comp] of [
   ["inspectionCityFilter", inspectionCityFilter],
   ["inspectionSortMenu", inspectionSortMenu],
   ["inspectionMobileFilters", inspectionMobileFilters],
+  ["voterGuides", voterGuides],
 ]) {
   Alpine.data(name, comp);
 }
