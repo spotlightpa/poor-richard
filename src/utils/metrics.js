@@ -53,6 +53,10 @@ if (
 ) {
   storeDate(FROM_MC_KEY, now);
 }
+if (window.location.pathname.match(/^\/newsletters\/thanks\//)) {
+  storeDate(SIGNED_UP_FOR_NEWSLETTER_KEY, now);
+}
+
 // And didn't previously sign up
 if (loadDate(SIGNED_UP_FOR_NEWSLETTER_KEY)) {
   funnelStatus = Math.max(funnelStatus, statusSubscriber);
