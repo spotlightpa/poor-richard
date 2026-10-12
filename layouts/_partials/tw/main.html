@@ -243,7 +243,7 @@
       {{ $activeRail := page.Param "ad-rail-top-active" }}
       {{ $promos := page.Param "ad-rail-top" }}
       {{ with $src := page.Param "rail-source" }}
-        {{ $data := index site.Data $src }}
+        {{ $data := index hugo.Data $src }}
         {{ $activeRail = index $data "ad-rail-top-active" }}
         {{ $promos = index $data "ad-rail-top" }}
       {{ end }}
