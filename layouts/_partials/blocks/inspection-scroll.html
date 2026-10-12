@@ -259,6 +259,7 @@
     <div class="bg-g-3" x-data="inspectionsData()" x-init="init()">
       {{ partial "inspections-data-loader.html" . }}
 
+
       <div
         id="search-results-banner"
         class="hidden w-full border-b border-g-3 bg-white px-4 py-3.5 sm:px-8"
@@ -382,16 +383,10 @@
           class="mt-3 flex gap-2 rounded-xl bg-g-2 px-3 py-2.5 font-sans text-[13px] leading-snug text-g-8 md:hidden"
         >
           <svg
-            class="mt-px h-4 w-4 flex-shrink-0"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
+            class="mt-px h-4 w-4 flex-shrink-0 fill-current"
             aria-hidden="true"
           >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 11v6M12 7.5v.5" />
+            {{ partial "helper/svg.html" "circle-info" }}
           </svg>
           <p>
             Don't see a facility? Not all facilities are inspected by the Dept.
