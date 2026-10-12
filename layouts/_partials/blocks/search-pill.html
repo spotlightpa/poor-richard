@@ -1,0 +1,236 @@
+<div
+  class="{{ .fieldClass }} {{ if .unified }}
+    h-[46px] pr-1
+  {{ else }}
+    h-12 pr-1.5
+  {{ end }} relative flex w-full min-w-0 flex-1 items-center rounded-full pl-1"
+  x-data="searchUI()"
+  x-init="init()"
+>
+  <button
+    type="button"
+    class="{{ if and .unified .showLocation }}
+      max-xl:hidden
+    {{ end }} flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-g-6 transition-colors hover:text-g-9 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none"
+    aria-label="Search"
+    @click="doSearch()"
+  >
+    <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+      {{ partial "helper/svg.html" "search" }}
+    </svg>
+  </button>
+  {{ if and .unified .showLocation }}
+    <button
+      type="button"
+      class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-g-7 transition-colors hover:bg-g-2 hover:text-g-9 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none disabled:cursor-wait xl:hidden"
+      aria-label="Near me"
+      :title="loadingLocation ? 'Locating…' : 'Near me'"
+      :aria-busy="loadingLocation ? 'true' : 'false'"
+      :disabled="loadingLocation"
+      @click="locate()"
+    >
+      <svg
+        x-show="!loadingLocation"
+        class="h-4 w-4 fill-current"
+        aria-hidden="true"
+      >
+        {{ partial "helper/svg.html" "crosshairs" }}
+      </svg>
+      <svg
+        x-show="loadingLocation"
+        x-cloak
+        class="h-4 w-4 animate-spin"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+    </button>
+  {{ end }}
+  <input
+    x-ref="input"
+    x-model="q"
+    type="text"
+    placeholder="{{ .placeholder }}"
+    class="min-w-0 flex-1 bg-transparent px-1 font-sans text-base text-g-9 placeholder:text-g-6 focus:outline-none"
+    aria-label="Search"
+    role="combobox"
+    aria-autocomplete="list"
+    :aria-expanded="suggestOpen && suggestions.length > 0"
+    :aria-controls="'search-suggest-' + uid"
+    :aria-activedescendant="activeIndex >= 0 ? 'search-suggest-' + uid + '-' + activeIndex : null"
+    autocomplete="off"
+    @input="onSuggestInput()"
+    @focus="onSuggestInput()"
+    @blur="setTimeout(() => closeSuggest(), 120)"
+    @keydown.arrow-down.prevent="moveSuggest(1)"
+    @keydown.arrow-up.prevent="moveSuggest(-1)"
+    @keydown.escape="closeSuggest()"
+    @keydown.enter.prevent="onSuggestEnter()"
+  />
+  <div
+    x-show="suggestOpen && suggestions.length > 0"
+    x-cloak
+    :id="'search-suggest-' + uid"
+    role="listbox"
+    class="absolute top-full right-0 left-0 z-40 mt-2 overflow-hidden rounded-2xl bg-white py-1.5 text-left shadow-[0_0_0_1px_rgba(0,0,0,0.08),0_10px_30px_rgba(0,0,0,0.12)]"
+  >
+    <template x-for="(s, i) in suggestions" :key="s.type + s.id">
+      <div>
+        <div
+          x-show="i === 0 || suggestions[i - 1].type !== s.type"
+          class="px-4 pt-2 pb-1 font-sans text-xs font-semibold text-g-6"
+          x-text="s.type === 'city' ? 'Cities' : 'Facilities'"
+        ></div>
+        <button
+          type="button"
+          role="option"
+          :id="'search-suggest-' + uid + '-' + i"
+          :aria-selected="activeIndex === i"
+          @mousedown.prevent="chooseSuggestion(s)"
+          @mouseenter="activeIndex = i"
+          :class="activeIndex === i ? 'bg-g-1' : ''"
+          class="flex w-full items-center gap-3 px-4 py-2 text-left font-sans"
+        >
+          <span
+            class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-g-2 text-g-7"
+            aria-hidden="true"
+          >
+            <svg x-show="s.type === 'city'" class="h-3.5 w-3.5 fill-current">
+              <use href="#location-svg" />
+            </svg>
+            <svg x-show="s.type !== 'city'" class="h-3.5 w-3.5 fill-current">
+              <use href="#search-svg" />
+            </svg>
+          </span>
+          <span class="min-w-0 flex-1">
+            <span
+              class="block truncate text-sm font-semibold text-g-9"
+              x-text="s.name"
+            ></span>
+            <span
+              x-show="s.detail"
+              class="block truncate text-xs text-g-6"
+              x-text="s.detail"
+            ></span>
+          </span>
+        </button>
+      </div>
+    </template>
+  </div>
+  {{ if .unified }}
+    {{ if .showLocation }}
+      <span
+        class="h-6 w-px flex-shrink-0 bg-g-3 max-xl:hidden"
+        aria-hidden="true"
+      ></span>
+      <button
+        type="button"
+        class="ml-1 inline-flex h-9 flex-shrink-0 items-center justify-center gap-1.5 rounded-full px-2.5 font-sans text-sm font-semibold text-g-9 transition-colors hover:bg-g-2 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none disabled:cursor-wait disabled:opacity-70 max-xl:hidden"
+        :aria-busy="loadingLocation ? 'true' : 'false'"
+        :title="loadingLocation ? 'Locating…' : 'Near me'"
+        :disabled="loadingLocation"
+        @click="locate()"
+      >
+        <svg
+          x-show="!loadingLocation"
+          class="h-4 w-4 fill-current text-g-7"
+          aria-hidden="true"
+        >
+          {{ partial "helper/svg.html" "crosshairs" }}
+        </svg>
+        <svg
+          x-show="loadingLocation"
+          x-cloak
+          class="h-4 w-4 animate-spin"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+          ></path>
+        </svg>
+        <span>Near me</span>
+      </button>
+    {{ end }}
+    <button
+      type="button"
+      class="ml-1 inline-flex h-[38px] flex-shrink-0 items-center rounded-full bg-yellow px-5 font-sans text-sm font-bold text-g-9 transition-colors hover:bg-yellow-3 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none"
+      @click="doSearch()"
+    >
+      Search
+    </button>
+  {{ else }}
+    {{ if .showLocation }}
+      <button
+        type="button"
+        class="inline-flex h-9 flex-shrink-0 items-center gap-1.5 rounded-full bg-yellow px-3.5 font-sans text-sm font-bold text-g-9 transition-colors hover:bg-yellow-3 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none disabled:cursor-wait disabled:opacity-70"
+        :aria-busy="loadingLocation ? 'true' : 'false'"
+        :disabled="loadingLocation"
+        @click="locate()"
+      >
+        <svg
+          x-show="!loadingLocation"
+          class="h-4 w-4 fill-current"
+          aria-hidden="true"
+        >
+          {{ partial "helper/svg.html" "crosshairs" }}
+        </svg>
+        <svg
+          x-show="loadingLocation"
+          x-cloak
+          class="h-4 w-4 animate-spin"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+          ></path>
+        </svg>
+        <span
+          class="max-[379px]:sr-only"
+          :class="$data.stuck && 'sr-only'"
+          x-text="loadingLocation ? 'Locating…' : 'Near me'"
+        ></span>
+      </button>
+    {{ end }}
+  {{ end }}
+</div>

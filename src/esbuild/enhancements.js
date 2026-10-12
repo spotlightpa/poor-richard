@@ -102,6 +102,7 @@ Alpine.store("inspections", {
   currentSort: localStorage.getItem("inspections-sort") || "date-desc",
   searchQuery: "",
   currentCity: "",
+  currentPriority: "",
   markers: [],
   cities: [],
 });
