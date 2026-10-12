@@ -3,12 +3,171 @@ import {
   escapeHTML,
   parseInspectionDate,
   generateInspectionCardId,
+  normalizeString,
+  simplifyAddress,
 } from "../utils/inspections.js";
+import { scrollToStickyTop } from "../utils/sticky-scroll.js";
+import {
+  alertButtonContent,
+  applyAlertStates,
+  quickToggleAlert,
+  ALERT_STATE_CLASSES,
+} from "../utils/quick-alerts.js";
+
+const DETAIL_SCROLL = [
+  "md:max-h-[calc(100vh-73px-var(--tracker-bar-h,0px))]",
+  "md:overflow-y-auto",
+];
+
+let suggestIndex = null;
+let suggestIndexSize = -1;
+
+function getSuggestIndex() {
+  const all = Alpine.raw(Alpine.store("inspections").allData) || [];
+  if (suggestIndex && suggestIndexSize === all.length) return suggestIndex;
+  const seen = new Map();
+  all.forEach((row) => {
+    if (!row.id || !row.facility) return;
+    const id = generateInspectionCardId(row.id);
+    if (seen.has(id)) return;
+    seen.set(id, {
+      id,
+      name: row.facility,
+      detail: simplifyAddress(row.address || "") || row.city || "",
+      key: normalizeString(row.facility),
+      haystack: normalizeString(
+        [row.facility, row.address, row.city].filter(Boolean).join(" "),
+      ),
+    });
+  });
+  suggestIndex = Array.from(seen.values());
+  suggestIndexSize = all.length;
+  return suggestIndex;
+}
+
+window.addEventListener("inspections-data-ready", () => {
+  const build = () => getSuggestIndex();
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(build, { timeout: 2000 });
+  } else {
+    setTimeout(build, 200);
+  }
+});
+
+function findSuggestions(rawQuery) {
+  const q = normalizeString(rawQuery || "");
+  if (q.length < 2) return [];
+  const terms = q.split(" ").filter(Boolean);
+  const cities = (Alpine.raw(Alpine.store("inspections").cities) || [])
+    .filter((c) => normalizeString(c.text).startsWith(q))
+    .slice(0, 3)
+    .map((c) => ({ type: "city", id: "city:" + c.value, name: c.text }));
+  const limit = 6 - Math.min(cities.length, 2);
+  const starts = [];
+  const contains = [];
+  for (const f of getSuggestIndex()) {
+    if (!terms.every((t) => f.haystack.includes(t))) continue;
+    if (f.key.startsWith(q)) {
+      starts.push(f);
+      if (starts.length >= limit) break;
+    } else if (contains.length < limit) {
+      contains.push(f);
+    }
+  }
+  const facilities = starts
+    .concat(contains)
+    .slice(0, limit)
+    .map((f) => ({
+      type: "facility",
+      id: f.id,
+      name: f.name,
+      detail: f.detail,
+    }));
+  return cities.concat(facilities);
+}
 
 export function searchUI() {
   return {
     loadingLocation: false,
     q: "",
+    suggestOpen: false,
+    activeIndex: -1,
+    uid: Math.random().toString(36).slice(2, 8),
+    suggestions: [],
+    suggestTimer: null,
+
+    refreshSuggestions() {
+      this.suggestions = findSuggestions(this.q);
+    },
+
+    onSuggestInput() {
+      this.activeIndex = -1;
+      const ready = (this.q || "").trim().length >= 2;
+      clearTimeout(this.suggestTimer);
+      if (!ready) {
+        this.suggestions = [];
+        this.suggestOpen = false;
+        return;
+      }
+      this.suggestTimer = setTimeout(() => {
+        this.refreshSuggestions();
+        this.suggestOpen = true;
+      }, 90);
+    },
+
+    moveSuggest(step) {
+      const n = this.suggestions.length;
+      if (!n) return;
+      this.suggestOpen = true;
+      this.activeIndex = (this.activeIndex + step + n) % n;
+    },
+
+    onSuggestEnter() {
+      const s = this.suggestions[this.activeIndex];
+      if (this.suggestOpen && s) {
+        this.chooseSuggestion(s);
+      } else {
+        this.closeSuggest();
+        this.doSearch();
+      }
+    },
+
+    closeSuggest() {
+      clearTimeout(this.suggestTimer);
+      this.suggestOpen = false;
+      this.activeIndex = -1;
+    },
+
+    chooseSuggestion(s) {
+      this.closeSuggest();
+      const store = Alpine.store("inspections");
+      if (s.type === "city") {
+        this.q = "";
+        store.searchQuery = "";
+        store.currentCity = s.name;
+        return;
+      }
+      let opened = false;
+      const openCard = () => {
+        if (opened) return;
+        const card = Array.from(
+          document.querySelectorAll('[data-card="inspection"]'),
+        ).find(
+          (c) =>
+            c.offsetParent &&
+            c.querySelector(`[data-alert-facility="${CSS.escape(s.id)}"]`),
+        );
+        const btn = card?.querySelector("[data-read-more]");
+        if (!btn) return;
+        opened = true;
+        btn.click();
+      };
+      window.addEventListener("inspections-page-rendered", openCard, {
+        once: true,
+      });
+      this.doSearch(s.name);
+      setTimeout(openCard, 400);
+    },
 
     init() {
       this.q = Alpine.store("inspections").searchQuery || "";
@@ -178,12 +337,58 @@ export default function inspectionsUI() {
             }
             return;
           }
+          const shareBtn = e.target.closest('[data-action="detail-share"]');
+          if (!e.target.closest("[data-share-root]")) this.closeShareMenus();
+          if (shareBtn) {
+            e.preventDefault();
+            this.openShare(shareBtn);
+            return;
+          }
+          const copyBtn = e.target.closest('[data-action="copy-link"]');
+          if (copyBtn) {
+            e.preventDefault();
+            this.copyShareLink(copyBtn);
+            return;
+          }
+          if (e.target.closest("[data-share-menu] a")) {
+            this.closeShareMenus();
+          }
+          const detailAlertsBtn = e.target.closest(
+            '[data-action="detail-alerts"]',
+          );
+          if (detailAlertsBtn) {
+            e.preventDefault();
+            this.requestAlerts({
+              facilityName: detailAlertsBtn.dataset.facilityName || "",
+              facilityAddress: detailAlertsBtn.dataset.facilityAddress || "",
+              facilityId: detailAlertsBtn.dataset.alertFacility || "",
+            });
+            return;
+          }
+          const alertsBtn = e.target.closest('[data-action="card-alerts"]');
+          if (alertsBtn) {
+            e.preventDefault();
+            const card = alertsBtn.closest('[data-card="inspection"]');
+            if (card) this.openCardAlerts(card);
+            return;
+          }
           const backBtn = e.target.closest('[data-action="back-to-results"]');
           if (backBtn) {
             e.preventDefault();
             this.backToResults();
             return;
           }
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key !== "Escape") return;
+          const open = document.querySelector(
+            "[data-share-menu]:not([hidden])",
+          );
+          if (!open) return;
+          this.closeShareMenus();
+          open.parentElement
+            .querySelector('[data-action="detail-share"]')
+            ?.focus();
         });
         inspectionsUIDelegatesInitialized = true;
       }
@@ -197,9 +402,9 @@ export default function inspectionsUI() {
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(() => {
             const currentWidth = window.innerWidth;
-            const wasMobile = lastWidth < 768;
-            const wasDesktop = lastWidth >= 768;
-            const isDesktop = currentWidth >= 768;
+            const wasMobile = lastWidth < 850;
+            const wasDesktop = lastWidth >= 850;
+            const isDesktop = currentWidth >= 850;
             if ((wasMobile && isDesktop) || (wasDesktop && !isDesktop)) {
               const hash = window.location.hash.slice(1);
               document
@@ -264,6 +469,7 @@ export default function inspectionsUI() {
     clearAll() {
       this.store.searchQuery = "";
       this.store.currentCity = "";
+      this.store.currentPriority = "";
       this.store.currentSort = "date-desc";
       localStorage.removeItem("inspections-sort");
       window.dispatchEvent(new CustomEvent("inspections-clear-search"));
@@ -283,7 +489,7 @@ export default function inspectionsUI() {
     },
 
     checkHashAndOpenCard() {
-      if (window.innerWidth < 768) return;
+      if (window.innerWidth < 850) return;
       const hash = window.location.hash.slice(1);
       const qParam =
         new URLSearchParams(window.location.search).get("facility") || "";
@@ -294,6 +500,82 @@ export default function inspectionsUI() {
       );
       const card = cards.find((c) => this.generateCardId(c) === target);
       if (card) setTimeout(() => this.openDetails(card), 200);
+    },
+
+    scrollToListTop(el) {
+      scrollToStickyTop(el);
+    },
+
+    cardLocation(card) {
+      return (
+        card.querySelector('.list-content [data-field="address"]')
+          ?.textContent || ""
+      ).trim();
+    },
+
+    openCardAlerts(card) {
+      const title = (card.querySelector("h2")?.textContent || "").trim();
+      this.requestAlerts({
+        facilityName: title,
+        facilityAddress: this.cardLocation(card),
+        facilityId: this.generateCardId(card),
+      });
+    },
+
+    closeShareMenus() {
+      document.querySelectorAll("[data-share-menu]").forEach((menu) => {
+        if (menu.hidden) return;
+        menu.hidden = true;
+        menu.parentElement
+          .querySelector('[data-action="detail-share"]')
+          ?.setAttribute("aria-expanded", "false");
+      });
+    },
+
+    async openShare(btn) {
+      const url = btn.dataset.shareUrl;
+      const title = btn.dataset.shareTitle;
+      const coarse = window.matchMedia?.("(pointer: coarse)").matches;
+      if (navigator.share && coarse) {
+        try {
+          await navigator.share({ title, url });
+        } catch {
+          return;
+        }
+        return;
+      }
+      const menu = btn.parentElement.querySelector("[data-share-menu]");
+      if (!menu) return;
+      const willOpen = menu.hidden;
+      this.closeShareMenus();
+      if (willOpen) {
+        menu.hidden = false;
+        btn.setAttribute("aria-expanded", "true");
+        menu.querySelector('[role="menuitem"]')?.focus();
+      }
+    },
+
+    async copyShareLink(btn) {
+      const original = btn.getAttribute("aria-label") || "Copy link";
+      let message = "Link copied!";
+      try {
+        await navigator.clipboard.writeText(btn.dataset.shareUrl);
+      } catch {
+        message = "Couldn't copy";
+      }
+      btn.setAttribute("aria-label", message);
+      btn.setAttribute("title", message);
+      btn.dataset.copied = "true";
+      setTimeout(() => {
+        btn.setAttribute("aria-label", original);
+        btn.setAttribute("title", original);
+        delete btn.dataset.copied;
+      }, 1500);
+    },
+
+    async requestAlerts(detail) {
+      if (await quickToggleAlert(detail)) return;
+      window.dispatchEvent(new CustomEvent("open-alerts-modal", { detail }));
     },
 
     jsStringAttr(s) {
@@ -332,11 +614,7 @@ export default function inspectionsUI() {
       }
 
       const title = (card.querySelector("h2")?.textContent || "").trim();
-      const infoLines = Array.from(
-        card.querySelectorAll(".list-content span"),
-      ).map((n) => n.textContent.trim());
-      const location =
-        infoLines.find((t) => !/Last inspection:/i.test(t)) || "";
+      const location = this.cardLocation(card);
       const allInspections = JSON.parse(
         card.getAttribute("data-all-inspections") || "[]",
       );
@@ -353,6 +631,7 @@ export default function inspectionsUI() {
         latestItems,
         olderInspectionsHTML: this.renderOlderInspections(allInspections),
       });
+      applyAlertStates(detail);
 
       if (listContent) listContent.classList.add("hidden");
 
@@ -361,7 +640,13 @@ export default function inspectionsUI() {
         mount.classList.add("h-full", "flex", "flex-col");
         mount.classList.remove("space-y-3");
       }
-      card.classList.add("h-full", "flex", "flex-col", "flex-1");
+      card.classList.add(
+        "h-full",
+        "flex",
+        "flex-col",
+        "flex-1",
+        ...DETAIL_SCROLL,
+      );
       detail.classList.add("flex", "flex-col", "flex-1");
 
       detail
@@ -371,11 +656,7 @@ export default function inspectionsUI() {
       const container = mount
         ? mount.closest(".border-r") || mount.parentElement
         : null;
-      if (container) {
-        const top =
-          container.getBoundingClientRect().top + window.pageYOffset - 73;
-        window.scrollTo({ top, behavior: "instant" });
-      }
+      if (container) this.scrollToListTop(container);
 
       this.activeCard = card;
       const hasQParam = new URLSearchParams(window.location.search).get(
@@ -398,15 +679,12 @@ export default function inspectionsUI() {
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.classList.remove("hidden"));
 
-      const store = Alpine.store("inspections");
-      if (store.searchQuery?.trim() || store.currentCity?.trim()) {
-        document
-          .getElementById("search-results-banner")
-          ?.classList.remove("hidden");
-      }
+      window.dispatchEvent(new CustomEvent("inspections-refresh-search-ui"));
 
       if (!this.activeCard) return;
       const card = this.activeCard;
+      card.classList.remove(...DETAIL_SCROLL);
+      card.scrollTop = 0;
       card.querySelector(".detail-content")?.remove();
       card.querySelector(".list-content")?.classList.remove("hidden");
 
@@ -432,11 +710,7 @@ export default function inspectionsUI() {
       const container = mount
         ? mount.closest(".border-r") || mount.parentElement
         : null;
-      if (container) {
-        const top =
-          container.getBoundingClientRect().top + window.pageYOffset - 73;
-        window.scrollTo({ top, behavior: "instant" });
-      }
+      if (container) this.scrollToListTop(container);
 
       Alpine.store("inspections").currentPage;
       window.dispatchEvent(new CustomEvent("inspections-render-pagination"));
@@ -494,7 +768,7 @@ export default function inspectionsUI() {
           return `<details class="group bg-white border-2 border-g-3 rounded-lg overflow-hidden"><summary class="relative flex items-start p-4 pr-10 cursor-pointer hover:bg-g-1 transition-colors"><div class="flex flex-1 flex-wrap items-center justify-between gap-x-3 gap-y-2 min-w-0"><div class="flex items-center gap-2 min-w-0"><svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true"><use href="#calendar-day-svg" /></svg><span class="font-sans text-base font-bold text-g-9">${escapeHTML(date)}</span></div><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-1 text-sm font-semibold text-red-7"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#diamond-svg" /></svg>${violationCount} violation${violationCount !== 1 ? "s" : ""}</span></div><svg class="absolute right-4 top-4 h-5 w-5 flex-shrink-0 fill-g-6 transition-transform group-open:rotate-180" aria-hidden="true"><use href="#chevron-svg" /></svg></summary><div class="border-t border-g-3 p-4 bg-g-1"><ul class="space-y-4">${violationRows}</ul></div></details>`;
         })
         .join("");
-      return `<div class="mt-8 pt-8 border-t-2 border-g-3"><h3 class="text-xl font-bold text-g-9 mb-6">Other Inspections (${dates.length})</h3><div class="space-y-4">${rows}</div></div>`;
+      return `<div class="mt-8 pt-8 border-t-2 border-g-3"><h3 class="text-xl font-bold text-g-9 mb-6">Other inspections (${dates.length})</h3><div class="space-y-4">${rows}</div></div>`;
     },
 
     buildDetailHTML({
@@ -519,30 +793,25 @@ export default function inspectionsUI() {
         "?facility=" +
         cardId;
       return `<div>
-        <button type="button" class="inline-flex items-center font-sans font-bold text-navy hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-g-4 rounded" data-action="back-to-results" aria-label="Back to results">
+        <button type="button" class="inline-flex items-center font-sans font-bold text-navy hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-g-5 rounded" data-action="back-to-results" aria-label="Back to results">
           <svg class="h-5 w-5 flex-shrink-0 fill-current" aria-hidden="true"><use href="#chevron-left-svg" /></svg>
           <span class="ml-1.5">Back</span>
         </button>
         <div class="flex items-start justify-between gap-6 py-4 pr-4 sm:pr-6">
-          <div class="min-w-0">
+          <div class="min-w-0 flex-1">
             <h2 class="text-3xl font-bold text-black break-words">${escapeHTML(title)}</h2>
             ${location ? `<div class="mt-2 space-y-1 text-g-6"><div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-g-7" aria-hidden="true"><use href="#map-pin-svg" /></svg><span>${escapeHTML(location)}</span></div></div>` : ""}
-            <div class="mt-3 flex flex-wrap items-center gap-2">
-              <button onclick="window.dispatchEvent(new CustomEvent('open-alerts-modal', { detail: { facilityName: ${this.jsStringAttr(title)}, facilityAddress: ${this.jsStringAttr(location)}, facilityId: ${this.jsStringAttr(cardId)} } }))" class="inline-flex items-center gap-2 rounded-md bg-g-9 px-4 py-2 font-sans font-semibold text-white transition-shadow outline-none ring-2 ring-transparent focus:ring-g-4 active:ring-g-8 hover:bg-g-8">
-                <span>Get alerts</span>
-                <svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#bell-svg" /></svg>
-              </button>
-              <div class="flex items-center gap-2">
-             <button onclick="window.location.href='mailto:?subject=${encodeURIComponent("Inspection report: " + title)}&body=${encodeURIComponent(facilityUrl)}'"class="rounded-full p-2 bg-g-9 text-white" aria-label="Share via Email"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#envelope-svg" /></svg></button>
-                <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('${facilityUrl}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#fb-svg" /></svg></button>
-                <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent('${facilityUrl}') + '&text=' + encodeURIComponent('Inspection report: ${title.replace(/'/g, "\\'")}'), '_blank')" class="rounded-full p-2 bg-g-9 text-white" aria-label="Share on X"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#twitter-svg" /></svg></button>
-               <button onclick="navigator.clipboard.writeText('${facilityUrl}').then(() => alert('Link copied!'))" class="rounded-full p-2 bg-orange text-white" aria-label="Copy link"><svg class="h-5 w-5 fill-white" aria-hidden="true"><use href="#share-svg" /></svg></button>
-              </div>
+            <div class="mt-4 flex flex-wrap items-center gap-2">
+              <button type="button" data-action="detail-alerts" data-alert-facility="${escapeHTML(cardId)}" data-facility-name="${escapeHTML(title)}" data-facility-address="${escapeHTML(location)}" class="inline-flex h-11 items-center justify-center rounded-xl border-2 border-transparent bg-blue-2/80 px-6 font-sans text-sm font-semibold text-blue-9 transition-colors outline-none hover:bg-blue-2 ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none">${alertButtonContent({ label: "Get alerts" })}</button>
+              <a href="mailto:?subject=${encodeURIComponent("Inspection report: " + title)}&body=${encodeURIComponent(facilityUrl)}" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share via email"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#envelope-svg" /></svg></a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(facilityUrl)}" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#fb-svg" /></svg></a>
+              <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(facilityUrl)}&text=${encodeURIComponent("Inspection report: " + title)}" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share on X"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#twitter-svg" /></svg></a>
+              <button type="button" data-action="copy-link" data-share-url="${escapeHTML(facilityUrl)}" class="flex h-11 w-11 items-center justify-center rounded-full bg-orange/20 text-[#d9541f] transition-colors hover:bg-orange/30 focus-visible:ring-2 focus-visible:ring-orange/40 focus-visible:outline-none data-[copied=true]:bg-election-green-lightest data-[copied=true]:text-election-green-darkest" aria-label="Copy link" title="Copy link"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#share-svg" /></svg></button>
             </div>
           </div>
         </div>
         <section class="space-y-3">
-          <h3 class="text-xl font-bold text-g-9 mb-3">Latest Inspection</h3>
+          <h3 class="text-xl font-bold text-g-9 mb-3">Latest inspection</h3>
           <p class="text-sm font-sans italic text-g-5 mb-3">As noted by the Department of Agriculture, inspections are a &ldquo;snapshot&rdquo; of a particular day. Many violations are relatively minor and are fixed at the time of inspection.</p>
           ${hasAi ? `<div class="mb-3 flex items-start gap-2"><svg class="mt-0.5 h-5 w-5 flex-shrink-0 fill-current text-g-4" aria-hidden="true"><use href="#robot-svg" /></svg><p class="text-sm font-sans italic text-g-5">AI-generated summaries are provided to make inspector comments easier to understand.</p></div>` : ""}
           <ul class="space-y-3">${latestItems}</ul>

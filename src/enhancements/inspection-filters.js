@@ -21,6 +21,7 @@ export function inspectionMobileFilters() {
       const store = Alpine.store("inspections");
       store.searchQuery = "";
       store.currentCity = "";
+      store.currentPriority = "";
       store.currentSort = "date-desc";
       localStorage.removeItem("inspections-sort");
       this.filtersOpen = false;
@@ -30,7 +31,7 @@ export function inspectionMobileFilters() {
 
 export function inspectionCityFilter({
   labelPrefix = "",
-  emptyLabel = "All Cities",
+  emptyLabel = "All cities",
   limit = 20,
 } = {}) {
   return {
@@ -116,17 +117,17 @@ export function inspectionSortMenu({
     {
       value: "date-desc",
       shortLabel: "Date",
-      longLabel: "Inspection Date - Newest to Oldest",
+      longLabel: "Inspection date: newest to oldest",
     },
     {
       value: "risk-desc",
       shortLabel: "Priority",
-      longLabel: "Violation Priority - Highest to Lowest",
+      longLabel: "Violation priority: highest to lowest",
     },
     {
       value: "alpha-asc",
       shortLabel: "Name",
-      longLabel: "Facility Name - A to Z",
+      longLabel: "Facility name: A to Z",
     },
   ],
 } = {}) {

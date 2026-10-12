@@ -1,0 +1,69 @@
+{{ define "main" }}
+  <span class="hidden">
+    {{ partial "helper/svg.html" "chevron" }}
+    {{ partial "helper/svg.html" "chevron-left" }}
+    {{ partial "helper/svg.html" "circle-check" }}
+    {{ partial "helper/svg.html" "bell" }}
+    {{ partial "helper/svg.html" "times" }}
+  </span>
+  <section class="bg-g-1 px-4 pt-6 pb-16 md:pt-10 md:pb-24">
+    <div class="mx-auto w-full max-w-lg">
+      <a
+        href="/restaurant-inspections/"
+        class="inline-flex items-center font-sans text-sm font-semibold text-blue-8 hover:underline"
+      >
+        <svg class="h-3.5 w-3.5 flex-shrink-0 fill-current" aria-hidden="true">
+          <use href="#chevron-left-svg" />
+        </svg>
+        <span class="ml-1">Restaurant Safety Tracker</span>
+      </a>
+
+      <div class="mt-6">
+        <div class="flex items-center gap-3 sm:gap-4">
+          <div
+            class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4 sm:h-12 sm:w-12"
+          >
+            <svg
+              class="h-5 w-5 fill-current text-yellow-9 sm:h-6 sm:w-6"
+              aria-hidden="true"
+            >
+              <use href="#bell-svg" />
+            </svg>
+          </div>
+          <h1
+            class="font-serif text-3xl leading-tight font-bold text-g-9 sm:text-4xl"
+          >
+            {{ .Title }}
+          </h1>
+        </div>
+        {{ with .Param "deck" }}
+          <p class="mt-3 font-serif text-base leading-snug text-g-7 sm:text-lg">
+            {{ . }}
+          </p>
+        {{ end }}
+      </div>
+
+      <div
+        class="mt-8 [&>div>div]:mb-4 [&>div>div]:rounded-xl [&>div>div]:border [&>div>div]:border-g-3 [&>div>div]:shadow-sm"
+      >
+        {{ partial "inspections-data-loader.html" . }}
+      </div>
+
+      <div
+        x-data="inspectionsModal({ page: true })"
+        class="rounded-xl border border-g-3 bg-white shadow-sm"
+      >
+        {{ partial "blocks/inspection-alerts-form.html" . }}
+      </div>
+
+      <p class="mt-6 text-center font-sans text-sm text-g-7">
+        Want to look up a restaurant first?
+        <a
+          href="/restaurant-inspections/"
+          class="font-semibold text-blue-8 underline decoration-blue-3 underline-offset-4 hover:decoration-blue-8"
+          >Search the tracker</a
+        >
+      </p>
+    </div>
+  </section>
+{{ end }}
