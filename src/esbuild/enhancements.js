@@ -26,10 +26,12 @@ import takeover from "../enhancements/takeover.js";
 import inspections, { searchUI } from "../enhancements/inspections.js";
 import inspectionsData from "../enhancements/inspections-data.js";
 import inspectionsModal from "../enhancements/inspections-modal.js";
+import inspectionsMobile, {
+  inspectionsEmpty,
+} from "../enhancements/inspections-mobile.js";
 import {
   inspectionCityFilter,
   inspectionSortMenu,
-  inspectionMobileFilters,
 } from "../enhancements/inspection-filters.js";
 
 for (let [name, comp] of [
@@ -50,9 +52,10 @@ for (let [name, comp] of [
   ["searchUI", searchUI],
   ["inspectionsData", inspectionsData],
   ["inspectionsModal", inspectionsModal],
+  ["inspectionsMobile", inspectionsMobile],
+  ["inspectionsEmpty", inspectionsEmpty],
   ["inspectionCityFilter", inspectionCityFilter],
   ["inspectionSortMenu", inspectionSortMenu],
-  ["inspectionMobileFilters", inspectionMobileFilters],
 ]) {
   Alpine.data(name, comp);
 }
@@ -116,6 +119,10 @@ Alpine.plugin(focus);
 import collapse from "@alpinejs/collapse";
 
 Alpine.plugin(collapse);
+
+import swipe from "../utils/swipe.js";
+
+Alpine.plugin(swipe);
 
 window.Alpine = Alpine;
 Alpine.start();

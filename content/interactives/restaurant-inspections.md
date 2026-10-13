@@ -9,12 +9,13 @@ ad-header-desktop-active = false
 ad-header-mobile-active = false
 
 title = "Pennsylvania Restaurant Safety Tracker"
+mobile-bar-title = "Restaurant Safety Tracker"
 deck = "Real-time updates about health inspections at restaurants near you."
 
 sign-up-button = "Sign up for alerts"
 search-instructions = "Search by restaurant name, city, or zip across 61 counties"
 complaint-url = "https://www.pa.gov/services/pda/report-a-food-safety-concern"
-search-placeholder = "Facility name, city, zip"
+search-placeholder = "Name, city, or zip"
 search-desktop-placeholder = "Enter facility name, city, or zip"
 search-location = true
 

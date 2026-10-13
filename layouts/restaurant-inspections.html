@@ -12,6 +12,7 @@
     {{ partial "helper/svg.html" "chevron-left" }}
     {{ partial "helper/svg.html" "chevron-right" }}
     {{ partial "helper/svg.html" "circle-check" }}
+    {{ partial "helper/svg.html" "crosshairs" }}
     {{ partial "helper/svg.html" "circle-notch" }}
     {{ partial "helper/svg.html" "diamond" }}
     {{ partial "helper/svg.html" "calendar-day" }}
@@ -23,12 +24,16 @@
     {{ partial "helper/svg.html" "twitter" }}
     {{ partial "helper/svg.html" "share" }}
     {{ partial "helper/svg.html" "link" }}
+    {{ partial "helper/svg.html" "list" }}
+    {{ partial "helper/svg.html" "map" }}
+    {{ partial "helper/svg.html" "sort" }}
+    {{ partial "helper/svg.html" "times" }}
     {{ partial "helper/svg.html" "robot" }}
   </span>
   <div>
     <div aria-hidden="true" class="-mb-px h-px"></div>
     <section
-      class="group/hdr z-30 bg-black data-[stuck=true]:shadow-[0_6px_16px_-6px_rgba(0,0,0,0.35)] md:sticky md:top-[73px]"
+      class="group/hdr z-30 bg-black data-[stuck=true]:shadow-[0_6px_16px_-6px_rgba(0,0,0,0.35)] max-md:hidden md:sticky md:top-[73px]"
       data-tracker-header
       data-stuck="false"
       :data-stuck="stuck ? 'true' : 'false'"
@@ -94,7 +99,7 @@
         >
           {{ with .Param "search-instructions" }}
             <p
-              class="mb-1.5 max-h-12 overflow-hidden font-serif text-sm text-g-5 italic md:ml-4 md:text-[13px]"
+              class="mb-1.5 max-h-12 overflow-hidden font-serif text-sm text-g-5 italic md:text-[13px] lg:ml-4"
               :class="stuck && 'md:mb-0 md:max-h-0 md:opacity-0'"
               :aria-hidden="stuck"
             >
@@ -481,9 +486,8 @@
     </section>
   </div>
 
-  <div class="md:hidden">
-    {{ partial "blocks/inspection-scroll.html" . }}
-  </div>
+  {{ partial "blocks/inspection-mobile.html" . }}
+
 
   <div
     x-data="inspectionsModal()"

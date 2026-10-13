@@ -1,0 +1,328 @@
+<div
+  class="relative bg-g-3 md:hidden"
+  data-mobile-tracker
+  x-data="inspectionsMobile()"
+  x-init="init()"
+  @map:marker-select.window="selectMarker($event)"
+  @map:background-click.window="closePreview()"
+  @update-map-markers.window="closePreview()"
+  @inspections-show-list.window="setView('list')"
+>
+  <div class="bg-black px-5 pt-5 pb-5">
+    <h1 class="font-serif text-[27px] leading-[1.22] font-bold text-white">
+      {{ .Title }}
+    </h1>
+    {{ with .Param "deck" }}
+      <p class="mt-2 font-serif text-[15px] leading-relaxed text-g-3">
+        {{ . }}
+      </p>
+    {{ end }}
+  </div>
+  <div class="bg-white px-5 pt-4 pb-5">
+    <div>
+      {{ partial "blocks/inspection-view-toggle.html" (dict "compact" false) }}
+    </div>
+    <div
+      class="mt-3 flex [scrollbar-width:none] gap-2 overflow-x-auto py-0.5 [&::-webkit-scrollbar]:hidden"
+      role="group"
+      aria-label="Priority level"
+    >
+      <template x-for="p in priorities" :key="p.value">
+        <button
+          type="button"
+          @click="setPriority(p.value)"
+          :aria-pressed="($store.inspections.currentPriority || '') === p.value ? 'true' : 'false'"
+          class="inline-flex h-9 flex-shrink-0 items-center gap-1.5 rounded-full bg-white px-3.5 font-sans text-sm font-semibold whitespace-nowrap text-g-9 shadow-[0_0_0_1px_rgba(0,0,0,0.12)] focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none aria-pressed:bg-g-9 aria-pressed:text-white aria-pressed:shadow-none"
+        >
+          <svg
+            x-show="p.color"
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current"
+            :style="'color:' + p.color"
+            aria-hidden="true"
+          >
+            <use href="#diamond-svg" />
+          </svg>
+          <svg
+            x-show="p.value === 'none'"
+            class="h-3 w-3 flex-shrink-0 fill-current"
+            style="color: #1b998b"
+            aria-hidden="true"
+          >
+            <use href="#circle-check-svg" />
+          </svg>
+          <span x-text="p.label"></span>
+        </button>
+      </template>
+    </div>
+  </div>
+  <div x-ref="introEnd" aria-hidden="true" class="h-px bg-g-3"></div>
+
+  <div
+    x-ref="bar"
+    data-mobile-bar
+    data-show="false"
+    :data-show="showBar ? 'true' : 'false'"
+    :aria-hidden="showBar ? 'false' : 'true'"
+    class="fixed inset-x-0 top-[var(--mobile-nav-h,57px)] z-30 bg-black px-4 pt-2 pb-2.5 shadow-[0_6px_16px_-6px_rgba(0,0,0,0.35)] data-[show=false]:invisible"
+  >
+    <div class="flex items-center gap-3">
+      <div class="min-w-0 flex-1">
+        <p
+          class="truncate font-serif text-[15px] leading-tight font-bold text-white"
+        >
+          {{ .Param "mobile-bar-title" | default .Title }}
+        </p>
+        <p
+          class="mt-0.5 truncate font-sans text-xs text-g-4"
+          x-text="summary"
+        ></p>
+      </div>
+      <button
+        type="button"
+        @click="openAlerts()"
+        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-2 text-blue-9 hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        :aria-label="$store.inspections.currentCity ? 'Get alerts for ' + $store.inspections.currentCity : 'Get city alerts'"
+        aria-label="Get city alerts"
+      >
+        <svg class="h-4 w-4 fill-current" aria-hidden="true">
+          <use href="#bell-svg" />
+        </svg>
+      </button>
+    </div>
+    <div class="mt-2">
+      {{ partial "blocks/inspection-view-toggle.html" (dict "compact" true "dark" true) }}
+    </div>
+  </div>
+
+  <div x-ref="list" x-show="view === 'list'" class="group/list">
+    <div
+      data-mobile-results
+      class="mb-3 border-t border-g-3 bg-white px-5 font-sans text-sm group-has-[.detail-content]/list:hidden"
+    >
+      <div class="flex min-h-12 items-center justify-between gap-3 py-2">
+        <p class="min-w-0 truncate text-g-7" aria-live="polite">
+          <span x-text="countLabel"></span>
+        </p>
+        <label
+          class="relative flex flex-shrink-0 items-center gap-1.5 font-semibold text-g-9 focus-within:ring-2 focus-within:ring-g-5"
+        >
+          <svg class="h-3 w-3 fill-current" aria-hidden="true">
+            <use href="#sort-svg" />
+          </svg>
+          <span x-text="sortLabel"></span>
+          <svg class="h-2.5 w-2.5 fill-g-6" aria-hidden="true">
+            <use href="#chevron-svg" />
+          </svg>
+          <select
+            x-model="$store.inspections.currentSort"
+            class="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+            aria-label="Sort by"
+          >
+            <template x-for="o in sortOptions" :key="o.value">
+              <option
+                :value="o.value"
+                x-text="o.label"
+                :selected="$store.inspections.currentSort === o.value"
+              ></option>
+            </template>
+          </select>
+        </label>
+      </div>
+      <div
+        x-show="(query || $store.inspections.currentCity) && $store.inspections.filteredData.length"
+        x-cloak
+        class="flex flex-wrap items-center gap-2 pb-3"
+      >
+        <button
+          type="button"
+          x-show="query"
+          @click="clearQuery()"
+          class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-g-9 px-3 font-semibold text-white"
+          :aria-label="'Remove search ' + query"
+        >
+          <span class="truncate" x-text="'“' + query + '”'"></span>
+          <svg
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
+            aria-hidden="true"
+          >
+            <use href="#times-svg" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          x-show="$store.inspections.currentCity"
+          @click="$store.inspections.currentCity = ''"
+          class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-g-9 px-3 font-semibold text-white"
+          :aria-label="'Remove city ' + $store.inspections.currentCity"
+        >
+          <svg class="h-3 w-3 flex-shrink-0 fill-current" aria-hidden="true">
+            <use href="#location-svg" />
+          </svg>
+          <span class="truncate" x-text="$store.inspections.currentCity"></span>
+          <svg
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
+            aria-hidden="true"
+          >
+            <use href="#times-svg" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          x-show="hasActive"
+          @click="clearAll()"
+          class="ml-auto min-h-8 px-1 text-[13px] font-semibold text-g-7 hover:text-g-9"
+        >
+          Clear all
+        </button>
+      </div>
+    </div>
+    {{ $alertsURL := "/restaurant-inspections/alerts/" }}
+    {{ with site.GetPage "/interactives/restaurant-inspections-alerts" }}
+      {{ $alertsURL = .RelPermalink }}
+    {{ end }}
+    <a
+      x-show="loaded && $store.inspections.filteredData.length"
+      href="{{ $alertsURL }}?mode=city"
+      :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
+      class="mb-3 flex items-center gap-3.5 bg-blue-0 px-5 py-3.5 font-sans text-blue-9 transition-colors group-has-[.detail-content]/list:hidden hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none focus-visible:ring-inset"
+    >
+      <span
+        class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-blue-2"
+        aria-hidden="true"
+      >
+        <svg class="h-[18px] w-[18px] fill-current">
+          <use href="#bell-svg" />
+        </svg>
+      </span>
+      <span class="min-w-0 flex-1">
+        <span
+          class="block text-base leading-snug font-bold"
+          x-text="$store.inspections.currentCity ? 'Get alerts for ' + $store.inspections.currentCity : 'Get alerts by city'"
+          >Get alerts by city</span
+        >
+        <span
+          class="mt-0.5 block text-sm leading-snug text-blue-8"
+          x-text="$store.inspections.currentCity ? 'Know when its restaurants are inspected.' : 'Know when restaurants in your city are inspected.'"
+          >Know when restaurants in your city are inspected.</span
+        >
+      </span>
+      <svg class="h-4 w-4 flex-shrink-0 fill-current" aria-hidden="true">
+        <use href="#chevron-right-svg" />
+      </svg>
+    </a>
+    {{ partial "blocks/inspection-scroll.html" . }}
+  </div>
+
+  <div
+    x-ref="map"
+    x-show="view === 'map'"
+    x-cloak
+    class="relative h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,53px))] min-h-[360px] bg-g-2"
+  >
+    {{ partial "blocks/maplibre-assets.html" (dict
+      "ctx" .
+      "id" "inspections-map-mobile"
+      "ariaLabel" "Pennsylvania inspections map"
+      "opts" (dict
+      "controls" (slice)
+      "hoverPopups" false
+      "selectOnClick" true
+      "padding" (dict "top" 70 "bottom" 110 "left" 40 "right" 40)
+      )
+      )
+      }}
+
+
+    <div
+      x-show="!preview && $store.inspections.totalPages > 1"
+      class="absolute top-2.5 left-2.5 z-10 flex items-center rounded-full bg-white font-sans text-xs font-semibold text-g-9 shadow-[0_0_0_1px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.08)]"
+    >
+      <button
+        type="button"
+        @click="prevPage()"
+        :disabled="$store.inspections.currentPage <= 1"
+        class="flex h-9 w-9 items-center justify-center rounded-full disabled:opacity-30"
+        aria-label="Previous page"
+      >
+        <svg class="h-3 w-3 fill-current" aria-hidden="true">
+          <use href="#chevron-left-svg" />
+        </svg>
+      </button>
+      <span x-text="pageLabel" class="px-0.5 whitespace-nowrap"></span>
+      <button
+        type="button"
+        @click="nextPage()"
+        :disabled="$store.inspections.currentPage >= $store.inspections.totalPages"
+        class="flex h-9 w-9 items-center justify-center rounded-full disabled:opacity-30"
+        aria-label="Next page"
+      >
+        <svg class="h-3 w-3 fill-current" aria-hidden="true">
+          <use href="#chevron-right-svg" />
+        </svg>
+      </button>
+    </div>
+
+    <div
+      x-show="preview"
+      x-cloak
+      @click.capture="onPreviewClick($event)"
+      class="absolute inset-x-2.5 bottom-[calc(92px+env(safe-area-inset-bottom))] z-20 overflow-hidden rounded-2xl bg-white shadow-[0_6px_24px_rgba(0,0,0,0.25)] [&_[data-card]]:space-y-2 [&_[data-card]]:p-5 [&_[data-card]]:pr-12 [&_[data-card]]:shadow-none [&_h2]:text-2xl"
+    >
+      <button
+        type="button"
+        @click="closePreview()"
+        class="absolute top-2 right-2 z-10 flex h-10 w-10 items-center justify-center rounded-full text-g-6 hover:bg-g-2 hover:text-g-9"
+        aria-label="Close preview"
+      >
+        <svg class="h-4 w-4 fill-current" aria-hidden="true">
+          <use href="#times-svg" />
+        </svg>
+      </button>
+      <div x-ref="previewSlot"></div>
+    </div>
+  </div>
+  <div x-ref="end" aria-hidden="true"></div>
+
+  <div
+    data-show="true"
+    :data-show="showThumb ? 'true' : 'false'"
+    :style="kb ? 'transform: translateY(-' + kb + 'px)' : ''"
+    @focusin="searching = true"
+    @focusout="searching = false"
+    class="fixed inset-x-2.5 bottom-[calc(12px+env(safe-area-inset-bottom))] z-40 flex items-center gap-1.5 rounded-[26px] bg-black p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.35)] data-[show=false]:hidden"
+  >
+    {{ partial "blocks/search-pill.html" (dict
+      "placeholder" (default "Search" (.Param "search-placeholder"))
+      "showLocation" false
+      "scope" "mobile-bar"
+      "fieldClass" "bg-white"
+      "context" .
+      )
+    }}
+    <button
+      type="button"
+      @click="$dispatch('inspections-locate', { scope: 'mobile-bar' })"
+      @inspections-locating.window="if ($event.detail.scope === 'mobile-bar') locating = $event.detail.loading"
+      :disabled="locating"
+      :aria-busy="locating ? 'true' : 'false'"
+      class="flex h-12 flex-shrink-0 items-center justify-center gap-1.5 rounded-full bg-yellow px-4 font-sans text-[15px] font-bold whitespace-nowrap text-g-9 transition-colors hover:bg-yellow-3 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none disabled:cursor-wait disabled:opacity-80 max-[359px]:px-3 max-[359px]:text-sm"
+    >
+      <svg
+        x-show="!locating"
+        class="h-4 w-4 flex-shrink-0 fill-current"
+        aria-hidden="true"
+      >
+        <use href="#crosshairs-svg" />
+      </svg>
+      <svg
+        x-show="locating"
+        x-cloak
+        class="h-4 w-4 flex-shrink-0 animate-spin fill-current"
+        aria-hidden="true"
+      >
+        <use href="#circle-notch-svg" />
+      </svg>
+      <span x-text="locating ? 'Locating…' : 'Near me'">Near me</span>
+    </button>
+  </div>
+</div>
