@@ -1,268 +1,12 @@
 <div class="bg-white font-serif">
   <div class="bg-g-3">
-    <div aria-hidden="true" class="h-px bg-white md:hidden"></div>
-    <div
-      data-mobile-search-bar
-      class="sticky top-[57px] z-20 w-full bg-white px-4 pt-4 pb-4 shadow-[inset_0_-1px_0_rgba(0,0,0,0.12)] data-[stuck=true]:py-2.5 data-[stuck=true]:shadow-[0_6px_16px_-6px_rgba(0,0,0,0.3)] md:hidden"
-      data-stuck="false"
-      :data-stuck="stuck ? 'true' : 'false'"
-      x-data="{
-        stuck: false,
-        expandedH: 0,
-        init() {
-          const io = new IntersectionObserver(
-            ([entry]) => {
-              this.stuck = !entry.isIntersecting;
-              this.$nextTick(() => this.syncSpacer());
-            },
-            { rootMargin: '-58px 0px 0px 0px' },
-          );
-          io.observe(this.$el.previousElementSibling);
-          new ResizeObserver(() => this.syncSpacer()).observe(this.$el);
-        },
-        expandedW: 0,
-        syncSpacer() {
-          const h = this.$el.offsetHeight;
-          const w = this.$el.offsetWidth;
-          const spacer = this.$el.nextElementSibling;
-          if (!this.stuck || !w) {
-            this.expandedH = h;
-            this.expandedW = w;
-            spacer.style.height = '0px';
-          } else {
-            this.$el.dataset.pinnedH = h;
-            if (w !== this.expandedW) this.expandedH = h;
-            spacer.style.height = Math.max(0, (this.expandedH || h) - h) + 'px';
-          }
-        },
-      }"
-    >
-      <div class="flex items-center gap-2">
-        {{ partial "blocks/search-pill.html" (dict
-          "placeholder" (default "Search" (.Param "search-placeholder"))
-          "showLocation" (.Param "search-location")
-          "fieldClass" "bg-g-2"
-          "context" .
-          )
-        }}
-        <button
-          type="button"
-          x-show="stuck"
-          x-cloak
-          @click="$dispatch('open-mobile-filters')"
-          class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-g-2 text-g-9 hover:bg-g-3 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none"
-          aria-label="Filter &amp; sort"
-        >
-          <svg class="h-4 w-4 fill-current" aria-hidden="true">
-            <use href="#filter-svg" />
-          </svg>
-        </button>
-        <button
-          type="button"
-          x-show="stuck"
-          x-cloak
-          @click="$dispatch('open-city-alerts-modal')"
-          class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-blue-2/80 text-blue-9 hover:bg-blue-2 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
-          aria-label="City alerts"
-        >
-          <svg class="h-4 w-4 fill-current" aria-hidden="true">
-            <use href="#bell-svg" />
-          </svg>
-        </button>
-      </div>
-
-      <div
-        class="grid grid-cols-2 gap-2"
-        :class="stuck ? 'mt-0' : 'mt-4'"
-        x-data="inspectionMobileFilters()"
-        @open-mobile-filters.window="openFilters()"
-        @keydown.escape.window="filtersOpen && (filtersOpen = false)"
-        x-effect="document.documentElement.style.overflow = filtersOpen ? 'hidden' : ''"
-      >
-        <button
-          type="button"
-          @click="openFilters()"
-          x-show="!stuck"
-          class="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border-2 border-transparent bg-g-2 px-3 py-2.5 font-sans text-xs font-semibold text-g-9 transition-all hover:bg-g-3"
-        >
-          <svg
-            class="h-3.5 w-3.5 fill-current max-[325px]:hidden"
-            aria-hidden="true"
-          >
-            {{ partial "helper/svg.html" "filter" }}
-          </svg>
-          Filter &amp; sort
-        </button>
-        <button
-          type="button"
-          @click="$dispatch('open-city-alerts-modal')"
-          x-show="!stuck"
-          class="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border-2 border-transparent bg-blue-2/80 px-3 py-2.5 font-sans text-xs font-semibold text-blue-9 transition-all hover:bg-blue-2 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
-        >
-          <svg
-            class="h-3.5 w-3.5 fill-current max-[325px]:hidden"
-            aria-hidden="true"
-          >
-            <use href="#bell-svg" />
-          </svg>
-          City alerts
-        </button>
-
-        <div
-          x-show="filtersOpen"
-          x-transition:enter="transition ease-out duration-200"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="transition ease-in duration-150"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-          class="fixed inset-0 z-40 bg-black/50"
-          @click="closeFilters()"
-          style="display:none;"
-        ></div>
-        <div
-          x-show="filtersOpen"
-          x-transition:enter="transition ease-out duration-300"
-          x-transition:enter-start="translate-y-full"
-          x-transition:enter-end="translate-y-0"
-          x-transition:leave="transition ease-in duration-200"
-          x-transition:leave-start="translate-y-0"
-          x-transition:leave-end="translate-y-full"
-          class="fixed right-0 bottom-0 left-0 z-50 rounded-t-2xl bg-white px-4 pt-4 pb-8 shadow-2xl"
-          style="display:none;"
-        >
-          <div class="mb-4 flex items-center justify-between">
-            <h3 class="font-sans text-sm font-semibold text-g-6">
-              Filter &amp; sort
-            </h3>
-            <button
-              @click="filtersOpen = false"
-              class="-m-2 flex h-11 w-11 items-center justify-center text-g-5 hover:text-g-9"
-            >
-              <svg class="h-5 w-5 fill-current" aria-hidden="true">
-                {{ partial "helper/svg.html" "times" }}
-              </svg>
-            </button>
-          </div>
-
-          <div class="space-y-3">
-            <div
-              class="relative w-full md:w-1/2"
-              x-data="inspectionCityFilter({ labelPrefix: 'Filter: ' })"
-              x-init="init()"
-            >
-              <button
-                @click="open = !open"
-                :aria-expanded="open"
-                aria-haspopup="menu"
-                class="flex min-h-11 w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-transparent bg-g-2 px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 transition-all hover:bg-g-3 focus:ring-2 focus:ring-g-5 focus:outline-none"
-              >
-                <span x-text="label"></span>
-                <svg class="ml-auto h-4 w-4 fill-g-2">
-                  {{ partial "helper/svg.html" "filter" }}
-                </svg>
-              </button>
-
-              <div
-                x-show="open"
-                x-transition
-                @click.outside="open = false"
-                class="absolute bottom-full left-0 z-20 mb-2 w-full overflow-hidden rounded-md border border-g-3 bg-white shadow"
-                role="menu"
-              >
-                <div class="border-b border-g-2 p-3">
-                  <div class="font-sans text-xs font-semibold text-g-6">
-                    Type to search all cities (Top 20)
-                  </div>
-                  <input
-                    type="text"
-                    class="mt-2 w-full rounded-md border border-g-3 bg-white px-3 py-2 font-sans text-sm font-semibold text-g-9 focus:ring-2 focus:ring-g-4 focus:outline-none"
-                    placeholder="Search"
-                    x-model="query"
-                    @input="syncShown()"
-                  />
-                </div>
-
-                <div class="max-h-72 overflow-auto">
-                  <template
-                    x-for="opt in optionsShown"
-                    :key="opt.value + '::' + opt.text"
-                  >
-                    <button
-                      class="block min-h-11 w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
-                      :class="selectedText === opt.text ? 'font-semibold text-g-9' : 'text-black'"
-                      @click="choose(opt.value)"
-                      role="menuitem"
-                      x-text="opt.text"
-                    ></button>
-                  </template>
-
-                  <div
-                    x-show="optionsShown.length === 0"
-                    class="px-4 py-3 font-sans text-sm font-semibold text-g-6"
-                  >
-                    No matches. Try a different spelling.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="relative w-full md:w-1/2"
-              x-data="inspectionSortMenu()"
-              x-init="init()"
-            >
-              <button
-                @click="open = !open"
-                :aria-expanded="open"
-                class="flex min-h-11 w-full cursor-pointer appearance-none items-center gap-2 rounded-md border border-transparent bg-g-2 px-4 py-2.5 pr-5 text-left font-sans text-sm font-semibold text-g-9 transition-all hover:bg-g-3 focus:ring-2 focus:ring-g-5 focus:outline-none"
-              >
-                <span class="truncate" x-text="label"></span>
-
-                <svg class="ml-auto h-4 w-4 fill-g-7">
-                  <use href="#chevron-svg" />
-                </svg>
-              </button>
-
-              <div
-                x-show="open"
-                x-transition
-                @click.outside="open = false"
-                class="absolute right-0 bottom-full z-20 mb-2 w-full rounded-md border border-g-3 bg-white shadow"
-              >
-                <template x-for="opt in options" :key="opt.value">
-                  <button
-                    class="block min-h-11 w-full px-4 py-2.5 text-left font-sans text-sm font-semibold hover:bg-g-2"
-                    :class="selected === opt.value ? 'font-semibold text-g-9' : 'text-black'"
-                    @click="choose(opt.value)"
-                    x-text="opt.longLabel"
-                  ></button>
-                </template>
-              </div>
-              <button
-                @click="clearAll()"
-                class="mt-4 min-h-11 w-full py-2 font-sans text-xs font-semibold text-g-8 underline decoration-g-5 underline-offset-4 transition-colors hover:text-g-9 hover:decoration-g-9"
-              >
-                Clear all
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      aria-hidden="true"
-      class="bg-white md:hidden"
-      style="height: 0px"
-    ></div>
-
     <div class="bg-g-3" x-data="inspectionsData()" x-init="init()">
       {{ partial "inspections-data-loader.html" . }}
 
 
       <div
         id="search-results-banner"
-        class="hidden w-full border-b border-g-3 bg-white px-4 py-3.5 sm:px-8"
+        class="hidden w-full border-b border-g-3 bg-white px-4 py-3.5 max-md:!hidden sm:px-8"
       >
         <div
           class="flex flex-wrap items-center gap-x-2 gap-y-1.5"
@@ -404,11 +148,59 @@
 
       <div
         id="no-results"
-        class="hidden w-full bg-white p-8 shadow md:p-10"
+        class="hidden w-full bg-white px-6 py-10 text-center shadow md:p-10"
         aria-live="polite"
+        x-data="inspectionsEmpty()"
       >
-        <p class="font-sans text-xl font-semibold text-g-7">
-          No results found. Please try a different search.
+        <div
+          class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-g-2"
+          aria-hidden="true"
+        >
+          <svg class="h-5 w-5 fill-g-6">
+            <use href="#search-svg" />
+          </svg>
+        </div>
+        <p
+          class="mt-4 font-serif text-xl font-bold break-words text-g-9"
+          x-text="heading"
+        ></p>
+        <p class="mt-2 font-serif text-[15px] text-g-7">
+          Try a different spelling, or remove a filter.
+        </p>
+        <div
+          x-show="chips.length"
+          class="mt-4 flex flex-wrap items-center justify-center gap-2 font-sans"
+        >
+          <template x-for="c in chips" :key="c.key">
+            <button
+              type="button"
+              @click="remove(c.key)"
+              class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-white px-3 text-sm font-semibold text-g-9 shadow-[0_0_0_1px_rgba(0,0,0,0.12)] hover:bg-g-1"
+              :aria-label="'Remove ' + c.label"
+            >
+              <span class="truncate" x-text="c.label"></span>
+              <svg
+                class="h-2.5 w-2.5 flex-shrink-0 fill-g-6"
+                aria-hidden="true"
+              >
+                <use href="#times-svg" />
+              </svg>
+            </button>
+          </template>
+        </div>
+        <button
+          type="button"
+          x-show="suggestion"
+          @click="useSuggestion()"
+          class="mt-4 font-sans text-sm font-bold text-blue-9 underline-offset-2 hover:underline"
+          x-text="'Did you mean ' + suggestion + '?'"
+        ></button>
+        <p class="mx-auto mt-5 max-w-sm font-sans text-[13px] text-g-6">
+          Don’t see a facility? Not all facilities are inspected by the Dept. of
+          Agriculture.
+          <a href="#faq" class="font-semibold text-g-8 underline"
+            >Visit our FAQ</a
+          >
         </p>
       </div>
     </div>

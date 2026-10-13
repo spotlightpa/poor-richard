@@ -6,7 +6,7 @@ import {
   normalizeString,
   simplifyAddress,
 } from "../utils/inspections.js";
-import { scrollToStickyTop } from "../utils/sticky-scroll.js";
+import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
 import {
   alertButtonContent,
   applyAlertStates,
@@ -61,7 +61,14 @@ function findSuggestions(rawQuery) {
   const cities = (Alpine.raw(Alpine.store("inspections").cities) || [])
     .filter((c) => normalizeString(c.text).startsWith(q))
     .slice(0, 3)
-    .map((c) => ({ type: "city", id: "city:" + c.value, name: c.text }));
+    .map((c) => ({
+      type: "city",
+      id: "city:" + c.value,
+      name: c.text,
+      detail: c.count
+        ? `${c.count.toLocaleString()} ${c.count === 1 ? "facility" : "facilities"}`
+        : "",
+    }));
   const limit = 6 - Math.min(cities.length, 2);
   const starts = [];
   const contains = [];
@@ -129,6 +136,7 @@ export function searchUI() {
       } else {
         this.closeSuggest();
         this.doSearch();
+        if (window.innerWidth < 850) this.$refs.input?.blur();
       }
     },
 
@@ -145,8 +153,13 @@ export function searchUI() {
         this.q = "";
         store.searchQuery = "";
         store.currentCity = s.name;
+        if (window.innerWidth < 850) this.$refs.input?.blur();
         return;
       }
+      store.currentCity = "";
+      store.currentPriority = "";
+      window.dispatchEvent(new CustomEvent("inspections-show-list"));
+      if (window.innerWidth < 850) this.$refs.input?.blur();
       let opened = false;
       const openCard = () => {
         if (opened) return;
@@ -174,6 +187,19 @@ export function searchUI() {
 
       window.addEventListener("inspections-clear-search", () => {
         this.q = "";
+      });
+
+      window.addEventListener("inspections-locate", (e) => {
+        if (e.detail?.scope !== this.$el.dataset.searchScope) return;
+        this.locate();
+      });
+
+      this.$watch("loadingLocation", (loading) => {
+        window.dispatchEvent(
+          new CustomEvent("inspections-locating", {
+            detail: { scope: this.$el.dataset.searchScope, loading },
+          }),
+        );
       });
 
       window.addEventListener("inspections-apply-search", (event) => {
@@ -276,7 +302,6 @@ export function searchUI() {
 }
 
 let inspectionsUIDelegatesInitialized = false;
-let inspectionsUIResizeInitialized = false;
 let inspectionsUIDataReadyInitialized = false;
 
 export default function inspectionsUI() {
@@ -322,6 +347,18 @@ export default function inspectionsUI() {
       window.addEventListener("inspections-back-to-results", () => {
         this.backToResults();
       });
+
+      let realignTimer;
+      window.addEventListener("resize", () => {
+        clearTimeout(realignTimer);
+        realignTimer = setTimeout(() => this.realignDetail(), 150);
+      });
+
+      window
+        .matchMedia("(min-width: 850px)")
+        .addEventListener("change", () =>
+          requestAnimationFrame(() => this.syncDetailToViewport()),
+        );
 
       if (!inspectionsUIDelegatesInitialized) {
         document.addEventListener("click", (e) => {
@@ -391,71 +428,6 @@ export default function inspectionsUI() {
             ?.focus();
         });
         inspectionsUIDelegatesInitialized = true;
-      }
-
-      if (!inspectionsUIResizeInitialized) {
-        inspectionsUIResizeInitialized = true;
-
-        let resizeTimer;
-        let lastWidth = window.innerWidth;
-        window.addEventListener("resize", () => {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(() => {
-            const currentWidth = window.innerWidth;
-            const wasMobile = lastWidth < 850;
-            const wasDesktop = lastWidth >= 850;
-            const isDesktop = currentWidth >= 850;
-            if ((wasMobile && isDesktop) || (wasDesktop && !isDesktop)) {
-              const hash = window.location.hash.slice(1);
-              document
-                .querySelectorAll(".mobile-detail-view")
-                .forEach((el) => el.remove());
-              document
-                .querySelectorAll(".detail-content")
-                .forEach((el) => el.remove());
-              document
-                .querySelectorAll(".pagination-controls")
-                .forEach((el) => el.classList.remove("hidden"));
-              document
-                .querySelectorAll('[data-card="inspection"]')
-                .forEach((card) => {
-                  card.style.display = "";
-                  card.classList.remove(
-                    "hidden-by-detail",
-                    "h-full",
-                    "flex",
-                    "flex-col",
-                    "flex-1",
-                  );
-                  card.classList.add("space-y-3");
-                  card
-                    .querySelector(".list-content")
-                    ?.classList.remove("hidden");
-                  const mount = card.closest(".inspections-mount");
-                  if (mount) {
-                    mount.classList.remove("h-full", "flex", "flex-col");
-                    mount.classList.add("space-y-3");
-                  }
-                });
-              this.activeCard = null;
-              if (hash) {
-                setTimeout(() => {
-                  const cards = document.querySelectorAll(
-                    '[data-card="inspection"]',
-                  );
-                  for (const card of cards) {
-                    if (this.generateCardId(card) === hash) {
-                      if (isDesktop) this.openDetails(card);
-                      else card.querySelector("[data-read-more]")?.click();
-                      break;
-                    }
-                  }
-                }, 100);
-              }
-            }
-            lastWidth = currentWidth;
-          }, 250);
-        });
       }
 
       if (!inspectionsUIDataReadyInitialized) {
@@ -714,6 +686,58 @@ export default function inspectionsUI() {
 
       Alpine.store("inspections").currentPage;
       window.dispatchEvent(new CustomEvent("inspections-render-pagination"));
+    },
+
+    releaseDetail(card) {
+      card.classList.remove(
+        ...DETAIL_SCROLL,
+        "h-full",
+        "flex",
+        "flex-col",
+        "flex-1",
+      );
+      card.scrollTop = 0;
+      card.querySelector(".detail-content")?.remove();
+      card.querySelector(".list-content")?.classList.remove("hidden");
+      const mount = card.closest(".inspections-mount");
+      if (mount) {
+        mount.classList.remove("h-full", "flex", "flex-col");
+        mount.classList.add("space-y-3");
+      }
+    },
+
+    realignDetail() {
+      const detail = Array.from(
+        document.querySelectorAll(".detail-content"),
+      ).find((el) => el.offsetParent !== null);
+      const card = detail?.closest('[data-card="inspection"]');
+      if (!card) return;
+      const top = card.getBoundingClientRect().top;
+      if (top >= stickyOffset() - 1 || top < -card.offsetHeight / 2) return;
+      const mount = card.closest(".inspections-mount");
+      scrollToStickyTop(mount.closest(".border-r") || mount.parentElement);
+    },
+
+    syncDetailToViewport() {
+      const card = document
+        .querySelector(".detail-content")
+        ?.closest('[data-card="inspection"]');
+      if (!card) return;
+      const mobile = window.innerWidth < 850;
+      const mount = Array.from(
+        document.querySelectorAll(".inspections-mount"),
+      ).find((m) => !!m.closest("[data-mobile-tracker]") === mobile);
+      if (!mount || mount.contains(card)) return;
+      const target = mount.querySelector(`#${CSS.escape(card.id)}`);
+      this.releaseDetail(card);
+      if (!target) {
+        this.backToResults();
+        return;
+      }
+      if (mobile) {
+        window.dispatchEvent(new CustomEvent("inspections-show-list"));
+      }
+      this.openDetails(target);
     },
 
     syncHidden(card) {

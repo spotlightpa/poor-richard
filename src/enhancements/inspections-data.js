@@ -10,7 +10,7 @@ import {
   riskToColorAndBadge,
   generateInspectionCardId,
 } from "../utils/inspections.js";
-import { scrollToStickyTop } from "../utils/sticky-scroll.js";
+import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
 import {
   alertButtonContent,
   applyAlertStates,
@@ -364,7 +364,7 @@ function createInspectionCard(data, index, allInspections) {
     <ul class="mt-4 space-y-2">${violationBadges}</ul>
     <div class="mt-6 flex gap-2">
       <button
-        class="flex min-w-0 flex-1 items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+        class="flex min-w-0 flex-1 items-center justify-between rounded-lg border-2 border-transparent bg-yellow-4 px-4 py-3 font-bold whitespace-nowrap text-yellow-9 transition hover:bg-yellow-3 max-[359px]:px-3 max-[359px]:text-[15px]"
         aria-label="Read more about this inspection"
         data-read-more="${uniqueId}"
       >
@@ -373,7 +373,7 @@ function createInspectionCard(data, index, allInspections) {
       </button>
       <button
         type="button"
-        class="flex w-1/3 flex-shrink-0 items-center justify-center rounded-md border-2 border-transparent bg-blue-2/80 px-1 font-sans text-sm font-bold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[359px]:[&_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        class="flex w-[44%] flex-shrink-0 items-center justify-center rounded-lg border-2 border-transparent bg-blue-2/70 px-2 text-base font-bold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[359px]:text-sm max-[359px]:[&_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
         aria-label="Get alerts for ${escapeHTML(facilityName)}"
         data-action="card-alerts"
         data-alert-facility="${escapeHTML(facilityKey)}"
@@ -530,8 +530,11 @@ export default function inspectionsData() {
         !!(this.store.currentSort && this.store.currentSort !== "date-desc");
 
       const hasResults = this.store.filteredData.length > 0;
+      const detailOpen = !!document.querySelector(".detail-content");
 
-      banners.forEach((el) => el.classList.toggle("hidden", !hasAppliedSearch));
+      banners.forEach((el) =>
+        el.classList.toggle("hidden", !hasAppliedSearch || detailOpen),
+      );
       noResults.forEach((el) =>
         el.classList.toggle("hidden", !hasAppliedSearch || hasResults),
       );
@@ -621,14 +624,22 @@ export default function inspectionsData() {
       if (!this.initialRender) {
         this.updateSearchUI();
         const mounts = document.querySelectorAll(".inspections-mount");
-        const scrollTarget =
-          Array.from(mounts).find((m) => m.offsetParent !== null) ||
-          document.querySelector(".inspections-mount");
+        const scrollTarget = Array.from(mounts).find(
+          (m) => m.offsetParent !== null,
+        );
         if (scrollTarget) {
           const banner = Array.from(
-            document.querySelectorAll("#search-results-banner"),
+            document.querySelectorAll(
+              "#search-results-banner, [data-mobile-results]",
+            ),
           ).find((b) => b.offsetParent !== null);
-          scrollToStickyTop(banner || scrollTarget, { smooth: true });
+          const target = banner || scrollTarget;
+          const top = target.getBoundingClientRect().top;
+          const inView =
+            window.innerWidth < 850 &&
+            top >= stickyOffset() - 1 &&
+            top < window.innerHeight * 0.6;
+          if (!inView) scrollToStickyTop(target, { smooth: true });
         }
       }
       this.initialRender = false;

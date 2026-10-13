@@ -1,9 +1,10 @@
 <div
   class="{{ .fieldClass }} {{ if .unified }}
-    h-[46px] pr-1
+    h-[46px] pr-1 pl-1
   {{ else }}
-    h-12 pr-1.5
-  {{ end }} relative flex w-full min-w-0 flex-1 items-center rounded-full pl-1"
+    h-12 pr-4 pl-1
+  {{ end }} relative flex w-full min-w-0 flex-1 items-center rounded-full"
+  data-search-scope="{{ .scope }}"
   x-data="searchUI()"
   x-init="init()"
 >
@@ -11,6 +12,8 @@
     type="button"
     class="{{ if and .unified .showLocation }}
       max-xl:hidden
+    {{ end }}{{ if not .unified }}
+      max-[359px]:hidden
     {{ end }} flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-g-6 transition-colors hover:text-g-9 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none"
     aria-label="Search"
     @click="doSearch()"
@@ -72,7 +75,11 @@
     x-cloak
     :id="'search-suggest-' + uid"
     role="listbox"
-    class="absolute top-full right-0 left-0 z-40 mt-2 overflow-hidden rounded-2xl bg-white py-1.5 text-left shadow-[0_0_0_1px_rgba(0,0,0,0.08),0_10px_30px_rgba(0,0,0,0.12)]"
+    class="{{ if .unified }}
+      top-full mt-2 overflow-hidden
+    {{ else }}
+      bottom-full mb-3 max-h-[50dvh] overflow-y-auto
+    {{ end }} absolute right-0 left-0 z-40 rounded-2xl bg-white py-1.5 text-left shadow-[0_0_0_1px_rgba(0,0,0,0.08),0_10px_30px_rgba(0,0,0,0.12)]"
   >
     <template x-for="(s, i) in suggestions" :key="s.type + s.id">
       <div>
@@ -160,7 +167,9 @@
     {{ if .showLocation }}
       <button
         type="button"
-        class="inline-flex h-9 flex-shrink-0 items-center gap-1.5 rounded-full bg-yellow px-3.5 font-sans text-sm font-bold text-g-9 transition-colors hover:bg-yellow-3 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none disabled:cursor-wait disabled:opacity-70"
+        class="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow text-g-9 transition-colors hover:bg-yellow-3 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none disabled:cursor-wait disabled:opacity-70"
+        :aria-label="loadingLocation ? 'Locating…' : 'Near me'"
+        aria-label="Near me"
         :aria-busy="loadingLocation ? 'true' : 'false'"
         :disabled="loadingLocation"
         @click="locate()"
@@ -180,11 +189,6 @@
         >
           {{ partial "helper/svg.html" "circle-notch" }}
         </svg>
-        <span
-          class="max-[379px]:sr-only"
-          :class="$data.stuck && 'sr-only'"
-          x-text="loadingLocation ? 'Locating…' : 'Near me'"
-        ></span>
       </button>
     {{ end }}
   {{ end }}

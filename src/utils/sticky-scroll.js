@@ -2,14 +2,12 @@ export function stickyOffset() {
   const nav = document.querySelector("header.sticky");
   let offset = nav ? nav.getBoundingClientRect().height : 0;
   const desktop = window.matchMedia("(min-width: 850px)").matches;
-  const bar = desktop
-    ? document.querySelector("[data-tracker-header]")
-    : Array.from(document.querySelectorAll("[data-mobile-search-bar]")).find(
-        (el) => el.offsetParent,
-      );
-  if (bar) {
-    const pinned = Number(bar.dataset.pinnedH) || (desktop ? 66 : 68);
-    offset += pinned;
+  if (desktop) {
+    const bar = document.querySelector("[data-tracker-header]");
+    if (bar) offset += Number(bar.dataset.pinnedH) || 66;
+  } else {
+    const bar = document.querySelector("[data-mobile-bar]");
+    if (bar) offset += bar.offsetHeight;
   }
   return offset;
 }

@@ -7,7 +7,11 @@
       center: Array.isArray(opts?.center) ? opts.center : [-77.5, 40.9],
       zoom: Number.isFinite(opts?.zoom) ? opts.zoom : 6,
       bounds: Array.isArray(opts?.bounds) ? opts.bounds : null,
-      padding: Number.isFinite(opts?.padding) ? opts.padding : 24,
+      padding:
+        Number.isFinite(opts?.padding) ||
+        (opts?.padding && typeof opts.padding === "object")
+          ? opts.padding
+          : 24,
       minZoom: Number.isFinite(opts?.minZoom) ? opts.minZoom : 3,
       maxZoom: Number.isFinite(opts?.maxZoom) ? opts.maxZoom : 20,
       bearing: Number.isFinite(opts?.bearing) ? opts.bearing : 0,
@@ -19,6 +23,10 @@
           : "top-left",
       attributionCompact: opts?.attributionCompact ?? true,
       markers: Array.isArray(opts?.markers) ? opts.markers : [],
+      hoverPopups: opts?.hoverPopups ?? true,
+      cooperativeGestures: opts?.cooperativeGestures ?? true,
+      selectOnClick: opts?.selectOnClick ?? false,
+      _selectedEl: null,
 
       map: null,
       _io: null,
@@ -54,15 +62,12 @@
 
         this._mobileViewHandler = (e) => {
           const view = e.detail?.view;
-          if (view === "map") {
-            if (this.map) {
-              this.map.resize();
-              const m = window.__inspectionsMarkers;
-              if (Array.isArray(m) && m.length) this.updateMarkers(m);
-            } else {
-              this.tryInit(true);
-            }
-          }
+          if (view !== "map") return;
+          requestAnimationFrame(() => {
+            if (!this.map) return this.tryInit(true);
+            this.map.resize();
+            this.applyPendingFit();
+          });
         };
         window.addEventListener("mobile-view-changed", this._mobileViewHandler);
 
@@ -79,6 +84,7 @@
         window.addEventListener("inspections:flyTo", this._flyToHandler);
 
         this._zoomToMarkerHandler = (e) => {
+          if (this.selectOnClick) return;
           const { lat, lon } = e.detail || {};
           if (typeof lat !== "number" || typeof lon !== "number" || !this.map)
             return;
@@ -157,6 +163,7 @@
         window.addEventListener("map:zoomToMarker", this._zoomToMarkerHandler);
 
         this._restoreMapHandler = () => {
+          if (this.selectOnClick) return;
           if (!this.map || !this._savedMapState) return;
 
           try {
@@ -241,11 +248,11 @@
           markerEl.innerHTML = `
             <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
               <defs>
-                <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <filter id="markerShadow-${this.id}" x="-50%" y="-50%" width="200%" height="200%">
                   <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
                 </filter>
               </defs>
-              <g filter="url(#markerShadow)">
+              <g filter="url(#markerShadow-${this.id})">
                 <circle cx="12" cy="12" r="10" fill="${color}" stroke="#ffffff" stroke-width="2"/>
                 <path
                   d="M9 12l2 2 4-4"
@@ -262,11 +269,11 @@
           markerEl.innerHTML = `
             <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
               <defs>
-                <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <filter id="markerShadow-${this.id}" x="-50%" y="-50%" width="200%" height="200%">
                   <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
                 </filter>
               </defs>
-              <g filter="url(#markerShadow)">
+              <g filter="url(#markerShadow-${this.id})">
                 <path
                   d="M12 2L22 12L12 22L2 12Z"
                   fill="${color}"
@@ -296,7 +303,7 @@
             minZoom: this.minZoom,
             maxZoom: this.maxZoom,
             attributionControl: false,
-            cooperativeGestures: true,
+            cooperativeGestures: this.cooperativeGestures,
           });
 
           if (this.controls.includes("navigation")) {
@@ -383,11 +390,28 @@
             }
           });
 
+          if (this.selectOnClick) {
+            this.map.on("click", (e) => {
+              if (e.originalEvent?.target?.closest?.(".maplibregl-marker"))
+                return;
+              this.clearSelection();
+              window.dispatchEvent(
+                new CustomEvent("map:background-click", {
+                  detail: { mapId: this.id },
+                }),
+              );
+            });
+          }
+
           this.map.on("error", (e) => {
             console.error("Map error:", e);
           });
 
-          const ro = new ResizeObserver(() => this.map && this.map.resize());
+          const ro = new ResizeObserver(() => {
+            if (!this.map) return;
+            this.map.resize();
+            this.applyPendingFit();
+          });
           ro.observe(el);
           this._ro = ro;
         } catch (err) {
@@ -407,46 +431,84 @@
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
 
-          let popup = null;
-          if (m.popupHTML) {
-            popup = new maplibregl.Popup({
-              closeButton: false,
-              closeOnClick: false,
-              offset: 25,
-            }).setHTML(m.popupHTML);
-
-            markerEl.addEventListener("mouseenter", () => {
-              popup.setLngLat([m.lon, m.lat]).addTo(this.map);
-              if (popup.getElement()) popup.getElement().style.zIndex = "20";
-            });
-
-            markerEl.addEventListener("mouseleave", () => {
-              popup.remove();
-            });
-          }
-
-          if (m.inspectionId) {
-            markerEl.addEventListener("click", () => {
-              window.dispatchEvent(
-                new CustomEvent("marker-click", {
-                  detail: { id: m.inspectionId },
-                }),
-              );
-            });
-          }
+          this._bindMarker(markerEl, m);
 
           marker.addTo(this.map);
           this._baseMarkerInstances.push(marker);
         });
       },
 
+      _bindMarker(markerEl, m) {
+        if (m.popupHTML && this.hoverPopups) {
+          const popup = new maplibregl.Popup({
+            closeButton: false,
+            closeOnClick: false,
+            offset: 25,
+          }).setHTML(m.popupHTML);
+
+          markerEl.addEventListener("mouseenter", () => {
+            popup.setLngLat([m.lon, m.lat]).addTo(this.map);
+            if (popup.getElement()) popup.getElement().style.zIndex = "20";
+          });
+          markerEl.addEventListener("mouseleave", () => {
+            popup.remove();
+          });
+        }
+
+        if (!m.inspectionId) return;
+        markerEl.addEventListener("click", () => {
+          if (!this.selectOnClick) {
+            window.dispatchEvent(
+              new CustomEvent("marker-click", {
+                detail: { id: m.inspectionId },
+              }),
+            );
+            return;
+          }
+          this.select(markerEl);
+          window.dispatchEvent(
+            new CustomEvent("map:marker-select", {
+              detail: { id: m.inspectionId, mapId: this.id },
+            }),
+          );
+        });
+      },
+
+      select(markerEl) {
+        this.clearSelection();
+        this._selectedEl = markerEl;
+        markerEl.style.zIndex = "5";
+        const icon = markerEl.firstElementChild;
+        if (icon) {
+          icon.style.transformOrigin = "50% 100%";
+          icon.style.transform = "scale(1.35)";
+        }
+      },
+
+      clearSelection() {
+        const el = this._selectedEl;
+        if (!el) return;
+        el.style.zIndex = "";
+        if (el.firstElementChild) el.firstElementChild.style.transform = "";
+        this._selectedEl = null;
+      },
+
       updateMarkers(newMarkers) {
         if (!this.map || !Array.isArray(newMarkers)) return;
+
+        const key = (newMarkers || [])
+          .map(
+            (m) => `${m.inspectionId || ""}:${m.lon}:${m.lat}:${m.color || ""}`,
+          )
+          .join("|");
+        if (key === this._markersKey && this._markerInstances?.length) return;
+        this._markersKey = key;
 
         if (this._markerInstances) {
           this._markerInstances.forEach((m) => m.remove());
         }
         this._markerInstances = [];
+        this._selectedEl = null;
 
         newMarkers.forEach((m) => {
           if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
@@ -457,32 +519,7 @@
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
 
-          let popup = null;
-          if (m.popupHTML) {
-            popup = new maplibregl.Popup({
-              closeButton: false,
-              closeOnClick: false,
-              offset: 25,
-            }).setHTML(m.popupHTML);
-
-            markerEl.addEventListener("mouseenter", () => {
-              popup.setLngLat([m.lon, m.lat]).addTo(this.map);
-              if (popup.getElement()) popup.getElement().style.zIndex = "20";
-            });
-            markerEl.addEventListener("mouseleave", () => {
-              popup.remove();
-            });
-          }
-
-          if (m.inspectionId) {
-            markerEl.addEventListener("click", () => {
-              window.dispatchEvent(
-                new CustomEvent("marker-click", {
-                  detail: { id: m.inspectionId },
-                }),
-              );
-            });
-          }
+          this._bindMarker(markerEl, m);
 
           marker.addTo(this.map);
           this._markerInstances.push(marker);
@@ -495,12 +532,28 @@
               bounds.extend([m.lon, m.lat]);
             }
           });
+          if (!this.hasSize()) {
+            this._pendingBounds = bounds;
+            return;
+          }
+          this._pendingBounds = null;
           this.map.fitBounds(bounds, {
             padding: this.padding,
             maxZoom: 12,
-            duration: 1000,
+            duration: 800,
           });
         }
+      },
+
+      applyPendingFit() {
+        if (!this.map || !this._pendingBounds || !this.hasSize()) return;
+        const bounds = this._pendingBounds;
+        this._pendingBounds = null;
+        this.map.fitBounds(bounds, {
+          padding: this.padding,
+          maxZoom: 12,
+          duration: 0,
+        });
       },
 
       destroy() {

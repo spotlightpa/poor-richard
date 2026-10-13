@@ -5,30 +5,6 @@ import {
   normalizeString,
 } from "../utils/inspections.js";
 
-export function inspectionMobileFilters() {
-  return {
-    filtersOpen: false,
-
-    openFilters() {
-      this.filtersOpen = true;
-    },
-
-    closeFilters() {
-      this.filtersOpen = false;
-    },
-
-    clearAll() {
-      const store = Alpine.store("inspections");
-      store.searchQuery = "";
-      store.currentCity = "";
-      store.currentPriority = "";
-      store.currentSort = "date-desc";
-      localStorage.removeItem("inspections-sort");
-      this.filtersOpen = false;
-    },
-  };
-}
-
 export function inspectionCityFilter({
   labelPrefix = "",
   emptyLabel = "All cities",

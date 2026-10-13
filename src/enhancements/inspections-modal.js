@@ -30,6 +30,17 @@ function buildFacilitySearchIndex(allData) {
   return index.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function milesBetween(a, b) {
+  if (!Number.isFinite(b.lat) || !Number.isFinite(b.lon)) return Infinity;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(b.lat - a.lat);
+  const dLon = toRad(b.lon - a.lon);
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLon / 2) ** 2;
+  return 7917.6 * Math.asin(Math.sqrt(h));
+}
+
 export default function inspectionsModal({ page = false } = {}) {
   const saved = rememberedContact();
   return {
@@ -52,6 +63,7 @@ export default function inspectionsModal({ page = false } = {}) {
     citySubscribeSummary: null,
     restaurants: [],
     cities: [],
+    userPos: null,
     locatingCity: false,
     locateError: "",
     userCity: "",
@@ -107,7 +119,8 @@ export default function inspectionsModal({ page = false } = {}) {
         document.body.style.overflow = "hidden";
       });
 
-      window.addEventListener("open-city-alerts-modal", () => {
+      window.addEventListener("open-city-alerts-modal", (e) => {
+        const city = e.detail?.city || "";
         this.open = true;
         this.mode = "city";
         this.step = "form";
@@ -119,7 +132,11 @@ export default function inspectionsModal({ page = false } = {}) {
         this.citySubscribeSummary = null;
         this.resetCity();
         document.body.style.overflow = "hidden";
-        this.$nextTick(() => this.detectCity());
+        this.$nextTick(() => {
+          if (!city) return this.detectCity();
+          this.detectingCity = false;
+          this.selectCity(city);
+        });
       });
 
       if (this.page) this.initPage();
@@ -135,7 +152,11 @@ export default function inspectionsModal({ page = false } = {}) {
       const params = new URLSearchParams(window.location.search);
       const requestedFacility = params.get("facility") || "";
       const requestedCity = params.get("city") || "";
-      if (requestedCity && !requestedFacility) this.mode = "city";
+      if (
+        (requestedCity || params.get("mode") === "city") &&
+        !requestedFacility
+      )
+        this.mode = "city";
 
       const onData = (data) => {
         if (this.dataReady) return;
@@ -208,7 +229,17 @@ export default function inspectionsModal({ page = false } = {}) {
 
     addCity(name) {
       if (!this.cities.some((c) => c.name === name)) {
-        this.cities.push({ name, count: this.facilitiesForCity(name).length });
+        this.cities.push({
+          name,
+          count: this.facilitiesForCity(name).length,
+          scope: "pick",
+          radius: 2,
+          picked: {},
+          open: false,
+          query: "",
+          limit: 60,
+          error: "",
+        });
       }
       this.citySearchQuery = "";
       this.cityDropdownOpen = false;
@@ -218,6 +249,91 @@ export default function inspectionsModal({ page = false } = {}) {
 
     removeCity(name) {
       this.cities = this.cities.filter((c) => c.name !== name);
+    },
+
+    cityFacs(c) {
+      this._cityFacs ||= {};
+      this._cityFacs[c.name] ||= this.facilitiesForCity(c.name);
+      return this._cityFacs[c.name];
+    },
+
+    nearFacs(c) {
+      const pos = this.userPos;
+      if (!pos) return [];
+      return this.cityFacs(c).filter(
+        (f) => milesBetween(pos, f) <= Number(c.radius),
+      );
+    },
+
+    selectedFor(c) {
+      if (c.scope === "near") return this.nearFacs(c);
+      if (c.scope === "pick")
+        return this.cityFacs(c).filter((f) => c.picked[f.id] !== false);
+      return this.cityFacs(c);
+    },
+
+    citySummary(c) {
+      const n = this.selectedFor(c).length;
+      const label = (x) =>
+        `${x.toLocaleString()} ${x === 1 ? "facility" : "facilities"}`;
+      if (c.scope === "near")
+        return this.userPos
+          ? `${label(n)} within ${c.radius} mi of you`
+          : "Finding your location…";
+      if (n === c.count) return `All ${label(c.count)}`;
+      return `${n.toLocaleString()} of ${label(c.count)}`;
+    },
+
+    get totalSelected() {
+      return this.cities.reduce(
+        (sum, c) => sum + this.selectedFor(c).length,
+        0,
+      );
+    },
+
+    async setScope(c, scope) {
+      c.error = "";
+      if (scope === "pick" && c.scope !== "pick") {
+        const keep = new Set(this.selectedFor(c).map((f) => f.id));
+        const picked = {};
+        this.cityFacs(c).forEach((f) => {
+          if (!keep.has(f.id)) picked[f.id] = false;
+        });
+        c.picked = picked;
+      }
+      c.scope = scope;
+      if (scope !== "near" || this.userPos) return;
+      try {
+        const pos = await new Promise((resolve, reject) =>
+          navigator.geolocation.getCurrentPosition(resolve, reject, {
+            timeout: 8000,
+          }),
+        );
+        this.userPos = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+      } catch {
+        c.scope = "pick";
+        c.error = "Turn on location access to use Near me.";
+      }
+    },
+
+    pickList(c) {
+      const q = normalizeString(c.query || "");
+      const list = q
+        ? this.cityFacs(c).filter((f) =>
+            normalizeString(`${f.name} ${f.facilityAddress}`).includes(q),
+          )
+        : this.cityFacs(c);
+      return list.slice(0, c.limit);
+    },
+
+    togglePick(c, id) {
+      c.picked = { ...c.picked, [id]: c.picked[id] === false };
+    },
+
+    pickAll(c, on) {
+      const picked = {};
+      if (!on) this.cityFacs(c).forEach((f) => (picked[f.id] = false));
+      c.picked = picked;
     },
 
     isCityAdded(name) {
@@ -433,6 +549,8 @@ export default function inspectionsModal({ page = false } = {}) {
             name: row.facility || "Unknown facility",
             facilityName: row.facility || "Unknown facility",
             facilityAddress: row.address || "",
+            lat: parseFloat(row.Latitude),
+            lon: parseFloat(row.Longitude),
           };
       });
       return Object.values(grouped).sort((a, b) =>
@@ -513,7 +631,7 @@ export default function inspectionsModal({ page = false } = {}) {
           const seen = new Set();
           const items = [];
           this.cities.forEach((c) => {
-            this.facilitiesForCity(c.name).forEach((f) => {
+            this.selectedFor(c).forEach((f) => {
               if (seen.has(f.id)) return;
               seen.add(f.id);
               items.push({
