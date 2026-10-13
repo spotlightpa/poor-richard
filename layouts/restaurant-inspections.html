@@ -115,16 +115,20 @@
               "context" .
               )
             }}
-            <button
-              type="button"
-              @click="$dispatch('open-city-alerts-modal')"
+            {{ $alertsURL := "/restaurant-inspections/alerts/" }}
+            {{ with site.GetPage "/interactives/restaurant-inspections-alerts" }}
+              {{ $alertsURL = .RelPermalink }}
+            {{ end }}
+            <a
+              href="{{ $alertsURL }}?mode=city"
+              :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
               class="inline-flex h-[46px] flex-shrink-0 items-center gap-2 rounded-full bg-blue-2 px-4 font-sans text-sm font-bold text-blue-9 transition-colors hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
             >
               <svg class="h-4 w-4 fill-current" aria-hidden="true">
                 <use href="#bell-svg" />
               </svg>
               <span>Get city alerts</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
