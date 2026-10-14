@@ -25,18 +25,18 @@
         @click="switchMode('facility')"
         :aria-pressed="mode === 'facility'"
         :class="mode === 'facility' ? 'bg-white text-g-9 shadow-sm' : 'text-g-7 hover:text-g-9'"
-        class="rounded-md px-3 py-2 font-sans text-sm font-semibold transition-colors"
+        class="rounded-md px-3 py-2 font-sans text-sm font-semibold whitespace-nowrap transition-colors max-[359px]:px-2"
       >
-        A restaurant
+        Food facility
       </button>
       <button
         type="button"
         @click="switchMode('city')"
         :aria-pressed="mode === 'city'"
         :class="mode === 'city' ? 'bg-white text-g-9 shadow-sm' : 'text-g-7 hover:text-g-9'"
-        class="rounded-md px-3 py-2 font-sans text-sm font-semibold transition-colors"
+        class="rounded-md px-3 py-2 font-sans text-sm font-semibold whitespace-nowrap transition-colors max-[359px]:px-2"
       >
-        A location
+        Location
       </button>
     </div>
   </div>
@@ -60,7 +60,7 @@
         @focus="facilityDropdownOpen = true"
         @input="facilityDropdownOpen = true"
         @click.outside="facilityDropdownOpen = false"
-        placeholder="Restaurant name, city, zip&hellip;"
+        placeholder="Facility name, city, zip&hellip;"
         autocomplete="off"
         class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
       />
