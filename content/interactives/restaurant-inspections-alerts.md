@@ -9,7 +9,7 @@ ad-header-desktop-active = false
 ad-header-mobile-active = false
 
 title = "Get Inspection Alerts"
-deck = "Get notified when a new health inspection report is posted for a restaurant or location you care about."
+deck = "Get notified when a new health inspection report is posted for a food facility or location you care about."
 
 blurb = "Sign up for free alerts from Spotlight PA's Pennsylvania Restaurant Safety Tracker."
 description = "Sign up for free alerts from Spotlight PA's Pennsylvania Restaurant Safety Tracker."
