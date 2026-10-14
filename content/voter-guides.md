@@ -26,23 +26,17 @@ disclaimer = "By signing up, you may receive emails from Spotlight PA. You can u
 kicker = "Governor"
 title = "Pennsylvania governor race guide"
 desc = "Incumbent Democratic Gov. Josh Shapiro will face Republican Stacy Garrity on the Nov. 3 ballot. Learn more about them with this guide."
-file = "https://files.data.spotlightpa.org/uploads/01nc/e58j/pa-governor-race-guide-printable.pdf"
+file = "https://files.data.spotlightpa.org/uploads/01nc/z366/pa-governor-race-2026.pdf"
 
 [[guides]]
-kicker = "U.S. House"
-title = "Pennsylvania congressional races guide"
-desc = "All 17 of PA’s congressional districts will be on the November ballot, but just three are considered toss-up races."
-file = "https://files.data.spotlightpa.org/uploads/01nc/e58j/pa-congressional-races-guide-printable.pdf"
+kicker = "Voter rights"
+title = "Your Election Day voting rights"
+desc = "Learn your rights as a Pennsylvania voter ahead of the Nov. 3 general election, including ID rules, provisional ballots, and assistance options."
+file = "https://files.data.spotlightpa.org/uploads/01nc/z368/pa-voter-rights-2026.pdf"
 
 [[guides]]
-kicker = "8th District"
-title = "Bresnahan vs. Cognetti on the economy"
-desc = "Republican incumbent Rob Bresnahan will face Democrat Paige Cognetti on the Nov. 3 ballot. Learn more about them with this guide."
-file = "https://files.data.spotlightpa.org/uploads/01nc/e58h/pa-8th-district-bresnahan-cognetti-economy-printable.pdf"
-
-[[guides]]
-kicker = "10th District"
-title = "Perry vs. Stelson on the economy"
-desc = "Republican incumbent Scott Perry will face Democratic candidate Janelle Stelson on the Nov. 3 ballot. Learn more about them with this guide."
-file = "https://files.data.spotlightpa.org/uploads/01nc/e58h/pa-10th-district-perry-stelson-economy-printable.pdf"
+kicker = "Mail ballots"
+title = "Pennsylvania mail ballot guide"
+desc = "Pennsylvania has universal mail voting. Get deadlines, rules, and drop-off options to vote by mail in the Nov. 3 general election."
+file = "https://files.data.spotlightpa.org/uploads/01nc/z367/pa-mail-ballot-guide-2026.pdf"
 +++
