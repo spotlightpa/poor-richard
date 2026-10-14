@@ -34,6 +34,17 @@ function generateToken(email) {
   return `${encoded}.${sig}`;
 }
 
+function generateUndoToken(facilityId, subscriberId) {
+  const exp = Date.now() + 24 * 60 * 60 * 1000;
+  const encoded = Buffer.from(
+    JSON.stringify({ f: facilityId, s: subscriberId, x: exp }),
+  ).toString("base64url");
+  const sig = createHmac("sha256", process.env.UNSUBSCRIBE_SECRET)
+    .update(`undo.${encoded}`)
+    .digest("base64url");
+  return `${encoded}.${sig}`;
+}
+
 export const handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
@@ -61,6 +72,7 @@ export const handler = async (event) => {
         newCount === 1 && newFacilityName
           ? newFacilityName
           : `${newCount.toLocaleString()} facilities`;
+      const inCity = city ? ` in ${city}` : "";
       if (email) {
         try {
           const token = generateToken(email);
@@ -71,16 +83,18 @@ export const handler = async (event) => {
               Destination: { ToAddresses: [email] },
               Message: {
                 Subject: {
-                  Data: `You're now subscribed to inspection alerts in ${city}`,
+                  Data: city
+                    ? `You're now subscribed to inspection alerts in ${city}`
+                    : "You're now subscribed to restaurant inspection alerts",
                 },
                 Body: {
                   Text: {
-                    Data: `Hi from Spotlight PA,\n\nYou're now subscribed to inspection alerts for ${facilityLabel} in ${city}. Whenever a new inspection report is filed, we'll send you an email.\n\nManage your subscriptions: ${manageAllUrl}\n\n---\nSpotlight PA · PO Box 11728 · Harrisburg, PA 17108`,
+                    Data: `Hi from Spotlight PA,\n\nYou're now subscribed to inspection alerts for ${facilityLabel}${inCity}. Whenever a new inspection report is filed, we'll send you an email.\n\nManage your subscriptions: ${manageAllUrl}\n\n---\nSpotlight PA · PO Box 11728 · Harrisburg, PA 17108`,
                   },
                   Html: {
                     Data: `
                <div style="background-color:#f3f4f6;padding:42px 16px;font-family:Georgia,serif;">
-                  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Now tracking ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`} in ${city}. We'll email you whenever a new inspection report is filed.</div>
+                  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Now tracking ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`}${inCity}. We'll email you whenever a new inspection report is filed.</div>
                   <div style="max-width:600px;margin:0 auto;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e5e7eb;border-bottom:none;border-radius:6px 6px 0 0;">
                       <tr>
@@ -104,7 +118,7 @@ export const handler = async (event) => {
                       <h1 style="margin:0 0 8px;font-family:Georgia,serif;font-size:32px;font-weight:700;color:#2E2E2E;line-height:1.2;">Restaurant Safety Tracker</h1>
                       <p style="margin:0 0 28px;font-family:sans-serif;font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.05em;text-transform:uppercase;">${new Date().toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" }).toUpperCase()}</p>
                       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">Hi from Spotlight PA,</p>
-                      <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">You're now subscribed to inspection alerts for <strong>${facilityLabel}</strong> in <strong>${city}</strong>. Whenever a new inspection report is filed, we'll send you an email.</p>
+                      <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">You're now subscribed to inspection alerts for <strong>${facilityLabel}</strong>${city ? ` in <strong>${city}</strong>` : ""}. Whenever a new inspection report is filed, we'll send you an email.</p>
                       <p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#111;">We hope this information helps. If you'd like to change what data and facilities you're monitoring, you can <a href="${manageAllUrl}" style="color:#009EDB;text-decoration:underline;">manage your alert settings here anytime</a>.</p>
                       <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0;" />
                       <p style="margin:0 0 20px;font-size:16px;line-height:1.6;color:#374151;">If you're finding the Restaurant Safety Tracker useful, please consider <a href="https://www.spotlightpa.org/donate" style="color:#009EDB;text-decoration:underline;">donating to Spotlight PA</a> so we can continue making this data free and accessible.</p>
@@ -149,7 +163,7 @@ export const handler = async (event) => {
       await sns.send(
         new PublishCommand({
           PhoneNumber: e164,
-          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`} in ${city}.\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
+          Message: `Spotlight PA: You're now subscribed to inspection alerts for ${newCount === 1 && newFacilityName ? newFacilityName : `${newCount.toLocaleString()} facilities`}${inCity}.\n\nManage alerts: ${managePhoneUrl} Reply STOP to unsubscribe.`,
           MessageAttributes: {
             "AWS.SNS.SMS.SMSType": {
               DataType: "String",
@@ -387,7 +401,10 @@ export const handler = async (event) => {
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ success: true }),
+      body: JSON.stringify({
+        success: true,
+        undoToken: generateUndoToken(facilityId, subscriberId),
+      }),
     };
   } catch (error) {
     // eslint-disable-next-line no-console

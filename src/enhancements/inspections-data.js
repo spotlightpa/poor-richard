@@ -10,6 +10,12 @@ import {
   riskToColorAndBadge,
   generateInspectionCardId,
 } from "../utils/inspections.js";
+import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
+import {
+  alertButtonContent,
+  applyAlertStates,
+  ALERT_STATE_CLASSES,
+} from "../utils/quick-alerts.js";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -46,12 +52,35 @@ function buildFacilityIndex(groupedFacilities) {
       city: normalizeString(row.city || ""),
       dateMs: parseInspectionDate(row.inspection_date).getTime(),
       riskScore: getRiskScore(row.risk_level),
+      levels: getRiskLevels(row.risk_level),
       nameKey: (row.facility || "").toLowerCase(),
     };
   });
 }
 
-function buildCityList(allData) {
+function getRiskLevels(riskLevel) {
+  const levels = { high: false, moderate: false, low: false, any: false };
+  String(riskLevel || "")
+    .split(/[|,]/)
+    .forEach((r) => {
+      const v = r.trim().toLowerCase();
+      if (!v) return;
+      levels.any = true;
+      if (v === "high risk") levels.high = true;
+      else if (v === "moderate risk") levels.moderate = true;
+      else if (v === "low risk") levels.low = true;
+    });
+  return levels;
+}
+
+function matchesPriority(entry, priority) {
+  if (!priority) return true;
+  const l = entry.levels || {};
+  if (priority === "none") return !l.any;
+  return !!l[priority];
+}
+
+export function buildCityList(allData) {
   const counts = {};
   const labelByKey = {};
   const keys = [];
@@ -121,7 +150,12 @@ function sortFacilities(filteredIds, facilityIndexMap, currentSort) {
   return sorted;
 }
 
-function filterFacilities(facilityIndex, searchQuery, currentCity) {
+function filterFacilities(
+  facilityIndex,
+  searchQuery,
+  currentCity,
+  currentPriority,
+) {
   const needle = normalizeString(searchQuery);
   const tokens = needle ? needle.split(/\s+/).filter(Boolean) : [];
   const nCity = normalizeString(currentCity);
@@ -130,6 +164,7 @@ function filterFacilities(facilityIndex, searchQuery, currentCity) {
     const searchMatch =
       tokens.length === 0 || tokens.every((t) => entry.searchText.includes(t));
     if (!searchMatch) return false;
+    if (!matchesPriority(entry, currentPriority)) return false;
     if (!nCity) return true;
 
     const ec = entry.city;
@@ -167,27 +202,84 @@ function rowsToMarkers(rows, startIndex) {
     const id = `inspection-${group.firstIndex}`;
 
     const facilitiesHTML = group.rows
-      .map(({ row }) => {
-        const p = getRiskPriority(row.risk_level || "");
-        const s = riskToColorAndBadge(p);
-        const addressLine =
-          simplifyAddress(row.address || "") || row.city || "";
-        return `<div class="pt-2.5 pb-2.5 mb-2.5 border-b border-g-2 first:pt-0 last:border-b-0 last:pb-0 last:mb-0">
-          <h3 class="font-bold text-base leading-tight text-g-9 mb-1">${escapeHTML(row.facility || "Facility")}</h3>
-          ${addressLine ? `<p class="text-xs text-g-6 mb-1.5">${escapeHTML(addressLine)}</p>` : ""}
-          <span class="inline-block px-2 py-1 text-xs font-semibold rounded-full text-white" style="background-color: ${s.color};">${s.badgeText}</span>
-        </div>`;
-      })
-      .join("");
+      .map(({ row }) => tooltipFacilityHTML(row))
+      .join('<div class="h-px bg-g-3"></div>');
 
     return {
       lon: group.lon,
       lat: group.lat,
       color: style.color,
       inspectionId: id,
-      popupHTML: `<div class="min-w-[200px] max-w-[280px] p-3">${facilitiesHTML}</div>`,
+      popupHTML: `<div class="inspection-tip min-w-[220px] max-w-[280px] border-t-[3px] border-black px-3.5 pt-2.5 pb-3 font-sans">${facilitiesHTML}</div>`,
     };
   });
+}
+
+function countRisks(riskLevel) {
+  const counts = { high: 0, moderate: 0, low: 0, other: 0 };
+  if (riskLevel) {
+    riskLevel.split(" | ").forEach((r) => {
+      r = r.trim().toLowerCase();
+      if (r === "high risk") counts.high++;
+      else if (r === "moderate risk") counts.moderate++;
+      else if (r === "low risk") counts.low++;
+      else if (r === "na" || r === "") counts.other++;
+    });
+  }
+  return counts;
+}
+
+const TIP_SEGMENTS = [
+  { key: "high", color: "#D70000", label: "high" },
+  { key: "moderate", color: "#FFCB03", label: "moderate" },
+  { key: "low", color: "#009EDB", label: "low" },
+  { key: "other", color: "#6b7280", label: "other" },
+];
+
+function donutSVG(counts, total) {
+  const r = 22;
+  const c = 2 * Math.PI * r;
+  const segments = TIP_SEGMENTS.filter((seg) => counts[seg.key] > 0);
+  const gap = segments.length > 1 ? 2 : 0;
+  let offset = 0;
+  const arcs = segments
+    .map((seg) => {
+      const len = (counts[seg.key] / total) * c;
+      const dash = Math.max(len - gap, 0.5);
+      const arc = `<circle cx="28" cy="28" r="${r}" fill="none" stroke="${seg.color}" stroke-width="8" stroke-dasharray="${dash} ${c - dash}" stroke-dashoffset="${-offset}" transform="rotate(-90 28 28)" />`;
+      offset += len;
+      return arc;
+    })
+    .join("");
+  return `<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" class="flex-shrink-0">${arcs}<text x="28" y="33" text-anchor="middle" font-family="Merriweather, Georgia, serif" font-weight="700" font-size="15" fill="#111">${total}</text></svg>`;
+}
+
+function tooltipFacilityHTML(row) {
+  const counts = countRisks(row.risk_level);
+  const total = counts.high + counts.moderate + counts.low + counts.other;
+  const meta = [
+    row.city,
+    row.inspection_date && `Inspected ${row.inspection_date}`,
+  ]
+    .filter(Boolean)
+    .map(escapeHTML)
+    .join(" · ");
+  const body =
+    total === 0
+      ? `<div class="mt-1.5 flex items-center gap-2 text-sm font-semibold text-g-9"><svg class="h-5 w-5 fill-current" style="color: #1b998b;" aria-hidden="true"><use href="#circle-check-svg" /></svg>No violations</div>`
+      : `<div class="flex items-center gap-3.5">${donutSVG(counts, total)}<ul class="space-y-0.5 text-[13px] text-g-8">${TIP_SEGMENTS.filter(
+          (seg) => counts[seg.key] > 0,
+        )
+          .map(
+            (seg) =>
+              `<li class="flex items-center gap-1.5"><svg class="h-2.5 w-2.5 flex-shrink-0 fill-current" style="color: ${seg.color};" aria-hidden="true"><use href="#diamond-svg" /></svg><span><b class="text-g-9">${counts[seg.key]}</b> ${seg.label}</span></li>`,
+          )
+          .join("")}</ul></div>`;
+  return `<div class="inspection-tip-item py-3 first:pt-0 last:pb-0">
+    <h3 class="font-serif text-base leading-snug font-bold text-black">${escapeHTML(row.facility || "Facility")}</h3>
+    ${meta ? `<p class="mt-0.5 mb-2.5 text-[11.5px] font-semibold text-g-6">${meta}</p>` : `<div class="mb-2.5"></div>`}
+    ${body}
+  </div>`;
 }
 
 function createInspectionCard(data, index, allInspections) {
@@ -199,6 +291,12 @@ function createInspectionCard(data, index, allInspections) {
   allInspections = allInspections || [data];
 
   const addressLine = simplifyAddress(address) || city;
+  const facilityKey = allInspections[0]?.id
+    ? generateInspectionCardId(allInspections[0].id)
+    : facilityName
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
   const searchIndex = [facilityName, address, city, inspectionDate]
     .join(" ")
     .toLowerCase();
@@ -227,22 +325,13 @@ function createInspectionCard(data, index, allInspections) {
     "w-full h-full flex flex-col space-y-3 bg-white p-8 shadow md:p-10";
 
   const addressRow = addressLine
-    ? `<div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7"><use href="#location-svg" /></svg><span>${escapeHTML(addressLine)}</span></div>`
+    ? `<div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7"><use href="#location-svg" /></svg><span data-field="address">${escapeHTML(addressLine)}</span></div>`
     : "";
   const dateRow = inspectionDate
     ? `<div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7"><use href="#calendar-day-svg" /></svg><span>Last inspection: ${escapeHTML(inspectionDate)}</span></div>`
     : "";
 
-  const riskCounts = { high: 0, moderate: 0, low: 0, other: 0 };
-  if (data.risk_level) {
-    data.risk_level.split(" | ").forEach((r) => {
-      r = r.trim().toLowerCase();
-      if (r === "high risk") riskCounts.high++;
-      else if (r === "moderate risk") riskCounts.moderate++;
-      else if (r === "low risk") riskCounts.low++;
-      else if (r === "na" || r === "") riskCounts.other++;
-    });
-  }
+  const riskCounts = countRisks(data.risk_level);
 
   const totalViolations =
     riskCounts.high + riskCounts.moderate + riskCounts.low + riskCounts.other;
@@ -261,21 +350,38 @@ function createInspectionCard(data, index, allInspections) {
   }
 
   card.innerHTML = `<div class="list-content">
-    <h2 class="text-3xl font-bold">${escapeHTML(facilityName)}</h2>
+    <div class="flex items-start justify-between gap-3">
+      <h2 class="min-w-0 text-3xl font-bold break-words">${escapeHTML(facilityName)}</h2>
+      <button
+        type="button"
+        class="mt-1 hidden md:inline-flex min-h-10 flex-shrink-0 items-center rounded-full border-2 border-transparent bg-blue-2/80 px-3 py-1.5 font-sans text-sm font-semibold text-blue-9 transition hover:bg-blue-2 ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        aria-label="Get alerts for ${escapeHTML(facilityName)}"
+        data-action="card-alerts"
+        data-alert-facility="${escapeHTML(facilityKey)}"
+      >${alertButtonContent({ label: "Get alerts" })}</button>
+    </div>
     <div class="mt-2 space-y-1 text-g-6">${addressRow}${dateRow}</div>
     <ul class="mt-4 space-y-2">${violationBadges}</ul>
-    <div class="pt-2">
+    <div class="mt-6 flex gap-2">
       <button
-        class="mt-4 flex w-full items-center justify-between rounded-md border-2 border-yellow-5 bg-yellow-4 px-4 py-3 font-bold text-yellow-9 transition hover:bg-yellow-3"
+        class="flex min-w-0 flex-1 items-center justify-between rounded-lg border-2 border-transparent bg-yellow-4 px-4 py-3 font-bold whitespace-nowrap text-yellow-9 transition hover:bg-yellow-3 max-[359px]:px-3 max-[359px]:text-[15px]"
         aria-label="Read more about this inspection"
         data-read-more="${uniqueId}"
       >
         <span class="mx-auto">Read more</span>
-        <svg class="h-5 w-5 fill-yellow-9"><use href="#chevron-right-svg" /></svg>
-</button>
+        <svg class="h-5 w-5 fill-yellow-9" aria-hidden="true"><use href="#chevron-right-svg" /></svg>
+      </button>
+      <button
+        type="button"
+        class="flex w-[44%] flex-shrink-0 items-center justify-center rounded-lg border-2 border-transparent bg-blue-2/70 px-2 text-base font-bold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[359px]:text-sm max-[359px]:[&_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        aria-label="Get alerts for ${escapeHTML(facilityName)}"
+        data-action="card-alerts"
+        data-alert-facility="${escapeHTML(facilityKey)}"
+      >${alertButtonContent({ label: "Get alerts" })}</button>
     </div>
   </div>`;
 
+  applyAlertStates(card);
   return card;
 }
 
@@ -292,6 +398,8 @@ export default function inspectionsData() {
     },
 
     init() {
+      if (window._inspectionsDataPrimary) return;
+      window._inspectionsDataPrimary = true;
       window.addEventListener("inspections-data-ready", (event) => {
         if (this.hashHandled) return;
         this.hashHandled = true;
@@ -310,7 +418,7 @@ export default function inspectionsData() {
       });
 
       this.$watch("store.currentSort", (value) => {
-        if (document.querySelector(".detail-content")) return;
+        this.leaveDetailIfOpen();
         localStorage.setItem("inspections-sort", value);
         this.store.currentPage = 1;
 
@@ -320,14 +428,23 @@ export default function inspectionsData() {
         });
       });
       this.$watch("store.searchQuery", () => {
-        if (document.querySelector(".detail-content")) return;
+        this.leaveDetailIfOpen();
         this.performSearch();
       });
 
       this.$watch("store.currentCity", () => {
-        if (document.querySelector(".detail-content")) return;
+        this.leaveDetailIfOpen();
         this.performSearch();
       });
+
+      this.$watch("store.currentPriority", () => {
+        this.leaveDetailIfOpen();
+        this.performSearch();
+      });
+
+      window.addEventListener("inspections-refresh-search-ui", () =>
+        this.updateSearchUI(),
+      );
 
       this.$watch("store.currentPage", () => {
         if (document.querySelector(".detail-content")) return;
@@ -403,28 +520,36 @@ export default function inspectionsData() {
     },
 
     updateSearchUI() {
-      const banner = document.getElementById("search-results-banner");
-      const noResults = document.getElementById("no-results");
+      const banners = document.querySelectorAll("#search-results-banner");
+      const noResults = document.querySelectorAll("#no-results");
 
       const hasAppliedSearch =
         !!(this.store.searchQuery && this.store.searchQuery.trim()) ||
-        !!(this.store.currentCity && this.store.currentCity.trim());
+        !!(this.store.currentCity && this.store.currentCity.trim()) ||
+        !!this.store.currentPriority ||
+        !!(this.store.currentSort && this.store.currentSort !== "date-desc");
 
       const hasResults = this.store.filteredData.length > 0;
+      const detailOpen = !!document.querySelector(".detail-content");
 
-      if (banner) {
-        banner.classList.toggle("hidden", !hasAppliedSearch);
-      }
+      banners.forEach((el) =>
+        el.classList.toggle("hidden", !hasAppliedSearch || detailOpen),
+      );
+      noResults.forEach((el) =>
+        el.classList.toggle("hidden", !hasAppliedSearch || hasResults),
+      );
+    },
 
-      if (noResults) {
-        noResults.classList.toggle("hidden", !hasAppliedSearch || hasResults);
+    leaveDetailIfOpen() {
+      if (document.querySelector(".detail-content")) {
+        window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
       }
     },
 
     resortAndRender() {
       this.store.sortedFilteredData = sortFacilities(
-        this.store.filteredData,
-        this.facilityIndexMap,
+        Alpine.raw(this.store.filteredData),
+        Alpine.raw(this.facilityIndexMap),
         this.store.currentSort,
       );
       this.renderPage();
@@ -439,17 +564,21 @@ export default function inspectionsData() {
           cancelAnimationFrame(this._searchRenderFrame);
         this._searchRenderFrame = requestAnimationFrame(() => {
           const matched = filterFacilities(
-            this.facilityIndex,
+            Alpine.raw(this.facilityIndex),
             this.store.searchQuery,
             this.store.currentCity,
+            this.store.currentPriority,
           );
           const newFilteredData = matched.map((e) => e.id);
 
           const sameLength =
-            newFilteredData.length === this.store.filteredData.length;
+            newFilteredData.length ===
+            Alpine.raw(this.store.filteredData).length;
           const unchanged =
             sameLength &&
-            newFilteredData.every((id, i) => id === this.store.filteredData[i]);
+            newFilteredData.every(
+              (id, i) => id === Alpine.raw(this.store.filteredData)[i],
+            );
 
           if (unchanged) return;
 
@@ -472,7 +601,8 @@ export default function inspectionsData() {
         this.store.sortedFilteredData.length,
       );
       const pageIds = this.store.sortedFilteredData.slice(start, end);
-      const pageGroups = pageIds.map((id) => this.store.groupedFacilities[id]);
+      const grouped = Alpine.raw(this.store.groupedFacilities);
+      const pageGroups = pageIds.map((id) => grouped[id]);
 
       this.clearMounts();
 
@@ -492,14 +622,24 @@ export default function inspectionsData() {
       this.syncMarkers();
 
       if (!this.initialRender) {
+        this.updateSearchUI();
         const mounts = document.querySelectorAll(".inspections-mount");
-        const scrollTarget =
-          Array.from(mounts).find((m) => m.offsetParent !== null) ||
-          document.querySelector(".inspections-mount");
+        const scrollTarget = Array.from(mounts).find(
+          (m) => m.offsetParent !== null,
+        );
         if (scrollTarget) {
-          scrollTarget.style.scrollMarginTop =
-            window.innerWidth < 768 ? "57px" : "73px";
-          scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+          const banner = Array.from(
+            document.querySelectorAll(
+              "#search-results-banner, [data-mobile-results]",
+            ),
+          ).find((b) => b.offsetParent !== null);
+          const target = banner || scrollTarget;
+          const top = target.getBoundingClientRect().top;
+          const inView =
+            window.innerWidth < 850 &&
+            top >= stickyOffset() - 1 &&
+            top < window.innerHeight * 0.6;
+          if (!inView) scrollToStickyTop(target, { smooth: true });
         }
       }
       this.initialRender = false;
@@ -660,8 +800,13 @@ export default function inspectionsData() {
 
     findPageForHash(hash) {
       const store = this.store;
-      for (let i = 0; i < store.filteredData.length; i++) {
-        const inspections = store.groupedFacilities[store.filteredData[i]];
+      const ordered = sortFacilities(
+        Alpine.raw(store.filteredData),
+        Alpine.raw(this.facilityIndexMap),
+        store.currentSort,
+      );
+      for (let i = 0; i < ordered.length; i++) {
+        const inspections = store.groupedFacilities[ordered[i]];
         if (inspections?.[0]) {
           const cardId = generateInspectionCardId(
             (inspections[0].id || "").trim(),
@@ -673,7 +818,7 @@ export default function inspectionsData() {
     },
 
     handleHashOnMobile(hash) {
-      if (window.innerWidth >= 768) return;
+      if (window.innerWidth >= 850) return;
       const mobileMounts = Array.from(
         document.querySelectorAll(".inspections-mount"),
       ).filter(
@@ -685,7 +830,10 @@ export default function inspectionsData() {
         '[data-card="inspection"]',
       );
       for (const card of cards) {
-        if (this.generateCardId(card) === hash) {
+        const first =
+          JSON.parse(card.getAttribute("data-all-inspections") || "[]")[0] ||
+          {};
+        if (first.id && generateInspectionCardId(first.id) === hash) {
           card.querySelector("[data-read-more]")?.click();
           setTimeout(
             () => window.scrollTo({ top: 0, behavior: "smooth" }),
