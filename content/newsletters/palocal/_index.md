@@ -13,7 +13,7 @@ bullets = [
   "Winner of the 2024 Online Journalism Award for Excellence in Newsletters: Portfolio"
 ]
 
-device-image = "2025/04/01m0-000p-0vgg-qb65.png"
+device-image = "2026/10/01nd-037j-a0a8-45jr.png"
 device-image-width = 956
 device-image-height = 1712
 
