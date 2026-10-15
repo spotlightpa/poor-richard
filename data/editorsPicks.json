@@ -1,22 +1,22 @@
 {
   "edCallout": [
-    "content/news/2026-08-13-SPLGARRITYPROFILE0826.md",
-    "content/news/2026-07-20-SPLSHAPPROFILE0726.md"
+    "content/news/2026-07-20-SPLSHAPPROFILE0726.md",
+    "content/news/2026-08-13-SPLGARRITYPROFILE0826.md"
   ],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-10-14-splDDRD1026.md"
+    "content/news/2026-10-15-SPL8THREFORM1026.md",
+    "content/news/2026-10-15-VBLETTERS1026.md"
   ],
   "subfeatures": [
-    "content/news/2026-09-08-SPLDDRDSUPREME0926.md",
-    "content/news/2026-07-06-spl_ddrd_0726.md",
-    "content/news/2026-06-29-SPLDDRD0626.md",
-    "content/news/2026-07-15-spl5ddrd0726.md"
+    "content/news/2026-05-13-SPLMAY19INTIMID.md",
+    "content/news/2026-05-19-VBDEVICE0526.md",
+    "content/news/2026-05-12-SPLHITLIST0526.md"
   ],
   "topSlots": [
-    "content/news/2026-10-13-SPL1VOTEIMMIG1026.md",
-    "content/news/2026-10-13-VBNONCITVOTE1026.md",
-    "content/news/2026-10-12-SPLCAPEFOLO1026.md"
+    "content/news/2026-10-15-SPL8THREFORM1026.md",
+    "content/news/2026-10-14-splDDRD1026.md",
+    "content/news/2026-10-13-SPL1VOTEIMMIG1026.md"
   ]
 }
