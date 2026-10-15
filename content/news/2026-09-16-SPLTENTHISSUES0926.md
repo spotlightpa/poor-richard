@@ -30,7 +30,7 @@ topics = ["Elections"]
 
 HARRISBURG — Ahead of the Nov. 3 election, Pennsylvania voters have <a href="https://www.fandmpoll.org/franklin-marshall-college-poll-release-august-2026/">identified</a> the economy as a top issue, driven by concerns about the cost of living, unemployment, and utility prices.
 
-It’s a key focus in the 10th Congressional District race, a rematch between Republican incumbent <a href="https://patriotsforperry.com/">Scott Perry</a>, who’s held the seat since 2013, and Democratic candidate <a href="https://janellestelson.com/">Janelle Stelson</a>, a former news anchor. It’s also one of three toss-up U.S. House races in Pennsylvania identified by the nonpartisan <a href="https://www.cookpolitical.com/ratings/house-race-ratings">Cook Political Report</a>.
+It’s a key focus in the 10th Congressional District race, a rematch between Republican incumbent <a href="https://patriotsforperry.com/">Scott Perry</a>, who’s held the seat since 2013, and Democratic candidate <a href="https://janellestelson.com/">Janelle Stelson</a>, a former news anchor. The nonpartisan <a href="https://www.cookpolitical.com/ratings/house-race-ratings">Cook Political Report</a> changed its rating of the race from “toss-up” to “lean Democrat” on Oct. 9.
 
 The purple district covers the entirety of Dauphin County, including Harrisburg, in addition to portions of Cumberland and York Counties.
 

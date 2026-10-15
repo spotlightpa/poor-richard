@@ -22,13 +22,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Kip Armstrong",
-      "sort": "Armstrong",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "David Atkinson",
       "sort": "Atkinson",
       "url": "",
@@ -155,6 +148,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Meg Berlin",
+      "sort": "Berlin",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Diane Berman",
       "sort": "Berman",
       "url": "",
@@ -249,8 +249,8 @@
       "display": "Merrill and Nancy Brenner",
       "sort": "Brenner",
       "url": "",
-      "category": "$10,000-$24,999",
-      "categoryRank": "3"
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Peggy Brown",
@@ -272,6 +272,13 @@
       "url": "",
       "category": "$10,000-$24,999",
       "categoryRank": "3"
+    },
+    {
+      "display": "Beth Burrell and David Sorenson",
+      "sort": "Burrell",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Lee Butz",
@@ -620,8 +627,8 @@
       "display": "Sandra Hardy",
       "sort": "Hardy",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$25,000-$49,999",
+      "categoryRank": "2"
     },
     {
       "display": "Margaret Harris and Phil Straus",
@@ -1135,13 +1142,6 @@
       "categoryRank": "4"
     },
     {
-      "display": "James \"Scott\" Pflumm",
-      "sort": "Pflumm",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Constance Poissant",
       "sort": "Poissant",
       "url": "",
@@ -1189,6 +1189,13 @@
       "url": "",
       "category": "$2,500-$4,999",
       "categoryRank": "5"
+    },
+    {
+      "display": "Kathryn Remensky",
+      "sort": "Remensky",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Gwen Ritter",
@@ -1273,6 +1280,13 @@
       "url": "",
       "category": "$10,000-$24,999",
       "categoryRank": "3"
+    },
+    {
+      "display": "Alan Shuman",
+      "sort": "Shuman",
+      "url": "",
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "David Skerpon",
@@ -1567,6 +1581,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Phyllis Wright",
+      "sort": "Wright",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Ted and Pam Yeager",
