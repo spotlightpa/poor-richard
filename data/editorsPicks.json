@@ -6,17 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-10-15-SPL8THREFORM1026.md"
+    "content/news/2026-10-15-SPL8THREFORM1026.md",
+    "content/news/2026-10-15-VBLETTERS1026.md"
   ],
   "subfeatures": [
-    "content/news/2026-10-09-SPL10THREFORM1026.md",
-    "content/news/2026-10-14-APLATINOVOTE1026.md",
-    "content/news/2026-10-13-VBNONCITVOTE1026.md",
-    "content/news/2026-10-09-SPLINDIESURGE1026.md"
+    "content/news/2026-05-13-SPLMAY19INTIMID.md",
+    "content/news/2026-05-19-VBDEVICE0526.md",
+    "content/news/2026-05-12-SPLHITLIST0526.md"
   ],
   "topSlots": [
+    "content/news/2026-10-15-SPL8THREFORM1026.md",
     "content/news/2026-10-14-splDDRD1026.md",
-    "content/news/2026-10-13-SPL1VOTEIMMIG1026.md",
-    "content/news/2026-10-12-SPLCAPEFOLO1026.md"
+    "content/news/2026-10-13-SPL1VOTEIMMIG1026.md"
   ]
 }
