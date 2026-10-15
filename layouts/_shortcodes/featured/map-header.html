@@ -158,7 +158,9 @@
     x-data="mapContainer({{ dict "geojson" $geojson "mapColor" $mapColor "colorOpacity" $colorOpacity "tooltipsEnabled" $tooltipsEnabled "tooltipTemplate" $tooltipValue "customCodeUrl" $customCodeURL "customCodeProperty" $customCodeProperty "searchUseLocation" $searchUseLocation | jsonify }})"
     x-init="init()"
   >
-    <div x-ref="canvas" class="h-full w-full"></div>
+    <div class="absolute inset-0">
+      <div x-ref="canvas" class="h-full w-full"></div>
+    </div>
 
     {{ if $searchEnabled }}
       <div

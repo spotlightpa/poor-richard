@@ -321,7 +321,7 @@ export default function mapContainer(config) {
       const rowsEl = el.querySelector("[data-rows]");
       rowsEl.innerHTML = html;
       this.tooltip = { el, lon, lat, noPin };
-      this.$refs.canvas.parentElement.appendChild(el);
+      this.$refs.canvas.closest("#map-container").appendChild(el);
       this.positionTooltip();
       requestAnimationFrame(() => {
         el.style.opacity = "1";
