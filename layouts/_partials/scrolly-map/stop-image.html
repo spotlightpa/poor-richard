@@ -1,0 +1,53 @@
+{{ $src := .src }}
+{{ $parts := split .ratio ":" }}
+{{ $widthRatio := 3 }}
+{{ $heightRatio := 2 }}
+{{ if eq (len $parts) 2 }}
+  {{ $widthRatio = index $parts 0 | int }}
+  {{ $heightRatio = index $parts 1 | int }}
+{{ end }}
+
+
+<figure data-ga-category="scrolly-map:image">
+  <div
+    class="relative aspect-[{{ $widthRatio }}/{{ $heightRatio }}] w-full overflow-hidden rounded-sm bg-g-3"
+  >
+    {{ $sizes := dict
+      "widths" (slice 400 600 800 1100)
+      "widthRatio" $widthRatio
+      "heightRatio" $heightRatio
+      | partial "helper/build-sizes"
+    }}
+    {{ $srcset := dict "filename" $src "sizes" $sizes | partial "helper/build-srcset" }}
+    {{ $fallbackSize := index $sizes 1 }}
+    {{ $fallback := partial "helper/imgproxy" (dict
+      "filename" $src
+      "width" $fallbackSize.width
+      "height" $fallbackSize.height
+      "resize" "fill"
+      "ext" "jpeg"
+      )
+    }}
+    <picture>
+      <source
+        type="image/webp"
+        srcset="{{ $srcset }}"
+        sizes="(min-width: 768px) 24rem, calc(100vw - 2rem)"
+      />
+      <img
+        class="h-full w-full object-cover"
+        alt="{{ .description }}"
+        src="{{ $fallback }}"
+        loading="lazy"
+        width="{{ $fallbackSize.width }}"
+        height="{{ $fallbackSize.height }}"
+      />
+    </picture>
+  </div>
+  {{ if or .caption .credit }}
+    <figcaption class="mt-2 text-sm leading-snug text-g-8">
+      {{ with .caption }}<span itemprop="caption">{{ . }}</span>{{ end }}
+      {{ with .credit }}<span itemprop="creditText">({{ . }})</span>{{ end }}
+    </figcaption>
+  {{ end }}
+</figure>

@@ -1,0 +1,36 @@
+{{ $src := .src }}
+{{ $sizes := dict
+  "widths" (slice 400 600 800 1000 1200)
+  "widthRatio" 1
+  "heightRatio" 2
+  | partial "helper/build-sizes"
+}}
+{{ $srcset := dict
+  "filename" $src
+  "sizes" $sizes
+  "resize" "fit"
+  | partial "helper/build-srcset"
+}}
+{{ $fallback := partial "helper/imgproxy" (dict
+  "filename" $src
+  "width" 800
+  "height" 1600
+  "resize" "fit"
+  "ext" "png"
+  )
+}}
+
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="{{ $srcset }}"
+    sizes="(min-width: 768px) 32rem, 80vw"
+  />
+  <img
+    class="{{ cond (eq .align `left`) `max-w-[18rem] sm:max-w-[22rem] md:max-w-[26rem]` `mx-auto max-w-[20rem] sm:max-w-[26rem] md:max-w-[32rem]` }} h-auto w-full"
+    src="{{ $fallback }}"
+    alt="{{ .description }}"
+    fetchpriority="high"
+  />
+</picture>

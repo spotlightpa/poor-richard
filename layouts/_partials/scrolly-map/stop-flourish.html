@@ -1,0 +1,11 @@
+<div data-ga-category="scrolly-map:flourish" class="w-full">
+  <div class="flourish-embed" data-src="{{ . }}"></div>
+</div>
+
+{{ if page.Scratch.Get "has-flourish" | not }}
+  {{ page.Scratch.Set "has-flourish" true }}
+  <script
+    defer
+    src="https://public.flourish.studio/resources/embed.js"
+  ></script>
+{{ end }}
