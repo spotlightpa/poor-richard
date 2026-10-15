@@ -54,6 +54,7 @@ export default function mapContainer(config) {
       const ro = new ResizeObserver(() => this.map && this.map.resize());
       ro.observe(this.$refs.canvas);
       this.map.on("load", () => this.loadGeoJSON());
+      this.map.on("move", () => this.positionTooltip());
     },
     updateNavPosition() {
       const isMd = window.matchMedia("(min-width: 768px)").matches;
@@ -315,20 +316,16 @@ export default function mapContainer(config) {
       this.hideTooltip();
       const tmpl = document.getElementById("map-tooltip-tmpl");
       const el = tmpl.content.cloneNode(true).firstElementChild;
-      const offset = noPin ? "12px" : "70px";
       el.style.cssText =
-        "position:absolute;z-index:20;pointer-events:auto;transform:translate(-50%,calc(-100% - " +
-        offset +
-        "));opacity:0;transition:opacity 0.18s ease;";
+        "position:absolute;z-index:40;pointer-events:auto;opacity:0;transition:opacity 0.18s ease;";
       const rowsEl = el.querySelector("[data-rows]");
       rowsEl.innerHTML = html;
-      this.tooltip = { el, lon, lat };
-      this.$refs.canvas.appendChild(el);
+      this.tooltip = { el, lon, lat, noPin };
+      this.$refs.canvas.parentElement.appendChild(el);
       this.positionTooltip();
       requestAnimationFrame(() => {
         el.style.opacity = "1";
       });
-      this.map.on("move", () => this.positionTooltip());
     },
     showTooltip(lon, lat, feature, noPin = false) {
       const html = this.renderTooltipTemplate(
@@ -339,9 +336,92 @@ export default function mapContainer(config) {
     },
     positionTooltip() {
       if (!this.tooltip || !this.map) return;
+      const { el } = this.tooltip;
+      if (!el.isConnected) {
+        this.tooltip = null;
+        return;
+      }
       const pt = this.map.project([this.tooltip.lon, this.tooltip.lat]);
-      this.tooltip.el.style.left = pt.x + "px";
-      this.tooltip.el.style.top = pt.y + "px";
+      el.style.left = pt.x + "px";
+      el.style.top = pt.y + "px";
+      el.style.marginLeft = "0px";
+      let fallback = "";
+      for (const placement of ["top", "bottom", "right", "left"]) {
+        this.applyTooltipPlacement(placement);
+        const rect = el.getBoundingClientRect();
+        const clear = !this.overlapsSearchBar(rect);
+        if (clear && this.fitsViewport(rect)) return;
+        if (clear && !fallback) fallback = placement;
+      }
+      this.applyTooltipPlacement(fallback || "top");
+      this.clampTooltipHorizontally();
+    },
+    clampTooltipHorizontally() {
+      const { el } = this.tooltip;
+      const placement = el.dataset.placement;
+      if (placement !== "top" && placement !== "bottom") return;
+      const margin = 8;
+      const rect = el.getBoundingClientRect();
+      let shift = 0;
+      if (rect.width > window.innerWidth - margin * 2) {
+        shift = margin - rect.left;
+      } else if (rect.right > window.innerWidth - margin) {
+        shift = window.innerWidth - margin - rect.right;
+      } else if (rect.left < margin) {
+        shift = margin - rect.left;
+      }
+      if (!shift) return;
+      el.style.marginLeft = shift + "px";
+      const caret = el.querySelector("[data-caret]");
+      if (caret) caret.style.left = `calc(50% - ${shift}px)`;
+      if (this.overlapsSearchBar(el.getBoundingClientRect())) {
+        el.style.marginLeft = "0px";
+        if (caret) caret.style.left = "50%";
+      }
+    },
+    applyTooltipPlacement(placement) {
+      const { el, noPin } = this.tooltip;
+      const gap = 12;
+      const pinHeight = noPin ? 0 : 56;
+      const pinMid = pinHeight / 2;
+      const transforms = {
+        top: `translate(-50%, calc(-100% - ${gap + pinHeight}px))`,
+        bottom: `translate(-50%, ${gap}px)`,
+        right: `translate(${gap + pinMid}px, calc(-50% - ${pinMid}px))`,
+        left: `translate(calc(-100% - ${gap + pinMid}px), calc(-50% - ${pinMid}px))`,
+      };
+      const carets = {
+        top: "top:100%;left:50%;transform:translateX(-50%);border-top-color:#fff;",
+        bottom:
+          "bottom:100%;left:50%;transform:translateX(-50%);border-bottom-color:#fff;",
+        right:
+          "right:100%;top:50%;transform:translateY(-50%);border-right-color:#fff;",
+        left: "left:100%;top:50%;transform:translateY(-50%);border-left-color:#fff;",
+      };
+      el.style.transform = transforms[placement];
+      el.dataset.placement = placement;
+      const caret = el.querySelector("[data-caret]");
+      if (caret) caret.style.cssText = carets[placement];
+    },
+    overlapsSearchBar(rect) {
+      const bar = this.$refs.searchBar;
+      if (!bar) return false;
+      const b = bar.getBoundingClientRect();
+      const pad = 8;
+      return (
+        rect.left < b.right + pad &&
+        rect.right > b.left - pad &&
+        rect.top < b.bottom + pad &&
+        rect.bottom > b.top - pad
+      );
+    },
+    fitsViewport(rect) {
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= window.innerHeight &&
+        rect.right <= window.innerWidth
+      );
     },
     hideTooltip() {
       if (this.tooltip) {
