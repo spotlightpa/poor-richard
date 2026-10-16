@@ -1,0 +1,16 @@
+[
+  {
+    "id": "garrity",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/MjAyNi8xMC8wMW5kLTJhMDAtOWpjay15ZTViLnBuZw==.webp",
+    "name": "Stacy Garrity",
+    "title": "State treasurer",
+    "party": "rep"
+  },
+  {
+    "id": "shapiro",
+    "image": "https://images.data.spotlightpa.org/insecure/rt:fill/w:88/h:80/g:sm/el:1/MjAyNi8xMC8wMW5kLTJhMDYtdDllZi16ZnRoLnBuZw==.webp",
+    "name": "Josh Shapiro",
+    "title": "Incumbent governor of Pennsylvania",
+    "party": "dem"
+  }
+]
