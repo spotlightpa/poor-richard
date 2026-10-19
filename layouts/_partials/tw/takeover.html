@@ -10,10 +10,8 @@
 {{ $hiddenField := .hiddenField }}
 {{ $content := .content }}
 {{ $eager := .eager }}
-<header
-  class="relative z-50 flex min-h-[80vh] flex-col justify-center bg-black text-white"
-  style="min-height: 80vh;"
->
+{{ $class := .containerClass | default "relative z-50 flex min-h-[80vh] flex-col justify-center bg-black text-white" }}
+<header class="{{ $class }}">
   {{ $imgOpt := dict
     "filename" ($src)
     "width" 1600
