@@ -63,7 +63,7 @@ answer-key = """
 {{</answer-key/q>}}
 
 {{<answer-key/q question="You prefer a candidate who takes the following approach on data centers:">}}
-  {{<answer-key/a id="shapiro" answer="" header="">}}Implements strict clean energy and job standards that projects must commit to before moving forward{{</answer-key/a>}}
+  {{<answer-key/a id="shapiro" answer="" header="">}}Implements strict clean energy and job standards that projects must commit to if they want permits on a workable timeline{{</answer-key/a>}}
   {{<answer-key/a id="garrity" answer="" header="">}}Supports a temporary moratorium to figure out what to do{{</answer-key/a>}}
 {{</answer-key/q>}}
 
@@ -78,12 +78,12 @@ answer-key = """
 {{</answer-key/q>}}
 
 {{<answer-key/q question="You prefer a candidate who takes the following approach to skill games:">}}
-  {{<answer-key/a id="shapiro" answer="" header="">}}Supports taxing them at 52% to align with the state’s existing 55% tax on electronic games and casino slot machines{{</answer-key/a>}}
-  {{<answer-key/a id="garrity" answer="" header="">}}Supports a flat monthly fee of $500 per machine{{</answer-key/a>}}
+  {{<answer-key/a id="shapiro" answer="" header="">}}Supports taxing them at 52% to align with the state’s existing 55% tax on electronic games and slot machines, an approach that casinos back{{</answer-key/a>}}
+  {{<answer-key/a id="garrity" answer="" header="">}}Supports a flat monthly fee of $500 per machine, an approach that the skill games industry prefers{{</answer-key/a>}}
 {{</answer-key/q>}}
 
 {{<answer-key/q question="You prefer a candidate who takes the following approach to the state’s multibillion-dollar “rainy day” fund:">}}
-  {{<answer-key/a id="garrity" answer="" header="">}}Supports using it only for emergencies{{</answer-key/a>}}
+  {{<answer-key/a id="garrity" answer="" header="">}}Supports using it only for emergencies and to temporarily pause taxes on gas and diesel{{</answer-key/a>}}
   {{<answer-key/a id="shapiro" answer="" header="">}}Supports using it to “cut taxes and make investments” as part of budget deals{{</answer-key/a>}}
 {{</answer-key/q>}}
 
@@ -100,8 +100,8 @@ answer-key = """
 
 +++
 
-Pennsylvania’s Nov. 3 election is fast approaching, and Pennsylvanians will soon have to decide which candidate for governor to support. 
+Pennsylvania’s Nov. 3 election is fast approaching, and voters will soon have to decide which candidate for governor to support. 
 
 The major party candidates on the ballot this November are Democratic incumbent Josh Shapiro and Republican Stacy Garrity. All registered voters, regardless of their party affiliation, are eligible to cast a ballot in this race. 
 
-To help highlight the differences between the candidates, and show you which candidate you best align with, Spotlight PA has created this quiz. To learn more about their positions, consult our [One Vote, Two Pennsylvanias series](/series/one-vote-two-pas-2026/).
+To help highlight the differences between Shapiro and Garrity, and show you which candidate you best align with, Spotlight PA has created this quiz. To learn more about their positions, consult our [One Vote, Two Pennsylvanias series](/series/one-vote-two-pas-2026/).
