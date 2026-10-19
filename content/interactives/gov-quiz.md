@@ -19,7 +19,7 @@ published = 2026-10-20T05:00:00-04:00
 river-exclude = false
 suppress-ads = false
 suppress-date = false
-takeover = "{{<featured/main-takeover\n  title = \"Interactive Quiz\"\n  dek = \"See which Pa. governor candidate is right for you.\"\n  image = \"2026/10/01nd-29fm-c2rt-byyh.jpeg\"\n  eager = \"1\"\n  container-class = \"relative z-50 flex max-md:aspect-16/9 md:min-h-[80vh] flex-col justify-center bg-black text-white\"\n>}}\n{{</featured/main-takeover>}}\n"
+takeover = "{{<featured/main-takeover\n  title = \"Find Your Candidate Match\"\n  dek = \"Use our interactive tool to see which major party candidate for Pennsylvania governor most closely aligns with what matters to you.\"\n  image = \"2026/10/01nd-29fm-c2rt-byyh.jpeg\"\n  eager = \"1\"\n  container-class = \"relative z-50 flex max-md:aspect-16/9 md:min-h-[80vh] flex-col justify-center bg-black text-white\"\n>}}\n{{</featured/main-takeover>}}\n"
 title = "INTERACTIVE: See which Pa. governor candidate is right for you"
 title-tag = "Stacy Garrity or Josh Shapiro: Who aligns with your views?"
 topics = ["News Quiz"]
