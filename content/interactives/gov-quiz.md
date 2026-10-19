@@ -14,8 +14,7 @@ credits = """
     email="cjohnson@spotlightpa.org"
 >}}
 
-<span class="spl-links-navy">
-Spotlight PA wrote this quiz based on the candidates' public statements, campaign websites, and more. Send feedback to [Sarah Anne Hughes](mailto:shughes@spotlightpa.org).</span>
+<span class="spl-links-navy">Spotlight PA wrote this quiz based on the candidates' public statements, campaign websites, and more. Send feedback to [Sarah Anne Hughes](mailto:shughes@spotlightpa.org).</span>
 """
 description = "Use our interactive tool to see which major party candidate for Pennsylvania governor most closely aligns with what matters to you."
 extended-kicker = "News Quiz"
