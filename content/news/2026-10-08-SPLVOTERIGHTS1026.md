@@ -24,7 +24,7 @@ title-tag = "Pennsylvania voting rights: what to know for Nov. 3 election"
 topics = ["Elections"]
 +++
 
-<em><br/>To download a printable version of this article, please </em><a href="https://www.spotlightpa.org/voter-guides"><em>click here</em></a><em>.<br/><br/></em>HARRISBURG — Whether you cast your ballot for the Nov. 3 election in person or by mail, you want to make sure your vote counts.
+<em>To download a printable version of this article, please </em><a href="https://www.spotlightpa.org/voter-guides"><em>click here</em></a><em>.<br/></em>HARRISBURG — Whether you cast your ballot for the Nov. 3 election in person or by mail, you want to make sure your vote counts.
 
 The best way to do that is to know your rights.
 
