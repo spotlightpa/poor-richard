@@ -30,6 +30,8 @@ takeover = """{{<featured/main-takeover
   title = "Interactive Quiz"
   dek = "See which Pa. governor candidate is right for you."
   image = "2026/10/01nd-29fm-c2rt-byyh.jpeg"
+  eager = "1"
+  container-class = "relative z-50 flex max-md:aspect-16/9 md:min-h-[80vh] flex-col justify-center bg-black text-white"
 >}}
 {{</featured/main-takeover>}}
 """
