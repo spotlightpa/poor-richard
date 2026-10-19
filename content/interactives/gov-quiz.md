@@ -1,5 +1,6 @@
 +++
 bg-img = true
+blurb = "This quiz highlights the differences between Josh Shapiro and Stacy Garrity, and shows you which candidate you best align with."
 candidateSrc = "candidates-gov-2026"
 credits = "  \n{{<featured/credit\n  eyebrow=\"Illustration\"\n  name=\"Daniel Fishel\"\n  role=\"For Spotlight PA\"\n>}}\n{{<featured/credit\n    eyebrow=\"Layout\"\n    name=\"Carlana Johnson\"\n    role=\"Director of Technology\"\n    email=\"cjohnson@spotlightpa.org\"\n>}}\n\n<span class=\"spl-links-navy\">Spotlight PA wrote this quiz based on the candidates' public statements, campaign websites, and more. Send feedback to [Sarah Anne Hughes](mailto:shughes@spotlightpa.org).</span>\n"
 description = "Use our interactive tool to see which major party candidate for Pennsylvania governor most closely aligns with what matters to you."
