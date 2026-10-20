@@ -6,16 +6,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/interactives/gov-quiz.md"
+    "content/news/2026-10-20-VBDEMMAIL1026.md"
   ],
   "subfeatures": [
-    "content/news/2026-10-19-SPLFULLELEXGUIDE1026.md",
-    "content/news/2026-09-14-SPLMAINGOVGUIDE0926.md",
-    "content/news/2026-10-05-SPLMAILGEN1026.md"
+    "content/news/2026-10-05-SPLMAILGEN1026.md",
+    "content/news/2026-05-08-VBMAILRULES0526.md",
+    "content/news/2026-06-03-VBCURESTUDY0626.md"
   ],
   "topSlots": [
+    "content/interactives/gov-quiz.md",
     "content/news/2026-10-16-SPLSKILLDEADLINE1026.md",
-    "content/news/2026-10-15-SPL8THREFORM1026.md",
-    "content/news/2026-10-14-splDDRD1026.md"
+    "content/news/2026-10-15-SPL8THREFORM1026.md"
   ]
 }
