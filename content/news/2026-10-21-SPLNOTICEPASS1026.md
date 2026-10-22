@@ -63,5 +63,5 @@ Freeman said he believes his proposal was the better of the two, but he supports
 
 In a statement Wednesday, Coleman echoed the sentiment.
 
-“Transparency only works when the public can see what&#39;s coming,” he said, adding: “Today&#39;s … vote sends a clear message that Pennsylvanians deserve notice before their local governments act on consequential matters, not after.
+“Transparency only works when the public can see what&#39;s coming,” he said, adding: “Today&#39;s … vote sends a clear message that Pennsylvanians deserve notice before their local governments act on consequential matters, not after.”
 
