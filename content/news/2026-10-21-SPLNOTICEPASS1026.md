@@ -35,7 +35,7 @@ Good-government advocates almost immediately warned the ruling could lead to gov
 
 The <a href="https://www.palegis.us/legislation/bills/2025/sb1150">bill</a>, authored by state Sens. Patrick Stefano (R., Fayette) and Jarrett Coleman (R., Lehigh) and headed to Shapiro for his signature, both clarifies and claws back exceptions to the 24-hour rule.
 
-It unanimously passed the state Senate in June and cleared the House 182-21 on Wednesday, which will likely be the last formal voting day of the two-year session. A spokesperson for the governor said he intends to sign it.
+It unanimously passed the state Senate in June and cleared the House 182-21 on Wednesday, which will likely be the last formal voting day of the two-year session. Shapiro signed it into law on Thursday.
 
 The Sunshine Act, as it is currently written, allows exceptions to the 24-hour notice requirement for emergency matters; last-minute but “de minimus” issues; and matters a resident or taxpayer raises during a public meeting that require an on-the-spot vote or a referral to staff.
 
