@@ -161,7 +161,7 @@ donate ="""
 layout = "internal-links"
 
 [[blocks.link]]
-title = "One Vote, Two Pennsylvanias"
+title = "One Vote, Two PAs"
 link = "one-vote-two-pennsylvanias"
 
 [[blocks.link]]
@@ -171,6 +171,10 @@ link = "quiz"
 [[blocks.link]]
 title = "Voter Guides"
 link = "guides"
+
+[[blocks.link]]
+title = "Campaign Finance"
+link = "campaign-finance"
 
 [[blocks.link]]
 title = "More Coverage"
@@ -207,6 +211,15 @@ layout = "story-collection"
 timeFilter = "2026-09-14"
 collection = "series/voting-guides-2026/_index.md"
 collectionReadMore = "Read More Voter Guides"
+
+[[blocks]]
+layout = "ballyhoo"
+id = "campaign-finance"
+image = "2026/04/01mx-zgrk-8tmk-c28x.jpeg"
+hed = "The money race"
+dek = "Explore how much money Democrat Josh Shapiro and Republican Stacy Garrity have raised in their campaigns for Pa. governor."
+cta = "EXPLORE CAMPAIGN FINANCE →"
+link = "/news/2026/04/pennsylvania-election-governor-josh-shapiro-stacy-garrity-campaign-finance-visualized-elections/"
 
 [[blocks]]
 layout = "signup-inline"
