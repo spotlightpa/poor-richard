@@ -9,7 +9,7 @@ aliases = ["/jobs/"]
 ### Current openings
 
 - [Editorial Director](#editorial-director)
-
+- [Managing Editor, State College regional bureau (non-guild)](#managing-editor-state-college-regional-bureau-non-guild)
 ## Editorial Director
 
 ### [Apply here](https://spotlightpa.applytojob.com/apply/HobgUx3tAZ/Editorial-Director)
@@ -29,6 +29,23 @@ Top-notch organizational skills and a demonstrated attention to detail are a mus
 This job is full-time and includes benefits, with an estimated salary range of $160,000-$175,000, though other factors could affect an ultimate offer. Candidates must be based in Pennsylvania or willing to relocate in short order, and will need to travel for in-state engagements and national conferences several times per year. Applicants should include a resume and cover letter addressing in specific detail how they meet the qualifications listed in this posting. 
 
 We know not everyone reading this will fit exactly what we've described. We encourage anyone who shares our passion for accountability reporting, collaborative journalism, and newsroom leadership to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we strongly encourage applications from members of underrepresented communities, including women, people of color, LGBTQ people, and people with disabilities.
+
+- - -
+
+## Managing Editor, State College regional bureau (non-guild)
+### [Apply here](https://spotlightpa.applytojob.com/apply/982My33jDR/Managing-Editor-State-College-Regional-Bureau-nonguild)
+
+**Summary**: Spotlight PA is seeking a managing editor to lead its award-winning State College regional bureau. This bureau, which covers 14 counties in north-central Pennsylvania, was established in July 2022 by Spotlight PA, an independent, nonpartisan newsroom founded in 2019 to revitalize investigative and public-service reporting across Pennsylvania. The mission of Spotlight PA is simple: to hold powerful private and public forces to account by producing nonpartisan journalism that gets results and serves the public good. Spotlight PA has the largest collaborative local journalism network of its kind in the United States, with stories regularly republished across 125+ partner newsrooms, allowing our vital reporting to reach Pennsylvanians in all corners and drive positive change.
+
+The State College bureau produces in-depth investigative and public-service reporting on Penn State, the commonwealth's most influential university; the health of the region’s rural communities; and urgent local government issues. The bureau distributes its journalism through Spotlight PA and its partner network, including multiple outlets across the region, filling information gaps and elevating stories from north-central Pennsylvania to a statewide audience. Through its journalism, events, local newsletter, and more, the bureau serves as a vital public service, while also promoting greater collaboration among media and other organizations.
+
+**What you’ll do**: The managing editor supervises three reporters based in north-central Pennsylvania to execute the newsroom’s goal of creating compelling accountability and public-service journalism that gets results. You will assign beats and coverage, coach them on pitches, sourcing and story structure, hold regular one-on-ones, set goals, and provide clear and frank feedback. You will address performance issues, and, if necessary, effectively recommend discipline to the Senior Managing Editor, Local. You will approve PTO and schedule changes based on coverage needs. You will also lead recruitment and hiring for the team, recommend hires to senior management, and always have an eye out for talent. The managing editor also writes and produces Talk of the Town, a three-day-a-week newsletter focused on the news that matters to communities from the PA Wilds to Happy Valley. The managing editor will handle other duties as assigned, including collaborating and working with community partners, as well as appearing at in-person editorial and fundraising events.
+
+Who we’re looking for: The managing editor should have experience overseeing, editing, and executing local journalism from idea through publication, and, ideally, with impact. Applicants should have strong editing and story organization skills, and be enthusiastic about working one-on-one with reporters in various stages of their careers. We want someone who’s not afraid to bring big ideas to the table with the skills and persistence to pull them off. The ability to work in a collaborative environment with external partners is a must. We’re an agile startup that values camaraderie, and everyone on our team pitches in across the organization and brings a sense of urgency and drive to their work every day. We also value innovation, creativity, and originality, and we’re always seeking to explore new and experimental ways of telling stories and connecting with audiences.
+
+**This job is full-time and includes benefits. The editor must have a strong working knowledge of Centre County and/or north-central Pennsylvania. The position is remote, though applicants should be based in or willing to relocate to north-central PA. This position is budgeted for a salary of $80,000-$90,000, depending on experience. Applicants should include a resume and a one-page cover letter that answers the following question: Tell us about a difficult project you led to completion, and what impact came as a result?**
+ 
+We know not everyone reading this will fit exactly what we’ve described. We encourage everyone who shares our passion for indispensable journalism and our drive to create a sustainable business model to support it to apply. Spotlight PA is committed to fostering a diverse and inclusive culture, and we especially encourage people from marginalized and underrepresented backgrounds to apply, including people of color, women, people from the LGBTQIA+ community, and people with disabilities.
 
 - - -
 
