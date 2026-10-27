@@ -9,14 +9,15 @@
     "content/news/2026-10-27-SPLGOVCF102026.md"
   ],
   "subfeatures": [
+    "content/berks/2026-10-27-SPLRSDTRPS1026.md",
     "content/news/2026-10-26-SPLNOV3LASTMINGUIDE.md",
     "content/news/2026-09-14-SPLMAINGOVGUIDE0926.md",
     "content/news/2026-09-25-SPLC4GOV0926.md",
     "content/interactives/gov-quiz.md"
   ],
   "topSlots": [
+    "content/berks/2026-10-27-SPLRSDTRPS1026.md",
     "content/news/2026-10-26-SPL1STCON1026.md",
-    "content/news/2026-10-22-SPLCHILDFUND1026.md",
     "content/news/2026-10-22-SPLLEGSESSION1026.md"
   ]
 }
