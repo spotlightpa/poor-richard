@@ -651,9 +651,10 @@ export default function inspectionsUI() {
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.classList.remove("hidden"));
 
-      window.dispatchEvent(new CustomEvent("inspections-refresh-search-ui"));
-
-      if (!this.activeCard) return;
+      if (!this.activeCard) {
+        window.dispatchEvent(new CustomEvent("inspections-refresh-search-ui"));
+        return;
+      }
       const card = this.activeCard;
       card.classList.remove(...DETAIL_SCROLL);
       card.scrollTop = 0;
@@ -686,6 +687,7 @@ export default function inspectionsUI() {
 
       Alpine.store("inspections").currentPage;
       window.dispatchEvent(new CustomEvent("inspections-render-pagination"));
+      window.dispatchEvent(new CustomEvent("inspections-refresh-search-ui"));
     },
 
     releaseDetail(card) {
