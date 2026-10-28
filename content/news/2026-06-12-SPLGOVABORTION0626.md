@@ -29,7 +29,7 @@ This November, Pennsylvania voters will choose between candidates for governor w
 
 Pregnancies can be ended in Pennsylvania up to 24 weeks gestation, a deadline tied to the concept of <a href="https://www.nytimes.com/2021/11/28/us/politics/supreme-court-mississippi-abortion-law.html">viability</a> that was introduced in <em>Roe</em>. Abortions can be performed after that cutoff if a pregnant person’s life or health is in danger.
 
-{{<embed/newsletter>}}
+{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/">}}
 
 Incumbent Democratic Gov. Josh Shapiro is a vocal supporter of preserving that status quo, <a href="https://www.google.com/search?q=shapiro+veto+abortion+legislation&amp;rlz=1C5CHFA_enUS1017US1017&amp;oq=shapiro+veto+abortion+legislation&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigAdIBCDk1NThqMGo0qAIAsAIB8QUWZ4a_nitj6g&amp;sourceid=chrome&amp;ie=UTF-8">promising to veto</a> any legislation that would further restrict access and <a href="https://www.wesanews.org/health-science-tech/2026-05-04/shapiro-pennsylvania-legal-battle-access-abortion-pill">joining a suit against a federal court&#39;s</a> decision to ban the mailing of abortion medication.
 
