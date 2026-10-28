@@ -6,18 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-10-27-SPLGOVCF102026.md"
+    "content/news/2026-10-28-SPL1VOTECHILD1026.md"
   ],
   "subfeatures": [
-    "content/berks/2026-10-27-SPLRSDTRPS1026.md",
-    "content/news/2026-10-26-SPLNOV3LASTMINGUIDE.md",
-    "content/news/2026-09-14-SPLMAINGOVGUIDE0926.md",
-    "content/news/2026-09-25-SPLC4GOV0926.md",
-    "content/interactives/gov-quiz.md"
+    "content/news/2026-10-13-SPL1VOTEIMMIG1026.md",
+    "content/news/2026-10-08-SPLBUDGVOTE1026.md",
+    "content/news/2026-10-02-SPLEDUVOTE1026.md",
+    "content/news/2026-09-02-SPLLGBTQGUV0926.md"
   ],
   "topSlots": [
+    "content/news/2026-10-27-SPLGOVCF102026.md",
     "content/berks/2026-10-27-SPLRSDTRPS1026.md",
-    "content/news/2026-10-26-SPL1STCON1026.md",
-    "content/news/2026-10-22-SPLLEGSESSION1026.md"
+    "content/news/2026-10-26-SPL1STCON1026.md"
   ]
 }
