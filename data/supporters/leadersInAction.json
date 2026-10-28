@@ -610,13 +610,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Patricia Elaine Hall and Frank Huppe",
-      "sort": "Hall",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Katie Hannon",
       "sort": "Hannon",
       "url": "",
@@ -669,8 +662,8 @@
       "display": "Robyn and Thomas Holder",
       "sort": "Holder",
       "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Ruth and Bruce Hollender",
@@ -794,13 +787,6 @@
     {
       "display": "Sally Kennard",
       "sort": "Kennard",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
-      "display": "Howard Kolus",
-      "sort": "Kolus",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -981,25 +967,11 @@
       "categoryRank": "6"
     },
     {
-      "display": "Timothy Miksiewicz",
-      "sort": "Miksiewicz",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Marlin Miller",
       "sort": "Miller",
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
-    },
-    {
-      "display": "Rashele Moore",
-      "sort": "Moore",
-      "url": "",
-      "category": "$2,500-$4,999",
-      "categoryRank": "5"
     },
     {
       "display": "Joan Miller Moran",
@@ -1205,6 +1177,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Glenn Rogers",
+      "sort": "Rogers",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Bruce and Elizabeth Rubin",
       "sort": "Rubin",
       "url": "",
@@ -1362,8 +1341,8 @@
       "display": "Michael and Sybil Stershic",
       "sort": "Stershic",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Robert and Suzanne Stetson",
@@ -1593,8 +1572,8 @@
       "display": "Ted and Pam Yeager",
       "sort": "Yeager",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Cliff Zukin and Debbie Walsh",
