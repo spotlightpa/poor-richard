@@ -33,7 +33,7 @@ Midterm elections generally draw fewer voters than presidential elections, thoug
 
 All three districts, located in suburban areas of the commonwealth, are currently represented by Republicans. Below, hear from voters about why and how they made their choices.
 
-{{<picture caption="U.S. Rep. Brian Fitzpatrick (left) and his Democratic opponent, Bob Harvie" credit="Courtesy of the campaigns" description="U.S. Rep. Brian Fitzpatrick (left) and his Democratic opponent, Bob Harvie" src="2026/10/01nd-q7cy-jh16-j6wp.png">}}
+{{<picture caption="U.S. Rep. Brian Fitzpatrick (left) and his Democratic opponent, Bob Harvie" credit="Courtesy of the campaigns" description="U.S. Rep. Brian Fitzpatrick (left) and his Democratic opponent, Bob Harvie" height-ratio="1080" src="2026/10/01nd-q7cy-jh16-j6wp.png" width-ratio="1920">}}
 
 ## 1st Congressional District<em></em>
 
@@ -91,7 +91,7 @@ He’s also paying attention to anti-corruption issues, and said he’s in favor
 
 “A lot of corporations really have a lot of influence on our congressmen through the lobbying groups and the money they&#39;re paid — it&#39;s just a shame,” he said. &#34;They&#39;re only worrying about looking after themselves and keeping their office.”
 
-{{<picture caption="U.S. Rep. Ryan Mackenzie (left) and Democrat Bob Brooks" credit="Courtesy of the candidates’ campaigns" description="U.S. Rep. Ryan Mackenzie (left) and Democrat Bob Brooks" src="cas/55gq-xp14-sn1j-f0v5.png">}}
+{{<picture caption="U.S. Rep. Ryan Mackenzie (left) and Democrat Bob Brooks" credit="Courtesy of the candidates’ campaigns" description="U.S. Rep. Ryan Mackenzie (left) and Democrat Bob Brooks" height-ratio="1080" src="cas/55gq-xp14-sn1j-f0v5.png" width-ratio="1920">}}
 
 ## 7th Congressional District
 
