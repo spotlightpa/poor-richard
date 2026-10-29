@@ -117,8 +117,9 @@ export default function inspectionsMobile() {
     view: "list",
     showBar: false,
     showThumb: true,
-    searching: false,
-    kb: 0,
+    sheetOpen: false,
+    compact: false,
+    _anchor: 0,
     preview: false,
     previewId: "",
     mapId: "inspections-map-mobile",
@@ -177,8 +178,6 @@ export default function inspectionsMobile() {
     clearQuery,
     clearAll: clearAllFilters,
 
-    locating: false,
-
     openAlerts() {
       window.dispatchEvent(
         new CustomEvent("open-city-alerts-modal", {
@@ -211,19 +210,10 @@ export default function inspectionsMobile() {
       }).observe(this.$refs.bar);
       new ResizeObserver(schedule).observe(this.$el);
 
-      const vv = window.visualViewport;
-      if (vv) {
-        const onViewport = () => {
-          this.kb = Math.max(
-            0,
-            Math.round(window.innerHeight - vv.height - vv.offsetTop),
-          );
-        };
-        vv.addEventListener("resize", onViewport);
-        vv.addEventListener("scroll", onViewport);
-      }
-
-      this.$watch("searching", schedule);
+      this.$refs.sheet.inert = true;
+      this.initSheetDrag();
+      this.$watch("store.searchQuery", () => this.closeSheet());
+      this.$watch("store.currentCity", () => this.closeSheet());
       schedule();
     },
 
@@ -243,9 +233,126 @@ export default function inspectionsMobile() {
       const content = this.view === "map" ? this.$refs.map : this.$refs.list;
       const resultsTop = content.getBoundingClientRect().top;
       this.showThumb =
-        this.searching ||
-        end > window.innerHeight * 0.45 ||
-        resultsTop >= nav + barH - 2;
+        end > window.innerHeight * 0.45 || resultsTop >= nav + barH - 2;
+
+      const y = window.scrollY;
+      if (y < 120) {
+        this.compact = false;
+        this._anchor = y;
+      } else if (this.compact ? y > this._anchor : y < this._anchor) {
+        this._anchor = y;
+      } else if (Math.abs(y - this._anchor) > 24) {
+        this.compact = y > this._anchor;
+        this._anchor = y;
+      }
+    },
+
+    initSheetDrag() {
+      const sheet = this.$refs.sheet;
+      const panel = sheet.querySelector("[data-sheet-panel]");
+      const backdrop = sheet.querySelector("[data-sheet-backdrop]");
+      const head = sheet.querySelector("[data-sheet-head]");
+      const body = sheet.querySelector("[data-sheet-body]");
+      let drag = null;
+
+      const begin = (y) => {
+        drag = { y, t: performance.now(), dy: 0 };
+        panel.style.transition = "none";
+        backdrop.style.transition = "none";
+        sheet.querySelector("input")?.blur();
+      };
+      const moveTo = (dy) => {
+        drag.dy = dy;
+        const offset = dy > 0 ? dy : dy / 4;
+        panel.style.transform = `translateY(${offset}px)`;
+        backdrop.style.opacity = String(
+          1 - Math.min(1, Math.max(0, dy) / panel.offsetHeight),
+        );
+      };
+      const finish = () => {
+        if (!drag) return;
+        const { dy, t } = drag;
+        drag = null;
+        const velocity = dy / Math.max(1, performance.now() - t);
+        panel.style.transition = "";
+        backdrop.style.transition = "";
+        void panel.offsetHeight;
+        panel.style.transform = "";
+        backdrop.style.opacity = "";
+        if (dy > 110 || velocity > 0.5) this.closeSheet();
+      };
+
+      head.addEventListener("pointerdown", (e) => {
+        if (e.pointerType === "mouse" && e.button !== 0) return;
+        if (e.target.closest("button, input")) return;
+        head.setPointerCapture?.(e.pointerId);
+        begin(e.clientY);
+      });
+      head.addEventListener("pointermove", (e) => {
+        if (drag) moveTo(e.clientY - drag.y);
+      });
+      head.addEventListener("pointerup", finish);
+      head.addEventListener("pointercancel", finish);
+
+      let touch = null;
+      body.addEventListener(
+        "touchstart",
+        (e) => {
+          touch =
+            body.scrollTop <= 0
+              ? { y: e.touches[0].clientY, active: false }
+              : null;
+        },
+        { passive: true },
+      );
+      body.addEventListener(
+        "touchmove",
+        (e) => {
+          if (!touch) return;
+          const dy = e.touches[0].clientY - touch.y;
+          if (!touch.active) {
+            if (dy < 8 || body.scrollTop > 0) {
+              if (dy < 0) touch = null;
+              return;
+            }
+            touch.active = true;
+            begin(touch.y + 8);
+          }
+          e.preventDefault();
+          moveTo(e.touches[0].clientY - drag.y);
+        },
+        { passive: false },
+      );
+      const touchEnd = () => {
+        if (touch?.active) finish();
+        touch = null;
+      };
+      body.addEventListener("touchend", touchEnd);
+      body.addEventListener("touchcancel", touchEnd);
+    },
+
+    openSheet() {
+      const sheet = this.$refs.sheet;
+      sheet.inert = false;
+      const input = sheet.querySelector("input");
+      input?.focus({ preventScroll: true });
+      input?.select();
+      this.sheetOpen = true;
+      document.documentElement.classList.add("overflow-hidden");
+    },
+
+    closeSheet() {
+      if (!this.sheetOpen) return;
+      const sheet = this.$refs.sheet;
+      sheet.querySelector("input")?.blur();
+      this.sheetOpen = false;
+      sheet.inert = true;
+      document.documentElement.classList.remove("overflow-hidden");
+      window.dispatchEvent(
+        new CustomEvent("inspections-apply-search", {
+          detail: { value: this.store.searchQuery || "" },
+        }),
+      );
     },
 
     setView(view) {

@@ -1,5 +1,5 @@
 <div
-  class="relative bg-g-3 md:hidden"
+  class="relative overflow-x-clip bg-g-3 md:hidden"
   data-mobile-tracker
   x-data="inspectionsMobile()"
   x-init="init()"
@@ -96,6 +96,7 @@
 
   <div
     x-ref="list"
+    data-view-pane="list"
     x-show="view === 'list'"
     class="group/list min-h-svh"
     :class="{ 'min-h-svh': !$store.inspections.allData.length }"
@@ -220,6 +221,7 @@
 
   <div
     x-ref="map"
+    data-view-pane="map"
     x-show="view === 'map'"
     x-cloak
     class="relative h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,53px))] min-h-[360px] bg-g-2"
@@ -288,46 +290,8 @@
   </div>
   <div x-ref="end" aria-hidden="true"></div>
 
-  <div
-    data-show="true"
-    :data-show="showThumb ? 'true' : 'false'"
-    :style="kb ? 'transform: translateY(-' + kb + 'px)' : ''"
-    @focusin="searching = true"
-    @focusout="searching = false"
-    class="fixed inset-x-2.5 bottom-[calc(12px+env(safe-area-inset-bottom))] z-40 flex items-center gap-1.5 rounded-[26px] bg-black p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.35)] data-[show=false]:hidden"
-  >
-    {{ partial "blocks/search-pill.html" (dict
-      "placeholder" (default "Search" (.Param "search-placeholder"))
-      "showLocation" false
-      "scope" "mobile-bar"
-      "fieldClass" "bg-white"
-      "context" .
-      )
-    }}
-    <button
-      type="button"
-      @click="$dispatch('inspections-locate', { scope: 'mobile-bar' })"
-      @inspections-locating.window="if ($event.detail.scope === 'mobile-bar') locating = $event.detail.loading"
-      :disabled="locating"
-      :aria-busy="locating ? 'true' : 'false'"
-      class="flex h-12 flex-shrink-0 items-center justify-center gap-1.5 rounded-full bg-yellow px-4 font-sans text-[15px] font-bold whitespace-nowrap text-g-9 transition-colors hover:bg-yellow-3 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none disabled:cursor-wait disabled:opacity-80 max-[359px]:px-3 max-[359px]:text-sm"
-    >
-      <svg
-        x-show="!locating"
-        class="h-4 w-4 flex-shrink-0 fill-current"
-        aria-hidden="true"
-      >
-        <use href="#crosshairs-svg" />
-      </svg>
-      <svg
-        x-show="locating"
-        x-cloak
-        class="h-4 w-4 flex-shrink-0 animate-spin fill-current"
-        aria-hidden="true"
-      >
-        <use href="#circle-notch-svg" />
-      </svg>
-      <span x-text="locating ? 'Locating…' : 'Near me'">Near me</span>
-    </button>
-  </div>
+  {{ partial "blocks/search-sheet.html" (dict
+    "placeholder" (default "Search" (.Param "search-placeholder"))
+    )
+  }}
 </div>
