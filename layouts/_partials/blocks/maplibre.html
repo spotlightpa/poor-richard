@@ -96,12 +96,13 @@
               .forEach((el) => el.remove());
           } catch {}
 
-          this._savedMapState = {
+          this._savedMapState = this._restoringTo || {
             center: this.map.getCenter().toArray(),
             zoom: this.map.getZoom(),
             bearing: this.map.getBearing(),
             pitch: this.map.getPitch(),
           };
+          this._restoringTo = null;
 
           this._allMarkers = [...this._markerInstances];
 
@@ -174,16 +175,20 @@
               .forEach((el) => el.remove());
           } catch {}
 
+          const target = this._savedMapState;
+          this._restoringTo = target;
           this.map.flyTo({
-            center: this._savedMapState.center,
-            zoom: this._savedMapState.zoom,
-            bearing: this._savedMapState.bearing,
-            pitch: this._savedMapState.pitch,
+            center: target.center,
+            zoom: target.zoom,
+            bearing: target.bearing,
+            pitch: target.pitch,
             speed: 0.8,
             curve: 1.42,
           });
 
           setTimeout(() => {
+            if (this._restoringTo !== target) return;
+            this._restoringTo = null;
             try {
               this.map
                 .getContainer()
@@ -388,6 +393,17 @@
             const latest = window.__inspectionsMarkers;
             if (Array.isArray(latest) && latest.length) {
               this.updateMarkers(latest);
+            }
+
+            const card = Array.from(
+              document.querySelectorAll(".detail-content"),
+            )
+              .map((d) => d.closest('[data-card="inspection"]'))
+              .find((c) => c && c.offsetParent !== null);
+            const lat = parseFloat(card?.getAttribute("data-lat"));
+            const lon = parseFloat(card?.getAttribute("data-lon"));
+            if (!isNaN(lat) && !isNaN(lon)) {
+              this._zoomToMarkerHandler({ detail: { lat, lon } });
             }
           });
 

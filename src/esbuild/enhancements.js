@@ -95,6 +95,21 @@ Alpine.directive(
   },
 );
 
+function storedSort() {
+  const legacy = { "high-risk": "risk-desc", alphabetical: "alpha-asc" };
+  const valid = [
+    "date-desc",
+    "date-asc",
+    "risk-desc",
+    "risk-asc",
+    "alpha-asc",
+    "alpha-desc",
+  ];
+  const saved = localStorage.getItem("inspections-sort") || "";
+  const value = legacy[saved] || saved;
+  return valid.includes(value) ? value : "date-desc";
+}
+
 Alpine.store("inspections", {
   allData: [],
   groupedFacilities: {},
@@ -102,7 +117,7 @@ Alpine.store("inspections", {
   sortedFilteredData: [],
   currentPage: 1,
   totalPages: 1,
-  currentSort: localStorage.getItem("inspections-sort") || "date-desc",
+  currentSort: storedSort(),
   searchQuery: "",
   currentCity: "",
   currentPriority: "",

@@ -1,7 +1,6 @@
 import Alpine from "alpinejs/src/index.js";
 import {
   normalizeString,
-  levenshtein,
   parseInspectionDate,
   getRiskScore,
   escapeHTML,
@@ -22,7 +21,7 @@ const ITEMS_PER_PAGE = 10;
 function groupByFacility(rows) {
   const grouped = {};
   rows.forEach((row) => {
-    const id = row.id || `${row.facility} — ${row.address}`;
+    const id = row.id || `${row.facility}|${row.address}`;
     if (!grouped[id]) grouped[id] = [];
     grouped[id].push(row);
   });
@@ -81,39 +80,29 @@ function matchesPriority(entry, priority) {
 }
 
 export function buildCityList(allData) {
-  const counts = {};
-  const labelByKey = {};
-  const keys = [];
+  const facilities = {};
+  const labels = {};
 
   for (const row of allData) {
-    const raw = row.city ? String(row.city) : "";
-    const nrm = normalizeString(raw);
-    if (!nrm) continue;
-
-    let key = nrm;
-    if (!counts[key]) {
-      const found = keys.find((existing) => {
-        if (existing.charAt(0) !== key.charAt(0)) return false;
-        if (Math.abs(existing.length - key.length) > 4) return false;
-        return levenshtein(existing, key) <= 3;
-      });
-      if (found) key = found;
+    const raw = row.city ? String(row.city).trim() : "";
+    const key = normalizeString(raw);
+    if (!key) continue;
+    if (!facilities[key]) {
+      facilities[key] = new Set();
+      labels[key] = {};
     }
-
-    if (!counts[key]) {
-      counts[key] = 0;
-      labelByKey[key] = raw;
-      keys.push(key);
-    }
-    counts[key] += 1;
+    facilities[key].add(row.id || `${row.facility}|${row.address}`);
+    labels[key][raw] = (labels[key][raw] || 0) + 1;
   }
 
-  return keys
-    .map((k) => ({
-      value: labelByKey[k] || k,
-      text: labelByKey[k] || k,
-      count: counts[k] || 0,
-    }))
+  return Object.keys(facilities)
+    .map((key) => {
+      const spellings = labels[key];
+      const label = Object.keys(spellings).sort(
+        (a, b) => spellings[b] - spellings[a],
+      )[0];
+      return { value: label, text: label, count: facilities[key].size };
+    })
     .sort((a, b) => b.count - a.count);
 }
 
@@ -166,12 +155,7 @@ function filterFacilities(
     if (!searchMatch) return false;
     if (!matchesPriority(entry, currentPriority)) return false;
     if (!nCity) return true;
-
-    const ec = entry.city;
-    if (ec === nCity) return true;
-    if (!ec || ec.charAt(0) !== nCity.charAt(0)) return false;
-    if (Math.abs(ec.length - nCity.length) > 4) return false;
-    return levenshtein(ec, nCity) <= 3;
+    return entry.city === nCity;
   });
 }
 
@@ -479,6 +463,18 @@ export default function inspectionsData() {
 
       this.updateTotalPages();
 
+      window.addEventListener("mobile-view-changed", (e) => {
+        if (e.detail?.view === "map") this.syncMarkers();
+      });
+
+      window.addEventListener("map:ready", () => {
+        this.syncMarkers();
+      });
+
+      window.addEventListener("inspections-render-pagination", () => {
+        this.renderPaginationControls();
+      });
+
       const hash = window.location.hash.slice(1);
       const qParam =
         new URLSearchParams(window.location.search).get("facility") || "";
@@ -498,18 +494,6 @@ export default function inspectionsData() {
       }
 
       this.resortAndRender();
-
-      window.addEventListener("mobile-view-changed", (e) => {
-        if (e.detail?.view === "map") this.syncMarkers();
-      });
-
-      window.addEventListener("map:ready", () => {
-        this.syncMarkers();
-      });
-
-      window.addEventListener("inspections-render-pagination", () => {
-        this.renderPaginationControls();
-      });
     },
 
     updateTotalPages() {
@@ -580,7 +564,10 @@ export default function inspectionsData() {
               (id, i) => id === Alpine.raw(this.store.filteredData)[i],
             );
 
-          if (unchanged) return;
+          if (unchanged) {
+            this.updateSearchUI();
+            return;
+          }
 
           this.store.filteredData = newFilteredData;
           this.store.currentPage = 1;
@@ -615,11 +602,11 @@ export default function inspectionsData() {
       }
 
       this.appendCards(pageGroups, start);
-      window.dispatchEvent(new CustomEvent("inspections-page-rendered"));
 
       const flatRows = pageGroups.map((g) => g[0]);
       this.store.markers = rowsToMarkers(flatRows, start);
       this.syncMarkers();
+      window.dispatchEvent(new CustomEvent("inspections-page-rendered"));
 
       if (!this.initialRender) {
         this.updateSearchUI();
@@ -644,7 +631,9 @@ export default function inspectionsData() {
       }
       this.initialRender = false;
       this.rendering = false;
-      setTimeout(() => this.syncMarkers(), 100);
+      setTimeout(() => {
+        if (!document.querySelector(".detail-content")) this.syncMarkers();
+      }, 100);
     },
 
     appendCards(groupedInspections, startIndex) {

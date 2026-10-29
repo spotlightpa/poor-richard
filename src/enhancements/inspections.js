@@ -205,6 +205,10 @@ export function searchUI() {
       window.addEventListener("inspections-apply-search", (event) => {
         this.q = event.detail?.value || "";
       });
+
+      this.$watch("$store.inspections.searchQuery", (value) => {
+        if ((this.q || "").trim() !== (value || "")) this.q = value || "";
+      });
     },
 
     doSearch(val) {
@@ -303,6 +307,7 @@ export function searchUI() {
 
 let inspectionsUIDelegatesInitialized = false;
 let inspectionsUIDataReadyInitialized = false;
+let inspectionsUIHashInitialized = false;
 
 export default function inspectionsUI() {
   return {
@@ -428,6 +433,15 @@ export default function inspectionsUI() {
             ?.focus();
         });
         inspectionsUIDelegatesInitialized = true;
+      }
+
+      if (!inspectionsUIHashInitialized) {
+        inspectionsUIHashInitialized = true;
+        window.addEventListener("hashchange", () => {
+          if (window.location.hash) return;
+          if (!document.querySelector(".detail-content")) return;
+          window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
+        });
       }
 
       if (!inspectionsUIDataReadyInitialized) {
