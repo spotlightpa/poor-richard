@@ -1,6 +1,6 @@
 +++
 authors = ["Molly Bilinski"]
-blurb = "Four PA races will help determine which party controls the U.S. House. Voters in the critical 1st, 7th, and 10th Congressional Districts told us what matters to them."
+blurb = "Four Pa. races will help determine which party controls the U.S. House. Hear from voters about the issues driving their decisions."
 byline = "Molly Bilinski for Spotlight PA"
 description = "Four PA races will help determine which party controls the U.S. House. Hear from voters about the issues driving their decisions."
 draft = false
