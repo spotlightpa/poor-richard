@@ -139,9 +139,36 @@
       <div class="w-full bg-white px-4 md:px-0">
         <div class="grid grid-cols-[240px_auto_1fr_1fr]">
           <div
-            class="sticky top-[calc(73px+var(--tracker-bar-h,0px))] flex h-[calc(100vh-73px-var(--tracker-bar-h,0px))] flex-col gap-5 overflow-y-auto bg-g-1 px-5 pt-4 pb-4 font-sans"
+            class="group/side sticky top-[calc(73px+var(--tracker-bar-h,0px))] flex h-[calc(100vh-73px-var(--tracker-bar-h,0px))] flex-col gap-5 bg-g-1 px-5 pt-4 pb-4 font-sans data-compact:gap-3 data-scroll:overflow-y-auto"
+            x-init="initFit()"
             x-data="{
             sortOpen: false,
+            initFit() {
+              const el = this.$el;
+              const levels = [
+                [],
+                ['compact'],
+                ['nocard'],
+                ['nocard', 'compact'],
+                ['nocard', 'compact', 'nofaq'],
+                ['nocard', 'compact', 'nofaq', 'scroll'],
+              ];
+              const overflows = () => {
+                const kids = Array.from(el.children).filter((c) => c.offsetParent !== null);
+                const last = kids[kids.length - 1];
+                if (!last) return false;
+                const pad = parseFloat(getComputedStyle(el).paddingBottom) || 0;
+                return last.getBoundingClientRect().bottom + pad > el.getBoundingClientRect().bottom + 0.5;
+              };
+              const measure = () => {
+                for (const level of levels) {
+                  ['compact', 'nocard', 'nofaq', 'scroll'].forEach((k) => el.toggleAttribute('data-' + k, level.includes(k)));
+                  if (!overflows()) break;
+                }
+              };
+              new ResizeObserver(measure).observe(el);
+              document.fonts?.ready.then(measure);
+            },
             priorities: [
               { value: '', label: 'All' },
               { value: 'high', label: 'High', color: '#D70000' },
@@ -329,7 +356,7 @@
                   x-show="open && !selectedValue"
                   x-cloak
                   x-ref="cityList"
-                  class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-xl border border-g-3 bg-white py-1 shadow-lg"
+                  class="absolute left-0 z-20 mt-2 max-h-[min(18rem,40vh)] w-full overflow-auto rounded-xl border border-g-3 bg-white py-1 shadow-lg"
                   role="listbox"
                   @keydown.arrow-down.prevent="$focus.wrap().next()"
                   @keydown.arrow-up.prevent="$focus.wrap().previous()"
@@ -439,7 +466,7 @@
 
             {{ with .Param "complaint-url" }}
               <div
-                class="rounded-2xl bg-white p-3.5 shadow-[0_0_0_1px_rgba(0,0,0,0.08)] [@media(max-height:780px)]:hidden"
+                class="rounded-2xl bg-white p-3.5 shadow-[0_0_0_1px_rgba(0,0,0,0.08)] group-data-nocard/side:hidden"
               >
                 <h3 class="text-sm font-bold text-g-9">
                   See a food safety problem?
@@ -461,7 +488,9 @@
             {{ end }}
 
 
-            <p class="text-xs leading-snug text-g-6">
+            <p
+              class="text-xs leading-snug text-g-6 group-data-nofaq/side:hidden"
+            >
               Don't see a facility? Not all facilities are inspected by the
               Dept. of Agriculture. Visit our
               <a
