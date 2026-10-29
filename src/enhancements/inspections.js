@@ -1,5 +1,6 @@
 import Alpine from "alpinejs/src/index.js";
 import {
+  ITEMS_PER_PAGE,
   escapeHTML,
   parseInspectionDate,
   generateInspectionCardId,
@@ -21,6 +22,36 @@ const DETAIL_SCROLL = [
 
 let suggestIndex = null;
 let suggestIndexSize = -1;
+
+function openFacilityCard(cardId) {
+  const store = Alpine.store("inspections");
+  const findButton = () =>
+    Array.from(document.querySelectorAll('[data-card="inspection"]'))
+      .find(
+        (c) =>
+          c.offsetParent &&
+          c.querySelector(`[data-alert-facility="${CSS.escape(cardId)}"]`),
+      )
+      ?.querySelector("[data-read-more]");
+  const btn = findButton();
+  if (btn) {
+    btn.click();
+    return true;
+  }
+  const index = Alpine.raw(store.sortedFilteredData).findIndex(
+    (id) => generateInspectionCardId(id) === cardId,
+  );
+  if (index < 0) return false;
+  const page = Math.floor(index / ITEMS_PER_PAGE) + 1;
+  if (page === store.currentPage) return false;
+  window.addEventListener(
+    "inspections-page-rendered",
+    () => findButton()?.click(),
+    { once: true },
+  );
+  store.currentPage = page;
+  return true;
+}
 
 function getSuggestIndex() {
   const all = Alpine.raw(Alpine.store("inspections").allData) || [];
@@ -162,18 +193,7 @@ export function searchUI() {
       if (window.innerWidth < 850) this.$refs.input?.blur();
       let opened = false;
       const openCard = () => {
-        if (opened) return;
-        const card = Array.from(
-          document.querySelectorAll('[data-card="inspection"]'),
-        ).find(
-          (c) =>
-            c.offsetParent &&
-            c.querySelector(`[data-alert-facility="${CSS.escape(s.id)}"]`),
-        );
-        const btn = card?.querySelector("[data-read-more]");
-        if (!btn) return;
-        opened = true;
-        btn.click();
+        if (!opened) opened = openFacilityCard(s.id);
       };
       window.addEventListener("inspections-page-rendered", openCard, {
         once: true,
@@ -438,9 +458,27 @@ export default function inspectionsUI() {
       if (!inspectionsUIHashInitialized) {
         inspectionsUIHashInitialized = true;
         window.addEventListener("hashchange", () => {
-          if (window.location.hash) return;
-          if (!document.querySelector(".detail-content")) return;
-          window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
+          const target = generateInspectionCardId(
+            window.location.hash.slice(1),
+          );
+          const openId = document
+            .querySelector(".detail-content")
+            ?.closest('[data-card="inspection"]')
+            ?.querySelector("[data-alert-facility]")
+            ?.getAttribute("data-alert-facility");
+          if (openId && openId === target) return;
+          if (openId) {
+            window.dispatchEvent(
+              new CustomEvent("inspections-back-to-results"),
+            );
+          }
+          if (target && !openFacilityCard(target)) {
+            history.replaceState(
+              null,
+              "",
+              window.location.pathname + window.location.search,
+            );
+          }
         });
       }
 
@@ -479,7 +517,7 @@ export default function inspectionsUI() {
       const hash = window.location.hash.slice(1);
       const qParam =
         new URLSearchParams(window.location.search).get("facility") || "";
-      const target = hash || qParam;
+      const target = generateInspectionCardId(hash || qParam);
       if (!target) return;
       const cards = Array.from(
         document.querySelectorAll('[data-card="inspection"]'),
@@ -697,7 +735,15 @@ export default function inspectionsUI() {
       const container = mount
         ? mount.closest(".border-r") || mount.parentElement
         : null;
-      if (container) this.scrollToListTop(container);
+      const mobileResults =
+        window.innerWidth < 850
+          ? Array.from(document.querySelectorAll("[data-mobile-results]")).find(
+              (el) => el.offsetParent !== null,
+            )
+          : null;
+      if (mobileResults || container) {
+        this.scrollToListTop(mobileResults || container);
+      }
 
       Alpine.store("inspections").currentPage;
       window.dispatchEvent(new CustomEvent("inspections-render-pagination"));

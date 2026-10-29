@@ -318,6 +318,8 @@
                     x-model="query"
                     @input="syncShown(); open = true"
                     @focus="open = true"
+                    @keydown.arrow-down.prevent="open = true; $nextTick(() => $focus.within($refs.cityList).first())"
+                    @keydown.enter.prevent="optionsShown.length && choose(optionsShown[0].value)"
                     placeholder="Search cities&hellip;"
                     autocomplete="off"
                     class="h-10 w-full rounded-xl border border-transparent bg-white pr-3 pl-8 text-sm font-semibold text-g-9 shadow-[0_0_0_1px_rgba(0,0,0,0.08)] placeholder:font-normal placeholder:text-g-6 focus:border-g-4 focus:bg-white focus:outline-none"
@@ -326,8 +328,11 @@
                 <div
                   x-show="open && !selectedValue"
                   x-cloak
+                  x-ref="cityList"
                   class="absolute left-0 z-20 mt-2 max-h-72 w-full overflow-auto rounded-xl border border-g-3 bg-white py-1 shadow-lg"
                   role="listbox"
+                  @keydown.arrow-down.prevent="$focus.wrap().next()"
+                  @keydown.arrow-up.prevent="$focus.wrap().previous()"
                 >
                   <template
                     x-for="opt in optionsShown"

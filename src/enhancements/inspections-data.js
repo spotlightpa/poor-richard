@@ -1,6 +1,8 @@
 import Alpine from "alpinejs/src/index.js";
 import {
+  ITEMS_PER_PAGE,
   normalizeString,
+  cityKey,
   parseInspectionDate,
   getRiskScore,
   escapeHTML,
@@ -15,8 +17,6 @@ import {
   applyAlertStates,
   ALERT_STATE_CLASSES,
 } from "../utils/quick-alerts.js";
-
-const ITEMS_PER_PAGE = 10;
 
 function groupByFacility(rows) {
   const grouped = {};
@@ -48,7 +48,7 @@ function buildFacilityIndex(groupedFacilities) {
           row.inspection_date || "",
         ].join(" "),
       ),
-      city: normalizeString(row.city || ""),
+      city: cityKey(row.city || ""),
       dateMs: parseInspectionDate(row.inspection_date).getTime(),
       riskScore: getRiskScore(row.risk_level),
       levels: getRiskLevels(row.risk_level),
@@ -85,7 +85,7 @@ export function buildCityList(allData) {
 
   for (const row of allData) {
     const raw = row.city ? String(row.city).trim() : "";
-    const key = normalizeString(raw);
+    const key = cityKey(raw);
     if (!key) continue;
     if (!facilities[key]) {
       facilities[key] = new Set();
@@ -147,7 +147,7 @@ function filterFacilities(
 ) {
   const needle = normalizeString(searchQuery);
   const tokens = needle ? needle.split(/\s+/).filter(Boolean) : [];
-  const nCity = normalizeString(currentCity);
+  const nCity = cityKey(currentCity);
 
   return facilityIndex.filter((entry) => {
     const searchMatch =
@@ -478,7 +478,7 @@ export default function inspectionsData() {
       const hash = window.location.hash.slice(1);
       const qParam =
         new URLSearchParams(window.location.search).get("facility") || "";
-      const target = hash || qParam;
+      const target = generateInspectionCardId(hash || qParam);
       if (target) {
         queueMicrotask(() => {
           const foundPage = this.findPageForHash(target);
@@ -769,7 +769,6 @@ export default function inspectionsData() {
         for (let i = 1; i <= total; i++) pages.push(i);
       } else {
         pages.push(1);
-        if (current > 3) pages.push("...");
         let start = Math.max(2, current - 1);
         let end = Math.min(total - 1, current + 1);
         if (current <= 3) {
@@ -780,8 +779,11 @@ export default function inspectionsData() {
           start = total - 3;
           end = total - 1;
         }
+        if (start > 3) pages.push("...");
+        else for (let j = 2; j < start; j++) pages.push(j);
         for (let j = start; j <= end; j++) pages.push(j);
-        if (current < total - 2) pages.push("...");
+        if (end < total - 2) pages.push("...");
+        else for (let j = end + 1; j < total; j++) pages.push(j);
         pages.push(total);
       }
       return pages;
