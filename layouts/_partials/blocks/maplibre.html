@@ -107,6 +107,7 @@
 
           this._markerInstances.forEach((m) => m.remove());
           this._markerInstances = [];
+          this._markersKey = null;
 
           const matchingMarker = window.__inspectionsMarkers?.find(
             (m) =>
