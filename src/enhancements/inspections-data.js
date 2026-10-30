@@ -321,16 +321,16 @@ function createInspectionCard(data, index, allInspections) {
     riskCounts.high + riskCounts.moderate + riskCounts.low + riskCounts.other;
   let violationBadges = "";
   if (totalViolations === 0) {
-    violationBadges = `<li class="flex items-center gap-2"><svg class="h-6 w-6 fill-current" style="color: #1b998b;"><use href="#circle-check-svg" /></svg><span class="text-base font-semibold">0 violations</span></li>`;
+    violationBadges = `<li class="flex items-start gap-2"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-6 w-6 fill-current text-election-green"><use href="#circle-check-svg" /></svg></span><span class="text-base font-semibold">0 violations</span></li>`;
   } else {
     if (riskCounts.high > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #D70000;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.high} high priority violation${riskCounts.high !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-start gap-2"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-5 w-5 fill-current text-red-7"><use href="#diamond-svg" /></svg></span><span class="text-base font-semibold">${riskCounts.high} high priority violation${riskCounts.high !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.moderate > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #FFCB03;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.moderate} moderate priority violation${riskCounts.moderate !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-start gap-2"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-5 w-5 fill-current text-yellow"><use href="#diamond-svg" /></svg></span><span class="text-base font-semibold">${riskCounts.moderate} moderate priority violation${riskCounts.moderate !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.low > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #009EDB;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.low} low priority violation${riskCounts.low !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-start gap-2"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-5 w-5 fill-current text-blue"><use href="#diamond-svg" /></svg></span><span class="text-base font-semibold">${riskCounts.low} low priority violation${riskCounts.low !== 1 ? "s" : ""}</span></li>`;
     if (riskCounts.other > 0)
-      violationBadges += `<li class="flex items-center gap-2"><svg class="h-5 w-5 fill-current" style="color: #6b7280;"><use href="#diamond-svg" /></svg><span class="text-base font-semibold">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
+      violationBadges += `<li class="flex items-start gap-2"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-5 w-5 fill-current text-g-7"><use href="#diamond-svg" /></svg></span><span class="text-base font-semibold">${riskCounts.other} other violation${riskCounts.other !== 1 ? "s" : ""}</span></li>`;
   }
 
   card.innerHTML = `<div class="list-content">
@@ -348,16 +348,16 @@ function createInspectionCard(data, index, allInspections) {
     <ul class="mt-4 space-y-2">${violationBadges}</ul>
     <div class="mt-6 flex gap-2">
       <button
-        class="flex min-w-0 flex-1 items-center justify-between rounded-lg border-2 border-transparent bg-yellow-4 px-4 py-3 font-bold whitespace-nowrap text-yellow-9 transition hover:bg-yellow-3 max-[359px]:px-3 max-[359px]:text-[15px]"
+        class="flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg border-2 border-transparent bg-yellow-4 px-3 py-3 font-sans text-[15px] font-semibold whitespace-nowrap text-yellow-9 transition hover:bg-yellow-3"
         aria-label="Read more about this inspection"
         data-read-more="${uniqueId}"
       >
-        <span class="mx-auto">Read more</span>
-        <svg class="h-5 w-5 fill-yellow-9" aria-hidden="true"><use href="#chevron-right-svg" /></svg>
+        <span>Read more</span>
+        <svg class="h-[18px] w-[18px] flex-shrink-0 overflow-visible fill-yellow-9 stroke-yellow-9 stroke-[30] [stroke-linejoin:round]" aria-hidden="true"><use href="#chevron-right-svg" /></svg>
       </button>
       <button
         type="button"
-        class="flex w-[44%] flex-shrink-0 items-center justify-center rounded-lg border-2 border-transparent bg-blue-2/70 px-2 text-base font-bold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[359px]:text-sm max-[359px]:[&_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        class="flex min-w-0 flex-1 items-center justify-center rounded-lg border-2 border-transparent bg-blue-2/70 px-3 font-sans text-[15px] font-semibold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[379px]:[&_[data-alert-label=already]]:text-sm max-[379px]:[&_[data-alert-label=already]_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
         aria-label="Get alerts for ${escapeHTML(facilityName)}"
         data-action="card-alerts"
         data-alert-facility="${escapeHTML(facilityKey)}"
