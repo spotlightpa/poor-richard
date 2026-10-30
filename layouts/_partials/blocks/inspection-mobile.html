@@ -79,10 +79,10 @@
         </p>
         <button
           type="button"
-          x-show="sortChanged"
-          x-cloak
+          disabled
+          :disabled="!sortChanged"
           @click="resetSort()"
-          class="flex items-center gap-1.5 font-semibold text-blue-9 hover:underline focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+          class="flex items-center gap-1.5 font-semibold text-blue-9 hover:underline focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none disabled:cursor-default disabled:text-g-4 disabled:no-underline"
           aria-label="Reset sort to newest first"
         >
           <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
@@ -220,7 +220,7 @@
     data-view-pane="map"
     x-show="view === 'map'"
     x-cloak
-    class="relative h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,53px))] min-h-[360px] bg-g-2"
+    class="relative h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,53px))] min-h-[200px] bg-g-2"
   >
     {{ partial "blocks/maplibre-assets.html" (dict
       "ctx" .
@@ -230,7 +230,7 @@
       "controls" (slice)
       "hoverPopups" false
       "selectOnClick" true
-      "padding" (dict "top" 70 "bottom" 110 "left" 40 "right" 40)
+      "padding" (dict "top" 24 "bottom" 24 "left" 40 "right" 40)
       )
       )
       }}
@@ -269,7 +269,7 @@
       x-show="preview"
       x-cloak
       @click.capture="onPreviewClick($event)"
-      class="absolute inset-x-2.5 bottom-[calc(92px+env(safe-area-inset-bottom))] z-20 overflow-hidden rounded-2xl bg-white shadow-[0_6px_24px_rgba(0,0,0,0.25)] [&_[data-card]]:space-y-2 [&_[data-card]]:p-5 [&_[data-card]]:pr-12 [&_[data-card]]:shadow-none [&_h2]:text-2xl"
+      class="fixed inset-x-2.5 bottom-[calc(40px+env(safe-area-inset-bottom))] z-[41] max-h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,104px)-50px)] overflow-x-hidden overflow-y-auto overscroll-contain rounded-2xl bg-white shadow-[0_6px_24px_rgba(0,0,0,0.25)] [&_[data-card]]:space-y-2 [&_[data-card]]:p-5 [&_[data-card]]:shadow-none max-[359px]:[&_[data-card]]:p-4 [&_h2]:pr-10 [&_h2]:text-2xl [@media(max-height:500px)]:bottom-[calc(32px+env(safe-area-inset-bottom))] [@media(max-height:500px)]:max-h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,104px)-42px)]"
     >
       <button
         type="button"

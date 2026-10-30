@@ -3,19 +3,25 @@
   data-show="true"
   data-compact="false"
   :data-show="showThumb && !sheetOpen ? 'true' : 'false'"
-  :data-compact="compact ? 'true' : 'false'"
+  :data-compact="compact || preview ? 'true' : 'false'"
+  :data-preview="preview ? 'true' : 'false'"
   @click="openSheet()"
   @pointerdown="peekStart($event)"
   @pointerup="peekEnd($event)"
+  x-ref="searchBar"
   aria-label="Search facilities"
   aria-haspopup="dialog"
-  class="fixed inset-x-0 bottom-0 z-40 block touch-none rounded-t-2xl bg-[#1c1c1e] px-5 pb-[calc(12px+env(safe-area-inset-bottom))] text-left font-sans transition-transform duration-200 ease-out focus-visible:outline-none data-[compact=true]:translate-y-[calc(100%-30px)] data-[show=false]:hidden motion-reduce:transition-none"
+  class="fixed inset-x-0 bottom-0 z-40 block touch-none rounded-t-2xl bg-[#1c1c1e] px-5 pb-[calc(12px+env(safe-area-inset-bottom))] text-left font-sans transition-transform duration-200 ease-out focus-visible:outline-none data-[compact=true]:translate-y-[calc(100%-30px)] data-[preview=true]:duration-0 data-[show=false]:hidden motion-reduce:transition-none [@media(max-height:500px)]:pb-[calc(8px+env(safe-area-inset-bottom))] [@media(max-height:500px)]:data-[compact=true]:translate-y-[calc(100%-22px)]"
 >
-  <span class="flex h-[30px] items-center justify-center" aria-hidden="true">
+  <span
+    data-bar-handle
+    class="flex h-[30px] items-center justify-center [@media(max-height:500px)]:h-[22px]"
+    aria-hidden="true"
+  >
     <span class="block h-[5px] w-12 rounded-full bg-[#636366]"></span>
   </span>
   <span
-    class="flex h-14 items-center gap-3 rounded-xl bg-[#3a3a3c] px-4 text-base text-[#aeaeb2]"
+    class="flex h-14 items-center gap-3 rounded-xl bg-[#3a3a3c] px-4 text-base text-[#aeaeb2] [@media(max-height:500px)]:h-11"
   >
     <svg
       class="h-[18px] w-[18px] flex-shrink-0 fill-current text-[#aeaeb2]"

@@ -205,6 +205,18 @@
         };
         window.addEventListener("map:restoreView", this._restoreMapHandler);
 
+        window.addEventListener("map:refit", () => {
+          if (!this.map || this._savedMapState || !this.hasSize()) return;
+          if (!this._markerInstances.length) return;
+          const bounds = new maplibregl.LngLatBounds();
+          this._markerInstances.forEach((m) => bounds.extend(m.getLngLat()));
+          this.map.fitBounds(bounds, {
+            padding: this.fitPadding(),
+            maxZoom: 12,
+            duration: 300,
+          });
+        });
+
         window.addEventListener("update-map-markers", (e) => {
           const markers = e.detail?.markers;
           if (markers) {
@@ -334,7 +346,7 @@
 
           this.map.on("load", () => {
             if (this.bounds) {
-              this.map.fitBounds(this.bounds, { padding: this.padding });
+              this.map.fitBounds(this.bounds, { padding: this.fitPadding() });
             }
             this.addMarkers();
 
@@ -555,11 +567,34 @@
           }
           this._pendingBounds = null;
           this.map.fitBounds(bounds, {
-            padding: this.padding,
+            padding: this.fitPadding(),
             maxZoom: 12,
             duration: 800,
           });
         }
+      },
+
+      fitPadding() {
+        const base = this.padding;
+        const style = getComputedStyle(this.$el);
+        const top = parseFloat(style.getPropertyValue("--map-pad-top")) || 0;
+        const bottom =
+          parseFloat(style.getPropertyValue("--map-pad-bottom")) || 0;
+        if (!top && !bottom) return base;
+        const pad =
+          typeof base === "number"
+            ? { top: base, right: base, bottom: base, left: base }
+            : { ...base };
+        pad.top = (pad.top || 0) + top;
+        pad.bottom = (pad.bottom || 0) + bottom;
+        const height = this.$el.clientHeight;
+        const room = height - 40;
+        if (height && pad.top + pad.bottom > room) {
+          const scale = Math.max(0, room) / (pad.top + pad.bottom);
+          pad.top = Math.floor(pad.top * scale);
+          pad.bottom = Math.floor(pad.bottom * scale);
+        }
+        return pad;
       },
 
       applyPendingFit() {
@@ -567,7 +602,7 @@
         const bounds = this._pendingBounds;
         this._pendingBounds = null;
         this.map.fitBounds(bounds, {
-          padding: this.padding,
+          padding: this.fitPadding(),
           maxZoom: 12,
           duration: 0,
         });

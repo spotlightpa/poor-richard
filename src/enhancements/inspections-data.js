@@ -348,7 +348,7 @@ function createInspectionCard(data, index, allInspections) {
     <ul class="mt-4 space-y-2">${violationBadges}</ul>
     <div class="mt-6 flex gap-2">
       <button
-        class="flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg border-2 border-transparent bg-yellow-4 px-3 py-3 font-sans text-[15px] font-semibold whitespace-nowrap text-yellow-9 transition hover:bg-yellow-3"
+        class="flex min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg border-2 border-transparent bg-yellow-4 px-3 py-3 font-sans max-[359px]:gap-1 max-[359px]:px-2 max-[359px]:text-sm text-[15px] font-semibold whitespace-nowrap text-yellow-9 transition hover:bg-yellow-3"
         aria-label="Read more about this inspection"
         data-read-more="${uniqueId}"
       >
@@ -357,7 +357,7 @@ function createInspectionCard(data, index, allInspections) {
       </button>
       <button
         type="button"
-        class="flex min-w-0 flex-1 items-center justify-center rounded-lg border-2 border-transparent bg-blue-2/70 px-3 font-sans text-[15px] font-semibold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[379px]:[&_[data-alert-label=already]]:text-sm max-[379px]:[&_[data-alert-label=already]_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        class="flex min-w-0 flex-1 items-center justify-center rounded-lg border-2 border-transparent bg-blue-2/70 px-3 font-sans text-[15px] font-semibold whitespace-nowrap text-blue-9 transition hover:bg-blue-2 max-[359px]:px-2 max-[359px]:text-sm max-[379px]:[&_[data-alert-label=already]]:text-sm max-[379px]:[&_[data-alert-label=already]_svg]:hidden md:hidden ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
         aria-label="Get alerts for ${escapeHTML(facilityName)}"
         data-action="card-alerts"
         data-alert-facility="${escapeHTML(facilityKey)}"

@@ -73,10 +73,10 @@ function segmentDrag(Alpine) {
         const currentPane = pane(current);
         if (!incoming || !currentPane) return;
         const root = el.closest("[data-mobile-tracker]");
-        const top = Math.max(
-          stickyOffset(),
-          currentPane.getBoundingClientRect().top,
-        );
+        const top =
+          incoming.dataset.viewPane === "map"
+            ? stickyOffset()
+            : Math.max(stickyOffset(), currentPane.getBoundingClientRect().top);
         d.inc = incoming;
         d.cur = currentPane;
         d.top = top;

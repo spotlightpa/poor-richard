@@ -113,6 +113,7 @@ export default function inspectionsMobile() {
     compact: false,
     _anchor: 0,
     _peek: null,
+    _insetBottom: -1,
     preview: false,
     previewId: "",
     mapId: "inspections-map-mobile",
@@ -216,6 +217,11 @@ export default function inspectionsMobile() {
       this.initSheetDrag();
       this.$watch("store.searchQuery", () => this.closeSheet());
       this.$watch("store.currentCity", () => this.closeSheet());
+      this.$watch("preview", () =>
+        this.$nextTick(() => this.syncOverlayInsets()),
+      );
+      this.$watch("compact", () => this.syncOverlayInsets());
+      this.$watch("sheetOpen", () => this.syncOverlayInsets());
       schedule();
     },
 
@@ -236,6 +242,8 @@ export default function inspectionsMobile() {
       const resultsTop = content.getBoundingClientRect().top;
       this.showThumb =
         end > window.innerHeight * 0.45 || resultsTop >= nav + barH - 2;
+
+      this.syncOverlayInsets();
 
       const y = window.scrollY;
       if (y < 120) {
@@ -333,6 +341,31 @@ export default function inspectionsMobile() {
       body.addEventListener("touchcancel", touchEnd);
     },
 
+    syncOverlayInsets() {
+      const bar = this.$refs.searchBar;
+      if (!bar) return;
+      const handle = bar.querySelector("[data-bar-handle]");
+      const tucked = this.compact || this.preview;
+      const short = window.innerHeight < 500;
+      const visible =
+        !this.showThumb || this.sheetOpen
+          ? 0
+          : tucked
+            ? handle?.offsetHeight || 0
+            : bar.offsetHeight;
+      if (visible === this._insetBottom) return;
+      this._insetBottom = visible;
+      document.documentElement.style.setProperty(
+        "--search-bar-visible-h",
+        visible + "px",
+      );
+      this.$refs.map.style.setProperty("--map-pad-bottom", visible + "px");
+      this.$refs.map.style.setProperty("--map-pad-top", short ? "0px" : "48px");
+      if (this.view === "map" && !this.preview) {
+        window.dispatchEvent(new CustomEvent("map:refit"));
+      }
+    },
+
     peekStart(e) {
       e.currentTarget.setPointerCapture?.(e.pointerId);
       this._peek = { y: e.clientY };
@@ -375,7 +408,7 @@ export default function inspectionsMobile() {
         window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
       }
       this.closePreview();
-      const pinned = this.showBar;
+      const pinned = this.showBar || view === "map";
       const from = view === "map" ? this.$refs.list : this.$refs.map;
       const top = pinned
         ? Math.max(
@@ -388,6 +421,8 @@ export default function inspectionsMobile() {
       to.style.removeProperty("display");
       this.view = view;
       if (top !== null) window.scrollTo({ top, behavior: "instant" });
+      this.compact = false;
+      this._anchor = window.scrollY;
       this.$nextTick(() => {
         if (pinned) {
           scrollToStickyTop(view === "map" ? this.$refs.map : this.$refs.list);
