@@ -5,7 +5,7 @@
 {{ $timestamp := .Get "timestamp" }}
 
 {{ partial "tag/content-well-end" . }}
-<div
+<article
   class="my-4 overflow-hidden rounded-xl border border-g-4 bg-beige shadow"
   {{ with $timestamp }}id="{{ . | anchorize }}"{{ end }}
   itemprop="liveBlogUpdate"
@@ -26,14 +26,14 @@
     }}
     {{ partial "tw/image-block.html" $imgOpts }}
   {{ end }}
-  <div class="flex-row gap-1 p-5">
+  <div class="p-5">
     {{ with $hed }}
       <h2 class="text-2xl leading-snug font-semibold" itemprop="headline">
         {{ . }}
       </h2>
     {{ end }}
     {{ with $timestamp }}
-      {{ $t := (time.AsTime .).Local }}
+      {{ $t := time.AsTime . "America/New_York" }}
       <p class="font-sans">
         <a href="#{{ . | anchorize }}" class="no-underline">
           {{- "" -}}
@@ -63,5 +63,5 @@
       {{ .Inner | page.RenderString (dict "display" "block") }}
     </div>
   </div>
-</div>
+</article>
 {{ partial "tag/content-well-start" . }}
