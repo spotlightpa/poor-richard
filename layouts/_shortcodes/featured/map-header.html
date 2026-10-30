@@ -28,6 +28,9 @@
 {{ $readMoreEnabled := eq (.Get "read-more") "true" }}
 {{ $tooltipsEnabled := eq (.Get "tooltips") "true" }}
 {{ $tooltipValue := .Get "tooltip-value" | htmlUnescape }}
+{{ $hasCards := ne (trim $tooltipValue " ") "" }}
+{{ $desktopCards := and $hasCards (eq (.Get "desktop-display" | lower) "card") }}
+{{ $mobileCards := and $hasCards (eq (.Get "mobile-display" | lower) "card") }}
 {{ $customCodeURL := "" }}
 {{ $customCodeProperty := .Get "custom-code-property" }}
 {{ with .Get "custom-code" }}
@@ -74,22 +77,26 @@
     class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col overflow-y-auto bg-black text-white"
   >
     <div class="px-8 py-10 sm:px-10">
-      <a class="block" href="/">
-        <svg
-          class="h-8 fill-current text-white drop-shadow-outline filter hover:text-yellow lg:h-10"
-          role="img"
-          aria-label="Spotlight PA banner"
-          viewBox="0 0 1024 190"
-        >
-          {{ partial "helper/svg.html" "banner" }}
-        </svg>
-      </a>
+      <div class="{{ $lc.logoRow }}">
+        <a class="block" href="/">
+          <svg
+            class="{{ $lc.logoSize }} fill-current text-white drop-shadow-outline filter hover:text-yellow"
+            role="img"
+            aria-label="Spotlight PA banner"
+            viewBox="0 0 1024 190"
+          >
+            {{ partial "helper/svg.html" "banner" }}
+          </svg>
+        </a>
 
-      {{ with $eyebrow }}
-        <div class="mt-8 font-sans text-sm font-bold text-yellow uppercase">
-          {{ . }}
-        </div>
-      {{ end }}
+        {{ with $eyebrow }}
+          <div
+            class="{{ $lc.eyebrowMargin }} font-sans text-sm font-bold text-yellow uppercase"
+          >
+            {{ . }}
+          </div>
+        {{ end }}
+      </div>
 
       {{ if or $hed $dek }}
         <div class="mt-6 mb-4 border-t border-b border-white pt-4 pb-4">
@@ -154,8 +161,8 @@
 
   <div
     id="map-container"
-    class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative h-[60vw] min-h-[320px] w-full flex-shrink-0"
-    x-data="mapContainer({{ dict "geojson" $geojson "mapColor" $mapColor "colorOpacity" $colorOpacity "tooltipsEnabled" $tooltipsEnabled "tooltipTemplate" $tooltipValue "customCodeUrl" $customCodeURL "customCodeProperty" $customCodeProperty "searchUseLocation" $searchUseLocation | jsonify }})"
+    class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative h-[70svh] min-h-[320px] w-full flex-shrink-0"
+    x-data="mapContainer({{ dict "geojson" $geojson "mapColor" $mapColor "colorOpacity" $colorOpacity "tooltipsEnabled" $tooltipsEnabled "tooltipTemplate" $tooltipValue "customCodeUrl" $customCodeURL "customCodeProperty" $customCodeProperty "searchUseLocation" $searchUseLocation "desktopCards" $desktopCards "mobileCards" $mobileCards | jsonify }})"
     x-init="init()"
   >
     <div class="absolute inset-0">
@@ -227,7 +234,56 @@
         </div>
       </div>
     {{ end }}
+
+    {{ if $desktopCards }}
+      <div
+        x-ref="cardStrip"
+        hidden
+        aria-live="polite"
+        class="absolute inset-x-4 bottom-[var(--strip-bottom,1rem)] z-20 hidden overflow-hidden rounded-xl bg-white text-g-9 shadow-xl outline outline-1 outline-black/[0.07] [font:12px/20px_'Helvetica_Neue',Arial,Helvetica,sans-serif] md:block"
+      >
+        <div data-card-columns class="grid"></div>
+        <button
+          type="button"
+          data-card-close
+          aria-label="Close result"
+          class="absolute top-1.5 right-1.5 z-10 flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border-0 bg-transparent p-0 text-g-4 hover:bg-g-1 hover:text-g-7"
+        >
+          <svg class="h-3 w-3 fill-current" aria-hidden="true">
+            {{ partial "helper/svg.html" "times" }}
+          </svg>
+        </button>
+      </div>
+    {{ end }}
   </div>
+
+  {{ if $mobileCards }}
+    <section
+      id="map-card-section"
+      hidden
+      aria-live="polite"
+      class="{{ $lc.mapOrderMobile }} relative w-full bg-g-2 text-g-9 shadow-[0_-6px_16px_-10px_rgba(15,23,42,0.35)] [font:12px/20px_'Helvetica_Neue',Arial,Helvetica,sans-serif] md:hidden"
+    >
+      <div class="h-1 bg-[{{ replace $mapColor " " "_" }}]"></div>
+      <div
+        data-card-columns
+        class="flex snap-x snap-mandatory scroll-px-4 [scrollbar-width:none] gap-2.5 overflow-x-auto px-4 pt-3 pb-3.5 [&::-webkit-scrollbar]:hidden"
+      ></div>
+      <div class="relative flex min-h-6 items-center justify-center px-4 pb-3">
+        <div data-card-dots class="flex justify-center gap-1.5"></div>
+        <button
+          type="button"
+          data-card-close
+          aria-label="Close result"
+          class="absolute top-0 right-3 flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border-0 bg-transparent p-0 text-g-4 hover:bg-g-1 hover:text-g-7"
+        >
+          <svg class="h-3 w-3 fill-current" aria-hidden="true">
+            {{ partial "helper/svg.html" "times" }}
+          </svg>
+        </button>
+      </div>
+    </section>
+  {{ end }}
 </div>
 
 {{ if $readMoreEnabled }}
@@ -259,6 +315,7 @@
     @click="down()"
     @keydown.enter="down()"
     @keydown.space.prevent="down()"
+    id="map-read-more"
     role="button"
     tabindex="0"
     aria-label="Scroll down to read more"
