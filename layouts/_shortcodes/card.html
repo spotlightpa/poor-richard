@@ -1,8 +1,8 @@
 {{ $img := .Get "image" | htmlUnescape }}
 {{ $credit := .Get "image-credit" | htmlUnescape }}
 {{ $description := .Get "image-description" | htmlUnescape }}
-{{ $hed := .Get "hed" }}
-{{ $timestamp := .Get "timestamp" }}
+{{ $hed := .Get "hed" | htmlUnescape }}
+{{ $timestamp := .Get "timestamp" | htmlUnescape }}
 
 {{ partial "tag/content-well-end" . }}
 <article
