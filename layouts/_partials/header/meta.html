@@ -12,13 +12,13 @@
   {{ $imgOpt := dict
     "filename" .
     "width" 1200
-    "height" 900
+    "height" 630
     "gravity" ($.Param "image-gravity")
   }}
   {{ $imgSrc := partial "helper/imgproxy" $imgOpt }}
   <meta property="og:image" content="{{ $imgSrc | absURL }}" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="900" />
+  <meta property="og:image:height" content="630" />
 {{ end }}
 
 {{ if .Param "no-index" }}
@@ -149,11 +149,9 @@
 {{ else }}
   <meta name="twitter:card" content="summary" />
 {{ end }}
-<meta
-  name="twitter:title"
-  content="{{ .Param `twitter-title` | default $seoTitle }}"
-/>
-<meta name="twitter:description" content="{{ $description }}" />
+{{ with .Param "twitter-title" }}
+  <meta name="twitter:title" content="{{ . }}" />
+{{ end }}
 <meta name="twitter:site" content="@spotlightpa" />
 {{ range .Param "authors" }}
   {{ $author := partial "helper/get-author" . }}
@@ -162,6 +160,9 @@
   {{ end }}
 {{ end }}
 {{ if .Param "byline" }}
+  <!-- For LinkedIn -->
+  <meta name="author" content="{{ .Param `byline` }}" />
+
   <!-- Despite the name, this only displays in Slack -->
   <meta name="twitter:label1" value="Authored by" />
   <meta name="twitter:data1" value="{{ .Param `byline` }}" />

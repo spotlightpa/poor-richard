@@ -1,5 +1,6 @@
 +++
 topics = ["Penn State"]
+series = ["Transparency Tracker"]
 title = "Penn State Transparency Tracker"
 description = "An ongoing effort by Spotlight PA to document and share the ways in which Penn State University is — and is not — being transparent with the community."
 title-tag = "Transparency Tracker"

@@ -1,21 +1,21 @@
 {
   "edCallout": [
-    "content/news/2026-06-29-SPLDDRD0626.md",
-    "content/news/2026-07-06-spl_ddrd_0726.md"
+    "content/news/2026-07-20-SPLSHAPPROFILE0726.md",
+    "content/news/2026-08-13-SPLGARRITYPROFILE0826.md"
   ],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-07-17-SPLLIBFUNDS0726.md"
+    "content/news/2026-10-29-VBNONCIT1026.md"
   ],
   "subfeatures": [
-    "content/news/2026-06-19-SPLCHESTERWATER0626.md",
-    "content/news/2026-06-12-SPLGOURDFEST0626.md",
-    "content/news/2026-05-22-SPLKNOEBELS0526.md"
+    "content/news/2026-10-23-VBNONCHARGE1026.md",
+    "content/news/2026-10-23-APNONCIT1026.md",
+    "content/news/2026-09-17-VBNONCITVOTE0926.md"
   ],
   "topSlots": [
-    "content/news/2026-07-16-SPLSUNDABORT0726.md",
-    "content/news/2026-07-15-SPLTRICKS0726.md",
-    "content/news/2026-07-14-SPLFELONY0726.md"
+    "content/news/2026-10-30-SPLDATASEN1026.md",
+    "content/news/2026-10-29-SPLMIDTERMVOTERS1026.md",
+    "content/news/2026-10-28-SPL1VOTECHILD1026.md"
   ]
 }

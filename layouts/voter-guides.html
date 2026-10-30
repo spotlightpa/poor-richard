@@ -1,0 +1,155 @@
+{{ define "promo" }}
+  <!-- noop -->
+{{ end }}
+
+{{ define "main" }}
+  {{ $idEmail := partial "helper/new-id" . }}
+  {{ $idOptin := partial "helper/new-id" . }}
+  <div
+    class="min-h-screen bg-white font-sans text-black"
+    x-data="voterGuides($el.dataset.baseUrl)"
+    data-base-url="{{ page.Param `newsletters-base-url` }}"
+    data-ga-category="voter-guides"
+  >
+    <div
+      class="mx-auto flex max-w-[880px] flex-col gap-8 px-4 pt-9 pb-16 sm:gap-12 sm:px-6 sm:pt-16 sm:pb-24"
+    >
+      <div class="flex flex-col gap-4">
+        <h1
+          class="font-serif text-[clamp(32px,5vw,48px)] leading-[1.1] font-black tracking-[-0.01em] text-balance"
+        >
+          {{ .Param "hed" | default .Title }}
+        </h1>
+        {{ with .Param "dek" }}
+          <p
+            class="font-serif text-[19px] leading-[1.55] font-light text-pretty text-g-9"
+          >
+            {{ . }}
+          </p>
+        {{ end }}
+      </div>
+
+      <form
+        x-show="!unlocked"
+        @submit.prevent="submit($event.target)"
+        novalidate
+        class="flex flex-col gap-3.5 rounded-[5px] border border-t-4 border-g-7 border-t-black bg-beige px-4 py-5 sm:p-7 noscript:hidden"
+      >
+        {{ partial "newsletter/basic-hidden.html" . }}
+        <label for="{{ $idEmail }}" class="font-bold">Email address</label>
+        <div class="flex flex-wrap gap-3">
+          <input
+            id="{{ $idEmail }}"
+            x-ref="email"
+            x-model="email"
+            @input="error = ''"
+            type="email"
+            name="EMAIL"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+            class="h-12 min-w-0 flex-[1_1_260px] rounded border border-g-9 bg-white px-3.5 text-[17px] text-black outline-hidden focus:ring-2 focus:ring-yellow"
+          />
+          <button
+            type="submit"
+            :disabled="isLoading"
+            class="flex h-12 w-full shrink-0 items-center justify-center gap-2 rounded-[5px] border-2 border-yellow-6 bg-yellow px-7 font-bold whitespace-nowrap text-black hover:bg-yellow-6 sm:w-auto"
+          >
+            Access downloads
+            <svg
+              x-cloak
+              x-transition
+              x-show="isLoading"
+              aria-label="Submitting"
+              class="inline-block h-4 w-4 animate-spin fill-current"
+            >
+              {{ partial "helper/svg.html" "spinner" }}
+            </svg>
+          </button>
+        </div>
+        <div
+          x-cloak
+          x-show="error"
+          x-text="error"
+          role="alert"
+          class="text-[15px] font-semibold text-red-9"
+        ></div>
+        <label
+          for="{{ $idOptin }}"
+          class="flex cursor-pointer items-start gap-2.5 text-[15px] leading-[1.45]"
+        >
+          <input
+            id="{{ $idOptin }}"
+            type="checkbox"
+            name="{{ .Param `optin-field` }}"
+            value="1"
+            class="mt-px size-5 shrink-0 cursor-pointer accent-black"
+          />
+          <span>{{ .Param "optin-label" }}</span>
+        </label>
+        {{ with .Param "disclaimer" }}
+          <div class="text-sm leading-[1.45] text-g-7">{{ . }}</div>
+        {{ end }}
+      </form>
+
+      <div
+        x-cloak
+        x-show="unlocked"
+        class="flex flex-wrap items-center justify-between gap-3 border-t-4 border-election-green-darkest bg-election-green-lightest px-5 py-5 sm:px-7"
+      >
+        <div class="text-[17px] font-semibold text-election-green-darkest">
+          Thanks. Your downloads are ready below.
+        </div>
+        <button
+          type="button"
+          @click="reset"
+          class="cursor-pointer text-[15px] text-election-green-darkest underline"
+        >
+          Use a different email
+        </button>
+      </div>
+
+      <div class="flex flex-col border-t-2 border-black">
+        {{ range .Params.guides }}
+          <div
+            class="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-b border-[#d9d2c7] py-6"
+          >
+            <div class="flex min-w-0 flex-[1_1_320px] flex-col gap-1.5">
+              <div
+                class="text-xs font-bold tracking-[0.12em] text-election-green-darkest uppercase"
+              >
+                {{ .kicker }}
+              </div>
+              <div
+                class="font-serif text-[22px] leading-tight font-bold text-balance"
+              >
+                {{ .title }}
+              </div>
+              {{ with .desc }}
+                <div class="text-[15px] leading-normal text-pretty text-g-9">
+                  {{ . }}
+                </div>
+              {{ end }}
+            </div>
+            <a
+              href="{{ .file }}"
+              download
+              @click="guard($event)"
+              :aria-disabled="!unlocked"
+              :class="unlocked ? 'opacity-100' : 'opacity-45'"
+              data-ga-category="voter-guide-download"
+              class="flex h-12 w-full shrink-0 items-center justify-center gap-2.5 rounded-[5px] border-2 border-yellow-6 bg-yellow px-6 font-bold whitespace-nowrap text-black no-underline hover:bg-yellow-6 sm:w-auto"
+            >
+              <svg aria-hidden="true" class="h-4 w-4 fill-current">
+                {{ partial "helper/svg.html" "download" }}
+              </svg>
+              <span x-text="unlocked ? 'Download PDF' : 'Printable PDF'">
+                Download PDF
+              </span>
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

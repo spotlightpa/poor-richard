@@ -1,7 +1,17 @@
 import { after } from "../utils/timers.js";
 import { allClosest } from "../utils/dom-utils.js";
+import { recordNewsletterSignup } from "../utils/metrics.js";
 
-async function fetchOrRedirect(url, opts) {
+export class NewsletterError extends Error {
+  constructor(data) {
+    super(data.error);
+    this.name = "NewsletterError";
+    this.code = data.statuscode;
+    this.details = data.details;
+  }
+}
+
+async function fetchOrRedirect(url, opts, { redirect = true } = {}) {
   let data = await fetch(url, opts)
     .then((rsp) => rsp.json())
     .catch((err) => {
@@ -17,6 +27,9 @@ async function fetchOrRedirect(url, opts) {
       });
   }
   if (data.error) {
+    if (!redirect) {
+      throw new NewsletterError(data);
+    }
     let msg = encodeURIComponent(data.error);
     let code = data.statuscode ? encodeURIComponent(data.statuscode) : "";
     let errors = data.details
@@ -28,9 +41,11 @@ async function fetchOrRedirect(url, opts) {
   return data;
 }
 
-async function submitNewsletter(baseURL, el) {
+export async function submitNewsletter(baseURL, el, { redirect = true } = {}) {
   // Fetch token from the API
-  let tokenData = await fetchOrRedirect(`${baseURL}/api/token`);
+  let tokenData = await fetchOrRedirect(`${baseURL}/api/token`, undefined, {
+    redirect,
+  });
   let token = tokenData.data;
 
   // Submit form as JSON with token
@@ -51,26 +66,31 @@ async function submitNewsletter(baseURL, el) {
   obj.utm_medium = params.get("utm_medium");
   obj.utm_campaign = params.get("utm_campaign");
 
-  let resp = await fetchOrRedirect(`${baseURL}/api/verify-subscribe`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(obj),
-  });
-
-  for (let msg of resp.data || []) {
-    await fetchOrRedirect(`${baseURL}/api/list-add`, {
+  let resp = await fetchOrRedirect(
+    `${baseURL}/api/verify-subscribe`,
+    {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(msg),
-    });
-  }
+      body: JSON.stringify(obj),
+    },
+    { redirect },
+  );
 
-  // Redirect to thanks page on successful submission
-  window.top.location.href = "/newsletters/thanks/";
+  for (let msg of resp.data || []) {
+    await fetchOrRedirect(
+      `${baseURL}/api/list-add`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(msg),
+      },
+      { redirect },
+    );
+  }
 }
 
 function newsletter(baseURL) {
@@ -80,6 +100,33 @@ function newsletter(baseURL) {
     submit() {
       this.isLoading = true;
       submitNewsletter(baseURL, this.$el)
+        .then(() => {
+          // Redirect to thanks page on successful submission
+          window.top.location.href = "/newsletters/thanks/";
+        })
+        .catch((e) => {
+          // eslint-disable-next-line no-console
+          console.warn(e);
+        })
+        .finally(() => {
+          this.isLoading = false;
+        });
+    },
+  };
+}
+
+function inlineNewsletter(baseURL) {
+  return {
+    isLoading: false,
+    hasFocused: false,
+    done: false,
+    submit() {
+      this.isLoading = true;
+      submitNewsletter(baseURL, this.$el)
+        .then(() => {
+          recordNewsletterSignup();
+          this.done = true;
+        })
         .catch((e) => {
           // eslint-disable-next-line no-console
           console.warn(e);
@@ -93,4 +140,5 @@ function newsletter(baseURL) {
 
 export default function newsletterPlugin(Alpine) {
   Alpine.data("newsletter", newsletter);
+  Alpine.data("inlineNewsletter", inlineNewsletter);
 }

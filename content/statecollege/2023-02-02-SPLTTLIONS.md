@@ -12,11 +12,12 @@ internal-id = "SPLTTLIONS"
 kicker = "Penn State"
 modal-exclude = false
 published = 2023-02-02T05:00:00-05:00
+series = ["Transparency Tracker"]
 slug = "penn-state-hazing-university-tours-lion-ambassadors"
 suppress-date = false
 title = "Penn State’s Lion Ambassadors were accused of hazing. Why isn’t it on the hazing report?"
 title-tag = "Penn State says misconduct by tour guides wasn’t hazing"
-topics = ["Penn State", "Transparency Tracker"]
+topics = ["Penn State"]
 +++
 
 <i>The Penn State Transparency Tracker is an ongoing effort by Spotlight PA to document and share the ways in which the university is, and is not, being transparent with the community. Due to its special “state-related” designation, Penn State is not subject to open records laws beyond the public disclosure of basic financial information.</i>

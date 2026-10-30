@@ -6,7 +6,13 @@ email = "aprihar@spotlightpa.org"
 bluesky = "ashaprihar.bsky.social"
 twitter = "ashaprihar"
 active = true
-content = "Asha Prihar is a newsletter writer/reporter at Spotlight PA. Previously, she authored City Cast Philly’s daily newsletter, covered all things Philly for Billy Penn/WHYY, and reported on Pennsylvania's state government for The PLS Reporter. Asha was born and raised in south central Pennsylvania, where she fell in love with journalism at her school newspaper. She currently lives in Philadelphia."
+content = """
+Asha Prihar is a reporter and newsletter writer at Spotlight PA who writes feature stories, guides, Q&As, and deep dives into the things that make Pennsylvania unique for the [PA Local newsletter](https://www.spotlightpa.org/newsletters/palocal/). She also shares Pennsylvania’s top headlines with readers via [PA Post](https://www.spotlightpa.org/newsletters/papost/) and weekly [news quizzes](https://www.spotlightpa.org/topics/news-quiz/).
+
+Before joining Spotlight PA, Asha wrote City Cast Philly’s daily newsletter, covered all things Philadelphia for Billy Penn at WHYY, and reported on state government for The PLS Reporter. She grew up in Lebanon County and currently lives in Philadelphia. Her favorite thing about her home state is its rich diversity of pretzels.
+
+Send Asha an email if you’ve got a fun, fascinating, or quirky Pennsylvania story that’s itching to be told — or if you’re just wondering why a certain facet of PA culture is the way it is.
+"""
 headshot = "2024/10/01kh-qr6e-ee46-5t5j.webp"
 role = "engagement"
 beat = "Newsletters"

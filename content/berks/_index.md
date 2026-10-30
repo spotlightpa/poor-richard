@@ -14,5 +14,6 @@ aliases = ["/berks-county/"]
 [cascade]
 extended-kicker = "Berks County"
 sidebar-newsletter = "tw/rail-gooddayberks.html"
+rail-source = "berks-sidebar"
 +++
 Read [Blueprint for Berks](/berks-report), a 12-month community research project that engaged Berks residents in a series of local discussions and an expansive survey to identify information gaps, coverage needs, and news preferences in the local market.

@@ -1,6 +1,7 @@
 {{ $params := partialCached "helper/page-params" .Page .RelPermalink }}
 {{ $hasImage := .Param "image-size" | ne "hidden" }}
 {{ $isWide := .Param "image-size" | eq "wide" }}
+{{ $isGamePage := and $params.topic (eq $params.topic.Title "Games") }}
 
 {{ $bylineLink := "" }}
 {{ with .Param "authors" }}
@@ -205,7 +206,9 @@
           {{ end }}
         </footer>
       {{ end }}
-      {{ partial "tw/support.html" . }}
+      {{ if $isGamePage | not }}
+        {{ partial "tw/support.html" . }}
+      {{ end }}
     </div>
     {{ if .Param "suppress-related" | not }}
       <div
@@ -213,9 +216,8 @@
         id="related-stories"
         data-ga-category="guides"
       >
-        {{ $guide := site.GetPage $params.rubric.RelPermalink }}
+        {{ $guide := $params.rubric }}
         {{ $relatedPages := where $guide.RegularPages "RelPermalink" "!=" .RelPermalink }}
-        {{ $isGamePage := and $params.topic (eq $params.topic.Title "Games") }}
         {{ partial "tw/list-3-col-story.html" (dict
           "hed" (cond $isGamePage "More Games" "Related Stories")
           "pages" $relatedPages
@@ -238,10 +240,17 @@
       data-sf-campaign="701Dn000000YgoeIAC"
       class="row-start-1 mt-6 w-full"
     >
-      {{ if page.Param "ad-rail-top-active" | and (not (page.Param "suppress-ads")) }}
+      {{ $activeRail := page.Param "ad-rail-top-active" }}
+      {{ $promos := page.Param "ad-rail-top" }}
+      {{ with $src := page.Param "rail-source" }}
+        {{ $data := index hugo.Data $src }}
+        {{ $activeRail = index $data "ad-rail-top-active" }}
+        {{ $promos = index $data "ad-rail-top" }}
+      {{ end }}
+      {{ if $activeRail | and (not (page.Param "suppress-ads")) }}
         {{ partial "tw/promo-multi.html" (dict
           "wrapperClass" "mb-5 w-0 min-w-full noscript:hidden flex justify-center lg:justify-start"
-          "promos" (page.Param "ad-rail-top")
+          "promos" $promos
           "width" 640
           "height"  535
           )

@@ -30,8 +30,8 @@
 
 {{ define "extra-main" }}
   {{ $pages := $.Pages }}
-  {{ if .Param "sort-by" | eq "title" }}
-    {{ $pages = $.Pages.ByTitle }}
+  {{ if .Param "sort-by" | eq "kicker" }}
+    {{ $pages = $.Pages.ByParam "kicker" }}
   {{ end }}
 
 

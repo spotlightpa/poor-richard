@@ -16,6 +16,7 @@
         error: null,
         data: [],
         retryCount: 0,
+        cachedTextLength: 0,
         maxRetries: 2,
         initialized: false,
         async init() {
@@ -32,6 +33,11 @@
             this.loadingProgress = 100;
           };
           window.addEventListener('inspections-data-ready', onReady, { once: false });
+          if (window._inspectionsLoaderActive) {
+            this.loading = !window._inspectionsDataDispatched;
+            return;
+          }
+          window._inspectionsLoaderActive = true;
           this.cacheName = this.generateCacheName(this.dataSourceURL);
           await this.loadData();
         },
@@ -55,7 +61,7 @@
               this.loadingMessage = 'Loading from cache...';
               this.loadingProgress = 100;
               this.loading = false;
-              this.refreshDataInBackground();
+              this.scheduleBackgroundRefresh();
               if (!window._inspectionsDataDispatched) {
                 this.notifyDataReady();
               }
@@ -155,15 +161,16 @@
           this.loadingMessage = 'Preparing data...';
           await new Promise(r => setTimeout(r, 50));
           const blob = new Blob(chunks);
+          chunks.length = 0;
           const text = await blob.text();
           if (this.loadingProgress < 80) this.loadingProgress = 80;
           this.loadingMessage = 'Processing data...';
           await new Promise(r => setTimeout(r, 50));
-          const parsed = this.parseCSV(text);
+          const parsed = Object.freeze(this.parseCSV(text));
           if (this.loadingProgress < 90) this.loadingProgress = 90;
           this.loadingMessage = 'Loading...';
           await new Promise(r => setTimeout(r, 50));
-          await this.saveToCache(parsed);
+          await this.saveToCache(text);
           this.loadingProgress = 100;
           this.data = parsed;
         },
@@ -246,19 +253,21 @@
             const age = Date.now() - cached.timestamp;
             if (age > this.maxCacheAge) return null;
             if (cached.version !== this.cacheVersion) return null;
-            return cached.data;
+            if (typeof cached.text !== 'string') return null;
+            this.cachedTextLength = cached.text.length;
+            return Object.freeze(this.parseCSV(cached.text));
           } catch {
             return null;
           }
         },
-        async saveToCache(data) {
+        async saveToCache(text) {
           try {
             const db = await this.openDB();
             const tx = db.transaction('dataCache', 'readwrite');
             const store = tx.objectStore('dataCache');
             await store.put({
               id: this.cacheName,
-              data,
+              text,
               timestamp: Date.now(),
               version: this.cacheVersion
             });
@@ -277,22 +286,27 @@
             };
           });
         },
+        scheduleBackgroundRefresh() {
+          const run = () => this.refreshDataInBackground();
+          setTimeout(() => {
+            if ('requestIdleCallback' in window) {
+              window.requestIdleCallback(run, { timeout: 10000 });
+            } else {
+              run();
+            }
+          }, 8000);
+        },
         async refreshDataInBackground() {
           try {
             const response = await fetch(this.dataSourceURL, { mode: 'cors', cache: 'no-cache' });
             if (!response.ok) return;
             const text = await response.text();
-            const parsed = this.parseCSV(text);
-            const currentLen = JSON.stringify(this.data).length;
-            const newLen = JSON.stringify(parsed).length;
-            if (newLen !== currentLen) {
-              this.data = parsed;
-              await this.saveToCache(parsed);
-              if (!window._inspectionsDataDispatched) {
-                this.notifyDataReady();
-              } else {
-                window.dispatchEvent(new CustomEvent('inspections-data-updated', { detail: { data: parsed } }));
-              }
+            if (text.length === this.cachedTextLength) return;
+            await this.saveToCache(text);
+            this.cachedTextLength = text.length;
+            if (!window._inspectionsDataDispatched) {
+              this.data = Object.freeze(this.parseCSV(text));
+              this.notifyDataReady();
             }
           } catch {}
         },

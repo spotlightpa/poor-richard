@@ -127,3 +127,7 @@ to = "https://docs.google.com/forms/d/e/1FAIpQLSfy8HLO3tQBzjuqOogc04ogyEDXFw_qLV
 [[redirects]]
 from = "/nepa"
 to = "https://www.nepagives.org/organization/Spotlight-Pa"
+
+[[redirects]]
+from = "/environment"
+to = "https://spotlightpa.donorsupport.co/page/environment"

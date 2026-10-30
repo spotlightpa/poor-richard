@@ -14,6 +14,7 @@ kicker = "Housing"
 modal-exclude = false
 pinned = false
 published = 2026-07-17T05:00:00.007-04:00
+river-exclude = false
 slug = "renters-rights-reading-what-to-know-housing"
 suppress-ads = false
 suppress-date = false
@@ -22,11 +23,17 @@ title-tag = "Can your landlord do that? PA tenant rights, explained"
 topics = ["Housing"]
 +++
 
+<a href="https://www.spotlightpa.org/berks/2026/08/derechos-de-los-inquilinos-en-reading-lo-que-debes-saber-espanol/"><em>Leer en español</em></a><em></em>
+
 READING — A group of activists wants Reading City Council to adopt a wide-ranging proposal aimed at protecting renters from being priced out of their homes or retaliated against for organizing.
 
 Members of the Mayor Eddie Morán’s administration and City Council said they are open to the ideas in a proposed housing bill of rights, though they cautioned that some of them are beyond Reading’s control.
 
-Even without any new ordinances, renters in Pennsylvania have rights they can assert regardless of the tenant protections in the municipality where they reside. Here’s what renters should know:
+Even without any new ordinances, renters in Pennsylvania have rights they can assert regardless of the tenant protections in the municipality where they reside.<br/>
+
+{{<datawrapper src="https://datawrapper.dwcdn.net/6ZVAW/26/" height="779">}}
+
+<br/>Here’s what renters should know:
 
 ## Basic rights in a lease
 
