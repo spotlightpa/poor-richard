@@ -1,4 +1,4 @@
-{{ $src := .Get "image" | htmlUnescape }}
+{{ $img := .Get "image" | htmlUnescape }}
 {{ $credit := .Get "image-credit" | htmlUnescape }}
 {{ $description := .Get "image-description" | htmlUnescape }}
 {{ $hed := .Get "hed" }}
@@ -8,10 +8,13 @@
 <div
   class="my-4 overflow-hidden rounded-xl border border-g-4 bg-beige shadow"
   {{ with $timestamp }}id="{{ . | anchorize }}"{{ end }}
+  itemprop="liveBlogUpdate"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
 >
-  {{ if $src }}
+  {{ if $img }}
     {{ $imgOpts := dict
-      "filename" $src
+      "filename" $img
       "credit" $credit
       "description" $description
       "widthRatio" 5
@@ -25,7 +28,7 @@
   {{ end }}
   <div class="flex-row gap-1 p-5">
     {{ with $hed }}
-      <h2 class="text-2xl leading-snug font-semibold">
+      <h2 class="text-2xl leading-snug font-semibold" itemprop="headline">
         {{ . }}
       </h2>
     {{ end }}
@@ -39,6 +42,7 @@
             datetime="{{ . }}"
             x-text="$relativeDate($el.dateTime)"
             title="{{ partial `helper/date-apstyle` $t }} {{ $t.Format `3:04 pm` }}"
+            itemprop="datePublished"
           >
             {{ partial "helper/date-apstyle" $t }}
             {{ $t.Format "3:04 pm" }}
@@ -54,6 +58,7 @@
     <div
       class="{{ $padding }} article-content w-full overflow-x-hidden leading-relaxed sm:overflow-x-visible"
       data-fru-campaign="in-story-link"
+      itemprop="articleBody"
     >
       {{ .Inner | page.RenderString (dict "display" "block") }}
     </div>
