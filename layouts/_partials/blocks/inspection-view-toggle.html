@@ -2,7 +2,7 @@
   class="{{ if .compact }}
     w-full rounded-lg
   {{ else }}
-    w-full rounded-full
+    w-full rounded-xl
   {{ end }}{{ if .dark }}
     bg-g-9
   {{ else }}
@@ -17,7 +17,7 @@
     class="{{ if .compact }}
       rounded-md
     {{ else }}
-      rounded-full
+      rounded-lg
     {{ end }} pointer-events-none absolute top-[3px] bottom-[3px] left-[calc(3px+var(--thumb,0)*(50%-3px))] w-[calc(50%-3px)] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.2)] transition-[left] duration-200 ease-[cubic-bezier(.2,.8,.2,1)] in-data-dragging:transition-none motion-reduce:transition-none"
   ></span>
   <button
@@ -30,7 +30,7 @@
     class="{{ if .compact }}
       h-8 rounded-md
     {{ else }}
-      h-10 rounded-full
+      h-10 rounded-lg
     {{ end }}{{ if .dark }}
       text-g-4
     {{ else }}
@@ -51,7 +51,7 @@
     class="{{ if .compact }}
       h-8 rounded-md
     {{ else }}
-      h-10 rounded-full
+      h-10 rounded-lg
     {{ end }}{{ if .dark }}
       text-g-4
     {{ else }}

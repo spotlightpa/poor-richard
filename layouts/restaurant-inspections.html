@@ -29,6 +29,7 @@
     {{ partial "helper/svg.html" "sort" }}
     {{ partial "helper/svg.html" "times" }}
     {{ partial "helper/svg.html" "robot" }}
+    {{ partial "helper/svg.html" "rotate-left" }}
   </span>
   <div>
     <div aria-hidden="true" class="-mb-px h-px"></div>
@@ -452,8 +453,11 @@
                 type="button"
                 @click="clearAll()"
                 :disabled="!hasFilters"
-                class="rounded text-[13px] font-semibold text-blue-9 transition-colors hover:underline disabled:cursor-default disabled:text-g-4 disabled:no-underline"
+                class="flex items-center gap-1.5 rounded text-sm font-semibold text-blue-9 transition-colors hover:underline disabled:cursor-default disabled:text-g-4 disabled:no-underline"
               >
+                <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                  <use href="#rotate-left-svg" />
+                </svg>
                 Reset
               </button>
             </div>

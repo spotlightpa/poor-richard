@@ -152,6 +152,16 @@ export default function inspectionsMobile() {
       return (this.store.searchQuery || "").trim();
     },
 
+    get sortChanged() {
+      const sort = this.store.currentSort;
+      return !!sort && sort !== "date-desc";
+    },
+
+    resetSort() {
+      this.store.currentSort = "date-desc";
+      localStorage.removeItem("inspections-sort");
+    },
+
     get priorityLabel() {
       const p = this.store.currentPriority;
       return PRIORITY_LABELS[p] || p;

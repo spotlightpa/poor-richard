@@ -18,7 +18,7 @@
       </p>
     {{ end }}
   </div>
-  <div class="bg-white px-5 pt-4 pb-5">
+  <div class="bg-white px-3.5 pt-4 pb-5">
     <div>
       {{ partial "blocks/inspection-view-toggle.html" (dict "compact" false) }}
     </div>
@@ -74,11 +74,24 @@
       class="mb-3 border-t border-g-3 bg-white px-5 font-sans text-sm group-has-[.detail-content]/list:hidden"
     >
       <div class="flex min-h-12 items-center justify-between gap-3 py-2">
-        <p class="min-w-0 truncate text-g-7" aria-live="polite">
+        <p class="sr-only" aria-live="polite">
           <span x-text="countLabel"></span>
         </p>
+        <button
+          type="button"
+          x-show="sortChanged"
+          x-cloak
+          @click="resetSort()"
+          class="flex items-center gap-1.5 font-semibold text-blue-9 hover:underline focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+          aria-label="Reset sort to newest first"
+        >
+          <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+            <use href="#rotate-left-svg" />
+          </svg>
+          Reset
+        </button>
         <label
-          class="relative flex min-h-5 flex-shrink-0 items-center gap-1.5 font-semibold text-g-9 focus-within:ring-2 focus-within:ring-g-5"
+          class="relative ml-auto flex min-h-5 flex-shrink-0 items-center gap-1.5 font-semibold text-g-9 focus-within:ring-2 focus-within:ring-g-5"
         >
           <svg class="h-3 w-3 fill-current" aria-hidden="true">
             <use href="#sort-svg" />
