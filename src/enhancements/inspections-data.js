@@ -309,10 +309,10 @@ function createInspectionCard(data, index, allInspections) {
     "w-full h-full flex flex-col space-y-3 bg-white p-8 shadow md:p-10";
 
   const addressRow = addressLine
-    ? `<div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7"><use href="#location-svg" /></svg><span data-field="address">${escapeHTML(addressLine)}</span></div>`
+    ? `<div class="flex items-start gap-1"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-4 w-4 fill-current text-g-7"><use href="#location-svg" /></svg></span><span data-field="address">${escapeHTML(addressLine)}</span></div>`
     : "";
   const dateRow = inspectionDate
-    ? `<div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-current text-g-7"><use href="#calendar-day-svg" /></svg><span>Last inspection: ${escapeHTML(inspectionDate)}</span></div>`
+    ? `<div class="flex items-start gap-1"><span class="flex h-[1lh] flex-shrink-0 items-center"><svg class="h-4 w-4 fill-current text-g-7"><use href="#calendar-day-svg" /></svg></span><span>Last inspection: ${escapeHTML(inspectionDate)}</span></div>`
     : "";
 
   const riskCounts = countRisks(data.risk_level);
