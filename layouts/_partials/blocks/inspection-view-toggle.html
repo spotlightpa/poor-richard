@@ -1,0 +1,55 @@
+<div
+  class="{{ if .compact }}
+    w-full rounded-lg
+  {{ else }}
+    w-full rounded-full
+  {{ end }}{{ if .dark }}
+    bg-g-9
+  {{ else }}
+    bg-g-3
+  {{ end }} flex flex-shrink-0 touch-pan-y p-[3px] font-sans text-sm font-semibold select-none"
+  role="group"
+  aria-label="View"
+  x-swipe="setView($direction === 'right' ? 'map' : 'list')"
+>
+  <button
+    type="button"
+    aria-pressed="true"
+    :aria-pressed="view === 'list' ? 'true' : 'false'"
+    @click="setView('list')"
+    class="{{ if .compact }}
+      h-8 rounded-md
+    {{ else }}
+      h-10 rounded-full
+    {{ end }}{{ if .dark }}
+      text-g-4
+    {{ else }}
+      text-g-8
+    {{ end }} flex flex-1 items-center justify-center gap-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none aria-pressed:bg-white aria-pressed:text-g-9 aria-pressed:shadow-[0_1px_2px_rgba(0,0,0,0.2)]"
+  >
+    <svg class="h-3 w-3 fill-current" aria-hidden="true">
+      <use href="#list-svg" />
+    </svg>
+    List
+  </button>
+  <button
+    type="button"
+    aria-pressed="false"
+    :aria-pressed="view === 'map' ? 'true' : 'false'"
+    @click="setView('map')"
+    class="{{ if .compact }}
+      h-8 rounded-md
+    {{ else }}
+      h-10 rounded-full
+    {{ end }}{{ if .dark }}
+      text-g-4
+    {{ else }}
+      text-g-8
+    {{ end }} flex flex-1 items-center justify-center gap-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none aria-pressed:bg-white aria-pressed:text-g-9 aria-pressed:shadow-[0_1px_2px_rgba(0,0,0,0.2)]"
+  >
+    <svg class="h-3 w-3 fill-current" aria-hidden="true">
+      <use href="#map-svg" />
+    </svg>
+    Map
+  </button>
+</div>

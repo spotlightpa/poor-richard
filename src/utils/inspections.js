@@ -1,3 +1,5 @@
+export const ITEMS_PER_PAGE = 10;
+
 const HTML_ESCAPE_LOOKUP = {
   "&": "&amp;",
   "<": "&lt;",
@@ -13,10 +15,21 @@ export function escapeHTML(str) {
 
 export function normalizeString(str) {
   return (str || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+const CITY_WORDS = { st: "saint", mt: "mount", ft: "fort", twp: "township" };
+
+export function cityKey(str) {
+  return normalizeString(str)
+    .split(" ")
+    .map((w) => CITY_WORDS[w] || w)
+    .join("");
 }
 
 export function levenshtein(a, b) {
