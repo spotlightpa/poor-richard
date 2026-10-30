@@ -1,5 +1,5 @@
 import Alpine from "alpinejs/src/index.js";
-import { scrollToStickyTop } from "../utils/sticky-scroll.js";
+import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
 import { levenshtein, normalizeString } from "../utils/inspections.js";
 
 const SORT_LABELS = {
@@ -366,7 +366,18 @@ export default function inspectionsMobile() {
       }
       this.closePreview();
       const pinned = this.showBar;
+      const from = view === "map" ? this.$refs.list : this.$refs.map;
+      const top = pinned
+        ? Math.max(
+            0,
+            from.getBoundingClientRect().top + window.scrollY - stickyOffset(),
+          )
+        : null;
+      const to = view === "map" ? this.$refs.map : this.$refs.list;
+      from.style.display = "none";
+      to.style.removeProperty("display");
       this.view = view;
+      if (top !== null) window.scrollTo({ top, behavior: "instant" });
       this.$nextTick(() => {
         if (pinned) {
           scrollToStickyTop(view === "map" ? this.$refs.map : this.$refs.list);

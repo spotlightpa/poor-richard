@@ -80,13 +80,18 @@ function segmentDrag(Alpine) {
         d.inc = incoming;
         d.cur = currentPane;
         d.top = top;
+        incoming.style.display = "block";
+        const height =
+          incoming.dataset.viewPane === "map"
+            ? incoming.offsetHeight
+            : Math.max(0, window.innerHeight - top);
         Object.assign(incoming.style, {
           display: "block",
           position: "fixed",
           top: `${top}px`,
           left: "0",
           right: "0",
-          height: `${Math.max(0, window.innerHeight - top)}px`,
+          height: `${height}px`,
           overflow: "hidden",
           zIndex: "30",
           background: getComputedStyle(root).backgroundColor,
