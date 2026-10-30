@@ -17,6 +17,7 @@ import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
 import prefill from "../enhancements/prefill.js";
 import readmore from "../enhancements/read-more.js";
+import relativeDate from "../enhancements/relative-date.js";
 import sanitizeText from "../enhancements/sanitize-text.js";
 import searchArticles from "../enhancements/search-articles.js";
 import searchModal from "../enhancements/search-modal.js";
@@ -117,6 +118,8 @@ Alpine.plugin(focus);
 import collapse from "@alpinejs/collapse";
 
 Alpine.plugin(collapse);
+
+Alpine.magic("relativeDate", () => (date) => relativeDate(date));
 
 window.Alpine = Alpine;
 Alpine.start();
