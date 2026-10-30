@@ -37,7 +37,7 @@
           <time
             x-data
             datetime="{{ . }}"
-            x-text="$relativeDate(new Date($el.dateTime))"
+            x-text="$relativeDate($el.dateTime)"
             title="{{ partial `helper/date-apstyle` $t }} {{ $t.Format `3:04 pm` }}"
           >
             {{ partial "helper/date-apstyle" $t }}

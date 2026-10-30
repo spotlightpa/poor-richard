@@ -58,8 +58,8 @@ export function formatDateTime(d) {
   );
 }
 
-export default function relativeDate(date) {
-  const minutes = Math.floor((Date.now() - date) / 60_000);
+export function relativeDate(date) {
+  const minutes = Math.floor((Date.now() - toDate(date)) / 60_000);
 
   if (minutes < 5) return "Just now";
   if (minutes < 120) return `${minutes} minutes ago`;
