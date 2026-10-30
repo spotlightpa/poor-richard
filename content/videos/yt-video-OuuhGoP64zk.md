@@ -1,7 +1,7 @@
 {
   "blurb": "",
   "byline": "",
-  "draft": false,
+  "draft": true,
   "image": "external/k3ynmqeynd5tzm4yz4k93scnnc.jpeg",
   "image-description": "Short: Shapiro vs. Garrity: What to know about the PA gov race",
   "internal-id": "Short: Shapiro vs…",
