@@ -5,22 +5,31 @@
   :data-show="showThumb && !sheetOpen ? 'true' : 'false'"
   :data-compact="compact ? 'true' : 'false'"
   @click="openSheet()"
+  @pointerdown="peekStart($event)"
+  @pointerup="peekEnd($event)"
   aria-label="Search facilities"
   aria-haspopup="dialog"
-  class="group/cap fixed right-3 bottom-[calc(12px+env(safe-area-inset-bottom))] z-40 flex h-14 w-[calc(100%-24px)] items-center gap-3 overflow-hidden rounded-full bg-white/85 pl-5 text-left font-sans text-base text-g-6 shadow-[0_0_0_0.5px_rgba(0,0,0,0.12),0_6px_18px_rgba(0,0,0,0.12)] backdrop-blur-xl backdrop-saturate-150 transition-[width,padding] duration-200 ease-out focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none data-[compact=true]:w-14 data-[compact=true]:pl-[19px] data-[show=false]:hidden motion-reduce:transition-none"
+  class="fixed inset-x-0 bottom-0 z-40 block touch-none rounded-t-2xl bg-[#1c1c1e] px-5 pb-[calc(12px+env(safe-area-inset-bottom))] text-left font-sans transition-transform duration-200 ease-out focus-visible:outline-none data-[compact=true]:translate-y-[calc(100%-30px)] data-[show=false]:hidden motion-reduce:transition-none"
 >
-  <svg
-    class="h-[18px] w-[18px] flex-shrink-0 fill-current text-g-7"
-    aria-hidden="true"
-  >
-    <use href="#search-svg" />
-  </svg>
+  <span class="flex h-[30px] items-center justify-center" aria-hidden="true">
+    <span class="block h-[5px] w-12 rounded-full bg-[#636366]"></span>
+  </span>
   <span
-    class="min-w-0 truncate whitespace-nowrap transition-opacity duration-150 group-data-[compact=true]/cap:opacity-0"
-    :class="(query || $store.inspections.currentCity) && 'text-g-9'"
-    x-text="query || $store.inspections.currentCity || '{{ .placeholder }}'"
-    >{{ .placeholder }}</span
+    class="flex h-14 items-center gap-3 rounded-xl bg-[#3a3a3c] px-4 text-base text-[#aeaeb2]"
   >
+    <svg
+      class="h-[18px] w-[18px] flex-shrink-0 fill-current text-[#aeaeb2]"
+      aria-hidden="true"
+    >
+      <use href="#search-svg" />
+    </svg>
+    <span
+      class="min-w-0 truncate whitespace-nowrap"
+      :class="(query || $store.inspections.currentCity) && 'text-white'"
+      x-text="query || $store.inspections.currentCity || '{{ .placeholder }}'"
+      >{{ .placeholder }}</span
+    >
+  </span>
 </button>
 
 <div
@@ -43,21 +52,31 @@
   ></div>
   <div
     data-sheet-panel
-    class="absolute inset-x-0 top-[max(calc(env(safe-area-inset-top)+96px),24dvh)] bottom-0 flex translate-y-full flex-col rounded-t-2xl bg-white font-sans shadow-[0_-6px_24px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-[cubic-bezier(.2,.8,.2,1)] group-data-[open=true]/sheet:translate-y-0 motion-reduce:transition-none"
+    class="absolute inset-x-0 top-[max(calc(env(safe-area-inset-top)+96px),24dvh)] bottom-0 flex translate-y-full flex-col rounded-t-2xl bg-[#1c1c1e] font-sans transition-transform duration-300 ease-[cubic-bezier(.2,.8,.2,1)] group-data-[open=true]/sheet:translate-y-0 motion-reduce:transition-none"
     data-search-scope="mobile-sheet"
     x-data="searchUI()"
     x-init="init()"
   >
     <div data-sheet-head class="cursor-grab touch-none">
       <div class="flex justify-center pt-3 pb-3.5" aria-hidden="true">
-        <span class="h-[5px] w-10 rounded-full bg-g-4"></span>
+        <span class="h-[5px] w-10 rounded-full bg-[#636366]"></span>
       </div>
-      <div class="flex items-center gap-3 px-3 pb-3">
+      <div class="flex items-baseline justify-between px-4 pb-3">
+        <h2 class="font-serif text-2xl font-bold text-white">Search</h2>
+        <button
+          type="button"
+          @click="closeSheet()"
+          class="flex-shrink-0 text-base font-semibold text-yellow"
+        >
+          Cancel
+        </button>
+      </div>
+      <div class="px-4 pb-3">
         <label
-          class="flex h-10 min-w-0 flex-1 items-center gap-2 rounded-xl bg-g-2 px-3"
+          class="flex h-11 min-w-0 items-center gap-2 rounded-xl bg-[#3a3a3c] px-3"
         >
           <svg
-            class="h-4 w-4 flex-shrink-0 fill-current text-g-6"
+            class="h-4 w-4 flex-shrink-0 fill-current text-[#aeaeb2]"
             aria-hidden="true"
           >
             <use href="#search-svg" />
@@ -70,7 +89,7 @@
             enterkeyhint="search"
             placeholder="{{ .placeholder }}"
             autocomplete="off"
-            class="min-w-0 flex-1 bg-transparent text-base text-g-9 placeholder:text-g-6 focus:outline-none [&::-webkit-search-cancel-button]:hidden"
+            class="min-w-0 flex-1 bg-transparent text-base text-white placeholder:text-[#aeaeb2] focus:outline-none [&::-webkit-search-cancel-button]:hidden"
             @input="onSuggestInput()"
             @keydown.enter.prevent="doSearch(); $refs.input.blur(); $dispatch('search-sheet-close')"
           />
@@ -79,7 +98,7 @@
             x-show="q"
             x-cloak
             @click="q = ''; suggestions = []; $refs.input.focus()"
-            class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-g-4 text-white"
+            class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#636366] text-[#1c1c1e]"
             aria-label="Clear"
           >
             <svg class="h-2.5 w-2.5 fill-current" aria-hidden="true">
@@ -87,13 +106,6 @@
             </svg>
           </button>
         </label>
-        <button
-          type="button"
-          @click="closeSheet()"
-          class="flex-shrink-0 text-base font-semibold text-blue-9"
-        >
-          Cancel
-        </button>
       </div>
     </div>
 
@@ -102,6 +114,11 @@
       class="min-h-0 flex-1 overflow-y-auto overscroll-contain pb-[env(safe-area-inset-bottom)]"
     >
       <div x-show="q.trim().length < 2">
+        <div
+          class="px-4 pt-2 pb-1 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
+        >
+          Near you
+        </div>
         <button
           type="button"
           @click="locate()"
@@ -110,7 +127,7 @@
           class="flex w-full items-center gap-3 px-4 py-2.5 text-left disabled:cursor-wait"
         >
           <span
-            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-yellow/30 text-g-9"
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-yellow text-g-9"
             aria-hidden="true"
           >
             <svg x-show="!loadingLocation" class="h-4 w-4 fill-current">
@@ -126,48 +143,41 @@
           </span>
           <span class="min-w-0 flex-1">
             <span
-              class="block text-[15px] font-semibold text-g-9"
+              class="block text-[15px] font-semibold text-white"
               x-text="loadingLocation ? 'Finding your location…' : 'Facilities near me'"
               >Facilities near me</span
             >
-            <span class="block text-xs text-g-6">Use your location</span>
+            <span class="block text-xs text-[#aeaeb2]">Use your location</span>
           </span>
         </button>
-        <div class="mx-4 h-px bg-g-3"></div>
         <template x-if="$store.inspections.cities.length">
-          <div>
-            <div class="px-4 pt-3 pb-1 text-xs font-semibold text-g-6">
+          <div class="px-4 pb-4">
+            <div
+              class="pt-4 pb-2 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
+            >
               Popular cities
             </div>
-            <template
-              x-for="c in $store.inspections.cities.slice(0, 5)"
-              :key="c.value"
-            >
-              <button
-                type="button"
-                @click="chooseSuggestion({ type: 'city', id: 'city:' + c.value, name: c.text }); $dispatch('search-sheet-close')"
-                class="flex w-full items-center gap-3 px-4 py-2 text-left"
+            <div class="grid grid-cols-2 gap-2">
+              <template
+                x-for="c in $store.inspections.cities.slice(0, 6)"
+                :key="c.value"
               >
-                <span
-                  class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-g-2 text-g-7"
-                  aria-hidden="true"
+                <button
+                  type="button"
+                  @click="chooseSuggestion({ type: 'city', id: 'city:' + c.value, name: c.text }); $dispatch('search-sheet-close')"
+                  class="min-w-0 rounded-xl bg-[#2c2c2e] px-3 py-2.5 text-left focus-visible:ring-2 focus-visible:ring-yellow focus-visible:outline-none"
                 >
-                  <svg class="h-3.5 w-3.5 fill-current">
-                    <use href="#location-svg" />
-                  </svg>
-                </span>
-                <span class="min-w-0 flex-1">
                   <span
-                    class="block truncate text-[15px] font-semibold text-g-9"
+                    class="block truncate text-[15px] font-semibold text-white"
                     x-text="c.text"
                   ></span>
                   <span
-                    class="block text-xs text-g-6"
+                    class="block truncate text-xs text-[#aeaeb2]"
                     x-text="c.count.toLocaleString() + (c.count === 1 ? ' facility' : ' facilities')"
                   ></span>
-                </span>
-              </button>
-            </template>
+                </button>
+              </template>
+            </div>
           </div>
         </template>
       </div>
@@ -177,7 +187,7 @@
           <div>
             <div
               x-show="i === 0 || suggestions[i - 1].type !== s.type"
-              class="px-4 pt-3 pb-1 text-xs font-semibold text-g-6"
+              class="px-4 pt-3 pb-1 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
               x-text="s.type === 'city' ? 'Cities' : 'Facilities'"
             ></div>
             <button
@@ -186,7 +196,7 @@
               class="flex w-full items-center gap-3 px-4 py-2 text-left"
             >
               <span
-                class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-g-2 text-g-7"
+                class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#2c2c2e] text-[#d1d1d6]"
                 aria-hidden="true"
               >
                 <svg
@@ -204,12 +214,12 @@
               </span>
               <span class="min-w-0 flex-1">
                 <span
-                  class="block truncate text-[15px] font-semibold text-g-9"
+                  class="block truncate text-[15px] font-semibold text-white"
                   x-text="s.name"
                 ></span>
                 <span
                   x-show="s.detail"
-                  class="block truncate text-xs text-g-6"
+                  class="block truncate text-xs text-[#aeaeb2]"
                   x-text="s.detail"
                 ></span>
               </span>
@@ -222,7 +232,7 @@
           class="flex w-full items-center gap-3 px-4 py-2.5 text-left"
         >
           <span
-            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-g-2 text-g-7"
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#2c2c2e] text-[#d1d1d6]"
             aria-hidden="true"
           >
             <svg class="h-3.5 w-3.5 fill-current">
@@ -230,7 +240,7 @@
             </svg>
           </span>
           <span
-            class="min-w-0 flex-1 truncate text-[15px] text-g-9"
+            class="min-w-0 flex-1 truncate text-[15px] text-white"
             x-text="'Search for “' + q.trim() + '”'"
           ></span>
         </button>

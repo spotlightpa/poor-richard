@@ -22,38 +22,6 @@
     <div>
       {{ partial "blocks/inspection-view-toggle.html" (dict "compact" false) }}
     </div>
-    <div
-      class="mt-3 flex min-h-10 [scrollbar-width:none] gap-2 overflow-x-auto py-0.5 [&::-webkit-scrollbar]:hidden"
-      role="group"
-      aria-label="Priority level"
-    >
-      <template x-for="p in priorities" :key="p.value">
-        <button
-          type="button"
-          @click="setPriority(p.value)"
-          :aria-pressed="($store.inspections.currentPriority || '') === p.value ? 'true' : 'false'"
-          class="inline-flex h-9 flex-shrink-0 items-center gap-1.5 rounded-full bg-white px-3.5 font-sans text-sm font-semibold whitespace-nowrap text-g-9 shadow-[0_0_0_1px_rgba(0,0,0,0.12)] focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none aria-pressed:bg-g-9 aria-pressed:text-white aria-pressed:shadow-none"
-        >
-          <svg
-            x-show="p.color"
-            class="h-2.5 w-2.5 flex-shrink-0 fill-current"
-            :style="'color:' + p.color"
-            aria-hidden="true"
-          >
-            <use href="#diamond-svg" />
-          </svg>
-          <svg
-            x-show="p.value === 'none'"
-            class="h-3 w-3 flex-shrink-0 fill-current"
-            style="color: #1b998b"
-            aria-hidden="true"
-          >
-            <use href="#circle-check-svg" />
-          </svg>
-          <span x-text="p.label"></span>
-        </button>
-      </template>
-    </div>
   </div>
   <div x-ref="introEnd" aria-hidden="true" class="h-px bg-g-3"></div>
 
@@ -135,7 +103,7 @@
         </label>
       </div>
       <div
-        x-show="(query || $store.inspections.currentCity) && $store.inspections.filteredData.length"
+        x-show="(query || $store.inspections.currentCity || $store.inspections.currentPriority) && $store.inspections.filteredData.length"
         x-cloak
         class="flex flex-wrap items-center gap-2 pb-3"
       >
@@ -165,6 +133,21 @@
             <use href="#location-svg" />
           </svg>
           <span class="truncate" x-text="$store.inspections.currentCity"></span>
+          <svg
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
+            aria-hidden="true"
+          >
+            <use href="#times-svg" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          x-show="$store.inspections.currentPriority"
+          @click="$store.inspections.currentPriority = ''"
+          class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-g-9 px-3 font-semibold text-white"
+          :aria-label="'Remove ' + priorityLabel"
+        >
+          <span class="truncate" x-text="priorityLabel"></span>
           <svg
             class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
             aria-hidden="true"
@@ -291,7 +274,7 @@
   <div x-ref="end" aria-hidden="true"></div>
 
   {{ partial "blocks/search-sheet.html" (dict
-    "placeholder" (default "Search" (.Param "search-placeholder"))
+    "placeholder" (default "Search" (.Param "search-desktop-placeholder"))
     )
   }}
 </div>

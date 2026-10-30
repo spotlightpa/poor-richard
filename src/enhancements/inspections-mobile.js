@@ -11,14 +11,6 @@ const SORT_LABELS = {
   "alpha-desc": "Name Z–A",
 };
 
-const PRIORITIES = [
-  { value: "", label: "All" },
-  { value: "high", label: "High", color: "#D70000" },
-  { value: "moderate", label: "Moderate", color: "#FFCB03" },
-  { value: "low", label: "Low", color: "#009EDB" },
-  { value: "none", label: "No violations" },
-];
-
 const PRIORITY_LABELS = {
   high: "High priority",
   moderate: "Moderate priority",
@@ -120,6 +112,7 @@ export default function inspectionsMobile() {
     sheetOpen: false,
     compact: false,
     _anchor: 0,
+    _peek: null,
     preview: false,
     previewId: "",
     mapId: "inspections-map-mobile",
@@ -130,7 +123,6 @@ export default function inspectionsMobile() {
       return Alpine.store("inspections");
     },
 
-    priorities: PRIORITIES,
     sortOptions: Object.entries(SORT_LABELS).map(([value, label]) => ({
       value,
       label,
@@ -160,6 +152,11 @@ export default function inspectionsMobile() {
       return (this.store.searchQuery || "").trim();
     },
 
+    get priorityLabel() {
+      const p = this.store.currentPriority;
+      return PRIORITY_LABELS[p] || p;
+    },
+
     get hasActive() {
       const st = this.store;
       return !!(
@@ -168,11 +165,6 @@ export default function inspectionsMobile() {
         st.currentPriority ||
         (st.currentSort && st.currentSort !== "date-desc")
       );
-    },
-
-    setPriority(value) {
-      this.store.currentPriority =
-        value && this.store.currentPriority === value ? "" : value;
     },
 
     clearQuery,
@@ -331,7 +323,19 @@ export default function inspectionsMobile() {
       body.addEventListener("touchcancel", touchEnd);
     },
 
+    peekStart(e) {
+      e.currentTarget.setPointerCapture?.(e.pointerId);
+      this._peek = { y: e.clientY };
+    },
+
+    peekEnd(e) {
+      const start = this._peek;
+      this._peek = null;
+      if (start && start.y - e.clientY > 24) this.openSheet();
+    },
+
     openSheet() {
+      if (this.sheetOpen) return;
       const sheet = this.$refs.sheet;
       sheet.inert = false;
       const input = sheet.querySelector("input");
