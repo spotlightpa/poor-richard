@@ -1,0 +1,62 @@
+{{ $src := .Get "image" | htmlUnescape }}
+{{ $credit := .Get "image-credit" | htmlUnescape }}
+{{ $description := .Get "image-description" | htmlUnescape }}
+{{ $hed := .Get "hed" }}
+{{ $timestamp := .Get "timestamp" }}
+
+{{ partial "tag/content-well-end" . }}
+<div
+  class="my-4 overflow-hidden rounded-xl border border-g-4 bg-beige shadow"
+  {{ with $timestamp }}id="{{ . | anchorize }}"{{ end }}
+>
+  {{ if $src }}
+    {{ $imgOpts := dict
+      "filename" $src
+      "credit" $credit
+      "description" $description
+      "widthRatio" 5
+      "heightRatio" 4
+      "widths" (slice 638 1276)
+      "absURL" true
+      "creditClass" "font-sans text-right mr-5 max-w-content text-sm"
+      "inlineCredit" true
+    }}
+    {{ partial "tw/image-block.html" $imgOpts }}
+  {{ end }}
+  <div class="flex-row gap-1 p-5">
+    {{ with $hed }}
+      <h2 class="text-2xl leading-snug font-semibold">
+        {{ . }}
+      </h2>
+    {{ end }}
+    {{ with $timestamp }}
+      {{ $t := (time.AsTime .).Local }}
+      <p class="font-sans">
+        <a href="#{{ . | anchorize }}" class="no-underline">
+          {{- "" -}}
+          <time
+            x-data
+            datetime="{{ . }}"
+            x-text="$relativeDate(new Date($el.dateTime))"
+            title="{{ partial `helper/date-apstyle` $t }} {{ $t.Format `3:04 pm` }}"
+          >
+            {{ partial "helper/date-apstyle" $t }}
+            {{ $t.Format "3:04 pm" }}
+          </time>
+          <svg class="inline h-5 w-5 text-g-6">
+            {{ partial "helper/svg" "link" }}
+          </svg>
+          {{- "" -}}
+        </a>
+      </p>
+    {{ end }}
+    {{ $padding := cond (or $timestamp $hed | not | not) "mt-5" "" }}
+    <div
+      class="{{ $padding }} article-content w-full overflow-x-hidden leading-relaxed sm:overflow-x-visible"
+      data-fru-campaign="in-story-link"
+    >
+      {{ .Inner | page.RenderString (dict "display" "block") }}
+    </div>
+  </div>
+</div>
+{{ partial "tag/content-well-start" . }}
