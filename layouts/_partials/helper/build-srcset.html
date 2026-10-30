@@ -2,6 +2,7 @@
 {{ $imagename := .filename }}
 {{ $gravity := .gravity }}
 {{ $absURL := .absURL }}
+{{ $resize := .resize }}
 {{ $imgs := slice }}
 
 {{ range $sizes }}
@@ -13,6 +14,7 @@
     "width" $width
     "height" $height
     "gravity" $gravity
+    "resize" $resize
     "ext" "webp"
     "absURL" $absURL
   }}
