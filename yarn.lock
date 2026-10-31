@@ -2331,7 +2331,7 @@ jiti@^2.7.0:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.7.0.tgz#974228f2f4ca2bc21885a1797b45fea68e950c64"
   integrity sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==
 
-journalize@^2.5.1:
+journalize@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/journalize/-/journalize-2.6.0.tgz#647108c9e000156a3878a9cc700fd659b4dbaf42"
   integrity sha512-9Fi36vKj8MRtmqThQf8AK0GnTc1IYKCftyqwJA61dKNnkH82we2qqIPYDl1UX6farfQMCZBEV96OoEkDDQVY8g==

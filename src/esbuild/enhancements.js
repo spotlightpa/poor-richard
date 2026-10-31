@@ -118,5 +118,9 @@ import collapse from "@alpinejs/collapse";
 
 Alpine.plugin(collapse);
 
+import { relativeDate } from "../utils/format-date.js";
+
+Alpine.magic("relativeDate", () => (date) => relativeDate(date));
+
 window.Alpine = Alpine;
 Alpine.start();
