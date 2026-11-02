@@ -95,7 +95,7 @@ Beyond executive orders, Shapiro has used his executive powers to usher in porti
 
 Still, the Democratic governor has managed to find common ground with the legislature on certain priorities, namely, increased funding in the state budget for public schools.
 
-{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/">}}
+{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/subscribe">}}
 
 Recent polling shows Shapiro with strong approval numbers, and he is the clear favorite to win in November. A poll commissioned by the Philadelphia Inquirer, the New York Times, and Siena University in late August found 60% of Pennsylvania voters have a favorable opinion of him. The poll also showed the <a href="https://www.inquirer.com/politics/election/josh-shapiro-stacy-garrity-governors-race-20260825.html">Democratic governor held a 16-point lead</a> over Garrity among likely Pennsylvania voters.
 
