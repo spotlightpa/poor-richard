@@ -65,20 +65,7 @@ export default function scrollyMap(config) {
       return Math.min(index, stops.length - 1);
     },
     enterSnapshot() {
-      Object.assign(this.$root.style, {
-        position: "fixed",
-        inset: "0",
-        zIndex: "9999",
-        background: this.basemap ? "#ffffff" : this.background,
-      });
-      Object.assign(this.$refs.canvas.parentElement.style, {
-        position: "absolute",
-        inset: "0",
-        height: "100%",
-      });
-      this.$refs.canvas.parentElement.nextElementSibling.style.visibility =
-        "hidden";
-      document.documentElement.style.overflow = "hidden";
+      document.documentElement.classList.add("overflow-hidden");
     },
     applyTheme() {
       const opacity = parseFloat(this.colorOpacity);

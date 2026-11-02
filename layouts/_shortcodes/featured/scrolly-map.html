@@ -8,27 +8,17 @@
 {{ $outlet := .Get "outlet" | htmlUnescape | default "Spotlight PA" }}
 {{ $hedSizes := .Get "hed-sizes" | default `text-3xl lg:text-5xl` }}
 {{ $colorInput := .Get "color" | default "Blue" }}
-{{ $brandColors := dict
-  "black" "#2e2e2e"
-  "blue" "#009edb"
-  "green" "#78bc20"
-  "red" "#d70000"
-  "navy" "#22416e"
-  "teal" "#1b998b"
-  "orange" "#ff6c36"
-  "yellow" "#ffcb03"
-}}
-{{ $mapColor := index $brandColors (lower $colorInput) | default $colorInput }}
+{{ $mapColor := partial "helper/brand-color.html" $colorInput }}
 {{ $colorOpacity := .Get "color-opacity" }}
 {{ $baseColor := .Get "base-color" }}
 {{ $shadeProperty := .Get "shade-property" | default "shaded" }}
 {{ $layout := .Get "layout" | default "left" | lower }}
 {{ $basemap := not (in (slice "hide" "false" "off" "none") (.Get "basemap" | default "show" | lower)) }}
 {{ $backgroundInput := .Get "background" | default "#ffffff" }}
-{{ $background := index $brandColors (lower $backgroundInput) | default $backgroundInput }}
+{{ $background := partial "helper/brand-color.html" $backgroundInput }}
 {{ $outline := ne (.Get "outline" | default "true" | lower) "false" }}
 {{ $outlineInput := .Get "outline-color" | default "#2e2e2e" }}
-{{ $outlineColor := index $brandColors (lower $outlineInput) | default $outlineInput }}
+{{ $outlineColor := partial "helper/brand-color.html" $outlineInput }}
 {{ $topperImage := .Get "topper-image" | htmlUnescape }}
 {{ $topperDescription := .Get "topper-image-description" | htmlUnescape }}
 {{ $topperFit := .Get "topper-image-fit" | default "cover" | lower }}
@@ -128,12 +118,13 @@
 
 
 <section
-  class="relative"
   data-ga-category="scrolly-map"
   x-data="scrollyMap({{ $config | jsonify }})"
+  :class="snapshot === null ? 'relative' : 'fixed inset-0 z-[9999] {{ cond $basemap `bg-white` (printf `bg-[%s]` $background) }}'"
 >
   <div
-    class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} sticky top-0 h-dvh w-full overflow-hidden"
+    class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} w-full overflow-hidden"
+    :class="snapshot === null ? 'sticky top-0 h-dvh' : 'absolute inset-0 h-full'"
   >
     <div x-ref="canvas" class="h-full w-full"></div>
     {{ with $fallbackImage }}
@@ -154,7 +145,10 @@
       </noscript>
     {{ end }}
   </div>
-  <div class="pointer-events-none relative z-10 -mt-[100dvh] pb-[50dvh]">
+  <div
+    class="pointer-events-none relative z-10 -mt-[100dvh] pb-[50dvh]"
+    :class="{ invisible: snapshot !== null }"
+  >
     {{ .Inner }}
   </div>
 </section>
