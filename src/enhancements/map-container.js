@@ -328,33 +328,114 @@ export default function mapContainer(config) {
       this.isSearching = true;
       this.errorState = false;
       try {
-        const url =
-          "https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?address=" +
-          encodeURIComponent(q);
-        const res = await fetch(url);
-        const data = await res.json();
-        const result = data?.results?.[0]?.geometry?.location;
-        if (!result) {
+        const results = await this.geocode(q);
+        let match = this.matchResults(results);
+        if (!match && !this.namesPlace(q, results)) {
+          const lower = q.toLowerCase();
+          for (const name of await this.areaNames()) {
+            if (lower.includes(name.toLowerCase())) continue;
+            match = this.matchResults(await this.geocode(`${q}, ${name}`));
+            if (match) break;
+          }
+        }
+        if (!match) {
           this.fail();
           return;
         }
-        const lon = result.lng;
-        const lat = result.lat;
-        const matchedFeature =
-          this.districtsData &&
-          this.districtsData.features.find((f) =>
-            this.pointInFeature([lon, lat], f),
-          );
-        if (!matchedFeature) {
-          this.fail();
-          return;
-        }
-        this.dropPin(lon, lat, matchedFeature);
+        this.dropPin(match.lon, match.lat, match.feature);
       } catch {
         this.fail();
       } finally {
         this.isSearching = false;
       }
+    },
+    async geocode(address) {
+      const url =
+        "https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?address=" +
+        encodeURIComponent(address);
+      const res = await fetch(url);
+      const data = await res.json();
+      return data?.results || [];
+    },
+    matchResults(results) {
+      if (!this.districtsData) return null;
+      for (const result of results) {
+        const loc = result?.geometry?.location;
+        if (!loc || !this.isSpecificPlace(result)) continue;
+        const feature = this.districtsData.features.find((f) =>
+          this.pointInFeature([loc.lng, loc.lat], f),
+        );
+        if (feature) return { lon: loc.lng, lat: loc.lat, feature };
+      }
+      return null;
+    },
+    namesPlace(query, results) {
+      const lower = query.toLowerCase();
+      if (/\b\d{5}\b/.test(query)) return true;
+      const parts = lower.split(",").map((part) => part.trim());
+      const unit = /^(?:#|(?:apt|apartment|unit|suite|ste|fl|floor|rm|room)\b)/;
+      if (parts.slice(1).some((part) => part && !unit.test(part))) return true;
+      const placeTypes = [
+        "locality",
+        "administrative_area_level_2",
+        "administrative_area_level_3",
+      ];
+      return results.some((result) =>
+        (result.address_components || []).some(
+          (part) =>
+            (part.types || []).some((type) => placeTypes.includes(type)) &&
+            part.long_name &&
+            lower.includes(part.long_name.toLowerCase()),
+        ),
+      );
+    },
+    isSpecificPlace(result) {
+      if (result?.geometry?.location_type === "APPROXIMATE") return false;
+      const area = [
+        "political",
+        "country",
+        "administrative_area_level_1",
+        "administrative_area_level_2",
+        "administrative_area_level_3",
+        "locality",
+        "sublocality",
+        "sublocality_level_1",
+        "neighborhood",
+        "colloquial_area",
+        "postal_code",
+      ];
+      const types = result?.types || [];
+      return !types.length || types.some((type) => !area.includes(type));
+    },
+    areaNames() {
+      if (!this.areaNamesPromise) {
+        this.areaNamesPromise = this.lookupAreaNames().catch(() => {
+          this.areaNamesPromise = null;
+          return [];
+        });
+      }
+      return this.areaNamesPromise;
+    },
+    async lookupAreaNames() {
+      if (!this.districtsData) return [];
+      const bounds = this.dataBounds(this.districtsData);
+      if (bounds.isEmpty()) return [];
+      const center = bounds.getCenter();
+      const url =
+        "https://viz-sample-ballot-2024.data.spotlightpa.org/api/geolocate?latlng=" +
+        encodeURIComponent(`${center.lat},${center.lng}`);
+      const res = await fetch(url);
+      const data = await res.json();
+      const pick = (type) => {
+        for (const result of data?.results || []) {
+          for (const part of result.address_components || []) {
+            if (part.types && part.types.includes(type)) return part.long_name;
+          }
+        }
+        return "";
+      };
+      const names = [pick("locality"), pick("administrative_area_level_2")];
+      return names.filter((name, i) => name && names.indexOf(name) === i);
     },
     fail() {
       if (this.marker) {
