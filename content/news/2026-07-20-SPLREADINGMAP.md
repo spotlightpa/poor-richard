@@ -65,7 +65,7 @@ The body can meet in private to discuss personnel, legal, or real estate issues.
 
 Each member of City Council is elected to four-year terms.
 
-The terms are staggered. Half of the council will be up for election next year, with the remaining seats open in 2029.
+The terms are staggered. Half of the council will be up for election in 2027, with the remaining seats open in 2029.
 
 Where you live within city limits determines what district you vote in, and each district covers a distinct part of Reading. Boundaries can shift over time as the city&#39;s population changes, meaning district lines you&#39;re familiar with today could change in the future.
 
