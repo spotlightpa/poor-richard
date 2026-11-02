@@ -60,7 +60,7 @@ export function formatDateTime(d) {
 
 export function relativeDate(date) {
   const minutes = Math.floor((Date.now() - toDate(date)) / 60_000);
-
+  if (minutes < 0) return formatDateTime(date); // Future dating
   if (minutes < 5) return "Just now";
   if (minutes < 120) return `${minutes} minutes ago`;
 
