@@ -25,7 +25,7 @@
 {{ with $timestamp }}
   {{ $t := time.AsTime . "America/New_York" }}
   <p>
-    <a href="#{{ . | anchorize }}">
+    <a href="{{ $.Page.Permalink }}#{{ . | anchorize }}">
       {{- "" -}}
       <time
         datetime="{{ . }}"
