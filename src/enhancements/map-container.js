@@ -171,7 +171,7 @@ export default function mapContainer(config) {
       });
 
       this.map.on("mousemove", "shapes-fill", () => {
-        this.hovering = true;
+        this.hovering = this.resultMode() !== "none";
       });
       this.map.on("mouseleave", "shapes-fill", () => {
         this.hovering = false;
@@ -461,12 +461,12 @@ export default function mapContainer(config) {
       return window.matchMedia("(min-width: 850px)").matches;
     },
     resultMode() {
+      if (!this.tooltipsEnabled) return "none";
       const cards = this.isMd() ? this.desktopCards : this.mobileCards;
       if (cards && this.cardTemplates.length) {
         return this.isMd() ? "strip" : "section";
       }
-      if (this.tooltipsEnabled && this.tooltipTemplate) return "popup";
-      return "none";
+      return this.tooltipTemplate ? "popup" : "none";
     },
     async showResult(lon, lat, feature, noPin = false) {
       this.lastResult = { lon, lat, feature, noPin };
