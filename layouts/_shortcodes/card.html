@@ -34,7 +34,7 @@
     {{ end }}
     {{ with $timestamp }}
       {{ $t := time.AsTime . "America/New_York" }}
-      <p class="font-sans">
+      <p class="font-sans text-lg font-semibold text-g-6">
         <a href="#{{ . | anchorize }}" class="no-underline">
           {{- "" -}}
           <time
@@ -47,7 +47,8 @@
             {{ partial "helper/date-apstyle" $t }}
             {{ $t.Format "3:04 pm" }}
           </time>
-          <svg class="inline h-5 w-5 text-g-6">
+          {{- "" -}}
+          <svg class="mb-[5px] ml-1 inline h-5 w-5">
             {{ partial "helper/svg" "link" }}
           </svg>
           {{- "" -}}
