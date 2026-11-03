@@ -6,17 +6,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-11-02-SPLCFTIDBITS1126.md"
+    "content/news/2026-11-03-SPLLIVEBLOG1126.md"
   ],
   "subfeatures": [
-    "content/news/2026-11-02-SPLLEGSTAKES1126.md",
+    "content/news/2026-11-03-SPLAPLIVE1126.md",
     "content/news/2026-10-29-SPLINTIMID1026.md",
-    "content/news/2026-10-26-SPLNOV3LASTMINGUIDE.md",
-    "content/news/2026-10-21-SPLLEGVET1026.md"
+    "content/news/2026-09-14-SPLMAINGOVGUIDE0926.md",
+    "content/news/2026-09-28-SPLCONGGUIDE0926.md"
   ],
   "topSlots": [
-    "content/news/2026-11-02-VBMONITOR1126.md",
-    "content/news/2026-10-30-SPLC5LEGIS1026.md",
-    "content/news/2026-10-30-SPLDATASEN1026.md"
+    "content/news/2026-11-03-SPLELEXDAYINFO1126.md",
+    "content/news/2026-11-02-SPLLEGSTAKES1126.md",
+    "content/news/2026-11-02-VBMONITOR1126.md"
   ]
 }
