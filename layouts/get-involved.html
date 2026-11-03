@@ -246,7 +246,9 @@
               aria-label="Get it on Google Play"
               class="flex min-h-11 items-center gap-2.5 rounded-[9px] border border-[#a6a6a6] bg-black py-1.75 pr-4 pl-3 text-white no-underline hover:bg-[#222] hover:text-white"
             >
-              {{ partial "get-involved/icons/google-play.html" (dict "class" "h-6.5 w-6.5") }}
+              <svg class="h-6.5 w-6.5" aria-hidden="true">
+                {{ partial "helper/svg.html" "google-play" }}
+              </svg>
               <span class="flex flex-col leading-[1.05]">
                 <span
                   class="text-[10px] font-medium tracking-[0.04em] uppercase"
@@ -327,14 +329,18 @@
               href="https://news.google.com/home?hl=en-US&gl=US&ceid=US:en"
               class="{{ $outlineBtnClass }}"
             >
-              {{ partial "get-involved/icons/google-news.html" (dict "class" "h-5.5 w-5.5") }}
+              <svg class="h-5.5 w-5.5" aria-hidden="true">
+                {{ partial "helper/svg.html" "google-news" }}
+              </svg>
               <span>Google News</span>
             </a>
             <a
               href="https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
               class="{{ $outlineBtnClass }}"
             >
-              {{ partial "get-involved/icons/apple-news.html" (dict "class" "h-5.5 w-5.5") }}
+              <svg class="h-5.5 w-5.5" aria-hidden="true">
+                {{ partial "helper/svg.html" "apple-news" }}
+              </svg>
               <span>Apple News</span>
             </a>
           </div>
