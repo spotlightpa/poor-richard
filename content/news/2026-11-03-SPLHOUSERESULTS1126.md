@@ -22,6 +22,8 @@ title-tag = "Democrats flip PA Senate, giving Shapiro a powerful trifecta"
 topics = ["Elections"]
 +++
 
+<strong><em>Update: </em></strong><a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-democrats-trifecta-agenda-minimum-wage-capitol/"><strong><em>Shapiro, Democrats say new trifecta will deliver minimum wage increase, transit funding, and more</em></strong></a><strong><em></em></strong>
+
 HARRISBURG — Democrats have won control of the Pennsylvania Senate for the first time in more than three decades, giving the party a trifecta and the power to set policy for the state with few limitations.
 
 Republicans entered Tuesday’s election with a 27-23 majority in the legislature’s upper chamber. Democrats flipped four GOP-held seats and lost one held by an incumbent.
