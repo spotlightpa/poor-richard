@@ -22,7 +22,7 @@ title-tag = "Democrats flip PA Senate, giving Shapiro a powerful trifecta"
 topics = ["Elections"]
 +++
 
-HARRISBURG — Democrats say they have won control of the Pennsylvania Senate for the first time in more than three decades, giving the party a vaunted trifecta and the power to set policy for the state with few limitations.
+HARRISBURG — Democrats say they have won control of the Pennsylvania Senate for the first time in more than three decades, giving the party a trifecta and the power to set policy for the state with few limitations.
 
 Republicans entered Tuesday’s election with a 27-23 majority in the legislature’s upper chamber. As of midnight, Democrats said the party had flipped four GOP-held seats. The party appeared to be on track to lose one seat, for a likely net gain of three<strong> </strong>seats.
 
