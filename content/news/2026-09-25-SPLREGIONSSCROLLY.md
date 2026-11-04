@@ -3,21 +3,21 @@ authors = ["Asha Prihar", "Alexandra Harris"]
 blurb = "Where do Pennsylvania's regions begin and end?"
 byline = "Asha Prihar and Alexandra Harris"
 description = "A scrolling map of how Pennsylvanians define the state's regions."
-image = "2026/08/01n7-vrw4-gbr7-5n9n.png"
+image = "2026/09/01nb-t9xp-qgjk-68mp.png"
 image-description = "Illustration of a Pennsylvania map with pins, a pencil, and a sticky note reading 'somewhere in PA'"
 image-gravity = "ce"
 internal-id = "SPLREGIONSSCROLLY"
 kicker = "Pennsylvania"
 layout = "scrolly-map"
 published = 2026-09-25T00:00:00-04:00
-slug = "pennsylvania-regions-scrolly-map"
+slug = "pennsylvania-regions"
 suppress-ads = true
 title = "Defining Pennsylvania's Regions"
 title-tag = "Defining Pennsylvania's Regions"
 topics = ["Pennsylvania"]
 +++
 
-{{<featured/scrolly-map eyebrow="Pennsylvania" hed="Defining Pennsylvania&#39;s Regions" dek="Where does Central PA end and the Coal Region begin? We asked readers to draw the lines." display-date="September 25, 2026" byline="Asha Prihar and Alexandra Harris" credit-type="2026/09/01nb-t9xp-qgjk-68mp.png" outlet="Spotlight PA" color="Blue" layout="left" outline="false" shade-property="shaded" topper-image="2026/09/01nb-t9xp-qgjk-68mp.png" topper-image-description="Illustration of a Pennsylvania map with pins, a pencil, and a sticky note reading &#39;somewhere in PA&#39;" topper-image-fit="contain" topper-layout="icon-dark" topper-mobile-layout="top">}}
+{{<featured/scrolly-map eyebrow="Pennsylvania" hed="Defining Pennsylvania&#39;s Regions" dek="Where does Central PA end and the Coal Region begin? We asked readers to draw the lines." display-date="September 25, 2026" byline="Asha Prihar and Alexandra Harris" outlet="Spotlight PA" color="Blue" layout="left" outline="false" shade-property="shaded" topper-image="2026/09/01nb-t9xp-qgjk-68mp.png" topper-image-description="Illustration of a Pennsylvania map with pins, a pencil, and a sticky note reading &#39;somewhere in PA&#39;" topper-image-fit="contain" topper-layout="icon-dark" topper-mobile-layout="top">}}
 {{<featured/scrolly-map-stop label="Central PA" color="Blue" geojson="https://files.data.spotlightpa.org/uploads/01nb/mzwt/central-pa-a-edited.geojson" image="2026/05/01n1-dy4v-yvs2-mjba.jpeg" image-description="Old Main on Penn State&#39;s University Park campus" image-caption="Placeholder caption for the Central PA photo." image-credit="Photographer Name / Spotlight PA">}}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
