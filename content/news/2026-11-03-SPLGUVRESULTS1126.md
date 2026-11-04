@@ -35,11 +35,13 @@ Libertarian Ken Krawchuk also appeared on the ballot for governor.
 
 Despite the uncertainty around the makeup of the legislature, Shapiro appeared elated at his victory party Tuesday at a hotel outside Harrisburg. <strong></strong>
 
-“This is a good night for our commonwealth,” Shapiro said, to cheers.
+“This is a good night for our commonwealth,” Shapiro said to cheers.
+
+{{<embed/newsletter>}}
 
 “Tonight, the people have spoken,” he said. “They want us to raise the minimum wage to $15 an hour. They want us to build more housing and strengthen our infrastructure. They want us to invest in our kids, our cops, and our communities. And they want us to enshrine abortion rights for women in the constitution of this commonwealth.”
 
-Garrity took the stage at her own Election Night party, at a Wyoming County golf course, a little before 9 p.m. and said she had called Shapiro to congratulate him on his “hard-fought victory.”
+Garrity took the stage at her own election night party, at a Wyoming County golf course, a little before 9 p.m. and said she had called Shapiro to congratulate him on his “hard-fought victory.”
 
 “Tonight, I wish the governor and his team my sincere best, as we all should, you guys,” Garrity told her supporters. “Because his success is our success.”
 
@@ -49,7 +51,7 @@ She added, “It is my hope that the campaign we&#39;ve run, the issues we&#39;v
 
 In the waning days of the race, Shapiro barnstormed the state with Lt. Gov. Austin Davis, traveling to more than two dozen counties by bus to trumpet his first-term accomplishments — but also to stump for fellow down-ballot Democrats, including those in several competitive races in Pennsylvania that could help decide control of Congress.
 
-If Democrats in Pennsylvania manage to sweep them, it could further boost Shapiro’s profile with deep-pocketed donors and national party leaders whose endorsements will be essential if he decides to pursue the Democratic nomination for president in two years.
+If Democrats in Pennsylvania manage to sweep them, it could further boost Shapiro’s profile with deep-pocketed donors and national party leaders whose endorsements will be essential if he decides to pursue the nomination for president in two years.
 
 To date, the 53-year-old governor has been coy about his political ambitions. He sidestepped questions throughout his campaign about whether he’d complete a full four-year second term. (If Shapiro leaves office early, he would be succeeded by Davis, who would serve through January 2031.)
 
@@ -67,7 +69,7 @@ Still, Shapiro was able to use his office’s executive powers to accomplish oth
 
 His office also became the go-to venue in Pennsylvania for legal challenges to the Trump administration, with Shapiro <a href="https://www.spotlightpa.org/news/2026/07/josh-shapiro-trump-admin-lawsuits-federal-funding-snap-planned-parenthood-covid-grants/">launching or joining several dozen lawsuits</a> challenging the loss of federal funding or federal requests for personal data on Pennsylvania residents.
 
-In fact, Shapiro’s willingness to openly criticize Trump’s policies made him a regular guest on the national news circuit, helping to boost his profile beyond Pennsylvania’s borders. Those appearances, in turn, gave him a ready platform to discuss his ideas for the future of the Democratic Party, and cement his reputation as a moderate voice from a key battleground state who wants to shape the direction of American politics.
+In fact, Shapiro’s willingness to openly criticize Trump’s policies made him a regular guest on the national news circuit, helping to boost his profile beyond Pennsylvania’s borders. Those appearances, in turn, gave him a ready platform to discuss his ideas for the future of the Democratic Party and cement his reputation as a moderate voice from a key battleground state who wants to shape the direction of American politics.
 
 The next four years of a Shapiro administration are in some ways hard to predict.
 
@@ -79,11 +81,13 @@ That push from Democrats in the legislature consumed much of the money and effor
 
 Garrity, tapped for the nomination early by the GOP to prevent a competitive primary, ran a campaign largely on offense against Shapiro. The decorated Army Reserve veteran also ran on a pro-oil and natural gas platform she promised would help spur the state’s economy.
 
+{{<embed/donate>}}
+
 Despite support from some regular Republican donors, Garrity’s campaign could not keep pace with Shapiro’s vast national network of deep-pocketed backers. An influx of millions of dollars from skill games industry insiders in the waning weeks of the campaign did not prove fruitful. And Trump never parachuted into Pennsylvania to stump for her, despite her predicting he likely would.
 
 Garrity’s campaign eventually turned to a novel approach to take on Shapiro: AI-generated advertisements depicting a fake Shapiro claiming he covered up a series of political scandals. The ad also inaccurately represented some of the Democrat’s policy positions.
 
-Soon after Shapiro’s victory was officially called on Election Night, supporter Jenna Behringer, an education advocate from the Harrisburg area, told Spotlight PA she respects the governor’s &#34;ability and willingness to work across the aisle.&#34;
+Soon after Shapiro’s victory was called by the AP on Tuesday, supporter Jenna Behringer, an education advocate from the Harrisburg area, told Spotlight PA she respects the governor’s &#34;ability and willingness to work across the aisle.&#34;
 
 &#34;I think that is incredibly important,&#34; she said. &#34;If we are going to address polarization and work in a purple state, we need to be able to talk across both sides, and I really admire that about him.&#34;
 
