@@ -27,13 +27,13 @@ HARRISBURG — Democratic Gov. Josh Shapiro easily beat back a challenge by Repu
 
 Unofficial results Tuesday evening showed Shapiro cruising toward a commanding victory over Garrity, whose campaign was considered a long shot from the earliest days of the race. The Associated Press called the race just one minute after polls closed at 8 p.m.
 
-Despite holding statewide office and receiving President Donald Trump’s endorsement, Garrity was hampered by lackluster fundraising, limited support from the GOP, and Shapiro’s name recognition, approval ratings, and incumbency advantage.
+Despite holding statewide office and receiving President Donald Trump’s endorsement, Garrity was hampered by lackluster fundraising, limited support from the GOP, and Shapiro’s name recognition, approval ratings, and incumbency advantage. Libertarian Ken Krawchuk also appeared on the ballot for governor.
 
-Whether Shapiro’s decisive win translates into a mandate for his governing agenda in the Capitol over the next four years remains unknown, with much of it riding on whether Democrats succeed in a long-running quest to seize both chambers of the state legislature. The state House has been narrowly controlled by Democrats since 2022, while the Senate has been dominated by Republicans who stymied key aspects of Shapiro’s platform in his first term.
+Shapiro’s second term will be very different than his first. Democrats on Tuesday also succeeded in a long-running quest to <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-house-election-results-legislature-control-elections/">seize both chambers of the state legislature</a>, giving Shapiro a trifecta and the power to set the state’s policy agenda with few limitations.
 
-Libertarian Ken Krawchuk also appeared on the ballot for governor.
+The state House has been narrowly controlled by Democrats since 2022, while the Senate has been dominated by Republicans who stymied key aspects of Shapiro’s platform in his first term.
 
-Despite the uncertainty around the makeup of the legislature, Shapiro appeared elated at his victory party Tuesday at a hotel outside Harrisburg. <strong></strong>
+Even before Democrats declared victory in the state House and Senate, Shapiro appeared elated at his victory party Tuesday at a hotel outside Harrisburg. <strong></strong>
 
 “This is a good night for our commonwealth,” Shapiro said to cheers.
 
@@ -49,9 +49,9 @@ She added, “It is my hope that the campaign we&#39;ve run, the issues we&#39;v
 
 ## A second term, and beyond
 
-In the waning days of the race, Shapiro barnstormed the state with Lt. Gov. Austin Davis, traveling to more than two dozen counties by bus to trumpet his first-term accomplishments — but also to stump for fellow down-ballot Democrats, including those in several competitive races in Pennsylvania that could help decide control of Congress.
+In the waning days of the race, Shapiro barnstormed the state with Lt. Gov. Austin Davis, traveling to more than two dozen counties by bus to trumpet his first-term accomplishments — but also to stump for fellow Democrats, including those in several competitive races in Pennsylvania that helped decide control of Congress.
 
-If Democrats in Pennsylvania manage to sweep them, it could further boost Shapiro’s profile with deep-pocketed donors and national party leaders whose endorsements will be essential if he decides to pursue the nomination for president in two years.
+Democrats in Pennsylvania flipped four congressional districts on Tuesday, which could further boost Shapiro’s profile with deep-pocketed donors and national party leaders whose endorsements will be essential if he decides to pursue the nomination for president in two years.
 
 To date, the 53-year-old governor has been coy about his political ambitions. He sidestepped questions throughout his campaign about whether he’d complete a full four-year second term. (If Shapiro leaves office early, he would be succeeded by Davis, who would serve through January 2031.)
 
@@ -70,10 +70,6 @@ Still, Shapiro was able to use his office’s executive powers to accomplish oth
 His office also became the go-to venue in Pennsylvania for legal challenges to the Trump administration, with Shapiro <a href="https://www.spotlightpa.org/news/2026/07/josh-shapiro-trump-admin-lawsuits-federal-funding-snap-planned-parenthood-covid-grants/">launching or joining several dozen lawsuits</a> challenging the loss of federal funding or federal requests for personal data on Pennsylvania residents.
 
 In fact, Shapiro’s willingness to openly criticize Trump’s policies made him a regular guest on the national news circuit, helping to boost his profile beyond Pennsylvania’s borders. Those appearances, in turn, gave him a ready platform to discuss his ideas for the future of the Democratic Party and cement his reputation as a moderate voice from a key battleground state who wants to shape the direction of American politics.
-
-The next four years of a Shapiro administration are in some ways hard to predict.
-
-They will likely feature efforts by his administration to push through initiatives that failed in his first term, but that effort will be indelibly shaped by the balance of power in the legislature.
 
 Legislative Democrats have widely pitched themselves to voters this year as allies to Shapiro who are dedicated to clearing the GOP from obstructing his vision for the commonwealth. Shapiro, on his end, donated millions from his coffers to campaigns aimed at ousting Republican incumbent senators and growing the party’s narrow House majority.
 
