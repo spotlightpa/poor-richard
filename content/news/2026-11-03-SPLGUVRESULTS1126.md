@@ -25,7 +25,7 @@ topics = ["Elections", "Josh Shapiro"]
 
 HARRISBURG — Democratic Gov. Josh Shapiro easily beat back a challenge by Republican Stacy Garrity on Tuesday, setting the stage for a second term as Pennsylvania’s top executive.
 
-Unofficial results Tuesday evening showed Shapiro cruising toward a commanding victory over Garrity, whose campaign was considered a long shot from the earliest days of the race. The Associated Press called the race just three minutes after polls closed at 8 p.m.
+Unofficial results Tuesday evening showed Shapiro cruising toward a commanding victory over Garrity, whose campaign was considered a long shot from the earliest days of the race. The Associated Press called the race just one minute after polls closed at 8 p.m.
 
 Despite holding statewide office and receiving President Donald Trump’s endorsement, Garrity was hampered by lackluster fundraising, limited support from the GOP, and Shapiro’s name recognition, approval ratings, and incumbency advantage.
 
