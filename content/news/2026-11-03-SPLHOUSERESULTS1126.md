@@ -17,7 +17,7 @@ river-exclude = false
 slug = "pennsylvania-house-election-results-legislature-control-elections"
 suppress-ads = false
 suppress-date = false
-title = "Democrats say they’ve won the Pennsylvania House and Senate, handing Shapiro a powerful trifecta"
+title = "Democrats have won the Pennsylvania House and Senate, handing Shapiro a powerful trifecta"
 title-tag = "Democrats flip PA Senate, giving Shapiro a powerful trifecta"
 topics = ["Elections"]
 +++
