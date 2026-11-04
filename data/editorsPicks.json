@@ -8,7 +8,9 @@
   "featuredStories": [
     "content/news/2026-11-03-SPLAPLIVE1126.md"
   ],
-  "subfeatures": [],
+  "subfeatures": [
+    "content/news/2026-11-03-SPL7THRESULTS1126.md"
+  ],
   "topSlots": [
     "content/news/2026-11-03-SPLGUVRESULTS1126.md",
     "content/news/2026-11-03-SPLLIVEBLOG1126.md",
