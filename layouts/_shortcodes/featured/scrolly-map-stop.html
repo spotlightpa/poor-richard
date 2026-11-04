@@ -36,6 +36,7 @@
 {{ $cardWidth := cond $hasEmbed "md:max-w-xl" "md:max-w-sm" }}
 
 {{ $media := "" }}
+{{ $mediaCategory := cond $image "scrolly-map:image" (cond $datawrapper "scrolly-map:datawrapper" "scrolly-map:flourish") }}
 {{ if $image }}
   {{ $media = partial "scrolly-map/stop-image.html" (dict
     "src" $image
@@ -46,14 +47,14 @@
     )
   }}
 {{ else if $datawrapper }}
-  {{ $media = partial "scrolly-map/stop-datawrapper.html" (dict
+  {{ $media = partial "tw/datawrapper.html" (dict
     "src" $datawrapper
     "height" $datawrapperHeight
     "id" (partial "helper/new-id" .)
     )
   }}
 {{ else if $flourish }}
-  {{ $media = partial "scrolly-map/stop-flourish.html" $flourish }}
+  {{ $media = partial "tw/flourish.html" (dict "src" $flourish) }}
 {{ end }}
 
 
@@ -82,7 +83,9 @@
       </div>
     {{ end }}
     {{ if and $media (ne $mediaPosition "bottom") }}
-      <div class="mb-4">{{ $media }}</div>
+      <div class="mb-4 w-full" data-ga-category="{{ $mediaCategory }}">
+        {{ $media }}
+      </div>
     {{ end }}
     {{ with .Inner }}
       <div class="{{ $textClass }} article-content text-base leading-relaxed">
@@ -90,7 +93,9 @@
       </div>
     {{ end }}
     {{ if and $media (eq $mediaPosition "bottom") }}
-      <div class="mt-4">{{ $media }}</div>
+      <div class="mt-4 w-full" data-ga-category="{{ $mediaCategory }}">
+        {{ $media }}
+      </div>
     {{ end }}
   </div>
 </div>

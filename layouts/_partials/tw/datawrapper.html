@@ -1,0 +1,15 @@
+{{ $src := .src }}
+{{ if and $src (not (strings.HasPrefix $src "http")) }}
+  {{ $src = printf "https://datawrapper.dwcdn.net/%s/" (strings.Trim $src "/") }}
+{{ end }}
+<div class="{{ with .height }}min-h-[{{ . }}px]{{ end }}" id="{{ .id }}">
+  <script
+    defer
+    src="{{ urls.JoinPath $src `embed.js` }}"
+    charset="utf-8"
+    data-target="#{{ .id }}"
+  ></script>
+  <noscript>
+    <img src="{{ urls.JoinPath $src `full.png` }}" alt="" />
+  </noscript>
+</div>
