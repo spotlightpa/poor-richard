@@ -24,13 +24,13 @@ topics = ["Elections"]
 
 HARRISBURG — Democrats say they have won control of the Pennsylvania Senate for the first time in more than three decades, giving the party a trifecta and the power to set policy for the state with few limitations.
 
-Republicans entered Tuesday’s election with a 27-23 majority in the legislature’s upper chamber. Democrats said they flipped four GOP-held seats, though the Associated Press had not called two of those races as of Wednesday morning.
+Republicans entered Tuesday’s election with a 27-23 majority in the legislature’s upper chamber. Democrats say they flipped four GOP-held seats, though the Associated Press had not called two of those races as of Wednesday morning.
 
 The party also lost one seat, according to unofficial results, for a likely net gain of three<strong> </strong>seats.
 
 {{<embed/newsletter>}}
 
-Democrats also <a href="https://x.com/PAHDCC/status/2117834759279960118?s=20">declared victory</a> in the state House, with the national Democratic Legislative Campaign Committee claiming the party had expanded its majority in the chamber. The Associated Press <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-2026-elections/#spl-heading-4">had not called</a> nine races as of Wednesday morning.
+Democrats also maintained and expanded their majority in the state House. Unofficial results show the party with 108 seats in the 203-member chamber as of Wednesday morning, with nine races still <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-2026-elections/#spl-heading-4">not called</a>.
 
 Unofficial results also show Democrat Josh Shapiro <a href="https://www.spotlightpa.org/news/2026/11/election-results-pennsylvania-governor-josh-shapiro-stacy-garrity-elections/">winning his reelection bid in a landslide</a> against Republican Stacy Garrity.
 
@@ -50,9 +50,7 @@ Major Senate GOP priorities, like cutting utility taxes, banning trans children 
 
 {{<embed/donate>}}
 
-Senate Republicans often wielded their authority as a brake on Democrats’ ambitions. For instance, leaders refused to move new election legislation so long as Democratic leaders didn’t agree to pass a constitutional amendment expanding the commonwealth’s voter ID laws.
-
 This year’s races <a href="https://www.spotlightpa.org/news/2026/10/campaign-finance-pennsylvania-legislature-2026-election-transparency-elections/">attracted tens of millions in political spending</a> as Democrats sought to ride the midterm wave to unilateral power in Harrisburg.
 
-The new legislative session officially begins next year, with new members sworn in on Jan. 5.
+The next legislative session officially begins next year, with new members sworn in on Jan. 5.
 
