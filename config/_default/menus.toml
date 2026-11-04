@@ -18,11 +18,6 @@ name = "About"
 url = "/about/"
 weight = 4
 
-[[main]]
-name = "elections"
-url = "/elections/"
-weight = 5
-
 [[about]]
 name = "Our Mission"
 url = "/about/mission/"
