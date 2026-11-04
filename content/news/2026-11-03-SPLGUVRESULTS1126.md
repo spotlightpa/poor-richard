@@ -33,7 +33,19 @@ Whether Shapiro’s decisive win translates into a mandate for his governing age
 
 Libertarian Ken Krawchuk also appeared on the ballot for governor.
 
-At Shapiro’s Election Night party at the Penn Harris Hotel near Harrisburg, supporters were still filling the ballroom as the AP called the race. For a moment, no one knew it was over, until CNN announced the result. The crowd erupted in cheers and applause.
+At Shapiro’s Election Night party at the Penn Harris Hotel near Harrisburg, supporters were still filling the ballroom as the AP called the race. For a moment, no one knew it was over until CNN announced the result. The crowd erupted in cheers and applause.
+
+One of those supporters was Jenna Behringer. An education advocate from the Harrisburg area, she called herself a lifelong Democrat who respects Shapiro&#39;s &#34;ability and willingness to work across the aisle.&#34;
+
+&#34;I think that is incredibly important,&#34; she said. &#34;If we are going to address polarization and work in a purple state, we need to be able to talk across both sides, and I really admire that about him.&#34;
+
+At Garrity’s party, which was held at a Wyoming County golf course, supporters mostly did not react as the race was called. Michael Lacey, a Wyoming County supporter, said Shapiro’s win does not mean he outworked Garrity.
+
+“There are people out there on the conservative end that are not voting: veterans; Christians,” Lacey said. “They&#39;re just not coming out to vote. I and if they were coming out to vote. I believe that this would have been a slam dunk.”
+
+Garrity had not yet appeared as of 8:30 p.m.
+
+## A second term, and beyond
 
 In the waning days of the race, Shapiro barnstormed the state with Lt. Gov. Austin Davis, traveling to more than two dozen counties by bus to trumpet his first-term accomplishments — but also to stump for fellow down-ballot Democrats, including those in several competitive races in Pennsylvania that could help decide control of Congress.
 
