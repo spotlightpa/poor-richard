@@ -5,9 +5,9 @@ byline = "Angela Couloumbis and Jaxon White of Spotlight PA"
 description = "Shapiro easily defeated Republican Stacy Garrity, whose campaign was considered a long shot from the earliest days of the race."
 draft = false
 feed-exclude = false
-image = "2026/10/01ne-9kzg-1ys4-7tsb.jpeg"
-image-credit = "Courtesy of the Shapiro campaign"
-image-description = "Gov. Josh Shapiro (left) on the campaign trail with Lt. Gov. Austin Davis."
+image = "cas/7evz-4y6a-d67d-jbhx.jpeg"
+image-credit = "Matt Rourke / AP"
+image-description = "Pennsylvania Gov. Josh Shapiro walks on a stage during an election night event in Shiremanstown, PA, Tuesday, Nov. 3, 2026."
 image-gravity = "ce"
 internal-id = "SPLGUVRESULTS1126"
 kicker = "Elections"
@@ -33,17 +33,17 @@ Whether Shapiro’s decisive win translates into a mandate for his governing age
 
 Libertarian Ken Krawchuk also appeared on the ballot for governor.
 
-At Shapiro’s Election Night party at the Penn Harris Hotel near Harrisburg, supporters were still filling the ballroom as the AP called the race. For a moment, no one knew it was over until CNN announced the result. The crowd erupted in cheers and applause.
+Despite the uncertainty around the makeup of the legislature, Shapiro appeared elated at his victory party Tuesday at a hotel outside Harrisburg. <strong></strong>
 
-One of those supporters was Jenna Behringer. An education advocate from the Harrisburg area, she called herself a lifelong Democrat who respects Shapiro&#39;s &#34;ability and willingness to work across the aisle.&#34;
+“This is a good night for our commonwealth,” Shapiro said, to cheers.
 
-&#34;I think that is incredibly important,&#34; she said. &#34;If we are going to address polarization and work in a purple state, we need to be able to talk across both sides, and I really admire that about him.&#34;
+“Tonight, the people have spoken,” he said. “They want us to raise the minimum wage to $15 an hour. They want us to build more housing and strengthen our infrastructure. They want us to invest in our kids, our cops, and our communities. And they want us to enshrine abortion rights for women in the constitution of this commonwealth.”
 
-At Garrity’s party, which was held at a Wyoming County golf course, supporters mostly did not react as the race was called. Michael Lacey, a Wyoming County supporter, said Shapiro’s win does not mean he outworked Garrity.
+Garrity took the stage at her own Election Night party, at a Wyoming County golf course, a little before 9 p.m. and said she had called Shapiro to congratulate him on his “hard-fought victory.”
 
-“There are people out there on the conservative end that are not voting: veterans; Christians,” Lacey said. “They&#39;re just not coming out to vote. I and if they were coming out to vote. I believe that this would have been a slam dunk.”
+“Tonight, I wish the governor and his team my sincere best, as we all should, you guys,” Garrity told her supporters. “Because his success is our success.”
 
-Garrity had not yet appeared as of 8:30 p.m.
+She added, “It is my hope that the campaign we&#39;ve run, the issues we&#39;ve addressed, and the solutions that we presented are a reminder to him that Pennsylvania just doesn&#39;t deserve, but needs, a full-time chief executive.”
 
 ## A second term, and beyond
 
@@ -82,6 +82,14 @@ Garrity, tapped for the nomination early by the GOP to prevent a competitive pri
 Despite support from some regular Republican donors, Garrity’s campaign could not keep pace with Shapiro’s vast national network of deep-pocketed backers. An influx of millions of dollars from skill games industry insiders in the waning weeks of the campaign did not prove fruitful. And Trump never parachuted into Pennsylvania to stump for her, despite her predicting he likely would.
 
 Garrity’s campaign eventually turned to a novel approach to take on Shapiro: AI-generated advertisements depicting a fake Shapiro claiming he covered up a series of political scandals. The ad also inaccurately represented some of the Democrat’s policy positions.
+
+Soon after Shapiro’s victory was officially called on Election Night, supporter Jenna Behringer, an education advocate from the Harrisburg area, told Spotlight PA she respects the governor’s &#34;ability and willingness to work across the aisle.&#34;
+
+&#34;I think that is incredibly important,&#34; she said. &#34;If we are going to address polarization and work in a purple state, we need to be able to talk across both sides, and I really admire that about him.&#34;
+
+At Garrity’s Wyoming County party, supporters mostly did not react as the race was called. Michael Lacey, a Wyoming County supporter, said Shapiro’s win does not mean he outworked Garrity.
+
+“There are people out there on the conservative end that are not voting. Veterans, Christians,” Lacey said. “They&#39;re just not coming out to vote. And if they were coming out to vote, I believe that this would have been a slam dunk.”
 
 By the end of Shapiro’s second term, Democrats will have controlled the governor’s office for 16 years. The last time the same party controlled the executive for that long was between 1939 and 1955, with Republican governors.
 
