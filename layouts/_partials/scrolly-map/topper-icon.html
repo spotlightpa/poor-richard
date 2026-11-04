@@ -28,7 +28,7 @@
     sizes="(min-width: 768px) 32rem, 80vw"
   />
   <img
-    class="{{ cond (eq .align `left`) `max-w-[18rem] sm:max-w-[22rem] md:max-w-[26rem]` `mx-auto max-w-[20rem] sm:max-w-[26rem] md:max-w-[32rem]` }} h-auto w-full"
+    class="mx-auto h-auto w-full max-w-[20rem] sm:max-w-[26rem] md:max-w-[32rem]"
     src="{{ $fallback }}"
     alt="{{ .description }}"
     fetchpriority="high"

@@ -6,38 +6,42 @@
 {{ $creditType := .Get "credit-type" | default "by" }}
 {{ $byline := .Get "byline" | htmlUnescape }}
 {{ $outlet := .Get "outlet" | htmlUnescape | default "Spotlight PA" }}
-{{ $hedSizes := .Get "hed-sizes" | default `text-3xl lg:text-5xl` }}
+{{ $hedSizeOptions := dict
+  "small" `text-2xl lg:text-4xl`
+  "medium" `text-3xl lg:text-5xl`
+  "large" `text-4xl lg:text-6xl`
+}}
+{{ $hedSize := .Get "hed-size" | lower }}
 {{ $colorInput := .Get "color" | default "Blue" }}
 {{ $mapColor := partial "helper/brand-color.html" $colorInput }}
 {{ $colorOpacity := .Get "color-opacity" }}
-{{ $baseColor := .Get "base-color" }}
+{{ $baseColor := partial "helper/brand-color.html" (.Get "base-color") }}
 {{ $shadeProperty := .Get "shade-property" | default "shaded" }}
 {{ $layout := .Get "layout" | default "left" | lower }}
 {{ $basemap := not (in (slice "hide" "false" "off" "none") (.Get "basemap" | default "show" | lower)) }}
 {{ $backgroundInput := .Get "background" | default "#ffffff" }}
 {{ $background := partial "helper/brand-color.html" $backgroundInput }}
 {{ $outline := ne (.Get "outline" | default "true" | lower) "false" }}
-{{ $outlineInput := .Get "outline-color" | default "#2e2e2e" }}
-{{ $outlineColor := partial "helper/brand-color.html" $outlineInput }}
+{{ $outlineColor := partial "helper/brand-color.html" (.Get "outline-color") }}
 {{ $topperImage := .Get "topper-image" | htmlUnescape }}
 {{ $topperDescription := .Get "topper-image-description" | htmlUnescape }}
 {{ $topperFit := .Get "topper-image-fit" | default "cover" | lower }}
-{{ $topperBg := .Get "topper-image-bg" | default "black" | lower }}
 {{ $topperLayout := .Get "topper-layout" | default "right" | lower }}
 {{ $topperMobileLayout := .Get "topper-mobile-layout" | default "top" | lower }}
 {{ $lc := partial "helper/map-layout-classes.html" (dict "desktop" $topperLayout "mobile" $topperMobileLayout) }}
 {{ $isRow := eq $lc.flexDir "md:flex-row" }}
 {{ $iconDark := eq $topperLayout "icon-dark" }}
 {{ $isIcon := or (eq $topperLayout "icon") $iconDark }}
-{{ $iconBgClass := "bg-black" }}
-{{ $iconLight := false }}
-{{ with .Get "topper-icon-bg" }}
-  {{ $iconBgClass = printf "bg-[%s]" . }}
-  {{ $iconLight = true }}
+{{ $topperBgClass := "bg-black" }}
+{{ $topperBgLight := false }}
+{{ with .Get "topper-bg" }}
+  {{ $topperBgClass = printf "bg-[%s]" (partial "helper/brand-color.html" . | replaceRE " " "_") }}
+  {{ $topperBgLight = true }}
 {{ end }}
-{{ if and $topperImage $isRow (not $isIcon) (not (.Get "hed-sizes")) }}
-  {{ $hedSizes = `text-2xl lg:text-4xl` }}
+{{ if not (index $hedSizeOptions $hedSize) }}
+  {{ $hedSize = cond (and $topperImage $isRow (not $isIcon)) "small" "medium" }}
 {{ end }}
+{{ $hedSizes := index $hedSizeOptions $hedSize }}
 {{ $heroText := dict
   "eyebrow" $eyebrow
   "hed" $hed
@@ -48,7 +52,7 @@
   "outlet" $outlet
   "hedSizes" $hedSizes
   "publishedISO" $params.publishedISO
-  "theme" (cond (and $topperImage $isIcon (not $iconDark) $iconLight) "light" "dark")
+  "theme" (cond (and $topperImage $isIcon (not $iconDark) $topperBgLight) "light" "dark")
   "hideBanner" (and $topperImage $iconDark)
 }}
 {{ if and $topperImage $isIcon }}
@@ -56,13 +60,12 @@
     "icon" (partial "scrolly-map/topper-icon.html" (dict
     "src" $topperImage
     "description" $topperDescription
-    "align" "center"
     )
     ))
   }}
 {{ end }}
-{{ $fallbackImage := .Get "fallback-image" | default (.Page.Param "image") }}
-{{ $fallbackDescription := .Get "fallback-image-description" | default (.Page.Param "image-description") | default "Map of Pennsylvania" }}
+{{ $fallbackImage := .Page.Param "image" }}
+{{ $fallbackDescription := .Page.Param "image-description" | default "Map of Pennsylvania" }}
 {{ $config := dict
   "mapColor" $mapColor
   "colorOpacity" $colorOpacity
@@ -77,7 +80,7 @@
 
 {{ if and $topperImage $isIcon (not $iconDark) }}
   <header
-    class="{{ $iconBgClass }} {{ cond $iconLight `text-black` `text-white` }} px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
+    class="{{ $topperBgClass }} {{ cond $topperBgLight `text-black` `text-white` }} px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
     data-ga-category="scrolly-map:topper"
   >
     <div class="mx-auto w-full max-w-content">
@@ -97,7 +100,7 @@
       </div>
     </header>
     <figure
-      class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} {{ cond (eq $topperBg "white") "bg-white" "bg-black" }} relative aspect-[4/3] w-full overflow-hidden md:aspect-auto"
+      class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} {{ $topperBgClass }} relative aspect-[4/3] w-full overflow-hidden md:aspect-auto"
     >
       {{ partial "scrolly-map/topper-image.html" (dict
         "src" $topperImage

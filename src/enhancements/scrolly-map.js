@@ -1,3 +1,7 @@
+/* global maplibregl */
+
+const FADE = { duration: 600, delay: 0 };
+
 export default function scrollyMap(config) {
   let map = null;
   let stops = [];
@@ -12,10 +16,10 @@ export default function scrollyMap(config) {
     basemap: config.basemap !== false,
     background: config.background || "#ffffff",
     outline: config.outline !== false,
-    outlineColor: config.outlineColor || "#2e2e2e",
+    outlineColor: config.outlineColor || "#6b6b6b",
+    dotColor: config.outlineColor || "#2e2e2e",
     border: {
       edge: 1.5,
-      edgeColor: "#6b6b6b",
       mat: 4,
       matColor: "#ffffff",
       shadows: [
@@ -24,6 +28,7 @@ export default function scrollyMap(config) {
       ],
     },
     reduceMotion: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    snapshot: null,
     init() {
       this.applyTheme();
       stops = Array.from(
@@ -57,7 +62,6 @@ export default function scrollyMap(config) {
         }
       }, 50);
     },
-    snapshot: null,
     snapshotIndex() {
       const value = new URLSearchParams(window.location.search).get("snapshot");
       if (value === null) return null;
@@ -86,7 +90,7 @@ export default function scrollyMap(config) {
     },
     darken(color, amount) {
       const rgb = this.rgb(color);
-      if (!rgb) return this.outlineColor;
+      if (!rgb) return this.dotColor;
       return (
         "#" +
         rgb
@@ -100,7 +104,7 @@ export default function scrollyMap(config) {
     },
     initMap() {
       if (map) return;
-      map = new window.maplibregl.Map({
+      map = new maplibregl.Map({
         container: this.$refs.canvas,
         style: this.basemap
           ? "https://tiles.openfreemap.org/styles/positron"
@@ -120,7 +124,6 @@ export default function scrollyMap(config) {
         center: [-77.6, 40.9],
         zoom: 6,
         interactive: false,
-        attributionControl: { compact: true },
       });
       const ro = new ResizeObserver(() => {
         map.resize();
@@ -198,23 +201,14 @@ export default function scrollyMap(config) {
     },
     async loadStop(stop) {
       if (!stop.geojson && !stop.dots.length) return;
-      let data = { type: "FeatureCollection", features: [] };
-      if (stop.geojson) {
-        try {
-          const res = await fetch(stop.geojson);
-          data = await res.json();
-        } catch {
-          return;
-        }
-      }
+      const data = await this.fetchStop(stop);
+      if (!data) return;
       const isPoint = (f) =>
         f.geometry &&
         (f.geometry.type === "Point" || f.geometry.type === "MultiPoint");
       const allFeatures = Array.isArray(data.features) ? data.features : [];
       const points = [...allFeatures.filter(isPoint), ...stop.dots];
       const features = allFeatures.filter((f) => !isPoint(f));
-      data = { ...data, features };
-      stop.hasDots = points.length > 0;
       const prop = this.shadeProperty;
       const hasShade =
         stop.shade &&
@@ -222,65 +216,90 @@ export default function scrollyMap(config) {
       const shaded = hasShade
         ? features.filter((f) => f.properties && f.properties[prop] === true)
         : [];
-      map.addSource(stop.id, { type: "geojson", data });
-      if (this.outline) {
-        map.addSource(stop.id + "-edge", {
-          type: "geojson",
-          data: this.boundaryFor(features),
-        });
-        this.border.shadows.forEach(([offset], n) => {
-          map.addLayer(
-            {
-              id: stop.id + "-shadow-" + n,
-              type: "fill",
-              source: stop.id,
-              paint: {
-                "fill-color": "#000000",
-                "fill-antialias": false,
-                "fill-translate": [0, offset],
-                "fill-opacity": 0,
-              },
-            },
-            "scrolly-anchor-outline",
-          );
-        });
+      stop.hasDots = points.length > 0;
+      map.addSource(stop.id, { type: "geojson", data: { ...data, features } });
+      if (this.outline) this.addOutlineLayers(stop, features);
+      this.addFillLayers(stop, hasShade);
+      if (shaded.length) this.addRegionLayer(stop, shaded);
+      if (stop.hasDots) this.addDots(stop, points);
+      let fitTo = features.length ? features : points;
+      if (stop.fit === "shaded" && shaded.length) fitTo = shaded;
+      if (stop.fit === "dots" && points.length) fitTo = points;
+      stop.bounds = this.boundsFor(fitTo);
+      stop.ready = true;
+      this.applyVisibility(stop);
+      if (stop.index === this.active) this.fitActive(false);
+    },
+    async fetchStop(stop) {
+      if (!stop.geojson) return { type: "FeatureCollection", features: [] };
+      try {
+        const res = await fetch(stop.geojson);
+        return await res.json();
+      } catch {
+        return null;
+      }
+    },
+    addOutlineLayers(stop, features) {
+      const before = "scrolly-anchor-outline";
+      map.addSource(stop.id + "-edge", {
+        type: "geojson",
+        data: this.boundaryFor(features),
+      });
+      this.border.shadows.forEach(([offset], n) => {
         map.addLayer(
           {
-            id: stop.id + "-outline",
-            type: "line",
-            source: stop.id + "-edge",
-            layout: { "line-join": "round", "line-cap": "round" },
-            paint: {
-              "line-color": this.border.edgeColor || this.outlineColor,
-              "line-width": (this.border.mat + this.border.edge) * 2,
-              "line-opacity": 0,
-            },
-          },
-          "scrolly-anchor-outline",
-        );
-        map.addLayer(
-          {
-            id: stop.id + "-mat",
-            type: "line",
-            source: stop.id + "-edge",
-            layout: { "line-join": "round", "line-cap": "round" },
-            paint: {
-              "line-color": this.border.matColor,
-              "line-width": this.border.mat * 2,
-              "line-opacity": 0,
-            },
-          },
-          "scrolly-anchor-outline",
-        );
-        map.addLayer(
-          {
-            id: stop.id + "-base",
+            id: stop.id + "-shadow-" + n,
             type: "fill",
             source: stop.id,
-            paint: { "fill-color": "#ffffff", "fill-opacity": 0 },
+            paint: {
+              "fill-color": "#000000",
+              "fill-antialias": false,
+              "fill-translate": [0, offset],
+              "fill-opacity": 0,
+            },
           },
-          "scrolly-anchor-base",
+          before,
         );
+      });
+      const edgeLine = (id, color, width) => ({
+        id,
+        type: "line",
+        source: stop.id + "-edge",
+        layout: { "line-join": "round", "line-cap": "round" },
+        paint: { "line-color": color, "line-width": width, "line-opacity": 0 },
+      });
+      map.addLayer(
+        edgeLine(
+          stop.id + "-outline",
+          this.outlineColor,
+          (this.border.mat + this.border.edge) * 2,
+        ),
+        before,
+      );
+      map.addLayer(
+        edgeLine(stop.id + "-mat", this.border.matColor, this.border.mat * 2),
+        before,
+      );
+      map.addLayer(
+        {
+          id: stop.id + "-base",
+          type: "fill",
+          source: stop.id,
+          paint: { "fill-color": "#ffffff", "fill-opacity": 0 },
+        },
+        "scrolly-anchor-base",
+      );
+    },
+    addFillLayers(stop, hasShade) {
+      const prop = this.shadeProperty;
+      let fill = stop.shade ? stop.color : this.baseColor;
+      if (hasShade) {
+        fill = [
+          "case",
+          ["==", ["get", prop], true],
+          stop.color,
+          this.baseColor,
+        ];
       }
       map.addLayer(
         {
@@ -288,18 +307,9 @@ export default function scrollyMap(config) {
           type: "fill",
           source: stop.id,
           paint: {
-            "fill-color": hasShade
-              ? [
-                  "case",
-                  ["==", ["get", prop], true],
-                  stop.color,
-                  this.baseColor,
-                ]
-              : stop.shade
-                ? stop.color
-                : this.baseColor,
+            "fill-color": fill,
             "fill-opacity": 0,
-            "fill-opacity-transition": { duration: 600, delay: 0 },
+            "fill-opacity-transition": FADE,
           },
         },
         "scrolly-anchor-fill",
@@ -313,94 +323,70 @@ export default function scrollyMap(config) {
             "line-color": "#ffffff",
             "line-width": 1,
             "line-opacity": 0,
-            "line-opacity-transition": { duration: 600, delay: 0 },
+            "line-opacity-transition": FADE,
           },
         },
         "scrolly-anchor-fill",
       );
-      if (shaded.length) {
-        map.addSource(stop.id + "-region", {
-          type: "geojson",
-          data: this.boundaryFor(shaded),
-        });
-        map.addLayer(
-          {
-            id: stop.id + "-region",
-            type: "line",
-            source: stop.id + "-region",
-            layout: { "line-join": "round", "line-cap": "round" },
-            paint: {
-              "line-color": this.darken(stop.color, 0.35),
-              "line-width": 1.75,
-              "line-opacity": 0,
-              "line-opacity-transition": { duration: 600, delay: 0 },
-            },
+    },
+    addRegionLayer(stop, shaded) {
+      map.addSource(stop.id + "-region", {
+        type: "geojson",
+        data: this.boundaryFor(shaded),
+      });
+      map.addLayer(
+        {
+          id: stop.id + "-region",
+          type: "line",
+          source: stop.id + "-region",
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: {
+            "line-color": this.darken(stop.color, 0.35),
+            "line-width": 1.75,
+            "line-opacity": 0,
+            "line-opacity-transition": FADE,
           },
-          "scrolly-anchor-fill",
-        );
-      }
-
-      if (stop.hasDots) this.addDots(stop, points);
-
-      let fitTo = features.length ? features : points;
-      if (stop.fit === "shaded" && shaded.length) fitTo = shaded;
-      if (stop.fit === "dots" && points.length) fitTo = points;
-      stop.bounds = this.boundsFor(fitTo);
-      stop.ready = true;
-      this.applyVisibility(stop);
-      if (stop.index === this.active) this.fitActive(false);
+        },
+        "scrolly-anchor-fill",
+      );
     },
     addDots(stop, points) {
-      map.addSource(stop.id + "-points", {
+      const source = stop.id + "-points";
+      map.addSource(source, {
         type: "geojson",
         data: { type: "FeatureCollection", features: points },
       });
-      const pointFilter = [
-        "match",
-        ["geometry-type"],
-        ["Point", "MultiPoint"],
-        true,
-        false,
-      ];
-      const fade = { duration: 600, delay: 0 };
       map.addLayer({
         id: stop.id + "-dot-halo",
         type: "circle",
-        source: stop.id + "-points",
-        filter: pointFilter,
+        source,
         paint: {
           "circle-radius": 12,
-          "circle-color": this.outlineColor,
+          "circle-color": this.dotColor,
           "circle-opacity": 0,
-          "circle-opacity-transition": fade,
+          "circle-opacity-transition": FADE,
         },
       });
       map.addLayer({
         id: stop.id + "-dot",
         type: "circle",
-        source: stop.id + "-points",
-        filter: pointFilter,
+        source,
         paint: {
           "circle-radius": 6,
-          "circle-color": this.outlineColor,
+          "circle-color": this.dotColor,
           "circle-stroke-color": "#ffffff",
           "circle-stroke-width": 2,
           "circle-opacity": 0,
           "circle-stroke-opacity": 0,
-          "circle-opacity-transition": fade,
-          "circle-stroke-opacity-transition": fade,
+          "circle-opacity-transition": FADE,
+          "circle-stroke-opacity-transition": FADE,
         },
       });
       if (!map.getStyle().glyphs) return;
-      map.addSource(stop.id + "-labels", {
-        type: "geojson",
-        data: { type: "FeatureCollection", features: points },
-      });
       map.addLayer({
         id: stop.id + "-dot-label",
         type: "symbol",
-        source: stop.id + "-labels",
-        filter: pointFilter,
+        source,
         layout: {
           "text-field": ["coalesce", ["get", "name"], ""],
           "text-font": ["Noto Sans Bold"],
@@ -410,11 +396,11 @@ export default function scrollyMap(config) {
           "text-justify": "auto",
         },
         paint: {
-          "text-color": this.outlineColor,
+          "text-color": this.dotColor,
           "text-halo-color": "#ffffff",
           "text-halo-width": 2,
           "text-opacity": 0,
-          "text-opacity-transition": fade,
+          "text-opacity-transition": FADE,
         },
       });
     },
@@ -447,7 +433,7 @@ export default function scrollyMap(config) {
         });
       }
       if (!this.outline) return;
-      const swap = { duration: 0, delay: on ? 0 : 600 };
+      const swap = { duration: 0, delay: on ? 0 : FADE.duration };
       [
         ...this.border.shadows.map(([, value], n) => [
           stop.id + "-shadow-" + n,
@@ -535,7 +521,7 @@ export default function scrollyMap(config) {
       };
     },
     boundsFor(features) {
-      const bounds = new window.maplibregl.LngLatBounds();
+      const bounds = new maplibregl.LngLatBounds();
       const extend = (coords) => {
         if (!Array.isArray(coords) || coords.length === 0) return;
         if (typeof coords[0] === "number") {
