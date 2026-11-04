@@ -33,6 +33,8 @@ Whether Shapiro’s decisive win translates into a mandate for his governing age
 
 Libertarian Ken Krawchuk also appeared on the ballot for governor.
 
+At Shapiro’s Election Night party at the Penn Harris Hotel near Harrisburg, supporters were still filling the ballroom as the AP called the race. For a moment, no one knew it was over, until CNN announced the result. The crowd erupted in cheers and applause.
+
 In the waning days of the race, Shapiro barnstormed the state with Lt. Gov. Austin Davis, traveling to more than two dozen counties by bus to trumpet his first-term accomplishments — but also to stump for fellow down-ballot Democrats, including those in several competitive races in Pennsylvania that could help decide control of Congress.
 
 If Democrats in Pennsylvania manage to sweep them, it could further boost Shapiro’s profile with deep-pocketed donors and national party leaders whose endorsements will be essential if he decides to pursue the Democratic nomination for president in two years.
