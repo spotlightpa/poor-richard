@@ -27,6 +27,8 @@ title-tag = "PA governor race: Your guide to the candidates"
 topics = ["Elections"]
 +++
 
+<strong><em>Update, Nov. 3: </em></strong><a href="https://www.spotlightpa.org/news/2026/11/election-results-pennsylvania-governor-josh-shapiro-stacy-garrity-elections/"><strong><em>Democrat Josh Shapiro easily secures second term as Pennsylvania governor</em></strong></a><strong><em></em></strong>
+
 <a href="https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pensilvania-gobernador-elecciones-guia-espanol/"><em>Leer en español</em></a><em>. To download a printable version of this article, please </em><a href="https://www.spotlightpa.org/voter-guides"><em>click here</em></a><em>.</em>
 
 HARRISBURG — The 2026 election for Pennsylvania governor is fast approaching.
