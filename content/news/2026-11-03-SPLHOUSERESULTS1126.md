@@ -22,15 +22,17 @@ title-tag = "Democrats flip PA Senate, giving Shapiro a powerful trifecta"
 topics = ["Elections"]
 +++
 
-HARRISBURG — Democrats say they have won control of the Pennsylvania Senate for the first time in more than three decades, giving the party a trifecta and the power to set policy for the state with few limitations.
+HARRISBURG — Democrats have won control of the Pennsylvania Senate for the first time in more than three decades, giving the party a trifecta and the power to set policy for the state with few limitations.
 
-Republicans entered Tuesday’s election with a 27-23 majority in the legislature’s upper chamber. Democrats say they flipped four GOP-held seats, though the Associated Press had not called two of those races as of Wednesday morning.
+Republicans entered Tuesday’s election with a 27-23 majority in the legislature’s upper chamber. Democrats flipped four GOP-held seats and lost one held by an incumbent.
 
-The party also lost one seat, according to unofficial results, for a likely net gain of three<strong> </strong>seats.
+That means Democrats will have a 26-24 majority during the next legislative session.
+
+The Associated Press had called all the races as of 10 a.m. Wednesday.
 
 {{<embed/newsletter>}}
 
-Democrats also maintained and expanded their majority in the state House. Unofficial results show the party with 108 seats in the 203-member chamber as of Wednesday morning, with nine races still <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-2026-elections/#spl-heading-4">not called</a>.
+Democrats also maintained and expanded their majority in the state House. Unofficial results show the party with 110 seats in the 203-member chamber as of Wednesday morning, with five races still <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-2026-elections/#spl-heading-4">not called</a>.
 
 Unofficial results also show Democrat Josh Shapiro <a href="https://www.spotlightpa.org/news/2026/11/election-results-pennsylvania-governor-josh-shapiro-stacy-garrity-elections/">winning his reelection bid in a landslide</a> against Republican Stacy Garrity.
 
