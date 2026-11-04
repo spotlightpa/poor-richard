@@ -40,6 +40,8 @@ With control of both chambers and the governor’s mansion, Shapiro and legislat
 
 Republicans have led the state Senate since 1994. Democrats’ current era of state House control began in 2022 after a redistricting cycle produced new political lines that reflected population shifts from GOP-leaning rural areas to suburban and urban ones.
 
+{{<embed/donate>}}
+
 This divided legislature has not been fruitful for governing.
 
 Lawmakers have struggled to find common ground even on issues with bipartisan agreement, like data center regulations or legalizing recreational marijuana. That has led to historic lows in the number of laws passed in the last two sessions.
@@ -47,8 +49,6 @@ Lawmakers have struggled to find common ground even on issues with bipartisan ag
 Democrats have used their slim House majority to advance a constitutional amendment codifying reproductive rights, as well as bills that would increase state funding for mass transit and legalize recreational marijuana. Those measures died in the state Senate.
 
 Major Senate GOP priorities, like cutting utility taxes, banning trans children from participating in school sports, and creating a program in which state funds pay for students’ scholarships to private schools, went unfinished year after year.
-
-{{<embed/donate>}}
 
 This year’s races <a href="https://www.spotlightpa.org/news/2026/10/campaign-finance-pennsylvania-legislature-2026-election-transparency-elections/">attracted tens of millions in political spending</a> as Democrats sought to ride the midterm wave to unilateral power in Harrisburg.
 
