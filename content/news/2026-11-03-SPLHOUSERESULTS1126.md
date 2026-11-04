@@ -32,7 +32,7 @@ The Associated Press had called all the races as of 10 a.m. Wednesday.
 
 {{<embed/newsletter>}}
 
-Democrats also maintained and expanded their majority in the state House. Unofficial results show the party with 110 seats in the 203-member chamber as of Wednesday morning, with five races still <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-2026-elections/#spl-heading-4">not called</a>.
+Democrats also maintained and expanded their majority in the state House. Unofficial results show the party with 111 seats in the 203-member chamber as of Wednesday afternoon, with five races still <a href="https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-2026-elections/#spl-heading-4">not called</a>.
 
 Unofficial results also show Democrat Josh Shapiro <a href="https://www.spotlightpa.org/news/2026/11/election-results-pennsylvania-governor-josh-shapiro-stacy-garrity-elections/">winning his reelection bid in a landslide</a> against Republican Stacy Garrity.
 
