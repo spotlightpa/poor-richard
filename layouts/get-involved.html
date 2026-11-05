@@ -48,57 +48,21 @@
             Jump to
           </div>
           <div class="flex flex-wrap gap-2.5">
-            <a href="#support" class="{{ $jumpClass }}"
-              >Support our work <span aria-hidden="true">↓</span></a
-            >
             <a href="#read-follow" class="{{ $jumpClass }}"
               >Read &amp; Follow <span aria-hidden="true">↓</span></a
             >
-            <a href="#share" class="{{ $jumpClass }}"
-              >Share <span aria-hidden="true">↓</span></a
+            <a href="#support" class="{{ $jumpClass }}"
+              >Support our work <span aria-hidden="true">↓</span></a
             >
             <a href="#partner" class="{{ $jumpClass }}"
               >Partner with us <span aria-hidden="true">↓</span></a
             >
+            <a href="#share" class="{{ $jumpClass }}"
+              >Share <span aria-hidden="true">↓</span></a
+            >
           </div>
         </nav>
       </header>
-
-      <section
-        id="support"
-        class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,380px),1fr))] items-end gap-[clamp(24px,4vw,48px)] border-t-8 border-red bg-red-0 p-[clamp(24px,5vw,48px)]"
-        data-ga-category="support"
-      >
-        <div class="flex flex-col gap-4">
-          <div
-            class="text-[13px] font-bold tracking-[0.12em] text-red-9 uppercase"
-          >
-            Support our work
-          </div>
-          <h2
-            class="font-serif text-[clamp(30px,6vw,44px)] leading-[1.1] font-extrabold tracking-[-0.01em] text-balance"
-          >
-            Keep Pennsylvania’s watchdog independent
-          </h2>
-          <p class="font-serif text-lg leading-[1.6] text-pretty">
-            Our journalism is free to read because of generous supporters who
-            fund the work. You can make a donation online or via check,
-            charitable distributions, donor advised funds, and more.
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-3">
-          <a
-            href="/donate/"
-            class="w-full rounded-[5px] border-2 border-red bg-red px-8 py-4 text-center text-lg font-bold text-white no-underline hover:border-red-9 hover:bg-red-9 hover:text-white sm:w-auto"
-            >Donate</a
-          >
-          <a
-            href="/support/"
-            class="w-full rounded-[5px] border-2 border-black bg-transparent px-7 py-4 text-center text-lg font-bold text-black no-underline hover:bg-black hover:text-beige sm:w-auto"
-            >More ways to support</a
-          >
-        </div>
-      </section>
 
       <section
         id="read-follow"
@@ -108,7 +72,7 @@
         <h2 class="{{ $sectionHedClass }} mb-3">Read &amp; Follow</h2>
 
         <div
-          class="mb-10 flex flex-col gap-5 border-t-4 border-black bg-white py-[clamp(20px,4vw,28px)] sm:px-[clamp(20px,4vw,28px)]"
+          class="flex flex-col gap-5 border-t-4 border-black bg-white py-[clamp(20px,4vw,28px)] sm:px-[clamp(20px,4vw,28px)]"
         >
           <div
             class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2"
@@ -159,66 +123,45 @@
             {{ end }}
           </div>
         </div>
+      </section>
 
+      <section
+        id="support"
+        class="flex flex-col gap-3 border-t-8 border-red bg-red-0 p-[clamp(20px,4vw,32px)]"
+        data-ga-category="support"
+      >
         <div
-          class="mb-2 grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] items-center gap-x-10 gap-y-6 border-t-4 border-black bg-beige p-[clamp(20px,4vw,32px)]"
-          x-data="inlineNewsletter($el.dataset.baseUrl)"
-          data-base-url="{{ page.Param `newsletters-base-url` }}"
-          data-ga-category="newsletter"
+          class="text-[13px] font-bold tracking-[0.12em] text-red-9 uppercase"
         >
-          <div class="flex flex-col gap-2">
-            <h3
-              class="font-serif text-[26px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
-            >
-              Your guide to PA
-            </h3>
-            <p class="text-[17px] leading-normal">
-              Sign up for PA Post, Spotlight PA's free daily newsletter that
-              helps you understand what’s happening across Pennsylvania in less
-              than five minutes.
-            </p>
-            <a href="/newsletters/" class="{{ $linkClass }} text-base font-bold"
-              >Explore all of Spotlight PA's newsletters →</a
-            >
-          </div>
-          <form
-            x-show="!done"
-            class="flex flex-wrap gap-2"
-            @submit.prevent="submit"
-          >
-            {{ partial "newsletter/papost-hidden.html" . }}
-            <label class="sr-only" for="{{ $idNlEmail }}">Email address</label>
-            <input
-              id="{{ $idNlEmail }}"
-              type="email"
-              name="EMAIL"
-              autocomplete="email"
-              placeholder="Email address"
-              required
-              class="{{ $inputClass }} flex-[1_1_200px] px-3.5 py-3"
-            />
-            <button
-              type="submit"
-              class="{{ $yellowBtnClass }} inline-flex w-full items-center justify-center gap-2 sm:w-auto"
-              :disabled="isLoading"
-            >
-              Sign up
-              <svg
-                x-cloak
-                x-transition
-                aria-label="Submitting"
-                x-show="isLoading"
-                class="h-4 w-4 animate-spin fill-current"
-              >
-                {{ partial "helper/svg.html" "spinner" }}
-              </svg>
-            </button>
-          </form>
-          <p x-cloak x-show="done" role="status" class="font-serif text-lg">
-            Thanks for signing up. Look for PA Post in your inbox.
-          </p>
+          Support our work
         </div>
+        <h2
+          class="font-serif text-[clamp(26px,4vw,36px)] leading-[1.15] font-extrabold tracking-[-0.01em] text-balance"
+        >
+          Keep Pennsylvania’s watchdog independent
+        </h2>
+        <p
+          class="max-w-[820px] font-serif text-[17px] leading-[1.55] text-pretty"
+        >
+          Our journalism is free to read because of generous supporters who fund
+          the work. You can make a donation online or via check, charitable
+          distributions, donor advised funds, and more.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a
+            href="/donate/"
+            class="w-full rounded-[5px] border-2 border-red bg-red px-7 py-3 text-center text-lg font-bold text-white no-underline hover:border-red-9 hover:bg-red-9 hover:text-white sm:w-auto"
+            >Donate</a
+          >
+          <a
+            href="/support/"
+            class="w-full rounded-[5px] border-2 border-black bg-transparent px-6 py-3 text-center text-lg font-bold text-black no-underline hover:bg-black hover:text-beige sm:w-auto"
+            >More ways to support</a
+          >
+        </div>
+      </section>
 
+      <section class="flex flex-col" data-ga-category="follow">
         <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
           <div class="flex flex-col gap-1.5">
             <h3 class="{{ $rowHedClass }}">Download our mobile app</h3>
@@ -349,44 +292,64 @@
         </div>
       </section>
 
-      <section id="share" class="flex flex-col" data-ga-category="share">
-        <h2 class="{{ $sectionHedClass }} border-b-4 border-black pb-3">
-          Share
-        </h2>
-        <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
-          <div class="flex flex-col gap-1.5">
-            <h3 class="{{ $rowHedClass }}">Shop the Spotlight PA store</h3>
-            <p class="{{ $rowDekClass }}">
-              Shop Spotlight PA's unique artwork, apparel, stationery and more
-              celebrating the best of Pennsylvania - all proceeds benefit our
-              mission.
-            </p>
-          </div>
-          <div class="flex">
-            <a
-              href="https://shop.spotlightpa.org/"
-              class="{{ $yellowBtnClass }}"
-              >Visit the store</a
-            >
-          </div>
+      <div
+        class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] items-center gap-x-10 gap-y-6 border-t-4 border-black bg-beige p-[clamp(20px,4vw,32px)]"
+        x-data="inlineNewsletter($el.dataset.baseUrl)"
+        data-base-url="{{ page.Param `newsletters-base-url` }}"
+        data-ga-category="newsletter"
+      >
+        <div class="flex flex-col gap-2">
+          <h3
+            class="font-serif text-[26px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+          >
+            Your guide to PA
+          </h3>
+          <p class="text-[17px] leading-normal">
+            Sign up for PA Post, Spotlight PA's free daily newsletter that helps
+            you understand what’s happening across Pennsylvania in less than
+            five minutes.
+          </p>
+          <a href="/newsletters/" class="{{ $linkClass }} text-base font-bold"
+            >Explore all of Spotlight PA's newsletters →</a
+          >
         </div>
-        <div class="{{ $rowClass }}">
-          <div class="flex flex-col gap-1.5">
-            <h3 class="{{ $rowHedClass }}">Refer a friend</h3>
-            <p class="{{ $rowDekClass }}">
-              Let us know who might be interested in our unique investigative
-              reporting, and we'll send them a personal note about our work.
-            </p>
-          </div>
-          <div class="flex">
-            <a
-              href="https://spotlightpa.bluelena.io/f/2"
-              class="{{ $yellowBtnClass }}"
-              >Refer a friend</a
+        <form
+          x-show="!done"
+          class="flex flex-wrap gap-2"
+          @submit.prevent="submit"
+        >
+          {{ partial "newsletter/papost-hidden.html" . }}
+          <label class="sr-only" for="{{ $idNlEmail }}">Email address</label>
+          <input
+            id="{{ $idNlEmail }}"
+            type="email"
+            name="EMAIL"
+            autocomplete="email"
+            placeholder="Email address"
+            required
+            class="{{ $inputClass }} flex-[1_1_200px] px-3.5 py-3"
+          />
+          <button
+            type="submit"
+            class="{{ $yellowBtnClass }} inline-flex w-full items-center justify-center gap-2 sm:w-auto"
+            :disabled="isLoading"
+          >
+            Sign up
+            <svg
+              x-cloak
+              x-transition
+              aria-label="Submitting"
+              x-show="isLoading"
+              class="h-4 w-4 animate-spin fill-current"
             >
-          </div>
-        </div>
-      </section>
+              {{ partial "helper/svg.html" "spinner" }}
+            </svg>
+          </button>
+        </form>
+        <p x-cloak x-show="done" role="status" class="font-serif text-lg">
+          Thanks for signing up. Look for PA Post in your inbox.
+        </p>
+      </div>
 
       <section
         id="partner"
@@ -577,6 +540,45 @@
                 provided.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="share" class="flex flex-col" data-ga-category="share">
+        <h2 class="{{ $sectionHedClass }} border-b-4 border-black pb-3">
+          Share
+        </h2>
+        <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Shop the Spotlight PA store</h3>
+            <p class="{{ $rowDekClass }}">
+              Shop Spotlight PA's unique artwork, apparel, stationery and more
+              celebrating the best of Pennsylvania - all proceeds benefit our
+              mission.
+            </p>
+          </div>
+          <div class="flex">
+            <a
+              href="https://shop.spotlightpa.org/"
+              class="{{ $yellowBtnClass }}"
+              >Visit the store</a
+            >
+          </div>
+        </div>
+        <div class="{{ $rowClass }}">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Refer a friend</h3>
+            <p class="{{ $rowDekClass }}">
+              Let us know who might be interested in our unique investigative
+              reporting, and we'll send them a personal note about our work.
+            </p>
+          </div>
+          <div class="flex">
+            <a
+              href="https://spotlightpa.bluelena.io/f/2"
+              class="{{ $yellowBtnClass }}"
+              >Refer a friend</a
+            >
           </div>
         </div>
       </section>
