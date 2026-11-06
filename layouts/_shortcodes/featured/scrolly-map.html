@@ -121,13 +121,14 @@
 
 
 <section
+  class="relative"
   data-ga-category="scrolly-map"
   x-data="scrollyMap({{ $config | jsonify }})"
-  :class="snapshot === null ? 'relative' : 'fixed inset-0 z-[9999] {{ cond $basemap `bg-white` (printf `bg-[%s]` $background) }}'"
+  :class="{ 'fixed! inset-0 z-[9999] {{ cond $basemap `bg-white` (printf `bg-[%s]` $background) }}': snapshot !== null }"
 >
   <div
-    class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} w-full overflow-hidden"
-    :class="snapshot === null ? 'sticky top-0 h-dvh' : 'absolute inset-0 h-full'"
+    class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} sticky top-0 h-dvh w-full overflow-hidden"
+    :class="{ 'absolute! inset-0 h-full!': snapshot !== null }"
   >
     <div x-ref="canvas" class="h-full w-full"></div>
     {{ with $fallbackImage }}
