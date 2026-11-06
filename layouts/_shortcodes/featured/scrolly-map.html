@@ -3,15 +3,8 @@
 {{ $hed := .Get "hed" | htmlUnescape }}
 {{ $dek := .Get "dek" | htmlUnescape }}
 {{ $date := .Get "display-date" | htmlUnescape }}
-{{ $creditType := .Get "credit-type" | default "by" }}
 {{ $byline := .Get "byline" | htmlUnescape }}
 {{ $outlet := .Get "outlet" | htmlUnescape | default "Spotlight PA" }}
-{{ $hedSizeOptions := dict
-  "small" `text-2xl lg:text-4xl`
-  "medium" `text-3xl lg:text-5xl`
-  "large" `text-4xl lg:text-6xl`
-}}
-{{ $hedSize := .Get "hed-size" | lower }}
 {{ $colorInput := .Get "color" | default "Blue" }}
 {{ $mapColor := partial "helper/brand-color.html" $colorInput }}
 {{ $colorOpacity := .Get "color-opacity" }}
@@ -25,35 +18,29 @@
 {{ $outlineColor := partial "helper/brand-color.html" (.Get "outline-color") }}
 {{ $topperImage := .Get "topper-image" | htmlUnescape }}
 {{ $topperDescription := .Get "topper-image-description" | htmlUnescape }}
-{{ $topperFit := .Get "topper-image-fit" | default "cover" | lower }}
 {{ $topperLayout := .Get "topper-layout" | default "right" | lower }}
+{{ if eq $topperLayout "none" }}
+  {{ $topperImage = "" }}
+{{ end }}
 {{ $topperMobileLayout := .Get "topper-mobile-layout" | default "top" | lower }}
 {{ $lc := partial "helper/map-layout-classes.html" (dict "desktop" $topperLayout "mobile" $topperMobileLayout) }}
 {{ $isRow := eq $lc.flexDir "md:flex-row" }}
+{{ $iconLight := or (eq $topperLayout "icon") (eq $topperLayout "icon-light") }}
 {{ $iconDark := eq $topperLayout "icon-dark" }}
-{{ $isIcon := or (eq $topperLayout "icon") $iconDark }}
-{{ $topperBgClass := "bg-black" }}
-{{ $topperBgLight := false }}
-{{ with .Get "topper-bg" }}
-  {{ $topperBgClass = printf "bg-[%s]" (partial "helper/brand-color.html" . | replaceRE " " "_") }}
-  {{ $topperBgLight = true }}
-{{ end }}
-{{ if not (index $hedSizeOptions $hedSize) }}
-  {{ $hedSize = cond (and $topperImage $isRow (not $isIcon)) "small" "medium" }}
-{{ end }}
-{{ $hedSizes := index $hedSizeOptions $hedSize }}
+{{ $isIcon := or $iconLight $iconDark }}
+{{ $hedSizes := cond (and $topperImage $isRow (not $isIcon)) `text-2xl lg:text-4xl` `text-3xl lg:text-5xl` }}
 {{ $heroText := dict
   "eyebrow" $eyebrow
   "hed" $hed
   "dek" $dek
   "date" $date
-  "creditType" $creditType
   "byline" $byline
   "outlet" $outlet
   "hedSizes" $hedSizes
   "publishedISO" $params.publishedISO
-  "theme" (cond (and $topperImage $isIcon (not $iconDark) $topperBgLight) "light" "dark")
+  "theme" (cond (and $topperImage $iconLight) "light" "dark")
   "hideBanner" (and $topperImage $iconDark)
+  "iconBottom" (and $topperImage $isIcon (eq $topperMobileLayout "bottom"))
 }}
 {{ if and $topperImage $isIcon }}
   {{ $heroText = merge $heroText (dict
@@ -78,9 +65,9 @@
   "background" $background
 }}
 
-{{ if and $topperImage $isIcon (not $iconDark) }}
+{{ if and $topperImage $iconLight }}
   <header
-    class="{{ $topperBgClass }} {{ cond $topperBgLight `text-black` `text-white` }} px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
+    class="bg-beige px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
     data-ga-category="scrolly-map:topper"
   >
     <div class="mx-auto w-full max-w-content">
@@ -100,12 +87,12 @@
       </div>
     </header>
     <figure
-      class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} {{ $topperBgClass }} relative aspect-[4/3] w-full overflow-hidden md:aspect-auto"
+      class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative aspect-[4/3] w-full overflow-hidden bg-black md:aspect-auto"
     >
       {{ partial "scrolly-map/topper-image.html" (dict
         "src" $topperImage
         "description" $topperDescription
-        "fit" $topperFit
+        "fit" "cover"
         "sizes" (cond $isRow "(min-width: 1024px) calc(100vw - 28rem), (min-width: 768px) calc(100vw - 24rem), 100vw" "100vw")
         )
       }}
