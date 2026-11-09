@@ -33,21 +33,24 @@ export default function scrollyMap(config) {
       this.applyTheme();
       stops = Array.from(
         this.$root.querySelectorAll("[data-scrolly-stop]"),
-      ).map((el, index) => ({
-        el,
-        card: el.querySelector("[data-scrolly-card]") || el,
-        index,
-        id: "scrolly-stop-" + index,
-        geojson: el.dataset.geojson,
-        color: el.dataset.color || this.mapColor,
-        fit: el.dataset.fit || "all",
-        align: el.dataset.align || config.layout || "left",
-        dots: this.parseDots(el.dataset.dots),
-        shade: el.dataset.shade !== "false",
-        hasDots: false,
-        bounds: null,
-        ready: false,
-      }));
+      ).map((el, index) => {
+        const dots = this.parseDots(el.dataset.dots);
+        return {
+          el,
+          card: el.querySelector("[data-scrolly-card]") || el,
+          index,
+          id: "scrolly-stop-" + index,
+          geojson: el.dataset.geojson,
+          color: el.dataset.color || this.mapColor,
+          fit: el.dataset.fit || "all",
+          align: el.dataset.align || config.layout || "left",
+          dots,
+          shade: el.dataset.shade ? el.dataset.shade !== "false" : !dots.length,
+          hasDots: false,
+          bounds: null,
+          ready: false,
+        };
+      });
       if (!stops.length) return;
       this.snapshot = this.snapshotIndex();
       if (this.snapshot !== null) this.enterSnapshot();
