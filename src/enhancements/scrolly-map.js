@@ -129,6 +129,10 @@ export default function scrollyMap(config) {
         this.fitActive(false);
       });
       ro.observe(this.$refs.canvas);
+      const header = document.querySelector("body > header");
+      if (header) {
+        new ResizeObserver(() => this.fitActive(true)).observe(header);
+      }
       map.on("load", () => {
         this.addAnchors();
         stops.forEach((stop) => this.loadStop(stop));
@@ -461,8 +465,13 @@ export default function scrollyMap(config) {
       const width = this.$refs.canvas.clientWidth;
       const height = this.$refs.canvas.clientHeight;
       if (this.snapshot !== null) return pad;
+      const header = document.querySelector("body > header");
+      const covered = header
+        ? Math.max(0, Math.round(header.getBoundingClientRect().bottom))
+        : 0;
+      pad.top += covered;
       if (this.isMobile()) {
-        pad.top = 24;
+        pad.top = 24 + covered;
         pad.left = 16;
         pad.right = 16;
         pad.bottom = Math.round(height * 0.4);
