@@ -10,7 +10,9 @@
 {{ $colorOpacity := .Get "color-opacity" }}
 {{ $shadeProperty := .Get "shade-property" | default "shaded" }}
 {{ $layout := .Get "layout" | default "left" | lower }}
-{{ $basemap := not (in (slice "hide" "false" "off" "none") (.Get "basemap" | default "show" | lower)) }}
+{{ $basemapInput := .Get "basemap" | default "show" | lower }}
+{{ $basemap := not (in (slice "hide" "false" "off" "none") $basemapInput) }}
+{{ $through := and $basemap (eq $basemapInput "show-through") }}
 {{ $backgroundInput := .Get "background" | default "#ffffff" }}
 {{ $background := partial "helper/brand-color.html" $backgroundInput }}
 {{ $outline := ne (.Get "outline" | default "true" | lower) "false" }}
@@ -60,6 +62,7 @@
   "outline" $outline
   "outlineColor" $outlineColor
   "basemap" $basemap
+  "through" $through
   "background" $background
 }}
 

@@ -8,7 +8,6 @@
 {{ $imageCredit := .Get "image-credit" | htmlUnescape }}
 {{ $imageRatio := .Get "image-ratio" | default "3:2" }}
 {{ $datawrapper := .Get "datawrapper" | htmlUnescape }}
-{{ $datawrapperHeight := .Get "datawrapper-height" | default "400" }}
 {{ $flourish := .Get "flourish" | htmlUnescape }}
 {{ $mediaPosition := .Get "media-position" | default "top" | lower }}
 {{ $cardClass := .Get "card-class" }}
@@ -49,7 +48,6 @@
 {{ else if $datawrapper }}
   {{ $media = partial "tw/datawrapper.html" (dict
     "src" $datawrapper
-    "height" $datawrapperHeight
     "id" (partial "helper/new-id" .)
     )
   }}

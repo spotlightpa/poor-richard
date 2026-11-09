@@ -12,8 +12,10 @@ export default function scrollyMap(config) {
     mapColor: config.mapColor,
     colorOpacity: config.colorOpacity,
     baseColor: "#d9dde1",
+    baseOpacity: 0.25,
     shadeProperty: config.shadeProperty || "shaded",
     basemap: config.basemap !== false,
+    through: config.through === true,
     background: config.background || "#ffffff",
     outline: config.outline !== false,
     outlineColor: config.outlineColor || "#6b6b6b",
@@ -33,24 +35,21 @@ export default function scrollyMap(config) {
       this.applyTheme();
       stops = Array.from(
         this.$root.querySelectorAll("[data-scrolly-stop]"),
-      ).map((el, index) => {
-        const dots = this.parseDots(el.dataset.dots);
-        return {
-          el,
-          card: el.querySelector("[data-scrolly-card]") || el,
-          index,
-          id: "scrolly-stop-" + index,
-          geojson: el.dataset.geojson,
-          color: el.dataset.color || this.mapColor,
-          fit: el.dataset.fit || "all",
-          align: el.dataset.align || config.layout || "left",
-          dots,
-          shade: el.dataset.shade ? el.dataset.shade !== "false" : !dots.length,
-          hasDots: false,
-          bounds: null,
-          ready: false,
-        };
-      });
+      ).map((el, index) => ({
+        el,
+        card: el.querySelector("[data-scrolly-card]") || el,
+        index,
+        id: "scrolly-stop-" + index,
+        geojson: el.dataset.geojson,
+        color: el.dataset.color || this.mapColor,
+        fit: el.dataset.fit || "all",
+        align: el.dataset.align || config.layout || "left",
+        dots: this.parseDots(el.dataset.dots),
+        shade: el.dataset.shade !== "false",
+        hasDots: false,
+        bounds: null,
+        ready: false,
+      }));
       if (!stops.length) return;
       this.snapshot = this.snapshotIndex();
       if (this.snapshot !== null) this.enterSnapshot();
@@ -298,13 +297,21 @@ export default function scrollyMap(config) {
     },
     addFillLayers(stop, hasShade) {
       const prop = this.shadeProperty;
+      const baseOpacity = this.through ? this.baseOpacity : this.colorOpacity;
       let fill = stop.shade ? stop.color : this.baseColor;
+      stop.fillOpacity = stop.shade ? this.colorOpacity : baseOpacity;
       if (hasShade) {
         fill = [
           "case",
           ["==", ["get", prop], true],
           stop.color,
           this.baseColor,
+        ];
+        stop.fillOpacity = [
+          "case",
+          ["==", ["get", prop], true],
+          this.colorOpacity,
+          baseOpacity,
         ];
       }
       map.addLayer(
@@ -422,7 +429,7 @@ export default function scrollyMap(config) {
       map.setPaintProperty(
         stop.id + "-fill",
         "fill-opacity",
-        on ? this.colorOpacity : 0,
+        on ? stop.fillOpacity : 0,
       );
       map.setPaintProperty(stop.id + "-line", "line-opacity", on ? 1 : 0);
       if (map.getLayer(stop.id + "-region")) {
@@ -440,15 +447,16 @@ export default function scrollyMap(config) {
       }
       if (!this.outline) return;
       const swap = { duration: 0, delay: on ? 0 : FADE.duration };
+      const solid = this.through ? 0 : 1;
       [
         ...this.border.shadows.map(([, value], n) => [
           stop.id + "-shadow-" + n,
           "fill-opacity",
-          value,
+          value * solid,
         ]),
         [stop.id + "-mat", "line-opacity", 1],
         [stop.id + "-outline", "line-opacity", 1],
-        [stop.id + "-base", "fill-opacity", 1],
+        [stop.id + "-base", "fill-opacity", solid],
       ].forEach(([id, prop, value]) => {
         map.setPaintProperty(id, prop + "-transition", swap);
         map.setPaintProperty(id, prop, on ? value : 0);
