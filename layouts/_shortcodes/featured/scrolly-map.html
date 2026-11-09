@@ -8,7 +8,6 @@
 {{ $colorInput := .Get "color" | default "Blue" }}
 {{ $mapColor := partial "helper/brand-color.html" $colorInput }}
 {{ $colorOpacity := .Get "color-opacity" }}
-{{ $baseColor := partial "helper/brand-color.html" (.Get "base-color") }}
 {{ $shadeProperty := .Get "shade-property" | default "shaded" }}
 {{ $layout := .Get "layout" | default "left" | lower }}
 {{ $basemap := not (in (slice "hide" "false" "off" "none") (.Get "basemap" | default "show" | lower)) }}
@@ -56,7 +55,6 @@
 {{ $config := dict
   "mapColor" $mapColor
   "colorOpacity" $colorOpacity
-  "baseColor" $baseColor
   "shadeProperty" $shadeProperty
   "layout" $layout
   "outline" $outline
@@ -65,85 +63,91 @@
   "background" $background
 }}
 
-{{ if and $topperImage $iconLight }}
-  <header
-    class="bg-beige px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
-    data-ga-category="scrolly-map:topper"
-  >
-    <div class="mx-auto w-full max-w-content">
-      {{ partial "scrolly-map/hero-text.html" $heroText }}
-    </div>
-  </header>
-{{ else if and $topperImage (not $isIcon) }}
-  <div
-    class="{{ $lc.flexDir }} {{ $lc.containerHeightMd }} flex w-full flex-col bg-black"
-    data-ga-category="scrolly-map:topper"
-  >
+{{ $continued := eq (.Get "continued") "true" }}
+{{ if $continued }}
+  {{ partial "featured/content-area-end" . }}
+{{ else }}
+  {{ if and $topperImage $iconLight }}
     <header
-      class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col justify-center overflow-y-auto bg-black px-8 py-10 text-white sm:px-10"
+      class="bg-beige px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
+      data-ga-category="scrolly-map:topper"
     >
       <div class="mx-auto w-full max-w-content">
         {{ partial "scrolly-map/hero-text.html" $heroText }}
       </div>
     </header>
-    <figure
-      class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative aspect-[4/3] w-full overflow-hidden bg-black md:aspect-auto"
+  {{ else if and $topperImage (not $isIcon) }}
+    <div
+      class="{{ $lc.flexDir }} {{ $lc.containerHeightMd }} flex w-full flex-col bg-black"
+      data-ga-category="scrolly-map:topper"
     >
-      {{ partial "scrolly-map/topper-image.html" (dict
-        "src" $topperImage
-        "description" $topperDescription
-        "fit" "cover"
-        "sizes" (cond $isRow "(min-width: 1024px) calc(100vw - 28rem), (min-width: 768px) calc(100vw - 24rem), 100vw" "100vw")
-        )
-      }}
-    </figure>
-  </div>
-{{ else }}
-  <header class="bg-black px-8 py-10 text-white sm:px-10 md:py-16">
-    <div class="mx-auto max-w-content">
-      {{ partial "scrolly-map/hero-text.html" $heroText }}
+      <header
+        class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col justify-center overflow-y-auto bg-black px-8 py-10 text-white sm:px-10"
+      >
+        <div class="mx-auto w-full max-w-content">
+          {{ partial "scrolly-map/hero-text.html" $heroText }}
+        </div>
+      </header>
+      <figure
+        class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative aspect-[4/3] w-full overflow-hidden bg-black md:aspect-auto"
+      >
+        {{ partial "scrolly-map/topper-image.html" (dict
+          "src" $topperImage
+          "description" $topperDescription
+          "fit" "cover"
+          "sizes" (cond $isRow "(min-width: 1024px) calc(100vw - 28rem), (min-width: 768px) calc(100vw - 24rem), 100vw" "100vw")
+          )
+        }}
+      </figure>
     </div>
-  </header>
+  {{ else }}
+    <header class="bg-black px-8 py-10 text-white sm:px-10 md:py-16">
+      <div class="mx-auto max-w-content">
+        {{ partial "scrolly-map/hero-text.html" $heroText }}
+      </div>
+    </header>
+  {{ end }}
 {{ end }}
 
-
-<section
-  class="relative"
-  data-ga-category="scrolly-map"
-  x-data="scrollyMap({{ $config | jsonify }})"
-  :class="{ 'fixed! inset-0 z-[9999] {{ cond $basemap `bg-white` (printf `bg-[%s]` $background) }}': snapshot !== null }"
->
-  <div
-    class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} sticky top-0 h-dvh w-full overflow-hidden"
-    :class="{ 'absolute! inset-0 h-full!': snapshot !== null }"
+{{ if strings.TrimSpace .Inner }}
+  <section
+    class="relative"
+    data-ga-category="scrolly-map"
+    x-data="scrollyMap({{ $config | jsonify }})"
+    :class="{ 'fixed! inset-0 z-[9999] {{ cond $basemap `bg-white` (printf `bg-[%s]` $background) }}': snapshot !== null }"
   >
-    <div x-ref="canvas" class="h-full w-full"></div>
-    {{ with $fallbackImage }}
-      {{ $src := partial "helper/imgproxy" (dict
-        "filename" .
-        "width" 1600
-        "height" 1200
-        "resize" "fit"
-        "ext" "jpeg"
-        )
-      }}
-      <noscript>
-        <img
-          class="absolute inset-0 h-full w-full object-contain"
-          src="{{ $src }}"
-          alt="{{ $fallbackDescription }}"
-        />
-      </noscript>
-    {{ end }}
-  </div>
-  <div
-    class="pointer-events-none relative z-10 -mt-[100dvh] pb-[50dvh]"
-    :class="{ invisible: snapshot !== null }"
-  >
-    {{ .Inner }}
-  </div>
-</section>
+    <div
+      class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} sticky top-0 h-dvh w-full overflow-hidden"
+      :class="{ 'absolute! inset-0 h-full!': snapshot !== null }"
+    >
+      <div x-ref="canvas" class="h-full w-full"></div>
+      {{ with and (not $continued) $fallbackImage }}
+        {{ $src := partial "helper/imgproxy" (dict
+          "filename" .
+          "width" 1600
+          "height" 1200
+          "resize" "fit"
+          "ext" "jpeg"
+          )
+        }}
+        <noscript>
+          <img
+            class="absolute inset-0 h-full w-full object-contain"
+            src="{{ $src }}"
+            alt="{{ $fallbackDescription }}"
+          />
+        </noscript>
+      {{ end }}
+    </div>
+    <div
+      class="pointer-events-none relative z-10 -mt-[100dvh] pb-[50dvh]"
+      :class="{ invisible: snapshot !== null }"
+    >
+      {{ .Inner }}
+    </div>
+  </section>
+{{ end }}
 
-{{ if strings.Contains .Page.RawContent "featured/footer" }}
+{{ if or (eq (.Get "continues") "true") (strings.Contains .Page.RawContent "featured/footer") }}
   {{ partial "featured/content-area-start" . }}
 {{ end }}

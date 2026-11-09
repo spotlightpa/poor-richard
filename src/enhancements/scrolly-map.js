@@ -11,7 +11,7 @@ export default function scrollyMap(config) {
     active: -1,
     mapColor: config.mapColor,
     colorOpacity: config.colorOpacity,
-    baseColor: config.baseColor,
+    baseColor: "#d9dde1",
     shadeProperty: config.shadeProperty || "shaded",
     basemap: config.basemap !== false,
     background: config.background || "#ffffff",
@@ -74,7 +74,6 @@ export default function scrollyMap(config) {
     applyTheme() {
       const opacity = parseFloat(this.colorOpacity);
       this.colorOpacity = Number.isFinite(opacity) ? opacity : 0.75;
-      this.baseColor = this.baseColor || "#d9dde1";
     },
     rgb(color) {
       let hex = String(color || "").replace("#", "");
