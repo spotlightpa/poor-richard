@@ -19,6 +19,8 @@
     {{ $bc := site.GetPage "/berks/_index.md" }}
     {{ $stories := union $news.RegularPages (union $sc.RegularPages $bc.RegularPages) }}
     {{ $p = .Paginate ($stories.GroupByDate "January 2006") $size }}
+  {{ else if eq $sort "parent" }}
+    {{ $p = .Paginate (.Parent.RegularPages.GroupByDate "January 2006") $size }}
   {{ else }}
     {{ $p = .Paginator $size }}
   {{ end }}
