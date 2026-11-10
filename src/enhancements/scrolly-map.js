@@ -9,6 +9,7 @@ export default function scrollyMap(config) {
 
   return {
     active: -1,
+    previous: -1,
     mapColor: config.mapColor,
     colorOpacity: config.colorOpacity,
     baseColor: "#d9dde1",
@@ -222,6 +223,7 @@ export default function scrollyMap(config) {
         ? features.filter((f) => f.properties && f.properties[prop] === true)
         : [];
       stop.hasDots = points.length > 0;
+      stop.hasEdge = features.length > 0;
       map.addSource(stop.id, { type: "geojson", data: { ...data, features } });
       if (this.outline) this.addOutlineLayers(stop, features);
       this.addFillLayers(stop, hasShade);
@@ -297,22 +299,17 @@ export default function scrollyMap(config) {
     },
     addFillLayers(stop, hasShade) {
       const prop = this.shadeProperty;
-      const baseOpacity = this.through ? this.baseOpacity : this.colorOpacity;
-      let fill = stop.shade ? stop.color : this.baseColor;
-      stop.fillOpacity = stop.shade ? this.colorOpacity : baseOpacity;
+      let base = this.baseColor;
+      if (this.through) {
+        const [r, g, b] = [1, 3, 5].map((i) =>
+          parseInt(this.baseColor.slice(i, i + 2), 16),
+        );
+        const alpha = Math.min(1, this.baseOpacity / this.colorOpacity);
+        base = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+      }
+      let fill = stop.shade ? stop.color : base;
       if (hasShade) {
-        fill = [
-          "case",
-          ["==", ["get", prop], true],
-          stop.color,
-          this.baseColor,
-        ];
-        stop.fillOpacity = [
-          "case",
-          ["==", ["get", prop], true],
-          this.colorOpacity,
-          baseOpacity,
-        ];
+        fill = ["case", ["==", ["get", prop], true], stop.color, base];
       }
       map.addLayer(
         {
@@ -419,6 +416,7 @@ export default function scrollyMap(config) {
     },
     setActive(index, animate = true) {
       if (index === this.active) return;
+      this.previous = this.active;
       this.active = index;
       stops.forEach((stop) => this.applyVisibility(stop));
       this.fitActive(animate);
@@ -429,7 +427,7 @@ export default function scrollyMap(config) {
       map.setPaintProperty(
         stop.id + "-fill",
         "fill-opacity",
-        on ? stop.fillOpacity : 0,
+        on ? this.colorOpacity : 0,
       );
       map.setPaintProperty(stop.id + "-line", "line-opacity", on ? 1 : 0);
       if (map.getLayer(stop.id + "-region")) {
@@ -446,7 +444,11 @@ export default function scrollyMap(config) {
         });
       }
       if (!this.outline) return;
-      const swap = { duration: 0, delay: on ? 0 : FADE.duration };
+      const handoff =
+        stops[this.active]?.hasEdge && stops[this.previous]?.hasEdge;
+      const swap = handoff
+        ? { duration: 0, delay: on ? 0 : FADE.duration }
+        : FADE;
       const solid = this.through ? 0 : 1;
       [
         ...this.border.shadows.map(([, value], n) => [
