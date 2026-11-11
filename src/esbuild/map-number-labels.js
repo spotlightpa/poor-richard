@@ -9,22 +9,87 @@ window.SPLMapCustomCode = function (map, config) {
     }
     return a / 2;
   }
-  function ringCentroid(ring) {
-    const a = ringArea(ring);
-    if (!a) return null;
-    let cx = 0,
-      cy = 0;
-    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-      const cross = ring[i][0] * ring[j][1] - ring[j][0] * ring[i][1];
-      cx += (ring[i][0] + ring[j][0]) * cross;
-      cy += (ring[i][1] + ring[j][1]) * cross;
+  function segmentDistSq(px, py, a, b) {
+    let x = a[0],
+      y = a[1],
+      dx = b[0] - x,
+      dy = b[1] - y;
+    if (dx || dy) {
+      const t = ((px - x) * dx + (py - y) * dy) / (dx * dx + dy * dy);
+      if (t > 1) {
+        x = b[0];
+        y = b[1];
+      } else if (t > 0) {
+        x += dx * t;
+        y += dy * t;
+      }
     }
-    return [cx / (6 * a), cy / (6 * a)];
+    dx = px - x;
+    dy = py - y;
+    return dx * dx + dy * dy;
   }
-  function featureCentroid(feature) {
+  function signedDistance(x, y, rings) {
+    let inside = false;
+    let minSq = Infinity;
+    for (const ring of rings) {
+      for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const a = ring[i],
+          b = ring[j];
+        if (
+          a[1] > y !== b[1] > y &&
+          x < ((b[0] - a[0]) * (y - a[1])) / (b[1] - a[1]) + a[0]
+        ) {
+          inside = !inside;
+        }
+        minSq = Math.min(minSq, segmentDistSq(x, y, a, b));
+      }
+    }
+    return (inside ? 1 : -1) * Math.sqrt(minSq);
+  }
+  function labelPoint(polygon) {
+    const k = Math.cos((polygon[0][0][1] * Math.PI) / 180);
+    const rings = polygon.map((ring) =>
+      ring.map(([lng, lat]) => [lng * k, lat]),
+    );
+    const xs = rings[0].map((p) => p[0]);
+    const ys = rings[0].map((p) => p[1]);
+    const minX = Math.min(...xs),
+      minY = Math.min(...ys);
+    const width = Math.max(...xs) - minX,
+      height = Math.max(...ys) - minY;
+    const size = Math.min(width, height);
+    if (!size) return null;
+    const cell = (x, y, h) => {
+      const d = signedDistance(x, y, rings);
+      return { x, y, h, d, max: d + h * Math.SQRT2 };
+    };
+    const queue = [];
+    for (let x = minX; x < minX + width; x += size) {
+      for (let y = minY; y < minY + height; y += size) {
+        queue.push(cell(x + size / 2, y + size / 2, size / 2));
+      }
+    }
+    let best = cell(minX + width / 2, minY + height / 2, 0);
+    const precision = Math.max(width, height) / 1000;
+    while (queue.length) {
+      queue.sort((a, b) => a.max - b.max);
+      const c = queue.pop();
+      if (c.d > best.d) best = c;
+      if (c.max - best.d <= precision) continue;
+      const h = c.h / 2;
+      queue.push(
+        cell(c.x - h, c.y - h, h),
+        cell(c.x + h, c.y - h, h),
+        cell(c.x - h, c.y + h, h),
+        cell(c.x + h, c.y + h, h),
+      );
+    }
+    return [best.x / k, best.y];
+  }
+  function featureLabel(feature) {
     const g = feature.geometry;
     if (!g) return null;
-    if (g.type === "Polygon") return ringCentroid(g.coordinates[0]);
+    if (g.type === "Polygon") return labelPoint(g.coordinates);
     if (g.type === "MultiPolygon") {
       let bestArea = -Infinity,
         best = null;
@@ -32,17 +97,17 @@ window.SPLMapCustomCode = function (map, config) {
         const a = Math.abs(ringArea(poly[0]));
         if (a > bestArea) {
           bestArea = a;
-          best = poly[0];
+          best = poly;
         }
       }
-      return best ? ringCentroid(best) : null;
+      return best ? labelPoint(best) : null;
     }
     return null;
   }
 
   const labelFeatures = config.data.features
     .map((f) => {
-      const c = featureCentroid(f);
+      const c = featureLabel(f);
       if (!c) return null;
       return {
         type: "Feature",
