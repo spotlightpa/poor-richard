@@ -75,7 +75,7 @@
         class="mb-3 flex items-center gap-2 font-sans text-xs font-bold tracking-wide text-g-7 uppercase"
       >
         <span
-          class="inline-block h-3 w-3 flex-shrink-0 rounded-full bg-[{{ $color }}]"
+          class="inline-block h-3 w-3 flex-shrink-0 rounded-full bg-[{{ replace $color " " "_" }}]"
         ></span>
         {{ . }}
       </div>
@@ -85,7 +85,7 @@
         {{ $media }}
       </div>
     {{ end }}
-    {{ with .Inner }}
+    {{ with strings.TrimSpace .Inner }}
       <div class="{{ $textClass }} article-content text-base leading-relaxed">
         {{ . | $.Page.RenderString (dict "display" "block") }}
       </div>
