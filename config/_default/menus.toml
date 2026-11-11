@@ -45,8 +45,8 @@ url = "/about/impact/"
 weight = 6
 
 [[about]]
-name = "Berks County"
-url = "/berks/"
+name = "Events"
+url = "/events/"
 weight = 7
 
 [[about]]
@@ -76,105 +76,153 @@ url = "/advertising/"
 weight = 12
 
 [[news]]
-name = "Justice System"
-url = "/topics/justice-system/"
-weight = 1
-
-[[news]]
 name = "Economy"
 url = "/topics/economy/"
 weight = 1
 
 [[news]]
 name = "Elections"
-url = "/topics/elections/"
-weight = 1
+url = "/elections/"
+weight = 2
 
 [[news]]
 name = "Environment"
 url = "/topics/environment/"
-weight = 1
-
-[[news]]
-name = "Events"
-url = "/events/"
-weight = 1
-
-[[news]]
-name = "State Capitol"
-url = "/topics/the-capitol/"
-weight = 1
-
-[[about]]
-name = "Berks County"
-url = "/berks/"
-weight = 6
+weight = 3
 
 [[news]]
 name = "Health"
 url = "/topics/health/"
-weight = 1
+weight = 4
 
 [[news]]
-name = "How Harrisburg Works"
-url = "/topics/how-harrisburg-works/"
-weight = 1
+name = "Investigations"
+url = "/investigations/"
+weight = 5
+
+[[news]]
+name = "Josh Shapiro"
+url = "/topics/josh-shapiro"
+weight = 6
+
+[[news]]
+name = "Justice System"
+url = "/topics/justice-system"
+weight = 7
 
 [[news]]
 name = "Local Government"
-url = "/topics/local-government/"
-weight = 1
+url = "/topics/local-government"
+weight = 8
 
 [[news]]
 name = "Penn State"
 url = "/topics/penn-state/"
-weight = 1
+weight = 9
+
+[[news]]
+name = "Restaurant Inspections"
+url = "/restaurant-inspections/"
+weight = 10
 
 [[news]]
 name = "Rural Issues"
 url = "/topics/rural-issues/"
-weight = 1
+weight = 11
+
+[[news]]
+name = "State Capitol"
+url = "/topics/the-capitol/"
+weight = 12
 
 [[news]]
 name = "More Topics"
 url = "/topics/"
-weight = 10
-
+weight = 13
 
 [[news]]
 name = "Archives"
 url = "/news/"
-weight = 12
+
+[[bureaus]]
+name = "State College"
+url = "/statecollege/"
+weight = 1
+
+[[bureaus]]
+name = "Berks County"
+url = "/berks/"
+weight = 2
+
+[[games]]
+name = "Crossword"
+url = "/crossword-games/"
+weight = 1
+
+[[games]]
+name = "Mini Crossword"
+url = "/mini-crossword-games/"
+weight = 2
+
+[[games]]
+name = "News Quiz"
+url = "/topics/news-quiz/"
+weight = 3
+
+[[games]]
+name = "Slide"
+url = "/slide-games/"
+weight = 4
+
+[[games]]
+name = "Sudoku"
+url = "/sudoku-games/"
+weight = 5
+
+[[games]]
+name = "Word Flower"
+url = "/word-flower-games/"
+weight = 6
+
+[[games]]
+name = "Word Search"
+url = "/word-search-games/"
+weight = 7
+
+[[games]]
+name = "WordroW"
+url = "/wordrow-games/"
+weight = 8
 
 [[newsletters]]
 name = "PA Post"
 url = "/newsletters/papost/"
-weight = 3
-
-[[newsletters]]
-name = "The Investigator"
-url = "/newsletters/investigator/"
-weight = 4
-
-[[newsletters]]
-name = "PA Local"
-url = "/newsletters/palocal/"
-weight = 5
+weight = 1
 
 [[newsletters]]
 name = "Good Day, Berks"
 url = "/newsletters/gooddayberks/"
-weight = 7
-
-[[newsletters]]
-name = "Penn State Alerts"
-url = "/newsletters/pennstatealert/"
-weight = 8
+weight = 2
 
 [[newsletters]]
 name = "Talk of the Town"
 url = "/newsletters/talkofthetown/"
-weight = 9
+weight = 3
+
+[[newsletters]]
+name = "PA Local"
+url = "/newsletters/palocal/"
+weight = 4
+
+[[newsletters]]
+name = "The Investigator"
+url = "/newsletters/investigator/"
+weight = 5
+
+[[newsletters]]
+name = "Access Harrisburg"
+url = "/newsletters/accessharrisburg/"
+weight = 6
 
 [[support]]
 name = "Ways to Give"
