@@ -45,9 +45,10 @@
 }}
 {{ if and $topperImage $isIcon }}
   {{ $heroText = merge $heroText (dict
-    "icon" (partial "scrolly-map/topper-icon.html" (dict
+    "icon" (partial "scrolly-map/topper-image.html" (dict
     "src" $topperImage
     "description" $topperDescription
+    "icon" true
     )
     ))
   }}
@@ -97,7 +98,6 @@
         {{ partial "scrolly-map/topper-image.html" (dict
           "src" $topperImage
           "description" $topperDescription
-          "fit" "cover"
           "sizes" (cond $isRow "(min-width: 1024px) calc(100vw - 28rem), (min-width: 768px) calc(100vw - 24rem), 100vw" "100vw")
           )
         }}
