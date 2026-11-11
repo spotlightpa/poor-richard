@@ -34,12 +34,11 @@
 
 <template id="map-reset-icon">
   <svg
-    class="m-auto block"
+    class="m-auto block stroke-g-9"
     viewBox="0 0 24 24"
     width="17"
     height="17"
     fill="none"
-    stroke="#333"
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
@@ -64,12 +63,12 @@
       >
         <path
           d="M20 2C11.163 2 4 9.163 4 18c0 10.863 14.4 31.627 15.02 32.534a1.2 1.2 0 001.96 0C21.6 49.627 36 28.863 36 18 36 9.163 28.837 2 20 2z"
+          class="stroke-white"
           fill="{{ $mapColor }}"
-          stroke="#ffffff"
           stroke-width="2"
           stroke-linejoin="round"
         />
-        <circle cx="20" cy="18" r="6" fill="#ffffff" />
+        <circle class="fill-white" cx="20" cy="18" r="6" />
       </svg>
     </div>
   </div>
@@ -140,9 +139,10 @@
           <input
             type="text"
             x-model="searchQuery"
+            aria-label="{{ $searchText }}"
             @keydown.enter.prevent="search()"
             @input="errorState = false"
-            :placeholder="errorState ? 'Not found, try again' : '{{ $searchText }}'"
+            :placeholder="errorState ? 'Not found, try again' : {{ $searchText | jsonify }}"
             :disabled="isSearching || isLocating"
             :class="searchUseLocation ? '' : 'pl-4'"
             class="w-full bg-transparent py-3 font-sans text-sm text-g-9 placeholder-g-5 focus:outline-none disabled:opacity-60"
