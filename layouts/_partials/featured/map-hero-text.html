@@ -1,0 +1,96 @@
+{{ $light := eq .theme "light" }}
+{{ $creditType := .creditType | default "by" }}
+{{ $eyebrowMargin := .eyebrowMargin | default (cond $light "mt-8" "mt-10") }}
+<div class="{{ if .iconBottom }}flex flex-col md:block{{ end }}">
+  <div class="{{ .logoRow | default `contents` }}">
+    {{ if not .hideBanner }}
+      <a class="{{ .bannerDisplay | default `inline-block` }}" href="/">
+        <svg
+          class="{{ cond $light `text-black hover:text-blue-7` `text-white drop-shadow-outline filter hover:text-yellow` }} {{ .logoSize | default `h-8 lg:h-10` }} fill-current"
+          role="img"
+          aria-label="Spotlight PA banner"
+          viewBox="0 0 1024 190"
+        >
+          {{ partial "helper/svg.html" "banner" }}
+        </svg>
+      </a>
+    {{ end }}
+
+    {{ with .icon }}
+      {{ $iconClass := cond $.hideBanner "" "mt-8" }}
+      {{ if $.iconBottom }}
+        {{ $iconClass = cond $.hideBanner "order-last mt-8 md:order-none md:mt-0" "order-last mt-8 md:order-none" }}
+      {{ end }}
+      <div class="{{ $iconClass }}">{{ . }}</div>
+    {{ end }}
+
+    {{ with .eyebrow }}
+      <div
+        class="{{ $eyebrowMargin }} {{ cond $light `text-blue-7` `text-yellow` }} font-sans text-sm font-bold uppercase"
+      >
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
+
+  {{ if or .hed .dek }}
+    <div
+      class="{{ cond $light `border-g-9` `border-white` }} {{ .hedBoxMargin | default `mt-4` }} mb-4 border-t border-b pt-4 pb-4"
+    >
+      {{ with .hed }}
+        <h1 class="{{ $.hedSizes }} leading-hed uppercase">{{ . }}</h1>
+      {{ end }}
+      {{ with .dek }}
+        <h2
+          class="{{ cond (ne $.hed "") `mt-4` `` }} {{ $.dekSize | default `lg:text-xl` }} text-base leading-relaxed"
+        >
+          {{ . }}
+        </h2>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ if and .byline (ne .byline "NA") }}
+    <div class="mt-4 text-sm leading-none">
+      {{ if ne $creditType "NA" }}{{ $creditType }}{{ end }}
+      <span class="font-sans font-bold uppercase">{{ .byline }}</span>
+    </div>
+  {{ end }}
+  {{ if and .outlet (ne .outlet "NA") }}
+    <div
+      class="{{ cond $light `text-g-8` `text-g-4` }} mt-2 font-sans text-xs font-bold uppercase"
+    >
+      {{ .outlet }}
+    </div>
+  {{ end }}
+  {{ if and .date (ne .date "NA") }}
+    <time
+      class="{{ cond $light `text-g-8` `text-g-4` }} mt-1 block font-sans text-xs uppercase"
+      datetime="{{ .publishedISO }}"
+    >
+      {{ .date }}
+    </time>
+  {{ end }}
+
+  {{ with .intro }}
+    <div class="mt-6 text-sm leading-relaxed">{{ . }}</div>
+  {{ end }}
+
+
+  <div class="mt-8 font-sans">
+    <a
+      class="{{ .donateSize }} inline-flex items-baseline rounded-sm bg-red px-3 py-1 font-semibold text-white uppercase"
+      href="/donate/"
+      data-ga-category="donate"
+    >
+      <svg
+        class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
+        viewBox="0 0 20 20"
+        aria-hidden="true"
+      >
+        {{ partial "helper/svg.html" "heart" }}
+      </svg>
+      Support This Work
+    </a>
+  </div>
+</div>

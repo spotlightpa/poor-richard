@@ -2,7 +2,6 @@
 {{ $eyebrow := .Get "eyebrow" | htmlUnescape }}
 {{ $hed := .Get "hed" | htmlUnescape }}
 {{ $dek := .Get "dek" | htmlUnescape }}
-{{ $dekMargin := cond (ne $hed "") "mt-4" "" }}
 {{ $date := .Get "display-date" | htmlUnescape }}
 {{ $creditType := .Get "credit-type" | default "by" }}
 {{ $byline := .Get "byline" | htmlUnescape }}
@@ -86,85 +85,26 @@
     class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col overflow-y-auto bg-black text-white"
   >
     <div class="px-8 py-10 sm:px-10">
-      <div class="{{ $lc.logoRow }}">
-        <a class="block" href="/">
-          <svg
-            class="{{ $lc.logoSize }} fill-current text-white drop-shadow-outline filter hover:text-yellow"
-            role="img"
-            aria-label="Spotlight PA banner"
-            viewBox="0 0 1024 190"
-          >
-            {{ partial "helper/svg.html" "banner" }}
-          </svg>
-        </a>
-
-        {{ with $eyebrow }}
-          <div
-            class="{{ $lc.eyebrowMargin }} font-sans text-sm font-bold text-yellow uppercase"
-          >
-            {{ . }}
-          </div>
-        {{ end }}
-      </div>
-
-      {{ if or $hed $dek }}
-        <div class="mt-6 mb-4 border-t border-b border-white pt-4 pb-4">
-          {{ with $hed }}
-            <h1 class="{{ $hedSizes }} leading-hed uppercase">{{ . }}</h1>
-          {{ end }}
-          {{ with $dek }}
-            <h2 class="{{ $dekMargin }} text-base leading-relaxed lg:text-lg">
-              {{ . }}
-            </h2>
-          {{ end }}
-        </div>
-      {{ end }}
-
-      {{ if and $byline (ne $byline "NA") }}
-        <div class="mt-4 text-sm leading-none">
-          {{ if and $creditType (ne $creditType "NA") }}
-            {{ $creditType }}
-          {{ end }}
-          <span class="font-sans font-bold uppercase">{{ $byline }}</span>
-        </div>
-      {{ end }}
-      {{ if and $outlet (ne $outlet "NA") }}
-        <div class="mt-2 font-sans text-xs font-bold text-g-4 uppercase">
-          {{ $outlet }}
-        </div>
-      {{ end }}
-      {{ if and $date (ne $date "NA") }}
-        <time
-          class="mt-1 block font-sans text-xs text-g-4 uppercase"
-          datetime="{{ $params.publishedISO }}"
-        >
-          {{ $date }}
-        </time>
-      {{ end }}
-
-      {{ with strings.TrimSpace .Inner }}
-        <div class="mt-6 text-sm leading-relaxed">
-          {{ . | $.Page.RenderString (dict "display" "block") }}
-        </div>
-      {{ end }}
-
-
-      <div class="mt-8 font-sans">
-        <a
-          class="inline-flex items-baseline rounded-sm bg-red px-3 py-1 text-base font-semibold text-white uppercase"
-          href="/donate/"
-          data-ga-category="donate"
-        >
-          <svg
-            class="relative top-px mr-[2px] inline-block h-4 w-4 fill-current align-middle"
-            viewBox="0 0 20 20"
-            aria-hidden="true"
-          >
-            {{ partial "helper/svg.html" "heart" }}
-          </svg>
-          Support This Work
-        </a>
-      </div>
+      {{ partial "featured/map-hero-text.html" (dict
+        "eyebrow" $eyebrow
+        "hed" $hed
+        "dek" $dek
+        "date" $date
+        "byline" $byline
+        "creditType" $creditType
+        "outlet" $outlet
+        "hedSizes" $hedSizes
+        "publishedISO" $params.publishedISO
+        "intro" (strings.TrimSpace .Inner | .Page.RenderString (dict "display" "block"))
+        "logoRow" $lc.logoRow
+        "logoSize" $lc.logoSize
+        "bannerDisplay" "block"
+        "eyebrowMargin" $lc.eyebrowMargin
+        "hedBoxMargin" "mt-6"
+        "dekSize" "lg:text-lg"
+        "donateSize" "text-base"
+        )
+      }}
     </div>
   </aside>
 
