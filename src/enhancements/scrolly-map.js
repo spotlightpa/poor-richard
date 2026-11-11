@@ -6,12 +6,13 @@ export default function scrollyMap(config) {
   let map = null;
   let stops = [];
   let observer = null;
+  const opacity = parseFloat(config.colorOpacity);
 
   return {
     active: -1,
     previous: -1,
     mapColor: config.mapColor,
-    colorOpacity: config.colorOpacity,
+    colorOpacity: Number.isFinite(opacity) ? opacity : 0.75,
     baseColor: "#d9dde1",
     baseOpacity: 0.25,
     shadeProperty: config.shadeProperty || "shaded",
@@ -33,7 +34,6 @@ export default function scrollyMap(config) {
     reduceMotion: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     snapshot: null,
     init() {
-      this.applyTheme();
       stops = Array.from(
         this.$root.querySelectorAll("[data-scrolly-stop]"),
       ).map((el, index) => ({
@@ -58,10 +58,14 @@ export default function scrollyMap(config) {
         this.initMap();
         return;
       }
+      let tries = 0;
       const wait = setInterval(() => {
+        tries++;
         if (window.maplibregl) {
           clearInterval(wait);
           this.initMap();
+        } else if (tries > 200) {
+          clearInterval(wait);
         }
       }, 50);
     },
@@ -73,10 +77,6 @@ export default function scrollyMap(config) {
     },
     enterSnapshot() {
       document.documentElement.classList.add("overflow-hidden");
-    },
-    applyTheme() {
-      const opacity = parseFloat(this.colorOpacity);
-      this.colorOpacity = Number.isFinite(opacity) ? opacity : 0.75;
     },
     rgb(color) {
       let hex = String(color || "").replace("#", "");
@@ -168,7 +168,7 @@ export default function scrollyMap(config) {
       });
     },
     isMobile() {
-      return this.$refs.canvas.clientWidth < 768;
+      return !window.matchMedia("(min-width: 850px)").matches;
     },
     observe() {
       if (this.snapshot !== null) {
@@ -241,6 +241,7 @@ export default function scrollyMap(config) {
       if (!stop.geojson) return { type: "FeatureCollection", features: [] };
       try {
         const res = await fetch(stop.geojson);
+        if (!res.ok) return null;
         return await res.json();
       } catch {
         return null;
@@ -301,9 +302,7 @@ export default function scrollyMap(config) {
       const prop = this.shadeProperty;
       let base = this.baseColor;
       if (this.through) {
-        const [r, g, b] = [1, 3, 5].map((i) =>
-          parseInt(this.baseColor.slice(i, i + 2), 16),
-        );
+        const [r, g, b] = this.rgb(this.baseColor);
         const alpha = Math.min(1, this.baseOpacity / this.colorOpacity);
         base = `rgba(${r}, ${g}, ${b}, ${alpha})`;
       }
