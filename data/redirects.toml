@@ -131,3 +131,11 @@ to = "https://www.nepagives.org/organization/Spotlight-Pa"
 [[redirects]]
 from = "/environment"
 to = "https://spotlightpa.donorsupport.co/page/environment"
+
+[[redirects]]
+from = "/ah6months"
+to = "https://accessharrisburg.spotlightpa.org/upgrade?offer_id=484c7bc7-7bbc-4c44-817c-f9870cea04ab"
+
+[[redirects]]
+from = "/judy"
+to = "https://spotlightpa.donorsupport.co/page/judy"

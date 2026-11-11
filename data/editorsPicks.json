@@ -1,22 +1,18 @@
 {
-  "edCallout": [
-    "content/news/2026-07-20-SPLSHAPPROFILE0726.md",
-    "content/news/2026-08-13-SPLGARRITYPROFILE0826.md"
-  ],
+  "edCallout": [],
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-11-02-SPLCFTIDBITS1126.md"
+    "content/news/2026-11-11-SPLFEFOLO1126.md"
   ],
   "subfeatures": [
-    "content/news/2026-11-02-SPLLEGSTAKES1126.md",
-    "content/news/2026-10-29-SPLINTIMID1026.md",
-    "content/news/2026-10-26-SPLNOV3LASTMINGUIDE.md",
-    "content/news/2026-10-21-SPLLEGVET1026.md"
+    "content/news/2026-10-21-SPLFESUPPLY1026.md",
+    "content/news/2026-09-21-SPLCAPCOSTS0926.md",
+    "content/news/2026-09-21-SPLAUTOENROLL0926.md"
   ],
   "topSlots": [
-    "content/news/2026-11-02-VBMONITOR1126.md",
-    "content/news/2026-10-30-SPLC5LEGIS1026.md",
-    "content/news/2026-10-30-SPLDATASEN1026.md"
+    "content/news/2026-11-10-APECOLLEGE1126.md",
+    "content/news/2026-11-10-spl_ROMAN1126.md",
+    "content/news/2026-11-09-spl_DDRDNUM1126.md"
   ]
 }

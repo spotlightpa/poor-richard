@@ -62,7 +62,7 @@ export function relativeDate(date) {
   const minutes = Math.floor((Date.now() - toDate(date)) / 60_000);
   if (minutes < 0) return formatDateTime(date); // Future dating
   if (minutes < 5) return "Just now";
-  if (minutes < 120) return `${minutes} minutes ago`;
+  if (minutes < 91) return `${minutes} minutes ago`;
 
   const hours = Math.floor(minutes / 60);
   if (hours < 12) return `${hours} ${hours === 1 ? "hour" : "hours"} ago`;
