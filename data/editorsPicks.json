@@ -3,14 +3,15 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-11-10-spl_ROMAN1126.md"
+    "content/news/2026-11-11-SPLFEFOLO1126.md"
   ],
   "subfeatures": [
-    "content/news/2024-08-26-SPLDOCTORS0824.md",
-    "content/news/2025-03-27-spl_marijuanadocs_0325.md"
+    "content/news/2026-10-21-SPLFESUPPLY1026.md",
+    "content/news/2026-09-21-SPLCAPCOSTS0926.md",
+    "content/news/2026-09-21-SPLAUTOENROLL0926.md"
   ],
   "topSlots": [
-    "content/news/2026-11-10-APECOLLEGE1126.md",
+    "content/news/2026-11-10-spl_ROMAN1126.md",
     "content/news/2026-11-09-spl_DDRDNUM1126.md",
     "content/news/2026-11-06-SPLFINALRACE1126.md"
   ]
