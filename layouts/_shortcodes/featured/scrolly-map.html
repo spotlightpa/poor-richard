@@ -25,7 +25,7 @@
 {{ end }}
 {{ $topperMobileLayout := .Get "topper-mobile-layout" | default "top" | lower }}
 {{ $lc := partial "helper/map-layout-classes.html" (dict "desktop" $topperLayout "mobile" $topperMobileLayout) }}
-{{ $isRow := eq $lc.flexDir "md:flex-row" }}
+{{ $isRow := eq $lc.orientation "row" }}
 {{ $iconLight := or (eq $topperLayout "icon") (eq $topperLayout "icon-light") }}
 {{ $iconDark := eq $topperLayout "icon-dark" }}
 {{ $isIcon := or $iconLight $iconDark }}

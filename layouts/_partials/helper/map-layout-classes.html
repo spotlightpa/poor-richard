@@ -1,7 +1,7 @@
-{{- $desktop := .desktop | default "right" -}}
-{{- $mobile := .mobile | default "top" -}}
+{{ $desktop := .desktop | default "right" }}
+{{ $mobile := .mobile | default "top" }}
 
-{{- $orientations := dict
+{{ $orientations := dict
   "row" (dict
   "flexDir" "md:flex-row"
   "asideMaxW" "md:max-w-sm lg:max-w-md"
@@ -22,36 +22,22 @@
   "logoSize" "h-8 md:h-7"
   "eyebrowMargin" "mt-8 md:mt-0"
   )
-  -}}
+  }}
 
-{{- $desktopOrder := dict
+{{ $desktopOrder := dict
   "right" (dict "orientation" "row" "asideOrderMd" "md:order-first" "mapOrderMd" "md:order-last")
   "left" (dict "orientation" "row" "asideOrderMd" "md:order-last" "mapOrderMd" "md:order-first")
   "top" (dict "orientation" "col" "asideOrderMd" "md:order-first" "mapOrderMd" "md:order-last")
   "bottom" (dict "orientation" "col" "asideOrderMd" "md:order-last" "mapOrderMd" "md:order-first")
--}}
+}}
 
-{{- $mobileOrder := dict
+{{ $mobileOrder := dict
   "top" (dict "asideOrderMobile" "order-last" "mapOrderMobile" "order-first")
   "bottom" (dict "asideOrderMobile" "order-first" "mapOrderMobile" "order-last")
--}}
+}}
 
-{{- $order := index $desktopOrder $desktop | default (index $desktopOrder "right") -}}
-{{- $size := index $orientations $order.orientation -}}
-{{- $m := index $mobileOrder $mobile | default (index $mobileOrder "top") -}}
+{{ $order := index $desktopOrder $desktop | default (index $desktopOrder "right") }}
+{{ $size := index $orientations $order.orientation }}
+{{ $m := index $mobileOrder $mobile | default (index $mobileOrder "top") }}
 
-{{- $result := dict
-  "flexDir" $size.flexDir
-  "asideOrderMd" $order.asideOrderMd
-  "mapOrderMd" $order.mapOrderMd
-  "asideMaxW" $size.asideMaxW
-  "asideHeightMd" $size.asideHeightMd
-  "mapHeightMd" $size.mapHeightMd
-  "containerHeightMd" $size.containerHeightMd
-  "logoRow" $size.logoRow
-  "logoSize" $size.logoSize
-  "eyebrowMargin" $size.eyebrowMargin
-  "asideOrderMobile" $m.asideOrderMobile
-  "mapOrderMobile" $m.mapOrderMobile
--}}
-{{- return $result -}}
+{{ return merge $size $order $m }}
