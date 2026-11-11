@@ -351,7 +351,7 @@
     show: false,
     check() {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      const isMd = window.matchMedia('(min-width: 768px)').matches;
+      const isMd = window.matchMedia('(min-width: 850px)').matches;
       this.show = isMd && scrollable > 40 && window.scrollY < 40;
     },
     down() {
