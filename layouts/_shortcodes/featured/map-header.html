@@ -389,7 +389,9 @@
       <div
         x-ref="cardTrack"
         @scroll.passive="onCardScroll()"
-        class="flex snap-x snap-mandatory scroll-px-4 [scrollbar-width:none] gap-2.5 overflow-x-auto px-4 pt-3 pb-4 [&::-webkit-scrollbar]:hidden"
+        @pointerdown="startCardDrag($event)"
+        @click.capture="endCardClick($event)"
+        class="flex cursor-grab snap-x snap-mandatory scroll-px-4 [scrollbar-width:none] gap-2.5 overflow-x-auto px-4 pt-3 pb-4 data-dragging:cursor-grabbing data-dragging:snap-none [&::-webkit-scrollbar]:hidden"
       >
         <template x-for="(html, i) in cards" :key="i">
           <div

@@ -57,6 +57,7 @@ export default function mapContainer(config) {
     shownMode: "",
     stripNarrow: false,
     activeCard: 0,
+    cardDragged: false,
     hovering: false,
     mapFitted: false,
     tipOpen: false,
@@ -555,6 +556,35 @@ export default function mapContainer(config) {
       const step = cards[1].offsetLeft - cards[0].offsetLeft;
       this.activeCard = Math.round(this.$refs.cardTrack.scrollLeft / step);
     },
+    startCardDrag(e) {
+      const track = this.$refs.cardTrack;
+      this.cardDragged = false;
+      if (e.pointerType !== "mouse" || e.button !== 0 || !track) return;
+      e.preventDefault();
+      const startX = e.clientX;
+      const startLeft = track.scrollLeft;
+      track.dataset.dragging = "";
+      const move = (ev) => {
+        const dx = ev.clientX - startX;
+        if (Math.abs(dx) > 4) this.cardDragged = true;
+        track.scrollLeft = startLeft - dx;
+      };
+      const up = () => {
+        window.removeEventListener("pointermove", move);
+        window.removeEventListener("pointerup", up);
+        delete track.dataset.dragging;
+        this.onCardScroll();
+        this.showCard(this.activeCard);
+      };
+      window.addEventListener("pointermove", move);
+      window.addEventListener("pointerup", up);
+    },
+    endCardClick(e) {
+      if (!this.cardDragged) return;
+      this.cardDragged = false;
+      e.preventDefault();
+      e.stopPropagation();
+    },
     showCard(i) {
       const cards = this.cardElements();
       if (!cards[i]) return;
@@ -644,9 +674,17 @@ export default function mapContainer(config) {
       });
     },
     renderTooltipTemplate(template, properties) {
-      return template.replace(/\{\{\s*([\w.-]+)\s*\}\}/g, (_, key) => {
+      const html = template.replace(/\{\{\s*([\w.-]+)\s*\}\}/g, (_, key) => {
         return this.escapeHTML(properties ? properties[key] : "");
       });
+      if (!html.includes("data-show")) return html;
+      const tpl = document.createElement("template");
+      tpl.innerHTML = html;
+      for (const el of tpl.content.querySelectorAll("[data-show]")) {
+        const value = properties?.[el.dataset.show];
+        if (value == null || String(value).trim() === "") el.remove();
+      }
+      return tpl.innerHTML;
     },
     async showTooltip(lon, lat, feature, noPin = false) {
       const props = feature ? feature.properties : {};
