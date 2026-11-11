@@ -92,7 +92,7 @@ export default function mapContainer(config) {
         showCompass: false,
       });
       this.resetControl = new ResetViewControl(() => this.resetView());
-      this.navIsMd = window.matchMedia("(min-width: 768px)").matches;
+      this.navIsMd = window.matchMedia("(min-width: 850px)").matches;
       this.addNavControls(this.navIsMd ? "top-right" : "bottom-right");
       window.addEventListener("resize", () => this.updateNavPosition());
       const ro = new ResizeObserver(() => this.map && this.map.resize());
@@ -104,7 +104,7 @@ export default function mapContainer(config) {
       this.map.on("move", () => this.positionTooltip());
     },
     updateNavPosition() {
-      const isMd = window.matchMedia("(min-width: 768px)").matches;
+      const isMd = window.matchMedia("(min-width: 850px)").matches;
       if (isMd === this.navIsMd || !this.map) return;
       this.navIsMd = isMd;
       this.map.removeControl(this.navControl);
@@ -234,41 +234,15 @@ export default function mapContainer(config) {
       return bounds;
     },
     fitToData(data) {
-      const bounds = new maplibregl.LngLatBounds();
-      const extendBounds = (coords) => {
-        if (!Array.isArray(coords) || coords.length === 0) return;
-        if (typeof coords[0] === "number" && typeof coords[1] === "number") {
-          bounds.extend([coords[0], coords[1]]);
-        } else {
-          coords.forEach(extendBounds);
-        }
-      };
-      data.features.forEach((f) => {
-        if (f.geometry) extendBounds(f.geometry.coordinates);
-      });
+      const bounds = this.dataBounds(data);
       if (bounds.isEmpty()) return;
-
       this.map.fitBounds(bounds, {
         padding: { top: 80, bottom: 40, left: 40, right: 40 },
         duration: 0,
       });
-
-      const padFactor = 0.6;
-      const minPadDeg = 0.15;
-      const sw = bounds.getSouthWest();
-      const ne = bounds.getNorthEast();
-      const lngPad = Math.max((ne.lng - sw.lng) * padFactor, minPadDeg);
-      const latPad = Math.max((ne.lat - sw.lat) * padFactor, minPadDeg);
-      const maxBounds = new maplibregl.LngLatBounds(
-        [sw.lng - lngPad, sw.lat - latPad],
-        [ne.lng + lngPad, ne.lat + latPad],
-      );
-      this.map.setMaxBounds(maxBounds);
-
-      const camera = this.map.cameraForBounds(maxBounds, { padding: 20 });
-      if (camera && typeof camera.zoom === "number") {
-        this.map.setMinZoom(Math.max(0, camera.zoom - 0.1));
-      }
+      const limits = this.viewLimits(bounds);
+      this.map.setMaxBounds(limits.maxBounds);
+      this.map.setMinZoom(limits.minZoom);
     },
     loadCustomCode() {
       if (!this.customCodeUrl) return;
@@ -312,8 +286,9 @@ export default function mapContainer(config) {
           lat +
           "," +
           lon;
-        const revRes = await fetch(revUrl);
-        const revData = await revRes.json();
+        const revData = await fetch(revUrl)
+          .then((res) => res.json())
+          .catch(() => null);
         const addr = revData?.results?.[0]?.formatted_address;
         if (addr) this.searchQuery = addr;
         this.dropPin(lon, lat, matchedFeature);
@@ -789,7 +764,7 @@ export default function mapContainer(config) {
       this.tipOpen = false;
       this.tooltip = null;
     },
-    async dropPin(lon, lat, feature, fly = true) {
+    async dropPin(lon, lat, feature) {
       if (this.marker) this.marker.remove();
       this.pinDropped = false;
       const tmpl = document.getElementById("map-pin");
@@ -806,19 +781,18 @@ export default function mapContainer(config) {
       });
       if (this.resultMode() !== "popup")
         await this.showResult(lon, lat, feature);
-      if (fly)
-        this.map.flyTo({
-          center: [lon, lat],
-          zoom: 15,
-          speed: 1.2,
-          curve: 1.42,
-          offset: [
-            0,
-            this.stripHeight()
-              ? -(this.stripHeight() + this.stripOffset()) / 2
-              : 0,
-          ],
-        });
+      this.map.flyTo({
+        center: [lon, lat],
+        zoom: 15,
+        speed: 1.2,
+        curve: 1.42,
+        offset: [
+          0,
+          this.stripHeight()
+            ? -(this.stripHeight() + this.stripOffset()) / 2
+            : 0,
+        ],
+      });
     },
   };
 }
