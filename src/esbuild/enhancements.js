@@ -31,6 +31,8 @@ import {
   inspectionSortMenu,
   inspectionMobileFilters,
 } from "../enhancements/inspection-filters.js";
+import mapContainer from "../enhancements/map-container.js";
+import scrollyMap from "../enhancements/scrolly-map.js";
 import voterGuides from "../enhancements/voter-guides.js";
 
 for (let [name, comp] of [
@@ -61,8 +63,6 @@ for (let [name, comp] of [
   Alpine.data(name, comp);
 }
 
-import mapContainer from "../enhancements/map-container.js";
-import scrollyMap from "../enhancements/scrolly-map.js";
 import shareButton from "../enhancements/share-button.js";
 
 Alpine.bind("shareButton", shareButton);
