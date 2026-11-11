@@ -45,7 +45,7 @@ During his tenure in the House, Fitzpatrick has distanced himself from President
 
 Democratic candidate Bob Harvie, a Bucks County commissioner and former public school teacher, is campaigning on his “<a href="https://bobharvieforcongress.com/priorities/">New Fair Deal for Working Families</a>” platform. The 12-priority agenda includes healthcare reform, middle-class tax cuts, and anti-corruption policies. He opposes the war in Iran and Trump’s tariffs.
 
-The nonpartisan <a href="https://www.cookpolitical.com/ratings/house-race-ratings">Cook Political Report</a> changed its rating of the race from “likely Republican” to “lean Republican” in early October.
+The nonpartisan <a href="https://www.cookpolitical.com/ratings/house-race-ratings">Cook Political Report</a> changed its rating of the race from “lean Republican” to “toss up” just days before the election.
 
 Leonard Hill, 70, of Bensalem, Bucks County, grew up in a family of Democrats, but said he “converted,” switching his registration to Republican more than a decade ago. Hill retired from SEPTA and is still a member of the Transport Workers Union.
 
@@ -193,7 +193,7 @@ Fitzpatrick said he will probably vote for Shapiro “because Stacy Garrity is t
 
 Gearhart is inclined to vote for Shapiro, and told Spotlight PA he’s “only heard good things about him, or I guess I haven&#39;t heard bad things about him, which says a lot in politics today.”
 
-<em>Spotlight PA reached out to voters who responded to a Franklin &amp; Marshall poll and said they were willing to speak to the media. The news outlet was unable to reach any voters in the 8th Congressional District, which is rated a toss-up by the Cook Political Report.</em>
+<em>Spotlight PA reached out to voters who responded to a Franklin &amp; Marshall poll and said they were willing to speak to the media. The news outlet was unable to reach any voters in the 8th Congressional District, which is rated “lean Democrat” by the Cook Political Report.</em>
 
 \#\#
 

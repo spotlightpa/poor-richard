@@ -84,7 +84,7 @@ The last day to register is Oct. 19.
 
 You can register online <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx">here</a>, or submit a <a href="https://www.vote.pa.gov/Resources/Documents/Voter_Registration_Application_English.pdf">registration form</a> in person or through the mail to your county election office by the same date. Online voter registration applications must be received by that day.
 
-{{<embed/newsletter>}}
+{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/subscribe">}}
 
 <h2 id="spl-heading-4">How can I check my voter registration?</h2>
 

@@ -38,7 +38,7 @@
     "@newswire/frames": "^1.0.0",
     "@tailwindcss/cli": "^4.3.3",
     "alpinejs": "^3.17.1",
-    "journalize": "^2.5.1",
+    "journalize": "^2.6.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

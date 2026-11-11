@@ -750,6 +750,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Bob and Tory Kallin",
+      "sort": "Kallin",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Mark Kampf",
       "sort": "Kampf",
       "url": "",
@@ -759,6 +766,13 @@
     {
       "display": "Roberta Kangilaski",
       "sort": "Kangilaski",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Nancy Kear-Johnson",
+      "sort": "Kear",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -967,8 +981,22 @@
       "categoryRank": "6"
     },
     {
+      "display": "Barbara Miller",
+      "sort": "Miller",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Marlin Miller",
       "sort": "Miller",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
+      "display": "Mario Milletti",
+      "sort": "Milletti",
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
@@ -1347,6 +1375,13 @@
     {
       "display": "Robert and Suzanne Stetson",
       "sort": "Stetson",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Frances Stier",
+      "sort": "Stier",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"

@@ -27,6 +27,8 @@ title-tag = "PA governor race: Your guide to the candidates"
 topics = ["Elections"]
 +++
 
+<strong><em>Update, Nov. 3: </em></strong><a href="https://www.spotlightpa.org/news/2026/11/election-results-pennsylvania-governor-josh-shapiro-stacy-garrity-elections/"><strong><em>Democrat Josh Shapiro easily secures second term as Pennsylvania governor</em></strong></a><strong><em></em></strong>
+
 <a href="https://www.spotlightpa.org/news/2026/10/josh-shapiro-stacy-garrity-pensilvania-gobernador-elecciones-guia-espanol/"><em>Leer en español</em></a><em>. To download a printable version of this article, please </em><a href="https://www.spotlightpa.org/voter-guides"><em>click here</em></a><em>.</em>
 
 HARRISBURG — The 2026 election for Pennsylvania governor is fast approaching.
@@ -95,7 +97,7 @@ Beyond executive orders, Shapiro has used his executive powers to usher in porti
 
 Still, the Democratic governor has managed to find common ground with the legislature on certain priorities, namely, increased funding in the state budget for public schools.
 
-{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/">}}
+{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/subscribe">}}
 
 Recent polling shows Shapiro with strong approval numbers, and he is the clear favorite to win in November. A poll commissioned by the Philadelphia Inquirer, the New York Times, and Siena University in late August found 60% of Pennsylvania voters have a favorable opinion of him. The poll also showed the <a href="https://www.inquirer.com/politics/election/josh-shapiro-stacy-garrity-governors-race-20260825.html">Democratic governor held a 16-point lead</a> over Garrity among likely Pennsylvania voters.
 
@@ -157,7 +159,7 @@ But with little money on hand, it has been difficult for Garrity to communicate 
 
 <strong>Her top donors include </strong>University City Housing Co., a real estate firm owned by charter school founder Michael Karp; Pittsburgh-based PAC Keystone Honor, which is funded by manufacturing and construction interests; longtime GOP power broker Bob Asher and his PAC, PA Future Fund; and skill games company founder Michael Pace, from whom Garrity reported accepting a flight worth $33,500.
 
-Her biggest donations are orders of magnitude smaller than Shapiro’s. The single biggest, from University City Housing late last year, was $250,000.
+Between Sept. 15 and Oct. 19, Garrity raised almost $5.4 million, <a href="https://www.spotlightpa.org/news/2026/10/stacy-garrity-josh-shapiro-skill-games-fundraising-campaign-governor-pennsylvania-elections/">much of it tied to the skill games industry</a>.
 
 {{<picture caption="Ken Krawchuk accepts the Libertarian Party’s nomination for Pennsylvania governor." credit="Screenshot via YouTube" description="Ken Krawchuk accepts the Libertarian Party’s nomination for Pennsylvania governor." src="cas/0408-881c-1qka-8q77.png">}}
 
@@ -171,13 +173,9 @@ He is running, he wrote on Facebook, to give Pennsylvania voters “more than th
 
 Krawchuk says he favors completely privatizing schools and eliminating school property taxes; getting rid of the state’s personal income tax over the course of a term; getting rid of mail ballots and expanding voter ID requirements; eliminating parole for “violent criminals”; and decriminalizing drugs.
 
-<strong>His running mate</strong> is John Thomas of Somerset County, who describes himself as a career educator “in traditional public schools, a private school, and cyber charter schools.”
-
-<strong>It’s unclear who his top donors are.</strong> As of Sept. 4, Krawchuk had not filed a campaign finance report or campaign finance statement (a document that campaigns must file if they don’t raise or spend money over $250).
+<strong>His running mate</strong> is John Thomas of Somerset County, who describes himself as a career educator “in traditional public schools, a private school, and cyber charter schools.”<strong></strong>
 
 <h2 id="spl-heading-5">On the issues</h2>
-
-<em>This section will be updated as Spotlight PA publishes more guides to the issues ahead of Nov. 3.</em>
 
 <h3 id="spl-heading-6">Abortion</h3>
 

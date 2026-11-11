@@ -1,48 +1,12 @@
 {
   "ad-footer-desktop": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-desktop",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86ne/house-ads-1350-x-175-1-.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpz/product-testing-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzh9/restaurant-inspections-3-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nv9x/youtube-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k95w/access-harrisburg-1350-x-175.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraiser-2026-banner-double.png"
       ]
     }
   ],
@@ -51,98 +15,26 @@
   "ad-footer-desktop-width": 1350,
   "ad-footer-mobile": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=footer-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86n9/house-ads-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpv/product-testing-300-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrq/restaurant-inspections-3-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva4/youtube-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k56b/access-harrisburg-300-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraiser-double-rectangle.png"
       ]
     }
   ],
   "ad-footer-mobile-active": true,
   "ad-footer-mobile-height": 250,
-  "ad-footer-mobile-width": 300,
+  "ad-footer-mobile-width": 500,
   "ad-header-desktop": [
     {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=banner-header-desktop",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzh9/restaurant-inspections-3-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86ne/house-ads-1350-x-175-1-.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k95w/access-harrisburg-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nv9x/youtube-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpz/product-testing-1350-x-175.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraiser-2026-banner-double.png"
       ]
     }
   ],
@@ -151,98 +43,26 @@
   "ad-header-desktop-width": 1350,
   "ad-header-mobile": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=header-banner-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86w2/house-ads-512-x-250-2-.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpq/product-testing-512-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrh/restaurant-inspections-3-512-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva1/youtube-512-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k960/access-harrisburg-512-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraiser-double-rectangle.png"
       ]
     }
   ],
   "ad-header-mobile-active": true,
-  "ad-header-mobile-height": 512,
-  "ad-header-mobile-width": 1024,
+  "ad-header-mobile-height": 250,
+  "ad-header-mobile-width": 500,
   "ad-hp-breaker-desktop": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker-desktop",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86ne/house-ads-1350-x-175-1-.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpz/product-testing-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzh9/restaurant-inspections-3-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nv9x/youtube-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k95w/access-harrisburg-1350-x-175.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraiser-2026-banner-double.png"
       ]
     }
   ],
@@ -251,48 +71,12 @@
   "ad-hp-breaker-desktop-width": 1350,
   "ad-hp-breaker-mobile": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-breaker-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86n9/house-ads-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpv/product-testing-300-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrq/restaurant-inspections-3-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva4/youtube-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k56b/access-harrisburg-300-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraising-2026-double-square.png"
       ]
     }
   ],
@@ -301,96 +85,24 @@
   "ad-hp-breaker-mobile-width": 300,
   "ad-hp-featured": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-featured",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86n9/house-ads-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpv/product-testing-300-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrq/restaurant-inspections-3-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva4/youtube-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k56b/access-harrisburg-300-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraising-2026-double-square.png"
       ]
     }
   ],
   "ad-hp-featured-active": true,
   "ad-hp-headwater-desktop": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-desktop",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86ne/house-ads-1350-x-175-1-.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpz/product-testing-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzh9/restaurant-inspections-3-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nv9x/youtube-1350-x-175.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k95w/access-harrisburg-1350-x-175.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraiser-2026-banner-double.png"
       ]
     }
   ],
@@ -399,48 +111,12 @@
   "ad-hp-headwater-desktop-width": 1350,
   "ad-hp-headwater-mobile": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=homepage-headwater-mobile",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86n9/house-ads-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpv/product-testing-300-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrq/restaurant-inspections-3-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva4/youtube-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k56b/access-harrisburg-300-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraising-2026-double-square.png"
       ]
     }
   ],
@@ -457,96 +133,24 @@
   "ad-hp-river-mobile-width": 0,
   "ad-rail-sticky": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=raily-sticky",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86n9/house-ads-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpv/product-testing-300-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrq/restaurant-inspections-3-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva4/youtube-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k56b/access-harrisburg-300-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x26/eoy-fundraising-2026-double-square.png"
       ]
     }
   ],
   "ad-rail-sticky-active": true,
   "ad-rail-top": [
     {
-      "description": "Spotlight PA Games: Try our free, daily puzzles and brainteasers with a button to start playing",
+      "description": "For a limited time, all gifts DOUBLED in support of Spotlight PA's independent, unbiased news and information for Pennsylvania.",
       "label": "",
       "labelLink": "",
-      "link": "https://www.spotlightpa.org/games",
+      "link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=rail-top",
       "sources": [
-        "https://files.data.spotlightpa.org/uploads/01nb/86n9/house-ads-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Want to shape what we create next? Join a group of readers who help test Spotlight PA's latest digital tools with a button to sign up",
-      "label": "",
-      "labelLink": "",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScfRvCsMAJUBwBPkq5xB9s01-C0x41T3gUwEap2iKk7rnK3lg/viewform",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nzpv/product-testing-300-x-250.png"
-      ]
-    },
-    {
-      "description": "PA Restaurant Safety Tracker: search by name, city, or zip; understand violation risk and inspector comments; get alerts for favorite restaurants or locations",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.spotlightpa.org/restaurant-inspections",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nvrq/restaurant-inspections-3-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Subscribe to the latest videos with a link to Spotlight PA's YouTube page",
-      "label": "",
-      "labelLink": "",
-      "link": "https://www.youtube.com/@SpotlightPA",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/nva4/youtube-300-x-250.png"
-      ]
-    },
-    {
-      "description": "Access Harrisburg: your insider guide to how Harrisburg works from Spotlight PA Capitol reporter Stephen Caruso with button to subscribe.",
-      "label": "",
-      "labelLink": "",
-      "link": "https://accessharrisburg.spotlightpa.org/",
-      "sources": [
-        "https://files.data.spotlightpa.org/uploads/01na/k56b/access-harrisburg-300-x-250.png"
+        "https://files.data.spotlightpa.org/uploads/01nf/1x25/all-gifts-doubled-5-.png"
       ]
     }
   ],
@@ -575,11 +179,11 @@
   "support-bg-color": "#f7d5cf",
   "support-button-bg-color": "#ff0000",
   "support-button-text-color": "#ffffff",
-  "support-cta": "DONATE NOW »",
-  "support-hed": "Before you go, a request for help...",
+  "support-cta": "GIVE \u0026 GET 2X »",
+  "support-hed": "Before you go, a special request for help...",
   "support-hed-color": "#000000",
   "support-link": "https://spotlightpa.donorsupport.co/page/donate-onetime?utm_campaign=membership-box-below-articles",
-  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. But that's impossible if \"We the People\" don't have information about what decisions they're making and how they spend our money.\n\nThat's why Spotlight PA exists, but we can't keep digging without your support.\n\nWe're independent, we live here, and we don't answer to shareholders or a big corporation. We're unbiased in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, which means we prioritize in-depth investigative and public-service reporting that puts you first.\n\nUncertain times call for decisive action. More than 11,000 readers just like you — friends and neighbors in your community who still give a damn about truth, accountability, and transparency — are standing behind the free and fearless reporting Spotlight PA provides. \u003cstrong\u003eJoin them now by making a gift and ensuring this work can continue.\u003c/strong\u003e\n\nThank you!\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS:\u003c/strong\u003e If you prefer to mail a check, you can send it to:\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
+  "support-text": "We grant elected officials extraordinary power when we give them our vote, which means we must demand extraordinary accountability once they are in office. But that's impossible if \"We the People\" don't have information about what decisions they're making and how they spend our money.\n\nThat's why Spotlight PA exists, but we can't keep digging without your support. \u003cstrong\u003eAnd today, the Lenfest Institute for Journalism will DOUBLE your gift in support of our unique reporting.\u003c/strong\u003e\n\nWe're independent, we live here, and we don't answer to shareholders or a big corporation. We're unbiased in this polarized time, with no political agenda or opinion pieces. And we're a nonprofit, which means we prioritize in-depth investigative and public-service reporting that puts you first.\n\nUncertain times call for decisive action. More than 12,000 readers just like you — friends and neighbors in your community who still give a damn about truth, accountability, and transparency — are standing behind the free and fearless reporting Spotlight PA provides.\n\n\u003cstrong\u003eJoin them now by making a gift and locking in our DOUBLE match before it's too late.\u003c/strong\u003e\n\nThank you!\n\n— Christopher Baxter, CEO/President\n\n\u003cstrong\u003ePS:\u003c/strong\u003e If you prefer to mail a check, you can send it to:\n\nSpotlight PA, PO Box 11728, Harrisburg, PA 17108-1728",
   "support-text-color": "#000000",
   "takeover-active": false,
   "takeover-dek": "We're 200 gifts from our Fall Member Drive goal with hours left. Don't let this work disappear. Give \u0026 get it DOUBLED before this match expires at midnight »",

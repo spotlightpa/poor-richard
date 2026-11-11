@@ -69,12 +69,14 @@
           }}
           {{ block "tw-header" $context }}
             <div class="mt-10 text-sm" data-ga-category="{{ .category }}">
-              <h3 class="font-bold tracking-wide uppercase hover:underline">
-                <a
-                  class="transition-color text-black duration-500 hover:text-blue hover:underline"
-                  href="{{ .link }}"
-                  >{{ .name }}</a
-                >
+              <h3 class="font-bold tracking-wide uppercase">
+                {{ partial "tag/maybe-link.html" (dict
+                  "class" "text-black"
+                  "linkClass" "transition-color duration-500 hover:text-blue hover:underline"
+                  "link" .link
+                  "text" .name
+                  )
+                }}
               </h3>
               <ul class="mt-3 space-y-4 leading-tight">
                 {{ range .menu }}
@@ -94,13 +96,28 @@
               </ul>
             </div>
           {{ end }}
-          {{ $context = dict
-            "category" "newsletters"
-            "menu" site.Menus.newsletters
-            "name" "Newsletters"
-            "link" "/newsletters/"
-          }}
-          {{ template "tw-header" $context }}
+          <div>
+            {{ $context = dict
+              "category" "bureaus"
+              "menu" site.Menus.bureaus
+              "name" "Bureaus"
+            }}
+            {{ template "tw-header" $context }}
+            {{ $context = dict
+              "category" "newsletters"
+              "menu" site.Menus.newsletters
+              "name" "Newsletters"
+              "link" "/newsletters/"
+            }}
+            {{ template "tw-header" $context }}
+            {{ $context = dict
+              "category" "games"
+              "menu" site.Menus.games
+              "name" "Games"
+              "link" "/games/"
+            }}
+            {{ template "tw-header" $context }}
+          </div>
           {{ $context = dict
             "category" "about"
             "menu" site.Menus.about
