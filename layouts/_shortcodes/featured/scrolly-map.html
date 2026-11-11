@@ -15,6 +15,7 @@
 {{ $through := and $basemap (eq $basemapInput "show-through") }}
 {{ $backgroundInput := .Get "background" | default "#ffffff" }}
 {{ $background := partial "helper/brand-color.html" $backgroundInput }}
+{{ $backgroundClass := cond $basemap "bg-white" (printf "bg-[%s]" (replace $background " " "_")) }}
 {{ $outline := ne (.Get "outline" | default "true" | lower) "false" }}
 {{ $outlineColor := partial "helper/brand-color.html" (.Get "outline-color") }}
 {{ $topperImage := .Get "topper-image" | htmlUnescape }}
@@ -117,10 +118,10 @@
     class="relative"
     data-ga-category="scrolly-map"
     x-data="scrollyMap({{ $config | jsonify }})"
-    :class="{ 'fixed! inset-0 z-[9999] {{ cond $basemap `bg-white` (printf `bg-[%s]` $background) }}': snapshot !== null }"
+    :class="{ 'fixed! inset-0 z-[9999] {{ $backgroundClass }}': snapshot !== null }"
   >
     <div
-      class="{{ cond $basemap `bg-g-2` (printf `bg-[%s]` $background) }} sticky top-0 h-dvh w-full overflow-hidden"
+      class="{{ cond $basemap `bg-g-2` $backgroundClass }} sticky top-0 h-dvh w-full overflow-hidden"
       :class="{ 'absolute! inset-0 h-full!': snapshot !== null }"
     >
       <div x-ref="canvas" class="h-full w-full"></div>
