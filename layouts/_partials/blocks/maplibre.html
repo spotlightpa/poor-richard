@@ -43,10 +43,7 @@
 
       init() {
         const el = this.$refs.canvas;
-        if (!el) {
-          console.error("Map canvas element not found");
-          return;
-        }
+        if (!el) return;
 
         this._io = new IntersectionObserver(
           (entries) => {
@@ -393,14 +390,8 @@
                   },
                   beforeId,
                 );
-              } else {
-                console.warn(
-                  "Couldn't find 'boundary' source-layer; skipping border styling.",
-                );
               }
-            } catch (err) {
-              console.error("Failed to add styled borders:", err);
-            }
+            } catch {}
 
             const latest = window.__inspectionsMarkers;
             if (Array.isArray(latest) && latest.length) {
@@ -432,9 +423,7 @@
             });
           }
 
-          this.map.on("error", (e) => {
-            console.error("Map error:", e);
-          });
+          this.map.on("error", () => {});
 
           const ro = new ResizeObserver(() => {
             if (!this.map) return;
@@ -443,9 +432,7 @@
           });
           ro.observe(el);
           this._ro = ro;
-        } catch (err) {
-          console.error("MapLibre initialization error:", err);
-        }
+        } catch {}
       },
 
       addMarkers() {

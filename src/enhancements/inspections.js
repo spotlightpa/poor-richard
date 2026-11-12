@@ -297,17 +297,13 @@ export function searchUI() {
             } else {
               alert("Couldn't determine your city/ZIP from location.");
             }
-          } catch (e) {
-            // eslint-disable-next-line no-console
-            console.error(e);
+          } catch {
             alert("Sorry, we couldn't look up your city/ZIP.");
           } finally {
             this.loadingLocation = false;
           }
         },
         (err) => {
-          // eslint-disable-next-line no-console
-          console.warn(err);
           if (err.code === err.PERMISSION_DENIED) {
             alert("We need permission to use your location.");
           } else if (err.code === err.POSITION_UNAVAILABLE) {
