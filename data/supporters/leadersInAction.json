@@ -358,6 +358,13 @@
       "categoryRank": "4"
     },
     {
+      "display": "Gary and Nancy Decker",
+      "sort": "Decker",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Barry DeSantis",
       "sort": "DeSantis",
       "url": "",
@@ -704,8 +711,8 @@
       "display": "Robert F. Hunsicker Charitable Foundation",
       "sort": "Hunsicker",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Mary and Howard Hurtig",
@@ -1138,8 +1145,8 @@
       "display": "Sue and Jack Peck",
       "sort": "Peck",
       "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Constance Poissant",
@@ -1572,8 +1579,8 @@
       "display": "Deborah Williams",
       "sort": "Williams",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Robert and Catharine Williams",
