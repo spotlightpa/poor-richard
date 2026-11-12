@@ -53,6 +53,7 @@ function buildFacilityIndex(groupedFacilities) {
       riskScore: getRiskScore(row.risk_level),
       levels: getRiskLevels(row.risk_level),
       nameKey: (row.facility || "").toLowerCase(),
+      nameGroup: /^\p{L}/u.test((row.facility || "").trim()) ? 0 : 1,
     };
   });
 }
@@ -116,10 +117,16 @@ function sortFacilities(filteredIds, facilityIndexMap, currentSort) {
     switch (currentSort) {
       case "alpha-asc":
       case "alphabetical":
-        return (A.nameKey || "").localeCompare(B.nameKey || "");
+        return (
+          A.nameGroup - B.nameGroup ||
+          (A.nameKey || "").localeCompare(B.nameKey || "")
+        );
 
       case "alpha-desc":
-        return (B.nameKey || "").localeCompare(A.nameKey || "");
+        return (
+          A.nameGroup - B.nameGroup ||
+          (B.nameKey || "").localeCompare(A.nameKey || "")
+        );
 
       case "date-asc":
         return (A.dateMs || 0) - (B.dateMs || 0);
