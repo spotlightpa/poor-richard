@@ -554,24 +554,26 @@ export default function inspectionsUI() {
       });
     },
 
-    async openShare(btn) {
-      const url = btn.dataset.shareUrl;
-      const title = btn.dataset.shareTitle;
-      const coarse = window.matchMedia?.("(pointer: coarse)").matches;
-      if (navigator.share && coarse) {
-        try {
-          await navigator.share({ title, url });
-        } catch {
-          return;
-        }
-        return;
-      }
+    openShare(btn) {
       const menu = btn.parentElement.querySelector("[data-share-menu]");
       if (!menu) return;
       const willOpen = menu.hidden;
       this.closeShareMenus();
       if (willOpen) {
+        delete menu.dataset.up;
         menu.hidden = false;
+        const bottomInset =
+          parseFloat(
+            getComputedStyle(document.documentElement).getPropertyValue(
+              "--search-bar-visible-h",
+            ),
+          ) || 0;
+        if (
+          menu.getBoundingClientRect().bottom >
+          window.innerHeight - bottomInset - 8
+        ) {
+          menu.dataset.up = "true";
+        }
         btn.setAttribute("aria-expanded", "true");
         menu.querySelector('[role="menuitem"]')?.focus();
       }
@@ -885,12 +887,25 @@ export default function inspectionsUI() {
           <div class="min-w-0 flex-1">
             <h2 class="text-3xl font-bold text-black break-words">${escapeHTML(title)}</h2>
             ${location ? `<div class="mt-2 space-y-1 text-g-6"><div class="flex items-center gap-1"><svg class="h-4 w-4 flex-shrink-0 fill-g-7" aria-hidden="true"><use href="#map-pin-svg" /></svg><span>${escapeHTML(location)}</span></div></div>` : ""}
-            <div class="mt-4 flex flex-wrap items-center gap-2">
-              <button type="button" data-action="detail-alerts" data-alert-facility="${escapeHTML(cardId)}" data-facility-name="${escapeHTML(title)}" data-facility-address="${escapeHTML(location)}" class="inline-flex h-11 items-center justify-center rounded-xl border-2 border-transparent bg-blue-2/80 px-6 font-sans text-sm font-semibold text-blue-9 transition-colors outline-none hover:bg-blue-2 ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none">${alertButtonContent({ label: "Get alerts" })}</button>
-              <a href="mailto:?subject=${encodeURIComponent("Inspection report: " + title)}&body=${encodeURIComponent(facilityUrl)}" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share via email"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#envelope-svg" /></svg></a>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(facilityUrl)}" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#fb-svg" /></svg></a>
-              <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(facilityUrl)}&text=${encodeURIComponent("Inspection report: " + title)}" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share on X"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#twitter-svg" /></svg></a>
-              <button type="button" data-action="copy-link" data-share-url="${escapeHTML(facilityUrl)}" class="flex h-11 w-11 items-center justify-center rounded-full bg-orange/20 text-[#d9541f] transition-colors hover:bg-orange/30 focus-visible:ring-2 focus-visible:ring-orange/40 focus-visible:outline-none data-[copied=true]:bg-election-green-lightest data-[copied=true]:text-election-green-darkest" aria-label="Copy link" title="Copy link"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#share-svg" /></svg></button>
+            <div class="mt-4 @container">
+              <div class="flex items-center gap-2">
+              <button type="button" data-action="detail-alerts" data-alert-facility="${escapeHTML(cardId)}" data-facility-name="${escapeHTML(title)}" data-facility-address="${escapeHTML(location)}" class="inline-flex h-11 items-center justify-center rounded-xl border-2 border-transparent bg-blue-2/80 px-6 font-sans whitespace-nowrap @max-[22rem]:flex-1 @max-[22rem]:px-3 text-sm font-semibold text-blue-9 transition-colors outline-none hover:bg-blue-2 ${ALERT_STATE_CLASSES} focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none">${alertButtonContent({ label: "Get alerts" })}</button>
+                <div class="flex items-center gap-2 @max-[22rem]:hidden">
+                <a href="mailto:?subject=${encodeURIComponent("Inspection report: " + title)}&body=${encodeURIComponent(facilityUrl)}" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share via email"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#envelope-svg" /></svg></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(facilityUrl)}" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share on Facebook"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#fb-svg" /></svg></a>
+                <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(facilityUrl)}&text=${encodeURIComponent("Inspection report: " + title)}" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-full bg-g-3 text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none" aria-label="Share on X"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#twitter-svg" /></svg></a>
+                <button type="button" data-action="copy-link" data-share-url="${escapeHTML(facilityUrl)}" class="flex h-11 w-11 items-center justify-center rounded-full bg-orange/20 text-[#d9541f] transition-colors hover:bg-orange/30 focus-visible:ring-2 focus-visible:ring-orange/40 focus-visible:outline-none data-[copied=true]:bg-election-green-lightest data-[copied=true]:text-election-green-darkest" aria-label="Copy link" title="Copy link"><svg class="h-5 w-5 fill-current" aria-hidden="true"><use href="#share-svg" /></svg></button>
+                </div>
+                <div data-share-root class="relative hidden flex-1 @max-[22rem]:block">
+                  <button type="button" data-action="detail-share" data-share-url="${escapeHTML(facilityUrl)}" data-share-title="${escapeHTML("Inspection report: " + title)}" aria-haspopup="menu" aria-expanded="false" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-g-3 px-3 font-sans text-sm font-semibold whitespace-nowrap text-g-9 transition-colors hover:bg-g-4 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#share-svg" /></svg>Share</button>
+                  <div data-share-menu hidden role="menu" class="absolute top-full right-0 z-20 mt-2 w-48 rounded-xl bg-white p-1.5 shadow-lg ring-1 ring-black/10 data-[up=true]:top-auto data-[up=true]:bottom-full data-[up=true]:mt-0 data-[up=true]:mb-2">
+                    <a role="menuitem" href="mailto:?subject=${encodeURIComponent("Inspection report: " + title)}&body=${encodeURIComponent(facilityUrl)}" class="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-2 focus-visible:bg-g-2 focus-visible:outline-none"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#envelope-svg" /></svg>Email</a>
+                    <a role="menuitem" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(facilityUrl)}" target="_blank" rel="noopener" class="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-2 focus-visible:bg-g-2 focus-visible:outline-none"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#fb-svg" /></svg>Facebook</a>
+                    <a role="menuitem" href="https://twitter.com/intent/tweet?url=${encodeURIComponent(facilityUrl)}&text=${encodeURIComponent("Inspection report: " + title)}" target="_blank" rel="noopener" class="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-2 focus-visible:bg-g-2 focus-visible:outline-none"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#twitter-svg" /></svg>X</a>
+                    <button type="button" role="menuitem" data-action="copy-link" data-share-url="${escapeHTML(facilityUrl)}" class="flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left font-sans text-sm font-semibold text-g-9 hover:bg-g-2 focus-visible:bg-g-2 focus-visible:outline-none data-[copied=true]:text-election-green-darkest"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#share-svg" /></svg>Copy link</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
