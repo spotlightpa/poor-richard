@@ -248,7 +248,11 @@
             const db = await this.openDB();
             const tx = db.transaction('dataCache', 'readonly');
             const store = tx.objectStore('dataCache');
-            const cached = await store.get(this.cacheName);
+            const cached = await new Promise((resolve, reject) => {
+              const request = store.get(this.cacheName);
+              request.onsuccess = () => resolve(request.result);
+              request.onerror = () => reject(request.error);
+            });
             if (!cached) return null;
             const age = Date.now() - cached.timestamp;
             if (age > this.maxCacheAge) return null;
@@ -265,11 +269,16 @@
             const db = await this.openDB();
             const tx = db.transaction('dataCache', 'readwrite');
             const store = tx.objectStore('dataCache');
-            await store.put({
+            store.put({
               id: this.cacheName,
               text,
               timestamp: Date.now(),
               version: this.cacheVersion
+            });
+            await new Promise((resolve, reject) => {
+              tx.oncomplete = resolve;
+              tx.onerror = () => reject(tx.error);
+              tx.onabort = () => reject(tx.error);
             });
           } catch {}
         },
