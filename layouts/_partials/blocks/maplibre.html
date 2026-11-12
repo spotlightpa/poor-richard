@@ -1,5 +1,12 @@
 <script>
   window.maplibreComponent = function (opts) {
+    const skipReactive = (obj) => {
+      if (obj && typeof obj === "object") {
+        Object.defineProperty(obj, "__v_skip", { value: true });
+      }
+      return obj;
+    };
+
     return {
       id: opts?.id || "map-" + Math.random().toString(36).slice(2),
       styleURL:
@@ -118,6 +125,7 @@
               element: markerEl,
               anchor: "bottom",
             }).setLngLat([lon, lat]);
+            skipReactive(marker);
 
             if (matchingMarker.popupHTML) {
               const popup = new maplibregl.Popup({
@@ -125,6 +133,7 @@
                 closeOnClick: false,
                 offset: 25,
               }).setHTML(matchingMarker.popupHTML);
+              skipReactive(popup);
 
               markerEl.addEventListener("mouseenter", () => {
                 try {
@@ -206,6 +215,7 @@
           if (!this.map || this._savedMapState || !this.hasSize()) return;
           if (!this._markerInstances.length) return;
           const bounds = new maplibregl.LngLatBounds();
+          skipReactive(bounds);
           this._markerInstances.forEach((m) => bounds.extend(m.getLngLat()));
           this.map.fitBounds(bounds, {
             padding: this.fitPadding(),
@@ -308,18 +318,20 @@
         if (!el) return;
 
         try {
-          this.map = new maplibregl.Map({
-            container: el,
-            style: this.styleURL,
-            center: this.center,
-            zoom: this.zoom,
-            bearing: this.bearing,
-            pitch: this.pitch,
-            minZoom: this.minZoom,
-            maxZoom: this.maxZoom,
-            attributionControl: false,
-            cooperativeGestures: this.cooperativeGestures,
-          });
+          this.map = skipReactive(
+            new maplibregl.Map({
+              container: el,
+              style: this.styleURL,
+              center: this.center,
+              zoom: this.zoom,
+              bearing: this.bearing,
+              pitch: this.pitch,
+              minZoom: this.minZoom,
+              maxZoom: this.maxZoom,
+              attributionControl: false,
+              cooperativeGestures: this.cooperativeGestures,
+            }),
+          );
 
           if (this.controls.includes("navigation")) {
             const nav = new maplibregl.NavigationControl({
@@ -446,6 +458,7 @@
             element: markerEl,
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
+          skipReactive(marker);
 
           this._bindMarker(markerEl, m);
 
@@ -461,6 +474,7 @@
             closeOnClick: false,
             offset: 25,
           }).setHTML(m.popupHTML);
+          skipReactive(popup);
 
           markerEl.addEventListener("mouseenter", () => {
             popup.setLngLat([m.lon, m.lat]).addTo(this.map);
@@ -534,6 +548,7 @@
             element: markerEl,
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
+          skipReactive(marker);
 
           this._bindMarker(markerEl, m);
 
@@ -543,6 +558,7 @@
 
         if (newMarkers.length > 0) {
           const bounds = new maplibregl.LngLatBounds();
+          skipReactive(bounds);
           newMarkers.forEach((m) => {
             if (typeof m?.lon === "number" && typeof m?.lat === "number") {
               bounds.extend([m.lon, m.lat]);

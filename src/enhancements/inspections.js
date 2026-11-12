@@ -44,12 +44,14 @@ function openFacilityCard(cardId) {
   if (index < 0) return false;
   const page = Math.floor(index / ITEMS_PER_PAGE) + 1;
   if (page === store.currentPage) return false;
-  window.addEventListener(
-    "inspections-page-rendered",
-    () => findButton()?.click(),
-    { once: true },
-  );
-  store.currentPage = page;
+  setTimeout(() => {
+    window.addEventListener(
+      "inspections-page-rendered",
+      () => findButton()?.click(),
+      { once: true },
+    );
+    store.currentPage = page;
+  }, 0);
   return true;
 }
 
