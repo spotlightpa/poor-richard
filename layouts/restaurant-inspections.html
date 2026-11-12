@@ -76,17 +76,17 @@
     }"
     >
       <div
-        class="flex flex-col gap-4 px-5 py-5 group-data-[stuck=true]/hdr:md:py-3 lg:flex-row lg:items-center lg:gap-8 group-data-[stuck=true]/hdr:lg:py-2.5"
+        class="flex flex-col gap-4 px-5 py-5 md:flex-row md:items-end md:gap-8 group-data-[stuck=true]/hdr:md:items-center group-data-[stuck=true]/hdr:md:py-3 lg:items-center group-data-[stuck=true]/hdr:lg:py-2.5"
       >
-        <div class="min-w-0 lg:flex-shrink">
+        <div class="min-w-0 md:max-lg:flex-1 lg:flex-shrink">
           <h1
-            class="font-serif text-2xl leading-tight font-bold text-white md:text-[26px] group-data-[stuck=true]/hdr:md:text-lg lg:max-xl:text-[21px]"
+            class="font-serif text-2xl leading-tight font-bold text-white md:text-[26px] group-data-[stuck=true]/hdr:md:text-lg md:max-[959px]:text-[23px] lg:max-xl:text-[21px]"
           >
             {{ .Title }}
           </h1>
           {{ with .Param "deck" }}
             <p
-              class="mt-1 max-h-24 overflow-hidden font-serif text-base leading-snug text-g-3 lg:text-[15px] lg:max-xl:text-[13.5px]"
+              class="mt-1 max-h-24 overflow-hidden font-serif text-base leading-snug text-g-3 md:max-lg:text-[15px] lg:text-[15px] lg:max-xl:text-[13.5px]"
               :class="stuck && 'md:mt-0 md:max-h-0 md:opacity-0'"
               :aria-hidden="stuck"
             >
@@ -96,17 +96,35 @@
         </div>
 
         <div
-          class="w-full lg:ml-auto lg:max-w-[760px] lg:min-w-[36rem] lg:flex-1"
+          class="w-full md:max-lg:w-[min(560px,58%)] md:max-lg:flex-shrink-0 lg:ml-auto lg:max-w-[760px] lg:min-w-[36rem] lg:flex-1"
         >
-          {{ with .Param "search-instructions" }}
-            <p
-              class="mb-1.5 max-h-12 overflow-hidden font-serif text-sm text-g-5 italic md:text-[13px] lg:ml-4"
-              :class="stuck && 'md:mb-0 md:max-h-0 md:opacity-0'"
-              :aria-hidden="stuck"
-            >
-              {{ . }}
-            </p>
+          {{ $alertsURL := "/restaurant-inspections/alerts/" }}
+          {{ with site.GetPage "/interactives/restaurant-inspections-alerts" }}
+            {{ $alertsURL = .RelPermalink }}
           {{ end }}
+          <div
+            class="flex items-baseline justify-between gap-3 group-data-[stuck=true]/hdr:md:hidden"
+          >
+            {{ with .Param "search-instructions" }}
+              <p
+                class="mb-1.5 max-h-12 min-w-0 overflow-hidden font-serif text-sm text-g-5 italic md:ml-4 md:text-[13px] md:max-[959px]:hidden"
+                :class="stuck && 'md:mb-0 md:max-h-0 md:opacity-0'"
+                :aria-hidden="stuck"
+              >
+                {{ . }}
+              </p>
+            {{ end }}
+            <a
+              href="{{ $alertsURL }}?mode=city"
+              :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
+              class="mr-2 mb-1.5 ml-auto hidden flex-shrink-0 items-center gap-1.5 rounded font-sans text-sm font-semibold whitespace-nowrap text-blue-2 hover:underline focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none md:max-lg:inline-flex"
+            >
+              <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                <use href="#bell-svg" />
+              </svg>
+              Get city alerts &rarr;
+            </a>
+          </div>
           <div class="hidden items-center gap-2 md:flex" x-ref="searchWrapper">
             {{ partial "blocks/search-pill.html" (dict
               "placeholder" (default "Search" (.Param "search-desktop-placeholder"))
@@ -116,14 +134,10 @@
               "context" .
               )
             }}
-            {{ $alertsURL := "/restaurant-inspections/alerts/" }}
-            {{ with site.GetPage "/interactives/restaurant-inspections-alerts" }}
-              {{ $alertsURL = .RelPermalink }}
-            {{ end }}
             <a
               href="{{ $alertsURL }}?mode=city"
               :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
-              class="inline-flex h-[46px] flex-shrink-0 items-center gap-2 rounded-full bg-blue-2 px-4 font-sans text-sm font-bold text-blue-9 transition-colors hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+              class="inline-flex h-[46px] flex-shrink-0 items-center gap-2 rounded-full bg-blue-2 px-4 font-sans text-sm font-bold text-blue-9 transition-colors hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none md:max-lg:hidden group-data-[stuck=true]/hdr:md:max-lg:inline-flex"
             >
               <svg class="h-4 w-4 fill-current" aria-hidden="true">
                 <use href="#bell-svg" />
