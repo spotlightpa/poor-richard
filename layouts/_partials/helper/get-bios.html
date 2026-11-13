@@ -1,0 +1,13 @@
+{{ $tagPattern := "\\{\\{<\\s*bio\\s[^}]*>\\}\\}" }}
+{{ $paramPattern := "([a-z-]+)=\"([^\"]*)\"" }}
+{{ $bios := slice }}
+{{ range findRE $tagPattern . }}
+  {{ $params := dict "group" "" }}
+  {{ range findRESubmatch $paramPattern . }}
+    {{ $key := index . 1 }}
+    {{ $value := index . 2 | htmlUnescape }}
+    {{ $params = merge $params (dict $key $value) }}
+  {{ end }}
+  {{ $bios = $bios | append $params }}
+{{ end }}
+{{ return $bios }}

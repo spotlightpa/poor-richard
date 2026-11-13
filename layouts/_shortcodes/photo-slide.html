@@ -1,0 +1,25 @@
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $description := .Get "description" | htmlUnescape }}
+{{ $caption := .Get "caption" | htmlUnescape }}
+{{ $gravity := partial "helper/focus-gravity" (.Get "focus" | htmlUnescape) }}
+
+
+<li class="w-full flex-none snap-start">
+  {{ partial "tw/image-block.html" (dict
+    "filename" $src
+    "credit" $credit
+    "description" $description
+    "caption" $caption
+    "widthRatio" 3
+    "heightRatio" 2
+    "widths" (slice 669 1338)
+    "sizeHint" "669px"
+    "rounded-sm" true
+    "gravity" $gravity
+    "absURL" true
+    "creditClass" "mt-2 text-sm leading-snug text-g-8"
+    "inlineCredit" true
+    )
+  }}
+</li>

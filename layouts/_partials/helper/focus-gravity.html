@@ -1,0 +1,22 @@
+{{ $gravity := "sm" }}
+{{ $named := dict
+  "top" "no"
+  "bottom" "so"
+  "center" "ce"
+  "left" "we"
+  "right" "ea"
+}}
+{{ with . }}
+  {{ $parts := split . " " }}
+  {{ if index $named . }}
+    {{ $gravity = index $named . }}
+  {{ else if eq (len $parts) 2 }}
+    {{ $gravity = printf "fp:%.2f:%.2f"
+      (div (float (index $parts 0)) 100)
+      (div (float (index $parts 1)) 100)
+    }}
+  {{ else }}
+    {{ $gravity = . }}
+  {{ end }}
+{{ end }}
+{{ return $gravity }}

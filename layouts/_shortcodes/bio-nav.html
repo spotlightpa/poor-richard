@@ -1,0 +1,84 @@
+{{ $title := .Get "title" | htmlUnescape | default "Jump to a leader" }}
+{{ $items := partial "helper/get-bios" .Page.RawContent }}
+{{ $groups := slice }}
+{{ range $items }}
+  {{ if not (in $groups .group) }}
+    {{ $groups = $groups | append .group }}
+  {{ end }}
+{{ end }}
+
+{{ with $items }}
+  <nav
+    aria-label="{{ $title }}"
+    class="my-8 rounded-md border border-g-3 bg-g-1 px-4 py-4 font-sans sm:px-6 sm:py-5"
+    data-ga-category="inline:bio-nav"
+  >
+    <p class="mb-2 text-xs font-bold tracking-widest text-g-7 uppercase">
+      {{ $title }}
+    </p>
+    <div
+      class="{{ if gt (len $groups) 1 }}md:grid-cols-2{{ end }} grid gap-x-8"
+    >
+      {{ range $groups }}
+        {{ $group := . }}
+        <div>
+          {{ with $group }}
+            <p
+              class="mt-2 mb-1 text-sm font-bold tracking-wider text-g-9 uppercase"
+            >
+              {{ . }}
+            </p>
+          {{ end }}
+          <ul>
+            {{ range where $items "group" $group }}
+              {{ $partyClasses := partial "helper/party-classes" (.party | default "") }}
+              {{ $role := .role | default "" }}
+              {{ $gravity := partial "helper/focus-gravity" (.focus | default "top") }}
+              {{ with $group }}
+                {{ $role = strings.TrimPrefix (printf "%s " .) $role }}
+              {{ end }}
+              <li class="border-b border-g-3 last:border-b-0">
+                <a
+                  href="#{{ .name | anchorize }}"
+                  class="group flex items-center gap-3 py-2 text-g-9 no-underline hover:text-g-9"
+                >
+                  {{ with .src }}
+                    <img
+                      src="{{ partial "helper/imgproxy" (dict
+                        "filename" .
+                        "width" 72
+                        "height" 72
+                        "gravity" $gravity
+                        "absURL" true
+                        )
+                      }}"
+                      alt=""
+                      width="36"
+                      height="36"
+                      class="size-9 shrink-0 rounded-sm bg-g-3 object-cover"
+                    />
+                  {{ end }}
+                  <span class="min-w-0 flex-1">
+                    <span
+                      class="block leading-tight font-bold group-hover:underline"
+                    >
+                      {{ .name }}
+                    </span>
+                    {{ with $role }}
+                      <span
+                        class="{{ $partyClasses.text }} block text-xs leading-tight font-medium"
+                      >
+                        {{ . }}
+                      </span>
+                    {{ end }}
+                  </span>
+                  <span aria-hidden="true" class="text-lg text-g-5">›</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </nav>
+{{ end }}
