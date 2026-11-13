@@ -1,0 +1,84 @@
+{{ $src := .Get "src" | htmlUnescape }}
+{{ $name := .Get "name" | htmlUnescape }}
+{{ $role := .Get "role" | htmlUnescape }}
+{{ $party := .Get "party" | htmlUnescape }}
+{{ $credit := .Get "credit" | htmlUnescape }}
+{{ $focus := .Get "focus" | htmlUnescape }}
+
+{{ $gravity := partial "helper/focus-gravity" $focus }}
+
+{{ $partyClasses := partial "helper/party-classes" $party }}
+{{ $textPad := "py-5" }}
+{{ if $credit }}
+  {{ $textPad = "pt-5 pb-8" }}
+{{ end }}
+
+
+<div
+  id="{{ $name | anchorize }}"
+  class="{{ $partyClasses.border }} relative clear-both mt-12 mb-6 flex scroll-mt-20 overflow-hidden rounded-md border-t-[6px] bg-g-2 font-sans"
+  data-ga-category="inline:bio"
+>
+  {{ with $src }}
+    {{ $sizes := partial "helper/build-sizes" (dict
+      "widths" (slice 208 416)
+      "widthRatio" 4
+      "heightRatio" 5
+      )
+    }}
+    {{ $srcset := partial "helper/build-srcset" (dict
+      "sizes" $sizes
+      "filename" .
+      "gravity" $gravity
+      "absURL" true
+      )
+    }}
+    {{ $imgSmallSrc := partial "helper/imgproxy" (dict
+      "filename" .
+      "width" 416
+      "height" 520
+      "gravity" $gravity
+      "absURL" true
+      )
+    }}
+    <figure class="w-32 shrink-0 sm:w-52">
+      {{ partial "tag/picture-maybe-link.html" (dict
+        "wrapperClass" "flex aspect-[4/5] w-full"
+        "pictureClass" "w-full h-full bg-g-3"
+        "imgClass" "w-full h-full object-cover"
+        "sizeHint" "208px"
+        "eager" false
+        "description" (printf "Photo of %s" $name)
+        "srcset" $srcset
+        "src" $imgSmallSrc
+        "width" 416
+        "height" 520
+        )
+      }}
+    </figure>
+  {{ end }}
+  <div class="{{ $textPad }} flex min-w-0 flex-col justify-center px-4 sm:px-7">
+    {{ with $role }}
+      <p
+        class="text-xs font-semibold tracking-wider text-g-7 uppercase sm:text-sm"
+      >
+        {{ . }}
+      </p>
+    {{ end }}
+    <h3 class="mt-1 text-2xl leading-tight font-bold text-g-9 sm:text-3xl">
+      {{ $name }}
+    </h3>
+    {{ with $party }}
+      <p class="{{ $partyClasses.text }} mt-1 text-base font-semibold">
+        {{ . }}
+      </p>
+    {{ end }}
+  </div>
+  {{ with $credit }}
+    <p
+      class="absolute right-4 bottom-3 max-w-[50%] text-right text-[10px] leading-tight tracking-wider text-g-6 uppercase"
+    >
+      {{ . }}
+    </p>
+  {{ end }}
+</div>
