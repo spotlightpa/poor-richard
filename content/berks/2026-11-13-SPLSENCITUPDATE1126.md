@@ -1,7 +1,7 @@
 +++
-authors = ["Gabriela Marínez"]
+authors = ["Gabriela Martínez"]
 blurb = "After recent community and government pressure, both elevators at a low-income housing apartment building in Berks are working after two years."
-byline = "Gabriela Marínez of Spotlight PA"
+byline = "Gabriela Martínez of Spotlight PA"
 description = "Both elevators at a Berks County senior housing complex are working after two years of outages, safety violations, fines, and pressure from officials."
 draft = false
 feed-exclude = false
