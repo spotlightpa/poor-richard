@@ -1,0 +1,157 @@
+{{ $params := partial "helper/page-params" .Page }}
+{{ $eyebrow := .Get "eyebrow" | htmlUnescape }}
+{{ $hed := .Get "hed" | htmlUnescape }}
+{{ $dek := .Get "dek" | htmlUnescape }}
+{{ $date := .Get "display-date" | htmlUnescape }}
+{{ $byline := .Get "byline" | htmlUnescape }}
+{{ $outlet := .Get "outlet" | htmlUnescape | default "Spotlight PA" }}
+{{ $colorInput := .Get "color" | default "Blue" }}
+{{ $mapColor := partial "helper/brand-color.html" $colorInput }}
+{{ $colorOpacity := .Get "color-opacity" }}
+{{ $shadeProperty := .Get "shade-property" | default "shaded" }}
+{{ $layout := .Get "layout" | default "left" | lower }}
+{{ $basemapInput := .Get "basemap" | default "show" | lower }}
+{{ $basemap := not (in (slice "hide" "false" "off" "none") $basemapInput) }}
+{{ $through := and $basemap (eq $basemapInput "show-through") }}
+{{ $backgroundInput := .Get "background" | default "#ffffff" }}
+{{ $background := partial "helper/brand-color.html" $backgroundInput }}
+{{ $backgroundClass := cond $basemap "bg-white" (printf "bg-[%s]" (replace $background " " "_")) }}
+{{ $outline := ne (.Get "outline" | default "true" | lower) "false" }}
+{{ $outlineColor := partial "helper/brand-color.html" (.Get "outline-color") }}
+{{ $topperImage := .Get "topper-image" | htmlUnescape }}
+{{ $topperDescription := .Get "topper-image-description" | htmlUnescape }}
+{{ $topperLayout := .Get "topper-layout" | default "right" | lower }}
+{{ if eq $topperLayout "none" }}
+  {{ $topperImage = "" }}
+{{ end }}
+{{ $topperMobileLayout := .Get "topper-mobile-layout" | default "top" | lower }}
+{{ $lc := partial "helper/map-layout-classes.html" (dict "desktop" $topperLayout "mobile" $topperMobileLayout) }}
+{{ $isRow := eq $lc.orientation "row" }}
+{{ $iconLight := or (eq $topperLayout "icon") (eq $topperLayout "icon-light") }}
+{{ $iconDark := eq $topperLayout "icon-dark" }}
+{{ $isIcon := or $iconLight $iconDark }}
+{{ $hedSizes := cond (and $topperImage $isRow (not $isIcon)) `text-2xl lg:text-4xl` `text-3xl lg:text-5xl` }}
+{{ $heroText := dict
+  "eyebrow" $eyebrow
+  "hed" $hed
+  "dek" $dek
+  "date" $date
+  "byline" $byline
+  "outlet" $outlet
+  "hedSizes" $hedSizes
+  "publishedISO" $params.publishedISO
+  "theme" (cond (and $topperImage $iconLight) "light" "dark")
+  "hideBanner" (and $topperImage $iconDark)
+  "iconBottom" (and $topperImage $isIcon (eq $topperMobileLayout "bottom"))
+}}
+{{ if and $topperImage $isIcon }}
+  {{ $heroText = merge $heroText (dict
+    "icon" (partial "scrolly-map/topper-image.html" (dict
+    "src" $topperImage
+    "description" $topperDescription
+    "icon" true
+    )
+    ))
+  }}
+{{ end }}
+{{ $fallbackImage := .Page.Param "image" }}
+{{ $fallbackDescription := .Page.Param "image-description" | default "Map of Pennsylvania" }}
+{{ $config := dict
+  "mapColor" $mapColor
+  "colorOpacity" $colorOpacity
+  "shadeProperty" $shadeProperty
+  "layout" $layout
+  "outline" $outline
+  "outlineColor" $outlineColor
+  "basemap" $basemap
+  "through" $through
+  "background" $background
+}}
+
+{{ $continued := eq (.Get "continued") "true" }}
+{{ if $continued }}
+  {{ partial "featured/content-area-end" . }}
+{{ else }}
+  {{ if and $topperImage $iconLight }}
+    <header
+      class="bg-beige px-6 pt-10 pb-12 text-center sm:px-10 md:pt-14 md:pb-16"
+      data-ga-category="scrolly-map:topper"
+    >
+      <div class="mx-auto w-full max-w-content">
+        {{ partial "featured/map-hero-text.html" $heroText }}
+      </div>
+    </header>
+  {{ else if and $topperImage (not $isIcon) }}
+    <div
+      class="{{ $lc.flexDir }} {{ $lc.containerHeightMd }} flex w-full flex-col bg-black"
+      data-ga-category="scrolly-map:topper"
+    >
+      <header
+        class="{{ $lc.asideOrderMobile }} {{ $lc.asideOrderMd }} {{ $lc.asideMaxW }} {{ $lc.asideHeightMd }} flex w-full flex-shrink-0 flex-col justify-center overflow-y-auto bg-black px-8 py-10 text-white sm:px-10"
+      >
+        <div class="mx-auto w-full max-w-content">
+          {{ partial "featured/map-hero-text.html" $heroText }}
+        </div>
+      </header>
+      <figure
+        class="{{ $lc.mapOrderMobile }} {{ $lc.mapOrderMd }} {{ $lc.mapHeightMd }} relative aspect-[4/3] w-full overflow-hidden bg-black md:aspect-auto"
+      >
+        {{ partial "scrolly-map/topper-image.html" (dict
+          "src" $topperImage
+          "description" $topperDescription
+          "sizes" (cond $isRow "(min-width: 1080px) calc(100vw - 28rem), (min-width: 850px) calc(100vw - 24rem), 100vw" "100vw")
+          )
+        }}
+      </figure>
+    </div>
+  {{ else }}
+    <header class="bg-black px-8 py-10 text-white sm:px-10 md:py-16">
+      <div class="mx-auto max-w-content">
+        {{ partial "featured/map-hero-text.html" $heroText }}
+      </div>
+    </header>
+  {{ end }}
+{{ end }}
+
+{{ if strings.TrimSpace .Inner }}
+  <section
+    class="relative"
+    data-ga-category="scrolly-map"
+    x-data="scrollyMap({{ $config | jsonify }})"
+    :class="{ 'fixed! inset-0 z-[9999] {{ $backgroundClass }}': snapshot !== null }"
+  >
+    <div
+      class="{{ cond $basemap `bg-g-2` $backgroundClass }} sticky top-0 h-dvh w-full overflow-hidden"
+      :class="{ 'absolute! inset-0 h-full!': snapshot !== null }"
+    >
+      <div x-ref="canvas" class="h-full w-full"></div>
+      {{ with and (not $continued) $fallbackImage }}
+        {{ $src := partial "helper/imgproxy" (dict
+          "filename" .
+          "width" 1600
+          "height" 1200
+          "resize" "fit"
+          "ext" "jpeg"
+          )
+        }}
+        <noscript>
+          <img
+            class="absolute inset-0 h-full w-full object-contain"
+            src="{{ $src }}"
+            alt="{{ $fallbackDescription }}"
+          />
+        </noscript>
+      {{ end }}
+    </div>
+    <div
+      class="pointer-events-none relative z-10 -mt-[100dvh] pb-[50dvh]"
+      :class="{ invisible: snapshot !== null }"
+    >
+      {{ .Inner }}
+    </div>
+  </section>
+{{ end }}
+
+{{ if or (eq (.Get "continues") "true") (strings.Contains .Page.RawContent "featured/footer") }}
+  {{ partial "featured/content-area-start" . }}
+{{ end }}

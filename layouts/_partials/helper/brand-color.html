@@ -1,0 +1,13 @@
+{{ $colors := dict
+  "black" "#2e2e2e"
+  "blue" "#009edb"
+  "green" "#78bc20"
+  "red" "#d70000"
+  "navy" "#22416e"
+  "teal" "#1b998b"
+  "orange" "#ff6c36"
+  "yellow" "#ffcb03"
+}}
+{{ $input := . | default "" }}
+{{ $color := index $colors (lower $input) | default $input }}
+{{ return $color }}

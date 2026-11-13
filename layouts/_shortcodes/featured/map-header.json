@@ -1,0 +1,4 @@
+{{ with strings.TrimSpace .Inner }}
+  {{ . | $.Page.RenderString (dict "display" "block") }}
+{{ end }}
+<p><i><a href="{{ .Page.Permalink }}">View the interactive map.</a></i></p>

@@ -1,0 +1,4 @@
+{{ if ne (.Get "continued") "true" }}
+  <p><i><a href="{{ .Page.Permalink }}">View the interactive map.</a></i></p>
+{{ end }}
+{{ .Inner }}

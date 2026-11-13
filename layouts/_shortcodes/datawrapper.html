@@ -1,18 +1,8 @@
-{{ $src := .Get "src" | htmlUnescape }}
-{{ $height := .Get "height" | htmlUnescape }}
-{{ $id := partial "helper/new-id" . }}
-
-
 <div class="clear-both my-8">
-  <div style="min-height: {{ $height }}px;" id="{{ $id }}">
-    <script
-      defer
-      src="{{ urls.JoinPath $src `embed.js` }}"
-      charset="utf-8"
-      data-target="#{{ $id }}"
-    ></script>
-    <noscript>
-      <img src="{{ urls.JoinPath $src `full.png` }}" alt="" />
-    </noscript>
-  </div>
+  {{ partial "tw/datawrapper.html" (dict
+    "src" (.Get "src" | htmlUnescape)
+    "height" (.Get "height" | htmlUnescape)
+    "id" (partial "helper/new-id" .)
+    )
+  }}
 </div>

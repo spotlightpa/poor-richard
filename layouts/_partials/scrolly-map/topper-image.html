@@ -1,0 +1,38 @@
+{{ $src := .src }}
+{{ $icon := .icon }}
+{{ $fallbackWidth := cond $icon 800 1600 }}
+{{ $sizes := dict
+  "widths" (cond $icon (slice 400 600 800 1000 1200) (slice 600 900 1200 1600 2000 2400))
+  "widthRatio" 1
+  "heightRatio" 2
+  | partial "helper/build-sizes"
+}}
+{{ $srcset := dict
+  "filename" $src
+  "sizes" $sizes
+  "resize" "fit"
+  | partial "helper/build-srcset"
+}}
+{{ $fallback := partial "helper/imgproxy" (dict
+  "filename" $src
+  "width" $fallbackWidth
+  "height" (mul 2 $fallbackWidth)
+  "resize" "fit"
+  "ext" (cond $icon "png" "jpeg")
+  )
+}}
+
+
+<picture>
+  <source
+    type="image/webp"
+    srcset="{{ $srcset }}"
+    sizes="{{ cond $icon `(min-width: 850px) 32rem, 80vw` .sizes }}"
+  />
+  <img
+    class="{{ cond $icon `mx-auto h-auto w-full max-w-[20rem] sm:max-w-[26rem] md:max-w-[32rem]` `absolute inset-0 h-full w-full object-cover` }}"
+    src="{{ $fallback }}"
+    alt="{{ .description }}"
+    fetchpriority="high"
+  />
+</picture>
