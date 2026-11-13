@@ -23,6 +23,7 @@ twitter-title = "Restaurant Inspection Alerts"
 [data]
 source = "https://interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
 popup = false
+quietLoading = true
 cacheVersion = 1
 maxCacheAge = 24
 delimiter = ","

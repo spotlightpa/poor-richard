@@ -500,7 +500,10 @@
         </template>
       </div>
     {{ else }}
-      <div x-show="loading || error" class="w-full bg-white p-8 shadow md:p-10">
+      <div
+        x-show="{{ if .Param "data.quietLoading" }}error{{ else }}loading || error{{ end }}"
+        class="w-full bg-white p-8 shadow md:p-10"
+      >
         <template x-if="loading && !error">
           <div>
             <div class="mb-4 flex items-center justify-center">
