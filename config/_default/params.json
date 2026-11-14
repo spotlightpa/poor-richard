@@ -155,10 +155,10 @@
     }
   ],
   "ad-rail-top-active": true,
-  "banner": "\u003cstrong\u003eDid you know Spotlight PA is a nonprofit? Learn more about our work »\u003c/strong\u003e",
-  "banner-active": false,
+  "banner": "\u003cstrong\u003eHonor the life and passion of Judy Migliore-Erdman with a gift to her memorial fund »\u003c/strong\u003e",
+  "banner-active": true,
   "banner-bg-color": "#009edb",
-  "banner-link": "/about",
+  "banner-link": "/judy",
   "banner-text-color": "#ffffff",
   "featured-promo-bg-color": "#ffffff",
   "featured-promo-height": 512,
