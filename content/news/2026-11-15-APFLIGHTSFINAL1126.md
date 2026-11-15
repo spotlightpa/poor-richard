@@ -62,7 +62,7 @@ Duffy said the administration feels “pretty good” that the breakdown did not
 
 ## Duffy says Trump was engaged
 
-## Trump, despite making no public comments on the ground stop until Sunday, has been “fully engaged,” Duffy said.
+Trump, despite making no public comments on the ground stop until Sunday, has been “fully engaged,” Duffy said.
 
 “I was in constant contact. He was fully engaged because this is important to him and it’s important to America,” the Cabinet member said.
 
