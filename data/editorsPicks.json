@@ -3,17 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-11-13-ICNDATALEG1126.md"
+    "content/statecollege/2026-11-16-SPLRAFFLES1126.md"
   ],
   "subfeatures": [
-    "content/news/2026-02-19-SPLTAXDATA0226.md",
-    "content/news/2026-08-25-SPLDATAFAQ0826.md",
-    "content/news/2026-08-21-SPLDATAELEX0826.md",
-    "content/news/2026-01-15-SPLLOCALDATA0225.md"
+    "content/statecollege/2026-06-01-SPLRAFFLES0626.md",
+    "content/statecollege/2024-11-18-SPLRAFFLES1124.md",
+    "content/statecollege/2024-01-23-SPLFIREGAMES.md"
   ],
   "topSlots": [
-    "content/statecollege/2026-11-16-SPLRAFFLES1126.md",
-    "content/news/2026-11-15-APFLIGHTSSUNDAY1126.md",
-    "content/news/2026-11-13-VBTRIFECTELEX1126.md"
+    "content/news/2026-11-13-ICNDATALEG1126.md",
+    "content/news/2026-11-13-VBTRIFECTELEX1126.md",
+    "content/news/2026-11-15-APFLIGHTSSUNDAY1126.md"
   ]
 }
