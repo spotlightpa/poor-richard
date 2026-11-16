@@ -3,9 +3,8 @@
 {{ $role := .Get "role" | htmlUnescape }}
 {{ $party := .Get "party" | htmlUnescape }}
 {{ $credit := .Get "credit" | htmlUnescape }}
-{{ $focus := .Get "focus" | htmlUnescape }}
 
-{{ $gravity := partial "helper/focus-gravity" $focus }}
+{{ $gravity := .Get "focus" | htmlUnescape }}
 
 {{ $partyClasses := partial "helper/party-classes" $party }}
 {{ $textPad := "py-5" }}

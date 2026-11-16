@@ -2,7 +2,7 @@
 {{ $credit := .Get "credit" | htmlUnescape }}
 {{ $description := .Get "description" | htmlUnescape }}
 {{ $caption := .Get "caption" | htmlUnescape }}
-{{ $gravity := partial "helper/focus-gravity" (.Get "focus" | htmlUnescape) }}
+{{ $gravity := .Get "focus" }}
 
 
 <li class="w-full flex-none snap-start">

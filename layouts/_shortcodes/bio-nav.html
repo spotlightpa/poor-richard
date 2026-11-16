@@ -33,7 +33,7 @@
             {{ range where $items "group" $group }}
               {{ $partyClasses := partial "helper/party-classes" (.party | default "") }}
               {{ $role := .role | default "" }}
-              {{ $gravity := partial "helper/focus-gravity" (.focus | default "top") }}
+              {{ $gravity := .focus | default "no" }}
               {{ with $group }}
                 {{ $role = strings.TrimPrefix (printf "%s " .) $role }}
               {{ end }}
