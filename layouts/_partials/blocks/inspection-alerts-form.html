@@ -1,4 +1,5 @@
-<div x-show="step === 'form'" class="p-4 sm:p-5" :class="page && 'sm:p-6'">
+{{ $page := eq .Layout "restaurant-inspections-alerts" }}
+<div x-show="step === 'form'" class="{{ if not $page }}p-4 sm:p-5{{ end }}">
   <div x-show="!page" x-cloak class="mb-4 flex items-center gap-3">
     <div
       class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4"
@@ -15,405 +16,483 @@
     </div>
   </div>
 
-  <div x-show="page" class="mb-5">
-    <p class="mb-2 text-xs font-semibold text-g-6">
-      What would you like alerts for?
-    </p>
-    <div class="grid grid-cols-2 gap-1 rounded-lg bg-g-2 p-1" role="group">
-      <button
-        type="button"
-        @click="switchMode('facility')"
-        :aria-pressed="mode === 'facility'"
-        :class="mode === 'facility' ? 'bg-white text-g-9 shadow-sm' : 'text-g-7 hover:text-g-9'"
-        class="rounded-md px-3 py-2 font-sans text-sm font-semibold whitespace-nowrap transition-colors max-[359px]:px-2"
-      >
-        Food facility
-      </button>
-      <button
-        type="button"
-        @click="switchMode('city')"
-        :aria-pressed="mode === 'city'"
-        :class="mode === 'city' ? 'bg-white text-g-9 shadow-sm' : 'text-g-7 hover:text-g-9'"
-        class="rounded-md px-3 py-2 font-sans text-sm font-semibold whitespace-nowrap transition-colors max-[359px]:px-2"
-      >
-        Location
-      </button>
-    </div>
-  </div>
-
-  <div x-show="page && mode === 'facility'" class="mb-5">
-    <label
-      for="alert-facility-search"
-      class="mb-2 block text-sm font-semibold text-g-9"
-    >
-      Find restaurants
-      <span class="font-normal text-g-6">(add as many as you like)</span>
-    </label>
+  {{ if $page }}
     <div
-      x-show="!dataReady"
+      x-show="banner"
+      x-cloak
+      x-ref="successBanner"
       role="status"
-      class="flex h-[50px] w-full items-center gap-2.5 rounded-lg border border-g-4 px-4"
+      class="mb-6 flex items-start gap-3 rounded-xl bg-[#eef8f4] p-4 font-sans ring-1 ring-[#c6e9dc] ring-inset"
     >
       <span
-        class="h-4 w-4 flex-shrink-0 rounded-full bg-g-3 motion-safe:animate-pulse"
-        aria-hidden="true"
-      ></span>
-      <span
-        class="h-3 w-1/2 rounded bg-g-3 motion-safe:animate-pulse"
-        aria-hidden="true"
-      ></span>
-      <span class="sr-only">Loading restaurants&hellip;</span>
-    </div>
-    <div x-show="dataReady" x-cloak class="relative">
-      <input
-        id="alert-facility-search"
-        type="text"
-        x-model="facilitySearchQuery"
-        @focus="facilityDropdownOpen = true"
-        @input="facilityDropdownOpen = true"
-        @click.outside="facilityDropdownOpen = false"
-        placeholder="Facility name, city, zip&hellip;"
-        autocomplete="off"
-        class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
-      />
-      <div
-        x-show="facilityDropdownOpen && facilitySearchQuery.trim().length >= 2"
-        class="absolute right-0 left-0 z-30 mt-1 max-h-64 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
+        class="flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-full bg-election-green"
       >
-        <template x-for="f in facilityResults" :key="f.id">
-          <button
-            type="button"
-            @click="isRestaurantAdded(f.id) ? removeRestaurant(f.id) : addRestaurant(f)"
-            class="flex w-full items-center gap-3 px-3 py-2 text-left hover:bg-g-1"
-          >
-            <span class="min-w-0 flex-1">
-              <span
-                class="block font-sans text-sm font-semibold text-g-9"
-                x-text="f.name"
-              ></span>
-              <span
-                class="block font-sans text-xs text-g-6"
-                x-text="f.address"
-              ></span>
-            </span>
-            <span
-              x-show="isRestaurantAdded(f.id)"
-              class="flex-shrink-0 font-sans text-xs font-semibold text-election-green"
-              >Added</span
-            >
-          </button>
-        </template>
-        <p
-          x-show="facilityResults.length === 0"
-          class="px-3 py-2 font-sans text-sm font-semibold text-g-6"
-        >
-          No matches. Try a different spelling.
+        <svg class="h-3 w-3 fill-current text-white" aria-hidden="true">
+          {{ partial "helper/svg.html" "check" }}
+        </svg>
+      </span>
+      <div class="flex-1">
+        <p class="text-base font-bold text-g-9">You're all set</p>
+        <p class="mt-0.5 text-sm leading-relaxed text-g-8">
+          <span x-text="banner?.lead"></span
+          ><span class="font-semibold text-g-9" x-text="banner?.name"></span
+          ><span x-text="banner?.tail"></span>
+          Want alerts for more? Add them below.
         </p>
       </div>
+      <button
+        type="button"
+        @click="banner = null"
+        class="-m-1 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-g-6 hover:bg-black/5 hover:text-g-9"
+      >
+        <span class="sr-only">Dismiss</span>
+        <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+          <use href="#times-svg" />
+        </svg>
+      </button>
     </div>
-    <p class="mt-2 text-xs text-g-6">
-      Don't see a facility? Not all facilities are inspected by the Dept. of
-      Agriculture. Visit our FAQ for more.
-    </p>
+    <div
+      class="flex items-center gap-2.5 font-sans text-base font-bold text-g-9"
+    >
+      <span
+        class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-g-9 text-xs text-white"
+        >1</span
+      >
+      Follow facilities by name or by area?
+    </div>
+  {{ end }}
+  <div class="{{ if $page }}mt-4 sm:pl-[34px]{{ end }}">
+    <div x-show="page" class="mb-5">
+      <div class="grid grid-cols-2 gap-1 rounded-lg bg-g-2 p-1" role="group">
+        <button
+          type="button"
+          @click="switchMode('facility')"
+          :aria-pressed="mode === 'facility'"
+          :class="mode === 'facility' ? 'bg-white text-g-9 shadow-sm' : 'text-g-7 hover:text-g-9'"
+          class="rounded-md px-3 py-2 font-sans text-sm font-semibold whitespace-nowrap transition-colors max-[359px]:px-2"
+        >
+          Food facility
+        </button>
+        <button
+          type="button"
+          @click="switchMode('city')"
+          :aria-pressed="mode === 'city'"
+          :class="mode === 'city' ? 'bg-white text-g-9 shadow-sm' : 'text-g-7 hover:text-g-9'"
+          class="rounded-md px-3 py-2 font-sans text-sm font-semibold whitespace-nowrap transition-colors max-[359px]:px-2"
+        >
+          Location
+        </button>
+      </div>
+    </div>
 
-    <div x-show="restaurants.length > 0" x-cloak class="mt-4">
-      <p class="mb-2 text-sm font-semibold text-g-9">
-        You'll receive alerts for
-        <span x-text="restaurants.length"></span>
+    <div x-show="page && mode === 'facility'" class="mb-5">
+      <label
+        for="alert-facility-search"
+        class="mb-2 block text-sm font-semibold text-g-9"
+      >
+        Find facilities
+        <span class="font-normal text-g-6">(name, place or both)</span>
+      </label>
+      <div
+        x-show="!dataReady"
+        role="status"
+        class="flex h-[50px] w-full items-center gap-2.5 rounded-lg border border-g-4 px-4"
+      >
         <span
-          x-text="restaurants.length === 1 ? 'restaurant' : 'restaurants'"
-        ></span
-        >:
-      </p>
-      <ul class="divide-y divide-g-3 rounded-lg bg-g-2">
-        <template x-for="r in restaurants" :key="r.id">
-          <li class="flex items-center gap-3 px-3 py-2.5">
-            <span class="min-w-0 flex-1">
-              <span
-                class="block font-sans text-sm font-semibold text-g-9"
-                x-text="r.name"
-              ></span>
-              <span
-                x-show="r.address"
-                class="block font-sans text-xs text-g-6"
-                x-text="r.address"
-              ></span>
-            </span>
+          class="h-4 w-4 flex-shrink-0 rounded-full bg-g-3 motion-safe:animate-pulse"
+          aria-hidden="true"
+        ></span>
+        <span
+          class="h-3 w-1/2 rounded bg-g-3 motion-safe:animate-pulse"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Loading facilities&hellip;</span>
+      </div>
+      <div x-show="dataReady" x-cloak class="relative">
+        <input
+          id="alert-facility-search"
+          type="text"
+          x-model="facilitySearchQuery"
+          @focus="facilityDropdownOpen = true"
+          @input="facilityDropdownOpen = true"
+          @click.outside="facilityDropdownOpen = false"
+          placeholder="Search for a facility&hellip;"
+          autocomplete="off"
+          class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
+        />
+        <div
+          x-show="facilityDropdownOpen && facilitySearchQuery.trim().length >= 2"
+          class="absolute right-0 left-0 z-30 mt-1 max-h-64 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
+        >
+          <template x-for="f in facilityResults" :key="f.id">
             <button
               type="button"
-              @click="removeRestaurant(r.id)"
-              class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-g-6 transition-colors hover:bg-g-3 hover:text-g-9"
-              :aria-label="'Remove ' + r.name"
+              @click="isRestaurantAdded(f.id) ? removeRestaurant(f.id) : addRestaurant(f)"
+              class="flex w-full items-center gap-3 px-3 py-2 text-left hover:bg-g-1"
             >
-              <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
-                <use href="#times-svg" />
-              </svg>
-            </button>
-          </li>
-        </template>
-      </ul>
-    </div>
-  </div>
-
-  <div
-    x-show="!page && mode === 'facility' && facilityId"
-    x-cloak
-    class="mb-4 rounded-lg border border-g-3 bg-g-1 p-3"
-  >
-    <p class="text-sm font-semibold text-g-7">You'll receive alerts for:</p>
-    <p class="mt-1 text-base font-bold text-g-9" x-text="facilityName"></p>
-  </div>
-
-  <div x-show="page && mode === 'city'" x-cloak class="mb-5">
-    <div class="mb-2 flex flex-wrap items-baseline justify-between gap-x-3">
-      <label for="alert-city-search" class="text-sm font-semibold text-g-9">
-        Find cities
-        <span class="font-normal text-g-6">(add as many as you like)</span>
-      </label>
-      <span
-        x-show="!dataReady"
-        class="inline-block h-3 w-24 self-center rounded bg-g-3 motion-safe:animate-pulse"
-        aria-hidden="true"
-      ></span>
-      <button
-        type="button"
-        x-show="dataReady"
-        x-cloak
-        @click="addMyCity()"
-        :disabled="locatingCity || !dataReady"
-        class="inline-flex items-center gap-1 font-sans text-xs font-semibold text-blue-8 hover:underline disabled:opacity-60"
-      >
-        <span
-          x-text="locatingCity ? 'Finding your city…' : 'Use my location'"
-        ></span>
-      </button>
-    </div>
-    <div
-      x-show="!dataReady"
-      role="status"
-      class="flex h-[50px] w-full items-center gap-2.5 rounded-lg border border-g-4 px-4"
-    >
-      <span
-        class="h-4 w-4 flex-shrink-0 rounded-full bg-g-3 motion-safe:animate-pulse"
-        aria-hidden="true"
-      ></span>
-      <span
-        class="h-3 w-1/2 rounded bg-g-3 motion-safe:animate-pulse"
-        aria-hidden="true"
-      ></span>
-      <span class="sr-only">Loading cities&hellip;</span>
-    </div>
-    <div x-show="dataReady" x-cloak class="relative">
-      <input
-        id="alert-city-search"
-        type="text"
-        x-model="citySearchQuery"
-        @focus="cityDropdownOpen = true"
-        @input="cityDropdownOpen = true"
-        @click.outside="cityDropdownOpen = false"
-        placeholder="Type a city or town&hellip;"
-        autocomplete="off"
-        class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
-      />
-      <div
-        x-show="cityDropdownOpen && citySearchQuery.trim().length > 0"
-        class="absolute right-0 left-0 z-30 mt-1 max-h-64 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
-      >
-        <template x-for="c in filteredCities" :key="c.value">
-          <button
-            type="button"
-            @click="isCityAdded(c.text) ? removeCity(c.text) : addCity(c.text)"
-            class="flex w-full items-center gap-3 px-3 py-2 text-left hover:bg-g-1"
-          >
-            <span
-              class="min-w-0 flex-1 font-sans text-sm font-semibold text-g-9"
-              x-text="c.text"
-            ></span>
-            <span
-              x-show="isCityAdded(c.text)"
-              class="flex-shrink-0 font-sans text-xs font-semibold text-election-green"
-              >Added</span
-            >
-          </button>
-        </template>
-        <p
-          x-show="filteredCities.length === 0"
-          class="px-3 py-2 font-sans text-sm font-semibold text-g-6"
-        >
-          No matches. Try a different spelling.
-        </p>
-      </div>
-    </div>
-    <p
-      x-show="locateError"
-      class="mt-2 text-xs font-semibold text-red"
-      x-text="locateError"
-    ></p>
-
-    <div x-show="cities.length > 0" x-cloak class="mt-4">
-      <p class="mb-2 text-sm font-semibold text-g-9">
-        You'll receive alerts for
-        <span x-text="cities.length"></span>
-        <span x-text="cities.length === 1 ? 'city' : 'cities'"></span>:
-      </p>
-      <ul class="divide-y divide-g-3 rounded-lg bg-g-2">
-        <template x-for="c in cities" :key="c.name">
-          <li class="px-3 py-2.5 font-sans">
-            <div class="flex items-center gap-2">
               <span class="min-w-0 flex-1">
                 <span
-                  class="block text-sm font-semibold text-g-9"
-                  x-text="c.name"
+                  class="block font-sans text-sm font-semibold text-g-9"
+                  x-text="f.name"
                 ></span>
                 <span
-                  class="block text-xs text-g-6"
-                  x-text="citySummary(c)"
+                  class="block font-sans text-xs text-g-6"
+                  x-text="f.address"
+                ></span>
+              </span>
+              <span
+                x-show="isRestaurantAdded(f.id)"
+                class="flex-shrink-0 font-sans text-xs font-semibold text-election-green"
+                >Added</span
+              >
+            </button>
+          </template>
+          <p
+            x-show="facilityResults.length === 0"
+            class="px-3 py-2 font-sans text-sm font-semibold text-g-6"
+          >
+            No matches. Try a different spelling.
+          </p>
+        </div>
+      </div>
+      <p class="mt-2 text-xs text-g-6">
+        Don't see a facility? Not all facilities are inspected by the Dept. of
+        Agriculture.
+        <a
+          href="/restaurant-inspections/#faq"
+          class="text-blue-8 underline underline-offset-2"
+          >Visit our FAQ</a
+        >.
+      </p>
+
+      <div x-show="restaurants.length > 0" x-cloak class="mt-4">
+        <p class="mb-2 text-sm font-semibold text-g-9">
+          You'll receive alerts for
+          <span x-text="ap(restaurants.length)"></span>
+          <span
+            x-text="restaurants.length === 1 ? 'facility' : 'facilities'"
+          ></span
+          >:
+        </p>
+        <ul class="divide-y divide-g-3 rounded-lg bg-g-2">
+          <template x-for="r in restaurants" :key="r.id">
+            <li class="flex items-center gap-3 px-3 py-2.5">
+              <span class="min-w-0 flex-1">
+                <span
+                  class="block font-sans text-sm font-semibold text-g-9"
+                  x-text="r.name"
+                ></span>
+                <span
+                  x-show="r.address"
+                  class="block font-sans text-xs text-g-6"
+                  x-text="r.address"
                 ></span>
               </span>
               <button
                 type="button"
-                @click="c.open = !c.open"
-                :aria-expanded="c.open ? 'true' : 'false'"
-                class="flex-shrink-0 rounded-md px-2 py-1.5 text-xs font-bold text-blue-8 hover:bg-g-3"
-                x-text="c.open ? 'Done' : 'Edit'"
-              ></button>
-              <button
-                type="button"
-                @click="removeCity(c.name)"
+                @click="removeRestaurant(r.id)"
                 class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-g-6 transition-colors hover:bg-g-3 hover:text-g-9"
-                :aria-label="'Remove ' + c.name"
+                :aria-label="'Remove ' + r.name"
               >
                 <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
                   <use href="#times-svg" />
                 </svg>
               </button>
-            </div>
-            <div x-show="c.open" x-cloak class="mt-2.5 rounded-lg bg-white p-3">
-              <div
-                class="flex touch-pan-y rounded-lg bg-g-2 p-[3px] select-none"
-                role="group"
-                :aria-label="'Which facilities in ' + c.name"
-                x-swipe="setScope(c, $direction === 'right' ? 'near' : 'pick')"
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      x-show="!page && mode === 'facility' && facilityId"
+      x-cloak
+      class="mb-4 rounded-lg border border-g-3 bg-g-1 p-3"
+    >
+      <p class="text-sm font-semibold text-g-7">You'll receive alerts for:</p>
+      <p class="mt-1 text-base font-bold text-g-9" x-text="facilityName"></p>
+    </div>
+
+    <div x-show="page && mode === 'city'" x-cloak class="mb-5">
+      <div class="mb-2 flex flex-wrap items-baseline justify-between gap-x-3">
+        <label for="alert-city-search" class="text-sm font-semibold text-g-9">
+          Find places
+          <span class="font-normal text-g-6">(city, town or borough)</span>
+        </label>
+        <span
+          x-show="!dataReady"
+          class="inline-block h-3 w-24 self-center rounded bg-g-3 motion-safe:animate-pulse"
+          aria-hidden="true"
+        ></span>
+        <button
+          type="button"
+          x-show="dataReady"
+          x-cloak
+          @click="addMyCity()"
+          :disabled="locatingCity || !dataReady"
+          class="inline-flex items-center gap-1 font-sans text-xs font-semibold text-blue-8 hover:underline disabled:opacity-60"
+        >
+          <span
+            x-text="locatingCity ? 'Finding your city…' : 'Use my location'"
+          ></span>
+        </button>
+      </div>
+      <div
+        x-show="!dataReady"
+        role="status"
+        class="flex h-[50px] w-full items-center gap-2.5 rounded-lg border border-g-4 px-4"
+      >
+        <span
+          class="h-4 w-4 flex-shrink-0 rounded-full bg-g-3 motion-safe:animate-pulse"
+          aria-hidden="true"
+        ></span>
+        <span
+          class="h-3 w-1/2 rounded bg-g-3 motion-safe:animate-pulse"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Loading cities&hellip;</span>
+      </div>
+      <div x-show="dataReady" x-cloak class="relative">
+        <input
+          id="alert-city-search"
+          type="text"
+          x-model="citySearchQuery"
+          @focus="cityDropdownOpen = true"
+          @input="cityDropdownOpen = true"
+          @click.outside="cityDropdownOpen = false"
+          placeholder="Search for an area&hellip;"
+          autocomplete="off"
+          class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
+        />
+        <div
+          x-show="cityDropdownOpen && citySearchQuery.trim().length > 0"
+          class="absolute right-0 left-0 z-30 mt-1 max-h-64 overflow-y-auto rounded-md border border-g-3 bg-white shadow-lg"
+        >
+          <template x-for="c in filteredCities" :key="c.value">
+            <button
+              type="button"
+              @click="isCityAdded(c.text) ? removeCity(c.text) : addCity(c.text)"
+              class="flex w-full items-center gap-3 px-3 py-2 text-left hover:bg-g-1"
+            >
+              <span
+                class="min-w-0 flex-1 font-sans text-sm font-semibold text-g-9"
+                x-text="c.text"
+              ></span>
+              <span
+                x-show="isCityAdded(c.text)"
+                class="flex-shrink-0 font-sans text-xs font-semibold text-election-green"
+                >Added</span
               >
+            </button>
+          </template>
+          <p
+            x-show="filteredCities.length === 0"
+            class="px-3 py-2 font-sans text-sm font-semibold text-g-6"
+          >
+            No matches. Try a different spelling.
+          </p>
+        </div>
+      </div>
+      <div x-show="locateError" x-cloak class="mt-2 text-xs">
+        <p class="font-semibold text-red" x-text="locateError"></p>
+        <p class="mt-1 text-g-6">
+          Alerts only cover Pennsylvania facilities inspected by the Dept. of
+          Agriculture.
+          <a
+            href="/restaurant-inspections/#faq"
+            class="text-blue-8 underline underline-offset-2"
+            >See our FAQ</a
+          >.
+        </p>
+      </div>
+
+      <div x-show="cities.length > 0" x-cloak class="mt-4">
+        <p class="mb-2 text-sm font-semibold text-g-9">
+          You'll receive alerts for
+          <span
+            x-text="cityFacilityCount ? ap(cityFacilityCount) : 'no'"
+          ></span>
+          <span
+            x-text="cityFacilityCount === 1 ? 'facility' : 'facilities'"
+          ></span>
+          in
+          <span x-text="ap(cities.length)"></span>
+          <span x-text="cities.length === 1 ? 'city' : 'cities'"></span>:
+        </p>
+        <ul class="divide-y divide-g-3 rounded-lg bg-g-2">
+          <template x-for="c in cities" :key="c.name">
+            <li class="px-3 py-2.5 font-sans">
+              <div class="flex items-center gap-2">
+                <span class="min-w-0 flex-1">
+                  <span
+                    class="block text-sm font-semibold text-g-9"
+                    x-text="c.name"
+                  ></span>
+                  <span
+                    class="block text-xs text-g-6"
+                    x-text="citySummary(c)"
+                  ></span>
+                </span>
                 <button
                   type="button"
-                  @click="setScope(c, 'pick')"
-                  :aria-pressed="c.scope === 'pick' ? 'true' : 'false'"
-                  class="flex h-8 flex-1 items-center justify-center rounded-md text-xs font-bold text-g-7 transition-colors aria-pressed:bg-white aria-pressed:text-g-9 aria-pressed:shadow-[0_1px_2px_rgba(0,0,0,0.15)]"
+                  x-show="!c.open"
+                  @click="c.open = true"
+                  aria-expanded="false"
+                  class="flex-shrink-0 rounded-md px-2 py-1.5 text-xs font-bold text-blue-8 hover:bg-g-3"
                 >
-                  Pick
+                  Edit
                 </button>
                 <button
                   type="button"
-                  @click="setScope(c, 'near')"
-                  :aria-pressed="c.scope === 'near' ? 'true' : 'false'"
-                  class="flex h-8 flex-1 items-center justify-center rounded-md text-xs font-bold text-g-7 transition-colors aria-pressed:bg-white aria-pressed:text-g-9 aria-pressed:shadow-[0_1px_2px_rgba(0,0,0,0.15)]"
+                  @click="removeCity(c.name)"
+                  class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-g-6 transition-colors hover:bg-g-3 hover:text-g-9"
+                  :aria-label="'Remove ' + c.name"
                 >
-                  Near me
+                  <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                    <use href="#times-svg" />
+                  </svg>
                 </button>
               </div>
-              <p
-                x-show="c.error"
-                class="mt-2 text-xs font-semibold text-red"
-                x-text="c.error"
-              ></p>
-              <div x-show="c.scope === 'near'" class="mt-3">
-                <div class="flex items-center justify-between text-xs text-g-7">
-                  <label
-                    :for="'radius-' + c.name"
-                    class="font-semibold text-g-9"
-                    >Distance</label
+              <div
+                x-show="c.open"
+                x-cloak
+                class="mt-2.5 rounded-lg bg-white p-3"
+              >
+                <div
+                  class="flex touch-pan-y rounded-lg bg-g-2 p-[3px] select-none"
+                  role="group"
+                  :aria-label="'Which facilities in ' + c.name"
+                  x-swipe="setScope(c, $direction === 'right' ? 'near' : 'pick')"
+                >
+                  <button
+                    type="button"
+                    @click="setScope(c, 'pick')"
+                    :aria-pressed="c.scope === 'pick' ? 'true' : 'false'"
+                    class="flex h-8 flex-1 items-center justify-center rounded-md text-xs font-bold text-g-7 transition-colors aria-pressed:bg-white aria-pressed:text-g-9 aria-pressed:shadow-[0_1px_2px_rgba(0,0,0,0.15)]"
                   >
-                  <span
-                    class="font-semibold text-g-9"
-                    x-text="'Within ' + c.radius + ' mi'"
-                  ></span>
+                    Pick
+                  </button>
+                  <button
+                    type="button"
+                    @click="setScope(c, 'near')"
+                    :aria-pressed="c.scope === 'near' ? 'true' : 'false'"
+                    class="flex h-8 flex-1 items-center justify-center rounded-md text-xs font-bold text-g-7 transition-colors aria-pressed:bg-white aria-pressed:text-g-9 aria-pressed:shadow-[0_1px_2px_rgba(0,0,0,0.15)]"
+                  >
+                    Near me
+                  </button>
                 </div>
-                <input
-                  :id="'radius-' + c.name"
-                  type="range"
-                  min="0.5"
-                  max="10"
-                  step="0.5"
-                  x-model.number="c.radius"
-                  class="mt-2 w-full accent-blue-7"
-                />
-                <div class="mt-1 flex justify-between text-[11px] text-g-6">
-                  <span>0.5 mi</span><span>10 mi</span>
-                </div>
-              </div>
-              <div x-show="c.scope === 'pick'" class="mt-3">
-                <input
-                  type="search"
-                  x-model="c.query"
-                  @input="c.limit = 60"
-                  :placeholder="'Search ' + c.name + ' facilities'"
-                  :aria-label="'Search ' + c.name + ' facilities'"
-                  class="w-full rounded-lg border border-g-4 px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
-                />
-                <div class="mt-2 flex items-center justify-between text-xs">
-                  <span
-                    class="text-g-6"
-                    x-text="selectedFor(c).length.toLocaleString() + ' selected'"
-                  ></span>
-                  <span class="font-bold text-blue-8">
-                    <button
-                      type="button"
-                      @click="pickAll(c, true)"
-                      class="hover:underline"
+                <p
+                  x-show="c.error"
+                  class="mt-2 text-xs font-semibold text-red"
+                  x-text="c.error"
+                ></p>
+                <div x-show="c.scope === 'near'" class="mt-3">
+                  <div
+                    class="flex items-center justify-between text-xs text-g-7"
+                  >
+                    <label
+                      :for="'radius-' + c.name"
+                      class="font-semibold text-g-9"
+                      >Distance</label
                     >
-                      Select all
-                    </button>
-                    <span class="text-g-5" aria-hidden="true">·</span>
-                    <button
-                      type="button"
-                      @click="pickAll(c, false)"
-                      class="hover:underline"
-                    >
-                      Clear
-                    </button>
-                  </span>
+                    <span
+                      class="font-semibold text-g-9"
+                      x-text="'Within ' + c.radius + ' mi'"
+                    ></span>
+                  </div>
+                  <input
+                    :id="'radius-' + c.name"
+                    type="range"
+                    min="0.5"
+                    max="10"
+                    step="0.5"
+                    x-model.number="c.radius"
+                    @input="c.radiusTouched = true"
+                    class="mt-2 w-full accent-g-9"
+                  />
+                  <div class="mt-1 flex justify-between text-[11px] text-g-6">
+                    <span>0.5 mi</span><span>10 mi</span>
+                  </div>
                 </div>
-                <ul
-                  class="mt-2 h-72 divide-y divide-g-3 overflow-y-auto overscroll-contain rounded-lg border border-g-3"
-                  @scroll.passive="if ($el.scrollTop + $el.clientHeight > $el.scrollHeight - 200) c.limit += 60"
-                >
-                  <template x-for="f in pickList(c)" :key="f.id">
-                    <li>
-                      <label
-                        class="flex cursor-pointer items-start gap-2.5 px-3 py-2 hover:bg-g-1"
+                <div x-show="c.scope === 'pick'" class="mt-3">
+                  <input
+                    type="search"
+                    x-model="c.query"
+                    @input="c.limit = 60"
+                    :placeholder="'Search ' + c.name + ' facilities…'"
+                    :aria-label="'Search ' + c.name + ' facilities'"
+                    class="w-full rounded-lg border border-g-4 bg-white px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
+                  />
+                  <div class="mt-2 flex items-center justify-between text-xs">
+                    <span
+                      class="text-g-6"
+                      x-text="selectedFor(c).length ? ap(selectedFor(c).length, true) + ' selected' : 'None selected'"
+                    ></span>
+                    <span class="font-bold text-blue-8">
+                      <button
+                        type="button"
+                        @click="pickAll(c, true)"
+                        class="hover:underline"
                       >
-                        <input
-                          type="checkbox"
-                          :checked="c.picked[f.id] !== false"
-                          @change="togglePick(c, f.id)"
-                          class="mt-0.5 h-4 w-4 flex-shrink-0 accent-blue-7"
-                        />
-                        <span class="min-w-0">
-                          <span
-                            class="block text-sm font-semibold text-g-9"
-                            x-text="f.name"
-                          ></span>
-                          <span
-                            class="block truncate text-xs text-g-6"
-                            x-text="f.facilityAddress"
-                          ></span>
-                        </span>
-                      </label>
-                    </li>
-                  </template>
-                  <li
-                    x-show="pickList(c).length === 0"
-                    class="px-3 py-3 text-sm font-semibold text-g-6"
+                        Select all
+                      </button>
+                      <span class="text-g-5" aria-hidden="true">·</span>
+                      <button
+                        type="button"
+                        @click="pickAll(c, false)"
+                        class="hover:underline"
+                      >
+                        Clear
+                      </button>
+                    </span>
+                  </div>
+                  <ul
+                    class="mt-2 max-h-72 divide-y divide-g-3 overflow-y-auto overscroll-contain rounded-lg border border-g-3"
+                    @scroll.passive="if ($el.scrollTop + $el.clientHeight > $el.scrollHeight - 200) c.limit += 60"
                   >
-                    No matches.
-                  </li>
-                </ul>
+                    <template x-for="f in pickList(c)" :key="f.id">
+                      <li>
+                        <label
+                          class="flex cursor-pointer items-start gap-2.5 px-3 py-2 hover:bg-g-1"
+                        >
+                          <input
+                            type="checkbox"
+                            :checked="c.picked[f.id] !== false"
+                            @change="togglePick(c, f.id)"
+                            class="mt-0.5 h-4 w-4 flex-shrink-0 accent-g-9"
+                          />
+                          <span class="min-w-0">
+                            <span
+                              class="block text-sm font-semibold text-g-9"
+                              x-text="f.name"
+                            ></span>
+                            <span
+                              class="block truncate text-xs text-g-6"
+                              x-text="f.facilityAddress"
+                            ></span>
+                          </span>
+                        </label>
+                      </li>
+                    </template>
+                    <li
+                      x-show="pickList(c).length === 0"
+                      class="px-3 py-3 text-sm font-semibold text-g-6"
+                    >
+                      No matches.
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  @click="c.open = false"
+                  class="mt-3 flex h-12 w-full items-center justify-center rounded-lg bg-g-9 font-sans text-base font-semibold text-white hover:bg-black"
+                  x-text="selectedFor(c).length ? 'Save ' + ap(selectedFor(c).length) + (selectedFor(c).length === 1 ? ' facility' : ' facilities') : 'Done'"
+                ></button>
               </div>
-            </div>
-          </li>
-        </template>
-      </ul>
+            </li>
+          </template>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -485,9 +564,9 @@
     >
       <span class="text-sm font-semibold text-g-7">
         Subscribing to
-        <span class="text-g-9" x-text="selectedCount.toLocaleString()"></span>
+        <span class="text-g-9" x-text="ap(selectedCount)"></span>
         of
-        <span x-text="cityFacilities.length.toLocaleString()"></span>
+        <span x-text="ap(cityFacilities.length)"></span>
         facilities
       </span>
       <svg
@@ -530,7 +609,7 @@
               type="checkbox"
               :checked="selectedFacilities[f.id]"
               @change="toggleFacility(f.id)"
-              class="h-4 w-4 rounded border-g-3 text-blue focus:ring-blue"
+              class="h-4 w-4 rounded border-g-3 accent-g-9"
             />
             <span
               class="font-sans text-sm font-semibold text-g-9"
@@ -542,44 +621,65 @@
     </div>
   </div>
 
-  <form @submit.prevent="submitSignup()" class="space-y-3">
-    <div class="mb-3">
-      <p class="text-xs font-semibold text-g-6">
-        How would you like to be notified?
-      </p>
-      <p class="mt-0.5 text-xs text-g-5">Enter at least one.</p>
-    </div>
-
-    <div>
-      <label
-        for="alert-email"
-        class="mb-2 flex items-center gap-1.5 text-sm font-semibold text-g-9"
+  {{ if $page }}
+    <div class="mt-1 mb-5 h-px bg-g-3"></div>
+    <div
+      class="flex items-center gap-2.5 font-sans text-base font-bold text-g-9"
+    >
+      <span
+        class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-g-9 text-xs text-white"
+        >2</span
       >
-        Email address
-      </label>
-      <input
-        id="alert-email"
-        type="email"
-        x-model="email"
-        placeholder="you@example.com"
-        class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
-      />
+      How should we alert you?
     </div>
+  {{ end }}
+  <form
+    @submit.prevent="submitSignup()"
+    class="{{ cond $page "mt-1 space-y-3 sm:pl-[34px]" "space-y-3" }}"
+  >
+    {{ if $page }}
+      <p class="pb-1 font-sans text-sm text-g-7">Enter at least one.</p>
+    {{ else }}
+      <div class="mb-3">
+        <p class="text-xs font-semibold text-g-6">
+          How would you like to be notified?
+        </p>
+        <p class="mt-0.5 text-xs text-g-5">Enter at least one.</p>
+      </div>
+    {{ end }}
 
-    <div>
-      <label
-        for="alert-phone"
-        class="mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-sm font-semibold text-g-9"
-      >
-        Phone number
-      </label>
-      <input
-        id="alert-phone"
-        type="tel"
-        x-model="phone"
-        placeholder="(555) 123-4567"
-        maxlength="14"
-        @input="
+
+    <div class="{{ cond $page "grid gap-3 sm:grid-cols-2" "space-y-3" }}">
+      <div>
+        <label
+          for="alert-email"
+          class="mb-2 flex items-center gap-1.5 text-sm font-semibold text-g-9"
+        >
+          Email address
+        </label>
+        <input
+          id="alert-email"
+          type="email"
+          x-model="email"
+          placeholder="you@example.com"
+          class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label
+          for="alert-phone"
+          class="mb-2 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-sm font-semibold text-g-9"
+        >
+          Phone number
+        </label>
+        <input
+          id="alert-phone"
+          type="tel"
+          x-model="phone"
+          placeholder="(555) 123-4567"
+          maxlength="14"
+          @input="
           const digits = $event.target.value.replace(/\D/g, '').slice(0, 10);
           let formatted = '';
           if (digits.length <= 3) formatted = digits;
@@ -588,18 +688,18 @@
           phone = formatted;
           $nextTick(() => { $event.target.value = formatted; });
         "
-        class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
-      />
+          class="w-full rounded-lg border border-g-4 px-4 py-3 font-sans text-base focus:border-transparent focus:ring-2 focus:ring-yellow focus:outline-none"
+        />
+      </div>
     </div>
 
-    <div class="rounded-lg border border-g-3 bg-g-1 p-4">
-      <p class="text-xs leading-relaxed text-g-7">
-        You can unsubscribe anytime. We never share your data with third
-        parties. By providing your phone number, you consent to receive SMS
-        inspection alerts from Spotlight PA. Message and data rates may apply.
-        Reply STOP at any time to unsubscribe.
-      </p>
-    </div>
+    {{ $consent := "You can unsubscribe anytime. We never share your data with third parties. By providing your phone number, you consent to receive SMS inspection alerts from Spotlight PA. Message and data rates may apply. Reply STOP at any time to unsubscribe." }}
+    {{ if not $page }}
+      <div class="rounded-lg border border-g-3 bg-g-1 p-4">
+        <p class="text-xs leading-relaxed text-g-7">{{ $consent }}</p>
+      </div>
+    {{ end }}
+
 
     <label class="ml-px flex cursor-pointer items-center gap-2 select-none">
       <div
@@ -618,10 +718,10 @@
       >
         <input type="checkbox" x-model="rememberMe" class="peer sr-only" />
         <div
-          class="h-5 w-5 rounded border-2 border-g-4 bg-white transition-colors peer-checked:border-blue peer-checked:bg-blue"
+          class="h-5 w-5 rounded border-2 border-g-4 bg-white transition-colors peer-checked:border-g-9 peer-checked:bg-g-9 peer-focus-visible:ring-2 peer-focus-visible:ring-yellow peer-focus-visible:ring-offset-1"
         ></div>
         <svg
-          class="pointer-events-none absolute inset-0 m-auto h-3 w-3 fill-white opacity-0 transition-opacity peer-checked:opacity-100"
+          class="pointer-events-none absolute inset-0 m-auto h-3 w-3 fill-current text-white opacity-0 transition-opacity peer-checked:opacity-100"
           aria-hidden="true"
         >
           {{ partial "helper/svg.html" "check" }}
@@ -656,6 +756,9 @@
         Subscribing...
       </span>
     </button>
+    {{ if $page }}
+      <p class="text-xs leading-relaxed text-g-7">{{ $consent }}</p>
+    {{ end }}
   </form>
 </div>
 <div x-show="step === 'success'" x-cloak class="p-6 text-center sm:p-8">
@@ -664,7 +767,7 @@
       <use href="#circle-check-svg" />
     </svg>
   </div>
-  <h2 class="mb-3 text-2xl font-bold text-g-9">You're all set!</h2>
+  <h2 class="mb-3 text-2xl font-bold text-g-9">You're all set</h2>
   <p class="mb-6 text-base text-g-7">
     <template x-if="mode === 'facility' && !citySubscribeSummary">
       <span
@@ -679,7 +782,7 @@
           We'll send you an alert whenever there's a new inspection report for
           <span
             class="font-semibold text-g-9"
-            x-text="citySubscribeSummary.newCount === 1 ? citySubscribeSummary.newFacilityName : citySubscribeSummary.newCount + ' restaurants'"
+            x-text="citySubscribeSummary.newCount === 1 ? citySubscribeSummary.newFacilityName : ap(citySubscribeSummary.newCount) + ' facilities'"
           ></span
           >.
         </span>
@@ -687,10 +790,10 @@
           You were already subscribed to
           <span
             class="font-semibold text-g-9"
-            x-text="citySubscribeSummary.alreadyCount"
+            x-text="ap(citySubscribeSummary.alreadyCount)"
           ></span>
           <span
-            x-text="citySubscribeSummary.alreadyCount === 1 ? 'restaurant' : 'restaurants'"
+            x-text="citySubscribeSummary.alreadyCount === 1 ? 'facility' : 'facilities'"
           ></span
           >.
         </span>
@@ -718,7 +821,7 @@
                   >Subscribed to
                   <span
                     class="font-semibold text-g-9"
-                    x-text="citySubscribeSummary.newCount.toLocaleString()"
+                    x-text="ap(citySubscribeSummary.newCount)"
                   ></span>
                   new facilities.</span
                 >
@@ -728,7 +831,7 @@
               You were already subscribed to
               <span
                 class="font-semibold text-g-9"
-                x-text="citySubscribeSummary.alreadyCount"
+                x-text="ap(citySubscribeSummary.alreadyCount)"
               ></span>
               <span
                 x-text="citySubscribeSummary.alreadyCount === 1 ? 'facility' : 'facilities'"
@@ -761,7 +864,7 @@
       @click="step = 'form'; resetRestaurants();"
       class="mt-3 w-full rounded-lg border-2 border-g-4 bg-white py-3 font-semibold text-g-9 transition-colors hover:bg-g-2"
     >
-      Sign up for more restaurants
+      Add more facilities
     </button>
   </template>
   <template x-if="page && mode === 'city'">

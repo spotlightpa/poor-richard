@@ -30,6 +30,27 @@ function buildFacilitySearchIndex(allData) {
   return index.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+const AP_WORDS = [
+  "zero",
+  "one",
+  "two",
+  "three",
+  "four",
+  "five",
+  "six",
+  "seven",
+  "eight",
+  "nine",
+];
+
+function apNum(n, cap = false) {
+  const word =
+    Number.isInteger(n) && n >= 0 && n < 10
+      ? AP_WORDS[n]
+      : Number(n).toLocaleString();
+  return cap ? word.charAt(0).toUpperCase() + word.slice(1) : word;
+}
+
 function milesBetween(a, b) {
   if (!Number.isFinite(b.lat) || !Number.isFinite(b.lon)) return Infinity;
   const toRad = (d) => (d * Math.PI) / 180;
@@ -61,6 +82,7 @@ export default function inspectionsModal({ page = false } = {}) {
     submitting: false,
     errorMessage: "",
     citySubscribeSummary: null,
+    banner: null,
     restaurants: [],
     cities: [],
     userPos: null,
@@ -274,14 +296,17 @@ export default function inspectionsModal({ page = false } = {}) {
 
     citySummary(c) {
       const n = this.selectedFor(c).length;
-      const label = (x) =>
-        `${x.toLocaleString()} ${x === 1 ? "facility" : "facilities"}`;
+      const label = (x) => `${apNum(x)} ${x === 1 ? "facility" : "facilities"}`;
       if (c.scope === "near")
         return this.userPos
-          ? `${label(n)} within ${c.radius} mi of you`
+          ? `${n ? apNum(n, true) : "No"} ${n === 1 ? "facility" : "facilities"} within ${c.radius} mi of you`
           : "Finding your location…";
-      if (n === c.count) return `All ${label(c.count)}`;
-      return `${n.toLocaleString()} of ${label(c.count)}`;
+      if (n === c.count) {
+        if (n === 1) return "One facility";
+        if (n === 2) return "Both facilities";
+        return `All ${label(c.count)}`;
+      }
+      return `${n ? apNum(n, true) : "None"} of ${label(c.count)}`;
     },
 
     get totalSelected() {
@@ -302,18 +327,36 @@ export default function inspectionsModal({ page = false } = {}) {
         c.picked = picked;
       }
       c.scope = scope;
-      if (scope !== "near" || this.userPos) return;
-      try {
-        const pos = await new Promise((resolve, reject) =>
-          navigator.geolocation.getCurrentPosition(resolve, reject, {
-            timeout: 8000,
-          }),
-        );
-        this.userPos = { lat: pos.coords.latitude, lon: pos.coords.longitude };
-      } catch {
-        c.scope = "pick";
-        c.error = "Turn on location access to use Near me.";
+      if (scope !== "near") return;
+      if (!this.userPos) {
+        try {
+          const pos = await new Promise((resolve, reject) =>
+            navigator.geolocation.getCurrentPosition(resolve, reject, {
+              timeout: 8000,
+            }),
+          );
+          this.userPos = {
+            lat: pos.coords.latitude,
+            lon: pos.coords.longitude,
+          };
+        } catch {
+          c.scope = "pick";
+          c.error = "Turn on location access to use Near me.";
+          return;
+        }
       }
+      if (!c.radiusTouched) c.radius = this.defaultRadius(c);
+    },
+
+    defaultRadius(c) {
+      const pos = this.userPos;
+      const miles = this.cityFacs(c)
+        .map((f) => milesBetween(pos, f))
+        .filter(Number.isFinite)
+        .sort((a, b) => a - b);
+      if (!miles.length) return 10;
+      const target = miles[Math.min(4, miles.length - 1)];
+      return Math.min(10, Math.max(0.5, Math.ceil(target * 2) / 2));
     },
 
     pickList(c) {
@@ -347,6 +390,14 @@ export default function inspectionsModal({ page = false } = {}) {
       this.citySearchQuery = "";
     },
 
+    ap(n, cap = false) {
+      return apNum(n, cap);
+    },
+
+    get cityFacilityCount() {
+      return this.cities.reduce((n, c) => n + this.selectedFor(c).length, 0);
+    },
+
     get citiesLabel() {
       const names = this.cities.map((c) => c.name);
       if (names.length <= 2) return names.join(" and ");
@@ -372,6 +423,56 @@ export default function inspectionsModal({ page = false } = {}) {
 
     isRestaurantAdded(id) {
       return this.restaurants.some((r) => r.id === id);
+    },
+
+    finishSignup() {
+      if (!this.page) {
+        this.step = "success";
+        return;
+      }
+      const s = this.citySubscribeSummary;
+      const plural = (n) =>
+        `${apNum(n)} ${n === 1 ? "facility" : "facilities"}`;
+      let lead = "You're following ";
+      let name = this.facilityName;
+      let extra = "";
+      let sent = true;
+      if (this.mode === "city") {
+        lead = `You're following ${plural(this.cityFacilityCount)} in `;
+        name = this.userCity;
+        if (s && s.newCount === 0) sent = false;
+      } else if (s) {
+        if (s.newCount === 1) name = s.newFacilityName;
+        else if (s.newCount > 1) name = plural(s.newCount);
+        else {
+          lead = "You were already following ";
+          name = plural(s.alreadyCount);
+          sent = false;
+        }
+        if (s.newCount > 0 && s.alreadyCount > 0)
+          extra = ` You were already following ${plural(s.alreadyCount)}.`;
+      }
+      const to =
+        this.email && this.phone
+          ? "your email and phone"
+          : this.email
+            ? "your email"
+            : "your phone";
+      this.banner = {
+        lead,
+        name,
+        tail: `.${extra}${sent ? ` We sent a confirmation to ${to}.` : ""}`,
+      };
+      if (this.mode === "city") this.resetCities();
+      else this.resetRestaurants();
+      this.$nextTick(() =>
+        requestAnimationFrame(() =>
+          this.$refs.successBanner?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          }),
+        ),
+      );
     },
 
     resetRestaurants() {
@@ -643,7 +744,7 @@ export default function inspectionsModal({ page = false } = {}) {
             });
           });
           await this.subscribeMany(items, { ...payload, city: this.userCity });
-          this.step = "success";
+          this.finishSignup();
         } else if (this.mode === "city") {
           const items = Object.entries(this.selectedFacilities)
             .filter(([, v]) => v)
@@ -657,7 +758,7 @@ export default function inspectionsModal({ page = false } = {}) {
               };
             });
           await this.subscribeMany(items, payload);
-          this.step = "success";
+          this.finishSignup();
         } else if (this.page && this.restaurants.length > 1) {
           const items = this.restaurants.map((r) => ({
             id: r.id,
@@ -666,7 +767,7 @@ export default function inspectionsModal({ page = false } = {}) {
             displayName: r.name,
           }));
           await this.subscribeMany(items, payload);
-          this.step = "success";
+          this.finishSignup();
         } else {
           const res = await fetch("/.netlify/functions/subscribe", {
             method: "POST",
@@ -685,7 +786,7 @@ export default function inspectionsModal({ page = false } = {}) {
             );
           }
           if (this.rememberMe) markAdded(this.facilityId, data.undoToken);
-          this.step = "success";
+          this.finishSignup();
         }
       } catch (err) {
         this.errorMessage = err.message;
