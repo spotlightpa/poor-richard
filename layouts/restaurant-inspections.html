@@ -115,14 +115,14 @@
               </p>
             {{ end }}
             <a
-              href="{{ $alertsURL }}?mode=city"
-              :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
+              href="{{ $alertsURL }}"
+              :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '')"
               class="mr-2 mb-1.5 ml-auto hidden flex-shrink-0 items-center gap-1.5 rounded font-sans text-sm font-semibold whitespace-nowrap text-blue-2 hover:underline focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none md:max-lg:inline-flex"
             >
               <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
                 <use href="#bell-svg" />
               </svg>
-              Get city alerts &rarr;
+              Get alerts &rarr;
             </a>
           </div>
           <div class="hidden items-center gap-2 md:flex" x-ref="searchWrapper">
@@ -135,14 +135,14 @@
               )
             }}
             <a
-              href="{{ $alertsURL }}?mode=city"
-              :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
+              href="{{ $alertsURL }}"
+              :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '')"
               class="inline-flex h-[46px] flex-shrink-0 items-center gap-2 rounded-full bg-blue-2 px-4 font-sans text-sm font-bold text-blue-9 transition-colors hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none md:max-lg:hidden group-data-[stuck=true]/hdr:md:max-lg:inline-flex"
             >
               <svg class="h-4 w-4 fill-current" aria-hidden="true">
                 <use href="#bell-svg" />
               </svg>
-              <span>Get city alerts</span>
+              <span>Get alerts</span>
             </a>
           </div>
         </div>
@@ -194,8 +194,8 @@
             sortOptions: [
               { value: 'date-desc', group: 'date', label: 'Newest first' },
               { value: 'date-asc', group: 'date', label: 'Oldest first' },
-              { value: 'risk-desc', group: 'priority', label: 'Highest priority' },
-              { value: 'risk-asc', group: 'priority', label: 'Lowest priority' },
+              { value: 'count-desc', group: 'count', label: 'Most violations' },
+              { value: 'count-asc', group: 'count', label: 'Fewest violations' },
               { value: 'alpha-asc', group: 'name', label: 'Name A–Z' },
               { value: 'alpha-desc', group: 'name', label: 'Name Z–A' },
             ],
@@ -290,12 +290,11 @@
                           >
                             <use href="#calendar-day-svg" />
                           </svg>
-                          <svg
-                            x-show="o.group === 'priority'"
-                            class="h-3 w-3 fill-current"
+                          <span
+                            x-show="o.group === 'count'"
+                            class="text-[11px] leading-none font-extrabold"
+                            >#</span
                           >
-                            <use href="#diamond-svg" />
-                          </svg>
                           <span
                             x-show="o.group === 'name'"
                             class="text-[9px] leading-none font-extrabold tracking-tighter"
@@ -312,7 +311,7 @@
 
             <div>
               <h3 class="mb-2 ml-0.5 text-xs font-semibold text-g-6">
-                Search by city
+                Filter by city
               </h3>
               <div
                 class="relative"
@@ -348,7 +347,7 @@
                   </button>
                 </div>
                 <label x-show="!selectedValue" class="relative block">
-                  <span class="sr-only">Search cities</span>
+                  <span class="sr-only">Filter by city</span>
                   <svg
                     class="pointer-events-none absolute top-1/2 left-3 h-3.5 w-3.5 -translate-y-1/2 fill-current text-g-6"
                     aria-hidden="true"

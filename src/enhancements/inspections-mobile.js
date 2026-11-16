@@ -5,8 +5,8 @@ import { levenshtein, normalizeString } from "../utils/inspections.js";
 const SORT_LABELS = {
   "date-desc": "Newest first",
   "date-asc": "Oldest first",
-  "risk-desc": "Highest priority",
-  "risk-asc": "Lowest priority",
+  "count-desc": "Most violations",
+  "count-asc": "Fewest violations",
   "alpha-asc": "Name A–Z",
   "alpha-desc": "Name Z–A",
 };

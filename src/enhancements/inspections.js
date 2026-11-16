@@ -5,6 +5,7 @@ import {
   parseInspectionDate,
   generateInspectionCardId,
   normalizeString,
+  cityKey,
   simplifyAddress,
 } from "../utils/inspections.js";
 import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
@@ -67,6 +68,7 @@ function getSuggestIndex() {
       id,
       name: row.facility,
       detail: simplifyAddress(row.address || "") || row.city || "",
+      city: cityKey(row.city || ""),
       key: normalizeString(row.facility),
       haystack: normalizeString(
         [row.facility, row.address, row.city].filter(Boolean).join(" "),
@@ -103,9 +105,11 @@ function findSuggestions(rawQuery) {
         : "",
     }));
   const limit = 6 - Math.min(cities.length, 2);
+  const inCity = cityKey(Alpine.store("inspections").currentCity || "");
   const starts = [];
   const contains = [];
   for (const f of getSuggestIndex()) {
+    if (inCity && f.city !== inCity) continue;
     if (!terms.every((t) => f.haystack.includes(t))) continue;
     if (f.key.startsWith(q)) {
       starts.push(f);
@@ -122,6 +126,7 @@ function findSuggestions(rawQuery) {
       id: f.id,
       name: f.name,
       detail: f.detail,
+      city: f.city,
     }));
   return cities.concat(facilities);
 }
@@ -189,7 +194,7 @@ export function searchUI() {
         if (window.innerWidth < 850) this.$refs.input?.blur();
         return;
       }
-      store.currentCity = "";
+      if (cityKey(store.currentCity) !== s.city) store.currentCity = "";
       store.currentPriority = "";
       window.dispatchEvent(new CustomEvent("inspections-show-list"));
       if (window.innerWidth < 850) this.$refs.input?.blur();
@@ -233,9 +238,30 @@ export function searchUI() {
       });
     },
 
+    matchCity(text) {
+      const key = cityKey(text || "");
+      if (!key) return null;
+      return (
+        (Alpine.raw(Alpine.store("inspections").cities) || []).find(
+          (c) => cityKey(c.text) === key,
+        ) || null
+      );
+    },
+
     doSearch(val) {
       if (typeof val === "string") {
         this.q = val;
+      } else {
+        const city = this.matchCity(this.q);
+        if (city) {
+          this.closeSuggest();
+          this.chooseSuggestion({
+            type: "city",
+            id: "city:" + city.value,
+            name: city.text,
+          });
+          return;
+        }
       }
 
       if (document.querySelector(".detail-content")) {

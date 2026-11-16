@@ -96,12 +96,17 @@ Alpine.directive(
 );
 
 function storedSort() {
-  const legacy = { "high-risk": "risk-desc", alphabetical: "alpha-asc" };
+  const legacy = {
+    "high-risk": "count-desc",
+    "risk-desc": "count-desc",
+    "risk-asc": "count-asc",
+    alphabetical: "alpha-asc",
+  };
   const valid = [
     "date-desc",
     "date-asc",
-    "risk-desc",
-    "risk-asc",
+    "count-desc",
+    "count-asc",
     "alpha-asc",
     "alpha-desc",
   ];

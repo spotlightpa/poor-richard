@@ -49,8 +49,8 @@
         type="button"
         @click="openAlerts()"
         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-2 text-blue-9 hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
-        :aria-label="$store.inspections.currentCity ? 'Get alerts for ' + $store.inspections.currentCity : 'Get city alerts'"
-        aria-label="Get city alerts"
+        :aria-label="$store.inspections.currentCity ? 'Get alerts for ' + $store.inspections.currentCity : 'Get alerts'"
+        aria-label="Get alerts"
       >
         <svg class="h-4 w-4 fill-current" aria-hidden="true">
           <use href="#bell-svg" />

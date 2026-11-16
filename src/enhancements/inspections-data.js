@@ -4,7 +4,6 @@ import {
   normalizeString,
   cityKey,
   parseInspectionDate,
-  getRiskScore,
   escapeHTML,
   simplifyAddress,
   getRiskPriority,
@@ -50,7 +49,7 @@ function buildFacilityIndex(groupedFacilities) {
       ),
       city: cityKey(row.city || ""),
       dateMs: parseInspectionDate(row.inspection_date).getTime(),
-      riskScore: getRiskScore(row.risk_level),
+      violationCount: totalViolations(row.risk_level),
       levels: getRiskLevels(row.risk_level),
       nameKey: (row.facility || "").toLowerCase(),
       nameGroup: /^\p{L}/u.test((row.facility || "").trim()) ? 0 : 1,
@@ -131,12 +130,17 @@ function sortFacilities(filteredIds, facilityIndexMap, currentSort) {
       case "date-asc":
         return (A.dateMs || 0) - (B.dateMs || 0);
 
-      case "risk-desc":
-      case "high-risk":
-        return (B.riskScore || 0) - (A.riskScore || 0);
+      case "count-desc":
+        return (
+          (B.violationCount || 0) - (A.violationCount || 0) ||
+          (B.dateMs || 0) - (A.dateMs || 0)
+        );
 
-      case "risk-asc":
-        return (A.riskScore || 0) - (B.riskScore || 0);
+      case "count-asc":
+        return (
+          (A.violationCount || 0) - (B.violationCount || 0) ||
+          (B.dateMs || 0) - (A.dateMs || 0)
+        );
 
       default:
         return (B.dateMs || 0) - (A.dateMs || 0);
@@ -204,6 +208,11 @@ function rowsToMarkers(rows, startIndex) {
       popupHTML: `<div class="inspection-tip min-w-[220px] max-w-[280px] border-t-[3px] border-black px-3.5 pt-2.5 pb-3 font-sans">${facilitiesHTML}</div>`,
     };
   });
+}
+
+function totalViolations(riskLevel) {
+  const c = countRisks(riskLevel);
+  return c.high + c.moderate + c.low + c.other;
 }
 
 function countRisks(riskLevel) {

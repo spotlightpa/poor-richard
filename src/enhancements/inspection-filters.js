@@ -96,9 +96,9 @@ export function inspectionSortMenu({
       longLabel: "Inspection date: newest to oldest",
     },
     {
-      value: "risk-desc",
-      shortLabel: "Priority",
-      longLabel: "Violation priority: highest to lowest",
+      value: "count-desc",
+      shortLabel: "Violations",
+      longLabel: "Violations: most to fewest",
     },
     {
       value: "alpha-asc",

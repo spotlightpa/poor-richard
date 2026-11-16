@@ -94,6 +94,7 @@
             type="search"
             enterkeyhint="search"
             placeholder="{{ .placeholder }}"
+            :placeholder="$store.inspections.currentCity ? 'Search facilities in ' + $store.inspections.currentCity + '…' : '{{ .placeholder }}'"
             autocomplete="off"
             class="min-w-0 flex-1 bg-transparent text-base text-white placeholder:text-[#aeaeb2] focus:outline-none [&::-webkit-search-cancel-button]:hidden"
             @input="onSuggestInput()"
@@ -194,7 +195,7 @@
             <div
               x-show="i === 0 || suggestions[i - 1].type !== s.type"
               class="px-4 pt-3 pb-1 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
-              x-text="s.type === 'city' ? 'Cities' : 'Facilities'"
+              x-text="s.type === 'city' ? 'Filter by city' : 'Facilities'"
             ></div>
             <button
               type="button"
