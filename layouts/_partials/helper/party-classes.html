@@ -1,0 +1,7 @@
+{{ $classes := dict "border" "border-g-9" "text" "text-g-8" }}
+{{ if hasPrefix . "R" }}
+  {{ $classes = dict "border" "border-red-7" "text" "text-red-7" }}
+{{ else if hasPrefix . "D" }}
+  {{ $classes = dict "border" "border-fb-blue" "text" "text-fb-blue" }}
+{{ end }}
+{{ return $classes }}
