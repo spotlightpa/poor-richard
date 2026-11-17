@@ -43,6 +43,7 @@
   inert
   data-open="false"
   :data-open="sheetOpen ? 'true' : 'false'"
+  x-trap.noautofocus="sheetOpen"
   @keydown.escape="closeSheet()"
   @search-sheet-close.window="closeSheet()"
   class="group/sheet pointer-events-none fixed inset-0 z-1100 data-[open=true]:pointer-events-auto"

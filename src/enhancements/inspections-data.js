@@ -230,10 +230,10 @@ function countRisks(riskLevel) {
 }
 
 const TIP_SEGMENTS = [
-  { key: "high", color: "#D70000", label: "high" },
-  { key: "moderate", color: "#FFCB03", label: "moderate" },
-  { key: "low", color: "#009EDB", label: "low" },
-  { key: "other", color: "#6b7280", label: "other" },
+  { key: "high", color: "#D70000", cls: "text-red-7", label: "high" },
+  { key: "moderate", color: "#FFCB03", cls: "text-yellow", label: "moderate" },
+  { key: "low", color: "#009EDB", cls: "text-blue", label: "low" },
+  { key: "other", color: "#6b7280", cls: "text-g-7", label: "other" },
 ];
 
 function donutSVG(counts, total) {
@@ -266,13 +266,13 @@ function tooltipFacilityHTML(row) {
     .join(" · ");
   const body =
     total === 0
-      ? `<div class="mt-1.5 flex items-center gap-2 text-sm font-semibold text-g-9"><svg class="h-5 w-5 fill-current" style="color: #1b998b;" aria-hidden="true"><use href="#circle-check-svg" /></svg>No violations</div>`
+      ? `<div class="mt-1.5 flex items-center gap-2 text-sm font-semibold text-g-9"><svg class="h-5 w-5 fill-current text-election-green" aria-hidden="true"><use href="#circle-check-svg" /></svg>No violations</div>`
       : `<div class="flex items-center gap-3.5">${donutSVG(counts, total)}<ul class="space-y-0.5 text-[13px] text-g-8">${TIP_SEGMENTS.filter(
           (seg) => counts[seg.key] > 0,
         )
           .map(
             (seg) =>
-              `<li class="flex items-center gap-1.5"><svg class="h-2.5 w-2.5 flex-shrink-0 fill-current" style="color: ${seg.color};" aria-hidden="true"><use href="#diamond-svg" /></svg><span><b class="text-g-9">${counts[seg.key]}</b> ${seg.label}</span></li>`,
+              `<li class="flex items-center gap-1.5"><svg class="h-2.5 w-2.5 flex-shrink-0 fill-current ${seg.cls}" aria-hidden="true"><use href="#diamond-svg" /></svg><span><b class="text-g-9">${counts[seg.key]}</b> ${seg.label}</span></li>`,
           )
           .join("")}</ul></div>`;
   return `<div class="inspection-tip-item py-3 first:pt-0 last:pb-0">

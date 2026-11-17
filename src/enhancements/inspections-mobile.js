@@ -394,6 +394,9 @@ export default function inspectionsMobile() {
       sheet.querySelector("input")?.blur();
       this.sheetOpen = false;
       sheet.inert = true;
+      this.$nextTick(() =>
+        this.$refs.searchBar?.focus({ preventScroll: true }),
+      );
       document.documentElement.classList.remove("overflow-hidden");
       window.dispatchEvent(
         new CustomEvent("inspections-apply-search", {

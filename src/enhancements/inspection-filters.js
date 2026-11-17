@@ -75,6 +75,7 @@ export function inspectionCityFilter({
       this.open = false;
       this.query = "";
       this.syncShown();
+      this.$nextTick(() => this.$refs.cityClear?.focus());
     },
 
     clear() {
@@ -82,63 +83,7 @@ export function inspectionCityFilter({
       this.open = false;
       this.query = "";
       this.syncShown();
-    },
-  };
-}
-
-export function inspectionSortMenu({
-  labelPrefix = "Sort: ",
-  defaultValue = "date-desc",
-  options = [
-    {
-      value: "date-desc",
-      shortLabel: "Date",
-      longLabel: "Inspection date: newest to oldest",
-    },
-    {
-      value: "count-desc",
-      shortLabel: "Violations",
-      longLabel: "Violations: most to fewest",
-    },
-    {
-      value: "alpha-asc",
-      shortLabel: "Name",
-      longLabel: "Facility name: A to Z",
-    },
-  ],
-} = {}) {
-  return {
-    open: false,
-    options,
-    labelPrefix,
-    defaultValue,
-
-    get store() {
-      return Alpine.store("inspections");
-    },
-
-    get selected() {
-      return this.store.currentSort || this.defaultValue;
-    },
-
-    get label() {
-      const current =
-        this.options.find((opt) => opt.value === this.selected) ||
-        this.options[0];
-      return `${this.labelPrefix}${current?.shortLabel || "Date"}`;
-    },
-
-    init() {
-      if (!this.store.currentSort) {
-        this.store.currentSort =
-          localStorage.getItem("inspections-sort") || this.defaultValue;
-      }
-    },
-
-    choose(value) {
-      this.store.currentSort = value;
-      localStorage.setItem("inspections-sort", value);
-      this.open = false;
+      this.$nextTick(() => this.$refs.cityInput?.focus());
     },
   };
 }

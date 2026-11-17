@@ -148,7 +148,7 @@
         </div>
       </div>
     </section>
-    <div aria-hidden="true" class="bg-black" style="height: 0px"></div>
+    <div aria-hidden="true" class="h-0 bg-black"></div>
 
     <section class="hidden md:block" x-data="inspectionsUI()" x-init="init()">
       <div class="w-full bg-white px-4 md:px-0">
@@ -186,9 +186,9 @@
             },
             priorities: [
               { value: '', label: 'All' },
-              { value: 'high', label: 'High', color: '#D70000' },
-              { value: 'moderate', label: 'Moderate', color: '#FFCB03' },
-              { value: 'low', label: 'Low', color: '#009EDB' },
+              { value: 'high', label: 'High', color: 'text-red-7' },
+              { value: 'moderate', label: 'Moderate', color: 'text-yellow' },
+              { value: 'low', label: 'Low', color: 'text-blue' },
               { value: 'none', label: 'No violations' },
             ],
             sortOptions: [
@@ -211,6 +211,13 @@
             get sortLabel() {
               const o = this.sortOptions.find((x) => x.value === $store.inspections.currentSort);
               return o ? o.label : this.sortOptions[0].label;
+            },
+            movePriority(group, step) {
+              const radios = [...group.querySelectorAll('[role=radio]')];
+              const i = radios.indexOf(document.activeElement);
+              const next = radios[(i + step + radios.length) % radios.length];
+              next.click();
+              next.focus();
             },
             chooseSort(value) {
               $store.inspections.currentSort = value;
@@ -269,7 +276,7 @@
                       <div
                         x-show="i > 0 && sortOptions[i - 1].group !== o.group"
                         class="mx-2 my-1 h-px bg-g-2"
-                        role="separator"
+                        aria-hidden="true"
                       ></div>
                       <button
                         type="button"
@@ -319,6 +326,7 @@
                 x-init="init()"
                 @click.outside="open = false"
                 @keydown.escape="open = false"
+                @focusout="$el.contains($event.relatedTarget) || (open = false)"
               >
                 <div
                   x-show="selectedValue"
@@ -337,6 +345,7 @@
                   ></span>
                   <button
                     type="button"
+                    x-ref="cityClear"
                     @click="clear()"
                     class="flex h-8 w-8 items-center justify-center rounded-full text-g-6 transition-colors hover:bg-g-3 hover:text-g-9 pointer-coarse:h-10 pointer-coarse:w-10"
                     :aria-label="'Remove ' + selectedText"
@@ -356,6 +365,11 @@
                   </svg>
                   <input
                     type="text"
+                    x-ref="cityInput"
+                    role="combobox"
+                    aria-autocomplete="list"
+                    aria-controls="city-filter-list"
+                    :aria-expanded="open && !selectedValue"
                     x-model="query"
                     @input="syncShown(); open = true"
                     @focus="open = true"
@@ -370,6 +384,9 @@
                   x-show="open && !selectedValue"
                   x-cloak
                   x-ref="cityList"
+                  id="city-filter-list"
+                  aria-label="Cities"
+                  tabindex="-1"
                   class="absolute left-0 z-20 mt-2 max-h-[min(18rem,40vh)] w-full overflow-auto rounded-xl border border-g-3 bg-white py-1 shadow-lg"
                   role="listbox"
                   @keydown.arrow-down.prevent="$focus.wrap().next()"
@@ -382,6 +399,8 @@
                     <button
                       type="button"
                       role="option"
+                      tabindex="-1"
+                      aria-selected="false"
                       class="block w-full px-3 py-2 text-left text-sm font-semibold text-g-9 hover:bg-g-1 focus:bg-g-1 focus:outline-none"
                       @click="choose(opt.value)"
                       x-text="opt.text"
@@ -429,12 +448,17 @@
                 class="flex flex-wrap gap-1.5"
                 role="radiogroup"
                 aria-labelledby="priority-label"
+                @keydown.arrow-right.prevent="movePriority($el, 1)"
+                @keydown.arrow-down.prevent="movePriority($el, 1)"
+                @keydown.arrow-left.prevent="movePriority($el, -1)"
+                @keydown.arrow-up.prevent="movePriority($el, -1)"
               >
                 <template x-for="p in priorities" :key="p.value">
                   <button
                     type="button"
                     role="radio"
                     :aria-checked="($store.inspections.currentPriority || '') === p.value"
+                    :tabindex="($store.inspections.currentPriority || '') === p.value ? 0 : -1"
                     @click="$store.inspections.currentPriority = p.value"
                     :class="($store.inspections.currentPriority || '') === p.value ? 'bg-g-9 text-white' : 'bg-white text-g-9 shadow-[0_0_0_1px_rgba(0,0,0,0.08)] hover:bg-g-2'"
                     class="inline-flex h-8 items-center gap-1 rounded-full px-2.5 text-xs font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none pointer-coarse:h-10 pointer-coarse:px-3"
@@ -442,15 +466,14 @@
                     <svg
                       x-show="p.color"
                       class="h-3 w-3 flex-shrink-0 fill-current"
-                      :style="'color:' + p.color"
+                      :class="p.color"
                       aria-hidden="true"
                     >
                       <use href="#diamond-svg" />
                     </svg>
                     <svg
                       x-show="p.value === 'none'"
-                      class="h-3.5 w-3.5 flex-shrink-0 fill-current"
-                      style="color: #1b998b"
+                      class="h-3.5 w-3.5 flex-shrink-0 fill-current text-election-green"
                       aria-hidden="true"
                     >
                       <use href="#circle-check-svg" />
@@ -550,9 +573,7 @@
     x-show="open"
     x-cloak
     @keydown.escape.window="closeModal()"
-    class="fixed right-0 bottom-0 left-0 z-50 flex items-center justify-center px-6 pb-6"
-    :style="'--modalTop: calc(73px + 1.5rem); top: var(--modalTop); height: calc(100dvh - var(--modalTop));'"
-    style="display: none;"
+    class="fixed top-[calc(73px+1.5rem)] right-0 bottom-0 left-0 z-50 flex h-[calc(100dvh-73px-1.5rem)] items-center justify-center px-6 pb-6"
   >
     <div
       @click="closeModal()"

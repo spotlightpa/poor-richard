@@ -671,7 +671,7 @@ export default function inspectionsUI() {
       const latestViolations = this.readViolations(card);
       const latestItems =
         latestViolations.map((v) => this.renderViolationItem(v)).join("") ||
-        `<li class="space-y-2"><div class="flex items-start pt-3 gap-2"><svg class="mt-1 h-5 w-5 fill-current stroke-current" style="color: #1b998b;" aria-hidden="true"><use href="#circle-check-svg" /></svg><h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">No violations reported.</h4></div></li>`;
+        `<li class="space-y-2"><div class="flex items-start pt-3 gap-2"><svg class="mt-1 h-5 w-5 fill-current stroke-current text-election-green" aria-hidden="true"><use href="#circle-check-svg" /></svg><h4 class="font-sans text-lg font-bold text-black flex flex-wrap items-center gap-1">No violations reported.</h4></div></li>`;
 
       detail.innerHTML = this.buildDetailHTML({
         title,
@@ -869,7 +869,7 @@ export default function inspectionsUI() {
           });
           const violationCount = allDescriptions.length;
           if (!violationCount) {
-            return `<div class="bg-white border-2 border-g-3 rounded-lg p-4"><div class="flex flex-wrap items-center justify-between gap-2"><div class="flex items-center gap-3 min-w-0"><svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true"><use href="#calendar-day-svg" /></svg><span class="font-sans text-base font-bold text-g-9 whitespace-nowrap">${escapeHTML(date)}</span></div><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #e8f5f3; color: #1b998b;"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#circle-check-svg" /></svg>No violations</span></div></div>`;
+            return `<div class="bg-white border-2 border-g-3 rounded-lg p-4"><div class="flex flex-wrap items-center justify-between gap-2"><div class="flex items-center gap-3 min-w-0"><svg class="h-5 w-5 flex-shrink-0 fill-g-6" aria-hidden="true"><use href="#calendar-day-svg" /></svg><span class="font-sans text-base font-bold text-g-9 whitespace-nowrap">${escapeHTML(date)}</span></div><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-election-green-lightest text-sm font-semibold text-election-green-darkest"><svg class="h-4 w-4 fill-current" aria-hidden="true"><use href="#circle-check-svg" /></svg>No violations</span></div></div>`;
           }
           const violationRows = allDescriptions
             .map(
@@ -958,11 +958,11 @@ export default function inspectionsUI() {
       const comment = (v.comment || "").trim().replace(/^[\s|]+$/, "");
       const displayComment = aiSummary || comment;
       const riskLevel = (v.riskLevel || "").toLowerCase();
-      let color = "#6b7280";
-      if (riskLevel.includes("high risk")) color = "#D70000";
-      else if (riskLevel.includes("moderate risk")) color = "#FFCB03";
-      else if (riskLevel.includes("low risk")) color = "#009EDB";
-      return `<li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0"><div class="flex items-start pt-2 gap-2"><svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0" style="color: ${color};" aria-hidden="true"><use href="#diamond-svg" /></svg><h4 class="font-sans text-lg font-bold text-black break-words">${escapeHTML(title)}</h4></div>${displayComment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">${escapeHTML(displayComment)}</p>` : ""}</li>`;
+      let color = "text-g-7";
+      if (riskLevel.includes("high risk")) color = "text-red-7";
+      else if (riskLevel.includes("moderate risk")) color = "text-yellow";
+      else if (riskLevel.includes("low risk")) color = "text-blue";
+      return `<li class="space-y-2 pb-4 mb-4 border-b border-g-3 last:border-b-0 last:pb-0 last:mb-0"><div class="flex items-start pt-2 gap-2"><svg class="mt-1 h-5 w-5 fill-current stroke-current flex-shrink-0 ${color}" aria-hidden="true"><use href="#diamond-svg" /></svg><h4 class="font-sans text-lg font-bold text-black break-words">${escapeHTML(title)}</h4></div>${displayComment ? `<p class="font-serif leading-relaxed text-g-7 border-l-4 border-g-5 pl-4 ml-7">${escapeHTML(displayComment)}</p>` : ""}</li>`;
     },
 
     readViolations(card) {

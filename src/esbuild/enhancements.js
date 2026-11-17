@@ -29,10 +29,7 @@ import inspectionsModal from "../enhancements/inspections-modal.js";
 import inspectionsMobile, {
   inspectionsEmpty,
 } from "../enhancements/inspections-mobile.js";
-import {
-  inspectionCityFilter,
-  inspectionSortMenu,
-} from "../enhancements/inspection-filters.js";
+import { inspectionCityFilter } from "../enhancements/inspection-filters.js";
 import voterGuides from "../enhancements/voter-guides.js";
 
 for (let [name, comp] of [
@@ -56,7 +53,6 @@ for (let [name, comp] of [
   ["inspectionsMobile", inspectionsMobile],
   ["inspectionsEmpty", inspectionsEmpty],
   ["inspectionCityFilter", inspectionCityFilter],
-  ["inspectionSortMenu", inspectionSortMenu],
   ["voterGuides", voterGuides],
 ]) {
   Alpine.data(name, comp);
