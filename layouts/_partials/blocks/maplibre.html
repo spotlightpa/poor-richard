@@ -33,6 +33,7 @@
       hoverPopups: opts?.hoverPopups ?? true,
       cooperativeGestures: opts?.cooperativeGestures ?? true,
       selectOnClick: opts?.selectOnClick ?? false,
+      externalMarkers: opts?.externalMarkers ?? false,
       _selectedEl: null,
 
       map: null,
@@ -358,6 +359,11 @@
               this.map.fitBounds(this.bounds, { padding: this.fitPadding() });
             }
             this.addMarkers();
+            window.dispatchEvent(
+              new CustomEvent("map:loaded", {
+                detail: { id: this.id, map: this.map },
+              }),
+            );
 
             try {
               if (this.map.getLayer("state-borders"))
@@ -524,6 +530,7 @@
       },
 
       updateMarkers(newMarkers) {
+        if (this.externalMarkers) return;
         if (!this.map || !Array.isArray(newMarkers)) return;
 
         const key = (newMarkers || [])

@@ -1,6 +1,13 @@
 import Alpine from "alpinejs/src/index.js";
 import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
-import { levenshtein, normalizeString } from "../utils/inspections.js";
+import {
+  levenshtein,
+  normalizeString,
+  parseInspectionDate,
+  simplifyAddress,
+} from "../utils/inspections.js";
+import { countRisks, createInspectionCard } from "./inspections-data.js";
+import { AREA_LIMIT, createAreaMap } from "./inspections-area-map.js";
 
 const SORT_LABELS = {
   "date-desc": "Newest first",
@@ -99,6 +106,15 @@ export function inspectionsEmpty() {
   };
 }
 
+function worstLevel(c) {
+  if (c.high) return "high";
+  if (c.moderate) return "moderate";
+  if (c.low) return "low";
+  return "none";
+}
+
+const SQUARE_CAP = 36;
+
 function navHeight() {
   const nav = document.querySelector("header.sticky");
   return nav ? nav.getBoundingClientRect().height : 57;
@@ -108,14 +124,21 @@ export default function inspectionsMobile() {
   return {
     view: "list",
     showBar: false,
-    showThumb: true,
     sheetOpen: false,
-    compact: false,
-    _anchor: 0,
-    _peek: null,
-    _insetBottom: -1,
-    preview: false,
-    previewId: "",
+    _padTop: "",
+    mapDetail: false,
+    _detailId: "",
+    areaMode: "",
+    areaIds: [],
+    areaCards: [],
+    _area: null,
+    _map: null,
+    _points: [],
+    _order: null,
+    _activeId: "",
+    _pendingFit: false,
+    zoomHint: false,
+    _hintTimer: 0,
     mapId: "inspections-map-mobile",
     _frame: 0,
     _nav: 0,
@@ -189,11 +212,6 @@ export default function inspectionsMobile() {
       );
     },
 
-    get pageLabel() {
-      const st = this.store;
-      return `Page ${(st.currentPage || 1).toLocaleString()} of ${(st.totalPages || 1).toLocaleString()}`;
-    },
-
     init() {
       const schedule = () => {
         if (this._frame) return;
@@ -217,11 +235,16 @@ export default function inspectionsMobile() {
       this.initSheetDrag();
       this.$watch("store.searchQuery", () => this.closeSheet());
       this.$watch("store.currentCity", () => this.closeSheet());
-      this.$watch("preview", () =>
-        this.$nextTick(() => this.syncOverlayInsets()),
+      window.addEventListener("inspections-back-to-results", () =>
+        this.closeMapDetail(),
       );
-      this.$watch("compact", () => this.syncOverlayInsets());
-      this.$watch("sheetOpen", () => this.syncOverlayInsets());
+      window.addEventListener("map:loaded", (e) => {
+        if (e.detail?.id === this.mapId) this.setupArea(e.detail.map);
+      });
+      this.$watch("store.sortedFilteredData", () => this.refreshArea(true));
+      window
+        .matchMedia("(min-width: 850px)")
+        .addEventListener("change", (e) => e.matches && this.closeMapDetail());
       schedule();
     },
 
@@ -238,23 +261,7 @@ export default function inspectionsMobile() {
       const introBottom = this.$refs.introEnd.getBoundingClientRect().top;
       const end = this.$refs.end.getBoundingClientRect().top;
       this.showBar = introBottom <= nav + barH && end > nav + barH;
-      const content = this.view === "map" ? this.$refs.map : this.$refs.list;
-      const resultsTop = content.getBoundingClientRect().top;
-      this.showThumb =
-        end > window.innerHeight * 0.45 || resultsTop >= nav + barH - 2;
-
       this.syncOverlayInsets();
-
-      const y = window.scrollY;
-      if (y < 120) {
-        this.compact = false;
-        this._anchor = y;
-      } else if (this.compact ? y > this._anchor : y < this._anchor) {
-        this._anchor = y;
-      } else if (Math.abs(y - this._anchor) > 24) {
-        this.compact = y > this._anchor;
-        this._anchor = y;
-      }
     },
 
     initSheetDrag() {
@@ -342,43 +349,18 @@ export default function inspectionsMobile() {
     },
 
     syncOverlayInsets() {
-      const bar = this.$refs.searchBar;
-      if (!bar) return;
-      const handle = bar.querySelector("[data-bar-handle]");
-      const tucked = this.compact || this.preview;
-      const short = window.innerHeight < 500;
-      const visible =
-        !this.showThumb || this.sheetOpen
-          ? 0
-          : tucked
-            ? handle?.offsetHeight || 0
-            : bar.offsetHeight;
-      if (visible === this._insetBottom) return;
-      this._insetBottom = visible;
-      document.documentElement.style.setProperty(
-        "--search-bar-visible-h",
-        visible + "px",
-      );
-      this.$refs.map.style.setProperty("--map-pad-bottom", visible + "px");
-      this.$refs.map.style.setProperty("--map-pad-top", short ? "0px" : "48px");
-      if (this.view === "map" && !this.preview) {
+      const top = window.innerHeight < 500 ? "0px" : "48px";
+      if (top === this._padTop) return;
+      this._padTop = top;
+      this.$refs.map.style.setProperty("--map-pad-top", top);
+      if (this.view === "map") {
         window.dispatchEvent(new CustomEvent("map:refit"));
       }
     },
 
-    peekStart(e) {
-      e.currentTarget.setPointerCapture?.(e.pointerId);
-      this._peek = { y: e.clientY };
-    },
-
-    peekEnd(e) {
-      const start = this._peek;
-      this._peek = null;
-      if (start && start.y - e.clientY > 24) this.openSheet();
-    },
-
     openSheet() {
       if (this.sheetOpen) return;
+      this._opener = document.activeElement;
       const sheet = this.$refs.sheet;
       sheet.inert = false;
       const input = sheet.querySelector("input");
@@ -394,9 +376,7 @@ export default function inspectionsMobile() {
       sheet.querySelector("input")?.blur();
       this.sheetOpen = false;
       sheet.inert = true;
-      this.$nextTick(() =>
-        this.$refs.searchBar?.focus({ preventScroll: true }),
-      );
+      this.$nextTick(() => this._opener?.focus({ preventScroll: true }));
       document.documentElement.classList.remove("overflow-hidden");
       window.dispatchEvent(
         new CustomEvent("inspections-apply-search", {
@@ -407,10 +387,12 @@ export default function inspectionsMobile() {
 
     setView(view) {
       if (this.view === view) return;
-      if (view === "map" && document.querySelector(".detail-content")) {
+      if (
+        (view === "map" || this.mapDetail) &&
+        document.querySelector(".detail-content")
+      ) {
         window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
       }
-      this.closePreview();
       const pinned = this.showBar || view === "map";
       const from = view === "map" ? this.$refs.list : this.$refs.map;
       const top = pinned
@@ -424,8 +406,6 @@ export default function inspectionsMobile() {
       to.style.removeProperty("display");
       this.view = view;
       if (top !== null) window.scrollTo({ top, behavior: "instant" });
-      this.compact = false;
-      this._anchor = window.scrollY;
       this.$nextTick(() => {
         if (pinned) {
           scrollToStickyTop(view === "map" ? this.$refs.map : this.$refs.list);
@@ -434,61 +414,302 @@ export default function inspectionsMobile() {
         window.dispatchEvent(
           new CustomEvent("mobile-view-changed", { detail: { view } }),
         );
+        if (view === "map" && this._map) {
+          requestAnimationFrame(() => {
+            this._map.resize();
+            if (this._pendingFit) this.fitArea();
+            else this.updateAreaMode();
+          });
+        }
       });
     },
 
-    prevPage() {
-      if (this.store.currentPage > 1) this.store.currentPage--;
+    get zoomHintText() {
+      return /Mac|iPhone|iPad/.test(navigator.userAgent)
+        ? "Use ⌘ + scroll to zoom the map"
+        : "Use Ctrl + scroll to zoom the map";
     },
 
-    nextPage() {
-      if (this.store.currentPage < this.store.totalPages)
-        this.store.currentPage++;
-    },
-
-    realCard(id) {
-      return id ? this.$refs.list.querySelector(`#${CSS.escape(id)}`) : null;
-    },
-
-    selectMarker(event) {
-      if (event.detail?.mapId !== this.mapId) return;
-      const source = this.realCard(event.detail.id);
-      if (!source) return;
-      const clone = source.cloneNode(true);
-      clone.removeAttribute("id");
-      clone.classList.remove("hidden-by-detail");
-      clone.style.display = "";
-      clone.querySelector(".detail-content")?.remove();
-      clone.querySelector(".list-content")?.classList.remove("hidden");
-      this.previewId = event.detail.id;
-      this.$refs.previewSlot.replaceChildren(clone);
-      this.preview = true;
-    },
-
-    closePreview() {
-      if (!this.preview) return;
-      this.preview = false;
-      this.previewId = "";
-      this.$refs.previewSlot.replaceChildren();
-    },
-
-    onPreviewClick(event) {
-      const real = this.realCard(this.previewId);
-      if (!real) return;
-      if (event.target.closest("[data-read-more]")) {
-        event.preventDefault();
-        event.stopPropagation();
-        this.setView("list");
-        requestAnimationFrame(() =>
-          real.querySelector("[data-read-more]")?.click(),
-        );
+    onMapWheel(event) {
+      if (event.ctrlKey || event.metaKey) {
+        this.zoomHint = false;
         return;
       }
-      if (event.target.closest('[data-action="card-alerts"]')) {
-        event.preventDefault();
-        event.stopPropagation();
-        real.querySelector('[data-action="card-alerts"]')?.click();
+      event.stopPropagation();
+      if (this.mapDetail || this.$refs.strip?.contains(event.target)) return;
+      this.zoomHint = true;
+      clearTimeout(this._hintTimer);
+      this._hintTimer = setTimeout(() => (this.zoomHint = false), 1200);
+    },
+
+    get areaMessage() {
+      if (this.areaMode === "zoom") return "Zoom in to see facilities";
+      if (this.areaMode === "empty") return "No facilities in this area";
+      if (this.areaMode === "results")
+        return `${facilitiesLabel(this.areaIds.length)} in this area`;
+      return "";
+    },
+
+    setupArea(map) {
+      if (this._area) return;
+      this._map = map;
+      this._area = createAreaMap(map, {
+        onPick: (id) => this.pickFacility(id),
+      });
+      map.on("moveend", () => this.onAreaMove());
+      this.refreshArea(true);
+    },
+
+    refreshArea(refit) {
+      if (!this._area) return;
+      const grouped = Alpine.raw(this.store.groupedFacilities) || {};
+      const ids = Alpine.raw(this.store.sortedFilteredData) || [];
+      const points = [];
+      const order = new Map();
+      ids.forEach((id, i) => {
+        const row = grouped[id]?.[0];
+        if (!row) return;
+        const lat = parseFloat(row.Latitude);
+        const lon = parseFloat(row.Longitude);
+        if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+        points.push({
+          id,
+          lat,
+          lon,
+          name: row.facility || "Facility",
+          w: worstLevel(countRisks(row.risk_level)),
+        });
+        order.set(id, i);
+      });
+      this._points = points;
+      this._order = order;
+      this._area.setData(points);
+      this._area.select("");
+      this.areaIds = [];
+      this.areaCards = [];
+      const narrowed = !!(this.query || this.store.currentCity);
+      if (refit && narrowed && points.length) {
+        this._pendingFit = true;
+        if (this.view === "map") this.fitArea();
+      } else {
+        this.updateAreaMode();
       }
+    },
+
+    fitArea() {
+      this._pendingFit = false;
+      if (!this._points.length) return this.updateAreaMode();
+      const bounds = new window.maplibregl.LngLatBounds();
+      this._points.forEach((p) => bounds.extend([p.lon, p.lat]));
+      this._map.fitBounds(bounds, {
+        padding: { top: 72, bottom: 72, left: 40, right: 40 },
+        maxZoom: 14,
+        duration: 0,
+      });
+    },
+
+    onAreaMove() {
+      this.updateAreaMode();
+    },
+
+    countInView() {
+      if (!this._map) return 0;
+      const b = this._map.getBounds();
+      let n = 0;
+      for (const p of this._points) {
+        if (b.contains([p.lon, p.lat]) && ++n > AREA_LIMIT) break;
+      }
+      return n;
+    },
+
+    updateAreaMode() {
+      if (!this._map) return;
+      const n = this.countInView();
+      if (n && n <= AREA_LIMIT) return this.searchArea();
+      this.areaMode = n ? "zoom" : "empty";
+      this.areaIds = [];
+      this.areaCards = [];
+      this._activeId = "";
+      this._area.select("");
+    },
+
+    searchArea() {
+      if (!this._map) return;
+      const b = this._map.getBounds();
+      const ids = this._points
+        .filter((p) => b.contains([p.lon, p.lat]))
+        .map((p) => p.id)
+        .sort((a, c) => this._order.get(a) - this._order.get(c))
+        .slice(0, AREA_LIMIT);
+      this.areaMode = ids.length ? "results" : "empty";
+      if (
+        ids.length === this.areaIds.length &&
+        ids.every((id, i) => id === this.areaIds[i])
+      ) {
+        return;
+      }
+      const keep = ids.indexOf(this._activeId);
+      this.areaIds = ids;
+      this.areaCards = [];
+      this.extendAreaCards(Math.max(keep, 0));
+      this._activeId = keep >= 0 ? this._activeId : ids[0] || "";
+      this.$nextTick(() => {
+        const strip = this.$refs.strip;
+        const el = strip?.querySelector(
+          `[data-area-id="${CSS.escape(this._activeId)}"]`,
+        );
+        if (strip) {
+          strip.scrollLeft = el
+            ? el.offsetLeft - (strip.clientWidth - el.offsetWidth) / 2
+            : 0;
+        }
+        this._area.select(this._activeId);
+      });
+    },
+
+    facilityGroup(id) {
+      const group = Alpine.raw(this.store.groupedFacilities)?.[id];
+      if (!group) return null;
+      return [...group].sort(
+        (a, b) =>
+          parseInspectionDate(b.inspection_date) -
+          parseInspectionDate(a.inspection_date),
+      );
+    },
+
+    areaCard(id) {
+      const row = this.facilityGroup(id)[0];
+      const c = countRisks(row.risk_level);
+      const squares = [
+        ...Array(c.high).fill("high"),
+        ...Array(c.moderate).fill("moderate"),
+        ...Array(c.low).fill("low"),
+        ...Array(c.other).fill("other"),
+      ];
+      const total = squares.length;
+      const parts = [
+        [c.high, "high priority"],
+        [c.moderate, "moderate priority"],
+        [c.low, "low priority"],
+        [c.other, "other"],
+      ]
+        .filter(([n]) => n)
+        .map(([n, label]) => `${n} ${label}`);
+      return {
+        id,
+        name: row.facility || "Facility",
+        line: [
+          simplifyAddress(row.address || "") || row.city,
+          row.inspection_date,
+        ]
+          .filter(Boolean)
+          .join(" · "),
+        total,
+        totalLabel: `${total} violation${total === 1 ? "" : "s"}`,
+        srLabel: `${total} violation${total === 1 ? "" : "s"}: ${parts.join(", ")}`,
+        squares: squares.slice(0, SQUARE_CAP),
+        more: Math.max(0, total - SQUARE_CAP),
+      };
+    },
+
+    extendAreaCards(index = 0) {
+      const target = Math.min(
+        this.areaIds.length,
+        Math.max(this.areaCards.length + 20, index + 1),
+      );
+      if (target <= this.areaCards.length) return;
+      this.areaCards = this.areaCards.concat(
+        this.areaIds
+          .slice(this.areaCards.length, target)
+          .map((id) => this.areaCard(id)),
+      );
+    },
+
+    onStripScroll() {
+      const strip = this.$refs.strip;
+      if (!strip) return;
+      const mid = strip.scrollLeft + strip.clientWidth / 2;
+      let best = null;
+      let bestDistance = Infinity;
+      for (const el of strip.querySelectorAll("[data-area-id]")) {
+        const d = Math.abs(el.offsetLeft + el.offsetWidth / 2 - mid);
+        if (d < bestDistance) {
+          bestDistance = d;
+          best = el;
+        }
+      }
+      if (best) {
+        this._activeId = best.dataset.areaId;
+        this._area.select(this._activeId);
+      }
+      if (strip.scrollLeft + strip.clientWidth > strip.scrollWidth - 600) {
+        this.extendAreaCards();
+      }
+    },
+
+    pickFacility(id) {
+      let i = this.areaIds.indexOf(id);
+      if (i < 0 && this.countInView() <= AREA_LIMIT) {
+        this.searchArea();
+        i = this.areaIds.indexOf(id);
+      }
+      if (i < 0) {
+        this.areaIds = [id];
+        this.areaCards = [this.areaCard(id)];
+        i = 0;
+      }
+      this.extendAreaCards(i);
+      this._activeId = id;
+      this.$nextTick(() => {
+        const strip = this.$refs.strip;
+        const el = strip?.querySelector(`[data-area-id="${CSS.escape(id)}"]`);
+        if (el) {
+          strip.scrollTo({
+            left: el.offsetLeft - (strip.clientWidth - el.offsetWidth) / 2,
+            behavior: "smooth",
+          });
+        }
+        this._area.select(id);
+      });
+    },
+
+    areaReadMore(id) {
+      const group = this.facilityGroup(id);
+      if (!group) return;
+      this.openMapDetail(createInspectionCard(group[0], "map", group), id);
+    },
+
+    areaAlerts(id) {
+      const group = this.facilityGroup(id);
+      if (!group) return;
+      const card = createInspectionCard(group[0], "map", group);
+      this.$refs.areaTemp.replaceChildren(card);
+      card.querySelector('[data-action="card-alerts"]')?.click();
+      this.$refs.areaTemp.replaceChildren();
+    },
+
+    openMapDetail(card, id) {
+      this._detailId = id;
+      this.$refs.mapDetail.replaceChildren(card);
+      this.$refs.mapDetail.scrollTop = 0;
+      this.mapDetail = true;
+      requestAnimationFrame(() =>
+        card.querySelector("[data-read-more]")?.click(),
+      );
+    },
+
+    closeMapDetail(refocus = false) {
+      if (!this.mapDetail) return;
+      this.$refs.mapDetail.replaceChildren();
+      this.mapDetail = false;
+      const id = this._detailId;
+      this._detailId = "";
+      if (!refocus || !id) return;
+      requestAnimationFrame(() =>
+        this.$refs.strip
+          ?.querySelector(`[data-area-id="${CSS.escape(id)}"] [data-area-read]`)
+          ?.focus({ preventScroll: true }),
+      );
     },
   };
 }

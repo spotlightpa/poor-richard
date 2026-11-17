@@ -215,7 +215,7 @@ function totalViolations(riskLevel) {
   return c.high + c.moderate + c.low + c.other;
 }
 
-function countRisks(riskLevel) {
+export function countRisks(riskLevel) {
   const counts = { high: 0, moderate: 0, low: 0, other: 0 };
   if (riskLevel) {
     riskLevel.split(" | ").forEach((r) => {
@@ -282,7 +282,7 @@ function tooltipFacilityHTML(row) {
   </div>`;
 }
 
-function createInspectionCard(data, index, allInspections) {
+export function createInspectionCard(data, index, allInspections) {
   const facilityName = data.facility || "Facility";
   const address = data.address || "";
   const city = data.city || "";

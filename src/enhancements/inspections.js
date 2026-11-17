@@ -588,16 +588,7 @@ export default function inspectionsUI() {
       if (willOpen) {
         delete menu.dataset.up;
         menu.hidden = false;
-        const bottomInset =
-          parseFloat(
-            getComputedStyle(document.documentElement).getPropertyValue(
-              "--search-bar-visible-h",
-            ),
-          ) || 0;
-        if (
-          menu.getBoundingClientRect().bottom >
-          window.innerHeight - bottomInset - 8
-        ) {
+        if (menu.getBoundingClientRect().bottom > window.innerHeight - 8) {
           menu.dataset.up = "true";
         }
         btn.setAttribute("aria-expanded", "true");
