@@ -1,4 +1,6 @@
 {{ $title := .Get "title" | htmlUnescape | default "Jump to a leader" }}
+{{ $thumbSize := .Get "thumb-size" | default 48 | int }}
+{{ $thumbClass := printf "size-[%dpx]" $thumbSize }}
 {{ $items := partial "helper/get-bios" .Page.RawContent }}
 {{ $groups := slice }}
 {{ range $items }}
@@ -46,16 +48,16 @@
                     <img
                       src="{{ partial "helper/imgproxy" (dict
                         "filename" .
-                        "width" 72
-                        "height" 72
+                        "width" (mul $thumbSize 2)
+                        "height" (mul $thumbSize 2)
                         "gravity" $gravity
                         "absURL" true
                         )
                       }}"
                       alt=""
-                      width="36"
-                      height="36"
-                      class="size-9 shrink-0 rounded-sm bg-g-3 object-cover"
+                      width="{{ $thumbSize }}"
+                      height="{{ $thumbSize }}"
+                      class="{{ $thumbClass }} shrink-0 rounded-sm bg-g-3 object-cover"
                     />
                   {{ end }}
                   <span class="min-w-0 flex-1">
