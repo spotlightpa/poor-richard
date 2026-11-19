@@ -25,6 +25,8 @@ topics = ["Elections"]
 
 <em>Votebeat is a nonprofit news organization reporting on voting access and election administration across the U.S. Sign up for </em><a href="https://votebe.at/nationalnewsletter"><em>our free weekly newsletter</em></a><em> to get the latest.</em>
 
+<strong><em>Update, Nov. 19, 2 p.m.: </em></strong><em>The judge in the case has approved the recount, which will be held at 10 a.m. on Monday, Nov. 23, using a separate machine from the one that was used on Election Day. After the hearing, Miller did not answer a question about whether he would accept the results.</em>
+
 For potentially the first time in decades, a razor-close Pennsylvania state House election may be heading to a full recount.
 
 As of Tuesday, petitioners in all 32 precincts of Pennsylvania’s 41st House District had filed for a review of the Nov. 3 election result. Democrat Brad Chambers currently leads Republican incumbent Brett Miller 14,291 votes to 14,263 votes in the Lancaster County district.
