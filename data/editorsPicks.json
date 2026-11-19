@@ -3,16 +3,16 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-11-18-SPLPPL1106.md"
+    "content/news/2026-11-17-NLTEACHER1126.md"
   ],
   "subfeatures": [
-    "content/news/2026-10-21-SPLFESUPPLY1026.md",
-    "content/news/2026-09-21-SPLCAPCOSTS0926.md",
-    "content/news/2026-05-04-SPLUTILITYPROFITS0526.md"
+    "content/news/2026-08-17-SPLCHARTERBUS0826.md",
+    "content/news/2026-07-23-SPLEDLEAD0726.md",
+    "content/news/2026-08-05-SPLEDADEQUACY0826.md"
   ],
   "topSlots": [
+    "content/news/2026-11-18-SPLPPL1106.md",
     "content/news/2026-11-16-SPLPSP1126.md",
-    "content/news/2026-11-17-NLTEACHER1126.md",
     "content/statecollege/2026-11-16-SPLRAFFLES1126.md"
   ]
 }
