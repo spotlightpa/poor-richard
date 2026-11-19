@@ -325,6 +325,12 @@
               style: this.styleURL,
               center: this.center,
               zoom: this.zoom,
+              ...(this.bounds
+                ? {
+                    bounds: this.bounds,
+                    fitBoundsOptions: { padding: this.fitPadding() },
+                  }
+                : {}),
               bearing: this.bearing,
               pitch: this.pitch,
               minZoom: this.minZoom,
@@ -356,7 +362,10 @@
 
           this.map.on("load", () => {
             if (this.bounds) {
-              this.map.fitBounds(this.bounds, { padding: this.fitPadding() });
+              this.map.fitBounds(this.bounds, {
+                padding: this.fitPadding(),
+                duration: 0,
+              });
             }
             this.addMarkers();
             window.dispatchEvent(

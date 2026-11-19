@@ -196,6 +196,15 @@ export function searchUI() {
       }
       if (cityKey(store.currentCity) !== s.city) store.currentCity = "";
       store.currentPriority = "";
+      const chosen = { id: s.id, handled: false };
+      window.dispatchEvent(
+        new CustomEvent("inspections-facility-chosen", { detail: chosen }),
+      );
+      if (chosen.handled) {
+        if (window.innerWidth < 850) this.$refs.input?.blur();
+        this.doSearch(s.name);
+        return;
+      }
       window.dispatchEvent(new CustomEvent("inspections-show-list"));
       if (window.innerWidth < 850) this.$refs.input?.blur();
       let opened = false;
@@ -356,6 +365,7 @@ let inspectionsUIHashInitialized = false;
 export default function inspectionsUI() {
   return {
     activeCard: null,
+    returnTop: null,
     lastReadMoreButton: null,
     initializedDelegates: false,
 
@@ -624,6 +634,10 @@ export default function inspectionsUI() {
     },
 
     openDetails(card) {
+      this.returnTop =
+        window.innerWidth < 850 && card.closest(".inspections-mount")
+          ? card.getBoundingClientRect().top
+          : null;
       document
         .querySelectorAll(".pagination-controls")
         .forEach((el) => el.classList.add("hidden"));
@@ -758,7 +772,14 @@ export default function inspectionsUI() {
               (el) => el.offsetParent !== null,
             )
           : null;
-      if (mobileResults || container) {
+      const returnTop = this.returnTop;
+      this.returnTop = null;
+      if (mobileResults && returnTop != null && mount) {
+        window.scrollTo({
+          top: window.scrollY + card.getBoundingClientRect().top - returnTop,
+          behavior: "instant",
+        });
+      } else if (mobileResults || container) {
         this.scrollToListTop(mobileResults || container);
       }
 

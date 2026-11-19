@@ -1,4 +1,4 @@
-export const AREA_LIMIT = 300;
+export const AREA_LIMIT = 1500;
 
 export const LEVEL_COLORS = {
   high: "#D70000",
@@ -54,7 +54,6 @@ function clusterSVG(props) {
 }
 
 const CELL = 64;
-const MARGIN = 40;
 const MERGE_BELOW_ZOOM = 15;
 
 function mercX(lon) {
@@ -120,37 +119,43 @@ export function createAreaMap(map, { onPick }) {
     );
   };
 
+  const project = () => {
+    const zoom = map.getZoom();
+    const world = 512 * Math.pow(2, zoom);
+    const origin = map.project([0, 0]);
+    return {
+      zoom,
+      world,
+      ox: origin.x - 0.5 * world,
+      oy: origin.y - 0.5 * world,
+    };
+  };
+
   const layout = () => {
     const canvas = map.getCanvas();
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
     if (!width || !height) return null;
-    const zoom = map.getZoom();
-    const world = 512 * Math.pow(2, zoom);
-    const origin = map.project([0, 0]);
-    const ox = origin.x - 0.5 * world;
-    const oy = origin.y - 0.5 * world;
+    const { zoom, world, ox, oy } = project();
     const merge = zoom < MERGE_BELOW_ZOOM;
     const cells = new Map();
     const items = [];
     for (const p of points) {
-      const x = mercX(p.lon) * world + ox;
-      const y = mercY(p.lat) * world + oy;
-      if (
-        x < -MARGIN ||
-        y < -MARGIN ||
-        x > width + MARGIN ||
-        y > height + MARGIN
-      )
+      const wx = p.mx * world;
+      const wy = p.my * world;
+      const x = wx + ox;
+      const y = wy + oy;
+      if (x < -CELL || y < -CELL || x > width + CELL || y > height + CELL)
         continue;
-      if (!merge) {
-        items.push({ point: p, x, y, r: 13, count: 1 });
+      if (!merge || p.id === selected) {
+        items.push({ key: `p${p.id}`, point: p, x, y, r: 13, count: 1 });
         continue;
       }
-      const key = `${Math.floor(x / CELL)},${Math.floor(y / CELL)}`;
+      const key = Math.floor(wx / CELL) * 1e6 + Math.floor(wy / CELL);
       let c = cells.get(key);
       if (!c) {
         c = {
+          key,
           count: 0,
           sx: 0,
           sy: 0,
@@ -172,27 +177,50 @@ export function createAreaMap(map, { onPick }) {
       c.south = Math.min(c.south, p.lat);
       c.north = Math.max(c.north, p.lat);
     }
-    if (!merge) return items;
     for (const c of cells.values()) {
       c.x = c.sx / c.count;
       c.y = c.sy / c.count;
       c.r = c.count === 1 ? 13 : clusterSize(c.count) / 2;
+      c.key = c.count === 1 ? `p${c.point.id}` : `c${zoom.toFixed(3)}:${c.key}`;
       items.push(c);
     }
-    items.sort((a, b) => b.count - a.count);
+    if (!merge) return items;
+    items.sort(
+      (a, b) =>
+        (b.point?.id === selected) - (a.point?.id === selected) ||
+        b.count - a.count ||
+        (a.key < b.key ? -1 : 1),
+    );
     let placed = items;
     for (let pass = 0; pass < 6; pass++) {
       const next = [];
       let changed = false;
       for (const item of placed) {
-        const hit = next.find(
-          (p) => Math.hypot(p.x - item.x, p.y - item.y) < p.r + item.r + 2,
-        );
+        const hit =
+          item.point?.id === selected && item.count === 1
+            ? null
+            : next.find(
+                (p) =>
+                  !(p.point?.id === selected && p.count === 1) &&
+                  Math.hypot(p.x - item.x, p.y - item.y) < p.r + item.r + 2,
+              );
         if (!hit) {
           next.push(item);
           continue;
         }
         changed = true;
+        if (hit.count === 1) {
+          hit.levels = { high: 0, moderate: 0, low: 0, none: 0 };
+          hit.levels[hit.point.w] = 1;
+          hit.west = hit.east = hit.point.lon;
+          hit.south = hit.north = hit.point.lat;
+        }
+        if (item.count === 1) {
+          item.levels = { high: 0, moderate: 0, low: 0, none: 0 };
+          item.levels[item.point.w] = 1;
+          item.west = item.east = item.point.lon;
+          item.south = item.north = item.point.lat;
+        }
         hit.count += item.count;
         LEVELS.forEach((k) => (hit.levels[k] += item.levels[k]));
         hit.west = Math.min(hit.west, item.west);
@@ -200,6 +228,7 @@ export function createAreaMap(map, { onPick }) {
         hit.south = Math.min(hit.south, item.south);
         hit.north = Math.max(hit.north, item.north);
         hit.r = clusterSize(hit.count) / 2;
+        hit.key = `${hit.key.startsWith("c") ? hit.key : `c${zoom.toFixed(3)}:${hit.key}`}+${item.key}`;
       }
       placed = next;
       if (!changed) break;
@@ -213,9 +242,7 @@ export function createAreaMap(map, { onPick }) {
     const seen = new Set();
     for (const item of items) {
       const single = item.count === 1;
-      const key = single
-        ? `p${item.point.id}`
-        : `c${Math.round(item.x)},${Math.round(item.y)},${item.count}`;
+      const key = single ? `p${item.point.id}` : `${item.key}#${item.count}`;
       seen.add(key);
       if (markers.has(key)) continue;
       const marker = single
@@ -229,6 +256,9 @@ export function createAreaMap(map, { onPick }) {
         markers.delete(key);
       }
     }
+    const active = markers.get(`p${selected}`);
+    if (active)
+      active.getElement().parentElement?.appendChild(active.getElement());
   };
 
   map.on("moveend", render);
@@ -237,24 +267,42 @@ export function createAreaMap(map, { onPick }) {
   return {
     setData(next) {
       points = next;
+      for (const p of points) {
+        p.mx = mercX(p.lon);
+        p.my = mercY(p.lat);
+      }
       for (const marker of markers.values()) marker.remove();
       markers.clear();
       render();
     },
 
     select(id) {
+      const next = id || "";
+      if (next === selected) return;
       const prev = markers.get(`p${selected}`);
-      selected = id || "";
+      selected = next;
       if (prev) {
         const el = prev.getElement();
         el.innerHTML = pinSVG(el.dataset.level, false);
       }
-      const next = markers.get(`p${selected}`);
-      if (next) {
-        const el = next.getElement();
-        el.innerHTML = pinSVG(el.dataset.level, true);
-        el.parentElement?.appendChild(el);
-      }
+      render();
+      const pin = markers.get(`p${selected}`);
+      if (pin)
+        pin.getElement().innerHTML = pinSVG(
+          pin.getElement().dataset.level,
+          true,
+        );
+    },
+
+    pointOnScreen(id) {
+      const p = points.find((q) => q.id === id);
+      if (!p) return null;
+      const { world, ox, oy } = project();
+      const rect = map.getCanvas().getBoundingClientRect();
+      return {
+        x: rect.left + p.mx * world + ox,
+        y: rect.top + p.my * world + oy,
+      };
     },
   };
 }

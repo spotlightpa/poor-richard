@@ -1,6 +1,7 @@
 import Alpine from "alpinejs/src/index.js";
 import { scrollToStickyTop, stickyOffset } from "../utils/sticky-scroll.js";
 import {
+  generateInspectionCardId,
   levenshtein,
   normalizeString,
   parseInspectionDate,
@@ -113,8 +114,6 @@ function worstLevel(c) {
   return "none";
 }
 
-const SQUARE_CAP = 36;
-
 function navHeight() {
   const nav = document.querySelector("header.sticky");
   return nav ? nav.getBoundingClientRect().height : 57;
@@ -125,6 +124,10 @@ export default function inspectionsMobile() {
     view: "list",
     showBar: false,
     sheetOpen: false,
+    sortOpen: false,
+    locating: false,
+    _sortOpener: null,
+    _sortTimer: 0,
     _padTop: "",
     mapDetail: false,
     _detailId: "",
@@ -136,6 +139,9 @@ export default function inspectionsMobile() {
     _points: [],
     _order: null,
     _activeId: "",
+    _quietMove: false,
+    _pendingDetail: "",
+    _mapPinned: false,
     _pendingFit: false,
     zoomHint: false,
     _hintTimer: 0,
@@ -164,12 +170,6 @@ export default function inspectionsMobile() {
 
     get sortLabel() {
       return SORT_LABELS[this.store.currentSort] || SORT_LABELS["date-desc"];
-    },
-
-    get summary() {
-      return this.loaded
-        ? `${this.countLabel} · ${this.sortLabel}`
-        : this.countLabel;
     },
 
     get query() {
@@ -232,19 +232,38 @@ export default function inspectionsMobile() {
       new ResizeObserver(schedule).observe(this.$el);
 
       this.$refs.sheet.inert = true;
-      this.initSheetDrag();
+      this.initSheetDrag(this.$refs.sortSheet, () => this.closeSort());
       this.$watch("store.searchQuery", () => this.closeSheet());
       this.$watch("store.currentCity", () => this.closeSheet());
       window.addEventListener("inspections-back-to-results", () =>
         this.closeMapDetail(),
       );
+      window.addEventListener("resize", () => {
+        if (!this._mapPinned) return;
+        requestAnimationFrame(() => scrollToStickyTop(this.$refs.map));
+      });
+      window.addEventListener("inspections-facility-chosen", (e) => {
+        if (this.view !== "map" || window.innerWidth >= 850) return;
+        e.detail.handled = true;
+        this._pendingDetail = e.detail.id;
+        this.closeSheet();
+      });
+      window.addEventListener("inspections-locating", (e) => {
+        if (e.detail?.scope === "mobile-sheet")
+          this.locating = !!e.detail.loading;
+      });
       window.addEventListener("map:loaded", (e) => {
         if (e.detail?.id === this.mapId) this.setupArea(e.detail.map);
       });
       this.$watch("store.sortedFilteredData", () => this.refreshArea(true));
       window
         .matchMedia("(min-width: 850px)")
-        .addEventListener("change", (e) => e.matches && this.closeMapDetail());
+        .addEventListener("change", (e) => {
+          if (!e.matches) return;
+          this.closeMapDetail();
+          this.closeSort(false);
+          this.closeSheet(false);
+        });
       schedule();
     },
 
@@ -260,12 +279,14 @@ export default function inspectionsMobile() {
       const barH = this.$refs.bar.offsetHeight;
       const introBottom = this.$refs.introEnd.getBoundingClientRect().top;
       const end = this.$refs.end.getBoundingClientRect().top;
-      this.showBar = introBottom <= nav + barH && end > nav + barH;
+      this.showBar = introBottom <= nav + barH + 1 && end > nav + barH;
+      this._mapPinned =
+        this.view === "map" &&
+        Math.abs(this.$refs.map.getBoundingClientRect().top - (nav + barH)) < 3;
       this.syncOverlayInsets();
     },
 
-    initSheetDrag() {
-      const sheet = this.$refs.sheet;
+    initSheetDrag(sheet, close) {
       const panel = sheet.querySelector("[data-sheet-panel]");
       const backdrop = sheet.querySelector("[data-sheet-backdrop]");
       const head = sheet.querySelector("[data-sheet-head]");
@@ -296,7 +317,7 @@ export default function inspectionsMobile() {
         void panel.offsetHeight;
         panel.style.transform = "";
         backdrop.style.opacity = "";
-        if (dy > 110 || velocity > 0.5) this.closeSheet();
+        if (dy > 110 || velocity > 0.5) close();
       };
 
       head.addEventListener("pointerdown", (e) => {
@@ -358,10 +379,18 @@ export default function inspectionsMobile() {
       }
     },
 
-    openSheet() {
+    openSheet(field) {
       if (this.sheetOpen) return;
-      this._opener = document.activeElement;
+      const anchor =
+        field || (this.showBar ? this.$refs.barField : this.$refs.headerField);
+      const r = anchor.getBoundingClientRect();
       const sheet = this.$refs.sheet;
+      sheet.style.setProperty("--search-top", `${Math.max(0, r.top)}px`);
+      sheet.style.setProperty("--search-left", `${r.left}px`);
+      sheet.style.setProperty("--search-right", `${r.left}px`);
+      const replacing = this.sortOpen;
+      if (replacing) this.closeSort(false);
+      this._opener = replacing ? this._sortOpener : document.activeElement;
       sheet.inert = false;
       const input = sheet.querySelector("input");
       input?.focus({ preventScroll: true });
@@ -370,18 +399,82 @@ export default function inspectionsMobile() {
       document.documentElement.classList.add("overflow-hidden");
     },
 
-    closeSheet() {
+    closeSheet(refocus = true) {
       if (!this.sheetOpen) return;
       const sheet = this.$refs.sheet;
       sheet.querySelector("input")?.blur();
       this.sheetOpen = false;
       sheet.inert = true;
-      this.$nextTick(() => this._opener?.focus({ preventScroll: true }));
+      if (refocus) {
+        this.$nextTick(() => this._opener?.focus({ preventScroll: true }));
+      }
       document.documentElement.classList.remove("overflow-hidden");
       window.dispatchEvent(
         new CustomEvent("inspections-apply-search", {
           detail: { value: this.store.searchQuery || "" },
         }),
+      );
+    },
+
+    clearHeaderSearch() {
+      this.store.searchQuery = "";
+      window.dispatchEvent(new CustomEvent("inspections-clear-search"));
+    },
+
+    locateFromHeader() {
+      window.dispatchEvent(
+        new CustomEvent("inspections-locate", {
+          detail: { scope: "mobile-sheet" },
+        }),
+      );
+    },
+
+    openSort() {
+      if (this.sortOpen) return;
+      const replacing = this.sheetOpen;
+      if (replacing) this.closeSheet(false);
+      this._sortOpener = replacing ? this._opener : document.activeElement;
+      this.$refs.sortSheet.inert = false;
+      this.sortOpen = true;
+      document.documentElement.classList.add("overflow-hidden");
+      this.$nextTick(() =>
+        this.$refs.sortSheet
+          .querySelector('[role="radio"][aria-checked="true"]')
+          ?.focus({ preventScroll: true }),
+      );
+    },
+
+    closeSort(refocus = true) {
+      clearTimeout(this._sortTimer);
+      if (!this.sortOpen) return;
+      this.sortOpen = false;
+      this.$refs.sortSheet.inert = true;
+      if (!this.sheetOpen) {
+        document.documentElement.classList.remove("overflow-hidden");
+      }
+      if (refocus) {
+        this.$nextTick(() => this._sortOpener?.focus({ preventScroll: true }));
+      }
+    },
+
+    chooseSort(value) {
+      this.store.currentSort = value;
+      clearTimeout(this._sortTimer);
+      this._sortTimer = setTimeout(
+        () => this.closeSort(),
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180,
+      );
+    },
+
+    moveSort(step) {
+      const values = this.sortOptions.map((o) => o.value);
+      const i = values.indexOf(this.store.currentSort);
+      const next = values[(i + step + values.length) % values.length];
+      this.store.currentSort = next;
+      this.$nextTick(() =>
+        this.$refs.sortSheet
+          .querySelector(`[data-sort="${next}"]`)
+          ?.focus({ preventScroll: true }),
       );
     },
 
@@ -393,9 +486,10 @@ export default function inspectionsMobile() {
       ) {
         window.dispatchEvent(new CustomEvent("inspections-back-to-results"));
       }
-      const pinned = this.showBar || view === "map";
+      const wasPinned = this.showBar;
+      const pinned = wasPinned || view === "map";
       const from = view === "map" ? this.$refs.list : this.$refs.map;
-      const top = pinned
+      const top = wasPinned
         ? Math.max(
             0,
             from.getBoundingClientRect().top + window.scrollY - stickyOffset(),
@@ -408,7 +502,11 @@ export default function inspectionsMobile() {
       if (top !== null) window.scrollTo({ top, behavior: "instant" });
       this.$nextTick(() => {
         if (pinned) {
-          scrollToStickyTop(view === "map" ? this.$refs.map : this.$refs.list);
+          scrollToStickyTop(view === "map" ? this.$refs.map : this.$refs.list, {
+            smooth:
+              !wasPinned &&
+              !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+          });
         }
         this.update();
         window.dispatchEvent(
@@ -443,10 +541,10 @@ export default function inspectionsMobile() {
     },
 
     get areaMessage() {
-      if (this.areaMode === "zoom") return "Zoom in to see facilities";
-      if (this.areaMode === "empty") return "No facilities in this area";
+      if (this.areaMode === "zoom") return "Zoom in";
+      if (this.areaMode === "empty") return "No facilities";
       if (this.areaMode === "results")
-        return `${facilitiesLabel(this.areaIds.length)} in this area`;
+        return facilitiesLabel(this.areaIds.length);
       return "";
     },
 
@@ -487,6 +585,31 @@ export default function inspectionsMobile() {
       this._area.select("");
       this.areaIds = [];
       this.areaCards = [];
+      const pending = this._pendingDetail;
+      if (pending && this.view === "map") {
+        this._pendingDetail = "";
+        const p = points.find(
+          (q) => q.id === pending || generateInspectionCardId(q.id) === pending,
+        );
+        if (p) {
+          this._activeId = p.id;
+          this._map.jumpTo({
+            center: [p.lon, p.lat],
+            zoom: Math.max(this._map.getZoom(), 15),
+          });
+        }
+        let opened = false;
+        const open = () => {
+          if (opened || this.view !== "map") return;
+          opened = true;
+          if (p) this.areaReadMore(p.id);
+        };
+        window.addEventListener("inspections-page-rendered", open, {
+          once: true,
+        });
+        setTimeout(open, 400);
+        return;
+      }
       const narrowed = !!(this.query || this.store.currentCity);
       if (refit && narrowed && points.length) {
         this._pendingFit = true;
@@ -500,7 +623,7 @@ export default function inspectionsMobile() {
       this._pendingFit = false;
       if (!this._points.length) return this.updateAreaMode();
       const bounds = new window.maplibregl.LngLatBounds();
-      this._points.forEach((p) => bounds.extend([p.lon, p.lat]));
+      Alpine.raw(this._points).forEach((p) => bounds.extend([p.lon, p.lat]));
       this._map.fitBounds(bounds, {
         padding: { top: 72, bottom: 72, left: 40, right: 40 },
         maxZoom: 14,
@@ -509,23 +632,64 @@ export default function inspectionsMobile() {
     },
 
     onAreaMove() {
+      if (this._quietMove) {
+        this._quietMove = false;
+        return;
+      }
       this.updateAreaMode();
     },
 
-    countInView() {
-      if (!this._map) return 0;
+    revealActive() {
+      const pt = this._area?.pointOnScreen(this._activeId);
+      const strip = this.$refs.strip;
+      if (!pt || !strip) return;
+      const pane = this.$refs.map.getBoundingClientRect();
+      const key = this.$refs.mapKey?.getBoundingClientRect();
+      const card = strip
+        .querySelector("[data-area-id]")
+        ?.getBoundingClientRect();
+      const top = (key?.bottom || pane.top) + 24;
+      const bottom = (card?.top || pane.bottom) - 24;
+      const left = pane.left + 24;
+      const right = pane.right - 24;
+      if (bottom <= top) return;
+      const dx = pt.x < left ? pt.x - left : pt.x > right ? pt.x - right : 0;
+      const dy = pt.y < top ? pt.y - top : pt.y > bottom ? pt.y - bottom : 0;
+      if (!dx && !dy) return;
+      this._quietMove = true;
+      this._map.panBy([dx, dy], {
+        duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? 0
+          : 300,
+      });
+    },
+
+    idsInView(cap = Infinity) {
+      if (!this._map) return [];
       const b = this._map.getBounds();
-      let n = 0;
-      for (const p of this._points) {
-        if (b.contains([p.lon, p.lat]) && ++n > AREA_LIMIT) break;
+      const west = b.getWest();
+      const east = b.getEast();
+      const south = b.getSouth();
+      const north = b.getNorth();
+      const ids = [];
+      for (const p of Alpine.raw(this._points)) {
+        if (p.lon < west || p.lon > east || p.lat < south || p.lat > north)
+          continue;
+        ids.push(p.id);
+        if (ids.length >= cap) break;
       }
-      return n;
+      return ids;
+    },
+
+    countInView() {
+      return this.idsInView(AREA_LIMIT + 1).length;
     },
 
     updateAreaMode() {
       if (!this._map) return;
-      const n = this.countInView();
-      if (n && n <= AREA_LIMIT) return this.searchArea();
+      const inView = this.idsInView(AREA_LIMIT + 1);
+      const n = inView.length;
+      if (n && n <= AREA_LIMIT) return this.searchArea(inView);
       this.areaMode = n ? "zoom" : "empty";
       this.areaIds = [];
       this.areaCards = [];
@@ -533,13 +697,11 @@ export default function inspectionsMobile() {
       this._area.select("");
     },
 
-    searchArea() {
+    searchArea(inView) {
       if (!this._map) return;
-      const b = this._map.getBounds();
-      const ids = this._points
-        .filter((p) => b.contains([p.lon, p.lat]))
-        .map((p) => p.id)
-        .sort((a, c) => this._order.get(a) - this._order.get(c))
+      const order = Alpine.raw(this._order);
+      const ids = (inView || this.idsInView())
+        .sort((a, c) => order.get(a) - order.get(c))
         .slice(0, AREA_LIMIT);
       this.areaMode = ids.length ? "results" : "empty";
       if (
@@ -580,21 +742,18 @@ export default function inspectionsMobile() {
     areaCard(id) {
       const row = this.facilityGroup(id)[0];
       const c = countRisks(row.risk_level);
-      const squares = [
-        ...Array(c.high).fill("high"),
-        ...Array(c.moderate).fill("moderate"),
-        ...Array(c.low).fill("low"),
-        ...Array(c.other).fill("other"),
-      ];
-      const total = squares.length;
-      const parts = [
-        [c.high, "high priority"],
-        [c.moderate, "moderate priority"],
-        [c.low, "low priority"],
-        [c.other, "other"],
+      const lines = [
+        ["high", "high priority violation"],
+        ["moderate", "moderate priority violation"],
+        ["low", "low priority violation"],
+        ["other", "other violation"],
       ]
-        .filter(([n]) => n)
-        .map(([n, label]) => `${n} ${label}`);
+        .filter(([level]) => c[level])
+        .map(([level, label]) => ({
+          level,
+          text: `${c[level]} ${label}${c[level] === 1 ? "" : "s"}`,
+          short: `${c[level]} ${level}`,
+        }));
       return {
         id,
         name: row.facility || "Facility",
@@ -604,11 +763,7 @@ export default function inspectionsMobile() {
         ]
           .filter(Boolean)
           .join(" · "),
-        total,
-        totalLabel: `${total} violation${total === 1 ? "" : "s"}`,
-        srLabel: `${total} violation${total === 1 ? "" : "s"}: ${parts.join(", ")}`,
-        squares: squares.slice(0, SQUARE_CAP),
-        more: Math.max(0, total - SQUARE_CAP),
+        lines,
       };
     },
 
@@ -638,9 +793,10 @@ export default function inspectionsMobile() {
           best = el;
         }
       }
-      if (best) {
+      if (best && best.dataset.areaId !== this._activeId) {
         this._activeId = best.dataset.areaId;
         this._area.select(this._activeId);
+        this.revealActive();
       }
       if (strip.scrollLeft + strip.clientWidth > strip.scrollWidth - 600) {
         this.extendAreaCards();

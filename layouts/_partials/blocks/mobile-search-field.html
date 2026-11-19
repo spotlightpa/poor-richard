@@ -1,0 +1,68 @@
+<div
+  x-ref="{{ .ref }}"
+  data-search-field
+  class="flex h-11 items-center gap-2 rounded-xl bg-[#3a3a3c] pr-1.5 font-sans focus-within:ring-2 focus-within:ring-white/60"
+>
+  <button
+    type="button"
+    @click="openSheet($el.closest('[data-search-field]'))"
+    aria-haspopup="dialog"
+    aria-label="Search facilities"
+    class="flex h-full min-w-0 flex-1 items-center gap-2 pl-4 text-left text-base text-[#aeaeb2] focus:outline-none"
+  >
+    <svg
+      class="h-[18px] w-[18px] flex-shrink-0 fill-current"
+      aria-hidden="true"
+    >
+      <use href="#search-svg" />
+    </svg>
+    <span
+      class="min-w-0 truncate"
+      :class="(query || $store.inspections.currentCity) && 'text-white'"
+      x-text="query || ($store.inspections.currentCity ? 'Search ' + $store.inspections.currentCity : '{{ .placeholder }}')"
+      >{{ .placeholder }}</span
+    >
+  </button>
+  <button
+    type="button"
+    x-show="query"
+    x-cloak
+    @click="clearHeaderSearch()"
+    class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full text-[#aeaeb2]"
+    aria-label="Clear search"
+  >
+    <span
+      class="flex h-5 w-5 items-center justify-center rounded-full bg-[#636366] text-[#1c1c1e]"
+    >
+      <svg class="h-2.5 w-2.5 fill-current" aria-hidden="true">
+        <use href="#times-svg" />
+      </svg>
+    </span>
+  </button>
+  <span
+    x-show="!query"
+    class="h-[22px] w-px flex-shrink-0 bg-[#545456]"
+    aria-hidden="true"
+  ></span>
+  <button
+    type="button"
+    x-show="!query"
+    @click="locateFromHeader()"
+    :disabled="locating"
+    :aria-busy="locating ? 'true' : 'false'"
+    aria-label="Facilities near me"
+    class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-[#d1d1d6] hover:text-white disabled:cursor-wait"
+  >
+    <svg x-show="!locating" class="h-4 w-4 fill-current" aria-hidden="true">
+      <use href="#crosshairs-svg" />
+    </svg>
+    <svg
+      x-show="locating"
+      x-cloak
+      class="h-4 w-4 animate-spin fill-current"
+      aria-hidden="true"
+    >
+      <use href="#circle-notch-svg" />
+    </svg>
+  </button>
+</div>
