@@ -3,17 +3,17 @@
   "edImpact": [],
   "edInvestigations": [],
   "featuredStories": [
-    "content/news/2026-11-19-VBLANCRECOUNT1126.md"
+    "content/news/2026-11-19-SPLDEMLEAD1126.md"
   ],
   "subfeatures": [
-    "content/news/2024-06-13-SPLRECOUNT101.md",
-    "content/news/2022-12-29-SPLRECORIG.md",
-    "content/news/2023-01-13-SPLRECRES.md",
-    "content/news/2023-02-28-SPLCONOP.md"
+    "content/news/2026-11-03-SPLHOUSERESULTS1126.md",
+    "content/news/2026-11-13-SPLTRIFECTAQA.md",
+    "content/news/2026-11-03-SPLGUVRESULTS1126.md",
+    "content/news/2026-11-13-VBTRIFECTELEX1126.md"
   ],
   "topSlots": [
+    "content/news/2026-11-19-VBLANCRECOUNT1126.md",
     "content/news/2026-11-17-NLTEACHER1126.md",
-    "content/news/2026-11-18-SPLPPL1106.md",
-    "content/news/2026-11-16-SPLPSP1126.md"
+    "content/news/2026-11-18-SPLPPL1106.md"
   ]
 }
