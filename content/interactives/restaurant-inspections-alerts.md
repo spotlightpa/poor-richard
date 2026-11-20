@@ -13,9 +13,8 @@ deck = "Get notified when a new health inspection report is posted for a food fa
 
 blurb = "Sign up for free alerts from Spotlight PA's Pennsylvania Restaurant Safety Tracker."
 description = "Sign up for free alerts from Spotlight PA's Pennsylvania Restaurant Safety Tracker."
-image = "2026/04/01mx-z5t1-v225-x54g.jpeg"
-image-credit = "Delpixart / iStock"
-image-description = "Pennsylvania Restaurant Safety Tracker image showing pots hanging in a kitchen"
+image = "2026/11/01ng-19pw-vdbc-mp3b.png"
+image-credit = "Spotlight PA"
 og-title = "Restaurant Inspection Alerts"
 title-tag = "Restaurant Inspection Alerts"
 twitter-title = "Restaurant Inspection Alerts"
