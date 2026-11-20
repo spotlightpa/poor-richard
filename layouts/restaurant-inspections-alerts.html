@@ -31,18 +31,18 @@
       >
         <div class="lg:flex lg:flex-col">
           <div class="mt-4">
-            <div class="flex items-center gap-3 sm:gap-3.5">
-              <div
-                class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-yellow-4 sm:h-[42px] sm:w-[42px]"
-              >
-                <svg class="h-5 w-5 fill-current text-g-9" aria-hidden="true">
-                  <use href="#bell-svg" />
-                </svg>
-              </div>
+            <div>
               <h1
                 class="font-serif text-[26px] leading-tight font-bold text-g-9 sm:text-[34px]"
               >
-                {{ .Title }}
+                <span
+                  class="mr-3 inline-flex h-10 w-10 -translate-y-[3px] items-center justify-center rounded-full bg-yellow-4 align-middle sm:mr-3.5 sm:h-[42px] sm:w-[42px]"
+                  aria-hidden="true"
+                >
+                  <svg class="h-5 w-5 fill-current text-g-9">
+                    <use href="#bell-svg" />
+                  </svg> </span
+                >{{ replace (.Title | htmlEscape) "Inspection " `<span class="max-[374px]:sr-only">Inspection </span>` | safeHTML }}
               </h1>
             </div>
             {{ with .Param "deck" }}
@@ -238,9 +238,9 @@
             class="mt-8 space-y-4 font-sans lg:mt-auto lg:space-y-6 lg:pt-6 lg:pl-[18px]"
           >
             {{ range slice
-              (slice "Free, and easy to stop" "Leave whenever you like, right from any alert.")
-              (slice "Keep tabs on your regulars" "The lunch spot by work, the pizza place your kids love, your daily coffee stop.")
-              (slice "Built for readers" "A public service from Spotlight PA, a nonprofit newsroom working for Pennsylvanians.")
+              (slice "Real-time alerts" "Get the info you need for your favorite spots as soon as it’s available.")
+              (slice "Easy to use" "Follow a single facility or an entire city. Manage your preferences online. Unsubscribe anytime.")
+              (slice "Free for all Pennsylvanians" "A public service from Spotlight PA, an independent, nonprofit, and nonpartisan newsroom.")
             }}
               <li class="flex items-start gap-3">
                 <span
