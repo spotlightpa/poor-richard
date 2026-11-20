@@ -1,0 +1,6 @@
+{{ with .Get "label" | htmlUnescape }}
+  <h3>{{ . }}</h3>
+{{ end }}
+{{ with .Inner }}
+  {{ . | $.Page.RenderString (dict "display" "block") }}
+{{ end }}

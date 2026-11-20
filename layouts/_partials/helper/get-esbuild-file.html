@@ -1,0 +1,14 @@
+{{ $filename := . }}
+{{ $minify := not hugo.IsServer }}
+{{ $jsOpts := dict
+  "minify" $minify
+  "targetPath" (printf "/@src/%s" $filename)
+  "target" "es2019"
+}}
+{{ $url := "" }}
+{{ with resources.Get (printf "js/esbuild/%s" $filename) }}
+  {{ $url = (. | js.Build $jsOpts | fingerprint).RelPermalink }}
+{{ else }}
+  {{ warnf "get-esbuild-file: no file at assets/js/esbuild/%s" $filename }}
+{{ end }}
+{{ return $url }}
