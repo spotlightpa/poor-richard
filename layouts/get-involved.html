@@ -1,0 +1,587 @@
+{{ define "main" }}
+  {{ $newsSection := site.GetPage "/news/_index.md" }}
+  {{ $latestNews := first 6 (sort $newsSection.RegularPages ".PublishDate" "desc") }}
+  {{ $idNlEmail := partial "helper/new-id" . }}
+  {{ $idName := partial "helper/new-id" . }}
+  {{ $idEmail := partial "helper/new-id" . }}
+  {{ $idOrg := partial "helper/new-id" . }}
+  {{ $idTown := partial "helper/new-id" . }}
+  {{ $idInterest := partial "helper/new-id" . }}
+  {{ $idMessage := partial "helper/new-id" . }}
+
+  {{ $jumpClass := "flex min-h-11 items-center gap-2 rounded-[5pt] border-2 border-black px-4 py-2.5 text-base font-bold text-black no-underline hover:bg-black hover:text-beige" }}
+  {{ $rowClass := "grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] items-center gap-x-10 gap-y-4 py-7" }}
+  {{ $rowHedClass := "font-serif text-2xl leading-[1.18] font-bold tracking-[-0.01em] text-balance" }}
+  {{ $rowDekClass := "text-[17px] leading-normal text-g-9" }}
+  {{ $outlineBtnClass := "flex items-center gap-2.5 rounded-[5pt] border-2 border-black px-5 py-3 text-base font-bold text-black no-underline hover:bg-g-3" }}
+  {{ $yellowBtnClass := "cursor-pointer rounded-[5px] border-2 border-yellow-6 bg-yellow px-5.5 py-3 text-base font-bold text-black no-underline hover:bg-yellow-6" }}
+  {{ $sectionHedClass := "font-serif text-[clamp(28px,5vw,36px)] leading-[1.18] font-extrabold tracking-[-0.01em] text-balance" }}
+  {{ $inputClass := "w-full min-w-0 rounded border border-g-7 bg-white px-3 py-2.5 text-base font-normal outline-hidden focus:ring-2 focus:ring-yellow" }}
+  {{ $labelClass := "flex flex-col gap-1.5 text-sm font-semibold" }}
+  {{ $linkClass := "text-black underline underline-offset-3 hover:text-red-9" }}
+
+
+  <div
+    class="bg-white font-sans leading-[1.55] text-black"
+    data-ga-category="get-involved"
+  >
+    <div
+      class="mx-auto flex max-w-[1152px] flex-col gap-[clamp(40px,6vw,64px)] px-[clamp(20px,5vw,64px)] pt-[clamp(32px,6vw,56px)] pb-[clamp(56px,8vw,96px)]"
+    >
+      <header class="flex flex-col gap-7">
+        <h1
+          class="font-serif text-[clamp(38px,8vw,60px)] leading-[1.05] font-extrabold tracking-[-0.02em] text-balance"
+        >
+          {{ .Param "hed" | default .Title }}
+        </h1>
+        {{ with .Param "dek" }}
+          <p
+            class="max-w-[760px] font-serif text-[clamp(17px,2.4vw,20px)] leading-[1.6] text-pretty text-g-9"
+          >
+            {{ . }}
+          </p>
+        {{ end }}
+        <nav aria-label="Jump to a section" class="flex flex-col gap-3">
+          <div
+            class="text-[13px] font-bold tracking-[0.12em] text-g-7 uppercase"
+          >
+            Jump to
+          </div>
+          <div class="flex flex-wrap gap-2.5">
+            <a href="#read-follow" class="{{ $jumpClass }}"
+              >Read &amp; Follow <span aria-hidden="true">↓</span></a
+            >
+            <a href="#support" class="{{ $jumpClass }}"
+              >Support our work <span aria-hidden="true">↓</span></a
+            >
+            <a href="#partner" class="{{ $jumpClass }}"
+              >Partner with us <span aria-hidden="true">↓</span></a
+            >
+            <a href="#share" class="{{ $jumpClass }}"
+              >Share <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <section
+        id="read-follow"
+        class="flex flex-col"
+        data-ga-category="read-follow"
+      >
+        <h2 class="{{ $sectionHedClass }} mb-3">Read &amp; Follow</h2>
+
+        <div
+          class="flex flex-col gap-5 border-t-4 border-black bg-white py-[clamp(20px,4vw,28px)] sm:px-[clamp(20px,4vw,28px)]"
+        >
+          <div
+            class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2"
+          >
+            <h3
+              class="font-serif text-2xl leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+            >
+              Read our latest coverage
+            </h3>
+            <a
+              href="{{ $newsSection.RelPermalink }}"
+              class="{{ $linkClass }} text-[15px] font-bold"
+              >See all news →</a
+            >
+          </div>
+          <div
+            class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-x-6 gap-y-7 sm:gap-y-5"
+          >
+            {{ range $latestNews }}
+              <a
+                href="{{ .RelPermalink }}"
+                class="flex min-w-0 flex-col gap-3 text-black no-underline hover:underline sm:flex-row sm:items-start sm:gap-3.5"
+                data-ga-category="latest-news"
+              >
+                <div class="w-full sm:w-28 sm:flex-none">
+                  {{ partial "tw/image-block.html" (dict
+                    "filename" (.Param "image")
+                    "description" (.Param "image-description")
+                    "gravity" (.Param "image-gravity")
+                    "widthRatio" 16
+                    "heightRatio" 9
+                    "widths" (slice 112 224 336 480 640 960)
+                    "sizeHint" "(min-width: 640px) 112px, 100vw"
+                    )
+                  }}
+                </div>
+                <div class="flex min-w-0 flex-1 flex-col gap-1">
+                  <div
+                    class="font-serif text-lg leading-[1.3] font-bold sm:text-base"
+                  >
+                    {{ .LinkTitle }}
+                  </div>
+                  <div class="text-[13px] text-g-7">
+                    {{ partial "helper/date-apstyle" .PublishDate }}
+                  </div>
+                </div>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="support"
+        class="flex flex-col gap-3 border-t-8 border-red bg-red-0 p-[clamp(20px,4vw,32px)]"
+        data-ga-category="support"
+      >
+        <div
+          class="text-[13px] font-bold tracking-[0.12em] text-red-9 uppercase"
+        >
+          Support our work
+        </div>
+        <h2
+          class="font-serif text-[clamp(26px,4vw,36px)] leading-[1.15] font-extrabold tracking-[-0.01em] text-balance"
+        >
+          Keep Pennsylvania’s watchdog independent
+        </h2>
+        <p
+          class="max-w-[820px] font-serif text-[17px] leading-[1.55] text-pretty"
+        >
+          Our journalism is free to read because of generous supporters who fund
+          the work. You can make a donation online or via check, charitable
+          distributions, donor advised funds, and more.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a
+            href="/donate/"
+            class="w-full rounded-[5px] border-2 border-red bg-red px-7 py-3 text-center text-lg font-bold text-white no-underline hover:border-red-9 hover:bg-red-9 hover:text-white sm:w-auto"
+            >Donate</a
+          >
+          <a
+            href="/support/"
+            class="w-full rounded-[5px] border-2 border-black bg-transparent px-6 py-3 text-center text-lg font-bold text-black no-underline hover:bg-black hover:text-beige sm:w-auto"
+            >More ways to support</a
+          >
+        </div>
+      </section>
+
+      <section class="flex flex-col" data-ga-category="follow">
+        <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Download our mobile app</h3>
+            <p class="{{ $rowDekClass }}">
+              Read our latest stories in an accessible, easy-to-read format on
+              your mobile device, available for free.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="https://apps.apple.com/us/app/spotlight-pa/id6498866659"
+              aria-label="Download on the App Store"
+              class="flex min-h-11 items-center gap-2.5 rounded-[9px] border border-[#a6a6a6] bg-black py-1.75 pr-4 pl-3 text-white no-underline hover:bg-[#222] hover:text-white"
+            >
+              <svg class="h-7 w-7 fill-current" aria-hidden="true">
+                {{ partial "helper/svg.html" "apple" }}
+              </svg>
+              <span class="flex flex-col leading-[1.05]">
+                <span class="text-[11px] font-normal">Download on the</span>
+                <span class="text-[22px] font-semibold tracking-[-0.02em]"
+                  >App Store</span
+                >
+              </span>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.spotlightpa.digestapp&pli=1"
+              aria-label="Get it on Google Play"
+              class="flex min-h-11 items-center gap-2.5 rounded-[9px] border border-[#a6a6a6] bg-black py-1.75 pr-4 pl-3 text-white no-underline hover:bg-[#222] hover:text-white"
+            >
+              <svg class="h-6.5 w-6.5" aria-hidden="true">
+                {{ partial "helper/svg.html" "google-play" }}
+              </svg>
+              <span class="flex flex-col leading-[1.05]">
+                <span
+                  class="text-[10px] font-medium tracking-[0.04em] uppercase"
+                  >Get it on</span
+                >
+                <span class="text-[21px] font-medium tracking-[-0.01em]"
+                  >Google Play</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Follow us on social media</h3>
+            <p class="{{ $rowDekClass }}">
+              Get trusted Pennsylvania news in your social feed.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            {{ range slice
+              (dict "label" "Facebook" "svg" "fb" "color" "text-[#0866FF]" "href" "https://www.facebook.com/SpotlightPennsylvania")
+              (dict "label" "Instagram" "svg" "ig" "color" "text-[#E4405F]" "href" "https://www.instagram.com/Spotlightpennsylvania/")
+              (dict "label" "X" "svg" "twitter" "color" "text-black" "href" "https://x.com/SpotlightPA")
+              (dict "label" "TikTok" "svg" "tiktok" "color" "text-black" "href" "https://www.tiktok.com/@spotlightpa")
+            }}
+              <a
+                href="{{ .href }}"
+                aria-label="{{ .label }}"
+                title="{{ .label }}"
+                class="{{ .color }} flex h-13 w-13 items-center justify-center rounded-[5pt] border-2 border-black hover:bg-g-3"
+              >
+                <svg class="h-6 w-6 fill-current" aria-hidden="true">
+                  {{ partial "helper/svg.html" .svg }}
+                </svg>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Watch our videos</h3>
+            <p class="{{ $rowDekClass }}">
+              Subscribe on YouTube to get the latest video reporting from our
+              newsroom.
+            </p>
+          </div>
+          <div class="flex">
+            <a
+              href="https://www.youtube.com/@SpotlightPA"
+              class="{{ $outlineBtnClass }}"
+            >
+              <svg
+                class="h-5.5 w-5.5 fill-current text-[#FF0000]"
+                aria-hidden="true"
+              >
+                {{ partial "helper/svg.html" "youtube" }}
+              </svg>
+              <span>Spotlight PA on YouTube</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="{{ $rowClass }}">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">
+              Add Spotlight PA to your news feed
+            </h3>
+            <p class="{{ $rowDekClass }}">
+              Follow Spotlight PA through your favorite news aggregator to get
+              our trusted, nonpartisan news in your feed.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="https://news.google.com/home?hl=en-US&gl=US&ceid=US:en"
+              class="{{ $outlineBtnClass }}"
+            >
+              <svg class="h-5.5 w-5.5" aria-hidden="true">
+                {{ partial "helper/svg.html" "google-news" }}
+              </svg>
+              <span>Google News</span>
+            </a>
+            <a
+              href="https://apple.news/TJOxac5Y3SDWgviiNxcD9gA"
+              class="{{ $outlineBtnClass }}"
+            >
+              <svg class="h-5.5 w-5.5" aria-hidden="true">
+                {{ partial "helper/svg.html" "apple-news" }}
+              </svg>
+              <span>Apple News</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] items-center gap-x-10 gap-y-6 border-t-4 border-black bg-beige p-[clamp(20px,4vw,32px)]"
+        x-data="inlineNewsletter($el.dataset.baseUrl)"
+        data-base-url="{{ page.Param `newsletters-base-url` }}"
+        data-ga-category="newsletter"
+      >
+        <div class="flex flex-col gap-2">
+          <h3
+            class="font-serif text-[26px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+          >
+            Your guide to PA
+          </h3>
+          <p class="text-[17px] leading-normal">
+            Sign up for PA Post, Spotlight PA's free daily newsletter that helps
+            you understand what’s happening across Pennsylvania in less than
+            five minutes.
+          </p>
+          <a href="/newsletters/" class="{{ $linkClass }} text-base font-bold"
+            >Explore all of Spotlight PA's newsletters →</a
+          >
+        </div>
+        <form
+          x-show="!done"
+          class="flex flex-wrap gap-2"
+          @submit.prevent="submit"
+        >
+          {{ partial "newsletter/papost-hidden.html" . }}
+          <label class="sr-only" for="{{ $idNlEmail }}">Email address</label>
+          <input
+            id="{{ $idNlEmail }}"
+            type="email"
+            name="EMAIL"
+            autocomplete="email"
+            placeholder="Email address"
+            required
+            class="{{ $inputClass }} flex-[1_1_200px] px-3.5 py-3"
+          />
+          <button
+            type="submit"
+            class="{{ $yellowBtnClass }} inline-flex w-full items-center justify-center gap-2 sm:w-auto"
+            :disabled="isLoading"
+          >
+            Sign up
+            <svg
+              x-cloak
+              x-transition
+              aria-label="Submitting"
+              x-show="isLoading"
+              class="h-4 w-4 animate-spin fill-current"
+            >
+              {{ partial "helper/svg.html" "spinner" }}
+            </svg>
+          </button>
+        </form>
+        <p x-cloak x-show="done" role="status" class="font-serif text-lg">
+          Thanks for signing up. Look for PA Post in your inbox.
+        </p>
+      </div>
+
+      <section
+        id="partner"
+        class="flex flex-col gap-3"
+        data-ga-category="partner"
+      >
+        <h2
+          class="font-serif text-[clamp(28px,5vw,32px)] leading-[1.18] font-extrabold tracking-[-0.01em] text-balance"
+        >
+          Partner with us
+        </h2>
+        <div class="flex flex-wrap items-stretch gap-6">
+          <div class="flex min-w-0 flex-[1_1_300px] flex-col gap-6">
+            <div
+              class="flex flex-1 flex-col gap-2.5 border-t-4 border-black bg-beige p-[clamp(20px,4vw,28px)]"
+            >
+              <h3
+                class="font-serif text-[22px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+              >
+                Become a sponsor
+              </h3>
+              <p class="text-base leading-normal text-g-9">
+                Spotlight PA is the largest statewide news organization in
+                Pennsylvania, reaching a broad and rapidly growing cross-section
+                of highly engaged, curious, and motivated people via print,
+                digital, radio, and broadcast. Learn about opportunities to
+                sponsor the Spotlight PA website, newsletters, events, and more.
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col gap-2.5 border-t-4 border-black bg-beige p-[clamp(20px,4vw,28px)]"
+            >
+              <h3
+                class="font-serif text-[22px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+              >
+                Host or request an event
+              </h3>
+              <p class="text-base leading-normal text-g-9">
+                We are always looking for ways to introduce our unique,
+                investigative reporting to new audiences. Host an event in your
+                community or request a speaker from Spotlight PA visit a local
+                organization or event.
+              </p>
+            </div>
+          </div>
+          <div
+            class="min-w-0 flex-[2_1_440px] border-t-4 border-black bg-white p-[clamp(20px,4vw,28px)]"
+            x-data="netlifyForm"
+          >
+            <form
+              name="get-involved-partner"
+              method="post"
+              action="/get-involved/thanks/"
+              netlify
+              netlify-honeypot="bot-field"
+              x-show="!done"
+              @submit.prevent="submit($el)"
+              class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,220px),1fr))] gap-3.5"
+            >
+              <p class="hidden">
+                <label>
+                  Don’t fill this out if you're human:
+                  <input name="bot-field" />
+                </label>
+              </p>
+              <input
+                type="hidden"
+                name="CC"
+                value="membership@spotlightpa.org"
+              />
+              <div
+                class="col-span-full flex flex-wrap items-baseline justify-between gap-4"
+              >
+                <h3
+                  class="font-serif text-[22px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+                >
+                  Send us an inquiry
+                </h3>
+                <span class="text-sm text-g-7"
+                  >Or email
+                  <a
+                    href="mailto:membership@spotlightpa.org"
+                    class="{{ $linkClass }}"
+                    >membership@spotlightpa.org</a
+                  ></span
+                >
+              </div>
+              <label class="{{ $labelClass }}" for="{{ $idName }}"
+                >Name
+                <input
+                  id="{{ $idName }}"
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  class="{{ $inputClass }}"
+                />
+              </label>
+              <label class="{{ $labelClass }}" for="{{ $idEmail }}"
+                >Email
+                <input
+                  id="{{ $idEmail }}"
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  class="{{ $inputClass }}"
+                />
+              </label>
+              <label class="{{ $labelClass }}" for="{{ $idOrg }}"
+                >Organization
+                <input
+                  id="{{ $idOrg }}"
+                  type="text"
+                  name="organization"
+                  autocomplete="organization"
+                  class="{{ $inputClass }}"
+                />
+              </label>
+              <label class="{{ $labelClass }}" for="{{ $idTown }}"
+                >County / town
+                <input
+                  id="{{ $idTown }}"
+                  type="text"
+                  name="location"
+                  class="{{ $inputClass }}"
+                />
+              </label>
+              <label
+                class="{{ $labelClass }} col-span-full"
+                for="{{ $idInterest }}"
+                >I’m interested in
+                <select
+                  id="{{ $idInterest }}"
+                  name="subject"
+                  required
+                  class="{{ $inputClass }}"
+                >
+                  <option value="">Choose one</option>
+                  <option>Becoming a sponsor</option>
+                  <option>Hosting an event</option>
+                  <option>Requesting a speaker</option>
+                </select>
+              </label>
+              <label
+                class="{{ $labelClass }} col-span-full"
+                for="{{ $idMessage }}"
+                >Message
+                <textarea
+                  id="{{ $idMessage }}"
+                  name="comment"
+                  rows="3"
+                  class="{{ $inputClass }} resize-y"
+                ></textarea>
+              </label>
+              <div class="col-span-full flex">
+                <button
+                  type="submit"
+                  class="{{ $yellowBtnClass }} inline-flex items-center gap-2"
+                  :disabled="isLoading"
+                >
+                  Submit
+                  <svg
+                    x-cloak
+                    x-transition
+                    aria-label="Submitting"
+                    x-show="isLoading"
+                    class="h-4 w-4 animate-spin fill-current"
+                  >
+                    {{ partial "helper/svg.html" "spinner" }}
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <div
+              x-cloak
+              x-show="done"
+              role="status"
+              class="flex flex-col gap-2.5 py-6"
+            >
+              <h3
+                class="font-serif text-[26px] leading-[1.18] font-bold tracking-[-0.01em] text-balance"
+              >
+                Thank you
+              </h3>
+              <p class="text-[17px] leading-normal">
+                Our membership team will follow up at the email address you
+                provided.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="share" class="flex flex-col" data-ga-category="share">
+        <h2 class="{{ $sectionHedClass }} border-b-4 border-black pb-3">
+          Share
+        </h2>
+        <div class="{{ $rowClass }} border-b border-[#d9d2c7]">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Shop the Spotlight PA store</h3>
+            <p class="{{ $rowDekClass }}">
+              Shop Spotlight PA's unique artwork, apparel, stationery and more
+              celebrating the best of Pennsylvania - all proceeds benefit our
+              mission.
+            </p>
+          </div>
+          <div class="flex">
+            <a
+              href="https://shop.spotlightpa.org/"
+              class="{{ $yellowBtnClass }}"
+              >Visit the store</a
+            >
+          </div>
+        </div>
+        <div class="{{ $rowClass }}">
+          <div class="flex flex-col gap-1.5">
+            <h3 class="{{ $rowHedClass }}">Refer a friend</h3>
+            <p class="{{ $rowDekClass }}">
+              Let us know who might be interested in our unique investigative
+              reporting, and we'll send them a personal note about our work.
+            </p>
+          </div>
+          <div class="flex">
+            <a
+              href="https://spotlightpa.bluelena.io/f/2"
+              class="{{ $yellowBtnClass }}"
+              >Refer a friend</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+{{ end }}

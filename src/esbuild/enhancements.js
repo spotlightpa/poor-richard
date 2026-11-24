@@ -15,6 +15,7 @@ import funnelStatus from "../enhancements/funnel-status.js";
 import imageRotator from "../enhancements/image-rotator.js";
 import modal from "../enhancements/modal.js";
 import mostPopular from "../enhancements/most-popular.js";
+import netlifyForm from "../enhancements/netlify-form.js";
 import prefill from "../enhancements/prefill.js";
 import readmore from "../enhancements/read-more.js";
 import sanitizeText from "../enhancements/sanitize-text.js";
@@ -39,6 +40,7 @@ for (let [name, comp] of [
   ["imageRotator", imageRotator],
   ["modal", modal],
   ["mostPopular", mostPopular],
+  ["netlifyForm", netlifyForm],
   ["prefill", prefill],
   ["readmore", readmore],
   ["searchArticles", searchArticles],
@@ -141,6 +143,9 @@ Alpine.plugin(collapse);
 import swipe from "../utils/swipe.js";
 
 Alpine.plugin(swipe);
+import { relativeDate } from "../utils/format-date.js";
+
+Alpine.magic("relativeDate", () => (date) => relativeDate(date));
 
 window.Alpine = Alpine;
 Alpine.start();

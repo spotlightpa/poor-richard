@@ -34,7 +34,7 @@ It’s a key focus in the 10th Congressional District race, a rematch between Re
 
 The purple district covers the entirety of Dauphin County, including Harrisburg, in addition to portions of Cumberland and York Counties.
 
-{{<embed/newsletter>}}
+{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/subscribe">}}
 
 Members of Congress, elected for two-year terms, vote on legislation that affects the economy, including changes to federal taxes and budgets, as well as government spending. They can also secure federal funding and advocate for the district they represent by shaping and voting for legislation.
 

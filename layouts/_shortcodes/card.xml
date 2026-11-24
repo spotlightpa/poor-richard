@@ -1,0 +1,43 @@
+{{ $img := .Get "image" | htmlUnescape }}
+{{ $credit := .Get "image-credit" | htmlUnescape }}
+{{ $description := .Get "image-description" | htmlUnescape }}
+{{ $hed := .Get "hed" | htmlUnescape }}
+{{ $timestamp := .Get "timestamp" | htmlUnescape }}
+
+{{ if $img }}
+  {{ $imgOpts := dict
+    "filename" $img
+    "credit" $credit
+    "description" $description
+    "widthRatio" 5
+    "heightRatio" 4
+    "widths" (slice 638 1276)
+    "absURL" true
+  }}
+  {{ partial "tw/image-block.html" $imgOpts }}
+{{ end }}
+
+{{ with $hed }}
+  <h2 itemprop="headline">
+    {{ . }}
+  </h2>
+{{ end }}
+{{ with $timestamp }}
+  {{ $t := time.AsTime . "America/New_York" }}
+  <p>
+    <a href="{{ $.Page.Permalink }}#{{ . | anchorize }}">
+      {{- "" -}}
+      <time
+        datetime="{{ . }}"
+        title="{{ partial `helper/date-apstyle` $t }} {{ $t.Format `3:04 pm` }}"
+        itemprop="datePublished"
+      >
+        {{ partial "helper/date-apstyle" $t }}
+        {{ $t.Format "3:04 pm" }}
+      </time>
+      {{- "" -}}
+    </a>
+  </p>
+{{ end }}
+
+{{ .Inner | page.RenderString (dict "display" "block") }}

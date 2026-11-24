@@ -99,13 +99,6 @@
       "categoryRank": "6"
     },
     {
-      "display": "Patrick and Paula Barrett",
-      "sort": "Barrett",
-      "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
-    },
-    {
       "display": "Andy and Chris Bater",
       "sort": "Bater",
       "url": "",
@@ -274,7 +267,14 @@
       "categoryRank": "3"
     },
     {
-      "display": "Beth Burrell and David Sorenson",
+      "display": "Kathleen Burkhart",
+      "sort": "Burkhart",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Beth Burrell and David Sorensen",
       "sort": "Burrell",
       "url": "",
       "category": "$1,000-$2,499",
@@ -356,6 +356,13 @@
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
+    },
+    {
+      "display": "Gary and Nancy Decker",
+      "sort": "Decker",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
     },
     {
       "display": "Barry DeSantis",
@@ -704,8 +711,8 @@
       "display": "Robert F. Hunsicker Charitable Foundation",
       "sort": "Hunsicker",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
     },
     {
       "display": "Mary and Howard Hurtig",
@@ -750,6 +757,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Bob and Tory Kallin",
+      "sort": "Kallin",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Mark Kampf",
       "sort": "Kampf",
       "url": "",
@@ -759,6 +773,13 @@
     {
       "display": "Roberta Kangilaski",
       "sort": "Kangilaski",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
+      "display": "Nancy Kear-Johnson",
+      "sort": "Kear",
       "url": "",
       "category": "$1,000-$2,499",
       "categoryRank": "6"
@@ -953,6 +974,13 @@
       "categoryRank": "2"
     },
     {
+      "display": "Charles McMichael Jr.",
+      "sort": "McMichael",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Brian McMonagle",
       "sort": "McMonagle",
       "url": "",
@@ -967,8 +995,22 @@
       "categoryRank": "6"
     },
     {
+      "display": "Barbara Miller",
+      "sort": "Miller",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Marlin Miller",
       "sort": "Miller",
+      "url": "",
+      "category": "$5,000-$9,999",
+      "categoryRank": "4"
+    },
+    {
+      "display": "Mario Milletti",
+      "sort": "Milletti",
       "url": "",
       "category": "$5,000-$9,999",
       "categoryRank": "4"
@@ -1110,8 +1152,8 @@
       "display": "Sue and Jack Peck",
       "sort": "Peck",
       "url": "",
-      "category": "$5,000-$9,999",
-      "categoryRank": "4"
+      "category": "$10,000-$24,999",
+      "categoryRank": "3"
     },
     {
       "display": "Constance Poissant",
@@ -1352,6 +1394,13 @@
       "categoryRank": "6"
     },
     {
+      "display": "Frances Stier",
+      "sort": "Stier",
+      "url": "",
+      "category": "$1,000-$2,499",
+      "categoryRank": "6"
+    },
+    {
       "display": "Cathy Stouch",
       "sort": "Stouch",
       "url": "",
@@ -1387,7 +1436,7 @@
       "categoryRank": "5"
     },
     {
-      "display": "Andrew Trachtenberg",
+      "display": "Drew Trachtenberg",
       "sort": "Trachtenberg",
       "url": "",
       "category": "$1,000-$2,499",
@@ -1537,8 +1586,8 @@
       "display": "Deborah Williams",
       "sort": "Williams",
       "url": "",
-      "category": "$1,000-$2,499",
-      "categoryRank": "6"
+      "category": "$2,500-$4,999",
+      "categoryRank": "5"
     },
     {
       "display": "Robert and Catharine Williams",

@@ -1,0 +1,67 @@
+<div
+  x-data="{
+    i: 0,
+    n: 0,
+    go(step) {
+      let track = this.$refs.track;
+      track.scrollTo({
+        left: track.scrollLeft + step * track.clientWidth,
+        behavior: 'smooth',
+      });
+    },
+    sync() {
+      let track = this.$refs.track;
+      this.i = Math.round(track.scrollLeft / track.clientWidth);
+    },
+  }"
+  x-init="n = $refs.track.children.length"
+  class="relative clear-both my-8 font-sans"
+  role="region"
+  aria-roledescription="carousel"
+  aria-label="Photo slideshow"
+  data-ga-category="inline:photo-slider"
+>
+  <ul
+    x-ref="track"
+    @scroll.debounce.50ms="sync()"
+    class="flex snap-x snap-mandatory [scrollbar-width:none] overflow-x-auto [&::-webkit-scrollbar]:hidden"
+  >
+    {{ .Inner }}
+  </ul>
+  <div
+    class="pointer-events-none absolute inset-x-0 top-0 flex aspect-[3/2] w-full items-center justify-between px-3"
+  >
+    <button
+      type="button"
+      @click="go(-1)"
+      x-cloak
+      x-show="i > 0"
+      class="pointer-events-auto flex size-10 cursor-pointer items-center justify-center rounded-full bg-white text-g-9 shadow-md transition hover:bg-g-2"
+      aria-label="Previous photo"
+      data-ga-category="prev"
+    >
+      <svg class="size-4 fill-current" aria-hidden="true">
+        {{ partial "helper/svg.html" "chevron-left" }}
+      </svg>
+    </button>
+    <button
+      type="button"
+      @click="go(1)"
+      x-show="i < n - 1"
+      class="pointer-events-auto ml-auto flex size-10 cursor-pointer items-center justify-center rounded-full bg-white text-g-9 shadow-md transition hover:bg-g-2"
+      aria-label="Next photo"
+      data-ga-category="next"
+    >
+      <svg class="size-4 fill-current" aria-hidden="true">
+        {{ partial "helper/svg.html" "chevron-right" }}
+      </svg>
+    </button>
+    <span
+      x-cloak
+      x-show="n > 1"
+      x-text="(i + 1) + ' / ' + n"
+      class="absolute top-3 right-3 rounded-full bg-black/60 px-2.5 py-0.5 text-xs font-semibold text-white"
+      aria-live="polite"
+    ></span>
+  </div>
+</div>

@@ -61,7 +61,7 @@
                       </p>
                     {{ else }}
                       <p class="py-2 text-base leading-snug font-normal">
-                        {{ .Summary | truncate 120 }}
+                        {{ .Summary | plainify | truncate 120 }}
                       </p>
                     {{ end }}
                   </div>

@@ -14,19 +14,20 @@
     class="gap-5 px-4 sm:grid sm:grid-cols-2 md:mx-auto md:mt-16 md:max-w-screen-lg md:grid-cols-4"
   >
     {{ $context := dict
-      "category" "about"
-      "menu" site.Menus.about
-      "name" "About"
-      "link" "/about/"
+      "category" "news"
+      "menu" site.Menus.news
+      "name" "News"
+      "link" "/news/"
     }}
     {{ block "tw-footer" $context }}
       <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
-        <h3 class="font-bold tracking-wide uppercase hover:underline">
-          <a
-            class="transition-color text-black duration-500 hover:text-blue hover:underline"
-            href="{{ .link }}"
-            >{{ .name }}</a
-          >
+        <h3 class="font-bold tracking-wide uppercase">
+          {{ partial "tag/maybe-link.html" (dict
+            "linkClass" "transition-color text-black duration-500 hover:text-blue hover:underline"
+            "link" .link
+            "text" .name
+            )
+          }}
         </h3>
         <ul class="mt-3 space-y-4 leading-tight">
           {{ range .menu }}
@@ -46,65 +47,83 @@
         </ul>
       </div>
     {{ end }}
-    {{ $context = dict
-      "category" "news"
-      "menu" site.Menus.news
-      "name" "News"
-      "link" "/news/"
-    }}
-    {{ template "tw-footer" $context }}
-    {{ $context = dict
-      "category" "newsletters"
-      "menu" site.Menus.newsletters
-      "name" "Newsletters"
-      "link" "/newsletters/"
-    }}
-    {{ template "tw-footer" $context }}
-    {{ $context = dict
-      "category" "support"
-      "menu" site.Menus.support
-      "name" "Donate"
-      "link" "/donate"
-    }}
-    {{ block "tw-support" $context }}
-      <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
-        <a
-          data-fru-campaign="footer-promo"
-          data-ga-category="donate"
-          class="group relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-linear-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
-          href="{{ .link }}"
-        >
-          <span
-            class="relative inline-flex flex-wrap items-center text-xs leading-none font-bold tracking-wide text-white uppercase md:text-lg md:leading-none"
+    <div>
+      {{ $context = dict
+        "category" "bureaus"
+        "menu" site.Menus.bureaus
+        "name" "Bureaus"
+      }}
+      {{ template "tw-footer" $context }}
+      {{ $context = dict
+        "category" "newsletters"
+        "menu" site.Menus.newsletters
+        "name" "Newsletters"
+        "link" "/newsletters/"
+      }}
+      {{ template "tw-footer" $context }}
+      {{ $context = dict
+        "category" "games"
+        "menu" site.Menus.games
+        "name" "Games"
+        "link" "/games/"
+      }}
+      {{ template "tw-footer" $context }}
+    </div>
+    <div>
+      {{ $context := dict
+        "category" "about"
+        "menu" site.Menus.about
+        "name" "About"
+        "link" "/about/"
+      }}
+      {{ template "tw-footer" $context }}
+    </div>
+    <div>
+      {{ $context = dict
+        "category" "support"
+        "menu" site.Menus.support
+        "name" "Donate"
+        "link" "/donate"
+      }}
+      {{ block "tw-support" $context }}
+        <div class="mt-10 text-lg" data-ga-category="{{ .category }}">
+          <a
+            data-fru-campaign="footer-promo"
+            data-ga-category="donate"
+            class="group relative flex w-40 items-center justify-around overflow-hidden rounded-md bg-linear-to-r from-red-7 to-red p-2 hover:from-blue-7 hover:to-blue sm:flex sm:justify-center md:-my-1 md:px-4 md:py-2"
+            href="{{ .link }}"
           >
-            <svg
-              class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
-              aria-hidden="true"
+            <span
+              class="relative inline-flex flex-wrap items-center text-xs leading-none font-bold tracking-wide text-white uppercase md:text-lg md:leading-none"
             >
-              {{ partial "helper/svg.html" "heart" }}
-            </svg>
-            {{ .name }}
-          </span>
-        </a>
-        <ul class="mt-3 space-y-4 leading-tight">
-          {{ range .menu }}
-            <li>
-              <a
-                class="transition-color block text-black duration-500 hover:text-blue hover:underline"
-                href="{{ .URL }}"
-                {{ with .Params.dispatch }}
-                  x-data @click.prevent="$dispatch($el.dataset.dispatch)"
-                  data-dispatch="{{ . }}"
-                {{ end }}
+              <svg
+                class="mr-1 inline-block h-4 w-4 fill-current md:h-5 md:w-5"
+                aria-hidden="true"
               >
-                {{- .Name -}}
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
-
+                {{ partial "helper/svg.html" "heart" }}
+              </svg>
+              {{ .name }}
+            </span>
+          </a>
+          <ul class="mt-3 space-y-4 leading-tight">
+            {{ range .menu }}
+              <li>
+                <a
+                  class="transition-color block text-black duration-500 hover:text-blue hover:underline"
+                  href="{{ .URL }}"
+                  {{ with .Params.dispatch }}
+                    x-data @click.prevent="$dispatch($el.dataset.dispatch)"
+                    data-dispatch="{{ . }}"
+                  {{ end }}
+                >
+                  {{- .Name -}}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
   </nav>
   <nav
     class="mt-10 px-4 tracking-wide md:mx-auto md:mt-16 md:max-w-screen-lg"

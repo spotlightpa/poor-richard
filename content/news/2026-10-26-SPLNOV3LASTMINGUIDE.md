@@ -46,6 +46,8 @@ First, the basics:
 
 - Still have questions? You can reach out to your county election office for answers. Find contact information for your county on the <a href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx">Pennsylvania election website</a>.
 
+{{<embed/cta body="Get a weekly insider guide to how Harrisburg works from Capitol reporter Stephen Caruso." cta="Learn More" eyebrow="Access Harrisburg" url="https://accessharrisburg.spotlightpa.org/subscribe">}}
+
 Here’s what you can expect to see on your ballot:
 
 - In <a href="https://www.spotlightpa.org/news/2026/09/josh-shapiro-stacy-garrity-pennsylvania-governor-election-guide-elections/#spl-heading-4">the race for governor</a>, voters will choose between Democratic incumbent Josh Shapiro, Republican state treasurer Stacy Garrity, and Libertarian Ken Krawchuk. Each gubernatorial candidate is running alongside <a href="https://www.spotlightpa.org/news/2026/04/pennsylvania-primary-election-lieutenant-governor-guide-davis-richey-ventre-elections/">a candidate for lieutenant governor</a>. <a href="https://www.spotlightpa.org/news/2026/10/pennsylvania-election-governor-candidates-quiz/">Take our quiz</a> to see which major party candidate for governor most closely aligns with what matters to you, and <a href="https://www.spotlightpa.org/news/2026/04/pennsylvania-election-governor-josh-shapiro-stacy-garrity-campaign-finance-visualized-elections/">use this tool</a> to see how much money Shapiro and Garrity have raised for their campaigns.
