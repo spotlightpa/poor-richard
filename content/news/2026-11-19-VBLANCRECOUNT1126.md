@@ -1,8 +1,8 @@
 +++
 authors = ["Carter Walker"]
-blurb = "The Democrat currently has a 28-vote lead, and recounts have historically not reversed results of that margin."
+blurb = "In a rarity, petitioners in every precinct of the district requested a recount."
 byline = "Carter Walker of Votebeat"
-description = "Voters across PA’s 41st House District in Lancaster County submitted recount petitions. Democrat Brad Chambers leads Republican Brett Miller by 28 votes."
+description = "Voters in Pennsylvania’s 41st House District, in Lancaster County, submitted recount petitions. "
 draft = false
 feed-exclude = false
 image = "external/7z605w11tn08h88fsrcxhnbqnm.jpeg"
@@ -18,12 +18,14 @@ river-exclude = false
 slug = "41st-pennsylvania-house-district-lancaster-recount-petition-chambers-miller-elections"
 suppress-ads = false
 suppress-date = false
-title = "Pennsylvania’s 41st House District may be going to a historic recount"
-title-tag = "A Lancaster state House race may go to a recount"
+title = "Update: Recount in Pennsylvania House District 41 race affirms Democratic win"
+title-tag = "Pa.’s 41st House District election recount affirms Dem flip"
 topics = ["Elections"]
 +++
 
 <em>Votebeat is a nonprofit news organization reporting on voting access and election administration across the U.S. Sign up for </em><a href="https://votebe.at/nationalnewsletter"><em>our free weekly newsletter</em></a><em> to get the latest.</em>
+
+<strong><em>Update, Nov. 23, 7:15 p.m.: </em></strong><em>The results of the recount showed Chambers as the victor by 30 votes, according to Bonin. Miller conceded the race late Monday evening. </em>
 
 <strong><em>Update, Nov. 19, 2 p.m.: </em></strong><em>The judge in the case has approved the recount, which will be held at 10 a.m. on Monday, Nov. 23, using a separate machine from the one that was used on Election Day. After the hearing, Miller did not answer a question about whether he would accept the results.</em>
 
