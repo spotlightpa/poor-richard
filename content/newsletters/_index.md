@@ -12,6 +12,14 @@ premium-description = "Check out our new premium newsletter from reporter Stephe
 
 [cascade]
 paginate = 60
+
+[[premium-newsletters]]
+title = "Access Harrisburg"
+url = "https://accessharrisburg.spotlightpa.org/subscribe"
+image = "2025/10/01me-x90h-tbme-av96.png"
+image-gravity = "ea"
+occurrence = "Every Thursday"
+blurb = "Be the first to know what’s happening in Harrisburg."
 +++
 
 ## Get the best news from across PA straight to your inbox
