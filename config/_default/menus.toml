@@ -221,7 +221,7 @@ weight = 5
 
 [[newsletters]]
 name = "Access Harrisburg"
-url = "/newsletters/accessharrisburg/"
+url = "https://accessharrisburg.spotlightpa.org/subscribe"
 weight = 6
 
 [[support]]
