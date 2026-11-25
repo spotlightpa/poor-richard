@@ -11,13 +11,31 @@ status = 301
 force = true
 
 [[redirects]]
-from = "/newsletters/accessharrisburg/monthly"
+from = "/newsletters/accessharrisburg"
 to = "https://accessharrisburg.spotlightpa.org/subscribe"
 status = 301
 force = true
 
 [[redirects]]
-from = "/newsletters/accessharrisburg/annual"
+from = "/newsletters/accessharrisburg/"
+to = "https://accessharrisburg.spotlightpa.org/subscribe"
+status = 301
+force = true
+
+[[redirects]]
+from = "/newsletters/accessharrisburg/*"
+to = "https://accessharrisburg.spotlightpa.org/subscribe"
+status = 301
+force = true
+
+[[redirects]]
+from = "/access"
+to = "https://accessharrisburg.spotlightpa.org/subscribe"
+status = 301
+force = true
+
+[[redirects]]
+from = "/access/"
 to = "https://accessharrisburg.spotlightpa.org/subscribe"
 status = 301
 force = true
