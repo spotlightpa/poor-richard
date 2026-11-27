@@ -5,32 +5,9 @@ import {
   normalizeString,
 } from "../utils/inspections.js";
 
-export function inspectionMobileFilters() {
-  return {
-    filtersOpen: false,
-
-    openFilters() {
-      this.filtersOpen = true;
-    },
-
-    closeFilters() {
-      this.filtersOpen = false;
-    },
-
-    clearAll() {
-      const store = Alpine.store("inspections");
-      store.searchQuery = "";
-      store.currentCity = "";
-      store.currentSort = "date-desc";
-      localStorage.removeItem("inspections-sort");
-      this.filtersOpen = false;
-    },
-  };
-}
-
 export function inspectionCityFilter({
   labelPrefix = "",
-  emptyLabel = "All Cities",
+  emptyLabel = "All cities",
   limit = 20,
 } = {}) {
   return {
@@ -98,6 +75,7 @@ export function inspectionCityFilter({
       this.open = false;
       this.query = "";
       this.syncShown();
+      this.$nextTick(() => this.$refs.cityClear?.focus());
     },
 
     clear() {
@@ -105,63 +83,7 @@ export function inspectionCityFilter({
       this.open = false;
       this.query = "";
       this.syncShown();
-    },
-  };
-}
-
-export function inspectionSortMenu({
-  labelPrefix = "Sort: ",
-  defaultValue = "date-desc",
-  options = [
-    {
-      value: "date-desc",
-      shortLabel: "Date",
-      longLabel: "Inspection Date - Newest to Oldest",
-    },
-    {
-      value: "risk-desc",
-      shortLabel: "Priority",
-      longLabel: "Violation Priority - Highest to Lowest",
-    },
-    {
-      value: "alpha-asc",
-      shortLabel: "Name",
-      longLabel: "Facility Name - A to Z",
-    },
-  ],
-} = {}) {
-  return {
-    open: false,
-    options,
-    labelPrefix,
-    defaultValue,
-
-    get store() {
-      return Alpine.store("inspections");
-    },
-
-    get selected() {
-      return this.store.currentSort || this.defaultValue;
-    },
-
-    get label() {
-      const current =
-        this.options.find((opt) => opt.value === this.selected) ||
-        this.options[0];
-      return `${this.labelPrefix}${current?.shortLabel || "Date"}`;
-    },
-
-    init() {
-      if (!this.store.currentSort) {
-        this.store.currentSort =
-          localStorage.getItem("inspections-sort") || this.defaultValue;
-      }
-    },
-
-    choose(value) {
-      this.store.currentSort = value;
-      localStorage.setItem("inspections-sort", value);
-      this.open = false;
+      this.$nextTick(() => this.$refs.cityInput?.focus());
     },
   };
 }

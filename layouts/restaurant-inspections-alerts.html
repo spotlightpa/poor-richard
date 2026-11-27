@@ -1,0 +1,321 @@
+{{ define "main" }}
+  <span class="hidden">
+    {{ partial "helper/svg.html" "chevron" }}
+    {{ partial "helper/svg.html" "chevron-left" }}
+    {{ partial "helper/svg.html" "circle-check" }}
+    {{ partial "helper/svg.html" "bell" }}
+    {{ partial "helper/svg.html" "times" }}
+  </span>
+  <section class="bg-g-1 px-4 pt-6 pb-16 md:pt-10 md:pb-24">
+    <div class="mx-auto w-full max-w-xl lg:max-w-6xl lg:px-8">
+      <nav aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 font-sans text-sm">
+          <li>
+            <a
+              href="/restaurant-inspections/"
+              class="-my-2 inline-block py-2 font-serif font-bold text-g-9 decoration-g-5 underline-offset-4 hover:underline"
+              >Restaurant Safety Tracker</a
+            >
+          </li>
+          <li aria-hidden="true" class="flex text-g-5">
+            <svg class="h-2.5 w-2.5 fill-current">
+              {{ partial "helper/svg.html" "chevron-right" }}
+            </svg>
+          </li>
+          <li aria-current="page" class="font-medium text-g-7">Alerts</li>
+        </ol>
+      </nav>
+
+      <div
+        class="lg:grid lg:grid-cols-[500px_minmax(0,1fr)] lg:gap-16 xl:gap-[72px]"
+      >
+        <div class="lg:flex lg:flex-col">
+          <div class="mt-4">
+            <div>
+              <h1
+                class="font-serif text-[26px] leading-tight font-bold text-g-9 sm:text-[34px]"
+              >
+                <span
+                  class="mr-3 inline-flex h-10 w-10 -translate-y-[3px] items-center justify-center rounded-full bg-yellow-4 align-middle sm:mr-3.5 sm:h-[42px] sm:w-[42px]"
+                  aria-hidden="true"
+                >
+                  <svg class="h-5 w-5 fill-current text-g-9">
+                    <use href="#bell-svg" />
+                  </svg> </span
+                >{{ replace (.Title | htmlEscape) "Inspection " `<span class="max-[374px]:sr-only">Inspection </span>` | safeHTML }}
+              </h1>
+            </div>
+            {{ with .Param "deck" }}
+              <p
+                class="mt-3 font-serif text-base leading-relaxed font-light text-g-8 sm:text-[17px]"
+              >
+                {{ . }}
+              </p>
+            {{ end }}
+          </div>
+
+          <div class="my-7 h-px bg-g-3"></div>
+
+          <div
+            class="[&>div>div]:mb-4 [&>div>div]:rounded-xl [&>div>div]:border [&>div>div]:border-g-3 [&>div>div]:shadow-sm"
+          >
+            {{ partial "inspections-data-loader.html" . }}
+          </div>
+
+          <div x-data="inspectionsModal({ page: true })">
+            {{ partial "blocks/inspection-alerts-form.html" . }}
+          </div>
+
+          <p
+            class="mt-6 font-sans text-sm text-g-8 sm:pl-[34px] lg:mt-auto lg:pt-6"
+          >
+            Want to look up a restaurant first?
+            <a
+              href="/restaurant-inspections/"
+              target="_blank"
+              rel="noopener"
+              class="font-semibold text-blue-8 underline decoration-blue-3 underline-offset-4 hover:decoration-blue-8"
+              >Search the tracker</a
+            >
+          </p>
+        </div>
+
+        <div class="mt-8 lg:mt-5 lg:flex lg:flex-col">
+          <figure>
+            <div
+              class="relative mx-auto flex w-full max-w-[440px] flex-col items-center gap-8 font-sans sm:block sm:h-[480px] lg:h-[530px]"
+              aria-hidden="true"
+            >
+              <div
+                class="relative order-2 h-[430px] w-[214px] origin-top-left rounded-[40px] bg-linear-to-br from-[#b8b8bd] to-[#9c9ca1] p-[3px] shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_16px_-8px_rgba(0,0,0,0.08),0_30px_60px_-30px_rgba(0,0,0,0.25)] ring-[3px] ring-[#c9cacf] max-sm:[zoom:1.3] sm:absolute sm:top-0 sm:left-0 lg:scale-120"
+              >
+                <div
+                  class="absolute top-[78px] -left-[5px] h-[18px] w-[3px] rounded-l-sm bg-[#b4b5ba]"
+                ></div>
+                <div
+                  class="absolute top-[108px] -left-[5px] h-8 w-[3px] rounded-l-sm bg-[#b4b5ba]"
+                ></div>
+                <div
+                  class="absolute top-[148px] -left-[5px] h-8 w-[3px] rounded-l-sm bg-[#b4b5ba]"
+                ></div>
+                <div
+                  class="absolute top-[120px] -right-[5px] h-12 w-[3px] rounded-r-sm bg-[#b4b5ba]"
+                ></div>
+                <div
+                  class="relative h-full w-full overflow-hidden rounded-[34px] bg-white"
+                >
+                  <div
+                    class="absolute top-[9px] left-1/2 h-[19px] w-[68px] -translate-x-1/2 rounded-xl bg-[#111]"
+                  ></div>
+                  <div
+                    class="flex items-center justify-between px-[18px] pt-[11px] text-[10.5px] font-semibold text-[#111]"
+                  >
+                    <span>12:16</span>
+                    <span class="flex items-center gap-1">
+                      <svg class="h-2.5 w-3 fill-current">
+                        {{ partial "helper/svg.html" "signal" }}
+                      </svg>
+                      <svg class="h-2.5 w-[17px] fill-current">
+                        {{ partial "helper/svg.html" "battery-full" }}
+                      </svg>
+                    </span>
+                  </div>
+                  <div
+                    class="mx-auto mt-3.5 mb-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#8a93c2] text-[15px] font-bold text-white"
+                  >
+                    S
+                  </div>
+                  <div
+                    class="mx-auto w-max rounded-xl border border-g-3 px-2.5 py-0.5 text-[10.5px] font-bold text-[#111]"
+                  >
+                    Spotlight PA Alerts
+                    <svg class="ml-0.5 inline h-[7px] w-[7px] fill-current">
+                      {{ partial "helper/svg.html" "chevron-right" }}
+                    </svg>
+                  </div>
+                  <div class="mt-2 mb-1.5 text-center text-[8.5px] text-g-6">
+                    Fri, Aug 1 at 12:16 PM
+                  </div>
+                  <div
+                    class="mx-2.5 mr-8 rounded-[14px] rounded-bl bg-[#e9e9eb] px-2.5 py-2 text-[10px] leading-[1.38] break-words text-[#111]"
+                  >
+                    Spotlight PA: New inspection for Sheetz on Aug. 1, 2025. 3
+                    violations reported. View:
+                    <span class="text-[#2f6fd6] underline"
+                      >spotlightpa.org/restaurant-inspections/…</span
+                    ><br /><br />Manage alerts:
+                    <span class="text-[#2f6fd6] underline"
+                      >spotlightpa.org/manage-alerts…</span
+                    >
+                    Reply STOP to unsubscribe.
+                  </div>
+                  <div
+                    class="absolute inset-x-2.5 bottom-6 flex items-center gap-1.5"
+                  >
+                    <span
+                      class="relative h-6 w-6 flex-shrink-0 rounded-full bg-[#e9e9eb]"
+                    >
+                      <span
+                        class="absolute top-1/2 left-1/2 h-[1.5px] w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-g-7"
+                      ></span>
+                      <span
+                        class="absolute top-1/2 left-1/2 h-2.5 w-[1.5px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-g-7"
+                      ></span>
+                    </span>
+                    <span
+                      class="flex-1 rounded-full border border-g-3 px-2.5 py-1 text-[10px] text-g-5"
+                      >Text Message</span
+                    >
+                  </div>
+                  <div
+                    class="absolute bottom-2 left-1/2 h-1 w-20 -translate-x-1/2 rounded-full bg-[#111]"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="w-full max-w-[320px] origin-bottom-right overflow-hidden rounded-[14px] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_16px_-8px_rgba(0,0,0,0.08),0_30px_60px_-30px_rgba(0,0,0,0.25)] ring-[3px] ring-[#c9cacf] sm:absolute sm:right-0 sm:bottom-0 sm:w-[280px] sm:max-w-none lg:-right-7 lg:scale-106"
+              >
+                <div
+                  class="relative flex items-center gap-[5px] border-b border-g-2 bg-g-1 px-2.5 py-[7px]"
+                >
+                  <span
+                    class="h-2 w-2 rounded-full bg-[#ff5f57] ring-1 ring-black/10"
+                  ></span>
+                  <span
+                    class="h-2 w-2 rounded-full bg-[#febc2e] ring-1 ring-black/10"
+                  ></span>
+                  <span
+                    class="h-2 w-2 rounded-full bg-[#28c840] ring-1 ring-black/10"
+                  ></span>
+                  <span
+                    class="absolute left-1/2 -translate-x-1/2 text-[9px] font-semibold text-g-6"
+                    >Inbox</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 border-b border-g-2 p-2.5">
+                  <div
+                    class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#8a93c2] text-[11px] font-bold text-white"
+                  >
+                    S
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-baseline justify-between gap-2">
+                      <span class="text-[11px] font-bold text-[#111]"
+                        >Spotlight PA Alerts</span
+                      >
+                      <span class="text-[9px] text-g-6">12:16 PM</span>
+                    </div>
+                    <div
+                      class="text-[10.5px] leading-tight font-semibold text-g-8"
+                    >
+                      New inspection report: Sheetz
+                    </div>
+                    <div class="mt-0.5 text-[9px] text-g-6">To: me</div>
+                  </div>
+                </div>
+                <div class="bg-[#f3f4f6] p-2.5">
+                  <div
+                    class="rounded-t-md border border-[#e5e7eb] bg-white px-3.5 py-3"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-serif text-[11px] font-bold tracking-wide text-[#111]"
+                        >SPOTLIGHT PA</span
+                      >
+                    </div>
+                    <div
+                      class="mt-3 mb-0.5 font-serif text-[15px] leading-tight font-bold text-g-9"
+                    >
+                      Restaurant Safety Tracker
+                    </div>
+                    <div
+                      class="text-[8px] font-bold tracking-widest text-[#8a8f98]"
+                    >
+                      FRI, AUG 1, 2025
+                    </div>
+                    <div
+                      class="my-2 space-y-1.5 font-serif text-[10.5px] leading-normal text-[#222]"
+                    >
+                      <p>Hi from Spotlight PA,</p>
+                      <p>
+                        A new inspection report has been filed for a facility
+                        you're tracking.
+                      </p>
+                    </div>
+                    <div
+                      class="rounded-[5px] border border-[#e5e7eb] bg-g-1 px-2.5 py-2"
+                    >
+                      <div
+                        class="text-[7.5px] font-bold tracking-widest text-[#9aa0a6]"
+                      >
+                        AUG. 1, 2025
+                      </div>
+                      <div
+                        class="my-0.5 font-serif text-[11.5px] leading-tight font-bold text-[#111]"
+                      >
+                        Sheetz
+                      </div>
+                      <div class="text-[9px] text-g-8">
+                        300 W. Main St., Brookville
+                      </div>
+                      <span
+                        class="mt-1.5 inline-block rounded-[10px] border border-[#f5c2c2] bg-[#fdecec] px-2 py-0.5 text-[7.5px] font-bold tracking-wider text-[#b42318]"
+                        >3 VIOLATIONS</span
+                      >
+                    </div>
+                    <span
+                      class="mt-2.5 inline-flex items-center gap-1.5 rounded-[5px] bg-[#111] px-3 py-[7px] text-[8.5px] font-bold tracking-widest text-white"
+                      >VIEW VIOLATIONS
+                      <svg class="h-2 w-2 fill-current">
+                        {{ partial "helper/svg.html" "arrow-right" }}
+                      </svg></span
+                    >
+                  </div>
+                  <p
+                    class="rounded-b-md border border-t-0 border-[#e5e7eb] bg-[#f9fafb] px-2.5 py-2 text-[9px] leading-snug whitespace-nowrap text-g-7"
+                  >
+                    <span class="text-[#009edb]">Unsubscribe from Sheetz</span>
+                    &middot;
+                    <span class="text-[#009edb]">Manage all subscriptions</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <figcaption class="sr-only">
+              Sample text and email alerts
+            </figcaption>
+          </figure>
+
+          <ul
+            class="mt-8 space-y-4 font-sans lg:mt-auto lg:space-y-6 lg:pt-6 lg:pl-[18px]"
+          >
+            {{ range slice
+              (slice "Real-time alerts" "Get the info you need for your favorite spots as soon as it’s available.")
+              (slice "Easy to use" "Follow a single facility or an entire city. Manage your preferences online. Unsubscribe anytime.")
+              (slice "Free for all Pennsylvanians" "A public service from Spotlight PA, an independent, nonprofit, and nonpartisan newsroom.")
+            }}
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-px flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-full bg-yellow-4"
+                >
+                  <svg
+                    class="h-3.5 w-3.5 fill-current text-g-9"
+                    aria-hidden="true"
+                  >
+                    {{ partial "helper/svg.html" "check" }}
+                  </svg>
+                </span>
+                <span class="text-sm leading-normal text-g-8 sm:text-[15px]">
+                  <strong class="block font-semibold text-g-9"
+                    >{{ index . 0 }}</strong
+                  >
+                  {{ index . 1 }}
+                </span>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

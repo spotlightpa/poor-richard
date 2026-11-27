@@ -1,0 +1,532 @@
+<div
+  class="relative overflow-x-clip bg-g-3 md:hidden"
+  data-mobile-tracker
+  x-data="inspectionsMobile()"
+  x-init="init()"
+  @inspections-show-list.window="setView('list')"
+>
+  <div class="bg-black px-5 pt-5 pb-5">
+    <h1 class="font-serif text-[27px] leading-[1.22] font-bold text-white">
+      {{ .Title }}
+    </h1>
+    {{ with .Param "deck" }}
+      <p class="mt-2 font-serif text-[15px] leading-relaxed text-g-3">
+        {{ . }}
+      </p>
+    {{ end }}
+    {{ $placeholder := "Facility, city, or zip" }}
+    <div class="mt-4">
+      {{ partial "blocks/mobile-search-field.html" (dict "ref" "headerField" "placeholder" $placeholder) }}
+    </div>
+    <div class="mt-3">
+      {{ partial "blocks/inspection-view-toggle.html" (dict "compact" false "dark" true) }}
+    </div>
+  </div>
+  <div x-ref="introEnd" aria-hidden="true" class="h-0"></div>
+
+  <div
+    x-ref="bar"
+    data-mobile-bar
+    data-show="false"
+    :data-show="showBar ? 'true' : 'false'"
+    :aria-hidden="showBar ? 'false' : 'true'"
+    class="fixed inset-x-0 top-[var(--mobile-nav-h,57px)] z-30 bg-black px-4 pt-2 pb-2.5 shadow-[0_6px_16px_-6px_rgba(0,0,0,0.35)] transition-[opacity,translate,visibility] duration-200 ease-out data-[show=false]:invisible data-[show=false]:-translate-y-1.5 data-[show=false]:opacity-0 motion-reduce:transition-none"
+  >
+    <div class="flex items-center gap-3">
+      <div class="min-w-0 flex-1">
+        {{ partial "blocks/mobile-search-field.html" (dict "ref" "barField" "placeholder" "Facility, city, or zip") }}
+      </div>
+      <button
+        type="button"
+        @click="openAlerts()"
+        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-2 text-blue-9 hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none"
+        :aria-label="$store.inspections.currentCity ? 'Get alerts for ' + $store.inspections.currentCity : 'Get alerts'"
+        aria-label="Get alerts"
+      >
+        <svg class="h-4 w-4 fill-current" aria-hidden="true">
+          <use href="#bell-svg" />
+        </svg>
+      </button>
+    </div>
+    <div class="mt-2">
+      {{ partial "blocks/inspection-view-toggle.html" (dict "compact" true "dark" true) }}
+    </div>
+  </div>
+
+  <div
+    x-ref="list"
+    data-view-pane="list"
+    x-show="view === 'list'"
+    class="group/list min-h-svh"
+    :class="{ 'min-h-svh': !$store.inspections.allData.length }"
+  >
+    <div
+      data-mobile-results
+      class="mb-3 border-t border-g-3 bg-white px-5 font-sans text-sm group-has-[.detail-content]/list:hidden"
+    >
+      <div class="flex min-h-12 items-center justify-between gap-3 py-2">
+        <p class="sr-only" aria-live="polite">
+          <span x-text="countLabel"></span>
+        </p>
+        <button
+          type="button"
+          disabled
+          :disabled="!sortChanged"
+          @click="resetSort()"
+          class="flex items-center gap-1.5 font-semibold text-blue-9 hover:underline focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none disabled:cursor-default disabled:text-g-4 disabled:no-underline"
+          aria-label="Reset sort to newest first"
+        >
+          <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+            <use href="#rotate-left-svg" />
+          </svg>
+          Reset
+        </button>
+        <button
+          type="button"
+          x-ref="sortTrigger"
+          @click="openSort()"
+          aria-haspopup="dialog"
+          :aria-expanded="sortOpen"
+          :aria-label="'Sort by: ' + sortLabel"
+          class="ml-auto flex min-h-5 flex-shrink-0 items-center gap-1.5 font-semibold text-g-9 focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none"
+        >
+          <svg class="h-3 w-3 fill-current" aria-hidden="true">
+            <use href="#sort-svg" />
+          </svg>
+          <span x-text="sortLabel"></span>
+          <svg class="h-2.5 w-2.5 fill-g-6" aria-hidden="true">
+            <use href="#chevron-svg" />
+          </svg>
+        </button>
+      </div>
+      <div
+        x-show="(query || $store.inspections.currentCity || $store.inspections.currentPriority) && $store.inspections.filteredData.length"
+        x-cloak
+        class="flex flex-wrap items-center gap-2 pb-3"
+      >
+        <button
+          type="button"
+          x-show="query"
+          @click="clearQuery()"
+          class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-g-9 px-3 font-semibold text-white"
+          :aria-label="'Remove search ' + query"
+        >
+          <span class="truncate" x-text="'“' + query + '”'"></span>
+          <svg
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
+            aria-hidden="true"
+          >
+            <use href="#times-svg" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          x-show="$store.inspections.currentCity"
+          @click="$store.inspections.currentCity = ''"
+          class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-g-9 px-3 font-semibold text-white"
+          :aria-label="'Remove city ' + $store.inspections.currentCity"
+        >
+          <svg class="h-3 w-3 flex-shrink-0 fill-current" aria-hidden="true">
+            <use href="#location-svg" />
+          </svg>
+          <span class="truncate" x-text="$store.inspections.currentCity"></span>
+          <svg
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
+            aria-hidden="true"
+          >
+            <use href="#times-svg" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          x-show="$store.inspections.currentPriority"
+          @click="$store.inspections.currentPriority = ''"
+          class="inline-flex h-8 max-w-full items-center gap-1.5 rounded-full bg-g-9 px-3 font-semibold text-white"
+          :aria-label="'Remove ' + priorityLabel"
+        >
+          <span class="truncate" x-text="priorityLabel"></span>
+          <svg
+            class="h-2.5 w-2.5 flex-shrink-0 fill-current opacity-70"
+            aria-hidden="true"
+          >
+            <use href="#times-svg" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          x-show="hasActive"
+          @click="clearAll()"
+          class="ml-auto min-h-8 px-1 text-[13px] font-semibold text-g-7 hover:text-g-9"
+        >
+          Clear all
+        </button>
+      </div>
+    </div>
+    {{ $alertsURL := "/restaurant-inspections/alerts/" }}
+    {{ with site.GetPage "/interactives/restaurant-inspections-alerts" }}
+      {{ $alertsURL = .RelPermalink }}
+    {{ end }}
+    <a
+      x-show="!loaded || $store.inspections.filteredData.length"
+      href="{{ $alertsURL }}?mode=city"
+      :href="'{{ $alertsURL }}' + ($store.inspections.currentCity ? '?city=' + encodeURIComponent($store.inspections.currentCity) : '?mode=city')"
+      class="mb-3 flex items-center gap-3.5 bg-blue-0 px-5 py-3.5 font-sans text-blue-9 transition-colors group-has-[.detail-content]/list:hidden hover:bg-blue-1 focus-visible:ring-2 focus-visible:ring-blue/30 focus-visible:outline-none focus-visible:ring-inset"
+    >
+      <span
+        class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-blue-2"
+        aria-hidden="true"
+      >
+        <svg class="h-[18px] w-[18px] fill-current">
+          <use href="#bell-svg" />
+        </svg>
+      </span>
+      <span class="min-w-0 flex-1">
+        <span
+          class="block text-base leading-snug font-bold"
+          x-text="$store.inspections.currentCity ? 'Get alerts for ' + $store.inspections.currentCity : 'Get alerts by city'"
+          >Get alerts by city</span
+        >
+        <span
+          class="mt-0.5 block text-sm leading-snug text-blue-8"
+          x-text="$store.inspections.currentCity ? 'Know when its restaurants are inspected.' : 'Know when restaurants in your city are inspected.'"
+          >Know when restaurants in your city are inspected.</span
+        >
+      </span>
+      <svg class="h-4 w-4 flex-shrink-0 fill-current" aria-hidden="true">
+        <use href="#chevron-right-svg" />
+      </svg>
+    </a>
+    {{ partial "blocks/inspection-scroll.html" . }}
+  </div>
+
+  <div
+    x-ref="map"
+    data-view-pane="map"
+    x-show="view === 'map'"
+    x-cloak
+    class="relative isolate h-[calc(100dvh-var(--mobile-nav-h,57px)-var(--mobile-bar-h,53px))] min-h-[200px] bg-g-2 [&_[data-map-legend]]:hidden"
+    @wheel.capture="onMapWheel($event)"
+  >
+    {{ partial "blocks/maplibre-assets.html" (dict
+      "ctx" .
+      "id" "inspections-map-mobile"
+      "ariaLabel" "Pennsylvania inspections map"
+      "opts" (dict
+      "controls" (slice)
+      "hoverPopups" false
+      "selectOnClick" true
+      "externalMarkers" true
+      "cooperativeGestures" false
+      "padding" (dict "top" 24 "bottom" 24 "left" 40 "right" 40)
+      )
+      )
+      }}
+
+
+    <div
+      class="pointer-events-none absolute inset-x-2.5 top-2.5 z-[41] flex justify-center [@media(max-height:500px)]:top-2"
+    >
+      <div
+        x-show="areaMessage"
+        x-cloak
+        x-ref="mapKey"
+        data-map-key
+        class="flex h-[38px] w-full min-w-0 items-center gap-2.5 overflow-hidden rounded-full bg-white px-3.5 font-sans text-[12.5px] whitespace-nowrap text-g-8 shadow-[0_2px_10px_rgba(0,0,0,0.18)] max-[359px]:gap-2 max-[359px]:px-3 max-[359px]:text-xs [@media(max-height:500px)]:h-8"
+      >
+        <p
+          role="status"
+          class="font-extrabold text-g-9"
+          x-text="areaMessage"
+        ></p>
+        <span class="h-4 w-px flex-shrink-0 bg-g-3" aria-hidden="true"></span>
+        <ul
+          class="flex min-w-0 flex-1 items-center justify-evenly gap-1.5 font-bold"
+          aria-label="Priority level"
+        >
+          <li class="flex items-center gap-1">
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="flex-shrink-0"
+            >
+              <path
+                d="M12 2L22 12L12 22L2 12Z"
+                fill="#D70000"
+                stroke="#ffffff"
+                stroke-width="2"
+              />
+            </svg>
+            <span aria-hidden="true">High</span>
+            <span class="sr-only">High priority</span>
+          </li>
+          <li class="flex items-center gap-1">
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="flex-shrink-0"
+            >
+              <path
+                d="M12 2L22 12L12 22L2 12Z"
+                fill="#FFCB03"
+                stroke="#ffffff"
+                stroke-width="2"
+              />
+            </svg>
+            <span aria-hidden="true">Mod</span>
+            <span class="sr-only">Moderate priority</span>
+          </li>
+          <li class="flex items-center gap-1">
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="flex-shrink-0"
+            >
+              <path
+                d="M12 2L22 12L12 22L2 12Z"
+                fill="#009EDB"
+                stroke="#ffffff"
+                stroke-width="2"
+              />
+            </svg>
+            <span aria-hidden="true">Low</span>
+            <span class="sr-only">Low priority</span>
+          </li>
+          <li class="flex items-center gap-1">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="flex-shrink-0"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                fill="#1b998b"
+                stroke="#ffffff"
+                stroke-width="2"
+              />
+              <path
+                d="M9 12l2 2 4-4"
+                stroke="#ffffff"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+            <span aria-hidden="true">None</span>
+            <span class="sr-only">No violations</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      x-ref="mapDetail"
+      x-show="mapDetail"
+      x-cloak
+      @click="$event.target.closest('[data-action=back-to-results]') && setTimeout(() => closeMapDetail(true))"
+      class="absolute inset-0 z-[42] overflow-y-auto overscroll-contain bg-white [&_[data-card]]:shadow-none"
+    ></div>
+    <div
+      x-show="areaIds.length"
+      x-cloak
+      class="absolute inset-x-0 bottom-[calc(4px+env(safe-area-inset-bottom))] z-[41] [@media(max-height:500px)]:bottom-[env(safe-area-inset-bottom)]"
+    >
+      <div
+        x-ref="strip"
+        @scroll.debounce.80ms="onStripScroll()"
+        role="list"
+        aria-label="Facilities in this area"
+        class="flex snap-x snap-mandatory scroll-px-3.5 [scrollbar-width:none] gap-2.5 overflow-x-auto overscroll-x-contain px-3.5 pt-3 pb-7 [&::-webkit-scrollbar]:hidden [@media(max-height:500px)]:pb-4"
+      >
+        <template x-for="f in areaCards" :key="f.id">
+          <article
+            role="listitem"
+            :data-area-id="f.id"
+            class="flex w-[min(296px,calc(100vw-56px))] flex-shrink-0 snap-center flex-col rounded-2xl bg-white p-4 font-sans shadow-[0_6px_20px_rgba(0,0,0,0.22)] [@media(max-height:500px)]:p-2.5 [@media(max-height:500px)]:shadow-[0_3px_10px_rgba(0,0,0,0.2)]"
+          >
+            <h3
+              class="truncate font-serif text-[17px] font-bold text-g-9"
+              x-text="f.name"
+            ></h3>
+            <p
+              class="mt-0.5 truncate text-[12.5px] text-g-7"
+              x-text="f.line"
+            ></p>
+            <ul
+              class="mt-3 space-y-1 text-sm font-semibold text-g-9 [@media(max-height:500px)]:mt-1.5 [@media(max-height:500px)]:flex [@media(max-height:500px)]:flex-wrap [@media(max-height:500px)]:space-y-0 [@media(max-height:500px)]:gap-x-3 [@media(max-height:500px)]:text-[13px]"
+            >
+              <template x-for="line in f.lines" :key="line.level">
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="h-4 w-4 flex-shrink-0 fill-current"
+                    :class="{ 'text-red-7': line.level === 'high', 'text-yellow': line.level === 'moderate', 'text-blue': line.level === 'low', 'text-g-7': line.level === 'other' }"
+                    aria-hidden="true"
+                  >
+                    <use href="#diamond-svg" />
+                  </svg>
+                  <span
+                    class="[@media(max-height:500px)]:hidden"
+                    x-text="line.text"
+                  ></span>
+                  <span
+                    class="hidden [@media(max-height:500px)]:inline"
+                    x-text="line.short"
+                  ></span>
+                </li>
+              </template>
+              <li x-show="!f.lines.length" class="flex items-center gap-2">
+                <svg
+                  class="h-[18px] w-[18px] flex-shrink-0 fill-current text-election-green"
+                  aria-hidden="true"
+                >
+                  <use href="#circle-check-svg" />
+                </svg>
+                0 violations
+              </li>
+            </ul>
+            <div
+              class="mt-auto flex gap-2 pt-3 [@media(max-height:500px)]:pt-2"
+            >
+              <button
+                type="button"
+                data-area-read
+                @click="areaReadMore(f.id)"
+                class="flex h-10 min-w-0 flex-1 items-center justify-center gap-1.5 rounded-lg bg-yellow-4 font-sans text-[15px] font-semibold text-yellow-9 hover:bg-yellow-3 [@media(max-height:500px)]:h-9"
+              >
+                Read more
+                <svg class="h-3 w-3 fill-current" aria-hidden="true">
+                  <use href="#chevron-right-svg" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                @click="areaAlerts(f.id)"
+                :aria-label="'Get alerts for ' + f.name"
+                class="flex h-10 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-blue-2/80 text-blue-9 hover:bg-blue-2 [@media(max-height:500px)]:h-9"
+              >
+                <svg class="h-3.5 w-3.5 fill-current" aria-hidden="true">
+                  <use href="#bell-svg" />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </template>
+      </div>
+    </div>
+    <div x-ref="areaTemp" hidden></div>
+    <div
+      x-show="zoomHint"
+      x-cloak
+      x-transition.opacity.duration.200ms
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-0 z-[43] flex items-center justify-center bg-black/35 px-8"
+    >
+      <p
+        class="rounded-xl bg-[#1c1c1e]/90 px-4 py-3 text-center font-sans text-[15px] font-semibold text-white"
+        x-text="zoomHintText"
+      ></p>
+    </div>
+  </div>
+  <div x-ref="end" aria-hidden="true"></div>
+
+  {{ partial "blocks/search-sheet.html" (dict
+    "placeholder" "Facility, city, or zip"
+    )
+  }}
+
+
+  <div
+    x-ref="sortSheet"
+    inert
+    data-open="false"
+    :data-open="sortOpen ? 'true' : 'false'"
+    x-trap.noautofocus="sortOpen"
+    @keydown.escape="closeSort()"
+    class="group/sort pointer-events-none fixed inset-0 z-1100 data-[open=true]:pointer-events-auto"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="sort-sheet-title"
+  >
+    <div
+      data-sheet-backdrop
+      class="absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-200 group-data-[open=true]/sort:opacity-100 motion-reduce:transition-none"
+      @click="closeSort()"
+      aria-hidden="true"
+    ></div>
+    <div
+      data-sheet-panel
+      class="absolute inset-x-0 bottom-0 translate-y-full rounded-t-2xl bg-[#1c1c1e] font-sans transition-transform duration-300 ease-[cubic-bezier(.2,.8,.2,1)] group-data-[open=true]/sort:translate-y-0 motion-reduce:transition-none"
+    >
+      <div data-sheet-head class="cursor-grab touch-none">
+        <div class="flex justify-center pt-3 pb-3.5" aria-hidden="true">
+          <span class="h-[5px] w-10 rounded-full bg-[#636366]"></span>
+        </div>
+        <div class="flex items-baseline justify-between px-5 pb-3">
+          <h2
+            id="sort-sheet-title"
+            class="font-serif text-2xl font-bold text-white"
+          >
+            Sort by
+          </h2>
+          <button
+            type="button"
+            @click="closeSort()"
+            class="flex-shrink-0 text-base font-semibold text-yellow"
+          >
+            Done
+          </button>
+        </div>
+      </div>
+      <div
+        data-sheet-body
+        role="radiogroup"
+        aria-labelledby="sort-sheet-title"
+        @keydown.arrow-down.prevent="moveSort(1)"
+        @keydown.arrow-right.prevent="moveSort(1)"
+        @keydown.arrow-up.prevent="moveSort(-1)"
+        @keydown.arrow-left.prevent="moveSort(-1)"
+        class="max-h-[70dvh] overflow-y-auto overscroll-contain px-3 pb-[calc(16px+env(safe-area-inset-bottom))]"
+      >
+        <template x-for="o in sortOptions" :key="o.value">
+          <button
+            type="button"
+            role="radio"
+            :data-sort="o.value"
+            :aria-checked="$store.inspections.currentSort === o.value"
+            :tabindex="$store.inspections.currentSort === o.value ? 0 : -1"
+            @click="chooseSort(o.value)"
+            class="flex h-[52px] w-full items-center justify-between rounded-xl px-3.5 text-left text-base focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none [@media(max-height:500px)]:h-10"
+            :class="{ 'bg-[#2c2c2e] font-bold text-white': $store.inspections.currentSort === o.value, 'text-[#e5e5ea]': $store.inspections.currentSort !== o.value }"
+          >
+            <span x-text="o.label"></span>
+            <svg
+              x-show="$store.inspections.currentSort === o.value"
+              class="h-4 w-4 flex-shrink-0 text-yellow"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12.5l4.5 4.5L19 7.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </template>
+      </div>
+    </div>
+  </div>
+</div>

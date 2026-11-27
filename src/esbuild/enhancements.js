@@ -27,11 +27,10 @@ import takeover from "../enhancements/takeover.js";
 import inspections, { searchUI } from "../enhancements/inspections.js";
 import inspectionsData from "../enhancements/inspections-data.js";
 import inspectionsModal from "../enhancements/inspections-modal.js";
-import {
-  inspectionCityFilter,
-  inspectionSortMenu,
-  inspectionMobileFilters,
-} from "../enhancements/inspection-filters.js";
+import inspectionsMobile, {
+  inspectionsEmpty,
+} from "../enhancements/inspections-mobile.js";
+import { inspectionCityFilter } from "../enhancements/inspection-filters.js";
 import voterGuides from "../enhancements/voter-guides.js";
 
 for (let [name, comp] of [
@@ -53,9 +52,9 @@ for (let [name, comp] of [
   ["searchUI", searchUI],
   ["inspectionsData", inspectionsData],
   ["inspectionsModal", inspectionsModal],
+  ["inspectionsMobile", inspectionsMobile],
+  ["inspectionsEmpty", inspectionsEmpty],
   ["inspectionCityFilter", inspectionCityFilter],
-  ["inspectionSortMenu", inspectionSortMenu],
-  ["inspectionMobileFilters", inspectionMobileFilters],
   ["voterGuides", voterGuides],
 ]) {
   Alpine.data(name, comp);
@@ -94,6 +93,26 @@ Alpine.directive(
   },
 );
 
+function storedSort() {
+  const legacy = {
+    "high-risk": "count-desc",
+    "risk-desc": "count-desc",
+    "risk-asc": "count-asc",
+    alphabetical: "alpha-asc",
+  };
+  const valid = [
+    "date-desc",
+    "date-asc",
+    "count-desc",
+    "count-asc",
+    "alpha-asc",
+    "alpha-desc",
+  ];
+  const saved = localStorage.getItem("inspections-sort") || "";
+  const value = legacy[saved] || saved;
+  return valid.includes(value) ? value : "date-desc";
+}
+
 Alpine.store("inspections", {
   allData: [],
   groupedFacilities: {},
@@ -101,9 +120,10 @@ Alpine.store("inspections", {
   sortedFilteredData: [],
   currentPage: 1,
   totalPages: 1,
-  currentSort: localStorage.getItem("inspections-sort") || "date-desc",
+  currentSort: storedSort(),
   searchQuery: "",
   currentCity: "",
+  currentPriority: "",
   markers: [],
   cities: [],
 });
@@ -120,6 +140,9 @@ import collapse from "@alpinejs/collapse";
 
 Alpine.plugin(collapse);
 
+import swipe from "../utils/swipe.js";
+
+Alpine.plugin(swipe);
 import { relativeDate } from "../utils/format-date.js";
 
 Alpine.magic("relativeDate", () => (date) => relativeDate(date));

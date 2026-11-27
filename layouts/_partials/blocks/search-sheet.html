@@ -1,0 +1,215 @@
+<div
+  x-ref="sheet"
+  inert
+  data-open="false"
+  :data-open="sheetOpen ? 'true' : 'false'"
+  x-trap.noautofocus="sheetOpen"
+  @keydown.escape="closeSheet()"
+  @search-sheet-close.window="closeSheet()"
+  class="group/sheet pointer-events-none fixed inset-0 z-1100 data-[open=true]:pointer-events-auto"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Search facilities"
+>
+  <div
+    data-sheet-backdrop
+    class="absolute inset-0 opacity-0"
+    @click="closeSheet()"
+    aria-hidden="true"
+  ></div>
+  <div
+    data-sheet-panel
+    class="absolute inset-x-0 top-[var(--search-top,0px)] bottom-0 flex flex-col bg-[#1c1c1e] font-sans opacity-0 transition-opacity duration-150 ease-out group-data-[open=true]/sheet:opacity-100 motion-reduce:transition-none"
+    data-search-scope="mobile-sheet"
+    x-data="searchUI()"
+    x-init="init()"
+  >
+    <div
+      data-sheet-head
+      class="bg-black pr-[var(--search-right,16px)] pb-3 pl-[var(--search-left,16px)]"
+    >
+      <div class="flex items-center gap-3">
+        <label
+          class="flex h-11 min-w-0 flex-1 items-center gap-2 rounded-xl bg-[#3a3a3c] pr-3 pl-4 ring-2 ring-white/60"
+        >
+          <svg
+            class="h-[18px] w-[18px] flex-shrink-0 fill-current text-[#aeaeb2]"
+            aria-hidden="true"
+          >
+            <use href="#search-svg" />
+          </svg>
+          <span class="sr-only">Search</span>
+          <input
+            x-ref="input"
+            x-model="q"
+            type="search"
+            enterkeyhint="search"
+            placeholder="{{ .placeholder }}"
+            :placeholder="$store.inspections.currentCity ? 'Search ' + $store.inspections.currentCity : '{{ .placeholder }}'"
+            autocomplete="off"
+            class="min-w-0 flex-1 bg-transparent text-base text-ellipsis text-white placeholder:text-[#aeaeb2] focus:outline-none [&::-webkit-search-cancel-button]:hidden"
+            @input="onSuggestInput()"
+            @keydown.enter.prevent="doSearch(); $refs.input.blur(); $dispatch('search-sheet-close')"
+          />
+          <button
+            type="button"
+            x-show="q"
+            x-cloak
+            @click="q = ''; suggestions = []; $refs.input.focus()"
+            class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#636366] text-[#1c1c1e]"
+            aria-label="Clear"
+          >
+            <svg class="h-2.5 w-2.5 fill-current" aria-hidden="true">
+              <use href="#times-svg" />
+            </svg>
+          </button>
+        </label>
+        <button
+          type="button"
+          @click="closeSheet()"
+          class="flex-shrink-0 text-base font-semibold text-yellow"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <div
+      data-sheet-body
+      class="min-h-0 flex-1 overflow-y-auto overscroll-contain pb-[env(safe-area-inset-bottom)]"
+    >
+      <div x-show="q.trim().length < 2">
+        <div
+          class="px-4 pt-2 pb-1 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
+        >
+          Near you
+        </div>
+        <button
+          type="button"
+          @click="locate()"
+          :disabled="loadingLocation"
+          :aria-busy="loadingLocation ? 'true' : 'false'"
+          class="flex w-full items-center gap-3 px-4 py-2.5 text-left disabled:cursor-wait"
+        >
+          <span
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-yellow text-g-9"
+            aria-hidden="true"
+          >
+            <svg x-show="!loadingLocation" class="h-4 w-4 fill-current">
+              <use href="#crosshairs-svg" />
+            </svg>
+            <svg
+              x-show="loadingLocation"
+              x-cloak
+              class="h-4 w-4 animate-spin fill-current"
+            >
+              <use href="#circle-notch-svg" />
+            </svg>
+          </span>
+          <span class="min-w-0 flex-1">
+            <span
+              class="block text-[15px] font-semibold text-white"
+              x-text="loadingLocation ? 'Finding your location…' : 'Facilities near me'"
+              >Facilities near me</span
+            >
+            <span class="block text-xs text-[#aeaeb2]">Use your location</span>
+          </span>
+        </button>
+        <template x-if="$store.inspections.cities.length">
+          <div class="px-4 pb-4">
+            <div
+              class="pt-4 pb-2 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
+            >
+              Popular cities
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <template
+                x-for="c in $store.inspections.cities.slice(0, 6)"
+                :key="c.value"
+              >
+                <button
+                  type="button"
+                  @click="chooseSuggestion({ type: 'city', id: 'city:' + c.value, name: c.text }); $dispatch('search-sheet-close')"
+                  class="min-w-0 rounded-xl bg-[#2c2c2e] px-3 py-2.5 text-left focus-visible:ring-2 focus-visible:ring-yellow focus-visible:outline-none"
+                >
+                  <span
+                    class="block truncate text-[15px] font-semibold text-white"
+                    x-text="c.text"
+                  ></span>
+                  <span
+                    class="block truncate text-xs text-[#aeaeb2]"
+                    x-text="c.count.toLocaleString() + (c.count === 1 ? ' facility' : ' facilities')"
+                  ></span>
+                </button>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <div x-show="q.trim().length >= 2" x-cloak>
+        <template x-for="(s, i) in suggestions" :key="s.type + s.id">
+          <div>
+            <div
+              x-show="i === 0 || suggestions[i - 1].type !== s.type"
+              class="px-4 pt-3 pb-1 text-[11px] font-bold tracking-wider text-[#8e8e93] uppercase"
+              x-text="s.type === 'city' ? 'Filter by city' : 'Facilities'"
+            ></div>
+            <button
+              type="button"
+              @click="chooseSuggestion(s); $dispatch('search-sheet-close')"
+              class="flex w-full items-center gap-3 px-4 py-2 text-left"
+            >
+              <span
+                class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#2c2c2e] text-[#d1d1d6]"
+                aria-hidden="true"
+              >
+                <svg
+                  x-show="s.type === 'city'"
+                  class="h-3.5 w-3.5 fill-current"
+                >
+                  <use href="#location-svg" />
+                </svg>
+                <svg
+                  x-show="s.type !== 'city'"
+                  class="h-3.5 w-3.5 fill-current"
+                >
+                  <use href="#search-svg" />
+                </svg>
+              </span>
+              <span class="min-w-0 flex-1">
+                <span
+                  class="block truncate text-[15px] font-semibold text-white"
+                  x-text="s.name"
+                ></span>
+                <span
+                  x-show="s.detail"
+                  class="block truncate text-xs text-[#aeaeb2]"
+                  x-text="s.detail"
+                ></span>
+              </span>
+            </button>
+          </div>
+        </template>
+        <button
+          type="button"
+          @click="doSearch(); $dispatch('search-sheet-close')"
+          class="flex w-full items-center gap-3 px-4 py-2.5 text-left"
+        >
+          <span
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#2c2c2e] text-[#d1d1d6]"
+            aria-hidden="true"
+          >
+            <svg class="h-3.5 w-3.5 fill-current">
+              <use href="#search-svg" />
+            </svg>
+          </span>
+          <span
+            class="min-w-0 flex-1 truncate text-[15px] text-white"
+            x-text="'Search for “' + q.trim() + '”'"
+          ></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

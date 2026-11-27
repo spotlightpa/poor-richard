@@ -1,0 +1,66 @@
+<div
+  class="{{ if .compact }}
+    w-full rounded-lg
+  {{ else }}
+    w-full rounded-xl
+  {{ end }}{{ if .dark }}
+    bg-g-9
+  {{ else }}
+    bg-g-3
+  {{ end }} relative flex flex-shrink-0 touch-pan-y p-[3px] font-sans text-sm font-semibold select-none"
+  role="group"
+  aria-label="View"
+  x-segment-drag="view"
+>
+  <span
+    aria-hidden="true"
+    class="{{ if .compact }}
+      rounded-md
+    {{ else }}
+      rounded-lg
+    {{ end }} pointer-events-none absolute top-[3px] bottom-[3px] left-[calc(3px+var(--thumb,0)*(50%-3px))] w-[calc(50%-3px)] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.2)] transition-[left] duration-200 ease-[cubic-bezier(.2,.8,.2,1)] in-data-dragging:transition-none motion-reduce:transition-none"
+  ></span>
+  <button
+    type="button"
+    data-segment="list"
+    data-active
+    aria-pressed="true"
+    :aria-pressed="view === 'list' ? 'true' : 'false'"
+    @click="setView('list')"
+    class="{{ if .compact }}
+      h-8 rounded-md
+    {{ else }}
+      h-10 rounded-lg
+    {{ end }}{{ if .dark }}
+      text-g-4
+    {{ else }}
+      text-g-8
+    {{ end }} relative flex flex-1 items-center justify-center gap-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none data-active:text-g-9"
+  >
+    <svg class="h-3 w-3 fill-current" aria-hidden="true">
+      <use href="#list-svg" />
+    </svg>
+    List
+  </button>
+  <button
+    type="button"
+    data-segment="map"
+    aria-pressed="false"
+    :aria-pressed="view === 'map' ? 'true' : 'false'"
+    @click="setView('map')"
+    class="{{ if .compact }}
+      h-8 rounded-md
+    {{ else }}
+      h-10 rounded-lg
+    {{ end }}{{ if .dark }}
+      text-g-4
+    {{ else }}
+      text-g-8
+    {{ end }} relative flex flex-1 items-center justify-center gap-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-g-5 focus-visible:outline-none data-active:text-g-9"
+  >
+    <svg class="h-3 w-3 fill-current" aria-hidden="true">
+      <use href="#map-svg" />
+    </svg>
+    Map
+  </button>
+</div>

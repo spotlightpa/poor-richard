@@ -1,5 +1,12 @@
 <script>
   window.maplibreComponent = function (opts) {
+    const skipReactive = (obj) => {
+      if (obj && typeof obj === "object") {
+        Object.defineProperty(obj, "__v_skip", { value: true });
+      }
+      return obj;
+    };
+
     return {
       id: opts?.id || "map-" + Math.random().toString(36).slice(2),
       styleURL:
@@ -7,7 +14,11 @@
       center: Array.isArray(opts?.center) ? opts.center : [-77.5, 40.9],
       zoom: Number.isFinite(opts?.zoom) ? opts.zoom : 6,
       bounds: Array.isArray(opts?.bounds) ? opts.bounds : null,
-      padding: Number.isFinite(opts?.padding) ? opts.padding : 24,
+      padding:
+        Number.isFinite(opts?.padding) ||
+        (opts?.padding && typeof opts.padding === "object")
+          ? opts.padding
+          : 24,
       minZoom: Number.isFinite(opts?.minZoom) ? opts.minZoom : 3,
       maxZoom: Number.isFinite(opts?.maxZoom) ? opts.maxZoom : 20,
       bearing: Number.isFinite(opts?.bearing) ? opts.bearing : 0,
@@ -19,6 +30,11 @@
           : "top-left",
       attributionCompact: opts?.attributionCompact ?? true,
       markers: Array.isArray(opts?.markers) ? opts.markers : [],
+      hoverPopups: opts?.hoverPopups ?? true,
+      cooperativeGestures: opts?.cooperativeGestures ?? true,
+      selectOnClick: opts?.selectOnClick ?? false,
+      externalMarkers: opts?.externalMarkers ?? false,
+      _selectedEl: null,
 
       map: null,
       _io: null,
@@ -35,10 +51,7 @@
 
       init() {
         const el = this.$refs.canvas;
-        if (!el) {
-          console.error("Map canvas element not found");
-          return;
-        }
+        if (!el) return;
 
         this._io = new IntersectionObserver(
           (entries) => {
@@ -54,15 +67,12 @@
 
         this._mobileViewHandler = (e) => {
           const view = e.detail?.view;
-          if (view === "map") {
-            if (this.map) {
-              this.map.resize();
-              const m = window.__inspectionsMarkers;
-              if (Array.isArray(m) && m.length) this.updateMarkers(m);
-            } else {
-              this.tryInit(true);
-            }
-          }
+          if (view !== "map") return;
+          requestAnimationFrame(() => {
+            if (!this.map) return this.tryInit(true);
+            this.map.resize();
+            this.applyPendingFit();
+          });
         };
         window.addEventListener("mobile-view-changed", this._mobileViewHandler);
 
@@ -79,6 +89,7 @@
         window.addEventListener("inspections:flyTo", this._flyToHandler);
 
         this._zoomToMarkerHandler = (e) => {
+          if (this.selectOnClick) return;
           const { lat, lon } = e.detail || {};
           if (typeof lat !== "number" || typeof lon !== "number" || !this.map)
             return;
@@ -90,17 +101,19 @@
               .forEach((el) => el.remove());
           } catch {}
 
-          this._savedMapState = {
+          this._savedMapState = this._restoringTo || {
             center: this.map.getCenter().toArray(),
             zoom: this.map.getZoom(),
             bearing: this.map.getBearing(),
             pitch: this.map.getPitch(),
           };
+          this._restoringTo = null;
 
           this._allMarkers = [...this._markerInstances];
 
           this._markerInstances.forEach((m) => m.remove());
           this._markerInstances = [];
+          this._markersKey = null;
 
           const matchingMarker = window.__inspectionsMarkers?.find(
             (m) =>
@@ -113,6 +126,7 @@
               element: markerEl,
               anchor: "bottom",
             }).setLngLat([lon, lat]);
+            skipReactive(marker);
 
             if (matchingMarker.popupHTML) {
               const popup = new maplibregl.Popup({
@@ -120,6 +134,7 @@
                 closeOnClick: false,
                 offset: 25,
               }).setHTML(matchingMarker.popupHTML);
+              skipReactive(popup);
 
               markerEl.addEventListener("mouseenter", () => {
                 try {
@@ -157,6 +172,7 @@
         window.addEventListener("map:zoomToMarker", this._zoomToMarkerHandler);
 
         this._restoreMapHandler = () => {
+          if (this.selectOnClick) return;
           if (!this.map || !this._savedMapState) return;
 
           try {
@@ -166,16 +182,20 @@
               .forEach((el) => el.remove());
           } catch {}
 
+          const target = this._savedMapState;
+          this._restoringTo = target;
           this.map.flyTo({
-            center: this._savedMapState.center,
-            zoom: this._savedMapState.zoom,
-            bearing: this._savedMapState.bearing,
-            pitch: this._savedMapState.pitch,
+            center: target.center,
+            zoom: target.zoom,
+            bearing: target.bearing,
+            pitch: target.pitch,
             speed: 0.8,
             curve: 1.42,
           });
 
           setTimeout(() => {
+            if (this._restoringTo !== target) return;
+            this._restoringTo = null;
             try {
               this.map
                 .getContainer()
@@ -191,6 +211,19 @@
           }, 500);
         };
         window.addEventListener("map:restoreView", this._restoreMapHandler);
+
+        window.addEventListener("map:refit", () => {
+          if (!this.map || this._savedMapState || !this.hasSize()) return;
+          if (!this._markerInstances.length) return;
+          const bounds = new maplibregl.LngLatBounds();
+          skipReactive(bounds);
+          this._markerInstances.forEach((m) => bounds.extend(m.getLngLat()));
+          this.map.fitBounds(bounds, {
+            padding: this.fitPadding(),
+            maxZoom: 12,
+            duration: 300,
+          });
+        });
 
         window.addEventListener("update-map-markers", (e) => {
           const markers = e.detail?.markers;
@@ -241,11 +274,11 @@
           markerEl.innerHTML = `
             <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
               <defs>
-                <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <filter id="markerShadow-${this.id}" x="-50%" y="-50%" width="200%" height="200%">
                   <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
                 </filter>
               </defs>
-              <g filter="url(#markerShadow)">
+              <g filter="url(#markerShadow-${this.id})">
                 <circle cx="12" cy="12" r="10" fill="${color}" stroke="#ffffff" stroke-width="2"/>
                 <path
                   d="M9 12l2 2 4-4"
@@ -262,11 +295,11 @@
           markerEl.innerHTML = `
             <svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true">
               <defs>
-                <filter id="markerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                <filter id="markerShadow-${this.id}" x="-50%" y="-50%" width="200%" height="200%">
                   <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
                 </filter>
               </defs>
-              <g filter="url(#markerShadow)">
+              <g filter="url(#markerShadow-${this.id})">
                 <path
                   d="M12 2L22 12L12 22L2 12Z"
                   fill="${color}"
@@ -286,18 +319,26 @@
         if (!el) return;
 
         try {
-          this.map = new maplibregl.Map({
-            container: el,
-            style: this.styleURL,
-            center: this.center,
-            zoom: this.zoom,
-            bearing: this.bearing,
-            pitch: this.pitch,
-            minZoom: this.minZoom,
-            maxZoom: this.maxZoom,
-            attributionControl: false,
-            cooperativeGestures: true,
-          });
+          this.map = skipReactive(
+            new maplibregl.Map({
+              container: el,
+              style: this.styleURL,
+              center: this.center,
+              zoom: this.zoom,
+              ...(this.bounds
+                ? {
+                    bounds: this.bounds,
+                    fitBoundsOptions: { padding: this.fitPadding() },
+                  }
+                : {}),
+              bearing: this.bearing,
+              pitch: this.pitch,
+              minZoom: this.minZoom,
+              maxZoom: this.maxZoom,
+              attributionControl: false,
+              cooperativeGestures: this.cooperativeGestures,
+            }),
+          );
 
           if (this.controls.includes("navigation")) {
             const nav = new maplibregl.NavigationControl({
@@ -321,9 +362,17 @@
 
           this.map.on("load", () => {
             if (this.bounds) {
-              this.map.fitBounds(this.bounds, { padding: this.padding });
+              this.map.fitBounds(this.bounds, {
+                padding: this.fitPadding(),
+                duration: 0,
+              });
             }
             this.addMarkers();
+            window.dispatchEvent(
+              new CustomEvent("map:loaded", {
+                detail: { id: this.id, map: this.map },
+              }),
+            );
 
             try {
               if (this.map.getLayer("state-borders"))
@@ -368,31 +417,49 @@
                   },
                   beforeId,
                 );
-              } else {
-                console.warn(
-                  "Couldn't find 'boundary' source-layer; skipping border styling.",
-                );
               }
-            } catch (err) {
-              console.error("Failed to add styled borders:", err);
-            }
+            } catch {}
 
             const latest = window.__inspectionsMarkers;
             if (Array.isArray(latest) && latest.length) {
               this.updateMarkers(latest);
             }
+
+            const card = Array.from(
+              document.querySelectorAll(".detail-content"),
+            )
+              .map((d) => d.closest('[data-card="inspection"]'))
+              .find((c) => c && c.offsetParent !== null);
+            const lat = parseFloat(card?.getAttribute("data-lat"));
+            const lon = parseFloat(card?.getAttribute("data-lon"));
+            if (!isNaN(lat) && !isNaN(lon)) {
+              this._zoomToMarkerHandler({ detail: { lat, lon } });
+            }
           });
 
-          this.map.on("error", (e) => {
-            console.error("Map error:", e);
-          });
+          if (this.selectOnClick) {
+            this.map.on("click", (e) => {
+              if (e.originalEvent?.target?.closest?.(".maplibregl-marker"))
+                return;
+              this.clearSelection();
+              window.dispatchEvent(
+                new CustomEvent("map:background-click", {
+                  detail: { mapId: this.id },
+                }),
+              );
+            });
+          }
 
-          const ro = new ResizeObserver(() => this.map && this.map.resize());
+          this.map.on("error", () => {});
+
+          const ro = new ResizeObserver(() => {
+            if (!this.map) return;
+            this.map.resize();
+            this.applyPendingFit();
+          });
           ro.observe(el);
           this._ro = ro;
-        } catch (err) {
-          console.error("MapLibre initialization error:", err);
-        }
+        } catch {}
       },
 
       addMarkers() {
@@ -406,47 +473,88 @@
             element: markerEl,
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
+          skipReactive(marker);
 
-          let popup = null;
-          if (m.popupHTML) {
-            popup = new maplibregl.Popup({
-              closeButton: false,
-              closeOnClick: false,
-              offset: 25,
-            }).setHTML(m.popupHTML);
-
-            markerEl.addEventListener("mouseenter", () => {
-              popup.setLngLat([m.lon, m.lat]).addTo(this.map);
-              if (popup.getElement()) popup.getElement().style.zIndex = "20";
-            });
-
-            markerEl.addEventListener("mouseleave", () => {
-              popup.remove();
-            });
-          }
-
-          if (m.inspectionId) {
-            markerEl.addEventListener("click", () => {
-              window.dispatchEvent(
-                new CustomEvent("marker-click", {
-                  detail: { id: m.inspectionId },
-                }),
-              );
-            });
-          }
+          this._bindMarker(markerEl, m);
 
           marker.addTo(this.map);
           this._baseMarkerInstances.push(marker);
         });
       },
 
+      _bindMarker(markerEl, m) {
+        if (m.popupHTML && this.hoverPopups) {
+          const popup = new maplibregl.Popup({
+            closeButton: false,
+            closeOnClick: false,
+            offset: 25,
+          }).setHTML(m.popupHTML);
+          skipReactive(popup);
+
+          markerEl.addEventListener("mouseenter", () => {
+            popup.setLngLat([m.lon, m.lat]).addTo(this.map);
+            if (popup.getElement()) popup.getElement().style.zIndex = "20";
+          });
+          markerEl.addEventListener("mouseleave", () => {
+            popup.remove();
+          });
+        }
+
+        if (!m.inspectionId) return;
+        markerEl.addEventListener("click", () => {
+          if (!this.selectOnClick) {
+            window.dispatchEvent(
+              new CustomEvent("marker-click", {
+                detail: { id: m.inspectionId },
+              }),
+            );
+            return;
+          }
+          this.select(markerEl);
+          window.dispatchEvent(
+            new CustomEvent("map:marker-select", {
+              detail: { id: m.inspectionId, mapId: this.id },
+            }),
+          );
+        });
+      },
+
+      select(markerEl) {
+        this.clearSelection();
+        this._selectedEl = markerEl;
+        markerEl.style.zIndex = "5";
+        const icon = markerEl.firstElementChild;
+        if (icon) {
+          icon.style.transformOrigin = "50% 100%";
+          icon.style.transform = "scale(1.35)";
+        }
+      },
+
+      clearSelection() {
+        const el = this._selectedEl;
+        if (!el) return;
+        el.style.zIndex = "";
+        if (el.firstElementChild) el.firstElementChild.style.transform = "";
+        this._selectedEl = null;
+      },
+
       updateMarkers(newMarkers) {
+        if (this.externalMarkers) return;
         if (!this.map || !Array.isArray(newMarkers)) return;
+
+        const key = (newMarkers || [])
+          .map(
+            (m) => `${m.inspectionId || ""}:${m.lon}:${m.lat}:${m.color || ""}`,
+          )
+          .join("|");
+        if (key === this._markersKey && this._markerInstances?.length) return;
+        this._markersKey = key;
 
         if (this._markerInstances) {
           this._markerInstances.forEach((m) => m.remove());
         }
         this._markerInstances = [];
+        this._selectedEl = null;
 
         newMarkers.forEach((m) => {
           if (typeof m?.lon !== "number" || typeof m?.lat !== "number") return;
@@ -456,33 +564,9 @@
             element: markerEl,
             anchor: "bottom",
           }).setLngLat([m.lon, m.lat]);
+          skipReactive(marker);
 
-          let popup = null;
-          if (m.popupHTML) {
-            popup = new maplibregl.Popup({
-              closeButton: false,
-              closeOnClick: false,
-              offset: 25,
-            }).setHTML(m.popupHTML);
-
-            markerEl.addEventListener("mouseenter", () => {
-              popup.setLngLat([m.lon, m.lat]).addTo(this.map);
-              if (popup.getElement()) popup.getElement().style.zIndex = "20";
-            });
-            markerEl.addEventListener("mouseleave", () => {
-              popup.remove();
-            });
-          }
-
-          if (m.inspectionId) {
-            markerEl.addEventListener("click", () => {
-              window.dispatchEvent(
-                new CustomEvent("marker-click", {
-                  detail: { id: m.inspectionId },
-                }),
-              );
-            });
-          }
+          this._bindMarker(markerEl, m);
 
           marker.addTo(this.map);
           this._markerInstances.push(marker);
@@ -490,17 +574,57 @@
 
         if (newMarkers.length > 0) {
           const bounds = new maplibregl.LngLatBounds();
+          skipReactive(bounds);
           newMarkers.forEach((m) => {
             if (typeof m?.lon === "number" && typeof m?.lat === "number") {
               bounds.extend([m.lon, m.lat]);
             }
           });
+          if (!this.hasSize()) {
+            this._pendingBounds = bounds;
+            return;
+          }
+          this._pendingBounds = null;
           this.map.fitBounds(bounds, {
-            padding: this.padding,
+            padding: this.fitPadding(),
             maxZoom: 12,
-            duration: 1000,
+            duration: 800,
           });
         }
+      },
+
+      fitPadding() {
+        const base = this.padding;
+        const style = getComputedStyle(this.$el);
+        const top = parseFloat(style.getPropertyValue("--map-pad-top")) || 0;
+        const bottom =
+          parseFloat(style.getPropertyValue("--map-pad-bottom")) || 0;
+        if (!top && !bottom) return base;
+        const pad =
+          typeof base === "number"
+            ? { top: base, right: base, bottom: base, left: base }
+            : { ...base };
+        pad.top = (pad.top || 0) + top;
+        pad.bottom = (pad.bottom || 0) + bottom;
+        const height = this.$el.clientHeight;
+        const room = height - 40;
+        if (height && pad.top + pad.bottom > room) {
+          const scale = Math.max(0, room) / (pad.top + pad.bottom);
+          pad.top = Math.floor(pad.top * scale);
+          pad.bottom = Math.floor(pad.bottom * scale);
+        }
+        return pad;
+      },
+
+      applyPendingFit() {
+        if (!this.map || !this._pendingBounds || !this.hasSize()) return;
+        const bounds = this._pendingBounds;
+        this._pendingBounds = null;
+        this.map.fitBounds(bounds, {
+          padding: this.fitPadding(),
+          maxZoom: 12,
+          duration: 0,
+        });
       },
 
       destroy() {

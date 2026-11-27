@@ -9,12 +9,14 @@ ad-header-desktop-active = false
 ad-header-mobile-active = false
 
 title = "Pennsylvania Restaurant Safety Tracker"
+mobile-bar-title = "Restaurant Safety Tracker"
 deck = "Real-time updates about health inspections at restaurants near you."
 
 sign-up-button = "Sign up for alerts"
 search-instructions = "Search by restaurant name, city, or zip across 61 counties"
-search-placeholder = "Facility name, city, zip"
-search-desktop-placeholder = "Enter facility name, city, zip"
+complaint-url = "https://www.pa.gov/services/pda/report-a-food-safety-concern"
+search-placeholder = "Name, city, or zip"
+search-desktop-placeholder = "Enter facility name, city, or zip"
 search-location = true
 
 show-alerts-button = true
@@ -22,14 +24,14 @@ cuisine-type = false
 
 blurb = "A free, searchable database and alert system that makes Pennsylvania's public inspection data for retail food facilities easy to understand and explore."
 description = "A free, searchable database and alert system that makes Pennsylvania's public inspection data for retail food facilities easy to understand and explore."
-image = "2026/04/01mx-z5t1-v225-x54g.jpeg"
-image-credit = "Delpixart / iStock"
-image-description = "Pennsylvania Restaurant Safety Tracker image showing pots hanging in a kitchen"
+image = "2026/11/01ng-bxtk-11jy-r19v.png"
+image-credit = "Spotlight PA"
 og-title = "Pennsylvania Restaurant Safety Tracker"
 title-tag = "Pennsylvania Restaurant Safety Tracker"
 twitter-title = "Pennsylvania Restaurant Safety Tracker"
 
 [data]
+skeleton = true
 source = "https://interactives.data.spotlightpa.org/2025/restaurant-inspections/inspections.csv.gz"
 popup = false
 cacheVersion = 1
