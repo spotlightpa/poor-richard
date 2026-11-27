@@ -1,15 +1,5 @@
-{{ $src := .Get "src" | htmlUnescape }}
-
-
-<div
-  class="flourish-embed flourish-story clear-both my-8"
-  data-src="{{ $src }}"
-></div>
-
-{{ if page.Scratch.Get "has-flourish" | not }}
-  {{ page.Scratch.Set "has-flourish" true }}
-  <script
-    defer
-    src="https://public.flourish.studio/resources/embed.js"
-  ></script>
-{{ end }}
+{{ partial "tw/flourish.html" (dict
+  "src" (.Get "src" | htmlUnescape)
+  "class" "flourish-story clear-both my-8"
+  )
+}}
